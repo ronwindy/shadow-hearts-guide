@@ -1,0 +1,406 @@
+{
+  "id": "w-1-02",
+  "code": "[W-1-02]",
+  "title": "Plains",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-1-01",
+      "code": "[W-1-01]",
+      "title": "Trans-Siberian Express",
+      "file": "sections/w-1-01-trans-siberian-express.json"
+    },
+    "next": {
+      "id": "w-1-03",
+      "code": "[W-1-03]",
+      "title": "Zhaoyang Village",
+      "file": "sections/w-1-03-zhaoyang-village.json"
+    }
+  },
+  "char_count": 12907,
+  "line_count": 211,
+  "overview": {
+    "save_points": [
+      "By the sluice gate"
+    ],
+    "items": [
+      "Pure Leaf",
+      "Thera Leaf              have one",
+      "Mermaid's Tear",
+      "Mana Seed",
+      "Thera Seed",
+      "Holy Mother Bust"
+    ],
+    "equipment": [
+      "Leather Belt",
+      "Bandanna",
+      "Small Bible",
+      "Leather Belt",
+      "Cotton Blouse",
+      "Bandanna"
+    ],
+    "valuables": [
+      "Pendant",
+      "SluiceGateHandle"
+    ],
+    "souls": [
+      "Raging Tiger"
+    ]
+  },
+  "items": [
+    "Pure Leaf",
+    "Thera Leaf              have one",
+    "Mermaid's Tear",
+    "Mana Seed",
+    "Thera Seed",
+    "Holy Mother Bust",
+    "Leather Belt",
+    "Bandanna",
+    "Small Bible",
+    "Leather Belt",
+    "Cotton Blouse",
+    "Bandanna",
+    "Pendant",
+    "SluiceGateHandle",
+    "Raging Tiger"
+  ],
+  "enemies": [
+    {
+      "number": "#002",
+      "name": "Vampire Bat",
+      "hp": 8,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#003",
+      "name": "Venomous Spider",
+      "hp": 10,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Poison"
+    },
+    {
+      "number": "#004",
+      "name": "Wolf",
+      "hp": 15,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": null,
+      "name": "Fox Face",
+      "hp": null,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Cannot be defeated"
+    },
+    {
+      "number": null,
+      "name": "Raging Tiger",
+      "hp": 75,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Lv. 1 Fusion (Graveyard)"
+    },
+    {
+      "number": "#105",
+      "name": "Evil 1",
+      "hp": "Varies",
+      "class": null,
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Graveyard Malice"
+    },
+    {
+      "number": "#106",
+      "name": "Evil 2",
+      "hp": "Varies",
+      "class": null,
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Graveyard Malice"
+    },
+    {
+      "number": "#107",
+      "name": "Evil 3",
+      "hp": "Varies",
+      "class": null,
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Graveyard Malice"
+    },
+    {
+      "number": "#108",
+      "name": "Evil 4",
+      "hp": "Varies",
+      "class": null,
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Graveyard Malice"
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "PURE LEAF",
+        "raw_tag": "[_PURE LEAF_]",
+        "matched_overview_item": "Pure Leaf",
+        "category": "items",
+        "line": 38,
+        "char_offset": [
+          2175,
+          2188
+        ],
+        "context": "After some dialogue, you'll regain control. Take a few steps to the upper-left to find a [_PURE LEAF_] on the ground, then head down to the next area. Instead of following the path, go right into the grass and to the next area, where you'll find a ch"
+      },
+      {
+        "name": "LEATHER BELT",
+        "raw_tag": "[_LEATHER BELT_]",
+        "matched_overview_item": "Leather Belt",
+        "category": "equipment",
+        "line": 40,
+        "char_offset": [
+          2353,
+          2369
+        ],
+        "context": "After some dialogue, you'll regain control. Take a few steps to the upper-left to find a [_PURE LEAF_] on the ground, then head down to the next area. Instead of following the path, go right into the grass and to the next area, where you'll find a ch"
+      },
+      {
+        "name": "SMALL BIBLE",
+        "raw_tag": "[_SMALL BIBLE_]",
+        "matched_overview_item": "Small Bible",
+        "category": "equipment",
+        "line": 47,
+        "char_offset": [
+          2816,
+          2831
+        ],
+        "context": "NOTE Alice comes equipped with a [_SMALL BIBLE_], a [_COTTON BLOUSE_], ¯¯¯¯¯¯¯¯ and a [_BANDANNA_] by default, and also comes with the [_PENDANT_] valuable."
+      },
+      {
+        "name": "COTTON BLOUSE",
+        "raw_tag": "[_COTTON BLOUSE_]",
+        "matched_overview_item": "Cotton Blouse",
+        "category": "equipment",
+        "line": 47,
+        "char_offset": [
+          2835,
+          2852
+        ],
+        "context": "NOTE Alice comes equipped with a [_SMALL BIBLE_], a [_COTTON BLOUSE_], ¯¯¯¯¯¯¯¯ and a [_BANDANNA_] by default, and also comes with the [_PENDANT_] valuable."
+      },
+      {
+        "name": "BANDANNA",
+        "raw_tag": "[_BANDANNA_]",
+        "matched_overview_item": "Bandanna",
+        "category": "equipment",
+        "line": 48,
+        "char_offset": [
+          2871,
+          2883
+        ],
+        "context": "NOTE Alice comes equipped with a [_SMALL BIBLE_], a [_COTTON BLOUSE_], ¯¯¯¯¯¯¯¯ and a [_BANDANNA_] by default, and also comes with the [_PENDANT_] valuable."
+      },
+      {
+        "name": "PENDANT",
+        "raw_tag": "[_PENDANT_]",
+        "matched_overview_item": "Pendant",
+        "category": "valuables",
+        "line": 48,
+        "char_offset": [
+          2920,
+          2931
+        ],
+        "context": "NOTE Alice comes equipped with a [_SMALL BIBLE_], a [_COTTON BLOUSE_], ¯¯¯¯¯¯¯¯ and a [_BANDANNA_] by default, and also comes with the [_PENDANT_] valuable."
+      },
+      {
+        "name": "MERMAID'S TEAR",
+        "raw_tag": "[_MERMAID'S TEAR_]",
+        "matched_overview_item": "Mermaid's Tear",
+        "category": "items",
+        "line": 53,
+        "char_offset": [
+          3157,
+          3175
+        ],
+        "context": "Start to head southeast and examine the body of water to your south. You can't cross it yet, so take a few steps southeast. Before stepping on the bridge, look just below where you're standing to find a [_MERMAID'S TEAR_]. Continue southeast to the n"
+      },
+      {
+        "name": "SLUICEGATEHANDLE",
+        "raw_tag": "[_SLUICEGATEHANDLE_]",
+        "matched_overview_item": "SluiceGateHandle",
+        "category": "valuables",
+        "line": 84,
+        "char_offset": [
+          5109,
+          5129
+        ],
+        "context": "Regardless of how you decided to get it, you'll receive the [_SLUICEGATEHANDLE_]. Head back to the northeastern side of this area and use the SluiceGateHandle on the Sluice Gate to lower the water running through the plain. Start to make your way bac"
+      },
+      {
+        "name": "RAGING TIGER",
+        "raw_tag": "[_RAGING TIGER_]",
+        "matched_overview_item": "Raging Tiger",
+        "category": "souls",
+        "line": 110,
+        "char_offset": [
+          6742,
+          6758
+        ],
+        "context": "By defeating him in battle, Yuri can now equip the soul of [_RAGING TIGER_], Tigerion! Be sure to equip it in the menu. Next, head west and talk to the Masks here, who'll tell you that you need to defeat the accumulation of Malice within you to be ab"
+      },
+      {
+        "name": "LEATHER BELT",
+        "raw_tag": "[_LEATHER BELT_]",
+        "matched_overview_item": "Leather Belt",
+        "category": "equipment",
+        "line": 192,
+        "char_offset": [
+          11907,
+          11923
+        ],
+        "context": "- A [_LEATHER BELT_] if you got the southern gate's handle the first try. - A [_THERA SEED_] if you got the southern gate's handle the second try. - A [_THERA LEAF_] if you got the southern gate's handle the third or more tries. - A [_BANDANNA_] if y"
+      },
+      {
+        "name": "THERA SEED",
+        "raw_tag": "[_THERA SEED_]",
+        "matched_overview_item": "Thera Seed",
+        "category": "items",
+        "line": 193,
+        "char_offset": [
+          11984,
+          11998
+        ],
+        "context": "- A [_LEATHER BELT_] if you got the southern gate's handle the first try. - A [_THERA SEED_] if you got the southern gate's handle the second try. - A [_THERA LEAF_] if you got the southern gate's handle the third or more tries. - A [_BANDANNA_] if y"
+      },
+      {
+        "name": "THERA LEAF",
+        "raw_tag": "[_THERA LEAF_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 194,
+        "char_offset": [
+          12060,
+          12074
+        ],
+        "context": "- A [_LEATHER BELT_] if you got the southern gate's handle the first try. - A [_THERA SEED_] if you got the southern gate's handle the second try. - A [_THERA LEAF_] if you got the southern gate's handle the third or more tries. - A [_BANDANNA_] if y"
+      },
+      {
+        "name": "BANDANNA",
+        "raw_tag": "[_BANDANNA_]",
+        "matched_overview_item": "Bandanna",
+        "category": "equipment",
+        "line": 196,
+        "char_offset": [
+          12150,
+          12162
+        ],
+        "context": "- A [_LEATHER BELT_] if you got the southern gate's handle the first try. - A [_THERA SEED_] if you got the southern gate's handle the second try. - A [_THERA LEAF_] if you got the southern gate's handle the third or more tries. - A [_BANDANNA_] if y"
+      },
+      {
+        "name": "MANA SEED",
+        "raw_tag": "[_MANA SEED_]",
+        "matched_overview_item": "Mana Seed",
+        "category": "items",
+        "line": 197,
+        "char_offset": [
+          12223,
+          12236
+        ],
+        "context": "- A [_LEATHER BELT_] if you got the southern gate's handle the first try. - A [_THERA SEED_] if you got the southern gate's handle the second try. - A [_THERA LEAF_] if you got the southern gate's handle the third or more tries. - A [_BANDANNA_] if y"
+      },
+      {
+        "name": "THERA LEAF",
+        "raw_tag": "[_THERA LEAF_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 198,
+        "char_offset": [
+          12298,
+          12312
+        ],
+        "context": "- A [_LEATHER BELT_] if you got the southern gate's handle the first try. - A [_THERA SEED_] if you got the southern gate's handle the second try. - A [_THERA LEAF_] if you got the southern gate's handle the third or more tries. - A [_BANDANNA_] if y"
+      },
+      {
+        "name": "HOLY MOTHER BUST",
+        "raw_tag": "[_HOLY MOTHER BUST_]",
+        "matched_overview_item": "Holy Mother Bust",
+        "category": "items",
+        "line": 204,
+        "char_offset": [
+          12632,
+          12652
+        ],
+        "context": "Once you have your treasure, head back across the bridge, then cross the river bank to the southwest and follow the path to the next area. Take a few steps to the left for an event, then open the chest to your northwest when you regain control for a "
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 47,
+        "char_offset": [
+          2777,
+          2954
+        ],
+        "text": "Alice comes equipped with a [_SMALL BIBLE_], a [_COTTON BLOUSE_], and a [_BANDANNA_] by default, and also comes with the [_PENDANT_] valuable."
+      },
+      {
+        "type": "NOTE",
+        "line": 90,
+        "char_offset": [
+          5496,
+          5711
+        ],
+        "text": "Once again, it's impossible to win this battle, so feel free to just wail away at him until he uses the !!! attack to reduce your HP to 1, followed by being knocked out once again."
+      },
+      {
+        "type": "NOTE",
+        "line": 117,
+        "char_offset": [
+          7115,
+          7938
+        ],
+        "text": "To sum up everything that the Masks have said: The Talisman Yuri holds will show the level of Malice that has accumulated in his soul. To rid himself of the Malice, he must return to the Graveyard and fight an incarnate of his Malice to keep from having to face Fox Face in battle. Each enemy you defeat will increase the Malice Meter, so make sure that your Malice level (found in the menu) does NOT reach the red. If it does, IMMEDIATELY go to the Graveyard and fight your Malice so that you don't fight Fox Face. Right now, you WILL die if you try to fight him, so if you run into him, press the R1 button and choose to Run Away. NOTE     You also will now see the Soul Energy screen after battle. It shows"
+      },
+      {
+        "type": "NOTE",
+        "line": 139,
+        "char_offset": [
+          8517,
+          10944
+        ],
+        "text": "You can fight Evil 1, Evil 2, Evil 3, and even Evil 4 again by returning to the Graveyard and fighting them when your Malice level is at a certain color: - Evil 1: Between Blue and Turquoise. - Evil 2: Between Turquoise and Green. - Evil 3: Between Green and Yellow. - Evil 4: Between Yellow and Red. - After each battle, you'll receive an item based on your Malice! .———————————.————————————————————.  .———————————.————————————————————. |  Malice   |  Prize             |——|  Malice   |  Prize             | |===========|====================|/\\|===========|====================| |  01 - 03  |  Thera Leaf        |\\/|  57 - 59  |  Pure Leaf         | |       04  |  Seal of Wisdom    |/\\|       60  |  Seal of Speed     | |  05 - 06  |  Mana Leaf         |\\/|  61 - 62  |  Thera Leaf        | |       07  |  Key to Success    |/\\|       63  |  Seal of Power     | |  08 - 09  |  Pure Leaf         |\\/|  64 - 65  |  Mana Leaf         | |  10 - 14  |  Thera Leaf        |/\\|  66 - 69  |  Pure Leaf         | |  15 - 19  |  Mana Leaf         |\\/|       70  |  Seal of Life      | |  20 - 24  |  Pure Leaf         |/\\|  71 - 73  |  Thera Leaf        | |       25  |  Seal of Vitality  |\\/|  74 - 76  |  Mana Leaf         | |  26 - 29  |  Thera Leaf        |/\\|       77  |  Seventh Key       | |  30 - 34  |  Mana Leaf         |\\/|  78 - 79  |  Pure Leaf         | |       35  |  Silver Hand       |/\\|  80 - 83  |  Thera Leaf        | |  36 - 39  |  Pure Leaf         |\\/|       84  |  Seal of Aura      | |  40 - 41  |  Thera Leaf        |/\\|  85 - 87  |  Mana Leaf         | |       42  |  Kirin Scale       |\\/|  88 - 90  |  Pure Leaf         | |  43 - 44  |  Mana Leaf         |/\\|       91  |  Monkey Paw        | |  45 - 49  |  Pure Leaf         |\\/|  92 - 93  |  Thera Leaf        | |       50  |  Seal of the Soul  |/\\|  94 - 97  |  Mana Leaf         | |  51 - 52  |  Thera Leaf        |\\/|       98  |  Seal of Luck      | |  53 - 55  |  Mana Leaf         |/\\|       99  |  Dice of Caesar    | |       56  |  Seal of Force     |\\/|      100  |  N/A               | '———————————'————————————————————'——'———————————'————————————————————' NOTE     The prize you win depends on the level of Malice you have"
+      },
+      {
+        "type": "NOTE",
+        "line": 181,
+        "char_offset": [
+          11205,
+          11723
+        ],
+        "text": "The only issue with this is that it's a number the system tracks that you cannot see. The levels change at 25/50/75/100, and the early monsters seem to contribute 1 point each toward the total, and it seems that as you go through the game, the stronger monsters give more points. It's something you kind of have to guess point values           as you go; it's more of a guideline than anything, since it just shows what's possible to get by doing so."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                                     Plains\n     [W-1-02]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | By the sluice gate                              * = Initial\n             |                                                 ! = Can only\n       Items | [_] Pure Leaf          ![_] Thera Leaf              have one\n             | [_] Mermaid's Tear     ![_] Mana Seed\n             |![_] Thera Seed          [_] Holy Mother Bust\n             |\n   Equipment | [_] Leather Belt       *[_] Bandanna\n             |*[_] Small Bible        ![_] Leather Belt\n             |*[_] Cotton Blouse      ![_] Bandanna\n             |\n   Valuables |*[_] Pendant             [_] SluiceGateHandle\n             |\n       Souls | [_] Raging Tiger\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy            (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #002  [_] Vampire Bat           |     8  | Dark  |\n #003  [_] Venomous Spider       |    10  | Earth | Inflicts Poison\n #004  [_] Wolf                  |    15  | Wind  |\n       [_] Fox Face              |        | Dark  | Cannot be defeated\n      ~[_] Raging Tiger          |    75  | Earth | Lv. 1 Fusion (Graveyard)\n                                 |        |       |\n #105  [_] Evil 1                | Varies |       | Graveyard Malice\n #106  [_] Evil 2                | Varies |       | Graveyard Malice\n #107  [_] Evil 3                | Varies |       | Graveyard Malice\n #108  [_] Evil 4                | Varies |       | Graveyard Malice\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nAfter some dialogue, you'll regain control. Take a few steps to the upper-left\nto find a [_PURE LEAF_] on the ground, then head down to the next area. Instead\nof following the path, go right into the grass and to the next area, where\nyou'll find a chest containing a [_LEATHER BELT_]. Go ahead and equip this to\nthe Rude Hero. Head back and follow the path west until you find the girl. This\nwill allow you to continue the dialogue, where you'll be able to name your\ncharacters. The default names are Yuri for the Rude Hero and Alice for the Girl\nIn Danger, and I will be referring to them by their default names throughout\nthe guide. Alice will join your party, and you'll regain control.\n\n  NOTE     Alice comes equipped with a [_SMALL BIBLE_], a [_COTTON BLOUSE_],\n¯¯¯¯¯¯¯¯   and a [_BANDANNA_] by default, and also comes with the [_PENDANT_]\n           valuable.\n\nStart to head southeast and examine the body of water to your south. You can't\ncross it yet, so take a few steps southeast. Before stepping on the bridge,\nlook just below where you're standing to find a [_MERMAID'S TEAR_]. Continue\nsoutheast to the next area, where Alice notes that we need to do something with\nthe sluice gate to keep going, so that's our next task.\n\nBefore doing that, head north to the fork, then go east and past the fork here,\nfollowing the path as it turns north and west to another sluice gate. Examine\nit to find out that you need a handle to use it. Now go back to the last fork\nand use the Save Point to the southeast to save, that way if you accidentally\nmess up the next task, you can reload and retry it. In any case, there are two\nways to handle this next task; read them both before deciding which one to try:\n\n1) Examine the sparkling Sluice Gate handle at the bottom part of the screen.\n   You'll have to do a \"Push Ring\" to be able to get the handle, meaning that\n   you have to push the CROSS button several times in order to get the\n   indicator within the allowed range, then press it intermittently to keep it\n   in that area until the time expires. Doing this successfully the first time\n   will not only net you the handle, but also a Leather Belt (raises Attack)\n   here after a sequence of events. If you fail the first time, but succeed the\n   second, you'll receive a Thera Seed, and if you succeed the third or any\n   time after, you'll receive a Thera Leaf.\n\n2) Examine the sparkling Sluice Gate handle at the top part of the screen.\n   You'll have to do a \"Normal Ring\" to be able to get the handle, meaning that\n   you have to push the CROSS button three times when the indicator is within\n   the allowed ranges, just like in battle. Doing this successfully the first\n   time will not only net you the handle, but also a Bandanna (raises Defense)\n   here after a sequence of events. If you fail the first time, but succeed the\n   second, you'll receive a Mana Seed, and if you succeed the third or any time\n   after, you'll receive a Mana Leaf.\n\nRegardless of how you decided to get it, you'll receive the\n[_SLUICEGATEHANDLE_]. Head back to the northeastern side of this area and use\nthe SluiceGateHandle on the Sluice Gate to lower the water running through the\nplain. Start to make your way back to the previous area, and they'll decide to\ntake a rest for a while. Shortly after Alice falls asleep, a mysterious figure\nknown as Fox Face will appear, and you'll have to fight him in battle.\n\n  NOTE     Once again, it's impossible to win this battle, so feel free to just\n¯¯¯¯¯¯¯¯   wail away at him until he uses the !!! attack to reduce your HP to\n           1, followed by being knocked out once again.\n\nAfter the battle, you'll be in the Graveyard, the one in Yuri's dreams. When\nyou gain control, head north and examine the glowing green tombstone to be\nthrown into a battle, this time with the Raging Tiger.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Raging Tiger          |    75 HP  | Class: Earth |                          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Hey, we can win this one! Go ahead and use Yuri's Fusion skill to become   |\n|  the Death Emperor, then use normal attacks to wipe out the Raging Tiger.   |\n|  He's not tough at all, and should take just a couple turns to take out.    |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'\n\nBy defeating him in battle, Yuri can now equip the soul of [_RAGING TIGER_],\nTigerion! Be sure to equip it in the menu. Next, head west and talk to the\nMasks here, who'll tell you that you need to defeat the accumulation of Malice\nwithin you to be able to leave the Graveyard. You'll then enter a battle with\nEvil 4. He's pretty easy; just fuse into the Raging Tiger and dish out some\nstrong hits to take him out in a turn or two.\n\n  NOTE     To sum up everything that the Masks have said: The Talisman Yuri\n¯¯¯¯¯¯¯¯   holds will show the level of Malice that has accumulated in his\n           soul. To rid himself of the Malice, he must return to the Graveyard\n           and fight an incarnate of his Malice to keep from having to face Fox\n           Face in battle. Each enemy you defeat will increase the Malice\n           Meter, so make sure that your Malice level (found in the menu) does\n           NOT reach the red. If it does, IMMEDIATELY go to the Graveyard and\n           fight your Malice so that you don't fight Fox Face. Right now, you\n           WILL die if you try to fight him, so if you run into him, press the\n           R1 button and choose to Run Away.\n\n  NOTE     You also will now see the Soul Energy screen after battle. It shows\n¯¯¯¯¯¯¯¯   you how many points away you are from leveling up a class. Once a\n           class is leveled, you can visit the Graveyard and obtain a new\n           Fusion by examining the glowing gravestones (but only up to level 1\n           Fusions for now; level 2 will be available later in the game.) If\n           you're confused about how Malice and the Graveyard work, check out\n           the Help section in the menu for a full explanation.\n\nOnce you're done with the Masks, head east and back out into the real world,\nwhere Alice will rejoin and you'll regain control.\n\n  NOTE     You can fight Evil 1, Evil 2, Evil 3, and even Evil 4 again by\n¯¯¯¯¯¯¯¯   returning to the Graveyard and fighting them when your Malice level\n           is at a certain color:\n\n           - Evil 1: Between Blue and Turquoise.\n           - Evil 2: Between Turquoise and Green.\n           - Evil 3: Between Green and Yellow.\n           - Evil 4: Between Yellow and Red.\n           - After each battle, you'll receive an item based on your Malice!\n\n     .———————————.————————————————————.  .———————————.————————————————————.\n     |  Malice   |  Prize             |——|  Malice   |  Prize             |\n     |===========|====================|/\\|===========|====================|\n     |  01 - 03  |  Thera Leaf        |\\/|  57 - 59  |  Pure Leaf         |\n     |       04  |  Seal of Wisdom    |/\\|       60  |  Seal of Speed     |\n     |  05 - 06  |  Mana Leaf         |\\/|  61 - 62  |  Thera Leaf        |\n     |       07  |  Key to Success    |/\\|       63  |  Seal of Power     |\n     |  08 - 09  |  Pure Leaf         |\\/|  64 - 65  |  Mana Leaf         |\n     |  10 - 14  |  Thera Leaf        |/\\|  66 - 69  |  Pure Leaf         |\n     |  15 - 19  |  Mana Leaf         |\\/|       70  |  Seal of Life      |\n     |  20 - 24  |  Pure Leaf         |/\\|  71 - 73  |  Thera Leaf        |\n     |       25  |  Seal of Vitality  |\\/|  74 - 76  |  Mana Leaf         |\n     |  26 - 29  |  Thera Leaf        |/\\|       77  |  Seventh Key       |\n     |  30 - 34  |  Mana Leaf         |\\/|  78 - 79  |  Pure Leaf         |\n     |       35  |  Silver Hand       |/\\|  80 - 83  |  Thera Leaf        |\n     |  36 - 39  |  Pure Leaf         |\\/|       84  |  Seal of Aura      |\n     |  40 - 41  |  Thera Leaf        |/\\|  85 - 87  |  Mana Leaf         |\n     |       42  |  Kirin Scale       |\\/|  88 - 90  |  Pure Leaf         |\n     |  43 - 44  |  Mana Leaf         |/\\|       91  |  Monkey Paw        |\n     |  45 - 49  |  Pure Leaf         |\\/|  92 - 93  |  Thera Leaf        |\n     |       50  |  Seal of the Soul  |/\\|  94 - 97  |  Mana Leaf         |\n     |  51 - 52  |  Thera Leaf        |\\/|       98  |  Seal of Luck      |\n     |  53 - 55  |  Mana Leaf         |/\\|       99  |  Dice of Caesar    |\n     |       56  |  Seal of Force     |\\/|      100  |  N/A               |\n     '———————————'————————————————————'——'———————————'————————————————————'\n\n  NOTE     The prize you win depends on the level of Malice you have\n¯¯¯¯¯¯¯¯   accumulated, with 100 being the max value. Sadly you can't use this\n           knowledge to get the special prizes again and again, as they are\n           replaced with a Thera Leaf the second time you clear the Malice at\n           the same value.\n\n  NOTE     The only issue with this is that it's a number the system tracks\n¯¯¯¯¯¯¯¯   that you cannot see. The levels change at 25/50/75/100, and the\n           early monsters seem to contribute 1 point each toward the total, and\n           it seems that as you go through the game, the stronger monsters give\n           more points. It's something you kind of have to guess point values           as you go; it's more of a guideline than anything, since it just\n           shows what's possible to get by doing so.\n\nFrom the Save Point, make your way back to the screen with the bridge and the\nriver. There will be a chest here down below the bridge; open it to receive one\nof the following:\n\n   - A [_LEATHER BELT_] if you got the southern gate's handle the first try.\n   - A [_THERA SEED_] if you got the southern gate's handle the second try.\n   - A [_THERA LEAF_] if you got the southern gate's handle the third or more\n     tries.\n   - A [_BANDANNA_] if you got the northern gate's handle the first try.\n   - A [_MANA SEED_] if you got the northern gate's handle the second try.\n   - A [_THERA LEAF_] if you got the northern gate's handle the third or more\n     tries.\n\nOnce you have your treasure, head back across the bridge, then cross the river\nbank to the southwest and follow the path to the next area. Take a few steps to\nthe left for an event, then open the chest to your northwest when you regain\ncontrol for a [_HOLY MOTHER BUST_]. Continue to the village gates, where you'll\nbe able to enter after some short discussion.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

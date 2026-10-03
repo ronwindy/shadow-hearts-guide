@@ -1,0 +1,309 @@
+{
+  "id": "w-2-02",
+  "code": "[W-2-02]",
+  "title": "Bistritz (1)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-01",
+      "code": "[W-2-01]",
+      "title": "Prague (1)",
+      "file": "sections/w-2-01-prague-1.json"
+    },
+    "next": {
+      "id": "w-2-03",
+      "code": "[W-2-03]",
+      "title": "Blue Castle (1)",
+      "file": "sections/w-2-03-blue-castle-1.json"
+    }
+  },
+  "char_count": 5256,
+  "line_count": 97,
+  "overview": {
+    "save_points": [
+      "Near the entrance"
+    ],
+    "items": [
+      "Lottery Ticket",
+      "TalismanOfWisdom",
+      "Mana Seed",
+      "Moon Swallow"
+    ],
+    "valuables": [
+      "East Gate Key",
+      "Moon Card"
+    ]
+  },
+  "items": [
+    "Lottery Ticket",
+    "TalismanOfWisdom",
+    "Mana Seed",
+    "Moon Swallow",
+    "East Gate Key",
+    "Moon Card"
+  ],
+  "enemies": [
+    {
+      "number": "#051",
+      "name": "Birdman",
+      "hp": 54,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Silence"
+    },
+    {
+      "number": "#052",
+      "name": "Mailman",
+      "hp": 65,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Confusion"
+    },
+    {
+      "number": "#053",
+      "name": "Police Dog",
+      "hp": 115,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [
+    {
+      "name": "Chicken Heart",
+      "inventory": [
+        {
+          "name": "Tome of the Sun",
+          "price": 6020
+        },
+        {
+          "name": "Chainmail Vest",
+          "price": 5500
+        },
+        {
+          "name": "Royal Estoc",
+          "price": 6230
+        },
+        {
+          "name": "Silk Bolero",
+          "price": 5940
+        }
+      ]
+    },
+    {
+      "name": "Do Re Mi Shop",
+      "inventory": [
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Metal Belt",
+          "price": 3000
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Soul Benediction",
+          "price": 500
+        },
+        {
+          "name": "Pocket Watch",
+          "price": 5200
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Coral Lariat",
+          "price": 5050
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 50,
+        "char_offset": [
+          3097,
+          3115
+        ],
+        "context": "Take a few steps southwest to be back on the first screen, then check the ground near the left stone pillar to find a [_LOTTERY TICKET_]. Now make your way back into the village, and use the Save Point if you wish. Go to the northwest part of the are"
+      },
+      {
+        "name": "MANA SEED",
+        "raw_tag": "[_MANA SEED_]",
+        "matched_overview_item": "Mana Seed",
+        "category": "items",
+        "line": 53,
+        "char_offset": [
+          3304,
+          3317
+        ],
+        "context": "Take a few steps southwest to be back on the first screen, then check the ground near the left stone pillar to find a [_LOTTERY TICKET_]. Now make your way back into the village, and use the Save Point if you wish. Go to the northwest part of the are"
+      },
+      {
+        "name": "TALISMANOFWISOM",
+        "raw_tag": "[_TALISMANOFWISOM_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 54,
+        "char_offset": [
+          3402,
+          3421
+        ],
+        "context": "Take a few steps southwest to be back on the first screen, then check the ground near the left stone pillar to find a [_LOTTERY TICKET_]. Now make your way back into the village, and use the Save Point if you wish. Go to the northwest part of the are"
+      },
+      {
+        "name": "EAST GATE KEY",
+        "raw_tag": "[_EAST GATE KEY_]",
+        "matched_overview_item": "East Gate Key",
+        "category": "valuables",
+        "line": 76,
+        "char_offset": [
+          4388,
+          4405
+        ],
+        "context": "Examine the door to the house in the northwestern corner for a scene, then go back to the eastern side of town. Check the doors to the houses to the north for some dialogue, then go back into the southeastern house for a long scene, where you'll rece"
+      },
+      {
+        "name": "MOON SWALLOW",
+        "raw_tag": "[_MOON SWALLOW_]",
+        "matched_overview_item": "Moon Swallow",
+        "category": "items",
+        "line": 79,
+        "char_offset": [
+          4507,
+          4523
+        ],
+        "context": "Before leaving, check the floor at the bottom-right of the screen near the barrels and boxes for a [_MOON SWALLOW_], then open a somewhat hidden chest on the right side of the room for the [_MOON CARD_]. If you like, shop with Nina for some items, an"
+      },
+      {
+        "name": "MOON CARD",
+        "raw_tag": "[_MOON CARD_]",
+        "matched_overview_item": "Moon Card",
+        "category": "valuables",
+        "line": 80,
+        "char_offset": [
+          4597,
+          4610
+        ],
+        "context": "Before leaving, check the floor at the bottom-right of the screen near the barrels and boxes for a [_MOON SWALLOW_], then open a somewhat hidden chest on the right side of the room for the [_MOON CARD_]. If you like, shop with Nina for some items, an"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 69,
+        "char_offset": [
+          3952,
+          4130
+        ],
+        "text": "Examining the first door to the north here to will give you access to the weapon shop. Again, hold off just a bit until we get that Guild Card."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                               Bistritz (1)\n     [W-2-02]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Near the entrance\n             |\n       Items | [_] Lottery Ticket      [_] TalismanOfWisdom\n             | [_] Mana Seed           [_] Moon Swallow\n             |\n   Valuables | [_] East Gate Key       [_] Moon Card\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                           |   HP   | Class | Notes\n=================================|========|=======|============================\n #051  [_] Birdman               |    54  | Fire  | Inflicts Silence\n #052  [_] Mailman               |    65  | Earth | Inflicts Confusion\n #053  [_] Police Dog            |   115  | Water |\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Chicken Heart   -$-                   |\n       |===============================v===============================|\n       | Tome of the Sun     -    6020 | Chainmail Vest      -    5500 |\n       | Royal Estoc         -    6230 | Silk Bolero         -    5940 |\n       '———————————————————————————————'———————————————————————————————'\n\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Do Re Mi Shop   -$-                   |\n       |===============================v===============================|\n       | Studded Cap         -    1700 | Thera Seed          -     120 |\n       | Western Belt        -    1700 | Thera Root          -     300 |\n       | Metal Belt          -    3000 | Mana Seed           -     300 |\n       | Shell Bracelet      -    2770 | Mana Root           -     500 |\n       | Bone Bracelet       -    2960 | Pure Leaf           -     230 |\n       | Rosewood Bracelet   -    3000 | Pure Seed           -     510 |\n       | Bell Bracelet       -    3120 | TalismanOfLuck      -     480 |\n       | Mirror Bracelet     -    3240 | TalismanOfMercy     -     820 |\n       | Spikes              -    2810 | Soul Benediction    -     500 |\n       | Pocket Watch        -    5200 | Bronze Arrowhead    -     100 |\n       | Leonardo's Bear     -    3330 | Bronze Dagger       -     200 |\n       | Voodoo Doll         -    5200 | Silver Hourglass    -     100 |\n       | Coral Lariat        -    5050 | Gold Hourglass      -     200 |\n       |                               | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\nTake a few steps southwest to be back on the first screen, then check the\nground near the left stone pillar to find a [_LOTTERY TICKET_]. Now make your\nway back into the village, and use the Save Point if you wish. Go to the\nnorthwest part of the area and search the somewhat hidden area to the right of\nthe church to find a [_MANA SEED_]. Head east to the next area, then make your\nway all the way to the right; there's a [_TALISMANOFWISOM_] in the northeast\ncorner near the gate.\n\nOnce you have those items, check the door to the house to the southeast, where\na little girl will ask if you're her dad.\n\n——————————————————————————————————————\n   [1] No, it's a monster\n   [2] I'm a friend of your father.\n——————————————————————————————————————\n\nChoose 2 to be let inside, where you'll have some dialogue with Terry's family.\nAfterward, you'll regain control outside, and will have to do battle with\nmonsters randomly, as the fog is red. Head west back to the first area.\n\n  NOTE     Examining the first door to the north here to will give you access\n¯¯¯¯¯¯¯¯   to the weapon shop. Again, hold off just a bit until we get that\n           Guild Card.\n\nExamine the door to the house in the northwestern corner for a scene, then go\nback to the eastern side of town. Check the doors to the houses to the north\nfor some dialogue, then go back into the southeastern house for a long scene,\nwhere you'll receive the [_EAST GATE KEY_].\n\nBefore leaving, check the floor at the bottom-right of the screen near the\nbarrels and boxes for a [_MOON SWALLOW_], then open a somewhat hidden chest on\nthe right side of the room for the [_MOON CARD_]. If you like, shop with Nina\nfor some items, and make sure to stop by the weapons shop to upgrade Alice's\nand Zhuzhen's equipment. When you're ready, go to the eastern side of the\nvillage and examine the eastern gate. Unlock it?\n\n——————————————————————————————————————————\n   [1] No, I don't want to leave.\n   [2] Yes, go through the east forest.\n——————————————————————————————————————————\n\nChoose 2 to unlock the gate and proceed. Out here on the World Map, enter the\nBlue Castle.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

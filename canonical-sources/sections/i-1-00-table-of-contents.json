@@ -1,0 +1,42 @@
+{
+  "id": "i-1-00",
+  "code": "[I-1-00]",
+  "title": "Table of Contents",
+  "category": "Introduction",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "header",
+      "code": "[HEADER]",
+      "title": "Title, Metadata & Intro Notes",
+      "file": "sections/header-title-metadata-intro-notes.json"
+    },
+    "next": {
+      "id": "i-1-01",
+      "code": "[I-1-01]",
+      "title": "Game Manual / Instructions",
+      "file": "sections/i-1-01-game-manual-instructions.json"
+    }
+  },
+  "char_count": 6120,
+  "line_count": 100,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n\n        ««  Shadow Hearts  »»                                   [I-1-00]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                          Table of Contents                          \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n   Introduction\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nTable of Contents  . . . . . . . . . . . . . . . . . . . . . . . . . .[I-1-00]\nGame Manual / Instructions . . . . . . . . . . . . . . . . . . . . . .[I-1-01]\n\n\n   Walkthrough\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nWalkthrough - Shadow Hearts (Asia) . . . . . . . . . . . . . . . . . .[W-1-00]\n  Trans-Siberian Express . . . . . . . . . . . . . . . . . . . . . . .[W-1-01]\n  Plains . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-1-02]\n  Zhaoyang Village . . . . . . . . . . . . . . . . . . . . . . . . . .[W-1-03]\n  Fengtian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-1-04]\n  Dalian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-1-05]\n  Smuggler's Boat  . . . . . . . . . . . . . . . . . . . . . . . . . .[W-1-06]\n  Shanghai, Huayuan (1)  . . . . . . . . . . . . . . . . . . . . . . .[W-1-07]\n  Temple Ruins . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-1-08]\n  Shanghai, Huayuan (2)  . . . . . . . . . . . . . . . . . . . . . . .[W-1-09]\n  Asia Side Quests . . . . . . . . . . . . . . . . . . . . . . . . . .[W-1-10]\n    Yuri's Level 1 Fusions (Side Quest)  . . . . . . . . . . . . . . .[W-S-01]*\n    Kowloon Fortress (Side Quest)  . . . . . . . . . . . . . . . . . .[W-S-02]*\n    Mr Zhen's Pit Fight (Side Quest) . . . . . . . . . . . . . . . . .[W-S-03]*\n  Shanghai, Kuihai Tower . . . . . . . . . . . . . . . . . . . . . . .[W-1-11]\n\nWalkthrough - Shadow Hearts (Europe) . . . . . . . . . . . . . . . . .[W-2-00]\n  Prague (1) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-01]\n  Bistritz (1) . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-02]\n  Blue Castle (1)  . . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-03]\n  Bistritz (2) . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-04]\n  Blue Castle (2)  . . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-05]\n  Prague (2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-06]\n  Rouen  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-07]\n  London, Old Castle Street  . . . . . . . . . . . . . . . . . . . . .[W-2-08]\n  London, Orphanage  . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-09]\n  Calios Mental Hospital (1) . . . . . . . . . . . . . . . . . . . . .[W-2-10]\n  Europe Side Quests, Part 1 . . . . . . . . . . . . . . . . . . . . .[W-2-11]\n    Calios Mental Hospital (2) . . . . . . . . . . . . . . . . . . . .[W-S-04]*\n    Yuri's Gravestones . . . . . . . . . . . . . . . . . . . . . . . .[W-S-05]*\n  Nemeton Monastery (1)  . . . . . . . . . . . . . . . . . . . . . . .[W-2-12]\n  Europe Side Quests, Part 2 . . . . . . . . . . . . . . . . . . . . .[W-2-13]\n    Nemeton Monastery (Book of Rituals / Codex of Lurie) . . . . . . .[W-S-06]*\n    The Orphanage (Emigre Manuscript / Lottery Member #3)  . . . . . .[W-S-07]*\n    Rouen (Silent Peddler / Margarete's Armor, Weapon, &\n    Confession / Zhuzhen's Armor / Lottery Member #2)  . . . . . . . .[W-S-08]*\n    Blue Castle (Keith's Weapon / Lottery Member #1) . . . . . . . . .[W-S-09]*\n    Prague (Rare Shop / The Dollhouse / Alice's Weapon)  . . . . . . .[W-S-10]*\n    Cave Temple (Keith's Armor / Zhuzhen's Weapon) . . . . . . . . . .[W-S-11]*\n    Ancient Ruins (Alice's Armor / Halley's Weapon)  . . . . . . . . .[W-S-12]*\n    Yuri's Level 2 & 3 Fusions, ???? Attacks . . . . . . . . . . . . .[W-S-13]*\n    Sharon's Pit Fight (Halley's Armor / Other Items)  . . . . . . . .[W-S-14]*\n    The Good Ending (Defeating the Masks)  . . . . . . . . . . . . . .[W-S-15]*\n  Nemeton Monastery (2)  . . . . . . . . . . . . . . . . . . . . . . .[W-2-14]\n  Europe Side Quests, Part 3 . . . . . . . . . . . . . . . . . . . . .[W-2-15]\n    Nemeton Monastery (The Seraphic Radiance /\n    Yuri's Weapon & Armor / Lottery Member #0) . . . . . . . . . . . .[W-S-16]*\n  Final Preparations . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-16]\n  Neameeto . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-17]\n  New Game+  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[W-2-18]\n\n  * = Side Quest\n\n\n   Appendices\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nAppendices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-00]\n  Special Skills / Souls . . . . . . . . . . . . . . . . . . . . . . .[A-1-01]\n  Weapons  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-02]\n  Armor  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-03]\n  Accessories  . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-04]\n  Items  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-05]\n  Valuables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-06]\n  Store/Shop List  . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-07]\n  Acupuncturist Costs  . . . . . . . . . . . . . . . . . . . . . . . .[A-1-08]\n  The Lottery  . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-09]\n  Malice Rewards . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-10]\n  Pedometer Rewards  . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-11]\n  NPC Library (* some spoilers *)  . . . . . . . . . . . . . . . . . .[A-1-12]\n  Monster Library (Bestiary) . . . . . . . . . . . . . . . . . . . . .[A-1-13]\n  Sub-bosses and Bosses  . . . . . . . . . . . . . . . . . . . . . . .[A-1-14]\n  Help (detailed, available in-game) . . . . . . . . . . . . . . . . .[A-1-15]\n\n\n   Conclusion\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nVersion History  . . . . . . . . . . . . . . . . . . . . . . . . . . .[C-1-01]\nThanks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[C-1-02]\nCopyright / Disclaimer / Credits . . . . . . . . . . . . . . . . . . .[C-1-03]"
+}

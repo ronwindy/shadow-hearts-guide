@@ -1,0 +1,312 @@
+{
+  "id": "w-2-09",
+  "code": "[W-2-09]",
+  "title": "London, Orphanage",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-08",
+      "code": "[W-2-08]",
+      "title": "London, Old Castle Street",
+      "file": "sections/w-2-08-london-old-castle-street.json"
+    },
+    "next": {
+      "id": "w-2-10",
+      "code": "[W-2-10]",
+      "title": "Calios Mental Hospital (1)",
+      "file": "sections/w-2-10-calios-mental-hospital-1.json"
+    }
+  },
+  "char_count": 11860,
+  "line_count": 197,
+  "overview": {
+    "save_points": [
+      "Main entryway"
+    ],
+    "items": [
+      "Seal of Luck",
+      "Eye of Ouroboros",
+      "Pure Extract",
+      "Lottery Ticket",
+      "Monkey Paw"
+    ],
+    "equipment": [
+      "Zodiac Bracelet",
+      "Draze",
+      "Monk Earrings"
+    ],
+    "valuables": [
+      "Guestroom Key"
+    ]
+  },
+  "items": [
+    "Seal of Luck",
+    "Eye of Ouroboros",
+    "Pure Extract",
+    "Lottery Ticket",
+    "Monkey Paw",
+    "Zodiac Bracelet",
+    "Draze",
+    "Monk Earrings",
+    "Guestroom Key"
+  ],
+  "enemies": [
+    {
+      "number": "#061",
+      "name": "Larmgelg",
+      "hp": 164,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#062",
+      "name": "Banshee",
+      "hp": 153,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Uses SP Lowering"
+    },
+    {
+      "number": "#063",
+      "name": "Night Stalker",
+      "hp": 2500,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": ""
+    },
+    {
+      "number": null,
+      "name": "Jack",
+      "hp": 2500,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Inflicts Paralysis"
+    },
+    {
+      "number": "#064",
+      "name": "Mammon",
+      "hp": 3600,
+      "class": "Earth",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Petrification"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Mammon",
+      "enemies": [
+        {
+          "name": "Mammon",
+          "hp": 3600,
+          "class": "Earth",
+          "drop": "Demon Earrings"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 31
+        },
+        {
+          "name": "Halley",
+          "level": 29
+        },
+        {
+          "name": "Alice",
+          "level": 31
+        }
+      ],
+      "exp": 20000,
+      "cash": 16000,
+      "strategy": "Mammon's normal attacks will hit for pretty decent damage, but its\nbiggest threat is its Petrification attack, which hopefully you've\nprevented with either a Zodiac Bracelet or a Crucifix, though it'll still\ndo a decent amount of damage, even if you did. It will also use a\nShockwave spell, doing quite a bit a damage to your entire party, as well\nas Needlerain, a strong attack to just one party member.\nIts Howling skill will replenish its HP by 500+ once it's near dying, but\nlucky for you, Yuri's a powerhouse and will take that away and then some\nin one round.\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use his Air Edge on\nYuri to increase Yuri's damage output, then have him cast Aqua Blade for\nthe remainder of the battle, unless he's learned Air Shot by now, then by\nall means, use that. Alice should be healing as needed, using Blessed\nLight when no healing is needed."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Mammon",
+    "enemies": [
+      {
+        "name": "Mammon",
+        "hp": 3600,
+        "class": "Earth",
+        "drop": "Demon Earrings"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 31
+      },
+      {
+        "name": "Halley",
+        "level": 29
+      },
+      {
+        "name": "Alice",
+        "level": 31
+      }
+    ],
+    "exp": 20000,
+    "cash": 16000,
+    "strategy": "Mammon's normal attacks will hit for pretty decent damage, but its\nbiggest threat is its Petrification attack, which hopefully you've\nprevented with either a Zodiac Bracelet or a Crucifix, though it'll still\ndo a decent amount of damage, even if you did. It will also use a\nShockwave spell, doing quite a bit a damage to your entire party, as well\nas Needlerain, a strong attack to just one party member.\nIts Howling skill will replenish its HP by 500+ once it's near dying, but\nlucky for you, Yuri's a powerhouse and will take that away and then some\nin one round.\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use his Air Edge on\nYuri to increase Yuri's damage output, then have him cast Aqua Blade for\nthe remainder of the battle, unless he's learned Air Shot by now, then by\nall means, use that. Alice should be healing as needed, using Blessed\nLight when no healing is needed."
+  },
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "GUESTROOM KEY",
+        "raw_tag": "[_GUESTROOM KEY_]",
+        "matched_overview_item": "Guestroom Key",
+        "category": "valuables",
+        "line": 59,
+        "char_offset": [
+          3383,
+          3400
+        ],
+        "context": "After taking him out, open the door to the left for a scene, where you'll receive the [_GUESTROOM KEY_]. Check near the bed in the lower-left corner to find a [_SEAL OF LUCK_], then check behind the bed on the left in the middle for a [_PURE EXTRACT_"
+      },
+      {
+        "name": "SEAL OF LUCK",
+        "raw_tag": "[_SEAL OF LUCK_]",
+        "matched_overview_item": "Seal of Luck",
+        "category": "items",
+        "line": 60,
+        "char_offset": [
+          3456,
+          3472
+        ],
+        "context": "After taking him out, open the door to the left for a scene, where you'll receive the [_GUESTROOM KEY_]. Check near the bed in the lower-left corner to find a [_SEAL OF LUCK_], then check behind the bed on the left in the middle for a [_PURE EXTRACT_"
+      },
+      {
+        "name": "PURE EXTRACT",
+        "raw_tag": "[_PURE EXTRACT_]",
+        "matched_overview_item": "Pure Extract",
+        "category": "items",
+        "line": 61,
+        "char_offset": [
+          3532,
+          3548
+        ],
+        "context": "After taking him out, open the door to the left for a scene, where you'll receive the [_GUESTROOM KEY_]. Check near the bed in the lower-left corner to find a [_SEAL OF LUCK_], then check behind the bed on the left in the middle for a [_PURE EXTRACT_"
+      },
+      {
+        "name": "MONKEY PAW",
+        "raw_tag": "[_MONKEY PAW_]",
+        "matched_overview_item": "Monkey Paw",
+        "category": "items",
+        "line": 62,
+        "char_offset": [
+          3617,
+          3631
+        ],
+        "context": "After taking him out, open the door to the left for a scene, where you'll receive the [_GUESTROOM KEY_]. Check near the bed in the lower-left corner to find a [_SEAL OF LUCK_], then check behind the bed on the left in the middle for a [_PURE EXTRACT_"
+      },
+      {
+        "name": "EYE OF OUROBOROS",
+        "raw_tag": "[_EYE OF OUROBOROS_]",
+        "matched_overview_item": "Eye of Ouroboros",
+        "category": "items",
+        "line": 65,
+        "char_offset": [
+          3744,
+          3764
+        ],
+        "context": "Head up the stairs, then go right and down to find an [_EYE OF OUROBOROS_]. Now make your way to the left side of the room, then down to find a [_ZODIAC BRACELET_]. Next, head into the room against the upper wall, on the left side. Examine the books "
+      },
+      {
+        "name": "ZODIAC BRACELET",
+        "raw_tag": "[_ZODIAC BRACELET_]",
+        "matched_overview_item": "Zodiac Bracelet",
+        "category": "equipment",
+        "line": 67,
+        "char_offset": [
+          3834,
+          3853
+        ],
+        "context": "Head up the stairs, then go right and down to find an [_EYE OF OUROBOROS_]. Now make your way to the left side of the room, then down to find a [_ZODIAC BRACELET_]. Next, head into the room against the upper wall, on the left side. Examine the books "
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 71,
+        "char_offset": [
+          4145,
+          4163
+        ],
+        "context": "Head up the stairs, then go right and down to find an [_EYE OF OUROBOROS_]. Now make your way to the left side of the room, then down to find a [_ZODIAC BRACELET_]. Next, head into the room against the upper wall, on the left side. Examine the books "
+      },
+      {
+        "name": "MONK EARRINGS",
+        "raw_tag": "[_MONK EARRINGS_]",
+        "matched_overview_item": "Monk Earrings",
+        "category": "equipment",
+        "line": 76,
+        "char_offset": [
+          4459,
+          4476
+        ],
+        "context": "Go over to the door on the right upstairs, and it'll ask for a password, so enter \"5375\" from the picture's date to unlock the door. Check in front of the fireplace in this room to find some [_MONK EARRINGS_], then check the desk above the fireplace "
+      },
+      {
+        "name": "DRAZE",
+        "raw_tag": "[_DRAZE_]",
+        "matched_overview_item": "Draze",
+        "category": "equipment",
+        "line": 183,
+        "char_offset": [
+          11252,
+          11261
+        ],
+        "context": "There's one more item to be had at the Orphanage, so leave Old Castle Street and go back to the Orphanage one last time. Go into the center room where you fought Jack and check behind the wire grating on the right; you'll find the [_DRAZE_], a better"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 29,
+        "char_offset": [
+          1481,
+          1820
+        ],
+        "text": "If Yuri doesn't have his level 2 Fire and Water Fusions yet, I recommend taking the time fighting the Banshees and Larmgelgs here to get them. Having the Fire Fusion will help immensely in the upcoming boss battles. You may want to equip Pocket Watches while fighting the Larmgelgs."
+      },
+      {
+        "type": "NOTE",
+        "line": 83,
+        "char_offset": [
+          4829,
+          5034
+        ],
+        "text": "The next boss uses Paralysis, and the one after that uses Petrification, so make sure each party member is wearing either a Zodiac Bracelet or a Crucifix to prevent both."
+      },
+      {
+        "type": "NOTE",
+        "line": 189,
+        "char_offset": [
+          11461,
+          11701
+        ],
+        "text": "As before, I recommend bringing Alice with you, mainly because the main boss the next boss is a Dark class. You can change your party with Meiyuan on Old Castle Street to whomever you want, if you wish."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                          London, Orphanage\n     [W-2-09]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Main entryway\n             |\n       Items | [_] Seal of Luck        [_] Eye of Ouroboros\n             | [_] Pure Extract        [_] Lottery Ticket\n             | [_] Monkey Paw\n             |\n   Equipment | [_] Zodiac Bracelet     [_] Draze\n             | [_] Monk Earrings\n             |\n   Valuables | [_] Guestroom Key\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy (* = BOSS) (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #061  [_] Larmgelg              |   164  | Water | Inflicts Ring anomalies\n #062  [_] Banshee               |   153  | Fire  | Uses SP Lowering\n #063 ~[_] Night Stalker         |  2500  | Wind  |\n      ~[_] Jack                  |  2500  | Water | Inflicts Paralysis\n #064 *[_] Mammon                |  3600  | Earth | Inflicts Petrification\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     If Yuri doesn't have his level 2 Fire and Water Fusions yet, I\n¯¯¯¯¯¯¯¯   recommend taking the time fighting the Banshees and Larmgelgs here\n           to get them. Having the Fire Fusion will help immensely in the\n           upcoming boss battles. You may want to equip Pocket Watches while\n           fighting the Larmgelgs.\n\nEnter the Orphanage, then SAVE your game on the right. When you're ready, try\nto go through the western door to trigger a scene and a sub-boss battle.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Night Stalker         |  2500 HP  | Class: Wind  | [_] Kid's Room Key       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  There's not much to worry about with this guy; other than boosting         |\n|  himself up, his physical attacks do a decent amount of damage, but that's  |\n|  it. Have Alice whoever is attacked.                                        |\n|                                                                             |\n|  Have Yuri fuse into Ifrit, using Ignition to boost his attack power, then  |\n|  start wailing on the Night Stalker with physical attacks. Have Halley      |\n|  constantly use his Strong Earth attack, which should do pretty decent      |\n|  damage to the wind-based enemy. Have Alice keep everyone healed, using     |\n|  Blessed Light when she's not healing.                                      |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   04000 EXP   / \\   03600 Cash   /\n     '—————————————'   '——————————————'\n\nAfter taking him out, open the door to the left for a scene, where you'll\nreceive the [_GUESTROOM KEY_]. Check near the bed in the lower-left corner to\nfind a [_SEAL OF LUCK_], then check behind the bed on the left in the middle\nfor a [_PURE EXTRACT_]. Finally, check between the two beds at the top of the\nscreen for a [_MONKEY PAW_]. Once you have everything, go back out into the\nhallway.\n\nHead up the stairs, then go right and down to find an [_EYE OF OUROBOROS_]. Now\nmake your way to the left side of the room, then down to find a\n[_ZODIAC BRACELET_]. Next, head into the room against the upper wall, on the\nleft side. Examine the books on the table in here to do a Normal Ring that\nspins REALLY fast, which will allow you to see the following date:\n5, March, 75, so remember \"5375\" for later. Check the floor in front of the\nfireplace for a [_LOTTERY TICKET_], then feel free to read the diary on the\ndesk at the bottom of the screen if you like. Leave the room.\n\nGo over to the door on the right upstairs, and it'll ask for a password, so\nenter \"5375\" from the picture's date to unlock the door. Check in front of the\nfireplace in this room to find some [_MONK EARRINGS_], then check the desk\nabove the fireplace for another Normal Ring. After completing it, read the\nmaster's diary to find out what's really been going on around here, then\nexamine the painting to the right of the desk, showing it was done on the\nfollowing date: 3 July, 54, so remember \"3754\" for the next password. Leave\nthis room, then SAVE YOUR GAME.\n\n  NOTE     The next boss uses Paralysis, and the one after that uses\n¯¯¯¯¯¯¯¯   Petrification, so make sure each party member is wearing either a\n           Zodiac Bracelet or a Crucifix to prevent both.\n\nWhen you're ready, examine the northern door in the center and input \"3754\",\nthen go inside. Watch the events unfold, and you'll have to take on Jack\nhimself.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Jack                  |  2500 HP  | Class: Water | [_] Seal of Speed        |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Jack will mainly just use his Paralysis attack against you, though you     |\n|  should be guarded by a Zodiac Bracelet or a Crucifix. He will also use     |\n|  pretty strong physical attacks, and his Slash attack, which will do MAJOR  |\n|  damage to one party member, so make sure to stay healed. He will use       |\n|  Thera Seeds when his HP starts to drop.                                    |\n|                                                                             |\n|  When fighting, keep in mind that you have a harder boss battle right       |\n|  after this, with no chance to heal.                                        |\n|                                                                             |\n|  Have Yuri fuse into Ifrit and use his Ignition to boost his attack, then   |\n|  have him attack as normal. Have Halley cast Strong Earth continuously      |\n|  (not Aqua Blade, since Jack is water based) for the whole battle, unless   |\n|  he's learned Air Shot by now, then by all means, use that. Alice should    |\n|  be healing as needed, using Blessed Light when no healing is needed.       |\n|                                                                             |\n|  If you're comfortable at the end, take a turn or two to make sure          |\n|  everyone is healed to the max and ready for the next battle.               |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   17000 EXP   / \\   15000 Cash   /\n     '—————————————'   '——————————————'\n\nWithout getting a chance to breathe, you'll be thrown into an even harder boss\nbattle.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Mammon                |  3600 HP  | Class: Earth | [_] Demon Earrings       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [31]     |    Halley [29]    |                   |        |\n|        |                   |                   |     Alice [31]    |        |\n|        |===================|===================|===================|        |\n|        | Brass Knuckles    | Oak Slingshot     | Ever-Bible        |        |\n|        | RedLeatherJacket  | RedLeatherJacket  | Jasper Cape       |        |\n|        | Mind's Eye        | Priest Earrings   | Anne's Cross      |        |\n|        | Demon Earrings    | Warlock Earrings  | Brsrkr Earrings   |        |\n|        | Zodiac Bracelet   | Zodiac Bracelet   | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | Baldo             |                   |                   |        |\n|        | Charon            |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Mammon's normal attacks will hit for pretty decent damage, but its         |\n|  biggest threat is its Petrification attack, which hopefully you've         |\n|  prevented with either a Zodiac Bracelet or a Crucifix, though it'll still  |\n|  do a decent amount of damage, even if you did. It will also use a          |\n|  Shockwave spell, doing quite a bit a damage to your entire party, as well  |\n|  as Needlerain, a strong attack to just one party member.                   |\n|                                                                             |\n|  Its Howling skill will replenish its HP by 500+ once it's near dying, but  |\n|  lucky for you, Yuri's a powerhouse and will take that away and then some   |\n|  in one round.                                                              |\n|                                                                             |\n|  As usual, have Yuri fuse into Ifrit and use his Ignition to boost his      |\n|  attack, then have him attack as normal. Have Halley use his Air Edge on    |\n|  Yuri to increase Yuri's damage output, then have him cast Aqua Blade for   |\n|  the remainder of the battle, unless he's learned Air Shot by now, then by  |\n|  all means, use that. Alice should be healing as needed, using Blessed      |\n|  Light when no healing is needed.                                           |\n|                                                                             |'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   20000 EXP   / \\   16000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, you'll watch a quick scene, then you'll be back at the London\nRats' hideout. After a few more events, you'll regain control.\n\nMake your way all the way downstairs, saving if you wish. Talk to little Joshua\ndown here, who will ask Halley if he can have his slingshot.\n\n_____________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n   ———>   [1] Sure. don't need it.    <———\n          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n          [2] Nah, I still need it.\n_____________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nMAKE SURE TO CHOOSE 1! If you choose 2, you'll miss out on getting a better\nweapon for Halley later on.\n\nThere's one more item to be had at the Orphanage, so leave Old Castle Street\nand go back to the Orphanage one last time. Go into the center room where you\nfought Jack and check behind the wire grating on the right; you'll find the\n[_DRAZE_], a better gun for Margarete.\n\nThat's it for events within the London city limits for now, so head back out to\nthe Britain section of the World Map, then make your way to the Calios Mental\nHospital.\n\n  NOTE     As before, I recommend bringing Alice with you, mainly because the\n¯¯¯¯¯¯¯¯   main boss the next boss is a Dark class. You can change your party\n           with Meiyuan on Old Castle Street to whomever you want, if you wish.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

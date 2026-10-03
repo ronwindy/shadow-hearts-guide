@@ -1,0 +1,415 @@
+{
+  "id": "w-2-10",
+  "code": "[W-2-10]",
+  "title": "Calios Mental Hospital (1)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-09",
+      "code": "[W-2-09]",
+      "title": "London, Orphanage",
+      "file": "sections/w-2-09-london-orphanage.json"
+    },
+    "next": {
+      "id": "w-2-11",
+      "code": "[W-2-11]",
+      "title": "Europe Side Quests, Part 1",
+      "file": "sections/w-2-11-europe-side-quests-part-1.json"
+    }
+  },
+  "char_count": 13977,
+  "line_count": 248,
+  "overview": {
+    "save_points": [
+      "Water vase room (before the bosses)"
+    ],
+    "items": [
+      "Lottery Ticket",
+      "Fruit of Yggdrasil",
+      "Key to Success"
+    ],
+    "equipment": [
+      "Laurel Slingshot",
+      "DemonWardNcklace"
+    ],
+    "valuables": [
+      "Bronze Coin",
+      "Gold Coin",
+      "Heart Key",
+      "Platinum Coin",
+      "Silver Coin",
+      "Dungeon Key",
+      "Club Key",
+      "Fire Gravestone",
+      "Diamond Key"
+    ]
+  },
+  "items": [
+    "Lottery Ticket",
+    "Fruit of Yggdrasil",
+    "Key to Success",
+    "Laurel Slingshot",
+    "DemonWardNcklace",
+    "Bronze Coin",
+    "Gold Coin",
+    "Heart Key",
+    "Platinum Coin",
+    "Silver Coin",
+    "Dungeon Key",
+    "Club Key",
+    "Fire Gravestone",
+    "Diamond Key"
+  ],
+  "enemies": [
+    {
+      "number": "#065",
+      "name": "Specter",
+      "hp": 450,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Confusion"
+    },
+    {
+      "number": "#066",
+      "name": "Meat Eater",
+      "hp": 245,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#067",
+      "name": "Doom",
+      "hp": 225,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#068",
+      "name": "Buggs",
+      "hp": 155,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Poison, Confusion & Silence"
+    },
+    {
+      "number": "#069",
+      "name": "Rausan",
+      "hp": 3500,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Inflicts Silence"
+    },
+    {
+      "number": "#070",
+      "name": "Olga",
+      "hp": 4000,
+      "class": "Dark",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Poison"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Olga",
+      "enemies": [
+        {
+          "name": "Olga",
+          "hp": 4000,
+          "class": "Dark",
+          "drop": "Warlock Earrings"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 34
+        },
+        {
+          "name": "Halley",
+          "level": 33
+        },
+        {
+          "name": "Alice",
+          "level": 34
+        }
+      ],
+      "exp": 22000,
+      "cash": 17000,
+      "strategy": "As before, Olga's Black Fog attack will do MAJOR damage to your party, as\nwell as Poison each one of them, so it's a good idea to come in with\nCosmic Bracelets equipped. Her normal attacks don't do too much damage,\nbut her Icy Breath, Rock Storm and Lightning attacks will also both do\nquite a bit of damage to your entire party, so be careful. Watch out if\nshe uses Mind Assault to steal your MP, as you'll want to recover it\nimmediately if she takes too much.\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. With his attacked laced with Alice's Holy\nEdge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to\nstart with on Yuri, then have her on healing duty. Have Halley use Air\nShot every round, helping Alice heal as needed.\nIf you have it, have Alice take advantage of her Arc spell and just heal\nevery round, it makes this battle MUCH easier.\nIf you're unable to keep up with healing while trying to dish out the\ndamage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo\ninstead of Ifrit, using his healing spell to take care of the party while\nAlice and Halley use Blessed Light and Air Shot to make up the\ndifference."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Olga",
+    "enemies": [
+      {
+        "name": "Olga",
+        "hp": 4000,
+        "class": "Dark",
+        "drop": "Warlock Earrings"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 34
+      },
+      {
+        "name": "Halley",
+        "level": 33
+      },
+      {
+        "name": "Alice",
+        "level": 34
+      }
+    ],
+    "exp": 22000,
+    "cash": 17000,
+    "strategy": "As before, Olga's Black Fog attack will do MAJOR damage to your party, as\nwell as Poison each one of them, so it's a good idea to come in with\nCosmic Bracelets equipped. Her normal attacks don't do too much damage,\nbut her Icy Breath, Rock Storm and Lightning attacks will also both do\nquite a bit of damage to your entire party, so be careful. Watch out if\nshe uses Mind Assault to steal your MP, as you'll want to recover it\nimmediately if she takes too much.\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. With his attacked laced with Alice's Holy\nEdge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to\nstart with on Yuri, then have her on healing duty. Have Halley use Air\nShot every round, helping Alice heal as needed.\nIf you have it, have Alice take advantage of her Arc spell and just heal\nevery round, it makes this battle MUCH easier.\nIf you're unable to keep up with healing while trying to dish out the\ndamage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo\ninstead of Ifrit, using his healing spell to take care of the party while\nAlice and Halley use Blessed Light and Air Shot to make up the\ndifference."
+  },
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "LAUREL SLINGSHOT",
+        "raw_tag": "[_LAUREL SLINGSHOT_]",
+        "matched_overview_item": "Laurel Slingshot",
+        "category": "equipment",
+        "line": 49,
+        "char_offset": [
+          2512,
+          2532
+        ],
+        "context": "Choose 2 to have to take on a set of Specters. Watch the following scenes, then check the small shack where the guards were to find a chest containing a [_LAUREL SLINGSHOT_] for Halley. Go just to the right of that area behind the pillar on the right"
+      },
+      {
+        "name": "DEMONWARDNCKLACE",
+        "raw_tag": "[_DEMONWARDNCKLACE_]",
+        "matched_overview_item": "DemonWardNcklace",
+        "category": "equipment",
+        "line": 51,
+        "char_offset": [
+          2655,
+          2675
+        ],
+        "context": "Choose 2 to have to take on a set of Specters. Watch the following scenes, then check the small shack where the guards were to find a chest containing a [_LAUREL SLINGSHOT_] for Halley. Go just to the right of that area behind the pillar on the right"
+      },
+      {
+        "name": "BRONZE COIN",
+        "raw_tag": "[_BRONZE COIN_]",
+        "matched_overview_item": "Bronze Coin",
+        "category": "valuables",
+        "line": 55,
+        "char_offset": [
+          2874,
+          2889
+        ],
+        "context": "After they're finished, go to the top of the screen and examine the sparkling object in the northwest corner to find a [_BRONZE COIN_]. Go east to the next area, taking on another set of Specters. Keep going right, opening the chest at the right side"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 57,
+        "char_offset": [
+          3024,
+          3042
+        ],
+        "context": "After they're finished, go to the top of the screen and examine the sparkling object in the northwest corner to find a [_BRONZE COIN_]. Go east to the next area, taking on another set of Specters. Keep going right, opening the chest at the right side"
+      },
+      {
+        "name": "HEART KEY",
+        "raw_tag": "[_HEART KEY_]",
+        "matched_overview_item": "Heart Key",
+        "category": "valuables",
+        "line": 62,
+        "char_offset": [
+          3280,
+          3293
+        ],
+        "context": "Move west to take on another set of two Specters, taking them out as well. Move to the head of the body and examine it for the [_HEART KEY_], then examine the sparkling object above the body, beside the table for the [_SILVER COIN_]. There's nowhere "
+      },
+      {
+        "name": "SILVER COIN",
+        "raw_tag": "[_SILVER COIN_]",
+        "matched_overview_item": "Silver Coin",
+        "category": "valuables",
+        "line": 63,
+        "char_offset": [
+          3370,
+          3385
+        ],
+        "context": "Move west to take on another set of two Specters, taking them out as well. Move to the head of the body and examine it for the [_HEART KEY_], then examine the sparkling object above the body, beside the table for the [_SILVER COIN_]. There's nowhere "
+      },
+      {
+        "name": "KEY TO SUCCESS",
+        "raw_tag": "[_KEY TO SUCCESS_]",
+        "matched_overview_item": "Key to Success",
+        "category": "items",
+        "line": 68,
+        "char_offset": [
+          3627,
+          3645
+        ],
+        "context": "The room in the bottom-right corner of the area will now open with the Heart Key, so head inside and open the two chests, a [_KEY TO SUCCESS_], and a [_CLUB KEY_]. Leave this room and head into the next room, opening the chest in here for a rare and "
+      },
+      {
+        "name": "CLUB KEY",
+        "raw_tag": "[_CLUB KEY_]",
+        "matched_overview_item": "Club Key",
+        "category": "valuables",
+        "line": 69,
+        "char_offset": [
+          3653,
+          3665
+        ],
+        "context": "The room in the bottom-right corner of the area will now open with the Heart Key, so head inside and open the two chests, a [_KEY TO SUCCESS_], and a [_CLUB KEY_]. Leave this room and head into the next room, opening the chest in here for a rare and "
+      },
+      {
+        "name": "FRUIT OF YGGDRASIL",
+        "raw_tag": "[_FRUIT OF YGGDRASIL_]",
+        "matched_overview_item": "Fruit of Yggdrasil",
+        "category": "items",
+        "line": 70,
+        "char_offset": [
+          3761,
+          3783
+        ],
+        "context": "The room in the bottom-right corner of the area will now open with the Heart Key, so head inside and open the two chests, a [_KEY TO SUCCESS_], and a [_CLUB KEY_]. Leave this room and head into the next room, opening the chest in here for a rare and "
+      },
+      {
+        "name": "DIAMOND KEY",
+        "raw_tag": "[_DIAMOND KEY_]",
+        "matched_overview_item": "Diamond Key",
+        "category": "valuables",
+        "line": 73,
+        "char_offset": [
+          3888,
+          3903
+        ],
+        "context": "Enter the first door on the top-left, getting the [_DIAMOND KEY_] out of the chest, then head east two doors to the next room. Check the sparkling object on the ground near the bench on the upper wall for the [_GOLD COIN_], then exit and enter the la"
+      },
+      {
+        "name": "GOLD COIN",
+        "raw_tag": "[_GOLD COIN_]",
+        "matched_overview_item": "Gold Coin",
+        "category": "valuables",
+        "line": 75,
+        "char_offset": [
+          4047,
+          4060
+        ],
+        "context": "Enter the first door on the top-left, getting the [_DIAMOND KEY_] out of the chest, then head east two doors to the next room. Check the sparkling object on the ground near the bench on the upper wall for the [_GOLD COIN_], then exit and enter the la"
+      },
+      {
+        "name": "PLATINUM COIN",
+        "raw_tag": "[_PLATINUM COIN_]",
+        "matched_overview_item": "Platinum Coin",
+        "category": "valuables",
+        "line": 77,
+        "char_offset": [
+          4195,
+          4212
+        ],
+        "context": "Enter the first door on the top-left, getting the [_DIAMOND KEY_] out of the chest, then head east two doors to the next room. Check the sparkling object on the ground near the bench on the upper wall for the [_GOLD COIN_], then exit and enter the la"
+      },
+      {
+        "name": "DUNGEON KEY",
+        "raw_tag": "[_DUNGEON KEY_]",
+        "matched_overview_item": "Dungeon Key",
+        "category": "valuables",
+        "line": 116,
+        "char_offset": [
+          6601,
+          6616
+        ],
+        "context": "After the battle, Halley will temporarily leave your party. Make your way back upstairs, then head to the hallway just past the torture chair. You can now finally enter the second door from the left, so go inside, then examine the chest for the [_DUN"
+      },
+      {
+        "name": "FIRE GRAVESTONE",
+        "raw_tag": "[_FIRE GRAVESTONE_]",
+        "matched_overview_item": "Fire Gravestone",
+        "category": "valuables",
+        "line": 117,
+        "char_offset": [
+          6716,
+          6735
+        ],
+        "context": "After the battle, Halley will temporarily leave your party. Make your way back upstairs, then head to the hallway just past the torture chair. You can now finally enter the second door from the left, so go inside, then examine the chest for the [_DUN"
+      },
+      {
+        "name": "OATH GRAIL",
+        "raw_tag": "[_OATH GRAIL_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 196,
+        "char_offset": [
+          11647,
+          11661
+        ],
+        "context": "Go back into the previous room and talk to Joshua to receive the [_OATH GRAIL_]; if you're going for the good ending, then it's critical that you get this item. Leave the hideout, then make your way toward the entrance of the city for an event with H"
+      },
+      {
+        "name": "IMPROVED SLINGSHOT",
+        "raw_tag": "[_IMPROVED SLINGSHOT_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 231,
+        "char_offset": [
+          13312,
+          13334
+        ],
+        "context": "After the quick scene, choose your party. Put Halley in it to start with so we can obtain a better weapon for him. Make your way downstairs and talk to Joshua, where you'll receive the [_IMPROVED SLINGSHOT_]."
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 33,
+        "char_offset": [
+          1764,
+          2169
+        ],
+        "text": "I recommend taking the time to get your level 2 Earth, Wind, and Dark Fusions for Yuri, if you haven't already. For me, all I needed was just the Earth Fusion. With sets of 5 Buggs in this area, if you like, you could try fighting them enough to get your level 3 Dark Fusion, Czernobog, since you should already have the Dark Gravestone."
+      },
+      {
+        "type": "NOTE",
+        "line": 84,
+        "char_offset": [
+          4523,
+          4670
+        ],
+        "text": "The next boss uses Silence, and the one after that uses Poison, so make sure to equip Cosmic Bracelets and/or your Crucifix."
+      },
+      {
+        "type": "NOTE",
+        "line": 120,
+        "char_offset": [
+          6808,
+          7019
+        ],
+        "text": "If you're close to level 35 for Alice, then I strongly recommend fighting a bit more to reach 35 so she can learn the Arc spell. It'll greatly help out in the next boss battle."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                 Calios Mental Hospital (1)\n     [W-2-10]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Water vase room (before the bosses)\n             |\n       Items | [_] Lottery Ticket      [_] Fruit of Yggdrasil\n             | [_] Key to Success\n             |\n   Equipment | [_] Laurel Slingshot    [_] DemonWardNcklace\n             |\n   Valuables | [_] Bronze Coin         [_] Gold Coin\n             | [_] Heart Key           [_] Platinum Coin\n             | [_] Silver Coin         [_] Dungeon Key\n             | [_] Club Key            [_] Fire Gravestone\n             | [_] Diamond Key\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy (* = BOSS) (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #065  [_] Specter               |   450  | Light | Inflicts Confusion\n #066  [_] Meat Eater            |   245  | Wind  |\n #067  [_] Doom                  |   225  | Earth |\n #068  [_] Buggs                 |   155  | Dark  | Inflicts Poison,\n                                 |        |       |    Confusion & Silence\n #069 ~[_] Rausan                |  3500  | Fire  | Inflicts Silence\n #070 *[_] Olga                  |  4000  | Dark  | Inflicts Poison\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     I recommend taking the time to get your level 2 Earth, Wind, and\n¯¯¯¯¯¯¯¯   Dark Fusions for Yuri, if you haven't already. For me, all I needed\n           was just the Earth Fusion. With sets of 5 Buggs in this area, if you\n           like, you could try fighting them enough to get your level 3\n           Dark Fusion, Czernobog, since you should already have the\n           Dark Gravestone.\n\nTake a few steps forward, and you'll be told that you're not allowed here.\n\n—————————————————————————————\n   [1] Okay, we'll leave.\n   [2] Get out of our way!\n—————————————————————————————\n\nChoose 2 to have to take on a set of Specters. Watch the following scenes, then\ncheck the small shack where the guards were to find a chest containing a\n[_LAUREL SLINGSHOT_] for Halley. Go just to the right of that area behind the\npillar on the right to find another chest, this one containing a\n[_DEMONWARDNCKLACE_]. Make your way inside, and take out another set of\nSpecters that come at you.\n\nAfter they're finished, go to the top of the screen and examine the sparkling\nobject in the northwest corner to find a [_BRONZE COIN_]. Go east to the next\narea, taking on another set of Specters. Keep going right, opening the chest at\nthe right side of the room for a [_LOTTERY TICKET_]. Go down into the next\nroom, note the torture chair, and continue south to what appears to be the last\nroom.\n\nMove west to take on another set of two Specters, taking them out as well. Move\nto the head of the body and examine it for the [_HEART KEY_], then examine the\nsparkling object above the body, beside the table for the [_SILVER COIN_].\nThere's nowhere else to go right now, so let's go back to the first area inside\nthe hospital to unlock some doors.\n\nThe room in the bottom-right corner of the area will now open with the Heart\nKey, so head inside and open the two chests, a [_KEY TO SUCCESS_], and a\n[_CLUB KEY_]. Leave this room and head into the next room, opening the chest in\nhere for a rare and welcome [_FRUIT OF YGGDRASIL_]. Leave this room and go\nnorth into the next hallway.\n\nEnter the first door on the top-left, getting the [_DIAMOND KEY_] out of the\nchest, then head east two doors to the next room. Check the sparkling object on\nthe ground near the bench on the upper wall for the [_GOLD COIN_], then exit\nand enter the last room on the right, where you'll find another sparkling\nobject in roughly the same area as the last, the [_PLATINUM COIN_].\n\nMake your way back to the innermost room that you've reached so far, the one\nwith the Save Point. Drop the Bronze Coin in the upper-right vase, the Platinum\nCoin in the lower-right vase, the Gold Coin in the lower-left, and the Silver\nCoin in the upper-left, allowing a new passage to open. SAVE YOUR GAME.\n\n  NOTE     The next boss uses Silence, and the one after that uses Poison, so\n¯¯¯¯¯¯¯¯   make sure to equip Cosmic Bracelets and/or your Crucifix.\n\nWhen you're ready, go down the staircase to the next area and examine the huge\ndoor for a scene and a sub-boss battle.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Rausan                |  3500 HP  | Class: Fire  | [_] Spade Key            |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Rausan will usually start out the battle with Elder Sign, causing your     |\n|  special attacks to be weakened quite a bit. This should only really        |\n|  affect Halley, but not enough to keep him from using his skills. He'll     |\n|  attempt to Silence you as well, but as long as you have Cosmic Bracelets,  |\n|  it'll just inflict a lot of damage. He'll also use Blaze, which will do    |\n|  a decent amount of damage to your whole party.                             |\n|                                                                             |\n|  As usual, have Yuri fuse into Ifrit and use his Ignition to boost his      |\n|  attack, then have him attack as normal. Have Halley use Aqua Blade every   |\n|  round (since Rausan is Fire-based), stopping only to help Alice heal.      |\n|  Alice should be healing as needed, using Blessed Light when no healing is  |\n|  needed.                                                                    |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00120 EXP   / \\   00600 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, Halley will temporarily leave your party. Make your way back\nupstairs, then head to the hallway just past the torture chair. You can now\nfinally enter the second door from the left, so go inside, then examine the\nchest for the [_DUNGEON KEY_]. Watch a short scene with Halley, then when you\nregain control, check the chest once again for the [_FIRE GRAVESTONE_]. Feel\nfree to use the bed in here as an Inn to recover your HP and MP.\n\n  NOTE     If you're close to level 35 for Alice, then I strongly recommend\n¯¯¯¯¯¯¯¯   fighting a bit more to reach 35 so she can learn the Arc spell.\n           It'll greatly help out in the next boss battle.\n\nWhen you're ready, head back to the room with the Save Point and SAVE, then go\nback downstairs, unlock the door, and take on Olga for the last time!\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Olga                  |  4000 HP  | Class: Dark  | [_] Warlock Earrings     |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [34]     |                   |    Halley [33]    |        |\n|        |                   |     Alice [34]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Brass Knuckles    | Ever-Bible        | Laurel Slingshot  |        |\n|        | RedLeatherJacket  | Jasper Cape       | RedLeatherJacket  |        |\n|        | Mind's Eye        | Anne's Cross      | Priest Earrings   |        |\n|        | Demon Earrings    | Brsrkr Earrings   | Warlock Earrings  |        |\n|        | Cosmic Bracelet   | Crucifix          | Cosmic Bracelet   |        |\n|        |                   |                   |                   |        |\n|        | Baldo             |                   |                   |        |\n|        | Mad Bull          |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  As before, Olga's Black Fog attack will do MAJOR damage to your party, as  |\n|  well as Poison each one of them, so it's a good idea to come in with       |\n|  Cosmic Bracelets equipped. Her normal attacks don't do too much damage,    |\n|  but her Icy Breath, Rock Storm and Lightning attacks will also both do     |\n|  quite a bit of damage to your entire party, so be careful. Watch out if    |\n|  she uses Mind Assault to steal your MP, as you'll want to recover it       |\n|  immediately if she takes too much.                                         |\n|                                                                             |\n|  Have Yuri fuse into Ifrit and use his Ignition to boost his attack, then   |\n|  have him attack as normal. With his attacked laced with Alice's Holy       |\n|  Edge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to  |\n|  start with on Yuri, then have her on healing duty. Have Halley use Air     |\n|  Shot every round, helping Alice heal as needed.                            |\n|                                                                             |\n|  If you have it, have Alice take advantage of her Arc spell and just heal   |\n|  every round, it makes this battle MUCH easier.                             |\n|                                                                             |\n|  If you're unable to keep up with healing while trying to dish out the      |\n|  damage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo      |\n|  instead of Ifrit, using his healing spell to take care of the party while  |\n|  Alice and Halley use Blessed Light and Air Shot to make up the             |\n|  difference.                                                                |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   22000 EXP   / \\   17000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, you'll automatically be back in the London Rats' hideout.\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                           London, Old Castle Street\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\n.—————————————.———————————————————————————————————————————————————————————————.\n|   Valuables | [_] Oath Grail                                                |\n'—————————————'———————————————————————————————————————————————————————————————'\n\nHere in the London Rats' hideout, make your way downstairs and use the Save\nPoint. Make note of a new path to your left; it leads to a Pit Fight hosted by\nSharon! If you talk to her at all, you'll have to battle a random set of\nenemies alone with Yuri. Her power isn't very stable yet, so you won't be able\nto engage in the actual Pit Fight like you did with Mr. Zhen, but you will in\ntime.\n\nGo back into the previous room and talk to Joshua to receive the\n[_OATH GRAIL_]; if you're going for the good ending, then it's critical that\nyou get this item. Leave the hideout, then make your way toward the entrance of\nthe city for an event with Halley, which will eventually lead to you\ncontrolling Alice. Choose to enter Rouen.\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                                     Rouen\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\nAs Alice, go down the alley and examine the back door to the church. Do a quick\nPush Ring to open the door, then go to the altar room for a quick scene. Next,\ngo to the confessionals on the right side. Go into the back confessional here\nand examine the wall, where you'll have to complete a Spin Ring 3. Once it's\ndone, you'll finally know the story between Roger Bacon and Albert Simon, and\nyou'll see a picture of Father Hans Doyle and Cardinal Albert Simon... Leave\nthe confessional for another event, then you'll regain control in London.\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                           London, Old Castle Street\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\n.—————————————.———————————————————————————————————————————————————————————————.\n|   Equipment | [_] Improved Slingshot                                        |\n'—————————————'———————————————————————————————————————————————————————————————'\n\nAfter the quick scene, choose your party. Put Halley in it to start with so we\ncan obtain a better weapon for him. Make your way downstairs and talk to\nJoshua, where you'll receive the [_IMPROVED SLINGSHOT_].\n\nNow you can make your way to the Inn and talk to Meiyuan to choose the party\nyou want for the upcoming events. I'll be taking Yuri, Alice, and Margarete.\nOnce you're ready, head outside.\n\nOut on the World Map, go out to the Britain Map to see a new destination open\nup: the Nemeton Monastery.\n\nNow... There are a few quick things to do before we go to the next dungeon. If\nyou wish to just continue the story, go to W-2-12 - Nemeton Monastery (1).\nOtherwise, continue reading.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

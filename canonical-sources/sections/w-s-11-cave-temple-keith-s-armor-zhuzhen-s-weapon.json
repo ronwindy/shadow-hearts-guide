@@ -1,0 +1,228 @@
+{
+  "id": "w-s-11",
+  "code": "[W-S-11]",
+  "title": "Cave Temple (Keith's Armor / Zhuzhen's Weapon)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-10",
+      "code": "[W-S-10]",
+      "title": "Prague (Rare Shop / The Dollhouse / Alice's Weapon)",
+      "file": "sections/w-s-10-prague-rare-shop-the-dollhouse-alice-s-weapon.json"
+    },
+    "next": {
+      "id": "w-s-12",
+      "code": "[W-S-12]",
+      "title": "Ancient Ruins (Alice's Armor / Halley's Weapon)",
+      "file": "sections/w-s-12-ancient-ruins-alice-s-armor-halley-s-weapon.json"
+    }
+  },
+  "char_count": 7217,
+  "line_count": 135,
+  "overview": {
+    "save_points": [
+      "Near the end of the western maze",
+      "Near the end of the eastern maze"
+    ],
+    "items": [
+      "Lottery Ticket",
+      "Key to Success",
+      "Fifth Key"
+    ],
+    "equipment": [
+      "Priest Earrings",
+      "Mant.OfShivering"
+    ]
+  },
+  "items": [
+    "Lottery Ticket",
+    "Key to Success",
+    "Fifth Key",
+    "Priest Earrings",
+    "Mant.OfShivering"
+  ],
+  "enemies": [
+    {
+      "number": "#081",
+      "name": "Buggy",
+      "hp": 330,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#082",
+      "name": "Penalty",
+      "hp": 420,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#083",
+      "name": "Oingo",
+      "hp": 750,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Instant Death"
+    },
+    {
+      "number": "#084",
+      "name": "Cherubim",
+      "hp": 10000,
+      "class": "None",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "S-Atk Resistant, and inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Cherubim",
+      "enemies": [
+        {
+          "name": "Cherubim",
+          "hp": 10000,
+          "class": "None",
+          "drop": "Holy Peak Staff"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 40
+        },
+        {
+          "name": "Margarete",
+          "level": 35
+        },
+        {
+          "name": "Alice",
+          "level": 40
+        }
+      ],
+      "exp": 120,
+      "cash": 600,
+      "strategy": "Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually\nstart the battle with the !!! attack, reducing a party member's HP to 1,\nor Divine Punishment, doing pretty good damage to your entire party, as\nwell as causing various status effects, so make sure to heal them\nstraight away. He will continue using them throughout the battle, and his\nphysical attacks will hit an ally for pretty decent damage as well.\nNote that he won't take hardly any damage from your special attacks, so\nfocus only on physical attacks. Have Yuri fuse into Amon and attack\nnormally while Alice casts Arc as needed, leaving Margarete to also\nattack normally, supporting Alice when needed to replenish Yuri's SP, as\nwell as Alice's MP.\nCherubim isn't really that complicated, so as long as you have Crucifixes\nequipped to everyone and have Alice use Arc every round, then it's just a\nmatter of taking the time to whittle away his HP. Just make sure not to\nlet anyone go Berserk.\nNOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Peak Staff."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Cherubim",
+    "enemies": [
+      {
+        "name": "Cherubim",
+        "hp": 10000,
+        "class": "None",
+        "drop": "Holy Peak Staff"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 40
+      },
+      {
+        "name": "Margarete",
+        "level": 35
+      },
+      {
+        "name": "Alice",
+        "level": 40
+      }
+    ],
+    "exp": 120,
+    "cash": 600,
+    "strategy": "Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually\nstart the battle with the !!! attack, reducing a party member's HP to 1,\nor Divine Punishment, doing pretty good damage to your entire party, as\nwell as causing various status effects, so make sure to heal them\nstraight away. He will continue using them throughout the battle, and his\nphysical attacks will hit an ally for pretty decent damage as well.\nNote that he won't take hardly any damage from your special attacks, so\nfocus only on physical attacks. Have Yuri fuse into Amon and attack\nnormally while Alice casts Arc as needed, leaving Margarete to also\nattack normally, supporting Alice when needed to replenish Yuri's SP, as\nwell as Alice's MP.\nCherubim isn't really that complicated, so as long as you have Crucifixes\nequipped to everyone and have Alice use Arc every round, then it's just a\nmatter of taking the time to whittle away his HP. Just make sure not to\nlet anyone go Berserk.\nNOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Peak Staff."
+  },
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "PRIEST EARRINGS",
+        "raw_tag": "[_PRIEST EARRINGS_]",
+        "matched_overview_item": "Priest Earrings",
+        "category": "equipment",
+        "line": 44,
+        "char_offset": [
+          2493,
+          2512
+        ],
+        "context": "- NORTH, opening the chest here for some [_PRIEST EARRINGS_]. - SOUTH, back to the first room. - WEST. - NORTH. - WEST. - SOUTH. - SOUTH. - WEST. - NORTH, opening the chest here for a [_LOTTERY TICKET_]. - SOUTH, back to the previous room. - WEST. - "
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 52,
+        "char_offset": [
+          2644,
+          2662
+        ],
+        "context": "- NORTH, opening the chest here for some [_PRIEST EARRINGS_]. - SOUTH, back to the first room. - WEST. - NORTH. - WEST. - SOUTH. - SOUTH. - WEST. - NORTH, opening the chest here for a [_LOTTERY TICKET_]. - SOUTH, back to the previous room. - WEST. - "
+      },
+      {
+        "name": "MANT.OFSHIVERING",
+        "raw_tag": "[_MANT.OFSHIVERING_]",
+        "matched_overview_item": "Mant.OfShivering",
+        "category": "equipment",
+        "line": 57,
+        "char_offset": [
+          2798,
+          2818
+        ],
+        "context": "- NORTH, opening the chest here for some [_PRIEST EARRINGS_]. - SOUTH, back to the first room. - WEST. - NORTH. - WEST. - SOUTH. - SOUTH. - WEST. - NORTH, opening the chest here for a [_LOTTERY TICKET_]. - SOUTH, back to the previous room. - WEST. - "
+      },
+      {
+        "name": "FIFTH KEY",
+        "raw_tag": "[_FIFTH KEY_]",
+        "matched_overview_item": "Fifth Key",
+        "category": "items",
+        "line": 66,
+        "char_offset": [
+          3223,
+          3236
+        ],
+        "context": "- NORTH, opening the chest here for a [_FIFTH KEY_]. - SOUTH, back to the first room. - EAST. - NORTH. - EAST. - SOUTH. - SOUTH. - EAST. - NORTH, opening the chest here for a [_KEY TO SUCCESS_]. - SOUTH, back to the previous room. - EAST. - NORTH. - "
+      },
+      {
+        "name": "KEY TO SUCCESS",
+        "raw_tag": "[_KEY TO SUCCESS_]",
+        "matched_overview_item": "Key to Success",
+        "category": "items",
+        "line": 74,
+        "char_offset": [
+          3368,
+          3386
+        ],
+        "context": "- NORTH, opening the chest here for a [_FIFTH KEY_]. - SOUTH, back to the first room. - EAST. - NORTH. - EAST. - SOUTH. - SOUTH. - EAST. - NORTH, opening the chest here for a [_KEY TO SUCCESS_]. - SOUTH, back to the previous room. - EAST. - NORTH. - "
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 29,
+        "char_offset": [
+          1646,
+          1889
+        ],
+        "text": "To have access to this area, you must have read the Emigre Manuscript in your Valuables menu to have it appear on the Britain Map. NOTE     The boss here absorbs special attacks, so make sure that you bring"
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |             Cave Temple (Keith's Armor / Zhuzhen's Weapon)\n     [W-S-11]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Near the end of the western maze\n             | Near the end of the eastern maze\n             |\n       Items | [_] Lottery Ticket      [_] Key to Success\n             | [_] Fifth Key\n             |\n   Equipment | [_] Priest Earrings     [_] Mant.OfShivering\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                (* = BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #081  [_] Buggy                 |   330  | Wind  |\n #082  [_] Penalty               |   420  | Light | Inflicts Ring anomalies\n #083  [_] Oingo                 |   750  | Dark  | Inflicts Instant Death\n #084 *[_] Cherubim              | 10000  | None  | S-Atk Resistant, and\n                                 |        |       |    inflicts Paralysis,\n                                 |        |       |    Confusion, Silence,\n                                 |        |       |    Poison, Petrify,\n                                 |        |       |    and Ring anomalies\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     To have access to this area, you must have read the\n¯¯¯¯¯¯¯¯   Emigre Manuscript in your Valuables menu to have it appear on the\n           Britain Map.\n\n  NOTE     The boss here absorbs special attacks, so make sure that you bring\n¯¯¯¯¯¯¯¯   two fighters with Mind's Eyes equipped, and have Alice to heal. As\n           always, I'm taking Yuri, Alice, and Margarete.\n\nStart walking west and head through the arches to be inside the temple. Make\nyour way northeast and through the door here, and you'll arrive inside the\nmaze. It's very easy to get lost in here, so follow along carefully. Each room\nhas three doors: north, west, and east, and they all look exactly alike. To get\nall of the treasures, and to get through the maze, take the following paths\nfrom the first room inside the maze:\n\n - NORTH, opening the chest here for some [_PRIEST EARRINGS_].\n - SOUTH, back to the first room.\n - WEST.\n - NORTH.\n - WEST.\n - SOUTH.\n - SOUTH.\n - WEST.\n - NORTH, opening the chest here for a [_LOTTERY TICKET_].\n - SOUTH, back to the previous room.\n - WEST.\n - NORTH.\n - WEST, to a Save Point.\n - NORTH, where you'll find Keith's best armor, the [_MANT.OFSHIVERING_].\n\nYou'll be back at the entrance after opening the chest. Examine the Emigre\nManuscript once again, which has actually changed in both description and\nfragrance. By re-examining it, it will change the maze inside.\n\nRe-enter the maze once again. The path is very similar to the previous path,\nbut for all paths where you needed to go west, you now need to go east.\n\n - NORTH, opening the chest here for a [_FIFTH KEY_].\n - SOUTH, back to the first room.\n - EAST.\n - NORTH.\n - EAST.\n - SOUTH.\n - SOUTH.\n - EAST.\n - NORTH, opening the chest here for a [_KEY TO SUCCESS_].\n - SOUTH, back to the previous room.\n - EAST.\n - NORTH.\n - EAST, to a Save Point.\n\nUse the Save Point. Make sure you have Crucifixes equipped, then when you're\nready, head north to take on Cherubim.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Cherubim              | 10000 HP  | Class: None  | [_] Holy Peak Staff      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [40]     |                   |   Margarete [35]  |        |\n|        |                   |     Alice [40]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Silver Wolf Fang  | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Stygian Robe      | Snow-White Robe   | Leather Suit      |        |\n|        | Mind's Eye        | Oracle Earrings   | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually    |\n|  start the battle with the !!! attack, reducing a party member's HP to 1,   |\n|  or Divine Punishment, doing pretty good damage to your entire party, as    |\n|  well as causing various status effects, so make sure to heal them          |\n|  straight away. He will continue using them throughout the battle, and his  |\n|  physical attacks will hit an ally for pretty decent damage as well.        |\n|                                                                             |\n|  Note that he won't take hardly any damage from your special attacks, so    |\n|  focus only on physical attacks. Have Yuri fuse into Amon and attack        |\n|  normally while Alice casts Arc as needed, leaving Margarete to also        |\n|  attack normally, supporting Alice when needed to replenish Yuri's SP, as   |\n|  well as Alice's MP.                                                        |\n|                                                                             |\n|  Cherubim isn't really that complicated, so as long as you have Crucifixes  |\n|  equipped to everyone and have Alice use Arc every round, then it's just a  |\n|  matter of taking the time to whittle away his HP. Just make sure not to    |\n|  let anyone go Berserk.                                                     |\n|                                                                             |\n|    NOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,  |\n|  ¯¯¯¯¯¯¯¯   the Holy Peak Staff.                                            |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00120 EXP   / \\   00600 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, you'll automatically be back at the start of the maze. Head\noutside and out to the World Map. Let's take on the next area.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

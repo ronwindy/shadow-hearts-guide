@@ -1,0 +1,184 @@
+{
+  "id": "w-1-01",
+  "code": "[W-1-01]",
+  "title": "Trans-Siberian Express",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-1-00",
+      "code": "[W-1-00]",
+      "title": "Walkthrough - Asia",
+      "file": "sections/w-1-00-walkthrough-asia.json"
+    },
+    "next": {
+      "id": "w-1-02",
+      "code": "[W-1-02]",
+      "title": "Plains",
+      "file": "sections/w-1-02-plains.json"
+    }
+  },
+  "char_count": 2816,
+  "line_count": 55,
+  "overview": {
+    "items": [
+      "Thera Leaf",
+      "Mana Leaf"
+    ],
+    "equipment": [
+      "Leather Gloves",
+      "Cotton Shirt"
+    ],
+    "valuables": [
+      "Talisman"
+    ],
+    "souls": [
+      "Death Emperor"
+    ]
+  },
+  "items": [
+    "Thera Leaf",
+    "Mana Leaf",
+    "Leather Gloves",
+    "Cotton Shirt",
+    "Talisman",
+    "Death Emperor"
+  ],
+  "enemies": [
+    {
+      "number": "#001",
+      "name": "Wind Shear",
+      "hp": 10,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": null,
+      "name": "Roger Bacon",
+      "hp": null,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Cannot be defeated"
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "LEATHER GLOVES",
+        "raw_tag": "[_LEATHER GLOVES_]",
+        "matched_overview_item": "Leather Gloves",
+        "category": "equipment",
+        "line": 23,
+        "char_offset": [
+          1206,
+          1224
+        ],
+        "context": "NOTE The Rude Hero comes equipped with [_LEATHER GLOVES_], a ¯¯¯¯¯¯¯¯ [_COTTON SHIRT_], and the [_DEATH EMPEROR_] soul by default, as well as the [_TALISMAN_] valuable."
+      },
+      {
+        "name": "COTTON SHIRT",
+        "raw_tag": "[_COTTON SHIRT_]",
+        "matched_overview_item": "Cotton Shirt",
+        "category": "equipment",
+        "line": 24,
+        "char_offset": [
+          1239,
+          1255
+        ],
+        "context": "NOTE The Rude Hero comes equipped with [_LEATHER GLOVES_], a ¯¯¯¯¯¯¯¯ [_COTTON SHIRT_], and the [_DEATH EMPEROR_] soul by default, as well as the [_TALISMAN_] valuable."
+      },
+      {
+        "name": "DEATH EMPEROR",
+        "raw_tag": "[_DEATH EMPEROR_]",
+        "matched_overview_item": "Death Emperor",
+        "category": "souls",
+        "line": 24,
+        "char_offset": [
+          1265,
+          1282
+        ],
+        "context": "NOTE The Rude Hero comes equipped with [_LEATHER GLOVES_], a ¯¯¯¯¯¯¯¯ [_COTTON SHIRT_], and the [_DEATH EMPEROR_] soul by default, as well as the [_TALISMAN_] valuable."
+      },
+      {
+        "name": "TALISMAN",
+        "raw_tag": "[_TALISMAN_]",
+        "matched_overview_item": "Talisman",
+        "category": "valuables",
+        "line": 25,
+        "char_offset": [
+          1326,
+          1338
+        ],
+        "context": "NOTE The Rude Hero comes equipped with [_LEATHER GLOVES_], a ¯¯¯¯¯¯¯¯ [_COTTON SHIRT_], and the [_DEATH EMPEROR_] soul by default, as well as the [_TALISMAN_] valuable."
+      },
+      {
+        "name": "THERA LEAF",
+        "raw_tag": "[_THERA LEAF_]",
+        "matched_overview_item": "Thera Leaf",
+        "category": "items",
+        "line": 39,
+        "char_offset": [
+          2053,
+          2067
+        ],
+        "context": "Once you take out the Wind Shears, examine the body in the aisle for a [_THERA LEAF_], then examine the body lying in the booth for a [_MANA LEAF_]. Head into the next car and proceed to the front, which will lead to more events and a battle with Rog"
+      },
+      {
+        "name": "MANA LEAF",
+        "raw_tag": "[_MANA LEAF_]",
+        "matched_overview_item": "Mana Leaf",
+        "category": "items",
+        "line": 39,
+        "char_offset": [
+          2116,
+          2129
+        ],
+        "context": "Once you take out the Wind Shears, examine the body in the aisle for a [_THERA LEAF_], then examine the body lying in the booth for a [_MANA LEAF_]. Head into the next car and proceed to the front, which will lead to more events and a battle with Rog"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 23,
+        "char_offset": [
+          1161,
+          1350
+        ],
+        "text": "The Rude Hero comes equipped with [_LEATHER GLOVES_], a [_COTTON SHIRT_], and the [_DEATH EMPEROR_] soul by default, as well as the [_TALISMAN_] valuable."
+      },
+      {
+        "type": "NOTE",
+        "line": 31,
+        "char_offset": [
+          1532,
+          1982
+        ],
+        "text": "Shadow Hearts' battle system is very unique, actually requiring a little bit of skill. Press the CROSS button within the highlighted areas on the Judgment Ring for successful attacks. Once you get used to the system more, feel free to try to time your attacks just right to succeed in more critical attacks in the smaller red area. If you miss though, you miss an attack completely."
+      },
+      {
+        "type": "NOTE",
+        "line": 43,
+        "char_offset": [
+          2243,
+          2426
+        ],
+        "text": "It's impossible to win this battle, so feel free to just wail away at him, practicing your Judgment Ring until he uses Revelation to end the battle."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                     Trans-Siberian Express\n     [W-1-01]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n       Items | [_] Thera Leaf          [_] Mana Leaf           * = Initial\n             |\n   Equipment |*[_] Leather Gloves     *[_] Cotton Shirt\n             |\n   Valuables |*[_] Talisman\n             |\n       Souls |*[_] Death Emperor\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                           |   HP   | Class | Notes\n=================================|========|=======|============================\n #001  [_] Wind Shear            |    10  | Wind  |\n       [_] Roger Bacon           |        | Dark  | Cannot be defeated\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     The Rude Hero comes equipped with [_LEATHER GLOVES_], a\n¯¯¯¯¯¯¯¯   [_COTTON SHIRT_], and the [_DEATH EMPEROR_] soul by default, as well\n           as the [_TALISMAN_] valuable.\n\nAfter watching the greatest intro of video game history, head down to the next\ntrain car. Go just a little bit further to enter into your first battle with a\ncouple of Wind Shears.\n\n  NOTE     Shadow Hearts' battle system is very unique, actually requiring a\n¯¯¯¯¯¯¯¯   little bit of skill. Press the CROSS button within the highlighted\n           areas on the Judgment Ring for successful attacks. Once you get used\n           to the system more, feel free to try to time your attacks just right\n           to succeed in more critical attacks in the smaller red area. If you\n           miss though, you miss an attack completely.\n\nOnce you take out the Wind Shears, examine the body in the aisle for a\n[_THERA LEAF_], then examine the body lying in the booth for a [_MANA LEAF_].\nHead into the next car and proceed to the front, which will lead to more events\nand a battle with Roger Bacon.\n\n  NOTE     It's impossible to win this battle, so feel free to just wail away\n¯¯¯¯¯¯¯¯   at him, practicing your Judgment Ring until he uses Revelation to\n           end the battle.\n\nWatch some more events after the battle, then you'll be on the World Map. Feel\nfree to save out here if you like; you'll always be able to save your game on\nthe World Map. In any case, there's only one place to go: the Plains.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

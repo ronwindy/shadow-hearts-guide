@@ -1,0 +1,42 @@
+{
+  "id": "c-1-01",
+  "code": "[C-1-01]",
+  "title": "Version History",
+  "category": "Conclusion",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "a-1-15",
+      "code": "[A-1-15]",
+      "title": "Help (detailed, available in-game)",
+      "file": "sections/a-1-15-help-detailed-available-in-game.json"
+    },
+    "next": {
+      "id": "c-1-02",
+      "code": "[C-1-02]",
+      "title": "Thanks",
+      "file": "sections/c-1-02-thanks.json"
+    }
+  },
+  "char_count": 2138,
+  "line_count": 62,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n        ««  Shadow Hearts  »»                                   [C-1-01]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                           Version History                           \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n   * 1.00 - 01/17/2012 *\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n - The guide was finished and uploaded for the first time.\n\n\n   * 1.01 - 01/19/2012 *\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n - The Special Skills section was added.\n - The Store/Shop List section was added.\n - The Acupuncturist Costs section was added.\n - The Lottery section was added.\n - The Malice Rewards Section was added.\n - The Pedometer Rewards Section was added.\n - The NPC Library section was added.\n - The Sub-bosses and Bosses section was added.\n\n   * 1.02 - 01/20/2012 *\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n - The Game Manual / Instructions section was added.\n - The Codebreaker Codes section was added.\n\n\n   * 1.03 - 01/23/2012 *\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n - The Weapons section was added.\n - The Monster Library (Bestiary) section was added.\n - The Gameshark Codes section was added.\n - The Action Replay Max Codes section was added.\n - The Help (detailed, available in-game) section was added.\n - Corrected the Banshee and Larmgelg's Monster Library numbers.\n\n\n   * 1.04 - 01/30/2012 *\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n - A complete redesign was done.\n - The Armor section was added.\n - The Accessories section was added.\n - The Souls section was added and merged with the Special Skills section.\n - The Items section was added.\n - The Valuables section was added.\n - The Plot Synopsis was added.\n - The Codebreaker Codes section was removed.\n - The Gameshark Codes section was removed.\n - The Action Replay Max Codes section was removed.\n\n   * 1.05 - 02/15/2012 *\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n - Reformatted once again.\n - Enemy Formations were removed from the walkthrough, but can still be found\n   in the bestiary."
+}

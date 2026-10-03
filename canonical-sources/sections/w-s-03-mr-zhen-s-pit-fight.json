@@ -1,0 +1,222 @@
+{
+  "id": "w-s-03",
+  "code": "[W-S-03]",
+  "title": "Mr. Zhen's Pit Fight",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-02",
+      "code": "[W-S-02]",
+      "title": "Kowloon Fortress",
+      "file": "sections/w-s-02-kowloon-fortress.json"
+    },
+    "next": {
+      "id": "w-1-11",
+      "code": "[W-1-11]",
+      "title": "Shanghai, Kuihai Tower",
+      "file": "sections/w-1-11-shanghai-kuihai-tower.json"
+    }
+  },
+  "char_count": 8462,
+  "line_count": 161,
+  "overview": {
+    "cash": [
+      "5000 Cash"
+    ],
+    "equipment": [
+      "Anne's Cross"
+    ]
+  },
+  "items": [
+    "Anne's Cross"
+  ],
+  "enemies": [
+    {
+      "number": "#001",
+      "name": "Wind Shear",
+      "hp": 10,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#005",
+      "name": "Hellcat",
+      "hp": 45,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#010",
+      "name": "Yamaraja: Earth",
+      "hp": 300,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#014",
+      "name": "Frog God",
+      "hp": 40,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis"
+    },
+    {
+      "number": "#015",
+      "name": "Kappa",
+      "hp": 100,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#016",
+      "name": "Water Tiger",
+      "hp": 380,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#018",
+      "name": "Beast Dog",
+      "hp": 480,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#020",
+      "name": "Yamaraja: Wind",
+      "hp": 900,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#021",
+      "name": "White Wolfling",
+      "hp": 45,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#022",
+      "name": "Ogre Flame",
+      "hp": 40,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#023",
+      "name": "Li Li",
+      "hp": 720,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis"
+    },
+    {
+      "number": "#101",
+      "name": "Prototype Wind Shear",
+      "hp": 500,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies & Silence"
+    },
+    {
+      "number": "#102",
+      "name": "Custom Wind Shear",
+      "hp": 500,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "5000 CASH",
+        "raw_tag": "[_5000 CASH_]",
+        "matched_overview_item": "5000 Cash",
+        "category": "cash",
+        "line": 130,
+        "char_offset": [
+          7116,
+          7129
+        ],
+        "context": "Once you've defeated a set of 10 enemies with Yuri, you'll receive [_5000 CASH_], as well as a memento for Yuri, [_ANNE'S CROSS_]."
+      },
+      {
+        "name": "ANNE'S CROSS",
+        "raw_tag": "[_ANNE'S CROSS_]",
+        "matched_overview_item": "Anne's Cross",
+        "category": "equipment",
+        "line": 130,
+        "char_offset": [
+          7162,
+          7178
+        ],
+        "context": "Once you've defeated a set of 10 enemies with Yuri, you'll receive [_5000 CASH_], as well as a memento for Yuri, [_ANNE'S CROSS_]."
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 132,
+        "char_offset": [
+          7181,
+          7340
+        ],
+        "text": "If you're aiming to get a full Monster Library, then make sure that you find both the Prototype and Custom Wind Shears before moving on."
+      },
+      {
+        "type": "NOTE",
+        "line": 144,
+        "char_offset": [
+          7542,
+          7686
+        ],
+        "text": "If you need a bit of extra cash, see the beginning of the next section, where you can find a Third Key that you can sell."
+      },
+      {
+        "type": "NOTE",
+        "line": 147,
+        "char_offset": [
+          7687,
+          8303
+        ],
+        "text": "Except for weapons / armor / caps / belts, which are assumed as obvious missables as they are replaced by stronger versions, there are two pieces of equipment that you need to buy now if you ever plan on getting them, as they're only available in Asia. Once you finish Kuihai Tower, you'll never be able to get them again, so make sure to buy as many as you want/need NOW. These items are... - Brigand Earrings (Shanghai, Huayuan) (I recommend purchasing 6) - Pirate Earrings (Shanghai, Huayuan) (I recommend purchasing 5)"
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                       Mr. Zhen's Pit Fight\n     [W-S-03]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                               Shanghai, Huayuan\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\n_______________________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n   Equipment | [_] Anne's Cross\n             |\n        Cash | [_] 5000 Cash\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                           |   HP   | Class | Notes\n================================='========'======='============================\n                         +   Mr. Zhen's Pit Fight   +\n---------------------------------.--------.-------.----------------------------\n #001 +[_] Wind Shear            |    10  | Wind  |\n #005 +[_] Hellcat               |    45  | Light |\n #010 +[_] Yamaraja: Earth       |   300  | Water | Inflicts Ring anomalies\n #014 +[_] Frog God              |    40  | Light | Inflicts Paralysis\n #015 +[_] Kappa                 |   100  | Water |\n #016 +[_] Water Tiger           |   380  | Fire  |\n #018 +[_] Beast Dog             |   480  | Fire  |\n #020 +[_] Yamaraja: Wind        |   900  | Earth |\n #021 +[_] White Wolfling        |    45  | Water | Inflicts Ring anomalies\n #022 +[_] Ogre Flame            |    40  | Fire  |\n #023 +[_] Li Li                 |   720  | Dark  | Inflicts Paralysis\n #101 +[_] Prototype Wind Shear  |   500  | Fire  | Inflicts Ring anomalies\n                                 |        |       |    & Silence\n #102 +[_] Custom Wind Shear     |   500  | Water | Inflicts Ring anomalies\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy Formations                   |  EXP  | Cash  | Possible Item Drops\n====================================|=======|=======|==========================\n Wind Shear x2                      |     4 |     0 |\n Hellcat x2                         |    40 |     0 |\n Yamaraja: Earth                    |   180 |     0 |\n Frog God x3                        |   135 |     0 |\n Kappa x2, Water Tiger              |   400 |     0 |\n Beast Dog                          |   540 |     0 |\n Yamaraja: Wind                     |   720 |     0 |\n White Wolfling x3                  |   234 |     0 |\n Ogre Flame x4                      |   260 |     0 |\n Li Li                              |  1000 |     0 |\n Prototype Wind Shear               |  1500 |     0 |\n Custom Wind Shear                  |  1500 |     0 |\n____________________________________|_______|_______|__________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nAs I mentioned before, Mr. Zhen is now hosting pit fights! Just visit the bar\nand go behind on the curtain at the top of the screen and talk to him. It costs\n300 Cash to fight, and you'll have to fight 10 consecutive battles, with no\nchance to heal between battles. There are 12 sets of enemies; the order is\nrandom, and you'll only have to fight 10 of the 12 sets of enemies listed in\nthe Enemy Formations section above.\n\nYou'll want to fight with Yuri, as you get a special prize once you've beaten\nall 10. Two-thirds of the enemy groups listed are pretty easy, however, these\nfour may give you trouble:\n\n\n   Yamaraja: Wind\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nHe's decently strong against physical attacks, so make sure that you're able to\ncast Wind Shear with your Tornado Fusion to try and take him out quickly.\n\n\n   Li Li\n¯¯¯¯¯¯¯¯¯¯¯\nShe's a pain just like before. Make sure you have something that prevents\nParalysis, or you're in for a rough battle. Other than that, some normal\nphysical attacks while fused should take her out rather quickly, especially if\nyou have the Mind's Eye equipped.\n\n\n   Prototype Wind Shear\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nUnlike the weaklings from the beginning of the game, this guy means serious\nbusiness, and is as tough as a boss. It has the ability to inflict Judgment\nRing anomalies, but also casts Flaming Arm of Death, which can Silence you and\nkeep you from being able to use Fusion. Make sure that you heal every other\nround with Thera Seeds to keep your HP up, because he can decimate of TON of it\nin just two rounds, and stay in the Man Dragon Fusion to keep casting Flash\nFlood in the rounds you're not healing. If you have the Mind's Eye equipped and\nyou're pretty successful at it, do that instead, as you'll inflict more damage.\n\n\n   Custom Wind Shear\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nAs with the Prototype Wind Shear, I hope you have the Pocket Watch equipped,\notherwise you're going to have a heck of a time hitting your ring. He is also\njust as strong as his counterpart, easily of boss difficulty. Make sure that\nyou heal every other round with Thera Seeds to keep your HP up, because he can\ndecimate of TON of it in just two rounds, and stay in the Inferno Fusion to\nkeep casting Fireball in the rounds you're not healing. If you have the Mind's\nEye equipped and you're pretty successful at it, do that instead, as you'll\ninflict more damage.\n\nTaking into consideration all that the plethora of enemies here can do to you\n(Paralysis, Ring anomalies, and Silence), I recommend having the following\nsetup:\n\n       .———————————————————————————————————————————————————————————————.\n       |                           Yuri [19]                           |\n       |                                                               |\n       |===============================================================|\n       |                          Hand Needle                          |\n       |                        Studded Harness                        |\n       |                                                               |\n       |   RosewoodBracelet  OR  Zodiac Bracelet ¯¯\\  OR  Mind's Eye   |\n       |      Bell Bracelet  OR  Cosmic Bracelet __/¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯   |\n       |                         Pocket Watch                          |\n       |                                                               |\n       |                          Man Dragon                           |\n       |                            Inferno                            |\n       |                            Tornado                            |\n       '———————————————————————————————————————————————————————————————'\n\nIf you're comfortable with the Judgment Ring, even with anomalies on it, then I\nrecommend keeping the Mind's Eye on in place of one of the Bracelets. Paralysis\nand Silence can easily be cured with an item. If you want to play it ultra-\nsafe, then don't worry about the Mind's Eye.\n\nOnce you've defeated a set of 10 enemies with Yuri, you'll receive\n[_5000 CASH_], as well as a memento for Yuri, [_ANNE'S CROSS_].\n\n  NOTE     If you're aiming to get a full Monster Library, then make sure that\n¯¯¯¯¯¯¯¯   you find both the Prototype and Custom Wind Shears before moving on.\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\nThat's it for side quests, so let's visit the final area in Asia, Kuihai Tower.\nMake sure to SAVE before entering!\n\n  NOTE     If you need a bit of extra cash, see the beginning of the next\n¯¯¯¯¯¯¯¯   section, where you can find a Third Key that you can sell.\n\n  NOTE     Except for weapons / armor / caps / belts, which are assumed as\n¯¯¯¯¯¯¯¯   obvious missables as they are replaced by stronger versions, there\n           are two pieces of equipment that you need to buy now if you ever\n           plan on getting them, as they're only available in Asia. Once you\n           finish Kuihai Tower, you'll never be able to get them again, so make\n           sure to buy as many as you want/need NOW. These items are...\n\n           - Brigand Earrings (Shanghai, Huayuan) (I recommend purchasing 6)\n           - Pirate Earrings (Shanghai, Huayuan) (I recommend purchasing 5)\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

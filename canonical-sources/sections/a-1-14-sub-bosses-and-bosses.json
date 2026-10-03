@@ -1,0 +1,1632 @@
+{
+  "id": "a-1-14",
+  "code": "[A-1-14]",
+  "title": "Sub-bosses and Bosses",
+  "category": "Appendices",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "a-1-13",
+      "code": "[A-1-13]",
+      "title": "Monster Library (Bestiary)",
+      "file": "sections/a-1-13-monster-library-bestiary.json"
+    },
+    "next": {
+      "id": "a-1-15",
+      "code": "[A-1-15]",
+      "title": "Help (detailed, available in-game)",
+      "file": "sections/a-1-15-help-detailed-available-in-game.json"
+    }
+  },
+  "char_count": 114131,
+  "line_count": 1620,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Earth, Water Tiger, Kappa, Kappa",
+      "enemies": [
+        {
+          "name": "Yamaraja: Earth",
+          "hp": 300,
+          "class": "Water",
+          "drop": "Star Brooch"
+        },
+        {
+          "name": "Water Tiger",
+          "hp": 380,
+          "class": "Fire",
+          "drop": "Spikes"
+        },
+        {
+          "name": "Kappa",
+          "hp": 100,
+          "class": "Water",
+          "drop": "Tent"
+        },
+        {
+          "name": "Kappa",
+          "hp": 100,
+          "class": "Water",
+          "drop": "Tent"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 7
+        },
+        {
+          "name": "Alice",
+          "level": 6
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 6
+        }
+      ],
+      "exp": 180,
+      "cash": 1800,
+      "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
+    },
+    {
+      "type": "BOSS",
+      "name": "Beast Dog",
+      "enemies": [
+        {
+          "name": "Beast Dog",
+          "hp": 480,
+          "class": "Fire",
+          "drop": "Voodoo Doll"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 9
+        },
+        {
+          "name": "Margarete",
+          "level": 9
+        },
+        {
+          "name": "Alice",
+          "level": 9
+        }
+      ],
+      "exp": 540,
+      "cash": 3000,
+      "strategy": "Be wary of its Breath of Fire attack; it'll hit the whole part for pretty\ngood damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own\nstrength, making them that much worse, so keep an eye on your HP.\nTo start, have Margarete cast the Aqua Edge on Yuri, followed by using\nher Grenade skill repeatedly. With a water-based attack, have Yuri fuse\ninto the Raging Tiger and start attacking normally, doing some major\ndamage. Have Alice keep everyone's HP up during the battle, having\nMargarete help out when needed. As usual, make sure Alice's SP doesn't\ndrop to 0."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Wind, Li Li",
+      "enemies": [
+        {
+          "name": "Yamaraja: Wind",
+          "hp": 900,
+          "class": "Earth",
+          "drop": "Seal of Life"
+        },
+        {
+          "name": "Li Li",
+          "hp": 580,
+          "class": "Dark",
+          "drop": "W.Tiger Hair"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 10
+        },
+        {
+          "name": "Margarete",
+          "level": 10
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 10
+        }
+      ],
+      "exp": 720,
+      "cash": 3600,
+      "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+    },
+    {
+      "type": "BOSS",
+      "name": "Li Li, Wugui, Xieshi, Baigu, Qinggu",
+      "enemies": [
+        {
+          "name": "Li Li",
+          "hp": 720,
+          "class": "Dark",
+          "drop": "B.Tortoise Fang"
+        },
+        {
+          "name": "Wugui",
+          "hp": 330,
+          "class": "Dark",
+          "drop": "Weird Bottle"
+        },
+        {
+          "name": "Xieshi",
+          "hp": 530,
+          "class": "Fire",
+          "drop": "Jade Lariat"
+        },
+        {
+          "name": "Baigu",
+          "hp": 380,
+          "class": "Light",
+          "drop": "Coral Lariat"
+        },
+        {
+          "name": "Qinggu",
+          "hp": 600,
+          "class": "Water",
+          "drop": "Leonardo's Bear"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 14
+        },
+        {
+          "name": "Margarete",
+          "level": 14
+        },
+        {
+          "name": "Alice",
+          "level": 13
+        }
+      ],
+      "exp": 1000,
+      "cash": 3950,
+      "strategy": "At least this time she won't use Dark Messenger, but she still uses\nParalysis (which, again, does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets.) Watch\nout for Hate Storm, as it'll do decent damage to your whole party.\nStart off by healing, if needed. As with the last battle, if you have it,\nhave Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should\ndo MAJOR damage. Alice should cast Holy Edge on Margarete first, so she\nhas Light-based attacks, then she should cast Blessed Light. Margaret\nshould just be attacking normally, using Thera and Mana Leaves whenever\nthe party's HP/MP are getting low. If you really need a second healer,\nHeaven's Fiend is perfect for the role, as its Sacred Remedy will heal\nEVERYONE in the party, especially after Hate Storm.\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light REPEATEDLY. Margaret will be\nthe primary healer once again, as Yuri and Alice should be shelling out\nsome pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever\nthe party's HP/MP are getting low, and you should be fine."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: War",
+      "enemies": [
+        {
+          "name": "Yamaraja: War",
+          "hp": 840,
+          "class": "Dark",
+          "drop": "R.Phoenix Talon"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 17
+        },
+        {
+          "name": "Margarete",
+          "level": 16
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 15
+        }
+      ],
+      "exp": 2000,
+      "cash": 5400,
+      "strategy": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful\nonly as a healer. He also uses the Game of Death, just like Wugui; if you\ndon't have those Leonardo's Bears equipped to everyone, they'll have a\nchance to instantly kill you. His Nightmare attack will hit the entire\nparty for a lot of damage, so make sure heal afterward. The only other\nthing he does is a hellacious physical attack that'll hit for major\ndamage. Once he starts using Nightmare repeatedly, you could be in a bit\nof trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. Margarete should be\nattacking normally, but having her jump in to use Thera Seeds if needed,\nand Zhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+    },
+    {
+      "type": "BOSS",
+      "name": "Cursed Puppet",
+      "enemies": [
+        {
+          "name": "Cursed Puppet",
+          "hp": 1080,
+          "class": "Dark",
+          "drop": "Seal of Wisdom"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 19
+        },
+        {
+          "name": "Margarete",
+          "level": 18
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 17
+        }
+      ],
+      "exp": 2000,
+      "cash": 6000,
+      "strategy": "This is basically the same battle as with Yamaraja: War, only easier. As\nwith Yamaraja: War, the Cursed Puppet will absorb all magic, making\nZhuzhen useful only as a healer. He also uses the Game of Death, just as\nusual; if you don't have those Leonardo's Bears equipped to everyone,\nthey'll have a chance to instantly kill you. His Nightmare attack will\nhit the entire party for a lot of damage, so make sure heal afterward.\nThe only other thing he does is a hellacious physical attack that'll hit\nfor major damage. Once he starts using Nightmare repeatedly, you could be\nin a bit of trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. If he has the Mind's Eye\nequipped, it won't take very long. Margarete should be attacking\nnormally, but having her jump in to use Thera Seeds if needed, and\nZhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Stone, Badger Devil",
+      "enemies": [
+        {
+          "name": "Yamaraja: Stone",
+          "hp": 1800,
+          "class": "Fire",
+          "drop": "B.Dragon Horn"
+        },
+        {
+          "name": "Badger Devil",
+          "hp": 700,
+          "class": "Fire",
+          "drop": "Seal of Luck"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 20
+        },
+        {
+          "name": "Margarete",
+          "level": 19
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 18
+        }
+      ],
+      "exp": 2600,
+      "cash": 6000,
+      "strategy": "Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be\nyour go-to Fusion if you're taking the magic route.\nOther than the fact that he uses defensive spells (that don't seem to\nhelp him at all), all he'll use are physical attacks. They're not TOO\nstrong, but if he focuses on just one person on two different attacks,\nhe'll whittle their HP down quicker than you realize, so stay healed.\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. This Yamaraja is fairly easy\ncompared to the last two bosses."
+    },
+    {
+      "type": "BOSS",
+      "name": "Dehuai",
+      "enemies": [
+        {
+          "name": "Dehuai",
+          "hp": 1700,
+          "class": "Fire",
+          "drop": "Hermit's Staff"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 22
+        },
+        {
+          "name": "Margarete",
+          "level": 20
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 19
+        }
+      ],
+      "exp": 3500,
+      "cash": 7000,
+      "strategy": "Another Fire-based boss? Don't mind if I do! Makes Margarete that much\nmore useful!\nDehuai's fire attacks, Magnard and Blaze, will hit your whole party for\ndecent damage, and he also has a rather quick (and interestingly bizarre)\nphysical attack that also does decent to major damage. He also has a Fast\nRing attack that hits for decent damage, and it can possibly make your\nJudgment Ring spin faster. Make sure to keep healed and try to keep that\nRing status off!\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. He's pretty easy as well, but the\nchallenge is upcoming."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Calamity, Tindalos",
+      "enemies": [
+        {
+          "name": "Yamaraja: Calamity",
+          "hp": 3000,
+          "class": "None",
+          "drop": "Fifth Key"
+        },
+        {
+          "name": "Tindalos",
+          "hp": 2000,
+          "class": "Fire",
+          "drop": "Iron Clogs"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 22
+        },
+        {
+          "name": "Margarete",
+          "level": 21
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 20
+        }
+      ],
+      "exp": 6000,
+      "cash": 11000,
+      "strategy": "Yamaraja will most likely start off with the Crimson Flame spell, dealing\nMAJOR fire damage to your party and possibly Silencing them as well. His\nPetrification attack should only do medium damage to your party IF you're\nprotected against it; otherwise, you'll turn to stone, and three\nPetrified party members equals a game over. He'll also use a Shockwave\nattack, but it only does a small amount of damage to your whole party.\nHis physical attacks are nothing to sneeze at either; a series of three\nattacks will do MAJOR damage to a party member.\nAs much as I hate to say this, Yuri will need to be the primary healer of\nthis battle, as he's the only one that has a heal-all spell, and without\nit, it will be hard to keep up with the healing with just two party\nmembers. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if\nyour party needs healing, and if they don't, then use Exorcist Arrow.\nZhuzhen should be constantly casting Life Sucker, and Margarete should be\nusing Snipe. When the party's MP starts getting low, have Margarete use\nMana Seeds to boost them back up.\nDue to the sheer amount of HP Yamaraja has, and the fact that your main\ndamage dealer is on healing duty, prepare for a very long battle. You'll\nmost likely need to use at least two Pure Seeds to keep Zhuzhen's and\nMargarete's SP up."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yuri, Fox Face, Olga, Olga, Night Stalker, Jack",
+      "enemies": [
+        {
+          "name": "Yuri",
+          "hp": 1400,
+          "class": "Dark",
+          "drop": null
+        },
+        {
+          "name": "Fox Face",
+          "hp": 555,
+          "class": "Dark",
+          "drop": "Brass Knuckles"
+        },
+        {
+          "name": "Olga",
+          "hp": 680,
+          "class": "Dark",
+          "drop": "Monk Earrings"
+        },
+        {
+          "name": "Olga",
+          "hp": 3300,
+          "class": "Dark",
+          "drop": "Small Jug"
+        },
+        {
+          "name": "Night Stalker",
+          "hp": 2500,
+          "class": "Wind",
+          "drop": "Kid's Room Key"
+        },
+        {
+          "name": "Jack",
+          "hp": 2500,
+          "class": "Water",
+          "drop": "Seal of Speed"
+        }
+      ],
+      "party": [
+        {
+          "name": "Keith",
+          "level": 23
+        },
+        {
+          "name": "Alice",
+          "level": 23
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 24
+        }
+      ],
+      "exp": 13000,
+      "cash": 12500,
+      "strategy": "Yikes! His normal three-hit combo will do MAJOR damage to anyone it hits,\nso heal the survivor immediately. Yuri has quite a bit of HP, and hits\nharder than anyone else thus far, so healing will be your immediate\npriority.\nAfter just about 400 HP worth of damage, Yuri will fuse into the Death\nEmperor, starting to use Dark Messenger. As long as you have Leonardo's\nBears equipped, you won't die instantly, but you'll still be hit pretty\nhard. Again, to reiterate: healing will be your immediate priority. Have\ntwo people healing, if needed.\nFor the first round, have Alice cast Holy Edge on Keith to add a Light\nclass to his attack, then devote Alice to healing. There most likely\nwon't be a round where she can attack, but if you can, then use Blessed\nLight. Zhuzhen should be using Corpse Arm every round, and Keith should\nbe attacking normally every round, with his weapon laced with Holy Edge.\nWhoever is doing the least amount of damage needs to be helping Alice\nheal if it's needed.\nLike the last few battles, it'll probably take long enough that you'll\nneed to replenish your MP and SP as well. Again, have whoever is doing\nthe least amount of damage take care of this.\nHe won't fuse into the Death Emperor this time, but he'll still use his\n!!! attack. When he does, IMMEDIATELY use a Thera Seed, and DON'T even\ntry to hit the 'Perfect!!' mark; just get Yuri away from 1 HP, and you'll\nbe fine.\nFuse into either the Raging Tiger or Inferno (with Fighting Spirit) and\njust start wailing away on him with physical attacks. Just keep trading\nblows, using Thera Seeds to heal whenever your HP starts to get low, and\nESPECIALLY after the !!! attack."
+    },
+    {
+      "type": "BOSS",
+      "name": "Mammon, Rausan",
+      "enemies": [
+        {
+          "name": "Mammon",
+          "hp": 3600,
+          "class": "Earth",
+          "drop": "Demon Earrings"
+        },
+        {
+          "name": "Rausan",
+          "hp": 3500,
+          "class": "Fire",
+          "drop": "Spade Key"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 31
+        },
+        {
+          "name": "Halley",
+          "level": 29
+        },
+        {
+          "name": "Alice",
+          "level": 31
+        }
+      ],
+      "exp": 20000,
+      "cash": 16000,
+      "strategy": "Mammon's normal attacks will hit for pretty decent damage, but its\nbiggest threat is its Petrification attack, which hopefully you've\nprevented with either a Zodiac Bracelet or a Crucifix, though it'll still\ndo a decent amount of damage, even if you did. It will also use a\nShockwave spell, doing quite a bit a damage to your entire party, as well\nas Needlerain, a strong attack to just one party member.\nIts Howling skill will replenish its HP by 500+ once it's near dying, but\nlucky for you, Yuri's a powerhouse and will take that away and then some\nin one round.\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use his Air Edge on\nYuri to increase Yuri's damage output, then have him cast Aqua Blade for\nthe remainder of the battle, unless he's learned Air Shot by now, then by\nall means, use that. Alice should be healing as needed, using Blessed\nLight when no healing is needed."
+    },
+    {
+      "type": "BOSS",
+      "name": "Olga",
+      "enemies": [
+        {
+          "name": "Olga",
+          "hp": 4000,
+          "class": "Dark",
+          "drop": "Warlock Earrings"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 34
+        },
+        {
+          "name": "Halley",
+          "level": 33
+        },
+        {
+          "name": "Alice",
+          "level": 34
+        }
+      ],
+      "exp": 22000,
+      "cash": 17000,
+      "strategy": "As before, Olga's Black Fog attack will do MAJOR damage to your party, as\nwell as Poison each one of them, so it's a good idea to come in with\nCosmic Bracelets equipped. Her normal attacks don't do too much damage,\nbut her Icy Breath, Rock Storm and Lightning attacks will also both do\nquite a bit of damage to your entire party, so be careful. Watch out if\nshe uses Mind Assault to steal your MP, as you'll want to recover it\nimmediately if she takes too much.\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. With his attacked laced with Alice's Holy\nEdge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to\nstart with on Yuri, then have her on healing duty. Have Halley use Air\nShot every round, helping Alice heal as needed.\nIf you have it, have Alice take advantage of her Arc spell and just heal\nevery round, it makes this battle MUCH easier.\nIf you're unable to keep up with healing while trying to dish out the\ndamage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo\ninstead of Ifrit, using his healing spell to take care of the party while\nAlice and Halley use Blessed Light and Air Shot to make up the\ndifference."
+    },
+    {
+      "type": "BOSS",
+      "name": "Albert, Amon, Golden Bat",
+      "enemies": [
+        {
+          "name": "Albert",
+          "hp": 2000,
+          "class": "Dark",
+          "drop": null
+        },
+        {
+          "name": "Amon",
+          "hp": 4000,
+          "class": "None",
+          "drop": "Angel Earrings"
+        },
+        {
+          "name": "Golden Bat",
+          "hp": 1500,
+          "class": "None",
+          "drop": "DemonSwd-Tyrving"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 37
+        },
+        {
+          "name": "Margarete",
+          "level": 30
+        },
+        {
+          "name": "Alice",
+          "level": 36
+        }
+      ],
+      "exp": 35000,
+      "cash": 18000,
+      "strategy": "Albert's Holy Chest attack will do some decent damage, but even worse,\nit'll reduce the amount of SP your entire party has by half, so making\nsure that you had those Will Power Accessories equipped will help MAJORLY\nin keeping the SP damage from happening. Other than that, he has a\nphysical attack that will do a decent amount of damage, and his\nRevelation attack will also do a decent amount of damage, but to your\nentire party with a chance of Instant Death. He rarely uses Revelation,\nbut if you have problems with the Instant Death it causes, equip some\nLeonardo's Bears and try again.\nHave Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or\nBattle Cry) to boost his attack (as well as Margarete's, if you're using\nIfrit and have the time), then have him attack normally every round.\nAlice should cast Holy Edge on both Yuri and Margarete to start with,\nthen have her be devoted each round to casting Arc to keep everyone\nhealed. Margarete should have the Mind's Eye equipped and attacking\nnormally while being laced with Holy Edge, just like Yuri.\nAny time after dealing over 2000 damage to Albert, he will fuse into\nAmon. Continue with the exact same strategy as above, minus the Holy Edge\nsince Amon is non-class.\nAmon's Atomic Dust spell will do pretty good damage to your entire party,\nand he'll also hit with his physical attacks, which can cause major\ndamage to a single ally. You need to watch out for Demon Rays though, as\nit'll either kill or nearly kill whomever it hits."
+    },
+    {
+      "type": "BOSS",
+      "name": "Orb Chaos",
+      "enemies": [
+        {
+          "name": "Orb Chaos",
+          "hp": 7500,
+          "class": "Light",
+          "drop": "Holy Book-Flesh"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 38
+        },
+        {
+          "name": "Margarete",
+          "level": 33
+        },
+        {
+          "name": "Alice",
+          "level": 38
+        }
+      ],
+      "exp": 48000,
+      "cash": 27500,
+      "strategy": "She has several different spells that will increase her stats by 25-30%,\nso once she's done doing that, be very careful, as they went from very\nstrong to deadly. She WILL almost kill Yuri in one set of attacks once\nher attack is boosted, she's THAT strong! Alice won't have time to do\nanything except Arc once Orb Chaos starts attacking.\nOther than the boosting spells, Orb Chaos attacks normally for major\ndamage, and uses a spell called Expression that can not only do pretty\ngood damage, but can also Paralyze your entire party! If you don't have\nthose Crucifixes equipped, good luck winning, especially when she starts\nusing Expression each turn, one after another.\nEven though he may barely have enough SP to do it, have Yuri fuse into\nAmon, then have one of the girls use a Pure Seed/Root on him to give him\nsome breathing room, then have him attack normally. Alice should be\ncasting Arc every round, and Margarete should be attacking normally every\nround, since both she and Yuri should have Mind's Eyes equipped.\nNOTE     Once the battle is over, you'll receive Alice's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Book-Flesh."
+    },
+    {
+      "type": "BOSS",
+      "name": "Cherubim",
+      "enemies": [
+        {
+          "name": "Cherubim",
+          "hp": 10000,
+          "class": "None",
+          "drop": "Holy Peak Staff"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 40
+        },
+        {
+          "name": "Margarete",
+          "level": 35
+        },
+        {
+          "name": "Alice",
+          "level": 40
+        }
+      ],
+      "exp": 120,
+      "cash": 600,
+      "strategy": "Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually\nstart the battle with the !!! attack, reducing a party member's HP to 1,\nor Divine Punishment, doing pretty good damage to your entire party, as\nwell as causing various status effects, so make sure to heal them\nstraight away. He will continue using them throughout the battle, and his\nphysical attacks will hit an ally for pretty decent damage as well.\nNote that he won't take hardly any damage from your special attacks, so\nfocus only on physical attacks. Have Yuri fuse into Amon and attack\nnormally while Alice casts Arc as needed, leaving Margarete to also\nattack normally, supporting Alice when needed to replenish Yuri's SP, as\nwell as Alice's MP.\nCherubim isn't really that complicated, so as long as you have Crucifixes\nequipped to everyone and have Alice use Arc every round, then it's just a\nmatter of taking the time to whittle away his HP. Just make sure not to\nlet anyone go Berserk.\nNOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Peak Staff."
+    },
+    {
+      "type": "BOSS",
+      "name": "Seraphim, Grail Mask, Gold Mask, Staff Mask, Sword Mask, Grail Mask, Gold Mask, Staff Mask, Sword Mask",
+      "enemies": [
+        {
+          "name": "Seraphim",
+          "hp": 4000,
+          "class": "None",
+          "drop": "Volt Snipe"
+        },
+        {
+          "name": "Grail Mask",
+          "hp": 2000,
+          "class": "Water",
+          "drop": "Amber Ring"
+        },
+        {
+          "name": "Gold Mask",
+          "hp": 2625,
+          "class": "Earth",
+          "drop": "Carnelian Ring"
+        },
+        {
+          "name": "Staff Mask",
+          "hp": 2250,
+          "class": "Fire",
+          "drop": "Lazurite Ring"
+        },
+        {
+          "name": "Sword Mask",
+          "hp": 1875,
+          "class": "Wind",
+          "drop": "Obsidian Ring"
+        },
+        {
+          "name": "Grail Mask",
+          "hp": 1,
+          "class": "Water",
+          "drop": "Thera Leaf"
+        },
+        {
+          "name": "Gold Mask",
+          "hp": 1,
+          "class": "Earth",
+          "drop": "Thera Leaf"
+        },
+        {
+          "name": "Staff Mask",
+          "hp": 1,
+          "class": "Fire",
+          "drop": "Thera Leaf"
+        },
+        {
+          "name": "Sword Mask",
+          "hp": 1,
+          "class": "Wind",
+          "drop": "Thera Leaf"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 42
+        },
+        {
+          "name": "Margarete",
+          "level": 38
+        },
+        {
+          "name": "Alice",
+          "level": 42
+        }
+      ],
+      "exp": 60000,
+      "cash": 38000,
+      "strategy": "Seraphim hits pretty hard, enough to kill right off the bat, so once\nagain, Alice will be doing nothing but Arc this battle. Other than his\nnormal attacks, he will use Divine Punishment, doing pretty good damage\nto your entire party, as well as causing various status effects, so make\nsure to heal them straight away.\nHave Yuri fuse into Amon and keep at him with physical attacks, and have\nMargarete attack normally as well, taking breaks to help replenish MP and\nSP as needed. Since Seraphim has lower HP than Cherubim, you probably\nwon't have to replenish either MP nor SP.\nLike Cherubim, Seraphim isn't really that complicated, so as long as you\nhave Crucifixes equipped to everyone and have Alice use Arc every round,\nthen it's just a matter of taking the time to whittle away his HP. It\nactually won't take nearly as long, since Seraphim only has 40% the HP\nthat Cherubim had.\nNOTE     Once the battle is over, you'll receive Halley's best weapon,\n¯¯¯¯¯¯¯¯   the Volt Snipe."
+    },
+    {
+      "type": "BOSS",
+      "name": "Atman",
+      "enemies": [
+        {
+          "name": "Atman",
+          "hp": 4000,
+          "class": "None",
+          "drop": "Moonstone Ring"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 51
+        },
+        {
+          "name": "Alice",
+          "level": 51
+        }
+      ],
+      "exp": 50000,
+      "cash": 20000,
+      "strategy": "Atman can still kill Alice in two rounds, so make sure that she stays\nhealed. As for attacks, this time around, Atman will still use\nEradication, but it won't kill; instead, it'll just do a pretty good\namount of damage, as well as reduce SP. He can also attack normally, as\nwell as use Dragon Cry and other strong class spells for decent damage.\nHave Yuri fuse into Amon and rip into Atman with physical attacks, while\nAlice should be using Arc every round to keep their HP maxed. If for some\nreason she gets a free turn, have her cast Advent to help Yuri deal some\ndamage."
+    },
+    {
+      "type": "BOSS",
+      "name": "Ben Hyuga, SeraphicRadiance",
+      "enemies": [
+        {
+          "name": "Ben Hyuga",
+          "hp": 2000,
+          "class": "Dark",
+          "drop": null
+        },
+        {
+          "name": "SeraphicRadiance",
+          "hp": 5000,
+          "class": "None",
+          "drop": "Diamond Ring"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 52
+        }
+      ],
+      "exp": 60000,
+      "cash": 99999,
+      "strategy": "'———————————————————'   preferably, a Thera Extract.\nFuse into Amon, or if you need some spare SP, then Lobo (since he has the\n2nd highest P-Def at this point, as well as the same P-Atk as Amon). All\nyou'll be doing is physically attacking a round or two, then healing the\nnext. Yep, that's it... pretty boring actually, but any other route will\nlikely get you killed. Trust me, it's worth it.\nIf you find yourself in trouble, try using Third Keys to help dish out\ndamage when you have an opportunity to. If you're STILL having trouble\nwith him, then you'll just have to level up and try again."
+    },
+    {
+      "type": "BOSS",
+      "name": "Soul Block",
+      "enemies": [
+        {
+          "name": "Soul Block",
+          "hp": 7200,
+          "class": "Light",
+          "drop": "Monkey Paw"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 62
+        },
+        {
+          "name": "Alice",
+          "level": 52
+        },
+        {
+          "name": "Margarete",
+          "level": 50
+        }
+      ],
+      "exp": 40000,
+      "cash": 22500,
+      "strategy": "Yes, I know, Yuri's level is insanely high, but blame the game for not\nletting you be able to take him out of your party so you can level others\nup. It shouldn't affect much, as he's just as much of a powerhouse ten\nlevels earlier.\nIn any case, the Soul Block CANNOT be harmed physically, so it'll be up\nto your special attacks to take him out. He has some really strong\nphysical attacks, as well as the light spell, Pulse, and the Shockwave\nspell, neither of which are quite as strong, but hit everyone.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually cast For Tomorrow. (Just\nknow that For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice use Advent and have Margarete use Diving Bomber; whoever is\ndealing the least amount of damage (likely Alice), have her replenish\nYuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD\nkeep your party healed, but in case it falls behind, have Alice ready\nwith an Arc to bring you back up to snuff.\nIf you're having trouble with the hit areas of the SeraphicRadiance, then\nyou may want to start using Bronze Daggers (or Arrowheads for just Yuri)\non your party to widen the hit areas. If you're STILL having trouble,\nthen you'll probably be better of using Amon and his Demon Rays spell."
+    },
+    {
+      "type": "BOSS",
+      "name": "Hate",
+      "enemies": [
+        {
+          "name": "Hate",
+          "hp": 7000,
+          "class": "Dark",
+          "drop": "Seventh Key"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 63
+        },
+        {
+          "name": "Margarete",
+          "level": 51
+        },
+        {
+          "name": "Alice",
+          "level": 53
+        }
+      ],
+      "exp": 45000,
+      "cash": 25000,
+      "strategy": "Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes\nnow, so as long as they're equipped, we'll just receive minor to decent\ndamage to the whole party instead of ring anomalies and poison. It'll\nalso attempt to paralyze you, but will do a decent amount of damage to a\nsingle ally instead.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually attack from there on,\nusing Third Keys if you have spares, with Alice's Holy Edge on him.\n(Remember, For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice start off by casting Holy Edge on both Yuri and Margarete,\nthen use Advent when healing isn't needed, and have her use Arc when it\nis. Margarete should be attacking physically as well with Third Keys.\nThis boss is actually a lot easier than the last."
+    },
+    {
+      "type": "BOSS",
+      "name": "Scapegoat",
+      "enemies": [
+        {
+          "name": "Scapegoat",
+          "hp": 7700,
+          "class": "Wind",
+          "drop": "Crucifix"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 64
+        },
+        {
+          "name": "Margarete",
+          "level": 53
+        },
+        {
+          "name": "Alice",
+          "level": 55
+        }
+      ],
+      "exp": 50000,
+      "cash": 27500,
+      "strategy": "The Scapegoat will use Wind Fang that will hit your whole party for a\nsmall amount of damage, and will also attack normally on a single ally\nfor decent damage. He can also use Deathtouch, which if you remember,\ninstantly puts an ally into critical HP status, so make sure to heal\nstraight away when he uses it.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys if you have spares. (Remember, For Everyone\nALSO boosts your AGL, and that means a faster ring, so if you can't keep\nup with it, don't worry about casting it to begin with.)\nHave Alice use Advent when healing isn't needed, and have her use Arc\nwhen it is. Margarete should be attacking physically as well with Third\nKeys. Just make sure to stay healed and you should be fine."
+    },
+    {
+      "type": "BOSS",
+      "name": "Messiah, Meta-God",
+      "enemies": [
+        {
+          "name": "Messiah",
+          "hp": 6000,
+          "class": "None",
+          "drop": "Silver Hand"
+        },
+        {
+          "name": "Meta-God",
+          "hp": 12500,
+          "class": "None",
+          "drop": null
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 65
+        },
+        {
+          "name": "Margarete",
+          "level": 54
+        },
+        {
+          "name": "Alice",
+          "level": 56
+        }
+      ],
+      "exp": 60000,
+      "cash": 0,
+      "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
+    }
+  ],
+  "boss": [
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Earth, Water Tiger, Kappa, Kappa",
+      "enemies": [
+        {
+          "name": "Yamaraja: Earth",
+          "hp": 300,
+          "class": "Water",
+          "drop": "Star Brooch"
+        },
+        {
+          "name": "Water Tiger",
+          "hp": 380,
+          "class": "Fire",
+          "drop": "Spikes"
+        },
+        {
+          "name": "Kappa",
+          "hp": 100,
+          "class": "Water",
+          "drop": "Tent"
+        },
+        {
+          "name": "Kappa",
+          "hp": 100,
+          "class": "Water",
+          "drop": "Tent"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 7
+        },
+        {
+          "name": "Alice",
+          "level": 6
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 6
+        }
+      ],
+      "exp": 180,
+      "cash": 1800,
+      "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
+    },
+    {
+      "type": "BOSS",
+      "name": "Beast Dog",
+      "enemies": [
+        {
+          "name": "Beast Dog",
+          "hp": 480,
+          "class": "Fire",
+          "drop": "Voodoo Doll"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 9
+        },
+        {
+          "name": "Margarete",
+          "level": 9
+        },
+        {
+          "name": "Alice",
+          "level": 9
+        }
+      ],
+      "exp": 540,
+      "cash": 3000,
+      "strategy": "Be wary of its Breath of Fire attack; it'll hit the whole part for pretty\ngood damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own\nstrength, making them that much worse, so keep an eye on your HP.\nTo start, have Margarete cast the Aqua Edge on Yuri, followed by using\nher Grenade skill repeatedly. With a water-based attack, have Yuri fuse\ninto the Raging Tiger and start attacking normally, doing some major\ndamage. Have Alice keep everyone's HP up during the battle, having\nMargarete help out when needed. As usual, make sure Alice's SP doesn't\ndrop to 0."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Wind, Li Li",
+      "enemies": [
+        {
+          "name": "Yamaraja: Wind",
+          "hp": 900,
+          "class": "Earth",
+          "drop": "Seal of Life"
+        },
+        {
+          "name": "Li Li",
+          "hp": 580,
+          "class": "Dark",
+          "drop": "W.Tiger Hair"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 10
+        },
+        {
+          "name": "Margarete",
+          "level": 10
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 10
+        }
+      ],
+      "exp": 720,
+      "cash": 3600,
+      "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+    },
+    {
+      "type": "BOSS",
+      "name": "Li Li, Wugui, Xieshi, Baigu, Qinggu",
+      "enemies": [
+        {
+          "name": "Li Li",
+          "hp": 720,
+          "class": "Dark",
+          "drop": "B.Tortoise Fang"
+        },
+        {
+          "name": "Wugui",
+          "hp": 330,
+          "class": "Dark",
+          "drop": "Weird Bottle"
+        },
+        {
+          "name": "Xieshi",
+          "hp": 530,
+          "class": "Fire",
+          "drop": "Jade Lariat"
+        },
+        {
+          "name": "Baigu",
+          "hp": 380,
+          "class": "Light",
+          "drop": "Coral Lariat"
+        },
+        {
+          "name": "Qinggu",
+          "hp": 600,
+          "class": "Water",
+          "drop": "Leonardo's Bear"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 14
+        },
+        {
+          "name": "Margarete",
+          "level": 14
+        },
+        {
+          "name": "Alice",
+          "level": 13
+        }
+      ],
+      "exp": 1000,
+      "cash": 3950,
+      "strategy": "At least this time she won't use Dark Messenger, but she still uses\nParalysis (which, again, does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets.) Watch\nout for Hate Storm, as it'll do decent damage to your whole party.\nStart off by healing, if needed. As with the last battle, if you have it,\nhave Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should\ndo MAJOR damage. Alice should cast Holy Edge on Margarete first, so she\nhas Light-based attacks, then she should cast Blessed Light. Margaret\nshould just be attacking normally, using Thera and Mana Leaves whenever\nthe party's HP/MP are getting low. If you really need a second healer,\nHeaven's Fiend is perfect for the role, as its Sacred Remedy will heal\nEVERYONE in the party, especially after Hate Storm.\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light REPEATEDLY. Margaret will be\nthe primary healer once again, as Yuri and Alice should be shelling out\nsome pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever\nthe party's HP/MP are getting low, and you should be fine."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: War",
+      "enemies": [
+        {
+          "name": "Yamaraja: War",
+          "hp": 840,
+          "class": "Dark",
+          "drop": "R.Phoenix Talon"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 17
+        },
+        {
+          "name": "Margarete",
+          "level": 16
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 15
+        }
+      ],
+      "exp": 2000,
+      "cash": 5400,
+      "strategy": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful\nonly as a healer. He also uses the Game of Death, just like Wugui; if you\ndon't have those Leonardo's Bears equipped to everyone, they'll have a\nchance to instantly kill you. His Nightmare attack will hit the entire\nparty for a lot of damage, so make sure heal afterward. The only other\nthing he does is a hellacious physical attack that'll hit for major\ndamage. Once he starts using Nightmare repeatedly, you could be in a bit\nof trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. Margarete should be\nattacking normally, but having her jump in to use Thera Seeds if needed,\nand Zhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+    },
+    {
+      "type": "BOSS",
+      "name": "Cursed Puppet",
+      "enemies": [
+        {
+          "name": "Cursed Puppet",
+          "hp": 1080,
+          "class": "Dark",
+          "drop": "Seal of Wisdom"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 19
+        },
+        {
+          "name": "Margarete",
+          "level": 18
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 17
+        }
+      ],
+      "exp": 2000,
+      "cash": 6000,
+      "strategy": "This is basically the same battle as with Yamaraja: War, only easier. As\nwith Yamaraja: War, the Cursed Puppet will absorb all magic, making\nZhuzhen useful only as a healer. He also uses the Game of Death, just as\nusual; if you don't have those Leonardo's Bears equipped to everyone,\nthey'll have a chance to instantly kill you. His Nightmare attack will\nhit the entire party for a lot of damage, so make sure heal afterward.\nThe only other thing he does is a hellacious physical attack that'll hit\nfor major damage. Once he starts using Nightmare repeatedly, you could be\nin a bit of trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. If he has the Mind's Eye\nequipped, it won't take very long. Margarete should be attacking\nnormally, but having her jump in to use Thera Seeds if needed, and\nZhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Stone, Badger Devil",
+      "enemies": [
+        {
+          "name": "Yamaraja: Stone",
+          "hp": 1800,
+          "class": "Fire",
+          "drop": "B.Dragon Horn"
+        },
+        {
+          "name": "Badger Devil",
+          "hp": 700,
+          "class": "Fire",
+          "drop": "Seal of Luck"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 20
+        },
+        {
+          "name": "Margarete",
+          "level": 19
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 18
+        }
+      ],
+      "exp": 2600,
+      "cash": 6000,
+      "strategy": "Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be\nyour go-to Fusion if you're taking the magic route.\nOther than the fact that he uses defensive spells (that don't seem to\nhelp him at all), all he'll use are physical attacks. They're not TOO\nstrong, but if he focuses on just one person on two different attacks,\nhe'll whittle their HP down quicker than you realize, so stay healed.\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. This Yamaraja is fairly easy\ncompared to the last two bosses."
+    },
+    {
+      "type": "BOSS",
+      "name": "Dehuai",
+      "enemies": [
+        {
+          "name": "Dehuai",
+          "hp": 1700,
+          "class": "Fire",
+          "drop": "Hermit's Staff"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 22
+        },
+        {
+          "name": "Margarete",
+          "level": 20
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 19
+        }
+      ],
+      "exp": 3500,
+      "cash": 7000,
+      "strategy": "Another Fire-based boss? Don't mind if I do! Makes Margarete that much\nmore useful!\nDehuai's fire attacks, Magnard and Blaze, will hit your whole party for\ndecent damage, and he also has a rather quick (and interestingly bizarre)\nphysical attack that also does decent to major damage. He also has a Fast\nRing attack that hits for decent damage, and it can possibly make your\nJudgment Ring spin faster. Make sure to keep healed and try to keep that\nRing status off!\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. He's pretty easy as well, but the\nchallenge is upcoming."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Calamity, Tindalos",
+      "enemies": [
+        {
+          "name": "Yamaraja: Calamity",
+          "hp": 3000,
+          "class": "None",
+          "drop": "Fifth Key"
+        },
+        {
+          "name": "Tindalos",
+          "hp": 2000,
+          "class": "Fire",
+          "drop": "Iron Clogs"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 22
+        },
+        {
+          "name": "Margarete",
+          "level": 21
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 20
+        }
+      ],
+      "exp": 6000,
+      "cash": 11000,
+      "strategy": "Yamaraja will most likely start off with the Crimson Flame spell, dealing\nMAJOR fire damage to your party and possibly Silencing them as well. His\nPetrification attack should only do medium damage to your party IF you're\nprotected against it; otherwise, you'll turn to stone, and three\nPetrified party members equals a game over. He'll also use a Shockwave\nattack, but it only does a small amount of damage to your whole party.\nHis physical attacks are nothing to sneeze at either; a series of three\nattacks will do MAJOR damage to a party member.\nAs much as I hate to say this, Yuri will need to be the primary healer of\nthis battle, as he's the only one that has a heal-all spell, and without\nit, it will be hard to keep up with the healing with just two party\nmembers. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if\nyour party needs healing, and if they don't, then use Exorcist Arrow.\nZhuzhen should be constantly casting Life Sucker, and Margarete should be\nusing Snipe. When the party's MP starts getting low, have Margarete use\nMana Seeds to boost them back up.\nDue to the sheer amount of HP Yamaraja has, and the fact that your main\ndamage dealer is on healing duty, prepare for a very long battle. You'll\nmost likely need to use at least two Pure Seeds to keep Zhuzhen's and\nMargarete's SP up."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yuri, Fox Face, Olga, Olga, Night Stalker, Jack",
+      "enemies": [
+        {
+          "name": "Yuri",
+          "hp": 1400,
+          "class": "Dark",
+          "drop": null
+        },
+        {
+          "name": "Fox Face",
+          "hp": 555,
+          "class": "Dark",
+          "drop": "Brass Knuckles"
+        },
+        {
+          "name": "Olga",
+          "hp": 680,
+          "class": "Dark",
+          "drop": "Monk Earrings"
+        },
+        {
+          "name": "Olga",
+          "hp": 3300,
+          "class": "Dark",
+          "drop": "Small Jug"
+        },
+        {
+          "name": "Night Stalker",
+          "hp": 2500,
+          "class": "Wind",
+          "drop": "Kid's Room Key"
+        },
+        {
+          "name": "Jack",
+          "hp": 2500,
+          "class": "Water",
+          "drop": "Seal of Speed"
+        }
+      ],
+      "party": [
+        {
+          "name": "Keith",
+          "level": 23
+        },
+        {
+          "name": "Alice",
+          "level": 23
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 24
+        }
+      ],
+      "exp": 13000,
+      "cash": 12500,
+      "strategy": "Yikes! His normal three-hit combo will do MAJOR damage to anyone it hits,\nso heal the survivor immediately. Yuri has quite a bit of HP, and hits\nharder than anyone else thus far, so healing will be your immediate\npriority.\nAfter just about 400 HP worth of damage, Yuri will fuse into the Death\nEmperor, starting to use Dark Messenger. As long as you have Leonardo's\nBears equipped, you won't die instantly, but you'll still be hit pretty\nhard. Again, to reiterate: healing will be your immediate priority. Have\ntwo people healing, if needed.\nFor the first round, have Alice cast Holy Edge on Keith to add a Light\nclass to his attack, then devote Alice to healing. There most likely\nwon't be a round where she can attack, but if you can, then use Blessed\nLight. Zhuzhen should be using Corpse Arm every round, and Keith should\nbe attacking normally every round, with his weapon laced with Holy Edge.\nWhoever is doing the least amount of damage needs to be helping Alice\nheal if it's needed.\nLike the last few battles, it'll probably take long enough that you'll\nneed to replenish your MP and SP as well. Again, have whoever is doing\nthe least amount of damage take care of this.\nHe won't fuse into the Death Emperor this time, but he'll still use his\n!!! attack. When he does, IMMEDIATELY use a Thera Seed, and DON'T even\ntry to hit the 'Perfect!!' mark; just get Yuri away from 1 HP, and you'll\nbe fine.\nFuse into either the Raging Tiger or Inferno (with Fighting Spirit) and\njust start wailing away on him with physical attacks. Just keep trading\nblows, using Thera Seeds to heal whenever your HP starts to get low, and\nESPECIALLY after the !!! attack."
+    },
+    {
+      "type": "BOSS",
+      "name": "Mammon, Rausan",
+      "enemies": [
+        {
+          "name": "Mammon",
+          "hp": 3600,
+          "class": "Earth",
+          "drop": "Demon Earrings"
+        },
+        {
+          "name": "Rausan",
+          "hp": 3500,
+          "class": "Fire",
+          "drop": "Spade Key"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 31
+        },
+        {
+          "name": "Halley",
+          "level": 29
+        },
+        {
+          "name": "Alice",
+          "level": 31
+        }
+      ],
+      "exp": 20000,
+      "cash": 16000,
+      "strategy": "Mammon's normal attacks will hit for pretty decent damage, but its\nbiggest threat is its Petrification attack, which hopefully you've\nprevented with either a Zodiac Bracelet or a Crucifix, though it'll still\ndo a decent amount of damage, even if you did. It will also use a\nShockwave spell, doing quite a bit a damage to your entire party, as well\nas Needlerain, a strong attack to just one party member.\nIts Howling skill will replenish its HP by 500+ once it's near dying, but\nlucky for you, Yuri's a powerhouse and will take that away and then some\nin one round.\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use his Air Edge on\nYuri to increase Yuri's damage output, then have him cast Aqua Blade for\nthe remainder of the battle, unless he's learned Air Shot by now, then by\nall means, use that. Alice should be healing as needed, using Blessed\nLight when no healing is needed."
+    },
+    {
+      "type": "BOSS",
+      "name": "Olga",
+      "enemies": [
+        {
+          "name": "Olga",
+          "hp": 4000,
+          "class": "Dark",
+          "drop": "Warlock Earrings"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 34
+        },
+        {
+          "name": "Halley",
+          "level": 33
+        },
+        {
+          "name": "Alice",
+          "level": 34
+        }
+      ],
+      "exp": 22000,
+      "cash": 17000,
+      "strategy": "As before, Olga's Black Fog attack will do MAJOR damage to your party, as\nwell as Poison each one of them, so it's a good idea to come in with\nCosmic Bracelets equipped. Her normal attacks don't do too much damage,\nbut her Icy Breath, Rock Storm and Lightning attacks will also both do\nquite a bit of damage to your entire party, so be careful. Watch out if\nshe uses Mind Assault to steal your MP, as you'll want to recover it\nimmediately if she takes too much.\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. With his attacked laced with Alice's Holy\nEdge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to\nstart with on Yuri, then have her on healing duty. Have Halley use Air\nShot every round, helping Alice heal as needed.\nIf you have it, have Alice take advantage of her Arc spell and just heal\nevery round, it makes this battle MUCH easier.\nIf you're unable to keep up with healing while trying to dish out the\ndamage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo\ninstead of Ifrit, using his healing spell to take care of the party while\nAlice and Halley use Blessed Light and Air Shot to make up the\ndifference."
+    },
+    {
+      "type": "BOSS",
+      "name": "Albert, Amon, Golden Bat",
+      "enemies": [
+        {
+          "name": "Albert",
+          "hp": 2000,
+          "class": "Dark",
+          "drop": null
+        },
+        {
+          "name": "Amon",
+          "hp": 4000,
+          "class": "None",
+          "drop": "Angel Earrings"
+        },
+        {
+          "name": "Golden Bat",
+          "hp": 1500,
+          "class": "None",
+          "drop": "DemonSwd-Tyrving"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 37
+        },
+        {
+          "name": "Margarete",
+          "level": 30
+        },
+        {
+          "name": "Alice",
+          "level": 36
+        }
+      ],
+      "exp": 35000,
+      "cash": 18000,
+      "strategy": "Albert's Holy Chest attack will do some decent damage, but even worse,\nit'll reduce the amount of SP your entire party has by half, so making\nsure that you had those Will Power Accessories equipped will help MAJORLY\nin keeping the SP damage from happening. Other than that, he has a\nphysical attack that will do a decent amount of damage, and his\nRevelation attack will also do a decent amount of damage, but to your\nentire party with a chance of Instant Death. He rarely uses Revelation,\nbut if you have problems with the Instant Death it causes, equip some\nLeonardo's Bears and try again.\nHave Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or\nBattle Cry) to boost his attack (as well as Margarete's, if you're using\nIfrit and have the time), then have him attack normally every round.\nAlice should cast Holy Edge on both Yuri and Margarete to start with,\nthen have her be devoted each round to casting Arc to keep everyone\nhealed. Margarete should have the Mind's Eye equipped and attacking\nnormally while being laced with Holy Edge, just like Yuri.\nAny time after dealing over 2000 damage to Albert, he will fuse into\nAmon. Continue with the exact same strategy as above, minus the Holy Edge\nsince Amon is non-class.\nAmon's Atomic Dust spell will do pretty good damage to your entire party,\nand he'll also hit with his physical attacks, which can cause major\ndamage to a single ally. You need to watch out for Demon Rays though, as\nit'll either kill or nearly kill whomever it hits."
+    },
+    {
+      "type": "BOSS",
+      "name": "Orb Chaos",
+      "enemies": [
+        {
+          "name": "Orb Chaos",
+          "hp": 7500,
+          "class": "Light",
+          "drop": "Holy Book-Flesh"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 38
+        },
+        {
+          "name": "Margarete",
+          "level": 33
+        },
+        {
+          "name": "Alice",
+          "level": 38
+        }
+      ],
+      "exp": 48000,
+      "cash": 27500,
+      "strategy": "She has several different spells that will increase her stats by 25-30%,\nso once she's done doing that, be very careful, as they went from very\nstrong to deadly. She WILL almost kill Yuri in one set of attacks once\nher attack is boosted, she's THAT strong! Alice won't have time to do\nanything except Arc once Orb Chaos starts attacking.\nOther than the boosting spells, Orb Chaos attacks normally for major\ndamage, and uses a spell called Expression that can not only do pretty\ngood damage, but can also Paralyze your entire party! If you don't have\nthose Crucifixes equipped, good luck winning, especially when she starts\nusing Expression each turn, one after another.\nEven though he may barely have enough SP to do it, have Yuri fuse into\nAmon, then have one of the girls use a Pure Seed/Root on him to give him\nsome breathing room, then have him attack normally. Alice should be\ncasting Arc every round, and Margarete should be attacking normally every\nround, since both she and Yuri should have Mind's Eyes equipped.\nNOTE     Once the battle is over, you'll receive Alice's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Book-Flesh."
+    },
+    {
+      "type": "BOSS",
+      "name": "Cherubim",
+      "enemies": [
+        {
+          "name": "Cherubim",
+          "hp": 10000,
+          "class": "None",
+          "drop": "Holy Peak Staff"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 40
+        },
+        {
+          "name": "Margarete",
+          "level": 35
+        },
+        {
+          "name": "Alice",
+          "level": 40
+        }
+      ],
+      "exp": 120,
+      "cash": 600,
+      "strategy": "Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually\nstart the battle with the !!! attack, reducing a party member's HP to 1,\nor Divine Punishment, doing pretty good damage to your entire party, as\nwell as causing various status effects, so make sure to heal them\nstraight away. He will continue using them throughout the battle, and his\nphysical attacks will hit an ally for pretty decent damage as well.\nNote that he won't take hardly any damage from your special attacks, so\nfocus only on physical attacks. Have Yuri fuse into Amon and attack\nnormally while Alice casts Arc as needed, leaving Margarete to also\nattack normally, supporting Alice when needed to replenish Yuri's SP, as\nwell as Alice's MP.\nCherubim isn't really that complicated, so as long as you have Crucifixes\nequipped to everyone and have Alice use Arc every round, then it's just a\nmatter of taking the time to whittle away his HP. Just make sure not to\nlet anyone go Berserk.\nNOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Peak Staff."
+    },
+    {
+      "type": "BOSS",
+      "name": "Seraphim, Grail Mask, Gold Mask, Staff Mask, Sword Mask, Grail Mask, Gold Mask, Staff Mask, Sword Mask",
+      "enemies": [
+        {
+          "name": "Seraphim",
+          "hp": 4000,
+          "class": "None",
+          "drop": "Volt Snipe"
+        },
+        {
+          "name": "Grail Mask",
+          "hp": 2000,
+          "class": "Water",
+          "drop": "Amber Ring"
+        },
+        {
+          "name": "Gold Mask",
+          "hp": 2625,
+          "class": "Earth",
+          "drop": "Carnelian Ring"
+        },
+        {
+          "name": "Staff Mask",
+          "hp": 2250,
+          "class": "Fire",
+          "drop": "Lazurite Ring"
+        },
+        {
+          "name": "Sword Mask",
+          "hp": 1875,
+          "class": "Wind",
+          "drop": "Obsidian Ring"
+        },
+        {
+          "name": "Grail Mask",
+          "hp": 1,
+          "class": "Water",
+          "drop": "Thera Leaf"
+        },
+        {
+          "name": "Gold Mask",
+          "hp": 1,
+          "class": "Earth",
+          "drop": "Thera Leaf"
+        },
+        {
+          "name": "Staff Mask",
+          "hp": 1,
+          "class": "Fire",
+          "drop": "Thera Leaf"
+        },
+        {
+          "name": "Sword Mask",
+          "hp": 1,
+          "class": "Wind",
+          "drop": "Thera Leaf"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 42
+        },
+        {
+          "name": "Margarete",
+          "level": 38
+        },
+        {
+          "name": "Alice",
+          "level": 42
+        }
+      ],
+      "exp": 60000,
+      "cash": 38000,
+      "strategy": "Seraphim hits pretty hard, enough to kill right off the bat, so once\nagain, Alice will be doing nothing but Arc this battle. Other than his\nnormal attacks, he will use Divine Punishment, doing pretty good damage\nto your entire party, as well as causing various status effects, so make\nsure to heal them straight away.\nHave Yuri fuse into Amon and keep at him with physical attacks, and have\nMargarete attack normally as well, taking breaks to help replenish MP and\nSP as needed. Since Seraphim has lower HP than Cherubim, you probably\nwon't have to replenish either MP nor SP.\nLike Cherubim, Seraphim isn't really that complicated, so as long as you\nhave Crucifixes equipped to everyone and have Alice use Arc every round,\nthen it's just a matter of taking the time to whittle away his HP. It\nactually won't take nearly as long, since Seraphim only has 40% the HP\nthat Cherubim had.\nNOTE     Once the battle is over, you'll receive Halley's best weapon,\n¯¯¯¯¯¯¯¯   the Volt Snipe."
+    },
+    {
+      "type": "BOSS",
+      "name": "Atman",
+      "enemies": [
+        {
+          "name": "Atman",
+          "hp": 4000,
+          "class": "None",
+          "drop": "Moonstone Ring"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 51
+        },
+        {
+          "name": "Alice",
+          "level": 51
+        }
+      ],
+      "exp": 50000,
+      "cash": 20000,
+      "strategy": "Atman can still kill Alice in two rounds, so make sure that she stays\nhealed. As for attacks, this time around, Atman will still use\nEradication, but it won't kill; instead, it'll just do a pretty good\namount of damage, as well as reduce SP. He can also attack normally, as\nwell as use Dragon Cry and other strong class spells for decent damage.\nHave Yuri fuse into Amon and rip into Atman with physical attacks, while\nAlice should be using Arc every round to keep their HP maxed. If for some\nreason she gets a free turn, have her cast Advent to help Yuri deal some\ndamage."
+    },
+    {
+      "type": "BOSS",
+      "name": "Ben Hyuga, SeraphicRadiance",
+      "enemies": [
+        {
+          "name": "Ben Hyuga",
+          "hp": 2000,
+          "class": "Dark",
+          "drop": null
+        },
+        {
+          "name": "SeraphicRadiance",
+          "hp": 5000,
+          "class": "None",
+          "drop": "Diamond Ring"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 52
+        }
+      ],
+      "exp": 60000,
+      "cash": 99999,
+      "strategy": "'———————————————————'   preferably, a Thera Extract.\nFuse into Amon, or if you need some spare SP, then Lobo (since he has the\n2nd highest P-Def at this point, as well as the same P-Atk as Amon). All\nyou'll be doing is physically attacking a round or two, then healing the\nnext. Yep, that's it... pretty boring actually, but any other route will\nlikely get you killed. Trust me, it's worth it.\nIf you find yourself in trouble, try using Third Keys to help dish out\ndamage when you have an opportunity to. If you're STILL having trouble\nwith him, then you'll just have to level up and try again."
+    },
+    {
+      "type": "BOSS",
+      "name": "Soul Block",
+      "enemies": [
+        {
+          "name": "Soul Block",
+          "hp": 7200,
+          "class": "Light",
+          "drop": "Monkey Paw"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 62
+        },
+        {
+          "name": "Alice",
+          "level": 52
+        },
+        {
+          "name": "Margarete",
+          "level": 50
+        }
+      ],
+      "exp": 40000,
+      "cash": 22500,
+      "strategy": "Yes, I know, Yuri's level is insanely high, but blame the game for not\nletting you be able to take him out of your party so you can level others\nup. It shouldn't affect much, as he's just as much of a powerhouse ten\nlevels earlier.\nIn any case, the Soul Block CANNOT be harmed physically, so it'll be up\nto your special attacks to take him out. He has some really strong\nphysical attacks, as well as the light spell, Pulse, and the Shockwave\nspell, neither of which are quite as strong, but hit everyone.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually cast For Tomorrow. (Just\nknow that For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice use Advent and have Margarete use Diving Bomber; whoever is\ndealing the least amount of damage (likely Alice), have her replenish\nYuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD\nkeep your party healed, but in case it falls behind, have Alice ready\nwith an Arc to bring you back up to snuff.\nIf you're having trouble with the hit areas of the SeraphicRadiance, then\nyou may want to start using Bronze Daggers (or Arrowheads for just Yuri)\non your party to widen the hit areas. If you're STILL having trouble,\nthen you'll probably be better of using Amon and his Demon Rays spell."
+    },
+    {
+      "type": "BOSS",
+      "name": "Hate",
+      "enemies": [
+        {
+          "name": "Hate",
+          "hp": 7000,
+          "class": "Dark",
+          "drop": "Seventh Key"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 63
+        },
+        {
+          "name": "Margarete",
+          "level": 51
+        },
+        {
+          "name": "Alice",
+          "level": 53
+        }
+      ],
+      "exp": 45000,
+      "cash": 25000,
+      "strategy": "Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes\nnow, so as long as they're equipped, we'll just receive minor to decent\ndamage to the whole party instead of ring anomalies and poison. It'll\nalso attempt to paralyze you, but will do a decent amount of damage to a\nsingle ally instead.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually attack from there on,\nusing Third Keys if you have spares, with Alice's Holy Edge on him.\n(Remember, For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice start off by casting Holy Edge on both Yuri and Margarete,\nthen use Advent when healing isn't needed, and have her use Arc when it\nis. Margarete should be attacking physically as well with Third Keys.\nThis boss is actually a lot easier than the last."
+    },
+    {
+      "type": "BOSS",
+      "name": "Scapegoat",
+      "enemies": [
+        {
+          "name": "Scapegoat",
+          "hp": 7700,
+          "class": "Wind",
+          "drop": "Crucifix"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 64
+        },
+        {
+          "name": "Margarete",
+          "level": 53
+        },
+        {
+          "name": "Alice",
+          "level": 55
+        }
+      ],
+      "exp": 50000,
+      "cash": 27500,
+      "strategy": "The Scapegoat will use Wind Fang that will hit your whole party for a\nsmall amount of damage, and will also attack normally on a single ally\nfor decent damage. He can also use Deathtouch, which if you remember,\ninstantly puts an ally into critical HP status, so make sure to heal\nstraight away when he uses it.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys if you have spares. (Remember, For Everyone\nALSO boosts your AGL, and that means a faster ring, so if you can't keep\nup with it, don't worry about casting it to begin with.)\nHave Alice use Advent when healing isn't needed, and have her use Arc\nwhen it is. Margarete should be attacking physically as well with Third\nKeys. Just make sure to stay healed and you should be fine."
+    },
+    {
+      "type": "BOSS",
+      "name": "Messiah, Meta-God",
+      "enemies": [
+        {
+          "name": "Messiah",
+          "hp": 6000,
+          "class": "None",
+          "drop": "Silver Hand"
+        },
+        {
+          "name": "Meta-God",
+          "hp": 12500,
+          "class": "None",
+          "drop": null
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 65
+        },
+        {
+          "name": "Margarete",
+          "level": 54
+        },
+        {
+          "name": "Alice",
+          "level": 56
+        }
+      ],
+      "exp": 60000,
+      "cash": 0,
+      "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
+    }
+  ],
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n        ««  Shadow Hearts  »»                                   [A-1-14]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                        Sub-bosses and Bosses                        \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nListed here are all of the sub-bosses and bosses in the game, as well as the\nstrategies to defeat them. This section is listed in the order that they were\nencountered within the walkthrough.\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Raging Tiger          |    75 HP  | Class: Earth |                          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Hey, we can win this one! Go ahead and use Yuri's Fusion skill to become   |\n|  the Death Emperor, then use normal attacks to wipe out the Raging Tiger.   |\n|  He's not tough at all, and should take just a couple turns to take out.    |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Hellcat               |    45 HP  | Class: Light | [_] TalismanOfLuck       |\n| Hellcat               |    45 HP  | Class: Light | [_] TalismanOfLuck       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  They're not too bad; just have Yuri fuse into the Raging Tiger and wail    |\n|  on them with regular attacks while Alice keeps both of you healed with     |\n|  either Cure or Thera Leaves.                                               |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00040 EXP   / \\   00300 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Felinus               |   250 HP  | Class: Wind  | [_] Lottery Ticket       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  This lady isn't to be taken lightly. She can use the Wind Fang ability to  |\n|  hit everyone for Wind damage, and after a couple of turns, your whole      |\n|  party will be in need of healing, so beware.                               |\n|                                                                             |\n|  Since she's a Wind class, have Yuri fuse into the Raging Tiger and use     |\n|  the Flying Stones skill to do some decent damage to her, followed by       |\n|  regular attack. Alice should be keeping everyone healed, as should         |\n|  Zhuzhen. If no one needs healing then, have Zhuzhen use his Ogre           |\n|  Flamedance spell, and Alice should attack normally. As long as you stay    |\n|  healed and don't let Alice go Berserk, you should be fine.                 |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00120 EXP   / \\   00600 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yamaraja: Earth       |   300 HP  | Class: Water | [_] Star Brooch          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [07]     |                   |                   |        |\n|        |                   |     Alice [06]    |    Zhuzhen [06]   |        |\n|        |===================|===================|===================|        |\n|        | Leather Gloves    | Small Bible       | Oak Staff         |        |\n|        | Cotton Shirt      | Cotton Blouse     | Cotton Shirt      |        |\n|        | Bandanna          | Bandanna          | Bandanna          |        |\n|        | Leather Belt      | Leather Belt      | Leather Belt      |        |\n|        |                   |                   |                   |        |\n|        | Death Emperor     |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Note that Yamaraja: Earth is actually a WATER class. As I mentioned        |\n|  above, he's pretty dangerous! If you can't beat him, level up in town for  |\n|  a while before trying again. I recommend at least level 6 for everyone.    |\n|                                                                             |\n|  His Flash Flood will hit an ally for pretty good damage, while his Large   |\n|  Whirlpool will hit your entire party for major damage, as well as          |\n|  possibly halving your Hit Area on your Ring, so be sure to heal after it   |\n|  hits. His physical attacks are also nothing to sneeze at, as they can      |\n|  take away large chunks of HP at a time. Make sure that Alice and Zhuzhen   |\n|  are in the back row, and when in doubt, just heal.                         |\n|                                                                             |\n|  Have Yuri fuse into the Raging Tiger and use his Flying Stones attack,     |\n|  followed by normal attacks. Have Alice stay on healing duty the entire     |\n|  time, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have  |\n|  Yuri supplement healing since Zhuzhen's fire magic probably hits for more  |\n|  than Yuri does, and make sure to keep Alice from becoming Berserk.         |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00180 EXP   / \\   01800 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Water Tiger           |   380 HP  | Class: Fire  | [_] Spikes               |\n| Kappa                 |   100 HP  | Class: Water | [_] Tent                 |\n| Kappa                 |   100 HP  | Class: Water | [_] Tent                 |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Have Yuri fuse into the Death Emperor or Raging Tiger and wail away on     |\n|  the Kappas first, since they have the ability to heal. Have Margarete use  |\n|  her Grenade skill until she's out of MP, then have her attack normally.    |\n|  Have Alice attack normally, unless she's needed for healing. If you want   |\n|  to do some extra damage to the Water Tiger once the Kappas are gone, have  |\n|  Margarete use her Aqua Edge on Yuri and have him attack the Fire-based     |\n|  Water Tiger.                                                               |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00400 EXP   / \\   02500 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Beast Dog             |   480 HP  | Class: Fire  | [_] Voodoo Doll          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [09]     |                   |   Margarete [09]  |        |\n|        |                   |     Alice [09]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Knuckle Blade     | ShootingStarTome  | Type 94 Pistol    |        |\n|        | Leather Vest      | Leather Skirt     | Leather Skirt     |        |\n|        | Bandanna          | Bandanna          | Bandanna          |        |\n|        | Leather Belt      | Leather Belt      | Leather Belt      |        |\n|        | Jade Lariat       | Star Brooch       | Shell Bracelet    |        |\n|        |                   |                   |                   |        |\n|        | Death Emperor     |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Be wary of its Breath of Fire attack; it'll hit the whole part for pretty  |\n|  good damage. Have each person heal themselves after the hit to be safe.    |\n|  Its physical attacks are bad enough, but it will increase its own          |\n|  strength, making them that much worse, so keep an eye on your HP.          |\n|                                                                             |\n|  To start, have Margarete cast the Aqua Edge on Yuri, followed by using     |\n|  her Grenade skill repeatedly. With a water-based attack, have Yuri fuse    |\n|  into the Raging Tiger and start attacking normally, doing some major       |\n|  damage. Have Alice keep everyone's HP up during the battle, having         |\n|  Margarete help out when needed. As usual, make sure Alice's SP doesn't     |\n|  drop to 0.                                                                 |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00540 EXP   / \\   03000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yamaraja: Wind        |   900 HP  | Class: Earth | [_] Seal of Life         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |                   |                   |                   |        |\n|        |     Yuri [10]     |   Margarete [10]  |    Zhuzhen [10]   |        |\n|        |===================|===================|===================|        |\n|        | Knuckle Blade     | Type 94 Pistol    | Hexagonal Staff   |        |\n|        | Leather Vest      | Leather Skirt     | Leather Vest      |        |\n|        | Leather Cap       | Leather Cap       | Leather Cap       |        |\n|        | Casual Belt       | Casual Belt       | Casual Belt       |        |\n|        | Jade Lariat       | Shell Bracelet    | Star Brooch       |        |\n|        |                   |                   |                   |        |\n|        | Death Emperor     |                   |                   |        |\n|        | Heaven's Fiend    |                   |                   |        |\n|        | Tornado           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Note that Yamaraja: Wind is actually an EARTH class, so make sure not to   |\n|  fuse into the Raging Tiger.                                                |\n|                                                                             |\n|  Its Shockwave attack will do decent damage to each character, while its    |\n|  Flying Stones attack will do major damage, but to only one character.      |\n|  However, its PHYSICAL attacks are the ones you have to worry about; it     |\n|  can do a three hit attack that will easily kill a party member, even if    |\n|  they're in the back row, so be sure to stay healed.                        |\n|                                                                             |\n|  If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have  |\n|  him fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells  |\n|  continuously; if he runs out of MP, have either him or someone else        |\n|  replenish it so he can keep dishing out the damage. Have Margarete on      |\n|  healing duty, using Thera Leaves on whoever needs them, as well as using   |\n|  Mana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his  |\n|  Ogre Flamedance continuously, stopping to heal if someone needs it.        |\n|                                                                             |\n|  Yuri should be doing the most damage if he has the Tornado Fusion, so      |\n|  keep his MP up while keeping everyone else healed.                         |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00720 EXP   / \\   03600 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Li Li                 |   580 HP  | Class: Dark  | [_] W.Tiger Hair         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  This is just a warm-up, so try to avoid using TOO much MP if possible for  |\n|  the next boss battle.                                                      |\n|                                                                             |\n|  She can and will use Dark Messenger, which not only deals major damage,    |\n|  but can instantly kill a party member, so be careful. Her other attacks    |\n|  are Paralysis (which does decent damage, but you should be guarded         |\n|  against the actual Paralysis effect with your Rosewood Bracelets) and a    |\n|  normal attack, which you shouldn't need to worry about.                    |\n|                                                                             |\n|  If you have it, have Yuri use Heaven's Fiend and use the Exorcist Arrow    |\n|  attack; it should do MAJOR damage. Alice should cast Holy Edge on          |\n|  Margarete first, so she has Light-based attacks, then she should cast      |\n|  Blessed Light. Margaret should just be attacking normally, using Thera     |\n|  and Mana Leaves whenever the party's HP/MP are getting low. If you really  |\n|  need a second healer, Heaven's Fiend is perfect for the role, as its       |\n|  Sacred Remedy will heal EVERYONE in the party.                             |\n|                                                                             |\n|  If you don't have Heaven's Fiend, have Yuri fuse into either Inferno or    |\n|  Raging Tiger (they are your two physically strongest Fusions at this       |\n|  point) and use normal attacks on her. If he has Inferno, use the Fighting  |\n|  Spirit skill first to increase his attack, then start wailing away on      |\n|  her. Alice should cast Holy Edge on Yuri first, so he has Light-based      |\n|  attacks, then she should cast Blessed Light. Margaret should just be       |\n|  attacking normally, using Thera and Mana Leaves whenever the party's       |\n|  HP/MP are getting low. Not much to worry about (other than Dark            |\n|  Messenger) here.                                                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00800 EXP   / \\   03800 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Li Li                 |   720 HP  | Class: Dark  | [_] B.Tortoise Fang      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [14]     |                   |   Margarete [14]  |        |\n|        |                   |     Alice [13]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Knuckle Blade     | ShootingStarTome  | Type 94 Pistol    |        |\n|        | Leather Vest      | Leather Skirt     | Leather Skirt     |        |\n|        | Flare Brooch      | Leather Cap       | Leather Cap       |        |\n|        | Jade Lariat       | Star Brooch       | Causal Belt       |        |\n|        | Rosewood Bracelet | Rosewood Bracelet | Rosewood Bracelet |        |\n|        |                   |                   |                   |        |\n|        | Heaven's Fiend    |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  At least this time she won't use Dark Messenger, but she still uses        |\n|  Paralysis (which, again, does decent damage, but you should be guarded     |\n|  against the actual Paralysis effect with your Rosewood Bracelets.) Watch   |\n|  out for Hate Storm, as it'll do decent damage to your whole party.         |\n|                                                                             |\n|  Start off by healing, if needed. As with the last battle, if you have it,  |\n|  have Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should  |\n|  do MAJOR damage. Alice should cast Holy Edge on Margarete first, so she    |\n|  has Light-based attacks, then she should cast Blessed Light. Margaret      |\n|  should just be attacking normally, using Thera and Mana Leaves whenever    |\n|  the party's HP/MP are getting low. If you really need a second healer,     |\n|  Heaven's Fiend is perfect for the role, as its Sacred Remedy will heal     |\n|  EVERYONE in the party, especially after Hate Storm.                        |\n|                                                                             |\n|  If you don't have Heaven's Fiend, have Yuri fuse into either Inferno or    |\n|  Raging Tiger (they are your two physically strongest Fusions at this       |\n|  point) and use normal attacks on her. If he has Inferno, use the Fighting  |\n|  Spirit skill first to increase his attack, then start wailing away on      |\n|  her. Alice should cast Holy Edge on Yuri first, so he has Light-based      |\n|  attacks, then she should cast Blessed Light REPEATEDLY. Margaret will be   |\n|  the primary healer once again, as Yuri and Alice should be shelling out    |\n|  some pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever     |\n|  the party's HP/MP are getting low, and you should be fine.                 |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01000 EXP   / \\   03950 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Wugui                 |   330 HP  | Class: Dark  | [_] Weird Bottle         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  As with the battle as his father, have Yuri fuse into your physically      |\n|  strongest Soul, Raging Tiger, and just rip into Wugui with physical        |\n|  attacks. He doesn't pose much of a threat, but if you let the battle go    |\n|  on too long, make sure to heal.                                            |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01500 EXP   / \\   04500 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Xieshi                |   530 HP  | Class: Fire  | [_] Jade Lariat          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  His Flaming Arm of Death spell will hit your party for a decent amount of  |\n|  damage, but also can Silence your party, so having Bell Bracelets          |\n|  equipped definitely helps a ton. You don't want to be stuck with NO        |\n|  healing abilities at all!                                                  |\n|                                                                             |\n|  I strongly recommend fusing Yuri in the Man Dragon Fusion if you have it,  |\n|  as not only is the enemy fire-based, but you'll be able to heal yourself   |\n|  in a pinch, if need be. Have Yuri use the Flash Flood skill repeatedly,    |\n|  and it should do massive damage each round. If you don't have Man Dragon,  |\n|  then fuse into Raging Tiger and cast Flying Stones to do some decent       |\n|  damage.                                                                    |\n|                                                                             |\n|  Zhuzhen should be healing pretty much the entire time. If he does have a   |\n|  free round, have him use Ogre Flamedance, since it'll still do some okay   |\n|  damage, even though the boss is fire-based.                                |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01600 EXP   / \\   04200 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Baigu                 |   380 HP  | Class: Light | [_] Coral Lariat         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  His Shining Arm of Death spell will hit your party for a decent amount of  |\n|  damage, but also can Paralyze your party, so having Rosewood Bracelets     |\n|  equipped definitely helps a ton. You don't want to be stuck with NO        |\n|  healing abilities at all!                                                  |\n|                                                                             |\n|  Not much of a strategy here, since there's only one thing you can do:      |\n|  Attack. Have Alice be the preferred healer, using Thera Seeds and such,    |\n|  since her attack is the weakest. Keep hammering away, and as long as you   |\n|  stay healed, Baigu will eventually fall.                                   |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01600 EXP   / \\   04200 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Qinggu                |   600 HP  | Class: Water | [_] Leonardo's Bear      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Hopefully you equipped the Pocket Watch on Yuri so that his Judgment Ring  |\n|  is unaffected.                                                             |\n|                                                                             |\n|  No strategy at all here, since all you can do is Attack and Defend. Just   |\n|  battle back and forth until you eventually win. If you've become           |\n|  proficient with your Judgment Ring, try equipping the Flash Badge on Yuri  |\n|  so he'll get a few more turns in. If you still can't win, then you'll      |\n|  have to level up some more and try again.                                  |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01800 EXP   / \\   04200 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yamaraja: War         |   840 HP  | Class: Dark  | [_] R.Phoenix Talon      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [17]     |                   |   Margarete [16]  |        |\n|        |                   |    Zhuzhen [15]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Steel Claw        | Pilgrim's Staff   | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Flare Brooch      | Studded Cap       | Studded Cap       |        |\n|        | Western Belt      | Jade Lariat       | Western Belt      |        |\n|        | Leonardo's Bear   | Leonardo's Bear   | Leonardo's Bear   |        |\n|        |                   |                   |                   |        |\n|        | Heaven's Fiend    |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful  |\n|  only as a healer. He also uses the Game of Death, just like Wugui; if you  |\n|  don't have those Leonardo's Bears equipped to everyone, they'll have a     |\n|  chance to instantly kill you. His Nightmare attack will hit the entire     |\n|  party for a lot of damage, so make sure heal afterward. The only other     |\n|  thing he does is a hellacious physical attack that'll hit for major        |\n|  damage. Once he starts using Nightmare repeatedly, you could be in a bit   |\n|  of trouble.                                                                |\n|                                                                             |\n|  Have Yuri fuse into Inferno and cast Fighting Spirit on himself, followed  |\n|  by physically attacking Yamaraja every turn. Margarete should be           |\n|  attacking normally, but having her jump in to use Thera Seeds if needed,   |\n|  and Zhuzhen should focus completely on recovery.                           |\n|                                                                             |\n|  If you're having trouble staying healed, have Yuri fuse into Heaven's      |\n|  Fiend so you have the whole party healing spell.                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   02000 EXP   / \\   05400 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Man Dragon            | HP Varies | Class: Water |                          |\n| Inferno               | HP Varies | Class: Fire  |                          |\n| Tornado               | HP Varies | Class: Wind  |                          |\n| Heaven's Fiend        | HP Varies | Class: Light |                          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Rather than list each sub-boss separately, I'm covering them all in this   |\n|  one section, since each one requires basically the same strategy.          |\n|                                                                             |\n|  Each of their HP varies depending on Yuri, so if he's weaker, they'll be   |\n|  weaker as well, and vice versa.                                            |\n|                                                                             |\n|  If you have the Fusion with the class opposite of one already, fuse into   |\n|  that monster and use its highest powered magic spell against them for      |\n|  major damage. If you don't, then just fuse into the Raging Tiger and wail  |\n|  on them with normal attacks for a few rounds. Make sure to keep yourself   |\n|  healed if you fear that you'll be taken down fairly easily.                |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Cursed Puppet         |  1080 HP  | Class: Dark  | [_] Seal of Wisdom       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [19]     |                   |   Margarete [18]  |        |\n|        |                   |    Zhuzhen [17]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Hand Needle       | Pilgrim's Staff   | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Mind's Eye        | Face Guard        | Studded Cap       |        |\n|        | Jade Lariat       | Coral Lariat      | Western Belt      |        |\n|        | Leonardo's Bear   | Leonardo's Bear   | Leonardo's Bear   |        |\n|        |                   |                   |                   |        |\n|        | Heaven's Fiend    |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  This is basically the same battle as with Yamaraja: War, only easier. As   |\n|  with Yamaraja: War, the Cursed Puppet will absorb all magic, making        |\n|  Zhuzhen useful only as a healer. He also uses the Game of Death, just as   |\n|  usual; if you don't have those Leonardo's Bears equipped to everyone,      |\n|  they'll have a chance to instantly kill you. His Nightmare attack will     |\n|  hit the entire party for a lot of damage, so make sure heal afterward.     |\n|  The only other thing he does is a hellacious physical attack that'll hit   |\n|  for major damage. Once he starts using Nightmare repeatedly, you could be  |\n|  in a bit of trouble.                                                       |\n|                                                                             |\n|  Have Yuri fuse into Inferno and cast Fighting Spirit on himself, followed  |\n|  by physically attacking Yamaraja every turn. If he has the Mind's Eye      |\n|  equipped, it won't take very long. Margarete should be attacking           |\n|  normally, but having her jump in to use Thera Seeds if needed, and         |\n|  Zhuzhen should focus completely on recovery.                               |\n|                                                                             |\n|  If you're having trouble staying healed, have Yuri fuse into Heaven's      |\n|  Fiend so you have the whole party healing spell.                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   02000 EXP   / \\   06000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yamaraja: Stone       |  1800 HP  | Class: Fire  | [_] B.Dragon Horn        |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [20]     |                   |   Margarete [19]  |        |\n|        |                   |    Zhuzhen [18]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Hand Needle       | Pilgrim's Staff   | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Mind's Eye        | Face Guard        | Studded Cap       |        |\n|        | Jade Lariat       | Coral Lariat      | Western Belt      |        |\n|        | Western Belt      | Voodoo Doll       | Weird Bottle      |        |\n|        |                   |                   |                   |        |\n|        | Man Dragon        |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be  |\n|  your go-to Fusion if you're taking the magic route.                        |\n|                                                                             |\n|  Other than the fact that he uses defensive spells (that don't seem to      |\n|  help him at all), all he'll use are physical attacks. They're not TOO      |\n|  strong, but if he focuses on just one person on two different attacks,     |\n|  he'll whittle their HP down quicker than you realize, so stay healed.      |\n|                                                                             |\n|  Have Yuri either fuse into the Man Dragon and blast him continuously with  |\n|  Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting  |\n|  Spirit) and hammer away at him with physical attacks. Zhuzhen should be    |\n|  continually casting Life Sucker, and Margarete should use Aqua Edge on     |\n|  Yuri first (if he's attacking), then have her use Snipe continuously.      |\n|  Zhuzhen will probably be doing the least amount of damage, so have him on  |\n|  healing duty when HP starts to drop. This Yamaraja is fairly easy          |\n|  compared to the last two bosses.                                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   02600 EXP   / \\   06000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Badger Devil          |   700 HP  | Class: Fire  | [_] Seal of Luck         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  The Badger Devil uses a Fire Ball attack that doesn't hit for much damage  |\n|  at all, and a physical attack that hits for a slightly decent amount.      |\n|  Either way, it's not much to worry about.                                  |\n|                                                                             |\n|  The Badger Devil is susceptible to Instant Death, so do one of the         |\n|  following two things:                                                      |\n|                                                                             |\n|  1) Fuse Yuri into the Death Emperor and cast Dark Messenger. Make sure to  |\n|     hit the small red \"Perfect!!\" area, and voilà! Dead-dead-deadski.       |\n|                                                                             |\n|  2) Have Margarete use her Snipe ability. Make sure to hit the small red    |\n|     \"Perfect!!\" area, and BAM!!! History.                                   |\n|                                                                             |\n|  If you're lucky, one of the first two steps will kill it. Sadly, it        |\n|  doesn't ALWAYS work.                                                       |\n|                                                                             |\n|  If you don't have luck with either of those, no worries; he's still easy.  |\n|  Have Yuri fuse into the Raging Tiger or Inferno (with Fighting Spirit)     |\n|  and hammer away at him with physical attacks. Zhuzhen should be            |\n|  continually casting Life Sucker, and Margarete should use Aqua Edge on     |\n|  Yuri first, then have her use Snipe continuously. He'll fall quickly.      |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01000 EXP   / \\   00600 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Dehuai                |  1700 HP  | Class: Fire  | [_] Hermit's Staff       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [22]     |                   |   Margarete [20]  |        |\n|        |                   |    Zhuzhen [19]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Hand Needle       | Pilgrim's Staff   | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Mind's Eye        | Face Guard        | Studded Cap       |        |\n|        | Jade Lariat       | Coral Lariat      | Western Belt      |        |\n|        | Western Belt      | Voodoo Doll       | Weird Bottle      |        |\n|        |                   |                   |                   |        |\n|        | Man Dragon        |                   |                   |        ||        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Another Fire-based boss? Don't mind if I do! Makes Margarete that much     |\n|  more useful!                                                               |\n|                                                                             |\n|  Dehuai's fire attacks, Magnard and Blaze, will hit your whole party for    |\n|  decent damage, and he also has a rather quick (and interestingly bizarre)  |\n|  physical attack that also does decent to major damage. He also has a Fast  |\n|  Ring attack that hits for decent damage, and it can possibly make your     |\n|  Judgment Ring spin faster. Make sure to keep healed and try to keep that   |\n|  Ring status off!                                                           |\n|                                                                             |\n|  Have Yuri either fuse into the Man Dragon and blast him continuously with  |\n|  Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting  |\n|  Spirit) and hammer away at him with physical attacks. Zhuzhen should be    |\n|  continually casting Life Sucker, and Margarete should use Aqua Edge on     |\n|  Yuri first (if he's attacking), then have her use Snipe continuously.      |\n|  Zhuzhen will probably be doing the least amount of damage, so have him on  |\n|  healing duty when HP starts to drop. He's pretty easy as well, but the     |\n|  challenge is upcoming.                                                     |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   03500 EXP   / \\   07000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yamaraja: Calamity    |  3000 HP  | Class: None  | [_] Fifth Key            |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [22]     |                   |   Margarete [21]  |        |\n|        |                   |    Zhuzhen [20]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Hand Needle       | Hermit's Staff    | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Warlock Earrings  | Face Guard        | Western Belt      |        |\n|        | Bell Bracelet     | Bell Bracelet     | Bell Bracelet     |        |\n|        | Mirror Bracelet   | Mirror Bracelet   | Mirror Bracelet   |        |\n|        |                   |                   |                   |        |\n|        | Heaven's Fiend    |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Yamaraja will most likely start off with the Crimson Flame spell, dealing  |\n|  MAJOR fire damage to your party and possibly Silencing them as well. His   |\n|  Petrification attack should only do medium damage to your party IF you're  |\n|  protected against it; otherwise, you'll turn to stone, and three           |\n|  Petrified party members equals a game over. He'll also use a Shockwave     |\n|  attack, but it only does a small amount of damage to your whole party.     |\n|  His physical attacks are nothing to sneeze at either; a series of three    |\n|  attacks will do MAJOR damage to a party member.                            |\n|                                                                             |\n|  As much as I hate to say this, Yuri will need to be the primary healer of  |\n|  this battle, as he's the only one that has a heal-all spell, and without   |\n|  it, it will be hard to keep up with the healing with just two party        |\n|  members. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if      |\n|  your party needs healing, and if they don't, then use Exorcist Arrow.      |\n|  Zhuzhen should be constantly casting Life Sucker, and Margarete should be  |\n|  using Snipe. When the party's MP starts getting low, have Margarete use    |\n|  Mana Seeds to boost them back up.                                          |\n|                                                                             |\n|  Due to the sheer amount of HP Yamaraja has, and the fact that your main    |\n|  damage dealer is on healing duty, prepare for a very long battle. You'll   |\n|  most likely need to use at least two Pure Seeds to keep Zhuzhen's and      |\n|  Margarete's SP up.                                                         |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   06000 EXP   / \\   11000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Tindalos              |  2000 HP  | Class: Fire  | [_] Iron Clogs           |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Watch out for his Deathtouch attack; it takes away 75% of your HP, which   |\n|  most of the time is a MAJOR inconvenience. He can also use Fire breath,    |\n|  which will hit for a decent amount of damage. Make sure to keep an eye on  |\n|  his physical attacks as well, as they'll quickly whittle down your HP,     |\n|  hitting for over 100 to a 150 HP per string of attacks.                    |\n|                                                                             |\n|  Have Alice be the primary healer, using Cure every round. If it's not      |\n|  needed, have her use Blessed Light instead. Zhuzhen should be using Life   |\n|  Sucker every round (or if you were able to level him up to 23, use Corpse  |\n|  Arm instead), stopping only to help Alice heal when needed. Keith should   |\n|  be using Drain Touch if he needs HP, or Bat Dance if he doesn't.           |\n|                                                                             |\n|  If you were able to get used to Keith's Ring enough to where you're        |\n|  comfortable with him having the Mind's Eye equipped, I recommend that      |\n|  over his Rituals, but still have him use Drain Touch when he needs         |\n|  healed.                                                                    |\n|                                                                             |\n|  You'll most likely need to replenish MP and SP throughout the battle, as   |\n|  it will take a while, but be patient and stay healed.                      |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   08000 EXP   / \\   12000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yuri                  |  1400 HP  | Class: Dark  |                          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |                   |                   |     Keith [23]    |        |\n|        |     Alice [23]    |    Zhuzhen [24]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Tome of the Sun   | Hermit's Staff    | Royal Estoc       |        |\n|        | Silk Bolero       | Chainmail Vest    | Chainmail Vest    |        |\n|        | Anne's Cross      | Face Guard        | Mind's Eye        |        |\n|        | Face Guard        | Warlock Earrings  | Metal Belt        |        |\n|        | Leonardo's Bear   | Leonardo's Bear   | Leonardo's Bear   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Yikes! His normal three-hit combo will do MAJOR damage to anyone it hits,  |\n|  so heal the survivor immediately. Yuri has quite a bit of HP, and hits     |\n|  harder than anyone else thus far, so healing will be your immediate        |\n|  priority.                                                                  |\n|                                                                             |\n|  After just about 400 HP worth of damage, Yuri will fuse into the Death     |\n|  Emperor, starting to use Dark Messenger. As long as you have Leonardo's    |\n|  Bears equipped, you won't die instantly, but you'll still be hit pretty    |\n|  hard. Again, to reiterate: healing will be your immediate priority. Have   |\n|  two people healing, if needed.                                             |\n|                                                                             |\n|  For the first round, have Alice cast Holy Edge on Keith to add a Light     |\n|  class to his attack, then devote Alice to healing. There most likely       |\n|  won't be a round where she can attack, but if you can, then use Blessed    |\n|  Light. Zhuzhen should be using Corpse Arm every round, and Keith should    |\n|  be attacking normally every round, with his weapon laced with Holy Edge.   |\n|  Whoever is doing the least amount of damage needs to be helping Alice      |\n|  heal if it's needed.                                                       |\n|                                                                             |\n|  Like the last few battles, it'll probably take long enough that you'll     |\n|  need to replenish your MP and SP as well. Again, have whoever is doing     |\n|  the least amount of damage take care of this.                              |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Fox Face              |   555 HP  | Class: Dark  | [_] Brass Knuckles       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  He won't fuse into the Death Emperor this time, but he'll still use his    |\n|  !!! attack. When he does, IMMEDIATELY use a Thera Seed, and DON'T even     |\n|  try to hit the 'Perfect!!' mark; just get Yuri away from 1 HP, and you'll  |\n|  be fine.                                                                   |\n|                                                                             |\n|  Fuse into either the Raging Tiger or Inferno (with Fighting Spirit) and    |\n|  just start wailing away on him with physical attacks. Just keep trading    |\n|  blows, using Thera Seeds to heal whenever your HP starts to get low, and   |\n|  ESPECIALLY after the !!! attack.                                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   13000 EXP   / \\   12500 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Olga                  |   680 HP  | Class: Dark  | [_] Monk Earrings        |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Olga will use normal attacks, Blaze, Rock Storm, Nova, Icy Breath, and     |\n|  Lightning to do decent damage each round, maybe 50-60 HP of damage every   |\n|  round. Watch out if she uses Mind Assault to steal your MP, as you'll      |\n|  want to recover it immediately if she takes too much.                      |\n|                                                                             |\n|  Cast Blessed Light rounds one and two, then Cure the next if needed.       |\n|  Blessed Light two rounds, Cure the third. Lather, rinse, repeat. Oh, and   |\n|  don't forget to recover your SP if needed. Not much else you can do since  |\n|  it's just Alice.                                                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   15000 EXP   / \\   13000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Olga                  |  3300 HP  | Class: Dark  | [_] Small Jug            |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [27]     |                   |   Margarete [26]  |        |\n|        |                   |     Alice [26]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Brass Knuckles    | Ever-Bible        | Zeruel            |        |\n|        | RedLeatherJacket  | Jasper Cape       | Jasper Cape       |        |\n|        | Mind's Eye        | Anne's Cross      | Charming Pareo    |        |\n|        | Loin Guard        | Brsrkr Earrings   | Weird Bottle      |        |\n|        | Shell Bracelet    | Shell Bracelet    | Shell Bracelet    |        |\n|        |                   |                   |                   |        |\n|        | Baldo             |                   |                   |        |\n|        | Charon            |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Olga's Black Fog attack will do MAJOR damage to your party, as well as     |\n|  Poison each one of them, so it's a good idea to come in with Shell or      |\n|  Cosmic Bracelets equipped. Her Nova attack will do decent damage to a      |\n|  single ally, her Icy Breath attack will hit your whole party for decent    |\n|  damage, and her physical attack just does pathetic damage to a single      |\n|  ally. Watch out if she uses Mind Assault to steal your MP, as you'll want  |\n|  to recover it immediately if she takes too much.                           |\n|                                                                             |\n|  Yuri and Alice are obvious choices for this battle, and you could pretty   |\n|  much pick whomever your favorite is, as they'll all do roughly the same    |\n|  amount of damage. I recommend Margarete just because I had her at a        |\n|  higher level than Keith and Zhuzhen, therefore having more STR and HP.     |\n|  That, and I find Margarete's Ring easier to hit than Keith's. Zhuzhen      |\n|  just sucks up a lot of MP and takes extra turns to replenish it. Okay,     |\n|  okay, I really like her too, if that matters any.                          |\n|                                                                             |\n|  Fuse Yuri into Baldo (if you didn't get his level 2 Light Fusion, then     |\n|  fuse into the Heaven's Fiend, as you'll need the healing) and start        |\n|  physically attacking; with the Mind's Eye equipped, he'll be doing major   |\n|  damage. If you didn't put the Mind's Eye on him, then go with the Nova     |\n|  spell instead.                                                             |\n|                                                                             |\n|  Have Alice cast Holy Edge on Yuri her first round so he can keep piling    |\n|  the damage up, then have her cast it on Margarete her second turn so she   |\n|  can start adding in to the damage. Margarete should also be attacking      |\n|  normally. If for some reason Alice doesn't need to heal, have her cast     |\n|  Blessed Light on Olga.                                                     |\n|                                                                             |\n|  If a single ally just needs healed, have Alice do it. If two people need   |\n|  it, have Alice and Margarete do it. If all three need it, then have Yuri   |\n|  do it, as Olga doesn't mess around, and can easily kill your entire party  |\n|  in three turns. I hate taking turns away from Yuri because he just does    |\n|  so much damage, but when everyone needs healed, he's the only one that     |\n|  can do anything about it efficiently.                                      |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   16000 EXP   / \\   14500 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Night Stalker         |  2500 HP  | Class: Wind  | [_] Kid's Room Key       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  There's not much to worry about with this guy; other than boosting         |\n|  himself up, his physical attacks do a decent amount of damage, but that's  |\n|  it. Have Alice whoever is attacked.                                        |\n|                                                                             |\n|  Have Yuri fuse into Ifrit, using Ignition to boost his attack power, then  |\n|  start wailing on the Night Stalker with physical attacks. Have Halley      |\n|  constantly use his Strong Earth attack, which should do pretty decent      |\n|  damage to the wind-based enemy. Have Alice keep everyone healed, using     |\n|  Blessed Light when she's not healing.                                      |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   04000 EXP   / \\   03600 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Jack                  |  2500 HP  | Class: Water | [_] Seal of Speed        |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Jack will mainly just use his Paralysis attack against you, though you     |\n|  should be guarded by a Zodiac Bracelet or a Crucifix. He will also use     |\n|  pretty strong physical attacks, and his Slash attack, which will do MAJOR  |\n|  damage to one party member, so make sure to stay healed. He will use       |\n|  Thera Seeds when his HP starts to drop.                                    |\n|                                                                             |\n|  When fighting, keep in mind that you have a harder boss battle right       |\n|  after this, with no chance to heal.                                        |\n|                                                                             |\n|  Have Yuri fuse into Ifrit and use his Ignition to boost his attack, then   |\n|  have him attack as normal. Have Halley cast Strong Earth continuously      |\n|  (not Aqua Blade, since Jack is water based) for the whole battle, unless   |\n|  he's learned Air Shot by now, then by all means, use that. Alice should    |\n|  be healing as needed, using Blessed Light when no healing is needed.       |\n|                                                                             |\n|  If you're comfortable at the end, take a turn or two to make sure          |\n|  everyone is healed to the max and ready for the next battle.               |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   17000 EXP   / \\   15000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Mammon                |  3600 HP  | Class: Earth | [_] Demon Earrings       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [31]     |    Halley [29]    |                   |        |\n|        |                   |                   |     Alice [31]    |        |\n|        |===================|===================|===================|        |\n|        | Brass Knuckles    | Oak Slingshot     | Ever-Bible        |        |\n|        | RedLeatherJacket  | RedLeatherJacket  | Jasper Cape       |        |\n|        | Mind's Eye        | Priest Earrings   | Anne's Cross      |        |\n|        | Demon Earrings    | Warlock Earrings  | Brsrkr Earrings   |        |\n|        | Zodiac Bracelet   | Zodiac Bracelet   | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | Baldo             |                   |                   |        |\n|        | Charon            |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Mammon's normal attacks will hit for pretty decent damage, but its         |\n|  biggest threat is its Petrification attack, which hopefully you've         |\n|  prevented with either a Zodiac Bracelet or a Crucifix, though it'll still  |\n|  do a decent amount of damage, even if you did. It will also use a          |\n|  Shockwave spell, doing quite a bit a damage to your entire party, as well  |\n|  as Needlerain, a strong attack to just one party member.                   |\n|                                                                             |\n|  Its Howling skill will replenish its HP by 500+ once it's near dying, but  |\n|  lucky for you, Yuri's a powerhouse and will take that away and then some   |\n|  in one round.                                                              |\n|                                                                             |\n|  As usual, have Yuri fuse into Ifrit and use his Ignition to boost his      |\n|  attack, then have him attack as normal. Have Halley use his Air Edge on    |\n|  Yuri to increase Yuri's damage output, then have him cast Aqua Blade for   |\n|  the remainder of the battle, unless he's learned Air Shot by now, then by  |\n|  all means, use that. Alice should be healing as needed, using Blessed      |\n|  Light when no healing is needed.                                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   20000 EXP   / \\   16000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Rausan                |  3500 HP  | Class: Fire  | [_] Spade Key            |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Rausan will usually start out the battle with Elder Sign, causing your     |\n|  special attacks to be weakened quite a bit. This should only really        |\n|  affect Halley, but not enough to keep him from using his skills. He'll     |\n|  attempt to Silence you as well, but as long as you have Cosmic Bracelets,  |\n|  it'll just inflict a lot of damage. He'll also use Blaze, which will do    |\n|  a decent amount of damage to your whole party.                             |\n|                                                                             |\n|  As usual, have Yuri fuse into Ifrit and use his Ignition to boost his      |\n|  attack, then have him attack as normal. Have Halley use Aqua Blade every   |\n|  round (since Rausan is Fire-based), stopping only to help Alice heal.      |\n|  Alice should be healing as needed, using Blessed Light when no healing is  |\n|  needed.                                                                    |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00120 EXP   / \\   00600 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Olga                  |  4000 HP  | Class: Dark  | [_] Warlock Earrings     |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [34]     |                   |    Halley [33]    |        |\n|        |                   |     Alice [34]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Brass Knuckles    | Ever-Bible        | Laurel Slingshot  |        |\n|        | RedLeatherJacket  | Jasper Cape       | RedLeatherJacket  |        |\n|        | Mind's Eye        | Anne's Cross      | Priest Earrings   |        |\n|        | Demon Earrings    | Brsrkr Earrings   | Warlock Earrings  |        |\n|        | Cosmic Bracelet   | Crucifix          | Cosmic Bracelet   |        |\n|        |                   |                   |                   |        |\n|        | Baldo             |                   |                   |        |\n|        | Mad Bull          |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  As before, Olga's Black Fog attack will do MAJOR damage to your party, as  |\n|  well as Poison each one of them, so it's a good idea to come in with       |\n|  Cosmic Bracelets equipped. Her normal attacks don't do too much damage,    |\n|  but her Icy Breath, Rock Storm and Lightning attacks will also both do     |\n|  quite a bit of damage to your entire party, so be careful. Watch out if    |\n|  she uses Mind Assault to steal your MP, as you'll want to recover it       |\n|  immediately if she takes too much.                                         |\n|                                                                             |\n|  Have Yuri fuse into Ifrit and use his Ignition to boost his attack, then   |\n|  have him attack as normal. With his attacked laced with Alice's Holy       |\n|  Edge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to  |\n|  start with on Yuri, then have her on healing duty. Have Halley use Air     |\n|  Shot every round, helping Alice heal as needed.                            |\n|                                                                             |\n|  If you have it, have Alice take advantage of her Arc spell and just heal   |\n|  every round, it makes this battle MUCH easier.                             |\n|                                                                             |\n|  If you're unable to keep up with healing while trying to dish out the      |\n|  damage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo      |\n|  instead of Ifrit, using his healing spell to take care of the party while  |\n|  Alice and Halley use Blessed Light and Air Shot to make up the             |\n|  difference.                                                                |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   22000 EXP   / \\   17000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Albert                |  2000 HP  | Class: Dark  |                          |\n| Amon                  |  4000 HP  | Class: None  | [_] Angel Earrings       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [37]     |                   |   Margarete [30]  |        |\n|        |                   |     Alice [36]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Silver Wolf Fang  | HolyBook-Martyrs  | Mauser Prototype  |        |\n|        | Stygian Robe      | Snow-White Robe   | Snow-White Robe   |        |\n|        | Mind's Eye        | Oracle Earrings   | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Will Power        | Will Power        | Will Power        |        |\n|        |                   |                   |                   |        |\n|        | Baldo             |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Albert's Holy Chest attack will do some decent damage, but even worse,     |\n|  it'll reduce the amount of SP your entire party has by half, so making     |\n|  sure that you had those Will Power Accessories equipped will help MAJORLY  |\n|  in keeping the SP damage from happening. Other than that, he has a         |\n|  physical attack that will do a decent amount of damage, and his            |\n|  Revelation attack will also do a decent amount of damage, but to your      |\n|  entire party with a chance of Instant Death. He rarely uses Revelation,    |\n|  but if you have problems with the Instant Death it causes, equip some      |\n|  Leonardo's Bears and try again.                                            |\n|                                                                             |\n|  Have Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or   |\n|  Battle Cry) to boost his attack (as well as Margarete's, if you're using   |\n|  Ifrit and have the time), then have him attack normally every round.       |\n|  Alice should cast Holy Edge on both Yuri and Margarete to start with,      |\n|  then have her be devoted each round to casting Arc to keep everyone        |\n|  healed. Margarete should have the Mind's Eye equipped and attacking        |\n|  normally while being laced with Holy Edge, just like Yuri.                 |\n|                                                                             |\n|  Any time after dealing over 2000 damage to Albert, he will fuse into       |\n|  Amon. Continue with the exact same strategy as above, minus the Holy Edge  |\n|  since Amon is non-class.                                                   |\n|                                                                             |\n|  Amon's Atomic Dust spell will do pretty good damage to your entire party,  |\n|  and he'll also hit with his physical attacks, which can cause major        |\n|  damage to a single ally. You need to watch out for Demon Rays though, as   |\n|  it'll either kill or nearly kill whomever it hits.                         |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   35000 EXP   / \\   18000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Golden Bat            |  1500 HP  | Class: None  | [_] DemonSwd-Tyrving     |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  He says you have 5 turns to defeat him before he obliterates Keith, but    |\n|  you technically have 6.                                                    |\n|                                                                             |\n|  It's not hard to succeed, but if you miss some hits, you could be in       |\n|  trouble. Keith can only attack normally, so just keep doing that. It       |\n|  should only take three turns max, unless you didn't equip the Mind's Eye,  |\n|  then it'll probably take all six.                                          |\n|                                                                             |\n|  If you're having a hard time with this battle, then level Keith up to      |\n|  where he can definitely deal 1500 damage within four or five turns, to be  |\n|  safe.                                                                      |\n|                                                                             |\n|    NOTE     Even though you already have it equipped for this battle, the   |\n|  ¯¯¯¯¯¯¯¯   reward for winning is the DemonSwd-Tyrving......                |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   40000 EXP   / \\   15000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Orb Chaos             |  7500 HP  | Class: Light | [_] Holy Book-Flesh      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [38]     |                   |   Margarete [33]  |        |\n|        |                   |     Alice [38]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Silver Wolf Fang  | HolyBook-Martyrs  | 10 Gauge          |        |\n|        | Stygian Robe      | Snow-White Robe   | Leather Suit      |        |\n|        | Mind's Eye        | Oracle Earrings   | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  She has several different spells that will increase her stats by 25-30%,   |\n|  so once she's done doing that, be very careful, as they went from very     |\n|  strong to deadly. She WILL almost kill Yuri in one set of attacks once     |\n|  her attack is boosted, she's THAT strong! Alice won't have time to do      |\n|  anything except Arc once Orb Chaos starts attacking.                       |\n|                                                                             |\n|  Other than the boosting spells, Orb Chaos attacks normally for major       |\n|  damage, and uses a spell called Expression that can not only do pretty     |\n|  good damage, but can also Paralyze your entire party! If you don't have    |\n|  those Crucifixes equipped, good luck winning, especially when she starts   |\n|  using Expression each turn, one after another.                             |\n|                                                                             |\n|  Even though he may barely have enough SP to do it, have Yuri fuse into     |\n|  Amon, then have one of the girls use a Pure Seed/Root on him to give him   |\n|  some breathing room, then have him attack normally. Alice should be        |\n|  casting Arc every round, and Margarete should be attacking normally every  |\n|  round, since both she and Yuri should have Mind's Eyes equipped.           |\n|                                                                             |\n|    NOTE     Once the battle is over, you'll receive Alice's best weapon,    |\n|  ¯¯¯¯¯¯¯¯   the Holy Book-Flesh.                                            |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   48000 EXP   / \\   27500 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Cherubim              | 10000 HP  | Class: None  | [_] Holy Peak Staff      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [40]     |                   |   Margarete [35]  |        |\n|        |                   |     Alice [40]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Silver Wolf Fang  | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Stygian Robe      | Snow-White Robe   | Leather Suit      |        |\n|        | Mind's Eye        | Oracle Earrings   | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually    |\n|  start the battle with the !!! attack, reducing a party member's HP to 1,   |\n|  or Divine Punishment, doing pretty good damage to your entire party, as    |\n|  well as causing various status effects, so make sure to heal them          |\n|  straight away. He will continue using them throughout the battle, and his  |\n|  physical attacks will hit an ally for pretty decent damage as well.        |\n|                                                                             |\n|  Note that he won't take hardly any damage from your special attacks, so    |\n|  focus only on physical attacks. Have Yuri fuse into Amon and attack        |\n|  normally while Alice casts Arc as needed, leaving Margarete to also        |\n|  attack normally, supporting Alice when needed to replenish Yuri's SP, as   |\n|  well as Alice's MP.                                                        |\n|                                                                             |\n|  Cherubim isn't really that complicated, so as long as you have Crucifixes  |\n|  equipped to everyone and have Alice use Arc every round, then it's just a  |\n|  matter of taking the time to whittle away his HP. Just make sure not to    |\n|  let anyone go Berserk.                                                     |\n|                                                                             |\n|    NOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,  |\n|  ¯¯¯¯¯¯¯¯   the Holy Peak Staff.                                            |\n|                                                                             |'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00120 EXP   / \\   00600 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Seraphim              |  4000 HP  | Class: None  | [_] Volt Snipe           |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [42]     |                   |   Margarete [38]  |        |\n|        |                   |     Alice [42]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Silver Wolf Fang  | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Stygian Robe      | GoldThreadCoat    | Leather Suit      |        |\n|        | Mind's Eye        | Oracle Earrings   | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Seraphim hits pretty hard, enough to kill right off the bat, so once       |\n|  again, Alice will be doing nothing but Arc this battle. Other than his     |\n|  normal attacks, he will use Divine Punishment, doing pretty good damage    |\n|  to your entire party, as well as causing various status effects, so make   |\n|  sure to heal them straight away.                                           |\n|                                                                             |\n|  Have Yuri fuse into Amon and keep at him with physical attacks, and have   |\n|  Margarete attack normally as well, taking breaks to help replenish MP and  |\n|  SP as needed. Since Seraphim has lower HP than Cherubim, you probably      |\n|  won't have to replenish either MP nor SP.                                  |\n|                                                                             |\n|  Like Cherubim, Seraphim isn't really that complicated, so as long as you   |\n|  have Crucifixes equipped to everyone and have Alice use Arc every round,   |\n|  then it's just a matter of taking the time to whittle away his HP. It      |\n|  actually won't take nearly as long, since Seraphim only has 40% the HP     |\n|  that Cherubim had.                                                         |\n|                                                                             |\n|    NOTE     Once the battle is over, you'll receive Halley's best weapon,   |\n|  ¯¯¯¯¯¯¯¯   the Volt Snipe.                                                 |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   60000 EXP   / \\   38000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Mad Bull              | HP Varies | Class: Earth |                          |\n| Dragner               | HP Varies | Class: Water |                          |\n| Ifrit                 | HP Varies | Class: Fire  |                          |\n| Icarus                | HP Varies | Class: Wind  |                          |\n| Baldo                 | HP Varies | Class: Light |                          |\n| Charon                | HP Varies | Class: Dark  |                          |\n|-----------------------|-----------|--------------|--------------------------|\n| Lobo                  | HP Varies | Class: Earth |                          |\n| Egil                  | HP Varies | Class: Water |                          |\n| Forron                | HP Varies | Class: Fire  |                          |\n| Seravi                | HP Varies | Class: Wind  |                          |\n| Sandalphon            | HP Varies | Class: Light |                          |\n| Czernobog             | HP Varies | Class: Dark  |                          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Rather than list each sub-boss separately, I'm covering them all in this   |\n|  one section, since each one requires basically the same strategy.          |\n|                                                                             |\n|  Each of their HP varies depending on Yuri, so if he's weaker, they'll be   |\n|  weaker as well, and vice versa.                                            |\n|                                                                             |\n|  If you want to use the Mind's Eye, just fuse into Amon and wail on them    |\n|  for a few rounds, making sure to heal if necessary.                        |\n|                                                                             |\n|  If you don't want to use the Mind's Eye, fuse into the highest level       |\n|  monster that is the opposite class of the one you're fighting. Make sure   |\n|  to keep yourself healed if you fear that you'll be taken down fairly       |\n|  easily.                                                                    |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'\n\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Grail Mask            |  2000 HP  | Class: Water | [_] Amber Ring           |\n| Gold Mask             |  2625 HP  | Class: Earth | [_] Carnelian Ring       |\n| Staff Mask            |  2250 HP  | Class: Fire  | [_] Lazurite Ring        |\n| Sword Mask            |  1875 HP  | Class: Wind  | [_] Obsidian Ring        |\n|-----------------------|-----------|--------------|--------------------------|\n| Grail Mask            |     1 HP  | Class: Water | [_] Thera Leaf           |\n| Gold Mask             |     1 HP  | Class: Earth | [_] Thera Leaf           |\n| Staff Mask            |     1 HP  | Class: Fire  | [_] Thera Leaf           |\n| Sword Mask            |     1 HP  | Class: Wind  | [_] Thera Leaf           |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  1st Encounter = Stronger form, must be fought in order for easy battles.   |\n|  2nd Encounter = Weaker form, defeated once and have lost their powers.     |\n|                                                                             |\n|  1) Grail Mask - He's a joke. Your hit area will be DOUBLED, and he's       |\n|     easily damaged by physical attacks. He should only take two turns, max. |\n|                                                                             |\n|  2) Gold Mask - A little harder than the Grail Mask, but not by much. He    |\n|     can't be harmed by physical attacks, so you must take him out with      |\n|     nothing but special attacks. It'll take longer than the Grail Mask, but |\n|     he's not a threat at all.                                               |\n|                                                                             |\n|  3) Staff Mask - A little easier than the Gold Mask, but not by much. He's  |\n|     just the opposite of the Gold Mask; he can't be harmed by special       |\n|     attacks, so you must take him out with nothing but physical attacks, so |\n|     it shouldn't be a problem. Again, not very much of a threat at this     |\n|     point.                                                                  |\n|                                                                             |\n|  4) Sword Mask - The last of the Masks is actually almost as easy as the    |\n|     first! He doesn't have any strong points like the last two, nor do you  |\n|     have a wider hit area, but either way, it should only take two,         |\n|     possibly three rounds to take this one out.                             |\n|                                                                             |\n|  5) Round Two! - Once you have defeated all Four Masks, keep your Malice    |\n|     in the red and wait for them to come around to fight once more! This    |\n|     time around, they don't need to be fought in any order, and they only   |\n|     take one hit to die. Make sure to do this so you get all eight of their |\n|     entries for the Monster Library.                                        |\n|                                                                             |\n| .————————————————.—————————————.—————————————.—————————————.—————————————.  |\n| |   Enemy        |   EXP (1)   |   Cash (1)  |   EXP (2)   |   Cash (2)  |  |\n| |————————————————|—————————————|—————————————|—————————————|—————————————|  |\n| |   Grail Mask   |    45000    |    30000    |      10     |      10     |  |\n| |   Gold Mask    |    45000    |    30000    |      10     |      10     |  |\n| |   Staff Mask   |    45000    |    30000    |      10     |      10     |  |\n| |   Sword Mask   |    45000    |    30000    |      10     |      10     |  |\n| '————————————————'—————————————'—————————————'—————————————'—————————————'  |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Atman                 |  4000 HP  | Class: None  | [_] Moonstone Ring       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                  .———————————————————.———————————————————.                  |\n|                  |                   |     Yuri [51]     |                  |\n|                  |     Alice [51]    |                   |                  |\n|                  |===================|===================|                  |\n|                  | Holy Book-Flesh   | Silver Wolf Fang  |                  |\n|                  | GoldThreadCoat    | Stygian Robe      |                  |\n|                  | Oracle Earrings   | Mind's Eye        |                  |\n|                  | Priest Earrings   | Demon Earrings    |                  |\n|                  | Crucifix          | Crucifix          |                  |\n|                  |                   |                   |                  |\n|                  |                   | Amon              |                  |\n|                  |                   | Czernobog         |                  |\n|                  |                   | Forron            |                  |\n|                  '———————————————————'———————————————————'                  |\n|                                                                             |\n|  Atman can still kill Alice in two rounds, so make sure that she stays      |\n|  healed. As for attacks, this time around, Atman will still use             |\n|  Eradication, but it won't kill; instead, it'll just do a pretty good       |\n|  amount of damage, as well as reduce SP. He can also attack normally, as    |\n|  well as use Dragon Cry and other strong class spells for decent damage.    |\n|                                                                             |\n|  Have Yuri fuse into Amon and rip into Atman with physical attacks, while   |\n|  Alice should be using Arc every round to keep their HP maxed. If for some  |\n|  reason she gets a free turn, have her cast Advent to help Yuri deal some   |\n|  damage.                                                                    |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   50000 EXP   / \\   20000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Ben Hyuga             |  2000 HP  | Class: Dark  |                          |\n| SeraphicRadiance      |  5000 HP  | Class: None  | [_] Diamond Ring         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|  .———————————————————.                                                      |\n|  |     Yuri [52]     |   First off is Ben; he'll use physical attacks, but  |\n|  |                   |   once you do about 2000 HP worth of damage, he      |\n|  |===================|   will then fuse into the Seraphic Radiance!         |\n|  | Nightbird Claw    |                                                      |\n|  | Stygian Robe      |   Malcto will hit Yuri for major damage while also   |\n|  | Mind's Eye        |   healing itself! That's its only special attack;    |\n|  | Brsrkr Earrings   |   the only other thing it does is its attack, and    |\n|  | Seven-Eyed Mask   |   it hits HARD! If you're not in the back row, you   |\n|  |                   |   better shift there immediately. As long as you're  |\n|  | Amon              |   in the back row, you should be able to attack      |\n|  | Lobo              |   two, possibly three times in a row before you      |\n|  | Forron            |   will have to heal with a Thera Root or,            |\n|  '———————————————————'   preferably, a Thera Extract.                       |\n|                                                                             |\n|  Fuse into Amon, or if you need some spare SP, then Lobo (since he has the  |\n|  2nd highest P-Def at this point, as well as the same P-Atk as Amon). All   |\n|  you'll be doing is physically attacking a round or two, then healing the   |\n|  next. Yep, that's it... pretty boring actually, but any other route will   |\n|  likely get you killed. Trust me, it's worth it.                            |\n|                                                                             |\n|  If you find yourself in trouble, try using Third Keys to help dish out     |\n|  damage when you have an opportunity to. If you're STILL having trouble     |\n|  with him, then you'll just have to level up and try again.                 |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   60000 EXP   / \\   99999 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Soul Block            |  7200 HP  | Class: Light | [_] Monkey Paw           |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |                   |                   |                   |        |\n|        |     Yuri [62]     |     Alice [52]    |   Margarete [50]  |        |\n|        |===================|===================|===================|        |\n|        | Nightbird Claw    | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Father's Coat     | GoldThreadCoat    | Leather Suit      |        |\n|        | Warlock Earrings  | CottonUnderpants  | Warlock Earrings  |        |\n|        | Priest Earrings   | Seven-Eyed Mask   | Priest Earrings   |        |\n|        | Oracle Earrings   | Brsrkr Earrings   | Oracle Earrings   |        |\n|        |                   |                   |                   |        |\n|        | SeraphicRadiance  |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Yes, I know, Yuri's level is insanely high, but blame the game for not     |\n|  letting you be able to take him out of your party so you can level others  |\n|  up. It shouldn't affect much, as he's just as much of a powerhouse ten     |\n|  levels earlier.                                                            |\n|                                                                             |\n|  In any case, the Soul Block CANNOT be harmed physically, so it'll be up    |\n|  to your special attacks to take him out. He has some really strong         |\n|  physical attacks, as well as the light spell, Pulse, and the Shockwave     |\n|  spell, neither of which are quite as strong, but hit everyone.             |\n|                                                                             |\n|  Fuse Yuri into the SeraphicRadiance and start off by casting For Everyone  |\n|  to boost your party, then have him continually cast For Tomorrow. (Just    |\n|  know that For Everyone ALSO boosts your AGL, and that means a faster       |\n|  ring, so if you can't keep up with it, don't worry about casting it to     |\n|  begin with.)                                                               |\n|                                                                             |\n|  Have Alice use Advent and have Margarete use Diving Bomber; whoever is     |\n|  dealing the least amount of damage (likely Alice), have her replenish      |\n|  Yuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD    |\n|  keep your party healed, but in case it falls behind, have Alice ready      |\n|  with an Arc to bring you back up to snuff.                                 |\n|                                                                             |\n|  If you're having trouble with the hit areas of the SeraphicRadiance, then  |\n|  you may want to start using Bronze Daggers (or Arrowheads for just Yuri)   |\n|  on your party to widen the hit areas. If you're STILL having trouble,      |\n|  then you'll probably be better of using Amon and his Demon Rays spell.     |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   40000 EXP   / \\   22500 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Hate                  |  7000 HP  | Class: Dark  | [_] Seventh Key          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [63]     |                   |   Margarete [51]  |        |\n|        |                   |     Alice [53]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Nightbird Claw    | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Father's Coat     | GoldThreadCoat    | Leather Suit      |        |\n|        | Mind's Eye        | CottonUnderpants  | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | SeraphicRadiance  |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Forron            |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes     |\n|  now, so as long as they're equipped, we'll just receive minor to decent    |\n|  damage to the whole party instead of ring anomalies and poison. It'll      |\n|  also attempt to paralyze you, but will do a decent amount of damage to a   |\n|  single ally instead.                                                       |\n|                                                                             |\n|  Fuse Yuri into the SeraphicRadiance and start off by casting For Everyone  |\n|  to boost your party, then have him continually attack from there on,       |\n|  using Third Keys if you have spares, with Alice's Holy Edge on him.        |\n|  (Remember, For Everyone ALSO boosts your AGL, and that means a faster      |\n|  ring, so if you can't keep up with it, don't worry about casting it to     |\n|  begin with.)                                                               |\n|                                                                             |\n|  Have Alice start off by casting Holy Edge on both Yuri and Margarete,      |\n|  then use Advent when healing isn't needed, and have her use Arc when it    |\n|  is. Margarete should be attacking physically as well with Third Keys.      |\n|  This boss is actually a lot easier than the last.                          |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   45000 EXP   / \\   25000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Scapegoat             |  7700 HP  | Class: Wind  | [_] Crucifix             |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [64]     |                   |   Margarete [53]  |        |\n|        |                   |     Alice [55]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Nightbird Claw    | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Father's Coat     | GoldThreadCoat    | Leather Suit      |        |\n|        | Mind's Eye        | CottonUnderpants  | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Weird Bottle      | Seven-Eyed Mask   | Weird Bottle      |        |\n|        |                   |                   |                   |        |\n|        | SeraphicRadiance  |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Forron            |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  The Scapegoat will use Wind Fang that will hit your whole party for a      |\n|  small amount of damage, and will also attack normally on a single ally     |\n|  for decent damage. He can also use Deathtouch, which if you remember,      |\n|  instantly puts an ally into critical HP status, so make sure to heal       |\n|  straight away when he uses it.                                             |\n|                                                                             |\n|  As usual, fuse Yuri into the SeraphicRadiance and start off by casting     |\n|  For Everyone to boost your party, then have him continually attack from    |\n|  there on, using Third Keys if you have spares. (Remember, For Everyone     |\n|  ALSO boosts your AGL, and that means a faster ring, so if you can't keep   |\n|  up with it, don't worry about casting it to begin with.)                   |\n|                                                                             |\n|  Have Alice use Advent when healing isn't needed, and have her use Arc      |\n|  when it is. Margarete should be attacking physically as well with Third    |\n|  Keys. Just make sure to stay healed and you should be fine.                |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   50000 EXP   / \\   27500 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Messiah               |  6000 HP  | Class: None  | [_] Silver Hand          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [65]     |                   |   Margarete [54]  |        |\n|        |                   |     Alice [56]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Nightbird Claw    | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Father's Coat     | GoldThreadCoat    | Leather Suit      |        |\n|        | Mind's Eye        | CottonUnderpants  | Mind's Eye        |        |\n|        | Will Power        | Will Power        | Will Power        |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | SeraphicRadiance  |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Sandalphon        |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  He will start the battle off with Holy Chest, which would normally dampen  |\n|  your SP, but with the Will Powers equipped, it'll only do a decent amount  |\n|  of damage. He will also use the !!! attack, so make sure that you heal     |\n|  IMMEDIATELY after it hits so you don't lose your ally. Other than that,    |\n|  he just uses Status Abnormality, which won't do hardly any damage, and as  |\n|  long as you have a Crucifix on, you don't need to worry about the          |\n|  anomalies.                                                                 |\n|                                                                             |\n|  He can also heal himself with Grace, and even though it only SAYS 999 HP   |\n|  is healed, trust me, a lot more than that is healed. There is no cap on    |\n|  the damage or amount healed; just the numbers displayed.                   |\n|                                                                             |\n|  As usual, fuse Yuri into the SeraphicRadiance and start off by casting     |\n|  For Everyone to boost your party, then have him continually attack from    |\n|  there on, using Third Keys. There is one more battle after this, so save   |\n|  your Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts  |\n|  your AGL, and that means a faster ring, so if you can't keep up with it,   |\n|  don't worry about casting it to begin with.)                               |\n|                                                                             |\n|  Alice will most likely be casting Arc every round, but whenever she        |\n|  happens to get a free turn, have her cast Advent. Margarete should be      |\n|  attacking physically as well with Third Keys.                              |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   60000 EXP   / \\   00000 Cash   /\n     '—————————————'   '——————————————'\n\n\n      .——————————————————.\n     / *** FINAL BOSS *** \\\n.———'———————————————————.——'—————————.———————————————.————————————————————————.\n| Meta-God              |  12500 HP  |  Class: None  |                        |\n|———————————————————————'————————————'———————————————'————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [65]      |                  |   Margarete [55]  |        |\n|        |                    |     Alice [57]   |                   |        |\n|        |====================|==================|===================|        |\n|        | Nightbird Claw     | Holy Book-Flesh  | 10 Gauge          |        |\n|        | Father's Coat      | GoldThreadCoat   | Leather Suit      |        |\n|        | Mind's Eye         | CottonUnderpants | Mind's Eye        |        |\n|        | Will Power         | Will Power       | Will Power        |        |\n|        | Crucifix           | Crucifix         | Crucifix          |        |\n|        |                    |                  |                   |        |\n|        | SeraphicRadiance   |                  |                   |        |\n|        | Amon               |                  |                   |        |\n|        | Sandalphon         |                  |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  This is easily the greatest battle music of all time: Imbroglio!!!         |\n|                                                                             |\n|  He'll start off with Time of Judgment, which will do major damage to your  |\n|  entire party, but will also take away some MP. Each of his colored Abyss   |\n|  attacks will hit your party for pretty decent damage, but if you're not    |\n|  wearing a Crucifix, then it will also inflict you with a status            |\n|  abnormality, depending on the class. He'll also use Nine Springs, which    |\n|  works like !!! in that it reduces your HP to 1, so be sure to heal after   |\n|  it hits.                                                                   |\n|                                                                             |\n|  Don't bother boosting your party with For Tomorrow or anything like that;  |\n|  he'll use Light of Deprivation to remove it all before you even get a      |\n|  chance to enjoy it.                                                        |\n|                                                                             |\n|  Since this is the final battle, Yuri gets to have a ton of fun with the    |\n|  items we've been holding on to! Start off by fusing him into the           |\n|  SeraphicRadiance, then have use the Silver Hand item on himself, giving    |\n|  him a 100% ring area. On his second turn, have him use a Monkey Paw on     |\n|  himself, which will triple his attack! Before his third turn, have         |\n|  someone in your party use a Moon Swallow (or just a Star Swallow on Yuri)  |\n|  to make all attacks critical attacks!                                      |\n|                                                                             |\n|  Finally, on his third, fourth, and fifth turns, have him use the two       |\n|  Seventh Keys and a Fifth Key. Just press the CROSS button as fast as you   |\n|  can while you have the 100% ring area to land EVERY HIT! This should       |\n|  DEFINITELY be enough to take out God. If not, once the Silver Hand wears   |\n|  off, either attack normally for a few rounds, or try out the remaining     |\n|  Fifth Keys to keep wailing on him. Remember, each attack that says 999 HP  |\n|  damages is more than likely doing more than 999. The damage itself         |\n|  doesn't cap; just the displayed number.                                    |\n|                                                                             |\n|  In the meantime, Alice should be casting Arc every single round, and       |\n|  Margarete should be helping Alice. If healing isn't needed, then use       |\n|  Advent with Alice and normal attacks with Third or Fifth Keys with         |\n|  Margarete.                                                                 |\n|                                                                             |\n|  If for some reason you don't have those items, than you can work on him    |\n|  like the last few bosses. As usual, fuse Yuri into the SeraphicRadiance    |\n|  and start physically attacking, using any Keys you do have. The girls      |\n|  should be doing the same thing as listed above; just stay healed and be    |\n|  patient.                                                                   |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'"
+}

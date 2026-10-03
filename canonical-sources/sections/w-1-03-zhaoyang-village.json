@@ -1,0 +1,425 @@
+{
+  "id": "w-1-03",
+  "code": "[W-1-03]",
+  "title": "Zhaoyang Village",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-1-02",
+      "code": "[W-1-02]",
+      "title": "Plains",
+      "file": "sections/w-1-02-plains.json"
+    },
+    "next": {
+      "id": "w-1-04",
+      "code": "[W-1-04]",
+      "title": "Fengtian",
+      "file": "sections/w-1-04-fengtian.json"
+    }
+  },
+  "char_count": 13261,
+  "line_count": 221,
+  "overview": {
+    "save_points": [
+      "Center of town, near the well"
+    ],
+    "items": [
+      "Angel's Feather",
+      "TalismanOfLuck",
+      "Bronze Arrowhead",
+      "Phoenix Tail",
+      "Tent"
+    ],
+    "equipment": [
+      "Oak Staff",
+      "Shell Bracelet",
+      "Cotton Shirt"
+    ],
+    "valuables": [
+      "Anti-Cat Powder",
+      "Torch",
+      "Metal Bowl",
+      "Snake Card"
+    ]
+  },
+  "items": [
+    "Angel's Feather",
+    "TalismanOfLuck",
+    "Bronze Arrowhead",
+    "Phoenix Tail",
+    "Tent",
+    "Oak Staff",
+    "Shell Bracelet",
+    "Cotton Shirt",
+    "Anti-Cat Powder",
+    "Torch",
+    "Metal Bowl",
+    "Snake Card"
+  ],
+  "enemies": [
+    {
+      "number": "#005",
+      "name": "Hellcat",
+      "hp": 45,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": ""
+    },
+    {
+      "number": "#006",
+      "name": "Zombie",
+      "hp": 20,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Poison"
+    },
+    {
+      "number": "#007",
+      "name": "Green Flyer",
+      "hp": 18,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Confusion"
+    },
+    {
+      "number": "#008",
+      "name": "Canus",
+      "hp": 26,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#009",
+      "name": "Felinus",
+      "hp": 250,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": ""
+    },
+    {
+      "number": "#010",
+      "name": "Yamaraja: Earth",
+      "hp": 300,
+      "class": "Water",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Earth",
+      "enemies": [
+        {
+          "name": "Yamaraja: Earth",
+          "hp": 300,
+          "class": "Water",
+          "drop": "Star Brooch"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 7
+        },
+        {
+          "name": "Alice",
+          "level": 6
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 6
+        }
+      ],
+      "exp": 180,
+      "cash": 1800,
+      "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Yamaraja: Earth",
+    "enemies": [
+      {
+        "name": "Yamaraja: Earth",
+        "hp": 300,
+        "class": "Water",
+        "drop": "Star Brooch"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 7
+      },
+      {
+        "name": "Alice",
+        "level": 6
+      },
+      {
+        "name": "Zhuzhen",
+        "level": 6
+      }
+    ],
+    "exp": 180,
+    "cash": 1800,
+    "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
+  },
+  "shops": [
+    {
+      "name": "Wandering Merchant",
+      "inventory": [
+        {
+          "name": "Bandanna",
+          "price": 320
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Leather Belt",
+          "price": 320
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "ANGEL'S FEATHER",
+        "raw_tag": "[_ANGEL'S FEATHER_]",
+        "matched_overview_item": "Angel's Feather",
+        "category": "items",
+        "line": 44,
+        "char_offset": [
+          2516,
+          2535
+        ],
+        "context": "When you regain control, head back south to the first area of town, where you'll find an [_ANGEL'S FEATHER_], roughly around the center of the area, just to the lower-right of a pile of sticks. Go back up to the previous screen, then follow along the"
+      },
+      {
+        "name": "BRONZE ARROWHEAD",
+        "raw_tag": "[_BRONZE ARROWHEAD_]",
+        "matched_overview_item": "Bronze Arrowhead",
+        "category": "items",
+        "line": 47,
+        "char_offset": [
+          2756,
+          2776
+        ],
+        "context": "When you regain control, head back south to the first area of town, where you'll find an [_ANGEL'S FEATHER_], roughly around the center of the area, just to the lower-right of a pile of sticks. Go back up to the previous screen, then follow along the"
+      },
+      {
+        "name": "TENT",
+        "raw_tag": "[_TENT_]",
+        "matched_overview_item": "Tent",
+        "category": "items",
+        "line": 52,
+        "char_offset": [
+          2991,
+          2999
+        ],
+        "context": "Use the Save Point here to save and clear Malice in the Graveyard if needed, then check around the right side of the well here by a board on the ground to find a [_TENT_]. Go all the way to the right, then all the way up; the corner up here by the Lo"
+      },
+      {
+        "name": "TALISMAN OF LUCK",
+        "raw_tag": "[_TALISMAN OF LUCK_]",
+        "matched_overview_item": "TalismanOfLuck",
+        "category": "items",
+        "line": 53,
+        "char_offset": [
+          3115,
+          3135
+        ],
+        "context": "Use the Save Point here to save and clear Malice in the Graveyard if needed, then check around the right side of the well here by a board on the ground to find a [_TENT_]. Go all the way to the right, then all the way up; the corner up here by the Lo"
+      },
+      {
+        "name": "PHOENIX TAIL",
+        "raw_tag": "[_PHOENIX TAIL_]",
+        "matched_overview_item": "Phoenix Tail",
+        "category": "items",
+        "line": 86,
+        "char_offset": [
+          5116,
+          5132
+        ],
+        "context": "After the battle, head back into the house and examine the dresser at the very top of the screen to find a [_PHOENIX TAIL_]. Go back outside, then make your way north back to the shrine. After a scene with the Cat Lady, head back to the previous area"
+      },
+      {
+        "name": "OAK STAFF",
+        "raw_tag": "[_OAK STAFF_]",
+        "matched_overview_item": "Oak Staff",
+        "category": "equipment",
+        "line": 98,
+        "char_offset": [
+          5882,
+          5895
+        ],
+        "context": "NOTE Zhuzhen comes equipped with an [_OAK STAFF_] and a [_COTTON SHIRT_] ¯¯¯¯¯¯¯¯ by default. As for Meiyuan, he can't fight, but his acupuncture allows you to increase the Attack Power of your weapon, the Hit Area on the Judgment Ring, or both. It c"
+      },
+      {
+        "name": "COTTON SHIRT",
+        "raw_tag": "[_COTTON SHIRT_]",
+        "matched_overview_item": "Cotton Shirt",
+        "category": "equipment",
+        "line": 98,
+        "char_offset": [
+          5902,
+          5918
+        ],
+        "context": "NOTE Zhuzhen comes equipped with an [_OAK STAFF_] and a [_COTTON SHIRT_] ¯¯¯¯¯¯¯¯ by default. As for Meiyuan, he can't fight, but his acupuncture allows you to increase the Attack Power of your weapon, the Hit Area on the Judgment Ring, or both. It c"
+      },
+      {
+        "name": "ANTI-CAT POWDER",
+        "raw_tag": "[_ANTI-CAT POWDER_]",
+        "matched_overview_item": "Anti-Cat Powder",
+        "category": "valuables",
+        "line": 114,
+        "char_offset": [
+          6923,
+          6942
+        ],
+        "context": "Once you regain control, continue north to run into the Cat Lady once again. Afterward, head back to the center of town to run into her again, then go back into the house you were lured into in the first place. After a scene here, you'll learn that y"
+      },
+      {
+        "name": "METAL BOWL",
+        "raw_tag": "[_METAL BOWL_]",
+        "matched_overview_item": "Metal Bowl",
+        "category": "valuables",
+        "line": 118,
+        "char_offset": [
+          7197,
+          7211
+        ],
+        "context": "Head back outside, then make your way south to the second area. Here, follow along the western side of the area until the '?' icon pops up, allowing you to attempt a Normal Ring, just like in battle, to pick up the [_METAL BOWL_] we were looking for."
+      },
+      {
+        "name": "TORCH",
+        "raw_tag": "[_TORCH_]",
+        "matched_overview_item": "Torch",
+        "category": "valuables",
+        "line": 122,
+        "char_offset": [
+          7333,
+          7342
+        ],
+        "context": "Continue south to the entrance, then examine the building just to the right of Meiyuan to find the [_TORCH_] among a pile of sticks. Now that we have both items that we needed, make your way back to the center of town and use the Save Point. When you"
+      },
+      {
+        "name": "SHELL BRACELET",
+        "raw_tag": "[_SHELL BRACELET_]",
+        "matched_overview_item": "Shell Bracelet",
+        "category": "equipment",
+        "line": 209,
+        "char_offset": [
+          12728,
+          12746
+        ],
+        "context": "NOTE After the battle, remove everything you can from Zhuzhen. ¯¯¯¯¯¯¯¯ After the both the battle and following scene are over, examine the shrine once again to find a [_SHELL BRACELET_]. Head back south through town, talking to the Lost Peddler on t"
+      },
+      {
+        "name": "SNAKE CARD",
+        "raw_tag": "[_SNAKE CARD_]",
+        "matched_overview_item": "Snake Card",
+        "category": "valuables",
+        "line": 210,
+        "char_offset": [
+          12833,
+          12847
+        ],
+        "context": "NOTE After the battle, remove everything you can from Zhuzhen. ¯¯¯¯¯¯¯¯ After the both the battle and following scene are over, examine the shrine once again to find a [_SHELL BRACELET_]. Head back south through town, talking to the Lost Peddler on t"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 98,
+        "char_offset": [
+          5840,
+          6534
+        ],
+        "text": "Zhuzhen comes equipped with an [_OAK STAFF_] and a [_COTTON SHIRT_] by default. As for Meiyuan, he can't fight, but his acupuncture allows you to increase the Attack Power of your weapon, the Hit Area on the Judgment Ring, or both. It costs a lot of money to do it at this point, so I don't recommend it. We'll be able to buy new weapons in the next town which will be stronger anyway. However, if you're having trouble hitting areas on the Judgment Ring, then by all means, try to increase the Hit Area if you can afford it. NOTE     If you want to see how much it would cost to power up your weapons,"
+      },
+      {
+        "type": "NOTE",
+        "line": 151,
+        "char_offset": [
+          9099,
+          9455
+        ],
+        "text": "This next boss is REALLY tough if you're at a low level. I strongly recommend fighting until everyone in your party is at least level 6 before continuing on; it should only take a few battles. If you get some extra money, those Leather Belts and Bandannas for everyone would probably be a good idea."
+      },
+      {
+        "type": "NOTE",
+        "line": 206,
+        "char_offset": [
+          12554,
+          12632
+        ],
+        "text": "After the battle, remove everything you can from Zhuzhen."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                           Zhaoyang Village\n     [W-1-03]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Center of town, near the well                   * = Initial\n             |\n       Items | [_] Angel's Feather     [_] TalismanOfLuck\n             | [_] Bronze Arrowhead    [_] Phoenix Tail\n             | [_] Tent\n             |\n   Equipment |*[_] Oak Staff           [_] Shell Bracelet\n             |*[_] Cotton Shirt\n             |\n   Valuables | [_] Anti-Cat Powder     [_] Torch\n             | [_] Metal Bowl          [_] Snake Card\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy (* = BOSS) (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #005 ~[_] Hellcat               |    45  | Light |\n #006  [_] Zombie                |    20  | Earth | Inflicts Poison\n #007  [_] Green Flyer           |    18  | Wind  | Inflicts Confusion\n #008  [_] Canus                 |    26  | Water |\n #009 ~[_] Felinus               |   250  | Wind  |\n #010 *[_] Yamaraja: Earth       |   300  | Water | Inflicts Ring anomalies\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |                -$-   Wandering Merchant   -$-                 |\n       |===============================v===============================|\n       | Bandanna            -     320 | TalismanOfLuck      -     480 |\n       | Leather Belt        -     320 | Mermaid's Tear      -      70 |\n       | Shell Bracelet      -    2770 | Holy Mother Bust    -      75 |\n       | Bone Bracelet       -    2960 | Phoenix Tail        -      90 |\n       | Thera Leaf          -      50 | Bronze Arrowhead    -     100 |\n       | Mana Leaf           -     100 | Silver Hourglass    -     100 |\n       | Pure Leaf           -     230 | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\nWhen you regain control, head back south to the first area of town, where\nyou'll find an [_ANGEL'S FEATHER_], roughly around the center of the area, just\nto the lower-right of a pile of sticks. Go back up to the previous screen, then\nfollow along the right side until you see the '?' icon near another pile of\nsticks. There is a [_BRONZE ARROWHEAD_] to be found here. Continue north to the\nnext area.\n\nUse the Save Point here to save and clear Malice in the Graveyard if needed,\nthen check around the right side of the well here by a board on the ground to\nfind a [_TENT_]. Go all the way to the right, then all the way up; the corner\nup here by the Lost Peddler/Wandering Merchant has a [_TALISMAN OF LUCK_] lying\non the ground.\n\nFeel free to shop with the Wandering Merchant; I using your money for just\nhealing items for now, such as some Thera, Mana, and Pure Leaves, if you have\nthe extra money. Pure Leaves will really come in handy in the first part of the\ngame, where characters like Alice have hardly any SP and can't last in a long\nbattle without going Berserk. We'll be visiting another town soon, so we'll be\nable to go shopping there with some more money. If you have some extra now, or\nif the money's just burning a hole in your pocket, then buy some Leather Belts\nand Bandannas so you have 3 each for your active party, and if you do, make\nsure to equip both Yuri and Alice with both of them before continuing on.\n\nWhen you're ready, head all the way north to the next area. Watch the events\nhere, then enter the house the children invite you to and continue watching the\nevents unfold. After some rest, you'll have to take on two Hellcats.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Hellcat               |    45 HP  | Class: Light | [_] TalismanOfLuck       |\n| Hellcat               |    45 HP  | Class: Light | [_] TalismanOfLuck       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  They're not too bad; just have Yuri fuse into the Raging Tiger and wail    |\n|  on them with regular attacks while Alice keeps both of you healed with     |\n|  either Cure or Thera Leaves.                                               |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00040 EXP   / \\   00300 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, head back into the house and examine the dresser at the very\ntop of the screen to find a [_PHOENIX TAIL_]. Go back outside, then make your\nway north back to the shrine. After a scene with the Cat Lady, head back to the\nprevious area and make your way to the left side of the well, where you'll\nencounter her again. Head south to the second area, where you'll run into her\nyet again. Continue south back to the first area.\n\nHere, you'll run into the Quack Oracle, who will introduce himself as the true\nruler of the nine heaves, the absolute sage Master Li Zhuzhen, referred to as\nZhuzhen from here on out. You'll also meet Wanderer Meiyuan the acupuncturist,\nwho's got a thing for Yuri, and would love to just stick his needles in him...\nZhuzhen will decide to help you out and will temporarily join your party!\n\n  NOTE     Zhuzhen comes equipped with an [_OAK STAFF_] and a [_COTTON SHIRT_]\n¯¯¯¯¯¯¯¯   by default. As for Meiyuan, he can't fight, but his acupuncture\n           allows you to increase the Attack Power of your weapon, the Hit Area\n           on the Judgment Ring, or both. It costs a lot of money to do it at\n           this point, so I don't recommend it. We'll be able to buy new\n           weapons in the next town which will be stronger anyway. However, if\n           you're having trouble hitting areas on the Judgment Ring, then by\n           all means, try to increase the Hit Area if you can afford it.\n\n  NOTE     If you want to see how much it would cost to power up your weapons,\n¯¯¯¯¯¯¯¯   check out section A-1-08 for the cost for every weapon in the game.\n\nOnce you regain control, continue north to run into the Cat Lady once again.\nAfterward, head back to the center of town to run into her again, then go back\ninto the house you were lured into in the first place. After a scene here,\nyou'll learn that you need to find a Metal Vessel and a Torch to use with the\n[_ANTI-CAT POWDER_] you receive from Zhuzhen to continue.\n\nHead back outside, then make your way south to the second area. Here, follow\nalong the western side of the area until the '?' icon pops up, allowing you to\nattempt a Normal Ring, just like in battle, to pick up the [_METAL BOWL_] we\nwere looking for.\n\nContinue south to the entrance, then examine the building just to the right of\nMeiyuan to find the [_TORCH_] among a pile of sticks. Now that we have both\nitems that we needed, make your way back to the center of town and use the Save\nPoint. When you're ready, enter the Cat Lady's house again and examine the pit\nin the center. After an event, you'll have to fight her.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Felinus               |   250 HP  | Class: Wind  | [_] Lottery Ticket       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  This lady isn't to be taken lightly. She can use the Wind Fang ability to  |\n|  hit everyone for Wind damage, and after a couple of turns, your whole      |\n|  party will be in need of healing, so beware.                               |\n|                                                                             |\n|  Since she's a Wind class, have Yuri fuse into the Raging Tiger and use     |\n|  the Flying Stones skill to do some decent damage to her, followed by       |\n|  regular attack. Alice should be keeping everyone healed, as should         |\n|  Zhuzhen. If no one needs healing then, have Zhuzhen use his Ogre           |\n|  Flamedance spell, and Alice should attack normally. As long as you stay    |\n|  healed and don't let Alice go Berserk, you should be fine.                 |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00120 EXP   / \\   00600 Cash   /\n     '—————————————'   '——————————————'\n\nOnce she's done, head back to the Save Point and use a Tent to recover your HP\nand MP.\n\n  NOTE     This next boss is REALLY tough if you're at a low level. I strongly\n¯¯¯¯¯¯¯¯   recommend fighting until everyone in your party is at least level 6\n           before continuing on; it should only take a few battles. If you get\n           some extra money, those Leather Belts and Bandannas for everyone\n           would probably be a good idea.\n\nWhen you're ready, head back north to the shrine and examine it. Do you dare\nviolate the shrine?\n\n————————————————————————\n   [1] No, I don't...\n   [2] Yes, I do!\n————————————————————————\n\nOf course we do! Choose 2, and you'll have to take on Yamaraja.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yamaraja: Earth       |   300 HP  | Class: Water | [_] Star Brooch          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [07]     |                   |                   |        |\n|        |                   |     Alice [06]    |    Zhuzhen [06]   |        |\n|        |===================|===================|===================|        |\n|        | Leather Gloves    | Small Bible       | Oak Staff         |        |\n|        | Cotton Shirt      | Cotton Blouse     | Cotton Shirt      |        |\n|        | Bandanna          | Bandanna          | Bandanna          |        |\n|        | Leather Belt      | Leather Belt      | Leather Belt      |        |\n|        |                   |                   |                   |        |\n|        | Death Emperor     |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Note that Yamaraja: Earth is actually a WATER class. As I mentioned        |\n|  above, he's pretty dangerous! If you can't beat him, level up in town for  |\n|  a while before trying again. I recommend at least level 6 for everyone.    |\n|                                                                             |\n|  His Flash Flood will hit an ally for pretty good damage, while his Large   |\n|  Whirlpool will hit your entire party for major damage, as well as          |\n|  possibly halving your Hit Area on your Ring, so be sure to heal after it   |\n|  hits. His physical attacks are also nothing to sneeze at, as they can      |\n|  take away large chunks of HP at a time. Make sure that Alice and Zhuzhen   |\n|  are in the back row, and when in doubt, just heal.                         |\n|                                                                             |\n|  Have Yuri fuse into the Raging Tiger and use his Flying Stones attack,     |\n|  followed by normal attacks. Have Alice stay on healing duty the entire     |\n|  time, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have  |\n|  Yuri supplement healing since Zhuzhen's fire magic probably hits for more  |\n|  than Yuri does, and make sure to keep Alice from becoming Berserk.         |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00180 EXP   / \\   01800 Cash   /\n     '—————————————'   '——————————————'\n\n  NOTE     After the battle, remove everything you can from Zhuzhen.\n¯¯¯¯¯¯¯¯\nAfter the both the battle and following scene are over, examine the shrine once\nagain to find a [_SHELL BRACELET_]. Head back south through town, talking to\nthe Lost Peddler on the second screen for a [_SNAKE CARD_], which is a Guild\nCard that can be used for a discount in Shops.\n\nThat's it for Zhaoyang Village, so go ahead and make your way to the gate,\nwhere Zhuzhen will leave your party. Afterward, head out to the World Map. Our\nnext destination is Fengtian!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

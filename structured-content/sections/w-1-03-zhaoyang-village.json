@@ -1,0 +1,530 @@
+{
+  "guide": {
+    "id": "w-1-03",
+    "code": "[W-1-03]",
+    "title": "Zhaoyang Village",
+    "type": "walkthrough",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-1-02",
+        "code": "[W-1-02]",
+        "title": "Plains",
+        "file": "sections/w-1-02-plains.json"
+      },
+      "next": {
+        "id": "w-1-04",
+        "code": "[W-1-04]",
+        "title": "Fengtian",
+        "file": "sections/w-1-04-fengtian.json"
+      }
+    },
+    "route": [
+      "Village Entrance (First Area)",
+      "Second Area",
+      "Town Center (Well & Save Point)",
+      "North Shrine",
+      "Children's House",
+      "World Map"
+    ],
+    "objectives": [
+      "Explore Zhaoyang Village and collect hidden items",
+      "Meet Master Li Zhuzhen and Wanderer Meiyuan",
+      "Gather the Metal Bowl and Torch to use with Anti-Cat Powder",
+      "Defeat the Felinus sub-boss in the pit house",
+      "Prepare the party to level 6 and defeat Yamaraja: Earth",
+      "Acquire the Shell Bracelet and Snake Card before departing to Fengtian"
+    ],
+    "initial_setup": {
+      "character": "Master Li Zhuzhen",
+      "note": "Zhuzhen comes equipped with an Oak Staff and a Cotton Shirt by default.",
+      "equipment": [
+        "Oak Staff",
+        "Cotton Shirt"
+      ]
+    },
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Angel's Feather",
+          "category": "items",
+          "location": "First area, lower-right of a pile of sticks around the center"
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "category": "items",
+          "location": "Second screen, right side '?' icon near another pile of sticks"
+        },
+        {
+          "name": "Tent",
+          "category": "items",
+          "location": "Town center, right side of the well by a board on the ground"
+        },
+        {
+          "name": "TalismanOfLuck",
+          "category": "items",
+          "location": "Town center corner by the Wandering Merchant"
+        },
+        {
+          "name": "Phoenix Tail",
+          "category": "items",
+          "location": "Dresser at the very top of the screen inside the children's house"
+        },
+        {
+          "name": "Anti-Cat Powder",
+          "category": "valuables",
+          "location": "Received from Zhuzhen in the first house"
+        },
+        {
+          "name": "Metal Bowl",
+          "category": "valuables",
+          "location": "Second area, western side '?' icon (Normal Ring attempt)"
+        },
+        {
+          "name": "Torch",
+          "category": "valuables",
+          "location": "Village entrance, pile of sticks right of Meiyuan's building"
+        },
+        {
+          "name": "Shell Bracelet",
+          "category": "equipment",
+          "location": "Examine the north shrine after defeating Yamaraja: Earth"
+        },
+        {
+          "name": "Snake Card",
+          "category": "valuables",
+          "location": "Talk to the Lost Peddler on the second screen after defeating Yamaraja"
+        }
+      ],
+      "initial": [
+        {
+          "name": "Oak Staff",
+          "category": "equipment"
+        },
+        {
+          "name": "Cotton Shirt",
+          "category": "equipment"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#005",
+        "name": "Hellcat",
+        "hp": 45,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": ""
+      },
+      {
+        "number": "#006",
+        "name": "Zombie",
+        "hp": 20,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Poison"
+      },
+      {
+        "number": "#007",
+        "name": "Green Flyer",
+        "hp": 18,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Confusion"
+      },
+      {
+        "number": "#008",
+        "name": "Canus",
+        "hp": 26,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#009",
+        "name": "Felinus",
+        "hp": 250,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": ""
+      },
+      {
+        "number": "#010",
+        "name": "Yamaraja: Earth",
+        "hp": 300,
+        "class": "Water",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      }
+    ],
+    "bosses": [
+      {
+        "type": "BOSS",
+        "name": "Yamaraja: Earth",
+        "enemies": [
+          {
+            "name": "Yamaraja: Earth",
+            "hp": 300,
+            "class": "Water",
+            "drop": "Star Brooch"
+          }
+        ],
+        "party": [
+          {
+            "name": "Yuri",
+            "level": 7
+          },
+          {
+            "name": "Alice",
+            "level": 6
+          },
+          {
+            "name": "Zhuzhen",
+            "level": 6
+          }
+        ],
+        "exp": 180,
+        "cash": 1800,
+        "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
+      }
+    ],
+    "boss": {
+      "type": "BOSS",
+      "name": "Yamaraja: Earth",
+      "enemies": [
+        {
+          "name": "Yamaraja: Earth",
+          "hp": 300,
+          "class": "Water",
+          "drop": "Star Brooch"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 7
+        },
+        {
+          "name": "Alice",
+          "level": 6
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 6
+        }
+      ],
+      "exp": 180,
+      "cash": 1800,
+      "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
+    },
+    "shops": [
+      {
+        "name": "Wandering Merchant",
+        "inventory": [
+          {
+            "name": "Bandanna",
+            "price": 320
+          },
+          {
+            "name": "TalismanOfLuck",
+            "price": 480
+          },
+          {
+            "name": "Leather Belt",
+            "price": 320
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Shell Bracelet",
+            "price": 2770
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Bone Bracelet",
+            "price": 2960
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "Thera Leaf",
+            "price": 50
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Mana Leaf",
+            "price": 100
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "When you regain control, head back south to the first area of town to find an Angel's Feather roughly around the center of the area, just to the lower-right of a pile of sticks. Go back up to the previous screen (second area), then follow along the right side until you see the '?' icon near another pile of sticks to find a Bronze Arrowhead. Continue north to the next area.",
+        "type": "exploration",
+        "rewards": [
+          {
+            "name": "Angel's Feather",
+            "category": "items",
+            "matched_overview_item": "Angel's Feather"
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "category": "items",
+            "matched_overview_item": "Bronze Arrowhead"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "Use the Save Point in the center of town near the well to save your game and clear Malice in the Graveyard if needed. Check around the right side of the well by a board on the ground to find a Tent. Go all the way to the right, then all the way up to the corner by the Lost Peddler / Wandering Merchant to find a TalismanOfLuck lying on the ground.",
+        "type": "exploration",
+        "rewards": [
+          {
+            "name": "Tent",
+            "category": "items",
+            "matched_overview_item": "Tent"
+          },
+          {
+            "name": "TalismanOfLuck",
+            "category": "items",
+            "matched_overview_item": "TalismanOfLuck"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "Shop with the Wandering Merchant if desired. Prioritize healing supplies such as Thera, Mana, and Pure Leaves. Pure Leaves are especially helpful because Alice has low SP and can easily become Berserk. If you have extra funds, purchase Leather Belts and Bandannas (up to 3 each for the active party) and equip both on Yuri and Alice before proceeding.",
+        "type": "shop",
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": "Head all the way north to the next area to reach the shrine. Watch the events here, then enter the house the children invite you to and watch the scene. After some rest, take on two Hellcats in combat.",
+        "type": "boss",
+        "encounter": {
+          "enemies": [
+            "Hellcat"
+          ]
+        },
+        "notes": [
+          {
+            "type": "strategy",
+            "title": "Sub-Boss: Hellcat x2 Strategy",
+            "text": "They're not too bad; just have Yuri fuse into the Raging Tiger and wail on them with regular attacks while Alice keeps both of you healed with either Cure or Thera Leaves. Rewards: 40 EXP, 300 Cash, and TalismanOfLuck drop."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "After defeating the Hellcats, head back into the house and examine the dresser at the very top of the screen to find a Phoenix Tail.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Phoenix Tail",
+            "category": "items",
+            "matched_overview_item": "Phoenix Tail"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "Go back outside and make your way north back to the shrine. After a scene with the Cat Lady, head back to the previous area and go to the left side of the well to encounter her again. Head south to the second area to run into her yet again, then continue south back to the first area.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "In the first area, run into the Quack Oracle, who introduces himself as Master Li Zhuzhen, and meet Wanderer Meiyuan the acupuncturist. Zhuzhen temporarily joins your party.",
+        "type": "story",
+        "notes": [
+          {
+            "type": "tutorial",
+            "title": "Zhuzhen Equipment & Meiyuan Acupuncture",
+            "text": "Zhuzhen comes equipped with an Oak Staff and a Cotton Shirt by default. As for Meiyuan, he can't fight, but his acupuncture allows you to increase the Attack Power of your weapon, the Hit Area on the Judgment Ring, or both. It costs a lot of money to do it at this point, so I don't recommend it. We'll be able to buy new weapons in the next town which will be stronger anyway. However, if you're having trouble hitting areas on the Judgment Ring, then by all means, try to increase the Hit Area if you can afford it. NOTE: If you want to see how much it would cost to power up your weapons, check out section A-1-08 for the cost for every weapon in the game."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "Continue north to encounter the Cat Lady once more, then return to the center of town to see her again, and finally re-enter the house you were originally lured into. After the scene, learn that you need to find a Metal Vessel and a Torch to combine with the Anti-Cat Powder received from Zhuzhen.",
+        "type": "quest",
+        "rewards": [
+          {
+            "name": "Anti-Cat Powder",
+            "category": "valuables",
+            "matched_overview_item": "Anti-Cat Powder"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "description": "Head back outside and make your way south to the second area. Follow along the western side until the '?' icon pops up, then complete a Normal Ring execution to pick up the Metal Bowl.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Metal Bowl",
+            "category": "valuables",
+            "matched_overview_item": "Metal Bowl"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "description": "Continue south to the entrance and examine the building just to the right of Meiyuan to find the Torch among a pile of sticks.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Torch",
+            "category": "valuables",
+            "matched_overview_item": "Torch"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "description": "With both required items collected, make your way back to the center of town and use the Save Point. When ready, enter the Cat Lady's house and examine the pit in the center to trigger the battle with Felinus.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 12,
+        "description": "Battle Felinus (#009 Felinus, HP: 250, Class: Wind).",
+        "type": "boss",
+        "encounter": {
+          "enemies": [
+            "Felinus"
+          ]
+        },
+        "notes": [
+          {
+            "type": "strategy",
+            "title": "Sub-Boss: Felinus Strategy",
+            "text": "This lady isn't to be taken lightly. She can use the Wind Fang ability to hit everyone for Wind damage, and after a couple of turns, your whole party will be in need of healing, so beware. Since she's a Wind class, have Yuri fuse into the Raging Tiger and use the Flying Stones skill to do some decent damage to her, followed by regular attack. Alice should be keeping everyone healed, as should Zhuzhen. If no one needs healing then, have Zhuzhen use his Ogre Flamedance spell, and Alice should attack normally. As long as you stay healed and don't let Alice go Berserk, you should be fine. Rewards: 120 EXP, 600 Cash, and Lottery Ticket drop."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 13,
+        "description": "Head back to the Save Point and use a Tent to recover party HP and MP before attempting the boss.",
+        "type": "preparation",
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Level Recommendation & Boss Preparation",
+            "text": "This next boss is REALLY tough if you're at a low level. I strongly recommend fighting until everyone in your party is at least level 6 before continuing on; it should only take a few battles. If you get some extra money, those Leather Belts and Bandannas for everyone would probably be a good idea."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 14,
+        "description": "Head back north to the shrine and examine it. You are prompted: 'Do you dare violate the shrine?'",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "[1] No, I don't...",
+            "outcome": "Do not enter battle yet."
+          },
+          {
+            "option": "[2] Yes, I do!",
+            "outcome": "Initiates the boss battle against Yamaraja: Earth."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 15,
+        "description": "Choose option [2] to fight the boss: Yamaraja: Earth (#010 Yamaraja: Earth, HP: 300, Class: Water).",
+        "type": "boss",
+        "encounter": {
+          "enemies": [
+            "Yamaraja: Earth"
+          ]
+        },
+        "notes": [
+          {
+            "type": "strategy",
+            "title": "Boss Strategy: Yamaraja: Earth",
+            "text": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned above, he's pretty dangerous! If you can't beat him, level up in town for a while before trying again. I recommend at least level 6 for everyone. His Flash Flood will hit an ally for pretty good damage, while his Large Whirlpool will hit your entire party for major damage, as well as possibly halving your Hit Area on your Ring, so be sure to heal after it hits. His physical attacks are also nothing to sneeze at, as they can take away large chunks of HP at a time. Make sure that Alice and Zhuzhen are in the back row, and when in doubt, just heal. Have Yuri fuse into the Raging Tiger and use his Flying Stones attack, followed by normal attacks. Have Alice stay on healing duty the entire time, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have Yuri supplement healing since Zhuzhen's fire magic probably hits for more than Yuri does, and make sure to keep Alice from becoming Berserk."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 16,
+        "description": "After the battle and scene conclude, examine the shrine once again to find a Shell Bracelet. Then head south through town and speak with the Lost Peddler on the second screen to obtain the Snake Card.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Remove Zhuzhen's Equipment",
+            "text": "After the battle, remove everything you can from Zhuzhen before leaving town."
+          },
+          {
+            "type": "tip",
+            "title": "Snake Card Guild Discount",
+            "text": "The Snake Card is a Guild Card that can be used for a discount in Shops."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Shell Bracelet",
+            "category": "equipment",
+            "matched_overview_item": "Shell Bracelet"
+          },
+          {
+            "name": "Snake Card",
+            "category": "valuables",
+            "matched_overview_item": "Snake Card"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "description": "Make your way to the town gate, where Zhuzhen departs from your party. Exit to the World Map and proceed to your next destination: Fengtian.",
+        "type": "navigation",
+        "rewards": []
+      }
+    ]
+  }
+}

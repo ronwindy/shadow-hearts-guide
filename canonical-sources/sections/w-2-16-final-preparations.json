@@ -1,0 +1,42 @@
+{
+  "id": "w-2-16",
+  "code": "[W-2-16]",
+  "title": "Final Preparations",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-16",
+      "code": "[W-S-16]",
+      "title": "Nemeton Monastery (The Seraphic Radiance /",
+      "file": "sections/w-s-16-nemeton-monastery-the-seraphic-radiance.json"
+    },
+    "next": {
+      "id": "w-2-17",
+      "code": "[W-2-17]",
+      "title": "Neameeto",
+      "file": "sections/w-2-17-neameeto.json"
+    }
+  },
+  "char_count": 3320,
+  "line_count": 72,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n   Shadow Hearts   |                                         Final Preparations\n     [W-2-16]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nJust want to run a few last suggestions by you before you go on to finish...\n\n - Cash in all of your steps with the Silent Peddler. I recommend stocking up\n   on Thera Extracts. (If you're going to be grinding for levels, be sure to\n   equip the Pedometer and Accelerator while you're doing it; you can easily\n   earn enough steps to buy whatever you like.)\n\n - Spend the money using Meiyuan's Acupuncture to increase the Hit Area and/or\n   Attack Power of your ultimate weapons.\n\n - Stock up on the following items, if you have the cash and/or steps. If you\n   had ground everyone to get their final special skills, you should have a ton\n   of both. (The Third Keys make for MUCH easier boss battles. And yes, these\n   quantities are probably a bit high. Better safe than sorry.)\n\n   - If you don't have the extra money for Extracts right now, the enemies in\n     Neameeto can drop them, so if you have those sets of Pirate Earrings, you\n     can get them to drop 100% if you equip 5 of them, or 4 of them and the\n     Thief Earrings.\n\n   - Thera Extract (50+ from the Silent Peddler)\n   - Mana Root (50+ from Roger's Vending Machine)\n   - Mana Extract (10-15 or so from the Tight-lipped Merchant in Prague)\n   - Pure Root (25 or so from the Tight-lipped Merchant in Prague)\n   - Pure Extract (5-10 or so from the Tight-lipped Merchant in Prague)\n   - Third Keys (5-10 or so from the Tight-lipped Merchant in Prague)\n\n - Learn all of Yuri's ???? Fusion skills by going Berserk in battle, fused as\n   the monster you want to learn the ability with.\n\n - If you want to, you can grind everyone to the following levels to have all\n   of their special skills. Here in Neameeto is the best place for EXP and Gold\n   in the game.\n\n    - Alice - 48\n    - Zhuzhen - 47\n    - Margarete - 46\n    - Keith - 49\n    - Halley - 47\n\n    - Grinding Equipment Suggestions (to maximize Steps, Cash, and EXP)\n\n      - Brigand Earrings x6, 1 per party member (purchased in Asia)\n      - Thief Earrings x1, equip on ANY party member (won from Lottery)\n      - Pedometer x1, equip on an active party member (from Silent Peddler)\n      - Accelerator x1, equip with the Pedometer (won from Lottery)\n      - Monk Earrings x2, active party members to boost EXP (Olga/Orphanage)\n\n      - This should give you +140% Cash, Double Pedometer steps, and +40%\n        EXP for those two who have the Monk Earrings equipped.\n\n - Make sure everyone (yes, all six members) has their best equipment AND a set\n   of accessories equipped. Also, make sure they're at LEAST level 40 or higher\n   before moving on. There's a point in Neameeto that your party is split in\n   two, and your preferred party may not be the one doing the fighting. I\n   strongly recommend leveling until they have their final skills as mentioned\n   above.\n\nOnce you feel you've done everything you want to do, head to Neameeto to finish\nwhat we've started...\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

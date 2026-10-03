@@ -1,0 +1,235 @@
+{
+  "id": "a-1-09",
+  "code": "[A-1-09]",
+  "title": "The Lottery",
+  "category": "Appendices",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "a-1-08",
+      "code": "[A-1-08]",
+      "title": "Acupuncturist Costs",
+      "file": "sections/a-1-08-acupuncturist-costs.json"
+    },
+    "next": {
+      "id": "a-1-10",
+      "code": "[A-1-10]",
+      "title": "Malice Rewards",
+      "file": "sections/a-1-10-malice-rewards.json"
+    }
+  },
+  "char_count": 22007,
+  "line_count": 416,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "LOTTERY MEMBER NO. 15",
+        "raw_tag": "[_LOTTERY MEMBER NO. 15_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 64,
+        "char_offset": [
+          3131,
+          3156
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 15_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 14",
+        "raw_tag": "[_LOTTERY MEMBER NO. 14_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 83,
+        "char_offset": [
+          4097,
+          4122
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 14_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 13",
+        "raw_tag": "[_LOTTERY MEMBER NO. 13_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 102,
+        "char_offset": [
+          5065,
+          5090
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 13_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 12",
+        "raw_tag": "[_LOTTERY MEMBER NO. 12_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 123,
+        "char_offset": [
+          6179,
+          6204
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 12_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 11",
+        "raw_tag": "[_LOTTERY MEMBER NO. 11_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 148,
+        "char_offset": [
+          7487,
+          7512
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 11_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 10",
+        "raw_tag": "[_LOTTERY MEMBER NO. 10_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 169,
+        "char_offset": [
+          8609,
+          8634
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 10_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 09",
+        "raw_tag": "[_LOTTERY MEMBER NO. 09_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 194,
+        "char_offset": [
+          10024,
+          10049
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 09_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 08",
+        "raw_tag": "[_LOTTERY MEMBER NO. 08_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 215,
+        "char_offset": [
+          11147,
+          11172
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 08_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 07",
+        "raw_tag": "[_LOTTERY MEMBER NO. 07_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 235,
+        "char_offset": [
+          12161,
+          12186
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 07_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 06",
+        "raw_tag": "[_LOTTERY MEMBER NO. 06_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 254,
+        "char_offset": [
+          13133,
+          13158
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 06_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 05",
+        "raw_tag": "[_LOTTERY MEMBER NO. 05_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 276,
+        "char_offset": [
+          14290,
+          14315
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 05_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 04",
+        "raw_tag": "[_LOTTERY MEMBER NO. 04_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 297,
+        "char_offset": [
+          15407,
+          15432
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 04_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 03",
+        "raw_tag": "[_LOTTERY MEMBER NO. 03_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 317,
+        "char_offset": [
+          16453,
+          16478
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 03_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 02",
+        "raw_tag": "[_LOTTERY MEMBER NO. 02_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 339,
+        "char_offset": [
+          17630,
+          17655
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 02_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 01",
+        "raw_tag": "[_LOTTERY MEMBER NO. 01_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 377,
+        "char_offset": [
+          19730,
+          19755
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 01_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 00",
+        "raw_tag": "[_LOTTERY MEMBER NO. 00_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 398,
+        "char_offset": [
+          20898,
+          20923
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 00_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      }
+    ],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n        ««  Shadow Hearts  »»                                   [A-1-09]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                             The Lottery                             \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nListed here are the locations of all 30 of the Lottery Tickets in the game, as\nwell as all 16 Lottery Members and their prizes.\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                           Lottery Ticket Locations\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\nLottery Ticket #01 - Zhaoyang Village (dropped by Felinus)\nLottery Ticket #02 - Fengtian (after explosion, in alley)\nLottery Ticket #03 - Fengtian Sewers (hole in the wall)\nLottery Ticket #04 - Dalian (in a chest on the dock)\nLottery Ticket #05 - Dalian (reward for finding the turtle)\n\nLottery Ticket #06 - Smuggler's Boat (in the wheelhouse)\nLottery Ticket #07 - Shanghai, Huayuan (near Hasty Kawa)\nLottery Ticket #08 - Shanghai, Huayuan (Zhen's bar)\nLottery Ticket #09 - Temple Ruins (behind pillar at the entrance)\nLottery Ticket #10 - Shanghai, Huayuan (dog mini-game)\n\nLottery Ticket #11 - Kowloon Fortress (in urinal/water fountain)\nLottery Ticket #12 - Kuihai Tower (beside first Save Point)\nLottery Ticket #13 - Kuihai Tower (beside where you fought Badger Devil)\nLottery Ticket #14 - Prague (behind the tree on the north end of town)\nLottery Ticket #15 - Bistritz (at the entrance, by the left stone pillar)\n\nLottery Ticket #16 - Blue Castle (in coffin room, along skinny path)\nLottery Ticket #17 - Blue Castle (in prison cell in the tower)\nLottery Ticket #18 - Prague (after Yuri rejoins, in the men's bathroom)\nLottery Ticket #19 - Rouen (on the left side after entering town)\nLottery Ticket #20 - Rouen (by the barrels in the rear of the church)\n\nLottery Ticket #21 - London, Old Castle Street (near the Inn)\nLottery Ticket #22 - London, Old Castle Street (London Rats' hideout)\nLottery Ticket #23 - London, Old Castle Street (Knowledgeable Carl's house)\nLottery Ticket #24 - London, Orphanage (by the fireplace upstairs)\nLottery Ticket #25 - Calios Mental Hospital (in a chest, 3rd area)\n\nLottery Ticket #26 - Nemeton Monastery (after entering the actual ruins)\nLottery Ticket #27 - Dollhouse (on the table, 2nd room)\nLottery Ticket #28 - Cave Temple (in chest in the maze)\nLottery Ticket #29 - Ancient Ruins (between the green and turquoise rooms)\nLottery Ticket #30 - Neameeto (after the first boss, on the left)\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                      Lottery Member Locations and Prizes\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 15_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Jade Lariat               /\n               /        (Yellow)  |  B.Tortoise Fang           \\\n              /      (Turquoise)  |  TalismanOfMercy            \\\n             /           (Green)  |  Pure Seed                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Fengtian (Building-loving Man)\n\nMake sure to win the Jade Lariat before continuing on; it widens your Hit Area\non your Ring, it's well worth it!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 14_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Pocket Watch              /\n               /        (Yellow)  |  W.Tiger Hair              \\\n              /      (Turquoise)  |  TeaOfTheHealer             \\\n             /           (Green)  |  Pure Leaf                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Dalian (Filthy Samo)\n\nMake sure to win the Pocket Watch before continuing on; it gives the wearer\nresistance to Judgment Ring anomalies in battle.\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 13_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Iron Clogs                /\n               /        (Yellow)  |  B.Dragon Horn             \\\n              /      (Turquoise)  |  Witch's Broth              \\\n             /           (Green)  |  Pure Leaf                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Smuggler's Boat (Courier Subordinate)\n\nThe ring here moves fast, so remember, equipping the Pocket Watch will make it\neasier to hit the areas! Make sure to win the Iron Clogs before continuing on;\nit slows down the indicator speed on your Judgment Ring, but it also lowers\nyour Agl 15 points.\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 12_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Star Card                 /\n               /        (Yellow)  |  R.Phoenix Talon           \\\n              /      (Turquoise)  | *TeaOfTheSage               \\\n             /           (Green)  |  Pure Seed                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Shanghai, Huayuan (Sharp Van)\n\n * - The Prize Listing in game lists this prize as TeaOfTheHolyOne, and even\n     says that you receive it after winning it. However, if you check your\n     inventory, you will receive a TeaOfTheSage instead.\n\nThe ring here moves REALLY fast, so remember, equipping the Pocket Watch will\nmake it easier to hit the areas! Make sure to win the Star Card before\ncontinuing on; it allows you to get up to 20% off on your purchases, and 10%\nmore on your sales!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 11_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Flash Badge               /\n               /        (Yellow)  |  Kirin Scale               \\\n              /      (Turquoise)  |  Priest's Wine              \\\n             /           (Green)  |  Pure Seed                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Temple Ruins (Master Xiaofang)\n\nThe ring here moves fast, so remember, equipping the Pocket Watch will make it\neasier to hit the areas! Make sure to win the Flash Badge before continuing on;\nit increases your agility by 25 points, but it makes your indicator on your\nJudgment Ring spin twice as fast!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 10_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Mind's Eye                /\n               /        (Yellow)  |  Moon Swallow              \\\n              /      (Turquoise)  |  TalismanOfWisdom           \\\n             /           (Green)  |  Pure Seed                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Kowloon Fortress (Invincible Nee)\n\nThe ring here moves REALLY fast. Normally, equipping the Pocket Watch would\nmake it run normally, but it has no effect this time, so it'll probably take\nyou QUITE a few tries to get this. Make sure to win the Mind's Eye before\ncontinuing on; it's arguably the best accessory in the game. It will make the\nareas on your Judgment Ring invisible, but it'll DOUBLE (yes, DOUBLE) your\nphysical attack! Paired with a Jade Lariat and weapons that have the Hit Area\nwidened on them, (or if you're just that good at Yuri's ring) Yuri becomes\nridiculously overpowered.\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 09_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Warlock Earrings          /\n               /        (Yellow)  |  Star Swallow              \\\n              /      (Turquoise)  |  Soul Benediction           \\\n             /           (Green)  |  Pure Seed                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Shanghai, Kuihai Tower (Private Matsuura)\n\nThe ring here moves fast, so remember, equipping the Pocket Watch will make it\neasier to hit the areas! Make sure to win the Warlock Earrings before\ncontinuing on; it increases your S-Atk up 20%, but will also increase the\ndamage received from S-Atks by 20%!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 08_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Brsrkr Earrings           /\n               /        (Yellow)  |  Seal of Luck              \\\n              /      (Turquoise)  |  TalismanOfPurity           \\\n             /           (Green)  |  Thera Root                  \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Prague (Guard Homas)\n\nThe ring here EXTREMELY SLOW, so it should be VERY easy to get whatever you\nwant! Make sure to win the Brsrkr Earrings before continuing on; it increases\nyour max HP 20%!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 07_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Oracle Earrings           /\n               /        (Yellow)  |  Seal of Life              \\\n              /      (Turquoise)  |  TeaOfTheHolyOne            \\\n             /           (Green)  |  Mana Root                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Bistritz (Hunter Warda)\n\nNothing strange about the ring here. Make sure to win the Oracle Earrings\nbefore continuing on; it increases your max MP 20%!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 06_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Accelerator               /\n               /        (Yellow)  |  Seal of Aura              \\\n              /      (Turquoise)  |  Alchemist'sWater           \\\n             /           (Green)  |  Pure Root                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Rouen (Hooked-nose Robin)\n\nNothing strange about the ring here. Make sure to win the Accelerator here\nbefore continuing on; it doubles your Pedometer steps with each step you take!\nJust remember, that the person wearing the Pedometer must be wearing the\nAccelerator at the same time, it won't work if they're on separate party\nmembers.\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 05_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Priest Earrings           /\n               /        (Yellow)  |  Seal of Speed             \\\n              /      (Turquoise)  |  Thera Extract              \\\n             /           (Green)  |  Thera Root                  \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: London, Old Castle Street (Drunken Orro)\n\nWhile the speed of the indicator isn't anything unusual, all of the areas are\nTINY! Equip the Pocket Watch before playing, and they'll be easier to hit. Make\nsure to win the Priest Earrings here before continuing on; they decrease MP\nconsumption by 20%!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 04_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Eternity Card             /\n               /        (Yellow)  |  Seal of Force             \\\n              /      (Turquoise)  |  Mana Extract               \\\n             /           (Green)  |  Mana Root                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Calios Mental Hospital (Introverted Chopin)\n\nNothing strange about the ring here. Make sure to win the Eternity Card here\nbefore continuing on; it's the best Guild Card, allowing you to get 50%\ndiscounts and 25% price rises!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 03_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Crucifix                  /\n               /        (Yellow)  |  Seal of Wisdom            \\\n              /      (Turquoise)  |  Pure Extract               \\\n             /           (Green)  |  Pure Root                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: London, The Orphanage (Pot-lover Macken)\n\nThe ring here is INVISIBLE, so make sure to equip the Pocket Watch so you can\nsee it, which then becomes the easiest Lottery of the game. Little brat....\nAnyway, make sure to win the Crucifix before continuing on; you already have\none, but since it cancels out all status effects, you'll definitely want a\nsecond!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 02_]              /\n             \\___________________________________________________/              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  10 Gauge                  /\n               /        (Yellow)  |  Dice of Caesar            \\\n              /      (Turquoise)  |  Seal of Strength           \\\n             /           (Green)  |  Eye of Ouroboros            \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Rouen (Fake-nose Man)\n\nThe ring here moves REALLY fast. And in addition to that, the hit areas are\npretty small. Normally, equipping the Pocket Watch would make it run normally,\nbut it has no effect this time, so it'll probably take you QUITE a few tries to\nget this. This guy is special for one reason: Once you win the 10 Gauge for\nMargarete, he will revert back to Lottery Member No. 06.\n\n - The Eye of Ouroboros fully Restores MP and SP when used. You may want to get\n   a few of these, as they'll come in handy in the final battles.\n\n - The Seal of Strength increases your strength, obviously. I don't think they\n   ever really benefit your party members THAT much, so avoid getting them\n   UNLESS you've already bought all you like with your Lottery Tickets and have\n   extra to spend.\n\n - The Dice of Caesar allow some of your allies to gain 3x strength in battle,\n   but can miss some or all of your party sometimes. I avoid these just because\n   it's not a guaranteed boost in battle, but some others may find it useful.\n\n - The 10 Gauge is Margarete's best weapon; make sure to win it, but save it\n   for last. You may even want to wait on getting this until you visit the\n   remaining Lottery Members, depending on how many of these middle three items\n   you may want.\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 01_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Thief Earrings            /\n               /        (Yellow)  |  Key to Success            \\\n              /      (Turquoise)  |  Seal of Vitality           \\\n             /           (Green)  |  Fruit of Yggdrasil          \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Blue Castle (Keith-like invisible man)\n\nThe ring here is INSANELY FAST, and there's no way to slow it down, so good\nluck! Make sure to win the Thief Earrings before continuing on; it's like the\nBrigand and Pirate Earrings combined, with no downfall! They'll allow you to\nget a 20% higher chance at treasure after battle, as well as 20% more Cash!\n\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 00_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  CottonUnderpants          /\n               /        (Yellow)  |  Comet Mask                \\\n              /      (Turquoise)  |  Seal of the Soul           \\\n             /           (Green)  |  TalismanOfPower             \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nLocation: Nemeton Monastery (Roger Bacon)\n\nNothing strange about the ring here, just really small hit areas! Make sure to\nwin both the CottonUnderpants and Comet Mask before continuing on; the\nCottonUnderpants is an accessory for Alice that increases her defense AND cut\nnormal attack damage in half (and change the color of her panties from pink to\nwhite!), while the Comet Mask increases P-Def, S-Def, and P-Avd when equipped,\nand can't be obtained anywhere else."
+}

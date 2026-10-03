@@ -1,0 +1,101 @@
+{
+  "id": "a-1-11",
+  "code": "[A-1-11]",
+  "title": "Pedometer Rewards",
+  "category": "Appendices",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "a-1-10",
+      "code": "[A-1-10]",
+      "title": "Malice Rewards",
+      "file": "sections/a-1-10-malice-rewards.json"
+    },
+    "next": {
+      "id": "a-1-12",
+      "code": "[A-1-12]",
+      "title": "NPC Library",
+      "file": "sections/a-1-12-npc-library.json"
+    }
+  },
+  "char_count": 1671,
+  "line_count": 32,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [
+    {
+      "name": "Pedometer Service",
+      "inventory": [
+        {
+          "name": "Thera Extract",
+          "price": 100
+        },
+        {
+          "name": "Moon Swallow",
+          "price": 3500
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 300
+        },
+        {
+          "name": "Star Swallow",
+          "price": 5000
+        },
+        {
+          "name": "Weird Bottle",
+          "price": 800
+        },
+        {
+          "name": "Monkey Paw",
+          "price": 6500
+        },
+        {
+          "name": "Iron Clogs",
+          "price": 1500
+        },
+        {
+          "name": "Silver Hand",
+          "price": 7000
+        },
+        {
+          "name": "Flash Badge",
+          "price": 2500
+        },
+        {
+          "name": "Belt of Power",
+          "price": 8000
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "LEATHER SUIT",
+        "raw_tag": "[_LEATHER SUIT_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 19,
+        "char_offset": [
+          828,
+          844
+        ],
+        "context": "If you talk to any Silent Peddler after you have 10,000 Steps accumulated, then you will receive the [_LEATHER SUIT_], Margarete's best armor. (Margarete does NOT have to be in your active party to receive the armor!)"
+      }
+    ],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n        ««  Shadow Hearts  »»                                   [A-1-11]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                          Pedometer Rewards                          \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nListed here are the rewards you can earn by cashing in your Pedometer Steps.\nPedometer steps are gained while equipping the Pedometer and walking through\nareas where you can run into enemies. These steps are doubled if you have an\nAccelerator equipped.\n\nIf you talk to any Silent Peddler after you have 10,000 Steps accumulated, then\nyou will receive the [_LEATHER SUIT_], Margarete's best armor. (Margarete does\nNOT have to be in your active party to receive the armor!)\n\n.———————————————————————————————————————————————————————————————.\n|                 -$-   Pedometer Service   -$-                 |\n|===============================v===============================|\n| Thera Extract       -     100 | Moon Swallow        -    3500 |\n| Voodoo Doll         -     300 | Star Swallow        -    5000 |\n| Weird Bottle        -     800 | Monkey Paw          -    6500 |\n| Iron Clogs          -    1500 | Silver Hand         -    7000 |\n| Flash Badge         -    2500 | Belt of Power       -    8000 |\n|———————————————————————————————'———————————————————————————————|\n| Leather Suit        -   10000 (automatic)                     |\n'———————————————————————————————————————————————————————————————'"
+}

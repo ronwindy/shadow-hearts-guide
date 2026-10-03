@@ -1,0 +1,45 @@
+{
+  "guide": {
+    "id": "w-1-00",
+    "code": "[W-1-00]",
+    "title": "Walkthrough - Asia",
+    "type": "walkthrough_intro",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "i-1-01",
+        "code": "[I-1-01]",
+        "title": "Game Manual / Instructions",
+        "file": "sections/i-1-01-game-manual-instructions.json"
+      },
+      "next": {
+        "id": "w-1-01",
+        "code": "[W-1-01]",
+        "title": "Trans-Siberian Express",
+        "file": "sections/w-1-01-trans-siberian-express.json"
+      }
+    },
+    "overview": {
+      "directions": {
+        "compass_note": "There is no true \"compass\" to the game; instead, you travel on pre-rendered backgrounds with areas for walking. Sometimes, I will substitute west for left, right for east, etc.",
+        "mappings": [
+          { "screen": "Up", "cardinal": "North", "abbr": "U / N" },
+          { "screen": "Down", "cardinal": "South", "abbr": "D / S" },
+          { "screen": "Left", "cardinal": "West", "abbr": "L / W" },
+          { "screen": "Right", "cardinal": "East", "abbr": "R / E" },
+          { "screen": "Upper-Left", "cardinal": "Northwest", "abbr": "UL / NW" },
+          { "screen": "Upper-Right", "cardinal": "Northeast", "abbr": "UR / NE" },
+          { "screen": "Lower-Left", "cardinal": "Southwest", "abbr": "LL / SW" },
+          { "screen": "Lower-Right", "cardinal": "Southeast", "abbr": "LR / SE" }
+        ]
+      }
+    }
+  }
+}

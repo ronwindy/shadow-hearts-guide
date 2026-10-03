@@ -1,0 +1,679 @@
+{
+  "id": "w-2-17",
+  "code": "[W-2-17]",
+  "title": "Neameeto",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-16",
+      "code": "[W-2-16]",
+      "title": "Final Preparations",
+      "file": "sections/w-2-16-final-preparations.json"
+    },
+    "next": {
+      "id": "w-2-18",
+      "code": "[W-2-18]",
+      "title": "New Game+",
+      "file": "sections/w-2-18-new-game.json"
+    }
+  },
+  "char_count": 28969,
+  "line_count": 440,
+  "overview": {
+    "save_points": [
+      "After the first boss, 1st floor",
+      "After the second boss, 2nd floor",
+      "After the third boss, 3rd floor /",
+      "before the final bosses"
+    ],
+    "items": [
+      "Seal of Aura",
+      "TalismanOfPower",
+      "Lottery Ticket",
+      "Fifth Key",
+      "Seal of Vitality"
+    ],
+    "equipment": [
+      "Brsrkr Earrings",
+      "Monk Earrings",
+      "Crank Slingshot",
+      "Heretic's Coat",
+      "SilverThreadCoat",
+      "Mind's Eye",
+      "Sage Staff",
+      "V-blade-Blodauth",
+      "Rubber Suit"
+    ]
+  },
+  "items": [
+    "Seal of Aura",
+    "TalismanOfPower",
+    "Lottery Ticket",
+    "Fifth Key",
+    "Seal of Vitality",
+    "Brsrkr Earrings",
+    "Monk Earrings",
+    "Crank Slingshot",
+    "Heretic's Coat",
+    "SilverThreadCoat",
+    "Mind's Eye",
+    "Sage Staff",
+    "V-blade-Blodauth",
+    "Rubber Suit"
+  ],
+  "enemies": [
+    {
+      "number": "#089",
+      "name": "Enkidu",
+      "hp": 250,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#090",
+      "name": "Emptiness",
+      "hp": 315,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#091",
+      "name": "Hangman",
+      "hp": 600,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Confusion"
+    },
+    {
+      "number": "#092",
+      "name": "Soul Block",
+      "hp": 7200,
+      "class": "Light",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "P-Atk Resistant"
+    },
+    {
+      "number": "#093",
+      "name": "Arcmine",
+      "hp": 310,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#094",
+      "name": "Enigma",
+      "hp": 430,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Silence"
+    },
+    {
+      "number": "#095",
+      "name": "Keeper",
+      "hp": 750,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#096",
+      "name": "Hate",
+      "hp": 7000,
+      "class": "Dark",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis, Poison, and Ring anomalies"
+    },
+    {
+      "number": "#097",
+      "name": "Cockatrice",
+      "hp": 900,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "P-Atk Resistant, Inflicts Paralysis"
+    },
+    {
+      "number": "#098",
+      "name": "Black Widow",
+      "hp": 800,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "S-Atk Resistant, Inflicts Paralysis, Uses SP lowering"
+    },
+    {
+      "number": "#099",
+      "name": "Red Cap",
+      "hp": 2000,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#100",
+      "name": "Scapegoat",
+      "hp": 7700,
+      "class": "Wind",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#123",
+      "name": "Messiah",
+      "hp": 6000,
+      "class": "None",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Uses SP Lowering, and inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+    },
+    {
+      "number": "#124",
+      "name": "Meta-God",
+      "hp": 12000,
+      "class": "None",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Uses SP Lowering, and inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Soul Block",
+      "enemies": [
+        {
+          "name": "Soul Block",
+          "hp": 7200,
+          "class": "Light",
+          "drop": "Monkey Paw"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 62
+        },
+        {
+          "name": "Alice",
+          "level": 52
+        },
+        {
+          "name": "Margarete",
+          "level": 50
+        }
+      ],
+      "exp": 40000,
+      "cash": 22500,
+      "strategy": "Yes, I know, Yuri's level is insanely high, but blame the game for not\nletting you be able to take him out of your party so you can level others\nup. It shouldn't affect much, as he's just as much of a powerhouse ten\nlevels earlier.\nIn any case, the Soul Block CANNOT be harmed physically, so it'll be up\nto your special attacks to take him out. He has some really strong\nphysical attacks, as well as the light spell, Pulse, and the Shockwave\nspell, neither of which are quite as strong, but hit everyone.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually cast For Tomorrow. (Just\nknow that For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice use Advent and have Margarete use Diving Bomber; whoever is\ndealing the least amount of damage (likely Alice), have her replenish\nYuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD\nkeep your party healed, but in case it falls behind, have Alice ready\nwith an Arc to bring you back up to snuff.\nIf you're having trouble with the hit areas of the SeraphicRadiance, then\nyou may want to start using Bronze Daggers (or Arrowheads for just Yuri)\non your party to widen the hit areas. If you're STILL having trouble,\nthen you'll probably be better of using Amon and his Demon Rays spell."
+    },
+    {
+      "type": "BOSS",
+      "name": "Hate",
+      "enemies": [
+        {
+          "name": "Hate",
+          "hp": 7000,
+          "class": "Dark",
+          "drop": "Seventh Key"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 63
+        },
+        {
+          "name": "Margarete",
+          "level": 51
+        },
+        {
+          "name": "Alice",
+          "level": 53
+        }
+      ],
+      "exp": 45000,
+      "cash": 25000,
+      "strategy": "Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes\nnow, so as long as they're equipped, we'll just receive minor to decent\ndamage to the whole party instead of ring anomalies and poison. It'll\nalso attempt to paralyze you, but will do a decent amount of damage to a\nsingle ally instead.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually attack from there on,\nusing Third Keys if you have spares, with Alice's Holy Edge on him.\n(Remember, For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice start off by casting Holy Edge on both Yuri and Margarete,\nthen use Advent when healing isn't needed, and have her use Arc when it\nis. Margarete should be attacking physically as well with Third Keys.\nThis boss is actually a lot easier than the last."
+    },
+    {
+      "type": "BOSS",
+      "name": "Scapegoat",
+      "enemies": [
+        {
+          "name": "Scapegoat",
+          "hp": 7700,
+          "class": "Wind",
+          "drop": "Crucifix"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 64
+        },
+        {
+          "name": "Margarete",
+          "level": 53
+        },
+        {
+          "name": "Alice",
+          "level": 55
+        }
+      ],
+      "exp": 50000,
+      "cash": 27500,
+      "strategy": "The Scapegoat will use Wind Fang that will hit your whole party for a\nsmall amount of damage, and will also attack normally on a single ally\nfor decent damage. He can also use Deathtouch, which if you remember,\ninstantly puts an ally into critical HP status, so make sure to heal\nstraight away when he uses it.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys if you have spares. (Remember, For Everyone\nALSO boosts your AGL, and that means a faster ring, so if you can't keep\nup with it, don't worry about casting it to begin with.)\nHave Alice use Advent when healing isn't needed, and have her use Arc\nwhen it is. Margarete should be attacking physically as well with Third\nKeys. Just make sure to stay healed and you should be fine."
+    },
+    {
+      "type": "BOSS",
+      "name": "Messiah, Meta-God",
+      "enemies": [
+        {
+          "name": "Messiah",
+          "hp": 6000,
+          "class": "None",
+          "drop": "Silver Hand"
+        },
+        {
+          "name": "Meta-God",
+          "hp": 12500,
+          "class": "None",
+          "drop": null
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 65
+        },
+        {
+          "name": "Margarete",
+          "level": 54
+        },
+        {
+          "name": "Alice",
+          "level": 56
+        }
+      ],
+      "exp": 60000,
+      "cash": 0,
+      "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
+    }
+  ],
+  "boss": [
+    {
+      "type": "BOSS",
+      "name": "Soul Block",
+      "enemies": [
+        {
+          "name": "Soul Block",
+          "hp": 7200,
+          "class": "Light",
+          "drop": "Monkey Paw"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 62
+        },
+        {
+          "name": "Alice",
+          "level": 52
+        },
+        {
+          "name": "Margarete",
+          "level": 50
+        }
+      ],
+      "exp": 40000,
+      "cash": 22500,
+      "strategy": "Yes, I know, Yuri's level is insanely high, but blame the game for not\nletting you be able to take him out of your party so you can level others\nup. It shouldn't affect much, as he's just as much of a powerhouse ten\nlevels earlier.\nIn any case, the Soul Block CANNOT be harmed physically, so it'll be up\nto your special attacks to take him out. He has some really strong\nphysical attacks, as well as the light spell, Pulse, and the Shockwave\nspell, neither of which are quite as strong, but hit everyone.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually cast For Tomorrow. (Just\nknow that For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice use Advent and have Margarete use Diving Bomber; whoever is\ndealing the least amount of damage (likely Alice), have her replenish\nYuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD\nkeep your party healed, but in case it falls behind, have Alice ready\nwith an Arc to bring you back up to snuff.\nIf you're having trouble with the hit areas of the SeraphicRadiance, then\nyou may want to start using Bronze Daggers (or Arrowheads for just Yuri)\non your party to widen the hit areas. If you're STILL having trouble,\nthen you'll probably be better of using Amon and his Demon Rays spell."
+    },
+    {
+      "type": "BOSS",
+      "name": "Hate",
+      "enemies": [
+        {
+          "name": "Hate",
+          "hp": 7000,
+          "class": "Dark",
+          "drop": "Seventh Key"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 63
+        },
+        {
+          "name": "Margarete",
+          "level": 51
+        },
+        {
+          "name": "Alice",
+          "level": 53
+        }
+      ],
+      "exp": 45000,
+      "cash": 25000,
+      "strategy": "Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes\nnow, so as long as they're equipped, we'll just receive minor to decent\ndamage to the whole party instead of ring anomalies and poison. It'll\nalso attempt to paralyze you, but will do a decent amount of damage to a\nsingle ally instead.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually attack from there on,\nusing Third Keys if you have spares, with Alice's Holy Edge on him.\n(Remember, For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice start off by casting Holy Edge on both Yuri and Margarete,\nthen use Advent when healing isn't needed, and have her use Arc when it\nis. Margarete should be attacking physically as well with Third Keys.\nThis boss is actually a lot easier than the last."
+    },
+    {
+      "type": "BOSS",
+      "name": "Scapegoat",
+      "enemies": [
+        {
+          "name": "Scapegoat",
+          "hp": 7700,
+          "class": "Wind",
+          "drop": "Crucifix"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 64
+        },
+        {
+          "name": "Margarete",
+          "level": 53
+        },
+        {
+          "name": "Alice",
+          "level": 55
+        }
+      ],
+      "exp": 50000,
+      "cash": 27500,
+      "strategy": "The Scapegoat will use Wind Fang that will hit your whole party for a\nsmall amount of damage, and will also attack normally on a single ally\nfor decent damage. He can also use Deathtouch, which if you remember,\ninstantly puts an ally into critical HP status, so make sure to heal\nstraight away when he uses it.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys if you have spares. (Remember, For Everyone\nALSO boosts your AGL, and that means a faster ring, so if you can't keep\nup with it, don't worry about casting it to begin with.)\nHave Alice use Advent when healing isn't needed, and have her use Arc\nwhen it is. Margarete should be attacking physically as well with Third\nKeys. Just make sure to stay healed and you should be fine."
+    },
+    {
+      "type": "BOSS",
+      "name": "Messiah, Meta-God",
+      "enemies": [
+        {
+          "name": "Messiah",
+          "hp": 6000,
+          "class": "None",
+          "drop": "Silver Hand"
+        },
+        {
+          "name": "Meta-God",
+          "hp": 12500,
+          "class": "None",
+          "drop": null
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 65
+        },
+        {
+          "name": "Margarete",
+          "level": 54
+        },
+        {
+          "name": "Alice",
+          "level": 56
+        }
+      ],
+      "exp": 60000,
+      "cash": 0,
+      "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
+    }
+  ],
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "SEAL OF AURA",
+        "raw_tag": "[_SEAL OF AURA_]",
+        "matched_overview_item": "Seal of Aura",
+        "category": "items",
+        "line": 140,
+        "char_offset": [
+          8885,
+          8901
+        ],
+        "context": "Use the Save Point, then head northwest and climb the short stairs here to come to a chest containing a [_SEAL OF AURA_]. Go back down the short stairs, but follow this walkway down as it goes counter clockwise, and you'll find the last [_LOTTERY TIC"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 142,
+        "char_offset": [
+          9018,
+          9036
+        ],
+        "context": "Use the Save Point, then head northwest and climb the short stairs here to come to a chest containing a [_SEAL OF AURA_]. Go back down the short stairs, but follow this walkway down as it goes counter clockwise, and you'll find the last [_LOTTERY TIC"
+      },
+      {
+        "name": "BRSRKR EARRINGS",
+        "raw_tag": "[_BRSRKR EARRINGS_]",
+        "matched_overview_item": "Brsrkr Earrings",
+        "category": "equipment",
+        "line": 144,
+        "char_offset": [
+          9164,
+          9183
+        ],
+        "context": "Use the Save Point, then head northwest and climb the short stairs here to come to a chest containing a [_SEAL OF AURA_]. Go back down the short stairs, but follow this walkway down as it goes counter clockwise, and you'll find the last [_LOTTERY TIC"
+      },
+      {
+        "name": "CRANK SLINGSHOT",
+        "raw_tag": "[_CRANK SLINGSHOT_]",
+        "matched_overview_item": "Crank Slingshot",
+        "category": "equipment",
+        "line": 151,
+        "char_offset": [
+          9581,
+          9600
+        ],
+        "context": "Return to the center area once again and take the middle-right path to the walkway, all the way to a thin green beam going up. Walk through it to activate it, then go back to the center area, then south back down to the previous floor to the fork wit"
+      },
+      {
+        "name": "SEAL OF VITALITY",
+        "raw_tag": "[_SEAL OF VITALITY_]",
+        "matched_overview_item": "Seal of Vitality",
+        "category": "items",
+        "line": 157,
+        "char_offset": [
+          9942,
+          9962
+        ],
+        "context": "Use the Points again if you like, then take the upper-right path once again, then continue up the stairs to the left. Of the two paths here, take the one on the right first to the next area. At the four-way fork here, go northwest and open the chest "
+      },
+      {
+        "name": "SILVERTHREADCOAT",
+        "raw_tag": "[_SILVERTHREADCOAT_]",
+        "matched_overview_item": "SilverThreadCoat",
+        "category": "equipment",
+        "line": 167,
+        "char_offset": [
+          10585,
+          10605
+        ],
+        "context": "Make your way back to the center area, then take the middle-right path once again, this time climbing the stairs one set above the ones to the lower-right, and continue northeast to the next area. At the fork here, take the lower-right path and run t"
+      },
+      {
+        "name": "SAGE STAFF",
+        "raw_tag": "[_SAGE STAFF_]",
+        "matched_overview_item": "Sage Staff",
+        "category": "equipment",
+        "line": 168,
+        "char_offset": [
+          10612,
+          10626
+        ],
+        "context": "Make your way back to the center area, then take the middle-right path once again, this time climbing the stairs one set above the ones to the lower-right, and continue northeast to the next area. At the fork here, take the lower-right path and run t"
+      },
+      {
+        "name": "RUBBER SUIT",
+        "raw_tag": "[_RUBBER SUIT_]",
+        "matched_overview_item": "Rubber Suit",
+        "category": "equipment",
+        "line": 173,
+        "char_offset": [
+          10907,
+          10922
+        ],
+        "context": "Return to the center area with the Points one last time. SAVE YOUR GAME, then take the northeastern path once again. At the two northern doors, take the western one this time to the next area. At the fork here, go northeast to another dead-end, but a"
+      },
+      {
+        "name": "MONK EARRINGS",
+        "raw_tag": "[_MONK EARRINGS_]",
+        "matched_overview_item": "Monk Earrings",
+        "category": "equipment",
+        "line": 174,
+        "char_offset": [
+          10933,
+          10950
+        ],
+        "context": "Return to the center area with the Points one last time. SAVE YOUR GAME, then take the northeastern path once again. At the two northern doors, take the western one this time to the next area. At the fork here, go northeast to another dead-end, but a"
+      },
+      {
+        "name": "HERETIC'S COAT",
+        "raw_tag": "[_HERETIC'S COAT_]",
+        "matched_overview_item": "Heretic's Coat",
+        "category": "equipment",
+        "line": 235,
+        "char_offset": [
+          14962,
+          14980
+        ],
+        "context": "NOTE In this area, try to get some TalismansOfPower from the Red Caps. ¯¯¯¯¯¯¯¯ After a quick discussion among the group, head up the northern stairs to the next area, warping once again. Climb the short yellow stairs to the north, then head west to "
+      },
+      {
+        "name": "MIND'S EYE",
+        "raw_tag": "[_MIND'S EYE_]",
+        "matched_overview_item": "Mind's Eye",
+        "category": "equipment",
+        "line": 240,
+        "char_offset": [
+          15267,
+          15281
+        ],
+        "context": "Return to the fork of stairs and descend the other set, then follow the path as it goes south to the next area. Follow the path here until you warp once again. Go west from here to find a hidden chest on this balcony that contains a [_MIND'S EYE_], t"
+      },
+      {
+        "name": "TALISMANOFPOWER",
+        "raw_tag": "[_TALISMANOFPOWER_]",
+        "matched_overview_item": "TalismanOfPower",
+        "category": "items",
+        "line": 246,
+        "char_offset": [
+          15673,
+          15692
+        ],
+        "context": "Head north once again to the next area and follow the path to the warp, once again. Climb the short yellow stairs, but this time, go east and southeast to warp back to the very first warp, but on the other side. Open the chest on this platform for a "
+      },
+      {
+        "name": "V-BLADE-BLODAUTH",
+        "raw_tag": "[_V-BLADE-BLODAUTH_]",
+        "matched_overview_item": "V-blade-Blodauth",
+        "category": "equipment",
+        "line": 250,
+        "char_offset": [
+          15878,
+          15898
+        ],
+        "context": "DO NOT GO UNDERNEATH THE STAIRS TO THE NORTHWEST, or you'll have to start over again! Instead, climb the stairs here, opening the chest above you for a [_V-BLADE-BLODAUTH_]. Continue climbing to find another warp, which will let you open the chest yo"
+      },
+      {
+        "name": "FIFTH KEY",
+        "raw_tag": "[_FIFTH KEY_]",
+        "matched_overview_item": "Fifth Key",
+        "category": "items",
+        "line": 251,
+        "char_offset": [
+          16000,
+          16013
+        ],
+        "context": "DO NOT GO UNDERNEATH THE STAIRS TO THE NORTHWEST, or you'll have to start over again! Instead, climb the stairs here, opening the chest above you for a [_V-BLADE-BLODAUTH_]. Continue climbing to find another warp, which will let you open the chest yo"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 55,
+        "char_offset": [
+          3253,
+          3362
+        ],
+        "text": "You can leave Neameeto at any time by using the yellow warp points to return to Earth."
+      },
+      {
+        "type": "NOTE",
+        "line": 76,
+        "char_offset": [
+          4438,
+          4540
+        ],
+        "text": "Put your party in the back row; you can't physically attack in the next battle."
+      },
+      {
+        "type": "NOTE",
+        "line": 133,
+        "char_offset": [
+          8433,
+          8781
+        ],
+        "text": "Now that this boss has been defeated, some of the best music in the game now plays: Star Shape. Ah.... Oh, and yeah, there's now a Save Point here, as well as a yellow warp point to go back to Earth, and a pink party formation point to change your party. Feel free to use them as you please."
+      },
+      {
+        "type": "NOTE",
+        "line": 176,
+        "char_offset": [
+          10989,
+          11075
+        ],
+        "text": "Equip Crucifixes on each of your party members for the next boss."
+      },
+      {
+        "type": "NOTE",
+        "line": 229,
+        "char_offset": [
+          14567,
+          14653
+        ],
+        "text": "In this area, try to get some TalismansOfPower from the Red Caps."
+      },
+      {
+        "type": "NOTE",
+        "line": 299,
+        "char_offset": [
+          19223,
+          19473
+        ],
+        "text": "You are entering the point of no return. This is your last chance to return to Earth or take care of any other side business that you like. NOTE     Before continuing on, make sure your party is equipped with both"
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                                   Neameeto\n     [W-2-17]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | After the first boss, 1st floor\n             | After the second boss, 2nd floor\n             | After the third boss, 3rd floor /\n             |    before the final bosses\n             |\n       Items | [_] Seal of Aura        [_] TalismanOfPower\n             | [_] Lottery Ticket      [_] Fifth Key\n             | [_] Seal of Vitality\n             |\n   Equipment | [_] Brsrkr Earrings     [_] Monk Earrings\n             | [_] Crank Slingshot     [_] Heretic's Coat\n             | [_] SilverThreadCoat    [_] Mind's Eye\n             | [_] Sage Staff          [_] V-blade-Blodauth\n             | [_] Rubber Suit\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                (* = BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #089  [_] Enkidu                |   250  | Dark  |\n #090  [_] Emptiness             |   315  | Fire  |\n #091  [_] Hangman               |   600  | Water | Inflicts Confusion\n #092 *[_] Soul Block            |  7200  | Light | P-Atk Resistant\n #093  [_] Arcmine               |   310  | Light |\n #094  [_] Enigma                |   430  | Earth | Inflicts Silence\n #095  [_] Keeper                |   750  | Wind  |\n #096 *[_] Hate                  |  7000  | Dark  | Inflicts Paralysis,\n                                 |        |       |    Poison, and\n                                 |        |       |    Ring anomalies\n #097  [_] Cockatrice            |   900  | Light | P-Atk Resistant,\n                                 |        |       |    Inflicts Paralysis\n #098  [_] Black Widow           |   800  | Dark  | S-Atk Resistant,\n                                 |        |       |    Inflicts Paralysis,\n                                 |        |       |    Uses SP lowering\n #099  [_] Red Cap               |  2000  | Fire  |\n #100 *[_] Scapegoat             |  7700  | Wind  |\n #123 *[_] Messiah               |  6000  | None  | Uses SP Lowering, and\n                                 |        |       |    inflicts Paralysis,\n                                 |        |       |    Confusion, Silence,\n                                 |        |       |    Poison, Petrify,\n                                 |        |       |    and Ring anomalies\n #124 *[_] Meta-God              | 12000  | None  | Uses SP Lowering, and\n                                 |        |       |    inflicts Paralysis,\n                                 |        |       |    Confusion, Silence,\n                                 |        |       |    Poison, Petrify,\n                                 |        |       |    and Ring anomalies\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     You can leave Neameeto at any time by using the yellow warp points\n¯¯¯¯¯¯¯¯   to return to Earth.\n\nMake your way up the stairs to the east. As the path forks, continue west,\nfollowing the path to the next area. Move up to and examine the red beams here,\nand you'll be told that you cannot pass. Head back to the last fork and make\nyour way up the stairs to the north.\n\nFollow the path to the next room, where your party will split up to search.\nYuri causes the beams to come down, but by doing so ends up grapping himself,\nso now you must choose a party of the remaining members, minus Yuri and anotherparty member. (I ended up using Alice, Zhuzhen, and Halley.)\n\nGo back out to the fork and head west back to the beams, which are now gone, so\nyou can continue west to the next area. Keep climbing the stairs until you\nreach a room with three paths and a glowing triangle button in the center of\nthe room. Choose option 2 here to release the beams around Yuri.\n\nAs Yuri, make your way back out to the fork and wall the way west to meet back\nwith your party. After you re-choose your party, take the northern path to the\nnext area, following along to the next area as well.\n\n  NOTE     Put your party in the back row; you can't physically attack in the\n¯¯¯¯¯¯¯¯   next battle.\n\nWhen you're ready, approach the beast in the center of the area that blocks\nyour way.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Soul Block            |  7200 HP  | Class: Light | [_] Monkey Paw           |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |                   |                   |                   |        |\n|        |     Yuri [62]     |     Alice [52]    |   Margarete [50]  |        |\n|        |===================|===================|===================|        |\n|        | Nightbird Claw    | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Father's Coat     | GoldThreadCoat    | Leather Suit      |        |\n|        | Warlock Earrings  | CottonUnderpants  | Warlock Earrings  |        |\n|        | Priest Earrings   | Seven-Eyed Mask   | Priest Earrings   |        |\n|        | Oracle Earrings   | Brsrkr Earrings   | Oracle Earrings   |        |\n|        |                   |                   |                   |        |\n|        | SeraphicRadiance  |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Yes, I know, Yuri's level is insanely high, but blame the game for not     |\n|  letting you be able to take him out of your party so you can level others  |\n|  up. It shouldn't affect much, as he's just as much of a powerhouse ten     |\n|  levels earlier.                                                            |\n|                                                                             |\n|  In any case, the Soul Block CANNOT be harmed physically, so it'll be up    |\n|  to your special attacks to take him out. He has some really strong         |\n|  physical attacks, as well as the light spell, Pulse, and the Shockwave     |\n|  spell, neither of which are quite as strong, but hit everyone.             |\n|                                                                             |\n|  Fuse Yuri into the SeraphicRadiance and start off by casting For Everyone  |\n|  to boost your party, then have him continually cast For Tomorrow. (Just    |\n|  know that For Everyone ALSO boosts your AGL, and that means a faster       |\n|  ring, so if you can't keep up with it, don't worry about casting it to     |\n|  begin with.)                                                               |\n|                                                                             |\n|  Have Alice use Advent and have Margarete use Diving Bomber; whoever is     |\n|  dealing the least amount of damage (likely Alice), have her replenish      |\n|  Yuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD    |\n|  keep your party healed, but in case it falls behind, have Alice ready      |\n|  with an Arc to bring you back up to snuff.                                 |\n|                                                                             |\n|  If you're having trouble with the hit areas of the SeraphicRadiance, then  |\n|  you may want to start using Bronze Daggers (or Arrowheads for just Yuri)   |\n|  on your party to widen the hit areas. If you're STILL having trouble,      |\n|  then you'll probably be better of using Amon and his Demon Rays spell.     |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   40000 EXP   / \\   22500 Cash   /\n     '—————————————'   '——————————————'\n\n  NOTE     Now that this boss has been defeated, some of the best music in the\n¯¯¯¯¯¯¯¯   game now plays: Star Shape. Ah.... Oh, and yeah, there's now a\n           Save Point here, as well as a yellow warp point to go back to Earth,\n           and a pink party formation point to change your party. Feel free to\n           use them as you please.\n\nUse the Save Point, then head northwest and climb the short stairs here to come\nto a chest containing a [_SEAL OF AURA_]. Go back down the short stairs, but\nfollow this walkway down as it goes counter clockwise, and you'll find the last\n[_LOTTERY TICKET_] in the game. Return to the center and take the upper-right\npath, following it straight up another short staircase to find some\n[_BRSRKR EARRINGS_].\n\nReturn to the center area once again and take the middle-right path to the\nwalkway, all the way to a thin green beam going up. Walk through it to activate\nit, then go back to the center area, then south back down to the previous floor\nto the fork with the glowing triangle button. Go down and take the western path\nnow, and the green beam that was once here is now gone, allowing you to get the\n[_CRANK SLINGSHOT_] out of the chest here. Return back to the second floor and\nto the center area.\n\nUse the Points again if you like, then take the upper-right path once again,\nthen continue up the stairs to the left. Of the two paths here, take the one on\nthe right first to the next area. At the four-way fork here, go northwest and\nopen the chest here for a [_SEAL OF VITALITY_], then go back to the fork and\nhead northeast, where you'll come across another beam going up. Walk through\nthe blue beam to activate it, then return back to the previous room with the\nPoints.\n\nMake your way back to the center area, then take the middle-right path once\nagain, this time climbing the stairs one set above the ones to the lower-right,\nand continue northeast to the next area. At the fork here, take the lower-right\npath and run through the red beam to activate it, then go back and take the\nupper-left path that is now open where the blue beams once were, following the\npath to a dead-end with two chests; a [_SILVERTHREADCOAT_] and a\n[_SAGE STAFF_].\n\nReturn to the center area with the Points one last time. SAVE YOUR GAME, then\ntake the northeastern path once again. At the two northern doors, take the\nwestern one this time to the next area. At the fork here, go northeast to\nanother dead-end, but also with two more chests; a [_RUBBER SUIT_], and more\n[_MONK EARRINGS_]. Make your way back out to the fork.\n\n  NOTE     Equip Crucifixes on each of your party members for the next boss.\n¯¯¯¯¯¯¯¯\nWhen you're ready, head northwest and up the stairs, where Hate will be waiting\nfor you.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Hate                  |  7000 HP  | Class: Dark  | [_] Seventh Key          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [63]     |                   |   Margarete [51]  |        |\n|        |                   |     Alice [53]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Nightbird Claw    | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Father's Coat     | GoldThreadCoat    | Leather Suit      |        |\n|        | Mind's Eye        | CottonUnderpants  | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | SeraphicRadiance  |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Forron            |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes     |\n|  now, so as long as they're equipped, we'll just receive minor to decent    |\n|  damage to the whole party instead of ring anomalies and poison. It'll      |\n|  also attempt to paralyze you, but will do a decent amount of damage to a   |\n|  single ally instead.                                                       |\n|                                                                             |\n|  Fuse Yuri into the SeraphicRadiance and start off by casting For Everyone  |\n|  to boost your party, then have him continually attack from there on,       |\n|  using Third Keys if you have spares, with Alice's Holy Edge on him.        |\n|  (Remember, For Everyone ALSO boosts your AGL, and that means a faster      |\n|  ring, so if you can't keep up with it, don't worry about casting it to     |\n|  begin with.)                                                               |\n|                                                                             |\n|  Have Alice start off by casting Holy Edge on both Yuri and Margarete,      |\n|  then use Advent when healing isn't needed, and have her use Arc when it    |\n|  is. Margarete should be attacking physically as well with Third Keys.      |\n|  This boss is actually a lot easier than the last.                          |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   45000 EXP   / \\   25000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, the same three Points will appear once again, so Save, then\ncontinue up the stairs to the north to the next area. Keep following along\nthrough two corridors until you reach a new room and a staircase. Climb the\nstairs to the next area, where you'll be warped to a different location of the\ncastle.\n\n  NOTE     In this area, try to get some TalismansOfPower from the Red Caps.\n¯¯¯¯¯¯¯¯\nAfter a quick discussion among the group, head up the northern stairs to the\nnext area, warping once again. Climb the short yellow stairs to the north, then\nhead west to a fork of stairs; go up the stairs, then walk to the left as far\nas you can to warp to the next area. Open the chest to your right for the\n[_HERETIC'S COAT_], then return through the warp to the previous area.\n\nReturn to the fork of stairs and descend the other set, then follow the path as\nit goes south to the next area. Follow the path here until you warp once again.\nGo west from here to find a hidden chest on this balcony that contains a\n[_MIND'S EYE_], then descend the stairs here to warp once again. Follow this\npath west and through a door to return to the area where you first warped to.\n\nHead north once again to the next area and follow the path to the warp, once\nagain. Climb the short yellow stairs, but this time, go east and southeast to\nwarp back to the very first warp, but on the other side. Open the chest on this\nplatform for a [_TALISMANOFPOWER_], then go west to the next area.\n\nDO NOT GO UNDERNEATH THE STAIRS TO THE NORTHWEST, or you'll have to start over\nagain! Instead, climb the stairs here, opening the chest above you for a\n[_V-BLADE-BLODAUTH_]. Continue climbing to find another warp, which will let\nyou open the chest you saw earlier; it has a [_FIFTH KEY_]. That's it for\ntreasure, so take a few steps west to warp for the last time, then head north\nacross the bridge to the next area.\n\nWhen you're ready, approach the freaky looking demon that's waiting for you.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Scapegoat             |  7700 HP  | Class: Wind  | [_] Crucifix             |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [64]     |                   |   Margarete [53]  |        |\n|        |                   |     Alice [55]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Nightbird Claw    | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Father's Coat     | GoldThreadCoat    | Leather Suit      |        |\n|        | Mind's Eye        | CottonUnderpants  | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Weird Bottle      | Seven-Eyed Mask   | Weird Bottle      |        |\n|        |                   |                   |                   |        |\n|        | SeraphicRadiance  |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Forron            |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  The Scapegoat will use Wind Fang that will hit your whole party for a      |\n|  small amount of damage, and will also attack normally on a single ally     |\n|  for decent damage. He can also use Deathtouch, which if you remember,      |\n|  instantly puts an ally into critical HP status, so make sure to heal       |\n|  straight away when he uses it.                                             |\n|                                                                             |\n|  As usual, fuse Yuri into the SeraphicRadiance and start off by casting     |\n|  For Everyone to boost your party, then have him continually attack from    |\n|  there on, using Third Keys if you have spares. (Remember, For Everyone     |\n|  ALSO boosts your AGL, and that means a faster ring, so if you can't keep   |\n|  up with it, don't worry about casting it to begin with.)                   |\n|                                                                             |\n|  Have Alice use Advent when healing isn't needed, and have her use Arc      |\n|  when it is. Margarete should be attacking physically as well with Third    |\n|  Keys. Just make sure to stay healed and you should be fine.                |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   50000 EXP   / \\   27500 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, the three Points will appear once again. SAVE YOUR GAME.\n\n  NOTE     You are entering the point of no return. This is your last chance to\n¯¯¯¯¯¯¯¯   return to Earth or take care of any other side business that you\n           like.\n\n  NOTE     Before continuing on, make sure your party is equipped with both\n¯¯¯¯¯¯¯¯   Crucifixes and Will Powers.\n\nWhen you're ready, head north into the final chamber. Watch the series of\nevents here, then you'll have to take on the Messiah.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Messiah               |  6000 HP  | Class: None  | [_] Silver Hand          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [65]     |                   |   Margarete [54]  |        |\n|        |                   |     Alice [56]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Nightbird Claw    | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Father's Coat     | GoldThreadCoat    | Leather Suit      |        |\n|        | Mind's Eye        | CottonUnderpants  | Mind's Eye        |        |\n|        | Will Power        | Will Power        | Will Power        |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | SeraphicRadiance  |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Sandalphon        |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  He will start the battle off with Holy Chest, which would normally dampen  |\n|  your SP, but with the Will Powers equipped, it'll only do a decent amount  |\n|  of damage. He will also use the !!! attack, so make sure that you heal     |\n|  IMMEDIATELY after it hits so you don't lose your ally. Other than that,    |\n|  he just uses Status Abnormality, which won't do hardly any damage, and as  |\n|  long as you have a Crucifix on, you don't need to worry about the          |\n|  anomalies.                                                                 |\n|                                                                             |\n|  He can also heal himself with Grace, and even though it only SAYS 999 HP   |\n|  is healed, trust me, a lot more than that is healed. There is no cap on    |\n|  the damage or amount healed; just the numbers displayed.                   |\n|                                                                             |\n|  As usual, fuse Yuri into the SeraphicRadiance and start off by casting     |\n|  For Everyone to boost your party, then have him continually attack from    |\n|  there on, using Third Keys. There is one more battle after this, so save   |\n|  your Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts  |\n|  your AGL, and that means a faster ring, so if you can't keep up with it,   |\n|  don't worry about casting it to begin with.)                               |\n|                                                                             |\n|  Alice will most likely be casting Arc every round, but whenever she        |\n|  happens to get a free turn, have her cast Advent. Margarete should be      |\n|  attacking physically as well with Third Keys.                              |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   60000 EXP   / \\   00000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, watch the last events before the final battle. You'll get to\nchoose your party one last time, then you'll be thrown into a battle against\nGod to save the world.\n\n      .——————————————————.\n     / *** FINAL BOSS *** \\\n.———'———————————————————.——'—————————.———————————————.————————————————————————.\n| Meta-God              |  12500 HP  |  Class: None  |                        |\n|———————————————————————'————————————'———————————————'————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [65]      |                  |   Margarete [55]  |        |\n|        |                    |     Alice [57]   |                   |        |\n|        |====================|==================|===================|        |\n|        | Nightbird Claw     | Holy Book-Flesh  | 10 Gauge          |        |\n|        | Father's Coat      | GoldThreadCoat   | Leather Suit      |        |\n|        | Mind's Eye         | CottonUnderpants | Mind's Eye        |        |\n|        | Will Power         | Will Power       | Will Power        |        |\n|        | Crucifix           | Crucifix         | Crucifix          |        |\n|        |                    |                  |                   |        |\n|        | SeraphicRadiance   |                  |                   |        |\n|        | Amon               |                  |                   |        |\n|        | Sandalphon         |                  |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  This is easily the greatest battle music of all time: Imbroglio!!!         |\n|                                                                             |\n|  He'll start off with Time of Judgment, which will do major damage to your  |\n|  entire party, but will also take away some MP. Each of his colored Abyss   |\n|  attacks will hit your party for pretty decent damage, but if you're not    |\n|  wearing a Crucifix, then it will also inflict you with a status            |\n|  abnormality, depending on the class. He'll also use Nine Springs, which    |\n|  works like !!! in that it reduces your HP to 1, so be sure to heal after   |\n|  it hits.                                                                   |\n|                                                                             |\n|  Don't bother boosting your party with For Tomorrow or anything like that;  |\n|  he'll use Light of Deprivation to remove it all before you even get a      |\n|  chance to enjoy it.                                                        |\n|                                                                             |\n|  Since this is the final battle, Yuri gets to have a ton of fun with the    |\n|  items we've been holding on to! Start off by fusing him into the           |\n|  SeraphicRadiance, then have use the Silver Hand item on himself, giving    |\n|  him a 100% ring area. On his second turn, have him use a Monkey Paw on     |\n|  himself, which will triple his attack! Before his third turn, have         |\n|  someone in your party use a Moon Swallow (or just a Star Swallow on Yuri)  |\n|  to make all attacks critical attacks!                                      |\n|                                                                             |\n|  Finally, on his third, fourth, and fifth turns, have him use the two       |\n|  Seventh Keys and a Fifth Key. Just press the CROSS button as fast as you   |\n|  can while you have the 100% ring area to land EVERY HIT! This should       |\n|  DEFINITELY be enough to take out God. If not, once the Silver Hand wears   |\n|  off, either attack normally for a few rounds, or try out the remaining     |\n|  Fifth Keys to keep wailing on him. Remember, each attack that says 999 HP  |\n|  damages is more than likely doing more than 999. The damage itself         |\n|  doesn't cap; just the displayed number.                                    |\n|                                                                             |\n|  In the meantime, Alice should be casting Arc every single round, and       |\n|  Margarete should be helping Alice. If healing isn't needed, then use       |\n|  Advent with Alice and normal attacks with Third or Fifth Keys with         |\n|  Margarete.                                                                 |\n|                                                                             |\n|  If for some reason you don't have those items, than you can work on him    |\n|  like the last few bosses. As usual, fuse Yuri into the SeraphicRadiance    |\n|  and start physically attacking, using any Keys you do have. The girls      |\n|  should be doing the same thing as listed above; just stay healed and be    |\n|  patient.                                                                   |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'\n\n\n\n\n\n_______________________________________________________________________________\n!*!*!*!*!*!*!*!*!*!*!*!*       CONGRATULATIONS!       *!*!*!*!*!*!*!*!*!*!*!*!*\n!*!*!*!*!*!*!*!*!*!*!*   YOU'VE BEATEN SHADOW HEARTS!   *!*!*!*!*!*!*!*!*!*!*!*\n!*!*!*!*!*!*!*!*!*!*!*!*      ENJOY THE ENDING!       *!*!*!*!*!*!*!*!*!*!*!*!*\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n OH, AND MAKE SURE TO WATCH IT ALL SO YOU CAN SAVE YOUR CLEAR DATA AT THE END!\n_______________________________________________________________________________\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

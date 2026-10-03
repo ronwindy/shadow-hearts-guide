@@ -1,0 +1,1433 @@
+{
+  "id": "a-1-07",
+  "code": "[A-1-07]",
+  "title": "Store/Shop List",
+  "category": "Appendices",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "a-1-06",
+      "code": "[A-1-06]",
+      "title": "Valuables\u0001",
+      "file": "sections/a-1-06-valuables.json"
+    },
+    "next": {
+      "id": "a-1-08",
+      "code": "[A-1-08]",
+      "title": "Acupuncturist Costs",
+      "file": "sections/a-1-08-acupuncturist-costs.json"
+    }
+  },
+  "char_count": 23169,
+  "line_count": 349,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [
+    {
+      "name": "Wandering Merchant",
+      "inventory": [
+        {
+          "name": "Bandanna",
+          "price": 320
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Leather Belt",
+          "price": 320
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    },
+    {
+      "name": "Fengtian Item Shop",
+      "inventory": [
+        {
+          "name": "Knuckle Blade",
+          "price": 1200
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "ShootingStarTome",
+          "price": 1420
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Leather Vest",
+          "price": 1000
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Leather Skirt",
+          "price": 1200
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Bandanna",
+          "price": 320
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Leather Belt",
+          "price": 320
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "RosewoodBracelet",
+          "price": 3000
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    },
+    {
+      "name": "Sea Turtle Restaurant",
+      "inventory": [
+        {
+          "name": "Bandanna",
+          "price": 320
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Leather Belt",
+          "price": 320
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Brigand Earrings",
+          "price": 5000
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Pirate Earrings",
+          "price": 5000
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "name": "Underground Armory",
+      "inventory": [
+        {
+          "name": "Knuckle Blade",
+          "price": 1200
+        },
+        {
+          "name": "Type 94 Pistol",
+          "price": 1300
+        },
+        {
+          "name": "ShootingStarTome",
+          "price": 1420
+        },
+        {
+          "name": "Leather Vest",
+          "price": 1000
+        },
+        {
+          "name": "Hexagonal Staff",
+          "price": 1100
+        },
+        {
+          "name": "Leather Skirt",
+          "price": 1200
+        }
+      ]
+    },
+    {
+      "name": "Pachimon General Store",
+      "inventory": [
+        {
+          "name": "Knuckle Blade",
+          "price": 1200
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "ShootingStarTome",
+          "price": 1420
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Hexagonal Staff",
+          "price": 1100
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Type 94 Pistol",
+          "price": 1300
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Leather Vest",
+          "price": 1000
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Leather Skirt",
+          "price": 1200
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Bandanna",
+          "price": 320
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Leather Belt",
+          "price": 320
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    },
+    {
+      "name": "Mika's House",
+      "inventory": [
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Brigand Earrings",
+          "price": 5000
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Pirate Earrings",
+          "price": 5000
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    },
+    {
+      "name": "Shanghai Weapon Studio",
+      "inventory": [
+        {
+          "name": "Steel Claw",
+          "price": 2800
+        },
+        {
+          "name": "Nanbu Pistol",
+          "price": 2900
+        },
+        {
+          "name": "Tome of the Moon",
+          "price": 3000
+        },
+        {
+          "name": "Studded Harness",
+          "price": 2500
+        },
+        {
+          "name": "Pilgrim's Staff",
+          "price": 2700
+        },
+        {
+          "name": "Studded Bustier",
+          "price": 2700
+        }
+      ]
+    },
+    {
+      "name": "Kato Pachimon General Store",
+      "inventory": [
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "name": "Master Shoho's Allowance Job",
+      "inventory": [
+        {
+          "name": "Steel Claw",
+          "price": 2800
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Tome of the Moon",
+          "price": 3000
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Pilgrim's Staff",
+          "price": 2700
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Nanbu Pistol",
+          "price": 2900
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Studded Harness",
+          "price": 2500
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Studded Bustier",
+          "price": 2700
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    },
+    {
+      "name": "Shanghai Transport Reg. Logistic Comp. 8",
+      "inventory": [
+        {
+          "name": "Steel Claw",
+          "price": 2800
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Tome of the Moon",
+          "price": 3000
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Pilgrim's Staff",
+          "price": 2700
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Nanbu Pistol",
+          "price": 2900
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Studded Harness",
+          "price": 2500
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Studded Bustier",
+          "price": 2700
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "RosewoodBracelet",
+          "price": 3000
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Imp's Fang",
+          "price": 95
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        }
+      ]
+    },
+    {
+      "name": "Time is Money",
+      "inventory": [
+        {
+          "name": "Chainmail Vest",
+          "price": 5500
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Silk Bolero",
+          "price": 5940
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Face Guard",
+          "price": 3000
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Imp's Fang",
+          "price": 95
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Jade Lariat",
+          "price": 5050
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    },
+    {
+      "name": "Chicken Heart",
+      "inventory": [
+        {
+          "name": "Tome of the Sun",
+          "price": 6020
+        },
+        {
+          "name": "Chainmail Vest",
+          "price": 5500
+        },
+        {
+          "name": "Royal Estoc",
+          "price": 6230
+        },
+        {
+          "name": "Silk Bolero",
+          "price": 5940
+        }
+      ]
+    },
+    {
+      "name": "Do Re Mi Shop",
+      "inventory": [
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Metal Belt",
+          "price": 3000
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Soul Benediction",
+          "price": 500
+        },
+        {
+          "name": "Pocket Watch",
+          "price": 5200
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Coral Lariat",
+          "price": 5050
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    },
+    {
+      "name": "Continental Zero",
+      "inventory": [
+        {
+          "name": "Silver Talon",
+          "price": 16000
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Grand Bible",
+          "price": 17400
+        },
+        {
+          "name": "Pocket Watch",
+          "price": 5200
+        },
+        {
+          "name": "Four Gods' Staff",
+          "price": 15970
+        },
+        {
+          "name": "Will Power",
+          "price": 6000
+        },
+        {
+          "name": "12 Gauge",
+          "price": 15800
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "ExecutionerSwd",
+          "price": 18030
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Steel Slingshot",
+          "price": 14800
+        },
+        {
+          "name": "Jade Lariat",
+          "price": 5050
+        },
+        {
+          "name": "HiAlloySlingshot",
+          "price": 19200
+        },
+        {
+          "name": "Coral Lariat",
+          "price": 5050
+        },
+        {
+          "name": "Stygian Robe",
+          "price": 14800
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Snow-White Robe",
+          "price": 15600
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Headgear",
+          "price": 5400
+        },
+        {
+          "name": "Pure Root",
+          "price": 1000
+        },
+        {
+          "name": "Circlet",
+          "price": 5800
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Charming Pareo",
+          "price": 5500
+        },
+        {
+          "name": "TalismanOfWisdom",
+          "price": 1280
+        },
+        {
+          "name": "Loin Guard",
+          "price": 5200
+        },
+        {
+          "name": "TalismanOfPurity",
+          "price": 1760
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Soul Benediction",
+          "price": 500
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Zodiac Bracelet",
+          "price": 10300
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Cosmic Bracelet",
+          "price": 11500
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n        ««  Shadow Hearts  »»                                   [A-1-07]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                           Store/Shop List                           \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nListed here are all of the items that you can buy in the game. This section is\nlisted in order of when the shops are available.\n\n\n                                Zhaoyang Village\n       .———————————————————————————————————————————————————————————————.\n       |                -$-   Wandering Merchant   -$-                 |\n       |===============================v===============================|\n       | Bandanna            -     320 | TalismanOfLuck      -     480 |\n       | Leather Belt        -     320 | Mermaid's Tear      -      70 |\n       | Shell Bracelet      -    2770 | Holy Mother Bust    -      75 |\n       | Bone Bracelet       -    2960 | Phoenix Tail        -      90 |\n       | Thera Leaf          -      50 | Bronze Arrowhead    -     100 |\n       | Mana Leaf           -     100 | Silver Hourglass    -     100 |\n       | Pure Leaf           -     230 | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n                                    Fengtian\n       .———————————————————————————————————————————————————————————————.\n       |                -$-   Fengtian Item Shop   -$-                 |\n       |===============================v===============================|\n       | Knuckle Blade       -    1200 | Thera Leaf          -      50 |\n       | ShootingStarTome    -    1420 | Mana Leaf           -     100 |\n       | Leather Vest        -    1000 | Pure Leaf           -     230 |\n       | Leather Skirt       -    1200 | TalismanOfLuck      -     480 |\n       | Bandanna            -     320 | Mermaid's Tear      -      70 |\n       | Leather Belt        -     320 | Holy Mother Bust    -      75 |\n       | Shell Bracelet      -    2770 | Angel's Feather     -      80 |\n       | Bone Bracelet       -    2960 | Phoenix Tail        -      90 |\n       | RosewoodBracelet    -    3000 | Bronze Dagger       -     200 |\n       | Spikes              -    2810 | Gold Hourglass      -     200 |\n       |                               | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n                                     Dalian\n       .———————————————————————————————————————————————————————————————.\n       |               -$-   Sea Turtle Restaurant   -$-               |\n       |===============================v===============================|\n       | Bandanna            -     320 | Pure Leaf           -     230 |\n       | Leather Cap         -     600 | TalismanOfLuck      -     480 |\n       | Leather Belt        -     320 | Mermaid's Tear      -      70 |\n       | Casual Belt         -     600 | Holy Mother Bust    -      75 |\n       | Shell Bracelet      -    2770 | Angel's Feather     -      80 |\n       | Bone Bracelet       -    2960 | Phoenix Tail        -      90 |\n       | Rosewood Bracelet   -    3000 | Bronze Arrowhead    -     100 |\n       | Spikes              -    2810 | Bronze Dagger       -     200 |\n       | Brigand Earrings    -    5000 | Silver Hourglass    -     100 |\n       | Pirate Earrings     -    5000 | Gold Hourglass      -     200 |\n       | Thera Leaf          -      50 | Tent                -     480 |\n       | Mana Leaf           -     100 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\n                                     Dalian\n       .———————————————————————————————————————————————————————————————.\n       |                -$-   Underground Armory   -$-                 |\n       |===============================v===============================|\n       | Knuckle Blade       -    1200 | Type 94 Pistol      -    1300 |\n       | ShootingStarTome    -    1420 | Leather Vest        -    1000 |\n       | Hexagonal Staff     -    1100 | Leather Skirt       -    1200 |\n       '———————————————————————————————'———————————————————————————————'\n\n                                Smuggler's Boat\n       .———————————————————————————————————————————————————————————————.\n       |              -$-   Pachimon General Store   -$-               |\n       |===============================v===============================|\n       | Knuckle Blade       -    1200 | Voodoo Doll         -    5200 |\n       | ShootingStarTome    -    1420 | Thera Leaf          -      50 |\n       | Hexagonal Staff     -    1100 | Mana Leaf           -     100 |\n       | Type 94 Pistol      -    1300 | Pure Leaf           -     230 |\n       | Leather Vest        -    1000 | TalismanOfLuck      -     480 |\n       | Leather Skirt       -    1200 | Mermaid's Tear      -      70 |\n       | Bandanna            -     320 | Holy Mother Bust    -      75 |\n       | Leather Cap         -     600 | Angel's Feather     -      80 |\n       | Leather Belt        -     320 | Phoenix Tail        -      90 |\n       | Casual Belt         -     600 | Bronze Arrowhead    -     100 |\n       | Shell Bracelet      -    2770 | Bronze Dagger       -     200 |\n       | Bone Bracelet       -    2960 | Silver Hourglass    -     100 |\n       | Rosewood Bracelet   -    3000 | Gold Hourglass      -     200 |\n       | Spikes              -    2810 | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n                               Shanghai, Huayuan\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Mika's House   -$-                    |\n       |===============================v===============================|\n       | Leather Cap         -     600 | Mana Seed           -     300 |\n       | Studded Cap         -    1700 | Pure Leaf           -     230 |\n       | Casual Belt         -     600 | Pure Seed           -     510 |\n       | Western Belt        -    1700 | TalismanOfLuck      -     480 |\n       | Shell Bracelet      -    2770 | TalismanOfMercy     -     820 |\n       | Bone Bracelet       -    2960 | Mermaid's Tear      -      70 |\n       | Rosewood Bracelet   -    3000 | Holy Mother Bust    -      75 |\n       | Bell Bracelet       -    3120 | Angel's Feather     -      80 |\n       | Spikes              -    2810 | Faerie's Sigh       -      85 |\n       | Voodoo Doll         -    5200 | Phoenix Tail        -      90 |\n       | Brigand Earrings    -    5000 | Bronze Arrowhead    -     100 |\n       | Pirate Earrings     -    5000 | Bronze Dagger       -     200 |\n       | Thera Leaf          -      50 | Silver Hourglass    -     100 |\n       | Thera Seed          -     120 | Gold Hourglass      -     200 |\n       | Mana Leaf           -     100 | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n                               Shanghai, Huayuan\n       .———————————————————————————————————————————————————————————————.\n       |              -$-   Shanghai Weapon Studio   -$-               |\n       |===============================v===============================|\n       | Steel Claw          -    2800 | Nanbu Pistol        -    2900 |\n       | Tome of the Moon    -    3000 | Studded Harness     -    2500 |\n       | Pilgrim's Staff     -    2700 | Studded Bustier     -    2700 |\n       '———————————————————————————————'———————————————————————————————'\n\n                                  Temple Ruins\n       .———————————————————————————————————————————————————————————————.\n       |            -$-   Kato Pachimon General Store   -$-            |\n       |===============================v===============================|\n       | Leather Cap         -     600 | Pure Leaf           -     230 |\n       | Studded Cap         -    1700 | Pure Seed           -     510 |\n       | Casual Belt         -     600 | TalismanOfLuck      -     480 |\n       | Western Belt        -    1700 | TalismanOfMercy     -     820 |\n       | Shell Bracelet      -    2770 | Mermaid's Tear      -      70 |\n       | Bone Bracelet       -    2960 | Holy Mother Bust    -      75 |\n       | Rosewood Bracelet   -    3000 | Angel's Feather     -      80 |\n       | Bell Bracelet       -    3120 | Faerie's Sigh       -      85 |\n       | Spikes              -    2810 | Phoenix Tail        -      90 |\n       | Leonardo's Bear     -    3330 | Bronze Arrowhead    -     100 |\n       | Voodoo Doll         -    5200 | Bronze Dagger       -     200 |\n       | Thera Leaf          -      50 | Silver Hourglass    -     100 |\n       | Thera Seed          -     120 | Gold Hourglass      -     200 |\n       | Mana Leaf           -     100 | Tent                -     480 |\n       | Mana Seed           -     300 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\n                                  Temple Ruins\n       .———————————————————————————————————————————————————————————————.\n       |           -$-   Master Shoho's Allowance Job   -$-            |\n       |===============================v===============================|\n       | Steel Claw          -    2800 | Thera Leaf          -      50 |\n       | Tome of the Moon    -    3000 | Thera Seed          -     120 |\n       | Pilgrim's Staff     -    2700 | Mana Leaf           -     100 |\n       | Nanbu Pistol        -    2900 | Mana Seed           -     300 |\n       | Studded Harness     -    2500 | Pure Leaf           -     230 |\n       | Studded Bustier     -    2700 | Pure Seed           -     510 |\n       | Leather Cap         -     600 | TalismanOfLuck      -     480 |\n       | Studded Cap         -    1700 | TalismanOfMercy     -     820 |\n       | Casual Belt         -     600 | Mermaid's Tear      -      70 |\n       | Western Belt        -    1700 | Holy Mother Bust    -      75 |\n       | Shell Bracelet      -    2770 | Angel's Feather     -      80 |\n       | Bone Bracelet       -    2960 | Faerie's Sigh       -      85 |\n       | Rosewood Bracelet   -    3000 | Phoenix Tail        -      90 |\n       | Bell Bracelet       -    3120 | Bronze Arrowhead    -     100 |\n       | Spikes              -    2810 | Bronze Dagger       -     200 |\n       | Leonardo's Bear     -    3330 | Silver Hourglass    -     100 |\n       | Voodoo Doll         -    5200 | Gold Hourglass      -     200 |\n       |                               | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n                                Kowloon Fortress\n       .———————————————————————————————————————————————————————————————.\n       |               -$-   Tight-lipped Merchant   -$-               |\n       |===============================v===============================|\n       | Leather Cap         -     600 | TalismanOfLuck      -     480 |\n       | Studded Cap         -    1700 | TalismanOfMercy     -     820 |\n       | Casual Belt         -     600 | TalismanOfWisdom    -    1280 |\n       | Western Belt        -    1700 | Mermaid's Tear      -      70 |\n       | Zodiac Bracelet     -   10300 | Holy Mother Bust    -      75 |\n       | Cosmic Bracelet     -   11500 | Angel's Feather     -      80 |\n       | Spikes              -    2810 | Faerie's Sigh       -      85 |\n       | Leonardo's Bear     -    3330 | Imp's Fang          -      95 |\n       | Voodoo Doll         -    5200 | Phoenix Tail        -      90 |\n       | Thera Leaf          -      50 | Bronze Arrowhead    -     100 |\n       | Thera Seed          -     120 | Bronze Dagger       -     200 |\n       | Mana Leaf           -     100 | Silver Hourglass    -     100 |\n       | Mana Seed           -     300 | Gold Hourglass      -     200 |\n       | Pure Leaf           -     230 | Tent                -     480 |\n       | Pure Seed           -     510 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\n                             Shanghai, Kuihai Tower\n       .———————————————————————————————————————————————————————————————.\n       |     -$-   Shanghai Transport Reg. Logistic Comp. 8   -$-      |\n       |===============================v===============================|\n       | Steel Claw          -    2800 | Thera Leaf          -      50 |\n       | Tome of the Moon    -    3000 | Thera Seed          -     120 |\n       | Pilgrim's Staff     -    2700 | Mana Leaf           -     100 |\n       | Nanbu Pistol        -    2900 | Mana Seed           -     300 |\n       | Studded Harness     -    2500 | Pure Leaf           -     230 |\n       | Studded Bustier     -    2700 | Pure Seed           -     510 |\n       | Leather Cap         -     600 | TalismanOfLuck      -     480 |\n       | Studded Cap         -    1700 | TalismanOfMercy     -     820 |\n       | Casual Belt         -     600 | Mermaid's Tear      -      70 |\n       | Western Belt        -    1700 | Holy Mother Bust    -      75 |\n       | Bone Bracelet       -    2960 | Angel's Feather     -      80 |\n       | RosewoodBracelet    -    3000 | Faerie's Sigh       -      85 |\n       | Bell Bracelet       -    3120 | Imp's Fang          -      95 |\n       | Mirror Bracelet     -    3240 | Phoenix Tail        -      90 |\n       | Spikes              -    2810 | Bronze Arrowhead    -     100 |\n       | Leonardo's Bear     -    3330 | Bronze Dagger       -     200 |\n       | Voodoo Doll         -    5200 | Silver Hourglass    -     100 |\n       |                               | Gold Hourglass      -     200 |\n       '———————————————————————————————'———————————————————————————————'\n\n                                     Prague\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Time is Money   -$-                   |\n       |===============================v===============================|\n       | Chainmail Vest      -    5500 | Mana Seed           -     300 |\n       | Silk Bolero         -    5940 | Mana Root           -     500 |\n       | Studded Cap         -    1700 | Pure Leaf           -     230 |\n       | Face Guard          -    3000 | Pure Seed           -     510 |\n       | Western Belt        -    1700 | TalismanOfLuck      -     480 |\n       | Shell Bracelet      -    2770 | TalismanOfMercy     -     820 |\n       | Bone Bracelet       -    2960 | Mermaid's Tear      -      70 |\n       | Rosewood Bracelet   -    3000 | Holy Mother Bust    -      75 |\n       | Bell Bracelet       -    3120 | Angel's Feather     -      80 |\n       | Mirror Bracelet     -    3240 | Faerie's Sigh       -      85 |\n       | Spikes              -    2810 | Imp's Fang          -      95 |\n       | Leonardo's Bear     -    3330 | Phoenix Tail        -      90 |\n       | Voodoo Doll         -    5200 | Bronze Arrowhead    -     100 |\n       | Jade Lariat         -    5050 | Bronze Dagger       -     200 |\n       | Thera Seed          -     120 | Silver Hourglass    -     100 |\n       | Thera Root          -     300 | Gold Hourglass      -     200 |\n       |                               | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n                                    Bistritz\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Chicken Heart   -$-                   |\n       |===============================v===============================|\n       | Tome of the Sun     -    6020 | Chainmail Vest      -    5500 |\n       | Royal Estoc         -    6230 | Silk Bolero         -    5940 |\n       '———————————————————————————————'———————————————————————————————'\n\n                                    Bistritz\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Do Re Mi Shop   -$-                   |\n       |===============================v===============================|\n       | Studded Cap         -    1700 | Thera Seed          -     120 |\n       | Western Belt        -    1700 | Thera Root          -     300 |\n       | Metal Belt          -    3000 | Mana Seed           -     300 |\n       | Shell Bracelet      -    2770 | Mana Root           -     500 |\n       | Bone Bracelet       -    2960 | Pure Leaf           -     230 |\n       | Rosewood Bracelet   -    3000 | Pure Seed           -     510 |\n       | Bell Bracelet       -    3120 | TalismanOfLuck      -     480 |\n       | Mirror Bracelet     -    3240 | TalismanOfMercy     -     820 |\n       | Spikes              -    2810 | Soul Benediction    -     500 |\n       | Pocket Watch        -    5200 | Bronze Arrowhead    -     100 |\n       | Leonardo's Bear     -    3330 | Bronze Dagger       -     200 |\n       | Voodoo Doll         -    5200 | Silver Hourglass    -     100 |\n       | Coral Lariat        -    5050 | Gold Hourglass      -     200 |\n       |                               | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n                                     Rouen\n       .———————————————————————————————————————————————————————————————.\n       |               -$-   Tight-lipped Merchant   -$-               |\n       |===============================v===============================|\n       | Ever-Bible          -    9800 | Voodoo Doll         -    5200 |\n       | Oracle's Staff      -    8600 | Jade Lariat         -    5050 |\n       | SilverCrscntSwd     -    8300 | Coral Lariat        -    5050 |\n       | RedLeatherJacket    -    8800 | Thera Seed          -     120 |\n       | Jasper Cape         -    9200 | Thera Root          -     300 |\n       | Headgear            -    5400 | Mana Seed           -     300 |\n       | Circlet             -    5800 | Mana Root           -     500 |\n       | Charming Pareo      -    5500 | Pure Leaf           -     230 |\n       | Loin Guard          -    5200 | Pure Seed           -     510 |\n       | Shell Bracelet      -    2770 | TalismanOfMercy     -     820 |\n       | Bone Bracelet       -    2960 | TalismanOfWisdom    -    1280 |\n       | Rosewood Bracelet   -    3000 | TalismanOfPurity    -    1760 |\n       | Bell Bracelet       -    3120 | Soul Benediction    -     500 |\n       | Mirror Bracelet     -    3240 | Bronze Arrowhead    -     100 |\n       | Cosmic Bracelet     -   11500 | Bronze Dagger       -     200 |\n       | Spikes              -    2810 | Silver Hourglass    -     100 |\n       | Pocket Watch        -    5200 | Gold Hourglass      -     200 |\n       | Will Power          -    6000 | Tent                -     480 |\n       | Leonardo's Bear     -    3330 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\n\n                           London, Old Castle Street\n       .———————————————————————————————————————————————————————————————.\n       |               -$-   Tight-lipped Merchant   -$-               |\n       |===============================v===============================|\n       | Ever-Bible          -    9800 | Voodoo Doll         -    5200 |\n       | Oracle's Staff      -    8600 | Jade Lariat         -    5050 |\n       | SilverCrscntSwd     -    8300 | Coral Lariat        -    5050 |\n       | RedLeatherJacket    -    8800 | Thera Seed          -     120 |\n       | Jasper Cape         -    9200 | Thera Root          -     300 |\n       | Headgear            -    5400 | Mana Seed           -     300 |\n       | Circlet             -    5800 | Mana Root           -     500 |\n       | Charming Pareo      -    5500 | Pure Leaf           -     230 |\n       | Loin Guard          -    5200 | Pure Seed           -     510 |\n       | Shell Bracelet      -    2770 | TalismanOfMercy     -     820 |\n       | Bone Bracelet       -    2960 | TalismanOfWisdom    -    1280 |\n       | Rosewood Bracelet   -    3000 | TalismanOfPurity    -    1760 |\n       | Bell Bracelet       -    3120 | Soul Benediction    -     500 |\n       | Mirror Bracelet     -    3240 | Bronze Arrowhead    -     100 |\n       | Cosmic Bracelet     -   11500 | Bronze Dagger       -     200 |\n       | Spikes              -    2810 | Silver Hourglass    -     100 |\n       | Pocket Watch        -    5200 | Gold Hourglass      -     200 |\n       | Will Power          -    6000 | Tent                -     480 |\n       | Leonardo's Bear     -    3330 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\n                               Nemeton Monastery\n       .———————————————————————————————————————————————————————————————.\n       |                 -$-   Continental Zero   -$-                  |\n       |===============================v===============================|\n       | Silver Talon        -   16000 | Spikes              -    2810 |\n       | Grand Bible         -   17400 | Pocket Watch        -    5200 |\n       | Four Gods' Staff    -   15970 | Will Power          -    6000 |\n       | 12 Gauge            -   15800 | Leonardo's Bear     -    3330 |\n       | ExecutionerSwd      -   18030 | Voodoo Doll         -    5200 |\n       | Steel Slingshot     -   14800 | Jade Lariat         -    5050 |\n       | HiAlloySlingshot    -   19200 | Coral Lariat        -    5050 |\n       | Stygian Robe        -   14800 | Thera Root          -     300 |\n       | Snow-White Robe     -   15600 | Mana Root           -     500 |\n       | Headgear            -    5400 | Pure Root           -    1000 |\n       | Circlet             -    5800 | TalismanOfMercy     -     820 |\n       | Charming Pareo      -    5500 | TalismanOfWisdom    -    1280 |\n       | Loin Guard          -    5200 | TalismanOfPurity    -    1760 |\n       | Shell Bracelet      -    2770 | Soul Benediction    -     500 |\n       | Bone Bracelet       -    2960 | Bronze Arrowhead    -     100 |\n       | Rosewood Bracelet   -    3000 | Bronze Dagger       -     200 |\n       | Bell Bracelet       -    3120 | Silver Hourglass    -     100 |\n       | Mirror Bracelet     -    3240 | Gold Hourglass      -     200 |\n       | Zodiac Bracelet     -   10300 | Tent                -     480 |\n       | Cosmic Bracelet     -   11500 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\n               Prague (after the events in the Nemeton Monastery)\n       .———————————————————————————————————————————————————————————————.\n       |               -$-   Tight-lipped Merchant   -$-               |\n       |===============================v===============================|\n       | Weird Bottle        -   18000 | Pure Extract        -   20000 |\n       | Thera Extract       -    5000 | Third Key           -   30000 |\n       | Mana Extract        -   10000 |                               |\n       '———————————————————————————————'———————————————————————————————'"
+}

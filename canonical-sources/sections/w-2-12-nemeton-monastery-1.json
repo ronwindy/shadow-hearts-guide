@@ -1,0 +1,586 @@
+{
+  "id": "w-2-12",
+  "code": "[W-2-12]",
+  "title": "Nemeton Monastery (1)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-05",
+      "code": "[W-S-05]",
+      "title": "Yuri's Gravestones",
+      "file": "sections/w-s-05-yuri-s-gravestones.json"
+    },
+    "next": {
+      "id": "w-2-13",
+      "code": "[W-2-13]",
+      "title": "Europe Side Quests, Part 2",
+      "file": "sections/w-2-13-europe-side-quests-part-2.json"
+    }
+  },
+  "char_count": 15776,
+  "line_count": 275,
+  "overview": {
+    "save_points": [
+      "Entrance to the underground ruins",
+      "Before the boss"
+    ],
+    "items": [
+      "TalismanOfPower",
+      "Seal of Vitality",
+      "Lottery Ticket",
+      "Seal of Strength"
+    ],
+    "equipment": [
+      "Mant.OfNobility",
+      "HolyBook-Martyrs",
+      "Mauser Prototype",
+      "Coat of the Sage",
+      "Silver Wolf Fang",
+      "Punk Jacket",
+      "Mind's Eye"
+    ],
+    "valuables": [
+      "Light Gravestone",
+      "DestructionStone"
+    ],
+    "souls": [
+      "Amon"
+    ]
+  },
+  "items": [
+    "TalismanOfPower",
+    "Seal of Vitality",
+    "Lottery Ticket",
+    "Seal of Strength",
+    "Mant.OfNobility",
+    "HolyBook-Martyrs",
+    "Mauser Prototype",
+    "Coat of the Sage",
+    "Silver Wolf Fang",
+    "Punk Jacket",
+    "Mind's Eye",
+    "Light Gravestone",
+    "DestructionStone",
+    "Amon"
+  ],
+  "enemies": [
+    {
+      "number": "#071",
+      "name": "Straithe",
+      "hp": 200,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#072",
+      "name": "Sin",
+      "hp": 240,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis"
+    },
+    {
+      "number": "#073",
+      "name": "Guinea Pig",
+      "hp": 210,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Instant Death & uses SP Lowering"
+    },
+    {
+      "number": "#074",
+      "name": "Inverse",
+      "hp": 500,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": null,
+      "name": "Albert",
+      "hp": 2000,
+      "class": "Dark",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Instant Death"
+    },
+    {
+      "number": "#075",
+      "name": "Amon",
+      "hp": 4000,
+      "class": "None",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Uses SP Lowering"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Albert, Amon",
+      "enemies": [
+        {
+          "name": "Albert",
+          "hp": 2000,
+          "class": "Dark",
+          "drop": null
+        },
+        {
+          "name": "Amon",
+          "hp": 4000,
+          "class": "None",
+          "drop": "Angel Earrings"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 37
+        },
+        {
+          "name": "Margarete",
+          "level": 30
+        },
+        {
+          "name": "Alice",
+          "level": 36
+        }
+      ],
+      "exp": 35000,
+      "cash": 18000,
+      "strategy": "Albert's Holy Chest attack will do some decent damage, but even worse,\nit'll reduce the amount of SP your entire party has by half, so making\nsure that you had those Will Power Accessories equipped will help MAJORLY\nin keeping the SP damage from happening. Other than that, he has a\nphysical attack that will do a decent amount of damage, and his\nRevelation attack will also do a decent amount of damage, but to your\nentire party with a chance of Instant Death. He rarely uses Revelation,\nbut if you have problems with the Instant Death it causes, equip some\nLeonardo's Bears and try again.\nHave Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or\nBattle Cry) to boost his attack (as well as Margarete's, if you're using\nIfrit and have the time), then have him attack normally every round.\nAlice should cast Holy Edge on both Yuri and Margarete to start with,\nthen have her be devoted each round to casting Arc to keep everyone\nhealed. Margarete should have the Mind's Eye equipped and attacking\nnormally while being laced with Holy Edge, just like Yuri.\nAny time after dealing over 2000 damage to Albert, he will fuse into\nAmon. Continue with the exact same strategy as above, minus the Holy Edge\nsince Amon is non-class.\nAmon's Atomic Dust spell will do pretty good damage to your entire party,\nand he'll also hit with his physical attacks, which can cause major\ndamage to a single ally. You need to watch out for Demon Rays though, as\nit'll either kill or nearly kill whomever it hits."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Albert, Amon",
+    "enemies": [
+      {
+        "name": "Albert",
+        "hp": 2000,
+        "class": "Dark",
+        "drop": null
+      },
+      {
+        "name": "Amon",
+        "hp": 4000,
+        "class": "None",
+        "drop": "Angel Earrings"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 37
+      },
+      {
+        "name": "Margarete",
+        "level": 30
+      },
+      {
+        "name": "Alice",
+        "level": 36
+      }
+    ],
+    "exp": 35000,
+    "cash": 18000,
+    "strategy": "Albert's Holy Chest attack will do some decent damage, but even worse,\nit'll reduce the amount of SP your entire party has by half, so making\nsure that you had those Will Power Accessories equipped will help MAJORLY\nin keeping the SP damage from happening. Other than that, he has a\nphysical attack that will do a decent amount of damage, and his\nRevelation attack will also do a decent amount of damage, but to your\nentire party with a chance of Instant Death. He rarely uses Revelation,\nbut if you have problems with the Instant Death it causes, equip some\nLeonardo's Bears and try again.\nHave Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or\nBattle Cry) to boost his attack (as well as Margarete's, if you're using\nIfrit and have the time), then have him attack normally every round.\nAlice should cast Holy Edge on both Yuri and Margarete to start with,\nthen have her be devoted each round to casting Arc to keep everyone\nhealed. Margarete should have the Mind's Eye equipped and attacking\nnormally while being laced with Holy Edge, just like Yuri.\nAny time after dealing over 2000 damage to Albert, he will fuse into\nAmon. Continue with the exact same strategy as above, minus the Holy Edge\nsince Amon is non-class.\nAmon's Atomic Dust spell will do pretty good damage to your entire party,\nand he'll also hit with his physical attacks, which can cause major\ndamage to a single ally. You need to watch out for Demon Rays though, as\nit'll either kill or nearly kill whomever it hits."
+  },
+  "shops": [
+    {
+      "name": "Continental Zero",
+      "inventory": [
+        {
+          "name": "Silver Talon",
+          "price": 16000
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Grand Bible",
+          "price": 17400
+        },
+        {
+          "name": "Pocket Watch",
+          "price": 5200
+        },
+        {
+          "name": "Four Gods' Staff",
+          "price": 15970
+        },
+        {
+          "name": "Will Power",
+          "price": 6000
+        },
+        {
+          "name": "12 Gauge",
+          "price": 15800
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "ExecutionerSwd",
+          "price": 18030
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Steel Slingshot",
+          "price": 14800
+        },
+        {
+          "name": "Jade Lariat",
+          "price": 5050
+        },
+        {
+          "name": "HiAlloySlingshot",
+          "price": 19200
+        },
+        {
+          "name": "Coral Lariat",
+          "price": 5050
+        },
+        {
+          "name": "Stygian Robe",
+          "price": 14800
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Snow-White Robe",
+          "price": 15600
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Headgear",
+          "price": 5400
+        },
+        {
+          "name": "Pure Root",
+          "price": 1000
+        },
+        {
+          "name": "Circlet",
+          "price": 5800
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Charming Pareo",
+          "price": 5500
+        },
+        {
+          "name": "TalismanOfWisdom",
+          "price": 1280
+        },
+        {
+          "name": "Loin Guard",
+          "price": 5200
+        },
+        {
+          "name": "TalismanOfPurity",
+          "price": 1760
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Soul Benediction",
+          "price": 500
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Zodiac Bracelet",
+          "price": 10300
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Cosmic Bracelet",
+          "price": 11500
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "LIGHT GRAVESTONE",
+        "raw_tag": "[_LIGHT GRAVESTONE_]",
+        "matched_overview_item": "Light Gravestone",
+        "category": "valuables",
+        "line": 63,
+        "char_offset": [
+          3856,
+          3876
+        ],
+        "context": "After the dialogue, enter the pretty slick-looking house on the left. Make your way down the stairs, and just before reaching the center, take the stairs off to your left and past the vending machine here to the end, where you'll find the final grave"
+      },
+      {
+        "name": "MANT.OFNOBILITY",
+        "raw_tag": "[_MANT.OFNOBILITY_]",
+        "matched_overview_item": "Mant.OfNobility",
+        "category": "equipment",
+        "line": 68,
+        "char_offset": [
+          4102,
+          4121
+        ],
+        "context": "There's nothing else to do in here, so leave the house, then make your way north up the hill. Examine the tombstone to your northwest to find the grave of James O'Flaherty, then open the chest just to the right of it for a [_MANT.OFNOBILITY_] for Kei"
+      },
+      {
+        "name": "TALISMANOFPOWER",
+        "raw_tag": "[_TALISMANOFPOWER_]",
+        "matched_overview_item": "TalismanOfPower",
+        "category": "items",
+        "line": 73,
+        "char_offset": [
+          4355,
+          4374
+        ],
+        "context": "When you regain control, go east, following the path at the top of the screen as it goes east, then down to a dead-end where you'll find a [_TALISMANOFPOWER_]. Once you have it, head back to Roger's house, where you'll have to watch an extremely long"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 120,
+        "char_offset": [
+          6593,
+          6611
+        ],
+        "context": "Take a few steps down, then search to the right to find a [_LOTTERY TICKET_]. Down the next set of steps is a fork; make your way west to the next area, then west once again to another. There's a slightly hidden chest directly to your west; open it f"
+      },
+      {
+        "name": "MAUSER PROTOTYPE",
+        "raw_tag": "[_MAUSER PROTOTYPE_]",
+        "matched_overview_item": "Mauser Prototype",
+        "category": "equipment",
+        "line": 123,
+        "char_offset": [
+          6790,
+          6810
+        ],
+        "context": "Take a few steps down, then search to the right to find a [_LOTTERY TICKET_]. Down the next set of steps is a fork; make your way west to the next area, then west once again to another. There's a slightly hidden chest directly to your west; open it f"
+      },
+      {
+        "name": "SILVER WOLF FANG",
+        "raw_tag": "[_SILVER WOLF FANG_]",
+        "matched_overview_item": "Silver Wolf Fang",
+        "category": "equipment",
+        "line": 134,
+        "char_offset": [
+          7418,
+          7438
+        ],
+        "context": "Head back to the last screen, then head north, opening the semi-hidden chest to your west to find a [_SILVER WOLF FANG_] for Yuri. Continue north to find a chest that's unguarded; it contains the [_MIND'S EYE_], which I recommend equipping on Margare"
+      },
+      {
+        "name": "MIND'S EYE",
+        "raw_tag": "[_MIND'S EYE_]",
+        "matched_overview_item": "Mind's Eye",
+        "category": "equipment",
+        "line": 135,
+        "char_offset": [
+          7514,
+          7528
+        ],
+        "context": "Head back to the last screen, then head north, opening the semi-hidden chest to your west to find a [_SILVER WOLF FANG_] for Yuri. Continue north to find a chest that's unguarded; it contains the [_MIND'S EYE_], which I recommend equipping on Margare"
+      },
+      {
+        "name": "HOLYBOOK-MARTYRS",
+        "raw_tag": "[_HOLYBOOK-MARTYRS_]",
+        "matched_overview_item": "HolyBook-Martyrs",
+        "category": "equipment",
+        "line": 143,
+        "char_offset": [
+          7976,
+          7996
+        ],
+        "context": "Make your way west back to the entrance, then go back west to the fork where you found the Mauser Prototype, taking the western path this time to the next area. At the fork here, examine the red orb to the north to change the color of the pillar in t"
+      },
+      {
+        "name": "COAT OF THE SAGE",
+        "raw_tag": "[_COAT OF THE SAGE_]",
+        "matched_overview_item": "Coat of the Sage",
+        "category": "equipment",
+        "line": 155,
+        "char_offset": [
+          8704,
+          8724
+        ],
+        "context": "Make your way all the way back to the entrance of the ruins, then take the eastern path to be at the fork near where you found both the Mind's Eye and the Silver Wolf Fang. Head all the way north to open the chest that was guarded before for a [_COAT"
+      },
+      {
+        "name": "SEAL OF VITALITY",
+        "raw_tag": "[_SEAL OF VITALITY_]",
+        "matched_overview_item": "Seal of Vitality",
+        "category": "items",
+        "line": 161,
+        "char_offset": [
+          9077,
+          9097
+        ],
+        "context": "If you're hurting, stop by and have Roger heal you and Save if needed, then head back into the ruins and head west, returning to the fork with the yellow- guarded chest. It will now be unguarded, so open it for a [_SEAL OF VITALITY_]."
+      },
+      {
+        "name": "DESTRUCTIONSTONE",
+        "raw_tag": "[_DESTRUCTIONSTONE_]",
+        "matched_overview_item": "DestructionStone",
+        "category": "valuables",
+        "line": 165,
+        "char_offset": [
+          9278,
+          9298
+        ],
+        "context": "Now that you've opened all of the chests related to the puzzle, there's a VERY IMPORTANT item that we must get. Go back two screens to the west to the glowing red pit, where the [_DESTRUCTIONSTONE_] will float down into your possession. You MUST obta"
+      },
+      {
+        "name": "SEAL OF STRENGTH",
+        "raw_tag": "[_SEAL OF STRENGTH_]",
+        "matched_overview_item": "Seal of Strength",
+        "category": "items",
+        "line": 172,
+        "char_offset": [
+          9691,
+          9711
+        ],
+        "context": "From the glowing red pit, make your way east two screens, then northeast and east at the fork there to come to the end of the path. Use the Save Point, then open the chests to the left and right of the large door here for a [_SEAL OF STRENGTH_] and a"
+      },
+      {
+        "name": "PUNK JACKET",
+        "raw_tag": "[_PUNK JACKET_]",
+        "matched_overview_item": "Punk Jacket",
+        "category": "equipment",
+        "line": 172,
+        "char_offset": [
+          9718,
+          9733
+        ],
+        "context": "From the glowing red pit, make your way east two screens, then northeast and east at the fork there to come to the end of the path. Use the Save Point, then open the chests to the left and right of the large door here for a [_SEAL OF STRENGTH_] and a"
+      },
+      {
+        "name": "AMON",
+        "raw_tag": "[_AMON_]",
+        "matched_overview_item": "Amon",
+        "category": "souls",
+        "line": 235,
+        "char_offset": [
+          14020,
+          14028
+        ],
+        "context": "NOTE At the end of the battle, you'll acquire the [_AMON_] Fusion Soul, ¯¯¯¯¯¯¯¯ but ONLY if you got the DestructionStone in the ruins."
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 96,
+        "char_offset": [
+          5278,
+          5454
+        ],
+        "text": "Make sure to have 3 Will Powers and 3 Leonardo's Bears (optional) for the next boss battle, as he can use both SP Lowering and Instant Death."
+      },
+      {
+        "type": "NOTE",
+        "line": 104,
+        "char_offset": [
+          5647,
+          6097
+        ],
+        "text": "With the newer weapons, the hit area is decreased once again. We'll be finding another Mind's Eye inside (which I think works great with Margarete, since she has one of the easiest rings), so you may want to invest the Cash with Meiyuan to increase both Yuri's and Margarete's Hit Areas to help, ONCE you find their new weapons in the next area. Don't worry, they're not too far in."
+      },
+      {
+        "type": "NOTE",
+        "line": 115,
+        "char_offset": [
+          6282,
+          6535
+        ],
+        "text": "If you want to just grab Yuri's and Margarete's weapons really quick to upgrade them, Yuri's is one screen to the right and up (slightly hidden), and Margarete's is two screens to the left (slightly hidden)."
+      },
+      {
+        "type": "NOTE",
+        "line": 235,
+        "char_offset": [
+          13964,
+          14108
+        ],
+        "text": "At the end of the battle, you'll acquire the [_AMON_] Fusion Soul, but ONLY if you got the DestructionStone in the ruins."
+      },
+      {
+        "type": "NOTE",
+        "line": 260,
+        "char_offset": [
+          15080,
+          15221
+        ],
+        "text": "Keep in mind that in addition to Meiyuan, Chris in the London Rats' hideout can now switch your party members for you."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                      Nemeton Monastery (1)\n     [W-2-12]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Entrance to the underground ruins\n             | Before the boss\n             |\n       Items | [_] TalismanOfPower     [_] Seal of Vitality\n             | [_] Lottery Ticket      [_] Seal of Strength\n             |\n   Equipment | [_] Mant.OfNobility     [_] HolyBook-Martyrs\n             | [_] Mauser Prototype    [_] Coat of the Sage\n             | [_] Silver Wolf Fang    [_] Punk Jacket\n             | [_] Mind's Eye\n             |\n   Valuables | [_] Light Gravestone    [_] DestructionStone\n             |\n       Souls | [_] Amon\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                (* = BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #071  [_] Straithe              |   200  | Water | Inflicts Ring anomalies\n #072  [_] Sin                   |   240  | Light | Inflicts Paralysis\n #073  [_] Guinea Pig            |   210  | Dark  | Inflicts Instant Death\n                                 |        |       |    & uses SP Lowering\n #074  [_] Inverse               |   500  | Earth |\n      *[_] Albert                |  2000  | Dark  | Inflicts Instant Death\n #075 *[_] Amon                  |  4000  | None  | Uses SP Lowering\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |                 -$-   Continental Zero   -$-                  |\n       |===============================v===============================|\n       | Silver Talon        -   16000 | Spikes              -    2810 |\n       | Grand Bible         -   17400 | Pocket Watch        -    5200 |\n       | Four Gods' Staff    -   15970 | Will Power          -    6000 |\n       | 12 Gauge            -   15800 | Leonardo's Bear     -    3330 |\n       | ExecutionerSwd      -   18030 | Voodoo Doll         -    5200 |\n       | Steel Slingshot     -   14800 | Jade Lariat         -    5050 |\n       | HiAlloySlingshot    -   19200 | Coral Lariat        -    5050 |\n       | Stygian Robe        -   14800 | Thera Root          -     300 |\n       | Snow-White Robe     -   15600 | Mana Root           -     500 |\n       | Headgear            -    5400 | Pure Root           -    1000 |\n       | Circlet             -    5800 | TalismanOfMercy     -     820 |\n       | Charming Pareo      -    5500 | TalismanOfWisdom    -    1280 |\n       | Loin Guard          -    5200 | TalismanOfPurity    -    1760 |\n       | Shell Bracelet      -    2770 | Soul Benediction    -     500 |\n       | Bone Bracelet       -    2960 | Bronze Arrowhead    -     100 |\n       | Rosewood Bracelet   -    3000 | Bronze Dagger       -     200 |\n       | Bell Bracelet       -    3120 | Silver Hourglass    -     100 |\n       | Mirror Bracelet     -    3240 | Gold Hourglass      -     200 |\n       | Zodiac Bracelet     -   10300 | Tent                -     480 |\n       | Cosmic Bracelet     -   11500 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\nAfter the dialogue, enter the pretty slick-looking house on the left. Make your\nway down the stairs, and just before reaching the center, take the stairs off\nto your left and past the vending machine here to the end, where you'll find\nthe final gravestone, the [_LIGHT GRAVESTONE_].\n\nThere's nothing else to do in here, so leave the house, then make your way\nnorth up the hill. Examine the tombstone to your northwest to find the grave of\nJames O'Flaherty, then open the chest just to the right of it for a\n[_MANT.OFNOBILITY_] for Keith. Go through the doorway here to be within the\nwalls of the Monastery for an event.\n\nWhen you regain control, go east, following the path at the top of the screen\nas it goes east, then down to a dead-end where you'll find a\n[_TALISMANOFPOWER_]. Once you have it, head back to Roger's house, where you'll\nhave to watch an extremely long series of events.\n\nWhen you regain control once again, examine the vending machine to the north\nthat we passed earlier. Look at the chart below to see who to upgrade; there\nare quite a few nice items in the next dungeon that are better than what we can\nbuy here:\n\n.———————————————.—————————.—————————.\n|   Character   | Upgrade | Upgrade |\n|   Name        | Weapon? |  Armor? |\n|———————————————|—————————|—————————|\n|   Yuri        |    N    |    Y    |\n|   Alice       |    N    |    Y    |\n|   Zhuzhen     |    Y    |    N    |\n|   Margarete   |    N    |    Y    |\n|   Keith       |    Y    |    N    |\n|   Halley      |    Y    |    N    |\n'———————————————'—————————'—————————'\n\nIn other words, buy only Armor for Yuri, Alice, and Margarete, and buy only\nweapons for Zhuzhen, Keith, and Halley, if needed.\n\n  NOTE     Make sure to have 3 Will Powers and 3 Leonardo's Bears (optional)\n¯¯¯¯¯¯¯¯   for the next boss battle, as he can use both SP Lowering and\n           Instant Death.\n\nFeel free to stock up on healing items. When you're ready, leave Roger's house\nand return to the Monastery Ruins at the top of the hill to have Roger unlock\nthe path to the underground ruins.\n\n  NOTE     With the newer weapons, the hit area is decreased once again. We'll\n¯¯¯¯¯¯¯¯   be finding another Mind's Eye inside (which I think works great with\n           Margarete, since she has one of the easiest rings), so you may want\n           to invest the Cash with Meiyuan to increase both Yuri's and\n           Margarete's Hit Areas to help, ONCE you find their new weapons in\n           the next area. Don't worry, they're not too far in.\n\nWhen you regain control, go underground and feel free to use the Save Point,\nthen go west for a scene. Talk to Roger to have him recover your HP and MP,\nthen head west into the ruins.\n\n  NOTE     If you want to just grab Yuri's and Margarete's weapons really quick\n¯¯¯¯¯¯¯¯   to upgrade them, Yuri's is one screen to the right and up (slightly\n           hidden), and Margarete's is two screens to the left (slightly\n           hidden).\n\nTake a few steps down, then search to the right to find a [_LOTTERY TICKET_].\nDown the next set of steps is a fork; make your way west to the next area, then\nwest once again to another. There's a slightly hidden chest directly to your\nwest; open it for a [_MAUSER PROTOTYPE_] for Margarete. At the fork here, take\nthe southeastern path to the next area, following it to another area with a\ndead-end. Close the chest here to open a different one nearby, then make your\nway back to the entrance of the ruins.\n\nBack at the entrance, take the eastern path to the next area, where you'll be\nat another fork. Continue east down the stairs to a dead-end with two chests.\nOpen the northern one to drop the guard from the blue orb, then examine the orb\nto light up a pillar in another room.\n\nHead back to the last screen, then head north, opening the semi-hidden chest to\nyour west to find a [_SILVER WOLF FANG_] for Yuri. Continue north to find a\nchest that's unguarded; it contains the [_MIND'S EYE_], which I recommend\nequipping on Margarete, but you can put it on whomever you like, if you're\ncomfortable with their ring.\n\nMake your way west back to the entrance, then go back west to the fork where\nyou found the Mauser Prototype, taking the western path this time to the next\narea. At the fork here, examine the red orb to the north to change the color of\nthe pillar in the other room, as well as remove the guard from the chest. Open\nit for a [_HOLYBOOK-MARTYRS_] for Alice, then take the southwestern path at the\nfork down the stairs to the next area.\n\nIgnore the path to the east that leads to the glowing red pit for now, and\ncontinue southeast to the next area. Continue along past the now-purple flame\nto the next area with a three-way fork near a yellow-guarded chest. Go\nnorthwest up the stairs first, following the path through this area to reach\nthe green orb; examine it to change the pillar flame's color to white.\n\nMake your way all the way back to the entrance of the ruins, then take the\neastern path to be at the fork near where you found both the Mind's Eye and the\nSilver Wolf Fang. Head all the way north to open the chest that was guarded\nbefore for a [_COAT OF THE SAGE_] for Zhuzhen. From here, go east to the area\nwhere we found the blue orb, and examine it once again for the light go from\nwhite to yellow.\n\nIf you're hurting, stop by and have Roger heal you and Save if needed, then\nhead back into the ruins and head west, returning to the fork with the yellow-\nguarded chest. It will now be unguarded, so open it for a [_SEAL OF VITALITY_].\n\nNow that you've opened all of the chests related to the puzzle, there's a VERY\nIMPORTANT item that we must get. Go back two screens to the west to the glowing\nred pit, where the [_DESTRUCTIONSTONE_] will float down into your possession.\nYou MUST obtain the DestructionStone to obtain either of the last two Fusions\nfor Yuri! If you don't, then you can't get them!!!\n\nFrom the glowing red pit, make your way east two screens, then northeast and\neast at the fork there to come to the end of the path. Use the Save Point, then\nopen the chests to the left and right of the large door here for a\n[_SEAL OF STRENGTH_] and a [_PUNK JACKET_] for Halley. Save again if you like,\nthen examine the double doors. Ready?\n\n———————————————————————————————\n   [1] I'm not ready yet.\n   [2] All right, let's go!!\n———————————————————————————————\n\nChoose 2 when you're completely prepared. Watch the events after you enter,\nthen climb all the stairs to find Albert, where you'll have to face him.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Albert                |  2000 HP  | Class: Dark  |                          |\n| Amon                  |  4000 HP  | Class: None  | [_] Angel Earrings       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [37]     |                   |   Margarete [30]  |        |\n|        |                   |     Alice [36]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Silver Wolf Fang  | HolyBook-Martyrs  | Mauser Prototype  |        |\n|        | Stygian Robe      | Snow-White Robe   | Snow-White Robe   |        |\n|        | Mind's Eye        | Oracle Earrings   | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Will Power        | Will Power        | Will Power        |        |\n|        |                   |                   |                   |        |\n|        | Baldo             |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Albert's Holy Chest attack will do some decent damage, but even worse,     |\n|  it'll reduce the amount of SP your entire party has by half, so making     |\n|  sure that you had those Will Power Accessories equipped will help MAJORLY  |\n|  in keeping the SP damage from happening. Other than that, he has a         |\n|  physical attack that will do a decent amount of damage, and his            |\n|  Revelation attack will also do a decent amount of damage, but to your      |\n|  entire party with a chance of Instant Death. He rarely uses Revelation,    |\n|  but if you have problems with the Instant Death it causes, equip some      |\n|  Leonardo's Bears and try again.                                            |\n|                                                                             |\n|  Have Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or   |\n|  Battle Cry) to boost his attack (as well as Margarete's, if you're using   |\n|  Ifrit and have the time), then have him attack normally every round.       |\n|  Alice should cast Holy Edge on both Yuri and Margarete to start with,      |\n|  then have her be devoted each round to casting Arc to keep everyone        |\n|  healed. Margarete should have the Mind's Eye equipped and attacking        |\n|  normally while being laced with Holy Edge, just like Yuri.                 |\n|                                                                             |\n|  Any time after dealing over 2000 damage to Albert, he will fuse into       |\n|  Amon. Continue with the exact same strategy as above, minus the Holy Edge  |\n|  since Amon is non-class.                                                   |\n|                                                                             |\n|  Amon's Atomic Dust spell will do pretty good damage to your entire party,  |\n|  and he'll also hit with his physical attacks, which can cause major        |\n|  damage to a single ally. You need to watch out for Demon Rays though, as   |\n|  it'll either kill or nearly kill whomever it hits.                         |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   35000 EXP   / \\   18000 Cash   /\n     '—————————————'   '——————————————'\n\n  NOTE     At the end of the battle, you'll acquire the [_AMON_] Fusion Soul,\n¯¯¯¯¯¯¯¯   but ONLY if you got the DestructionStone in the ruins.\n\nWatch the long series of events, then you'll regain control in Roger's house.\nComplete the Spin Ring 3 to send Roger off, the watch another scene until you\nregain control. Leave Roger's house and Nemeton Monastery.\n\nThere's one last thing to do story-wise before taking on a plethora of side\nquests to get everything else in the game, as well as determine which ending\nwe'll receive. Head to Old Castle Street in London.\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                           London, Old Castle Street\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\nMake your way to the London Rats' hideout, and head to the top floor. Watch the\nevents up here with Koudelka and Halley, as well as with the rest of your\nparty. Watching this event will allow you to now complete the rest of what the\ngame has to offer, so make sure to watch this before trying to continue on with\nthe side quests!\n\n  NOTE     Keep in mind that in addition to Meiyuan, Chris in the London Rats'\n¯¯¯¯¯¯¯¯   hideout can now switch your party members for you.\n\nNow, we're SUPPOSED to continue with the story, but there's an unholy amount to\ndo, side-quest wise! If you don't care about side-quests or the good ending,\nthen just go to W-2-14 - Nemeton Monastery (2). Otherwise, let's get started\nbelow!\n\nAT THIS POINT, DO NOT TALK TO ROGER BACON AT NEMETON MONASTERY! It's best to\nkeep the story from progressing before we take care of the side quests.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

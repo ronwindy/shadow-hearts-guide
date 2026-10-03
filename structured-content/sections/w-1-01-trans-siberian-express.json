@@ -1,0 +1,207 @@
+{
+  "guide": {
+    "id": "w-1-01",
+    "code": "[W-1-01]",
+    "title": "Trans-Siberian Express",
+    "type": "walkthrough",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-1-00",
+        "code": "[W-1-00]",
+        "title": "Walkthrough - Asia",
+        "file": "sections/w-1-00-walkthrough-asia.json"
+      },
+      "next": {
+        "id": "w-1-02",
+        "code": "[W-1-02]",
+        "title": "Plains",
+        "file": "sections/w-1-02-plains.json"
+      }
+    },
+    "initial_setup": {
+      "character": "The Rude Hero",
+      "note": "The Rude Hero comes equipped with Leather Gloves, a Cotton Shirt, and the Death Emperor soul by default, as well as the Talisman valuable.",
+      "equipment": [
+        "Leather Gloves",
+        "Cotton Shirt"
+      ],
+      "valuables": [
+        "Talisman"
+      ],
+      "souls": [
+        "Death Emperor"
+      ]
+    },
+    "route": [
+      "Initial Train Car",
+      "Next Train Car",
+      "Front Train Car",
+      "World Map"
+    ],
+    "objectives": [
+      "Proceed forward through the train cars to the front",
+      "Defeat the Wind Shears in the first battle",
+      "Survive the confrontation with Roger Bacon",
+      "Exit to the World Map and proceed to the Plains"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Thera Leaf",
+          "category": "items",
+          "location": "Body in the aisle after defeating the Wind Shears"
+        },
+        {
+          "name": "Mana Leaf",
+          "category": "items",
+          "location": "Body lying in the booth after defeating the Wind Shears"
+        }
+      ],
+      "initial": [
+        {
+          "name": "Leather Gloves",
+          "category": "equipment"
+        },
+        {
+          "name": "Cotton Shirt",
+          "category": "equipment"
+        },
+        {
+          "name": "Talisman",
+          "category": "valuables"
+        },
+        {
+          "name": "Death Emperor",
+          "category": "souls"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#001",
+        "name": "Wind Shear",
+        "hp": 10,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": null,
+        "name": "Roger Bacon",
+        "hp": null,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Cannot be defeated"
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "Watch the opening intro sequence.",
+        "type": "story",
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "Head down to the next train car and move a little bit further to trigger the first battle against a couple of Wind Shears.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "Defeat the couple of Wind Shears (#001 Wind Shear, HP: 10, Class: Wind).",
+        "type": "battle",
+        "encounter": {
+          "enemies": [
+            "Wind Shear"
+          ]
+        },
+        "notes": [
+          {
+            "type": "tutorial",
+            "title": "Judgment Ring Mechanics",
+            "text": "Shadow Hearts' battle system is very unique, actually requiring a little bit of skill. Press the CROSS button within the highlighted areas on the Judgment Ring for successful attacks. Once you get used to the system more, feel free to try to time your attacks just right to succeed in more critical attacks in the smaller red area. If you miss though, you miss an attack completely."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": "Examine the body in the aisle after taking out the Wind Shears.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Thera Leaf",
+            "category": "items",
+            "matched_overview_item": "Thera Leaf"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "Examine the body lying in the booth.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Mana Leaf",
+            "category": "items",
+            "matched_overview_item": "Mana Leaf"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "Head into the next train car and proceed to the front to trigger story events and enter battle with Roger Bacon.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "Battle Roger Bacon (Class: Dark).",
+        "type": "battle",
+        "encounter": {
+          "enemies": [
+            "Roger Bacon"
+          ]
+        },
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Un-winnable Battle",
+            "text": "It's impossible to win this battle, so feel free to just wail away at him, practicing your Judgment Ring until he uses Revelation to end the battle."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "Watch events following the battle to transition to the World Map.",
+        "type": "story",
+        "rewards": []
+      },
+      {
+        "id": 9,
+        "description": "On the World Map, you may save your game (you can always save on the World Map), then proceed to the only available destination: Plains.",
+        "type": "navigation",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "World Map Saving",
+            "text": "Feel free to save out here if you like; you'll always be able to save your game on the World Map."
+          }
+        ],
+        "rewards": []
+      }
+    ]
+  }
+}

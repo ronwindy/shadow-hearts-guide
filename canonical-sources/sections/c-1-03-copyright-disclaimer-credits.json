@@ -1,0 +1,37 @@
+{
+  "id": "c-1-03",
+  "code": "[C-1-03]",
+  "title": "Copyright / Disclaimer / Credits",
+  "category": "Conclusion",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "c-1-02",
+      "code": "[C-1-02]",
+      "title": "Thanks",
+      "file": "sections/c-1-02-thanks.json"
+    },
+    "next": null
+  },
+  "char_count": 1264,
+  "line_count": 28,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n        ««  Shadow Hearts  »»                                   [C-1-03]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                   Copyright / Disclaimer / Credits                  \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nThis document may be not be reproduced under any circumstances except for\npersonal, private use.  It may not be placed on any web site or otherwise\ndistributed publicly without advance written permission from the author.  Use of\nthis guide on any other web site or as a part of any public display is strictly\nprohibited, and a violation of copyright.  Unauthorized reproduction and\ndistribution of this document, or any portion of it, may result in severe civil\nand criminal penalties, and will be prosecuted to the maximum extent possible\nunder the law.\n\nAll trademarks and copyrights contained in this document are owned by their\nrespective trademark and copyright holders, even those not explicitly stated\nherein.\n\nCopyright © 2000-2015 A Backdated Future.  All Rights Reserved.\n\n~ fin ~\n"
+}

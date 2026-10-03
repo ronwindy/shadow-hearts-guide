@@ -1,0 +1,42 @@
+{
+  "id": "w-1-00",
+  "code": "[W-1-00]",
+  "title": "Walkthrough - Asia",
+  "category": "Walkthrough - Asia",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "i-1-01",
+      "code": "[I-1-01]",
+      "title": "Game Manual / Instructions",
+      "file": "sections/i-1-01-game-manual-instructions.json"
+    },
+    "next": {
+      "id": "w-1-01",
+      "code": "[W-1-01]",
+      "title": "Trans-Siberian Express",
+      "file": "sections/w-1-01-trans-siberian-express.json"
+    }
+  },
+  "char_count": 1542,
+  "line_count": 32,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n        ««  Shadow Hearts  »»                                   [W-1-00]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                          Walkthrough - Asia                         \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n                                  Directions\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n       N                          Up = North                           U\n    NW | NE                                                         UL | UR\n      \\|/                             /\\                              \\|/\n   W ——x—— E     =     Left = West   <()>   Right = East     =     L ——x—— R\n      /|\\                             \\/                              /|\\\n    SW | SE                                                         LL | LR\n       S                         Down = South                          D\n_______________________________________________________________________________\n\nThere is no true \"compass\" to the game; instead, you travel on pre-rendered\nbackgrounds with areas for walking. Sometimes, I will substitute west for left,\nright for east, etc.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

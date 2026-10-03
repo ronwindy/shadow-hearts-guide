@@ -1,0 +1,42 @@
+{
+  "id": "w-2-13",
+  "code": "[W-2-13]",
+  "title": "Europe Side Quests, Part 2",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-12",
+      "code": "[W-2-12]",
+      "title": "Nemeton Monastery (1)",
+      "file": "sections/w-2-12-nemeton-monastery-1.json"
+    },
+    "next": {
+      "id": "w-s-06",
+      "code": "[W-S-06]",
+      "title": "Nemeton Monastery (Book of Rituals / Codex of Lurie)",
+      "file": "sections/w-s-06-nemeton-monastery-book-of-rituals-codex-of-lurie.json"
+    }
+  },
+  "char_count": 2593,
+  "line_count": 64,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n   Shadow Hearts   |                                 Europe Side Quests, Part 2\n     [W-2-13]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n[W-S-06] Nemeton Monastery (Book of Rituals / Codex of Lurie)\n         - We can obtain two Valuables that will allow us to be able to get the\n           best Fusion for Yuri, as well as unlock the Ancient Ruins.\n\n\n[W-S-07] The Orphanage (Emigre Manuscript / Lottery Member #3)\n         - We can get another Valuable, as well as meet with one of the final\n           Lottery Members.\n\n\n[W-S-08] Rouen (Silent Peddler / Margarete's Armor, Weapon, &\n                Confession / Zhuzhen's Armor / Lottery Member #2)\n         - We can see all that the Silent Peddler has to offer, including\n           Margarete's best armor. We can also get hear best weapon, and dive\n           into her thoughts as well. Lastly, we can also get Zhuzhen's best\n           armor and meet with one of the final Lottery Members.\n\n\n[W-S-09] Blue Castle (Keith's Weapon / Lottery Member #1)\n         - We can get Keith's best weapon, as well as meet the second to last\n           Lottery Member.\n\n\n[W-S-10] Prague (Rare Shop / The Dollhouse / Alice's Weapon)\n         - We can visit one more new shop which has some rare items, and we get\n           to take on a bonus dungeon, as well as obtain Alice's best weapon.\n\n\n[W-S-11] Cave Temple (Keith's Armor / Zhuzhen's Weapon)\n         - We get to take on a bonus dungeon, as well as obtain Keith's best\n           armor and Zhuzhen's best weapon.\n\n\n[W-S-12] Ancient Ruins (Alice's Armor / Halley's Weapon)\n         - We get to take on a bonus dungeon, as well as obtain Alice's best\n           armor and Halley's best weapon.\n\n\n[W-S-13] Yuri's Level 2 & 3 Fusions, ???? Attacks\n         - We can make sure that Yuri has all of his Fusions, and if he\n           doesn't, where to go to level up his Soul Energy to get them.\n\n\n[W-S-14] Sharon's Pit Fight (Halley's Armor / Other Items)\n         - We can fight plenty of summoned monsters, just like the Pit Fight\n           before! This time, everyone can get a reward, including Halley and\n           his best armor!\n\n\n[W-S-15] The Good Ending (Defeating the Masks)\n         - We can take out those Masks that have been provoking us the whole\n           game, as well as determine the ending.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

@@ -1,0 +1,289 @@
+{
+  "id": "w-2-07",
+  "code": "[W-2-07]",
+  "title": "Rouen",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-06",
+      "code": "[W-2-06]",
+      "title": "Prague (2)",
+      "file": "sections/w-2-06-prague-2.json"
+    },
+    "next": {
+      "id": "w-2-08",
+      "code": "[W-2-08]",
+      "title": "London, Old Castle Street",
+      "file": "sections/w-2-08-london-old-castle-street.json"
+    }
+  },
+  "char_count": 16470,
+  "line_count": 259,
+  "overview": {
+    "save_points": [
+      "Inn"
+    ],
+    "lottery": [
+      "Lottery Member No. 06 (Hooked-nose Robin)"
+    ],
+    "items": [
+      "Lottery Ticket",
+      "Lottery Ticket",
+      "TeaOfTheHolyOne",
+      "Seal of the Soul"
+    ],
+    "equipment": [
+      "Zeruel",
+      "Huge Jug",
+      "Jasper Cape",
+      "Jasper Cape"
+    ]
+  },
+  "items": [
+    "Lottery Ticket",
+    "Lottery Ticket",
+    "TeaOfTheHolyOne",
+    "Seal of the Soul",
+    "Zeruel",
+    "Huge Jug",
+    "Jasper Cape",
+    "Jasper Cape"
+  ],
+  "enemies": [
+    {
+      "number": "#059",
+      "name": "Bifronze",
+      "hp": 165,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#060",
+      "name": "Camazotz",
+      "hp": 158,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": null,
+      "name": "Olga",
+      "hp": 3300,
+      "class": "Dark",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Poison"
+    },
+    {
+      "number": "#109",
+      "name": "Gust Ein",
+      "hp": "Varies",
+      "class": null,
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Graveyard Malice"
+    },
+    {
+      "number": "#110",
+      "name": "Gust Zwei",
+      "hp": "Varies",
+      "class": null,
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Graveyard Malice"
+    },
+    {
+      "number": "#111",
+      "name": "Gust Drei",
+      "hp": "Varies",
+      "class": null,
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Graveyard Malice"
+    },
+    {
+      "number": "#112",
+      "name": "Gust Vier",
+      "hp": "Varies",
+      "class": null,
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Graveyard Malice"
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 57,
+        "char_offset": [
+          3523,
+          3541
+        ],
+        "context": "Watch the events in London as you enter Rouen, then you'll regain control. Examine the ground just above the box to your left to find a [_LOTTERY TICKET_]. Once you have it, enter the Inn at the top of the screen. Watch another scene in here, then yo"
+      },
+      {
+        "name": "TEAOFTHEHOLYONE",
+        "raw_tag": "[_TEAOFTHEHOLYONE_]",
+        "matched_overview_item": "TeaOfTheHolyOne",
+        "category": "items",
+        "line": 119,
+        "char_offset": [
+          7587,
+          7606
+        ],
+        "context": "After they're done blabbering, leave the Graveyard to be back in the Inn. Leave the room you're in and go to the next one to the left to find Alice has left. Return to your room and Keith will step forward, allowing you to check the dresser behind hi"
+      },
+      {
+        "name": "ZERUEL",
+        "raw_tag": "[_ZERUEL_]",
+        "matched_overview_item": "Zeruel",
+        "category": "equipment",
+        "line": 128,
+        "char_offset": [
+          8060,
+          8070
+        ],
+        "context": "NOTE Margarete comes re-equipped with a [_ZERUEL_] and a [_JASPER CAPE_] ¯¯¯¯¯¯¯¯ by default."
+      },
+      {
+        "name": "JASPER CAPE",
+        "raw_tag": "[_JASPER CAPE_]",
+        "matched_overview_item": "Jasper Cape",
+        "category": "equipment",
+        "line": 128,
+        "char_offset": [
+          8077,
+          8092
+        ],
+        "context": "NOTE Margarete comes re-equipped with a [_ZERUEL_] and a [_JASPER CAPE_] ¯¯¯¯¯¯¯¯ by default."
+      },
+      {
+        "name": "HUGE JUG",
+        "raw_tag": "[_HUGE JUG_]",
+        "matched_overview_item": "Huge Jug",
+        "category": "equipment",
+        "line": 154,
+        "char_offset": [
+          9444,
+          9456
+        ],
+        "context": "Make your way back to the northern alley. As you enter, check the ground by the barrels for a [_HUGE JUG_], then keep going to the next area. Here, check the two barrels in the upper-right corner to find another [_LOTTERY TICKET_]. Examine the back d"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 155,
+        "char_offset": [
+          9562,
+          9580
+        ],
+        "context": "Make your way back to the northern alley. As you enter, check the ground by the barrels for a [_HUGE JUG_], then keep going to the next area. Here, check the two barrels in the upper-right corner to find another [_LOTTERY TICKET_]. Examine the back d"
+      },
+      {
+        "name": "SEAL OF THE SOUL",
+        "raw_tag": "[_SEAL OF THE SOUL_]",
+        "matched_overview_item": "Seal of the Soul",
+        "category": "items",
+        "line": 224,
+        "char_offset": [
+          14563,
+          14583
+        ],
+        "context": "After the battle, you'll learn that your next destination is London, and you'll regain control outside. Head back into the church and check the altar for a [_SEAL OF THE SOUL_], then go through the door on the right. Enter the first door here to be i"
+      },
+      {
+        "name": "JASPER CAPE",
+        "raw_tag": "[_JASPER CAPE_]",
+        "matched_overview_item": "Jasper Cape",
+        "category": "equipment",
+        "line": 226,
+        "char_offset": [
+          14718,
+          14733
+        ],
+        "context": "After the battle, you'll learn that your next destination is London, and you'll regain control outside. Head back into the church and check the altar for a [_SEAL OF THE SOUL_], then go through the door on the right. Enter the first door here to be i"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 06",
+        "raw_tag": "[_LOTTERY MEMBER NO. 06_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 234,
+        "char_offset": [
+          15069,
+          15094
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 06_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 61,
+        "char_offset": [
+          3716,
+          4697
+        ],
+        "text": "To sum up everything that the Masks have said this time: The Talisman Yuri holds will show the level of Malice that has accumulated in ALICE's soul, meaning that every time SHE participates in a battle, the Malice Meter will increase. To get rid of the Malice, Yuri must return to the Graveyard and fight an incarnate of the Malice (Gusts, this time around) to keep from having to face one of the Four Masks. Each enemy you defeat with Alice in the party will increase the Malice Meter, so make sure that your Malice level does NOT reach the red. If it does, IMMEDIATELY go to the Graveyard and fight your Malice so that you don't fight any of the Masks. Right now, you WILL die if you try to fight them, so if you run into them, press the R1 button and choose to Run Away. NOTE     You can fight Gust Ein, Gust Zwei, Gust Drei, and Gust Vier by"
+      },
+      {
+        "type": "NOTE",
+        "line": 110,
+        "char_offset": [
+          6992,
+          7329
+        ],
+        "text": "Again, the prize you win depends on the level of Malice you have accumulated, with 100 being the max value. Sadly you can't use this knowledge to get the special prizes again and again, as they are replaced with a Thera Leaf the second time you clear the Malice at the same value."
+      },
+      {
+        "type": "NOTE",
+        "line": 128,
+        "char_offset": [
+          8014,
+          8116
+        ],
+        "text": "Margarete comes re-equipped with a [_ZERUEL_] and a [_JASPER CAPE_] by default."
+      },
+      {
+        "type": "NOTE",
+        "line": 131,
+        "char_offset": [
+          8117,
+          8315
+        ],
+        "text": "If for some reason you don't have them, make sure to buy three of either the Shell Bracelets or Cosmic Bracelets to defend against Poison for the next boss battle."
+      },
+      {
+        "type": "NOTE",
+        "line": 141,
+        "char_offset": [
+          8688,
+          9109
+        ],
+        "text": "You can now encounter random battles in the streets with the Bifronzes, as well as some new enemies, the Camazotz, for a limited time. I strongly recommend taking the time to level up your Dark and Wind classes to level 2, if you haven't reached them already. It won't take very long. NOTE     If you didn't get your level 2 Light Fusion earlier, or if you still"
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                                      Rouen\n     [W-2-07]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Inn                                             * = Initial\n             |\n     Lottery | [_] Lottery Member No. 06 (Hooked-nose Robin)\n             |\n       Items | [_] Lottery Ticket      [_] Lottery Ticket\n             | [_] TeaOfTheHolyOne     [_] Seal of the Soul\n             |\n   Equipment |*[_] Zeruel              [_] Huge Jug\n             |*[_] Jasper Cape         [_] Jasper Cape\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                (* = BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #059  [_] Bifronze              |   165  | Dark  |\n #060  [_] Camazotz              |   158  | Wind  |\n      *[_] Olga                  |  3300  | Dark  | Inflicts Poison\n                                 |        |       |\n #109  [_] Gust Ein              | Varies |       | Graveyard Malice\n #110  [_] Gust Zwei             | Varies |       | Graveyard Malice\n #111  [_] Gust Drei             | Varies |       | Graveyard Malice\n #112  [_] Gust Vier             | Varies |       | Graveyard Malice\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |               -$-   Tight-lipped Merchant   -$-               |\n       |===============================v===============================|\n       | Ever-Bible          -    9800 | Voodoo Doll         -    5200 |\n       | Oracle's Staff      -    8600 | Jade Lariat         -    5050 |\n       | SilverCrscntSwd     -    8300 | Coral Lariat        -    5050 |\n       | RedLeatherJacket    -    8800 | Thera Seed          -     120 |\n       | Jasper Cape         -    9200 | Thera Root          -     300 |\n       | Headgear            -    5400 | Mana Seed           -     300 |\n       | Circlet             -    5800 | Mana Root           -     500 |\n       | Charming Pareo      -    5500 | Pure Leaf           -     230 |\n       | Loin Guard          -    5200 | Pure Seed           -     510 |\n       | Shell Bracelet      -    2770 | TalismanOfMercy     -     820 |\n       | Bone Bracelet       -    2960 | TalismanOfWisdom    -    1280 |\n       | Rosewood Bracelet   -    3000 | TalismanOfPurity    -    1760 |\n       | Bell Bracelet       -    3120 | Soul Benediction    -     500 |\n       | Mirror Bracelet     -    3240 | Bronze Arrowhead    -     100 |\n       | Cosmic Bracelet     -   11500 | Bronze Dagger       -     200 |\n       | Spikes              -    2810 | Silver Hourglass    -     100 |\n       | Pocket Watch        -    5200 | Gold Hourglass      -     200 |\n       | Will Power          -    6000 | Tent                -     480 |\n       | Leonardo's Bear     -    3330 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\nWatch the events in London as you enter Rouen, then you'll regain control.\nExamine the ground just above the box to your left to find a\n[_LOTTERY TICKET_]. Once you have it, enter the Inn at the top of the screen.\nWatch another scene in here, then you'll regain control in the Graveyard. Head\nto the left and talk to the Masks.\n\n  NOTE     To sum up everything that the Masks have said this time: The\n¯¯¯¯¯¯¯¯   Talisman Yuri holds will show the level of Malice that has\n           accumulated in ALICE's soul, meaning that every time SHE\n           participates in a battle, the Malice Meter will increase. To get rid\n           of the Malice, Yuri must return to the Graveyard and fight an\n           incarnate of the Malice (Gusts, this time around) to keep from\n           having to face one of the Four Masks. Each enemy you defeat with\n           Alice in the party will increase the Malice Meter, so make sure that\n           your Malice level does NOT reach the red. If it does, IMMEDIATELY go\n           to the Graveyard and fight your Malice so that you don't fight any\n           of the Masks. Right now, you WILL die if you try to fight them, so\n           if you run into them, press the R1 button and choose to Run Away.\n\n  NOTE     You can fight Gust Ein, Gust Zwei, Gust Drei, and Gust Vier by\n¯¯¯¯¯¯¯¯   returning to the Graveyard and fighting them when your Malice level\n           is at a certain color:\n\n           - Gust Ein: Between Blue and Turquoise.\n           - Gust Zwei: Between Turquoise and Green.\n           - Gust Drei: Between Green and Yellow.\n           - Gust Vier: Between Yellow and Red.\n           - After each battle, you'll receive an item based on your Malice!\n\n     .———————————.————————————————————.  .———————————.————————————————————.\n     |  Malice   |  Prize             |——|  Malice   |  Prize             |\n     |===========|====================|/\\|===========|====================|\n     |  01 - 03  |  Thera Leaf        |\\/|  57 - 59  |  Pure Leaf         |\n     |       04  |  Seal of Wisdom    |/\\|       60  |  Seal of Speed     |\n     |  05 - 06  |  Mana Leaf         |\\/|  61 - 62  |  Thera Leaf        |\n     |       07  |  Key to Success    |/\\|       63  |  Seal of Power     |\n     |  08 - 09  |  Pure Leaf         |\\/|  64 - 65  |  Mana Leaf         |\n     |  10 - 14  |  Thera Leaf        |/\\|  66 - 69  |  Pure Leaf         |\n     |  15 - 19  |  Mana Leaf         |\\/|       70  |  Seal of Life      |\n     |  20 - 24  |  Pure Leaf         |/\\|  71 - 73  |  Thera Leaf        |\n     |       25  |  Seal of Vitality  |\\/|  74 - 76  |  Mana Leaf         |\n     |  26 - 29  |  Thera Leaf        |/\\|       77  |  Seventh Key       |\n     |  30 - 34  |  Mana Leaf         |\\/|  78 - 79  |  Pure Leaf         |\n     |       35  |  Silver Hand       |/\\|  80 - 83  |  Thera Leaf        |\n     |  36 - 39  |  Pure Leaf         |\\/|       84  |  Seal of Aura      |\n     |  40 - 41  |  Thera Leaf        |/\\|  85 - 87  |  Mana Leaf         |\n     |       42  |  Kirin Scale       |\\/|  88 - 90  |  Pure Leaf         |\n     |  43 - 44  |  Mana Leaf         |/\\|       91  |  Monkey Paw        |\n     |  45 - 49  |  Pure Leaf         |\\/|  92 - 93  |  Thera Leaf        |\n     |       50  |  Seal of the Soul  |/\\|  94 - 97  |  Mana Leaf         |\n     |  51 - 52  |  Thera Leaf        |\\/|       98  |  Seal of Luck      |\n     |  53 - 55  |  Mana Leaf         |/\\|       99  |  Dice of Caesar    |\n     |       56  |  Seal of Force     |\\/|      100  |  N/A               |\n     '———————————'————————————————————'——'———————————'————————————————————'\n\n  NOTE     Again, the prize you win depends on the level of Malice you have\n¯¯¯¯¯¯¯¯   accumulated, with 100 being the max value. Sadly you can't use this\n           knowledge to get the special prizes again and again, as they are\n           replaced with a Thera Leaf the second time you clear the Malice at\n           the same value.\n\nAfter they're done blabbering, leave the Graveyard to be back in the Inn. Leave\nthe room you're in and go to the next one to the left to find Alice has left.\nReturn to your room and Keith will step forward, allowing you to check the\ndresser behind him for a [_TEAOFTHEHOLYONE_].\n\nMake your way downstairs and talk to the Silent Peddler to find out that he has\na shop! Feel free to upgrade your party's weapons and equipment, then leave the\nInn and head north into the alley to find her. Watch the scene here, then\nyou'll have to battle a set of Bifronzes. After taking them out, you'll see\nanother set of scenes, and you'll regain control inside of the Inn, having to\nchoose a party.\n\n  NOTE     Margarete comes re-equipped with a [_ZERUEL_] and a [_JASPER CAPE_]\n¯¯¯¯¯¯¯¯   by default.\n\n  NOTE     If for some reason you don't have them, make sure to buy three of\n¯¯¯¯¯¯¯¯   either the Shell Bracelets or Cosmic Bracelets to defend against\n           Poison for the next boss battle.\n\nFor a party, I recommend (now, and most of every other time) Yuri, Alice, and\nMargarete, as Margarete gives a decent balance between physical fighting and\nspecial skills, whereas Alice will almost always be a designated healer. If you\nchange your mind after choosing your party, talk to Meiyuan on the first floor\nand he can change it up. When you're ready, head outside.\n\n  NOTE     You can now encounter random battles in the streets with the\n¯¯¯¯¯¯¯¯   Bifronzes, as well as some new enemies, the Camazotz, for a limited\n           time. I strongly recommend taking the time to level up your Dark and\n           Wind classes to level 2, if you haven't reached them already. It\n           won't take very long.\n\n  NOTE     If you didn't get your level 2 Light Fusion earlier, or if you still\n¯¯¯¯¯¯¯¯   just don't have it, then I STRONGLY recommend going back to the\n           Blue Castle and fighting the Hollows until you do. It will be\n           EXTREMELY useful in this next boss battle, which is pretty\n           difficult.\n\nMake your way back to the northern alley. As you enter, check the ground by the\nbarrels for a [_HUGE JUG_], then keep going to the next area. Here, check the\ntwo barrels in the upper-right corner to find another [_LOTTERY TICKET_].\nExamine the back door here, which is stuck. To gain entrance, you must complete\na Spin Ring 3, meaning you have to hit _NINE_ areas before you can gain\nentrance. Luckily, the areas are pretty wide, so you should have no problem.\n\nOnce you're inside, make your way to the front of the church. Watch the series\nof events unfold in here, then you'll have to take on Olga yet again.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Olga                  |  3300 HP  | Class: Dark  | [_] Small Jug            |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [27]     |                   |   Margarete [26]  |        |\n|        |                   |     Alice [26]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Brass Knuckles    | Ever-Bible        | Zeruel            |        |\n|        | RedLeatherJacket  | Jasper Cape       | Jasper Cape       |        |\n|        | Mind's Eye        | Anne's Cross      | Charming Pareo    |        |\n|        | Loin Guard        | Brsrkr Earrings   | Weird Bottle      |        |\n|        | Shell Bracelet    | Shell Bracelet    | Shell Bracelet    |        |\n|        |                   |                   |                   |        |\n|        | Baldo             |                   |                   |        |\n|        | Charon            |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Olga's Black Fog attack will do MAJOR damage to your party, as well as     |\n|  Poison each one of them, so it's a good idea to come in with Shell or      |\n|  Cosmic Bracelets equipped. Her Nova attack will do decent damage to a      |\n|  single ally, her Icy Breath attack will hit your whole party for decent    |\n|  damage, and her physical attack just does pathetic damage to a single      |\n|  ally. Watch out if she uses Mind Assault to steal your MP, as you'll want  |\n|  to recover it immediately if she takes too much.                           |\n|                                                                             |\n|  Yuri and Alice are obvious choices for this battle, and you could pretty   |\n|  much pick whomever your favorite is, as they'll all do roughly the same    |\n|  amount of damage. I recommend Margarete just because I had her at a        |\n|  higher level than Keith and Zhuzhen, therefore having more STR and HP.     |\n|  That, and I find Margarete's Ring easier to hit than Keith's. Zhuzhen      |\n|  just sucks up a lot of MP and takes extra turns to replenish it. Okay,     |\n|  okay, I really like her too, if that matters any.                          |\n|                                                                             |\n|  Fuse Yuri into Baldo (if you didn't get his level 2 Light Fusion, then     |\n|  fuse into the Heaven's Fiend, as you'll need the healing) and start        |\n|  physically attacking; with the Mind's Eye equipped, he'll be doing major   |\n|  damage. If you didn't put the Mind's Eye on him, then go with the Nova     |\n|  spell instead.                                                             |\n|                                                                             |\n|  Have Alice cast Holy Edge on Yuri her first round so he can keep piling    |\n|  the damage up, then have her cast it on Margarete her second turn so she   |\n|  can start adding in to the damage. Margarete should also be attacking      |\n|  normally. If for some reason Alice doesn't need to heal, have her cast     |\n|  Blessed Light on Olga.                                                     |\n|                                                                             |\n|  If a single ally just needs healed, have Alice do it. If two people need   |\n|  it, have Alice and Margarete do it. If all three need it, then have Yuri   |\n|  do it, as Olga doesn't mess around, and can easily kill your entire party  |\n|  in three turns. I hate taking turns away from Yuri because he just does    |\n|  so much damage, but when everyone needs healed, he's the only one that     |\n|  can do anything about it efficiently.                                      |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   16000 EXP   / \\   14500 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, you'll learn that your next destination is London, and you'll\nregain control outside. Head back into the church and check the altar for a\n[_SEAL OF THE SOUL_], then go through the door on the right. Enter the first\ndoor here to be in a confession booth, where you'll find a chest containing a\n[_JASPER CAPE_].\n\nHead back outside, then SAVE at the Inn. Go back out and re-enter the alleyway,\nwhere you'll find Hooked-nose Robin, or as we come to find out, Lottery Member\nNo. 06!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 06_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Accelerator               /\n               /        (Yellow)  |  Seal of Aura              \\\n              /      (Turquoise)  |  Alchemist'sWater           \\\n             /           (Green)  |  Pure Root                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nNothing strange about the ring here. Make sure to win the Accelerator here\nbefore continuing on; it doubles your Pedometer steps with each step you take!\nJust remember, that the person wearing the Pedometer must be wearing the\nAccelerator at the same time, it won't work if they're on separate party\nmembers. If you don't win it, reload your last save and try again. Remember,\nyou need to win something from each member at least once!\n\nThat's it for Rouen, so make your way back out to the World Map. Our next stop\nis London, specifically, Old Castle Street. Make sure to SAVE before entering!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

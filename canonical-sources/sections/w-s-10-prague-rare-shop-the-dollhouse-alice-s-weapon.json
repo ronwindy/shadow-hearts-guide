@@ -1,0 +1,293 @@
+{
+  "id": "w-s-10",
+  "code": "[W-S-10]",
+  "title": "Prague (Rare Shop / The Dollhouse / Alice's Weapon)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-09",
+      "code": "[W-S-09]",
+      "title": "Blue Castle (Keith's Weapon / Lottery Member #1)",
+      "file": "sections/w-s-09-blue-castle-keith-s-weapon-lottery-member-1.json"
+    },
+    "next": {
+      "id": "w-s-11",
+      "code": "[W-S-11]",
+      "title": "Cave Temple (Keith's Armor / Zhuzhen's Weapon)",
+      "file": "sections/w-s-11-cave-temple-keith-s-armor-zhuzhen-s-weapon.json"
+    }
+  },
+  "char_count": 10178,
+  "line_count": 175,
+  "overview": {
+    "save_points": [
+      "First room inside"
+    ],
+    "items": [
+      "Lottery Ticket",
+      "Silver Hand"
+    ],
+    "equipment": [
+      "Oracle Earrings",
+      "Crucifix"
+    ],
+    "valuables": [
+      "Crank",
+      "Slide",
+      "Storeroom Key"
+    ]
+  },
+  "items": [
+    "Lottery Ticket",
+    "Silver Hand",
+    "Oracle Earrings",
+    "Crucifix",
+    "Crank",
+    "Slide",
+    "Storeroom Key"
+  ],
+  "enemies": [
+    {
+      "number": "#077",
+      "name": "Ghoul",
+      "hp": 200,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+    },
+    {
+      "number": "#078",
+      "name": "Ghouler",
+      "hp": 300,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+    },
+    {
+      "number": "#079",
+      "name": "Spanky",
+      "hp": 220,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#080",
+      "name": "Orb Chaos",
+      "hp": 7500,
+      "class": "Light",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Orb Chaos",
+      "enemies": [
+        {
+          "name": "Orb Chaos",
+          "hp": 7500,
+          "class": "Light",
+          "drop": "Holy Book-Flesh"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 38
+        },
+        {
+          "name": "Margarete",
+          "level": 33
+        },
+        {
+          "name": "Alice",
+          "level": 38
+        }
+      ],
+      "exp": 48000,
+      "cash": 27500,
+      "strategy": "She has several different spells that will increase her stats by 25-30%,\nso once she's done doing that, be very careful, as they went from very\nstrong to deadly. She WILL almost kill Yuri in one set of attacks once\nher attack is boosted, she's THAT strong! Alice won't have time to do\nanything except Arc once Orb Chaos starts attacking.\nOther than the boosting spells, Orb Chaos attacks normally for major\ndamage, and uses a spell called Expression that can not only do pretty\ngood damage, but can also Paralyze your entire party! If you don't have\nthose Crucifixes equipped, good luck winning, especially when she starts\nusing Expression each turn, one after another.\nEven though he may barely have enough SP to do it, have Yuri fuse into\nAmon, then have one of the girls use a Pure Seed/Root on him to give him\nsome breathing room, then have him attack normally. Alice should be\ncasting Arc every round, and Margarete should be attacking normally every\nround, since both she and Yuri should have Mind's Eyes equipped.\nNOTE     Once the battle is over, you'll receive Alice's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Book-Flesh."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Orb Chaos",
+    "enemies": [
+      {
+        "name": "Orb Chaos",
+        "hp": 7500,
+        "class": "Light",
+        "drop": "Holy Book-Flesh"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 38
+      },
+      {
+        "name": "Margarete",
+        "level": 33
+      },
+      {
+        "name": "Alice",
+        "level": 38
+      }
+    ],
+    "exp": 48000,
+    "cash": 27500,
+    "strategy": "She has several different spells that will increase her stats by 25-30%,\nso once she's done doing that, be very careful, as they went from very\nstrong to deadly. She WILL almost kill Yuri in one set of attacks once\nher attack is boosted, she's THAT strong! Alice won't have time to do\nanything except Arc once Orb Chaos starts attacking.\nOther than the boosting spells, Orb Chaos attacks normally for major\ndamage, and uses a spell called Expression that can not only do pretty\ngood damage, but can also Paralyze your entire party! If you don't have\nthose Crucifixes equipped, good luck winning, especially when she starts\nusing Expression each turn, one after another.\nEven though he may barely have enough SP to do it, have Yuri fuse into\nAmon, then have one of the girls use a Pure Seed/Root on him to give him\nsome breathing room, then have him attack normally. Alice should be\ncasting Arc every round, and Margarete should be attacking normally every\nround, since both she and Yuri should have Mind's Eyes equipped.\nNOTE     Once the battle is over, you'll receive Alice's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Book-Flesh."
+  },
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "ORACLE EARRINGS",
+        "raw_tag": "[_ORACLE EARRINGS_]",
+        "matched_overview_item": "Oracle Earrings",
+        "category": "equipment",
+        "line": 73,
+        "char_offset": [
+          3984,
+          4003
+        ],
+        "context": "NOTE Alice must be in your party to be able to do anything here. ¯¯¯¯¯¯¯¯ After the quick scene, you'll regain control as Alice. Before entering the house, head over to the left and examine the ground below the barrels to find the [_ORACLE EARRINGS_]"
+      },
+      {
+        "name": "CRANK",
+        "raw_tag": "[_CRANK_]",
+        "matched_overview_item": "Crank",
+        "category": "valuables",
+        "line": 74,
+        "char_offset": [
+          4119,
+          4128
+        ],
+        "context": "NOTE Alice must be in your party to be able to do anything here. ¯¯¯¯¯¯¯¯ After the quick scene, you'll regain control as Alice. Before entering the house, head over to the left and examine the ground below the barrels to find the [_ORACLE EARRINGS_]"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 77,
+        "char_offset": [
+          4241,
+          4259
+        ],
+        "context": "Go into the room to the upper-right of the Save Point and examine the table just below you as you enter for a [_LOTTERY TICKET_]. Go up the stairs to your upper-left and through the doorway here to be at a fountain. Go up to the left side of it and e"
+      },
+      {
+        "name": "STOREROOM KEY",
+        "raw_tag": "[_STOREROOM KEY_]",
+        "matched_overview_item": "Storeroom Key",
+        "category": "valuables",
+        "line": 80,
+        "char_offset": [
+          4472,
+          4489
+        ],
+        "context": "Go into the room to the upper-right of the Save Point and examine the table just below you as you enter for a [_LOTTERY TICKET_]. Go up the stairs to your upper-left and through the doorway here to be at a fountain. Go up to the left side of it and e"
+      },
+      {
+        "name": "SILVER HAND",
+        "raw_tag": "[_SILVER HAND_]",
+        "matched_overview_item": "Silver Hand",
+        "category": "items",
+        "line": 86,
+        "char_offset": [
+          4806,
+          4821
+        ],
+        "context": "Head back outside of the house and examine the western door near where you found the Oracle Earrings. With the key, you can now go through here, so do so, then examine the generator above you to use the Crank to start it. To your upper-right, you sho"
+      },
+      {
+        "name": "SLIDE",
+        "raw_tag": "[_SLIDE_]",
+        "matched_overview_item": "Slide",
+        "category": "valuables",
+        "line": 88,
+        "char_offset": [
+          4964,
+          4973
+        ],
+        "context": "Head back outside of the house and examine the western door near where you found the Oracle Earrings. With the key, you can now go through here, so do so, then examine the generator above you to use the Crank to start it. To your upper-right, you sho"
+      },
+      {
+        "name": "CRUCIFIX",
+        "raw_tag": "[_CRUCIFIX_]",
+        "matched_overview_item": "Crucifix",
+        "category": "equipment",
+        "line": 109,
+        "char_offset": [
+          6018,
+          6030
+        ],
+        "context": "In any case, before exploring too much, open the chest at the foot of the bed for a [_CRUCIFIX_]. You should now have THREE of them!"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 14,
+        "char_offset": [
+          774,
+          889
+        ],
+        "text": "Make sure Alice is in your party, otherwise Runaway Ewan won't tell you about the Dollhouse."
+      },
+      {
+        "type": "NOTE",
+        "line": 30,
+        "char_offset": [
+          1698,
+          1947
+        ],
+        "text": "You should probably equip the two Crucifixes you have as well, and probably a combination Zodiac and Cosmic Bracelet on the third person. Check out the status effects of the enemies below to see why."
+      },
+      {
+        "type": "NOTE",
+        "line": 69,
+        "char_offset": [
+          3747,
+          3827
+        ],
+        "text": "Alice must be in your party to be able to do anything here."
+      },
+      {
+        "type": "NOTE",
+        "line": 111,
+        "char_offset": [
+          6068,
+          6195
+        ],
+        "text": "Take the time now to equip each party member with a Crucifix, or at least a Zodiac or Rosewood Bracelet."
+      },
+      {
+        "type": "NOTE",
+        "line": 164,
+        "char_offset": [
+          9692,
+          9803
+        ],
+        "text": "You can return here later if you like, but you have to make sure Alice is in your party."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |        Prague (Rare Shop / The Dollhouse / Alice's Weapon)\n     [W-S-10]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n       .———————————————————————————————————————————————————————————————.\n       |               -$-   Tight-lipped Merchant   -$-               |\n       |===============================v===============================|\n       | Weird Bottle        -   18000 | Pure Extract        -   20000 |\n       | Thera Extract       -    5000 | Third Key           -   30000 |\n       | Mana Extract        -   10000 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\n  NOTE     Make sure Alice is in your party, otherwise Runaway Ewan won't tell\n¯¯¯¯¯¯¯¯   you about the Dollhouse.\n\nAfter entering Prague, make your way all the way to the north end of town and\ntalk to the Silent Peddler. He is now selling items, and man, are they GOOD! If\nyou have some extra cash built up, you may want to stock up on each of the Mana\nand Pure Extracts, but not Thera Extracts; you can get those for 100 steps\napiece with the Pedometer Service. You may also want to take the opportunity to\nget some Third Keys; they can make some boss battles go by WAY quicker if a\nbeefed-up Yuri hits all 9 areas. :-D\n\nAfter shopping, make your way to the bar and talk to Runaway Ewan, who's just\nbelow the Owner and Yuria; he'll tell you about a possessed house, and asks\nthat you exorcise it. By talking to him, we've now opened a new area of the\nWorld Map: the Dollhouse. Leave Prague, then head into the Dollhouse.\n\n  NOTE     You should probably equip the two Crucifixes you have as well, and\n¯¯¯¯¯¯¯¯   probably a combination Zodiac and Cosmic Bracelet on the third\n           person. Check out the status effects of the enemies below to see\n           why.\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                                   Dollhouse\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n_______________________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | First room inside\n             |\n       Items | [_] Lottery Ticket      [_] Silver Hand\n             |\n   Equipment | [_] Oracle Earrings     [_] Crucifix\n             |\n   Valuables | [_] Crank               [_] Slide\n             | [_] Storeroom Key\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                (* = BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #077  [_] Ghoul                 |   200  | Water | Inflicts Paralysis,\n                                 |        |       |    Confusion, Silence,\n                                 |        |       |    Poison, Petrify,\n                                 |        |       |    and Ring anomalies\n #078  [_] Ghouler               |   300  | Fire  | Inflicts Paralysis,\n                                 |        |       |    Confusion, Silence,\n                                 |        |       |    Poison, Petrify,\n                                 |        |       |    and Ring anomalies\n #079  [_] Spanky                |   220  | Wind  |\n #080 *[_] Orb Chaos             |  7500  | Light | Inflicts Paralysis\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     Alice must be in your party to be able to do anything here.\n¯¯¯¯¯¯¯¯\nAfter the quick scene, you'll regain control as Alice. Before entering the\nhouse, head over to the left and examine the ground below the barrels to find\nthe [_ORACLE EARRINGS_]. Go inside the house and use the Save Point if you\nwish, then examine the grandfather clock to your left to find a [_CRANK_].\n\nGo into the room to the upper-right of the Save Point and examine the table\njust below you as you enter for a [_LOTTERY TICKET_]. Go up the stairs to your\nupper-left and through the doorway here to be at a fountain. Go up to the left\nside of it and examine it to have to do a Push Ring. When you complete it\nsuccessfully, you'll receive the [_STOREROOM KEY_].\n\nHead back outside of the house and examine the western door near where you\nfound the Oracle Earrings. With the key, you can now go through here, so do so,\nthen examine the generator above you to use the Crank to start it. To your\nupper-right, you should see some shovels and a bucket; examine the bucket to\nfind a [_SILVER HAND_]. Climb down the ladder to your right, then check at the\nvery bottom of the screen; where you see the two bottles and the glass, you'll\nfind a [_SLIDE_] plate.\n\nMake your way back into the other side of the house, then go up the stairs to\nthe left of the Save Point and into the room here. Examine the projector on the\ntable to the right to use the Slide, where you'll see that the picture\nprojected was taken on December 24, or 1224.\n\nGo back downstairs and into the room to the right. Examine the dial beside the\nfireplace, and you'll be able to enter a code. Enter 1224, then make your way\nback to the Save Point, making sure to both Save and recover, as we're taking\non a boss next.\n\nGo back outside, then through the storeroom, down the ladder, then down and\nright to the door here. Go through it, then down the stairs to a large door\nthat you can now open since the water has been drained.\n\nOkay, be honest... Did you jump when you first walked into the room to see the\ndoll baby riding the rocking horse? I played Resident Evil: Nemesis when I was\na bit too young, so certain things catch me off guard...\n\nIn any case, before exploring too much, open the chest at the foot of the bed\nfor a [_CRUCIFIX_]. You should now have THREE of them!\n\n  NOTE     Take the time now to equip each party member with a Crucifix, or at\n¯¯¯¯¯¯¯¯   least a Zodiac or Rosewood Bracelet.\n\nWhen you're ready, try to leave the room... *shudder*\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Orb Chaos             |  7500 HP  | Class: Light | [_] Holy Book-Flesh      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [38]     |                   |   Margarete [33]  |        |\n|        |                   |     Alice [38]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Silver Wolf Fang  | HolyBook-Martyrs  | 10 Gauge          |        |\n|        | Stygian Robe      | Snow-White Robe   | Leather Suit      |        |\n|        | Mind's Eye        | Oracle Earrings   | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  She has several different spells that will increase her stats by 25-30%,   |\n|  so once she's done doing that, be very careful, as they went from very     |\n|  strong to deadly. She WILL almost kill Yuri in one set of attacks once     |\n|  her attack is boosted, she's THAT strong! Alice won't have time to do      |\n|  anything except Arc once Orb Chaos starts attacking.                       |\n|                                                                             |\n|  Other than the boosting spells, Orb Chaos attacks normally for major       |\n|  damage, and uses a spell called Expression that can not only do pretty     |\n|  good damage, but can also Paralyze your entire party! If you don't have    |\n|  those Crucifixes equipped, good luck winning, especially when she starts   |\n|  using Expression each turn, one after another.                             |\n|                                                                             |\n|  Even though he may barely have enough SP to do it, have Yuri fuse into     |\n|  Amon, then have one of the girls use a Pure Seed/Root on him to give him   |\n|  some breathing room, then have him attack normally. Alice should be        |\n|  casting Arc every round, and Margarete should be attacking normally every  |\n|  round, since both she and Yuri should have Mind's Eyes equipped.           |\n|                                                                             |\n|    NOTE     Once the battle is over, you'll receive Alice's best weapon,    |\n|  ¯¯¯¯¯¯¯¯   the Holy Book-Flesh.                                            |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   48000 EXP   / \\   27500 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, make sure to equip Alice's best weapon. That's it for here,\nso head back out onto the World Map.\n\n  NOTE     You can return here later if you like, but you have to make sure\n¯¯¯¯¯¯¯¯   Alice is in your party.\n\nIf you like, you can return to Prague and go to the bar. There's an interesting\ndetail on the floor where Ewan was standing if you want to check that out.\nOtherwise, we're finished and ready for the next quest.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

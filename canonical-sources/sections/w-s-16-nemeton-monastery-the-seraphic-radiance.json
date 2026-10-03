@@ -1,0 +1,228 @@
+{
+  "id": "w-s-16",
+  "code": "[W-S-16]",
+  "title": "Nemeton Monastery (The Seraphic Radiance /",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-15",
+      "code": "[W-2-15]",
+      "title": "Europe Side Quests, Part 3",
+      "file": "sections/w-2-15-europe-side-quests-part-3.json"
+    },
+    "next": {
+      "id": "w-2-16",
+      "code": "[W-2-16]",
+      "title": "Final Preparations",
+      "file": "sections/w-2-16-final-preparations.json"
+    }
+  },
+  "char_count": 10829,
+  "line_count": 217,
+  "overview": {
+    "lottery": [
+      "Lottery Member No. 00 (Roger Bacon)"
+    ],
+    "equipment": [
+      "Nightbird Claw",
+      "Father's Coat"
+    ],
+    "valuables": [
+      "Pulse Tract",
+      "Stone of Rebirth"
+    ],
+    "souls": [
+      "Seraphic Radiance"
+    ]
+  },
+  "items": [
+    "Nightbird Claw",
+    "Father's Coat",
+    "Pulse Tract",
+    "Stone of Rebirth",
+    "Seraphic Radiance"
+  ],
+  "enemies": [
+    {
+      "number": null,
+      "name": "Ben Hyuga",
+      "hp": 2000,
+      "class": "Dark",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#122",
+      "name": "SeraphicRadiance",
+      "hp": 5000,
+      "class": "None",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": ""
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Ben Hyuga, SeraphicRadiance",
+      "enemies": [
+        {
+          "name": "Ben Hyuga",
+          "hp": 2000,
+          "class": "Dark",
+          "drop": null
+        },
+        {
+          "name": "SeraphicRadiance",
+          "hp": 5000,
+          "class": "None",
+          "drop": "Diamond Ring"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 52
+        }
+      ],
+      "exp": 60000,
+      "cash": 99999,
+      "strategy": "'———————————————————'   preferably, a Thera Extract.\nFuse into Amon, or if you need some spare SP, then Lobo (since he has the\n2nd highest P-Def at this point, as well as the same P-Atk as Amon). All\nyou'll be doing is physically attacking a round or two, then healing the\nnext. Yep, that's it... pretty boring actually, but any other route will\nlikely get you killed. Trust me, it's worth it.\nIf you find yourself in trouble, try using Third Keys to help dish out\ndamage when you have an opportunity to. If you're STILL having trouble\nwith him, then you'll just have to level up and try again."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Ben Hyuga, SeraphicRadiance",
+    "enemies": [
+      {
+        "name": "Ben Hyuga",
+        "hp": 2000,
+        "class": "Dark",
+        "drop": null
+      },
+      {
+        "name": "SeraphicRadiance",
+        "hp": 5000,
+        "class": "None",
+        "drop": "Diamond Ring"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 52
+      }
+    ],
+    "exp": 60000,
+    "cash": 99999,
+    "strategy": "'———————————————————'   preferably, a Thera Extract.\nFuse into Amon, or if you need some spare SP, then Lobo (since he has the\n2nd highest P-Def at this point, as well as the same P-Atk as Amon). All\nyou'll be doing is physically attacking a round or two, then healing the\nnext. Yep, that's it... pretty boring actually, but any other route will\nlikely get you killed. Trust me, it's worth it.\nIf you find yourself in trouble, try using Third Keys to help dish out\ndamage when you have an opportunity to. If you're STILL having trouble\nwith him, then you'll just have to level up and try again."
+  },
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "PULSE TRACT",
+        "raw_tag": "[_PULSE TRACT_]",
+        "matched_overview_item": "Pulse Tract",
+        "category": "valuables",
+        "line": 33,
+        "char_offset": [
+          1769,
+          1784
+        ],
+        "context": "After completing the Atman events, talk to Roger in the Nemeton Monastery; he'll notice the Erotic Book you have, and will give you the [_PULSE TRACT_] in exchange for it!"
+      },
+      {
+        "name": "NIGHTBIRD CLAW",
+        "raw_tag": "[_NIGHTBIRD CLAW_]",
+        "matched_overview_item": "Nightbird Claw",
+        "category": "equipment",
+        "line": 42,
+        "char_offset": [
+          2259,
+          2277
+        ],
+        "context": "Talk to Roger again, and he'll want help for an experiment. The help? The dreaded Spin Ring _10_! Yes, _30_ hits on the Judgment Ring! Personally, I was able to get it in two tries (the first time I missed the very last one), but keep at it, and you'"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 00",
+        "raw_tag": "[_LOTTERY MEMBER NO. 00_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 58,
+        "char_offset": [
+          2844,
+          2869
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 00_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "STONE OF REBIRTH",
+        "raw_tag": "[_STONE OF REBIRTH_]",
+        "matched_overview_item": "Stone of Rebirth",
+        "category": "valuables",
+        "line": 137,
+        "char_offset": [
+          6517,
+          6537
+        ],
+        "context": "After you reach the very last area, be back at the beginning. Descend the stairs here and walk up to the altar; you'll find a chest containing the [_STONE OF REBIRTH_]. Make your way out of the Ancient Ruins and back onto the World Map. SAVE YOUR GAM"
+      },
+      {
+        "name": "SERAPHICRADIANCE",
+        "raw_tag": "[_SERAPHICRADIANCE_]",
+        "matched_overview_item": "Seraphic Radiance",
+        "category": "souls",
+        "line": 200,
+        "char_offset": [
+          10303,
+          10323
+        ],
+        "context": "Once he's defeated, you'll earn Yuri's final fusion, the [_SERAPHICRADIANCE_]. Watch the cut-scene here, and when you regain control, return to the tree where you fought Ben. Open a chest behind the tree, and you'll find Yuri's best armor, his [_FATH"
+      },
+      {
+        "name": "FATHER'S COAT",
+        "raw_tag": "[_FATHER'S COAT_]",
+        "matched_overview_item": "Father's Coat",
+        "category": "equipment",
+        "line": 203,
+        "char_offset": [
+          10491,
+          10508
+        ],
+        "context": "Once he's defeated, you'll earn Yuri's final fusion, the [_SERAPHICRADIANCE_]. Watch the cut-scene here, and when you regain control, return to the tree where you fought Ben. Open a chest behind the tree, and you'll find Yuri's best armor, his [_FATH"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 23,
+        "char_offset": [
+          1218,
+          1312
+        ],
+        "text": "You must have done the following to trigger this last series of events:"
+      },
+      {
+        "type": "NOTE",
+        "line": 142,
+        "char_offset": [
+          6695,
+          7456
+        ],
+        "text": "The next battle is EXTREMELY difficult, as it will be with Yuri alone. I recommend doing the following things before attempting to fight: - Put Yuri in the back row. - Put both the Brsrkr Earrings and the Seven-Eyed Mask (or Comet Mask) on him to boost his HP and defense, respectively. - Equip the Mind's Eye on him, unless you're still taking more damage in two rounds that you can't heal on. If that's the case, equip a Voodoo Doll; it'll boost your S-Def a bit more AND revive Yuri once if he dies. - Stock up on Thera Extracts (Silent Peddler). - Buy some Third Keys to help speed the battle along. (optional)"
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                 Nemeton Monastery (The Seraphic Radiance /\n     [W-S-16]      |                 Yuri's Weapon & Armor / Lottery Member #0)\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n     Lottery | [_] Lottery Member No. 00 (Roger Bacon)\n             |\n   Equipment | [_] Nightbird Claw      [_] Father's Coat\n             |\n   Valuables | [_] Pulse Tract         [_] Stone of Rebirth\n             |\n       Souls | [_] Seraphic Radiance\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                (* = BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n      *[_] Ben Hyuga             |  2000  | Dark  |\n #122 *[_] SeraphicRadiance      |  5000  | None  |\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     You must have done the following to trigger this last series of\n¯¯¯¯¯¯¯¯   events:\n\n           - Obtained the Erotic Book in Shanghai.\n           - Defeated the Orb Chaos/Cherubim/Seraphim in the bonus dungeons.\n           - Played the Lottery with EVERY member up until now.\n           - Been sent to Neameeto at least once.\n           - Obtained ALL 3 Fusions in each Fusion class, AND Amon for Yuri.\n\nAfter completing the Atman events, talk to Roger in the Nemeton Monastery;\nhe'll notice the Erotic Book you have, and will give you the [_PULSE TRACT_] in\nexchange for it!\n\nTalk to Roger again, and he'll want help for an experiment. The help? The\ndreaded Spin Ring _10_! Yes, _30_ hits on the Judgment Ring! Personally, I was\nable to get it in two tries (the first time I missed the very last one), but\nkeep at it, and you'll eventually hit them all. Try your best not to break your\nTV, your controller, your PS2, ANYTHING. Stay calm and focused, and you should\ndo it. By completing it, you'll receive Yuri's best weapon, the\n[_NIGHTBIRD CLAW_].\n\nNext, SAVE YOUR GAME! Then talk to Roger again, and he'll ask if you wish to go\nto Neameeto.\n\n———————————————————————————————————————————\n   [1] Wait, I need to use the bathroom!\n   [2] Let's go!\n———————————————————————————————————————————\n\nChoose 1, and as long as you have played the Lottery with ALL 15 of the\nprevious members, you'll find out that Roger is Lottery Member No. 00, the\nChairman!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 00_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  CottonUnderpants          /\n               /        (Yellow)  |  Comet Mask                \\\n              /      (Turquoise)  |  Seal of the Soul           \\\n             /           (Green)  |  TalismanOfPower             \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nNothing strange about the ring here, just really small hit areas! Make sure to\nwin both the CottonUnderpants and Comet Mask before continuing on; the\nCottonUnderpants is an accessory for Alice that increases her physical defense\nAND cuts normal attack damage in half (and change the color of her panties from\npink to white!), while the Comet Mask increases P-Def, S-Def, and P-Avd when\nequipped, and can't be obtained anywhere else. If you don't win what you want,\nreload your last save and try again.\n\nNow that we've met all the Lottery Members, feel free to waste your remaining\ntickets on whichever Lottery Members you like! I recommend Seals of the Soul\nfor your lower SP party members, mainly Alice, as well as some of the other\nSeals, and some of the ultimate recovery items like the TalismanOfPower, which\nrevives an ally completely when used.\n\nIf for some reason Roger doesn't show up as being the next Lottery Member, then\nyou missed someone. Here are the locations of all of the Lottery Members in the\ngame; you can't do anything about the ones in China, but you can check with all\nof the ones here in Europe to make sure you didn't miss any:\n\n\n   Asia\n¯¯¯¯¯¯¯¯¯¯\nLottery Member No. #15: Fengtian (Building-loving Man)\nLottery Member No. #14: Dalian (Filthy Samo)\nLottery Member No. #13: Smuggler's Boat (Courier Subordinate)\nLottery Member No. #12: Shanghai, Huayuan (Sharp Van)\nLottery Member No. #11: Temple Ruins (Master Xiaofang)\nLottery Member No. #10: Kowloon Fortress (Invincible Nee)\nLottery Member No. #09: Shanghai, Kuihai Tower (Private Matsuura)\n\n\n   Europe\n¯¯¯¯¯¯¯¯¯¯¯¯\nLottery Member No. #08: Prague (Guard Homas)\nLottery Member No. #07: Bistritz (Hunter Warda)\nLottery Member No. #06: Rouen (Hooked-nose Robin)\nLottery Member No. #05: London, Old Castle Street (Drunken Orro)\nLottery Member No. #04: Calios Mental Hospital (Introverted Chopin)\nLottery Member No. #03: London, Orphanage (Pot-lover Macken)\nLottery Member No. #02: Rouen (Fake-nose Man) (if you already won his red\n                        prize, he will no longer appear. You also must have\n                        completed the Water Gravestone side quest and acted as\n                        a preacher to have No. 02 appear to begin with.)\nLottery Member No. #01: Blue Castle (Keith-like invisible man)\nLottery Member No. #00: Roger Bacon (Nemeton Monastery)\n\n\nNow that we're finished with the Lottery, we need to move on to the very last\nside quest of them all: the Seraphic Radiance.\n\nExamine the Pulse Tract that you received from Roger; it depicts a new path\nthrough the Ancient Ruins, so that's where we're headed.\n\n\n   Ancient Ruins\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nEnter the maze, then take the following paths:\n\n - YELLOW    (left room)\n - RED       (left room)\n - GREEN     (center room)\n - VIOLET    (right room)\n - BLUE      (left room)\n - RED       (center room)\n - TURQUOISE (right room)\n\nAfter you reach the very last area, be back at the beginning. Descend the\nstairs here and walk up to the altar; you'll find a chest containing the\n[_STONE OF REBIRTH_]. Make your way out of the Ancient Ruins and back onto the\nWorld Map. SAVE YOUR GAME and enter the Graveyard for the last time.\n\n   Graveyard\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n  NOTE     The next battle is EXTREMELY difficult, as it will be with Yuri\n¯¯¯¯¯¯¯¯   alone. I recommend doing the following things before attempting to\n           fight:\n\n           - Put Yuri in the back row.\n\n           - Put both the Brsrkr Earrings and the Seven-Eyed Mask (or\n             Comet Mask) on him to boost his HP and defense, respectively.\n\n           - Equip the Mind's Eye on him, unless you're still taking more\n             damage in two rounds that you can't heal on. If that's the case,\n             equip a Voodoo Doll; it'll boost your S-Def a bit more AND revive\n             Yuri once if he dies.\n\n           - Stock up on Thera Extracts (Silent Peddler).\n\n           - Buy some Third Keys to help speed the battle along. (optional)\n\nGo through the northern gate, then go as far as you can north to examine the\nsunset. Attempt to leave, and you'll encounter Ben Hyuga. After some discussion\nabout him and the Seraphic Radiance, you'll have to face him in an attempt to\nconquer and capture the god.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Ben Hyuga             |  2000 HP  | Class: Dark  |                          |\n| SeraphicRadiance      |  5000 HP  | Class: None  | [_] Diamond Ring         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|  .———————————————————.                                                      |\n|  |     Yuri [52]     |   First off is Ben; he'll use physical attacks, but  |\n|  |                   |   once you do about 2000 HP worth of damage, he      |\n|  |===================|   will then fuse into the Seraphic Radiance!         |\n|  | Nightbird Claw    |                                                      |\n|  | Stygian Robe      |   Malcto will hit Yuri for major damage while also   |\n|  | Mind's Eye        |   healing itself! That's its only special attack;    |\n|  | Brsrkr Earrings   |   the only other thing it does is its attack, and    |\n|  | Comet Mask        |   it hits HARD! If you're not in the back row, you   |\n|  |                   |   better shift there immediately. As long as you're  |\n|  | Amon              |   in the back row, you should be able to attack      |\n|  | Lobo              |   two, possibly three times in a row before you      |\n|  | Forron            |   will have to heal with a Thera Root or,            |\n|  '———————————————————'   preferably, a Thera Extract.                       |\n|                                                                             |\n|  Fuse into Amon, or if you need some spare SP, then Lobo (since he has the  |\n|  2nd highest P-Def at this point, as well as the same P-Atk as Amon). All   |\n|  you'll be doing is physically attacking a round or two, then healing the   |\n|  next. Yep, that's it... pretty boring actually, but any other route will   |\n|  likely get you killed. Trust me, it's worth it.                            |\n|                                                                             |\n|  If you find yourself in trouble, try using Third Keys to help dish out     |\n|  damage when you have an opportunity to. If you're STILL having trouble     |\n|  with him, then you'll just have to level up and try again.                 |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   60000 EXP   / \\   99999 Cash   /\n     '—————————————'   '——————————————'\n\nOnce he's defeated, you'll earn Yuri's final fusion, the [_SERAPHICRADIANCE_].\nWatch the cut-scene here, and when you regain control, return to the  tree\nwhere you fought Ben. Open a chest behind the tree, and you'll find Yuri's best\narmor, his [_FATHER'S COAT_].\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\nThat's it for all the side quests. Let's go to Neameeto and end this.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

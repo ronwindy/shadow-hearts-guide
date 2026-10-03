@@ -1,0 +1,42 @@
+{
+  "id": "w-2-11",
+  "code": "[W-2-11]",
+  "title": "Europe Side Quests, Part 1",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-10",
+      "code": "[W-2-10]",
+      "title": "Calios Mental Hospital (1)",
+      "file": "sections/w-2-10-calios-mental-hospital-1.json"
+    },
+    "next": {
+      "id": "w-s-04",
+      "code": "[W-S-04]",
+      "title": "Calios Mental Hospital (2)",
+      "file": "sections/w-s-04-calios-mental-hospital-2.json"
+    }
+  },
+  "char_count": 1053,
+  "line_count": 24,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n   Shadow Hearts   |                                 Europe Side Quests, Part 1\n     [W-2-11]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n[W-S-04] Calios Mental Hospital (2)\n         - There's an item to grab that we didn't have a chance to get, as well\n           as another Lottery Member we can play.\n\n\n[W-S-05] Yuri's Level 2 & 3 Fusions\n         - To even be able to use Level 3 Fusions, we need to find the\n           appropriate Gravestone that will allow us to fight them. Also, we'll\n           need enough Soul Energy needs to be acquired to be able to even take\n           both the level 2 and 3 Fusions on. There are two dungeons we can\n           revisit that has all we need. How do we get those level 3 ???\n           spells, anyway? Let's find out!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

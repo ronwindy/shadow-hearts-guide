@@ -1,0 +1,129 @@
+{
+  "id": "w-s-09",
+  "code": "[W-S-09]",
+  "title": "Blue Castle (Keith's Weapon / Lottery Member #1)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-08",
+      "code": "[W-S-08]",
+      "title": "Rouen (Silent Peddler / Margarete's Armor, Weapon, &",
+      "file": "sections/w-s-08-rouen-silent-peddler-margarete-s-armor-weapon.json"
+    },
+    "next": {
+      "id": "w-s-10",
+      "code": "[W-S-10]",
+      "title": "Prague (Rare Shop / The Dollhouse / Alice's Weapon)",
+      "file": "sections/w-s-10-prague-rare-shop-the-dollhouse-alice-s-weapon.json"
+    }
+  },
+  "char_count": 5912,
+  "line_count": 110,
+  "overview": {
+    "save_points": [
+      "Near the entrance (Bistritz)",
+      "First room inside",
+      "Top of the tower"
+    ],
+    "lottery": [
+      "Lottery Member No. 01",
+      "(Keith-like invisible man)"
+    ],
+    "equipment": [
+      "DemonSwd-Tyrving"
+    ]
+  },
+  "items": [
+    "DemonSwd-Tyrving"
+  ],
+  "enemies": [
+    {
+      "number": "#056",
+      "name": "Gremlin",
+      "hp": 62,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#057",
+      "name": "Hollow",
+      "hp": 103,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#058",
+      "name": "Dead Knight",
+      "hp": 200,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Poison"
+    },
+    {
+      "number": "#076",
+      "name": "Golden Bat",
+      "hp": 1500,
+      "class": "None",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": ""
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "DEMONSWD-TYRVING",
+        "raw_tag": "[_DEMONSWD-TYRVING_]",
+        "matched_overview_item": "DemonSwd-Tyrving",
+        "category": "equipment",
+        "line": 45,
+        "char_offset": [
+          2104,
+          2124
+        ],
+        "context": "Blue Castle ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ Head inside the castle, then go north up to the Save Point. Take the western path, follow it around and down to the basement with the caskets. Approach the open casket to find a Golden Bat! It's actually Keith's brother,"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 01",
+        "raw_tag": "[_LOTTERY MEMBER NO. 01_]",
+        "matched_overview_item": "Lottery Member No. 01",
+        "category": "lottery",
+        "line": 86,
+        "char_offset": [
+          4629,
+          4654
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 01_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 26,
+        "char_offset": [
+          1311,
+          1504
+        ],
+        "text": "Make sure that Keith is in your party. Equip the Mind's Eye and anything else you want to boost his attack / hit area, since he'll be fighting a battle alone."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |           Blue Castle (Keith's Weapon / Lottery Member #1)\n     [W-S-09]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Near the entrance (Bistritz)\n             | First room inside\n             | Top of the tower\n             |\n     Lottery | [_] Lottery Member No. 01\n             |     (Keith-like invisible man)\n             |\n   Equipment | [_] DemonSwd-Tyrving\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy            (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #056  [_] Gremlin               |    62  | Wind  | Inflicts Ring anomalies\n #057  [_] Hollow                |   103  | Light |\n #058  [_] Dead Knight           |   200  | Dark  | Inflicts Poison\n #076 ~[_] Golden Bat            |  1500  | None  |\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     Make sure that Keith is in your party. Equip the Mind's Eye and\n¯¯¯¯¯¯¯¯   anything else you want to boost his attack / hit area, since he'll\n           be fighting a battle alone.\n\nBefore going to the Blue Castle, we need to trigger the event in Bistritz.\n\n\n   Bistritz\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nHead over to the eastern side of town and head into Nina's house. Nina will\ninform Keith of something she saw in the Blue Castle, which will now let you\ncontinue with the event there, so head over to the Blue Castle.\n\n\n   Blue Castle\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nHead inside the castle, then go north up to the Save Point. Take the western\npath, follow it around and down to the basement with the caskets. Approach the\nopen casket to find a Golden Bat! It's actually Keith's brother, and he'll give\nhim the [_DEMONSWD-TYRVING_]. You'll then have to face him as Keith (alone) to\nearn it!\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Golden Bat            |  1500 HP  | Class: None  | [_] DemonSwd-Tyrving     |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  He says you have 5 turns to defeat him before he obliterates Keith, but    |\n|  you technically have 6.                                                    |\n|                                                                             |\n|  It's not hard to succeed, but if you miss some hits, you could be in       |\n|  trouble. Keith can only attack normally, so just keep doing that. It       |\n|  should only take three turns max, unless you didn't equip the Mind's Eye,  |\n|  then it'll probably take all six.                                          |\n|                                                                             |\n|  If you're having a hard time with this battle, then level Keith up to      |\n|  where he can definitely deal 1500 damage within four or five turns, to be  |\n|  safe.                                                                      |\n|                                                                             |\n|    NOTE     Even though you already have it equipped for this battle, the   |\n|  ¯¯¯¯¯¯¯¯   reward for winning is the DemonSwd-Tyrving......                |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   40000 EXP   / \\   15000 Cash   /\n     '—————————————'   '——————————————'\n\nAnother scene will follow afterward. When you regain control, head back\nupstairs and leave the Blue Castle entirely.\n\nSwitch Keith out of your party with someone else, then return to Blue Castle.\nIf Keith's in your party, then the next Lottery Member will not appear.\n\nMake your way into the Castle and to the Save Point. SAVE, then head down the\neastern stairs and make your way to the throne room where you first met Keith.\nThere will be an invisible man here, much like Keith; talk to him, and he'll\nbecome the Vice Chairman (Lottery Member No. 01)!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 01_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Thief Earrings            /\n               /        (Yellow)  |  Key to Success            \\\n              /      (Turquoise)  |  Seal of Vitality           \\\n             /           (Green)  |  Fruit of Yggdrasil          \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nThe ring here is INSANELY FAST, and there's no way to slow it down, so good\nluck! Make sure to win the Thief Earrings before continuing on; it's like the\nBrigand and Pirate Earrings combined, with no downfall! They'll allow you to\nget a 20% higher chance at treasure after battle, as well as 20% more Cash! If\nyou don't win it, reload your last save and try again. Remember, you need to\nwin something from each member at least once!\n\nThat's it for here. On to the next quest!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

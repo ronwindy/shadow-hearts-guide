@@ -1,0 +1,42 @@
+{
+  "id": "w-1-10",
+  "code": "[W-1-10]",
+  "title": "Asia Side Quests",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-1-09",
+      "code": "[W-1-09]",
+      "title": "Shanghai, Huayuan (2)",
+      "file": "sections/w-1-09-shanghai-huayuan-2.json"
+    },
+    "next": {
+      "id": "w-s-01",
+      "code": "[W-S-01]",
+      "title": "Yuri's Level 1 Fusions",
+      "file": "sections/w-s-01-yuri-s-level-1-fusions.json"
+    }
+  },
+  "char_count": 1149,
+  "line_count": 28,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n   Shadow Hearts   |                                           Asia Side Quests\n     [W-1-10]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n[W-S-01] Yuri's Level 1 Fusions\n         - Enough Soul Energy needs to be acquired to accumulate the rest of\n           Yuri's level 1 Fusions. Luckily, we can revisit a dungeon that has\n           all we need.\n\n\n[W-S-02] Kowloon Fortress\n         - What happened to Wugui? As long as you answered the prompts\n           correctly as Alice in Kuihai Tower, you can go to Kowloon Fortress\n           to find out. This is the ONLY time that you can do this quest!\n\n\n[W-S-03] Mr. Zhen's Pit Fight\n         - Mr. Zhen has an array of monsters for Yuri to fight, with a very\n           memorable prize for him when the Pit Fight is completed. You'll\n           definitely want it. This is the LAST OPPORTUNITY to do this quest!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

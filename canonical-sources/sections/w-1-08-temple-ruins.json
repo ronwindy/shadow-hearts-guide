@@ -1,0 +1,950 @@
+{
+  "id": "w-1-08",
+  "code": "[W-1-08]",
+  "title": "Temple Ruins",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-1-07",
+      "code": "[W-1-07]",
+      "title": "Shanghai, Huayuan (1)",
+      "file": "sections/w-1-07-shanghai-huayuan-1.json"
+    },
+    "next": {
+      "id": "w-1-09",
+      "code": "[W-1-09]",
+      "title": "Shanghai, Huayuan (2)",
+      "file": "sections/w-1-09-shanghai-huayuan-2.json"
+    }
+  },
+  "char_count": 25755,
+  "line_count": 448,
+  "overview": {
+    "save_points": [
+      "Corridor (Outside)",
+      "Samsara Pavilion (Trial Entrance)",
+      "Dan Tian Court (End of Trial 1)",
+      "Jiang Palace (End of Trial 2)",
+      "Nu Wan Palace (End of Trial 3)",
+      "|"
+    ],
+    "lottery": [
+      "Lottery Member No. 11 (Master Xiaofang)"
+    ],
+    "items": [
+      "Lottery Ticket",
+      "Silver Hourglass",
+      "TalismanOfMercy",
+      "Thera Seed",
+      "Tent",
+      "Gold Hourglass",
+      "Bronze Arrowhead",
+      "Witch's Broth",
+      "TeaOfTheHealer",
+      "Thera Seed",
+      "W.Tiger Hair",
+      "Mana Seed",
+      "Bronze Dagger",
+      "Soul Benediction",
+      "TalismanOfMercy",
+      "Seal of Wisdom",
+      "Mana Seed",
+      "Pure Seed",
+      "Tent",
+      "Fruit of Yggdrasil",
+      "B.Tortoise Fang"
+    ],
+    "equipment": [
+      "Bell Bracelet",
+      "Leonardo's Bear",
+      "Western Belt",
+      "Studded Cap",
+      "Voodoo Doll"
+    ],
+    "valuables": [
+      "Wood Token"
+    ]
+  },
+  "items": [
+    "Lottery Ticket",
+    "Silver Hourglass",
+    "TalismanOfMercy",
+    "Thera Seed",
+    "Tent",
+    "Gold Hourglass",
+    "Bronze Arrowhead",
+    "Witch's Broth",
+    "TeaOfTheHealer",
+    "Thera Seed",
+    "W.Tiger Hair",
+    "Mana Seed",
+    "Bronze Dagger",
+    "Soul Benediction",
+    "TalismanOfMercy",
+    "Seal of Wisdom",
+    "Mana Seed",
+    "Pure Seed",
+    "Tent",
+    "Fruit of Yggdrasil",
+    "B.Tortoise Fang",
+    "Bell Bracelet",
+    "Leonardo's Bear",
+    "Western Belt",
+    "Studded Cap",
+    "Voodoo Doll",
+    "Wood Token"
+  ],
+  "enemies": [
+    {
+      "number": "#024",
+      "name": "Python",
+      "hp": 40,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#025",
+      "name": "Sea Gremlin",
+      "hp": 70,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#026",
+      "name": "Xieshi",
+      "hp": 530,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Inflicts Silence"
+    },
+    {
+      "number": "#027",
+      "name": "Raging Spirit",
+      "hp": 38,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#028",
+      "name": "Puppet Guard",
+      "hp": 45,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#029",
+      "name": "Baigu",
+      "hp": 380,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Inflicts Paralysis"
+    },
+    {
+      "number": "#030",
+      "name": "Succubus Queen",
+      "hp": 60,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Confusion"
+    },
+    {
+      "number": "#031",
+      "name": "Brain Sucker",
+      "hp": 40,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#032",
+      "name": "Qinggu",
+      "hp": 600,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#033",
+      "name": "Yamaraja: War",
+      "hp": 840,
+      "class": "Dark",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Instant Death, S-Atk Resistant"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: War",
+      "enemies": [
+        {
+          "name": "Yamaraja: War",
+          "hp": 840,
+          "class": "Dark",
+          "drop": "R.Phoenix Talon"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 17
+        },
+        {
+          "name": "Margarete",
+          "level": 16
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 15
+        }
+      ],
+      "exp": 2000,
+      "cash": 5400,
+      "strategy": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful\nonly as a healer. He also uses the Game of Death, just like Wugui; if you\ndon't have those Leonardo's Bears equipped to everyone, they'll have a\nchance to instantly kill you. His Nightmare attack will hit the entire\nparty for a lot of damage, so make sure heal afterward. The only other\nthing he does is a hellacious physical attack that'll hit for major\ndamage. Once he starts using Nightmare repeatedly, you could be in a bit\nof trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. Margarete should be\nattacking normally, but having her jump in to use Thera Seeds if needed,\nand Zhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Yamaraja: War",
+    "enemies": [
+      {
+        "name": "Yamaraja: War",
+        "hp": 840,
+        "class": "Dark",
+        "drop": "R.Phoenix Talon"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 17
+      },
+      {
+        "name": "Margarete",
+        "level": 16
+      },
+      {
+        "name": "Zhuzhen",
+        "level": 15
+      }
+    ],
+    "exp": 2000,
+    "cash": 5400,
+    "strategy": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful\nonly as a healer. He also uses the Game of Death, just like Wugui; if you\ndon't have those Leonardo's Bears equipped to everyone, they'll have a\nchance to instantly kill you. His Nightmare attack will hit the entire\nparty for a lot of damage, so make sure heal afterward. The only other\nthing he does is a hellacious physical attack that'll hit for major\ndamage. Once he starts using Nightmare repeatedly, you could be in a bit\nof trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. Margarete should be\nattacking normally, but having her jump in to use Thera Seeds if needed,\nand Zhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+  },
+  "shops": [
+    {
+      "name": "Kato Pachimon General Store",
+      "inventory": [
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "name": "Master Shoho's Allowance Job",
+      "inventory": [
+        {
+          "name": "Steel Claw",
+          "price": 2800
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Tome of the Moon",
+          "price": 3000
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Pilgrim's Staff",
+          "price": 2700
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Nanbu Pistol",
+          "price": 2900
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Studded Harness",
+          "price": 2500
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Studded Bustier",
+          "price": 2700
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 100,
+        "char_offset": [
+          6104,
+          6122
+        ],
+        "context": "Make your way into the Temple itself after a bit of dialogue. Move forward to the stage area in the center, but before examining the statue, check around the left pillar to find a chest containing a [_LOTTERY TICKET_]. Afterward, examine the statue t"
+      },
+      {
+        "name": "TALISMANOFMERCY",
+        "raw_tag": "[_TALISMANOFMERCY_]",
+        "matched_overview_item": "TalismanOfMercy",
+        "category": "items",
+        "line": 103,
+        "char_offset": [
+          6341,
+          6360
+        ],
+        "context": "Make your way into the Temple itself after a bit of dialogue. Move forward to the stage area in the center, but before examining the statue, check around the left pillar to find a chest containing a [_LOTTERY TICKET_]. Afterward, examine the statue t"
+      },
+      {
+        "name": "TENT",
+        "raw_tag": "[_TENT_]",
+        "matched_overview_item": "Tent",
+        "category": "items",
+        "line": 127,
+        "char_offset": [
+          7484,
+          7492
+        ],
+        "context": "Yuri / Zhuzhen ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ Use the Save Point, then enter the trial. Open the chest here for a [_TENT_], then continue to the next area. Continue following the path until you reach the Warp Point; press the CROSS button to warp to another ar"
+      },
+      {
+        "name": "BRONZE ARROWHEAD",
+        "raw_tag": "[_BRONZE ARROWHEAD_]",
+        "matched_overview_item": "Bronze Arrowhead",
+        "category": "items",
+        "line": 132,
+        "char_offset": [
+          7824,
+          7844
+        ],
+        "context": "Yuri / Zhuzhen ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ Use the Save Point, then enter the trial. Open the chest here for a [_TENT_], then continue to the next area. Continue following the path until you reach the Warp Point; press the CROSS button to warp to another ar"
+      },
+      {
+        "name": "TEAOFTHEHEALER",
+        "raw_tag": "[_TEAOFTHEHEALER_]",
+        "matched_overview_item": "TeaOfTheHealer",
+        "category": "items",
+        "line": 139,
+        "char_offset": [
+          8256,
+          8274
+        ],
+        "context": "Xiaofang is here this time, so feel free to buy some items if you like, then head north to the next area. Continue north to an empty chest, then keep right on going to the next screen. There'll be a full chest here this time, so grab the [_TEAOFTHEHE"
+      },
+      {
+        "name": "W.TIGER HAIR",
+        "raw_tag": "[_W.TIGER HAIR_]",
+        "matched_overview_item": "W.Tiger Hair",
+        "category": "items",
+        "line": 140,
+        "char_offset": [
+          8372,
+          8388
+        ],
+        "context": "Xiaofang is here this time, so feel free to buy some items if you like, then head north to the next area. Continue north to an empty chest, then keep right on going to the next screen. There'll be a full chest here this time, so grab the [_TEAOFTHEHE"
+      },
+      {
+        "name": "BRONZE DAGGER",
+        "raw_tag": "[_BRONZE DAGGER_]",
+        "matched_overview_item": "Bronze Dagger",
+        "category": "items",
+        "line": 142,
+        "char_offset": [
+          8510,
+          8527
+        ],
+        "context": "Xiaofang is here this time, so feel free to buy some items if you like, then head north to the next area. Continue north to an empty chest, then keep right on going to the next screen. There'll be a full chest here this time, so grab the [_TEAOFTHEHE"
+      },
+      {
+        "name": "TALISMANOFMERCY",
+        "raw_tag": "[_TALISMANOFMERCY_]",
+        "matched_overview_item": "TalismanOfMercy",
+        "category": "items",
+        "line": 147,
+        "char_offset": [
+          8763,
+          8782
+        ],
+        "context": "Make your way south to the next area, opening an empty chest in this area. Continue west to the next area to another fork. Head south first, opening the chest here for a whole lot of NOTHING, then head south to the next screen for a [_TALISMANOFMERCY"
+      },
+      {
+        "name": "MANA SEED",
+        "raw_tag": "[_MANA SEED_]",
+        "matched_overview_item": "Mana Seed",
+        "category": "items",
+        "line": 150,
+        "char_offset": [
+          8913,
+          8926
+        ],
+        "context": "Open the chest here for a [_MANA SEED_], then take the western path from this room to find a [_BELL BRACELET_], which you should immediately equip to Zhuzhen. Go back to the fork one last time and head north to the next screen. If you like, head one "
+      },
+      {
+        "name": "BELL BRACELET",
+        "raw_tag": "[_BELL BRACELET_]",
+        "matched_overview_item": "Bell Bracelet",
+        "category": "equipment",
+        "line": 151,
+        "char_offset": [
+          8980,
+          8997
+        ],
+        "context": "Open the chest here for a [_MANA SEED_], then take the western path from this room to find a [_BELL BRACELET_], which you should immediately equip to Zhuzhen. Go back to the fork one last time and head north to the next screen. If you like, head one "
+      },
+      {
+        "name": "TENT",
+        "raw_tag": "[_TENT_]",
+        "matched_overview_item": "Tent",
+        "category": "items",
+        "line": 212,
+        "char_offset": [
+          12417,
+          12425
+        ],
+        "context": "Use the Save Point, then enter the trial. Open the chest here for a [_TENT_], then continue to the next area. The west and east paths lead to dead-ends, so continue north to a green Warp Point that'll take you to the next area."
+      },
+      {
+        "name": "B.TORTOISE FANG",
+        "raw_tag": "[_B.TORTOISE FANG_]",
+        "matched_overview_item": "B.Tortoise Fang",
+        "category": "items",
+        "line": 217,
+        "char_offset": [
+          12711,
+          12730
+        ],
+        "context": "Move west two areas to a fork. Open the empty chest here if you like, then take the northern path to find another chest containing a [_B.TORTOISE FANG_]. Ignore the southern path, taking the western path instead to the next screen. Ignore the fork to"
+      },
+      {
+        "name": "WESTERN BELT",
+        "raw_tag": "[_WESTERN BELT_]",
+        "matched_overview_item": "Western Belt",
+        "category": "equipment",
+        "line": 224,
+        "char_offset": [
+          13127,
+          13143
+        ],
+        "context": "Xiaofang's here if you need him. The next screen to the east has a fork; make your way south, then south again to another fork. Open the chest to the south for a [_WESTERN BELT_], then continue south to the next area, which is a dead- end containing "
+      },
+      {
+        "name": "VOODOO DOLL",
+        "raw_tag": "[_VOODOO DOLL_]",
+        "matched_overview_item": "Voodoo Doll",
+        "category": "equipment",
+        "line": 225,
+        "char_offset": [
+          13217,
+          13232
+        ],
+        "context": "Xiaofang's here if you need him. The next screen to the east has a fork; make your way south, then south again to another fork. Open the chest to the south for a [_WESTERN BELT_], then continue south to the next area, which is a dead- end containing "
+      },
+      {
+        "name": "SILVER HOURGLASS",
+        "raw_tag": "[_SILVER HOURGLASS_]",
+        "matched_overview_item": "Silver Hourglass",
+        "category": "items",
+        "line": 230,
+        "char_offset": [
+          13484,
+          13504
+        ],
+        "context": "Head back to the last screen and take the eastern path to be at a four-way fork. Ignore the southern path and take the eastern path, opening an empty treasure chest in the next area. Continue along to the next area for another chest; this one has a ["
+      },
+      {
+        "name": "THERA SEED",
+        "raw_tag": "[_THERA SEED_]",
+        "matched_overview_item": "Thera Seed",
+        "category": "items",
+        "line": 236,
+        "char_offset": [
+          13855,
+          13869
+        ],
+        "context": "At this four-way fork, open the chest for an extra little bit of nothing. Ignore the northern path, unless you want explore the area and open an empty chest at a dead-end. Head west first, continuing west once more to a fork. Open the empty chest her"
+      },
+      {
+        "name": "GOLD HOURGLASS",
+        "raw_tag": "[_GOLD HOURGLASS_]",
+        "matched_overview_item": "Gold Hourglass",
+        "category": "items",
+        "line": 239,
+        "char_offset": [
+          14007,
+          14025
+        ],
+        "context": "Take the eastern path, opening the chest here for a [_GOLD HOURGLASS_]. Make your way east, following the path through two screens to the last chest in the section, a [_WITCH'S BROTH_]. Head north and step on the red Warp Point to take you to the nex"
+      },
+      {
+        "name": "WITCH'S BROTH",
+        "raw_tag": "[_WITCH'S BROTH_]",
+        "matched_overview_item": "Witch's Broth",
+        "category": "items",
+        "line": 241,
+        "char_offset": [
+          14122,
+          14139
+        ],
+        "context": "Take the eastern path, opening the chest here for a [_GOLD HOURGLASS_]. Make your way east, following the path through two screens to the last chest in the section, a [_WITCH'S BROTH_]. Head north and step on the red Warp Point to take you to the nex"
+      },
+      {
+        "name": "THERA SEED",
+        "raw_tag": "[_THERA SEED_]",
+        "matched_overview_item": "Thera Seed",
+        "category": "items",
+        "line": 298,
+        "char_offset": [
+          17008,
+          17022
+        ],
+        "context": "Move north, where you'll find even more of nothing in a chest. Ignore the eastern path at this fork, taking the north path to a chest containing a [_THERA SEED_]. At this four-way fork, head east first, opening the chest here for a [_MANA SEED_]. Go "
+      },
+      {
+        "name": "MANA SEED",
+        "raw_tag": "[_MANA SEED_]",
+        "matched_overview_item": "Mana Seed",
+        "category": "items",
+        "line": 299,
+        "char_offset": [
+          17093,
+          17106
+        ],
+        "context": "Move north, where you'll find even more of nothing in a chest. Ignore the eastern path at this fork, taking the north path to a chest containing a [_THERA SEED_]. At this four-way fork, head east first, opening the chest here for a [_MANA SEED_]. Go "
+      },
+      {
+        "name": "SOUL BENEDICTION",
+        "raw_tag": "[_SOUL BENEDICTION_]",
+        "matched_overview_item": "Soul Benediction",
+        "category": "items",
+        "line": 301,
+        "char_offset": [
+          17242,
+          17262
+        ],
+        "context": "Move north, where you'll find even more of nothing in a chest. Ignore the eastern path at this fork, taking the north path to a chest containing a [_THERA SEED_]. At this four-way fork, head east first, opening the chest here for a [_MANA SEED_]. Go "
+      },
+      {
+        "name": "LEONARDO'S BEAR",
+        "raw_tag": "[_LEONARDO'S BEAR_]",
+        "matched_overview_item": "Leonardo's Bear",
+        "category": "equipment",
+        "line": 307,
+        "char_offset": [
+          17607,
+          17626
+        ],
+        "context": "At the fork here, the northern path is a dead-end, so take the eastern path, opening the empty chest on the next screen. South leads back to the four-way fork, so continue east two screens to another fork. South here also leads back to the four-way f"
+      },
+      {
+        "name": "SEAL OF WISDOM",
+        "raw_tag": "[_SEAL OF WISDOM_]",
+        "matched_overview_item": "Seal of Wisdom",
+        "category": "items",
+        "line": 312,
+        "char_offset": [
+          17880,
+          17898
+        ],
+        "context": "Xiaofang will be here once again if you need to shop. Go west to a fork; ignore the path to the south and head west to a four-way fork. Make your way north first, as it leads to a dead-end with a [_SEAL OF WISDOM_] at the end. Ignore the southern pat"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 11",
+        "raw_tag": "[_LOTTERY MEMBER NO. 11_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 321,
+        "char_offset": [
+          18466,
+          18491
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 11_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "PURE SEED",
+        "raw_tag": "[_PURE SEED_]",
+        "matched_overview_item": "Pure Seed",
+        "category": "items",
+        "line": 341,
+        "char_offset": [
+          19682,
+          19695
+        ],
+        "context": "Go back north to the four-way intersection with the empty chest. Ignore the northern path and head west instead to another fork. Head south first, opening the chest here for a [_PURE SEED_], then head south one more screen for a [_WOOD TOKEN_]. Conti"
+      },
+      {
+        "name": "WOOD TOKEN",
+        "raw_tag": "[_WOOD TOKEN_]",
+        "matched_overview_item": "Wood Token",
+        "category": "valuables",
+        "line": 342,
+        "char_offset": [
+          19735,
+          19749
+        ],
+        "context": "Go back north to the four-way intersection with the empty chest. Ignore the northern path and head west instead to another fork. Head south first, opening the chest here for a [_PURE SEED_], then head south one more screen for a [_WOOD TOKEN_]. Conti"
+      },
+      {
+        "name": "STUDDED CAP",
+        "raw_tag": "[_STUDDED CAP_]",
+        "matched_overview_item": "Studded Cap",
+        "category": "equipment",
+        "line": 343,
+        "char_offset": [
+          19861,
+          19876
+        ],
+        "context": "Go back north to the four-way intersection with the empty chest. Ignore the northern path and head west instead to another fork. Head south first, opening the chest here for a [_PURE SEED_], then head south one more screen for a [_WOOD TOKEN_]. Conti"
+      },
+      {
+        "name": "FRUIT OF YGGDRASIL",
+        "raw_tag": "[_FRUIT OF YGGDRASIL_]",
+        "matched_overview_item": "Fruit of Yggdrasil",
+        "category": "items",
+        "line": 395,
+        "char_offset": [
+          22269,
+          22291
+        ],
+        "context": "After the battle, your party will reunite. MAKE SURE TO SAVE, then go into the door Xiaofang unlocks. Watch a long series of events, where you'll receive a [_FRUIT OF YGGDRASIL_], Alice will temporarily leave your party, and you'll regain control bac"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 93,
+        "char_offset": [
+          5633,
+          5905
+        ],
+        "text": "The Temple Ruins actually have an enemy of every class here, so if for some reason you don't have all of the level 1 Fusions like I recommended earlier, make sure to use this place to get enough Soul Energy to get the Fusions."
+      },
+      {
+        "type": "NOTE",
+        "line": 108,
+        "char_offset": [
+          6557,
+          6820
+        ],
+        "text": "The Courier Subordinate has Leonardo's Bears for sale. You will find two here in the dungeon, but make ABSOLUTELY SURE that you buy one more for your active party, as the last boss here WILL use Instant Death attacks."
+      },
+      {
+        "type": "NOTE",
+        "line": 119,
+        "char_offset": [
+          7175,
+          7320
+        ],
+        "text": "Xiaofang has a shop as well. As I mentioned before, make sure to buy an additional Leonardo's Bear if you haven't already."
+      },
+      {
+        "type": "NOTE",
+        "line": 122,
+        "char_offset": [
+          7321,
+          7376
+        ],
+        "text": "CLEAR YOUR MALICE BEFORE STARTING."
+      },
+      {
+        "type": "NOTE",
+        "line": 159,
+        "char_offset": [
+          9453,
+          9716
+        ],
+        "text": "Make sure that Zhuzhen is at least level 12 and has the NourishingPotion spell learned so that he has healing capabilities. Also, you should invest in a second Bell Bracelet for the upcoming battle to prevent Silence."
+      },
+      {
+        "type": "NOTE",
+        "line": 207,
+        "char_offset": [
+          12059,
+          12349
+        ],
+        "text": "Monsters defeated while Yuri isn't in the party DOES count toward his Soul Energy, so if you're wanting the Light Fusion, you can fight plenty of Raging Spirits here to get it. Also, the Malice meter will not build when Yuri's not in the party."
+      },
+      {
+        "type": "NOTE",
+        "line": 244,
+        "char_offset": [
+          14217,
+          14460
+        ],
+        "text": "If you don't have enough already, you should invest in two Rosewood Bracelets for the upcoming boss battle to prevent Paralysis. NOTE     You won't get to control Alice again after the battle, and she'll be"
+      },
+      {
+        "type": "NOTE",
+        "line": 350,
+        "char_offset": [
+          20155,
+          20248
+        ],
+        "text": "Make sure that Yuri has the Pocket Watch equipped for the next battle."
+      },
+      {
+        "type": "NOTE",
+        "line": 389,
+        "char_offset": [
+          21914,
+          22113
+        ],
+        "text": "This is the last time Xiaofang appears with a shop, so if you haven't yet, buy one Leonardo's Bear so that you will have three in the last boss battle of this area."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                               Temple Ruins\n     [W-1-08]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Corridor (Outside)\n             | Samsara Pavilion (Trial Entrance)\n             | Dan Tian Court (End of Trial 1)\n             | Jiang Palace (End of Trial 2)\n             | Nu Wan Palace (End of Trial 3)\n             |                       |\n     Lottery | [_] Lottery Member No. 11 (Master Xiaofang)\n             |\n       Items | [_] Lottery Ticket      [_] Silver Hourglass\n             | [_] TalismanOfMercy     [_] Thera Seed\n             | [_] Tent                [_] Gold Hourglass\n             | [_] Bronze Arrowhead    [_] Witch's Broth\n             | [_] TeaOfTheHealer      [_] Thera Seed\n             | [_] W.Tiger Hair        [_] Mana Seed\n             | [_] Bronze Dagger       [_] Soul Benediction\n             | [_] TalismanOfMercy     [_] Seal of Wisdom\n             | [_] Mana Seed           [_] Pure Seed\n             | [_] Tent                [_] Fruit of Yggdrasil\n             | [_] B.Tortoise Fang\n             |\n   Equipment | [_] Bell Bracelet       [_] Leonardo's Bear\n             | [_] Western Belt        [_] Studded Cap\n             | [_] Voodoo Doll\n             |\n   Valuables | [_] Wood Token\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy (* = BOSS) (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #024  [_] Python                |    40  | Fire  |\n #025  [_] Sea Gremlin           |    70  | Wind  |\n #026 ~[_] Xieshi                |   530  | Fire  | Inflicts Silence\n #027  [_] Raging Spirit         |    38  | Light |\n #028  [_] Puppet Guard          |    45  | Dark  |\n #029 ~[_] Baigu                 |   380  | Light | Inflicts Paralysis\n #030  [_] Succubus Queen        |    60  | Water | Inflicts Confusion\n #031  [_] Brain Sucker          |    40  | Earth |\n #032 ~[_] Qinggu                |   600  | Water | Inflicts Ring anomalies\n #033 *[_] Yamaraja: War         |   840  | Dark  | Inflicts Instant Death,\n                                 |        |       |    S-Atk Resistant\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |            -$-   Kato Pachimon General Store   -$-            |\n       |===============================v===============================|\n       | Leather Cap         -     600 | Pure Leaf           -     230 |\n       | Studded Cap         -    1700 | Pure Seed           -     510 |\n       | Casual Belt         -     600 | TalismanOfLuck      -     480 |\n       | Western Belt        -    1700 | TalismanOfMercy     -     820 |\n       | Shell Bracelet      -    2770 | Mermaid's Tear      -      70 |\n       | Bone Bracelet       -    2960 | Holy Mother Bust    -      75 |\n       | Rosewood Bracelet   -    3000 | Angel's Feather     -      80 |\n       | Bell Bracelet       -    3120 | Faerie's Sigh       -      85 |\n       | Spikes              -    2810 | Phoenix Tail        -      90 |\n       | Leonardo's Bear     -    3330 | Bronze Arrowhead    -     100 |\n       | Voodoo Doll         -    5200 | Bronze Dagger       -     200 |\n       | Thera Leaf          -      50 | Silver Hourglass    -     100 |\n       | Thera Seed          -     120 | Gold Hourglass      -     200 |\n       | Mana Leaf           -     100 | Tent                -     480 |\n       | Mana Seed           -     300 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\n       .———————————————————————————————————————————————————————————————.\n       |           -$-   Master Shoho's Allowance Job   -$-            |\n       |===============================v===============================|\n       | Steel Claw          -    2800 | Thera Leaf          -      50 |\n       | Tome of the Moon    -    3000 | Thera Seed          -     120 |\n       | Pilgrim's Staff     -    2700 | Mana Leaf           -     100 |\n       | Nanbu Pistol        -    2900 | Mana Seed           -     300 |\n       | Studded Harness     -    2500 | Pure Leaf           -     230 |\n       | Studded Bustier     -    2700 | Pure Seed           -     510 |\n       | Leather Cap         -     600 | TalismanOfLuck      -     480 |\n       | Studded Cap         -    1700 | TalismanOfMercy     -     820 |\n       | Casual Belt         -     600 | Mermaid's Tear      -      70 |\n       | Western Belt        -    1700 | Holy Mother Bust    -      75 |\n       | Shell Bracelet      -    2770 | Angel's Feather     -      80 |\n       | Bone Bracelet       -    2960 | Faerie's Sigh       -      85 |\n       | Rosewood Bracelet   -    3000 | Phoenix Tail        -      90 |\n       | Bell Bracelet       -    3120 | Bronze Arrowhead    -     100 |\n       | Spikes              -    2810 | Bronze Dagger       -     200 |\n       | Leonardo's Bear     -    3330 | Silver Hourglass    -     100 |\n       | Voodoo Doll         -    5200 | Gold Hourglass      -     200 |\n       |                               | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n  NOTE     The Temple Ruins actually have an enemy of every class here, so if\n¯¯¯¯¯¯¯¯   for some reason you don't have all of the level 1 Fusions like I\n           recommended earlier, make sure to use this place to get enough\n           Soul Energy to get the Fusions.\n\nMake your way into the Temple itself after a bit of dialogue. Move forward to\nthe stage area in the center, but before examining the statue, check around the\nleft pillar to find a chest containing a [_LOTTERY TICKET_]. Afterward, examine\nthe statue to have Zhuzhen try to remember the rites to unlock the temple's\nentrance. Make your way west to the next area, then continue along to find a\nSave Point and a chest; open the chest for a [_TALISMANOFMERCY_]. Use the Save\nPoint, and talk both the Smuggler Boss, as well as the Courier Subordinate, who\nyou can do some shopping with, if needed. After doing that, go back and talk to\nZhuzhen to continue.\n\n  NOTE     The Courier Subordinate has Leonardo's Bears for sale. You will find\n¯¯¯¯¯¯¯¯   two here in the dungeon, but make ABSOLUTELY SURE that you buy one\n           more for your active party, as the last boss here WILL use\n           Instant Death attacks.\n\nZhuzhen will unlock the passage, so go down the stairs to the next area. Follow\nthe path and you'll arrive in a small room with a Save Point and two doors.\nAfter some dialogue, your party will be split into two groups; Yuri and\nZhuzhen, and Alice and Margarete. Your items will also be sealed in battle, so\nmake sure to do any healing outside of battle.\n\n  NOTE     Xiaofang has a shop as well. As I mentioned before, make sure to buy\n¯¯¯¯¯¯¯¯   an additional Leonardo's Bear if you haven't already.\n\n  NOTE     CLEAR YOUR MALICE BEFORE STARTING.\n¯¯¯¯¯¯¯¯\n\n   Yuri / Zhuzhen\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nUse the Save Point, then enter the trial. Open the chest here for a [_TENT_],\nthen continue to the next area. Continue following the path until you reach the\nWarp Point; press the CROSS button to warp to another area. Move east to the\nnext screen, then east to another, where you'll find an empty treasure chest.\nKeep going to the next screen, where you'll be at a fork in the path with a\nchest containing a [_BRONZE ARROWHEAD_] inside. Ignore the north and east paths\nsince they lead to each other, then take the western path to a yellow Warp\nPoint, using it to warp to the next section of the maze.\n\nXiaofang is here this time, so feel free to buy some items if you like, then\nhead north to the next area. Continue north to an empty chest, then keep right\non going to the next screen. There'll be a full chest here this time, so grab\nthe [_TEAOFTHEHEALER_] out of it and keep going. At the fork here, take the top\neastern path first, where you'll find a [_W.TIGER HAIR_]. Back at the fork,\nnorth leads to a dead-end, so take the lower western path to find yet another\nchest, this time with a [_BRONZE DAGGER_].\n\nMake your way south to the next area, opening an empty chest in this area.\nContinue west to the next area to another fork. Head south first, opening the\nchest here for a whole lot of NOTHING, then head south to the next screen for a\n[_TALISMANOFMERCY_]. Ignore the path to the west and head back to the last\nfork, taking the north path to the next screen.\n\nOpen the chest here for a [_MANA SEED_], then take the western path from this\nroom to find a [_BELL BRACELET_], which you should immediately equip to\nZhuzhen. Go back to the fork one last time and head north to the next screen.\nIf you like, head one screen east and open the empty chest here, otherwise,\nignore that entire direction, as it leads to the last area I had you ignore.\nHead west to the next area, then north at the fork here (since south is a dead-\nend), and you'll finally come across a red Warp Point that'll take you to the\nnext section of the maze.\n\n  NOTE     Make sure that Zhuzhen is at least level 12 and has the\n¯¯¯¯¯¯¯¯   NourishingPotion spell learned so that he has healing capabilities.\n           Also, you should invest in a second Bell Bracelet for the upcoming\n           battle to prevent Silence.\n\nTalk/shop with Xiaofang if needed, then head all the way north until you reach\na room. Use the Save Point, then examine the altar to find a glowing gem. Do\nyou wish to put your hand in front of it?\n\n————————————————————————————\n   [1] I'm not ready yet.\n   [2] Go for it!\n————————————————————————————\n\nChoose 2, and you'll be thrown into a sub-boss battle.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Xieshi                |   530 HP  | Class: Fire  | [_] Jade Lariat          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  His Flaming Arm of Death spell will hit your party for a decent amount of  |\n|  damage, but also can Silence your party, so having Bell Bracelets          |\n|  equipped definitely helps a ton. You don't want to be stuck with NO        |\n|  healing abilities at all!                                                  |\n|                                                                             |\n|  I strongly recommend fusing Yuri in the Man Dragon Fusion if you have it,  |\n|  as not only is the enemy fire-based, but you'll be able to heal yourself   |\n|  in a pinch, if need be. Have Yuri use the Flash Flood skill repeatedly,    |\n|  and it should do massive damage each round. If you don't have Man Dragon,  |\n|  then fuse into Raging Tiger and cast Flying Stones to do some decent       |\n|  damage.                                                                    |\n|                                                                             |\n|  Zhuzhen should be healing pretty much the entire time. If he does have a   |\n|  free round, have him use Ogre Flamedance, since it'll still do some okay   |\n|  damage, even though the boss is fire-based.                                |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01600 EXP   / \\   04200 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, control will switch over to the ladies. This time, your\nSpecial Skills will be sealed, so no magic. Damn cat......\n\n\n   Alice / Margarete\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n  NOTE     Monsters defeated while Yuri isn't in the party DOES count toward\n¯¯¯¯¯¯¯¯   his Soul Energy, so if you're wanting the Light Fusion, you can\n           fight plenty of Raging Spirits here to get it. Also, the Malice\n           meter will not build when Yuri's not in the party.\n\nUse the Save Point, then enter the trial. Open the chest here for a [_TENT_],\nthen continue to the next area. The west and east paths lead to dead-ends, so\ncontinue north to a green Warp Point that'll take you to the next area.\n\nMove west two areas to a fork. Open the empty chest here if you like, then take\nthe northern path to find another chest containing a [_B.TORTOISE FANG_].\nIgnore the southern path, taking the western path instead to the next screen.\nIgnore the fork to the north as well, as it leads to the last area, and make\nyour way west and south, using the yellow Warp Point to go to the next area.\n\nXiaofang's here if you need him. The next screen to the east has a fork; make\nyour way south, then south again to another fork. Open the chest to the south\nfor a [_WESTERN BELT_], then continue south to the next area, which is a dead-\nend containing a [_VOODOO DOLL_].\n\nHead back to the last screen and take the eastern path to be at a four-way\nfork. Ignore the southern path and take the eastern path, opening an empty\ntreasure chest in the next area. Continue along to the next area for another\nchest; this one has a [_SILVER HOURGLASS_]. Keep going to the next area.\n\nAt this four-way fork, open the chest for an extra little bit of nothing.\nIgnore the northern path, unless you want explore the area and open an empty\nchest at a dead-end. Head west first, continuing west once more to a fork. Open\nthe empty chest here if you like, then move north, opening the chest in this\narea for a [_THERA SEED_]. Make your way back to the four-way fork by going\nback south once, then east twice.\n\nTake the eastern path, opening the chest here for a [_GOLD HOURGLASS_]. Make\nyour way east, following the path through two screens to the last chest in the\nsection, a [_WITCH'S BROTH_]. Head north and step on the red Warp Point to take\nyou to the next section.\n\n  NOTE     If you don't have enough already, you should invest in two\n¯¯¯¯¯¯¯¯   Rosewood Bracelets for the upcoming boss battle to prevent\n           Paralysis.\n\n  NOTE     You won't get to control Alice again after the battle, and she'll be\n¯¯¯¯¯¯¯¯   temporarily unavailable for a while, so make sure she doesn't have\n           any equipment on that you may need.\n\nXiaofang's here yet again. Shop if you like, then head north until you reach\nyour destination. Use the Save Point, then examine the altar to find a glowing\ngem. Do you wish to put your hand in front of it?\n\n————————————————————————————\n   [1] Not yet.\n   [2] I'll do it anyway!\n————————————————————————————\n\nChoose 2, and you'll be thrown into a sub-boss battle.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Baigu                 |   380 HP  | Class: Light | [_] Coral Lariat         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  His Shining Arm of Death spell will hit your party for a decent amount of  |\n|  damage, but also can Paralyze your party, so having Rosewood Bracelets     |\n|  equipped definitely helps a ton. You don't want to be stuck with NO        |\n|  healing abilities at all!                                                  |\n|                                                                             |\n|  Not much of a strategy here, since there's only one thing you can do:      |\n|  Attack. Have Alice be the preferred healer, using Thera Seeds and such,    |\n|  since her attack is the weakest. Keep hammering away, and as long as you   |\n|  stay healed, Baigu will eventually fall.                                   |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01600 EXP   / \\   04200 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, control will switch back over to the guys. This time, BOTH\nyour Items and Special Skills will be sealed, so NOTHING but attacks... Damn\ncat......\n\n\n   Yuri / Zhuzhen\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nEnter the next part of the trial and open the chest for a tent, then move on\ntwo screens to the north to be at a fork. Ignore the path to the west, unless\nyou want to open an empty chest, then continue east, following the path through\nthis screen and to another with a fork. East leads to a dead-end, so keep going\nnorth to a green Warp Point that will take you to the next area.\n\nMove north, where you'll find even more of nothing in a chest. Ignore the\neastern path at this fork, taking the north path to a chest containing a\n[_THERA SEED_]. At this four-way fork, head east first, opening the chest here\nfor a [_MANA SEED_]. Go back and take the western path next to another fork.\nIgnore the southern path and head north instead, opening the chest here for a\n[_SOUL BENEDICTION_].\n\nAt the fork here, the northern path is a dead-end, so take the eastern path,\nopening the empty chest on the next screen. South leads back to the four-way\nfork, so continue east two screens to another fork. South here also leads back\nto the four-way fork, so keep going east until you reach the last section of\nthis area. Open the chest for a [_LEONARDO'S BEAR_], then use the yellow Warp\nPoint to go to the next area.\n\nXiaofang will be here once again if you need to shop. Go west to a fork; ignore\nthe path to the south and head west to a four-way fork. Make your way north\nfirst, as it leads to a dead-end with a [_SEAL OF WISDOM_] at the end. Ignore\nthe southern path and take the western path, which leads to another four-way\nfork with an empty chest near the bottom of the screen. Take the southern path\nnow, ignoring the eastern path at the next fork (since it leads back to the\nother four-way fork,) and keep going south. Keep following it to a dead-end\nwith Xiaofang. Instead of a shop, this time Xiaofang is a Lottery Member!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 11_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Flash Badge               /\n               /        (Yellow)  |  Kirin Scale               \\\n              /      (Turquoise)  |  Priest's Wine              \\\n             /           (Green)  |  Pure Seed                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nThe ring here moves fast, so remember, equipping the Pocket Watch will make it\neasier to hit the areas! Make sure to win the Flash Badge before continuing on;\nit increases your agility by 25 points, but it makes your indicator on your\nJudgment Ring spin twice as fast! If you don't win it, reload your last save\nand try again. Remember, you need to win something from each member at least\nonce!\n\nGo back north to the four-way intersection with the empty chest. Ignore the\nnorthern path and head west instead to another fork. Head south first, opening\nthe chest here for a [_PURE SEED_], then head south one more screen for a\n[_WOOD TOKEN_]. Continuing south leads to a dead-end, so go back to the last\nfork and head west, opening the chest here for a [_STUDDED CAP_]. At the last\nfork here, ignore the path to the west and move south, continuing south three\nscreens until you reach the red Warp Point that leads to the next area.\n\nTalk to Xiaofang here, and you'll find out that you need the Wood Token to\ncontinue. Luckily we already have it!\n\n  NOTE     Make sure that Yuri has the Pocket Watch equipped for the next\n¯¯¯¯¯¯¯¯   battle.\n\nHead all the way north until you reach a room. Use the Save Point, then examine\nthe altar to find a glowing gem. Look at the stone plate?\n\n————————————————————\n   [1] Sure.\n   [2] Who cares?\n————————————————————\n\nChoose 1, you'll be told one space is empty, and needs a wooden tag. Set the\nWood Token?\n\n——————————————\n   [1] No.\n   [2] Yes.\n——————————————\n\nChoose 2, and you'll be thrown into your last sub-boss battle.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Qinggu                |   600 HP  | Class: Water | [_] Leonardo's Bear      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Hopefully you equipped the Pocket Watch on Yuri so that his Judgment Ring  |\n|  is unaffected.                                                             |\n|                                                                             |\n|  No strategy at all here, since all you can do is Attack and Defend. Just   |\n|  battle back and forth until you eventually win. If you've become           |\n|  proficient with your Judgment Ring, try equipping the Flash Badge on Yuri  |\n|  so he'll get a few more turns in. If you still can't win, then you'll      ||  have to level up some more and try again.                                  |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01800 EXP   / \\   04200 Cash   /\n     '—————————————'   '——————————————'\n\n  NOTE     This is the last time Xiaofang appears with a shop, so if you\n¯¯¯¯¯¯¯¯   haven't yet, buy one Leonardo's Bear so that you will have three in\n           the last boss battle of this area.\n\nAfter the battle, your party will reunite. MAKE SURE TO SAVE, then go into the\ndoor Xiaofang unlocks. Watch a long series of events, where you'll receive a\n[_FRUIT OF YGGDRASIL_], Alice will temporarily leave your party, and you'll\nregain control back at the start of the maze.\n\nTake a moment to make sure everyone has a Leonardo's Bear equipped. Once they\ndo, attempt to leave to face the next Yamaraja.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yamaraja: War         |   840 HP  | Class: Dark  | [_] R.Phoenix Talon      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [17]     |                   |   Margarete [16]  |        |\n|        |                   |    Zhuzhen [15]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Steel Claw        | Pilgrim's Staff   | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Flare Brooch      | Studded Cap       | Studded Cap       |        |\n|        | Western Belt      | Jade Lariat       | Western Belt      |        |\n|        | Leonardo's Bear   | Leonardo's Bear   | Leonardo's Bear   |        |\n|        |                   |                   |                   |        |\n|        | Heaven's Fiend    |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful  |\n|  only as a healer. He also uses the Game of Death, just like Wugui; if you  |\n|  don't have those Leonardo's Bears equipped to everyone, they'll have a     |\n|  chance to instantly kill you. His Nightmare attack will hit the entire     |\n|  party for a lot of damage, so make sure heal afterward. The only other     |\n|  thing he does is a hellacious physical attack that'll hit for major        |\n|  damage. Once he starts using Nightmare repeatedly, you could be in a bit   |\n|  of trouble.                                                                |\n|                                                                             |\n|  Have Yuri fuse into Inferno and cast Fighting Spirit on himself, followed  |\n|  by physically attacking Yamaraja every turn. Margarete should be           |\n|  attacking normally, but having her jump in to use Thera Seeds if needed,   |\n|  and Zhuzhen should focus completely on recovery.                           |\n|                                                                             |\n|  If you're having trouble staying healed, have Yuri fuse into Heaven's      |\n|  Fiend so you have the whole party healing spell.                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   02000 EXP   / \\   05400 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle and a bit of dialogue, you'll be back in Shanghai.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

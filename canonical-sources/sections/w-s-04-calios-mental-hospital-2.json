@@ -1,0 +1,87 @@
+{
+  "id": "w-s-04",
+  "code": "[W-S-04]",
+  "title": "Calios Mental Hospital (2)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-11",
+      "code": "[W-2-11]",
+      "title": "Europe Side Quests, Part 1",
+      "file": "sections/w-2-11-europe-side-quests-part-1.json"
+    },
+    "next": {
+      "id": "w-s-05",
+      "code": "[W-S-05]",
+      "title": "Yuri's Gravestones",
+      "file": "sections/w-s-05-yuri-s-gravestones.json"
+    }
+  },
+  "char_count": 2786,
+  "line_count": 53,
+  "overview": {
+    "lottery": [
+      "Lottery Member No. 04",
+      "(Introverted Chopin)"
+    ],
+    "equipment": [
+      "Deathblade, Jiru"
+    ]
+  },
+  "items": [
+    "Deathblade, Jiru"
+  ],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "LOTTERY MEMBER NO. 04",
+        "raw_tag": "[_LOTTERY MEMBER NO. 04_]",
+        "matched_overview_item": "Lottery Member No. 04",
+        "category": "lottery",
+        "line": 20,
+        "char_offset": [
+          991,
+          1016
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 04_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "DEATHBLADE, JIRU",
+        "raw_tag": "[_DEATHBLADE, JIRU_]",
+        "matched_overview_item": "Deathblade, Jiru",
+        "category": "equipment",
+        "line": 45,
+        "char_offset": [
+          2527,
+          2547
+        ],
+        "context": "Make your way back to the innermost chamber where you fought Olga. Examine the blanket/cloth on the ground on the left side of the room to find a [_DEATHBLADE, JIRU_] for Keith."
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 36,
+        "char_offset": [
+          1942,
+          2381
+        ],
+        "text": "We'll be able to pick up an item (the Air Gravestone) soon by having Tissues on hand, so PURPOSELY lose on this ring so you can gain a Tissue. If you don't want to waste a Lottery Ticket to get the Tissues, you can get some later on by winning the Pit Fight with Margarete (once it becomes available), or from the Buggy enemies in the Cave Temple, as they will drop them."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                 Calios Mental Hospital (2)\n     [W-S-04]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n     Lottery | [_] Lottery Member No. 04\n             |     (Introverted Chopin)\n             |\n   Equipment | [_] Deathblade, Jiru\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nMake your way back through the Calios Mental Hospital until you reach the\ntorture chair, where you'll find someone in it! Talk to Introverted Chopin to\nfind out that he is a Lottery Member!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 04_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Eternity Card             /\n               /        (Yellow)  |  Seal of Force             \\\n              /      (Turquoise)  |  Mana Extract               \\\n             /           (Green)  |  Mana Root                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nNothing strange about the ring here. Make sure to win the Eternity Card here\nbefore continuing on; it's the best Guild Card, allowing you to get 50%\ndiscounts and 25% price rises! If you don't win it, reload your last save and\ntry again. Remember, you need to win something from each member at least once!\n\n  NOTE     We'll be able to pick up an item (the Air Gravestone) soon by having\n¯¯¯¯¯¯¯¯   Tissues on hand, so PURPOSELY lose on this ring so you can gain a\n           Tissue. If you don't want to waste a Lottery Ticket to get the\n           Tissues, you can get some later on by winning the Pit Fight with\n           Margarete (once it becomes available), or from the Buggy enemies in\n           the Cave Temple, as they will drop them.\n\nMake your way back to the innermost chamber where you fought Olga. Examine the\nblanket/cloth on the ground on the left side of the room to find a\n[_DEATHBLADE, JIRU_] for Keith.\n\nThat's it for Calios Mental Hospital, so off to the next task.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

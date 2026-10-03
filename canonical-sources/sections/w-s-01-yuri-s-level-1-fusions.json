@@ -1,0 +1,145 @@
+{
+  "id": "w-s-01",
+  "code": "[W-S-01]",
+  "title": "Yuri's Level 1 Fusions",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-1-10",
+      "code": "[W-1-10]",
+      "title": "Asia Side Quests",
+      "file": "sections/w-1-10-asia-side-quests.json"
+    },
+    "next": {
+      "id": "w-s-02",
+      "code": "[W-S-02]",
+      "title": "Kowloon Fortress",
+      "file": "sections/w-s-02-kowloon-fortress.json"
+    }
+  },
+  "char_count": 5209,
+  "line_count": 90,
+  "overview": {
+    "souls": [
+      "Man Dragon",
+      "Tornado",
+      "Inferno",
+      "Heaven's Fiend"
+    ]
+  },
+  "items": [
+    "Man Dragon",
+    "Tornado",
+    "Inferno",
+    "Heaven's Fiend"
+  ],
+  "enemies": [
+    {
+      "number": "#024",
+      "name": "Python",
+      "hp": 40,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#025",
+      "name": "Sea Gremlin",
+      "hp": 70,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#027",
+      "name": "Raging Spirit",
+      "hp": 38,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#028",
+      "name": "Puppet Guard",
+      "hp": 45,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#030",
+      "name": "Succubus Queen",
+      "hp": 60,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Confusion"
+    },
+    {
+      "number": "#031",
+      "name": "Brain Sucker",
+      "hp": 40,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": null,
+      "name": "Man Dragon",
+      "hp": "Varies",
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Lv. 1 Fusion (Graveyard)"
+    },
+    {
+      "number": null,
+      "name": "Inferno",
+      "hp": "Varies",
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Lv. 1 Fusion (Graveyard)"
+    },
+    {
+      "number": null,
+      "name": "Tornado",
+      "hp": "Varies",
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Lv. 1 Fusion (Graveyard)"
+    },
+    {
+      "number": null,
+      "name": "Heaven's Fiend",
+      "hp": "Varies",
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Lv. 1 Fusion (Graveyard)"
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n   Shadow Hearts   |                                     Yuri's Level 1 Fusions\n     [W-S-01]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                                 Temple Ruins\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\n_______________________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n       Souls | [_] Man Dragon          [_] Tornado\n             | [_] Inferno             [_] Heaven's Fiend\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy            (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #024  [_] Python                |    40  | Fire  |\n #025  [_] Sea Gremlin           |    70  | Wind  |\n #027  [_] Raging Spirit         |    38  | Light |\n #028  [_] Puppet Guard          |    45  | Dark  |\n #030  [_] Succubus Queen        |    60  | Water | Inflicts Confusion\n #031  [_] Brain Sucker          |    40  | Earth |\n      ~[_] Man Dragon            | Varies | Water | Lv. 1 Fusion (Graveyard)\n      ~[_] Inferno               | Varies | Fire  | Lv. 1 Fusion (Graveyard)\n      ~[_] Tornado               | Varies | Wind  | Lv. 1 Fusion (Graveyard)\n      ~[_] Heaven's Fiend        | Varies | Light | Lv. 1 Fusion (Graveyard)\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nBy now, you most likely have all of the level 1 Fusions for Yuri. If you don't,\nI STRONGLY recommend getting them now. Heck, if you feel like it, feel free to\nlevel them up to level 2, even though you won't be able to get any level 2\nFusions until a little later on.\n\nEven though the Temple Ruins \"collapsed\", for some reason you can still go back\nand go through all three of the mazes. As I mentioned before, the three areas\nof the Temple Ruins hold an enemy of each class.\n\n - If you're needing the Fire or Wind Fusions, then go through the western door\n   in the first room of the maze and fight in that area.\n\n - If you're needing the Light Fusion or want some more Dark Soul Energy, then\n   go through the eastern door in the first room of the maze and fight in that\n   area.\n\n - If you're needing the Water Fusion or want some more Earth Soul Energy, then\n   you'll need to proceed all the way through the first western maze until you\n   reach the second one. You can fight the enemies in here for those classes.\n\n - If you're wanting to grind for levels while doing this and want a challenge,\n   then you may want to go to the Kowloon Fortress. It also has an enemy of\n   each class, but they don't come in groups like they do at the Temple Ruins.\n   They are also harder, so it's up to you.\n\nOnce you have enough Soul Energy to unlock the Fusions, visit the Graveyard and\ntake each one on, one at a time.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Man Dragon            | HP Varies | Class: Water |                          |\n| Inferno               | HP Varies | Class: Fire  |                          |\n| Tornado               | HP Varies | Class: Wind  |                          |\n| Heaven's Fiend        | HP Varies | Class: Light |                          |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Rather than list each sub-boss separately, I'm covering them all in this   |\n|  one section, since each one requires basically the same strategy.          |\n|                                                                             |\n|  Each of their HP varies depending on Yuri, so if he's weaker, they'll be   |\n|  weaker as well, and vice versa.                                            |\n|                                                                             |\n|  If you have the Fusion with the class opposite of one already, fuse into   |\n|  that monster and use its highest powered magic spell against them for      |\n|  major damage. If you don't, then just fuse into the Raging Tiger and wail  |\n|  on them with normal attacks for a few rounds. Make sure to keep yourself   |\n|  healed if you fear that you'll be taken down fairly easily.                |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'\n\nOn to the next side quest! I believe that it's more beneficial to take on\nKowloon Fortress before trying Mr. Zhen's Pit Fight, so let's do that first.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

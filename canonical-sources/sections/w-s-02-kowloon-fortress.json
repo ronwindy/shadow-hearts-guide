@@ -1,0 +1,327 @@
+{
+  "id": "w-s-02",
+  "code": "[W-S-02]",
+  "title": "Kowloon Fortress",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-01",
+      "code": "[W-S-01]",
+      "title": "Yuri's Level 1 Fusions",
+      "file": "sections/w-s-01-yuri-s-level-1-fusions.json"
+    },
+    "next": {
+      "id": "w-s-03",
+      "code": "[W-S-03]",
+      "title": "Mr. Zhen's Pit Fight",
+      "file": "sections/w-s-03-mr-zhen-s-pit-fight.json"
+    }
+  },
+  "char_count": 12194,
+  "line_count": 208,
+  "overview": {
+    "save_points": [
+      "Outside of Wugui's room"
+    ],
+    "lottery": [
+      "Lottery Member No. 10 (Invincible Nee)"
+    ],
+    "items": [
+      "Mana Root",
+      "Pure Root",
+      "Seal of the Soul",
+      "Soul Benediction",
+      "Thera Root",
+      "Lottery Ticket"
+    ],
+    "equipment": [
+      "Hand Needle",
+      "Face Guard"
+    ],
+    "valuables": [
+      "Wugui Room Key"
+    ]
+  },
+  "items": [
+    "Mana Root",
+    "Pure Root",
+    "Seal of the Soul",
+    "Soul Benediction",
+    "Thera Root",
+    "Lottery Ticket",
+    "Hand Needle",
+    "Face Guard",
+    "Wugui Room Key"
+  ],
+  "enemies": [
+    {
+      "number": "#036",
+      "name": "Namida",
+      "hp": 200,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#037",
+      "name": "Speckled Creeper",
+      "hp": 250,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "P-Atk Resistant"
+    },
+    {
+      "number": "#038",
+      "name": "Happy Creeper",
+      "hp": 250,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Instant Death, S-Atk Resistant"
+    },
+    {
+      "number": "#039",
+      "name": "Blue Ogre",
+      "hp": 400,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Petrification"
+    },
+    {
+      "number": "#040",
+      "name": "Red Ogre",
+      "hp": 400,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#041",
+      "name": "Dark Judge",
+      "hp": 500,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#042",
+      "name": "Cursed Puppet",
+      "hp": 1080,
+      "class": "Dark",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Instant Death, S-Atk Resistant"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Cursed Puppet",
+      "enemies": [
+        {
+          "name": "Cursed Puppet",
+          "hp": 1080,
+          "class": "Dark",
+          "drop": "Seal of Wisdom"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 19
+        },
+        {
+          "name": "Margarete",
+          "level": 18
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 17
+        }
+      ],
+      "exp": 2000,
+      "cash": 6000,
+      "strategy": "This is basically the same battle as with Yamaraja: War, only easier. As\nwith Yamaraja: War, the Cursed Puppet will absorb all magic, making\nZhuzhen useful only as a healer. He also uses the Game of Death, just as\nusual; if you don't have those Leonardo's Bears equipped to everyone,\nthey'll have a chance to instantly kill you. His Nightmare attack will\nhit the entire party for a lot of damage, so make sure heal afterward.\nThe only other thing he does is a hellacious physical attack that'll hit\nfor major damage. Once he starts using Nightmare repeatedly, you could be\nin a bit of trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. If he has the Mind's Eye\nequipped, it won't take very long. Margarete should be attacking\nnormally, but having her jump in to use Thera Seeds if needed, and\nZhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Cursed Puppet",
+    "enemies": [
+      {
+        "name": "Cursed Puppet",
+        "hp": 1080,
+        "class": "Dark",
+        "drop": "Seal of Wisdom"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 19
+      },
+      {
+        "name": "Margarete",
+        "level": 18
+      },
+      {
+        "name": "Zhuzhen",
+        "level": 17
+      }
+    ],
+    "exp": 2000,
+    "cash": 6000,
+    "strategy": "This is basically the same battle as with Yamaraja: War, only easier. As\nwith Yamaraja: War, the Cursed Puppet will absorb all magic, making\nZhuzhen useful only as a healer. He also uses the Game of Death, just as\nusual; if you don't have those Leonardo's Bears equipped to everyone,\nthey'll have a chance to instantly kill you. His Nightmare attack will\nhit the entire party for a lot of damage, so make sure heal afterward.\nThe only other thing he does is a hellacious physical attack that'll hit\nfor major damage. Once he starts using Nightmare repeatedly, you could be\nin a bit of trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. If he has the Mind's Eye\nequipped, it won't take very long. Margarete should be attacking\nnormally, but having her jump in to use Thera Seeds if needed, and\nZhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+  },
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "LOTTERY MEMBER NO. 10",
+        "raw_tag": "[_LOTTERY MEMBER NO. 10_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 89,
+        "char_offset": [
+          4744,
+          4769
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 10_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "MANA ROOT",
+        "raw_tag": "[_MANA ROOT_]",
+        "matched_overview_item": "Mana Root",
+        "category": "items",
+        "line": 118,
+        "char_offset": [
+          6603,
+          6616
+        ],
+        "context": "When you're ready, head north to the next area within the fortress. Open the chest beside the stairs to the north for a [_MANA ROOT_], then go up the stairs and north to the next area. You'll be at a fork, having to choose to go up two different sets"
+      },
+      {
+        "name": "HAND NEEDLE",
+        "raw_tag": "[_HAND NEEDLE_]",
+        "matched_overview_item": "Hand Needle",
+        "category": "equipment",
+        "line": 123,
+        "char_offset": [
+          6993,
+          7008
+        ],
+        "context": "When you're ready, head north to the next area within the fortress. Open the chest beside the stairs to the north for a [_MANA ROOT_], then go up the stairs and north to the next area. You'll be at a fork, having to choose to go up two different sets"
+      },
+      {
+        "name": "FACE GUARD",
+        "raw_tag": "[_FACE GUARD_]",
+        "matched_overview_item": "Face Guard",
+        "category": "equipment",
+        "line": 127,
+        "char_offset": [
+          7153,
+          7167
+        ],
+        "context": "Go up the stairs and to the next screen, and in this bloody room, go up the ladder in the eastern corner; you'll find a [_FACE GUARD_] to the left up here. Once you have that, descend the ladder and check the table at the bottom of the screen to find"
+      },
+      {
+        "name": "WUGUI ROOM KEY",
+        "raw_tag": "[_WUGUI ROOM KEY_]",
+        "matched_overview_item": "Wugui Room Key",
+        "category": "valuables",
+        "line": 129,
+        "char_offset": [
+          7288,
+          7306
+        ],
+        "context": "Go up the stairs and to the next screen, and in this bloody room, go up the ladder in the eastern corner; you'll find a [_FACE GUARD_] to the left up here. Once you have that, descend the ladder and check the table at the bottom of the screen to find"
+      },
+      {
+        "name": "SEAL OF THE SOUL",
+        "raw_tag": "[_SEAL OF THE SOUL_]",
+        "matched_overview_item": "Seal of the Soul",
+        "category": "items",
+        "line": 135,
+        "char_offset": [
+          7676,
+          7696
+        ],
+        "context": "Head north and take the western stairs now, continue west to the next area, climb the stairs here to the next, then enter the door when you reach the path blocked by a striped gate. Look on the floor to the left near the westernmost barrel to find a "
+      },
+      {
+        "name": "THERA ROOT",
+        "raw_tag": "[_THERA ROOT_]",
+        "matched_overview_item": "Thera Root",
+        "category": "items",
+        "line": 137,
+        "char_offset": [
+          7827,
+          7841
+        ],
+        "context": "Head north and take the western stairs now, continue west to the next area, climb the stairs here to the next, then enter the door when you reach the path blocked by a striped gate. Look on the floor to the left near the westernmost barrel to find a "
+      },
+      {
+        "name": "PURE ROOT",
+        "raw_tag": "[_PURE ROOT_]",
+        "matched_overview_item": "Pure Root",
+        "category": "items",
+        "line": 139,
+        "char_offset": [
+          7897,
+          7910
+        ],
+        "context": "Get the [_PURE ROOT_] out of the chest here in the stairwell, then continue up to the next screen. Move southwest and cross the bridge, opening the chest on the other side for a [_SOUL BENEDICTION_]. Just above it to the left of the bridge is either "
+      },
+      {
+        "name": "SOUL BENEDICTION",
+        "raw_tag": "[_SOUL BENEDICTION_]",
+        "matched_overview_item": "Soul Benediction",
+        "category": "items",
+        "line": 141,
+        "char_offset": [
+          8067,
+          8087
+        ],
+        "context": "Get the [_PURE ROOT_] out of the chest here in the stairwell, then continue up to the next screen. Move southwest and cross the bridge, opening the chest on the other side for a [_SOUL BENEDICTION_]. Just above it to the left of the bridge is either "
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 143,
+        "char_offset": [
+          8235,
+          8253
+        ],
+        "context": "Get the [_PURE ROOT_] out of the chest here in the stairwell, then continue up to the next screen. Move southwest and cross the bridge, opening the chest on the other side for a [_SOUL BENEDICTION_]. Just above it to the left of the bridge is either "
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 146,
+        "char_offset": [
+          8337,
+          8423
+        ],
+        "text": "Make sure to equip Leonardo's Bears before entering Wugui's room!"
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                           Kowloon Fortress\n     [W-S-02]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                               Shanghai, Huayuan\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\nAs long as you answered the prompts correctly as Alice in Kuihai Tower, you can\ngo to Kowloon Fortress to find out what happened to Wugui. If you answered\ndifferently... then tough luck; you can't do this side quest.\n\nTo get to Kowloon Fortress, make your way to the docks in Huayuan in Shanghai.\nTalk to Junk-dealer Taka, the old man beside the ship, and he'll tell you that\nhe fixed your boat. Board it; you'll be asked if you want to launch the ship.\n\n———————————————————————————————————\n   [1] It'll sink, so forget it.\n   [2] Let's sail the open seas!\n———————————————————————————————————\n\nChoose 2, and a new destination will open on the World Map, and it's only\naccessible from this point: Kowloon Fortress. SAVE on the World Map before\nentering.\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                               Kowloon Fortress\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n_______________________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Outside of Wugui's room\n             |\n     Lottery | [_] Lottery Member No. 10 (Invincible Nee)\n             |\n       Items | [_] Mana Root           [_] Pure Root\n             | [_] Seal of the Soul    [_] Soul Benediction\n             | [_] Thera Root          [_] Lottery Ticket\n             |\n   Equipment | [_] Hand Needle         [_] Face Guard\n             |\n   Valuables | [_] Wugui Room Key\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                (* = BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #036  [_] Namida                |   200  | Wind  | Inflicts Ring anomalies\n #037  [_] Speckled Creeper      |   250  | Light | P-Atk Resistant\n #038  [_] Happy Creeper         |   250  | Dark  | Inflicts Instant Death,\n                                 |        |       |    S-Atk Resistant\n #039  [_] Blue Ogre             |   400  | Water | Inflicts Petrification\n #040  [_] Red Ogre              |   400  | Fire  |\n #041  [_] Dark Judge            |   500  | Earth |\n #042 *[_] Cursed Puppet         |  1080  | Dark  | Inflicts Instant Death,\n                                 |        |       |    S-Atk Resistant\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |               -$-   Tight-lipped Merchant   -$-               |\n       |===============================v===============================|\n       | Leather Cap         -     600 | TalismanOfLuck      -     480 |\n       | Studded Cap         -    1700 | TalismanOfMercy     -     820 |\n       | Casual Belt         -     600 | TalismanOfWisdom    -    1280 |\n       | Western Belt        -    1700 | Mermaid's Tear      -      70 |\n       | Zodiac Bracelet     -   10300 | Holy Mother Bust    -      75 |\n       | Cosmic Bracelet     -   11500 | Angel's Feather     -      80 |\n       | Spikes              -    2810 | Faerie's Sigh       -      85 |\n       | Leonardo's Bear     -    3330 | Imp's Fang          -      95 |\n       | Voodoo Doll         -    5200 | Phoenix Tail        -      90 |\n       | Thera Leaf          -      50 | Bronze Arrowhead    -     100 |\n       | Thera Seed          -     120 | Bronze Dagger       -     200 |\n       | Mana Leaf           -     100 | Silver Hourglass    -     100 |\n       | Mana Seed           -     300 | Gold Hourglass      -     200 |\n       | Pure Leaf           -     230 | Tent                -     480 |\n       | Pure Seed           -     510 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\nTalk to the very first person you come to, Invincible Nee. As it turns out,\nhe's a Lottery Member!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 10_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Mind's Eye                /\n               /        (Yellow)  |  Moon Swallow              \\\n              /      (Turquoise)  |  TalismanOfWisdom           \\\n             /           (Green)  |  Pure Seed                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nThe ring here moves REALLY fast. Normally, equipping the Pocket Watch would\nmake it run normally, but it has no effect this time, so it'll probably take\nyou QUITE a few tries to get this. Make sure to win the Mind's Eye before\ncontinuing on; it's arguably the best accessory in the game. It will make the\nareas on your Judgment Ring invisible, but it'll DOUBLE (yes, DOUBLE) your\nphysical attack! Paired with a Jade Lariat and weapons that have the Hit Area\nwidened on them, (or if you're just that good at Yuri's ring) Yuri becomes\nridiculously overpowered. If you don't win it, reload your last save and try\nagain. Remember, you need to win something from each member at least once!\n\nIf you talk to the Silent Peddler here, you'll find out that he also is a\nTight-lipped Merchant with goods for sale! Most notably, he has the Zodiac and\nCosmic Bracelets; the Zodiac Bracelet renders Paralysis and Petrification\nineffectual, and the Cosmic Bracelets renders Poison, Silence, and Confusion\nineffectual. These are two very useful accessories that you may want to buy if\nyou have the spare cash!\n\nWhen you're ready, head north to the next area within the fortress. Open the\nchest beside the stairs to the north for a [_MANA ROOT_], then go up the stairs\nand north to the next area. You'll be at a fork, having to choose to go up two\ndifferent sets of stairs. Go up the eastern stairs first, following the path to\nthe ground. Make your way toward the set of stairs on the right side of the\nroom, but before going up, go behind them on the back side to find a chest\ncontaining an awesome weapon for Yuri: the [_HAND NEEDLE_]. Equip it\nimmediately!\n\nGo up the stairs and to the next screen, and in this bloody room, go up the\nladder in the eastern corner; you'll find a [_FACE GUARD_] to the left up here.\nOnce you have that, descend the ladder and check the table at the bottom of the\nscreen to find the [_WUGUI ROOM KEY_]. Leave this room the way you entered, and\ncontinue back one more screen to the original fork with two sets of stairs.\n\nHead north and take the western stairs now, continue west to the next area,\nclimb the stairs here to the next, then enter the door when you reach the path\nblocked by a striped gate. Look on the floor to the left near the westernmost\nbarrel to find a [_SEAL OF THE SOUL_], then move up and right through the next\ndoor to be on the other side of the striped gate. Open the chest to your\nsoutheast for a [_THERA ROOT_], then go up the stairs here to the next area.\n\nGet the [_PURE ROOT_] out of the chest here in the stairwell, then continue up\nto the next screen. Move southwest and cross the bridge, opening the chest on\nthe other side for a [_SOUL BENEDICTION_]. Just above it to the left of the\nbridge is either a urinal or a water fountain or something... who knows. In any\ncase, examine it to find another [_LOTTERY TICKET_]. That's it for treasure, so\ngo up the stairs to the west and save your game here.\n\n  NOTE     Make sure to equip Leonardo's Bears before entering Wugui's room!\n¯¯¯¯¯¯¯¯\nWhen you're prepared, check out the door to Wugui's room to unlock it. Enter?\n\n———————————————————————————————————\n   [1] Nah, too strange-looking.\n   [2] Yeah, let's check it out!\n———————————————————————————————————\n\nWugui's room for a scene and a boss battle.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Cursed Puppet         |  1080 HP  | Class: Dark  | [_] Seal of Wisdom       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [19]     |                   |   Margarete [18]  |        |\n|        |                   |    Zhuzhen [17]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Hand Needle       | Pilgrim's Staff   | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Mind's Eye        | Face Guard        | Studded Cap       |        |\n|        | Jade Lariat       | Coral Lariat      | Western Belt      |        |\n|        | Leonardo's Bear   | Leonardo's Bear   | Leonardo's Bear   |        |\n|        |                   |                   |                   |        |\n|        | Heaven's Fiend    |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  This is basically the same battle as with Yamaraja: War, only easier. As   |\n|  with Yamaraja: War, the Cursed Puppet will absorb all magic, making        |\n|  Zhuzhen useful only as a healer. He also uses the Game of Death, just as   |\n|  usual; if you don't have those Leonardo's Bears equipped to everyone,      |\n|  they'll have a chance to instantly kill you. His Nightmare attack will     |\n|  hit the entire party for a lot of damage, so make sure heal afterward.     |\n|  The only other thing he does is a hellacious physical attack that'll hit   |\n|  for major damage. Once he starts using Nightmare repeatedly, you could be  |\n|  in a bit of trouble.                                                       |\n|                                                                             |\n|  Have Yuri fuse into Inferno and cast Fighting Spirit on himself, followed  |\n|  by physically attacking Yamaraja every turn. If he has the Mind's Eye      |\n|  equipped, it won't take very long. Margarete should be attacking           |\n|  normally, but having her jump in to use Thera Seeds if needed, and         |\n|  Zhuzhen should focus completely on recovery.                               |\n|                                                                             |\n|  If you're having trouble staying healed, have Yuri fuse into Heaven's      |\n|  Fiend so you have the whole party healing spell.                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   02000 EXP   / \\   06000 Cash   /\n     '—————————————'   '——————————————'\n\nOnce the battle is over, there'll just be a bit more dialogue, then you'll be\nfinished, and all of the monsters will be gone as well. That's it, so make your\nway back to Shanghai.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

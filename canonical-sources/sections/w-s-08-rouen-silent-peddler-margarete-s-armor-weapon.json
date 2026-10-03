@@ -1,0 +1,170 @@
+{
+  "id": "w-s-08",
+  "code": "[W-S-08]",
+  "title": "Rouen (Silent Peddler / Margarete's Armor, Weapon, &",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-07",
+      "code": "[W-S-07]",
+      "title": "The Orphanage (Emigre Manuscript / Lottery Member #3)",
+      "file": "sections/w-s-07-the-orphanage-emigre-manuscript-lottery-member-3.json"
+    },
+    "next": {
+      "id": "w-s-09",
+      "code": "[W-S-09]",
+      "title": "Blue Castle (Keith's Weapon / Lottery Member #1)",
+      "file": "sections/w-s-09-blue-castle-keith-s-weapon-lottery-member-1.json"
+    }
+  },
+  "char_count": 5484,
+  "line_count": 100,
+  "overview": {
+    "lottery": [
+      "Lottery Member No. 06 (Hooked-nose Robin)",
+      "Lottery Member No. 02 (Fake-nose Man)"
+    ],
+    "equipment": [
+      "Leather Suit",
+      "Pearl Ring",
+      "CoatOfTheAdept"
+    ]
+  },
+  "items": [
+    "Leather Suit",
+    "Pearl Ring",
+    "CoatOfTheAdept"
+  ],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [
+    {
+      "name": "Pedometer Service",
+      "inventory": [
+        {
+          "name": "Thera Extract",
+          "price": 100
+        },
+        {
+          "name": "Moon Swallow",
+          "price": 3500
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 300
+        },
+        {
+          "name": "Star Swallow",
+          "price": 5000
+        },
+        {
+          "name": "Weird Bottle",
+          "price": 800
+        },
+        {
+          "name": "Monkey Paw",
+          "price": 6500
+        },
+        {
+          "name": "Iron Clogs",
+          "price": 1500
+        },
+        {
+          "name": "Silver Hand",
+          "price": 7000
+        },
+        {
+          "name": "Flash Badge",
+          "price": 2500
+        },
+        {
+          "name": "Belt of Power",
+          "price": 8000
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "LEATHER SUIT",
+        "raw_tag": "[_LEATHER SUIT_]",
+        "matched_overview_item": "Leather Suit",
+        "category": "equipment",
+        "line": 24,
+        "char_offset": [
+          1356,
+          1372
+        ],
+        "context": "Head to the Inn and talk to the Silent Peddler here (or any Silent Peddler, for that matter.) If you have 10,000 Steps accumulated, then you will receive the [_LEATHER SUIT_], Margarete's best armor. (Margarete does NOT have to be in your active part"
+      },
+      {
+        "name": "COATOFTHEADEPT",
+        "raw_tag": "[_COATOFTHEADEPT_]",
+        "matched_overview_item": "CoatOfTheAdept",
+        "category": "equipment",
+        "line": 45,
+        "char_offset": [
+          2665,
+          2683
+        ],
+        "context": "Next, go into the room on the left in the Inn, where Meiyuan is. He has a letter for all of you; you'll then see a long scene from Shanghai, then you'll receive the [_COATOFTHEADEPT_], Zhuzhen's best armor."
+      },
+      {
+        "name": "PEARL RING",
+        "raw_tag": "[_PEARL RING_]",
+        "matched_overview_item": "Pearl Ring",
+        "category": "equipment",
+        "line": 49,
+        "char_offset": [
+          2857,
+          2871
+        ],
+        "context": "Make your way back to the church to the altar, then enter the confessional when Margarete asks you to. Watch the scene here, then you'll receive the [_PEARL RING_]. Now, go back to the Inn and SAVE YOUR GAME!"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 02",
+        "raw_tag": "[_LOTTERY MEMBER NO. 02_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 57,
+        "char_offset": [
+          3252,
+          3277
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 02_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 15,
+        "char_offset": [
+          780,
+          1198
+        ],
+        "text": "Bring Margarete with you. Since we're getting her best weapon, we'll cover her best armor as well! Also, know that Margarete does NOT have to be in your active party to receive the armor, but she does for her weapon! Finally, in regards to Margarete's Confession, you need to have obtained the Water Gravestone by giving advice to Upset John earlier."
+      },
+      {
+        "type": "NOTE",
+        "line": 27,
+        "char_offset": [
+          1474,
+          2500
+        ],
+        "text": "Now that you've received the item we've been collecting our steps the entire game for, feel free to use your remaining steps, as well as any future steps, on the items listed below. Again, I recommend getting them from the most to least expensive, unless you want to play it safe with some extra Thera Extracts! .———————————————————————————————————————————————————————————————. |                 -$-   Pedometer Service   -$-                 | |===============================v===============================| | Thera Extract       -     100 | Moon Swallow        -    3500 | | Voodoo Doll         -     300 | Star Swallow        -    5000 | | Weird Bottle        -     800 | Monkey Paw          -    6500 | | Iron Clogs          -    1500 | Silver Hand         -    7000 | | Flash Badge         -    2500 | Belt of Power       -    8000 | '———————————————————————————————'———————————————————————————————'"
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |       Rouen (Silent Peddler / Margarete's Armor, Weapon, &\n     [W-S-08]      |       Confession / Zhuzhen's Armor / Lottery Member #2)\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n     Lottery | [_] Lottery Member No. 06 (Hooked-nose Robin)\n             | [_] Lottery Member No. 02 (Fake-nose Man)\n             |\n   Equipment | [_] Leather Suit        [_] Pearl Ring\n             | [_] CoatOfTheAdept\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     Bring Margarete with you. Since we're getting her best weapon, we'll\n¯¯¯¯¯¯¯¯   cover her best armor as well! Also, know that Margarete does NOT\n           have to be in your active party to receive the armor, but she does\n           for her weapon! Finally, in regards to Margarete's Confession, you\n           need to have obtained the Water Gravestone by giving advice to\n           Upset John earlier.\n\nHead to the Inn and talk to the Silent Peddler here (or any Silent Peddler, for\nthat matter.) If you have 10,000 Steps accumulated, then you will receive the\n[_LEATHER SUIT_], Margarete's best armor. (Margarete does NOT have to be in\nyour active party to receive the armor!)\n\n  NOTE     Now that you've received the item we've been collecting our steps\n¯¯¯¯¯¯¯¯   the entire game for, feel free to use your remaining steps, as well\n           as any future steps, on the items listed below. Again, I recommend\n           getting them from the most to least expensive, unless you want to\n           play it safe with some extra Thera Extracts!\n\n       .———————————————————————————————————————————————————————————————.\n       |                 -$-   Pedometer Service   -$-                 |\n       |===============================v===============================|\n       | Thera Extract       -     100 | Moon Swallow        -    3500 |\n       | Voodoo Doll         -     300 | Star Swallow        -    5000 |\n       | Weird Bottle        -     800 | Monkey Paw          -    6500 |\n       | Iron Clogs          -    1500 | Silver Hand         -    7000 |\n       | Flash Badge         -    2500 | Belt of Power       -    8000 |\n       '———————————————————————————————'———————————————————————————————'\n\nNext, go into the room on the left in the Inn, where Meiyuan is. He has a\nletter for all of you; you'll then see a long scene from Shanghai, then you'll\nreceive the [_COATOFTHEADEPT_], Zhuzhen's best armor.\n\nMake your way back to the church to the altar, then enter the confessional when\nMargarete asks you to. Watch the scene here, then you'll receive the\n[_PEARL RING_]. Now, go back to the Inn and SAVE YOUR GAME!\n\nGo back out to the alley and talk to Hooked-nose Robin... who is now the Fake-\nnose Man! Since you took part in Margarete's Confession, he is now Lottery\nMember No. 2!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 02_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  10 Gauge                  /\n               /        (Yellow)  |  Dice of Caesar            \\\n              /      (Turquoise)  |  Seal of Strength           \\\n             /           (Green)  |  Eye of Ouroboros            \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nThe ring here moves REALLY fast. And in addition to that, the hit areas are\npretty small. Normally, equipping the Pocket Watch would make it run normally,\nbut it has no effect this time, so it'll probably take you QUITE a few tries to\nget this. This guy is special for one reason: Once you win the 10 Gauge for\nMargarete, he will revert back to Lottery Member No. 06.\n\n - The Eye of Ouroboros fully Restores MP and SP when used. You may want to get\n   a few of these, as they'll come in handy in the final battles.\n\n - The Seal of Strength increases your strength, obviously. I don't think they\n   ever really benefit your party members THAT much, so avoid getting them\n   UNLESS you've already bought all you like with your Lottery Tickets and have\n   extra to spend.\n\n - The Dice of Caesar allow some of your allies to gain 3x strength in battle,\n   but can miss some or all of your party sometimes. I avoid these just because\n   it's not a guaranteed boost in battle, but some others may find it useful.\n\n - The 10 Gauge is Margarete's best weapon; make sure to win it, but save it\n   for last. You may even want to wait on getting this until you visit the\n   remaining Lottery Members, depending on how many of these middle three items\n    you may want.\n\nIf you don't win, reload your last save and try again. Remember, you need to\nwin something from each member at least once!\n\nThat's it for here. On to the next quest!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

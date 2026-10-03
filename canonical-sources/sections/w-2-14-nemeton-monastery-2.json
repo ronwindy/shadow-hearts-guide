@@ -1,0 +1,140 @@
+{
+  "id": "w-2-14",
+  "code": "[W-2-14]",
+  "title": "Nemeton Monastery (2)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-15",
+      "code": "[W-S-15]",
+      "title": "The Good Ending (Defeating the Masks)",
+      "file": "sections/w-s-15-the-good-ending-defeating-the-masks.json"
+    },
+    "next": {
+      "id": "w-2-15",
+      "code": "[W-2-15]",
+      "title": "Europe Side Quests, Part 3",
+      "file": "sections/w-2-15-europe-side-quests-part-3.json"
+    }
+  },
+  "char_count": 6503,
+  "line_count": 112,
+  "overview": {
+    "equipment": [
+      "Seven-Eyed Mask"
+    ]
+  },
+  "items": [
+    "Seven-Eyed Mask"
+  ],
+  "enemies": [
+    {
+      "number": "#121",
+      "name": "Atman",
+      "hp": 4000,
+      "class": "None",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Uses SP Lowering, and inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Atman",
+      "enemies": [
+        {
+          "name": "Atman",
+          "hp": 4000,
+          "class": "None",
+          "drop": "Moonstone Ring"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 51
+        },
+        {
+          "name": "Alice",
+          "level": 51
+        }
+      ],
+      "exp": 50000,
+      "cash": 20000,
+      "strategy": "Atman can still kill Alice in two rounds, so make sure that she stays\nhealed. As for attacks, this time around, Atman will still use\nEradication, but it won't kill; instead, it'll just do a pretty good\namount of damage, as well as reduce SP. He can also attack normally, as\nwell as use Dragon Cry and other strong class spells for decent damage.\nHave Yuri fuse into Amon and rip into Atman with physical attacks, while\nAlice should be using Arc every round to keep their HP maxed. If for some\nreason she gets a free turn, have her cast Advent to help Yuri deal some\ndamage."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Atman",
+    "enemies": [
+      {
+        "name": "Atman",
+        "hp": 4000,
+        "class": "None",
+        "drop": "Moonstone Ring"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 51
+      },
+      {
+        "name": "Alice",
+        "level": 51
+      }
+    ],
+    "exp": 50000,
+    "cash": 20000,
+    "strategy": "Atman can still kill Alice in two rounds, so make sure that she stays\nhealed. As for attacks, this time around, Atman will still use\nEradication, but it won't kill; instead, it'll just do a pretty good\namount of damage, as well as reduce SP. He can also attack normally, as\nwell as use Dragon Cry and other strong class spells for decent damage.\nHave Yuri fuse into Amon and rip into Atman with physical attacks, while\nAlice should be using Arc every round to keep their HP maxed. If for some\nreason she gets a free turn, have her cast Advent to help Yuri deal some\ndamage."
+  },
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "SEVEN-EYED MASK",
+        "raw_tag": "[_SEVEN-EYED MASK_]",
+        "matched_overview_item": "Seven-Eyed Mask",
+        "category": "equipment",
+        "line": 80,
+        "char_offset": [
+          5178,
+          5197
+        ],
+        "context": "If you defeated Atman with both Yuri and Alice, there's one more item we can grab. Before talking to Roger, head back out onto the World Map and choose to go into the Graveyard. Talk to the Masks here for an event, where you'll receive the [_SEVEN-EY"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 20,
+        "char_offset": [
+          1250,
+          1409
+        ],
+        "text": "This is your last opportunity to decide which ending you get, if you haven't already! See W-S-15 for details on getting the good ending!"
+      },
+      {
+        "type": "NOTE",
+        "line": 23,
+        "char_offset": [
+          1410,
+          1554
+        ],
+        "text": "Make sure to have Crucifixes equipped on Alice and Yuri, as the next boss can cause pretty much every status abnormality."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                      Nemeton Monastery (2)\n     [W-2-14]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n   Equipment |![_] Seven-Eyed Mask                ! = Only if Atman is beaten.\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                (* = BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #121 *[_] Atman                 |  4000  | None  | Uses SP Lowering, and\n                                 |        |       |    inflicts Paralysis,\n                                 |        |       |    Confusion, Silence,\n                                 |        |       |    Poison, Petrify,\n                                 |        |       |    and Ring anomalies\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     This is your last opportunity to decide which ending you get, if you\n¯¯¯¯¯¯¯¯   haven't already! See W-S-15 for details on getting the good ending!\n\n  NOTE     Make sure to have Crucifixes equipped on Alice and Yuri, as the next\n¯¯¯¯¯¯¯¯   boss can cause pretty much every status abnormality.\n\nHead into Roger's house and talk to him, and he'll have you rest up while he\nworks on the teleporter. In the meantime, you'll regain control of Alice in\nYuri's Graveyard. Read the tombstones if you like, then go talk to the Masks.\nThey'll make you go through the doors to the evil dimension to meet Atman, the\ngod of death. One of two things here will now happen:\n\n1) Alice will enter a battle with Atman, alone. This is what will happen if you\n   chose the follow the path to the bad ending. You cannot defeat Atman, and\n   after a few turns, he'll cast Eradication and defeat Alice in battle, at\n   which point you'll wake back up and regain control in Roger's house.\n\n2) Yuri will come in, and he and Alice both will battle Atman. Here we go...\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Atman                 |  4000 HP  | Class: None  | [_] Moonstone Ring       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                  .———————————————————.———————————————————.                  |\n|                  |                   |     Yuri [51]     |                  |\n|                  |     Alice [51]    |                   |                  |\n|                  |===================|===================|                  |\n|                  | Holy Book-Flesh   | Silver Wolf Fang  |                  |\n|                  | GoldThreadCoat    | Stygian Robe      |                  |\n|                  | Oracle Earrings   | Mind's Eye        |                  |\n|                  | Priest Earrings   | Demon Earrings    |                  |\n|                  | Crucifix          | Crucifix          |                  |\n|                  |                   |                   |                  |\n|                  |                   | Amon              |                  |\n|                  |                   | Czernobog         |                  |\n|                  |                   | Forron            |                  |\n|                  '———————————————————'———————————————————'                  |\n|                                                                             |\n|  Atman can still kill Alice in two rounds, so make sure that she stays      |\n|  healed. As for attacks, this time around, Atman will still use             |\n|  Eradication, but it won't kill; instead, it'll just do a pretty good       |\n|  amount of damage, as well as reduce SP. He can also attack normally, as    |\n|  well as use Dragon Cry and other strong class spells for decent damage.    |\n|                                                                             |\n|  Have Yuri fuse into Amon and rip into Atman with physical attacks, while   |\n|  Alice should be using Arc every round to keep their HP maxed. If for some  |\n|  reason she gets a free turn, have her cast Advent to help Yuri deal some   |\n|  damage.                                                                    |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   50000 EXP   / \\   20000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, watch the quick scene (and cut-scene, if you defeated Atman),\nthen you'll regain control.\n\nIf you defeated Atman with both Yuri and Alice, there's one more item we can\ngrab. Before talking to Roger, head back out onto the World Map and choose to\ngo into the Graveyard. Talk to the Masks here for an event, where you'll\nreceive the [_SEVEN-EYED MASK_]. Also, to confirm that you are getting the good\nending, read the small tombstone beside the Dark Gravestone; it should now say\n\"Atman, rest in peace...\"\n\nBack in the Nemeton Monastery, talk to Roger. (You may have a sequence\ninvolving the Erotic Book and Pulse Tract first before the story moves on; see\nW-S-16 below for the full details.) He'll be finished, and asks you if you wish\nto go to Neameeto.\n\n———————————————————————————————————————————\n   [1] Wait, I need to use the bathroom!\n   [2] Let's go!\n———————————————————————————————————————————\n\n(If you choose 1, you may see that Roger is Lottery Member No. 00; see W-S-16\nbelow for the full details.) When you're ready, choose 2 and you'll have to\ncomplete a Spin Ring _5_ (that's right, 15 targets) to have Roger successfully\nsend you off!\n\n\n   Neameeto\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nYou've made it! However, now that we've completed the Atman sequence and\nstepped foot on Neameeto, we can take on the very last bit of side quests. If\nyou don't want to do it, skip down to W-2-16 - Final Preparations. Otherwise,\nstep on the yellow circle in this room to be sent back down to the Nemeton\nMonastery!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

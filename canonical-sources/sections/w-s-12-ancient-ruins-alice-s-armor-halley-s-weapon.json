@@ -1,0 +1,199 @@
+{
+  "id": "w-s-12",
+  "code": "[W-S-12]",
+  "title": "Ancient Ruins (Alice's Armor / Halley's Weapon)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-11",
+      "code": "[W-S-11]",
+      "title": "Cave Temple (Keith's Armor / Zhuzhen's Weapon)",
+      "file": "sections/w-s-11-cave-temple-keith-s-armor-zhuzhen-s-weapon.json"
+    },
+    "next": {
+      "id": "w-s-13",
+      "code": "[W-S-13]",
+      "title": "Yuri's Level 2 & 3 Fusions, ???? Attacks",
+      "file": "sections/w-s-13-yuri-s-level-2-3-fusions-attacks.json"
+    }
+  },
+  "char_count": 6616,
+  "line_count": 118,
+  "overview": {
+    "save_points": [
+      "First room inside"
+    ],
+    "items": [
+      "Lottery Ticket"
+    ],
+    "equipment": [
+      "Angel Earrings",
+      "GoldThreadCoat"
+    ]
+  },
+  "items": [
+    "Lottery Ticket",
+    "Angel Earrings",
+    "GoldThreadCoat"
+  ],
+  "enemies": [
+    {
+      "number": "#085",
+      "name": "Asp",
+      "hp": 830,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Petrification"
+    },
+    {
+      "number": "#086",
+      "name": "Basilisk",
+      "hp": 800,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Petrification"
+    },
+    {
+      "number": "#087",
+      "name": "Sweeper",
+      "hp": 750,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#088",
+      "name": "Seraphim",
+      "hp": 4000,
+      "class": "None",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Seraphim",
+      "enemies": [
+        {
+          "name": "Seraphim",
+          "hp": 4000,
+          "class": "None",
+          "drop": "Volt Snipe"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 42
+        },
+        {
+          "name": "Margarete",
+          "level": 38
+        },
+        {
+          "name": "Alice",
+          "level": 42
+        }
+      ],
+      "exp": 60000,
+      "cash": 38000,
+      "strategy": "Seraphim hits pretty hard, enough to kill right off the bat, so once\nagain, Alice will be doing nothing but Arc this battle. Other than his\nnormal attacks, he will use Divine Punishment, doing pretty good damage\nto your entire party, as well as causing various status effects, so make\nsure to heal them straight away.\nHave Yuri fuse into Amon and keep at him with physical attacks, and have\nMargarete attack normally as well, taking breaks to help replenish MP and\nSP as needed. Since Seraphim has lower HP than Cherubim, you probably\nwon't have to replenish either MP nor SP.\nLike Cherubim, Seraphim isn't really that complicated, so as long as you\nhave Crucifixes equipped to everyone and have Alice use Arc every round,\nthen it's just a matter of taking the time to whittle away his HP. It\nactually won't take nearly as long, since Seraphim only has 40% the HP\nthat Cherubim had.\nNOTE     Once the battle is over, you'll receive Halley's best weapon,\n¯¯¯¯¯¯¯¯   the Volt Snipe."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Seraphim",
+    "enemies": [
+      {
+        "name": "Seraphim",
+        "hp": 4000,
+        "class": "None",
+        "drop": "Volt Snipe"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 42
+      },
+      {
+        "name": "Margarete",
+        "level": 38
+      },
+      {
+        "name": "Alice",
+        "level": 42
+      }
+    ],
+    "exp": 60000,
+    "cash": 38000,
+    "strategy": "Seraphim hits pretty hard, enough to kill right off the bat, so once\nagain, Alice will be doing nothing but Arc this battle. Other than his\nnormal attacks, he will use Divine Punishment, doing pretty good damage\nto your entire party, as well as causing various status effects, so make\nsure to heal them straight away.\nHave Yuri fuse into Amon and keep at him with physical attacks, and have\nMargarete attack normally as well, taking breaks to help replenish MP and\nSP as needed. Since Seraphim has lower HP than Cherubim, you probably\nwon't have to replenish either MP nor SP.\nLike Cherubim, Seraphim isn't really that complicated, so as long as you\nhave Crucifixes equipped to everyone and have Alice use Arc every round,\nthen it's just a matter of taking the time to whittle away his HP. It\nactually won't take nearly as long, since Seraphim only has 40% the HP\nthat Cherubim had.\nNOTE     Once the battle is over, you'll receive Halley's best weapon,\n¯¯¯¯¯¯¯¯   the Volt Snipe."
+  },
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "ANGEL EARRINGS",
+        "raw_tag": "[_ANGEL EARRINGS_]",
+        "matched_overview_item": "Angel Earrings",
+        "category": "equipment",
+        "line": 30,
+        "char_offset": [
+          1737,
+          1755
+        ],
+        "context": "Make your way into the Ruins and use the Save Point if you like. Go northeast from here to enter the maze. Open the chest here for some [_ANGEL EARRINGS_], then follow the paths in the following order, the color of the rainbow... sort of. Each room w"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 41,
+        "char_offset": [
+          2198,
+          2216
+        ],
+        "context": "- In the next area where you can choose between turquoise, orange, and yellow, open the chest on the right for a [_LOTTERY TICKET_], then..."
+      },
+      {
+        "name": "GOLDTHREADCOAT",
+        "raw_tag": "[_GOLDTHREADCOAT_]",
+        "matched_overview_item": "GoldThreadCoat",
+        "category": "equipment",
+        "line": 49,
+        "char_offset": [
+          2467,
+          2485
+        ],
+        "context": "You'll be back at the beginning, but the water will have drained and you can now go downstairs. Descend the stairs and follow the path, opening the chest for the [_GOLDTHREADCOAT_], Alice's best armor."
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 26,
+        "char_offset": [
+          1451,
+          1600
+        ],
+        "text": "To have access to this area, you must have read the Book of Rituals in your Valuables menu to have it appear on the World Map."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |            Ancient Ruins (Alice's Armor / Halley's Weapon)\n     [W-S-12]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | First room inside\n             |\n       Items | [_] Lottery Ticket\n             |\n   Equipment | [_] Angel Earrings      [_] GoldThreadCoat\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                (* = BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #085  [_] Asp                   |   830  | Water | Inflicts Petrification\n #086  [_] Basilisk              |   800  | Fire  | Inflicts Petrification\n #087  [_] Sweeper               |   750  | Earth |\n #088 *[_] Seraphim              |  4000  | None  | Inflicts Paralysis,\n                                 |        |       |    Confusion, Silence,\n                                 |        |       |    Poison, Petrify,\n                                 |        |       |    and Ring anomalies\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     To have access to this area, you must have read the Book of Rituals\n¯¯¯¯¯¯¯¯   in your Valuables menu to have it appear on the World Map.\n\nMake your way into the Ruins and use the Save Point if you like. Go northeast\nfrom here to enter the maze. Open the chest here for some [_ANGEL EARRINGS_],\nthen follow the paths in the following order, the color of the rainbow... sort\nof. Each room will have a short path after it before you reach the next color\nchoice:\n\n - RED       (center room)\n - ORANGE    (right room, and yes, it looks yellow, but it really is orange.)\n - YELLOW    (left room)\n - GREEN     (center room)\n\n - In the next area where you can choose between turquoise, orange, and\n   yellow, open the chest on the right for a [_LOTTERY TICKET_], then...\n\n - TURQUOISE (left room)\n - BLUE      (right room)\n - VIOLET    (right room)\n\nYou'll be back at the beginning, but the water will have drained and you can\nnow go downstairs. Descend the stairs and follow the path, opening the chest\nfor the [_GOLDTHREADCOAT_], Alice's best armor.\n\nMake your way back upstairs, then examine the Book of Rituals in your Valuables\nmenu once again, which has changed. It now tells you to go backwards, so we'll\nnow follow the colors in reverse order:\n\n - VIOLET    (right room)\n - BLUE      (left room)\n - TURQUOISE (right room)\n - GREEN     (center room)\n - YELLOW    (right room)\n - ORANGE    (left room)\n - RED       (center room)\n\nThe water will drain once again, but to a different path this time. SAVE YOUR\nGAME, make sure you have Crucifixes equipped, then when you're ready, descend\nthe stairs. This time, you'll have to face the freaky-looking Seraphim.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Seraphim              |  4000 HP  | Class: None  | [_] Volt Snipe           |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [42]     |                   |   Margarete [38]  |        |\n|        |                   |     Alice [42]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Silver Wolf Fang  | Holy Book-Flesh   | 10 Gauge          |        |\n|        | Stygian Robe      | GoldThreadCoat    | Leather Suit      |        |\n|        | Mind's Eye        | Oracle Earrings   | Mind's Eye        |        |\n|        | Demon Earrings    | Priest Earrings   | Demon Earrings    |        |\n|        | Crucifix          | Crucifix          | Crucifix          |        |\n|        |                   |                   |                   |        |\n|        | Amon              |                   |                   |        |\n|        | Czernobog         |                   |                   |        |\n|        | Ifrit             |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Seraphim hits pretty hard, enough to kill right off the bat, so once       |\n|  again, Alice will be doing nothing but Arc this battle. Other than his     |\n|  normal attacks, he will use Divine Punishment, doing pretty good damage    |\n|  to your entire party, as well as causing various status effects, so make   |\n|  sure to heal them straight away.                                           |\n|                                                                             |\n|  Have Yuri fuse into Amon and keep at him with physical attacks, and have   |\n|  Margarete attack normally as well, taking breaks to help replenish MP and  |\n|  SP as needed. Since Seraphim has lower HP than Cherubim, you probably      |\n|  won't have to replenish either MP nor SP.                                  |\n|                                                                             |\n|  Like Cherubim, Seraphim isn't really that complicated, so as long as you   |\n|  have Crucifixes equipped to everyone and have Alice use Arc every round,   |\n|  then it's just a matter of taking the time to whittle away his HP. It      |\n|  actually won't take nearly as long, since Seraphim only has 40% the HP     |\n|  that Cherubim had.                                                         |\n|                                                                             |\n|    NOTE     Once the battle is over, you'll receive Halley's best weapon,   |\n|  ¯¯¯¯¯¯¯¯   the Volt Snipe.                                                 |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   60000 EXP   / \\   38000 Cash   /\n     '—————————————'   '——————————————'\n\nThat's it for here, so go ahead and leave the Ancient Ruins and to the World\nMap. Next!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

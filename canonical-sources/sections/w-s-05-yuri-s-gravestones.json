@@ -1,0 +1,117 @@
+{
+  "id": "w-s-05",
+  "code": "[W-S-05]",
+  "title": "Yuri's Gravestones",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-04",
+      "code": "[W-S-04]",
+      "title": "Calios Mental Hospital (2)",
+      "file": "sections/w-s-04-calios-mental-hospital-2.json"
+    },
+    "next": {
+      "id": "w-2-12",
+      "code": "[W-2-12]",
+      "title": "Nemeton Monastery (1)",
+      "file": "sections/w-2-12-nemeton-monastery-1.json"
+    }
+  },
+  "char_count": 5097,
+  "line_count": 118,
+  "overview": {
+    "valuables": [
+      "Air Gravestone",
+      "Water Gravestone",
+      "Earth Gravestone"
+    ]
+  },
+  "items": [
+    "Air Gravestone",
+    "Water Gravestone",
+    "Earth Gravestone"
+  ],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "AIR GRAVESTONE",
+        "raw_tag": "[_AIR GRAVESTONE_]",
+        "matched_overview_item": "Air Gravestone",
+        "category": "valuables",
+        "line": 44,
+        "char_offset": [
+          1945,
+          1963
+        ],
+        "context": "Air Gravestone (Prague) ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ Make your way to Prague and enter the bar. Talk to the Owner and he'll say that Darcie's been in the bathroom for a while, so go into the men's room and examine the second stall. Watch the even"
+      },
+      {
+        "name": "EARTH GRAVESTONE",
+        "raw_tag": "[_EARTH GRAVESTONE_]",
+        "matched_overview_item": "Earth Gravestone",
+        "category": "valuables",
+        "line": 70,
+        "char_offset": [
+          3110,
+          3130
+        ],
+        "context": "MAKE SURE TO CHOOSE 1! Once you do, leave Bistritz, then come back. Continue to choose 1 and leave the village, repeating the process until Nina is waiting for you beside the plant. Once she is, talk to her to receive the [_EARTH GRAVESTONE_]."
+      },
+      {
+        "name": "WATER GRAVESTONE",
+        "raw_tag": "[_WATER GRAVESTONE_]",
+        "matched_overview_item": "Water Gravestone",
+        "category": "valuables",
+        "line": 95,
+        "char_offset": [
+          4245,
+          4265
+        ],
+        "context": "In any case, once you can leave the church, head back to the Inn and into the room, where you'll find John and Mary. John will thank you for your words, and he'll give you the [_WATER GRAVESTONE_] as a thank you for saving his marriage. (If you chose"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 47,
+        "char_offset": [
+          2046,
+          2346
+        ],
+        "text": "If you don't want to waste a Lottery Ticket to get the Tissues, you can get some later on by winning the Pit Fight with Margarete (once it becomes available), or you can win them from the Buggy enemies in the Cave Temple. Earth Gravestone   (Bistritz)"
+      },
+      {
+        "type": "NOTE",
+        "line": 98,
+        "char_offset": [
+          4356,
+          4496
+        ],
+        "text": "Wild John will be on the bottom-right of the first area if you chose 3 instead, and you can buy the Gravestone there."
+      },
+      {
+        "type": "NOTE",
+        "line": 101,
+        "char_offset": [
+          4497,
+          4783
+        ],
+        "text": "If you don't do this event now, you may not be able to later depending on how far you progress in the story. I strongly recommend doing it now, as you can miss out on a great accessory, as well as Margarete's best weapon, if you don't."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                         Yuri's Gravestones\n     [W-S-05]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n   Valuables | [_] Air Gravestone      [_] Water Gravestone\n             | [_] Earth Gravestone\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nAt this point in the game, we can now obtain all but one Gravestone, which we\nwill obtain just moments after beginning the next story section.\n\nHere's how to find the remaining Gravestones...\n\n\n   Dark Gravestone   (Blue Castle)\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nYou should've already picked this up. It was at the top of the tower in the\nBlue Castle where you fought Yuri.\n\n\n   Fire Gravestone   (Calios Mental Hospital)\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nYou should've already picked this up. It was in the chest that you found the\nDungeon Key in the Calios Mental Hospital. You had to examine it a second time\nto pick it up.\n\n\n  Light Gravestone   (Nemeton Monastery)\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nYou will be able to pick this up in the first house you see to the left in the\nNemeton Monastery once you start W-2-12 - Nemeton Monastery (1). It'll be\ninside the house, past the vending machine.\n\n\n    Air Gravestone   (Prague)\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nMake your way to Prague and enter the bar. Talk to the Owner and he'll say that\nDarcie's been in the bathroom for a while, so go into the men's room and\nexamine the second stall. Watch the events here, and as long as you have some\nTissues in your inventory, Yuri will give them to him to help him out. Attempt\nto leave the bar, and you'll receive the [_AIR GRAVESTONE_] as a thank you from\nhim. Just make sure to wash it off, as well as your hands...\n\n  NOTE     If you don't want to waste a Lottery Ticket to get the Tissues, you\n¯¯¯¯¯¯¯¯   can get some later on by winning the Pit Fight with Margarete (once\n           it becomes available), or you can win them from the Buggy enemies in\n           the Cave Temple.\n\n\n  Earth Gravestone   (Bistritz)\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nVisit Bistritz and go to the right side of the village. Examine the sparkling\nsprout outside of the shop, then go inside and talk to Nina to learn more about\nit. Go back outside and examine it once again.\n\n_______________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n   ———>   [1] Quietly watch over it.    <———\n          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n          [2] Step on it.\n_______________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nMAKE SURE TO CHOOSE 1! Once you do, leave Bistritz, then come back. Continue to\nchoose 1 and leave the village, repeating the process until Nina is waiting for\nyou beside the plant. Once she is, talk to her to receive the\n[_EARTH GRAVESTONE_].\n\n\n  Water Gravestone   (Rouen)\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nTake a trip to Rouen and go into the Inn and go up the stairs for a quick\nscene. Go through the door on the right and talk to both Indignant Mary and\nUpset John, then make your way to the church and enter the confessional in the\nback. Upset John will come in and ask you what you think he should do.\n\n_________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n          [1] Get her a diamond, as promised.\n\n   ———>   [2] It's about love, not the ring.      <———\n          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n          [3] Maybe it'd be better to split up.\n_________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nMake sure to choose 2, otherwise you'll be forced to pay for the Water\nGravestone, 3,000 Cash if you choose 1, and 10,000 Cash if you choose 3.\n\nIn any case, once you can leave the church, head back to the Inn and into the\nroom, where you'll find John and Mary. John will thank you for your words, and\nhe'll give you the [_WATER GRAVESTONE_] as a thank you for saving his marriage.\n(If you chose 1, you'll have to pay 3,000 Cash.)\n\n  NOTE     Wild John will be on the bottom-right of the first area if you chose\n¯¯¯¯¯¯¯¯   3 instead, and you can buy the Gravestone there.\n\n  NOTE     If you don't do this event now, you may not be able to later\n¯¯¯¯¯¯¯¯   depending on how far you progress in the story. I strongly recommend\n            doing it now, as you can miss out on a great accessory, as well as\n           Margarete's best weapon, if you don't.\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\nThat's it for Gravestones, so make your way to the Nemeton Monastery!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

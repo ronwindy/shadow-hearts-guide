@@ -1,0 +1,281 @@
+{
+  "id": "w-2-01",
+  "code": "[W-2-01]",
+  "title": "Prague (1)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-00",
+      "code": "[W-2-00]",
+      "title": "Walkthrough - Europe",
+      "file": "sections/w-2-00-walkthrough-europe.json"
+    },
+    "next": {
+      "id": "w-2-02",
+      "code": "[W-2-02]",
+      "title": "Bistritz (1)",
+      "file": "sections/w-2-02-bistritz-1.json"
+    }
+  },
+  "char_count": 5573,
+  "line_count": 96,
+  "overview": {
+    "save_points": [
+      "Center of town near the bar"
+    ],
+    "lottery": [
+      "Lottery Member No. 08 (Guard Homas)"
+    ],
+    "items": [
+      "Kirin Scale",
+      "Priest's Wine",
+      "Lottery Ticket"
+    ],
+    "equipment": [
+      "Zodiac Bracelet"
+    ]
+  },
+  "items": [
+    "Kirin Scale",
+    "Priest's Wine",
+    "Lottery Ticket",
+    "Zodiac Bracelet"
+  ],
+  "enemies": [
+    {
+      "number": "#051",
+      "name": "Birdman",
+      "hp": 54,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Silence"
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [
+    {
+      "name": "Time is Money",
+      "inventory": [
+        {
+          "name": "Chainmail Vest",
+          "price": 5500
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Silk Bolero",
+          "price": 5940
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Face Guard",
+          "price": 3000
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Imp's Fang",
+          "price": 95
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Jade Lariat",
+          "price": 5050
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "ZODIAC BRACELET",
+        "raw_tag": "[_ZODIAC BRACELET_]",
+        "matched_overview_item": "Zodiac Bracelet",
+        "category": "equipment",
+        "line": 47,
+        "char_offset": [
+          2844,
+          2863
+        ],
+        "context": "You'll gain control of Alice in Prague. Start heading north, but hug the right side of the area. Before Alice reappears, you should see a '?' icon; examine here to find a [_ZODIAC BRACELET_]. Go north to the next area and use the Save Point you see h"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 08",
+        "raw_tag": "[_LOTTERY MEMBER NO. 08_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 53,
+        "char_offset": [
+          3192,
+          3217
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 08_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "KIRIN SCALE",
+        "raw_tag": "[_KIRIN SCALE_]",
+        "matched_overview_item": "Kirin Scale",
+        "category": "items",
+        "line": 71,
+        "char_offset": [
+          4351,
+          4366
+        ],
+        "context": "Keep following along the path past the bar, but before going to the next area, step off to the right onto the raised platform near the building at the top of the screen. Search the south end of the platform to find a [_KIRIN SCALE_], then go north to"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 73,
+        "char_offset": [
+          4477,
+          4495
+        ],
+        "context": "Keep following along the path past the bar, but before going to the next area, step off to the right onto the raised platform near the building at the top of the screen. Search the south end of the platform to find a [_KIRIN SCALE_], then go north to"
+      },
+      {
+        "name": "PRIEST'S WINE",
+        "raw_tag": "[_PRIEST'S WINE_]",
+        "matched_overview_item": "Priest's Wine",
+        "category": "items",
+        "line": 81,
+        "char_offset": [
+          4812,
+          4829
+        ],
+        "context": "Examine the table above the woman on your left (Peddler Rosa) to find a [_PRIEST'S WINE_], then talk to Peddler Rosa to have Zhuzhen come back out. Talk to him to progress the story, and when you regain control, head north to the castle walls, where "
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 76,
+        "char_offset": [
+          4560,
+          4740
+        ],
+        "text": "Save your shopping until the next town, since we'll get a better Guild Card there. Unless, of course, you absolutely need healing items and such."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                                 Prague (1)\n     [W-2-01]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Center of town near the bar\n             |\n     Lottery | [_] Lottery Member No. 08 (Guard Homas)\n             |\n       Items | [_] Kirin Scale         [_] Priest's Wine\n             | [_] Lottery Ticket\n             |\n   Equipment | [_] Zodiac Bracelet\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                           |   HP   | Class | Notes\n=================================|========|=======|============================\n #051  [_] Birdman               |    54  | Fire  | Inflicts Silence\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Time is Money   -$-                   |\n       |===============================v===============================|\n       | Chainmail Vest      -    5500 | Mana Seed           -     300 |\n       | Silk Bolero         -    5940 | Mana Root           -     500 |\n       | Studded Cap         -    1700 | Pure Leaf           -     230 |\n       | Face Guard          -    3000 | Pure Seed           -     510 |\n       | Western Belt        -    1700 | TalismanOfLuck      -     480 |\n       | Shell Bracelet      -    2770 | TalismanOfMercy     -     820 |\n       | Bone Bracelet       -    2960 | Mermaid's Tear      -      70 |\n       | Rosewood Bracelet   -    3000 | Holy Mother Bust    -      75 |\n       | Bell Bracelet       -    3120 | Angel's Feather     -      80 |\n       | Mirror Bracelet     -    3240 | Faerie's Sigh       -      85 |\n       | Spikes              -    2810 | Imp's Fang          -      95 |\n       | Leonardo's Bear     -    3330 | Phoenix Tail        -      90 |\n       | Voodoo Doll         -    5200 | Bronze Arrowhead    -     100 |\n       | Jade Lariat         -    5050 | Bronze Dagger       -     200 |\n       | Thera Seed          -     120 | Silver Hourglass    -     100 |\n       | Thera Root          -     300 | Gold Hourglass      -     200 |\n       |                               | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\nYou'll gain control of Alice in Prague. Start heading north, but hug the right\nside of the area. Before Alice reappears, you should see a '?' icon; examine\nhere to find a [_ZODIAC BRACELET_]. Go north to the next area and use the Save\nPoint you see here. Once you've saved, talk to the sleeping guy here, and\nyou'll find out that he's a Lottery Member!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 08_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Brsrkr Earrings           /\n               /        (Yellow)  |  Seal of Luck              \\\n              /      (Turquoise)  |  TalismanOfPurity           \\\n             /           (Green)  |  Thera Root                  \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nThe ring here EXTREMELY SLOW, so it should be VERY easy to get whatever you\nwant! Make sure to win the Brsrkr Earrings before continuing on; it increases\nyour max HP 20%! If you don't win it, reload your last save and try again.\nRemember, you need to win something from each member at least once!\n\nKeep following along the path past the bar, but before going to the next area,\nstep off to the right onto the raised platform near the building at the top of\nthe screen. Search the south end of the platform to find a [_KIRIN SCALE_],\nthen go north to the next area. Check behind the tree to your left, and you\nshould find a chest containing a [_LOTTERY TICKET_]. Once you have it, go back\nto the last area and enter the bar.\n\n  NOTE     Save your shopping until the next town, since we'll get a better\n¯¯¯¯¯¯¯¯   Guild Card there. Unless, of course, you absolutely need healing\n           items and such.\n\nExamine the table above the woman on your left (Peddler Rosa) to find a\n[_PRIEST'S WINE_], then talk to Peddler Rosa to have Zhuzhen come back out.\nTalk to him to progress the story, and when you regain control, head north to\nthe castle walls, where you'll encounter a new foe and have to face some of her\nmonsters.\n\nAfter you defeat them, you'll be back in the bar. Grab anything you absolutely\nneed from the peddler here, then leave the bar. If for some reason you want to\ntalk to Meiyuan for some Acupuncture or want something from the Silent Peddler,\nboth are now at the north end of town. When you're finished, leave Prague. Head\nto our next destination: Bistritz.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

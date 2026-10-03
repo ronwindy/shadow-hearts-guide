@@ -1,0 +1,277 @@
+{
+  "id": "w-2-04",
+  "code": "[W-2-04]",
+  "title": "Bistritz (2)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-03",
+      "code": "[W-2-03]",
+      "title": "Blue Castle (1)",
+      "file": "sections/w-2-03-blue-castle-1.json"
+    },
+    "next": {
+      "id": "w-2-05",
+      "code": "[W-2-05]",
+      "title": "Blue Castle (2)",
+      "file": "sections/w-2-05-blue-castle-2.json"
+    }
+  },
+  "char_count": 7762,
+  "line_count": 131,
+  "overview": {
+    "save_points": [
+      "Near the entrance"
+    ],
+    "lottery": [
+      "Lottery Member No. 07 (Hunter Warda)"
+    ],
+    "items": [
+      "Seal of Strength"
+    ],
+    "equipment": [
+      "Flash Badge"
+    ]
+  },
+  "items": [
+    "Seal of Strength",
+    "Flash Badge"
+  ],
+  "enemies": [
+    {
+      "number": "#051",
+      "name": "Birdman",
+      "hp": 54,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Silence"
+    },
+    {
+      "number": "#052",
+      "name": "Mailman",
+      "hp": 65,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Confusion"
+    },
+    {
+      "number": "#053",
+      "name": "Police Dog",
+      "hp": 115,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#054",
+      "name": "Tindalos",
+      "hp": 2000,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": ""
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [
+    {
+      "name": "Chicken Heart",
+      "inventory": [
+        {
+          "name": "Tome of the Sun",
+          "price": 6020
+        },
+        {
+          "name": "Chainmail Vest",
+          "price": 5500
+        },
+        {
+          "name": "Royal Estoc",
+          "price": 6230
+        },
+        {
+          "name": "Silk Bolero",
+          "price": 5940
+        }
+      ]
+    },
+    {
+      "name": "Do Re Mi Shop",
+      "inventory": [
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Metal Belt",
+          "price": 3000
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Soul Benediction",
+          "price": 500
+        },
+        {
+          "name": "Pocket Watch",
+          "price": 5200
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Coral Lariat",
+          "price": 5050
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "LOTTERY MEMBER NO. 07",
+        "raw_tag": "[_LOTTERY MEMBER NO. 07_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 105,
+        "char_offset": [
+          6338,
+          6363
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 07_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "FLASH BADGE",
+        "raw_tag": "[_FLASH BADGE_]",
+        "matched_overview_item": "Flash Badge",
+        "category": "equipment",
+        "line": 122,
+        "char_offset": [
+          7345,
+          7360
+        ],
+        "context": "Head over to the place where you fought Kevin for a scene. Once it's over, check the chest to your left for a [_FLASH BADGE_], then examine the upper right corner of the room to find a [_SEAL OF STRENGTH_] on the floor above a cart. Once you're done "
+      },
+      {
+        "name": "SEAL OF STRENGTH",
+        "raw_tag": "[_SEAL OF STRENGTH_]",
+        "matched_overview_item": "Seal of Strength",
+        "category": "items",
+        "line": 123,
+        "char_offset": [
+          7420,
+          7440
+        ],
+        "context": "Head over to the place where you fought Kevin for a scene. Once it's over, check the chest to your left for a [_FLASH BADGE_], then examine the upper right corner of the room to find a [_SEAL OF STRENGTH_] on the floor above a cart. Once you're done "
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 51,
+        "char_offset": [
+          3000,
+          3225
+        ],
+        "text": "It's strongly recommended that your entire party is at least level 23 before taking on the next sub-boss. The Garms outside of the Blue Castle are your best source of EXP AND Cash right now."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                               Bistritz (2)\n     [W-2-04]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Near the entrance\n             |\n     Lottery | [_] Lottery Member No. 07 (Hunter Warda)\n             |\n       Items | [_] Seal of Strength\n             |\n   Equipment | [_] Flash Badge\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy            (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #051  [_] Birdman               |    54  | Fire  | Inflicts Silence\n #052  [_] Mailman               |    65  | Earth | Inflicts Confusion\n #053  [_] Police Dog            |   115  | Water |\n #054 ~[_] Tindalos              |  2000  | Fire  |\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Chicken Heart   -$-                   |\n       |===============================v===============================|\n       | Tome of the Sun     -    6020 | Chainmail Vest      -    5500 |\n       | Royal Estoc         -    6230 | Silk Bolero         -    5940 |\n       '———————————————————————————————'———————————————————————————————'\n\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Do Re Mi Shop   -$-                   |\n       |===============================v===============================|\n       | Studded Cap         -    1700 | Thera Seed          -     120 |\n       | Western Belt        -    1700 | Thera Root          -     300 |\n       | Metal Belt          -    3000 | Mana Seed           -     300 |\n       | Shell Bracelet      -    2770 | Mana Root           -     500 |\n       | Bone Bracelet       -    2960 | Pure Leaf           -     230 |\n       | Rosewood Bracelet   -    3000 | Pure Seed           -     510 |\n       | Bell Bracelet       -    3120 | TalismanOfLuck      -     480 |\n       | Mirror Bracelet     -    3240 | TalismanOfMercy     -     820 |\n       | Spikes              -    2810 | Soul Benediction    -     500 |\n       | Pocket Watch        -    5200 | Bronze Arrowhead    -     100 |\n       | Leonardo's Bear     -    3330 | Bronze Dagger       -     200 |\n       | Voodoo Doll         -    5200 | Silver Hourglass    -     100 |\n       | Coral Lariat        -    5050 | Gold Hourglass      -     200 |\n       |                               | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n  NOTE     It's strongly recommended that your entire party is at least level\n¯¯¯¯¯¯¯¯   23 before taking on the next sub-boss. The Garms outside of the\n           Blue Castle are your best source of EXP AND Cash right now.\n\nMake your way to Nina and Michelle's house in the southeastern corner. After\nNina tells you the whole story and you regain control, leave the house and head\nwest back to the first area. If you have the extra money, upgrade Keith's\nweapon to the Royal Estoc and make sure he's properly equipped, then SAVE at\nthe Save Point. When you're ready, examine the lower-right door to the Mayor's\nhouse in the upper corner. Break in?\n\n————————————————————————\n   [1] Not ready yet.\n   [2] I'll do it!\n————————————————————————\n\nChoose 2 when you're ready, and you'll eventually have to take on a sub-boss.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Tindalos              |  2000 HP  | Class: Fire  | [_] Iron Clogs           |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Watch out for his Deathtouch attack; it takes away 75% of your HP, which   |\n|  most of the time is a MAJOR inconvenience. He can also use Fire breath,    |\n|  which will hit for a decent amount of damage. Make sure to keep an eye on  |\n|  his physical attacks as well, as they'll quickly whittle down your HP,     |\n|  hitting for over 100 to a 150 HP per string of attacks.                    |\n|                                                                             |\n|  Have Alice be the primary healer, using Cure every round. If it's not      |\n|  needed, have her use Blessed Light instead. Zhuzhen should be using Life   |\n|  Sucker every round (or if you were able to level him up to 23, use Corpse  |\n|  Arm instead), stopping only to help Alice heal when needed. Keith should   |\n|  be using Drain Touch if he needs HP, or Bat Dance if he doesn't.           |\n|                                                                             |\n|  If you were able to get used to Keith's Ring enough to where you're        |\n|  comfortable with him having the Mind's Eye equipped, I recommend that      |\n|  over his Rituals, but still have him use Drain Touch when he needs         |\n|  healed.                                                                    |\n|                                                                             |\n|  You'll most likely need to replenish MP and SP throughout the battle, as   |\n|  it will take a while, but be patient and stay healed.                      |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   08000 EXP   / \\   12000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, watch the scenes with Nina and Michelle, then you'll regain\ncontrol outside of their house. SAVE YOUR GAME, then examine the door on the\nhouse above you (the one on the right) to find another Lottery Member!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 07_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Oracle Earrings           /\n               /        (Yellow)  |  Seal of Life              \\\n              /      (Turquoise)  |  TeaOfTheHolyOne            \\\n             /           (Green)  |  Mana Root                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nNothing strange about the ring here. Make sure to win the Oracle Earrings\nbefore continuing on; it increases your max MP 20%! If you don't win it, reload\nyour last save and try again. Remember, you need to win something from each\nmember at least once!\n\nHead over to the place where you fought Kevin for a scene. Once it's over,\ncheck the chest to your left for a [_FLASH BADGE_], then examine the upper\nright corner of the room to find a [_SEAL OF STRENGTH_] on the floor above a\ncart. Once you're done there, do any shopping and preparation that you want,\nthen leave Bistritz and head to the Blue Castle once again.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

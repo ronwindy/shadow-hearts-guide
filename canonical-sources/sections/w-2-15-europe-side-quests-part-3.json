@@ -1,0 +1,42 @@
+{
+  "id": "w-2-15",
+  "code": "[W-2-15]",
+  "title": "Europe Side Quests, Part 3",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-14",
+      "code": "[W-2-14]",
+      "title": "Nemeton Monastery (2)",
+      "file": "sections/w-2-14-nemeton-monastery-2.json"
+    },
+    "next": {
+      "id": "w-s-16",
+      "code": "[W-S-16]",
+      "title": "Nemeton Monastery (The Seraphic Radiance /",
+      "file": "sections/w-s-16-nemeton-monastery-the-seraphic-radiance.json"
+    }
+  },
+  "char_count": 726,
+  "line_count": 18,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n   Shadow Hearts   |                                 Europe Side Quests, Part 3\n     [W-2-15]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nOnly one side quest left!\n\n[W-S-16] Nemeton Monastery (The Seraphic Radiance / Yuri's Weapon & Armor /\n                            Lottery Member #0)\n         - We can get Yuri's best Fusion, as well as his best weapon and armor,\n           and top of that, we can finally meet the Lottery Chairman.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

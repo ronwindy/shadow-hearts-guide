@@ -1,0 +1,298 @@
+{
+  "id": "w-s-14",
+  "code": "[W-S-14]",
+  "title": "Sharon's Pit Fight (Halley's Armor / Other Items",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-13",
+      "code": "[W-S-13]",
+      "title": "Yuri's Level 2 & 3 Fusions, ???? Attacks",
+      "file": "sections/w-s-13-yuri-s-level-2-3-fusions-attacks.json"
+    },
+    "next": {
+      "id": "w-s-15",
+      "code": "[W-S-15]",
+      "title": "The Good Ending (Defeating the Masks)",
+      "file": "sections/w-s-15-the-good-ending-defeating-the-masks.json"
+    }
+  },
+  "char_count": 10102,
+  "line_count": 198,
+  "overview": {
+    "items": [
+      "Seventh Key",
+      "Tissues",
+      "Silver Hand                                     ONLY"
+    ],
+    "equipment": [
+      "Crucifix",
+      "Crystal Ring",
+      "Belt of Thor",
+      "BlackSilkPants",
+      "Metal Jacket"
+    ]
+  },
+  "items": [
+    "Seventh Key",
+    "Tissues",
+    "Silver Hand                                     ONLY",
+    "Crucifix",
+    "Crystal Ring",
+    "Belt of Thor",
+    "BlackSilkPants",
+    "Metal Jacket"
+  ],
+  "enemies": [
+    {
+      "number": "#037",
+      "name": "Speckled Creeper",
+      "hp": 250,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "P-Atk Resistant"
+    },
+    {
+      "number": "#038",
+      "name": "Happy Creeper",
+      "hp": 250,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Instant Death, S-Atk Resistant"
+    },
+    {
+      "number": "#041",
+      "name": "Dark Judge",
+      "hp": 500,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#054",
+      "name": "Tindalos",
+      "hp": 2000,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#055",
+      "name": "Garm",
+      "hp": 165,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis"
+    },
+    {
+      "number": "#060",
+      "name": "Camazotz",
+      "hp": 158,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#063",
+      "name": "Night Stalker",
+      "hp": 2500,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#064",
+      "name": "Mammon",
+      "hp": 3600,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Petrification"
+    },
+    {
+      "number": "#066",
+      "name": "Meat Eater",
+      "hp": 245,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#067",
+      "name": "Doom",
+      "hp": 225,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#068",
+      "name": "Buggs",
+      "hp": 155,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Poison, Confusion & Silence"
+    },
+    {
+      "number": "#069",
+      "name": "Rausan",
+      "hp": 3500,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Silence"
+    },
+    {
+      "number": "#103",
+      "name": "Full Armor Wind Shear",
+      "hp": 1100,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#104",
+      "name": "Perfect Wind Shear",
+      "hp": 1100,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis"
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "SEVENTH KEY",
+        "raw_tag": "[_SEVENTH KEY_]",
+        "matched_overview_item": "Seventh Key",
+        "category": "items",
+        "line": 163,
+        "char_offset": [
+          8618,
+          8633
+        ],
+        "context": "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ - YURI - [_SEVENTH KEY_], something you should save for the very end. ¯¯¯¯ - ALICE - [_CRUCIFIX_], great in case you don't have 3 of them yet. ¯¯¯¯¯ - ZHUZHEN - [_SILVER "
+      },
+      {
+        "name": "CRUCIFIX",
+        "raw_tag": "[_CRUCIFIX_]",
+        "matched_overview_item": "Crucifix",
+        "category": "equipment",
+        "line": 165,
+        "char_offset": [
+          8707,
+          8719
+        ],
+        "context": "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ - YURI - [_SEVENTH KEY_], something you should save for the very end. ¯¯¯¯ - ALICE - [_CRUCIFIX_], great in case you don't have 3 of them yet. ¯¯¯¯¯ - ZHUZHEN - [_SILVER "
+      },
+      {
+        "name": "SILVER HAND",
+        "raw_tag": "[_SILVER HAND_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 167,
+        "char_offset": [
+          8793,
+          8808
+        ],
+        "context": "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ - YURI - [_SEVENTH KEY_], something you should save for the very end. ¯¯¯¯ - ALICE - [_CRUCIFIX_], great in case you don't have 3 of them yet. ¯¯¯¯¯ - ZHUZHEN - [_SILVER "
+      },
+      {
+        "name": "TISSUES",
+        "raw_tag": "[_TISSUES_]",
+        "matched_overview_item": "Tissues",
+        "category": "items",
+        "line": 170,
+        "char_offset": [
+          8936,
+          8947
+        ],
+        "context": "- MARGARETE - [_TISSUES_]. Pointless, unless you needed it for the Air ¯¯¯¯¯¯¯¯¯ Gravestone instead of using a Lottery Ticket."
+      },
+      {
+        "name": "BELT OF THOR",
+        "raw_tag": "[_BELT OF THOR_]",
+        "matched_overview_item": "Belt of Thor",
+        "category": "equipment",
+        "line": 173,
+        "char_offset": [
+          9070,
+          9086
+        ],
+        "context": "- KEITH - [_BELT OF THOR_], for a great ATK and P-ATK boost. ¯¯¯¯¯ - HALLEY - [_METAL JACKET_], Halley's best armor. ¯¯¯¯¯¯ - ALL SIX - [_CRYSTAL RING_] from Sharon, which reduces non-class damage ¯¯¯¯¯¯¯ by 50%. _____________________________________"
+      },
+      {
+        "name": "METAL JACKET",
+        "raw_tag": "[_METAL JACKET_]",
+        "matched_overview_item": "Metal Jacket",
+        "category": "equipment",
+        "line": 175,
+        "char_offset": [
+          9149,
+          9165
+        ],
+        "context": "- KEITH - [_BELT OF THOR_], for a great ATK and P-ATK boost. ¯¯¯¯¯ - HALLEY - [_METAL JACKET_], Halley's best armor. ¯¯¯¯¯¯ - ALL SIX - [_CRYSTAL RING_] from Sharon, which reduces non-class damage ¯¯¯¯¯¯¯ by 50%. _____________________________________"
+      },
+      {
+        "name": "CRYSTAL RING",
+        "raw_tag": "[_CRYSTAL RING_]",
+        "matched_overview_item": "Crystal Ring",
+        "category": "equipment",
+        "line": 177,
+        "char_offset": [
+          9216,
+          9232
+        ],
+        "context": "- KEITH - [_BELT OF THOR_], for a great ATK and P-ATK boost. ¯¯¯¯¯ - HALLEY - [_METAL JACKET_], Halley's best armor. ¯¯¯¯¯¯ - ALL SIX - [_CRYSTAL RING_] from Sharon, which reduces non-class damage ¯¯¯¯¯¯¯ by 50%. _____________________________________"
+      },
+      {
+        "name": "BLACKSILKPANTS",
+        "raw_tag": "[_BLACKSILKPANTS_]",
+        "matched_overview_item": "BlackSilkPants",
+        "category": "equipment",
+        "line": 189,
+        "char_offset": [
+          9684,
+          9702
+        ],
+        "context": "NEW GAME+ NOTE If you're Monster Library is 100% complete, including the ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ final boss, you will receive the [_BLACKSILKPANTS_] for Alice. It is an accessory for Alice that increases her special defense and cuts special attack damage "
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 154,
+        "char_offset": [
+          8184,
+          8357
+        ],
+        "text": "If you're aiming to get a full Monster Library, then make sure that you find both the Full Armor and Perfect Wind Shears before moving on."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |           Sharon's Pit Fight (Halley's Armor / Other Items\n     [W-S-14]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n                          London, Old Castle Street\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\n_______________________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n       Items | [_] Seventh Key         [_] Tissues             ^ = NEW GAME+\n             | [_] Silver Hand                                     ONLY\n             |\n   Equipment | [_] Crucifix            [_] Crystal Ring\n             | [_] Belt of Thor       ^[_] BlackSilkPants\n             | [_] Metal Jacket\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                           |   HP   | Class | Notes\n================================='========'======='============================\n                           +   Sharon's Pit Fight   +\n---------------------------------.--------.-------.----------------------------\n #037 +[_] Speckled Creeper      |   250  | Light | P-Atk Resistant\n #038 +[_] Happy Creeper         |   250  | Dark  | Inflicts Instant Death,\n                                 |        |       |    S-Atk Resistant\n #041 +[_] Dark Judge            |   500  | Earth |\n #054 +[_] Tindalos              |  2000  | Fire  |\n #055 +[_] Garm                  |   165  | Dark  | Inflicts Paralysis\n #060 +[_] Camazotz              |   158  | Wind  |\n #063 +[_] Night Stalker         |  2500  | Wind  |\n #064 +[_] Mammon                |  3600  | Earth | Inflicts Petrification\n #066 +[_] Meat Eater            |   245  | Wind  |\n #067 +[_] Doom                  |   225  | Earth |\n #068 +[_] Buggs                 |   155  | Dark  | Inflicts Poison,\n                                 |        |       |    Confusion & Silence\n #069 +[_] Rausan                |  3500  | Fire  | Inflicts Silence\n #103 +[_] Full Armor Wind Shear |  1100  | Earth | Inflicts Ring anomalies\n #104 +[_] Perfect Wind Shear    |  1100  | Light | Inflicts Paralysis\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy Formations                   |  EXP  | Cash  | Possible Item Drops\n====================================|=======|=======|==========================\n Speckled Creeper, Happy Creeper    |   900 |     0 |\n Dark Judge                         |  1000 |     0 |\n Tindalos                           |  8000 |     0 |\n Garm x2                            |  1300 |     0 |\n Camazotz x3                        |  1860 |     0 |\n Night Stalker                      |  4000 |     0 |\n Mammon                             | 20000 |     0 |\n Doom x2, Meat Eater                |  3820 |     0 |\n Buggs x5                           |  4000 |     0 |\n Rausan                             | 15000 |     0 |\n Full Armor Wind Shear              |     0 |     0 |\n Perfect Wind Shear                 |     0 |     0 |\n____________________________________|_______|_______|__________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nAs I mentioned before, Sharon is now hosting pit fights! Just visit the London\nRats' hideout in Old Castle Street and take western red plank to find Sharon\nand Knowledgeable Carl. It doesn't cost anything to fight this time around, and\nyou'll have to fight 10 consecutive battles, with no chance to heal between\nbattles. There are 12 sets of enemies; the order is random, and you'll only\nhave to fight 10 of the 12 sets of enemies listed in the Enemy Formations\nsection above.\n\nFor items, make sure to have what you consider \"enough\" of the following:\n\n - Thera Root\n - Thera Extract (Silent Peddler) (for the Wind Shears)\n - Mana Root\n - Pure Seed\n - Third Keys (optional, for the Wind Shears)\n\nFor equipment, make sure that everyone has their best weapon and armor\navailable, obviously. As for accessories, CRUCIFIXES ARE A MUST HAVE! Don't\neven attempt this Pit Fight without one.\n\nFor the other two accessory slots, for the fighters (Yuri / Margarete / Keith /\nHalley), I recommend a combo of the Mind's Eye and Brsrkr Earrings so they can\ndo excellent physical damage and have extra HP. They should only need to use\ntheir Special Attacks on a select few enemies.\n\nFor the mages (Alice / Zhuzhen), I recommend equipping the Brsrkr Earrings to\nincrease their HP, and Priest Earrings to reduce their MP consumption by 20%.\nThere's only one enemy they'll NEED to physically attack (Happy Creeper), but\nthe rest of them should be able to be defeated by magic.\n\nFor the characters levels, the fighters should be able to do fine around 40\nwith little to no problems, or even 35 if you want a bit of a challenge, but\nthe mages will most likely need to be around 48 for Alice (Advent) and 47 for\nZhuzhen (Flames of Fudo) to be able to make it through without issues, mainly\nbecause that's when they learn their best spells. It CAN be done at earlier\nlevels, but it will be a bit harder. If you like, you can come back after\nyou've made some more progress in the story. Just keep in mind there's not much\nstory left!\n\n\n   Yuri / Margarete / Keith / Halley strategy\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nWith the Mind's Eye, Brsrkr Earrings, and Crucifix equipped, you should be\nattacking normally every round. The only issues you should run into are the\nWind Shears. The former bosses may seem to pose a threat, but they really can't\ndo much except for the fact that they'll take three to four times longer to\ndefeat than a normal enemy. Keep your HP and SP up. For more detailed\nstrategies on the harder enemies, see below.\n\n\n   Alice / Zhuzhen strategy\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nMake sure they're in the BACK ROW, then with the Brsrkr Earrings, Priest\nEarrings, and Crucifix equipped, you should be casting Advent with Alice and\nFlames of Fudo with Zhuzhen every round. If you do not have these spells, then\ndon't even try the Pit Fight yet; it's MUCH more difficult. Make sure to stay\nhealed every second or third round, because you'll most likely be taking more\ndamage than the fighters were. Keep your HP and SP up. For more detailed\nstrategies on the harder enemies, see below.\n\n\nThere are some special notes on certain enemies:\n\n\n   Dark Judge / Tindalos\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nThese enemies use Deathtouch, which instantly puts your HP into the\ncritical zone. Make sure to heal immediately after they use it.\n\n\n   Tindalos / Night Stalker / Mammon / Rausan\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nThere's nothing TOO special about these guys, other than the fact that they\nwere former bosses, meaning that they have more HP, so it'll take longer to\ndefeat them. Mammon will most likely take the longest; she'll use Howling over\nand over near the end, and if you're not strong enough to deal enough damage to\nmake up the difference, then you'll need to either level up or hope for better\nluck.\n\n\n   Full Armor Wind Shear / Perfect Wind Shear\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nAnother set of new models of Wind Shear, like the ones in Mr. Zhen's Pit Fight.\nThese guys are even worse, and are the reason you'll most likely need to be at\nhigh levels to make it through this pit fight. They hit really hard, and will\nalmost always kill you in two turns if you're not at a high enough level,\nmaking it almost impossible to kill them. Luckily, as long as you have a\nCrucifix, you won't have to worry about status abnormalities. Make sure to heal\nevery other round, and if that isn't enough to keep up, shift to the back row\nso you can lessen the damage. It'll take longer, but at least you can survive\nthat way. You MAY want to invest into some Third Keys to give yourself a chance\nfor when you CAN attack.\n\n\n  NOTE     If you're aiming to get a full Monster Library, then make sure that\n¯¯¯¯¯¯¯¯   you find both the Full Armor and Perfect Wind Shears before moving\n           on.\n\nOnce you are able to complete a set of ten fights, instead of being rewarded\nwith cash, you'll be rewarded differently depending on whom you won the pit\nfight with:\n\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n      - YURI - [_SEVENTH KEY_], something you should save for the very end.\n        ¯¯¯¯\n     - ALICE - [_CRUCIFIX_], great in case you don't have 3 of them yet.\n       ¯¯¯¯¯\n   - ZHUZHEN - [_SILVER HAND_], temporary 100% on the Judgment Ring. Goes\n     ¯¯¯¯¯¯¯   great with that Seventh Key, or even the Fifth Keys.\n\n - MARGARETE - [_TISSUES_]. Pointless, unless you needed it for the Air\n   ¯¯¯¯¯¯¯¯¯   Gravestone instead of using a Lottery Ticket.\n\n     - KEITH - [_BELT OF THOR_], for a great ATK and P-ATK boost.\n       ¯¯¯¯¯\n    - HALLEY - [_METAL JACKET_], Halley's best armor.\n      ¯¯¯¯¯¯\n   - ALL SIX - [_CRYSTAL RING_] from Sharon, which reduces non-class damage\n     ¯¯¯¯¯¯¯   by 50%.\n_______________________________________________________________________________\n\nOn a side note, you can also talk to Knowledgeable Carl to find out the\nfollowing facts:\n\n - Pit-fight Ranking.\n - % of Defeated Monsters.\n - % of Treasure Accumulated.\n\n  NEW GAME+ NOTE     If you're Monster Library is 100% complete, including the\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯   final boss, you will receive the [_BLACKSILKPANTS_] for\n                     Alice. It is an accessory for Alice that increases her\n                     special defense and cuts special attack damage in half\n                     (and changes the color of her panties from pink to black!)\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

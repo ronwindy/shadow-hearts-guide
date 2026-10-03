@@ -1,0 +1,47 @@
+{
+  "id": "header",
+  "code": "[HEADER]",
+  "title": "Title, Metadata & Intro Notes",
+  "category": "Header",
+  "section_type": "header",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": null,
+    "next": {
+      "id": "i-1-00",
+      "code": "[I-1-00]",
+      "title": "Table of Contents",
+      "file": "sections/i-1-00-table-of-contents.json"
+    }
+  },
+  "char_count": 3204,
+  "line_count": 54,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 36,
+        "char_offset": [
+          2110,
+          2381
+        ],
+        "text": "This document is best viewed using a FIXED-WIDTH font, such as Courier New.  If the ASCII above/below and the charts used throughout the guide look strange, please change your settings to display text in a FIXED-WIDTH font.  Thanks!"
+      }
+    ]
+  },
+  "text": "                         A Backdated Future presents...\n________________________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n                                                   _\n   _____ __   __    __    _____    ____ ___     .~´/              ____\n  //¯¯\\/ ||   ||    /\\    ||¯¯\\\\  //¯¯\\\\\\ | .^. | /         _pM´¯¯    ¯`*~.\n ((____  ||___||  _//\\\\_  ||   ||||    |||| ||| ||        ,NM`   `         \".\n  `———.\\~|.———.|  \\\\\\///  ||   ||||    |||| ||| ||      ,#M&  _  __.-MMMMMg  &\n       ))||   ||  //\\/\\\\  ||   ||||    ||\\\\// \\\\//     dMMMNN#NNMM  (MMMMMMM, #\n _____// ||   || //    \\\\ ||__//  \\\\__//  \\/   \\/     jMMNMMM8MMN~   ~FM´`MMM 4\n/~´¯¯¯¯  ¯¯   ¯¯/(     ¯¯ ¯¯¯¯¯    ¯¯¯¯   ¯¯   ¯¯    jMMMMMMMNp#P\\        [MM ]\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/_.`¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯  MMMMMMMNM~N&~        ;MF 4\n       .~/     ¯                                     QMMMN&M'   Mq       qM@,~´\n  __   \\| _______    __    ______ ________  _____    ]MMMN#  _,gggZjjCj,W _P\n  ||   || ||¯¯¯\\/    /\\    ||¯¯¯\\\\\\/¯||¯\\/ //¯¯\\/    ]MMMM_] yMMMMMMMMMMM#@~\n  ||___|| ||__,    _//\\\\_  ||___//   ||   ((____      #MMM6 ##´  ``''''´´\n ~|.———.|~|.——|    \\\\\\/// ~|.——./    ||    `———.\\     ^MMMM (\n  ||   || ||       //\\/\\\\  ||  \\\\    ||         ))      ~MM&,#\n  ||   || ||___/\\ //    \\\\ ||   \\`.  ||   /\\___//         ~MMg*,\n  ¯¯   ¯¯ ¯¯¯¯¯¯¯ ¯¯    ¯¯ ¯¯    \\ `.¯¯   ¯¯¯¯¯¯             ~N[.\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\.~`¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n________________________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n       Contact Email:   a.backdated.future@gmail.com\n            Facebook:   http://facebook.com/ABackdatedFuture\n\n                Game:   Shadow Hearts\n              Region:   NTSC (North America -English-)\n                Type:   FAQ/Walkthrough\n            Platform:   Sony PlayStation 2 (PS2)\n             Version:   1.05\n        Last Updated:   02/15/2012\nBest Viewing Program:   Mozilla Firefox (for better search functionality)\n\n NOTE    This document is best viewed using a FIXED-WIDTH font, such as Courier\n¯¯¯¯¯¯   New.  If the ASCII above/below and the charts used throughout the guide\n         look strange, please change your settings to display text in a\n         FIXED-WIDTH font.  Thanks!\n\n\n_____                                                                     _____\n\\*\\\\*\\    My purpose for this guide is to make sure that you are able    /*//*/\n )*))*)   to get a perfect game, meaning that you can find all items,   (*((*(\n/*//*/      explore all of the areas, and see all there is to see.       \\*\\\\*\\\n¯¯¯¯¯                                                                     ¯¯¯¯¯\n\n\nFor this guide, I have decided to create an extensive FAQ/Walkthrough. The\nwalkthrough is the main focus; it walks you through the whole game step-by-\nstep, leading you to the locations of all of the items in the game and\nstrategies for fighting the bosses. It will also be an extensive FAQ, which\nincludes lists of all of the items, equipment, skills, shop lists, a bestiary\nwith all of the enemies in the game, and more!"
+}

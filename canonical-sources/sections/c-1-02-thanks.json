@@ -1,0 +1,42 @@
+{
+  "id": "c-1-02",
+  "code": "[C-1-02]",
+  "title": "Thanks",
+  "category": "Conclusion",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "c-1-01",
+      "code": "[C-1-01]",
+      "title": "Version History",
+      "file": "sections/c-1-01-version-history.json"
+    },
+    "next": {
+      "id": "c-1-03",
+      "code": "[C-1-03]",
+      "title": "Copyright / Disclaimer / Credits",
+      "file": "sections/c-1-03-copyright-disclaimer-credits.json"
+    }
+  },
+  "char_count": 1130,
+  "line_count": 28,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n\n        ««  Shadow Hearts  »»                                   [C-1-02]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                                Thanks                               \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n   Big thanks go out to...\n\n - The other writers at GameFAQs.com that have helped me over the years, and\n   the writers for this game that helped me out in the past while playing the\n   game with their FAQs!\n\n - Lars N. for playing along with me as I wrote the FAQ, and for pointing out\n   things I could've missed along the way, as well as helped out with boss\n   strategies. Thanks a ton, this guide's so much better than it would've been\n   without your help!\n\n - mei_shu for providing the Malice Reward List after translating that section\n   from the Japanese Official Guide Book for Shadow Hearts!\n\n - YOU, the reader of this guide, for playing along!"
+}

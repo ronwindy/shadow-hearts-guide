@@ -1,0 +1,42 @@
+{
+  "id": "a-1-10",
+  "code": "[A-1-10]",
+  "title": "Malice Rewards",
+  "category": "Appendices",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "a-1-09",
+      "code": "[A-1-09]",
+      "title": "The Lottery",
+      "file": "sections/a-1-09-the-lottery.json"
+    },
+    "next": {
+      "id": "a-1-11",
+      "code": "[A-1-11]",
+      "title": "Pedometer Rewards",
+      "file": "sections/a-1-11-pedometer-rewards.json"
+    }
+  },
+  "char_count": 2728,
+  "line_count": 43,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n        ««  Shadow Hearts  »»                                   [A-1-10]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                            Malice Rewards                           \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nListed here are the prizes you win after defeating your Malice in the\nGraveyard. The prize you win depends on the level of Malice you have\naccumulated, with 100 being the max value. Sadly you can't use this knowledge\nto get the special prizes again and again, as they are replaced with a Thera\nLeaf the second time you clear the Malice at the same value.\n\n     .———————————.————————————————————.  .———————————.————————————————————.\n     |  Malice   |  Prize             |——|  Malice   |  Prize             |\n     |===========|====================|/\\|===========|====================|\n     |  01 - 03  |  Thera Leaf        |\\/|  57 - 59  |  Pure Leaf         |\n     |       04  |  Seal of Wisdom    |/\\|       60  |  Seal of Speed     |\n     |  05 - 06  |  Mana Leaf         |\\/|  61 - 62  |  Thera Leaf        |\n     |       07  |  Key to Success    |/\\|       63  |  Seal of Power     |\n     |  08 - 09  |  Pure Leaf         |\\/|  64 - 65  |  Mana Leaf         |\n     |  10 - 14  |  Thera Leaf        |/\\|  66 - 69  |  Pure Leaf         |\n     |  15 - 19  |  Mana Leaf         |\\/|       70  |  Seal of Life      |\n     |  20 - 24  |  Pure Leaf         |/\\|  71 - 73  |  Thera Leaf        |\n     |       25  |  Seal of Vitality  |\\/|  74 - 76  |  Mana Leaf         |\n     |  26 - 29  |  Thera Leaf        |/\\|       77  |  Seventh Key       |\n     |  30 - 34  |  Mana Leaf         |\\/|  78 - 79  |  Pure Leaf         |\n     |       35  |  Silver Hand       |/\\|  80 - 83  |  Thera Leaf        |\n     |  36 - 39  |  Pure Leaf         |\\/|       84  |  Seal of Aura      |\n     |  40 - 41  |  Thera Leaf        |/\\|  85 - 87  |  Mana Leaf         |\n     |       42  |  Kirin Scale       |\\/|  88 - 90  |  Pure Leaf         |\n     |  43 - 44  |  Mana Leaf         |/\\|       91  |  Monkey Paw        |\n     |  45 - 49  |  Pure Leaf         |\\/|  92 - 93  |  Thera Leaf        |\n     |       50  |  Seal of the Soul  |/\\|  94 - 97  |  Mana Leaf         |\n     |  51 - 52  |  Thera Leaf        |\\/|       98  |  Seal of Luck      |\n     |  53 - 55  |  Mana Leaf         |/\\|       99  |  Dice of Caesar    |\n     |       56  |  Seal of Force     |\\/|      100  |  N/A               |\n     '———————————'————————————————————'——'———————————'————————————————————'"
+}

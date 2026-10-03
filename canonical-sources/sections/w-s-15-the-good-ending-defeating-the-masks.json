@@ -1,0 +1,134 @@
+{
+  "id": "w-s-15",
+  "code": "[W-S-15]",
+  "title": "The Good Ending (Defeating the Masks)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-14",
+      "code": "[W-S-14]",
+      "title": "Sharon's Pit Fight (Halley's Armor / Other Items",
+      "file": "sections/w-s-14-sharon-s-pit-fight-halley-s-armor-other-items.json"
+    },
+    "next": {
+      "id": "w-2-14",
+      "code": "[W-2-14]",
+      "title": "Nemeton Monastery (2)",
+      "file": "sections/w-2-14-nemeton-monastery-2.json"
+    }
+  },
+  "char_count": 7959,
+  "line_count": 131,
+  "overview": {},
+  "items": [],
+  "enemies": [
+    {
+      "number": "#113",
+      "name": "Sword Mask",
+      "hp": 1875,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Uses SP Lowering"
+    },
+    {
+      "number": "#114",
+      "name": "Grail Mask",
+      "hp": 2000,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Uses SP Lowering"
+    },
+    {
+      "number": "#115",
+      "name": "Staff Mask",
+      "hp": 2250,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "S-Atk Resistant, uses SP Lowering"
+    },
+    {
+      "number": "#116",
+      "name": "Gold Mask",
+      "hp": 2625,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "P-Atk Resistant, uses SP Lowering"
+    },
+    {
+      "number": "#117",
+      "name": "Sword Mask",
+      "hp": 1,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#118",
+      "name": "Grail Mask",
+      "hp": 1,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#119",
+      "name": "Staff Mask",
+      "hp": 1,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#120",
+      "name": "Gold Mask",
+      "hp": 1,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 26,
+        "char_offset": [
+          1491,
+          1774
+        ],
+        "text": "TECHNICALLY, you can still get the Bad Ending even by defeating the Four Masks, but only if you forget to read the small tombstone in the Graveyard with Alice's name on it. NOTE     You really need to have gotten the Oath Grail from Joshua in the"
+      },
+      {
+        "type": "NOTE",
+        "line": 51,
+        "char_offset": [
+          2797,
+          3139
+        ],
+        "text": "If you encounter one of the Masks you already defeated between fighting the full-strength ones in order, you can fight and defeat them without worry; the next full-strength Mask will still be weakened as if you fought them right after the previous Mask. .————————————. / * SUB-BOSS * \\"
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                      The Good Ending (Defeating the Masks)\n     [W-S-15]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                           |   HP   | Class | Notes\n=================================|========|=======|============================\n #113  [_] Sword Mask            |  1875  | Wind  | Uses SP Lowering\n #114  [_] Grail Mask            |  2000  | Water | Uses SP Lowering\n #115  [_] Staff Mask            |  2250  | Fire  | S-Atk Resistant,\n                                 |        |       |    uses SP Lowering\n #116  [_] Gold Mask             |  2625  | Earth | P-Atk Resistant,\n                                 |        |       |    uses SP Lowering\n #117  [_] Sword Mask            |     1  | Wind  |\n #118  [_] Grail Mask            |     1  | Water |\n #119  [_] Staff Mask            |     1  | Fire  |\n #120  [_] Gold Mask             |     1  | Earth |\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nIt's time to decide which ending you want. If for some reason you want the bad\nending, then just skip this section. You'll also miss out on nine Monster\nLibrary entries. If you want the good ending, then keep on reading.\n\n  NOTE     TECHNICALLY, you can still get the Bad Ending even by defeating the\n¯¯¯¯¯¯¯¯   Four Masks, but only if you forget to read the small tombstone in\n           the Graveyard with Alice's name on it.\n\n  NOTE     You really need to have gotten the Oath Grail from Joshua in the\n¯¯¯¯¯¯¯¯   London Rats' hideout before trying this. Otherwise, you're going to\n           have a very tough time against the Masks. Also, Alice must be in\n           your party for any of this to happen.\n\nFollow these four steps to a tee (don't forget that there's one more step after\nall the fighting), and you'll definitely get the good ending. Here we go:\n\n1) Fight until your Malice meter is COMPLETELY red, meaning the Masks WILL\n   attack you in random battles.\n\n2) Read the Oath Grail in your Valuables menu; it shows that we need to defeat\n   the Masks in the following order: Grail Mask, Gold Mask, Staff Mask, Sword\n   Mask.\n\n3) Encounter the Masks in this order. If one comes in out of order, run away\n   and try again until the correct one appears. You'll know it's the correct\n   one because it won't hit you with a ring anomaly that you cannot remedy.\n   It's possible to beat them without fighting them in this order, but because\n   of their Fast / Tight / Popping Shock abilities, it'll be very difficult.\n\n  NOTE     If you encounter one of the Masks you already defeated between\n¯¯¯¯¯¯¯¯   fighting the full-strength ones in order, you can fight and defeat\n           them without worry; the next full-strength Mask will still be\n           weakened as if you fought them right after the previous Mask.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Grail Mask            |  2000 HP  | Class: Water | [_] Amber Ring           |\n| Gold Mask             |  2625 HP  | Class: Earth | [_] Carnelian Ring       |\n| Staff Mask            |  2250 HP  | Class: Fire  | [_] Lazurite Ring        |\n| Sword Mask            |  1875 HP  | Class: Wind  | [_] Obsidian Ring        |\n|-----------------------|-----------|--------------|--------------------------|\n| Grail Mask            |     1 HP  | Class: Water | [_] Thera Leaf           |\n| Gold Mask             |     1 HP  | Class: Earth | [_] Thera Leaf           |\n| Staff Mask            |     1 HP  | Class: Fire  | [_] Thera Leaf           |\n| Sword Mask            |     1 HP  | Class: Wind  | [_] Thera Leaf           |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  1st Encounter = Stronger form, must be fought in order for easy battles.   |\n|  2nd Encounter = Weaker form, defeated once and have lost their powers.     |\n|                                                                             |\n|  1) Grail Mask - He's a joke. Your hit area will be DOUBLED, and he's       |\n|     easily damaged by physical attacks. He should only take two turns, max. |\n|                                                                             |\n|  2) Gold Mask - A little harder than the Grail Mask, but not by much. He    |\n|     can't be harmed by physical attacks, so you must take him out with      |\n|     nothing but special attacks. It'll take longer than the Grail Mask, but |\n|     he's not a threat at all.                                               |\n|                                                                             |\n|  3) Staff Mask - A little easier than the Gold Mask, but not by much. He's  |\n|     just the opposite of the Gold Mask; he can't be harmed by special       |\n|     attacks, so you must take him out with nothing but physical attacks, so |\n|     it shouldn't be a problem. Again, not very much of a threat at this     |\n|     point.                                                                  |\n|                                                                             |\n|  4) Sword Mask - The last of the Masks is actually almost as easy as the    |\n|     first! He doesn't have any strong points like the last two, nor do you  |\n|     have a wider hit area, but either way, it should only take two,         |\n|     possibly three rounds to take this one out.                             |\n|                                                                             |\n|  5) Round Two! - Once you have defeated all Four Masks, keep your Malice    |\n|     in the red and wait for them to come around to fight once more! This    |\n|     time around, they don't need to be fought in any order, and they only   |\n|     take one hit to die. Make sure to do this so you get all eight of their |\n|     entries for the Monster Library.                                        |\n|                                                                             |\n| .————————————————.—————————————.—————————————.—————————————.—————————————.  |\n| |   Enemy        |   EXP (1)   |   Cash (1)  |   EXP (2)   |   Cash (2)  |  |\n| |————————————————|—————————————|—————————————|—————————————|—————————————|  |\n| |   Grail Mask   |    45000    |    30000    |      10     |      10     |  |\n| |   Gold Mask    |    45000    |    30000    |      10     |      10     |  |\n| |   Staff Mask   |    45000    |    30000    |      10     |      10     |  |\n| |   Sword Mask   |    45000    |    30000    |      10     |      10     |  |\n| '————————————————'—————————————'—————————————'—————————————'—————————————'  |\n|                                                                             |\n'—————————————————————————————————————————————————————————————————————————————'\n\nThere is one last step that is CRITICAL, and very easy to miss.\n\n4) Go to the Graveyard and examine the tiny tombstone next to the Dark\n   Gravestone; it should read \"Rest in peace, Alice Elliot...\". If you do not\n   read this, then Yuri won't know that anything is happening in the coming\n   events and won't join in. While you're there, feel free to clear the\n   remainder of your Malice.\n\n\n\n\n\n=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=—=\n\nThat's it for side quests for now. We have one left, but we can't do it until\nwe move the story along. Now, let's move on with the story and see if we got\nthe good ending or not!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

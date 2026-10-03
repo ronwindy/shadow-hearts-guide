@@ -1,0 +1,216 @@
+{
+  "id": "w-2-03",
+  "code": "[W-2-03]",
+  "title": "Blue Castle (1)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-02",
+      "code": "[W-2-02]",
+      "title": "Bistritz (1)",
+      "file": "sections/w-2-02-bistritz-1.json"
+    },
+    "next": {
+      "id": "w-2-04",
+      "code": "[W-2-04]",
+      "title": "Bistritz (2)",
+      "file": "sections/w-2-04-bistritz-2.json"
+    }
+  },
+  "char_count": 5435,
+  "line_count": 97,
+  "overview": {
+    "save_points": [
+      "First room inside"
+    ],
+    "items": [
+      "Thera Seed",
+      "Tent",
+      "Star Swallow",
+      "Lottery Ticket"
+    ],
+    "equipment": [
+      "Cosmic Bracelet",
+      "Chainmail Vest",
+      "Pocket Watch",
+      "Pocket Watch",
+      "Antique Rapier"
+    ]
+  },
+  "items": [
+    "Thera Seed",
+    "Tent",
+    "Star Swallow",
+    "Lottery Ticket",
+    "Cosmic Bracelet",
+    "Chainmail Vest",
+    "Pocket Watch",
+    "Pocket Watch",
+    "Antique Rapier"
+  ],
+  "enemies": [
+    {
+      "number": "#055",
+      "name": "Garm",
+      "hp": 165,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis"
+    },
+    {
+      "number": "#056",
+      "name": "Gremlin",
+      "hp": 62,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#057",
+      "name": "Hollow",
+      "hp": 103,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "COSMIC BRACELET",
+        "raw_tag": "[_COSMIC BRACELET_]",
+        "matched_overview_item": "Cosmic Bracelet",
+        "category": "equipment",
+        "line": 26,
+        "char_offset": [
+          1449,
+          1468
+        ],
+        "context": "Go into the dark area in the set of trees to your left and look around; you should find a [_COSMIC BRACELET_] behind a tree there. Once you have it, head all the way north to the next area. Hug the right wall as you go north to be in a small area wit"
+      },
+      {
+        "name": "THERA SEED",
+        "raw_tag": "[_THERA SEED_]",
+        "matched_overview_item": "Thera Seed",
+        "category": "items",
+        "line": 28,
+        "char_offset": [
+          1644,
+          1658
+        ],
+        "context": "Go into the dark area in the set of trees to your left and look around; you should find a [_COSMIC BRACELET_] behind a tree there. Once you have it, head all the way north to the next area. Hug the right wall as you go north to be in a small area wit"
+      },
+      {
+        "name": "STAR SWALLOW",
+        "raw_tag": "[_STAR SWALLOW_]",
+        "matched_overview_item": "Star Swallow",
+        "category": "items",
+        "line": 30,
+        "char_offset": [
+          1741,
+          1757
+        ],
+        "context": "Go into the dark area in the set of trees to your left and look around; you should find a [_COSMIC BRACELET_] behind a tree there. Once you have it, head all the way north to the next area. Hug the right wall as you go north to be in a small area wit"
+      },
+      {
+        "name": "TENT",
+        "raw_tag": "[_TENT_]",
+        "matched_overview_item": "Tent",
+        "category": "items",
+        "line": 37,
+        "char_offset": [
+          2151,
+          2159
+        ],
+        "context": "Go back to the main path and examine the gate to the north. It won't open, so start heading back south, and it'll magically open for you, allowing you entrance. Start to go up the stairs for a quick scene, then continue north to a fork. The path to t"
+      },
+      {
+        "name": "POCKET WATCH",
+        "raw_tag": "[_POCKET WATCH_]",
+        "matched_overview_item": "Pocket Watch",
+        "category": "equipment",
+        "line": 42,
+        "char_offset": [
+          2446,
+          2462
+        ],
+        "context": "Ignore the door to the west, as we can't go through it yet, and continue south and east for another quick scene. Continue east and down the stairs here to be back on the ground floor, but before descending the stairs to the next area, check below the"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 49,
+        "char_offset": [
+          2825,
+          2843
+        ],
+        "context": "Here in the basement, you'll see a skeleton that you can examine, as well as eight coffins, plus one to the southwest that is already open. Examine the open one for a scene. Before going back down, go up and past the statue here, scaling the wall as "
+      },
+      {
+        "name": "ANTIQUE RAPIER",
+        "raw_tag": "[_ANTIQUE RAPIER_]",
+        "matched_overview_item": "Antique Rapier",
+        "category": "equipment",
+        "line": 87,
+        "char_offset": [
+          5029,
+          5047
+        ],
+        "context": "NOTE Keith comes equipped with the [_ANTIQUE RAPIER_], a ¯¯¯¯¯¯¯¯ [_CHAINMAIL VEST_], and a [_POCKET WATCH_] equipped by default."
+      },
+      {
+        "name": "CHAINMAIL VEST",
+        "raw_tag": "[_CHAINMAIL VEST_]",
+        "matched_overview_item": "Chainmail Vest",
+        "category": "equipment",
+        "line": 88,
+        "char_offset": [
+          5062,
+          5080
+        ],
+        "context": "NOTE Keith comes equipped with the [_ANTIQUE RAPIER_], a ¯¯¯¯¯¯¯¯ [_CHAINMAIL VEST_], and a [_POCKET WATCH_] equipped by default."
+      },
+      {
+        "name": "POCKET WATCH",
+        "raw_tag": "[_POCKET WATCH_]",
+        "matched_overview_item": "Pocket Watch",
+        "category": "equipment",
+        "line": 88,
+        "char_offset": [
+          5088,
+          5104
+        ],
+        "context": "NOTE Keith comes equipped with the [_ANTIQUE RAPIER_], a ¯¯¯¯¯¯¯¯ [_CHAINMAIL VEST_], and a [_POCKET WATCH_] equipped by default."
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 87,
+        "char_offset": [
+          4988,
+          5126
+        ],
+        "text": "Keith comes equipped with the [_ANTIQUE RAPIER_], a [_CHAINMAIL VEST_], and a [_POCKET WATCH_] equipped by default."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                            Blue Castle (1)\n     [W-2-03]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | First room inside                               * = Initial\n             |\n       Items | [_] Thera Seed          [_] Tent\n             | [_] Star Swallow        [_] Lottery Ticket\n             |\n   Equipment | [_] Cosmic Bracelet    *[_] Chainmail Vest\n             | [_] Pocket Watch       *[_] Pocket Watch\n             |*[_] Antique Rapier\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                           |   HP   | Class | Notes\n=================================|========|=======|============================\n #055  [_] Garm                  |   165  | Dark  | Inflicts Paralysis\n #056  [_] Gremlin               |    62  | Wind  | Inflicts Ring anomalies\n #057  [_] Hollow                |   103  | Light |\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nGo into the dark area in the set of trees to your left and look around; you\nshould find a [_COSMIC BRACELET_] behind a tree there. Once you have it, head\nall the way north to the next area. Hug the right wall as you go north to be in\na small area with Meiyuan and a chest containing a [_THERA SEED_]. Check just\nto the west of the other chest to find another chest, this one with a\n[_STAR SWALLOW_].\n\nGo back to the main path and examine the gate to the north. It won't open, so\nstart heading back south, and it'll magically open for you, allowing you\nentrance. Start to go up the stairs for a quick scene, then continue north to a\nfork. The path to the east is locked, so use the Save Point if you want, then\ngo down the western stairs, moving south and opening the chest to your west for\na [_TENT_].\n\nIgnore the door to the west, as we can't go through it yet, and continue south\nand east for another quick scene. Continue east and down the stairs here to be\nback on the ground floor, but before descending the stairs to the next area,\ncheck below the stairs to your bottom-left for a [_POCKET WATCH_]. Once you\nhave it, go down the stairs.\n\nHere in the basement, you'll see a skeleton that you can examine, as well as\neight coffins, plus one to the southwest that is already open. Examine the open\none for a scene. Before going back down, go up and past the statue here,\nscaling the wall as you go northeast, to a small area; search here for a chest\ncontaining a [_LOTTERY TICKET_], then go back to the eight coffins. If you\nexamine the skeleton, he'll tell you:\n\n  \"Raise your voice in prayer! Pray for new writing to be turned into old!\n   So long as the 8 flames remain unlit, the door to the throne will not open!\n   Offer up thy prayers!\"\n\nEven though the skeleton really doesn't spell it out for you, you must pray at\neach of the coffins in a certain order (which happens to be in alphabetical\norder) to unlock the next door, so refer to the art below to open them:\n\n               .——————————————————————————————————————————————.\n               |               .——.         .´        .´      |\n               |               \\ 6 \\      .´        .´        |\n               |           .——. \\   \\   .´        .´ .——.     |\n               |           \\ 3 \\ `——´ .´        .´   \\ 5 \\    |\n               |       .——. \\   \\   .´        .´ .——. \\   \\   |\n               |       \\ 8 \\ `——´ .´        .´   \\ 2 \\ `——´   |\n               |   .——. \\   \\   .´        .´ .——. \\   \\       |\n               |   \\ 1 \\ `——´ .´        .´   \\ 7 \\ `——´       |\n               |    \\   \\   .´        .´ .——. \\   \\           |\n               |     `——´ .´        .´   \\ 4 \\ `——´           |\n               |        .´        .´      \\   \\               |\n               |      .´        .´         `——´               |\n               |    .´        .´                              |\n               |——————————————————————.———————————————————————|\n               |           Abel = 1   |   5 = Leon            |\n               |          Edgar = 2   |   6 = Maria           |\n               |          Frank = 3   |   7 = Robin           |\n               |          Helen = 4   |   8 = Steven          |\n               '——————————————————————'———————————————————————'\n\nAfter successfully solving the puzzle, you'll hear the sound of a door being\nunlocked. Make your way back upstairs and to the Save Point. At the fork here,\ntake the eastern path (now that the door here is unlocked) and enter. Watch a\nshort bit of dialogue, then try to leave. Watch the events unfold here, and\nonce they're finished, Keith Valentine will join your party!\n\n  NOTE     Keith comes equipped with the [_ANTIQUE RAPIER_], a\n¯¯¯¯¯¯¯¯   [_CHAINMAIL VEST_], and a [_POCKET WATCH_] equipped by default.\n\nUnless you'd like to fight some more and get used to Keith's Ring, leave the\nBlue Castle. Save on the World Map, then enter Bistritz once again.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

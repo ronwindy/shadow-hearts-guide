@@ -1,0 +1,215 @@
+{
+  "id": "w-2-06",
+  "code": "[W-2-06]",
+  "title": "Prague (2)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-05",
+      "code": "[W-2-05]",
+      "title": "Blue Castle (2)",
+      "file": "sections/w-2-05-blue-castle-2.json"
+    },
+    "next": {
+      "id": "w-2-07",
+      "code": "[W-2-07]",
+      "title": "Rouen",
+      "file": "sections/w-2-07-rouen.json"
+    }
+  },
+  "char_count": 4650,
+  "line_count": 80,
+  "overview": {
+    "save_points": [
+      "Center of town near the bar"
+    ],
+    "lottery": [
+      "Lottery Member No. 08 (Guard Homas)"
+    ],
+    "items": [
+      "Lottery Ticket"
+    ]
+  },
+  "items": [
+    "Lottery Ticket"
+  ],
+  "enemies": [
+    {
+      "number": null,
+      "name": "Olga",
+      "hp": 680,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": ""
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [
+    {
+      "name": "Time is Money",
+      "inventory": [
+        {
+          "name": "Chainmail Vest",
+          "price": 5500
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Silk Bolero",
+          "price": 5940
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Face Guard",
+          "price": 3000
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Imp's Fang",
+          "price": 95
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Jade Lariat",
+          "price": 5050
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 71,
+        "char_offset": [
+          4369,
+          4387
+        ],
+        "context": "After the battle, watch the scene, then you'll regain control. As Yuri, go into the men's bathroom and check the top of the room. You should find a [_LOTTERY TICKET_] on the floor."
+      }
+    ],
+    "notes": []
+  },
+  "text": "\n   Shadow Hearts   |                                                 Prague (2)\n     [W-2-06]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Center of town near the bar\n             |\n     Lottery | [_] Lottery Member No. 08 (Guard Homas)\n             |\n       Items | [_] Lottery Ticket\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy            (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n      ~[_] Olga                  |   680  | Dark  |\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Time is Money   -$-                   |\n       |===============================v===============================|\n       | Chainmail Vest      -    5500 | Mana Seed           -     300 |\n       | Silk Bolero         -    5940 | Mana Root           -     500 |\n       | Studded Cap         -    1700 | Pure Leaf           -     230 |\n       | Face Guard          -    3000 | Pure Seed           -     510 |\n       | Western Belt        -    1700 | TalismanOfLuck      -     480 |\n       | Shell Bracelet      -    2770 | TalismanOfMercy     -     820 |\n       | Bone Bracelet       -    2960 | Mermaid's Tear      -      70 |\n       | Rosewood Bracelet   -    3000 | Holy Mother Bust    -      75 |\n       | Bell Bracelet       -    3120 | Angel's Feather     -      80 |\n       | Mirror Bracelet     -    3240 | Faerie's Sigh       -      85 |\n       | Spikes              -    2810 | Imp's Fang          -      95 |\n       | Leonardo's Bear     -    3330 | Phoenix Tail        -      90 |\n       | Voodoo Doll         -    5200 | Bronze Arrowhead    -     100 |\n       | Jade Lariat         -    5050 | Bronze Dagger       -     200 |\n       | Thera Seed          -     120 | Silver Hourglass    -     100 |\n       | Thera Root          -     300 | Gold Hourglass      -     200 |\n       |                               | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\nMake sure to Save and use a Tent, if needed, at the Save Point near the bar.\nWhen you're ready, enter the bar and approach the owner. Watch the scene, and\nyou'll eventually gain control of Alice.\n\nAs Alice, enter the women's restroom, then check both stalls and the mirror.\nRepeat this again, and then a third time to trigger a battle with Olga.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Olga                  |   680 HP  | Class: Dark  | [_] Monk Earrings        |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  Olga will use normal attacks, Blaze, Rock Storm, Nova, Icy Breath, and     |\n|  Lightning to do decent damage each round, maybe 50-60 HP of damage every   |\n|  round. Watch out if she uses Mind Assault to steal your MP, as you'll      |\n|  want to recover it immediately if she takes too much.                      |\n|                                                                             |\n|  Cast Blessed Light rounds one and two, then Cure the next if needed.       |\n|  Blessed Light two rounds, Cure the third. Lather, rinse, repeat. Oh, and   |\n|  don't forget to recover your SP if needed. Not much else you can do since  |\n|  it's just Alice.                                                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   15000 EXP   / \\   13000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, watch the scene, then you'll regain control. As Yuri, go into\nthe men's bathroom and check the top of the room. You should find a\n[_LOTTERY TICKET_] on the floor.\n\nThat's it for Prague, so head on out to the World Map. We're heading to Rouen\nnext.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

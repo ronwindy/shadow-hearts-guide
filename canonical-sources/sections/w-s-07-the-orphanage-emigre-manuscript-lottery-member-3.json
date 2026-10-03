@@ -1,0 +1,76 @@
+{
+  "id": "w-s-07",
+  "code": "[W-S-07]",
+  "title": "The Orphanage (Emigre Manuscript / Lottery Member #3)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-06",
+      "code": "[W-S-06]",
+      "title": "Nemeton Monastery (Book of Rituals / Codex of Lurie)",
+      "file": "sections/w-s-06-nemeton-monastery-book-of-rituals-codex-of-lurie.json"
+    },
+    "next": {
+      "id": "w-s-08",
+      "code": "[W-S-08]",
+      "title": "Rouen (Silent Peddler / Margarete's Armor, Weapon, &",
+      "file": "sections/w-s-08-rouen-silent-peddler-margarete-s-armor-weapon.json"
+    }
+  },
+  "char_count": 3392,
+  "line_count": 66,
+  "overview": {
+    "lottery": [
+      "Lottery Member No. 03 (Pot-lover Macken)"
+    ],
+    "valuables": [
+      "Emigre Manuscript"
+    ]
+  },
+  "items": [
+    "Emigre Manuscript"
+  ],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "EMIGRE MANUSCRIPT",
+        "raw_tag": "[_EMIGRE MANUSCRIPT_]",
+        "matched_overview_item": "Emigre Manuscript",
+        "category": "valuables",
+        "line": 31,
+        "char_offset": [
+          1519,
+          1540
+        ],
+        "context": "Once you've won, you'll be able to go past him. Climb the stairs and examine the pot, and you'll receive the [_EMIGRE MANUSCRIPT_] from Pot-lover Macken. As with the Books of Rituals, examine the Emigre Manuscript in your Valuables menu, and it'll un"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 03",
+        "raw_tag": "[_LOTTERY MEMBER NO. 03_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 42,
+        "char_offset": [
+          2102,
+          2127
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 03_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      }
+    ],
+    "notes": []
+  },
+  "text": "\n   Shadow Hearts   |      The Orphanage (Emigre Manuscript / Lottery Member #3)\n     [W-S-07]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n     Lottery | [_] Lottery Member No. 03 (Pot-lover Macken)\n             |\n   Valuables | [_] Emigre Manuscript\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nMake your way back to the Orphanage in London. Go into the room where you\nfought Jack and Mammon, and talk to the little boy, Insolent Jean. He wonders\nif you want to play with him and his friends.\n\n——————————————————————————————\n   [1] Alright, we'll play.\n   [2] I'm busy.\n——————————————————————————————\n\nChoose 1 and you'll start playing. You have one minute to find all of his\nfriends, so quickly each of the 5 rooms here to find 4 children: the room\nyou're currently in with Insolent Jean, the large hallway, the top-right room,\nthe top-left room, and the bottom-left room. There's only one kid in each room,\nand their locations will be random, so it may take two or three tries to find\nthem all. You must also return to Insolent Jean and talk to him before the\ntimer runs out to succeed.\n\nOnce you've won, you'll be able to go past him. Climb the stairs and examine\nthe pot, and you'll receive the [_EMIGRE MANUSCRIPT_] from Pot-lover Macken. As\nwith the Books of Rituals, examine the Emigre Manuscript in your Valuables\nmenu, and it'll unlock the Cave Temple on your World Map (the Britain Map,\nspecifically) the next time you're out there.\n\nAfter you receive the Manuscript, go out into the hallway and SAVE. Then go\nback in and talk to Pot-lover Macken once more, and you'll find out that he's a\nLottery Member!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 03_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Crucifix                  /\n               /        (Yellow)  |  Seal of Wisdom            \\\n              /      (Turquoise)  |  Pure Extract               \\\n             /           (Green)  |  Pure Root                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nThe ring here is INVISIBLE, so make sure to equip the Pocket Watch so you can\nsee it, which then becomes the easiest Lottery of the game. Little brat....\nAnyway, make sure to win the Crucifix before continuing on; you already have\none, but since it cancels out all status effects, you'll definitely want a\nsecond! If you don't win it, reload your last save and try again. Remember, you\nneed to win something from each member at least once!\n\nThat's it for here. On to the next quest!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

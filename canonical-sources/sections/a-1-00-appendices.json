@@ -1,0 +1,42 @@
+{
+  "id": "a-1-00",
+  "code": "[A-1-00]",
+  "title": "Appendices",
+  "category": "Appendices",
+  "section_type": "major",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-18",
+      "code": "[W-2-18]",
+      "title": "New Game+",
+      "file": "sections/w-2-18-new-game.json"
+    },
+    "next": {
+      "id": "a-1-01",
+      "code": "[A-1-01]",
+      "title": "Special Skills / Souls",
+      "file": "sections/a-1-01-special-skills-souls.json"
+    }
+  },
+  "char_count": 1672,
+  "line_count": 27,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [],
+    "notes": []
+  },
+  "text": "\n\n\n\n\n        ««  Shadow Hearts  »»                                   [A-1-00]\n____________________________________________________________________________\n\\\\\\\\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\\\\\\\\n \\\\\\\\                              Appendices                             \\\\\\\\\n  \\\\\\\\_____________________________________________________________________\\\\\\\\\n   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nSpecial Skills / Souls  . . . . . . . . . . . . . . . . . . . . . . . .[A-1-01]\nWeapons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-02]\nArmor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-03]\nAccessories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-04]\nItems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-05]\nValuables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-06]\nStore/Shop List . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-07]\nAcupuncturist Costs . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-08]\nThe Lottery . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-09]\nMalice Rewards  . . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-10]\nPedometer Rewards . . . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-11]\nNPC Library (* some spoilers *) . . . . . . . . . . . . . . . . . . . .[A-1-12]\nMonster Library (Bestiary)  . . . . . . . . . . . . . . . . . . . . . .[A-1-13]\nSub-bosses and Bosses . . . . . . . . . . . . . . . . . . . . . . . . .[A-1-14]\nHelp (detailed, available in-game)  . . . . . . . . . . . . . . . . . .[A-1-15]"
+}

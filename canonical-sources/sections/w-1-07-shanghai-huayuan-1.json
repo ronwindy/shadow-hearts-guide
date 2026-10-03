@@ -1,0 +1,356 @@
+{
+  "id": "w-1-07",
+  "code": "[W-1-07]",
+  "title": "Shanghai, Huayuan (1)",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-1-06",
+      "code": "[W-1-06]",
+      "title": "Smuggler's Boat",
+      "file": "sections/w-1-06-smuggler-s-boat.json"
+    },
+    "next": {
+      "id": "w-1-08",
+      "code": "[W-1-08]",
+      "title": "Temple Ruins",
+      "file": "sections/w-1-08-temple-ruins.json"
+    }
+  },
+  "char_count": 9998,
+  "line_count": 171,
+  "overview": {
+    "save_points": [
+      "Hotel ground floor"
+    ],
+    "lottery": [
+      "Lottery Member No. 12 (Sharp Van)"
+    ],
+    "items": [
+      "Lottery Ticket",
+      "Seal of Life",
+      "Mana Seed",
+      "Lottery Ticket",
+      "TalismanOfMercy"
+    ],
+    "equipment": [
+      "Pilgrim's Staff"
+    ]
+  },
+  "items": [
+    "Lottery Ticket",
+    "Seal of Life",
+    "Mana Seed",
+    "Lottery Ticket",
+    "TalismanOfMercy",
+    "Pilgrim's Staff"
+  ],
+  "enemies": [
+    {
+      "number": "#015",
+      "name": "Kappa",
+      "hp": 100,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": null,
+      "name": "Wugui",
+      "hp": null,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Cannot be defeated"
+    },
+    {
+      "number": null,
+      "name": "Wugui",
+      "hp": 330,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "S-Atk Resistant"
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [
+    {
+      "name": "Mika's House",
+      "inventory": [
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Brigand Earrings",
+          "price": 5000
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Pirate Earrings",
+          "price": 5000
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    },
+    {
+      "name": "Shanghai Weapon Studio",
+      "inventory": [
+        {
+          "name": "Steel Claw",
+          "price": 2800
+        },
+        {
+          "name": "Nanbu Pistol",
+          "price": 2900
+        },
+        {
+          "name": "Tome of the Moon",
+          "price": 3000
+        },
+        {
+          "name": "Studded Harness",
+          "price": 2500
+        },
+        {
+          "name": "Pilgrim's Staff",
+          "price": 2700
+        },
+        {
+          "name": "Studded Bustier",
+          "price": 2700
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "PILGRIM'S STAFF",
+        "raw_tag": "[_PILGRIM'S STAFF_]",
+        "matched_overview_item": "Pilgrim's Staff",
+        "category": "equipment",
+        "line": 67,
+        "char_offset": [
+          4031,
+          4050
+        ],
+        "context": "From the entrance to the hotel, take a couple steps south and open the chest for a [_PILGRIM'S STAFF_] for Zhuzhen; be sure to equip it to him. Make your way out into the intersection in the street here. To your southeast is a man in purple, standing"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 70,
+        "char_offset": [
+          4301,
+          4319
+        ],
+        "context": "From the entrance to the hotel, take a couple steps south and open the chest for a [_PILGRIM'S STAFF_] for Zhuzhen; be sure to equip it to him. Make your way out into the intersection in the street here. To your southeast is a man in purple, standing"
+      },
+      {
+        "name": "MANA SEED",
+        "raw_tag": "[_MANA SEED_]",
+        "matched_overview_item": "Mana Seed",
+        "category": "items",
+        "line": 72,
+        "char_offset": [
+          4435,
+          4448
+        ],
+        "context": "From the entrance to the hotel, take a couple steps south and open the chest for a [_PILGRIM'S STAFF_] for Zhuzhen; be sure to equip it to him. Make your way out into the intersection in the street here. To your southeast is a man in purple, standing"
+      },
+      {
+        "name": "TALISMANOFMERCY",
+        "raw_tag": "[_TALISMANOFMERCY_]",
+        "matched_overview_item": "TalismanOfMercy",
+        "category": "items",
+        "line": 79,
+        "char_offset": [
+          4805,
+          4824
+        ],
+        "context": "Go right, then follow the wall as you go south until you run across a '?' icon at the yellow banner; check here for a [_TALISMANOFMERCY_]. Keep following along the eastern wall until you come across another '?' icon near a long red banner; check here"
+      },
+      {
+        "name": "B.DRAGON HORN",
+        "raw_tag": "[_B.DRAGON HORN_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 81,
+        "char_offset": [
+          4944,
+          4961
+        ],
+        "context": "Go right, then follow the wall as you go south until you run across a '?' icon at the yellow banner; check here for a [_TALISMANOFMERCY_]. Keep following along the eastern wall until you come across another '?' icon near a long red banner; check here"
+      },
+      {
+        "name": "SEAL OF LIFE",
+        "raw_tag": "[_SEAL OF LIFE_]",
+        "matched_overview_item": "Seal of Life",
+        "category": "items",
+        "line": 87,
+        "char_offset": [
+          5244,
+          5260
+        ],
+        "context": "Descend the stairs here, then examine the barrel next to the green archway for a [_SEAL OF LIFE_]. Make your way south and down into the area below deck on the boat. Talk to the boy here, and you'll find out that he's a Lottery Member!"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 12",
+        "raw_tag": "[_LOTTERY MEMBER NO. 12_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 92,
+        "char_offset": [
+          5565,
+          5590
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 12_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 116,
+        "char_offset": [
+          7052,
+          7070
+        ],
+        "context": "When you're done, head back to the intersection near the hotel and go south at the intersection, then down the stairs to your west for an event (if you haven't seen it yet.) In the bar here, examine the barrel at the bottom-right of the screen to fin"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 154,
+        "char_offset": [
+          9127,
+          9339
+        ],
+        "text": "Not only can you talk to Meiyuan in Zhen's Bar to have him do Acupuncture, but he can also change out your party for you! Take advantage of that to equip your party as you like."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                      Shanghai, Huayuan (1)\n     [W-1-07]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Hotel ground floor\n             |\n     Lottery | [_] Lottery Member No. 12 (Sharp Van)\n             |\n       Items | [_] Lottery Ticket      [_] Seal of Life\n             | [_] Mana Seed           [_] Lottery Ticket\n             | [_] TalismanOfMercy\n             |\n   Equipment | [_] Pilgrim's Staff\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy            (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #015  [_] Kappa                 |   100  | Water |\n       [_] Wugui                 |        | Dark  | Cannot be defeated\n      ~[_] Wugui                 |   330  | Dark  | S-Atk Resistant\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |                   -$-   Mika's House   -$-                    |\n       |===============================v===============================|\n       | Leather Cap         -     600 | Mana Seed           -     300 |\n       | Studded Cap         -    1700 | Pure Leaf           -     230 |\n       | Casual Belt         -     600 | Pure Seed           -     510 |\n       | Western Belt        -    1700 | TalismanOfLuck      -     480 |\n       | Shell Bracelet      -    2770 | TalismanOfMercy     -     820 |\n       | Bone Bracelet       -    2960 | Mermaid's Tear      -      70 |\n       | Rosewood Bracelet   -    3000 | Holy Mother Bust    -      75 |\n       | Bell Bracelet       -    3120 | Angel's Feather     -      80 |\n       | Spikes              -    2810 | Faerie's Sigh       -      85 |\n       | Voodoo Doll         -    5200 | Phoenix Tail        -      90 |\n       | Brigand Earrings    -    5000 | Bronze Arrowhead    -     100 |\n       | Pirate Earrings     -    5000 | Bronze Dagger       -     200 |\n       | Thera Leaf          -      50 | Silver Hourglass    -     100 |\n       | Thera Seed          -     120 | Gold Hourglass      -     200 |\n       | Mana Leaf           -     100 | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\n       .———————————————————————————————————————————————————————————————.\n       |              -$-   Shanghai Weapon Studio   -$-               |\n       |===============================v===============================|\n       | Steel Claw          -    2800 | Nanbu Pistol        -    2900 |\n       | Tome of the Moon    -    3000 | Studded Harness     -    2500 |\n       | Pilgrim's Staff     -    2700 | Studded Bustier     -    2700 |\n       '———————————————————————————————'———————————————————————————————'\n\nYou'll have to watch a flashback from fifteen years ago first. After being\nintroduced to Yuri's overly-awesome father, Colonel Ben Hyuga, you'll have to\nfight a battle as him. In the battle, feel free to fuse into the Czernobog and\nuse the Seventh Key item on one of the Kappas, and with you hitting as many of\nthe spots on the Judgment Ring as you can, watch as he obliterates both of the\nKappas and Wugui in a single round.\n\nAfterward, you'll regain control as Zhuzhen in the Cypress Hotel in Shanghai.\nThe Silent Peddler is here beside your room, but again, I recommend saving your\npoints until you are able to get the best prize first. Use the Save Point on\nthe ground floor and feel free to talk to Margarete. Head out into the city.\n\nFrom the entrance to the hotel, take a couple steps south and open the chest\nfor a [_PILGRIM'S STAFF_] for Zhuzhen; be sure to equip it to him. Make your\nway out into the intersection in the street here. To your southeast is a man in\npurple, standing on a red mat; search the ground beside the wagon with a barrel\njust below that man (Hasty Kawa) for a [_LOTTERY TICKET_]. From there, go down\nthe nearby stairs to your south and examine the barrel at the very bottom of\nthe screen for a [_MANA SEED_].\n\nDepending on how close you get to the stairs here to the west, you'll see an\nevent. This is where we're supposed to go next, but there are still some items\nto be found first. Head back to the intersection and go east to the next area.\n\nGo right, then follow the wall as you go south until you run across a '?' icon\nat the yellow banner; check here for a [_TALISMANOFMERCY_]. Keep following\nalong the eastern wall until you come across another '?' icon near a long red\nbanner; check here for a [_B.DRAGON HORN_]. To your left from here is a blue\ndoor; this is actually a shop (Mika's House), but save shopping here for just a\nlittle later when we have another discount card. Continue southwest to the next\narea.\n\nDescend the stairs here, then examine the barrel next to the green archway for\na [_SEAL OF LIFE_]. Make your way south and down into the area below deck on\nthe boat. Talk to the boy here, and you'll find out that he's a Lottery Member!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 12_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Star Card                 /\n               /        (Yellow)  |  R.Phoenix Talon           \\\n              /      (Turquoise)  | *TeaOfTheSage               \\\n             /           (Green)  |  Pure Seed                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n * - The Prize Listing in game lists this prize as TeaOfTheHolyOne, and even\n     says that you receive it after winning it. However, if you check your\n     inventory, you will receive a TeaOfTheSage instead.\n\nThe ring here moves REALLY fast, so remember, equipping the Pocket Watch will\nmake it easier to hit the areas! Make sure to win the Star Card before\ncontinuing on; it allows you to get up to 20% off on your purchases, and 10%\nmore on your sales! If you don't win it, reload your last save and try again.\nRemember, you need to win something from each member at least once!\n\nWhen you're done, head back to the intersection near the hotel and go south at\nthe intersection, then down the stairs to your west for an event (if you\nhaven't seen it yet.) In the bar here, examine the barrel at the bottom-right\nof the screen to find another [_LOTTERY TICKET_].\n\nTalk to the man at the bar to start a series of events. You'll eventually have\ntwo different battles against a Kappa each time. Just cast Ogre Flamedance and\nheal, if necessary. After those two are finished, you'll take on Wugui, but to\nno avail. You cannot win, so just defend and let him take you out with his Game\nof Death. Once that battle is over, Yuri will step in and you'll have to take\nhim on once again.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Wugui                 |   330 HP  | Class: Dark  | [_] Weird Bottle         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  As with the battle as his father, have Yuri fuse into your physically      |\n|  strongest Soul, Raging Tiger, and just rip into Wugui with physical        |\n|  attacks. He doesn't pose much of a threat, but if you let the battle go    |\n|  on too long, make sure to heal.                                            |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01500 EXP   / \\   04500 Cash   /\n     '—————————————'   '——————————————'\n\nWatch the long series of events afterward, and you'll regain control in the\nhotel room. Before moving on, there's a couple more things we can do in\nShanghai. Save first.\n\nAt the intersection by the hotel, there's a stand just to your right before\ngoing to the next screen. Talk to Lamenting Clerk Kuro; now that Wugui is gone,\nyou can buy weapons here, so make sure to upgrade!\n\nFor shopping recommendations, I recommend buying a decent amount of the new 2nd\nlevel recovery items (Thera/Mana/Pure Seed and TalismanOfMercy), as well as\nupgrading everyone's weapons, armor, and buying four (this time) each of the\nStudded Caps and Western Belts, as all four party members will be participating\nin the next dungeon.\n\n  NOTE     Not only can you talk to Meiyuan in Zhen's Bar to have him do\n¯¯¯¯¯¯¯¯   Acupuncture, but he can also change out your party for you! Take\n           advantage of that to equip your party as you like.\n\nOnce you're done shopping, make your way back to the bar, and examine the\ncurtain on the top part of the room. Mr. Zhen is now hosting pit fights! Right\nnow, you won't make it very far before you're killed, but you're welcome to\ntry! We'll come back to this after a while, when we're a lot stronger and are\nable to finish it, but just know that it's here.\n\nWhen you're ready, go to the intersection near the hotel and head north out to\nthe World Map. Make your way over to the Temple Ruins next.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

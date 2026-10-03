@@ -1,0 +1,676 @@
+{
+  "id": "w-1-11",
+  "code": "[W-1-11]",
+  "title": "Shanghai, Kuihai Tower",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-s-03",
+      "code": "[W-S-03]",
+      "title": "Mr. Zhen's Pit Fight",
+      "file": "sections/w-s-03-mr-zhen-s-pit-fight.json"
+    },
+    "next": {
+      "id": "w-2-00",
+      "code": "[W-2-00]",
+      "title": "Walkthrough - Europe",
+      "file": "sections/w-2-00-walkthrough-europe.json"
+    }
+  },
+  "char_count": 22508,
+  "line_count": 343,
+  "overview": {
+    "save_points": [
+      "First room inside the tower",
+      "2nd floor, before sub-boss",
+      "Top of the tower"
+    ],
+    "lottery": [
+      "Lottery Member No. 09 (Private Matsuura)"
+    ],
+    "items": [
+      "Seal of Life",
+      "Pure Extract",
+      "Third Key",
+      "Lottery Ticket",
+      "Lottery Ticket",
+      "TalismanOfWisdom"
+    ],
+    "valuables": [
+      "B. Tortoise VP",
+      "R. Phoenix VP",
+      "B. Dragon VP",
+      "W. Tiger VP",
+      "Erotic Book"
+    ]
+  },
+  "items": [
+    "Seal of Life",
+    "Pure Extract",
+    "Third Key",
+    "Lottery Ticket",
+    "Lottery Ticket",
+    "TalismanOfWisdom",
+    "B. Tortoise VP",
+    "R. Phoenix VP",
+    "B. Dragon VP",
+    "W. Tiger VP",
+    "Erotic Book"
+  ],
+  "enemies": [
+    {
+      "number": "#016",
+      "name": "Water Tiger",
+      "hp": 155,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#043",
+      "name": "Yamaraja: Stone",
+      "hp": 1800,
+      "class": "Fire",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#044",
+      "name": "Vengeance Demon",
+      "hp": 175,
+      "class": "Wind",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#045",
+      "name": "Rage Demon",
+      "hp": 100,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#046",
+      "name": "Mournful Demon",
+      "hp": 325,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#047",
+      "name": "Man-Snake",
+      "hp": 83,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#048",
+      "name": "Shadow",
+      "hp": 78,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#049",
+      "name": "Badger Devil",
+      "hp": 700,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": ""
+    },
+    {
+      "number": null,
+      "name": "Dehuai",
+      "hp": 1700,
+      "class": "Fire",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#050",
+      "name": "Yamaraja: Calamity",
+      "hp": 3000,
+      "class": "None",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Petrification & Silence"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Stone, Badger Devil",
+      "enemies": [
+        {
+          "name": "Yamaraja: Stone",
+          "hp": 1800,
+          "class": "Fire",
+          "drop": "B.Dragon Horn"
+        },
+        {
+          "name": "Badger Devil",
+          "hp": 700,
+          "class": "Fire",
+          "drop": "Seal of Luck"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 20
+        },
+        {
+          "name": "Margarete",
+          "level": 19
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 18
+        }
+      ],
+      "exp": 2600,
+      "cash": 6000,
+      "strategy": "Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be\nyour go-to Fusion if you're taking the magic route.\nOther than the fact that he uses defensive spells (that don't seem to\nhelp him at all), all he'll use are physical attacks. They're not TOO\nstrong, but if he focuses on just one person on two different attacks,\nhe'll whittle their HP down quicker than you realize, so stay healed.\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. This Yamaraja is fairly easy\ncompared to the last two bosses."
+    },
+    {
+      "type": "BOSS",
+      "name": "Dehuai",
+      "enemies": [
+        {
+          "name": "Dehuai",
+          "hp": 1700,
+          "class": "Fire",
+          "drop": "Hermit's Staff"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 22
+        },
+        {
+          "name": "Margarete",
+          "level": 20
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 19
+        }
+      ],
+      "exp": 3500,
+      "cash": 7000,
+      "strategy": "Another Fire-based boss? Don't mind if I do! Makes Margarete that much\nmore useful!\nDehuai's fire attacks, Magnard and Blaze, will hit your whole party for\ndecent damage, and he also has a rather quick (and interestingly bizarre)\nphysical attack that also does decent to major damage. He also has a Fast\nRing attack that hits for decent damage, and it can possibly make your\nJudgment Ring spin faster. Make sure to keep healed and try to keep that\nRing status off!\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. He's pretty easy as well, but the\nchallenge is upcoming."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Calamity",
+      "enemies": [
+        {
+          "name": "Yamaraja: Calamity",
+          "hp": 3000,
+          "class": "None",
+          "drop": "Fifth Key"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 22
+        },
+        {
+          "name": "Margarete",
+          "level": 21
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 20
+        }
+      ],
+      "exp": 6000,
+      "cash": 11000,
+      "strategy": "Yamaraja will most likely start off with the Crimson Flame spell, dealing\nMAJOR fire damage to your party and possibly Silencing them as well. His\nPetrification attack should only do medium damage to your party IF you're\nprotected against it; otherwise, you'll turn to stone, and three\nPetrified party members equals a game over. He'll also use a Shockwave\nattack, but it only does a small amount of damage to your whole party.\nHis physical attacks are nothing to sneeze at either; a series of three\nattacks will do MAJOR damage to a party member.\nAs much as I hate to say this, Yuri will need to be the primary healer of\nthis battle, as he's the only one that has a heal-all spell, and without\nit, it will be hard to keep up with the healing with just two party\nmembers. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if\nyour party needs healing, and if they don't, then use Exorcist Arrow.\nZhuzhen should be constantly casting Life Sucker, and Margarete should be\nusing Snipe. When the party's MP starts getting low, have Margarete use\nMana Seeds to boost them back up.\nDue to the sheer amount of HP Yamaraja has, and the fact that your main\ndamage dealer is on healing duty, prepare for a very long battle. You'll\nmost likely need to use at least two Pure Seeds to keep Zhuzhen's and\nMargarete's SP up."
+    }
+  ],
+  "boss": [
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Stone, Badger Devil",
+      "enemies": [
+        {
+          "name": "Yamaraja: Stone",
+          "hp": 1800,
+          "class": "Fire",
+          "drop": "B.Dragon Horn"
+        },
+        {
+          "name": "Badger Devil",
+          "hp": 700,
+          "class": "Fire",
+          "drop": "Seal of Luck"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 20
+        },
+        {
+          "name": "Margarete",
+          "level": 19
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 18
+        }
+      ],
+      "exp": 2600,
+      "cash": 6000,
+      "strategy": "Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be\nyour go-to Fusion if you're taking the magic route.\nOther than the fact that he uses defensive spells (that don't seem to\nhelp him at all), all he'll use are physical attacks. They're not TOO\nstrong, but if he focuses on just one person on two different attacks,\nhe'll whittle their HP down quicker than you realize, so stay healed.\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. This Yamaraja is fairly easy\ncompared to the last two bosses."
+    },
+    {
+      "type": "BOSS",
+      "name": "Dehuai",
+      "enemies": [
+        {
+          "name": "Dehuai",
+          "hp": 1700,
+          "class": "Fire",
+          "drop": "Hermit's Staff"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 22
+        },
+        {
+          "name": "Margarete",
+          "level": 20
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 19
+        }
+      ],
+      "exp": 3500,
+      "cash": 7000,
+      "strategy": "Another Fire-based boss? Don't mind if I do! Makes Margarete that much\nmore useful!\nDehuai's fire attacks, Magnard and Blaze, will hit your whole party for\ndecent damage, and he also has a rather quick (and interestingly bizarre)\nphysical attack that also does decent to major damage. He also has a Fast\nRing attack that hits for decent damage, and it can possibly make your\nJudgment Ring spin faster. Make sure to keep healed and try to keep that\nRing status off!\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. He's pretty easy as well, but the\nchallenge is upcoming."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Calamity",
+      "enemies": [
+        {
+          "name": "Yamaraja: Calamity",
+          "hp": 3000,
+          "class": "None",
+          "drop": "Fifth Key"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 22
+        },
+        {
+          "name": "Margarete",
+          "level": 21
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 20
+        }
+      ],
+      "exp": 6000,
+      "cash": 11000,
+      "strategy": "Yamaraja will most likely start off with the Crimson Flame spell, dealing\nMAJOR fire damage to your party and possibly Silencing them as well. His\nPetrification attack should only do medium damage to your party IF you're\nprotected against it; otherwise, you'll turn to stone, and three\nPetrified party members equals a game over. He'll also use a Shockwave\nattack, but it only does a small amount of damage to your whole party.\nHis physical attacks are nothing to sneeze at either; a series of three\nattacks will do MAJOR damage to a party member.\nAs much as I hate to say this, Yuri will need to be the primary healer of\nthis battle, as he's the only one that has a heal-all spell, and without\nit, it will be hard to keep up with the healing with just two party\nmembers. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if\nyour party needs healing, and if they don't, then use Exorcist Arrow.\nZhuzhen should be constantly casting Life Sucker, and Margarete should be\nusing Snipe. When the party's MP starts getting low, have Margarete use\nMana Seeds to boost them back up.\nDue to the sheer amount of HP Yamaraja has, and the fact that your main\ndamage dealer is on healing duty, prepare for a very long battle. You'll\nmost likely need to use at least two Pure Seeds to keep Zhuzhen's and\nMargarete's SP up."
+    }
+  ],
+  "shops": [
+    {
+      "name": "Shanghai Transport Reg. Logistic Comp. 8",
+      "inventory": [
+        {
+          "name": "Steel Claw",
+          "price": 2800
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Tome of the Moon",
+          "price": 3000
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Pilgrim's Staff",
+          "price": 2700
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Nanbu Pistol",
+          "price": 2900
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Studded Harness",
+          "price": 2500
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Studded Bustier",
+          "price": 2700
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "RosewoodBracelet",
+          "price": 3000
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Imp's Fang",
+          "price": 95
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "SEAL OF LIFE",
+        "raw_tag": "[_SEAL OF LIFE_]",
+        "matched_overview_item": "Seal of Life",
+        "category": "items",
+        "line": 62,
+        "char_offset": [
+          3686,
+          3702
+        ],
+        "context": "Before climbing the stairs, open the visible chest on the stairs to the left for a [_SEAL OF LIFE_], then open the second not-so-visible chest on the opposite side for a [_THIRD KEY_]. If you wanted to buy something but was short on cash, you now hav"
+      },
+      {
+        "name": "THIRD KEY",
+        "raw_tag": "[_THIRD KEY_]",
+        "matched_overview_item": "Third Key",
+        "category": "items",
+        "line": 63,
+        "char_offset": [
+          3773,
+          3786
+        ],
+        "context": "Before climbing the stairs, open the visible chest on the stairs to the left for a [_SEAL OF LIFE_], then open the second not-so-visible chest on the opposite side for a [_THIRD KEY_]. If you wanted to buy something but was short on cash, you now hav"
+      },
+      {
+        "name": "B. TORTOISE VP",
+        "raw_tag": "[_B. TORTOISE VP_]",
+        "matched_overview_item": "B. Tortoise VP",
+        "category": "valuables",
+        "line": 111,
+        "char_offset": [
+          7112,
+          7130
+        ],
+        "context": "After the battle, you'll receive the [_B. TORTOISE VP_], and you'll automatically enter the Tower. On the center platform is a Save Point, so be sure to use it. You should see a chest directly beside the Save Point, but on the other side, so run cloc"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 115,
+        "char_offset": [
+          7370,
+          7388
+        ],
+        "context": "After the battle, you'll receive the [_B. TORTOISE VP_], and you'll automatically enter the Tower. On the center platform is a Save Point, so be sure to use it. You should see a chest directly beside the Save Point, but on the other side, so run cloc"
+      },
+      {
+        "name": "PURE EXTRACT",
+        "raw_tag": "[_PURE EXTRACT_]",
+        "matched_overview_item": "Pure Extract",
+        "category": "items",
+        "line": 120,
+        "char_offset": [
+          7776,
+          7792
+        ],
+        "context": "After the battle, you'll receive the [_B. TORTOISE VP_], and you'll automatically enter the Tower. On the center platform is a Save Point, so be sure to use it. You should see a chest directly beside the Save Point, but on the other side, so run cloc"
+      },
+      {
+        "name": "B. DRAGON VP",
+        "raw_tag": "[_B. DRAGON VP_]",
+        "matched_overview_item": "B. Dragon VP",
+        "category": "valuables",
+        "line": 123,
+        "char_offset": [
+          7954,
+          7970
+        ],
+        "context": "After the battle, you'll receive the [_B. TORTOISE VP_], and you'll automatically enter the Tower. On the center platform is a Save Point, so be sure to use it. You should see a chest directly beside the Save Point, but on the other side, so run cloc"
+      },
+      {
+        "name": "EROTIC BOOK",
+        "raw_tag": "[_EROTIC BOOK_]",
+        "matched_overview_item": "Erotic Book",
+        "category": "valuables",
+        "line": 131,
+        "char_offset": [
+          8369,
+          8384
+        ],
+        "context": "From the Save Point, stay on the platform you're currently on and take the northwestern path to the next area. Go to the left side of the room and look on the ground beneath the artwork to find an.... [_EROTIC BOOK_]. Oh LàLà...? OH LÀLÀ?!?! ( For al"
+      },
+      {
+        "name": "R. PHOENIX VP",
+        "raw_tag": "[_R. PHOENIX VP_]",
+        "matched_overview_item": "R. Phoenix VP",
+        "category": "valuables",
+        "line": 138,
+        "char_offset": [
+          8789,
+          8806
+        ],
+        "context": "In any case, while you're here, make sure examine the altar in the right-center of the room to find a votive picture. Choose to take it, and you'll receive the [_R. PHOENIX VP_]. Re-examine the altar here and choose to insert \"the Blue Dragon\" into i"
+      },
+      {
+        "name": "W. TIGER VP",
+        "raw_tag": "[_W. TIGER VP_]",
+        "matched_overview_item": "W. Tiger VP",
+        "category": "valuables",
+        "line": 145,
+        "char_offset": [
+          9244,
+          9259
+        ],
+        "context": "Take the last path that we haven't taken yet: the western staircase. Once you're on the next floor up, examine the altar above you and choose to insert \"the Red Phoenix\" into the hole there. Ignore the locked gate to your east for now, and enter the "
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 192,
+        "char_offset": [
+          12345,
+          12363
+        ],
+        "context": "After the battle, check just to your right near the glowing light for a [_LOTTERY TICKET_]. Continue southeast to open the door here, which is the locked door near the eastern stairs from earlier. Also, descend the stairs just below where you entered"
+      },
+      {
+        "name": "TALISMANOFWISDOM",
+        "raw_tag": "[_TALISMANOFWISDOM_]",
+        "matched_overview_item": "TalismanOfWisdom",
+        "category": "items",
+        "line": 195,
+        "char_offset": [
+          12606,
+          12626
+        ],
+        "context": "After the battle, check just to your right near the glowing light for a [_LOTTERY TICKET_]. Continue southeast to open the door here, which is the locked door near the eastern stairs from earlier. Also, descend the stairs just below where you entered"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 09",
+        "raw_tag": "[_LOTTERY MEMBER NO. 09_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 264,
+        "char_offset": [
+          17174,
+          17199
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 09_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 126,
+        "char_offset": [
+          8045,
+          8167
+        ],
+        "text": "If you're still in need of Cash at this point, the Pure Extract sells for 10,000 Cash. Just sayin'."
+      },
+      {
+        "type": "NOTE",
+        "line": 198,
+        "char_offset": [
+          12711,
+          13036
+        ],
+        "text": "This is your point of no return. If there's ANYTHING else you wish to do in Asia, now's the time. Once you proceed with the next battle, you won't be able to go back. Also, make sure that you have fought all four Evil enemies in the Graveyard for your Monster Library."
+      },
+      {
+        "type": "NOTE",
+        "line": 287,
+        "char_offset": [
+          18499,
+          18732
+        ],
+        "text": "Just to let you know, two of your party members will be temporarily leaving after these events, but not to worry; their accessories will automatically be put back into your inventory, so no worries."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                     Shanghai, Kuihai Tower\n     [W-1-11]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | First room inside the tower\n             | 2nd floor, before sub-boss\n             | Top of the tower\n             |\n     Lottery | [_] Lottery Member No. 09 (Private Matsuura)\n             |\n       Items | [_] Seal of Life        [_] Pure Extract\n             | [_] Third Key           [_] Lottery Ticket\n             | [_] Lottery Ticket      [_] TalismanOfWisdom\n             |\n   Valuables | [_] B. Tortoise VP      [_] R. Phoenix VP\n             | [_] B. Dragon VP        [_] W. Tiger VP\n             | [_] Erotic Book\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy (* = BOSS) (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #016  [_] Water Tiger           |   155  | Fire  |\n #043 *[_] Yamaraja: Stone       |  1800  | Fire  |\n #044  [_] Vengeance Demon       |   175  | Wind  |\n #045  [_] Rage Demon            |   100  | Water |\n #046  [_] Mournful Demon        |   325  | Light |\n #047  [_] Man-Snake             |    83  | Earth |\n #048  [_] Shadow                |    78  | Dark  | Inflicts Ring anomalies\n #049 ~[_] Badger Devil          |   700  | Fire  |\n      *[_] Dehuai                |  1700  | Fire  | Inflicts Ring anomalies\n #050 *[_] Yamaraja: Calamity    |  3000  | None  | Inflicts Petrification\n                                 |        |       |    & Silence\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |     -$-   Shanghai Transport Reg. Logistic Comp. 8   -$-      |\n       |===============================v===============================|\n       | Steel Claw          -    2800 | Thera Leaf          -      50 |\n       | Tome of the Moon    -    3000 | Thera Seed          -     120 |\n       | Pilgrim's Staff     -    2700 | Mana Leaf           -     100 |\n       | Nanbu Pistol        -    2900 | Mana Seed           -     300 |\n       | Studded Harness     -    2500 | Pure Leaf           -     230 |\n       | Studded Bustier     -    2700 | Pure Seed           -     510 |\n       | Leather Cap         -     600 | TalismanOfLuck      -     480 |\n       | Studded Cap         -    1700 | TalismanOfMercy     -     820 |\n       | Casual Belt         -     600 | Mermaid's Tear      -      70 |\n       | Western Belt        -    1700 | Holy Mother Bust    -      75 |\n       | Bone Bracelet       -    2960 | Angel's Feather     -      80 |\n       | RosewoodBracelet    -    3000 | Faerie's Sigh       -      85 |\n       | Bell Bracelet       -    3120 | Imp's Fang          -      95 |\n       | Mirror Bracelet     -    3240 | Phoenix Tail        -      90 |\n       | Spikes              -    2810 | Bronze Arrowhead    -     100 |\n       | Leonardo's Bear     -    3330 | Bronze Dagger       -     200 |\n       | Voodoo Doll         -    5200 | Silver Hourglass    -     100 |\n       |                               | Gold Hourglass      -     200 |\n       '———————————————————————————————'———————————————————————————————'\n\nBefore climbing the stairs, open the visible chest on the stairs to the left\nfor a [_SEAL OF LIFE_], then open the second not-so-visible chest on the\nopposite side for a [_THIRD KEY_]. If you wanted to buy something but was short\non cash, you now have an extra 15,000+ Cash available if you sell this, once\nagain.\n\nOnce you have both of those, start climbing the central staircase and attempt\nto enter the Yawang Gate, where you'll have to take on another Yamaraja!\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yamaraja: Stone       |  1800 HP  | Class: Fire  | [_] B.Dragon Horn        |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [20]     |                   |   Margarete [19]  |        |\n|        |                   |    Zhuzhen [18]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Hand Needle       | Pilgrim's Staff   | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Mind's Eye        | Face Guard        | Studded Cap       |        |\n|        | Jade Lariat       | Coral Lariat      | Western Belt      |        |\n|        | Western Belt      | Voodoo Doll       | Weird Bottle      |        |\n|        |                   |                   |                   |        |\n|        | Man Dragon        |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be  |\n|  your go-to Fusion if you're taking the magic route.                        |\n|                                                                             |\n|  Other than the fact that he uses defensive spells (that don't seem to      |\n|  help him at all), all he'll use are physical attacks. They're not TOO      |\n|  strong, but if he focuses on just one person on two different attacks,     |\n|  he'll whittle their HP down quicker than you realize, so stay healed.      |\n|                                                                             |\n|  Have Yuri either fuse into the Man Dragon and blast him continuously with  |\n|  Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting  |\n|  Spirit) and hammer away at him with physical attacks. Zhuzhen should be    |\n|  continually casting Life Sucker, and Margarete should use Aqua Edge on     |\n|  Yuri first (if he's attacking), then have her use Snipe continuously.      |\n|  Zhuzhen will probably be doing the least amount of damage, so have him on  |\n|  healing duty when HP starts to drop. This Yamaraja is fairly easy          |\n|  compared to the last two bosses.                                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   02600 EXP   / \\   06000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, you'll receive the [_B. TORTOISE VP_], and you'll\nautomatically enter the Tower. On the center platform is a Save Point, so be\nsure to use it. You should see a chest directly beside the Save Point, but on\nthe other side, so run clockwise until you reach the chest containing a\n[_LOTTERY TICKET_]. From the remaining two staircases here, go up the eastern\none, following the path to the next area.\nUp on the next floor, examine the area just to the upper-left of the stairs,\nwhere you'll find a place to insert the B. Tortoise VP. Choose to put it in,\nthen choose \"the Black Tortoise\" to place the picture in its place. After doing\nthat, check the far left side of the room to find a [_PURE EXTRACT_], then\nenter the newly unlocked door on the right side of the room. Out here, follow\nthe path to the next area, then at the end of the path, open the chest for a\n[_B. DRAGON VP_]. Once you have it, head back down to the first area with the\nSave Point.\n\n  NOTE     If you're still in need of Cash at this point, the Pure Extract\n¯¯¯¯¯¯¯¯   sells for 10,000 Cash. Just sayin'.\n\nFrom the Save Point, stay on the platform you're currently on and take the\nnorthwestern path to the next area. Go to the left side of the room and look on\nthe ground beneath the artwork to find an.... [_EROTIC BOOK_]. Oh LàLà...?\nOH LÀLÀ?!?! ( For all of you Back to the Future nuts like me. ;D ) It's a copy\nof \"Shanghai Angels\"... Make sure to grab this, as it'll come in very handy\nmuch later in the game. If you don't grab it, you'll definitely regret it.\n\nIn any case, while you're here, make sure examine the altar in the right-center\nof the room to find a votive picture. Choose to take it, and you'll receive the\n[_R. PHOENIX VP_]. Re-examine the altar here and choose to insert \"the Blue\nDragon\" into its place. Make your way back to the Save Point.\n\nTake the last path that we haven't taken yet: the western staircase. Once\nyou're on the next floor up, examine the altar above you and choose to insert\n\"the Red Phoenix\" into the hole there. Ignore the locked gate to your east for\nnow, and enter the newly unlocked door to the next area. Open the chest here\nfor the [_W. TIGER VP_], and since we're now at a dead-end, make your way back\nto the Save Point.\n\nTake the path northwest of the Save Point once again to the room where we found\nthe Erotic Book. Choose to take out the B. Dragon VP and replace it with \"the\nWhite Tiger\" to have the correct one in its place. Make your way back to the\nSave Point for the last time. Examine the altar here in the center of the room\nand choose to insert \"the Blue Dragon\" to solve the puzzle here.\n\nMake your way back up the western stairs, and go through the door you unlocked.\nThere is now a Save Point here; prepare for a battle, and Save. When you're\nready, go up the stairs on the right to the next area for a scene. Just a bit\nafter, you'll have a sub-boss battle.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Badger Devil          |   700 HP  | Class: Fire  | [_] Seal of Luck         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  The Badger Devil uses a Fire Ball attack that doesn't hit for much damage  |\n|  at all, and a physical attack that hits for a slightly decent amount.      |\n|  Either way, it's not much to worry about.                                  |\n|                                                                             |\n|  The Badger Devil is susceptible to Instant Death, so do one of the         |\n|  following two things:                                                      |\n|                                                                             |\n|  1) Fuse Yuri into the Death Emperor and cast Dark Messenger. Make sure to  |\n|     hit the small red \"Perfect!!\" area, and voilà! Dead-dead-deadski.       |\n|                                                                             |\n|  2) Have Margarete use her Snipe ability. Make sure to hit the small red    |\n|     \"Perfect!!\" area, and BAM!!! History.                                   |\n|                                                                             |\n|  If you're lucky, one of the first two steps will kill it. Sadly, it        |\n|  doesn't ALWAYS work.                                                       |\n|                                                                             |\n|  If you don't have luck with either of those, no worries; he's still easy.  |\n|  Have Yuri fuse into the Raging Tiger or Inferno (with Fighting Spirit)     |\n|  and hammer away at him with physical attacks. Zhuzhen should be            |\n|  continually casting Life Sucker, and Margarete should use Aqua Edge on     |\n|  Yuri first, then have her use Snipe continuously. He'll fall quickly.      |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01000 EXP   / \\   00600 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, check just to your right near the glowing light for a\n[_LOTTERY TICKET_]. Continue southeast to open the door here, which is the\nlocked door near the eastern stairs from earlier. Also, descend the stairs just\nbelow where you entered, and you'll find the chest behind the gate that we\nignored earlier. Open it for a [_TALISMANOFWISDOM_]. Once you have that, make\nyour way back to the last Save Point and SAVE YOUR GAME.\n\n  NOTE     This is your point of no return. If there's ANYTHING else you wish\n¯¯¯¯¯¯¯¯   to do in Asia, now's the time. Once you proceed with the next\n           battle, you won't be able to go back. Also, make sure that you have\n           fought all four Evil enemies in the Graveyard for your\n           Monster Library.\n\nWhen you're absolutely ready, go back to where you fought the Badger Devil and\nclimb the steps to the west. Watch the events unfold, then take on Dehuai\nhimself.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Dehuai                |  1700 HP  | Class: Fire  | [_] Hermit's Staff       |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [22]     |                   |   Margarete [20]  |        |\n|        |                   |    Zhuzhen [19]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Hand Needle       | Pilgrim's Staff   | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Mind's Eye        | Face Guard        | Studded Cap       |        |\n|        | Jade Lariat       | Coral Lariat      | Western Belt      |        |\n|        | Western Belt      | Voodoo Doll       | Weird Bottle      |        |\n|        |                   |                   |                   |        |\n|        | Man Dragon        |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Another Fire-based boss? Don't mind if I do! Makes Margarete that much     |\n|  more useful!                                                               |\n|                                                                             |\n|  Dehuai's fire attacks, Magnard and Blaze, will hit your whole party for    |\n|  decent damage, and he also has a rather quick (and interestingly bizarre)  |\n|  physical attack that also does decent to major damage. He also has a Fast  |\n|  Ring attack that hits for decent damage, and it can possibly make your     |\n|  Judgment Ring spin faster. Make sure to keep healed and try to keep that   |\n|  Ring status off!                                                           |\n|                                                                             |\n|  Have Yuri either fuse into the Man Dragon and blast him continuously with  |\n|  Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting  |\n|  Spirit) and hammer away at him with physical attacks. Zhuzhen should be    |\n|  continually casting Life Sucker, and Margarete should use Aqua Edge on     |\n|  Yuri first (if he's attacking), then have her use Snipe continuously.      |\n|  Zhuzhen will probably be doing the least amount of damage, so have him on  |\n|  healing duty when HP starts to drop. He's pretty easy as well, but the     |\n|  challenge is upcoming.                                                     |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   03500 EXP   / \\   07000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle and series of events, you'll regain control, and you'll get to\nchoose your party. I recommend keeping your current party of Yuri, Zhuzhen, and\nMargarete, as Alice won't be of much help in the next boss battle. Make sure to\nequip the Hermit's Staff on Zhuzhen that you won in the last battle. When you\nregain control, head back down to the previous floor and SAVE YOUR GAME.\n\nOnce you've saved, go back to the upper floor and talk to the Japanese soldier\non the left. He will offer to change your party, in case you've changed your\nmind, but if you choose to not change it, then you'll also find out that he's a\nLottery Member!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 09_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Warlock Earrings          /\n               /        (Yellow)  |  Star Swallow              \\\n              /      (Turquoise)  |  Soul Benediction           \\\n             /           (Green)  |  Pure Seed                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nThe ring here moves fast, so remember, equipping the Pocket Watch will make it\neasier to hit the areas! Make sure to win the Warlock Earrings before\ncontinuing on; it increases your S-Atk up 20%, but will also increase the\ndamage received from S-Atks by 20%! If you don't win it, reload your last save\nand try again. Remember, you need to win something from each member at least\nonce!\n\nThe Japanese Soldier to the right has items for sale. The next boss uses both\nPetrification and Silence, so either equip Zodiac and Cosmic Bracelets on\neveryone, or buy three each of the Bell Bracelets and Mirror Bracelets that\nthis guy has for sale, as well as any healing items you may need.\n\n  NOTE     Just to let you know, two of your party members will be temporarily\n¯¯¯¯¯¯¯¯   leaving after these events, but not to worry; their accessories will\n           automatically be put back into your inventory, so no worries.\n\nOnce you're ready, climb to the top of the tower. SAVE YOUR GAME here, then\nkeep going to meet up with Dehuai for the last time.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Yamaraja: Calamity    |  3000 HP  | Class: None  | [_] Fifth Key            |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [22]     |                   |   Margarete [21]  |        |\n|        |                   |    Zhuzhen [20]   |                   |        |\n|        |===================|===================|===================|        |\n|        | Hand Needle       | Hermit's Staff    | Nanbu Pistol      |        |\n|        | Studded Harness   | Studded Harness   | Studded Bustier   |        |\n|        | Warlock Earrings  | Face Guard        | Western Belt      |        |\n|        | Bell Bracelet     | Bell Bracelet     | Bell Bracelet     |        |\n|        | Mirror Bracelet   | Mirror Bracelet   | Mirror Bracelet   |        |\n|        |                   |                   |                   |        |\n|        | Heaven's Fiend    |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  Yamaraja will most likely start off with the Crimson Flame spell, dealing  |\n|  MAJOR fire damage to your party and possibly Silencing them as well. His   |\n|  Petrification attack should only do medium damage to your party IF you're  |\n|  protected against it; otherwise, you'll turn to stone, and three           |\n|  Petrified party members equals a game over. He'll also use a Shockwave     |\n|  attack, but it only does a small amount of damage to your whole party.     |\n|  His physical attacks are nothing to sneeze at either; a series of three    |\n|  attacks will do MAJOR damage to a party member.                            |\n|                                                                             |\n|  As much as I hate to say this, Yuri will need to be the primary healer of  |\n|  this battle, as he's the only one that has a heal-all spell, and without   |\n|  it, it will be hard to keep up with the healing with just two party        |\n|  members. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if      |\n|  your party needs healing, and if they don't, then use Exorcist Arrow.      |\n|  Zhuzhen should be constantly casting Life Sucker, and Margarete should be  |\n|  using Snipe. When the party's MP starts getting low, have Margarete use    |\n|  Mana Seeds to boost them back up.                                          |\n|                                                                             |\n|  Due to the sheer amount of HP Yamaraja has, and the fact that your main    |\n|  damage dealer is on healing duty, prepare for a very long battle. You'll   |\n|  most likely need to use at least two Pure Seeds to keep Zhuzhen's and      |\n|  Margarete's SP up.                                                         |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   06000 EXP   / \\   11000 Cash   /\n     '—————————————'   '——————————————'\n\nAfter the battle, watch the long and depressing series of events. That'll be it\nfor Asia; you'll be asked to save your game, so do so. Next, you'll be in\nEurope."
+}

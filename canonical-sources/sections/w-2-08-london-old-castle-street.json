@@ -1,0 +1,308 @@
+{
+  "id": "w-2-08",
+  "code": "[W-2-08]",
+  "title": "London, Old Castle Street",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-07",
+      "code": "[W-2-07]",
+      "title": "Rouen",
+      "file": "sections/w-2-07-rouen.json"
+    },
+    "next": {
+      "id": "w-2-09",
+      "code": "[W-2-09]",
+      "title": "London, Orphanage",
+      "file": "sections/w-2-09-london-orphanage.json"
+    }
+  },
+  "char_count": 8678,
+  "line_count": 161,
+  "overview": {
+    "save_points": [
+      "Inn",
+      "London Rats' hideout"
+    ],
+    "lottery": [
+      "Lottery Member No. 05 (Drunken Orro)"
+    ],
+    "items": [
+      "Lottery Ticket",
+      "TalismanOfPurity",
+      "Mana Extract",
+      "Seal of Force",
+      "Thera Extract",
+      "Lottery Ticket",
+      "Lottery Ticket",
+      "Kirin Scale",
+      "Soul Benediction"
+    ],
+    "equipment": [
+      "Demon Earrings",
+      "Slingshot",
+      "Crucifix",
+      "RedLeatherJacket",
+      "Warning Device"
+    ],
+    "valuables": [
+      "Sun Card"
+    ]
+  },
+  "items": [
+    "Lottery Ticket",
+    "TalismanOfPurity",
+    "Mana Extract",
+    "Seal of Force",
+    "Thera Extract",
+    "Lottery Ticket",
+    "Lottery Ticket",
+    "Kirin Scale",
+    "Soul Benediction",
+    "Demon Earrings",
+    "Slingshot",
+    "Crucifix",
+    "RedLeatherJacket",
+    "Warning Device",
+    "Sun Card"
+  ],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "SUN CARD",
+        "raw_tag": "[_SUN CARD_]",
+        "matched_overview_item": "Sun Card",
+        "category": "valuables",
+        "line": 59,
+        "char_offset": [
+          3205,
+          3217
+        ],
+        "context": "If you have _7,000 CASH_ on you (yeah, it's pricey), then choose 1 to obtain the [_SUN CARD_]. Just to the right of Penniless Mike is a [_LOTTERY TICKET_] on the ground, so be sure to pick it up. Next, talk to the bum at the top of the screen, Drunke"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 59,
+        "char_offset": [
+          3260,
+          3278
+        ],
+        "context": "If you have _7,000 CASH_ on you (yeah, it's pricey), then choose 1 to obtain the [_SUN CARD_]. Just to the right of Penniless Mike is a [_LOTTERY TICKET_] on the ground, so be sure to pick it up. Next, talk to the bum at the top of the screen, Drunke"
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 05",
+        "raw_tag": "[_LOTTERY MEMBER NO. 05_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 65,
+        "char_offset": [
+          3579,
+          3604
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 05_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      },
+      {
+        "name": "OAK SLINGSHOT",
+        "raw_tag": "[_OAK SLINGSHOT_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 86,
+        "char_offset": [
+          4916,
+          4933
+        ],
+        "context": "Head north to the next area for a scene. Afterward, you'll realize that all your money is gone, so now you've gotta get it back. First, go to your upper left to be beside a house; now that you're past the gate, go up alongside the house, behind the w"
+      },
+      {
+        "name": "MANA EXTRACT",
+        "raw_tag": "[_MANA EXTRACT_]",
+        "matched_overview_item": "Mana Extract",
+        "category": "items",
+        "line": 96,
+        "char_offset": [
+          5416,
+          5432
+        ],
+        "context": "When you regain control, talk to the Silent Peddler on the left if you wish, then make your way behind the counter of the bar, as there is a [_MANA EXTRACT_] on the floor. Once you have it, leave the bar, then go back to the first area of Old Castle "
+      },
+      {
+        "name": "THERA EXTRACT",
+        "raw_tag": "[_THERA EXTRACT_]",
+        "matched_overview_item": "Thera Extract",
+        "category": "items",
+        "line": 103,
+        "char_offset": [
+          5840,
+          5857
+        ],
+        "context": "Leave the Inn and head north back to the next area. Make your way to the right side of the area, then head north when you see an abandoned house. In this small area, follow along the very edge of the street as you go left, and you should find a [_THE"
+      },
+      {
+        "name": "DEMON EARRINGS",
+        "raw_tag": "[_DEMON EARRINGS_]",
+        "matched_overview_item": "Demon Earrings",
+        "category": "equipment",
+        "line": 108,
+        "char_offset": [
+          6138,
+          6156
+        ],
+        "context": "On this platform, take a few steps to the left and examine the floor here to find a set of [_DEMON EARRINGS_], then go down the small ramp, walking to the far right side of the room to find a [_LOTTERY TICKET_] lying on the floor. Go up the little se"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 109,
+        "char_offset": [
+          6239,
+          6257
+        ],
+        "context": "On this platform, take a few steps to the left and examine the floor here to find a set of [_DEMON EARRINGS_], then go down the small ramp, walking to the far right side of the room to find a [_LOTTERY TICKET_] lying on the floor. Go up the little se"
+      },
+      {
+        "name": "SOUL BENEDICTION",
+        "raw_tag": "[_SOUL BENEDICTION_]",
+        "matched_overview_item": "Soul Benediction",
+        "category": "items",
+        "line": 113,
+        "char_offset": [
+          6486,
+          6506
+        ],
+        "context": "Check below the crate beside where you entered to find a [_SOUL BENEDICTION_], then continue up the stairs. You'll see more scenes up here, where you'll get your money back (minus a little bit that they already spent), as well as receive a [_CRUCIFIX"
+      },
+      {
+        "name": "CRUCIFIX",
+        "raw_tag": "[_CRUCIFIX_]",
+        "matched_overview_item": "Crucifix",
+        "category": "equipment",
+        "line": 116,
+        "char_offset": [
+          6669,
+          6681
+        ],
+        "context": "Check below the crate beside where you entered to find a [_SOUL BENEDICTION_], then continue up the stairs. You'll see more scenes up here, where you'll get your money back (minus a little bit that they already spent), as well as receive a [_CRUCIFIX"
+      },
+      {
+        "name": "WARNING DEVICE",
+        "raw_tag": "[_WARNING DEVICE_]",
+        "matched_overview_item": "Warning Device",
+        "category": "equipment",
+        "line": 117,
+        "char_offset": [
+          6790,
+          6808
+        ],
+        "context": "Check below the crate beside where you entered to find a [_SOUL BENEDICTION_], then continue up the stairs. You'll see more scenes up here, where you'll get your money back (minus a little bit that they already spent), as well as receive a [_CRUCIFIX"
+      },
+      {
+        "name": "TALISMANOFPURITY",
+        "raw_tag": "[_TALISMANOFPURITY_]",
+        "matched_overview_item": "TalismanOfPurity",
+        "category": "items",
+        "line": 119,
+        "char_offset": [
+          6895,
+          6915
+        ],
+        "context": "Check below the crate beside where you entered to find a [_SOUL BENEDICTION_], then continue up the stairs. You'll see more scenes up here, where you'll get your money back (minus a little bit that they already spent), as well as receive a [_CRUCIFIX"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 124,
+        "char_offset": [
+          7191,
+          7209
+        ],
+        "context": "Leave the hideout and make your way to the last house on the right side of town, which is the residence of Knowledgeable Carl. After a rather short discussion in here, check the floor by the bench on your left for a [_SEAL OF FORCE_], the bookshelf t"
+      },
+      {
+        "name": "KIRIN SCALE",
+        "raw_tag": "[_KIRIN SCALE_]",
+        "matched_overview_item": "Kirin Scale",
+        "category": "items",
+        "line": 125,
+        "char_offset": [
+          7261,
+          7276
+        ],
+        "context": "Leave the hideout and make your way to the last house on the right side of town, which is the residence of Knowledgeable Carl. After a rather short discussion in here, check the floor by the bench on your left for a [_SEAL OF FORCE_], the bookshelf t"
+      },
+      {
+        "name": "SLINGSHOT",
+        "raw_tag": "[_SLINGSHOT_]",
+        "matched_overview_item": "Slingshot",
+        "category": "equipment",
+        "line": 145,
+        "char_offset": [
+          8003,
+          8016
+        ],
+        "context": "NOTE Halley comes equipped with a [_SLINGSHOT_] and a ¯¯¯¯¯¯¯¯ [_REDLEATHERJACKET_] by default. Make sure to equip him with the Oak Slingshot you found earlier."
+      },
+      {
+        "name": "REDLEATHERJACKET",
+        "raw_tag": "[_REDLEATHERJACKET_]",
+        "matched_overview_item": "RedLeatherJacket",
+        "category": "equipment",
+        "line": 146,
+        "char_offset": [
+          8034,
+          8054
+        ],
+        "context": "NOTE Halley comes equipped with a [_SLINGSHOT_] and a ¯¯¯¯¯¯¯¯ [_REDLEATHERJACKET_] by default. Make sure to equip him with the Oak Slingshot you found earlier."
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 90,
+        "char_offset": [
+          5088,
+          5275
+        ],
+        "text": "There's a nice little easter egg for Koudelka up on the back wall of the bar; it's a portrait of Koudelka along with the word art from the game. Neat-o!"
+      },
+      {
+        "type": "NOTE",
+        "line": 145,
+        "char_offset": [
+          7963,
+          8144
+        ],
+        "text": "Halley comes equipped with a [_SLINGSHOT_] and a [_REDLEATHERJACKET_] by default. Make sure to equip him with the Oak Slingshot you found earlier."
+      },
+      {
+        "type": "NOTE",
+        "line": 153,
+        "char_offset": [
+          8334,
+          8519
+        ],
+        "text": "If for some reason you really want one of the other three in your party in place of Alice, you can go back to the Inn and talk to Meiyuan to do so."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                  London, Old Castle Street\n     [W-2-08]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Inn                                             * = Initial\n             | London Rats' hideout\n             |\n     Lottery | [_] Lottery Member No. 05 (Drunken Orro)\n             |\n       Items | [_] Lottery Ticket      [_] TalismanOfPurity\n             | [_] Mana Extract        [_] Seal of Force\n             | [_] Thera Extract       [_] Lottery Ticket\n             | [_] Lottery Ticket      [_] Kirin Scale\n             | [_] Soul Benediction\n             |\n   Equipment | [_] Demon Earrings     *[_] Slingshot\n             | [_] Crucifix           *[_] RedLeatherJacket\n             | [_] Warning Device\n             |\n   Valuables | [_] Sun Card\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |               -$-   Tight-lipped Merchant   -$-               |\n       |===============================v===============================|\n       | Ever-Bible          -    9800 | Voodoo Doll         -    5200 |\n       | Oracle's Staff      -    8600 | Jade Lariat         -    5050 |\n       | SilverCrscntSwd     -    8300 | Coral Lariat        -    5050 |\n       | RedLeatherJacket    -    8800 | Thera Seed          -     120 |\n       | Jasper Cape         -    9200 | Thera Root          -     300 |\n       | Headgear            -    5400 | Mana Seed           -     300 |\n       | Circlet             -    5800 | Mana Root           -     500 |\n       | Charming Pareo      -    5500 | Pure Leaf           -     230 |\n       | Loin Guard          -    5200 | Pure Seed           -     510 |\n       | Shell Bracelet      -    2770 | TalismanOfMercy     -     820 |\n       | Bone Bracelet       -    2960 | TalismanOfWisdom    -    1280 |\n       | Rosewood Bracelet   -    3000 | TalismanOfPurity    -    1760 |\n       | Bell Bracelet       -    3120 | Soul Benediction    -     500 |\n       | Mirror Bracelet     -    3240 | Bronze Arrowhead    -     100 |\n       | Cosmic Bracelet     -   11500 | Bronze Dagger       -     200 |\n       | Spikes              -    2810 | Silver Hourglass    -     100 |\n       | Pocket Watch        -    5200 | Gold Hourglass      -     200 |\n       | Will Power          -    6000 | Tent                -     480 |\n       | Leonardo's Bear     -    3330 |                               |\n       '———————————————————————————————'———————————————————————————————'\n\nWhen you gain control, talk to the one of the first guys you see, Penniless\nMike, the one in the purple suit. He'll ask you if you want a rare card.\n\n————————————————————————————————\n   [1] I want it, I admit it!\n   [2] I'm no card freak.\n————————————————————————————————\n\nIf you have _7,000 CASH_ on you (yeah, it's pricey), then choose 1 to obtain\nthe [_SUN CARD_]. Just to the right of Penniless Mike is a [_LOTTERY TICKET_]\non the ground, so be sure to pick it up. Next, talk to the bum at the top of\nthe screen, Drunken Orro. He's your next Lottery Member!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 05_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Priest Earrings           /\n               /        (Yellow)  |  Seal of Speed             \\\n              /      (Turquoise)  |  Thera Extract              \\\n             /           (Green)  |  Thera Root                  \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nWhile the speed of the indicator isn't anything unusual, all of the areas are\nTINY! Equip the Pocket Watch before playing, and they'll be easier to hit. Make\nsure to win the Priest Earrings here before continuing on; they decrease MP\nconsumption by 20%! If you don't win them, reload your last save and try again.\nRemember, you need to win something from each member at least once!\n\nHead north to the next area for a scene. Afterward, you'll realize that all\nyour money is gone, so now you've gotta get it back. First, go to your upper\nleft to be beside a house; now that you're past the gate, go up alongside the\nhouse, behind the wall here. Look around on the ground, and you should find an\n[_OAK SLINGSHOT_]. Go into the bar on the lower-left of the screen, where\nyou'll learn more about the London Rats, as well as get to name your final\nparty member, Halley.\n\n  NOTE     There's a nice little easter egg for Koudelka up on the back wall of\n¯¯¯¯¯¯¯¯   the bar; it's a portrait of Koudelka along with the word art from\n           the game. Neat-o!\n\nWhen you regain control, talk to the Silent Peddler on the left if you wish,\nthen make your way behind the counter of the bar, as there is a\n[_MANA EXTRACT_] on the floor. Once you have it, leave the bar, then go back to\nthe first area of Old Castle Street. Go into the Inn at the bottom of the\nscreen for some events.\n\nLeave the Inn and head north back to the next area. Make your way to the right\nside of the area, then head north when you see an abandoned house. In this\nsmall area, follow along the very edge of the street as you go left, and you\nshould find a [_THERA EXTRACT_] near the broken wall. Afterward, go to the\nupper-left and examine the door on the ground; you'll have to do a Push Ring to\nlift it up and descend the ladder into the London Rats' hideout.\n\nOn this platform, take a few steps to the left and examine the floor here to\nfind a set of [_DEMON EARRINGS_], then go down the small ramp, walking to the\nfar right side of the room to find a [_LOTTERY TICKET_] lying on the floor. Go\nup the little set of wooden stairs to your left to make your way to a Save\nPoint, then continue along and up the ladder in the upper-right corner.\n\nCheck below the crate beside where you entered to find a [_SOUL BENEDICTION_],\nthen continue up the stairs. You'll see more scenes up here, where you'll get\nyour money back (minus a little bit that they already spent), as well as\nreceive a [_CRUCIFIX_]. You'll also be introduced to Halley, who will now\naccompany you. Check the left side of the room to find a [_WARNING DEVICE_],\nthen check the area to the left of the fireplace on the right side of the room\nfor a [_TALISMANOFPURITY_].\n\nLeave the hideout and make your way to the last house on the right side of\ntown, which is the residence of Knowledgeable Carl. After a rather short\ndiscussion in here, check the floor by the bench on your left for a [_SEAL OF\nFORCE_], the bookshelf to the upper-left for a [_LOTTERY TICKET_], and the\nsmaller bookshelf to the upper-left for a [_KIRIN SCALE_].\n\nThat's it for Old Castle Street for just a moment. Head out to the World Map,\nthen go to the Orphanage that appears.\n\n\n   Orphanage\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nAfter the quick scene, enter the mansion to meet a man named Jack. After\nanother short discussion, you'll be escorted out. Leave the Orphanage, and\nafter another quick scene, you'll be back at the Inn on Old Castle Street.\n\n\n   Old Castle Street\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nWatch the events here, then go back out to the streets. Make your way back to\nthe London Rats' hideout, where you'll need to pick out a new party that\nincludes both Yuri and Halley, who has now officially joined your party. I\nrecommend Alice as a dedicated healer.\n\n  NOTE     Halley comes equipped with a [_SLINGSHOT_] and a\n¯¯¯¯¯¯¯¯   [_REDLEATHERJACKET_] by default. Make sure to equip him with the\n           Oak Slingshot you found earlier.\n\nIf you need to upgrade your equipment, stop in at the bar and talk to the\nSilent Peddler to do so. When you're ready, leave Old Castle Street and make\nyour way to the Orphanage once again.\n\n  NOTE     If for some reason you really want one of the other three in your\n¯¯¯¯¯¯¯¯   party in place of Alice, you can go back to the Inn and talk to\n           Meiyuan to do so.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

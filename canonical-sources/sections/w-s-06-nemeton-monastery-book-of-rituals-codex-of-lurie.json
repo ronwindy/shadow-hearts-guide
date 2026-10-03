@@ -1,0 +1,135 @@
+{
+  "id": "w-s-06",
+  "code": "[W-S-06]",
+  "title": "Nemeton Monastery (Book of Rituals / Codex of Lurie)",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": true,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-13",
+      "code": "[W-2-13]",
+      "title": "Europe Side Quests, Part 2",
+      "file": "sections/w-2-13-europe-side-quests-part-2.json"
+    },
+    "next": {
+      "id": "w-s-07",
+      "code": "[W-S-07]",
+      "title": "The Orphanage (Emigre Manuscript / Lottery Member #3)",
+      "file": "sections/w-s-07-the-orphanage-emigre-manuscript-lottery-member-3.json"
+    }
+  },
+  "char_count": 2414,
+  "line_count": 44,
+  "overview": {
+    "save_points": [
+      "Entrance to the underground ruins",
+      "Before the boss"
+    ],
+    "valuables": [
+      "Book of Rituals",
+      "Codex of Lurie"
+    ]
+  },
+  "items": [
+    "Book of Rituals",
+    "Codex of Lurie"
+  ],
+  "enemies": [
+    {
+      "number": "#071",
+      "name": "Straithe",
+      "hp": 200,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#072",
+      "name": "Sin",
+      "hp": 240,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis"
+    },
+    {
+      "number": "#073",
+      "name": "Guinea Pig",
+      "hp": 210,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Instant Death & uses SP Lowering"
+    },
+    {
+      "number": "#074",
+      "name": "Inverse",
+      "hp": 500,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "BOOK OF RITUALS",
+        "raw_tag": "[_BOOK OF RITUALS_]",
+        "matched_overview_item": "Book of Rituals",
+        "category": "valuables",
+        "line": 27,
+        "char_offset": [
+          1599,
+          1618
+        ],
+        "context": "NOTE Both Alice and Zhuzhen must be in your active party. ¯¯¯¯¯¯¯¯ Make your way to the Nemeton Monastery and head up the hill toward JamesO'Flaherty's grave. As you approach it, you'll watch a long scene between Alice and Yuri as Zhuzhen checks out "
+      },
+      {
+        "name": "CODEX OF LURIE",
+        "raw_tag": "[_CODEX OF LURIE_]",
+        "matched_overview_item": "Codex of Lurie",
+        "category": "valuables",
+        "line": 36,
+        "char_offset": [
+          2188,
+          2206
+        ],
+        "context": "NOTE You can put whomever you want back into your party now. ¯¯¯¯¯¯¯¯ Make your way back into the Underground Ruins of the Nemeton Monastery, and follow the path as it goes all the way west, then down when you can't go west anymore and head all the w"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 23,
+        "char_offset": [
+          1302,
+          1375
+        ],
+        "text": "Both Alice and Zhuzhen must be in your active party."
+      },
+      {
+        "type": "NOTE",
+        "line": 30,
+        "char_offset": [
+          1754,
+          1830
+        ],
+        "text": "You can put whomever you want back into your party now."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |       Nemeton Monastery (Book of Rituals / Codex of Lurie)\n     [W-S-06]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Entrance to the underground ruins\n             | Before the boss\n             |\n   Valuables | [_] Book of Rituals     [_] Codex of Lurie\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                           |   HP   | Class | Notes\n=================================|========|=======|============================\n #071  [_] Straithe              |   200  | Water | Inflicts Ring anomalies\n #072  [_] Sin                   |   240  | Light | Inflicts Paralysis\n #073  [_] Guinea Pig            |   210  | Dark  | Inflicts Instant Death\n                                 |        |       |    & uses SP Lowering\n #074  [_] Inverse               |   500  | Earth |\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n  NOTE     Both Alice and Zhuzhen must be in your active party.\n¯¯¯¯¯¯¯¯\nMake your way to the Nemeton Monastery and head up the hill toward JamesO'Flaherty's grave. As you approach it, you'll watch a long scene between Alice\nand Yuri as Zhuzhen checks out the grave, and eventually brings you the\n[_BOOK OF RITUALS_]. Examine the Book of Rituals in your Valuables menu, and\nit'll unlock the Ancient Ruins on your World Map the next time you're there.\n\n  NOTE     You can put whomever you want back into your party now.\n¯¯¯¯¯¯¯¯\nMake your way back into the Underground Ruins of the Nemeton Monastery, and\nfollow the path as it goes all the way west, then down when you can't go west\nanymore and head all the way east until you can follow the path back to the\nshrine where you fought Amon. If you check the ground here in the center of the\nJudgment Ring near the altar, you will find the [_CODEX OF LURIE_].\n\nThat's it for here. On to the next quest!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

@@ -1,0 +1,333 @@
+{
+  "id": "w-1-06",
+  "code": "[W-1-06]",
+  "title": "Smuggler's Boat",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-1-05",
+      "code": "[W-1-05]",
+      "title": "Dalian",
+      "file": "sections/w-1-05-dalian.json"
+    },
+    "next": {
+      "id": "w-1-07",
+      "code": "[W-1-07]",
+      "title": "Shanghai, Huayuan (1)",
+      "file": "sections/w-1-07-shanghai-huayuan-1.json"
+    }
+  },
+  "char_count": 12772,
+  "line_count": 208,
+  "overview": {
+    "save_points": [
+      "Below deck"
+    ],
+    "lottery": [
+      "Lottery Member No. 13",
+      "(Courier Subordinate)"
+    ],
+    "items": [
+      "Witch's Broth",
+      "Lottery Ticket"
+    ],
+    "equipment": [
+      "Rosewood Bracelet"
+    ]
+  },
+  "items": [
+    "Witch's Broth",
+    "Lottery Ticket",
+    "Rosewood Bracelet"
+  ],
+  "enemies": [
+    {
+      "number": "#021",
+      "name": "White Wolfling",
+      "hp": 45,
+      "class": "Water",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": "Inflicts Ring anomalies"
+    },
+    {
+      "number": "#022",
+      "name": "Ogre Flame",
+      "hp": 40,
+      "class": "Fire",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": null,
+      "name": "Li Li",
+      "hp": 580,
+      "class": "Dark",
+      "is_boss": false,
+      "is_subboss": true,
+      "notes": "Inflicts Paralysis & Instant Death"
+    },
+    {
+      "number": "#023",
+      "name": "Li Li",
+      "hp": 720,
+      "class": "Dark",
+      "is_boss": true,
+      "is_subboss": false,
+      "notes": "Inflicts Paralysis"
+    }
+  ],
+  "bosses": [
+    {
+      "type": "BOSS",
+      "name": "Li Li",
+      "enemies": [
+        {
+          "name": "Li Li",
+          "hp": 720,
+          "class": "Dark",
+          "drop": "B.Tortoise Fang"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 14
+        },
+        {
+          "name": "Margarete",
+          "level": 14
+        },
+        {
+          "name": "Alice",
+          "level": 13
+        }
+      ],
+      "exp": 1000,
+      "cash": 3950,
+      "strategy": "At least this time she won't use Dark Messenger, but she still uses\nParalysis (which, again, does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets.) Watch\nout for Hate Storm, as it'll do decent damage to your whole party.\nStart off by healing, if needed. As with the last battle, if you have it,\nhave Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should\ndo MAJOR damage. Alice should cast Holy Edge on Margarete first, so she\nhas Light-based attacks, then she should cast Blessed Light. Margaret\nshould just be attacking normally, using Thera and Mana Leaves whenever\nthe party's HP/MP are getting low. If you really need a second healer,\nHeaven's Fiend is perfect for the role, as its Sacred Remedy will heal\nEVERYONE in the party, especially after Hate Storm.\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light REPEATEDLY. Margaret will be\nthe primary healer once again, as Yuri and Alice should be shelling out\nsome pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever\nthe party's HP/MP are getting low, and you should be fine."
+    }
+  ],
+  "boss": {
+    "type": "BOSS",
+    "name": "Li Li",
+    "enemies": [
+      {
+        "name": "Li Li",
+        "hp": 720,
+        "class": "Dark",
+        "drop": "B.Tortoise Fang"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 14
+      },
+      {
+        "name": "Margarete",
+        "level": 14
+      },
+      {
+        "name": "Alice",
+        "level": 13
+      }
+    ],
+    "exp": 1000,
+    "cash": 3950,
+    "strategy": "At least this time she won't use Dark Messenger, but she still uses\nParalysis (which, again, does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets.) Watch\nout for Hate Storm, as it'll do decent damage to your whole party.\nStart off by healing, if needed. As with the last battle, if you have it,\nhave Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should\ndo MAJOR damage. Alice should cast Holy Edge on Margarete first, so she\nhas Light-based attacks, then she should cast Blessed Light. Margaret\nshould just be attacking normally, using Thera and Mana Leaves whenever\nthe party's HP/MP are getting low. If you really need a second healer,\nHeaven's Fiend is perfect for the role, as its Sacred Remedy will heal\nEVERYONE in the party, especially after Hate Storm.\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light REPEATEDLY. Margaret will be\nthe primary healer once again, as Yuri and Alice should be shelling out\nsome pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever\nthe party's HP/MP are getting low, and you should be fine."
+  },
+  "shops": [
+    {
+      "name": "Pachimon General Store",
+      "inventory": [
+        {
+          "name": "Knuckle Blade",
+          "price": 1200
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "ShootingStarTome",
+          "price": 1420
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Hexagonal Staff",
+          "price": 1100
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Type 94 Pistol",
+          "price": 1300
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Leather Vest",
+          "price": 1000
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Leather Skirt",
+          "price": 1200
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Bandanna",
+          "price": 320
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Leather Belt",
+          "price": 320
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        }
+      ]
+    }
+  ],
+  "markers": {
+    "items": [
+      {
+        "name": "ROSEWOOD BRACELET",
+        "raw_tag": "[_ROSEWOOD BRACELET_]",
+        "matched_overview_item": "Rosewood Bracelet",
+        "category": "equipment",
+        "line": 47,
+        "char_offset": [
+          2800,
+          2821
+        ],
+        "context": "When you gain control of a very queasy Yuri, open the chest on the left side of the room for a [_ROSEWOOD BRACELET_]. Go up the stairs to the right for some dialogue with Margarete, then go down and left, examining the door to the wheelhouse for a sc"
+      },
+      {
+        "name": "WITCH'S BROTH",
+        "raw_tag": "[_WITCH'S BROTH_]",
+        "matched_overview_item": "Witch's Broth",
+        "category": "items",
+        "line": 50,
+        "char_offset": [
+          3044,
+          3061
+        ],
+        "context": "When you gain control of a very queasy Yuri, open the chest on the left side of the room for a [_ROSEWOOD BRACELET_]. Go up the stairs to the right for some dialogue with Margarete, then go down and left, examining the door to the wheelhouse for a sc"
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 57,
+        "char_offset": [
+          3416,
+          3434
+        ],
+        "context": "You'll regain control under the deck as just Yuri. Save your game, then go back out on deck. Head inside the wheelhouse and take out the group of monsters here. Afterward, before leaving, check the floor near the wheel and the blanket hanging for a ["
+      },
+      {
+        "name": "LOTTERY MEMBER NO. 13",
+        "raw_tag": "[_LOTTERY MEMBER NO. 13_]",
+        "matched_overview_item": "Lottery Member No. 13",
+        "category": "lottery",
+        "line": 86,
+        "char_offset": [
+          4797,
+          4822
+        ],
+        "context": "_________________________________________________________ \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/ \\ [_LOTTERY MEMBER NO. 13_] / \\___________________________________________________/ \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 61,
+        "char_offset": [
+          3604,
+          3935
+        ],
+        "text": "It should be fairly easy to obtain both your level 1 Fire and Water Fusions here, since the enemies come in groups of 3 and 4. I strongly recommend doing so, as it won't take long at all. Also, make sure Alice it at least level 11 so that she learns the Blessed Light spell."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                            Smuggler's Boat\n     [W-1-06]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Below deck\n             |\n     Lottery | [_] Lottery Member No. 13\n             |     (Courier Subordinate)\n             |\n       Items | [_] Witch's Broth       [_] Lottery Ticket\n             |\n   Equipment | [_] Rosewood Bracelet\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy (* = BOSS) (~ = SUB-BOSS) |   HP   | Class | Notes\n=================================|========|=======|============================\n #021  [_] White Wolfling        |    45  | Water | Inflicts Ring anomalies\n #022  [_] Ogre Flame            |    40  | Fire  |\n      ~[_] Li Li                 |   580  | Dark  | Inflicts Paralysis\n                                 |        |       |    & Instant Death\n #023 *[_] Li Li                 |   720  | Dark  | Inflicts Paralysis\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\n       .———————————————————————————————————————————————————————————————.\n       |              -$-   Pachimon General Store   -$-               |\n       |===============================v===============================|\n       | Knuckle Blade       -    1200 | Voodoo Doll         -    5200 |\n       | ShootingStarTome    -    1420 | Thera Leaf          -      50 |\n       | Hexagonal Staff     -    1100 | Mana Leaf           -     100 |\n       | Type 94 Pistol      -    1300 | Pure Leaf           -     230 |\n       | Leather Vest        -    1000 | TalismanOfLuck      -     480 |\n       | Leather Skirt       -    1200 | Mermaid's Tear      -      70 |\n       | Bandanna            -     320 | Holy Mother Bust    -      75 |\n       | Leather Cap         -     600 | Angel's Feather     -      80 |\n       | Leather Belt        -     320 | Phoenix Tail        -      90 |\n       | Casual Belt         -     600 | Bronze Arrowhead    -     100 |\n       | Shell Bracelet      -    2770 | Bronze Dagger       -     200 |\n       | Bone Bracelet       -    2960 | Silver Hourglass    -     100 |\n       | Rosewood Bracelet   -    3000 | Gold Hourglass      -     200 |\n       | Spikes              -    2810 | Tent                -     480 |\n       '———————————————————————————————'———————————————————————————————'\n\nWhen you gain control of a very queasy Yuri, open the chest on the left side of\nthe room for a [_ROSEWOOD BRACELET_]. Go up the stairs to the right for some\ndialogue with Margarete, then go down and left, examining the door to the\nwheelhouse for a scene. Afterward, head left a bit more, then check the top\nbarrel to the upper-right for a [_WITCH'S BROTH_]. Move left and talk to\nZhuzhen, then make your way back below deck to talk with Alice for a long\nscene.\n\nYou'll regain control under the deck as just Yuri. Save your game, then go back\nout on deck. Head inside the wheelhouse and take out the group of monsters\nhere. Afterward, before leaving, check the floor near the wheel and the blanket\nhanging for a [_LOTTERY TICKET_]. Go back outside and downstairs to take out a\nsecond group of enemies, and after they're finished, go back out on the deck\nand talk to Zhuzhen to fight one last group.\n\n  NOTE     It should be fairly easy to obtain both your level 1 Fire and Water\n¯¯¯¯¯¯¯¯   Fusions here, since the enemies come in groups of 3 and 4. I\n           strongly recommend doing so, as it won't take long at all. Also,\n           make sure Alice it at least level 11 so that she learns the\n           Blessed Light spell.\n\nOnce they're done, and Zhuzhen is finished with the preparations, make your way\nback down to below the deck and save your game. Before continuing, stop in the\nwheelhouse once more and talk to the Courier Subordinate, who's asking if you\nneed anything in a strange way.\n\n———————————————————————————————\n   [1] Yes, of course.\n   [2] What are you saying?!\n———————————————————————————————\n\nChoosing option 1 will allow you to see what items he has for sale. Make sure\nthat you have THREE Rosewood Bracelets to put on your active party, as the next\nboss can paralyze you. Also make sure to have enough healing items.\n\nChoosing option 2 will allow you to discover that he's actually a Lottery\nMember!\n\n           _________________________________________________________\n           \\$$$$ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ $$$$/\n            \\              [_LOTTERY MEMBER NO. 13_]              /\n             \\___________________________________________________/\n              \\¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯/\n               \\           (Red)  |  Iron Clogs                /\n               /        (Yellow)  |  B.Dragon Horn             \\\n              /      (Turquoise)  |  Witch's Broth              \\\n             /           (Green)  |  Pure Leaf                   \\\n            /            (White)  |  Tissues                      \\\n           /$$$$ _ _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ _ _ _ _ _ _ $$$$\\\n           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nThe ring here moves fast, so remember, equipping the Pocket Watch will make it\neasier to hit the areas! Make sure to win the Iron Clogs before continuing on;\nit slows down the indicator speed on your Judgment Ring, but it also lowers\nyour Agl 15 points. If you don't win it, reload your last save and try again.\nRemember, you need to win something from each member at least once!\n\nWhen you're prepared for the next boss, go back and talk to Zhuzhen. He'll ask\nif you're ready.\n\n————————————————————\n   [1] Not yet.\n   [2] Any time!!\n————————————————————\n\nChoose option 2, and after an event, you'll be thrown into a battle.\n\n      .————————————.\n     / * SUB-BOSS * \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Li Li                 |   580 HP  | Class: Dark  | [_] W.Tiger Hair         |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|                                                                             |\n|  This is just a warm-up, so try to avoid using TOO much MP if possible for  |\n|  the next boss battle.                                                      |\n|                                                                             |\n|  She can and will use Dark Messenger, which not only deals major damage,    |\n|  but can instantly kill a party member, so be careful. Her other attacks    |\n|  are Paralysis (which does decent damage, but you should be guarded         |\n|  against the actual Paralysis effect with your Rosewood Bracelets) and a    |\n|  normal attack, which you shouldn't need to worry about.                    |\n|                                                                             |\n|  If you have it, have Yuri use Heaven's Fiend and use the Exorcist Arrow    |\n|  attack; it should do MAJOR damage. Alice should cast Holy Edge on          |\n|  Margarete first, so she has Light-based attacks, then she should cast      |\n|  Blessed Light. Margaret should just be attacking normally, using Thera     |\n|  and Mana Leaves whenever the party's HP/MP are getting low. If you really  |\n|  need a second healer, Heaven's Fiend is perfect for the role, as its       |\n|  Sacred Remedy will heal EVERYONE in the party.                             |\n|                                                                             |\n|  If you don't have Heaven's Fiend, have Yuri fuse into either Inferno or    |\n|  Raging Tiger (they are your two physically strongest Fusions at this       |\n|  point) and use normal attacks on her. If he has Inferno, use the Fighting  |\n|  Spirit skill first to increase his attack, then start wailing away on      |\n|  her. Alice should cast Holy Edge on Yuri first, so he has Light-based      |\n|  attacks, then she should cast Blessed Light. Margaret should just be       |\n|  attacking normally, using Thera and Mana Leaves whenever the party's       |\n|  HP/MP are getting low. Not much to worry about (other than Dark            |\n|  Messenger) here.                                                           |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   00800 EXP   / \\   03800 Cash   /\n     '—————————————'   '——————————————'\n\nWatch a bit of dialogue, then you'll take on a powered-up form of Li Li.\n\n      .————————————.\n     / *** BOSS *** \\\n.———'————————————————'——.———————————.——————————————.——————————————————————————.\n| Li Li                 |   720 HP  | Class: Dark  | [_] B.Tortoise Fang      |\n|———————————————————————'———————————'——————————————'——————————————————————————|\n|        .———————————————————.———————————————————.———————————————————.        |\n|        |     Yuri [14]     |                   |   Margarete [14]  |        |\n|        |                   |     Alice [13]    |                   |        |\n|        |===================|===================|===================|        |\n|        | Knuckle Blade     | ShootingStarTome  | Type 94 Pistol    |        |\n|        | Leather Vest      | Leather Skirt     | Leather Skirt     |        |\n|        | Flare Brooch      | Leather Cap       | Leather Cap       |        |\n|        | Jade Lariat       | Star Brooch       | Causal Belt       |        |\n|        | Rosewood Bracelet | Rosewood Bracelet | Rosewood Bracelet |        |\n|        |                   |                   |                   |        |\n|        | Heaven's Fiend    |                   |                   |        |\n|        | Raging Tiger      |                   |                   |        |\n|        | Inferno           |                   |                   |        |\n|        '———————————————————'———————————————————'———————————————————'        |\n|                                                                             |\n|  At least this time she won't use Dark Messenger, but she still uses        |\n|  Paralysis (which, again, does decent damage, but you should be guarded     |\n|  against the actual Paralysis effect with your Rosewood Bracelets.) Watch   |\n|  out for Hate Storm, as it'll do decent damage to your whole party.         |\n|                                                                             |\n|  Start off by healing, if needed. As with the last battle, if you have it,  |\n|  have Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should  |\n|  do MAJOR damage. Alice should cast Holy Edge on Margarete first, so she    |\n|  has Light-based attacks, then she should cast Blessed Light. Margaret      |\n|  should just be attacking normally, using Thera and Mana Leaves whenever    |\n|  the party's HP/MP are getting low. If you really need a second healer,     |\n|  Heaven's Fiend is perfect for the role, as its Sacred Remedy will heal     |\n|  EVERYONE in the party, especially after Hate Storm.                        |\n|                                                                             |\n|  If you don't have Heaven's Fiend, have Yuri fuse into either Inferno or    |\n|  Raging Tiger (they are your two physically strongest Fusions at this       |\n|  point) and use normal attacks on her. If he has Inferno, use the Fighting  |\n|  Spirit skill first to increase his attack, then start wailing away on      |\n|  her. Alice should cast Holy Edge on Yuri first, so he has Light-based      |\n|  attacks, then she should cast Blessed Light REPEATEDLY. Margaret will be   |\n|  the primary healer once again, as Yuri and Alice should be shelling out    |\n|  some pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever     |\n|  the party's HP/MP are getting low, and you should be fine.                 |\n|                                                                             |\n'——.—————————————————.——————————————————.—————————————————————————————————————'\n    \\   01000 EXP   / \\   03950 Cash   /\n     '—————————————'   '——————————————'\n\nWatch the sad series of events, then you'll regain control on the World Map.\nNext stop: Shanghai! Make sure to remove your accessories from your party\nbefore entering, as you'll be controlling Zhuzhen for a short time.\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

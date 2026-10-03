@@ -1,0 +1,153 @@
+{
+  "id": "w-1-09",
+  "code": "[W-1-09]",
+  "title": "Shanghai, Huayuan (2)",
+  "category": "Walkthrough - Asia",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-1-08",
+      "code": "[W-1-08]",
+      "title": "Temple Ruins",
+      "file": "sections/w-1-08-temple-ruins.json"
+    },
+    "next": {
+      "id": "w-1-10",
+      "code": "[W-1-10]",
+      "title": "Asia Side Quests",
+      "file": "sections/w-1-10-asia-side-quests.json"
+    }
+  },
+  "char_count": 4961,
+  "line_count": 103,
+  "overview": {
+    "save_points": [
+      "Hotel ground floor"
+    ],
+    "items": [
+      "TeaOfTheHealer",
+      "Monkey Paw",
+      "Lottery Ticket"
+    ],
+    "equipment": [
+      "Leonardo's Bear"
+    ],
+    "valuables": [
+      "Yawang Gate Key"
+    ]
+  },
+  "items": [
+    "TeaOfTheHealer",
+    "Monkey Paw",
+    "Lottery Ticket",
+    "Leonardo's Bear",
+    "Yawang Gate Key"
+  ],
+  "enemies": [
+    {
+      "number": "#034",
+      "name": "Corporal",
+      "hp": 70,
+      "class": "Earth",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    },
+    {
+      "number": "#035",
+      "name": "Sergeant",
+      "hp": 160,
+      "class": "Light",
+      "is_boss": false,
+      "is_subboss": false,
+      "notes": ""
+    }
+  ],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "YAWANG GATE KEY",
+        "raw_tag": "[_YAWANG GATE KEY_]",
+        "matched_overview_item": "Yawang Gate Key",
+        "category": "valuables",
+        "line": 36,
+        "char_offset": [
+          1934,
+          1953
+        ],
+        "context": "Go to the intersection near the hotel to run into Kato, who'll tell you of another event that happened, and also where to find the key that will let you into Kuihai Tower. Make your way east to the next area, then southwest back down to the dock, and"
+      },
+      {
+        "name": "TEAOFTHEHEALER",
+        "raw_tag": "[_TEAOFTHEHEALER_]",
+        "matched_overview_item": "TeaOfTheHealer",
+        "category": "items",
+        "line": 83,
+        "char_offset": [
+          4031,
+          4049
+        ],
+        "context": "At the intersection near the hotel, head east to the next section. Head south toward the dock, but stop at the fork with the shop at Mika's House. Go southeast and enter the building that was previously locked. There's nothing too terribly important "
+      },
+      {
+        "name": "LOTTERY TICKET",
+        "raw_tag": "[_LOTTERY TICKET_]",
+        "matched_overview_item": "Lottery Ticket",
+        "category": "items",
+        "line": 91,
+        "char_offset": [
+          4446,
+          4464
+        ],
+        "context": "- First win (three dogs) - A [_LOTTERY TICKET_]! - Second win (four dogs) - A [_LEONARDO'S BEAR_]! - Third win (four dogs) - A [_MONKEY PAW_]!"
+      },
+      {
+        "name": "LEONARDO'S BEAR",
+        "raw_tag": "[_LEONARDO'S BEAR_]",
+        "matched_overview_item": "Leonardo's Bear",
+        "category": "equipment",
+        "line": 92,
+        "char_offset": [
+          4496,
+          4515
+        ],
+        "context": "- First win (three dogs) - A [_LOTTERY TICKET_]! - Second win (four dogs) - A [_LEONARDO'S BEAR_]! - Third win (four dogs) - A [_MONKEY PAW_]!"
+      },
+      {
+        "name": "MONKEY PAW",
+        "raw_tag": "[_MONKEY PAW_]",
+        "matched_overview_item": "Monkey Paw",
+        "category": "items",
+        "line": 93,
+        "char_offset": [
+          4546,
+          4560
+        ],
+        "context": "- First win (three dogs) - A [_LOTTERY TICKET_]! - Second win (four dogs) - A [_LEONARDO'S BEAR_]! - Third win (four dogs) - A [_MONKEY PAW_]!"
+      }
+    ],
+    "notes": [
+      {
+        "type": "NOTE",
+        "line": 28,
+        "char_offset": [
+          1376,
+          1591
+        ],
+        "text": "From here on out, there are Japanese soldiers (Corporals) all over the city. They will appear randomly in battle, and if you talk to one of them, you'll have to fight them as well."
+      }
+    ]
+  },
+  "text": "\n   Shadow Hearts   |                                      Shanghai, Huayuan (2)\n     [W-1-09]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Save Points | Hotel ground floor\n             |\n       Items | [_] TeaOfTheHealer      [_] Monkey Paw\n             | [_] Lottery Ticket\n             |\n   Equipment | [_] Leonardo's Bear\n             |\n   Valuables | [_] Yawang Gate Key\n_____________|_________________________________________________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n Enemy                           |   HP   | Class | Notes\n=================================|========|=======|============================\n #034  [_] Corporal              |    70  | Earth |\n #035  [_] Sergeant              |   160  | Light |\n_________________________________|________|_______|____________________________\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nWhen you regain control, go next door and watch a series of events unfold.\nYou'll eventually regain control outside of the hotel. Make your way to Zhen's\nbar to see an event. Watch some dialogue here, then head back outside the bar.\n\n  NOTE     From here on out, there are Japanese soldiers (Corporals) all over\n¯¯¯¯¯¯¯¯   the city. They will appear randomly in battle, and if you talk to\n           one of them, you'll have to fight them as well.\n\nGo to the intersection near the hotel to run into Kato, who'll tell you of\nanother event that happened, and also where to find the key that will let you\ninto Kuihai Tower. Make your way east to the next area, then southwest back\ndown to the dock, and head over to the ship. Open the fish well on the left\nside of the ship, and you'll find the [_YAWANG GATE KEY_] wrapped in cloth.\n\nMake your way back to the second floor of the Inn, to the back room. Watch the\nevent here and fight a couple of Sergeants, then finish out the dialogue.\n\n_______________________________________________________________________________\n¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯\n\nMeanwhile, in Kuihai Tower...\n\nYou see Alice trapped. Watch the dialogue, and PLEASE pay attention, or you\nwill miss out on a side quest. Answer with the following replies:\n\n————————————————————————————————————————————————————————\n   ———>   [1] Quit it, you dirty old man!        <———\n          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n          [2] This strange machine is so sexy!\n\n          [3] Please don't hurt me...\n————————————————————————————————————————————————————————\n   ———>   [1] Just get away from me!             <———\n          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n          [2] This scary tower is sexy, too!\n\n          [3] Please, stop...\n————————————————————————————————————————————————————————\n   ———>   [1] Ignore him.                        <———\n          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n          [2] But YOU'RE the sexiest!\n\n          [3] Forgive me...\n————————————————————————————————————————————————————————\n\n   Choosing ANYTHING other than what's specified above will lead to you not\nbeing able to go to Kowloon and do the side quest there. Watch the rest of the\nevents, and you'll eventually regain control.\n\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nYou'll regain control at the entrance to Kuihai Tower. LEAVE NOW, as there is\nmore to do. Head back to Huayuan in Shanghai.\n\nAt the intersection near the hotel, head east to the next section. Head south\ntoward the dock, but stop at the fork with the shop at Mika's House. Go\nsoutheast and enter the building that was previously locked. There's nothing\ntoo terribly important here, but if you check the cabinet at the top of the\nscreen that a bird cage is sitting on, you can get a [_TEAOFTHEHEALER_].\n\nMake your way to the dock now where you'll find several dogs, along with the\nMan with Dog. Talk to him to play a game: Shanghai's famous dog-picking\ncontest! Pay him 300 Cash, and you'll be able to play. Pick a dog, then it'll\nmove around, and you'll have to pick him again when you're done. It's basically\na glorified cup game. Here are your prizes for winning.\n\n - First win (three dogs) - A [_LOTTERY TICKET_]!\n - Second win (four dogs) - A [_LEONARDO'S BEAR_]!\n - Third win (four dogs) - A [_MONKEY PAW_]!\n\nThat's it for treasure in Shanghai. Now, you can either continue with Kuihai\nTower, or you can take on a couple of side quests! If you don't care about the\nside quests, then continue on to W-1-11 - Kuihai Tower. Otherwise, read below!\n\n\n\n\n_______________________________________________________________________________\n¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯|¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯"
+}

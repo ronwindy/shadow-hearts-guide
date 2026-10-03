@@ -1,0 +1,55 @@
+{
+  "id": "w-2-18",
+  "code": "[W-2-18]",
+  "title": "New Game+",
+  "category": "Walkthrough - Europe",
+  "section_type": "sub",
+  "is_sidequest": false,
+  "source": {
+    "game": "Shadow Hearts",
+    "author": "A_Backdated_Future",
+    "version": "1.05",
+    "source_url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+    "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+  },
+  "navigation": {
+    "prev": {
+      "id": "w-2-17",
+      "code": "[W-2-17]",
+      "title": "Neameeto",
+      "file": "sections/w-2-17-neameeto.json"
+    },
+    "next": {
+      "id": "a-1-00",
+      "code": "[A-1-00]",
+      "title": "Appendices",
+      "file": "sections/a-1-00-appendices.json"
+    }
+  },
+  "char_count": 1160,
+  "line_count": 22,
+  "overview": {},
+  "items": [],
+  "enemies": [],
+  "bosses": [],
+  "boss": null,
+  "shops": [],
+  "markers": {
+    "items": [
+      {
+        "name": "BLACKSILKPANTS",
+        "raw_tag": "[_BLACKSILKPANTS_]",
+        "matched_overview_item": null,
+        "category": null,
+        "line": 20,
+        "char_offset": [
+          973,
+          991
+        ],
+        "context": "3) If you have all 124 Monster Library entries from your last game (or even a combination of your last and current games), you can talk to Knowledgeable Carl when Sharon's Pit Fight becomes available, and he will give you the [_BLACKSILKPANTS_]. It i"
+      }
+    ],
+    "notes": []
+  },
+  "text": "\n   Shadow Hearts   |                                                  New Game+\n     [W-2-18]      |\n___ ___ ___ ___ ___|___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n\nBy saving your clear data after beating the game and watching the credits, you\ncan now use that clear data to play the game in New Game+ mode. There are a few\nbenefits to playing in New Game+ mode:\n\n1) You start the game with every Fusion that you earned the last game,\n   including both Amon and the SeraphicRadiance.\n\n2) Your Score (in the Command Menu) carries over on the right side, and you can\n   compare your Score for this game against the one you earned last game.\n\n3) If you have all 124 Monster Library entries from your last game (or even a\n   combination of your last and current games), you can talk to Knowledgeable\n   Carl when Sharon's Pit Fight becomes available, and he will give you the\n   [_BLACKSILKPANTS_]. It is an accessory for Alice that increases her special\n   defense and cuts special attack damage in half (and changes the color of her\n   panties from pink to black!)"
+}
