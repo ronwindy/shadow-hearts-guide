@@ -77,17 +77,18 @@
 
 /* Highlighted key terms (items, places, concepts, mechanics) */
 .highlight-term {
-  color: #f8fafc;
+  color: #fef08a;
   font-weight: 600;
-  border-bottom: 1.5px solid rgba(212, 175, 55, 0.45);
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.6);
   padding-bottom: 1px;
+  text-shadow: 0 0 6px rgba(212, 175, 55, 0.2);
   transition: all 0.15s ease-in-out;
 }
 
 .highlight-term:hover {
-  color: #fef08a;
-  border-bottom-color: rgba(212, 175, 55, 0.85);
-  text-shadow: 0 0 8px rgba(212, 175, 55, 0.25);
+  color: #ffffff;
+  border-bottom-color: rgba(250, 204, 21, 0.95);
+  text-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
 }
 
 .step-content.line-through .highlight-term,

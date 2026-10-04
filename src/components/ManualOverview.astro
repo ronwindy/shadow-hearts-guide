@@ -5,8 +5,19 @@ import {
   Gamepad2,
   SlidersHorizontal,
   Swords,
+  Sword,
+  Shield,
+  Package,
+  Heart,
+  Ghost,
+  Save,
+  FolderOpen,
   MapPin,
-  Sparkles
+  Sparkles,
+  Clock,
+  Target,
+  Flame,
+  Info
 } from '@lucide/astro';
 import { renderInlineMarkup } from '../lib/markup';
 import type { ManualOverviewData } from '../lib/types';
@@ -16,6 +27,54 @@ interface Props {
 }
 
 const { overview } = Astro.props;
+
+// Helpers for semantic badges
+const getSystemMeta = (key: string) => {
+  switch (key.toLowerCase()) {
+    case 'starting':
+      return { label: 'Starting the Game', icon: Gamepad2, badgeClass: 'bg-amber-950/40 text-amber-300 border-amber-800/50' };
+    case 'vibration':
+      return { label: 'Controller Vibration', icon: SlidersHorizontal, badgeClass: 'bg-cyan-950/40 text-cyan-300 border-cyan-800/50' };
+    case 'saving':
+      return { label: 'Saving Data', icon: Save, badgeClass: 'bg-emerald-950/40 text-emerald-300 border-emerald-800/50' };
+    case 'loading':
+      return { label: 'Loading Saved Game', icon: FolderOpen, badgeClass: 'bg-sky-950/40 text-sky-300 border-sky-800/50' };
+    default:
+      return { label: key.replace(/_/g, ' '), icon: Info, badgeClass: 'bg-slate-900 text-slate-300 border-slate-700/80' };
+  }
+};
+
+const getAttributeMeta = (key: string) => {
+  switch (key.toLowerCase()) {
+    case 'hp':
+      return { label: 'HP (Hit Points)', icon: Heart, badgeClass: 'bg-rose-950/50 text-rose-300 border-rose-800/60' };
+    case 'mp':
+      return { label: 'MP (Magic Points)', icon: Sparkles, badgeClass: 'bg-sky-950/50 text-sky-300 border-sky-800/60' };
+    case 'sp':
+      return { label: 'SP (Sanity Points)', icon: Ghost, badgeClass: 'bg-purple-950/50 text-purple-300 border-purple-800/60' };
+    case 'battle_system':
+      return { label: 'Battle System', icon: Swords, badgeClass: 'bg-amber-950/50 text-amber-300 border-amber-800/60' };
+    default:
+      return { label: key.replace(/_/g, ' '), icon: Info, badgeClass: 'bg-slate-900 text-slate-300 border-slate-700/80' };
+  }
+};
+
+const getActionMeta = (action: string) => {
+  const norm = action.toUpperCase();
+  if (norm.includes('ATTACK')) {
+    return { icon: Sword, badgeClass: 'bg-rose-950/50 text-rose-300 border-rose-800/60' };
+  }
+  if (norm.includes('FUSION')) {
+    return { icon: Flame, badgeClass: 'bg-purple-950/50 text-purple-300 border-purple-800/60' };
+  }
+  if (norm.includes('ITEM')) {
+    return { icon: Package, badgeClass: 'bg-emerald-950/50 text-emerald-300 border-emerald-800/60' };
+  }
+  if (norm.includes('DEFEND')) {
+    return { icon: Shield, badgeClass: 'bg-sky-950/50 text-sky-300 border-sky-800/60' };
+  }
+  return { icon: Swords, badgeClass: 'bg-slate-900 text-gold-400 border-slate-700/80' };
+};
 ---
 
 <div class="space-y-8">
@@ -27,7 +86,9 @@ const { overview } = Astro.props;
         <span>Compass & Orientation</span>
       </h2>
       {overview.directions.compass_note && (
-        <p class="text-slate-300 text-base leading-relaxed">{overview.directions.compass_note}</p>
+        <p class="text-slate-300 text-base leading-relaxed">
+          <Fragment set:html={renderInlineMarkup(overview.directions.compass_note)} />
+        </p>
       )}
       {overview.directions.mappings && overview.directions.mappings.length > 0 && (
         <div class="overflow-x-auto rounded-lg border border-slate-800">
@@ -43,7 +104,7 @@ const { overview } = Astro.props;
               {overview.directions.mappings.map((m) => (
                 <tr class="hover:bg-slate-800/40">
                   <td class="py-2 px-3 font-medium">{m.screen}</td>
-                  <td class="py-2 px-3 text-gold-400">{m.cardinal}</td>
+                  <td class="py-2 px-3 text-gold-400 font-semibold">{m.cardinal}</td>
                   <td class="py-2 px-3 font-mono text-slate-400">{m.abbr}</td>
                 </tr>
               ))}
@@ -57,7 +118,7 @@ const { overview } = Astro.props;
   {/* Game Manual Intro */}
   {overview.intro && (
     <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-slate-300 text-base italic leading-relaxed">
-      {overview.intro}
+      <Fragment set:html={renderInlineMarkup(overview.intro)} />
     </div>
   )}
 
@@ -70,30 +131,36 @@ const { overview } = Astro.props;
       </h2>
       <div class="grid gap-3">
         {overview.story_prologue.setting_1 && (
-          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed">
-            <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
-              <MapPin class="w-3.5 h-3.5 text-gold-400" />
-              <span>Rouen, France (1913)</span>
-            </span>
-            {overview.story_prologue.setting_1}
+          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed space-y-1.5">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-amber-950/50 text-amber-300 border border-amber-800/50">
+                <MapPin class="w-3.5 h-3.5" />
+                <span>Rouen, France (1913)</span>
+              </span>
+            </div>
+            <p><Fragment set:html={renderInlineMarkup(overview.story_prologue.setting_1)} /></p>
           </div>
         )}
         {overview.story_prologue.setting_2 && (
-          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed">
-            <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
-              <MapPin class="w-3.5 h-3.5 text-gold-400" />
-              <span>One Month Later</span>
-            </span>
-            {overview.story_prologue.setting_2}
+          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed space-y-1.5">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-950/50 text-sky-300 border border-sky-800/50">
+                <Clock class="w-3.5 h-3.5" />
+                <span>One Month Later</span>
+              </span>
+            </div>
+            <p><Fragment set:html={renderInlineMarkup(overview.story_prologue.setting_2)} /></p>
           </div>
         )}
         {overview.story_prologue.inciting_incident && (
-          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed">
-            <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
-              <Sparkles class="w-3.5 h-3.5 text-gold-400" />
-              <span>Inciting Incident</span>
-            </span>
-            {overview.story_prologue.inciting_incident}
+          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed space-y-1.5">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-rose-950/50 text-rose-300 border border-rose-800/50">
+                <Sparkles class="w-3.5 h-3.5" />
+                <span>Inciting Incident</span>
+              </span>
+            </div>
+            <p><Fragment set:html={renderInlineMarkup(overview.story_prologue.inciting_incident)} /></p>
           </div>
         )}
       </div>
@@ -147,12 +214,23 @@ const { overview } = Astro.props;
         <span>System & Operations</span>
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
-        {Object.entries(overview.playing_the_game).map(([key, val]) => (
-          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1.5">
-            <h3 class="font-serif font-bold capitalize text-gold-400 text-base sm:text-lg">{key.replace(/_/g, ' ')}</h3>
-            <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{val}</p>
-          </div>
-        ))}
+        {Object.entries(overview.playing_the_game).map(([key, val]) => {
+          const meta = getSystemMeta(key);
+          const Icon = meta.icon;
+          return (
+            <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2">
+              <div class="flex items-center gap-2">
+                <span class={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold border ${meta.badgeClass}`}>
+                  <Icon class="w-3.5 h-3.5" />
+                  <span>{meta.label}</span>
+                </span>
+              </div>
+              <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                <Fragment set:html={renderInlineMarkup(val)} />
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   )}
@@ -165,12 +243,23 @@ const { overview } = Astro.props;
         <span>Player Attributes & Battle System</span>
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
-        {Object.entries(overview.player_attributes).map(([key, val]) => (
-          <div class="p-3.5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1.5">
-            <h3 class="font-mono font-bold uppercase tracking-wider text-gold-400 text-sm sm:text-base">{key.replace(/_/g, ' ')}</h3>
-            <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{val}</p>
-          </div>
-        ))}
+        {Object.entries(overview.player_attributes).map(([key, val]) => {
+          const meta = getAttributeMeta(key);
+          const Icon = meta.icon;
+          return (
+            <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2">
+              <div class="flex items-center gap-2">
+                <span class={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold border ${meta.badgeClass}`}>
+                  <Icon class="w-3.5 h-3.5" />
+                  <span>{meta.label}</span>
+                </span>
+              </div>
+              <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                <Fragment set:html={renderInlineMarkup(val)} />
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   )}
@@ -191,20 +280,35 @@ const { overview } = Astro.props;
         <div class="space-y-2.5">
           <h3 class="text-base sm:text-lg font-serif font-bold text-slate-200">Battle Actions</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
-            {overview.battle_mechanics.action_menu.map((a) => (
-              <div class="p-3.5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1">
-                <div class="font-semibold text-gold-400 font-mono text-sm sm:text-base">{a.action}</div>
-                <p class="text-slate-300 leading-relaxed text-sm">
-                  <Fragment set:html={renderInlineMarkup(a.description)} />
-                </p>
-              </div>
-            ))}
+            {overview.battle_mechanics.action_menu.map((a) => {
+              const meta = getActionMeta(a.action);
+              const ActionIcon = meta.icon;
+              return (
+                <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2">
+                  <div class="flex items-center gap-2">
+                    <span class={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-mono font-bold uppercase tracking-wider border ${meta.badgeClass}`}>
+                      <ActionIcon class="w-3.5 h-3.5" />
+                      <span>{a.action}</span>
+                    </span>
+                  </div>
+                  <p class="text-slate-300 leading-relaxed text-sm">
+                    <Fragment set:html={renderInlineMarkup(a.description)} />
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
       {overview.battle_mechanics.judgment_ring && (
-        <div class="p-5 rounded-xl bg-amber-950/20 border border-amber-800/40 text-sm sm:text-base space-y-2">
-          <h3 class="font-serif font-bold text-amber-300 text-base sm:text-lg">
+        <div class="p-5 rounded-xl bg-amber-950/20 border border-amber-800/50 text-sm sm:text-base space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-amber-900/60 text-amber-200 border border-amber-700/60">
+              <Target class="w-3.5 h-3.5 text-amber-300" />
+              <span>Core Combat Mechanic</span>
+            </span>
+          </div>
+          <h3 class="font-serif font-bold text-amber-300 text-lg sm:text-xl">
             Judgment Ring System
           </h3>
           <p class="text-slate-200 text-base leading-relaxed">
@@ -214,7 +318,7 @@ const { overview } = Astro.props;
             <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.judgment_ring.mechanics)} />
           </p>
           {overview.battle_mechanics.judgment_ring.character_variation && (
-            <p class="text-amber-400/80 text-sm italic">
+            <p class="text-amber-300/90 text-sm italic">
               <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.judgment_ring.character_variation)} />
             </p>
           )}

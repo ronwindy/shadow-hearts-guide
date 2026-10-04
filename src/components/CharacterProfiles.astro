@@ -1,5 +1,21 @@
 ---
-import { Users, User, BookOpen } from '@lucide/astro';
+import {
+  Users,
+  User,
+  BookOpen,
+  Moon,
+  Sun,
+  Flame,
+  Droplets,
+  Mountain,
+  Sparkles,
+  Ghost,
+  Skull,
+  Cross,
+  Compass,
+  Tag
+} from '@lucide/astro';
+import { renderInlineMarkup } from '../lib/markup';
 import type { CharacterProfile, GlossaryTerm } from '../lib/types';
 
 interface Props {
@@ -8,6 +24,45 @@ interface Props {
 }
 
 const { characters = [], glossary = [] } = Astro.props;
+
+// Helper to get element styling and icon for characters
+const getElementMeta = (element: string) => {
+  switch (element.toLowerCase()) {
+    case 'darkness':
+      return { icon: Moon, badgeClass: 'bg-purple-950/50 text-purple-300 border-purple-800/60' };
+    case 'light':
+      return { icon: Sun, badgeClass: 'bg-amber-950/50 text-amber-300 border-amber-800/60' };
+    case 'fire':
+      return { icon: Flame, badgeClass: 'bg-orange-950/50 text-orange-300 border-orange-800/60' };
+    case 'water':
+      return { icon: Droplets, badgeClass: 'bg-cyan-950/50 text-cyan-300 border-cyan-800/60' };
+    case 'earth':
+      return { icon: Mountain, badgeClass: 'bg-emerald-950/50 text-emerald-300 border-emerald-800/60' };
+    default:
+      return { icon: Sparkles, badgeClass: 'bg-slate-900 text-slate-300 border-slate-700/80' };
+  }
+};
+
+// Helper for glossary lore icons
+const getGlossaryMeta = (term: string) => {
+  const t = term.toLowerCase();
+  if (t.includes('graveyard')) {
+    return { icon: Skull, badgeClass: 'bg-purple-950/50 text-purple-300 border-purple-800/60' };
+  }
+  if (t.includes('exorcist')) {
+    return { icon: Sparkles, badgeClass: 'bg-amber-950/50 text-amber-300 border-amber-800/60' };
+  }
+  if (t.includes('malice')) {
+    return { icon: Flame, badgeClass: 'bg-rose-950/50 text-rose-300 border-rose-800/60' };
+  }
+  if (t.includes('reaper')) {
+    return { icon: Ghost, badgeClass: 'bg-indigo-950/50 text-indigo-300 border-indigo-800/60' };
+  }
+  if (t.includes('yin') || t.includes('feng')) {
+    return { icon: Compass, badgeClass: 'bg-emerald-950/50 text-emerald-300 border-emerald-800/60' };
+  }
+  return { icon: Tag, badgeClass: 'bg-slate-900 text-gold-400 border-slate-700/80' };
+};
 ---
 
 <div class="space-y-8">
@@ -19,25 +74,38 @@ const { characters = [], glossary = [] } = Astro.props;
         <span>Character Profiles</span>
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {characters.map((char) => (
-          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2 text-sm sm:text-base">
-            <div class="flex items-center justify-between">
-              <h3 class="text-lg sm:text-xl font-serif font-bold text-slate-100 flex items-center gap-1.5">
-                <User class="w-4 h-4 text-amber-300" />
-                <span>{char.name}</span>
-              </h3>
-              <div class="flex items-center gap-2">
-                {char.class && (
-                  <span class="px-2 py-0.5 rounded bg-amber-950/40 text-amber-300 border border-amber-800/40 font-mono text-xs">
-                    {char.class}
+        {characters.map((char) => {
+          const elementMeta = char.class ? getElementMeta(char.class) : null;
+          const ElementIcon = elementMeta ? elementMeta.icon : Sparkles;
+          return (
+            <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2.5 text-sm sm:text-base shadow-sm">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <h3 class="text-lg sm:text-xl font-serif font-bold text-slate-100 flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-lg bg-amber-950/40 border border-amber-800/50 flex items-center justify-center flex-shrink-0">
+                    <User class="w-4 h-4 text-amber-300" />
                   </span>
-                )}
-                {char.age && <span class="text-slate-400 text-xs">Age: {char.age}</span>}
+                  <span>{char.name}</span>
+                </h3>
+                <div class="flex items-center gap-2">
+                  {char.class && elementMeta && (
+                    <span class={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md border font-mono text-xs font-semibold ${elementMeta.badgeClass}`}>
+                      <ElementIcon class="w-3 h-3" />
+                      <span>{char.class}</span>
+                    </span>
+                  )}
+                  {char.age && (
+                    <span class="text-slate-400 font-mono text-xs px-2 py-0.5 rounded bg-slate-900/60 border border-slate-800">
+                      Age: {char.age}
+                    </span>
+                  )}
+                </div>
               </div>
+              <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                <Fragment set:html={renderInlineMarkup(char.profile)} />
+              </p>
             </div>
-            <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{char.profile}</p>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   )}
@@ -50,12 +118,23 @@ const { characters = [], glossary = [] } = Astro.props;
         <span>Lore & Terminology</span>
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {glossary.map((g) => (
-          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1 text-sm sm:text-base">
-            <h3 class="font-serif font-bold text-gold-400 text-base sm:text-lg">{g.term}</h3>
-            <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{g.description}</p>
-          </div>
-        ))}
+        {glossary.map((g) => {
+          const loreMeta = getGlossaryMeta(g.term);
+          const LoreIcon = loreMeta.icon;
+          return (
+            <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2 text-sm sm:text-base shadow-sm">
+              <div class="flex items-center gap-2">
+                <span class={`w-6 h-6 rounded-md border flex items-center justify-center flex-shrink-0 ${loreMeta.badgeClass}`}>
+                  <LoreIcon class="w-3.5 h-3.5" />
+                </span>
+                <h3 class="font-serif font-bold text-gold-400 text-base sm:text-lg">{g.term}</h3>
+              </div>
+              <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                <Fragment set:html={renderInlineMarkup(g.description)} />
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   )}

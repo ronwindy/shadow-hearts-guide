@@ -35,54 +35,72 @@
           { "button": "LT", "function": "Left direction" },
           { "button": "RT", "function": "Right direction" },
           { "button": "/\\ (TRIANGLE)", "function": "Cancel / Back" },
-          { "button": "[] (SQUARE)", "function": "Display Command Menu screen" },
-          { "button": "() (CIRCLE)", "function": "Run (when using Directional buttons to move)" },
+          {
+            "button": "[] (SQUARE)",
+            "function": "Display Command Menu screen"
+          },
+          {
+            "button": "() (CIRCLE)",
+            "function": "Run (when using Directional buttons to move)"
+          },
           { "button": ">< (CROSS)", "function": "Confirm" },
-          { "button": "L1", "function": "L1 Trigger / Display Escape command in battle / Turn pages in Command Menu" },
-          { "button": "R1", "function": "R1 Trigger / Display Escape command in battle / Turn pages in Command Menu" },
+          {
+            "button": "L1",
+            "function": "L1 Trigger / Display Escape command in battle / Turn pages in Command Menu"
+          },
+          {
+            "button": "R1",
+            "function": "R1 Trigger / Display Escape command in battle / Turn pages in Command Menu"
+          },
           { "button": "L2", "function": "L2 Trigger" },
           { "button": "R2", "function": "R2 Trigger" },
-          { "button": "LA (LEFT ANALOG)", "function": "Move character / Navigate menus (press lightly to walk, all the way to run)" },
+          {
+            "button": "LA (LEFT ANALOG)",
+            "function": "Move character / Navigate menus (press lightly to walk, all the way to run)"
+          },
           { "button": "RA (RIGHT ANALOG)", "function": "Right Analog stick" },
           { "button": "L3", "function": "L3 (Press)" },
           { "button": "R3", "function": "R3 (Press)" },
           { "button": "SL (SELECT)", "function": "Select" },
-          { "button": "ST (START)", "function": "Start the game / Skip cinematics" },
+          {
+            "button": "ST (START)",
+            "function": "Start the game / Skip cinematics"
+          },
           { "button": "AG", "function": "Toggle Analog" }
         ],
         "menu_navigation": "Highlight selection using directional buttons or Left analog stick. Confirm with CROSS button. Go back to previous screen with TRIANGLE button."
       },
       "story_prologue": {
-        "setting_1": "Rouen, France - 1913. A traveling English priest is brutally murdered on a rainy night. His only daughter, believed to have been traveling with him, and his possessions have vanished. She has been classified as \"missing.\"",
-        "setting_2": "One month later... A steam train blazes under the clear, starry sky. The train from Changchun is headed for Dairen. Inside the Japanese army's luxury car, located in the back of the train, sits the murdered priest's daughter. She has beautiful blonde hair and eyes full of sorrow. Bored, she stares outside at the scenery.",
-        "inciting_incident": "An English gentleman approaches the girl. The next moment, a scream rips through the train. One of the Japanese bodyguards is torn like a piece of paper and falls to the ground. The English gentleman, smiling, locks his gaze onto the girl. \"Who-who are you?!,\" the girl whimpers. \"I am Roger Bacon and I have come to take you away.\" A great tragedy is about to begin..."
+        "setting_1": "**Rouen, France - 1913.** A traveling English priest is brutally murdered on a rainy night. His only daughter, believed to have been traveling with him, and his possessions have vanished. She has been classified as **\"missing.\"**",
+        "setting_2": "**One month later...** A steam train blazes under the clear, starry sky. The train from **Changchun** is headed for **Dairen**. Inside the Japanese army's luxury car, located in the back of the train, sits the murdered priest's daughter. She has beautiful blonde hair and eyes full of sorrow. Bored, she stares outside at the scenery.",
+        "inciting_incident": "An English gentleman approaches the girl. The next moment, a scream rips through the train. One of the Japanese bodyguards is torn like a piece of paper and falls to the ground. The English gentleman, smiling, locks his gaze onto the girl. *\"Who-who are you?!,\"* the girl whimpers. *\"I am **Roger Bacon** and I have come to take you away.\"* A great tragedy is about to begin..."
       },
       "playing_the_game": {
-        "starting": "At Title screen press START. Select New Game or Continue (requires saved data on Memory Card (8MB) for PlayStation 2). Confirm with CROSS.",
-        "vibration": "Adjust Vibration Function of DUALSHOCK 2 analog controller: Select VIBRATION from Main Menu, press CROSS, and select ON or OFF.",
-        "saving": "Requires Memory Card (8MB) for PlayStation 2. Press SQUARE button at a save point and select SAVE from Command Menu under \"Data\" column. Choose Memory Card and file using directional buttons; confirm with CROSS.",
-        "loading": "Select LOAD from \"Data\" column of Command Menu. Select file with directional buttons and confirm with CROSS."
+        "starting": "At Title screen press START. Select **New Game** or **Continue** (requires saved data on **Memory Card (8MB)** for PlayStation 2). Confirm with CROSS.",
+        "vibration": "Adjust Vibration Function of **DUALSHOCK 2** analog controller: Select **VIBRATION** from Main Menu, press CROSS, and select **ON** or **OFF**.",
+        "saving": "Requires **Memory Card (8MB)** for PlayStation 2. Press SQUARE button at a **save point** and select **SAVE** from Command Menu under **\"Data\"** column. Choose Memory Card and file using directional buttons; confirm with CROSS.",
+        "loading": "Select **LOAD** from **\"Data\"** column of Command Menu. Select file with directional buttons and confirm with CROSS."
       },
       "player_attributes": {
-        "battle_system": "Turn-based. Each character (or monster) on-screen gets a chance (turn) to attack or defend. Battle continues until one side wins.",
-        "hp": "Hit Points. Represents the amount of life in a character or monster. Losing all HP results in death.",
-        "mp": "Magic Points. Determines ability to cast spells (offensive and defensive) and perform magical feats. Running out of MP causes loss of magical powers.",
-        "sp": "Sanity Points. Mental strength displayed adjacent to HP and MP. Characters receive evil energy over long battles. Reaching 0 SP causes character to go \"berserk.\" Yuri also spends SP to fuse with monsters."
+        "battle_system": "**Turn-based.** Each character (or monster) on-screen gets a chance (turn) to attack or defend. Battle continues until one side wins.",
+        "hp": "**Hit Points.** Represents the amount of life in a character or monster. Losing all HP results in **death**.",
+        "mp": "**Magic Points.** Determines ability to cast spells (offensive and defensive) and perform magical feats. Running out of MP causes loss of magical powers.",
+        "sp": "**Sanity Points.** Mental strength displayed adjacent to HP and MP. Characters receive evil energy over long battles. Reaching **0 SP** causes character to go **\"berserk.\"** Yuri also spends SP to **fuse with monsters**."
       },
       "battle_mechanics": {
         "encounter_flow": "When attacked, screen flashes and twists. Camera rotates to display enemies. Take note of strongest/weakest foes before battle starts.",
         "action_menu": [
           {
             "action": "ATTACK",
-            "description": "Basic physical attack. Select enemy target with cursor and press CROSS. Cannot cancel once CROSS is pressed."
+            "description": "**Basic physical attack.** Select enemy target with cursor and press CROSS. Cannot cancel once CROSS button is pressed."
           },
           {
             "action": "FUSION (OR SECOND ITEM)",
-            "description": "Morph into a powerful beast using Sanity Points. Attacks become stronger. Press CROSS, select form, and press CROSS again. This second item is unique per character (e.g. Yuri has FUSION, Alice has WHITE MAGIC)."
+            "description": "Morph into a powerful beast using **Sanity Points**. Attacks become stronger. Press CROSS, select form, and press CROSS again. This second item is unique per character (e.g. Yuri has **FUSION**, Alice has **WHITE MAGIC**)."
           },
           {
             "action": "ITEM",
-            "description": "Use collected attack, defensive, or healing items. Select item, then select target character and press CROSS. Be careful with healing items like Thera Leaf so as not to target an enemy."
+            "description": "Use collected attack, defensive, or healing items. Select item, then select target character and press CROSS. Be careful with healing items like **Thera Leaf** so as not to target an enemy."
           },
           {
             "action": "DEFEND",
@@ -90,42 +108,42 @@
           }
         ],
         "judgment_ring": {
-          "description": "A spinning meter that reflects chances of performing tasks (attacks, opening gates, etc.). Timing is everything.",
-          "mechanics": "Stop cursor in highlighted areas by pressing CROSS as meter spins around the ring. Press CROSS once for each highlighted area. Stopping closer to the outside edge of a highlighted area improves the action. In combat, you must hit the first area to launch at least one attack; failing the first area results in missing the attack entirely.",
+          "description": "A **spinning meter** that reflects chances of performing tasks (attacks, opening gates, etc.). Timing is everything.",
+          "mechanics": "Stop cursor in highlighted areas by pressing CROSS button as meter spins around the ring. Press CROSS once for each highlighted area. Stopping closer to the **outside edge** of a highlighted area improves the action. In combat, you must hit the first area to launch at least one attack; failing the first area results in **missing the attack entirely**.",
           "character_variation": "The ring differs for each character and task."
         },
-        "command_menu": "Accessible outside battle via SQUARE button. Provides in-game manual and inventory control. Navigate with Left analog stick or directional buttons; confirm with CROSS; turn pages with L1/R1; read NOTE bar at bottom of screen for item descriptions."
+        "command_menu": "Accessible outside battle via SQUARE button. Provides in-game manual and inventory control. Navigate with Left analog stick or directional buttons; confirm with CROSS; turn pages with L1/R1; read **NOTE bar** at bottom of screen for item descriptions."
       },
       "characters": [
         {
           "name": "Yuri Hyuga",
           "age": "24",
           "class": "Darkness",
-          "profile": "Born in 1890 to a Japanese father and a Russian mother, birthplace unknown. Moved throughout China during youth following father's military assignments. Both parents died when he was 10 years old; his fusion ability awakened at their death, making him a harmonixer. Guided by a mysterious voice whose identity he seeks."
+          "profile": "Born in 1890 to a Japanese father and a Russian mother, birthplace unknown. Moved throughout China during youth following father's military assignments. Both parents died when he was 10 years old; his fusion ability awakened at their death, making him a **harmonixer**. Guided by a **mysterious voice** whose identity he seeks."
         },
         {
           "name": "Alice Elliot",
           "age": "20",
           "class": "Light",
-          "profile": "Raised in London. Heard supernatural voices from a young age and became an exorcist assisting her father. People of influence seek to capture her for her power. Shy and introverted initially, but becomes perky as she journeys with Yuri."
+          "profile": "Raised in London. Heard supernatural voices from a young age and became an **exorcist** assisting her father. People of influence seek to capture her for her power. Shy and introverted initially, but becomes perky as she journeys with Yuri."
         },
         {
           "name": "Roger Bacon",
           "age": "?",
           "class": "Darkness",
-          "profile": "Mysterious English gentleman hunting Alice for unknown reasons. Good-natured facade hides a cruel personality; uses ancient magic for sinister deeds."
+          "profile": "Mysterious English gentleman hunting Alice for unknown reasons. Good-natured facade hides a cruel personality; uses **ancient magic** for sinister deeds."
         },
         {
           "name": "Zhuzhen Liu",
           "age": "Over 60",
           "class": "Fire",
-          "profile": "Wise sage deft in Yin & Yang and Feng Shui. Hints at a past connection with Yuri and Bacon."
+          "profile": "Wise sage deft in **Yin & Yang** and **Feng Shui**. Hints at a past connection with Yuri and Bacon."
         },
         {
           "name": "Margarete G. Zelle",
           "age": "?",
           "class": "Water",
-          "profile": "World-famous spy who meets Yuri and Alice by chance and joins their journey."
+          "profile": "World-famous **spy** who meets Yuri and Alice by chance and joins their journey."
         },
         {
           "name": "Keith Valentine",
@@ -137,23 +155,23 @@
       "glossary": [
         {
           "term": "The Graveyard",
-          "description": "Resting place of souls crucial to Yuri's fusion ability. Yuri swallows monsters into his consciousness to use their forms and powers, risking loss of consciousness control. Tombstones glow when enough Soul is accumulated from defeated enemies. Inspect glowing tombstones to battle and acquire fusion forms."
+          "description": "Resting place of souls crucial to Yuri's **fusion ability**. Yuri swallows monsters into his consciousness to use their forms and powers, risking loss of consciousness control. Tombstones glow when enough **Soul** is accumulated from defeated enemies. Inspect glowing tombstones to battle and acquire fusion forms."
         },
         {
           "term": "Exorcist",
-          "description": "Expels evil spirits from the possessed. Alice possesses this Christian ritual power and can hear supernatural voices, neutralizing them with White Magic. However, others can exploit her power to summon powerful evil spirits."
+          "description": "Expels evil spirits from the possessed. Alice possesses this Christian ritual power and can hear supernatural voices, neutralizing them with **White Magic**. However, others can exploit her power to summon powerful evil spirits."
         },
         {
           "term": "Malice",
-          "description": "The vengeance of monsters killed in battle. Defeating monsters yields power but accumulates malice energy. Must be cleared out in the Graveyard; neutralizing it proves the true hero."
+          "description": "The vengeance of monsters killed in battle. Defeating monsters yields power but accumulates **malice energy**. Must be cleared out in **the Graveyard**; neutralizing it proves the true hero."
         },
         {
           "term": "The Reaper",
-          "description": "Appears when Malice exceeds capacity. Takes the form of what Yuri fears most (\"masked monster\") and attacks him."
+          "description": "Appears when **Malice exceeds capacity**. Takes the form of what Yuri fears most (**\"masked monster\"**) and attacks him."
         },
         {
           "term": "Yin & Yang and Feng Shui",
-          "description": "Originated in the ancient Chinese 'Book of Burial,' based on Five Material Agents (wood, fire, earth, metal, water) and Yin/Yang dualism (opposing balanced forces). Also relates to Ayurveda's elements (earth, water, fire, wind, sky), where wind and water guide the 'chi'. Shadow Hearts blends Chinese sage arts with western concepts of good and evil."
+          "description": "Originated in the ancient Chinese 'Book of Burial,' based on **Five Material Agents** (wood, fire, earth, metal, water) and **Yin/Yang dualism** (opposing balanced forces). Also relates to Ayurveda's elements (earth, water, fire, wind, sky), where wind and water guide the 'chi'. *Shadow Hearts* blends Chinese sage arts with western concepts of good and evil."
         }
       ]
     },
@@ -161,12 +179,12 @@
       {
         "type": "tip",
         "title": "In-Game Help Reference",
-        "text": "If you need more detailed help, check the in-game Help section, or refer to A-1-15 in the guide, which is the same as the in-game Help!"
+        "text": "If you need more detailed help, check the **in-game Help** section, or refer to **A-1-15** in the guide, which is the same as the in-game Help!"
       },
       {
         "type": "tutorial",
         "title": "Action Menu Descriptions",
-        "text": "When in battle, look at the bottom of the screen when choosing an attack or defense. The text that appears will give you a description of what the highlighted item/action does."
+        "text": "When in battle, look at the **bottom of the screen** when choosing an attack or defense. The text that appears will give you a description of what the highlighted item/action does."
       }
     ]
   }
