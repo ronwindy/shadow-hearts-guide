@@ -23,7 +23,7 @@ Web Builder
     ↓
 Static Guide Page
     ↓
-QA
+QA & Code Review
     ↓
 GitHub Pages
 ```
@@ -265,6 +265,23 @@ QA should look for:
 The central QA question is:
 
 > **Did the presentation change while the source meaning remained intact?**
+
+---
+
+### Code Reviewer
+
+Responsible for maintaining codebase hygiene, modular architecture, and human readability across all pipeline scripts, CLI tools, Astro components, and TypeScript utilities.
+
+Code Review ensures that:
+- Code is clean, maintainable, and easy for human developers to review and audit.
+- Monolithic functions or multi-hundred-line scripts are decomposed into focused, single-responsibility units.
+- AI/agent anti-patterns (cryptic variable names, magic constants, deep nesting, silent error suppression) are prevented.
+- Debugging artifacts (`breakpoint()`, `debugger;`, stray `console.log`) are purged.
+- Refactorings follow a two-phase workflow: staged for human approval before execution.
+
+The central Code Review question is:
+
+> **Is this code clear, modular, and ready for a human maintainer to comfortably review and evolve?**
 
 ---
 

@@ -11,7 +11,8 @@ Usage:
     python scripts/pipeline.py <section_id> --qa         # Run QA verification and save QA report
     python scripts/pipeline.py <section_id> --verify     # Validate + QA + Save report + Update status
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
-    python scripts/pipeline.py <section_id> --check      # Complete check: validate + QA + frontend + status
+    python scripts/pipeline.py --code-review             # Run codebase quality & readability audit
+    python scripts/pipeline.py <section_id> --check      # Complete check: validate + QA + frontend + code review + status
     python scripts/pipeline.py <section_id>              # Display section status
     python scripts/pipeline.py --backlog                 # Audit & verify all structured guides missing QA
 """
@@ -33,6 +34,7 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT_DIR / ".agents" / "skills" / "guide-transformer" / "scripts"))
 sys.path.insert(0, str(ROOT_DIR / ".agents" / "skills" / "qa" / "scripts"))
 sys.path.insert(0, str(ROOT_DIR / ".agents" / "skills" / "frontend-expert" / "scripts"))
+sys.path.insert(0, str(ROOT_DIR / ".agents" / "skills" / "code-reviewer" / "scripts"))
 sys.path.insert(0, str(ROOT_DIR / "scripts"))
 
 try:
@@ -40,6 +42,7 @@ try:
     from validate_guide import load_schema, validate_file
     from verify_guide import verify_guide, format_markdown_report
     from audit_frontend import audit_astro_sources, audit_built_html
+    from audit_code_quality import run_code_audit
     import status as status_module
     from jsonschema import Draft202012Validator
 except ImportError as err:
@@ -210,6 +213,29 @@ def run_frontend_audit() -> bool:
         return True
 
 
+def run_code_review() -> bool:
+    """Runs codebase quality, architecture, and human-readability audit."""
+    print("\n--- Code Quality & Readability Review ---")
+    critical, warnings = run_code_audit(ROOT_DIR)
+
+    if critical:
+        print(f"[FAIL] {len(critical)} critical code quality defect(s):")
+        for item in critical:
+            print(f"  - CRITICAL: {item}")
+        return False
+
+    if warnings:
+        print(f"[PASS] 0 critical defects. {len(warnings)} readability recommendation(s):")
+        for item in warnings[:5]:
+            print(f"  - {item}")
+        if len(warnings) > 5:
+            print(f"  ... and {len(warnings) - 5} more recommendations.")
+    else:
+        print("[PASS] Pristine code quality! Zero defects or warnings.")
+
+    return True
+
+
 def update_project_status():
     print("\n--- Updating Project Status ---")
     root = status_module.get_project_root()
@@ -276,7 +302,8 @@ def main():
     parser.add_argument("--qa", action="store_true", help="Run QA verification and save markdown report")
     parser.add_argument("--verify", action="store_true", help="Validate + QA + Save report + Update status")
     parser.add_argument("--frontend", action="store_true", help="Run frontend audit")
-    parser.add_argument("--check", action="store_true", help="Validate + QA + Frontend audit + Update status")
+    parser.add_argument("--code-review", "--review", action="store_true", help="Run codebase quality and readability audit")
+    parser.add_argument("--check", action="store_true", help="Validate + QA + Frontend audit + Code review + Update status")
     parser.add_argument("--backlog", action="store_true", help="Run QA verification on all structured files missing QA reports")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
 
@@ -290,6 +317,11 @@ def main():
         if args.frontend:
             run_frontend_audit()
             return
+        if args.code_review:
+            success = run_code_review()
+            if not success:
+                sys.exit(1)
+            return
         parser.print_help()
         sys.exit(1)
 
@@ -299,7 +331,7 @@ def main():
         sys.exit(1)
 
     # If no flags provided, print status
-    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.check]):
+    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.code_review, args.check]):
         print_section_status(sec)
         return
 
@@ -325,11 +357,16 @@ def main():
         f_ok = run_frontend_audit()
         success = f_ok and success
 
+    if args.code_review:
+        c_ok = run_code_review()
+        success = c_ok and success
+
     if args.check:
         v_ok = run_validate(sec)
         q_ok = run_qa(sec, save_report=True)
         f_ok = run_frontend_audit()
-        success = v_ok and q_ok and f_ok
+        c_ok = run_code_review()
+        success = v_ok and q_ok and f_ok and c_ok
         if v_ok and q_ok:
             update_project_status()
 
