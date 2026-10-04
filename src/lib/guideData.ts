@@ -185,8 +185,8 @@ export function getTocData(): TocData {
 
 export function getAllStructuredSections(): Array<{ id: string; filename: string; data: any }> {
   if (!fs.existsSync(SECTIONS_DIR)) return [];
-  const files = fs.readdirSync(SECTIONS_DIR).filter(f => f.endsWith('.json'));
-  return files.map(filename => {
+  const files = fs.readdirSync(SECTIONS_DIR).filter((f: string) => f.endsWith('.json'));
+  return files.map((filename: string) => {
     const filePath = path.join(SECTIONS_DIR, filename);
     const content = fs.readFileSync(filePath, 'utf-8');
     const data = JSON.parse(content);

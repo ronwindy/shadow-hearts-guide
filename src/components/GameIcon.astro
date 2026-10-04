@@ -1,0 +1,134 @@
+---
+import {
+  Sparkles,
+  Sword,
+  Shield,
+  Scroll,
+  MapPin,
+  Compass,
+  User,
+  Users,
+  Skull,
+  Swords,
+  Coins,
+  Store,
+  Target,
+  CircleCheck,
+  TriangleAlert,
+  Lightbulb,
+  Info,
+  Zap,
+  Package,
+  Gem,
+  KeyRound,
+  Heart,
+  Gamepad2,
+  BookOpen,
+  Puzzle,
+  MessageSquare,
+  Flame,
+  FileText
+} from '@lucide/astro';
+
+interface Props {
+  type?: string;
+  name?: string;
+  class?: string;
+  size?: number | string;
+}
+
+const { type = 'item', name, class: customClass = '', size = 16 } = Astro.props;
+
+// Normalization
+const t = (type || '').toLowerCase();
+const n = (name || '').toLowerCase();
+
+// Determine which icon component and default styling to use
+let IconComponent = Sparkles;
+let defaultColorClass = 'text-gold-400';
+
+if (n === 'sword' || t === 'equipment' || t === 'weapon') {
+  IconComponent = Sword;
+  defaultColorClass = 'text-slate-300';
+} else if (n === 'shield' || t === 'armor' || t === 'accessory') {
+  IconComponent = Shield;
+  defaultColorClass = 'text-slate-300';
+} else if (n === 'scroll' || t === 'valuable' || t === 'valuables' || t === 'key_item') {
+  IconComponent = Scroll;
+  defaultColorClass = 'text-blue-400';
+} else if (n === 'key' || t === 'key') {
+  IconComponent = KeyRound;
+  defaultColorClass = 'text-amber-400';
+} else if (n === 'gem' || t === 'treasure' || t === 'loot') {
+  IconComponent = Gem;
+  defaultColorClass = 'text-emerald-400';
+} else if (t === 'items' || t === 'item' || t === 'consumable') {
+  IconComponent = Package;
+  defaultColorClass = 'text-emerald-400';
+} else if (n === 'mappin' || n === 'map-pin' || t === 'location' || t === 'place' || t === 'route') {
+  IconComponent = MapPin;
+  defaultColorClass = 'text-gold-400';
+} else if (n === 'compass' || t === 'compass' || t === 'navigation' || t === 'explore' || t === 'exploration') {
+  IconComponent = Compass;
+  defaultColorClass = 'text-gold-400';
+} else if (n === 'user' || t === 'person' || t === 'npc' || t === 'character') {
+  IconComponent = User;
+  defaultColorClass = 'text-amber-300';
+} else if (n === 'users' || t === 'party' || t === 'group') {
+  IconComponent = Users;
+  defaultColorClass = 'text-amber-300';
+} else if (n === 'skull' || t === 'enemy' || t === 'monster') {
+  IconComponent = Skull;
+  defaultColorClass = 'text-rose-400';
+} else if (n === 'swords' || t === 'boss' || t === 'subboss' || t === 'sub-boss' || t === 'combat' || t === 'battle') {
+  IconComponent = Swords;
+  defaultColorClass = 'text-rose-400';
+} else if (n === 'coins' || t === 'cash' || t === 'currency' || t === 'money') {
+  IconComponent = Coins;
+  defaultColorClass = 'text-gold-400';
+} else if (n === 'store' || t === 'shop' || t === 'merchant') {
+  IconComponent = Store;
+  defaultColorClass = 'text-amber-400';
+} else if (n === 'target' || t === 'objective' || t === 'quest') {
+  IconComponent = Target;
+  defaultColorClass = 'text-gold-400';
+} else if (n === 'check' || t === 'complete' || t === 'done') {
+  IconComponent = CircleCheck;
+  defaultColorClass = 'text-gold-400';
+} else if (n === 'warning' || t === 'warning' || t === 'alert') {
+  IconComponent = TriangleAlert;
+  defaultColorClass = 'text-rose-400';
+} else if (n === 'tip' || t === 'tip') {
+  IconComponent = Lightbulb;
+  defaultColorClass = 'text-amber-300';
+} else if (n === 'note' || t === 'note' || t === 'info') {
+  IconComponent = Info;
+  defaultColorClass = 'text-blue-300';
+} else if (n === 'zap' || t === 'tactics' || t === 'strategy' || t === 'mechanics') {
+  IconComponent = Zap;
+  defaultColorClass = 'text-amber-400';
+} else if (n === 'puzzle' || t === 'puzzle') {
+  IconComponent = Puzzle;
+  defaultColorClass = 'text-purple-400';
+} else if (n === 'story' || t === 'story' || t === 'dialogue' || t === 'event') {
+  IconComponent = MessageSquare;
+  defaultColorClass = 'text-amber-300';
+} else if (n === 'heart' || t === 'hp' || t === 'health') {
+  IconComponent = Heart;
+  defaultColorClass = 'text-rose-400';
+} else if (n === 'gamepad' || t === 'controls') {
+  IconComponent = Gamepad2;
+  defaultColorClass = 'text-gold-400';
+} else if (n === 'book' || t === 'glossary' || t === 'lore') {
+  IconComponent = BookOpen;
+  defaultColorClass = 'text-gold-400';
+} else if (n === 'flame' || t === 'malice' || t === 'fire') {
+  IconComponent = Flame;
+  defaultColorClass = 'text-rose-500';
+} else if (n === 'document' || t === 'metadata') {
+  IconComponent = FileText;
+  defaultColorClass = 'text-gold-400';
+}
+---
+
+<IconComponent class={`inline-block flex-shrink-0 ${defaultColorClass} ${customClass}`} size={size} />

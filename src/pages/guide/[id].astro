@@ -3,9 +3,39 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SidebarNav from '../../components/SidebarNav.astro';
 import PageToc from '../../components/PageToc.astro';
 import StepChecklist from '../../components/StepChecklist.astro';
-import BossCard from '../../components/BossCard.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import { getAllStructuredSections, getHumanReadableLabel } from '../../lib/guideData';
+import {
+  ChevronLeft,
+  ChevronRight,
+  ArrowLeft,
+  ArrowRight,
+  Target,
+  CircleCheck,
+  Compass,
+  MapPin,
+  Shield,
+  Sword,
+  Scroll,
+  Sparkles,
+  Package,
+  Skull,
+  Swords,
+  Heart,
+  Store,
+  Coins,
+  ListChecks,
+  TriangleAlert,
+  Lightbulb,
+  Info,
+  ScrollText,
+  Gamepad2,
+  SlidersHorizontal,
+  Users,
+  User,
+  BookOpen,
+  FileText
+} from '@lucide/astro';
 
 export async function getStaticPaths() {
   const sections = getAllStructuredSections();
@@ -118,14 +148,14 @@ if (overview.metadata) {
         <div class="flex items-center gap-3 flex-shrink-0 ml-2">
           {navigation.prev && (
             <a href={`${baseUrl}/guide/${navigation.prev.id}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
-              <span>&larr;</span>
+              <ChevronLeft class="w-3.5 h-3.5" />
               <span class="hidden sm:inline">Prev</span>
             </a>
           )}
           {navigation.next && (
             <a href={`${baseUrl}/guide/${navigation.next.id}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
               <span class="hidden sm:inline">Next</span>
-              <span>&rarr;</span>
+              <ChevronRight class="w-3.5 h-3.5" />
             </a>
           )}
         </div>
@@ -140,8 +170,9 @@ if (overview.metadata) {
             <span>{getHumanReadableLabel(guide.code, guide.category, guide.is_sidequest)}</span>
           </span>
           {guide.is_sidequest && (
-            <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-purple-950/60 text-purple-300 border border-purple-800/50">
-              Optional Side Quest
+            <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-mono bg-purple-950/60 text-purple-300 border border-purple-800/50">
+              <Sparkles class="w-3 h-3 text-purple-300" />
+              <span>Optional Side Quest</span>
             </span>
           )}
         </div>
@@ -155,21 +186,33 @@ if (overview.metadata) {
         {/* Callouts (tips, notes, warnings) */}
         {callouts && callouts.length > 0 && (
           <div class="space-y-3">
-            {callouts.map((c: any) => (
-              <div class={`p-4 rounded-xl border text-sm flex gap-3 ${
-                c.type === 'warning'
-                  ? 'bg-rose-950/30 border-rose-800/50 text-rose-200'
-                  : c.type === 'tip'
-                  ? 'bg-amber-950/30 border-amber-800/50 text-amber-200'
-                  : 'bg-blue-950/30 border-blue-800/50 text-blue-200'
-              }`}>
-                <div class="font-bold text-xs uppercase tracking-wider font-mono mt-0.5">[{c.type || 'NOTE'}]</div>
-                <div class="space-y-1 flex-1">
-                  {c.title && <div class="font-semibold text-slate-100">{c.title}</div>}
-                  <p class="leading-relaxed opacity-95">{c.text}</p>
+            {callouts.map((c: any) => {
+              const isWarn = c.type === 'warning';
+              const isTip = c.type === 'tip';
+              return (
+                <div class={`p-4 rounded-xl border text-sm flex gap-3 ${
+                  isWarn
+                    ? 'bg-rose-950/30 border-rose-800/50 text-rose-200'
+                    : isTip
+                    ? 'bg-amber-950/30 border-amber-800/50 text-amber-200'
+                    : 'bg-blue-950/30 border-blue-800/50 text-blue-200'
+                }`}>
+                  <div class="mt-0.5 flex-shrink-0">
+                    {isWarn ? (
+                      <TriangleAlert class="w-5 h-5 text-rose-400" />
+                    ) : isTip ? (
+                      <Lightbulb class="w-5 h-5 text-amber-400" />
+                    ) : (
+                      <Info class="w-5 h-5 text-blue-400" />
+                    )}
+                  </div>
+                  <div class="space-y-1 flex-1">
+                    {c.title && <div class="font-semibold text-slate-100">{c.title}</div>}
+                    <p class="leading-relaxed opacity-95">{c.text}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
 
@@ -183,9 +226,10 @@ if (overview.metadata) {
         {/* Intro directions & compass mapping (e.g. W-1-00) */}
         {overview.directions && (
           <section id="compass" class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-4 shadow-sm">
-            <h2 class="text-sm font-serif font-semibold tracking-wide uppercase text-gold-500">
-              Compass & Orientation
-            </h2>
+            <div class="flex items-center gap-2 text-xs font-serif font-bold uppercase tracking-wide text-gold-500">
+              <Compass class="w-4 h-4 text-gold-400" />
+              <h2>Compass & Orientation</h2>
+            </div>
             {overview.directions.compass_note && (
               <p class="text-slate-300 text-sm leading-relaxed">{overview.directions.compass_note}</p>
             )}
@@ -223,25 +267,35 @@ if (overview.metadata) {
 
         {overview.story_prologue && (
           <section id="prologue" class="space-y-3">
-            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
-              Story Prologue
+            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2">
+              <ScrollText class="w-4 h-4 text-gold-400" />
+              <span>Story Prologue</span>
             </h2>
             <div class="grid gap-3">
               {overview.story_prologue.setting_1 && (
                 <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-sm text-slate-300 leading-relaxed">
-                  <span class="text-gold-500 font-semibold block mb-1">Rouen, France (1913)</span>
+                  <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
+                    <MapPin class="w-3.5 h-3.5 text-gold-400" />
+                    <span>Rouen, France (1913)</span>
+                  </span>
                   {overview.story_prologue.setting_1}
                 </div>
               )}
               {overview.story_prologue.setting_2 && (
                 <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-sm text-slate-300 leading-relaxed">
-                  <span class="text-gold-500 font-semibold block mb-1">One Month Later</span>
+                  <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
+                    <MapPin class="w-3.5 h-3.5 text-gold-400" />
+                    <span>One Month Later</span>
+                  </span>
                   {overview.story_prologue.setting_2}
                 </div>
               )}
               {overview.story_prologue.inciting_incident && (
                 <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-sm text-slate-300 leading-relaxed">
-                  <span class="text-gold-500 font-semibold block mb-1">Inciting Incident</span>
+                  <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
+                    <Sparkles class="w-3.5 h-3.5 text-gold-400" />
+                    <span>Inciting Incident</span>
+                  </span>
                   {overview.story_prologue.inciting_incident}
                 </div>
               )}
@@ -251,8 +305,9 @@ if (overview.metadata) {
 
         {overview.controls && (
           <section id="controls" class="space-y-3">
-            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
-              Controls & Controller Layout
+            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2">
+              <Gamepad2 class="w-4 h-4 text-gold-400" />
+              <span>Controls & Controller Layout</span>
             </h2>
             {overview.controls.controller_layout && (
               <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90">
@@ -282,8 +337,9 @@ if (overview.metadata) {
 
         {overview.playing_the_game && (
           <section id="system" class="space-y-3">
-            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
-              System & Operations
+            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2">
+              <SlidersHorizontal class="w-4 h-4 text-gold-400" />
+              <span>System & Operations</span>
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
               {Object.entries(overview.playing_the_game).map(([key, val]) => (
@@ -298,8 +354,9 @@ if (overview.metadata) {
 
         {overview.player_attributes && (
           <section id="attributes" class="space-y-3">
-            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
-              Player Attributes & Battle System
+            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2">
+              <Swords class="w-4 h-4 text-gold-400" />
+              <span>Player Attributes & Battle System</span>
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
               {Object.entries(overview.player_attributes).map(([key, val]) => (
@@ -314,8 +371,9 @@ if (overview.metadata) {
 
         {overview.battle_mechanics && (
           <section id="battle-mechanics" class="space-y-4">
-            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
-              Battle Mechanics
+            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2">
+              <Swords class="w-4 h-4 text-gold-400" />
+              <span>Battle Mechanics</span>
             </h2>
             {overview.battle_mechanics.encounter_flow && (
               <p class="text-sm text-slate-300">{overview.battle_mechanics.encounter_flow}</p>
@@ -353,14 +411,18 @@ if (overview.metadata) {
 
         {overview.characters && overview.characters.length > 0 && (
           <section id="characters" class="space-y-3">
-            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
-              Character Profiles
+            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2">
+              <Users class="w-4 h-4 text-gold-400" />
+              <span>Character Profiles</span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
               {overview.characters.map((char: any) => (
                 <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2 text-xs">
                   <div class="flex items-center justify-between">
-                    <h3 class="text-sm font-serif font-bold text-slate-100">{char.name}</h3>
+                    <h3 class="text-sm font-serif font-bold text-slate-100 flex items-center gap-1.5">
+                      <User class="w-3.5 h-3.5 text-amber-300" />
+                      <span>{char.name}</span>
+                    </h3>
                     <div class="flex items-center gap-2">
                       {char.class && (
                         <span class="px-2 py-0.5 rounded bg-amber-950/40 text-amber-300 border border-amber-800/40 font-mono text-[10px]">
@@ -379,8 +441,9 @@ if (overview.metadata) {
 
         {overview.glossary && overview.glossary.length > 0 && (
           <section id="glossary" class="space-y-3">
-            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
-              Lore & Terminology
+            <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2">
+              <BookOpen class="w-4 h-4 text-gold-400" />
+              <span>Lore & Terminology</span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
               {overview.glossary.map((g: any) => (
@@ -397,13 +460,13 @@ if (overview.metadata) {
         {objectives && objectives.length > 0 && (
           <section id="objectives" class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-3 shadow-sm">
             <div class="flex items-center gap-2 text-xs font-serif font-bold uppercase tracking-wider text-gold-400">
-              <span>🎯</span>
+              <Target class="w-4 h-4 text-gold-400" />
               <h2>Primary Objectives</h2>
             </div>
             <ul class="space-y-2 text-slate-200 text-sm sm:text-[15px]">
               {objectives.map((obj: string) => (
                 <li class="flex items-start gap-2.5">
-                  <span class="text-gold-400 mt-0.5 font-bold">✓</span>
+                  <CircleCheck class="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" />
                   <span class="leading-relaxed">{obj}</span>
                 </li>
               ))}
@@ -415,17 +478,17 @@ if (overview.metadata) {
         {route && route.length > 0 && (
           <section id="route" class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-3 shadow-sm">
             <div class="flex items-center gap-2 text-xs font-serif font-bold uppercase tracking-wider text-gold-400">
-              <span>🧭</span>
+              <Compass class="w-4 h-4 text-gold-400" />
               <h2>Route Progression</h2>
             </div>
             <div class="flex flex-wrap items-center gap-2 pt-1 text-sm text-slate-200">
               {route.map((step: string, idx: number) => (
                 <span class="flex items-center gap-2">
                   <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700/80 font-medium text-slate-100 shadow-sm flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                    <MapPin class="w-3.5 h-3.5 text-gold-400 flex-shrink-0" />
                     <span>{step}</span>
                   </span>
-                  {idx < route.length - 1 && <span class="text-gold-500 font-bold">&rarr;</span>}
+                  {idx < route.length - 1 && <ChevronRight class="w-4 h-4 text-gold-500 flex-shrink-0" />}
                 </span>
               ))}
             </div>
@@ -436,24 +499,27 @@ if (overview.metadata) {
         {initialSetup && (
           <section id="setup" class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-3 shadow-sm text-xs sm:text-sm">
             <div class="flex items-center gap-2 text-xs font-serif font-bold uppercase tracking-wider text-gold-400">
-              <span>🛡️</span>
+              <Shield class="w-4 h-4 text-gold-400" />
               <h2>Initial Party & Setup: {initialSetup.character}</h2>
             </div>
             {initialSetup.note && <p class="text-slate-300 leading-relaxed">{initialSetup.note}</p>}
             <div class="flex flex-wrap gap-2 pt-1">
               {initialSetup.equipment?.map((eq: string) => (
-                <span class="px-2.5 py-1 rounded bg-slate-900 text-slate-200 border border-slate-700 font-mono text-xs">
-                  ⚔️ {eq} (Equipment)
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-900 text-slate-200 border border-slate-700 font-mono text-xs">
+                  <Sword class="w-3 h-3 text-slate-300" />
+                  <span>{eq} (Equipment)</span>
                 </span>
               ))}
               {initialSetup.valuables?.map((v: string) => (
-                <span class="px-2.5 py-1 rounded bg-blue-950/40 text-blue-300 border border-blue-800/40 font-mono text-xs">
-                  📜 {v} (Valuable)
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-blue-950/40 text-blue-300 border border-blue-800/40 font-mono text-xs">
+                  <Scroll class="w-3 h-3 text-blue-300" />
+                  <span>{v} (Valuable)</span>
                 </span>
               ))}
               {initialSetup.souls?.map((s: string) => (
-                <span class="px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-800/40 font-mono text-xs">
-                  🔮 {s} (Soul)
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-800/40 font-mono text-xs">
+                  <Sparkles class="w-3 h-3 text-purple-300" />
+                  <span>{s} (Soul)</span>
                 </span>
               ))}
             </div>
@@ -465,8 +531,8 @@ if (overview.metadata) {
           <section id="items" class="space-y-3">
             <div class="flex items-center justify-between border-b border-slate-800 pb-2">
               <h2 class="text-lg font-serif font-bold text-slate-100 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                Obtainable Items & Treasures
+                <Package class="w-4 h-4 text-emerald-400" />
+                <span>Obtainable Items & Treasures</span>
               </h2>
               <span class="text-xs font-mono text-slate-400">{itemsSummary.obtainable.length} items</span>
             </div>
@@ -480,13 +546,33 @@ if (overview.metadata) {
                   </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-800/60 text-slate-300">
-                  {itemsSummary.obtainable.map((it: any) => (
-                    <tr class="hover:bg-slate-800/40 transition-colors">
-                      <td class="py-2.5 px-4 font-semibold text-emerald-400 whitespace-nowrap">{it.name}</td>
-                      <td class="py-2.5 px-4 font-mono text-amber-300 capitalize text-xs">{it.category}</td>
-                      <td class="py-2.5 px-4 text-slate-200 leading-relaxed">{it.location}</td>
-                    </tr>
-                  ))}
+                  {itemsSummary.obtainable.map((it: any) => {
+                    const isEquip = it.category === 'equipment';
+                    const isValuable = it.category === 'valuables';
+                    return (
+                      <tr class="hover:bg-slate-800/40 transition-colors">
+                        <td class="py-2.5 px-4 font-semibold text-emerald-400 whitespace-nowrap">
+                          <span class="inline-flex items-center gap-1.5">
+                            {isEquip ? (
+                              <Sword class="w-3.5 h-3.5 text-slate-300 flex-shrink-0" />
+                            ) : isValuable ? (
+                              <Scroll class="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
+                            ) : (
+                              <Sparkles class="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+                            )}
+                            <span>{it.name}</span>
+                          </span>
+                        </td>
+                        <td class="py-2.5 px-4 font-mono text-amber-300 capitalize text-xs">{it.category}</td>
+                        <td class="py-2.5 px-4 text-slate-200 leading-relaxed">
+                          <span class="inline-flex items-center gap-1.5 text-slate-300">
+                            <MapPin class="w-3.5 h-3.5 text-gold-400/80 flex-shrink-0" />
+                            <span>{it.location}</span>
+                          </span>
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -498,8 +584,8 @@ if (overview.metadata) {
           <section id="enemies" class="space-y-3">
             <div class="flex items-center justify-between border-b border-slate-800 pb-2">
               <h2 class="text-lg font-serif font-bold text-slate-100 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-                Area Enemies & Encounters
+                <Skull class="w-4 h-4 text-rose-400" />
+                <span>Area Enemies & Encounters</span>
               </h2>
               <span class="text-xs font-mono text-slate-400">{enemies.length} enemies</span>
             </div>
@@ -519,12 +605,30 @@ if (overview.metadata) {
                     <tr class="hover:bg-slate-800/40 transition-colors">
                       <td class="py-2.5 px-3 font-mono text-slate-400 text-center">{en.number || '—'}</td>
                       <td class="py-2.5 px-4 font-semibold text-slate-200 whitespace-nowrap">
-                        {en.name}
-                        {en.is_boss && <span class="ml-2 px-1.5 py-0.5 rounded bg-rose-950/70 text-rose-300 text-[10px] font-mono border border-rose-800">BOSS</span>}
-                        {en.is_subboss && <span class="ml-2 px-1.5 py-0.5 rounded bg-amber-950/70 text-amber-300 text-[10px] font-mono border border-amber-800">SUB-BOSS</span>}
+                        <span class="inline-flex items-center gap-1.5">
+                          <Skull class="w-3.5 h-3.5 text-rose-400 flex-shrink-0" />
+                          <span>{en.name}</span>
+                        </span>
+                        {en.is_boss && (
+                          <span class="ml-2 inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-rose-950/70 text-rose-300 text-[10px] font-mono border border-rose-800">
+                            <Swords class="w-2.5 h-2.5" />
+                            <span>BOSS</span>
+                          </span>
+                        )}
+                        {en.is_subboss && (
+                          <span class="ml-2 inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-amber-950/70 text-amber-300 text-[10px] font-mono border border-amber-800">
+                            <Swords class="w-2.5 h-2.5" />
+                            <span>SUB-BOSS</span>
+                          </span>
+                        )}
                       </td>
                       <td class="py-2.5 px-3 font-mono text-amber-400">{en.class || '—'}</td>
-                      <td class="py-2.5 px-3 font-mono text-rose-400">{en.hp ?? '—'}</td>
+                      <td class="py-2.5 px-3 font-mono text-rose-400">
+                        <span class="inline-flex items-center gap-1">
+                          <Heart class="w-3 h-3 text-rose-400 flex-shrink-0" />
+                          <span>{en.hp ?? '—'}</span>
+                        </span>
+                      </td>
                       <td class="py-2.5 px-4 text-slate-300 leading-relaxed">{en.notes || '—'}</td>
                     </tr>
                   ))}
@@ -534,19 +638,21 @@ if (overview.metadata) {
           </section>
         )}
 
-
         {/* Shops */}
         {shops && shops.length > 0 && (
           <section id="shops" class="space-y-4">
             <div class="border-b border-slate-800 pb-2">
               <h2 class="text-lg font-serif font-bold text-slate-100 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-gold-500"></span>
-                Shops & Merchants
+                <Store class="w-4 h-4 text-gold-400" />
+                <span>Shops & Merchants</span>
               </h2>
             </div>
             {shops.map((s: any) => (
               <div class="space-y-2">
-                <h3 class="text-sm font-semibold text-gold-400">{s.name}</h3>
+                <h3 class="text-sm font-semibold text-gold-400 flex items-center gap-1.5">
+                  <Store class="w-3.5 h-3.5 text-amber-400" />
+                  <span>{s.name}</span>
+                </h3>
                 <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90 shadow-sm">
                   <table class="w-full text-xs sm:text-sm text-left">
                     <thead>
@@ -558,8 +664,18 @@ if (overview.metadata) {
                     <tbody class="divide-y divide-slate-800/60 text-slate-300">
                       {s.inventory?.map((inv: any) => (
                         <tr class="hover:bg-slate-800/40">
-                          <td class="py-2.5 px-4 font-medium text-slate-200">{inv.name}</td>
-                          <td class="py-2.5 px-4 font-mono text-gold-400">{inv.price} Cash</td>
+                          <td class="py-2.5 px-4 font-medium text-slate-200">
+                            <span class="inline-flex items-center gap-1.5">
+                              <Package class="w-3.5 h-3.5 text-slate-300 flex-shrink-0" />
+                              <span>{inv.name}</span>
+                            </span>
+                          </td>
+                          <td class="py-2.5 px-4 font-mono text-gold-400">
+                            <span class="inline-flex items-center gap-1">
+                              <Coins class="w-3.5 h-3.5 text-gold-400 flex-shrink-0" />
+                              <span>{inv.price} Cash</span>
+                            </span>
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -575,8 +691,8 @@ if (overview.metadata) {
           <section id="steps" class="space-y-4">
             <div class="flex items-center justify-between border-b border-slate-800 pb-2">
               <h2 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-gold-500 shadow-gold-glow"></span>
-                Walkthrough Steps
+                <ListChecks class="w-4 h-4 text-gold-400" />
+                <span>Walkthrough Steps</span>
               </h2>
               <span class="text-xs font-mono text-slate-400">{steps.length} steps &bull; Click to track</span>
             </div>
@@ -587,9 +703,10 @@ if (overview.metadata) {
         {/* Fallback & Document Metadata */}
         {overview.metadata && (
           <section id="metadata" class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-4 text-xs">
-            <h2 class="text-sm font-serif font-semibold tracking-wide uppercase text-gold-500">
-              Document Information
-            </h2>
+            <div class="flex items-center gap-2 text-xs font-serif font-semibold tracking-wide uppercase text-gold-500">
+              <FileText class="w-4 h-4 text-gold-400" />
+              <h2>Document Information</h2>
+            </div>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-slate-300 font-mono">
               {overview.metadata.author && <div><span class="text-slate-500 block">Author:</span> {overview.metadata.author}</div>}
               {overview.metadata.version && <div><span class="text-slate-500 block">Version:</span> {overview.metadata.version}</div>}
@@ -627,7 +744,7 @@ if (overview.metadata) {
             href={`${baseUrl}/guide/${navigation.prev.id}`}
             class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 hover:border-gold-500/50 flex items-center gap-3 group transition-all"
           >
-            <span class="text-gold-500 group-hover:-translate-x-1 transition-transform text-lg">&larr;</span>
+            <ArrowLeft class="w-5 h-5 text-gold-500 group-hover:-translate-x-1 transition-transform flex-shrink-0" />
             <div class="min-w-0 flex-1">
               <div class="text-[11px] font-mono text-slate-400 uppercase">Previous Chapter</div>
               <div class="text-xs sm:text-sm font-medium text-slate-200 group-hover:text-gold-300 truncate">
@@ -648,7 +765,7 @@ if (overview.metadata) {
                 {navigation.next.title}
               </div>
             </div>
-            <span class="text-gold-500 group-hover:translate-x-1 transition-transform text-lg">&rarr;</span>
+            <ArrowRight class="w-5 h-5 text-gold-500 group-hover:translate-x-1 transition-transform flex-shrink-0" />
           </a>
         ) : <div></div>}
       </div>

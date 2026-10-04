@@ -1,5 +1,16 @@
 ---
-import { getHumanReadableLabel, type TocCategory, type TocEntry } from '../lib/guideData';
+import { getHumanReadableLabel, type TocCategory } from '../lib/guideData';
+import {
+  Search,
+  BookOpen,
+  Compass,
+  Castle,
+  Scroll,
+  Sparkles,
+  ArrowRight,
+  Clock,
+  SearchX
+} from '@lucide/astro';
 
 interface Props {
   sections: TocCategory[];
@@ -8,6 +19,14 @@ interface Props {
 
 const { sections, legend = "* = Side Quest" } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+function getCategoryIcon(name: string) {
+  const n = name.toLowerCase();
+  if (n.includes('introduction')) return BookOpen;
+  if (n.includes('asia')) return Compass;
+  if (n.includes('europe')) return Castle;
+  return Scroll;
+}
 ---
 
 <div class="space-y-8" id="toc-root">
@@ -15,9 +34,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between p-4 rounded-lg bg-slate-850 border border-slate-800">
     <div class="relative flex-1">
       <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500">
-        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
+        <Search class="h-4 w-4" />
       </div>
       <input
         type="text"
@@ -29,8 +46,8 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 
     <div class="flex items-center gap-3 text-xs text-slate-400 self-center sm:self-auto">
       <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-800/40">
-        <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
-        {legend}
+        <Sparkles class="w-3.5 h-3.5 text-purple-400" />
+        <span>{legend}</span>
       </span>
       <span id="results-count" class="font-mono text-slate-400"></span>
     </div>
@@ -38,82 +55,97 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <!-- Sections Categories -->
   <div class="space-y-10" id="toc-categories">
-    {sections.map((cat, catIdx) => (
-      <section class="category-block space-y-4" data-category={cat.category}>
-        <div class="flex items-baseline justify-between border-b border-slate-800 pb-2">
-          <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-3">
-            <span class="w-2 h-2 rounded-full bg-gold-500"></span>
-            {cat.category}
-          </h2>
-          <span class="text-xs font-mono text-slate-400">{cat.entries.length} sections</span>
-        </div>
+    {sections.map((cat) => {
+      const CatIcon = getCategoryIcon(cat.category);
+      return (
+        <section class="category-block space-y-4" data-category={cat.category}>
+          <div class="flex items-baseline justify-between border-b border-slate-800 pb-2">
+            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+              <CatIcon class="w-5 h-5 text-gold-400 flex-shrink-0" />
+              <span>{cat.category}</span>
+            </h2>
+            <span class="text-xs font-mono text-slate-400">{cat.entries.length} sections</span>
+          </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-          {cat.entries.map((entry) => {
-            const isAvailable = entry.has_structured;
-            const label = entry.label || getHumanReadableLabel(entry.code, cat.category, entry.is_sidequest);
-            return (
-              <div
-                class={`toc-item group relative p-3.5 rounded-lg border transition-all duration-200 flex flex-col justify-between ${
-                  isAvailable 
-                    ? 'bg-slate-850/80 hover:bg-slate-800/90 border-slate-800 hover:border-gold-500/50 shadow-sm'
-                    : 'bg-slate-900/40 border-slate-850 text-slate-400'
-                }`}
-                data-title={entry.title.toLowerCase()}
-                data-code={entry.code.toLowerCase()}
-                data-label={label.toLowerCase()}
-                data-sidequest={entry.is_sidequest ? 'true' : 'false'}
-              >
-                <div class="space-y-1.5">
-                  <div class="flex items-center justify-between gap-2">
-                    <span class={`text-xs px-2.5 py-0.5 rounded font-medium border ${
-                      entry.code.startsWith('[W-S')
-                        ? 'bg-purple-950/50 text-purple-300 border-purple-800/40'
-                        : entry.code.startsWith('[W-')
-                        ? 'bg-amber-950/40 text-amber-300 border-amber-800/40'
-                        : entry.code.startsWith('[A-')
-                        ? 'bg-blue-950/40 text-blue-300 border-blue-800/40'
-                        : 'bg-slate-800 text-slate-300 border-slate-700'
-                    }`}>
-                      {label}
-                    </span>
-
-                    {entry.is_sidequest && !label.toLowerCase().includes('side quest') && (
-                      <span class="text-[10px] font-semibold uppercase tracking-wider text-purple-300 bg-purple-950/40 border border-purple-800/50 px-1.5 py-0.5 rounded">
-                        Side Quest
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            {cat.entries.map((entry) => {
+              const isAvailable = entry.has_structured;
+              const label = entry.label || getHumanReadableLabel(entry.code, cat.category, entry.is_sidequest);
+              return (
+                <div
+                  class={`toc-item group relative p-3.5 rounded-lg border transition-all duration-200 flex flex-col justify-between ${
+                    isAvailable 
+                      ? 'bg-slate-850/80 hover:bg-slate-800/90 border-slate-800 hover:border-gold-500/50 shadow-sm'
+                      : 'bg-slate-900/40 border-slate-850 text-slate-400'
+                  }`}
+                  data-title={entry.title.toLowerCase()}
+                  data-code={entry.code.toLowerCase()}
+                  data-label={label.toLowerCase()}
+                  data-sidequest={entry.is_sidequest ? 'true' : 'false'}
+                >
+                  <div class="space-y-1.5">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class={`text-xs px-2.5 py-0.5 rounded font-medium border ${
+                        entry.code.startsWith('[W-S')
+                          ? 'bg-purple-950/50 text-purple-300 border-purple-800/40'
+                          : entry.code.startsWith('[W-')
+                          ? 'bg-amber-950/40 text-amber-300 border-amber-800/40'
+                          : entry.code.startsWith('[A-')
+                          ? 'bg-blue-950/40 text-blue-300 border-blue-800/40'
+                          : 'bg-slate-800 text-slate-300 border-slate-700'
+                      }`}>
+                        {label}
                       </span>
-                    )}
 
-                    {isAvailable && (
-                      <span class="text-[10px] font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/40 border border-emerald-800/50 px-1.5 py-0.5 rounded">
-                        Available
+                      {entry.is_sidequest && !label.toLowerCase().includes('side quest') && (
+                        <span class="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider text-purple-300 bg-purple-950/40 border border-purple-800/50 px-1.5 py-0.5 rounded">
+                          <Sparkles class="w-2.5 h-2.5" />
+                          <span>Side Quest</span>
+                        </span>
+                      )}
+
+                      {isAvailable && (
+                        <span class="text-[10px] font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/40 border border-emerald-800/50 px-1.5 py-0.5 rounded">
+                          Available
+                        </span>
+                      )}
+                    </div>
+
+                    <h3 class="text-sm font-medium text-slate-200 group-hover:text-gold-400 transition-colors line-clamp-2">
+                      {isAvailable ? (
+                        <a href={`${baseUrl}/guide/${entry.id}`} class="focus:outline-none after:absolute after:inset-0">
+                          {entry.title}
+                        </a>
+                      ) : (
+                        <span>{entry.title}</span>
+                      )}
+                    </h3>
+                  </div>
+
+                  <div class="mt-2.5 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-400">
+                    {isAvailable ? (
+                      <span class="inline-flex items-center gap-1 text-gold-400 font-medium">
+                        <span>View Guide</span>
+                        <ArrowRight class="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    ) : (
+                      <span class="inline-flex items-center gap-1 text-slate-500">
+                        <Clock class="w-3 h-3" />
+                        <span>In Transformation</span>
                       </span>
                     )}
                   </div>
-
-                  <h3 class="text-sm font-medium text-slate-200 group-hover:text-gold-400 transition-colors line-clamp-2">
-                    {isAvailable ? (
-                      <a href={`${baseUrl}/guide/${entry.id}`} class="focus:outline-none after:absolute after:inset-0">
-                        {entry.title}
-                      </a>
-                    ) : (
-                      <span>{entry.title}</span>
-                    )}
-                  </h3>
                 </div>
-
-                <div class="mt-2.5 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-400">
-                  <span>{isAvailable ? 'View Guide →' : 'In Transformation'}</span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-    ))}
+              );
+            })}
+          </div>
+        </section>
+      );
+    })}
   </div>
 
   <div id="no-results" class="hidden text-center py-16 p-8 rounded-lg border border-slate-800 bg-slate-850">
+    <SearchX class="w-8 h-8 text-slate-600 mx-auto mb-2" />
     <p class="text-slate-300 font-serif text-lg">No guide sections match your search</p>
     <p class="text-sm text-slate-500 mt-1">Try clearing filters or searching by a different title, location, or chapter.</p>
   </div>

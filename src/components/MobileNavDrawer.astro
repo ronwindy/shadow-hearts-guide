@@ -1,5 +1,6 @@
 ---
 import SidebarNav from './SidebarNav.astro';
+import { X, Flame, Hash } from '@lucide/astro';
 
 interface SectionItem {
   id: string;
@@ -33,7 +34,7 @@ const { currentId = '', pageSections = [] } = Astro.props;
   <!-- Drawer Header -->
   <div class="p-3.5 border-b border-slate-800 flex items-center justify-between bg-slate-900/60">
     <div class="flex items-center gap-2">
-      <span class="w-2 h-2 rounded-full bg-gold-500 ring-2 ring-gold-500/20"></span>
+      <Flame class="w-4 h-4 text-gold-400 fill-gold-500/20" />
       <span class="font-serif font-bold text-sm text-gold-400 tracking-wide">SHADOW HEARTS</span>
     </div>
     <button
@@ -41,9 +42,7 @@ const { currentId = '', pageSections = [] } = Astro.props;
       class="p-2 rounded text-slate-400 hover:text-slate-100 hover:bg-slate-800 focus:outline-none"
       aria-label="Close navigation menu"
     >
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-      </svg>
+      <X class="w-5 h-5" />
     </button>
   </div>
 
@@ -83,7 +82,10 @@ const { currentId = '', pageSections = [] } = Astro.props;
               href={`#${sec.id}`}
               class="mobile-jump-link flex items-center justify-between p-2.5 rounded text-sm text-slate-300 hover:text-gold-300 hover:bg-slate-850"
             >
-              <span>{sec.label}</span>
+              <span class="flex items-center gap-2">
+                <Hash class="w-3.5 h-3.5 text-gold-500/70" />
+                <span>{sec.label}</span>
+              </span>
               {sec.count !== undefined && (
                 <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">
                   {sec.count}

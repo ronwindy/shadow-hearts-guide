@@ -1,4 +1,6 @@
 ---
+import { Menu, Flame, House, BookOpen, ExternalLink } from '@lucide/astro';
+
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
@@ -12,13 +14,11 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-gold-400 hover:bg-slate-800/80 transition-colors focus:outline-none focus:ring-1 focus:ring-gold-500"
         aria-label="Open chapters and outline drawer"
       >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+        <Menu class="w-6 h-6" />
       </button>
 
       <a href={`${baseUrl}/`} class="flex items-center space-x-2.5 text-slate-100 hover:text-gold-400 transition-colors">
-        <span class="w-2.5 h-2.5 rounded-full bg-gold-500 shadow-gold-glow"></span>
+        <Flame class="w-5 h-5 text-gold-400 fill-gold-500/20 shadow-gold-glow flex-shrink-0" />
         <span class="text-xl font-serif font-bold tracking-wider text-gold-400">SHADOW HEARTS</span>
         <span class="hidden sm:inline-block text-[11px] font-mono uppercase px-2 py-0.5 rounded bg-amber-950/40 text-amber-300 border border-amber-800/50">
           Gothic Strategy Guide
@@ -28,17 +28,17 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 
     <!-- Center/Right navigation links -->
     <nav class="flex items-center space-x-1 sm:space-x-3 text-sm font-medium">
-      <a href={`${baseUrl}/`} class="px-3 py-1.5 rounded-md text-slate-300 hover:text-gold-300 hover:bg-slate-850 transition-colors">
-        Home
+      <a href={`${baseUrl}/`} class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-slate-300 hover:text-gold-300 hover:bg-slate-850 transition-colors">
+        <House class="w-4 h-4 text-slate-400" />
+        <span>Home</span>
       </a>
-      <a href={`${baseUrl}/toc`} class="px-3 py-1.5 rounded-md text-slate-300 hover:text-gold-300 hover:bg-slate-850 transition-colors">
-        Chapters
+      <a href={`${baseUrl}/toc`} class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-slate-300 hover:text-gold-300 hover:bg-slate-850 transition-colors">
+        <BookOpen class="w-4 h-4 text-slate-400" />
+        <span>Chapters</span>
       </a>
-      <a href="https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center space-x-1.5 px-3 py-1.5 rounded-md text-slate-400 hover:text-gold-400 transition-colors">
+      <a href="https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-slate-400 hover:text-gold-400 transition-colors">
         <span>Original FAQ</span>
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
+        <ExternalLink class="w-3.5 h-3.5 text-slate-400" />
       </a>
     </nav>
   </div>

@@ -2,6 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import { getHeaderData, getTocData } from '../lib/guideData';
+import {
+  BookOpen,
+  Compass,
+  ArrowRight,
+  Info,
+  FileText
+} from '@lucide/astro';
 
 const headerData = getHeaderData();
 const tocData = getTocData();
@@ -49,13 +56,16 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
             href={`${baseUrl}/toc`}
             class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gold-500 hover:bg-gold-400 text-slate-950 font-semibold text-sm transition-colors shadow-lg shadow-gold-500/20"
           >
-            Explore Table of Contents
+            <BookOpen class="w-4 h-4 mr-2" />
+            <span>Explore Table of Contents</span>
           </a>
           <a
             href={`${baseUrl}/guide/w-1-01`}
-            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium text-sm transition-colors"
+            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium text-sm transition-colors group"
           >
-            Start Asia Walkthrough →
+            <Compass class="w-4 h-4 mr-2 text-gold-400" />
+            <span>Start Asia Walkthrough</span>
+            <ArrowRight class="w-4 h-4 ml-1.5 text-gold-500 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
       </div>
@@ -64,9 +74,9 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
     <!-- Guide Scope & Author Metadata Cards -->
     <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div class="lg:col-span-2 p-6 rounded-xl bg-slate-850 border border-slate-800 space-y-4">
-        <h2 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-sm bg-gold-500"></span>
-          Guide Scope & Walkthrough Focus
+        <h2 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+          <Compass class="w-5 h-5 text-gold-400" />
+          <span>Guide Scope & Walkthrough Focus</span>
         </h2>
         <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
           {scope}
@@ -74,9 +84,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         
         {callouts.map((callout) => (
           <div class="mt-4 p-4 rounded-lg bg-blue-950/30 border border-blue-800/40 text-sm text-blue-200 flex items-start gap-3">
-            <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+            <Info class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
             <div>
               <strong class="font-semibold block text-blue-100">{callout.title}</strong>
               <p class="text-xs text-blue-200/90 mt-0.5">{callout.text}</p>
@@ -86,9 +94,9 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
       </div>
 
       <div class="p-6 rounded-xl bg-slate-850 border border-slate-800 space-y-4">
-        <h2 class="text-lg font-serif font-bold text-slate-100 flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-sm bg-purple-500"></span>
-          Original Source Metadata
+        <h2 class="text-lg font-serif font-bold text-slate-100 flex items-center gap-2.5">
+          <FileText class="w-5 h-5 text-purple-400" />
+          <span>Original Source Metadata</span>
         </h2>
         <dl class="space-y-3 text-xs sm:text-sm">
           <div class="flex justify-between border-b border-slate-800 pb-2">
@@ -128,8 +136,9 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
             Browse all 69 guide sections across the 4 main progression arcs.
           </p>
         </div>
-        <a href={`${baseUrl}/toc`} class="text-xs sm:text-sm font-medium text-gold-500 hover:text-gold-400 transition-colors">
-          View full index &rarr;
+        <a href={`${baseUrl}/toc`} class="inline-flex items-center gap-1 text-xs sm:text-sm font-medium text-gold-500 hover:text-gold-400 transition-colors">
+          <span>View full index</span>
+          <ArrowRight class="w-3.5 h-3.5" />
         </a>
       </div>
 

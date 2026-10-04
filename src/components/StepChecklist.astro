@@ -1,5 +1,16 @@
 ---
 import BossCard from './BossCard.astro';
+import {
+  Swords,
+  Gem,
+  MessageSquare,
+  Puzzle,
+  Compass,
+  Skull,
+  Package,
+  Zap,
+  Check
+} from '@lucide/astro';
 
 interface RewardItem {
   name: string;
@@ -41,19 +52,19 @@ function getStepTypeMeta(type: string = 'exploration') {
     case 'battle':
     case 'combat':
     case 'boss':
-      return { label: 'Combat', icon: '⚔️', badgeClass: 'bg-rose-950/40 text-rose-300 border-rose-800/40' };
+      return { label: 'Combat', icon: Swords, badgeClass: 'bg-rose-950/40 text-rose-300 border-rose-800/40' };
     case 'loot':
     case 'treasure':
     case 'item':
-      return { label: 'Treasure', icon: '💎', badgeClass: 'bg-emerald-950/40 text-emerald-300 border-emerald-800/40' };
+      return { label: 'Treasure', icon: Gem, badgeClass: 'bg-emerald-950/40 text-emerald-300 border-emerald-800/40' };
     case 'story':
     case 'event':
     case 'cutscene':
-      return { label: 'Story', icon: '💬', badgeClass: 'bg-amber-950/40 text-amber-300 border-amber-800/40' };
+      return { label: 'Story', icon: MessageSquare, badgeClass: 'bg-amber-950/40 text-amber-300 border-amber-800/40' };
     case 'puzzle':
-      return { label: 'Puzzle', icon: '🧩', badgeClass: 'bg-purple-950/40 text-purple-300 border-purple-800/40' };
+      return { label: 'Puzzle', icon: Puzzle, badgeClass: 'bg-purple-950/40 text-purple-300 border-purple-800/40' };
     default:
-      return { label: 'Explore', icon: '🧭', badgeClass: 'bg-slate-800/80 text-slate-300 border-slate-700/60' };
+      return { label: 'Explore', icon: Compass, badgeClass: 'bg-slate-800/80 text-slate-300 border-slate-700/60' };
   }
 }
 ---
@@ -63,6 +74,7 @@ function getStepTypeMeta(type: string = 'exploration') {
     const stepNum = st.step_number || st.id;
     const text = st.description || st.instruction;
     const meta = getStepTypeMeta(st.type);
+    const StepIcon = meta.icon;
     const stepStorageKey = `sh-step-${guideId}-${stepNum}`;
 
     // Resolve inline boss card if defined on step or matched from guide bosses
@@ -91,9 +103,7 @@ function getStepTypeMeta(type: string = 'exploration') {
                 data-key={stepStorageKey}
               />
               <div class="w-6 h-6 rounded border-2 border-slate-700 bg-slate-900 group-hover:border-gold-500/80 flex items-center justify-center transition-colors shadow-inner">
-                <svg class="check-icon w-4 h-4 text-gold-400 hidden pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                </svg>
+                <Check class="check-icon w-4 h-4 text-gold-400 hidden pointer-events-none" />
               </div>
             </label>
           </div>
@@ -105,8 +115,8 @@ function getStepTypeMeta(type: string = 'exploration') {
               <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-slate-900 text-gold-400 border border-slate-800">
                 Step {stepNum}
               </span>
-              <span class={`inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded border ${meta.badgeClass}`}>
-                <span>{meta.icon}</span>
+              <span class={`inline-flex items-center gap-1.5 text-[11px] font-medium px-2 py-0.5 rounded border ${meta.badgeClass}`}>
+                <StepIcon class="w-3.5 h-3.5" />
                 <span>{meta.label}</span>
               </span>
               {st.title && (
@@ -124,10 +134,14 @@ function getStepTypeMeta(type: string = 'exploration') {
             <!-- Encounters (Only if not already displayed in a rich BossCard) -->
             {!stepBoss && st.encounter?.enemies && st.encounter.enemies.length > 0 && (
               <div class="pt-1 flex flex-wrap items-center gap-1.5 text-xs">
-                <span class="text-rose-400 font-mono text-[11px] font-semibold">Encounter:</span>
+                <span class="text-rose-400 font-mono text-[11px] font-semibold flex items-center gap-1">
+                  <Skull class="w-3 h-3 text-rose-400" />
+                  <span>Encounter:</span>
+                </span>
                 {st.encounter.enemies.map((en) => (
-                  <span class="px-2 py-0.5 rounded bg-rose-950/40 text-rose-300 border border-rose-800/40 font-mono text-[11px]">
-                    ⚔️ {en}
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-rose-950/40 text-rose-300 border border-rose-800/40 font-mono text-[11px]">
+                    <Skull class="w-2.5 h-2.5 text-rose-400/80" />
+                    <span>{en}</span>
                   </span>
                 ))}
               </div>
@@ -136,12 +150,15 @@ function getStepTypeMeta(type: string = 'exploration') {
             <!-- Rewards & Loot -->
             {st.rewards && st.rewards.length > 0 && (
               <div class="pt-1.5 flex flex-wrap items-center gap-2">
-                <span class="text-[11px] font-mono text-emerald-400 font-semibold">Obtained:</span>
+                <span class="text-[11px] font-mono text-emerald-400 font-semibold flex items-center gap-1">
+                  <Package class="w-3 h-3 text-emerald-400" />
+                  <span>Obtained:</span>
+                </span>
                 {st.rewards.map((r) => {
                   const rewardName = typeof r === 'string' ? r : r.name;
                   return (
-                    <span class="inline-flex items-center gap-1 text-xs px-2.5 py-0.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-800/40 font-mono">
-                      <span>💎</span>
+                    <span class="inline-flex items-center gap-1.5 text-xs px-2.5 py-0.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-800/40 font-mono">
+                      <Gem class="w-3 h-3 text-emerald-400" />
                       <span>{rewardName}</span>
                     </span>
                   );
@@ -155,7 +172,7 @@ function getStepTypeMeta(type: string = 'exploration') {
                 {displayedNotes.map((n: any) => (
                   <div class="p-3.5 rounded-lg bg-amber-950/20 border border-amber-800/40 text-xs sm:text-sm text-amber-200/95 space-y-1">
                     <div class="flex items-center gap-1.5 font-semibold text-amber-300 uppercase tracking-wide font-mono text-[11px]">
-                      <span>⚡</span>
+                      <Zap class="w-3.5 h-3.5 text-amber-400" />
                       <span>{n.title || 'Tactical Note'}</span>
                     </div>
                     <p class="leading-relaxed opacity-90">{n.text}</p>
