@@ -245,7 +245,8 @@ def compute_project_status(root: Path) -> Dict[str, Any]:
             "source_importer": "READY (69 canonical sections imported)",
             "guide_transformer": "READY (schema, validator & scaffold available)",
             "qa_framework": "READY (verify_guide.py operational)",
-            "web_builder": "PENDING (Astro site not yet initialized)",
+            "web_builder": "READY (Astro static site operational)" if astro_initialized else "PENDING (Astro site not yet initialized)",
+            "frontend_expert": "READY (3-section layout, UX review & audit script operational)",
             "github_pages": "PENDING (Workflow not configured)"
         },
         "active_milestone": "Milestone 2: Asia Walkthrough Content Transformation",
@@ -307,7 +308,9 @@ def generate_status_markdown(data: Dict[str, Any]) -> str:
     lines.append(f"| **Source Importer** | :white_check_mark: | {infra['source_importer']} |")
     lines.append(f"| **Guide Transformer** | :white_check_mark: | {infra['guide_transformer']} |")
     lines.append(f"| **QA Verifier** | :white_check_mark: | {infra['qa_framework']} |")
-    lines.append(f"| **Web Builder** | :hourglass_flowing_sand: | {infra['web_builder']} |")
+    web_status_icon = ":white_check_mark:" if "READY" in infra['web_builder'] else ":hourglass_flowing_sand:"
+    lines.append(f"| **Web Builder** | {web_status_icon} | {infra['web_builder']} |")
+    lines.append(f"| **Frontend Expert** | :white_check_mark: | {infra['frontend_expert']} |")
     lines.append(f"| **GitHub Pages** | :hourglass_flowing_sand: | {infra['github_pages']} |")
     lines.append("")
     lines.append("---")

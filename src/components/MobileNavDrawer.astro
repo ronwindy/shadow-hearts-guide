@@ -1,0 +1,161 @@
+---
+import SidebarNav from './SidebarNav.astro';
+
+interface SectionItem {
+  id: string;
+  label: string;
+  count?: number;
+}
+
+interface Props {
+  currentId?: string;
+  pageSections?: SectionItem[];
+}
+
+const { currentId = '', pageSections = [] } = Astro.props;
+---
+
+<!-- Mobile Drawer Backdrop -->
+<div
+  id="mobile-drawer-backdrop"
+  class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-200"
+  aria-hidden="true"
+></div>
+
+<!-- Mobile Drawer Panel -->
+<div
+  id="mobile-drawer-panel"
+  class="fixed inset-y-0 left-0 w-80 max-w-[85vw] bg-obsidian border-r border-slate-800 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col shadow-2xl"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Navigation Menu"
+>
+  <!-- Drawer Header -->
+  <div class="p-3.5 border-b border-slate-800 flex items-center justify-between bg-slate-900/60">
+    <div class="flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-gold-500 ring-2 ring-gold-500/20"></span>
+      <span class="font-serif font-bold text-sm text-gold-400 tracking-wide">SHADOW HEARTS</span>
+    </div>
+    <button
+      id="close-mobile-drawer"
+      class="p-2 rounded text-slate-400 hover:text-slate-100 hover:bg-slate-800 focus:outline-none"
+      aria-label="Close navigation menu"
+    >
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Tab Selector if page sections exist -->
+  {pageSections.length > 0 && (
+    <div class="flex border-b border-slate-800 bg-slate-900/40 text-xs font-medium">
+      <button
+        id="tab-btn-chapters"
+        class="flex-1 py-2.5 px-3 text-center border-b-2 border-gold-500 text-gold-400 font-semibold"
+      >
+        All Chapters
+      </button>
+      <button
+        id="tab-btn-sections"
+        class="flex-1 py-2.5 px-3 text-center border-b-2 border-transparent text-slate-400 hover:text-slate-200"
+      >
+        This Page ({pageSections.length})
+      </button>
+    </div>
+  )}
+
+  <!-- Tab Content: Chapters -->
+  <div id="tab-content-chapters" class="flex-1 overflow-y-auto">
+    <SidebarNav currentId={currentId} isMobileDrawer={true} />
+  </div>
+
+  <!-- Tab Content: This Page -->
+  {pageSections.length > 0 && (
+    <div id="tab-content-sections" class="hidden flex-1 overflow-y-auto p-4 space-y-2">
+      <div class="text-xs font-serif font-semibold uppercase tracking-wider text-gold-400 pb-2 border-b border-slate-800">
+        Jump to Section
+      </div>
+      <ul class="space-y-1">
+        {pageSections.map((sec) => (
+          <li>
+            <a
+              href={`#${sec.id}`}
+              class="mobile-jump-link flex items-center justify-between p-2.5 rounded text-sm text-slate-300 hover:text-gold-300 hover:bg-slate-850"
+            >
+              <span>{sec.label}</span>
+              {sec.count !== undefined && (
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">
+                  {sec.count}
+                </span>
+              )}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</div>
+
+<script>
+  const openBtn = document.getElementById('open-mobile-drawer');
+  const closeBtn = document.getElementById('close-mobile-drawer');
+  const backdrop = document.getElementById('mobile-drawer-backdrop');
+  const panel = document.getElementById('mobile-drawer-panel');
+
+  const tabChapters = document.getElementById('tab-btn-chapters');
+  const tabSections = document.getElementById('tab-btn-sections');
+  const contentChapters = document.getElementById('tab-content-chapters');
+  const contentSections = document.getElementById('tab-content-sections');
+
+  function openDrawer() {
+    if (!backdrop || !panel) return;
+    backdrop.classList.remove('hidden');
+    requestAnimationFrame(() => {
+      backdrop.classList.remove('opacity-0');
+      backdrop.classList.add('opacity-100');
+      panel.classList.remove('-translate-x-full');
+      panel.classList.add('translate-x-0');
+    });
+    document.body.classList.add('overflow-hidden');
+  }
+
+  function closeDrawer() {
+    if (!backdrop || !panel) return;
+    backdrop.classList.remove('opacity-100');
+    backdrop.classList.add('opacity-0');
+    panel.classList.remove('translate-x-0');
+    panel.classList.add('-translate-x-full');
+    setTimeout(() => {
+      backdrop.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }, 300);
+  }
+
+  if (openBtn) openBtn.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+  // Close when a jump link is tapped
+  const jumpLinks = document.querySelectorAll('.mobile-jump-link');
+  jumpLinks.forEach(link => {
+    link.addEventListener('click', closeDrawer);
+  });
+
+  // Tab switching
+  if (tabChapters && tabSections && contentChapters && contentSections) {
+    tabChapters.addEventListener('click', () => {
+      tabChapters.className = 'flex-1 py-2.5 px-3 text-center border-b-2 border-gold-500 text-gold-400 font-semibold';
+      tabSections.className = 'flex-1 py-2.5 px-3 text-center border-b-2 border-transparent text-slate-400 hover:text-slate-200';
+      contentChapters.classList.remove('hidden');
+      contentSections.classList.add('hidden');
+    });
+
+    tabSections.addEventListener('click', () => {
+      tabSections.className = 'flex-1 py-2.5 px-3 text-center border-b-2 border-gold-500 text-gold-400 font-semibold';
+      tabChapters.className = 'flex-1 py-2.5 px-3 text-center border-b-2 border-transparent text-slate-400 hover:text-slate-200';
+      contentSections.classList.remove('hidden');
+      contentChapters.classList.add('hidden');
+    });
+  }
+</script>

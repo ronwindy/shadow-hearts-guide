@@ -1,0 +1,131 @@
+---
+import { getTocData, type TocCategory } from '../lib/guideData';
+
+interface Props {
+  currentId?: string;
+  isMobileDrawer?: boolean;
+}
+
+const { currentId = '', isMobileDrawer = false } = Astro.props;
+const tocData = getTocData();
+const categories = tocData.guide.overview.sections;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<aside class={`flex flex-col h-full ${isMobileDrawer ? 'w-full' : 'w-64 xl:w-72 select-none'}`}>
+  <!-- Sidebar Header / Search -->
+  <div class="p-3 border-b border-slate-800/80 sticky top-0 bg-[#0a0d14]/95 backdrop-blur z-10 space-y-2">
+    <div class="flex items-center justify-between text-xs font-serif font-bold uppercase tracking-wider text-gold-400">
+      <span>Chapter Index</span>
+      <span class="text-[11px] font-mono text-slate-400 font-normal">69 Sections</span>
+    </div>
+    <div class="relative">
+      <input
+        type="text"
+        id={isMobileDrawer ? 'mobile-sidebar-search' : 'sidebar-search'}
+        placeholder="Filter chapters..."
+        class="w-full pl-7 pr-3 py-1.5 bg-slate-900/90 border border-slate-800 rounded text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-gold-500/80 focus:ring-1 focus:ring-gold-500/50"
+      />
+      <svg class="w-3.5 h-3.5 text-slate-500 absolute left-2 top-2 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- Chapters Scroll Area -->
+  <div class="flex-1 overflow-y-auto p-3 space-y-5 text-xs text-slate-300 custom-scrollbar" id={isMobileDrawer ? 'mobile-sidebar-list' : 'sidebar-list'}>
+    {categories.map((cat, catIdx) => (
+      <div class="sidebar-category space-y-1.5" data-category={cat.category}>
+        <div class="text-[11px] font-serif font-semibold text-slate-400 uppercase tracking-wider px-2 py-1 flex items-center justify-between">
+          <span>{cat.category}</span>
+          <span class="text-[10px] font-mono text-slate-400 font-normal">{cat.entries.length}</span>
+        </div>
+
+        <ul class="space-y-0.5 border-l border-slate-800/70 ml-2 pl-2">
+          {cat.entries.map((entry) => {
+            const isActive = entry.id === currentId;
+            const isAvailable = entry.has_structured;
+            return (
+              <li 
+                class="sidebar-item" 
+                data-title={entry.title.toLowerCase()} 
+                data-code={entry.code.toLowerCase()}
+                data-label={(entry.label || '').toLowerCase()}
+              >
+                {isAvailable ? (
+                  <a
+                    href={`${baseUrl}/guide/${entry.id}`}
+                    class={`group flex items-start gap-2 px-2.5 py-1.5 rounded transition-all duration-150 ${
+                      isActive
+                        ? 'bg-gold-500/15 text-gold-300 font-medium border-l-2 border-gold-400 shadow-sm shadow-gold-500/10'
+                        : 'text-slate-300 hover:text-slate-100 hover:bg-slate-850/80'
+                    }`}
+                  >
+                    <span class={`w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 ${
+                      isActive ? 'bg-gold-400 ring-2 ring-gold-400/30' : 'bg-emerald-500/70'
+                    }`}></span>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center justify-between gap-1">
+                        <span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-300 truncate">
+                          {entry.label || entry.code}
+                        </span>
+                        {entry.is_sidequest && (
+                          <span class="text-[9px] px-1 py-0.2 rounded bg-purple-950/60 text-purple-300 border border-purple-800/40">SQ</span>
+                        )}
+                      </div>
+                      <div class="truncate text-[12px] leading-tight text-slate-200 group-hover:text-gold-300">
+                        {entry.title}
+                      </div>
+                    </div>
+                  </a>
+                ) : (
+                  <div class="flex items-start gap-2 px-2.5 py-1.5 text-slate-400 opacity-60 cursor-default">
+                    <span class="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 bg-slate-700"></span>
+                    <div class="flex-1 min-w-0">
+                      <div class="text-[10px] font-mono text-slate-400 truncate">
+                        {entry.label || entry.code}
+                      </div>
+                      <div class="truncate text-[12px] leading-tight">
+                        {entry.title}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    ))}
+  </div>
+</aside>
+
+<script>
+  function setupSidebarSearch(inputId: string, listId: string) {
+    const searchInput = document.getElementById(inputId) as HTMLInputElement | null;
+    const list = document.getElementById(listId);
+    if (!searchInput || !list) return;
+
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.trim().toLowerCase();
+      const items = list.querySelectorAll<HTMLElement>('.sidebar-item');
+      const categories = list.querySelectorAll<HTMLElement>('.sidebar-category');
+
+      items.forEach((item) => {
+        const title = item.getAttribute('data-title') || '';
+        const code = item.getAttribute('data-code') || '';
+        const label = item.getAttribute('data-label') || '';
+        const match = !q || title.includes(q) || code.includes(q) || label.includes(q);
+        item.style.display = match ? '' : 'none';
+      });
+
+      categories.forEach((cat) => {
+        const visibleItems = cat.querySelectorAll('.sidebar-item:not([style*="display: none"])');
+        cat.style.display = visibleItems.length > 0 ? '' : 'none';
+      });
+    });
+  }
+
+  setupSidebarSearch('sidebar-search', 'sidebar-list');
+  setupSidebarSearch('mobile-sidebar-search', 'mobile-sidebar-list');
+</script>

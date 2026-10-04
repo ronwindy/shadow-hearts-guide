@@ -1,16 +1,23 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import SourceAttribution from '../components/SourceAttribution.astro';
+import MobileNavDrawer from '../components/MobileNavDrawer.astro';
 import '../styles/global.css';
 
 interface Props {
   title?: string;
   description?: string;
+  currentId?: string;
+  pageSections?: Array<{ id: string; label: string; count?: number }>;
+  isWide?: boolean;
 }
 
 const {
   title = "Shadow Hearts — Complete Guide & Walkthrough",
-  description = "A polished, player-friendly static companion for the PlayStation 2 classic Shadow Hearts, preserving full canonical walkthrough and FAQ depth."
+  description = "A polished, player-friendly static companion for the PlayStation 2 classic Shadow Hearts, preserving full canonical walkthrough and FAQ depth.",
+  currentId = "",
+  pageSections = [],
+  isWide = false
 } = Astro.props;
 ---
 
@@ -28,7 +35,8 @@ const {
   </head>
   <body class="bg-void text-slate-100 flex flex-col min-h-screen">
     <Navigation />
-    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <MobileNavDrawer currentId={currentId} pageSections={pageSections} />
+    <main class={`flex-grow w-full mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8 ${isWide ? 'max-w-[1600px]' : 'max-w-7xl'}`}>
       <slot />
     </main>
     <SourceAttribution />

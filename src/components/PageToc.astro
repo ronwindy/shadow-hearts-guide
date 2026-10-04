@@ -1,0 +1,97 @@
+---
+interface SectionItem {
+  id: string;
+  label: string;
+  count?: number;
+}
+
+interface Props {
+  sections: SectionItem[];
+}
+
+const { sections = [] } = Astro.props;
+---
+
+<nav class="space-y-3 p-3 select-none" id="page-toc">
+  <div class="flex items-center gap-2 text-xs font-serif font-bold uppercase tracking-wider text-gold-400 border-b border-slate-800/80 pb-2">
+    <svg class="w-3.5 h-3.5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+    </svg>
+    <span>On This Page</span>
+  </div>
+
+  <ul class="space-y-1 text-xs">
+    {sections.map((sec) => (
+      <li>
+        <a
+          href={`#${sec.id}`}
+          class="toc-link group flex items-center justify-between px-2.5 py-1.5 rounded text-slate-300 hover:text-gold-300 hover:bg-slate-850/80 transition-all duration-150"
+          data-target={sec.id}
+        >
+          <span class="truncate">{sec.label}</span>
+          {sec.count !== undefined && (
+            <span class="text-[10px] font-mono px-1.5 py-0.2 rounded bg-slate-800/80 text-slate-400 group-hover:text-gold-400 ml-1.5">
+              {sec.count}
+            </span>
+          )}
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <!-- Progress bar or Back to Top -->
+  <div class="pt-3 border-t border-slate-800/60">
+    <button
+      id="scroll-to-top"
+      class="w-full text-left text-[11px] text-slate-400 hover:text-gold-400 flex items-center gap-1.5 px-2.5 py-1 rounded hover:bg-slate-850/60 transition-colors"
+    >
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+      </svg>
+      <span>Back to top</span>
+    </button>
+  </div>
+</nav>
+
+<script>
+  // Scrollspy via IntersectionObserver
+  const links = document.querySelectorAll<HTMLAnchorElement>('.toc-link');
+  const targets = Array.from(links)
+    .map(link => {
+      const id = link.getAttribute('data-target');
+      return id ? document.getElementById(id) : null;
+    })
+    .filter(Boolean) as HTMLElement[];
+
+  if (targets.length > 0) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            links.forEach(l => {
+              if (l.getAttribute('data-target') === id) {
+                l.classList.add('text-gold-400', 'font-medium', 'bg-gold-500/10', 'border-l-2', 'border-gold-400');
+                l.classList.remove('text-slate-300');
+              } else {
+                l.classList.remove('text-gold-400', 'font-medium', 'bg-gold-500/10', 'border-l-2', 'border-gold-400');
+                l.classList.add('text-slate-300');
+              }
+            });
+          }
+        });
+      },
+      { rootMargin: '-20% 0px -70% 0px' }
+    );
+
+    targets.forEach(t => observer.observe(t));
+  }
+
+  // Smooth back to top
+  const topBtn = document.getElementById('scroll-to-top');
+  if (topBtn) {
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>

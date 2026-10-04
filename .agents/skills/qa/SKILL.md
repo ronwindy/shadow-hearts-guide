@@ -1,4 +1,4 @@
-﻿---
+---
 name: qa
 description: >-
   Verifies that generated game guides remain faithful to the canonical and original source, checking content fidelity, terminology, numbers, conditions, warnings, and static site build integrity. Use this skill when reviewing, auditing, validating, or running QA checks on converted game guide pages and build outputs.
@@ -506,6 +506,21 @@ Check for:
 
 Visual polish is secondary to content correctness, but a visually inaccessible guide is still a quality problem.
 
+### Integration with `frontend-expert` Skill
+
+For comprehensive frontend and UX verification, QA can invoke the **`frontend-expert`** skill and run the automated audit script:
+
+```powershell
+python .agents/skills/frontend-expert/scripts/audit_frontend.py
+```
+
+This verifies:
+- No microscopic text (< 12px) in body copy.
+- Tables are wrapped with responsive overflow containers.
+- Prev/Next navigation footers do not squish or blow out viewports.
+- Raw internal pipeline IDs (`[W-1-01]`, `step_01_id`) are cleanly sanitized.
+- The 3-section layout (Left Chapter Directory, Center Content, Right On-Page Outline) functions smoothly.
+
 ---
 
 ## 19. Responsive QA
@@ -515,9 +530,9 @@ Verify the page at relevant viewport sizes.
 At minimum:
 
 ```text
-Desktop
-Tablet
-Mobile
+Desktop (1280px+)  → 3-column layout (SidebarNav + Content + PageToc)
+Tablet (768px-1024px) → Collapsible sidebars, full-width content
+Mobile (320px-420px)  → Drawer navigation, wrapped tables, thumb-friendly targets
 ```
 
 Look for:

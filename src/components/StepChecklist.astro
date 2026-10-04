@@ -1,0 +1,215 @@
+---
+interface RewardItem {
+  name: string;
+  category?: string;
+  matched_overview_item?: string;
+}
+
+interface StepNote {
+  type?: string;
+  title?: string;
+  text: string;
+}
+
+interface Step {
+  id: number | string;
+  step_number?: number | string;
+  title?: string;
+  description?: string;
+  instruction?: string;
+  type?: string;
+  rewards?: (RewardItem | string)[];
+  encounter?: {
+    enemies?: string[];
+  };
+  notes?: StepNote[];
+}
+
+interface Props {
+  guideId: string;
+  steps: Step[];
+}
+
+const { guideId, steps = [] } = Astro.props;
+
+function getStepTypeMeta(type: string = 'exploration') {
+  switch (type.toLowerCase()) {
+    case 'battle':
+    case 'combat':
+    case 'boss':
+      return { label: 'Combat', icon: '⚔️', badgeClass: 'bg-rose-950/40 text-rose-300 border-rose-800/40' };
+    case 'loot':
+    case 'treasure':
+    case 'item':
+      return { label: 'Treasure', icon: '💎', badgeClass: 'bg-emerald-950/40 text-emerald-300 border-emerald-800/40' };
+    case 'story':
+    case 'event':
+    case 'cutscene':
+      return { label: 'Story', icon: '💬', badgeClass: 'bg-amber-950/40 text-amber-300 border-amber-800/40' };
+    case 'puzzle':
+      return { label: 'Puzzle', icon: '🧩', badgeClass: 'bg-purple-950/40 text-purple-300 border-purple-800/40' };
+    default:
+      return { label: 'Explore', icon: '🧭', badgeClass: 'bg-slate-800/80 text-slate-300 border-slate-700/60' };
+  }
+}
+---
+
+<div class="space-y-4" id="step-checklist-container">
+  {steps.map((st) => {
+    const stepNum = st.step_number || st.id;
+    const text = st.description || st.instruction;
+    const meta = getStepTypeMeta(st.type);
+    const stepStorageKey = `sh-step-${guideId}-${stepNum}`;
+
+    return (
+      <div
+        class="step-item p-4 sm:p-5 rounded-xl bg-slate-850/90 border border-slate-800 hover:border-slate-700 transition-all duration-150 shadow-sm"
+        data-step-key={stepStorageKey}
+      >
+        <div class="flex items-start gap-3.5">
+          <!-- Interactive Checkbox -->
+          <div class="pt-1 flex-shrink-0">
+            <label class="relative flex items-center justify-center cursor-pointer group">
+              <input
+                type="checkbox"
+                class="step-checkbox sr-only"
+                data-key={stepStorageKey}
+              />
+              <div class="w-6 h-6 rounded border-2 border-slate-700 bg-slate-900 group-hover:border-gold-500/80 flex items-center justify-center transition-colors shadow-inner">
+                <svg class="check-icon w-4 h-4 text-gold-400 hidden pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+            </label>
+          </div>
+
+          <!-- Step Body -->
+          <div class="flex-1 space-y-2 min-w-0">
+            <!-- Header Badges -->
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-slate-900 text-gold-400 border border-slate-800">
+                Step {stepNum}
+              </span>
+              <span class={`inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded border ${meta.badgeClass}`}>
+                <span>{meta.icon}</span>
+                <span>{meta.label}</span>
+              </span>
+              {st.title && (
+                <span class="font-serif font-semibold text-slate-100 text-sm sm:text-base">
+                  {st.title}
+                </span>
+              )}
+            </div>
+
+            <!-- Instruction Text -->
+            <p class="step-content text-sm sm:text-[15px] text-slate-200 leading-relaxed">
+              {text}
+            </p>
+
+            <!-- Encounters -->
+            {st.encounter?.enemies && st.encounter.enemies.length > 0 && (
+              <div class="pt-1 flex flex-wrap items-center gap-1.5 text-xs">
+                <span class="text-rose-400 font-mono text-[11px] font-semibold">Encounter:</span>
+                {st.encounter.enemies.map((en) => (
+                  <span class="px-2 py-0.5 rounded bg-rose-950/40 text-rose-300 border border-rose-800/40 font-mono text-[11px]">
+                    ⚔️ {en}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            <!-- Rewards & Loot -->
+            {st.rewards && st.rewards.length > 0 && (
+              <div class="pt-1.5 flex flex-wrap items-center gap-2">
+                <span class="text-[11px] font-mono text-emerald-400 font-semibold">Obtained:</span>
+                {st.rewards.map((r) => {
+                  const rewardName = typeof r === 'string' ? r : r.name;
+                  return (
+                    <span class="inline-flex items-center gap-1 text-xs px-2.5 py-0.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-800/40 font-mono">
+                      <span>💎</span>
+                      <span>{rewardName}</span>
+                    </span>
+                  );
+                })}
+              </div>
+            )}
+
+            <!-- Notes & Mechanics Callouts -->
+            {st.notes && st.notes.length > 0 && (
+              <div class="pt-2 space-y-2">
+                {st.notes.map((n) => (
+                  <div class="p-3.5 rounded-lg bg-amber-950/20 border border-amber-800/40 text-xs sm:text-sm text-amber-200/95 space-y-1">
+                    <div class="flex items-center gap-1.5 font-semibold text-amber-300 uppercase tracking-wide font-mono text-[11px]">
+                      <span>⚡</span>
+                      <span>{n.title || 'Tactical Note'}</span>
+                    </div>
+                    <p class="leading-relaxed opacity-90">{n.text}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  })}
+</div>
+
+<script>
+  // Step persistence in localStorage
+  function initCheckboxes() {
+    const checkboxes = document.querySelectorAll<HTMLInputElement>('.step-checkbox');
+    checkboxes.forEach((cb) => {
+      const key = cb.getAttribute('data-key');
+      if (!key) return;
+
+      const isChecked = localStorage.getItem(key) === 'true';
+      cb.checked = isChecked;
+      updateVisualState(cb, isChecked);
+
+      cb.addEventListener('change', () => {
+        localStorage.setItem(key, String(cb.checked));
+        updateVisualState(cb, cb.checked);
+      });
+    });
+  }
+
+  function updateVisualState(cb: HTMLInputElement, isChecked: boolean) {
+    const parent = cb.closest<HTMLElement>('.step-item');
+    const checkIcon = cb.parentElement?.querySelector('.check-icon');
+    const borderBox = cb.parentElement?.querySelector('div');
+
+    if (checkIcon) {
+      if (isChecked) {
+        checkIcon.classList.remove('hidden');
+      } else {
+        checkIcon.classList.add('hidden');
+      }
+    }
+
+    if (borderBox) {
+      if (isChecked) {
+        borderBox.classList.add('border-gold-500', 'bg-gold-500/20');
+        borderBox.classList.remove('border-slate-700', 'bg-slate-900');
+      } else {
+        borderBox.classList.remove('border-gold-500', 'bg-gold-500/20');
+        borderBox.classList.add('border-slate-700', 'bg-slate-900');
+      }
+    }
+
+    if (parent) {
+      const content = parent.querySelector('.step-content');
+      if (isChecked) {
+        parent.classList.add('opacity-65', 'bg-slate-900/40');
+        parent.classList.remove('bg-slate-850/90');
+        if (content) content.classList.add('line-through', 'text-slate-400');
+      } else {
+        parent.classList.remove('opacity-65', 'bg-slate-900/40');
+        parent.classList.add('bg-slate-850/90');
+        if (content) content.classList.remove('line-through', 'text-slate-400');
+      }
+    }
+  }
+
+  initCheckboxes();
+</script>

@@ -4,23 +4,34 @@ export default {
   theme: {
     extend: {
       colors: {
-        void: '#0c0e14',
+        obsidian: '#07080c',
+        void: '#0a0d14',
         slate: {
-          850: '#141822',
-          900: '#0f172a',
-          950: '#0b0f19',
+          850: '#121622',
+          900: '#0e121a',
+          950: '#080a10',
         },
         gold: {
+          300: '#fde047',
           400: '#f59e0b',
           500: '#d4af37',
           600: '#b48a1c',
           700: '#854d0e',
         },
         crimson: {
+          400: '#fb7185',
           500: '#e11d48',
           600: '#be123c',
           700: '#9f1239',
+          800: '#881337',
+          950: '#4c0519',
         },
+        malice: '#881337',
+      },
+      boxShadow: {
+        'gold-glow': '0 0 25px -5px rgba(212, 175, 55, 0.18)',
+        'crimson-glow': '0 0 25px -5px rgba(225, 29, 72, 0.22)',
+        'gothic-card': '0 4px 20px -2px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.05)',
       },
       fontFamily: {
         serif: ['Cinzel', 'Trajan Pro', 'Georgia', 'serif'],

@@ -7,8 +7,15 @@
     color-scheme: dark;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-void text-slate-100 font-sans antialiased min-h-screen selection:bg-gold-500/30 selection:text-gold-400;
+    @apply bg-void text-slate-100 font-sans antialiased min-h-screen selection:bg-gold-500/30 selection:text-gold-300;
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212, 175, 55, 0.05), transparent),
+      radial-gradient(ellipse 60% 40% at 90% 80%, rgba(190, 18, 60, 0.04), transparent);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -16,18 +23,45 @@
   }
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar for Desktop */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0c0e14;
+  background: #080a10;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
-  border-radius: 4px;
+  background: #1e2638;
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #d4af37;
 }
+
+/* Gothic decorative divider */
+.gothic-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d4af37;
+}
+.gothic-divider::before,
+.gothic-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+.gothic-divider:not(:empty)::before {
+  margin-right: .75em;
+}
+.gothic-divider:not(:empty)::after {
+  margin-left: .75em;
+}
+
+/* Checkbox animations & checked state */
+.step-checkbox:checked + div .step-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
