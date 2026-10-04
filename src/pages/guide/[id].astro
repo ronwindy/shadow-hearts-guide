@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
 import { getAllStructuredSections } from '../../lib/guideData';
 
 export async function getStaticPaths() {
@@ -15,6 +16,18 @@ const guide = section.guide || {};
 const overview = guide.overview || {};
 const navigation = guide.navigation || {};
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Normalizations across walkthrough and reference schemas
+const objectives = guide.objectives || (overview.objective ? [overview.objective] : []);
+const route = guide.route || overview.route || [];
+const steps = guide.steps || [];
+const initialSetup = guide.initial_setup;
+const itemsSummary = guide.items_summary;
+const enemies = guide.enemies || [];
+const boss = guide.boss;
+const bosses = guide.bosses || (boss ? [boss] : []);
+const shops = guide.shops || [];
+const callouts = guide.callouts || [];
 ---
 
 <BaseLayout
@@ -56,71 +69,517 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
       </h1>
     </header>
 
-    <!-- Overview or Walkthrough Content Rendering -->
+    <!-- Main Content Container -->
     <div class="space-y-8">
-      {overview.objective && (
-        <div class="p-5 rounded-lg bg-slate-850 border border-slate-800 space-y-2">
-          <h2 class="text-sm font-serif font-semibold tracking-wide uppercase text-gold-500">
-            Primary Objective
-          </h2>
-          <p class="text-slate-200 text-base">{overview.objective}</p>
+      {/* Callouts (tips, notes, warnings) */}
+      {callouts && callouts.length > 0 && (
+        <div class="space-y-3">
+          {callouts.map((c: any) => (
+            <div class={`p-4 rounded-lg border text-sm flex gap-3 ${
+              c.type === 'warning'
+                ? 'bg-rose-950/30 border-rose-800/40 text-rose-200'
+                : c.type === 'tip'
+                ? 'bg-amber-950/30 border-amber-800/40 text-amber-200'
+                : 'bg-blue-950/30 border-blue-800/40 text-blue-200'
+            }`}>
+              <div class="font-bold text-xs uppercase tracking-wider font-mono mt-0.5">[{c.type || 'NOTE'}]</div>
+              <div class="space-y-1 flex-1">
+                {c.title && <div class="font-semibold">{c.title}</div>}
+                <p class="leading-relaxed opacity-90">{c.text}</p>
+              </div>
+            </div>
+          ))}
         </div>
       )}
 
-      {overview.route && overview.route.length > 0 && (
-        <div class="p-5 rounded-lg bg-slate-850 border border-slate-800 space-y-2">
+      {/* Table of Contents Section (e.g. I-1-00) */}
+      {overview.sections && overview.sections.length > 0 && (
+        <div class="space-y-4">
+          <TableOfContents sections={overview.sections} legend={overview.legend} />
+        </div>
+      )}
+
+      {/* Intro directions & compass mapping (e.g. W-1-00) */}
+      {overview.directions && (
+        <div class="p-5 rounded-lg bg-slate-850 border border-slate-800 space-y-4">
           <h2 class="text-sm font-serif font-semibold tracking-wide uppercase text-gold-500">
-            Route Progression
+            Compass & Orientation
           </h2>
-          <div class="flex flex-wrap items-center gap-2 text-sm text-slate-300">
-            {overview.route.map((step: string, idx: number) => (
-              <span class="flex items-center gap-2">
-                <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-700/60 font-medium">
-                  {step}
-                </span>
-                {idx < overview.route.length - 1 && <span class="text-slate-500">&rarr;</span>}
-              </span>
-            ))}
+          {overview.directions.compass_note && (
+            <p class="text-slate-300 text-sm leading-relaxed">{overview.directions.compass_note}</p>
+          )}
+          {overview.directions.mappings && overview.directions.mappings.length > 0 && (
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs text-left border-collapse">
+                <thead>
+                  <tr class="border-b border-slate-700/80 text-slate-400 font-mono">
+                    <th class="py-2 px-3">Screen Direction</th>
+                    <th class="py-2 px-3">Cardinal Direction</th>
+                    <th class="py-2 px-3">Abbreviation</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800 text-slate-300">
+                  {overview.directions.mappings.map((m: any) => (
+                    <tr class="hover:bg-slate-800/40">
+                      <td class="py-2 px-3 font-medium">{m.screen}</td>
+                      <td class="py-2 px-3 text-gold-400">{m.cardinal}</td>
+                      <td class="py-2 px-3 font-mono text-slate-400">{m.abbr}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Game Manual & Instructions Components (e.g. I-1-01) */}
+      {overview.intro && (
+        <div class="p-4 rounded-lg bg-slate-850 border border-slate-800 text-slate-300 text-sm italic">
+          {overview.intro}
+        </div>
+      )}
+
+      {overview.story_prologue && (
+        <section class="space-y-3">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Story Prologue
+          </h2>
+          <div class="grid gap-3">
+            {overview.story_prologue.setting_1 && (
+              <div class="p-4 rounded-lg bg-slate-850 border border-slate-800 text-sm text-slate-300 leading-relaxed">
+                <span class="text-gold-500 font-semibold block mb-1">Rouen, France (1913)</span>
+                {overview.story_prologue.setting_1}
+              </div>
+            )}
+            {overview.story_prologue.setting_2 && (
+              <div class="p-4 rounded-lg bg-slate-850 border border-slate-800 text-sm text-slate-300 leading-relaxed">
+                <span class="text-gold-500 font-semibold block mb-1">One Month Later</span>
+                {overview.story_prologue.setting_2}
+              </div>
+            )}
+            {overview.story_prologue.inciting_incident && (
+              <div class="p-4 rounded-lg bg-slate-850 border border-slate-800 text-sm text-slate-300 leading-relaxed">
+                <span class="text-gold-500 font-semibold block mb-1">Inciting Incident</span>
+                {overview.story_prologue.inciting_incident}
+              </div>
+            )}
           </div>
-        </div>
+        </section>
       )}
 
-      {/* Steps List */}
-      {guide.steps && guide.steps.length > 0 && (
-        <section class="space-y-4">
-          <h2 class="text-xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
-            Walkthrough Steps
+      {overview.controls && (
+        <section class="space-y-3">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Controls & Controller Layout
           </h2>
-          <div class="space-y-3">
-            {guide.steps.map((st: any) => (
-              <div class="p-4 rounded-lg bg-slate-850 border border-slate-800 flex items-start gap-3">
-                <span class="font-mono text-xs px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800 mt-0.5">
-                  #{st.step_number}
-                </span>
-                <div class="space-y-1">
-                  <h3 class="text-sm font-semibold text-slate-200">{st.title}</h3>
-                  <p class="text-sm text-slate-300 leading-relaxed">{st.instruction}</p>
-                  {st.rewards && st.rewards.length > 0 && (
-                    <div class="pt-2 flex flex-wrap gap-2">
-                      {st.rewards.map((r: any) => (
-                        <span class="text-xs px-2 py-0.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-800/40 font-mono">
-                          +{r.name}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
+          {overview.controls.controller_layout && (
+            <div class="overflow-x-auto rounded-lg border border-slate-800 bg-slate-850">
+              <table class="w-full text-xs text-left">
+                <thead>
+                  <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/60">
+                    <th class="py-2.5 px-3">Button / Input</th>
+                    <th class="py-2.5 px-3">Function</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800/60 text-slate-300">
+                  {overview.controls.controller_layout.map((c: any) => (
+                    <tr class="hover:bg-slate-800/40">
+                      <td class="py-2 px-3 font-mono text-gold-400 font-semibold whitespace-nowrap">{c.button}</td>
+                      <td class="py-2 px-3">{c.function}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+          {overview.controls.menu_navigation && (
+            <p class="text-xs text-slate-400 italic mt-2">{overview.controls.menu_navigation}</p>
+          )}
+        </section>
+      )}
+
+      {overview.playing_the_game && (
+        <section class="space-y-3">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            System & Operations
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            {Object.entries(overview.playing_the_game).map(([key, val]) => (
+              <div class="p-3.5 rounded-lg bg-slate-850 border border-slate-800 space-y-1">
+                <h3 class="font-semibold capitalize text-gold-400">{key.replace(/_/g, ' ')}</h3>
+                <p class="text-slate-300 leading-relaxed">{val}</p>
               </div>
             ))}
           </div>
         </section>
       )}
 
-      {/* Raw fallback if guide is metadata or reference */}
-      {!guide.steps && !overview.objective && (
-        <div class="p-6 rounded-lg bg-slate-850 border border-slate-800 text-sm text-slate-300 space-y-4">
-          {overview.purpose && <p>{overview.purpose}</p>}
-          {overview.guide_scope && <p>{overview.guide_scope}</p>}
+      {overview.player_attributes && (
+        <section class="space-y-3">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Player Attributes & Battle System
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            {Object.entries(overview.player_attributes).map(([key, val]) => (
+              <div class="p-3.5 rounded-lg bg-slate-850 border border-slate-800 space-y-1">
+                <h3 class="font-semibold uppercase tracking-wider font-mono text-gold-400">{key.replace(/_/g, ' ')}</h3>
+                <p class="text-slate-300 leading-relaxed">{val}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {overview.battle_mechanics && (
+        <section class="space-y-4">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Battle Mechanics
+          </h2>
+          {overview.battle_mechanics.encounter_flow && (
+            <p class="text-sm text-slate-300">{overview.battle_mechanics.encounter_flow}</p>
+          )}
+          {overview.battle_mechanics.action_menu && (
+            <div class="space-y-2">
+              <h3 class="text-xs uppercase font-mono tracking-wider text-slate-400">Battle Actions</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                {overview.battle_mechanics.action_menu.map((a: any) => (
+                  <div class="p-3.5 rounded-lg bg-slate-850 border border-slate-800 space-y-1">
+                    <div class="font-semibold text-gold-400 font-mono">{a.action}</div>
+                    <p class="text-slate-300 leading-relaxed">{a.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          {overview.battle_mechanics.judgment_ring && (
+            <div class="p-4 rounded-lg bg-amber-950/20 border border-amber-800/40 text-xs space-y-2">
+              <h3 class="font-semibold text-amber-300 uppercase tracking-wider font-mono text-sm">
+                Judgment Ring System
+              </h3>
+              <p class="text-slate-200">{overview.battle_mechanics.judgment_ring.description}</p>
+              <p class="text-slate-300 leading-relaxed">{overview.battle_mechanics.judgment_ring.mechanics}</p>
+              {overview.battle_mechanics.judgment_ring.character_variation && (
+                <p class="text-amber-400/80 italic">{overview.battle_mechanics.judgment_ring.character_variation}</p>
+              )}
+            </div>
+          )}
+          {overview.battle_mechanics.command_menu && (
+            <p class="text-xs text-slate-400 italic">{overview.battle_mechanics.command_menu}</p>
+          )}
+        </section>
+      )}
+
+      {overview.characters && overview.characters.length > 0 && (
+        <section class="space-y-3">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Character Profiles
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {overview.characters.map((char: any) => (
+              <div class="p-4 rounded-lg bg-slate-850 border border-slate-800 space-y-2 text-xs">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-sm font-serif font-bold text-slate-100">{char.name}</h3>
+                  <div class="flex items-center gap-2">
+                    {char.class && (
+                      <span class="px-2 py-0.5 rounded bg-amber-950/40 text-amber-300 border border-amber-800/40 font-mono text-[10px]">
+                        {char.class}
+                      </span>
+                    )}
+                    {char.age && <span class="text-slate-400">Age: {char.age}</span>}
+                  </div>
+                </div>
+                <p class="text-slate-300 leading-relaxed">{char.profile}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {overview.glossary && overview.glossary.length > 0 && (
+        <section class="space-y-3">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Lore & Terminology
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {overview.glossary.map((g: any) => (
+              <div class="p-4 rounded-lg bg-slate-850 border border-slate-800 space-y-1 text-xs">
+                <h3 class="font-serif font-bold text-gold-400 text-sm">{g.term}</h3>
+                <p class="text-slate-300 leading-relaxed">{g.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Primary Objectives (Walkthroughs) */}
+      {objectives && objectives.length > 0 && (
+        <div class="p-5 rounded-lg bg-slate-850 border border-slate-800 space-y-3">
+          <h2 class="text-sm font-serif font-semibold tracking-wide uppercase text-gold-500">
+            Primary Objectives
+          </h2>
+          <ul class="space-y-1.5 text-slate-200 text-sm">
+            {objectives.map((obj: string) => (
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-1">✓</span>
+                <span>{obj}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Route Progression */}
+      {route && route.length > 0 && (
+        <div class="p-5 rounded-lg bg-slate-850 border border-slate-800 space-y-3">
+          <h2 class="text-sm font-serif font-semibold tracking-wide uppercase text-gold-500">
+            Route Progression
+          </h2>
+          <div class="flex flex-wrap items-center gap-2 text-sm text-slate-300">
+            {route.map((step: string, idx: number) => (
+              <span class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-700/60 font-medium">
+                  {step}
+                </span>
+                {idx < route.length - 1 && <span class="text-slate-500">&rarr;</span>}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Initial Setup */}
+      {initialSetup && (
+        <div class="p-4 rounded-lg bg-slate-850 border border-slate-800 space-y-2 text-xs">
+          <h2 class="text-xs font-serif font-semibold tracking-wide uppercase text-gold-500">
+            Initial Party & Setup: {initialSetup.character}
+          </h2>
+          {initialSetup.note && <p class="text-slate-300">{initialSetup.note}</p>}
+          <div class="flex flex-wrap gap-2 pt-1">
+            {initialSetup.equipment?.map((eq: string) => (
+              <span class="px-2 py-0.5 rounded bg-slate-900 text-slate-300 border border-slate-700/50">
+                {eq} (Equipment)
+              </span>
+            ))}
+            {initialSetup.valuables?.map((v: string) => (
+              <span class="px-2 py-0.5 rounded bg-blue-950/40 text-blue-300 border border-blue-800/40">
+                {v} (Valuable)
+              </span>
+            ))}
+            {initialSetup.souls?.map((s: string) => (
+              <span class="px-2 py-0.5 rounded bg-purple-950/40 text-purple-300 border border-purple-800/40">
+                {s} (Soul)
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Obtainable Items */}
+      {itemsSummary?.obtainable && itemsSummary.obtainable.length > 0 && (
+        <section class="space-y-3">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Obtainable Items
+          </h2>
+          <div class="overflow-x-auto rounded-lg border border-slate-800 bg-slate-850">
+            <table class="w-full text-xs text-left">
+              <thead>
+                <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/60">
+                  <th class="py-2.5 px-3">Item Name</th>
+                  <th class="py-2.5 px-3">Category</th>
+                  <th class="py-2.5 px-3">Location</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800/60 text-slate-300">
+                {itemsSummary.obtainable.map((it: any) => (
+                  <tr class="hover:bg-slate-800/40">
+                    <td class="py-2 px-3 font-semibold text-emerald-400">{it.name}</td>
+                    <td class="py-2 px-3 font-mono text-slate-400 capitalize">{it.category}</td>
+                    <td class="py-2 px-3 text-slate-300">{it.location}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {/* Enemies */}
+      {enemies && enemies.length > 0 && (
+        <section class="space-y-3">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Area Enemies
+          </h2>
+          <div class="overflow-x-auto rounded-lg border border-slate-800 bg-slate-850">
+            <table class="w-full text-xs text-left">
+              <thead>
+                <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/60">
+                  <th class="py-2.5 px-3">#</th>
+                  <th class="py-2.5 px-3">Enemy Name</th>
+                  <th class="py-2.5 px-3">Class</th>
+                  <th class="py-2.5 px-3">HP</th>
+                  <th class="py-2.5 px-3">Notes</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800/60 text-slate-300">
+                {enemies.map((en: any) => (
+                  <tr class="hover:bg-slate-800/40">
+                    <td class="py-2 px-3 font-mono text-slate-400">{en.number || '—'}</td>
+                    <td class="py-2 px-3 font-semibold text-slate-200">
+                      {en.name}
+                      {en.is_boss && <span class="ml-1.5 px-1.5 py-0.5 rounded bg-rose-950/60 text-rose-300 text-[10px] font-mono border border-rose-800">BOSS</span>}
+                      {en.is_subboss && <span class="ml-1.5 px-1.5 py-0.5 rounded bg-amber-950/60 text-amber-300 text-[10px] font-mono border border-amber-800">SUB-BOSS</span>}
+                    </td>
+                    <td class="py-2 px-3 font-mono text-amber-400">{en.class || '—'}</td>
+                    <td class="py-2 px-3 font-mono text-slate-300">{en.hp ?? '—'}</td>
+                    <td class="py-2 px-3 text-slate-400">{en.notes || '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {/* Boss Encounters */}
+      {bosses && bosses.length > 0 && (
+        <section class="space-y-4">
+          <h2 class="text-xl font-serif font-bold text-rose-400 border-b border-slate-800 pb-2">
+            Boss Encounters
+          </h2>
+          <div class="space-y-4">
+            {bosses.map((b: any) => (
+              <div class="p-5 rounded-lg bg-rose-950/20 border border-rose-800/40 space-y-3">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <h3 class="text-lg font-serif font-bold text-slate-100">{b.name}</h3>
+                  <div class="flex items-center gap-3 text-xs font-mono">
+                    {b.exp && <span class="text-amber-300">EXP: {b.exp}</span>}
+                    {b.cash && <span class="text-gold-400">Cash: {b.cash}</span>}
+                  </div>
+                </div>
+                {b.enemies && (
+                  <div class="flex flex-wrap gap-2 text-xs">
+                    {b.enemies.map((be: any) => (
+                      <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300 font-mono">
+                        {be.name} (HP: {be.hp}, Class: {be.class}){be.drop ? ` — Drop: ${be.drop}` : ''}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                {b.strategy && (
+                  <div class="pt-2 text-xs text-slate-300 leading-relaxed space-y-1">
+                    <div class="font-semibold text-gold-400 uppercase tracking-wider font-mono">Strategy:</div>
+                    <p class="whitespace-pre-line">{b.strategy}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Shops */}
+      {shops && shops.length > 0 && (
+        <section class="space-y-3">
+          <h2 class="text-lg font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Shops & Merchants
+          </h2>
+          {shops.map((s: any) => (
+            <div class="space-y-2">
+              <h3 class="text-sm font-semibold text-gold-400">{s.name}</h3>
+              <div class="overflow-x-auto rounded-lg border border-slate-800 bg-slate-850">
+                <table class="w-full text-xs text-left">
+                  <thead>
+                    <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/60">
+                      <th class="py-2 px-3">Item</th>
+                      <th class="py-2 px-3">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-800/60 text-slate-300">
+                    {s.inventory?.map((inv: any) => (
+                      <tr class="hover:bg-slate-800/40">
+                        <td class="py-2 px-3 font-medium text-slate-200">{inv.name}</td>
+                        <td class="py-2 px-3 font-mono text-gold-400">{inv.price} Cash</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
+      {/* Steps List */}
+      {steps && steps.length > 0 && (
+        <section class="space-y-4">
+          <h2 class="text-xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2">
+            Walkthrough Steps
+          </h2>
+          <div class="space-y-3">
+            {steps.map((st: any) => {
+              const stepNum = st.step_number || st.id;
+              const text = st.description || st.instruction;
+              return (
+                <div class="p-4 rounded-lg bg-slate-850 border border-slate-800 flex items-start gap-3">
+                  <span class="font-mono text-xs px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800 mt-0.5 whitespace-nowrap">
+                    #{stepNum}
+                  </span>
+                  <div class="space-y-1.5 flex-1">
+                    {st.title && <h3 class="text-sm font-semibold text-slate-200">{st.title}</h3>}
+                    <p class="text-sm text-slate-300 leading-relaxed">{text}</p>
+                    {st.rewards && st.rewards.length > 0 && (
+                      <div class="pt-1.5 flex flex-wrap gap-2">
+                        {st.rewards.map((r: any) => {
+                          const rewardName = typeof r === 'string' ? r : r.name;
+                          return (
+                            <span class="text-xs px-2 py-0.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-800/40 font-mono">
+                              +{rewardName}
+                            </span>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {/* Fallback & Document Metadata */}
+      {overview.metadata && (
+        <section class="p-5 rounded-lg bg-slate-850 border border-slate-800 space-y-4 text-xs">
+          <h2 class="text-sm font-serif font-semibold tracking-wide uppercase text-gold-500">
+            Document Information
+          </h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-slate-300 font-mono">
+            {overview.metadata.author && <div><span class="text-slate-500 block">Author:</span> {overview.metadata.author}</div>}
+            {overview.metadata.version && <div><span class="text-slate-500 block">Version:</span> {overview.metadata.version}</div>}
+            {overview.metadata.last_updated && <div><span class="text-slate-500 block">Last Updated:</span> {overview.metadata.last_updated}</div>}
+            {overview.metadata.platform && <div><span class="text-slate-500 block">Platform:</span> {overview.metadata.platform}</div>}
+            {overview.metadata.region && <div><span class="text-slate-500 block">Region:</span> {overview.metadata.region}</div>}
+            {overview.metadata.type && <div><span class="text-slate-500 block">Guide Type:</span> {overview.metadata.type}</div>}
+          </div>
+        </section>
+      )}
+
+      {overview.purpose && (
+        <div class="p-5 rounded-lg bg-slate-850 border border-slate-800 space-y-2">
+          <h2 class="text-sm font-serif font-semibold tracking-wide uppercase text-gold-500">
+            Guide Purpose
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">{overview.purpose}</p>
+        </div>
+      )}
+
+      {overview.guide_scope && (
+        <div class="p-5 rounded-lg bg-slate-850 border border-slate-800 space-y-2">
+          <h2 class="text-sm font-serif font-semibold tracking-wide uppercase text-gold-500">
+            Guide Scope
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">{overview.guide_scope}</p>
         </div>
       )}
     </div>

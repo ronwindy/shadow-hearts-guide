@@ -96,36 +96,34 @@ export function getHeaderData(): HeaderData {
   return JSON.parse(raw);
 }
 
-export function getTocData(): TocData {
-  const filePath = path.join(SECTIONS_DIR, 'i-1-00-table-of-contents.json');
-  const raw = fs.readFileSync(filePath, 'utf-8');
-  const data: TocData = JSON.parse(raw);
-
-  // Cross-reference existing files in structured-content/sections
-  const files = fs.readdirSync(SECTIONS_DIR);
-
-  data.guide.overview.sections.forEach((cat) => {
+export function enrichTocCategories(categories: TocCategory[], files: string[]): TocCategory[] {
+  categories.forEach((cat) => {
     cat.entries.forEach((entry) => {
-      // Find matching structured file by code or id prefix
+      const cleanCode = entry.code.toLowerCase().replace(/\[|\]/g, '');
       const match = files.find((f) => {
         const lower = f.toLowerCase();
-        // check code in file name (e.g. w-1-01)
-        const cleanCode = entry.code.toLowerCase().replace(/\[|\]/g, '');
         return lower.startsWith(cleanCode);
       });
 
       if (match) {
         entry.has_structured = true;
-        // e.g. w-1-01-trans-siberian-express.json -> w-1-01
-        const cleanCode = entry.code.toLowerCase().replace(/\[|\]/g, '');
         entry.id = cleanCode;
       } else {
-        const cleanCode = entry.code.toLowerCase().replace(/\[|\]/g, '');
         entry.id = cleanCode;
         entry.has_structured = false;
       }
     });
   });
+  return categories;
+}
+
+export function getTocData(): TocData {
+  const filePath = path.join(SECTIONS_DIR, 'i-1-00-table-of-contents.json');
+  const raw = fs.readFileSync(filePath, 'utf-8');
+  const data: TocData = JSON.parse(raw);
+
+  const files = fs.readdirSync(SECTIONS_DIR);
+  enrichTocCategories(data.guide.overview.sections, files);
 
   return data;
 }
@@ -137,6 +135,9 @@ export function getAllStructuredSections(): Array<{ id: string; filename: string
     const filePath = path.join(SECTIONS_DIR, filename);
     const content = fs.readFileSync(filePath, 'utf-8');
     const data = JSON.parse(content);
+    if (data.guide?.overview?.sections) {
+      enrichTocCategories(data.guide.overview.sections, files);
+    }
     const id = data.guide?.id || filename.replace('.json', '');
     return { id, filename, data };
   });
