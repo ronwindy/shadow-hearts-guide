@@ -1,6 +1,6 @@
 ---
 import { getTocData } from '../lib/guideData';
-import { BookOpen, Compass, Castle, Scroll } from '@lucide/astro';
+import { BookOpen, Compass, Castle, Scroll, ChevronRight } from '@lucide/astro';
 
 interface Props {
   currentId?: string;
@@ -29,24 +29,37 @@ function getCategoryIcon(name: string) {
         <img
           src={`${baseUrl}/logo.png`}
           alt="Shadow Hearts Strategy Guide"
-          class="w-full h-auto max-h-14 object-contain mx-auto transition-transform duration-200 group-hover:scale-105"
+          class="w-full h-auto max-h-12 object-contain mx-auto transition-transform duration-200 group-hover:scale-105"
         />
       </a>
     </div>
   )}
 
   <!-- Chapters Scroll Area -->
-  <div class="flex-1 min-h-0 overflow-y-auto p-3 space-y-5 text-sm text-slate-300 custom-scrollbar overscroll-contain" id={isMobileDrawer ? 'mobile-sidebar-list' : 'sidebar-list'}>
-    {categories.map((cat) => {
+  <div class="flex-1 min-h-0 overflow-y-auto p-3 space-y-3 text-sm text-slate-300 custom-scrollbar overscroll-contain" id={isMobileDrawer ? 'mobile-sidebar-list' : 'sidebar-list'}>
+    {categories.map((cat, idx) => {
       const CatIcon = getCategoryIcon(cat.category);
-      return (
-        <div class="sidebar-category space-y-1.5">
-          <div class="text-xs font-serif font-semibold text-slate-400 uppercase tracking-wider px-2 py-1 flex items-center gap-1.5">
-            <CatIcon class="w-3.5 h-3.5 text-gold-400/80 flex-shrink-0" />
-            <span>{cat.category}</span>
-          </div>
+      const hasActiveEntry = cat.entries.some((entry) => entry.id === currentId);
+      // Auto-expand category if it contains the active entry, or expand the first category on home/toc pages
+      const isOpenByDefault = hasActiveEntry || (!currentId && idx === 0);
 
-          <ul class="space-y-0.5 border-l border-slate-800/70 ml-2 pl-2">
+      return (
+        <details
+          class="sidebar-category group rounded-lg transition-colors"
+          open={isOpenByDefault}
+          data-category-id={cat.category}
+        >
+          <summary class="list-none flex items-center justify-between cursor-pointer px-2 py-1.5 rounded-lg text-slate-300 hover:text-gold-300 hover:bg-slate-800/50 transition-colors focus:outline-none">
+            <div class="flex items-center gap-2 min-w-0">
+              <CatIcon class="w-3.5 h-3.5 text-gold-400 flex-shrink-0" />
+              <span class="text-xs font-serif font-bold uppercase tracking-wider text-slate-200 group-hover:text-gold-300 truncate">
+                {cat.category}
+              </span>
+            </div>
+            <ChevronRight class="w-3.5 h-3.5 text-slate-400 transition-transform duration-200 group-open:rotate-90 flex-shrink-0" />
+          </summary>
+
+          <ul class="mt-1 space-y-0.5 pl-2.5 border-l border-slate-800/80 ml-3 py-1">
             {cat.entries.map((entry) => {
               const isActive = entry.id === currentId;
               const isAvailable = entry.has_structured;
@@ -79,7 +92,7 @@ function getCategoryIcon(name: string) {
               );
             })}
           </ul>
-        </div>
+        </details>
       );
     })}
   </div>
@@ -95,6 +108,33 @@ function getCategoryIcon(name: string) {
     }
   }
 
+  function initAccordionState(listId: string) {
+    const list = document.getElementById(listId);
+    if (!list) return;
+    const detailsElements = list.querySelectorAll<HTMLDetailsElement>('details.sidebar-category');
+
+    detailsElements.forEach((details) => {
+      const catId = details.getAttribute('data-category-id');
+      const hasActive = details.querySelector('[data-active="true"]');
+      if (hasActive) {
+        details.open = true;
+      } else if (catId) {
+        const stored = sessionStorage.getItem(`sidebar-cat-${catId}`);
+        if (stored !== null) {
+          details.open = stored === 'true';
+        }
+      }
+
+      details.addEventListener('toggle', () => {
+        if (catId) {
+          sessionStorage.setItem(`sidebar-cat-${catId}`, String(details.open));
+        }
+      });
+    });
+  }
+
+  initAccordionState('sidebar-list');
+  initAccordionState('mobile-sidebar-list');
   autoScrollActiveItem('sidebar-list');
   autoScrollActiveItem('mobile-sidebar-list');
 </script>
