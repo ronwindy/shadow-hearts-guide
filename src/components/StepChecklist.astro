@@ -1,5 +1,6 @@
 ---
 import BossCard from './BossCard.astro';
+import { renderInlineMarkup } from '../lib/markup';
 import {
   Swords,
   Gem,
@@ -128,7 +129,7 @@ function getStepTypeMeta(type: string = 'exploration') {
 
             <!-- Instruction Text -->
             <p class="step-content text-base text-slate-200 leading-relaxed">
-              {text}
+              <Fragment set:html={renderInlineMarkup(text)} />
             </p>
 
             <!-- Encounters (Only if not already displayed in a rich BossCard) -->
@@ -175,7 +176,9 @@ function getStepTypeMeta(type: string = 'exploration') {
                       <Zap class="w-4 h-4 text-amber-400 flex-shrink-0" />
                       <span>{n.title || 'Tactical Note'}</span>
                     </h4>
-                    <p class="leading-relaxed opacity-90">{n.text}</p>
+                    <p class="leading-relaxed opacity-90">
+                      <Fragment set:html={renderInlineMarkup(n.text)} />
+                    </p>
                   </div>
                 ))}
               </div>

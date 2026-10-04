@@ -71,3 +71,26 @@
   opacity: 0.6;
 }
 
+/* Highlighted key terms (items, places, concepts, mechanics) */
+.highlight-term {
+  color: #f8fafc;
+  font-weight: 600;
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.45);
+  padding-bottom: 1px;
+  transition: all 0.15s ease-in-out;
+}
+
+.highlight-term:hover {
+  color: #fef08a;
+  border-bottom-color: rgba(212, 175, 55, 0.85);
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.25);
+}
+
+.step-content.line-through .highlight-term,
+.step-item:has(.step-checkbox:checked) .highlight-term {
+  border-bottom-color: transparent;
+  color: inherit;
+  text-decoration: line-through;
+}
+
+

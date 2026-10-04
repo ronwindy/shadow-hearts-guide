@@ -518,11 +518,12 @@ Check for:
 - inaccessible controls
 - broken checkboxes
 - incorrect heading hierarchy
+- lack of entity highlighting (items, locations, enemies, or mechanics buried in unbroken prose without visual emphasis)
 - unusable tables
 - broken images
 - missing icons where they carry meaning
 
-Visual polish is secondary to content correctness, but a visually inaccessible guide is still a quality problem.
+Visual polish is secondary to content correctness, but a visually inaccessible guide is still a quality problem. Key gameplay entities (items, locations, and mechanics) must be emphasized to allow quick scanning during gameplay.
 
 ### Integration with `frontend-expert` Skill
 

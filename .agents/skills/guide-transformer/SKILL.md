@@ -319,7 +319,28 @@ A checklist should improve usability, not mechanically convert all prose into bo
 
 ---
 
-## 10. Routes and Navigation
+## 10. Entity Highlighting in Walkthrough Content (Items, Places, Concepts)
+
+To make step descriptions, tactical notes, and boss strategies instantly scannable during active gameplay, systematically emphasize key entities using Markdown bold (`**...**`) or inline code (`` `...` ``):
+
+1. **Items, Equipment, Valuables & Souls**:
+   - Bold item names whenever referenced in instructions or rewards: `**Angel's Feather**`, `**Bronze Arrowhead**`, `**Thera Leaf**`, `**Snake Card**`.
+2. **Locations, Destinations & Navigation Targets**:
+   - Bold places, screens, and waypoints: `**World Map**`, `**Plains**`, `**first area of town**`, `**Save Point**`, `**Graveyard**`.
+3. **Key Concepts, Mechanics & Status Conditions**:
+   - Bold game-specific mechanics and battle conditions: `**Judgment Ring**`, `**Malice**`, `**Berserk**`, `**Hit Area**`, `**WATER class**`.
+4. **Enemies, Bosses & Named NPCs**:
+   - Bold encounter targets and key characters: `**Wind Shears**`, `**Roger Bacon**`, `**Yamaraja: Earth**`, `**Master Li Zhuzhen**`.
+5. **Controller Inputs & Prompts**:
+   - Use inline code or bold for controller buttons: `` `CROSS` `` or `**CROSS button**`.
+
+**Example:**
+- *Unfocused:* "Use the Save Point in the center of town near the well to save your game and clear Malice in the Graveyard if needed. Check around the right side of the well by a board on the ground to find a Tent."
+- *Focused:* "Use the **Save Point** in the center of town near the well to save your game and clear **Malice** in the **Graveyard** if needed. Check around the right side of the well by a board on the ground to find a **Tent**."
+
+---
+
+## 11. Routes and Navigation
 
 The Transformer may identify routes when the source describes movement between locations.
 

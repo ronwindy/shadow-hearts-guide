@@ -28,7 +28,7 @@
     },
     "initial_setup": {
       "character": "The Rude Hero",
-      "note": "The Rude Hero comes equipped with Leather Gloves, a Cotton Shirt, and the Death Emperor soul by default, as well as the Talisman valuable.",
+      "note": "The Rude Hero comes equipped with **Leather Gloves**, a **Cotton Shirt**, and the **Death Emperor** soul by default, as well as the **Talisman** valuable.",
       "equipment": [
         "Leather Gloves",
         "Cotton Shirt"
@@ -48,9 +48,9 @@
     ],
     "objectives": [
       "Proceed forward through the train cars to the front",
-      "Defeat the Wind Shears in the first battle",
-      "Survive the confrontation with Roger Bacon",
-      "Exit to the World Map and proceed to the Plains"
+      "Defeat the **Wind Shears** in the first battle",
+      "Survive the confrontation with **Roger Bacon**",
+      "Exit to the **World Map** and proceed to the **Plains**"
     ],
     "items_summary": {
       "obtainable": [
@@ -113,13 +113,13 @@
       },
       {
         "id": 2,
-        "description": "Head down to the next train car and move a little bit further to trigger the first battle against a couple of Wind Shears.",
+        "description": "Head down to the next train car and move a little bit further to trigger the first battle against a couple of **Wind Shears**.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 3,
-        "description": "Defeat the couple of Wind Shears (#001 Wind Shear, HP: 10, Class: Wind).",
+        "description": "Defeat the couple of **Wind Shears** (#001 Wind Shear, HP: 10, Class: Wind).",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -130,14 +130,14 @@
           {
             "type": "tutorial",
             "title": "Judgment Ring Mechanics",
-            "text": "Shadow Hearts' battle system is very unique, actually requiring a little bit of skill. Press the CROSS button within the highlighted areas on the Judgment Ring for successful attacks. Once you get used to the system more, feel free to try to time your attacks just right to succeed in more critical attacks in the smaller red area. If you miss though, you miss an attack completely."
+            "text": "Shadow Hearts' battle system is very unique, actually requiring a little bit of skill. Press the `CROSS` button within the highlighted areas on the **Judgment Ring** for successful attacks. Once you get used to the system more, feel free to try to time your attacks just right to succeed in more critical attacks in the smaller **red area**. If you miss though, you miss an attack completely."
           }
         ],
         "rewards": []
       },
       {
         "id": 4,
-        "description": "Examine the body in the aisle after taking out the Wind Shears.",
+        "description": "Examine the body in the aisle after taking out the Wind Shears to obtain a **Thera Leaf**.",
         "type": "loot",
         "rewards": [
           {
@@ -149,7 +149,7 @@
       },
       {
         "id": 5,
-        "description": "Examine the body lying in the booth.",
+        "description": "Examine the body lying in the booth to obtain a **Mana Leaf**.",
         "type": "loot",
         "rewards": [
           {
@@ -161,13 +161,13 @@
       },
       {
         "id": 6,
-        "description": "Head into the next train car and proceed to the front to trigger story events and enter battle with Roger Bacon.",
+        "description": "Head into the next train car and proceed to the front to trigger story events and enter battle with **Roger Bacon**.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 7,
-        "description": "Battle Roger Bacon (Class: Dark).",
+        "description": "Battle **Roger Bacon** (Class: Dark).",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -178,26 +178,26 @@
           {
             "type": "warning",
             "title": "Un-winnable Battle",
-            "text": "It's impossible to win this battle, so feel free to just wail away at him, practicing your Judgment Ring until he uses Revelation to end the battle."
+            "text": "It's impossible to win this battle, so feel free to just wail away at him, practicing your **Judgment Ring** until he uses **Revelation** to end the battle."
           }
         ],
         "rewards": []
       },
       {
         "id": 8,
-        "description": "Watch events following the battle to transition to the World Map.",
+        "description": "Watch events following the battle to transition to the **World Map**.",
         "type": "story",
         "rewards": []
       },
       {
         "id": 9,
-        "description": "On the World Map, you may save your game (you can always save on the World Map), then proceed to the only available destination: Plains.",
+        "description": "On the **World Map**, you may save your game (you can always save on the World Map), then proceed to the only available destination: **Plains**.",
         "type": "navigation",
         "notes": [
           {
             "type": "tip",
             "title": "World Map Saving",
-            "text": "Feel free to save out here if you like; you'll always be able to save your game on the World Map."
+            "text": "Feel free to save out here if you like; you'll always be able to save your game on the **World Map**."
           }
         ],
         "rewards": []

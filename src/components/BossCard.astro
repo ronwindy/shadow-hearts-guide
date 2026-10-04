@@ -1,4 +1,5 @@
 ---
+import { renderInlineMarkup } from '../lib/markup';
 import {
   Skull,
   Swords,
@@ -142,7 +143,7 @@ const isSubBoss = boss.type?.toUpperCase().includes('SUB-BOSS');
         <span>Tactical Strategy & Advice</span>
       </h4>
       <p class="text-base text-slate-200 leading-relaxed whitespace-pre-line">
-        {boss.strategy}
+        <Fragment set:html={renderInlineMarkup(boss.strategy)} />
       </p>
     </div>
   )}
