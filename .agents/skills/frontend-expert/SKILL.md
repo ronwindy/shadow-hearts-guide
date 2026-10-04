@@ -80,8 +80,8 @@ When reviewing any page or when invoked by QA, evaluate against this 5-point rub
   - Judgment Ring & Mechanics callouts feature antique gold borders with clock/ring motifs.
 - [ ] **Typography**:
   - Headings: Gothic / Classical Serif (`Cinzel`, `Trajan Pro`).
-  - Body: Clean readable sans-serif (`Jost`, `Inter`, `system-ui`).
-  - Numbers / Stats: High-legibility monospaced font (`JetBrains Mono`).
+  - Body & UI: Clean readable sans-serif (`Jost`, `Inter`, `system-ui`).
+  - Numbers / Stats / Badges: High-legibility modern sans-serif (`Jost`).
 
 ### 4. Typography & Readability
 - [ ] **No microscopic text**: Body copy and descriptions must be at least `text-sm` (14px) or `text-base` (16px). Avoid unreadable `text-[10px]` or `text-[11px]` except for purely decorative or badge tags.

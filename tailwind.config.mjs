@@ -36,7 +36,7 @@ export default {
       fontFamily: {
         serif: ['Grenze', 'Georgia', 'serif'],
         sans: ['Jost', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['JetBrains Mono', 'Fira Code', 'Courier New', 'monospace'],
+        mono: ['Jost', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       fontSize: {
         '2xs': ['0.75rem', { lineHeight: '1.1rem' }],

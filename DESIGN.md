@@ -54,8 +54,8 @@ The palette balances dark gothic aesthetics with strict WCAG AA contrast standar
   - Evokes classical occult manuscripts, PlayStation 2 title aesthetics, and gothic architecture.
 - **Body Font**: `'Inter', system-ui, -apple-system, sans-serif`
   - High legibility across desktop, tablet, and mobile screens.
-- **Monospace Font**: `'JetBrains Mono', 'Fira Code', 'Courier New', monospace`
-  - Used for Section Codes (`[W-1-01]`), stats, numerical data, and formatting notes.
+- **Accent / Numbers Font**: `'Jost', 'Inter', system-ui, sans-serif`
+  - High legibility clean sans-serif used for stats, numerical data, badges, and controls.
 
 ### Scale
 - **H1 (Page Title)**: `2.25rem` (36px) — Bold / Semibold, tracking-tight, gold accent
