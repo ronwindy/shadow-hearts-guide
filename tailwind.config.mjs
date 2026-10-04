@@ -34,7 +34,7 @@ export default {
         'gothic-card': '0 4px 20px -2px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.05)',
       },
       fontFamily: {
-        serif: ['Cinzel', 'Trajan Pro', 'Georgia', 'serif'],
+        serif: ['Grenze', 'Georgia', 'serif'],
         sans: ['Jost', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['JetBrains Mono', 'Fira Code', 'Courier New', 'monospace'],
       },
