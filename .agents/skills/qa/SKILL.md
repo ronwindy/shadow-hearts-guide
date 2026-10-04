@@ -280,6 +280,24 @@ The QA question is:
 
 > **Did the presentation change the meaning of the sequence?**
 
+### 9.1 Chronological Encounter Integrity & Spoiler Prevention
+
+In narrative RPG guides, major boss battles, story climaxes, and late-chapter tactical advice must **not** be prematurely hoisted into pre-walkthrough overview sections (above items, objectives, or shops).
+
+Hoisting boss tactics to the top creates severe spoilers for blind playthroughs.
+
+QA must verify:
+- Boss cards and battle strategies appear **chronologically within the walkthrough step** where the encounter actually occurs.
+- Overview tables (e.g., enemy rosters) may list baseline stats (HP, class), but must **not** reveal end-of-chapter battle strategies, party gear recommendations, or boss outcome dialogue before the player reaches that step.
+- Both major bosses and sub-bosses follow a consistent, chronological presentation rather than hoisting one while burying another.
+
+### 9.2 Redundancy & Duplication Verification
+
+QA must verify that guide content is not needlessly duplicated across sections:
+- Tactical advice should appear in a single authoritative location (ideally within the step's encounter card).
+- Check that the same strategy paragraph is not copied verbatim into both a top overview card and an inline step note.
+- Checklists and step descriptions should remain clean, concise, and mutually non-redundant.
+
 ---
 
 ## 10. Conditions and Prerequisites
@@ -879,6 +897,9 @@ A guide can be considered QA-approved when:
 - [ ] Objectives and steps are not misleading
 - [ ] Optional content is correctly represented
 - [ ] Rewards/items are correctly represented
+- [ ] Boss and sub-boss encounters appear chronologically within their matching walkthrough steps
+- [ ] No premature tactical or boss spoilers hoisted into pre-walkthrough overviews
+- [ ] No duplicate strategy text or notes between overview components and checklist steps
 
 ### Presentation
 

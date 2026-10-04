@@ -220,6 +220,10 @@ def compute_project_status(root: Path) -> Dict[str, Any]:
             "reason": "Static site generator skeleton has not been initialized yet."
         })
 
+    # GitHub Pages status check
+    gh_workflow = root / ".github" / "workflows" / "deploy.yml"
+    gh_configured = gh_workflow.exists()
+
     # Overall percentage
     canonical_pct = (canonical_count / total_sections * 100) if total_sections else 0
     structured_pct = (structured_count / total_sections * 100) if total_sections else 0
@@ -247,7 +251,7 @@ def compute_project_status(root: Path) -> Dict[str, Any]:
             "qa_framework": "READY (verify_guide.py operational)",
             "web_builder": "READY (Astro static site operational)" if astro_initialized else "PENDING (Astro site not yet initialized)",
             "frontend_expert": "READY (3-section layout, UX review & audit script operational)",
-            "github_pages": "PENDING (Workflow not configured)"
+            "github_pages": "READY (deploy.yml workflow configured)" if gh_configured else "PENDING (Workflow not configured)"
         },
         "active_milestone": "Milestone 2: Asia Walkthrough Content Transformation",
         "next_priorities": next_priorities,
@@ -311,7 +315,8 @@ def generate_status_markdown(data: Dict[str, Any]) -> str:
     web_status_icon = ":white_check_mark:" if "READY" in infra['web_builder'] else ":hourglass_flowing_sand:"
     lines.append(f"| **Web Builder** | {web_status_icon} | {infra['web_builder']} |")
     lines.append(f"| **Frontend Expert** | :white_check_mark: | {infra['frontend_expert']} |")
-    lines.append(f"| **GitHub Pages** | :hourglass_flowing_sand: | {infra['github_pages']} |")
+    gh_status_icon = ":white_check_mark:" if "READY" in infra['github_pages'] else ":hourglass_flowing_sand:"
+    lines.append(f"| **GitHub Pages** | {gh_status_icon} | {infra['github_pages']} |")
     lines.append("")
     lines.append("---")
     lines.append("")

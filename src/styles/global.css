@@ -23,7 +23,12 @@
   }
 }
 
-/* Custom Scrollbar for Desktop */
+/* Custom Scrollbar for Desktop & Cross-browser */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #1e2638 #080a10;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;

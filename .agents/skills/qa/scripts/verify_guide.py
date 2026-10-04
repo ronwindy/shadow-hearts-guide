@@ -148,6 +148,41 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
             if not g_b.get("strategy"):
                 add_finding("medium", "missing information", f"bosses[{idx}].strategy", "Strategy present", "Empty strategy", "Missing boss battle strategy")
 
+    # 4b. Boss Step Mapping & Redundancy Check (Chronological Flow & Spoiler Prevention)
+    all_steps = guide.get("steps", [])
+    step_encounter_names = set()
+    step_boss_names = set()
+    for s in all_steps:
+        for en in s.get("encounter", {}).get("enemies", []):
+            step_encounter_names.add(normalize_name(en))
+        if s.get("boss", {}).get("name"):
+            step_boss_names.add(normalize_name(s["boss"]["name"]))
+            for en in s["boss"].get("enemies", []):
+                step_boss_names.add(normalize_name(en.get("name", "")))
+
+    for b in g_bosses:
+        b_norm = normalize_name(b.get("name", ""))
+        # Check if mapped to a step
+        if b_norm not in step_encounter_names and b_norm not in step_boss_names:
+            add_finding(
+                "medium", "structural fidelity", f"bosses[{b.get('name')}]",
+                b.get("name"), "Not mapped to any walkthrough step",
+                f"Boss '{b.get('name')}' is defined in bosses overview but is not mapped to any walkthrough step."
+            )
+
+        # Check for verbatim duplicate strategy in step notes
+        b_strat = (b.get("strategy") or "").strip()
+        if b_strat:
+            for s in all_steps:
+                for n in s.get("notes", []):
+                    n_text = (n.get("text") or "").strip()
+                    if len(b_strat) > 30 and (b_strat in n_text or n_text in b_strat):
+                        add_finding(
+                            "medium", "redundancy / duplication", f"steps[{s.get('id')}].notes",
+                            "Duplicate strategy text", "Strategy present in both boss card and step note",
+                            f"Step {s.get('id')} note duplicates the boss battle strategy for '{b.get('name')}'. Strategy should be in a single location."
+                        )
+
     # 5. Shops Check
     c_shops = canonical.get("shops", [])
     g_shops = guide.get("shops", [])

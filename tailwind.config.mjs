@@ -35,7 +35,7 @@ export default {
       },
       fontFamily: {
         serif: ['Cinzel', 'Trajan Pro', 'Georgia', 'serif'],
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Jost', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['JetBrains Mono', 'Fira Code', 'Courier New', 'monospace'],
       },
     },

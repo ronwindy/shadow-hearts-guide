@@ -1,6 +1,6 @@
 # Shadow Hearts Guide Converter — Project Status
 
-> **Last Synced:** `2026-10-04 14:31:53` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
+> **Last Synced:** `2026-10-04 15:16:06` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
 
 ## 1. Quick Orientation (Agent Context)
 
@@ -31,7 +31,7 @@ Web Pages Built:    [##----------------------] 8.7% (6/69)
 | **QA Verifier** | :white_check_mark: | READY (verify_guide.py operational) |
 | **Web Builder** | :white_check_mark: | READY (Astro static site operational) |
 | **Frontend Expert** | :white_check_mark: | READY (3-section layout, UX review & audit script operational) |
-| **GitHub Pages** | :hourglass_flowing_sand: | PENDING (Workflow not configured) |
+| **GitHub Pages** | :white_check_mark: | READY (deploy.yml workflow configured) |
 
 ---
 

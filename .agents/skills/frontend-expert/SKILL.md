@@ -76,7 +76,7 @@ When reviewing any page or when invoked by QA, evaluate against this 5-point rub
   - Judgment Ring & Mechanics callouts feature antique gold borders with clock/ring motifs.
 - [ ] **Typography**:
   - Headings: Gothic / Classical Serif (`Cinzel`, `Trajan Pro`).
-  - Body: Clean readable sans-serif (`Inter`, `system-ui`).
+  - Body: Clean readable sans-serif (`Jost`, `Inter`, `system-ui`).
   - Numbers / Stats: High-legibility monospaced font (`JetBrains Mono`).
 
 ### 4. Typography & Readability

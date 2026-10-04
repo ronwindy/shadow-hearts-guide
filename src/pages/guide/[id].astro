@@ -51,14 +51,11 @@ if (itemsSummary?.obtainable && itemsSummary.obtainable.length > 0) {
 if (enemies && enemies.length > 0) {
   pageSections.push({ id: 'enemies', label: 'Area Enemies', count: enemies.length });
 }
-if (bosses && bosses.length > 0) {
-  pageSections.push({ id: 'bosses', label: 'Boss Encounters', count: bosses.length });
+if (shops && shops.length > 0) {
+  pageSections.push({ id: 'shops', label: 'Shops & Merchants', count: shops.length });
 }
 if (steps && steps.length > 0) {
   pageSections.push({ id: 'steps', label: 'Walkthrough Steps', count: steps.length });
-}
-if (shops && shops.length > 0) {
-  pageSections.push({ id: 'shops', label: 'Shops & Merchants', count: shops.length });
 }
 if (overview.sections && overview.sections.length > 0) {
   pageSections.push({ id: 'toc-index', label: 'Guide Directory' });
@@ -102,7 +99,7 @@ if (overview.metadata) {
   <!-- 3-Section Layout Container -->
   <div class="flex gap-6 lg:gap-8 items-start relative">
     <!-- Left Sidebar: Global Chapter Navigation (Desktop >= lg) -->
-    <div class="hidden lg:block w-64 xl:w-72 flex-shrink-0 sticky top-20 max-h-[calc(100vh-6rem)] rounded-xl border border-slate-800/80 bg-obsidian/80 backdrop-blur shadow-sm overflow-hidden">
+    <div class="hidden lg:flex flex-col w-64 xl:w-72 flex-shrink-0 sticky top-20 h-[calc(100vh-6rem)] rounded-xl border border-slate-800/80 bg-obsidian/80 backdrop-blur shadow-sm overflow-hidden">
       <SidebarNav currentId={guide.id || ''} />
     </div>
 
@@ -537,22 +534,6 @@ if (overview.metadata) {
           </section>
         )}
 
-        {/* Boss Encounters */}
-        {bosses && bosses.length > 0 && (
-          <section id="bosses" class="space-y-4">
-            <div class="border-b border-rose-900/50 pb-2">
-              <h2 class="text-xl font-serif font-bold text-rose-400 flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-rose-500 shadow-crimson-glow"></span>
-                Boss Encounters
-              </h2>
-            </div>
-            <div class="space-y-4">
-              {bosses.map((b: any) => (
-                <BossCard boss={b} />
-              ))}
-            </div>
-          </section>
-        )}
 
         {/* Shops */}
         {shops && shops.length > 0 && (
@@ -599,7 +580,7 @@ if (overview.metadata) {
               </h2>
               <span class="text-xs font-mono text-slate-400">{steps.length} steps &bull; Click to track</span>
             </div>
-            <StepChecklist guideId={guide.id || guide.code} steps={steps} />
+            <StepChecklist guideId={guide.id || guide.code} steps={steps} bosses={bosses} />
           </section>
         )}
 

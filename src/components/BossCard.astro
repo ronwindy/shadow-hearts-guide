@@ -6,11 +6,18 @@ interface BossEnemy {
   drop?: string;
 }
 
+interface BossPartyMember {
+  name: string;
+  level?: number | string;
+}
+
 interface BossData {
+  type?: string;
   name: string;
   exp?: number | string;
   cash?: number | string;
   enemies?: BossEnemy[];
+  party?: BossPartyMember[];
   strategy?: string;
 }
 
@@ -19,17 +26,30 @@ interface Props {
 }
 
 const { boss } = Astro.props;
+const isSubBoss = boss.type?.toUpperCase().includes('SUB-BOSS');
 ---
 
-<div class="boss-card relative rounded-xl border border-rose-900/50 bg-gradient-to-b from-rose-950/20 via-slate-900/90 to-obsidian p-5 sm:p-6 space-y-4 shadow-gothic-card overflow-hidden">
+<div class={`boss-card relative rounded-xl border p-5 sm:p-6 space-y-4 shadow-gothic-card overflow-hidden ${
+  isSubBoss
+    ? 'border-amber-900/50 bg-gradient-to-b from-amber-950/20 via-slate-900/90 to-obsidian'
+    : 'border-rose-900/50 bg-gradient-to-b from-rose-950/20 via-slate-900/90 to-obsidian'
+}`}>
   <!-- Thematic ambient glow -->
-  <div class="absolute -top-12 -right-12 w-48 h-48 bg-rose-600/10 rounded-full blur-2xl pointer-events-none"></div>
+  <div class={`absolute -top-12 -right-12 w-48 h-48 rounded-full blur-2xl pointer-events-none ${
+    isSubBoss ? 'bg-amber-600/10' : 'bg-rose-600/10'
+  }`}></div>
 
   <!-- Header -->
-  <div class="relative z-10 flex flex-wrap items-baseline justify-between gap-3 border-b border-rose-900/40 pb-3">
+  <div class={`relative z-10 flex flex-wrap items-baseline justify-between gap-3 border-b pb-3 ${
+    isSubBoss ? 'border-amber-900/40' : 'border-rose-900/40'
+  }`}>
     <div class="flex items-center gap-2.5">
-      <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider bg-rose-950 text-rose-300 border border-rose-800">
-        BOSS ENCOUNTER
+      <span class={`px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider border ${
+        isSubBoss
+          ? 'bg-amber-950 text-amber-300 border-amber-800'
+          : 'bg-rose-950 text-rose-300 border-rose-800'
+      }`}>
+        {boss.type || 'BOSS ENCOUNTER'}
       </span>
       <h3 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 tracking-wide">
         {boss.name}
@@ -50,6 +70,18 @@ const { boss } = Astro.props;
       )}
     </div>
   </div>
+
+  <!-- Recommended Party -->
+  {boss.party && boss.party.length > 0 && (
+    <div class="relative z-10 flex flex-wrap items-center gap-2 text-xs">
+      <span class="font-mono text-slate-400 text-[11px] font-semibold">Recommended Party:</span>
+      {boss.party.map((p) => (
+        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-700/80 font-mono text-slate-200 text-xs">
+          🛡️ {p.name} {p.level ? `[Lv ${p.level}]` : ''}
+        </span>
+      ))}
+    </div>
+  )}
 
   <!-- Enemy Units Block -->
   {boss.enemies && boss.enemies.length > 0 && (
