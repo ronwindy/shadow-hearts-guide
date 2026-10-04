@@ -31,7 +31,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
       <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-crimson-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="relative z-10 max-w-3xl space-y-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-gold-500/10 text-gold-400 border border-gold-500/30">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-sm font-mono font-medium bg-gold-500/10 text-gold-400 border border-gold-500/30">
           <span>{meta.platform}</span>
           <span>&bull;</span>
           <span>{meta.region}</span>
@@ -83,11 +83,11 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         </p>
         
         {callouts.map((callout) => (
-          <div class="mt-4 p-4 rounded-lg bg-blue-950/30 border border-blue-800/40 text-sm text-blue-200 flex items-start gap-3">
+          <div class="mt-4 p-4 rounded-lg bg-blue-950/30 border border-blue-800/40 text-sm sm:text-base text-blue-200 flex items-start gap-3">
             <Info class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
             <div>
               <strong class="font-semibold block text-blue-100">{callout.title}</strong>
-              <p class="text-xs text-blue-200/90 mt-0.5">{callout.text}</p>
+              <p class="text-sm text-blue-200/90 mt-0.5">{callout.text}</p>
             </div>
           </div>
         ))}
@@ -98,7 +98,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
           <FileText class="w-5 h-5 text-purple-400" />
           <span>Original Source Metadata</span>
         </h2>
-        <dl class="space-y-3 text-xs sm:text-sm">
+        <dl class="space-y-3 text-sm sm:text-base">
           <div class="flex justify-between border-b border-slate-800 pb-2">
             <dt class="text-slate-400">Author</dt>
             <dd class="text-slate-200 font-medium">{meta.author}</dd>
@@ -118,7 +118,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
           {meta.contact_email && (
             <div class="flex justify-between border-b border-slate-800 pb-2">
               <dt class="text-slate-400">Contact</dt>
-              <dd class="text-slate-200 font-mono text-[11px] truncate max-w-[150px]">{meta.contact_email}</dd>
+              <dd class="text-slate-200 font-mono text-xs truncate max-w-[150px]">{meta.contact_email}</dd>
             </div>
           )}
         </dl>
@@ -132,11 +132,11 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
           <h2 class="text-2xl font-serif font-bold text-slate-100">
             Guide Directory & Chapters
           </h2>
-          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+          <p class="text-sm sm:text-base text-slate-400 mt-1">
             Browse all 69 guide sections across the 4 main progression arcs.
           </p>
         </div>
-        <a href={`${baseUrl}/toc`} class="inline-flex items-center gap-1 text-xs sm:text-sm font-medium text-gold-500 hover:text-gold-400 transition-colors">
+        <a href={`${baseUrl}/toc`} class="inline-flex items-center gap-1 text-sm sm:text-base font-medium text-gold-500 hover:text-gold-400 transition-colors">
           <span>View full index</span>
           <ArrowRight class="w-3.5 h-3.5" />
         </a>
