@@ -210,7 +210,7 @@
             "properties": {
               "number": { "type": ["string", "null"] },
               "name": { "type": "string" },
-              "hp": { "type": ["integer", "null"] },
+              "hp": { "type": ["integer", "string", "null"] },
               "class": { "type": ["string", "null"] },
               "is_boss": { "type": "boolean" },
               "is_subboss": { "type": "boolean" },

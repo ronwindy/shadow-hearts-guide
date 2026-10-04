@@ -21,9 +21,9 @@ import argparse
 from typing import Dict, List, Any, Optional, Tuple
 
 
-def normalize_name(name: str) -> str:
+def normalize_name(name: Any) -> str:
     """Normalizes item/entity names for comparison (strips punctuation and whitespace)."""
-    return re.sub(r'[^a-z0-9]', '', name.lower())
+    return re.sub(r'[^a-z0-9]', '', str(name or '').lower())
 
 
 def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[str, Any]:

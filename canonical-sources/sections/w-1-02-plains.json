@@ -34,7 +34,7 @@
     ],
     "items": [
       "Pure Leaf",
-      "Thera Leaf              have one",
+      "Thera Leaf",
       "Mermaid's Tear",
       "Mana Seed",
       "Thera Seed",
@@ -58,7 +58,7 @@
   },
   "items": [
     "Pure Leaf",
-    "Thera Leaf              have one",
+    "Thera Leaf",
     "Mermaid's Tear",
     "Mana Seed",
     "Thera Seed",
@@ -156,8 +156,40 @@
       "notes": "Graveyard Malice"
     }
   ],
-  "bosses": [],
-  "boss": null,
+  "bosses": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Raging Tiger",
+      "enemies": [
+        {
+          "name": "Raging Tiger",
+          "hp": 75,
+          "class": "Earth",
+          "drop": null
+        }
+      ],
+      "party": [],
+      "exp": null,
+      "cash": null,
+      "strategy": "Hey, we can win this one! Go ahead and use Yuri's Fusion skill to become\nthe Death Emperor, then use normal attacks to wipe out the Raging Tiger.\nHe's not tough at all, and should take just a couple turns to take out."
+    }
+  ],
+  "boss": {
+    "type": "SUB-BOSS",
+    "name": "Raging Tiger",
+    "enemies": [
+      {
+        "name": "Raging Tiger",
+        "hp": 75,
+        "class": "Earth",
+        "drop": null
+      }
+    ],
+    "party": [],
+    "exp": null,
+    "cash": null,
+    "strategy": "Hey, we can win this one! Go ahead and use Yuri's Fusion skill to become\nthe Death Emperor, then use normal attacks to wipe out the Raging Tiger.\nHe's not tough at all, and should take just a couple turns to take out."
+  },
   "shops": [],
   "markers": {
     "items": [

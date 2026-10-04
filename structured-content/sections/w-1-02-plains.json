@@ -1,0 +1,465 @@
+{
+  "guide": {
+    "id": "w-1-02",
+    "code": "[W-1-02]",
+    "title": "Plains",
+    "type": "walkthrough",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-1-01",
+        "code": "[W-1-01]",
+        "title": "Trans-Siberian Express",
+        "file": "sections/w-1-01-trans-siberian-express.json"
+      },
+      "next": {
+        "id": "w-1-03",
+        "code": "[W-1-03]",
+        "title": "Zhaoyang Village",
+        "file": "sections/w-1-03-zhaoyang-village.json"
+      }
+    },
+    "initial_setup": {
+      "character": "Alice (Girl In Danger)",
+      "note": "Alice comes equipped with a **Small Bible**, a **Cotton Blouse**, and a **Bandanna** by default, and also comes with the **Pendant** valuable.",
+      "equipment": [
+        "Small Bible",
+        "Cotton Blouse",
+        "Bandanna"
+      ],
+      "valuables": [
+        "Pendant"
+      ]
+    },
+    "route": [
+      "Starting Plains Area",
+      "Grassy Clearing (Side Chest)",
+      "Western Path (Alice Join Event)",
+      "Riverbank & Wooden Bridge",
+      "Northeast Sluice Gate & Save Point",
+      "Campsite (Fox Face Event)",
+      "The Graveyard (Raging Tiger & Masks)",
+      "Drained Riverbed (Reward Chest)",
+      "Village Approach & Gates"
+    ],
+    "objectives": [
+      "Collect the **Pure Leaf** and **Leather Belt** before reuniting with Alice",
+      "Meet the girl, confirm default character names (**Yuri** & **Alice**), and have Alice join the party",
+      "Examine the locked sluice gate, then head northeast and save at the **Save Point**",
+      "Retrieve the **SluiceGateHandle** via either the Southern ('Push Ring') or Northern ('Normal Ring') mini-game",
+      "Lower the sluice gate to drain the river, rest at camp, and endure the battle against **Fox Face**",
+      "In the Graveyard, defeat sub-boss **Raging Tiger** to obtain Yuri's Earth Fusion (**Tigerion**)",
+      "Converse with the **Masks** and defeat **Evil 4** to purge Yuri's accumulated Malice",
+      "Retrieve the performance-tiered reward chest from the drained riverbed and collect the **Holy Mother Bust**",
+      "Proceed to the entrance of **Zhaoyang Village**"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Pure Leaf",
+          "category": "items",
+          "location": "Upper-left ground in starting area"
+        },
+        {
+          "name": "Leather Belt",
+          "category": "equipment",
+          "location": "Chest in the grass to the right in second area"
+        },
+        {
+          "name": "Mermaid's Tear",
+          "category": "items",
+          "location": "Ground just south before stepping onto the bridge"
+        },
+        {
+          "name": "SluiceGateHandle",
+          "category": "valuables",
+          "location": "Retrieved from either the Southern or Northern sluice gate mechanism"
+        },
+        {
+          "name": "Leather Belt",
+          "category": "equipment",
+          "location": "Chest below bridge (Southern gate handle retrieved on 1st try)"
+        },
+        {
+          "name": "Thera Seed",
+          "category": "items",
+          "location": "Chest below bridge (Southern gate handle retrieved on 2nd try)"
+        },
+        {
+          "name": "Thera Leaf",
+          "category": "items",
+          "location": "Chest below bridge (Southern/Northern gate handle retrieved on 3rd+ try)"
+        },
+        {
+          "name": "Bandanna",
+          "category": "equipment",
+          "location": "Chest below bridge (Northern gate handle retrieved on 1st try)"
+        },
+        {
+          "name": "Mana Seed",
+          "category": "items",
+          "location": "Chest below bridge (Northern gate handle retrieved on 2nd try)"
+        },
+        {
+          "name": "Raging Tiger",
+          "category": "souls",
+          "location": "Defeat sub-boss Raging Tiger in the Graveyard"
+        },
+        {
+          "name": "Holy Mother Bust",
+          "category": "items",
+          "location": "Chest to the northwest in the area before the village gates"
+        }
+      ],
+      "initial": [
+        {
+          "name": "Small Bible",
+          "category": "equipment"
+        },
+        {
+          "name": "Cotton Blouse",
+          "category": "equipment"
+        },
+        {
+          "name": "Bandanna",
+          "category": "equipment"
+        },
+        {
+          "name": "Pendant",
+          "category": "valuables"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#002",
+        "name": "Vampire Bat",
+        "hp": 8,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#003",
+        "name": "Venomous Spider",
+        "hp": 10,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Poison"
+      },
+      {
+        "number": "#004",
+        "name": "Wolf",
+        "hp": 15,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": null,
+        "name": "Fox Face",
+        "hp": null,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Cannot be defeated"
+      },
+      {
+        "number": null,
+        "name": "Raging Tiger",
+        "hp": 75,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 1 Fusion (Graveyard)"
+      },
+      {
+        "number": "#105",
+        "name": "Evil 1",
+        "hp": "Varies",
+        "class": null,
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Graveyard Malice"
+      },
+      {
+        "number": "#106",
+        "name": "Evil 2",
+        "hp": "Varies",
+        "class": null,
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Graveyard Malice"
+      },
+      {
+        "number": "#107",
+        "name": "Evil 3",
+        "hp": "Varies",
+        "class": null,
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Graveyard Malice"
+      },
+      {
+        "number": "#108",
+        "name": "Evil 4",
+        "hp": "Varies",
+        "class": null,
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Graveyard Malice"
+      }
+    ],
+    "bosses": [
+      {
+        "type": "SUB-BOSS",
+        "name": "Raging Tiger",
+        "enemies": [
+          {
+            "name": "Raging Tiger",
+            "hp": 75,
+            "class": "Earth"
+          }
+        ],
+        "party": [],
+        "exp": null,
+        "cash": null,
+        "strategy": "Hey, we can win this one! Go ahead and use Yuri's Fusion skill to become the **Death Emperor**, then use normal attacks to wipe out the **Raging Tiger**. He's not tough at all, and should take just a couple turns to take out."
+      }
+    ],
+    "boss": {
+      "type": "SUB-BOSS",
+      "name": "Raging Tiger",
+      "enemies": [
+        {
+          "name": "Raging Tiger",
+          "hp": 75,
+          "class": "Earth"
+        }
+      ],
+      "party": [],
+      "exp": null,
+      "cash": null,
+      "strategy": "Hey, we can win this one! Go ahead and use Yuri's Fusion skill to become the **Death Emperor**, then use normal attacks to wipe out the **Raging Tiger**. He's not tough at all, and should take just a couple turns to take out."
+    },
+    "callouts": [
+      {
+        "type": "tutorial",
+        "title": "Malice and The Graveyard System",
+        "text": "The Talisman Yuri holds shows the level of Malice accumulated in his soul. Each enemy defeated increases the Malice Meter. Make sure Yuri's Malice level does NOT reach the red zone! If it reaches red, Fox Face will invade regular battles. At this stage in the game, fighting Fox Face is lethal—press R1 and Run Away immediately if encountered! Return to the Graveyard whenever Malice builds up to fight Malice incarnates (Evil 1 through Evil 4) and purge it safely."
+      },
+      {
+        "type": "tip",
+        "title": "Soul Energy & Fusions",
+        "text": "The Soul Energy results screen appears after battles, displaying points required to level up each fusion element class. Once an element class levels up, visit the Graveyard and examine glowing gravestones to obtain new Level 1 Fusions (Level 2 Fusions unlock later in the story)."
+      },
+      {
+        "type": "tip",
+        "title": "Internal Malice Point Tracking",
+        "text": "The only issue with this is that it's a number the system tracks that you cannot see. The levels change at 25/50/75/100, and the early monsters seem to contribute 1 point each toward the total, and it seems that as you go through the game, the stronger monsters give more points. It's something you kind of have to guess point values as you go; it's more of a guideline than anything, since it just shows what's possible to get by doing so."
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "After opening dialogue, regain control of the Rude Hero. Take a few steps to the upper-left to find a **Pure Leaf** on the ground, then head down to the next area.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Pure Leaf",
+            "category": "items",
+            "matched_overview_item": "Pure Leaf"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "Instead of following the beaten path, turn right into the grass and proceed to the next area to find a chest containing a **Leather Belt**. Equip this to the Rude Hero immediately to raise his Attack.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Leather Belt",
+            "category": "equipment",
+            "matched_overview_item": "Leather Belt"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "Head back and follow the main path west until you find the girl. Engage in dialogue to name your characters (default names: **Yuri** for the Rude Hero and **Alice** for the Girl In Danger). Alice joins the party.",
+        "type": "story",
+        "notes": [
+          {
+            "type": "tutorial",
+            "title": "Alice's Starting Equipment",
+            "text": "Alice comes equipped with a **Small Bible**, a **Cotton Blouse**, and a **Bandanna** by default, and also carries the **Pendant** valuable."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": "Start heading southeast toward the river. Before stepping onto the wooden bridge, inspect just below your feet to pick up a **Mermaid's Tear**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Mermaid's Tear",
+            "category": "items",
+            "matched_overview_item": "Mermaid's Tear"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "Cross southeast to the next area. Alice observes the water level and notes that something must be done with the sluice gate to proceed across.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": "Head north to the fork, then east past the fork, following the path as it turns north and west to another sluice gate. Inspect it to learn a handle is missing. Return to the previous fork and use the **Save Point** to the southeast before attempting the handle retrieval task.",
+        "type": "navigation",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Save Before the Handle Task",
+            "text": "Save your game at the sluice gate Save Point now! If you miss the timing or fail your desired attempt for the best prize, you can reload and retry."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "Retrieve the **SluiceGateHandle** from one of the two sparkling handle mechanisms. Choose your preferred method: (1) Southern handle ('Push Ring' — rapid CROSS button taps) awards a **Leather Belt** (1st try), **Thera Seed** (2nd try), or **Thera Leaf** (3rd+ try); or (2) Northern handle ('Normal Ring' — 3 timed ring hits) awards a **Bandanna** (1st try), **Mana Seed** (2nd try), or **Mana Leaf** / **Thera Leaf** (3rd+ try).",
+        "type": "puzzle",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Mini-Game Ring Mechanics",
+            "text": "• **Option 1 (Bottom/Southern handle — Push Ring)**: Tap the CROSS button rapidly to drive the indicator into the allowed zone, then tap intermittently to hold it there until time expires. Best prize: **Leather Belt** (raises Attack).\n• **Option 2 (Top/Northern handle — Normal Ring)**: Hit the CROSS button 3 times in the highlighted success areas like a battle ring. Best prize: **Bandanna** (raises Defense)."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "SluiceGateHandle",
+            "category": "valuables",
+            "matched_overview_item": "SluiceGateHandle"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "description": "Head back to the northeastern sluice gate and insert the **SluiceGateHandle** to lower the gate and drain the water flowing through the plain.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 9,
+        "description": "Start backtracking to the previous area. The party decides to make camp and rest. Shortly after Alice falls asleep, the mysterious **Fox Face** appears and ambushes Yuri.",
+        "type": "battle",
+        "encounter": {
+          "enemies": [
+            "Fox Face"
+          ]
+        },
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Unwinnable Confrontation",
+            "text": "It is impossible to win this battle against Fox Face. Attack him freely until he unleashes his '!!!' attack, dropping Yuri's HP to 1 and knocking him out."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 10,
+        "description": "Yuri awakens in the Graveyard of his soul. Head north and examine the glowing green tombstone to engage sub-boss **Raging Tiger** (75 HP, Earth). Defeat him to acquire Yuri's Earth Fusion soul: **Raging Tiger** (Tigerion!). Open the menu and equip the soul.",
+        "type": "boss",
+        "encounter": {
+          "enemies": [
+            "Raging Tiger"
+          ]
+        },
+        "rewards": [
+          {
+            "name": "Raging Tiger",
+            "category": "souls",
+            "matched_overview_item": "Raging Tiger"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "description": "Head west and speak with the Masks. They explain the rules of Malice and force Yuri to defeat his accumulated Malice in a battle against **Evil 4**. Fuse into **Raging Tiger** and strike with heavy hits to defeat Evil 4 in 1–2 turns, clearing your Malice.",
+        "type": "battle",
+        "encounter": {
+          "enemies": [
+            "Evil 4"
+          ]
+        },
+        "notes": [
+          {
+            "type": "tutorial",
+            "title": "Malice Colors & Graveyard Re-fights",
+            "text": "You can re-challenge Malice incarnations in the Graveyard whenever your Malice meter is within specific color ranges:\n• **Evil 1**: Between Blue and Turquoise\n• **Evil 2**: Between Turquoise and Green\n• **Evil 3**: Between Green and Yellow\n• **Evil 4**: Between Yellow and Red\n\nEach victory purges Malice and rewards an item corresponding to your exact Malice value (1–100):\n• 01–03: Thera Leaf | 04: Seal of Wisdom | 05–06: Mana Leaf | 07: Key to Success | 08–09: Pure Leaf | 10–14: Thera Leaf | 15–19: Mana Leaf | 20–24: Pure Leaf | 25: Seal of Vitality | 26–29: Thera Leaf | 30–34: Mana Leaf | 35: Silver Hand | 36–39: Pure Leaf | 40–41: Thera Leaf | 42: Kirin Scale | 43–44: Mana Leaf | 45–49: Pure Leaf | 50: Seal of the Soul | 51–52: Thera Leaf | 53–55: Mana Leaf | 56: Seal of Force | 57–59: Pure Leaf | 60: Seal of Speed | 61–62: Thera Leaf | 63: Seal of Power | 64–65: Mana Leaf | 66–69: Pure Leaf | 70: Seal of Life | 71–73: Thera Leaf | 74–76: Mana Leaf | 77: Seventh Key | 78–79: Pure Leaf | 80–83: Thera Leaf | 84: Seal of Aura | 85–87: Mana Leaf | 88–90: Pure Leaf | 91: Monkey Paw | 92–93: Thera Leaf | 94–97: Mana Leaf | 98: Seal of Luck | 99: Dice of Caesar | 100: N/A\n\n*Note: Special items are awarded once per threshold; repeat clears at the same value yield a Thera Leaf instead.*"
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 12,
+        "description": "Head east to exit the Graveyard and reunite with Alice. From the Save Point, return to the screen with the bridge and river. Drop into the drained riverbed below the bridge to claim the reward chest corresponding to your handle performance (**Leather Belt**, **Thera Seed**, **Thera Leaf**, **Bandanna**, or **Mana Seed**).",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Leather Belt",
+            "category": "equipment",
+            "matched_overview_item": "Leather Belt"
+          },
+          {
+            "name": "Thera Seed",
+            "category": "items",
+            "matched_overview_item": "Thera Seed"
+          },
+          {
+            "name": "Thera Leaf",
+            "category": "items",
+            "matched_overview_item": "Thera Leaf"
+          },
+          {
+            "name": "Bandanna",
+            "category": "equipment",
+            "matched_overview_item": "Bandanna"
+          },
+          {
+            "name": "Mana Seed",
+            "category": "items",
+            "matched_overview_item": "Mana Seed"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "description": "Head back across the bridge, cross the riverbed to the southwest, and follow the path to the next area. Watch the scene, then open the chest to the northwest for a **Holy Mother Bust**. Continue forward to the gates of **Zhaoyang Village** to conclude this section.",
+        "type": "navigation",
+        "rewards": [
+          {
+            "name": "Holy Mother Bust",
+            "category": "items",
+            "matched_overview_item": "Holy Mother Bust"
+          }
+        ]
+      }
+    ]
+  }
+}

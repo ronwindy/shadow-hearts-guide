@@ -164,7 +164,7 @@ def parse_boss_cards(text: str) -> List[Dict[str, Any]]:
     Extracts boss cards into structured objects including boss details, recommended party,
     rewards (EXP, Cash), and tactics.
     """
-    boss_starts = list(re.finditer(r'/\s*\*\*\*\s*(BOSS|SUB-BOSS)\s*\*\*\*\s*\\', text, re.IGNORECASE))
+    boss_starts = list(re.finditer(r'/\s*\*+\s*(BOSS|SUB-BOSS)\s*\*+\s*\\', text, re.IGNORECASE))
     bosses = []
     
     for i, m in enumerate(boss_starts):
