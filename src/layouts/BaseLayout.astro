@@ -38,7 +38,17 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
     <title>{title}</title>
     <meta name="description" content={description} />
   </head>
-  <body class="bg-void text-slate-100 flex flex-col min-h-screen">
+  <body class="bg-void text-slate-100 flex flex-col min-h-screen relative selection:bg-gold-500/30 selection:text-gold-300">
+    <!-- Fixed Site Background -->
+    <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={`background-image: url('${baseUrl}/background.jpg');`}
+      ></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-void/60 via-void/30 to-void/80"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(212,175,55,0.06),transparent),radial-gradient(ellipse_60%_40%_at_90%_80%,rgba(190,18,60,0.05),transparent)]"></div>
+    </div>
+
     <Navigation />
     <MobileNavDrawer currentId={currentId} pageSections={pageSections} />
     <div class={`flex-grow w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 ${isWide ? 'max-w-[1600px]' : 'max-w-7xl'}`}>
