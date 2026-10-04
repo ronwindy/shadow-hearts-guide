@@ -1,5 +1,5 @@
 ---
-import type { TocCategory, TocEntry } from '../lib/guideData';
+import { getHumanReadableLabel, type TocCategory, type TocEntry } from '../lib/guideData';
 
 interface Props {
   sections: TocCategory[];
@@ -22,7 +22,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
       <input
         type="text"
         id="toc-search"
-        placeholder="Filter sections by title or code (e.g. Trans-Siberian, W-1-01, Side Quest)..."
+        placeholder="Filter sections by name, location, chapter, or side quest (e.g. Trans-Siberian, Plains, Side Quest)..."
         class="w-full pl-9 pr-4 py-2 bg-slate-900 border border-slate-700/80 rounded-md text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500"
       />
     </div>
@@ -51,6 +51,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {cat.entries.map((entry) => {
             const isAvailable = entry.has_structured;
+            const label = entry.label || getHumanReadableLabel(entry.code, cat.category, entry.is_sidequest);
             return (
               <div
                 class={`toc-item group relative p-3.5 rounded-lg border transition-all duration-200 flex flex-col justify-between ${
@@ -60,11 +61,12 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
                 }`}
                 data-title={entry.title.toLowerCase()}
                 data-code={entry.code.toLowerCase()}
+                data-label={label.toLowerCase()}
                 data-sidequest={entry.is_sidequest ? 'true' : 'false'}
               >
                 <div class="space-y-1.5">
                   <div class="flex items-center justify-between gap-2">
-                    <span class={`font-mono text-xs px-2 py-0.5 rounded border ${
+                    <span class={`text-xs px-2.5 py-0.5 rounded font-medium border ${
                       entry.code.startsWith('[W-S')
                         ? 'bg-purple-950/50 text-purple-300 border-purple-800/40'
                         : entry.code.startsWith('[W-')
@@ -73,10 +75,10 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
                         ? 'bg-blue-950/40 text-blue-300 border-blue-800/40'
                         : 'bg-slate-800 text-slate-300 border-slate-700'
                     }`}>
-                      {entry.code}
+                      {label}
                     </span>
 
-                    {entry.is_sidequest && (
+                    {entry.is_sidequest && !label.toLowerCase().includes('side quest') && (
                       <span class="text-[10px] font-semibold uppercase tracking-wider text-purple-300 bg-purple-950/40 border border-purple-800/50 px-1.5 py-0.5 rounded">
                         Side Quest
                       </span>
@@ -113,7 +115,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <div id="no-results" class="hidden text-center py-16 p-8 rounded-lg border border-slate-800 bg-slate-850">
     <p class="text-slate-300 font-serif text-lg">No guide sections match your search</p>
-    <p class="text-sm text-slate-500 mt-1">Try clearing filters or searching by a different name or code.</p>
+    <p class="text-sm text-slate-500 mt-1">Try clearing filters or searching by a different title, location, or chapter.</p>
   </div>
 </div>
 
@@ -132,7 +134,8 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
       items.forEach((item) => {
         const title = item.getAttribute('data-title') || '';
         const code = item.getAttribute('data-code') || '';
-        const isMatch = !q || title.includes(q) || code.includes(q);
+        const label = item.getAttribute('data-label') || '';
+        const isMatch = !q || title.includes(q) || label.includes(q) || code.includes(q);
 
         if (isMatch) {
           item.classList.remove('hidden');

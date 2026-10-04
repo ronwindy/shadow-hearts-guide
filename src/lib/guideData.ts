@@ -56,6 +56,59 @@ export interface TocEntry {
   is_sidequest: boolean;
   id?: string;
   has_structured?: boolean;
+  label?: string;
+}
+
+export function getHumanReadableLabel(
+  rawCode: string = '',
+  category: string = '',
+  isSidequest: boolean = false
+): string {
+  const code = (rawCode || '').trim().replace(/^\[|\]$/g, '').toUpperCase();
+
+  if (code === 'HEADER') return 'Guide Overview';
+  if (code === 'I-1-00') return 'Directory';
+  if (code === 'I-1-01') return 'Game Manual';
+  if (code === 'W-1-00') return 'Asia Overview';
+  if (code === 'W-2-00') return 'Europe Overview';
+  if (code === 'A-1-00') return 'Appendices Overview';
+
+  // Walkthrough Side Quests: W-S-01 .. W-S-16
+  const sideMatch = code.match(/^W-S-(\d+)$/);
+  if (sideMatch) {
+    const num = sideMatch[1];
+    return `Side Quest ${num}`;
+  }
+
+  // Walkthrough Asia: W-1-01 .. W-1-11
+  const asiaMatch = code.match(/^W-1-(\d+)$/);
+  if (asiaMatch) {
+    const num = asiaMatch[1];
+    return `Part ${num}`;
+  }
+
+  // Walkthrough Europe: W-2-01 .. W-2-18
+  const europeMatch = code.match(/^W-2-(\d+)$/);
+  if (europeMatch) {
+    const num = europeMatch[1];
+    return `Part ${num}`;
+  }
+
+  // Appendices: A-1-01 .. A-1-15
+  const appMatch = code.match(/^A-1-(\d+)$/);
+  if (appMatch) {
+    const num = appMatch[1];
+    return `Appendix ${num}`;
+  }
+
+  // Conclusion: C-1-01 .. C-1-03
+  if (code === 'C-1-01') return 'Version History';
+  if (code === 'C-1-02') return 'Acknowledgements';
+  if (code === 'C-1-03') return 'Credits & Legal';
+
+  if (isSidequest) return 'Side Quest';
+  if (category) return category;
+  return rawCode;
 }
 
 export interface TocCategory {
@@ -104,6 +157,8 @@ export function enrichTocCategories(categories: TocCategory[], files: string[]):
         const lower = f.toLowerCase();
         return lower.startsWith(cleanCode);
       });
+
+      entry.label = getHumanReadableLabel(entry.code, cat.category, entry.is_sidequest);
 
       if (match) {
         entry.has_structured = true;

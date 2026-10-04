@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
-import { getAllStructuredSections } from '../../lib/guideData';
+import { getAllStructuredSections, getHumanReadableLabel } from '../../lib/guideData';
 
 export async function getStaticPaths() {
   const sections = getAllStructuredSections();
@@ -40,7 +40,9 @@ const callouts = guide.callouts || [];
       <div class="flex items-center gap-2">
         <a href={`${baseUrl}/toc`} class="hover:text-gold-400 transition-colors">Chapters</a>
         <span>/</span>
-        <span class="text-gold-500 font-mono">{guide.code}</span>
+        <span class="text-slate-400">{guide.category}</span>
+        <span>/</span>
+        <span class="text-gold-500 font-medium truncate max-w-xs sm:max-w-md">{guide.title}</span>
       </div>
       
       <div class="flex items-center gap-4">
@@ -59,10 +61,10 @@ const callouts = guide.callouts || [];
 
     <!-- Header -->
     <header class="space-y-3">
-      <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-amber-950/40 text-amber-300 border border-amber-800/40 text-xs font-mono">
-        <span>{guide.code}</span>
-        <span>&bull;</span>
+      <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-amber-950/40 text-amber-300 border border-amber-800/40 text-xs font-medium">
         <span>{guide.category}</span>
+        <span>&bull;</span>
+        <span>{getHumanReadableLabel(guide.code, guide.category, guide.is_sidequest)}</span>
       </div>
       <h1 class="text-3xl sm:text-4xl font-serif font-bold text-slate-100">
         {guide.title}
