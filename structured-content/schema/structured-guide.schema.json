@@ -353,7 +353,42 @@
                       ]
                     },
                     "title": { "type": "string" },
-                    "text": { "type": "string" }
+                    "text": { "type": "string" },
+                    "badges": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": ["label", "range"],
+                        "properties": {
+                          "label": { "type": "string" },
+                          "range": { "type": "string" },
+                          "color": { "type": "string" }
+                        }
+                      }
+                    },
+                    "table": {
+                      "type": "object",
+                      "required": ["headers", "rows"],
+                      "properties": {
+                        "headers": {
+                          "type": "array",
+                          "items": { "type": "string" }
+                        },
+                        "rows": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": ["range", "reward"],
+                            "properties": {
+                              "range": { "type": "string" },
+                              "reward": { "type": "string" },
+                              "is_unique": { "type": "boolean" },
+                              "category": { "type": "string" }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               },

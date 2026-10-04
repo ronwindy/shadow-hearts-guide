@@ -36,12 +36,25 @@ The MVP follows a deliberately narrow scope:
 
 To prevent wasteful directory queries and ensure continuity between agent sessions:
 - The single source of truth for project progress is [`STATUS.md`](file:///d:/Games/GameGuides/shadow-hearts-guide/STATUS.md) at the project root.
-- **Before starting any task**, agents should read the first 45 lines of `STATUS.md` or run `python scripts/status.py --summary`. This gives immediate orientation (< 350 tokens) on active milestones, priorities, sequence gaps, and metrics without recursively listing directories.
+- **Before starting any task**, agents should read the first 45 lines of `STATUS.md` or run the summary command. This gives immediate orientation (< 350 tokens) on active milestones, priorities, sequence gaps, and metrics without recursively listing directories.
 - **After completing work** (e.g. creating a structured guide, completing a QA report, or building web pages), agents must run:
   ```powershell
-  python scripts/status.py --update
+  & "C:\Users\Admin\AppData\Local\Programs\Python\Python313\python.exe" scripts/status.py --update
   ```
   to keep `STATUS.md` synchronized.
+
+### 1.2 Windows Runtime Environment & Tool Paths
+
+To avoid search loops and terminal errors in the sandboxed PowerShell environment:
+- **Python Executable**: Python is installed at:
+  `C:\Users\Admin\AppData\Local\Programs\Python\Python313\python.exe`
+  Because `python` is not in the session's `$env:PATH`, always invoke Python scripts using:
+  ```powershell
+  & "C:\Users\Admin\AppData\Local\Programs\Python\Python313\python.exe" scripts/pipeline.py <section_id> --check
+  & "C:\Users\Admin\AppData\Local\Programs\Python\Python313\python.exe" scripts/status.py --summary
+  ```
+- **Node / npm**: `node` and `npm` are not available in the default sandboxed terminal `$env:PATH`. All verification, schema validation, QA reports, frontend checks, and status tracking run through the Python pipeline (`scripts/pipeline.py`). Do not execute `npm run build` or search for Node inside the sandbox unless explicitly instructed with elevated/bypass permissions.
+
 
 ---
 

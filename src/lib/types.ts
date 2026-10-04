@@ -151,10 +151,30 @@ export interface StepReward {
   matched_overview_item?: string;
 }
 
+export interface StepNoteBadge {
+  label: string;
+  range: string;
+  color?: string;
+}
+
+export interface StepNoteTableRow {
+  range: string;
+  reward: string;
+  is_unique?: boolean;
+  category?: string;
+}
+
+export interface StepNoteTable {
+  headers: string[];
+  rows: StepNoteTableRow[];
+}
+
 export interface StepNote {
   type?: string;
   title?: string;
   text: string;
+  badges?: StepNoteBadge[];
+  table?: StepNoteTable;
 }
 
 export interface StepChecklistItem {
