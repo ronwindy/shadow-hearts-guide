@@ -8,6 +8,7 @@ import {
   MapPin,
   Sparkles
 } from '@lucide/astro';
+import { renderInlineMarkup } from '../lib/markup';
 import type { ManualOverviewData } from '../lib/types';
 
 interface Props {
@@ -118,8 +119,12 @@ const { overview } = Astro.props;
             <tbody class="divide-y divide-slate-800/60 text-slate-300">
               {overview.controls.controller_layout.map((c) => (
                 <tr class="hover:bg-slate-800/40">
-                  <td class="py-2 px-3 font-mono text-gold-400 font-semibold whitespace-nowrap">{c.button}</td>
-                  <td class="py-2 px-3">{c.function}</td>
+                  <td class="py-2.5 px-3 font-mono text-gold-400 font-semibold whitespace-nowrap">
+                    <Fragment set:html={renderInlineMarkup(c.button)} />
+                  </td>
+                  <td class="py-2.5 px-3">
+                    <Fragment set:html={renderInlineMarkup(c.function)} />
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -127,7 +132,9 @@ const { overview } = Astro.props;
         </div>
       )}
       {overview.controls.menu_navigation && (
-        <p class="text-sm text-slate-400 italic mt-2">{overview.controls.menu_navigation}</p>
+        <p class="text-sm text-slate-300 italic mt-2 leading-relaxed">
+          <Fragment set:html={renderInlineMarkup(overview.controls.menu_navigation)} />
+        </p>
       )}
     </section>
   )}
@@ -176,7 +183,9 @@ const { overview } = Astro.props;
         <span>Battle Mechanics</span>
       </h2>
       {overview.battle_mechanics.encounter_flow && (
-        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">{overview.battle_mechanics.encounter_flow}</p>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.encounter_flow)} />
+        </p>
       )}
       {overview.battle_mechanics.action_menu && (
         <div class="space-y-2.5">
@@ -185,7 +194,9 @@ const { overview } = Astro.props;
             {overview.battle_mechanics.action_menu.map((a) => (
               <div class="p-3.5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1">
                 <div class="font-semibold text-gold-400 font-mono text-sm sm:text-base">{a.action}</div>
-                <p class="text-slate-300 leading-relaxed text-sm">{a.description}</p>
+                <p class="text-slate-300 leading-relaxed text-sm">
+                  <Fragment set:html={renderInlineMarkup(a.description)} />
+                </p>
               </div>
             ))}
           </div>
@@ -196,15 +207,23 @@ const { overview } = Astro.props;
           <h3 class="font-serif font-bold text-amber-300 text-base sm:text-lg">
             Judgment Ring System
           </h3>
-          <p class="text-slate-200 text-base leading-relaxed">{overview.battle_mechanics.judgment_ring.description}</p>
-          <p class="text-slate-300 text-base leading-relaxed">{overview.battle_mechanics.judgment_ring.mechanics}</p>
+          <p class="text-slate-200 text-base leading-relaxed">
+            <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.judgment_ring.description)} />
+          </p>
+          <p class="text-slate-300 text-base leading-relaxed">
+            <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.judgment_ring.mechanics)} />
+          </p>
           {overview.battle_mechanics.judgment_ring.character_variation && (
-            <p class="text-amber-400/80 text-sm italic">{overview.battle_mechanics.judgment_ring.character_variation}</p>
+            <p class="text-amber-400/80 text-sm italic">
+              <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.judgment_ring.character_variation)} />
+            </p>
           )}
         </div>
       )}
       {overview.battle_mechanics.command_menu && (
-        <p class="text-sm sm:text-base text-slate-400 italic">{overview.battle_mechanics.command_menu}</p>
+        <p class="text-sm sm:text-base text-slate-400 italic">
+          <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.command_menu)} />
+        </p>
       )}
     </section>
   )}

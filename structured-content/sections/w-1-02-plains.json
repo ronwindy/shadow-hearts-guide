@@ -340,13 +340,13 @@
       },
       {
         "id": 7,
-        "description": "Retrieve the **SluiceGateHandle** from one of the two sparkling handle mechanisms. Choose your preferred method: (1) Southern handle ('Push Ring' — rapid CROSS button taps) awards a **Leather Belt** (1st try), **Thera Seed** (2nd try), or **Thera Leaf** (3rd+ try); or (2) Northern handle ('Normal Ring' — 3 timed ring hits) awards a **Bandanna** (1st try), **Mana Seed** (2nd try), or **Mana Leaf** / **Thera Leaf** (3rd+ try).",
+        "description": "Retrieve the **SluiceGateHandle** from one of the two sparkling handle mechanisms. Choose your preferred method:\n1. Southern handle ('Push Ring' — rapid CROSS button taps) awards a **Leather Belt** (1st try), **Thera Seed** (2nd try), or **Thera Leaf** (3rd+ try)\n2. Northern handle ('Normal Ring' — 3 timed ring hits) awards a **Bandanna** (1st try), **Mana Seed** (2nd try), or **Mana Leaf** / **Thera Leaf** (3rd+ try)",
         "type": "puzzle",
         "notes": [
           {
             "type": "tip",
             "title": "Mini-Game Ring Mechanics",
-            "text": "• **Option 1 (Bottom/Southern handle — Push Ring)**: Tap the CROSS button rapidly to drive the indicator into the allowed zone, then tap intermittently to hold it there until time expires. Best prize: **Leather Belt** (raises Attack).\n• **Option 2 (Top/Northern handle — Normal Ring)**: Hit the CROSS button 3 times in the highlighted success areas like a battle ring. Best prize: **Bandanna** (raises Defense)."
+            "text": "- **Option 1 (Bottom/Southern handle — Push Ring)**: Tap the CROSS button rapidly to drive the indicator into the allowed zone, then tap intermittently to hold it there until time expires. Best prize: **Leather Belt** (raises Attack).\n- **Option 2 (Top/Northern handle — Normal Ring)**: Hit the CROSS button 3 times in the highlighted success areas like a battle ring. Best prize: **Bandanna** (raises Defense)."
           }
         ],
         "rewards": [

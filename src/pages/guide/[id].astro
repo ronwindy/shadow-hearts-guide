@@ -8,7 +8,7 @@ import CharacterProfiles from '../../components/CharacterProfiles.astro';
 import ItemTable from '../../components/ItemTable.astro';
 import EnemyTable from '../../components/EnemyTable.astro';
 import ShopTable from '../../components/ShopTable.astro';
-import { renderInlineMarkup } from '../../lib/markup';
+import { renderInlineMarkup, renderBlockMarkup } from '../../lib/markup';
 import {
   getAllStructuredSections,
   getHumanReadableLabel,
@@ -149,7 +149,9 @@ const pageSections = buildPageTocSections(guide);
                   </div>
                   <div class="space-y-1 flex-1">
                     {c.title && <div class="font-semibold text-slate-100">{c.title}</div>}
-                    <p class="leading-relaxed opacity-95">{c.text}</p>
+                    <div class="leading-relaxed opacity-95 space-y-2">
+                      <Fragment set:html={renderBlockMarkup(c.text)} />
+                    </div>
                   </div>
                 </div>
               );
