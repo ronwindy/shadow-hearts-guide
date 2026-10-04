@@ -1,0 +1,211 @@
+---
+import {
+  Compass,
+  ScrollText,
+  Gamepad2,
+  SlidersHorizontal,
+  Swords,
+  MapPin,
+  Sparkles
+} from '@lucide/astro';
+import type { ManualOverviewData } from '../lib/types';
+
+interface Props {
+  overview: ManualOverviewData;
+}
+
+const { overview } = Astro.props;
+---
+
+<div class="space-y-8">
+  {/* Intro Directions & Compass Mapping */}
+  {overview.directions && (
+    <section id="compass" class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-4 shadow-sm">
+      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+        <Compass class="w-5 h-5 text-gold-400" />
+        <span>Compass & Orientation</span>
+      </h2>
+      {overview.directions.compass_note && (
+        <p class="text-slate-300 text-base leading-relaxed">{overview.directions.compass_note}</p>
+      )}
+      {overview.directions.mappings && overview.directions.mappings.length > 0 && (
+        <div class="overflow-x-auto rounded-lg border border-slate-800">
+          <table class="w-full text-sm text-left border-collapse">
+            <thead>
+              <tr class="border-b border-slate-700/80 text-slate-400 font-mono bg-slate-900/60">
+                <th class="py-2.5 px-3">Screen Direction</th>
+                <th class="py-2.5 px-3">Cardinal Direction</th>
+                <th class="py-2.5 px-3">Abbreviation</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-slate-300">
+              {overview.directions.mappings.map((m) => (
+                <tr class="hover:bg-slate-800/40">
+                  <td class="py-2 px-3 font-medium">{m.screen}</td>
+                  <td class="py-2 px-3 text-gold-400">{m.cardinal}</td>
+                  <td class="py-2 px-3 font-mono text-slate-400">{m.abbr}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </section>
+  )}
+
+  {/* Game Manual Intro */}
+  {overview.intro && (
+    <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-slate-300 text-base italic leading-relaxed">
+      {overview.intro}
+    </div>
+  )}
+
+  {/* Story Prologue */}
+  {overview.story_prologue && (
+    <section id="prologue" class="space-y-3">
+      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
+        <ScrollText class="w-5 h-5 text-gold-400" />
+        <span>Story Prologue</span>
+      </h2>
+      <div class="grid gap-3">
+        {overview.story_prologue.setting_1 && (
+          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed">
+            <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
+              <MapPin class="w-3.5 h-3.5 text-gold-400" />
+              <span>Rouen, France (1913)</span>
+            </span>
+            {overview.story_prologue.setting_1}
+          </div>
+        )}
+        {overview.story_prologue.setting_2 && (
+          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed">
+            <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
+              <MapPin class="w-3.5 h-3.5 text-gold-400" />
+              <span>One Month Later</span>
+            </span>
+            {overview.story_prologue.setting_2}
+          </div>
+        )}
+        {overview.story_prologue.inciting_incident && (
+          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed">
+            <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
+              <Sparkles class="w-3.5 h-3.5 text-gold-400" />
+              <span>Inciting Incident</span>
+            </span>
+            {overview.story_prologue.inciting_incident}
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  {/* Controls & Controller Layout */}
+  {overview.controls && (
+    <section id="controls" class="space-y-3">
+      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
+        <Gamepad2 class="w-5 h-5 text-gold-400" />
+        <span>Controls & Controller Layout</span>
+      </h2>
+      {overview.controls.controller_layout && (
+        <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90">
+          <table class="w-full text-sm sm:text-base text-left">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/60">
+                <th class="py-2.5 px-3">Button / Input</th>
+                <th class="py-2.5 px-3">Function</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/60 text-slate-300">
+              {overview.controls.controller_layout.map((c) => (
+                <tr class="hover:bg-slate-800/40">
+                  <td class="py-2 px-3 font-mono text-gold-400 font-semibold whitespace-nowrap">{c.button}</td>
+                  <td class="py-2 px-3">{c.function}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      {overview.controls.menu_navigation && (
+        <p class="text-sm text-slate-400 italic mt-2">{overview.controls.menu_navigation}</p>
+      )}
+    </section>
+  )}
+
+  {/* System & Operations */}
+  {overview.playing_the_game && (
+    <section id="system" class="space-y-3">
+      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
+        <SlidersHorizontal class="w-5 h-5 text-gold-400" />
+        <span>System & Operations</span>
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
+        {Object.entries(overview.playing_the_game).map(([key, val]) => (
+          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1.5">
+            <h3 class="font-serif font-bold capitalize text-gold-400 text-base sm:text-lg">{key.replace(/_/g, ' ')}</h3>
+            <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{val}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {/* Player Attributes */}
+  {overview.player_attributes && (
+    <section id="attributes" class="space-y-3">
+      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
+        <Swords class="w-5 h-5 text-gold-400" />
+        <span>Player Attributes & Battle System</span>
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
+        {Object.entries(overview.player_attributes).map(([key, val]) => (
+          <div class="p-3.5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1.5">
+            <h3 class="font-mono font-bold uppercase tracking-wider text-gold-400 text-sm sm:text-base">{key.replace(/_/g, ' ')}</h3>
+            <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{val}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {/* Battle Mechanics */}
+  {overview.battle_mechanics && (
+    <section id="battle-mechanics" class="space-y-4">
+      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
+        <Swords class="w-5 h-5 text-gold-400" />
+        <span>Battle Mechanics</span>
+      </h2>
+      {overview.battle_mechanics.encounter_flow && (
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">{overview.battle_mechanics.encounter_flow}</p>
+      )}
+      {overview.battle_mechanics.action_menu && (
+        <div class="space-y-2.5">
+          <h3 class="text-base sm:text-lg font-serif font-bold text-slate-200">Battle Actions</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
+            {overview.battle_mechanics.action_menu.map((a) => (
+              <div class="p-3.5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1">
+                <div class="font-semibold text-gold-400 font-mono text-sm sm:text-base">{a.action}</div>
+                <p class="text-slate-300 leading-relaxed text-sm">{a.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      {overview.battle_mechanics.judgment_ring && (
+        <div class="p-5 rounded-xl bg-amber-950/20 border border-amber-800/40 text-sm sm:text-base space-y-2">
+          <h3 class="font-serif font-bold text-amber-300 text-base sm:text-lg">
+            Judgment Ring System
+          </h3>
+          <p class="text-slate-200 text-base leading-relaxed">{overview.battle_mechanics.judgment_ring.description}</p>
+          <p class="text-slate-300 text-base leading-relaxed">{overview.battle_mechanics.judgment_ring.mechanics}</p>
+          {overview.battle_mechanics.judgment_ring.character_variation && (
+            <p class="text-amber-400/80 text-sm italic">{overview.battle_mechanics.judgment_ring.character_variation}</p>
+          )}
+        </div>
+      )}
+      {overview.battle_mechanics.command_menu && (
+        <p class="text-sm sm:text-base text-slate-400 italic">{overview.battle_mechanics.command_menu}</p>
+      )}
+    </section>
+  )}
+</div>

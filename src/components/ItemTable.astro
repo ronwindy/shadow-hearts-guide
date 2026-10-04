@@ -1,0 +1,62 @@
+---
+import { Package, Sword, Scroll, Sparkles, MapPin } from '@lucide/astro';
+import type { ObtainableItem } from '../lib/types';
+
+interface Props {
+  items: ObtainableItem[];
+}
+
+const { items = [] } = Astro.props;
+---
+
+{items && items.length > 0 && (
+  <section id="items" class="space-y-3">
+    <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+        <Package class="w-5 h-5 text-emerald-400 flex-shrink-0" />
+        <span>Obtainable Items & Treasures</span>
+      </h2>
+      <span class="text-sm font-mono text-slate-400">{items.length} items</span>
+    </div>
+    <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90 shadow-sm">
+      <table class="w-full text-sm sm:text-base text-left">
+        <thead>
+          <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/80">
+            <th class="py-3 px-4 font-semibold">Item Name</th>
+            <th class="py-3 px-4 font-semibold">Category</th>
+            <th class="py-3 px-4 font-semibold">Location</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-800/60 text-slate-300">
+          {items.map((it) => {
+            const isEquip = it.category === 'equipment';
+            const isValuable = it.category === 'valuables';
+            return (
+              <tr class="hover:bg-slate-800/40 transition-colors">
+                <td class="py-2.5 px-4 font-semibold text-emerald-400 whitespace-nowrap">
+                  <span class="inline-flex items-center gap-1.5">
+                    {isEquip ? (
+                      <Sword class="w-3.5 h-3.5 text-slate-300 flex-shrink-0" />
+                    ) : isValuable ? (
+                      <Scroll class="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
+                    ) : (
+                      <Sparkles class="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+                    )}
+                    <span>{it.name}</span>
+                  </span>
+                </td>
+                <td class="py-2.5 px-4 font-mono text-amber-300 capitalize text-sm">{it.category}</td>
+                <td class="py-2.5 px-4 text-slate-200 leading-relaxed">
+                  <span class="inline-flex items-center gap-1.5 text-slate-300">
+                    <MapPin class="w-3.5 h-3.5 text-gold-400/80 flex-shrink-0" />
+                    <span>{it.location}</span>
+                  </span>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </section>
+)}

@@ -3,8 +3,18 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageToc from '../../components/PageToc.astro';
 import StepChecklist from '../../components/StepChecklist.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
+import ManualOverview from '../../components/ManualOverview.astro';
+import CharacterProfiles from '../../components/CharacterProfiles.astro';
+import ItemTable from '../../components/ItemTable.astro';
+import EnemyTable from '../../components/EnemyTable.astro';
+import ShopTable from '../../components/ShopTable.astro';
 import { renderInlineMarkup } from '../../lib/markup';
-import { getAllStructuredSections, getHumanReadableLabel } from '../../lib/guideData';
+import {
+  getAllStructuredSections,
+  getHumanReadableLabel,
+  buildPageTocSections
+} from '../../lib/guideData';
+import type { SectionCallout } from '../../lib/types';
 import {
   ChevronLeft,
   ChevronRight,
@@ -18,22 +28,10 @@ import {
   Sword,
   Scroll,
   Sparkles,
-  Package,
-  Skull,
-  Swords,
-  Heart,
-  Store,
-  Coins,
   ListChecks,
   TriangleAlert,
   Lightbulb,
   Info,
-  ScrollText,
-  Gamepad2,
-  SlidersHorizontal,
-  Users,
-  User,
-  BookOpen,
   FileText
 } from '@lucide/astro';
 
@@ -61,62 +59,10 @@ const enemies = guide.enemies || [];
 const boss = guide.boss;
 const bosses = guide.bosses || (boss ? [boss] : []);
 const shops = guide.shops || [];
-const callouts = guide.callouts || [];
+const callouts: SectionCallout[] = guide.callouts || [];
 
 // Compute local on-page sections for Right TOC and Mobile Drawer
-const pageSections: Array<{ id: string; label: string; count?: number }> = [];
-
-if (objectives && objectives.length > 0) {
-  pageSections.push({ id: 'objectives', label: 'Primary Objectives', count: objectives.length });
-}
-if (route && route.length > 0) {
-  pageSections.push({ id: 'route', label: 'Route Progression' });
-}
-if (initialSetup) {
-  pageSections.push({ id: 'setup', label: 'Initial Setup' });
-}
-if (itemsSummary?.obtainable && itemsSummary.obtainable.length > 0) {
-  pageSections.push({ id: 'items', label: 'Obtainable Items', count: itemsSummary.obtainable.length });
-}
-if (enemies && enemies.length > 0) {
-  pageSections.push({ id: 'enemies', label: 'Area Enemies', count: enemies.length });
-}
-if (shops && shops.length > 0) {
-  pageSections.push({ id: 'shops', label: 'Shops & Merchants', count: shops.length });
-}
-if (steps && steps.length > 0) {
-  pageSections.push({ id: 'steps', label: 'Walkthrough Steps', count: steps.length });
-}
-if (overview.sections && overview.sections.length > 0) {
-  pageSections.push({ id: 'toc-index', label: 'Guide Directory' });
-}
-if (overview.directions) {
-  pageSections.push({ id: 'compass', label: 'Compass & Navigation' });
-}
-if (overview.story_prologue) {
-  pageSections.push({ id: 'prologue', label: 'Story Prologue' });
-}
-if (overview.controls) {
-  pageSections.push({ id: 'controls', label: 'Controls' });
-}
-if (overview.playing_the_game) {
-  pageSections.push({ id: 'system', label: 'System & Operations' });
-}
-if (overview.player_attributes) {
-  pageSections.push({ id: 'attributes', label: 'Attributes & Battle' });
-}
-if (overview.battle_mechanics) {
-  pageSections.push({ id: 'battle-mechanics', label: 'Battle Mechanics' });
-}
-if (overview.characters && overview.characters.length > 0) {
-  pageSections.push({ id: 'characters', label: 'Character Profiles', count: overview.characters.length });
-}
-if (overview.glossary && overview.glossary.length > 0) {
-  pageSections.push({ id: 'glossary', label: 'Lore & Glossary', count: overview.glossary.length });
-}
-if (overview.metadata) {
-  pageSections.push({ id: 'metadata', label: 'Document Information' });
-}
+const pageSections = buildPageTocSections(guide);
 ---
 
 <BaseLayout
@@ -181,7 +127,7 @@ if (overview.metadata) {
         {/* Callouts (tips, notes, warnings) */}
         {callouts && callouts.length > 0 && (
           <div class="space-y-3">
-            {callouts.map((c: any) => {
+            {callouts.map((c) => {
               const isWarn = c.type === 'warning';
               const isTip = c.type === 'tip';
               return (
@@ -218,240 +164,12 @@ if (overview.metadata) {
           </section>
         )}
 
-        {/* Intro directions & compass mapping (e.g. W-1-00) */}
-        {overview.directions && (
-          <section id="compass" class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-4 shadow-sm">
-            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-              <Compass class="w-5 h-5 text-gold-400" />
-              <span>Compass & Orientation</span>
-            </h2>
-            {overview.directions.compass_note && (
-              <p class="text-slate-300 text-base leading-relaxed">{overview.directions.compass_note}</p>
-            )}
-            {overview.directions.mappings && overview.directions.mappings.length > 0 && (
-              <div class="overflow-x-auto rounded-lg border border-slate-800">
-                <table class="w-full text-sm text-left border-collapse">
-                  <thead>
-                    <tr class="border-b border-slate-700/80 text-slate-400 font-mono bg-slate-900/60">
-                      <th class="py-2.5 px-3">Screen Direction</th>
-                      <th class="py-2.5 px-3">Cardinal Direction</th>
-                      <th class="py-2.5 px-3">Abbreviation</th>
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-slate-800 text-slate-300">
-                    {overview.directions.mappings.map((m: any) => (
-                      <tr class="hover:bg-slate-800/40">
-                        <td class="py-2 px-3 font-medium">{m.screen}</td>
-                        <td class="py-2 px-3 text-gold-400">{m.cardinal}</td>
-                        <td class="py-2 px-3 font-mono text-slate-400">{m.abbr}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            )}
-          </section>
-        )}
+        {/* Manual Overview, Controls, Battle Mechanics & Compass */}
+        <ManualOverview overview={overview} />
 
-        {/* Game Manual & Instructions Components (e.g. I-1-01) */}
-        {overview.intro && (
-          <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-slate-300 text-base italic leading-relaxed">
-            {overview.intro}
-          </div>
-        )}
+        {/* Character Profiles & Glossary */}
+        <CharacterProfiles characters={overview.characters} glossary={overview.glossary} />
 
-        {overview.story_prologue && (
-          <section id="prologue" class="space-y-3">
-            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
-              <ScrollText class="w-5 h-5 text-gold-400" />
-              <span>Story Prologue</span>
-            </h2>
-            <div class="grid gap-3">
-              {overview.story_prologue.setting_1 && (
-                <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed">
-                  <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
-                    <MapPin class="w-3.5 h-3.5 text-gold-400" />
-                    <span>Rouen, France (1913)</span>
-                  </span>
-                  {overview.story_prologue.setting_1}
-                </div>
-              )}
-              {overview.story_prologue.setting_2 && (
-                <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed">
-                  <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
-                    <MapPin class="w-3.5 h-3.5 text-gold-400" />
-                    <span>One Month Later</span>
-                  </span>
-                  {overview.story_prologue.setting_2}
-                </div>
-              )}
-              {overview.story_prologue.inciting_incident && (
-                <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed">
-                  <span class="text-gold-500 font-semibold flex items-center gap-1.5 mb-1">
-                    <Sparkles class="w-3.5 h-3.5 text-gold-400" />
-                    <span>Inciting Incident</span>
-                  </span>
-                  {overview.story_prologue.inciting_incident}
-                </div>
-              )}
-            </div>
-          </section>
-        )}
-
-        {overview.controls && (
-          <section id="controls" class="space-y-3">
-            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
-              <Gamepad2 class="w-5 h-5 text-gold-400" />
-              <span>Controls & Controller Layout</span>
-            </h2>
-            {overview.controls.controller_layout && (
-              <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90">
-                <table class="w-full text-sm sm:text-base text-left">
-                  <thead>
-                    <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/60">
-                      <th class="py-2.5 px-3">Button / Input</th>
-                      <th class="py-2.5 px-3">Function</th>
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-slate-800/60 text-slate-300">
-                    {overview.controls.controller_layout.map((c: any) => (
-                      <tr class="hover:bg-slate-800/40">
-                        <td class="py-2 px-3 font-mono text-gold-400 font-semibold whitespace-nowrap">{c.button}</td>
-                        <td class="py-2 px-3">{c.function}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            )}
-            {overview.controls.menu_navigation && (
-              <p class="text-sm text-slate-400 italic mt-2">{overview.controls.menu_navigation}</p>
-            )}
-          </section>
-        )}
-
-        {overview.playing_the_game && (
-          <section id="system" class="space-y-3">
-            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
-              <SlidersHorizontal class="w-5 h-5 text-gold-400" />
-              <span>System & Operations</span>
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
-              {Object.entries(overview.playing_the_game).map(([key, val]) => (
-                <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1.5">
-                  <h3 class="font-serif font-bold capitalize text-gold-400 text-base sm:text-lg">{key.replace(/_/g, ' ')}</h3>
-                  <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{val}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {overview.player_attributes && (
-          <section id="attributes" class="space-y-3">
-            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
-              <Swords class="w-5 h-5 text-gold-400" />
-              <span>Player Attributes & Battle System</span>
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
-              {Object.entries(overview.player_attributes).map(([key, val]) => (
-                <div class="p-3.5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1.5">
-                  <h3 class="font-mono font-bold uppercase tracking-wider text-gold-400 text-sm sm:text-base">{key.replace(/_/g, ' ')}</h3>
-                  <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{val}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {overview.battle_mechanics && (
-          <section id="battle-mechanics" class="space-y-4">
-            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
-              <Swords class="w-5 h-5 text-gold-400" />
-              <span>Battle Mechanics</span>
-            </h2>
-            {overview.battle_mechanics.encounter_flow && (
-              <p class="text-sm sm:text-base text-slate-300 leading-relaxed">{overview.battle_mechanics.encounter_flow}</p>
-            )}
-            {overview.battle_mechanics.action_menu && (
-              <div class="space-y-2.5">
-                <h3 class="text-base sm:text-lg font-serif font-bold text-slate-200">Battle Actions</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
-                  {overview.battle_mechanics.action_menu.map((a: any) => (
-                    <div class="p-3.5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1">
-                      <div class="font-semibold text-gold-400 font-mono text-sm sm:text-base">{a.action}</div>
-                      <p class="text-slate-300 leading-relaxed text-sm">{a.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-            {overview.battle_mechanics.judgment_ring && (
-              <div class="p-5 rounded-xl bg-amber-950/20 border border-amber-800/40 text-sm sm:text-base space-y-2">
-                <h3 class="font-serif font-bold text-amber-300 text-base sm:text-lg">
-                  Judgment Ring System
-                </h3>
-                <p class="text-slate-200 text-base leading-relaxed">{overview.battle_mechanics.judgment_ring.description}</p>
-                <p class="text-slate-300 text-base leading-relaxed">{overview.battle_mechanics.judgment_ring.mechanics}</p>
-                {overview.battle_mechanics.judgment_ring.character_variation && (
-                  <p class="text-amber-400/80 text-sm italic">{overview.battle_mechanics.judgment_ring.character_variation}</p>
-                )}
-              </div>
-            )}
-            {overview.battle_mechanics.command_menu && (
-              <p class="text-sm sm:text-base text-slate-400 italic">{overview.battle_mechanics.command_menu}</p>
-            )}
-          </section>
-        )}
-
-        {overview.characters && overview.characters.length > 0 && (
-          <section id="characters" class="space-y-3">
-            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
-              <Users class="w-5 h-5 text-gold-400" />
-              <span>Character Profiles</span>
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {overview.characters.map((char: any) => (
-                <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2 text-sm sm:text-base">
-                  <div class="flex items-center justify-between">
-                    <h3 class="text-lg sm:text-xl font-serif font-bold text-slate-100 flex items-center gap-1.5">
-                      <User class="w-4 h-4 text-amber-300" />
-                      <span>{char.name}</span>
-                    </h3>
-                    <div class="flex items-center gap-2">
-                      {char.class && (
-                        <span class="px-2 py-0.5 rounded bg-amber-950/40 text-amber-300 border border-amber-800/40 font-mono text-xs">
-                          {char.class}
-                        </span>
-                      )}
-                      {char.age && <span class="text-slate-400 text-xs">Age: {char.age}</span>}
-                    </div>
-                  </div>
-                  <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{char.profile}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {overview.glossary && overview.glossary.length > 0 && (
-          <section id="glossary" class="space-y-3">
-            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 border-b border-slate-800 pb-2 flex items-center gap-2.5">
-              <BookOpen class="w-5 h-5 text-gold-400" />
-              <span>Lore & Terminology</span>
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {overview.glossary.map((g: any) => (
-                <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-1 text-sm sm:text-base">
-                  <h3 class="font-serif font-bold text-gold-400 text-base sm:text-lg">{g.term}</h3>
-                  <p class="text-slate-300 leading-relaxed text-sm sm:text-base">{g.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Primary Objectives (Walkthroughs) */}
         {/* Primary Objectives (Walkthroughs) */}
         {objectives && objectives.length > 0 && (
           <section id="objectives" class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-3.5 shadow-sm">
@@ -523,164 +241,13 @@ if (overview.metadata) {
         )}
 
         {/* Obtainable Items */}
-        {itemsSummary?.obtainable && itemsSummary.obtainable.length > 0 && (
-          <section id="items" class="space-y-3">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-2">
-              <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-                <Package class="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                <span>Obtainable Items & Treasures</span>
-              </h2>
-              <span class="text-sm font-mono text-slate-400">{itemsSummary.obtainable.length} items</span>
-            </div>
-            <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90 shadow-sm">
-              <table class="w-full text-sm sm:text-base text-left">
-                <thead>
-                  <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/80">
-                    <th class="py-3 px-4 font-semibold">Item Name</th>
-                    <th class="py-3 px-4 font-semibold">Category</th>
-                    <th class="py-3 px-4 font-semibold">Location</th>
-                  </tr>
-                </thead>
-                <tbody class="divide-y divide-slate-800/60 text-slate-300">
-                  {itemsSummary.obtainable.map((it: any) => {
-                    const isEquip = it.category === 'equipment';
-                    const isValuable = it.category === 'valuables';
-                    return (
-                      <tr class="hover:bg-slate-800/40 transition-colors">
-                        <td class="py-2.5 px-4 font-semibold text-emerald-400 whitespace-nowrap">
-                          <span class="inline-flex items-center gap-1.5">
-                            {isEquip ? (
-                              <Sword class="w-3.5 h-3.5 text-slate-300 flex-shrink-0" />
-                            ) : isValuable ? (
-                              <Scroll class="w-3.5 h-3.5 text-blue-400 flex-shrink-0" />
-                            ) : (
-                              <Sparkles class="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
-                            )}
-                            <span>{it.name}</span>
-                          </span>
-                        </td>
-                        <td class="py-2.5 px-4 font-mono text-amber-300 capitalize text-sm">{it.category}</td>
-                        <td class="py-2.5 px-4 text-slate-200 leading-relaxed">
-                          <span class="inline-flex items-center gap-1.5 text-slate-300">
-                            <MapPin class="w-3.5 h-3.5 text-gold-400/80 flex-shrink-0" />
-                            <span>{it.location}</span>
-                          </span>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        )}
+        <ItemTable items={itemsSummary?.obtainable} />
 
         {/* Enemies */}
-        {enemies && enemies.length > 0 && (
-          <section id="enemies" class="space-y-3">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-2">
-              <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-                <Skull class="w-5 h-5 text-rose-400 flex-shrink-0" />
-                <span>Area Enemies & Encounters</span>
-              </h2>
-              <span class="text-sm font-mono text-slate-400">{enemies.length} enemies</span>
-            </div>
-            <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90 shadow-sm">
-              <table class="w-full text-sm sm:text-base text-left">
-                <thead>
-                  <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/80">
-                    <th class="py-3 px-3 text-center">#</th>
-                    <th class="py-3 px-4">Enemy Name</th>
-                    <th class="py-3 px-3 font-mono">Class</th>
-                    <th class="py-3 px-3 font-mono">HP</th>
-                    <th class="py-3 px-4">Notes</th>
-                  </tr>
-                </thead>
-                <tbody class="divide-y divide-slate-800/60 text-slate-300">
-                  {enemies.map((en: any) => (
-                    <tr class="hover:bg-slate-800/40 transition-colors">
-                      <td class="py-2.5 px-3 font-mono text-slate-400 text-center">{en.number || '—'}</td>
-                      <td class="py-2.5 px-4 font-semibold text-slate-200 whitespace-nowrap">
-                        <span class="inline-flex items-center gap-1.5">
-                          <Skull class="w-3.5 h-3.5 text-rose-400 flex-shrink-0" />
-                          <span>{en.name}</span>
-                        </span>
-                        {en.is_boss && (
-                          <span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded bg-rose-950/70 text-rose-300 text-xs font-mono border border-rose-800">
-                            <Swords class="w-3 h-3" />
-                            <span>BOSS</span>
-                          </span>
-                        )}
-                        {en.is_subboss && (
-                          <span class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-950/70 text-amber-300 text-xs font-mono border border-amber-800">
-                            <Swords class="w-3 h-3" />
-                            <span>SUB-BOSS</span>
-                          </span>
-                        )}
-                      </td>
-                      <td class="py-2.5 px-3 font-mono text-amber-400">{en.class || '—'}</td>
-                      <td class="py-2.5 px-3 font-mono text-rose-400">
-                        <span class="inline-flex items-center gap-1">
-                          <Heart class="w-3.5 h-3.5 text-rose-400 flex-shrink-0" />
-                          <span>{en.hp ?? '—'}</span>
-                        </span>
-                      </td>
-                      <td class="py-2.5 px-4 text-slate-300 leading-relaxed">{en.notes || '—'}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        )}
+        <EnemyTable enemies={enemies} />
 
         {/* Shops */}
-        {shops && shops.length > 0 && (
-          <section id="shops" class="space-y-4">
-            <div class="border-b border-slate-800 pb-2">
-              <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-                <Store class="w-5 h-5 text-gold-400 flex-shrink-0" />
-                <span>Shops & Merchants</span>
-              </h2>
-            </div>
-            {shops.map((s: any) => (
-              <div class="space-y-2.5">
-                <h3 class="text-lg sm:text-xl font-serif font-bold text-gold-400 flex items-center gap-2">
-                  <Store class="w-4 h-4 text-amber-400 flex-shrink-0" />
-                  <span>{s.name}</span>
-                </h3>
-                <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90 shadow-sm">
-                  <table class="w-full text-sm sm:text-base text-left">
-                    <thead>
-                      <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/60">
-                        <th class="py-2.5 px-4">Item</th>
-                        <th class="py-2.5 px-4">Price</th>
-                      </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-800/60 text-slate-300">
-                      {s.inventory?.map((inv: any) => (
-                        <tr class="hover:bg-slate-800/40">
-                          <td class="py-2.5 px-4 font-medium text-slate-200">
-                            <span class="inline-flex items-center gap-1.5">
-                              <Package class="w-3.5 h-3.5 text-slate-300 flex-shrink-0" />
-                              <span>{inv.name}</span>
-                            </span>
-                          </td>
-                          <td class="py-2.5 px-4 font-mono text-gold-400">
-                            <span class="inline-flex items-center gap-1">
-                              <Coins class="w-3.5 h-3.5 text-gold-400 flex-shrink-0" />
-                              <span>{inv.price} Cash</span>
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            ))}
-          </section>
-        )}
+        <ShopTable shops={shops} />
 
         {/* Walkthrough Steps List */}
         {steps && steps.length > 0 && (

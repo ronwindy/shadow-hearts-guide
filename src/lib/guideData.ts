@@ -1,63 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import type {
+  GuideMetadata,
+  HeaderData,
+  TocEntry,
+  TocCategory,
+  TocData,
+  PageTocItem,
+  ManualOverviewData
+} from './types';
 
-export interface GuideMetadata {
-  game: string;
-  author: string;
-  contact_email?: string;
-  facebook?: string;
-  region?: string;
-  type?: string;
-  platform?: string;
-  version?: string;
-  last_updated?: string;
-  best_viewing_program?: string;
-}
-
-export interface HeaderData {
-  guide: {
-    id: string;
-    code: string;
-    title: string;
-    type: string;
-    category: string;
-    source: {
-      game: string;
-      author: string;
-      version: string;
-      url: string;
-      source_file: string;
-    };
-    navigation: {
-      prev: any;
-      next: {
-        id: string;
-        code: string;
-        title: string;
-        file: string;
-      };
-    };
-    overview: {
-      metadata: GuideMetadata;
-      purpose: string;
-      guide_scope: string;
-    };
-    callouts?: Array<{
-      type: string;
-      title: string;
-      text: string;
-    }>;
-  };
-}
-
-export interface TocEntry {
-  code: string;
-  title: string;
-  is_sidequest: boolean;
-  id?: string;
-  has_structured?: boolean;
-  label?: string;
-}
+export * from './types';
 
 export function getHumanReadableLabel(
   rawCode: string = '',
@@ -111,36 +64,6 @@ export function getHumanReadableLabel(
   return rawCode;
 }
 
-export interface TocCategory {
-  category: string;
-  entries: TocEntry[];
-}
-
-export interface TocData {
-  guide: {
-    id: string;
-    code: string;
-    title: string;
-    type: string;
-    category: string;
-    source: {
-      game: string;
-      author: string;
-      version: string;
-      url: string;
-      source_file: string;
-    };
-    navigation: {
-      prev: any;
-      next: any;
-    };
-    overview: {
-      sections: TocCategory[];
-      legend: string;
-    };
-  };
-}
-
 const SECTIONS_DIR = path.resolve(process.cwd(), 'structured-content/sections');
 
 export function getHeaderData(): HeaderData {
@@ -165,7 +88,6 @@ export function enrichTocCategories(categories: TocCategory[], files: string[]):
         entry.id = cleanCode;
       } else {
         entry.id = cleanCode;
-        entry.has_structured = false;
       }
     });
   });
@@ -196,4 +118,74 @@ export function getAllStructuredSections(): Array<{ id: string; filename: string
     const id = data.guide?.id || filename.replace('.json', '');
     return { id, filename, data };
   });
+}
+
+/**
+ * Builds the array of jump sections for on-page table of contents (right sidebar & mobile drawer)
+ */
+export function buildPageTocSections(guide: any): PageTocItem[] {
+  const overview: ManualOverviewData = guide.overview || {};
+  const objectives = guide.objectives || (overview.objective ? [overview.objective] : []);
+  const route = guide.route || overview.route || [];
+  const steps = guide.steps || [];
+  const initialSetup = guide.initial_setup;
+  const itemsSummary = guide.items_summary;
+  const enemies = guide.enemies || [];
+  const shops = guide.shops || [];
+
+  const pageSections: PageTocItem[] = [];
+
+  if (objectives && objectives.length > 0) {
+    pageSections.push({ id: 'objectives', label: 'Primary Objectives', count: objectives.length });
+  }
+  if (route && route.length > 0) {
+    pageSections.push({ id: 'route', label: 'Route Progression' });
+  }
+  if (initialSetup) {
+    pageSections.push({ id: 'setup', label: 'Initial Setup' });
+  }
+  if (itemsSummary?.obtainable && itemsSummary.obtainable.length > 0) {
+    pageSections.push({ id: 'items', label: 'Obtainable Items', count: itemsSummary.obtainable.length });
+  }
+  if (enemies && enemies.length > 0) {
+    pageSections.push({ id: 'enemies', label: 'Area Enemies', count: enemies.length });
+  }
+  if (shops && shops.length > 0) {
+    pageSections.push({ id: 'shops', label: 'Shops & Merchants', count: shops.length });
+  }
+  if (steps && steps.length > 0) {
+    pageSections.push({ id: 'steps', label: 'Walkthrough Steps', count: steps.length });
+  }
+  if (overview.sections && overview.sections.length > 0) {
+    pageSections.push({ id: 'toc-index', label: 'Guide Directory' });
+  }
+  if (overview.directions) {
+    pageSections.push({ id: 'compass', label: 'Compass & Navigation' });
+  }
+  if (overview.story_prologue) {
+    pageSections.push({ id: 'prologue', label: 'Story Prologue' });
+  }
+  if (overview.controls) {
+    pageSections.push({ id: 'controls', label: 'Controls' });
+  }
+  if (overview.playing_the_game) {
+    pageSections.push({ id: 'system', label: 'System & Operations' });
+  }
+  if (overview.player_attributes) {
+    pageSections.push({ id: 'attributes', label: 'Attributes & Battle' });
+  }
+  if (overview.battle_mechanics) {
+    pageSections.push({ id: 'battle-mechanics', label: 'Battle Mechanics' });
+  }
+  if (overview.characters && overview.characters.length > 0) {
+    pageSections.push({ id: 'characters', label: 'Character Profiles', count: overview.characters.length });
+  }
+  if (overview.glossary && overview.glossary.length > 0) {
+    pageSections.push({ id: 'glossary', label: 'Lore & Glossary', count: overview.glossary.length });
+  }
+  if (overview.metadata) {
+    pageSections.push({ id: 'metadata', label: 'Document Information' });
+  }
+
+  return pageSections;
 }
