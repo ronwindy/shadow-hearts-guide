@@ -1,25 +1,22 @@
 # Shadow Hearts Guide Converter — Project Status
 
-> **Last Synced:** `2026-10-04 12:46:23` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
+> **Last Synced:** `2026-10-04 13:25:13` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
 
 ## 1. Quick Orientation (Agent Context)
 
 ```text
 Canonical Import:   [########################] 100.0% (69/69)
 Structured Content: [##----------------------] 8.7% (6/69)
-QA Verified:        [#-----------------------] 2.9% (2/69)
-Web Pages Built:    [------------------------] 0.0% (0/69)
+QA Verified:        [#-----------------------] 5.8% (4/69)
+Web Pages Built:    [##----------------------] 8.7% (6/69)
 ```
 
 ### Next Priority Actions (Immediate Queue)
 1. **[HIGH]** `Structure w-1-02 (Plains)` — *Sequence gap: was skipped while later section is already structured.*
-2. **[MEDIUM]** `Run QA on header (Title, Metadata & Intro Notes)` — *Structured JSON exists but QA verification report is missing.*
-3. **[LOW]** `Initialize Web Builder Astro site` — *Static site generator skeleton has not been initialized yet.*
+2. **[MEDIUM]** `Run QA on i-1-01 (Game Manual / Instructions)` — *Structured JSON exists but QA verification report is missing.*
 
 ### Pipeline Notices & Gaps
 - :warning: **Sequence Gap:** `w-1-02` (Plains) was skipped. Expected next in sequence.
-- :mag: **Pending QA:** `header` (Title, Metadata & Intro Notes) is structured but lacks a QA report.
-- :mag: **Pending QA:** `i-1-00` (Table of Contents) is structured but lacks a QA report.
 - :mag: **Pending QA:** `i-1-01` (Game Manual / Instructions) is structured but lacks a QA report.
 - :mag: **Pending QA:** `w-1-00` (Walkthrough - Asia) is structured but lacks a QA report.
 
@@ -41,9 +38,9 @@ Web Pages Built:    [------------------------] 0.0% (0/69)
 
 | Category | Total | Canonical | Structured | QA Passed | Web Built | Progress |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
-| **Header** | 1 | 1 | 1 | 0 | 0 | `[------------] 0.0%` |
-| **Introduction** | 2 | 2 | 2 | 0 | 0 | `[------------] 0.0%` |
-| **Walkthrough - Asia** | 15 | 15 | 3 | 2 | 0 | `[##----------] 13.3%` |
+| **Header** | 1 | 1 | 1 | 1 | 1 | `[############] 100.0%` |
+| **Introduction** | 2 | 2 | 2 | 1 | 2 | `[######------] 50.0%` |
+| **Walkthrough - Asia** | 15 | 15 | 3 | 2 | 3 | `[##----------] 13.3%` |
 | **Walkthrough - Europe** | 32 | 32 | 0 | 0 | 0 | `[------------] 0.0%` |
 | **Appendices** | 16 | 16 | 0 | 0 | 0 | `[------------] 0.0%` |
 | **Conclusion** | 3 | 3 | 0 | 0 | 0 | `[------------] 0.0%` |
@@ -56,23 +53,23 @@ Web Pages Built:    [------------------------] 0.0% (0/69)
 
 | Code | ID | Section Title | Canon | Struct | QA | Web | Next Action |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| `[HEADER]` | `header` | Title, Metadata & Intro Notes | :white_check_mark: | :white_check_mark: | :white_circle: | :white_circle: | QA Verify `header` |
+| `[HEADER]` | `header` | Title, Metadata & Intro Notes | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 
 ### Introduction (2 sections)
 
 | Code | ID | Section Title | Canon | Struct | QA | Web | Next Action |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| `[I-1-00]` | `i-1-00` | Table of Contents | :white_check_mark: | :white_check_mark: | :white_circle: | :white_circle: | QA Verify `i-1-00` |
-| `[I-1-01]` | `i-1-01` | Game Manual / Instructions | :white_check_mark: | :white_check_mark: | :white_circle: | :white_circle: | QA Verify `i-1-01` |
+| `[I-1-00]` | `i-1-00` | Table of Contents | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
+| `[I-1-01]` | `i-1-01` | Game Manual / Instructions | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `i-1-01` |
 
 ### Walkthrough - Asia (15 sections)
 
 | Code | ID | Section Title | Canon | Struct | QA | Web | Next Action |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| `[W-1-00]` | `w-1-00` | Walkthrough - Asia | :white_check_mark: | :white_check_mark: | :white_circle: | :white_circle: | QA Verify `w-1-00` |
-| `[W-1-01]` | `w-1-01` | Trans-Siberian Express | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_circle: | Build web page for `w-1-01` |
+| `[W-1-00]` | `w-1-00` | Walkthrough - Asia | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `w-1-00` |
+| `[W-1-01]` | `w-1-01` | Trans-Siberian Express | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 | `[W-1-02]` | `w-1-02` | Plains | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-02` |
-| `[W-1-03]` | `w-1-03` | Zhaoyang Village | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_circle: | Build web page for `w-1-03` |
+| `[W-1-03]` | `w-1-03` | Zhaoyang Village | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 | `[W-1-04]` | `w-1-04` | Fengtian | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-04` |
 | `[W-1-05]` | `w-1-05` | Dalian | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-05` |
 | `[W-1-06]` | `w-1-06` | Smuggler's Boat | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-06` |

@@ -60,9 +60,10 @@ def audit_section(root: Path, sec: Dict[str, Any]) -> Dict[str, Any]:
     
     qa_path = qa_path1 if qa_path1.exists() else (qa_path2 if qa_path2.exists() else None)
 
-    # Web output check (dist/guide/{id}/index.html, dist/{id}.html, etc.)
+    # Web output check (dist/guide/{id}/index.html, dist/guide/{id}.html, dist/{id}.html, etc.)
     web_candidates = [
         root / "dist" / f"{sec_id}.html",
+        root / "dist" / "guide" / f"{sec_id}.html",
         root / "dist" / "guide" / sec_id / "index.html",
         root / "site" / "dist" / f"{sec_id}.html",
     ]

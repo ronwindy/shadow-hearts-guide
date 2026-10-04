@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import { getTocData } from '../lib/guideData';
+
+const tocData = getTocData();
+const overview = tocData.guide.overview;
+---
+
+<BaseLayout
+  title="Table of Contents — Shadow Hearts Strategy Guide"
+  description="Complete index of all 69 sections of the Shadow Hearts Walkthrough and FAQ, including Asia, Europe, Side Quests, and Appendices."
+>
+  <div class="space-y-8">
+    <!-- Header -->
+    <div class="border-b border-slate-800 pb-6">
+      <div class="flex items-center gap-2 text-xs font-mono text-gold-500 mb-2">
+        <span>[I-1-00]</span>
+        <span>&bull;</span>
+        <span>INDEX & DIRECTORY</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-slate-100">
+        Table of Contents
+      </h1>
+      <p class="mt-2 text-slate-400 max-w-3xl text-sm sm:text-base">
+        Browse the complete walkthrough and reference sections for Shadow Hearts. Use the search filter below to quickly find any town, dungeon, boss, side quest, or appendix.
+      </p>
+    </div>
+
+    <!-- Table of Contents Component -->
+    <TableOfContents sections={overview.sections} legend={overview.legend} />
+  </div>
+</BaseLayout>

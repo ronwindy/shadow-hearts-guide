@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import { getHeaderData, getTocData } from '../lib/guideData';
+
+const headerData = getHeaderData();
+const tocData = getTocData();
+const meta = headerData.guide.overview.metadata;
+const purpose = headerData.guide.overview.purpose;
+const scope = headerData.guide.overview.guide_scope;
+const callouts = headerData.guide.callouts || [];
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<BaseLayout
+  title="Shadow Hearts — Complete Guide & Walkthrough"
+  description="A polished, player-friendly static companion for the PlayStation 2 classic Shadow Hearts."
+>
+  <div class="space-y-16">
+    <!-- Hero Section -->
+    <section class="relative rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-850/80 to-[#0c0e14] p-6 sm:p-10 lg:p-12 overflow-hidden shadow-2xl">
+      <!-- Ambient Glow Behind Hero -->
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-crimson-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-3xl space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-gold-500/10 text-gold-400 border border-gold-500/30">
+          <span>{meta.platform}</span>
+          <span>&bull;</span>
+          <span>{meta.region}</span>
+          <span>&bull;</span>
+          <span>v{meta.version}</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight text-slate-100">
+          SHADOW HEARTS
+        </h1>
+
+        <p class="text-lg sm:text-xl text-slate-300 font-serif italic">
+          Complete Strategy Guide & Walkthrough
+        </p>
+
+        <p class="text-sm sm:text-base text-slate-400 leading-relaxed">
+          {purpose}
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a
+            href={`${baseUrl}/toc`}
+            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gold-500 hover:bg-gold-400 text-slate-950 font-semibold text-sm transition-colors shadow-lg shadow-gold-500/20"
+          >
+            Explore Table of Contents
+          </a>
+          <a
+            href={`${baseUrl}/guide/w-1-01`}
+            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium text-sm transition-colors"
+          >
+            Start Asia Walkthrough →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guide Scope & Author Metadata Cards -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2 p-6 rounded-xl bg-slate-850 border border-slate-800 space-y-4">
+        <h2 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-sm bg-gold-500"></span>
+          Guide Scope & Walkthrough Focus
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          {scope}
+        </p>
+        
+        {callouts.map((callout) => (
+          <div class="mt-4 p-4 rounded-lg bg-blue-950/30 border border-blue-800/40 text-sm text-blue-200 flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div>
+              <strong class="font-semibold block text-blue-100">{callout.title}</strong>
+              <p class="text-xs text-blue-200/90 mt-0.5">{callout.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="p-6 rounded-xl bg-slate-850 border border-slate-800 space-y-4">
+        <h2 class="text-lg font-serif font-bold text-slate-100 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-sm bg-purple-500"></span>
+          Original Source Metadata
+        </h2>
+        <dl class="space-y-3 text-xs sm:text-sm">
+          <div class="flex justify-between border-b border-slate-800 pb-2">
+            <dt class="text-slate-400">Author</dt>
+            <dd class="text-slate-200 font-medium">{meta.author}</dd>
+          </div>
+          <div class="flex justify-between border-b border-slate-800 pb-2">
+            <dt class="text-slate-400">Version</dt>
+            <dd class="text-slate-200 font-mono">{meta.version}</dd>
+          </div>
+          <div class="flex justify-between border-b border-slate-800 pb-2">
+            <dt class="text-slate-400">Last Updated</dt>
+            <dd class="text-slate-200 font-mono">{meta.last_updated}</dd>
+          </div>
+          <div class="flex justify-between border-b border-slate-800 pb-2">
+            <dt class="text-slate-400">Guide Type</dt>
+            <dd class="text-slate-200">{meta.type}</dd>
+          </div>
+          {meta.contact_email && (
+            <div class="flex justify-between border-b border-slate-800 pb-2">
+              <dt class="text-slate-400">Contact</dt>
+              <dd class="text-slate-200 font-mono text-[11px] truncate max-w-[150px]">{meta.contact_email}</dd>
+            </div>
+          )}
+        </dl>
+      </div>
+    </section>
+
+    <!-- Table of Contents Preview / Quick Navigation -->
+    <section class="space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-2xl font-serif font-bold text-slate-100">
+            Guide Directory & Chapters
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            Browse all 69 guide sections across the 4 main progression arcs.
+          </p>
+        </div>
+        <a href={`${baseUrl}/toc`} class="text-xs sm:text-sm font-medium text-gold-500 hover:text-gold-400 transition-colors">
+          View full index &rarr;
+        </a>
+      </div>
+
+      <TableOfContents sections={tocData.guide.overview.sections} legend={tocData.guide.overview.legend} />
+    </section>
+  </div>
+</BaseLayout>

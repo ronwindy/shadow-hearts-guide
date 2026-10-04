@@ -1,0 +1,168 @@
+---
+import type { TocCategory, TocEntry } from '../lib/guideData';
+
+interface Props {
+  sections: TocCategory[];
+  legend?: string;
+}
+
+const { sections, legend = "* = Side Quest" } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<div class="space-y-8" id="toc-root">
+  <!-- Search and Filter Bar -->
+  <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between p-4 rounded-lg bg-slate-850 border border-slate-800">
+    <div class="relative flex-1">
+      <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+      <input
+        type="text"
+        id="toc-search"
+        placeholder="Filter sections by title or code (e.g. Trans-Siberian, W-1-01, Side Quest)..."
+        class="w-full pl-9 pr-4 py-2 bg-slate-900 border border-slate-700/80 rounded-md text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500"
+      />
+    </div>
+
+    <div class="flex items-center gap-3 text-xs text-slate-400 self-center sm:self-auto">
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-800/40">
+        <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+        {legend}
+      </span>
+      <span id="results-count" class="font-mono text-slate-400"></span>
+    </div>
+  </div>
+
+  <!-- Sections Categories -->
+  <div class="space-y-10" id="toc-categories">
+    {sections.map((cat, catIdx) => (
+      <section class="category-block space-y-4" data-category={cat.category}>
+        <div class="flex items-baseline justify-between border-b border-slate-800 pb-2">
+          <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-gold-500"></span>
+            {cat.category}
+          </h2>
+          <span class="text-xs font-mono text-slate-400">{cat.entries.length} sections</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {cat.entries.map((entry) => {
+            const isAvailable = entry.has_structured;
+            return (
+              <div
+                class={`toc-item group relative p-3.5 rounded-lg border transition-all duration-200 flex flex-col justify-between ${
+                  isAvailable 
+                    ? 'bg-slate-850/80 hover:bg-slate-800/90 border-slate-800 hover:border-gold-500/50 shadow-sm'
+                    : 'bg-slate-900/40 border-slate-850 text-slate-400'
+                }`}
+                data-title={entry.title.toLowerCase()}
+                data-code={entry.code.toLowerCase()}
+                data-sidequest={entry.is_sidequest ? 'true' : 'false'}
+              >
+                <div class="space-y-1.5">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class={`font-mono text-xs px-2 py-0.5 rounded border ${
+                      entry.code.startsWith('[W-S')
+                        ? 'bg-purple-950/50 text-purple-300 border-purple-800/40'
+                        : entry.code.startsWith('[W-')
+                        ? 'bg-amber-950/40 text-amber-300 border-amber-800/40'
+                        : entry.code.startsWith('[A-')
+                        ? 'bg-blue-950/40 text-blue-300 border-blue-800/40'
+                        : 'bg-slate-800 text-slate-300 border-slate-700'
+                    }`}>
+                      {entry.code}
+                    </span>
+
+                    {entry.is_sidequest && (
+                      <span class="text-[10px] font-semibold uppercase tracking-wider text-purple-300 bg-purple-950/40 border border-purple-800/50 px-1.5 py-0.5 rounded">
+                        Side Quest
+                      </span>
+                    )}
+
+                    {isAvailable && (
+                      <span class="text-[10px] font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/40 border border-emerald-800/50 px-1.5 py-0.5 rounded">
+                        Available
+                      </span>
+                    )}
+                  </div>
+
+                  <h3 class="text-sm font-medium text-slate-200 group-hover:text-gold-400 transition-colors line-clamp-2">
+                    {isAvailable ? (
+                      <a href={`${baseUrl}/guide/${entry.id}`} class="focus:outline-none after:absolute after:inset-0">
+                        {entry.title}
+                      </a>
+                    ) : (
+                      <span>{entry.title}</span>
+                    )}
+                  </h3>
+                </div>
+
+                <div class="mt-2.5 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-400">
+                  <span>{isAvailable ? 'View Guide →' : 'In Transformation'}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    ))}
+  </div>
+
+  <div id="no-results" class="hidden text-center py-16 p-8 rounded-lg border border-slate-800 bg-slate-850">
+    <p class="text-slate-300 font-serif text-lg">No guide sections match your search</p>
+    <p class="text-sm text-slate-500 mt-1">Try clearing filters or searching by a different name or code.</p>
+  </div>
+</div>
+
+<script>
+  const searchInput = document.getElementById('toc-search') as HTMLInputElement | null;
+  const items = document.querySelectorAll<HTMLElement>('.toc-item');
+  const categories = document.querySelectorAll<HTMLElement>('.category-block');
+  const noResults = document.getElementById('no-results');
+  const resultsCount = document.getElementById('results-count');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.trim().toLowerCase();
+      let matchCount = 0;
+
+      items.forEach((item) => {
+        const title = item.getAttribute('data-title') || '';
+        const code = item.getAttribute('data-code') || '';
+        const isMatch = !q || title.includes(q) || code.includes(q);
+
+        if (isMatch) {
+          item.classList.remove('hidden');
+          matchCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      // Hide category block if no items visible
+      categories.forEach((cat) => {
+        const visibleItems = cat.querySelectorAll('.toc-item:not(.hidden)');
+        if (visibleItems.length === 0) {
+          cat.classList.add('hidden');
+        } else {
+          cat.classList.remove('hidden');
+        }
+      });
+
+      if (noResults) {
+        if (matchCount === 0 && q) {
+          noResults.classList.remove('hidden');
+        } else {
+          noResults.classList.add('hidden');
+        }
+      }
+
+      if (resultsCount) {
+        resultsCount.textContent = q ? `${matchCount} found` : '';
+      }
+    });
+  }
+</script>
