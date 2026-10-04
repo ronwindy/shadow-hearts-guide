@@ -5,6 +5,37 @@
   "description": "Schema definition for player-friendly structured game guide content converted from canonical source sections.",
   "type": "object",
   "required": ["guide"],
+  "$defs": {
+    "character_profile": {
+      "type": "object",
+      "required": ["name", "profile"],
+      "properties": {
+        "name": { "type": "string" },
+        "age": { "type": ["string", "null"] },
+        "class": { "type": ["string", "null"] },
+        "profile": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "glossary_entry": {
+      "type": "object",
+      "required": ["term", "description"],
+      "properties": {
+        "term": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "controller_mapping": {
+      "type": "object",
+      "required": ["button", "function"],
+      "properties": {
+        "button": { "type": "string" },
+        "function": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
   "properties": {
     "guide": {
       "type": "object",
@@ -108,6 +139,26 @@
         "overview": {
           "type": "object",
           "description": "General overview data for introductory, reference, or mechanics sections",
+          "properties": {
+            "characters": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/character_profile" }
+            },
+            "glossary": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/glossary_entry" }
+            },
+            "controls": {
+              "type": "object",
+              "properties": {
+                "controller_layout": {
+                  "type": "array",
+                  "items": { "$ref": "#/$defs/controller_mapping" }
+                },
+                "menu_navigation": { "type": "string" }
+              }
+            }
+          },
           "additionalProperties": true
         },
         "route": {

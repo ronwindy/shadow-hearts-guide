@@ -1,0 +1,48 @@
+{
+  "guide": {
+    "id": "header",
+    "code": "[HEADER]",
+    "title": "Title, Metadata & Intro Notes",
+    "type": "reference",
+    "category": "Header",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": null,
+      "next": {
+        "id": "i-1-00",
+        "code": "[I-1-00]",
+        "title": "Table of Contents",
+        "file": "sections/i-1-00-table-of-contents.json"
+      }
+    },
+    "overview": {
+      "metadata": {
+        "game": "Shadow Hearts",
+        "author": "A_Backdated_Future",
+        "contact_email": "a.backdated.future@gmail.com",
+        "facebook": "http://facebook.com/ABackdatedFuture",
+        "region": "NTSC (North America -English-)",
+        "type": "FAQ/Walkthrough",
+        "platform": "Sony PlayStation 2 (PS2)",
+        "version": "1.05",
+        "last_updated": "02/15/2012",
+        "best_viewing_program": "Mozilla Firefox (for better search functionality)"
+      },
+      "purpose": "My purpose for this guide is to make sure that you are able to get a perfect game, meaning that you can find all items, explore all of the areas, and see all there is to see.",
+      "guide_scope": "The walkthrough is the main focus; it walks you through the whole game step-by-step, leading you to the locations of all of the items in the game and strategies for fighting the bosses. It will also be an extensive FAQ, which includes lists of all of the items, equipment, skills, shop lists, a bestiary with all of the enemies in the game, and more!"
+    },
+    "callouts": [
+      {
+        "type": "tip",
+        "title": "Formatting Note",
+        "text": "This document is best viewed using a FIXED-WIDTH font, such as Courier New. If the ASCII above/below and the charts used throughout the guide look strange, please change your settings to display text in a FIXED-WIDTH font. Thanks!"
+      }
+    ]
+  }
+}

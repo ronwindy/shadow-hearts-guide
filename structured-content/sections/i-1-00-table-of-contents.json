@@ -1,0 +1,128 @@
+{
+  "guide": {
+    "id": "i-1-00",
+    "code": "[I-1-00]",
+    "title": "Table of Contents",
+    "type": "reference",
+    "category": "Introduction",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "header",
+        "code": "[HEADER]",
+        "title": "Title, Metadata & Intro Notes",
+        "file": "sections/header-title-metadata-intro-notes.json"
+      },
+      "next": {
+        "id": "i-1-01",
+        "code": "[I-1-01]",
+        "title": "Game Manual / Instructions",
+        "file": "sections/i-1-01-game-manual-instructions.json"
+      }
+    },
+    "overview": {
+      "sections": [
+        {
+          "category": "Introduction",
+          "entries": [
+            { "code": "[I-1-00]", "title": "Table of Contents", "is_sidequest": false },
+            { "code": "[I-1-01]", "title": "Game Manual / Instructions", "is_sidequest": false }
+          ]
+        },
+        {
+          "category": "Walkthrough - Shadow Hearts (Asia)",
+          "entries": [
+            { "code": "[W-1-00]", "title": "Walkthrough - Shadow Hearts (Asia)", "is_sidequest": false },
+            { "code": "[W-1-01]", "title": "Trans-Siberian Express", "is_sidequest": false },
+            { "code": "[W-1-02]", "title": "Plains", "is_sidequest": false },
+            { "code": "[W-1-03]", "title": "Zhaoyang Village", "is_sidequest": false },
+            { "code": "[W-1-04]", "title": "Fengtian", "is_sidequest": false },
+            { "code": "[W-1-05]", "title": "Dalian", "is_sidequest": false },
+            { "code": "[W-1-06]", "title": "Smuggler's Boat", "is_sidequest": false },
+            { "code": "[W-1-07]", "title": "Shanghai, Huayuan (1)", "is_sidequest": false },
+            { "code": "[W-1-08]", "title": "Temple Ruins", "is_sidequest": false },
+            { "code": "[W-1-09]", "title": "Shanghai, Huayuan (2)", "is_sidequest": false },
+            { "code": "[W-1-10]", "title": "Asia Side Quests", "is_sidequest": false },
+            { "code": "[W-S-01]", "title": "Yuri's Level 1 Fusions", "is_sidequest": true },
+            { "code": "[W-S-02]", "title": "Kowloon Fortress", "is_sidequest": true },
+            { "code": "[W-S-03]", "title": "Mr Zhen's Pit Fight", "is_sidequest": true },
+            { "code": "[W-1-11]", "title": "Shanghai, Kuihai Tower", "is_sidequest": false }
+          ]
+        },
+        {
+          "category": "Walkthrough - Shadow Hearts (Europe)",
+          "entries": [
+            { "code": "[W-2-00]", "title": "Walkthrough - Shadow Hearts (Europe)", "is_sidequest": false },
+            { "code": "[W-2-01]", "title": "Prague (1)", "is_sidequest": false },
+            { "code": "[W-2-02]", "title": "Bistritz (1)", "is_sidequest": false },
+            { "code": "[W-2-03]", "title": "Blue Castle (1)", "is_sidequest": false },
+            { "code": "[W-2-04]", "title": "Bistritz (2)", "is_sidequest": false },
+            { "code": "[W-2-05]", "title": "Blue Castle (2)", "is_sidequest": false },
+            { "code": "[W-2-06]", "title": "Prague (2)", "is_sidequest": false },
+            { "code": "[W-2-07]", "title": "Rouen", "is_sidequest": false },
+            { "code": "[W-2-08]", "title": "London, Old Castle Street", "is_sidequest": false },
+            { "code": "[W-2-09]", "title": "London, Orphanage", "is_sidequest": false },
+            { "code": "[W-2-10]", "title": "Calios Mental Hospital (1)", "is_sidequest": false },
+            { "code": "[W-2-11]", "title": "Europe Side Quests, Part 1", "is_sidequest": false },
+            { "code": "[W-S-04]", "title": "Calios Mental Hospital (2)", "is_sidequest": true },
+            { "code": "[W-S-05]", "title": "Yuri's Gravestones", "is_sidequest": true },
+            { "code": "[W-2-12]", "title": "Nemeton Monastery (1)", "is_sidequest": false },
+            { "code": "[W-2-13]", "title": "Europe Side Quests, Part 2", "is_sidequest": false },
+            { "code": "[W-S-06]", "title": "Nemeton Monastery (Book of Rituals / Codex of Lurie)", "is_sidequest": true },
+            { "code": "[W-S-07]", "title": "The Orphanage (Emigre Manuscript / Lottery Member #3)", "is_sidequest": true },
+            { "code": "[W-S-08]", "title": "Rouen (Silent Peddler / Margarete's Armor, Weapon, & Confession / Zhuzhen's Armor / Lottery Member #2)", "is_sidequest": true },
+            { "code": "[W-S-09]", "title": "Blue Castle (Keith's Weapon / Lottery Member #1)", "is_sidequest": true },
+            { "code": "[W-S-10]", "title": "Prague (Rare Shop / The Dollhouse / Alice's Weapon)", "is_sidequest": true },
+            { "code": "[W-S-11]", "title": "Cave Temple (Keith's Armor / Zhuzhen's Weapon)", "is_sidequest": true },
+            { "code": "[W-S-12]", "title": "Ancient Ruins (Alice's Armor / Halley's Weapon)", "is_sidequest": true },
+            { "code": "[W-S-13]", "title": "Yuri's Level 2 & 3 Fusions, ???? Attacks", "is_sidequest": true },
+            { "code": "[W-S-14]", "title": "Sharon's Pit Fight (Halley's Armor / Other Items)", "is_sidequest": true },
+            { "code": "[W-S-15]", "title": "The Good Ending (Defeating the Masks)", "is_sidequest": true },
+            { "code": "[W-2-14]", "title": "Nemeton Monastery (2)", "is_sidequest": false },
+            { "code": "[W-2-15]", "title": "Europe Side Quests, Part 3", "is_sidequest": false },
+            { "code": "[W-S-16]", "title": "Nemeton Monastery (The Seraphic Radiance / Yuri's Weapon & Armor / Lottery Member #0)", "is_sidequest": true },
+            { "code": "[W-2-16]", "title": "Final Preparations", "is_sidequest": false },
+            { "code": "[W-2-17]", "title": "Neameeto", "is_sidequest": false },
+            { "code": "[W-2-18]", "title": "New Game+", "is_sidequest": false }
+          ]
+        },
+        {
+          "category": "Appendices",
+          "entries": [
+            { "code": "[A-1-00]", "title": "Appendices", "is_sidequest": false },
+            { "code": "[A-1-01]", "title": "Special Skills / Souls", "is_sidequest": false },
+            { "code": "[A-1-02]", "title": "Weapons", "is_sidequest": false },
+            { "code": "[A-1-03]", "title": "Armor", "is_sidequest": false },
+            { "code": "[A-1-04]", "title": "Accessories", "is_sidequest": false },
+            { "code": "[A-1-05]", "title": "Items", "is_sidequest": false },
+            { "code": "[A-1-06]", "title": "Valuables", "is_sidequest": false },
+            { "code": "[A-1-07]", "title": "Store/Shop List", "is_sidequest": false },
+            { "code": "[A-1-08]", "title": "Acupuncturist Costs", "is_sidequest": false },
+            { "code": "[A-1-09]", "title": "The Lottery", "is_sidequest": false },
+            { "code": "[A-1-10]", "title": "Malice Rewards", "is_sidequest": false },
+            { "code": "[A-1-11]", "title": "Pedometer Rewards", "is_sidequest": false },
+            { "code": "[A-1-12]", "title": "NPC Library (* some spoilers *)", "is_sidequest": false },
+            { "code": "[A-1-13]", "title": "Monster Library (Bestiary)", "is_sidequest": false },
+            { "code": "[A-1-14]", "title": "Sub-bosses and Bosses", "is_sidequest": false },
+            { "code": "[A-1-15]", "title": "Help (detailed, available in-game)", "is_sidequest": false }
+          ]
+        },
+        {
+          "category": "Conclusion",
+          "entries": [
+            { "code": "[C-1-01]", "title": "Version History", "is_sidequest": false },
+            { "code": "[C-1-02]", "title": "Thanks", "is_sidequest": false },
+            { "code": "[C-1-03]", "title": "Copyright / Disclaimer / Credits", "is_sidequest": false }
+          ]
+        }
+      ],
+      "legend": "* = Side Quest"
+    }
+  }
+}

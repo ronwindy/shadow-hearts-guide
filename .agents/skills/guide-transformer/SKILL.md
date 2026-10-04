@@ -1,4 +1,4 @@
-﻿---
+---
 name: guide-transformer
 description: >-
   Transforms a canonical source guide artifact into structured, player-friendly guide content (objectives, routes, ordered step checklists, missable warnings, items, and rewards) while preserving factual meaning and game terminology. Use this skill when structuring, reorganizing, or preparing raw game guide content for static site presentation.
@@ -746,6 +746,10 @@ The objective is:
 
 > **Useful structure, not maximum structure.**
 
+### Standardized Sub-Schemas vs Free-Form Overview
+
+While arbitrary narrative content in `overview` remains flexible (`additionalProperties: true`), recurring structured entities must strictly adhere to shared contracts defined in `structured-guide.schema.json` to prevent front-end component drift (see Section 25).
+
 ---
 
 ## 24. Avoid Excessive Summarization
@@ -803,6 +807,27 @@ Notes
 ```
 
 rather than a walkthrough structure.
+
+### Standardized Reference & Overview Sub-Schemas
+
+Pre-walkthrough sections (e.g. `i-1-01`) and upcoming Appendix reference sections (`a-1-01` through `a-1-15`, particularly `a-1-12` Character Bios and `a-1-15` Help/Glossary) store recurring structured information inside `guide.overview`. To ensure front-end components (such as `<CharacterCard.astro>` or `<GlossaryList.astro>`) encounter consistent field contracts across sections, these recurring data types must strictly follow the shared definitions in `structured-guide.schema.json`:
+
+- **Character Profiles (`#/$defs/character_profile`):** When structuring character entries under `overview.characters`:
+  - `name`: string (required)
+  - `profile`: string (required)
+  - `age`: string or null (optional)
+  - `class`: string or null (optional)
+  - `additionalProperties`: false
+- **Glossary Entries (`#/$defs/glossary_entry`):** When structuring terms or glossaries under `overview.glossary`:
+  - `term`: string (required)
+  - `description`: string (required)
+  - `additionalProperties`: false
+- **Controller Mappings (`#/$defs/controller_mapping`):** When structuring control schemes under `overview.controls.controller_layout`:
+  - `button`: string (required)
+  - `function`: string (required)
+  - `additionalProperties`: false
+
+Any transformation producing character profiles, glossaries, or controller layouts (including in Appendices A-1-12 and A-1-15) must adhere to these shared schemas.
 
 ---
 
