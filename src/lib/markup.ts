@@ -12,46 +12,108 @@
 export function formatControllerButtons(text: string): string {
   if (!text) return '';
 
-  // Button badge rendering helper
-  // PS symbols:
-  // ✕ (Cross) - Blue: text-sky-400 bg-sky-950/60 border-sky-600/70
-  // ◯ (Circle) - Red: text-rose-400 bg-rose-950/60 border-rose-600/70
-  // △ (Triangle) - Green: text-emerald-400 bg-emerald-950/60 border-emerald-600/70
-  // □ (Square) - Pink/Purple: text-fuchsia-400 bg-fuchsia-950/60 border-fuchsia-600/70
+  const badges: string[] = [];
+  const tokenFor = (html: string) => {
+    const idx = badges.length;
+    badges.push(html);
+    return `__CTRL_BTN_${idx}__`;
+  };
 
   const crossBadge = `<kbd class="inline-flex items-center justify-center w-5 h-5 mx-0.5 rounded-full font-bold text-xs bg-slate-900 border border-sky-500/80 text-sky-400 shadow-inner align-baseline" title="CROSS button" aria-label="CROSS button">✕</kbd>`;
   const circleBadge = `<kbd class="inline-flex items-center justify-center w-5 h-5 mx-0.5 rounded-full font-bold text-xs bg-slate-900 border border-rose-500/80 text-rose-400 shadow-inner align-baseline" title="CIRCLE button" aria-label="CIRCLE button">◯</kbd>`;
   const triangleBadge = `<kbd class="inline-flex items-center justify-center w-5 h-5 mx-0.5 rounded-full font-bold text-xs bg-slate-900 border border-emerald-500/80 text-emerald-400 shadow-inner align-baseline" title="TRIANGLE button" aria-label="TRIANGLE button">△</kbd>`;
   const squareBadge = `<kbd class="inline-flex items-center justify-center w-5 h-5 mx-0.5 rounded-full font-bold text-xs bg-slate-900 border border-fuchsia-500/80 text-fuchsia-400 shadow-inner align-baseline" title="SQUARE button" aria-label="SQUARE button">□</kbd>`;
 
-  const shoulderBadge = (label: string) =>
-    `<kbd class="inline-flex items-center justify-center px-1.5 py-0.5 mx-0.5 rounded font-mono font-bold text-xs bg-slate-900 border border-gold-500/60 text-gold-300 shadow-inner align-baseline" title="${label} trigger" aria-label="${label}">${label}</kbd>`;
+  const shoulderBadge = (label: string, title?: string) =>
+    `<kbd class="inline-flex items-center justify-center px-1.5 py-0.5 mx-0.5 rounded font-mono font-bold text-xs bg-slate-900 border border-gold-500/60 text-gold-300 shadow-inner align-baseline" title="${title || `${label} trigger`}" aria-label="${label}">${label}</kbd>`;
+
+  const dpadBadge = (arrow: string, label: string) =>
+    `<kbd class="inline-flex items-center justify-center w-5 h-5 mx-0.5 rounded font-mono font-bold text-xs bg-slate-900 border border-slate-600/80 text-amber-300 shadow-inner align-baseline" title="D-Pad ${label}" aria-label="D-Pad ${label}">${arrow}</kbd>`;
+
+  const analogBadge = (label: string, title: string) =>
+    `<kbd class="inline-flex items-center justify-center px-1.5 py-0.5 mx-0.5 rounded font-mono font-bold text-xs bg-slate-900 border border-cyan-500/60 text-cyan-300 shadow-inner align-baseline" title="${title}" aria-label="${title}">${label}</kbd>`;
+
+  const systemBadge = (label: string, title: string) =>
+    `<kbd class="inline-flex items-center justify-center px-1.5 py-0.5 mx-0.5 rounded font-mono font-bold text-xs bg-slate-900 border border-slate-700/80 text-slate-300 shadow-inner align-baseline" title="${title}" aria-label="${title}">${label}</kbd>`;
 
   let res = text;
 
-  // Replace literal button mentions (handling 'CROSS button', 'CROSS', '`CROSS`')
-  res = res.replace(/(?:`CROSS`|CROSS)\s+button/gi, `${crossBadge} button`);
-  res = res.replace(/(?:`SQUARE`|SQUARE)\s+button/gi, `${squareBadge} button`);
-  res = res.replace(/(?:`TRIANGLE`|TRIANGLE)\s+button/gi, `${triangleBadge} button`);
-  res = res.replace(/(?:`CIRCLE`|CIRCLE)\s+button/gi, `${circleBadge} button`);
+  // 1. Controller layout composite strings in table (e.g. "/\\ (TRIANGLE)", "[] (SQUARE)", ">< (CROSS)", "() (CIRCLE)")
+  // Note: HTML entity escaping happens before formatControllerButtons, so < and > are &lt; and &gt;
+  res = res.replace(/(?:&gt;&lt;|><)\s*\(\s*CROSS\s*\)/gi, () => tokenFor(crossBadge));
+  res = res.replace(/(?:\/\\|\/\\\\)\s*\(\s*TRIANGLE\s*\)/gi, () => tokenFor(triangleBadge));
+  res = res.replace(/\[\]\s*\(\s*SQUARE\s*\)/gi, () => tokenFor(squareBadge));
+  res = res.replace(/\(\)\s*\(\s*CIRCLE\s*\)/gi, () => tokenFor(circleBadge));
+
+  // Analog sticks composite strings (e.g. "LA (LEFT ANALOG)", "RA (RIGHT ANALOG)")
+  res = res.replace(/\bLA\s*\(\s*LEFT\s+ANALOG\s*\)/gi, () => tokenFor(analogBadge('L-Stick', 'Left Analog stick')));
+  res = res.replace(/\bRA\s*\(\s*RIGHT\s+ANALOG\s*\)/gi, () => tokenFor(analogBadge('R-Stick', 'Right Analog stick')));
+
+  // Stick press (e.g. "L3 (Press)", "R3 (Press)")
+  res = res.replace(/\bL3\s*\(\s*Press\s*\)/gi, () => tokenFor(shoulderBadge('L3', 'L3 Stick button')));
+  res = res.replace(/\bR3\s*\(\s*Press\s*\)/gi, () => tokenFor(shoulderBadge('R3', 'R3 Stick button')));
+
+  // System button composite strings (e.g. "SL (SELECT)", "ST (START)")
+  res = res.replace(/\bSL\s*\(\s*SELECT\s*\)/gi, () => tokenFor(systemBadge('SELECT', 'Select button')));
+  res = res.replace(/\bST\s*\(\s*START\s*\)/gi, () => tokenFor(systemBadge('START', 'Start button')));
+
+  // 2. Exact D-Pad abbreviations when isolated or standalone in button columns
+  res = res.replace(/^UP$/g, () => tokenFor(dpadBadge('▲', 'Up')));
+  res = res.replace(/^DN$/g, () => tokenFor(dpadBadge('▼', 'Down')));
+  res = res.replace(/^LT$/g, () => tokenFor(dpadBadge('◀', 'Left')));
+  res = res.replace(/^RT$/g, () => tokenFor(dpadBadge('▶', 'Right')));
+
+  // D-Pad inside text phrases: "D-Pad UP", "DPAD UP", "D-pad (UP)"
+  res = res.replace(/\b(?:D-Pad|DPAD)\s+UP\b/gi, () => `D-Pad ${tokenFor(dpadBadge('▲', 'Up'))}`);
+  res = res.replace(/\b(?:D-Pad|DPAD)\s+DN\b/gi, () => `D-Pad ${tokenFor(dpadBadge('▼', 'Down'))}`);
+  res = res.replace(/\b(?:D-Pad|DPAD)\s+LT\b/gi, () => `D-Pad ${tokenFor(dpadBadge('◀', 'Left'))}`);
+  res = res.replace(/\b(?:D-Pad|DPAD)\s+RT\b/gi, () => `D-Pad ${tokenFor(dpadBadge('▶', 'Right'))}`);
+
+  // Analog stick abbreviations when isolated
+  res = res.replace(/^LA$/g, () => tokenFor(analogBadge('L-Stick', 'Left Analog stick')));
+  res = res.replace(/^RA$/g, () => tokenFor(analogBadge('R-Stick', 'Right Analog stick')));
+  res = res.replace(/^AG$/g, () => tokenFor(systemBadge('ANALOG', 'Toggle Analog mode')));
+
+  // Select / Start when isolated
+  res = res.replace(/^SELECT$/g, () => tokenFor(systemBadge('SELECT', 'Select button')));
+  res = res.replace(/^START$/g, () => tokenFor(systemBadge('START', 'Start button')));
+
+  // 3. Replace literal button mentions (handling 'CROSS button', 'CROSS', '`CROSS`')
+  res = res.replace(/(?:`CROSS`|CROSS)\s+button/gi, () => `${tokenFor(crossBadge)} button`);
+  res = res.replace(/(?:`SQUARE`|SQUARE)\s+button/gi, () => `${tokenFor(squareBadge)} button`);
+  res = res.replace(/(?:`TRIANGLE`|TRIANGLE)\s+button/gi, () => `${tokenFor(triangleBadge)} button`);
+  res = res.replace(/(?:`CIRCLE`|CIRCLE)\s+button/gi, () => `${tokenFor(circleBadge)} button`);
 
   // Standalone controller buttons wrapped in backticks or specific patterns
-  res = res.replace(/`CROSS`/gi, crossBadge);
-  res = res.replace(/`SQUARE`/gi, squareBadge);
-  res = res.replace(/`TRIANGLE`/gi, triangleBadge);
-  res = res.replace(/`CIRCLE`/gi, circleBadge);
+  res = res.replace(/`CROSS`/gi, () => tokenFor(crossBadge));
+  res = res.replace(/`SQUARE`/gi, () => tokenFor(squareBadge));
+  res = res.replace(/`TRIANGLE`/gi, () => tokenFor(triangleBadge));
+  res = res.replace(/`CIRCLE`/gi, () => tokenFor(circleBadge));
 
   // Standalone words when describing button actions (e.g. "press CROSS", "taps CROSS", "hit CROSS", "with CROSS", "confirm with CROSS")
-  res = res.replace(/\b(press|tap|taps|tapping|hit|hits|hitting|hold|holding|confirm with|push|pushes)\s+CROSS\b/gi, `$1 ${crossBadge}`);
-  res = res.replace(/\b(press|tap|taps|tapping|hit|hits|hitting|hold|holding|confirm with|push|pushes)\s+SQUARE\b/gi, `$1 ${squareBadge}`);
-  res = res.replace(/\b(press|tap|taps|tapping|hit|hits|hitting|hold|holding|confirm with|push|pushes)\s+TRIANGLE\b/gi, `$1 ${triangleBadge}`);
-  res = res.replace(/\b(press|tap|taps|tapping|hit|hits|hitting|hold|holding|confirm with|push|pushes)\s+CIRCLE\b/gi, `$1 ${circleBadge}`);
+  res = res.replace(/\b(press|tap|taps|tapping|hit|hits|hitting|hold|holding|confirm with|push|pushes)\s+CROSS\b/gi, (_, verb) => `${verb} ${tokenFor(crossBadge)}`);
+  res = res.replace(/\b(press|tap|taps|tapping|hit|hits|hitting|hold|holding|confirm with|push|pushes)\s+SQUARE\b/gi, (_, verb) => `${verb} ${tokenFor(squareBadge)}`);
+  res = res.replace(/\b(press|tap|taps|tapping|hit|hits|hitting|hold|holding|confirm with|push|pushes)\s+TRIANGLE\b/gi, (_, verb) => `${verb} ${tokenFor(triangleBadge)}`);
+  res = res.replace(/\b(press|tap|taps|tapping|hit|hits|hitting|hold|holding|confirm with|push|pushes)\s+CIRCLE\b/gi, (_, verb) => `${verb} ${tokenFor(circleBadge)}`);
 
-  // Triggers: L1, R1, L2, R2
-  res = res.replace(/(?:`L1`|\bL1\b)(?:\s+button|\s+trigger)?/g, `${shoulderBadge('L1')}`);
-  res = res.replace(/(?:`R1`|\bR1\b)(?:\s+button|\s+trigger)?/g, `${shoulderBadge('R1')}`);
-  res = res.replace(/(?:`L2`|\bL2\b)(?:\s+button|\s+trigger)?/g, `${shoulderBadge('L2')}`);
-  res = res.replace(/(?:`R2`|\bR2\b)(?:\s+button|\s+trigger)?/g, `${shoulderBadge('R2')}`);
+  // Triggers & stick clicks: L1, R1, L2, R2, L3, R3
+  res = res.replace(/(?:`L1`|\bL1\b)(?:\s+button|\s+trigger)?/g, () => tokenFor(shoulderBadge('L1')));
+  res = res.replace(/(?:`R1`|\bR1\b)(?:\s+button|\s+trigger)?/g, () => tokenFor(shoulderBadge('R1')));
+  res = res.replace(/(?:`L2`|\bL2\b)(?:\s+button|\s+trigger)?/g, () => tokenFor(shoulderBadge('L2')));
+  res = res.replace(/(?:`R2`|\bR2\b)(?:\s+button|\s+trigger)?/g, () => tokenFor(shoulderBadge('R2')));
+  res = res.replace(/(?:`L3`|\bL3\b)(?:\s+button)?/g, () => tokenFor(shoulderBadge('L3', 'L3 Stick button')));
+  res = res.replace(/(?:`R3`|\bR3\b)(?:\s+button)?/g, () => tokenFor(shoulderBadge('R3', 'R3 Stick button')));
+
+  // START and SELECT buttons in prose (e.g. "START button", "SELECT button", "press START")
+  res = res.replace(/(?:`START`|START)\s+button/gi, () => `${tokenFor(systemBadge('START', 'Start button'))} button`);
+  res = res.replace(/(?:`SELECT`|SELECT)\s+button/gi, () => `${tokenFor(systemBadge('SELECT', 'Select button'))} button`);
+  res = res.replace(/\b(press|presses|hit|hits)\s+START\b/gi, (_, verb) => `${verb} ${tokenFor(systemBadge('START', 'Start button'))}`);
+  res = res.replace(/\b(press|presses|hit|hits)\s+SELECT\b/gi, (_, verb) => `${verb} ${tokenFor(systemBadge('SELECT', 'Select button'))}`);
+
+  // Substitute tokens back with actual badge HTML
+  for (let i = 0; i < badges.length; i++) {
+    res = res.replace(`__CTRL_BTN_${i}__`, badges[i]);
+  }
 
   return res;
 }
