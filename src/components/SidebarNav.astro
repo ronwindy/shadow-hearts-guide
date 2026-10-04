@@ -19,6 +19,13 @@ function getCategoryIcon(name: string) {
   if (n.includes('europe')) return Castle;
   return Scroll;
 }
+
+function getCategoryFullTitle(name: string): string {
+  const n = name.toLowerCase();
+  if (n.includes('asia')) return 'Walkthrough - Shadow Hearts (Asia)';
+  if (n.includes('europe')) return 'Walkthrough - Shadow Hearts (Europe)';
+  return name;
+}
 ---
 
 <div class={`flex flex-col h-full w-full min-h-0 ${isMobileDrawer ? '' : 'select-none'}`}>
@@ -49,7 +56,10 @@ function getCategoryIcon(name: string) {
           open={isOpenByDefault}
           data-category-id={cat.category}
         >
-          <summary class="list-none flex items-center justify-between cursor-pointer px-2 py-1.5 rounded-lg text-slate-300 hover:text-gold-300 hover:bg-slate-800/50 transition-colors focus:outline-none">
+          <summary
+            class="list-none flex items-center justify-between cursor-pointer px-2 py-1.5 rounded-lg text-slate-300 hover:text-gold-300 hover:bg-slate-800/50 transition-colors focus:outline-none"
+            title={getCategoryFullTitle(cat.category)}
+          >
             <div class="flex items-center gap-2 min-w-0">
               <CatIcon class="w-3.5 h-3.5 text-gold-400 flex-shrink-0" />
               <span class="text-xs font-serif font-bold uppercase tracking-wider text-slate-200 group-hover:text-gold-300 truncate">
