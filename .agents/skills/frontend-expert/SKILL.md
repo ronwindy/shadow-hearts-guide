@@ -35,6 +35,9 @@ A player actively playing a game wants quick answers:
 - How do I defeat this boss? (Boss Strategy Card)
 - What steps have I finished? (Checkable Steps)
 
+### Principle 4: Lean Navigation & Scannability
+Navigation exists to get the player to the right content with zero friction. Avoid visual clutter, multi-deck stacked metadata on list entries, and redundant UI widgets (such as superfluous search inputs when arc categories suffice, or duplicate utility strips already provided by the brand logo or site footer).
+
 ---
 
 ## 3. Review Rubric & Audit Checklist
@@ -51,10 +54,11 @@ When reviewing any page or when invoked by QA, evaluate against this 5-point rub
 ### 2. 3-Section Layout Structure
 - [ ] **Left Column (Global Chapters Navigation)**:
   - Sticky during desktop scrolling.
-  - Contains instant search/filter.
   - Groups sections logically by game arc (Introduction, Asia, Europe, Appendices).
   - Highlights currently active page with clear accent marker.
   - Collapses into slide-over drawer on mobile/tablet.
+  - **Lean Chrome**: Avoid stacking redundant sub-headers, utility strips (Home/FAQ when already in logo/footer), or superfluous counter badges ("69 sections", "Chapter Index") that consume vertical space.
+  - **Single-Line Scannable Entries**: Do not stack secondary labels ("part 01", codes) or redundant tags above entry titles in the global navigation list. Keep items concise, single-line, and immediately scannable.
 - [ ] **Center Column (Guide Content)**:
   - Constrained to optimal reading width (max-w-3xl or 65–75ch) for high readability.
   - Prominent section anchors for deep linking (`#objectives`, `#route`, `#items`, `#enemies`, `#bosses`, `#steps`).
@@ -87,6 +91,7 @@ When reviewing any page or when invoked by QA, evaluate against this 5-point rub
 
 ### 5. End-User Polish & Cleanliness
 - [ ] **No leaked technical IDs**: Raw codes like `[W-1-01]`, `w-1-01`, or `step_01_id` are hidden or converted to user-friendly titles (*"Asia Arc • Part 1: Trans-Siberian Express"*).
+- [ ] **No navigation clutter**: Sidebars and navigation panels must not stack redundant meta tags, part indicators, or duplicate utility links that push the actual chapter tree below the fold.
 - [ ] **Technical metadata demoted**: File names, schema IDs, and conversion metadata are placed in subtle tooltips or footer sections, not prominent headers.
 - [ ] **Interactive step completion**: Walkthrough steps feature checkboxes backed by `localStorage` so the user can mark steps off as they play.
 
