@@ -4,42 +4,24 @@ import { Menu, Flame, House, BookOpen, ExternalLink } from '@lucide/astro';
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
-<header class="sticky top-0 z-40 bg-obsidian/95 backdrop-blur-md border-b border-slate-800 shadow-sm">
-  <div class="max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-    <!-- Left brand & mobile hamburger -->
-    <div class="flex items-center space-x-3">
-      <!-- Mobile Drawer Trigger Button -->
-      <button
-        id="open-mobile-drawer"
-        class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-gold-400 hover:bg-slate-800/80 transition-colors focus:outline-none focus:ring-1 focus:ring-gold-500"
-        aria-label="Open chapters and outline drawer"
-      >
-        <Menu class="w-6 h-6" />
-      </button>
+<header class="lg:hidden sticky top-0 z-40 bg-obsidian/95 backdrop-blur-md border-b border-slate-800 shadow-sm">
+  <div class="px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
+    <!-- Left: Hamburger Drawer Trigger -->
+    <button
+      id="open-mobile-drawer"
+      class="p-2 -ml-2 rounded-lg text-slate-300 hover:text-gold-400 hover:bg-slate-800/80 transition-colors focus:outline-none focus:ring-1 focus:ring-gold-500"
+      aria-label="Open chapters and navigation menu"
+    >
+      <Menu class="w-6 h-6" />
+    </button>
 
-      <a href={`${baseUrl}/`} class="flex items-center space-x-2.5 text-slate-100 hover:text-gold-400 transition-colors">
-        <Flame class="w-5 h-5 text-gold-400 fill-gold-500/20 shadow-gold-glow flex-shrink-0" />
-        <span class="text-xl font-serif font-bold tracking-wider text-gold-400">SHADOW HEARTS</span>
-        <span class="hidden sm:inline-block text-xs font-mono uppercase px-2.5 py-0.5 rounded bg-amber-950/40 text-amber-300 border border-amber-800/50">
-          Gothic Strategy Guide
-        </span>
-      </a>
-    </div>
-
-    <!-- Center/Right navigation links -->
-    <nav class="flex items-center space-x-1 sm:space-x-3 text-sm sm:text-base font-medium">
-      <a href={`${baseUrl}/`} class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-slate-300 hover:text-gold-300 hover:bg-slate-850 transition-colors">
-        <House class="w-4 h-4 text-slate-400" />
-        <span>Home</span>
-      </a>
-      <a href={`${baseUrl}/toc`} class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-slate-300 hover:text-gold-300 hover:bg-slate-850 transition-colors">
-        <BookOpen class="w-4 h-4 text-slate-400" />
-        <span>Chapters</span>
-      </a>
-      <a href="https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-slate-400 hover:text-gold-400 transition-colors">
-        <span>Original FAQ</span>
-        <ExternalLink class="w-3.5 h-3.5 text-slate-400" />
-      </a>
-    </nav>
+    <!-- Right: Brand Logo -->
+    <a href={`${baseUrl}/`} class="flex items-center group py-1">
+      <img
+        src={`${baseUrl}/logo.png`}
+        alt="Shadow Hearts Strategy Guide"
+        class="h-7 sm:h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+      />
+    </a>
   </div>
 </header>

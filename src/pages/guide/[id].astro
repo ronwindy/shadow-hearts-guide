@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import SidebarNav from '../../components/SidebarNav.astro';
 import PageToc from '../../components/PageToc.astro';
 import StepChecklist from '../../components/StepChecklist.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
@@ -127,13 +126,8 @@ if (overview.metadata) {
   pageSections={pageSections}
   isWide={true}
 >
-  <!-- 3-Section Layout Container -->
+  <!-- Walkthrough Page Layout: Center Content + Right Local TOC -->
   <div class="flex gap-6 lg:gap-8 items-start relative">
-    <!-- Left Sidebar: Global Chapter Navigation (Desktop >= lg) -->
-    <div class="hidden lg:flex flex-col w-64 xl:w-72 flex-shrink-0 sticky top-20 h-[calc(100vh-6rem)] rounded-xl border border-slate-800/80 bg-obsidian/80 backdrop-blur shadow-sm overflow-hidden">
-      <SidebarNav currentId={guide.id || ''} />
-    </div>
-
     <!-- Center Column: Walkthrough Main Content -->
     <article class="flex-1 min-w-0 max-w-4xl mx-auto space-y-8">
       <!-- Breadcrumb & Top Prev/Next -->
@@ -775,9 +769,9 @@ if (overview.metadata) {
 
     <!-- Right Sidebar: On-This-Page Local TOC (Desktop >= xl) -->
     {pageSections.length > 0 && (
-      <div class="hidden xl:block w-56 2xl:w-64 flex-shrink-0 sticky top-20 max-h-[calc(100vh-6rem)] rounded-xl border border-slate-800/80 bg-obsidian/80 backdrop-blur shadow-sm overflow-y-auto custom-scrollbar">
+      <aside class="hidden xl:block w-56 2xl:w-64 flex-shrink-0 sticky top-6 max-h-[calc(100vh-3rem)] rounded-xl border border-slate-800/80 bg-obsidian/80 backdrop-blur shadow-sm overflow-y-auto custom-scrollbar">
         <PageToc sections={pageSections} />
-      </div>
+      </aside>
     )}
   </div>
 </BaseLayout>

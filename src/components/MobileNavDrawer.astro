@@ -14,6 +14,7 @@ interface Props {
 }
 
 const { currentId = '', pageSections = [] } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <!-- Mobile Drawer Backdrop -->
@@ -33,10 +34,13 @@ const { currentId = '', pageSections = [] } = Astro.props;
 >
   <!-- Drawer Header -->
   <div class="p-3.5 border-b border-slate-800 flex items-center justify-between bg-slate-900/60">
-    <div class="flex items-center gap-2">
-      <Flame class="w-4 h-4 text-gold-400 fill-gold-500/20" />
-      <span class="font-serif font-bold text-sm text-gold-400 tracking-wide">SHADOW HEARTS</span>
-    </div>
+    <a href={`${baseUrl}/`} class="flex items-center group py-0.5">
+      <img
+        src={`${baseUrl}/logo.png`}
+        alt="Shadow Hearts Strategy Guide"
+        class="h-6 w-auto object-contain transition-transform group-hover:scale-105"
+      />
+    </a>
     <button
       id="close-mobile-drawer"
       class="p-2 rounded text-slate-400 hover:text-slate-100 hover:bg-slate-800 focus:outline-none"

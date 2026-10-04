@@ -1,6 +1,6 @@
 ---
 import { getTocData } from '../lib/guideData';
-import { Search, BookOpen, Compass, Castle, Scroll, Sparkles } from '@lucide/astro';
+import { Search, BookOpen, Compass, Castle, Scroll, Sparkles, House, ExternalLink } from '@lucide/astro';
 
 interface Props {
   currentId?: string;
@@ -21,7 +21,56 @@ function getCategoryIcon(name: string) {
 }
 ---
 
-<aside class={`flex flex-col h-full w-full min-h-0 ${isMobileDrawer ? '' : 'select-none'}`}>
+<div class={`flex flex-col h-full w-full min-h-0 ${isMobileDrawer ? '' : 'select-none'}`}>
+  <!-- Desktop Top Logo Header -->
+  {!isMobileDrawer && (
+    <div class="p-4 border-b border-slate-800/80 bg-[#07090e] flex-shrink-0 flex items-center justify-center">
+      <a href={`${baseUrl}/`} class="block group w-full" aria-label="Shadow Hearts Guide Home">
+        <img
+          src={`${baseUrl}/logo.png`}
+          alt="Shadow Hearts Strategy Guide"
+          class="w-full h-auto max-h-14 object-contain mx-auto transition-transform duration-200 group-hover:scale-105"
+        />
+      </a>
+    </div>
+  )}
+
+  <!-- Utility Links Strip (Home / Chapters / Original FAQ) -->
+  <div class="px-3 py-2 border-b border-slate-800/70 bg-[#0a0d14]/70 flex items-center justify-between gap-1 text-xs text-slate-300 flex-shrink-0">
+    <a
+      href={`${baseUrl}/`}
+      class={`flex items-center gap-1.5 px-2.5 py-1 rounded transition-colors ${
+        currentId === '' || currentId === 'home'
+          ? 'bg-gold-500/20 text-gold-300 font-semibold border border-gold-500/40 shadow-sm'
+          : 'hover:text-gold-300 hover:bg-slate-850'
+      }`}
+    >
+      <House class="w-3.5 h-3.5 text-gold-400" />
+      <span>Home</span>
+    </a>
+    <a
+      href={`${baseUrl}/toc`}
+      class={`flex items-center gap-1.5 px-2.5 py-1 rounded transition-colors ${
+        currentId === 'toc'
+          ? 'bg-gold-500/20 text-gold-300 font-semibold border border-gold-500/40 shadow-sm'
+          : 'hover:text-gold-300 hover:bg-slate-850'
+      }`}
+    >
+      <BookOpen class="w-3.5 h-3.5 text-gold-400" />
+      <span>Chapters</span>
+    </a>
+    <a
+      href="https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-1 px-2 py-1 rounded text-slate-400 hover:text-gold-400 hover:bg-slate-850 transition-colors"
+      title="View original GameFAQs guide"
+    >
+      <span>FAQ</span>
+      <ExternalLink class="w-3 h-3" />
+    </a>
+  </div>
+
   <!-- Sidebar Header / Search -->
   <div class="p-3 border-b border-slate-800/80 sticky top-0 bg-[#0a0d14]/95 backdrop-blur z-10 space-y-2 flex-shrink-0">
     <div class="flex items-center justify-between text-sm font-serif font-bold uppercase tracking-wider text-gold-400">
@@ -115,7 +164,7 @@ function getCategoryIcon(name: string) {
       );
     })}
   </div>
-</aside>
+</div>
 
 <script>
   function setupSidebarSearch(inputId: string, listId: string) {
