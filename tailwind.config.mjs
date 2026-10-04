@@ -49,6 +49,10 @@ export default {
         '3xl': ['2rem', { lineHeight: '2.4rem' }],
         '4xl': ['2.45rem', { lineHeight: '2.8rem' }],
       },
+      spacing: {
+        '4.5': '1.125rem',
+        '5.5': '1.375rem',
+      },
     },
   },
   plugins: [],

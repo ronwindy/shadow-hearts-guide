@@ -17,6 +17,9 @@ ROOT_DIR = Path(__file__).resolve().parents[4]
 SRC_DIR = ROOT_DIR / "src"
 DIST_DIR = ROOT_DIR / "dist"
 
+ALLOWED_DECIMAL_STEPS = {"0.5", "1.5", "2.5", "3.5"}
+SPACING_PREFIX_PATTERN = r"(?:[a-z0-9\-]+:)?(?:p|px|py|pt|pb|pl|pr|m|mx|my|mt|mb|ml|mr|gap|space-x|space-y)"
+
 def audit_astro_sources():
     issues = []
     warnings = []
@@ -50,6 +53,19 @@ def audit_astro_sources():
                 if "flex-col sm:flex-row" not in line and "grid" not in line:
                     warnings.append(f"{rel_path}:{idx} Prev/Next container should use 'flex-col sm:flex-row' to prevent mobile button squishing")
 
+            # 4. Invalid / Non-standard Tailwind fractional spacing steps
+            # Tailwind default only supports .5 steps up to 3.5 (0.5, 1.5, 2.5, 3.5).
+            # Classes like p-4.5 or m-5.5 fail to generate CSS unless explicitly configured.
+            for m in re.finditer(rf"\b({SPACING_PREFIX_PATTERN})-(\d+\.\d+)\b", line):
+                decimal_val = m.group(2)
+                matched_token = m.group(0)
+                if decimal_val not in ALLOWED_DECIMAL_STEPS:
+                    issues.append(
+                        f"{rel_path}:{idx} Invalid / non-standard Tailwind spacing '{matched_token}'. "
+                        f"Tailwind standard scale only supports .5 steps up to 3.5. "
+                        f"Use standard integer steps (e.g. p-4 or p-5) or explicit arbitrary pixels [18px]."
+                    )
+
     return issues, warnings
 
 def audit_built_html():
@@ -59,7 +75,13 @@ def audit_built_html():
     if not DIST_DIR.exists():
         return issues, ["dist/ directory does not exist yet. Run `npm run build` first."]
 
+    # Load compiled CSS stylesheet for ghost class detection
+    css_files = list(DIST_DIR.glob("_astro/*.css"))
+    compiled_css = "".join(f.read_text(encoding="utf-8") for f in css_files) if css_files else ""
+
     html_files = list(DIST_DIR.glob("**/*.html"))
+    ghost_classes_reported = set()
+
     for path in html_files:
         rel_path = path.relative_to(ROOT_DIR)
         content = path.read_text(encoding="utf-8")
@@ -73,6 +95,28 @@ def audit_built_html():
         for h in heading_matches:
             if re.search(r'\[[A-Z]-[0-9S]-[0-9]+\]', h):
                 warnings.append(f"{rel_path} Raw technical code found in heading: '{h.strip()}'")
+
+        # 3. Ghost Utility Class Detection
+        # Detect spacing / layout classes applied to HTML elements that do not exist in compiled CSS
+        if compiled_css:
+            class_matches = re.findall(r'class="([^"]+)"', content)
+            for cls_str in class_matches:
+                for token in cls_str.split():
+                    # Focus on critical layout tokens (spacing, padding, margin, gap)
+                    if re.match(r'^(?:[a-z0-9\-]+:)?(?:p|px|py|pt|pb|pl|pr|m|mx|my|mt|mb|ml|mr|gap)-[a-zA-Z0-9\.\-/\[\]]+$', token):
+                        escaped_pattern = (
+                            token.replace(":", r"\:")
+                            .replace(".", r"\.")
+                            .replace("/", r"\/")
+                            .replace("[", r"\[")
+                            .replace("]", r"\]")
+                        )
+                        if escaped_pattern not in compiled_css and token not in ghost_classes_reported:
+                            ghost_classes_reported.add(token)
+                            issues.append(
+                                f"{rel_path} Ghost CSS utility class detected: '{token}' is present in HTML "
+                                f"but has NO CSS rule in compiled stylesheet! (Causes 0 padding / missing styling)"
+                            )
 
     return issues, warnings
 

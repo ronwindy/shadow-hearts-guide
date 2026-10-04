@@ -83,6 +83,7 @@ When reviewing any page or when invoked by QA, evaluate against this 5-point rub
 - [ ] **No microscopic text**: Body copy and descriptions must be at least `text-sm` (14px) or `text-base` (16px). Avoid unreadable `text-[10px]` or `text-[11px]` except for purely decorative or badge tags.
 - [ ] **Sufficient contrast**: Text contrast ratio against dark backgrounds exceeds 4.5:1.
 - [ ] **Line height & spacing**: Generous line spacing (`leading-relaxed`) for comfortable prolonged reading.
+- [ ] **Card & Box Padding Integrity**: Cards, strategy boxes, callouts, and bordered containers must have comfortable interior padding (`p-4 sm:p-5`, `p-3.5`). Text must never sit flush against container borders. No ghost/invalid Tailwind classes (e.g. non-existent fractional steps like `p-4.5` that silently compile to 0 padding).
 
 ### 5. End-User Polish & Cleanliness
 - [ ] **No leaked technical IDs**: Raw codes like `[W-1-01]`, `w-1-01`, or `step_01_id` are hidden or converted to user-friendly titles (*"Asia Arc • Part 1: Trans-Siberian Express"*).
@@ -120,6 +121,8 @@ The script checks:
 - Regressed micro-font classes (`text-[9px]`, `text-[10px]`).
 - Raw unformatted bracketed codes (`[W-1-01]`, `[A-1-02]`) exposed directly in heading text.
 - Missing responsive flex layouts on navigation buttons.
+- **Invalid / non-standard Tailwind spacing classes** in templates (e.g. non-standard fractional steps like `p-4.5` that Tailwind default ignores).
+- **Ghost CSS utility classes** in built HTML (classes that exist on DOM elements but have zero CSS rules in compiled stylesheets, causing 0 padding or layout collapse).
 
 ---
 
