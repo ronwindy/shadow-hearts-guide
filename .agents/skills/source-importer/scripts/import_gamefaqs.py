@@ -688,6 +688,7 @@ def import_gamefaqs_guide(
 
 
 def main():
+    """CLI entry point for importing GameFAQs guides into canonical sections."""
     parser = argparse.ArgumentParser(description="Import GameFAQs guide into canonical source and split sections.")
     parser.add_argument(
         "html_file",

@@ -95,6 +95,7 @@ def get_section_paths(sec: Dict[str, Any]) -> Tuple[Path, Path, Path]:
 
 
 def run_scaffold(sec: Dict[str, Any], force: bool = False) -> bool:
+    """Scaffolds a structured guide JSON draft from the canonical source text."""
     canonical_path, structured_path, _ = get_section_paths(sec)
     print(f"\n--- [1/1] Scaffolding: {sec['id']} ({sec.get('title')}) ---")
     
@@ -120,6 +121,7 @@ def run_scaffold(sec: Dict[str, Any], force: bool = False) -> bool:
 
 
 def run_validate(sec: Dict[str, Any]) -> bool:
+    """Validates structured guide JSON against the JSON Schema definition."""
     _, structured_path, _ = get_section_paths(sec)
     print(f"\n--- Schema Validation: {sec['id']} ---")
     
@@ -152,6 +154,7 @@ def run_validate(sec: Dict[str, Any]) -> bool:
 
 
 def run_qa(sec: Dict[str, Any], save_report: bool = True) -> bool:
+    """Executes QA verification comparing structured content to canonical source."""
     canonical_path, structured_path, qa_path = get_section_paths(sec)
     print(f"\n--- QA Verification: {sec['id']} ---")
 
@@ -191,6 +194,7 @@ def run_qa(sec: Dict[str, Any], save_report: bool = True) -> bool:
 
 
 def run_frontend_audit() -> bool:
+    """Audits Astro template source files and compiled HTML for mobile/UX issues."""
     print("\n--- Frontend & UX Audit ---")
     src_issues, src_warnings = audit_astro_sources()
     html_issues, html_warnings = audit_built_html()
@@ -294,47 +298,8 @@ def resolve_backlog() -> int:
     return verified_count
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Unified Guide Conversion Pipeline CLI")
-    parser.add_argument("section", nargs="?", default=None, help="Section ID or file stem (e.g., w-1-04, w-1-04-fengtian)")
-    parser.add_argument("--scaffold", action="store_true", help="Scaffold structured guide JSON from canonical")
-    parser.add_argument("--validate", action="store_true", help="Validate structured guide against schema")
-    parser.add_argument("--qa", action="store_true", help="Run QA verification and save markdown report")
-    parser.add_argument("--verify", action="store_true", help="Validate + QA + Save report + Update status")
-    parser.add_argument("--frontend", action="store_true", help="Run frontend audit")
-    parser.add_argument("--code-review", "--review", action="store_true", help="Run codebase quality and readability audit")
-    parser.add_argument("--check", action="store_true", help="Validate + QA + Frontend audit + Code review + Update status")
-    parser.add_argument("--backlog", action="store_true", help="Run QA verification on all structured files missing QA reports")
-    parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
-
-    args = parser.parse_args()
-
-    if args.backlog:
-        resolve_backlog()
-        return
-
-    if not args.section:
-        if args.frontend:
-            run_frontend_audit()
-            return
-        if args.code_review:
-            success = run_code_review()
-            if not success:
-                sys.exit(1)
-            return
-        parser.print_help()
-        sys.exit(1)
-
-    sec = resolve_section(args.section)
-    if not sec:
-        print(f"[ERROR] Could not resolve section for identifier: '{args.section}'")
-        sys.exit(1)
-
-    # If no flags provided, print status
-    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.code_review, args.check]):
-        print_section_status(sec)
-        return
-
+def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> bool:
+    """Executes requested operations against a specific section."""
     success = True
 
     if args.scaffold:
@@ -370,7 +335,50 @@ def main():
         if v_ok and q_ok:
             update_project_status()
 
-    if not success:
+    return success
+
+
+def main():
+    """CLI orchestrator handling pipeline operations."""
+    parser = argparse.ArgumentParser(description="Unified Guide Conversion Pipeline CLI")
+    parser.add_argument("section", nargs="?", default=None, help="Section ID or file stem (e.g., w-1-04, w-1-04-fengtian)")
+    parser.add_argument("--scaffold", action="store_true", help="Scaffold structured guide JSON from canonical")
+    parser.add_argument("--validate", action="store_true", help="Validate structured guide against schema")
+    parser.add_argument("--qa", action="store_true", help="Run QA verification and save markdown report")
+    parser.add_argument("--verify", action="store_true", help="Validate + QA + Save report + Update status")
+    parser.add_argument("--frontend", action="store_true", help="Run frontend audit")
+    parser.add_argument("--code-review", "--review", action="store_true", help="Run codebase quality and readability audit")
+    parser.add_argument("--check", action="store_true", help="Validate + QA + Frontend audit + Code review + Update status")
+    parser.add_argument("--backlog", action="store_true", help="Run QA verification on all structured files missing QA reports")
+    parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
+
+    args = parser.parse_args()
+
+    if args.backlog:
+        resolve_backlog()
+        return
+
+    if not args.section:
+        if args.frontend:
+            run_frontend_audit()
+            return
+        if args.code_review:
+            if not run_code_review():
+                sys.exit(1)
+            return
+        parser.print_help()
+        sys.exit(1)
+
+    sec = resolve_section(args.section)
+    if not sec:
+        print(f"[ERROR] Could not resolve section for identifier: '{args.section}'")
+        sys.exit(1)
+
+    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.code_review, args.check]):
+        print_section_status(sec)
+        return
+
+    if not _execute_section_actions(sec, args):
         sys.exit(1)
 
 

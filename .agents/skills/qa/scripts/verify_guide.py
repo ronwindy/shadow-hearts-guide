@@ -27,6 +27,10 @@ def normalize_name(name: Any) -> str:
 
 
 def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Verifies that a structured guide accurately and faithfully preserves canonical source knowledge.
+    Checks navigation, obtainable/initial items, enemies, bosses, shops, and gameplay notes.
+    """
     guide = structured.get("guide", {})
     findings: List[Dict[str, Any]] = []
     finding_id = 1
@@ -172,16 +176,17 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
 
         # Check for verbatim duplicate strategy in step notes
         b_strat = (b.get("strategy") or "").strip()
-        if b_strat:
-            for s in all_steps:
-                for n in s.get("notes", []):
-                    n_text = (n.get("text") or "").strip()
-                    if len(b_strat) > 30 and (b_strat in n_text or n_text in b_strat):
-                        add_finding(
-                            "medium", "redundancy / duplication", f"steps[{s.get('id')}].notes",
-                            "Duplicate strategy text", "Strategy present in both boss card and step note",
-                            f"Step {s.get('id')} note duplicates the boss battle strategy for '{b.get('name')}'. Strategy should be in a single location."
-                        )
+        if not b_strat or len(b_strat) <= 30:
+            continue
+
+        for s in all_steps:
+            duplicate_notes = [n for n in s.get("notes", []) if (n.get("text") or "").strip() and (b_strat in n.get("text") or n.get("text") in b_strat)]
+            if duplicate_notes:
+                add_finding(
+                    "medium", "redundancy / duplication", f"steps[{s.get('id')}].notes",
+                    "Duplicate strategy text", "Strategy present in both boss card and step note",
+                    f"Step {s.get('id')} note duplicates the boss battle strategy for '{b.get('name')}'. Strategy should be in a single location."
+                )
 
     # 5. Shops Check
     c_shops = canonical.get("shops", [])
@@ -254,6 +259,7 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
 
 
 def format_markdown_report(report: Dict[str, Any]) -> str:
+    """Formats a QA verification result dictionary into a GitHub-flavored Markdown report."""
     qa = report["qa"]
     status_icon = "[PASS]" if qa["status"] == "PASS" else ("[PASS WITH WARNINGS]" if qa["status"] == "PASS WITH WARNINGS" else "[FAIL]")
     lines = [
@@ -287,6 +293,7 @@ def format_markdown_report(report: Dict[str, Any]) -> str:
 
 
 def main():
+    """CLI entry point for running QA verification between canonical and structured files."""
     if hasattr(sys.stdout, 'reconfigure'):
         sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser(description="Run QA verification between Canonical Source JSON and Structured Guide JSON.")

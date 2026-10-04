@@ -27,6 +27,7 @@ def clean_overview_item(raw_name: str) -> Tuple[str, bool]:
 
 
 def build_items_summary(canonical: Dict[str, Any]) -> Dict[str, Any]:
+    """Extracts obtainable and initial item lists from canonical overview metadata."""
     overview = canonical.get("overview", {})
     obtainable = []
     initial = []
@@ -138,6 +139,7 @@ def split_text_paragraphs(text: str) -> List[Tuple[int, int, str]]:
 
 
 def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
+    """Generates structured guide draft dictionary from canonical JSON artifact."""
     with open(canonical_path, "r", encoding="utf-8") as f:
         canonical = json.load(f)
 
@@ -310,6 +312,7 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
 
 
 def main():
+    """CLI entry point for scaffolding a structured guide JSON draft."""
     parser = argparse.ArgumentParser(description="Scaffold a structured guide JSON from a canonical section JSON.")
     parser.add_argument("canonical_file", help="Path to the canonical section JSON file")
     parser.add_argument("--output", "-o", default=None, help="Output path for the structured guide JSON")

@@ -43,6 +43,7 @@ def validate_file(file_path: str, validator: Draft202012Validator) -> List[str]:
 
 
 def main():
+    """CLI entry point for validating structured guide JSON files against the schema."""
     parser = argparse.ArgumentParser(description="Validate structured game guide JSON against schema.")
     parser.add_argument("files", nargs="*", help="Path(s) to JSON guide files to validate")
     parser.add_argument("--schema", "-s", default=None, help="Path to schema JSON file")

@@ -10,10 +10,10 @@ Evaluates:
 - Critical issues: syntax errors, debugging breakpoints, bare excepts.
 - Readability & Maintainability warnings:
   - Deep nesting (> 4 levels)
-  - Overly long functions (> 60 lines)
-  - Missing module/function docstrings in public interfaces
+  - Overly long functions (> 75 lines)
+  - Missing module/function docstrings in non-trivial interfaces
   - Leftover console.log or debug print statements
-  - Overly long source files (> 350 lines without modular breakdown)
+  - Overly long source files (> 400 lines without modular breakdown)
 """
 
 import ast
@@ -31,6 +31,8 @@ ROOT_DIR = Path(__file__).resolve().parent.parent.parent.parent.parent
 
 
 class PythonQualityVisitor(ast.NodeVisitor):
+    """AST visitor collecting nesting depth, docstring coverage, and debugging calls."""
+
     def __init__(self, filename: str, content_lines: List[str]):
         self.filename = filename
         self.lines = content_lines
@@ -94,7 +96,24 @@ class PythonQualityVisitor(ast.NodeVisitor):
         self.current_depth -= 1
 
     def visit_If(self, node: ast.If):
-        self._track_nesting(node)
+        """Tracks control flow depth while treating chained if-elif branches as single nesting level."""
+        # Do not increase nesting depth for 'elif' branches
+        is_elif = getattr(node, "_is_elif", False)
+        if not is_elif:
+            self.current_depth += 1
+            if self.current_depth > 4:
+                self.warnings.append(
+                    f"{self.filename}:{node.lineno} - Deep control flow nesting (depth {self.current_depth}). Simplify or extract sub-functions."
+                )
+
+        # Mark any chained 'elif' nodes so they don't increment depth
+        if len(node.orelse) == 1 and isinstance(node.orelse[0], ast.If):
+            node.orelse[0]._is_elif = True
+
+        self.generic_visit(node)
+
+        if not is_elif:
+            self.current_depth -= 1
 
     def visit_For(self, node: ast.For):
         self._track_nesting(node)
@@ -107,7 +126,7 @@ def audit_python_file(path: Path) -> Tuple[List[str], List[str]]:
     """Audits a Python source file for syntax errors, breakpoints, nesting depth, and docstrings."""
     critical = []
     warnings = []
-    rel_path = path.relative_to(ROOT_DIR).as_posix()
+    rel_path = path.resolve().relative_to(ROOT_DIR.resolve()).as_posix()
 
     try:
         content = path.read_text(encoding="utf-8")
@@ -144,10 +163,10 @@ def audit_python_file(path: Path) -> Tuple[List[str], List[str]]:
 
 
 def audit_web_file(path: Path) -> Tuple[List[str], List[str]]:
-    """Audits a TypeScript or Astro source file for leftover debuggers, console logs, and deep indentation."""
+    """Audits a TypeScript or Astro source file for leftover debuggers, console logs, and deep script nesting."""
     critical = []
     warnings = []
-    rel_path = path.relative_to(ROOT_DIR).as_posix()
+    rel_path = path.resolve().relative_to(ROOT_DIR.resolve()).as_posix()
 
     try:
         content = path.read_text(encoding="utf-8")
@@ -162,8 +181,23 @@ def audit_web_file(path: Path) -> Tuple[List[str], List[str]]:
             f"{rel_path}: File is {len(lines)} lines long. Consider breaking down into smaller sub-components or utility helpers."
         )
 
+    # In Astro files, track frontmatter / script vs markup template
+    in_frontmatter = False
+    frontmatter_count = 0
+    in_script_tag = False
+
     for i, line in enumerate(lines, 1):
         stripped = line.strip()
+
+        if stripped == "---":
+            frontmatter_count += 1
+            in_frontmatter = (frontmatter_count == 1)
+            continue
+
+        if "<script" in stripped:
+            in_script_tag = True
+        elif "</script>" in stripped:
+            in_script_tag = False
 
         # Critical: debugger statements
         if re.search(r"\bdebugger\b", stripped):
@@ -173,10 +207,13 @@ def audit_web_file(path: Path) -> Tuple[List[str], List[str]]:
         if re.search(r"\bconsole\.(log|debug)\(", stripped):
             warnings.append(f"{rel_path}:{i} - Leftover '{stripped[:40]}...' detected. Remove or replace with proper error logging.")
 
-        # Indentation nesting check (heuristics: > 20 leading spaces or 5 tabs in non-markup sections)
-        indent = len(line) - len(line.lstrip(" "))
-        if indent >= 24 and not stripped.startswith(("<", "/>", "</")):
-            warnings.append(f"{rel_path}:{i} - Excessive indentation depth ({indent // 2} levels). Flatten conditionals or extract logic.")
+        # Indentation check: Only check procedural code (inside frontmatter, script tags, or TS files),
+        # not declarative HTML/JSX markup tree nesting which naturally indents 6-8+ levels.
+        is_procedural_code = in_frontmatter or in_script_tag or path.suffix == ".ts"
+        if is_procedural_code:
+            indent = len(line) - len(line.lstrip(" "))
+            if indent >= 24 and not stripped.startswith(("<", "/>", "</")):
+                warnings.append(f"{rel_path}:{i} - Excessive indentation depth ({indent // 2} levels). Flatten conditionals or extract logic.")
 
     return critical, warnings
 

@@ -448,6 +448,7 @@ def render_terminal_dashboard(data: Dict[str, Any]) -> str:
 
 
 def main():
+    """CLI entry point for project status tracking and STATUS.md synchronization."""
     parser = argparse.ArgumentParser(description="Track project progress and generate status reports.")
     parser.add_argument("--update", "-u", action="store_true", help="Generate/update root STATUS.md")
     parser.add_argument("--summary", "-s", action="store_true", help="Output compact text summary (token-efficient)")

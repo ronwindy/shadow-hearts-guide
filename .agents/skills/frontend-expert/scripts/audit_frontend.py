@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """
 Frontend & UX Audit Script for Shadow Hearts Guide.
-Checks Astro source templates and built HTML for:
+
+Audits Astro source templates and compiled production HTML against key UX pillars:
 1. Responsive table containers (prevents mobile viewport blowouts)
-2. Micro-font regressions (< 12px on content text)
+2. Micro-font regressions (< 12px on long content text)
 3. Exposed internal codes in headings (e.g. [W-1-01])
 4. Responsive navigation footers (Prev/Next buttons)
-5. Touch targets and viewport configurations
+5. Touch targets, viewport meta configurations, and ghost CSS utility classes.
 """
 
 import sys
 import re
 from pathlib import Path
+from typing import List, Tuple, Set
 
 ROOT_DIR = Path(__file__).resolve().parents[4]
 SRC_DIR = ROOT_DIR / "src"
@@ -19,11 +21,21 @@ DIST_DIR = ROOT_DIR / "dist"
 
 ALLOWED_DECIMAL_STEPS = {"0.5", "1.5", "2.5", "3.5"}
 SPACING_PREFIX_PATTERN = r"(?:[a-z0-9\-]+:)?(?:p|px|py|pt|pb|pl|pr|m|mx|my|mt|mb|ml|mr|gap|space-x|space-y)"
+LAYOUT_TOKEN_PATTERN = re.compile(
+    r"^(?:[a-z0-9\-]+:)?(?:p|px|py|pt|pb|pl|pr|m|mx|my|mt|mb|ml|mr|gap)-[a-zA-Z0-9\.\-/\[\]]+$"
+)
 
-def audit_astro_sources():
-    issues = []
-    warnings = []
-    
+
+def audit_astro_sources() -> Tuple[List[str], List[str]]:
+    """
+    Audits Astro source templates in src/ for responsiveness and Tailwind constraints.
+
+    Returns:
+        Tuple of (critical_issues, recommendations).
+    """
+    issues: List[str] = []
+    warnings: List[str] = []
+
     astro_files = list(SRC_DIR.glob("**/*.astro"))
     if not astro_files:
         issues.append("No .astro files found in src/")
@@ -35,43 +47,57 @@ def audit_astro_sources():
         lines = content.splitlines()
 
         for idx, line in enumerate(lines, 1):
-            # 1. Micro-font check: text-[9px] or text-[10px] on long text
-            if re.search(r"text-\[(?:8|9|10)px\]", line):
-                # Allow if explicitly marked as badge or mono pill
-                if not any(token in line for token in ["badge", "pill", "rounded", "font-mono"]):
-                    warnings.append(f"{rel_path}:{idx} Micro-font detected without badge context: {line.strip()[:60]}...")
-
-            # 2. Unwrapped table check: <table> not preceded by overflow-x-auto
-            if "<table" in line:
-                # check previous 3 lines for overflow-x-auto
-                window = "\n".join(lines[max(0, idx - 4):idx])
-                if "overflow-x-auto" not in window:
-                    issues.append(f"{rel_path}:{idx} <table> may cause mobile overflow (missing overflow-x-auto wrapper)")
-
-            # 3. Non-wrapping Prev/Next navigation
-            if "navigation.prev" in line and "navigation.next" in line:
-                if "flex-col sm:flex-row" not in line and "grid" not in line:
-                    warnings.append(f"{rel_path}:{idx} Prev/Next container should use 'flex-col sm:flex-row' to prevent mobile button squishing")
-
-            # 4. Invalid / Non-standard Tailwind fractional spacing steps
-            # Tailwind default only supports .5 steps up to 3.5 (0.5, 1.5, 2.5, 3.5).
-            # Classes like p-4.5 or m-5.5 fail to generate CSS unless explicitly configured.
-            for m in re.finditer(rf"\b({SPACING_PREFIX_PATTERN})-(\d+\.\d+)\b", line):
-                decimal_val = m.group(2)
-                matched_token = m.group(0)
-                if decimal_val not in ALLOWED_DECIMAL_STEPS:
-                    issues.append(
-                        f"{rel_path}:{idx} Invalid / non-standard Tailwind spacing '{matched_token}'. "
-                        f"Tailwind standard scale only supports .5 steps up to 3.5. "
-                        f"Use standard integer steps (e.g. p-4 or p-5) or explicit arbitrary pixels [18px]."
-                    )
+            _audit_astro_line(line, idx, lines, rel_path, issues, warnings)
 
     return issues, warnings
 
-def audit_built_html():
-    issues = []
-    warnings = []
-    
+
+def _audit_astro_line(
+    line: str,
+    idx: int,
+    lines: List[str],
+    rel_path: Path,
+    issues: List[str],
+    warnings: List[str],
+) -> None:
+    """Helper to audit a single line from an Astro source file."""
+    # 1. Micro-font check: text-[9px] or text-[10px] on long text
+    if re.search(r"text-\[(?:8|9|10)px\]", line):
+        if not any(token in line for token in ["badge", "pill", "rounded", "font-mono"]):
+            warnings.append(f"{rel_path}:{idx} Micro-font detected without badge context: {line.strip()[:60]}...")
+
+    # 2. Unwrapped table check: <table> not preceded by overflow-x-auto
+    if "<table" in line:
+        window = "\n".join(lines[max(0, idx - 4):idx])
+        if "overflow-x-auto" not in window:
+            issues.append(f"{rel_path}:{idx} <table> may cause mobile overflow (missing overflow-x-auto wrapper)")
+
+    # 3. Non-wrapping Prev/Next navigation
+    if "navigation.prev" in line and "navigation.next" in line:
+        if "flex-col sm:flex-row" not in line and "grid" not in line:
+            warnings.append(f"{rel_path}:{idx} Prev/Next container should use 'flex-col sm:flex-row'")
+
+    # 4. Invalid Tailwind fractional spacing steps
+    for m in re.finditer(rf"\b({SPACING_PREFIX_PATTERN})-(\d+\.\d+)\b", line):
+        decimal_val = m.group(2)
+        matched_token = m.group(0)
+        if decimal_val not in ALLOWED_DECIMAL_STEPS:
+            issues.append(
+                f"{rel_path}:{idx} Invalid / non-standard Tailwind spacing '{matched_token}'. "
+                f"Use standard integer steps (e.g. p-4) or explicit arbitrary pixels [18px]."
+            )
+
+
+def audit_built_html() -> Tuple[List[str], List[str]]:
+    """
+    Audits compiled production HTML files in dist/ for viewport meta and ghost CSS classes.
+
+    Returns:
+        Tuple of (critical_issues, recommendations).
+    """
+    issues: List[str] = []
+    warnings: List[str] = []
+
     if not DIST_DIR.exists():
         return issues, ["dist/ directory does not exist yet. Run `npm run build` first."]
 
@@ -80,7 +106,7 @@ def audit_built_html():
     compiled_css = "".join(f.read_text(encoding="utf-8") for f in css_files) if css_files else ""
 
     html_files = list(DIST_DIR.glob("**/*.html"))
-    ghost_classes_reported = set()
+    ghost_classes_reported: Set[str] = set()
 
     for path in html_files:
         rel_path = path.relative_to(ROOT_DIR)
@@ -97,30 +123,43 @@ def audit_built_html():
                 warnings.append(f"{rel_path} Raw technical code found in heading: '{h.strip()}'")
 
         # 3. Ghost Utility Class Detection
-        # Detect spacing / layout classes applied to HTML elements that do not exist in compiled CSS
         if compiled_css:
-            class_matches = re.findall(r'class="([^"]+)"', content)
-            for cls_str in class_matches:
-                for token in cls_str.split():
-                    # Focus on critical layout tokens (spacing, padding, margin, gap)
-                    if re.match(r'^(?:[a-z0-9\-]+:)?(?:p|px|py|pt|pb|pl|pr|m|mx|my|mt|mb|ml|mr|gap)-[a-zA-Z0-9\.\-/\[\]]+$', token):
-                        escaped_pattern = (
-                            token.replace(":", r"\:")
-                            .replace(".", r"\.")
-                            .replace("/", r"\/")
-                            .replace("[", r"\[")
-                            .replace("]", r"\]")
-                        )
-                        if escaped_pattern not in compiled_css and token not in ghost_classes_reported:
-                            ghost_classes_reported.add(token)
-                            issues.append(
-                                f"{rel_path} Ghost CSS utility class detected: '{token}' is present in HTML "
-                                f"but has NO CSS rule in compiled stylesheet! (Causes 0 padding / missing styling)"
-                            )
+            _check_ghost_classes(content, compiled_css, rel_path, ghost_classes_reported, issues)
 
     return issues, warnings
 
-def main():
+
+def _check_ghost_classes(
+    content: str,
+    compiled_css: str,
+    rel_path: Path,
+    ghost_classes_reported: Set[str],
+    issues: List[str],
+) -> None:
+    """Detects spacing or layout utility classes present in HTML without compiled CSS rules."""
+    class_matches = re.findall(r'class="([^"]+)"', content)
+    for cls_str in class_matches:
+        for token in cls_str.split():
+            if not LAYOUT_TOKEN_PATTERN.match(token) or token in ghost_classes_reported:
+                continue
+
+            escaped_pattern = (
+                token.replace(":", r"\:")
+                .replace(".", r"\.")
+                .replace("/", r"\/")
+                .replace("[", r"\[")
+                .replace("]", r"\]")
+            )
+            if escaped_pattern not in compiled_css:
+                ghost_classes_reported.add(token)
+                issues.append(
+                    f"{rel_path} Ghost CSS utility class detected: '{token}' is present in HTML "
+                    f"but has NO CSS rule in compiled stylesheet! (Causes 0 padding / missing styling)"
+                )
+
+
+def main() -> None:
+    """CLI entry point for running the frontend and UX audit."""
     print("=" * 60)
     print("Shadow Hearts Guide — Frontend & UX Audit")
     print("=" * 60)
@@ -151,6 +190,7 @@ def main():
     else:
         print(f"[FAIL] Found {total_issues} issue(s) and {total_warnings} warning(s). Please review.")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()
