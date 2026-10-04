@@ -120,9 +120,9 @@ function getStepTypeMeta(type: string = 'exploration') {
                 <span>{meta.label}</span>
               </span>
               {st.title && (
-                <span class="font-serif font-semibold text-slate-100 text-base sm:text-lg">
+                <h3 class="font-serif font-bold text-slate-100 text-lg sm:text-xl">
                   {st.title}
-                </span>
+                </h3>
               )}
             </div>
 
@@ -170,11 +170,11 @@ function getStepTypeMeta(type: string = 'exploration') {
             {displayedNotes && displayedNotes.length > 0 && (
               <div class="pt-2 space-y-2">
                 {displayedNotes.map((n: any) => (
-                  <div class="p-4 rounded-lg bg-amber-950/20 border border-amber-800/40 text-sm text-amber-200/95 space-y-1.5">
-                    <div class="flex items-center gap-1.5 font-semibold text-amber-300 uppercase tracking-wide font-mono text-xs">
-                      <Zap class="w-3.5 h-3.5 text-amber-400" />
+                  <div class="p-4 rounded-lg bg-amber-950/20 border border-amber-800/40 text-sm sm:text-base text-amber-200/95 space-y-1.5">
+                    <h4 class="flex items-center gap-1.5 font-bold text-amber-300 uppercase tracking-wide font-mono text-xs sm:text-sm">
+                      <Zap class="w-4 h-4 text-amber-400 flex-shrink-0" />
                       <span>{n.title || 'Tactical Note'}</span>
-                    </div>
+                    </h4>
                     <p class="leading-relaxed opacity-90">{n.text}</p>
                   </div>
                 ))}
