@@ -1,23 +1,18 @@
 # Shadow Hearts Guide Converter — Project Status
 
-> **Last Synced:** `2026-10-04 16:57:10` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
+> **Last Synced:** `2026-10-04 19:41:35` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
 
 ## 1. Quick Orientation (Agent Context)
 
 ```text
 Canonical Import:   [########################] 100.0% (69/69)
 Structured Content: [##----------------------] 10.1% (7/69)
-QA Verified:        [##----------------------] 7.2% (5/69)
+QA Verified:        [##----------------------] 10.1% (7/69)
 Web Pages Built:    [##----------------------] 10.1% (7/69)
 ```
 
 ### Next Priority Actions (Immediate Queue)
-1. **[MEDIUM]** `Run QA on i-1-01 (Game Manual / Instructions)` — *Structured JSON exists but QA verification report is missing.*
-2. **[MEDIUM]** `Structure w-1-04 (Fengtian)` — *Next chronological section in the walkthrough sequence.*
-
-### Pipeline Notices & Gaps
-- :mag: **Pending QA:** `i-1-01` (Game Manual / Instructions) is structured but lacks a QA report.
-- :mag: **Pending QA:** `w-1-00` (Walkthrough - Asia) is structured but lacks a QA report.
+1. **[MEDIUM]** `Structure w-1-04 (Fengtian)` — *Next chronological section in the walkthrough sequence.*
 
 ---
 
@@ -39,8 +34,8 @@ Web Pages Built:    [##----------------------] 10.1% (7/69)
 | Category | Total | Canonical | Structured | QA Passed | Web Built | Progress |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
 | **Header** | 1 | 1 | 1 | 1 | 1 | `[############] 100.0%` |
-| **Introduction** | 2 | 2 | 2 | 1 | 2 | `[######------] 50.0%` |
-| **Walkthrough - Asia** | 15 | 15 | 4 | 3 | 4 | `[##----------] 20.0%` |
+| **Introduction** | 2 | 2 | 2 | 2 | 2 | `[############] 100.0%` |
+| **Walkthrough - Asia** | 15 | 15 | 4 | 4 | 4 | `[###---------] 26.7%` |
 | **Walkthrough - Europe** | 32 | 32 | 0 | 0 | 0 | `[------------] 0.0%` |
 | **Appendices** | 16 | 16 | 0 | 0 | 0 | `[------------] 0.0%` |
 | **Conclusion** | 3 | 3 | 0 | 0 | 0 | `[------------] 0.0%` |
@@ -60,13 +55,13 @@ Web Pages Built:    [##----------------------] 10.1% (7/69)
 | Code | ID | Section Title | Canon | Struct | QA | Web | Next Action |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | `[I-1-00]` | `i-1-00` | Table of Contents | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
-| `[I-1-01]` | `i-1-01` | Game Manual / Instructions | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `i-1-01` |
+| `[I-1-01]` | `i-1-01` | Game Manual / Instructions | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 
 ### Walkthrough - Asia (15 sections)
 
 | Code | ID | Section Title | Canon | Struct | QA | Web | Next Action |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| `[W-1-00]` | `w-1-00` | Walkthrough - Asia | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `w-1-00` |
+| `[W-1-00]` | `w-1-00` | Walkthrough - Asia | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 | `[W-1-01]` | `w-1-01` | Trans-Siberian Express | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 | `[W-1-02]` | `w-1-02` | Plains | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 | `[W-1-03]` | `w-1-03` | Zhaoyang Village | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
