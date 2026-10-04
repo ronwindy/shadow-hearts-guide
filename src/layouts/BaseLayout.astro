@@ -1,6 +1,5 @@
 ---
 import Navigation from '../components/Navigation.astro';
-import SourceAttribution from '../components/SourceAttribution.astro';
 import MobileNavDrawer from '../components/MobileNavDrawer.astro';
 import SidebarNav from '../components/SidebarNav.astro';
 import '../styles/global.css';
@@ -62,7 +61,6 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         <main class={`flex-grow w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 ${isWide ? 'max-w-[1440px]' : 'max-w-5xl'}`}>
           <slot />
         </main>
-        <SourceAttribution />
       </div>
     </div>
   </body>
