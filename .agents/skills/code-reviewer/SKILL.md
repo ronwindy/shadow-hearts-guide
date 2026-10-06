@@ -78,17 +78,34 @@ To preserve user control and code stability, the Code Reviewer strictly follows 
      - Health Score & Quality Grade
      - Categorized findings (Critical vs Readability recommendations)
      - Staged diff proposals demonstrating the clean refactored code
-  3. Wait for User Approval / Feedback.
+  3. Record Deferred Issues:
+     - For any identified technical debt or warnings not immediately tackled in the proposed diffs,
+       record/update them in `TECH-DEBTS.md` at the project root.
+  4. Wait for User Approval / Feedback.
 
 [Phase 2: Execution upon Approval]
-  4. Apply approved edits using precise file edit tools.
-  5. Verify changes with pipeline check (`python scripts/pipeline.py --code-review`).
-  6. Confirm final status with user.
+  5. Apply approved edits using precise file edit tools.
+  6. Verify changes with pipeline check (`python scripts/pipeline.py --code-review`).
+  7. Update Debt Register:
+     - Move newly resolved items in `TECH-DEBTS.md` from "Active Technical Debts" to "Resolved Technical Debts"
+       with date and resolution notes.
+  8. Confirm final status with user.
 ```
 
 ---
 
-## 5. Automated Audit Tooling & Pipeline Integration
+## 5. Technical Debt Register (`TECH-DEBTS.md`)
+
+The single source of truth for repository technical debt is [`TECH-DEBTS.md`](file:///d:/GAMES/GameGuides/shadow-hearts-guide/TECH-DEBTS.md) at the project root.
+
+### When to Update `TECH-DEBTS.md`:
+1. **New Deferred Debt Discovered**: Each time `/code-reviewer` runs and identifies modularity bottlenecks, long functions, deep nesting, or architectural issues that will not be addressed in the immediate change, log them as active items (`[ ] Open`) with an ID (`TD-xxx`), Pillar, Target Location, Severity, Description, and Proposed Solution.
+2. **Debt Resolved**: When a subsequent task refactors and clears an existing debt item, update its status to `[x] Resolved` and move it to the `## Resolved Technical Debts` table with the resolution date and brief notes.
+3. **Preserving Living Backlog**: Never overwrite or delete active items without resolving them. The register persists across agent sessions.
+
+---
+
+## 6. Automated Audit Tooling & Pipeline Integration
 
 The skill is equipped with an automated deterministic audit tool:
 
@@ -105,11 +122,11 @@ python scripts/pipeline.py <section_id> --check
 
 ### Pass/Fail Behavior:
 - **Critical Defects**: Syntax errors, leftover `breakpoint()` or `debugger;`, bare `except:`. **Exits with code 1** (blocks pipeline).
-- **Quality & Readability Warnings**: Function length, nesting depth, missing docstrings, console logs. **Exits with code 0** but outputs actionable improvement notices.
+- **Quality & Readability Warnings**: Function length, nesting depth, missing docstrings, console logs. **Exits with code 0** but outputs actionable improvement notices that should be logged to `TECH-DEBTS.md` if deferred.
 
 ---
 
-## 6. Workspace Artifact Report Template
+## 7. Workspace Artifact Report Template
 
 When conducting a comprehensive code review, generate an artifact (`code-review-<topic>.md`) formatted as follows:
 

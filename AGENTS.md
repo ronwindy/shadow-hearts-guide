@@ -290,6 +290,7 @@ Code Review ensures that:
 - Monolithic functions or multi-hundred-line scripts are decomposed into focused, single-responsibility units.
 - AI/agent anti-patterns (cryptic variable names, magic constants, deep nesting, silent error suppression) are prevented.
 - Debugging artifacts (`breakpoint()`, `debugger;`, stray `console.log`) are purged.
+- Technical debt and deferred review findings are systematically tracked in [`TECH-DEBTS.md`](file:///d:/GAMES/GameGuides/shadow-hearts-guide/TECH-DEBTS.md).
 - Refactorings follow a two-phase workflow: staged for human approval before execution.
 
 The central Code Review question is:
