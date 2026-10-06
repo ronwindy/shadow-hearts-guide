@@ -7,7 +7,8 @@ import type {
   TocCategory,
   TocData,
   PageTocItem,
-  ManualOverviewData
+  ManualOverviewData,
+  GameWikiData
 } from './types';
 
 export * from './types';
@@ -188,4 +189,20 @@ export function buildPageTocSections(guide: any): PageTocItem[] {
   }
 
   return pageSections;
+}
+
+/**
+ * Loads and returns the structured game wiki overview data.
+ * Reads from `structured-content/game-wiki-overview.json`.
+ *
+ * @throws {Error} If the file does not exist or fails to parse as valid JSON.
+ * @returns {GameWikiData} The parsed encyclopedic overview data for Shadow Hearts.
+ */
+export function getGameWikiData(): GameWikiData {
+  const filePath = path.resolve(process.cwd(), 'structured-content/game-wiki-overview.json');
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Game wiki overview file not found at: ${filePath}`);
+  }
+  const raw = fs.readFileSync(filePath, 'utf-8');
+  return JSON.parse(raw) as GameWikiData;
 }

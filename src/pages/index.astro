@@ -1,148 +1,427 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import TableOfContents from '../components/TableOfContents.astro';
-import { getHeaderData, getTocData } from '../lib/guideData';
+import { getGameWikiData } from '../lib/guideData';
 import {
   BookOpen,
   Compass,
   ArrowRight,
-  Info,
-  FileText
+  Disc,
+  Skull,
+  Flame,
+  Calendar,
+  Gamepad2,
+  Users,
+  Award,
+  Globe,
+  Sparkles,
+  ShieldCheck
 } from '@lucide/astro';
 
-const headerData = getHeaderData();
-const tocData = getTocData();
-const meta = headerData.guide.overview.metadata;
-const purpose = headerData.guide.overview.purpose;
-const scope = headerData.guide.overview.guide_scope;
-const callouts = headerData.guide.callouts || [];
+const wikiData = getGameWikiData();
+const { game_info, overview, gameplay, characters, reception_and_legacy } = wikiData;
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// On-page navigation anchors for the sidebar table of contents
+const pageSections = [
+  { id: 'quick-facts', label: 'Game Info' },
+  { id: 'overview', label: 'Setting & Lore' },
+  { id: 'gameplay', label: 'Gameplay Systems' },
+  { id: 'characters', label: 'Characters', count: characters.length },
+  { id: 'reception', label: 'Reception & Legacy' },
+  { id: 'start-walkthrough', label: 'Strategy Guide' }
+];
 ---
 
 <BaseLayout
-  title="Shadow Hearts — Complete Guide & Walkthrough"
-  description="A polished, player-friendly static companion for the PlayStation 2 classic Shadow Hearts."
+  title="Shadow Hearts — Game Wiki & Walkthrough Hub"
+  description="Comprehensive encyclopedia and companion for Shadow Hearts (PlayStation 2) — premise, Judgement Ring mechanics, demon fusion, character profiles, and complete strategy guide."
+  currentId=""
+  pageSections={pageSections}
+  showSidebar={true}
 >
-  <div class="space-y-16">
+  <div class="space-y-16 py-2">
     <!-- Hero Section -->
-    <section class="relative rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-850/80 to-[#0c0e14] p-6 sm:p-10 lg:p-12 overflow-hidden shadow-2xl">
+    <section class="relative rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-850/90 via-[#0d1017] to-void p-6 sm:p-10 lg:p-12 overflow-hidden shadow-2xl">
       <!-- Ambient Glow Behind Hero -->
       <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-crimson-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="relative z-10 max-w-3xl space-y-6">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-sm font-mono font-medium bg-gold-500/10 text-gold-400 border border-gold-500/30">
-          <span>{meta.platform}</span>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-mono font-medium bg-gold-500/10 text-gold-400 border border-gold-500/30">
+          <Gamepad2 class="w-4 h-4 text-gold-400" />
+          <span>{game_info.platform}</span>
           <span>&bull;</span>
-          <span>{meta.region}</span>
+          <span>1913 Gothic Alternate History</span>
           <span>&bull;</span>
-          <span>v{meta.version}</span>
+          <span>Sacnoth / Aruze</span>
         </div>
 
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-slate-100">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-slate-100 tracking-tight">
           SHADOW HEARTS
         </h1>
 
         <p class="text-lg sm:text-xl text-slate-300 font-serif italic">
-          Complete Strategy Guide & Walkthrough
+          Gothic Horror JRPG &bull; PlayStation 2 Classic
         </p>
 
-        <p class="text-sm sm:text-base text-slate-400 leading-relaxed">
-          {purpose}
+        <p class="text-sm sm:text-base text-slate-400 leading-relaxed max-w-2xl">
+          {overview.premise}
         </p>
 
+        <!-- Primary Call to Actions -->
         <div class="flex flex-wrap items-center gap-4 pt-2">
           <a
             href={`${baseUrl}/toc`}
-            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gold-500 hover:bg-gold-400 text-slate-950 font-semibold text-sm transition-colors shadow-lg shadow-gold-500/20"
+            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gold-500 hover:bg-gold-400 text-slate-950 font-semibold text-sm transition-all shadow-lg shadow-gold-500/20 active:scale-95"
           >
             <BookOpen class="w-4 h-4 mr-2" />
-            <span>Explore Table of Contents</span>
+            <span>Explore Strategy Guide & Walkthrough</span>
           </a>
           <a
             href={`${baseUrl}/guide/w-1-01`}
-            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium text-sm transition-colors group"
+            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-slate-800/90 hover:bg-slate-750 text-slate-200 border border-slate-700 font-medium text-sm transition-all group active:scale-95"
           >
             <Compass class="w-4 h-4 mr-2 text-gold-400" />
-            <span>Start Asia Walkthrough</span>
+            <span>Begin Asia Walkthrough</span>
             <ArrowRight class="w-4 h-4 ml-1.5 text-gold-500 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Guide Scope & Author Metadata Cards -->
-    <section class="grid grid-cols-1 xl:grid-cols-3 gap-6">
-      <div class="xl:col-span-2 p-6 rounded-xl bg-slate-850 border border-slate-800 space-y-4">
-        <h2 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-          <Compass class="w-5 h-5 text-gold-400" />
-          <span>Guide Scope & Walkthrough Focus</span>
-        </h2>
-        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-          {scope}
-        </p>
-        
-        {callouts.map((callout) => (
-          <div class="mt-4 p-4 rounded-lg bg-blue-950/30 border border-blue-800/40 text-sm sm:text-base text-blue-200 flex items-start gap-3">
-            <Info class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+    <!-- Quick Facts / Game Infobox -->
+    <section id="quick-facts" class="scroll-mt-20">
+      <div class="rounded-xl border border-slate-800 bg-slate-850/70 p-6 shadow-md backdrop-blur-sm space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+          <h2 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+            <Gamepad2 class="w-5 h-5 text-gold-400" />
+            <span>Game Overview & Specifications</span>
+          </h2>
+          <span class="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-1 rounded">Wikipedia Canonical</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
+          <!-- Column 1: Core Credits -->
+          <div class="space-y-3">
             <div>
-              <strong class="font-semibold block text-blue-100">{callout.title}</strong>
-              <p class="text-sm text-blue-200/90 mt-0.5">{callout.text}</p>
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-500 block">Developer</span>
+              <span class="text-slate-200 font-medium">{game_info.developer}</span>
+            </div>
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-500 block">Director & Writer</span>
+              <span class="text-slate-200 font-medium">{game_info.director}</span>
+            </div>
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-500 block">Character Artist</span>
+              <span class="text-slate-200 font-medium">{game_info.artist}</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Publishing & Series -->
+          <div class="space-y-3">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-500 block">Publishers</span>
+              <ul class="text-slate-200 space-y-0.5">
+                {game_info.publishers.map((pub) => (
+                  <li>
+                    <span class="text-xs font-mono text-gold-400/90 mr-1">[{pub.region}]</span>
+                    <span>{pub.publisher}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-500 block">Series</span>
+              <span class="text-slate-200 font-medium">{game_info.series}</span>
+            </div>
+          </div>
+
+          <!-- Column 3: Music Composers -->
+          <div class="space-y-3">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-500 block">Music Composers</span>
+              <ul class="text-slate-200 space-y-0.5">
+                {game_info.composers.map((composer) => (
+                  <li>{composer}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-500 block">Genre & Mode</span>
+              <span class="text-slate-200">{game_info.genre} &bull; {game_info.mode}</span>
+            </div>
+          </div>
+
+          <!-- Column 4: Release Dates -->
+          <div class="space-y-3">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-500 block">Release Dates</span>
+              <ul class="text-slate-200 space-y-0.5">
+                {game_info.release_dates.map((rel) => (
+                  <li class="flex items-center gap-1.5">
+                    <Calendar class="w-3.5 h-3.5 text-gold-400/70" />
+                    <span class="font-mono text-xs text-gold-400/90">{rel.region}:</span>
+                    <span>{rel.date}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-500 block">Platform</span>
+              <span class="text-slate-200 font-mono text-xs bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700/60 inline-block">
+                {game_info.platform}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- World & Historical Setting -->
+    <section id="overview" class="scroll-mt-20 space-y-6">
+      <div class="border-b border-slate-800 pb-3">
+        <h2 class="text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+          <Globe class="w-6 h-6 text-gold-400" />
+          <span>World, Historical Setting & Lineage</span>
+        </h2>
+        <p class="text-sm text-slate-400 mt-1">
+          An unprecedented convergence of 20th-century geopolitical tension and cosmic occultism.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
+          <h3 class="text-lg font-serif font-semibold text-gold-300 flex items-center gap-2">
+            <Compass class="w-4 h-4 text-gold-400" />
+            <span>1913 Alternate History & Locations</span>
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            {overview.historical_setting}
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
+          <h3 class="text-lg font-serif font-semibold text-purple-300 flex items-center gap-2">
+            <Sparkles class="w-4 h-4 text-purple-400" />
+            <span>Spiritual Lineage & Koudelka Legacy</span>
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            {overview.spiritual_lineage}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Gameplay Systems -->
+    <section id="gameplay" class="scroll-mt-20 space-y-6">
+      <div class="border-b border-slate-800 pb-3">
+        <h2 class="text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+          <Disc class="w-6 h-6 text-gold-400" />
+          <span>Signature Gameplay Systems</span>
+        </h2>
+        <p class="text-sm text-slate-400 mt-1">
+          Distinctive tactical mechanics that define combat tension and character progression.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Judgement Ring -->
+        <div class="p-6 rounded-xl bg-slate-850/70 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-gold-500/40 transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400">
+              <Disc class="w-5 h-5" />
+            </div>
+            <h3 class="text-lg font-serif font-bold text-slate-100">{gameplay.judgement_ring.name}</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">{gameplay.judgement_ring.description}</p>
+            <div class="pt-2 text-xs text-slate-400 border-t border-slate-800 space-y-1.5">
+              <p><strong class="text-slate-200">Strike Areas:</strong> {gameplay.judgement_ring.mechanics}</p>
+            </div>
+          </div>
+          <div class="pt-2 text-xs font-mono text-gold-400/80 bg-slate-900/60 p-2.5 rounded border border-slate-800">
+            {gameplay.judgement_ring.variations}
+          </div>
+        </div>
+
+        <!-- Sanity System & Malice -->
+        <div class="p-6 rounded-xl bg-slate-850/70 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-crimson-500/40 transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-crimson-500/10 border border-crimson-500/30 flex items-center justify-center text-crimson-400">
+              <Skull class="w-5 h-5" />
+            </div>
+            <h3 class="text-lg font-serif font-bold text-slate-100">{gameplay.sanity_system.name}</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">{gameplay.sanity_system.sp_mechanics}</p>
+            <div class="pt-2 text-xs text-slate-400 border-t border-slate-800 space-y-1.5">
+              <p><strong class="text-slate-200">The Curse of Malice:</strong> {gameplay.sanity_system.malice_mechanics}</p>
+            </div>
+          </div>
+          <div class="pt-2 text-xs font-mono text-crimson-300/90 bg-slate-900/60 p-2.5 rounded border border-slate-800">
+            SP Drains 1 / turn &bull; 0 SP triggers Berserk &bull; Purge Malice at Graveyard
+          </div>
+        </div>
+
+        <!-- Demon Fusion -->
+        <div class="p-6 rounded-xl bg-slate-850/70 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-purple-500/40 transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+              <Flame class="w-5 h-5" />
+            </div>
+            <h3 class="text-lg font-serif font-bold text-slate-100">{gameplay.fusion_system.name}</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">{gameplay.fusion_system.description}</p>
+            <div class="pt-2 text-xs text-slate-400 border-t border-slate-800 space-y-1.5">
+              <p><strong class="text-slate-200">Graveyard Trials:</strong> {gameplay.fusion_system.mechanics}</p>
+            </div>
+          </div>
+          <div class="pt-2 text-xs font-mono text-purple-300/90 bg-slate-900/60 p-2.5 rounded border border-slate-800">
+            6 Elements &bull; Soul Energy Harvesting &bull; Shapeshift in Combat
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playable Character Roster -->
+    <section id="characters" class="scroll-mt-20 space-y-6">
+      <div class="border-b border-slate-800 pb-3 flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+            <Users class="w-6 h-6 text-gold-400" />
+            <span>Playable Characters & Companions</span>
+          </h2>
+          <p class="text-sm text-slate-400 mt-1">
+            The diverse cast of exorcists, rogues, sages, and harmonixers traveling across Eurasia.
+          </p>
+        </div>
+        <span class="text-xs font-mono text-slate-400 bg-slate-850 px-3 py-1 rounded-full border border-slate-800">
+          {characters.length} Playable Heroes
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {characters.map((char) => (
+          <div class="p-5 rounded-xl bg-slate-850/60 border border-slate-800 hover:border-slate-700 transition-colors space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-lg font-serif font-bold text-slate-100">{char.name}</h3>
+                  <p class="text-xs text-slate-400 font-mono">{char.japanese_name}</p>
+                </div>
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-gold-400/90 border border-slate-700/60">
+                  {char.element_or_weapon.split('/')[0].trim()}
+                </span>
+              </div>
+              <p class="text-xs font-medium text-gold-300/90">{char.role}</p>
+              <p class="text-xs text-slate-400 leading-relaxed pt-1 border-t border-slate-800/80">
+                {char.bio}
+              </p>
+            </div>
+            <div class="pt-2 text-xs font-mono text-slate-500">
+              Weapon: <span class="text-slate-300">{char.element_or_weapon.split('/')[1]?.trim() || 'Custom'}</span>
             </div>
           </div>
         ))}
       </div>
+    </section>
 
-      <div class="p-6 rounded-xl bg-slate-850 border border-slate-800 space-y-4">
-        <h2 class="text-lg font-serif font-bold text-slate-100 flex items-center gap-2.5">
-          <FileText class="w-5 h-5 text-purple-400" />
-          <span>Original Source Metadata</span>
+    <!-- Critical Acclaim, Reception & Series Legacy -->
+    <section id="reception" class="scroll-mt-20 space-y-6">
+      <div class="border-b border-slate-800 pb-3">
+        <h2 class="text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+          <Award class="w-6 h-6 text-gold-400" />
+          <span>Critical Reception & Franchise Legacy</span>
         </h2>
-        <dl class="space-y-3 text-sm sm:text-base">
-          <div class="flex justify-between border-b border-slate-800 pb-2">
-            <dt class="text-slate-400">Author</dt>
-            <dd class="text-slate-200 font-medium">{meta.author}</dd>
-          </div>
-          <div class="flex justify-between border-b border-slate-800 pb-2">
-            <dt class="text-slate-400">Version</dt>
-            <dd class="text-slate-200 font-mono">{meta.version}</dd>
-          </div>
-          <div class="flex justify-between border-b border-slate-800 pb-2">
-            <dt class="text-slate-400">Last Updated</dt>
-            <dd class="text-slate-200 font-mono">{meta.last_updated}</dd>
-          </div>
-          <div class="flex justify-between border-b border-slate-800 pb-2">
-            <dt class="text-slate-400">Guide Type</dt>
-            <dd class="text-slate-200">{meta.type}</dd>
-          </div>
-          {meta.contact_email && (
-            <div class="flex justify-between border-b border-slate-800 pb-2">
-              <dt class="text-slate-400">Contact</dt>
-              <dd class="text-slate-200 font-mono text-xs truncate max-w-[150px]">{meta.contact_email}</dd>
+        <p class="text-sm text-slate-400 mt-1">
+          Contemporary reception, historic review scores, and enduring cultural impact.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Highlights & Scores -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-serif font-bold text-slate-200">Contemporary Critical Reception</h3>
+              <span class="text-xs font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 px-2.5 py-1 rounded">
+                Metacritic: 73 / 100
+              </span>
             </div>
-          )}
-        </dl>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              {reception_and_legacy.critical_overview}
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {reception_and_legacy.highlights.map((h) => (
+              <div class="p-4 rounded-lg bg-slate-850/40 border border-slate-800/80 space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold font-serif text-gold-300">{h.publication}</span>
+                  {h.reviewer && <span class="text-[11px] text-slate-400 font-mono">{h.reviewer}</span>}
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed italic">
+                  "{h.verdict}"
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Soundtrack & Legacy Card -->
+        <div class="space-y-4">
+          <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
+            <h3 class="text-base font-serif font-bold text-purple-300 flex items-center gap-2">
+              <Sparkles class="w-4 h-4 text-purple-400" />
+              <span>Acoustic & Industrial Score</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              {reception_and_legacy.soundtrack}
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
+            <h3 class="text-base font-serif font-bold text-gold-300 flex items-center gap-2">
+              <ShieldCheck class="w-4 h-4 text-gold-400" />
+              <span>Series Legacy & Sequels</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              {reception_and_legacy.legacy}
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Table of Contents Preview / Quick Navigation -->
-    <section class="space-y-6">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
-        <div>
-          <h2 class="text-2xl font-serif font-bold text-slate-100">
-            Guide Directory & Chapters
+    <!-- Strategy Guide & Walkthrough Call-to-Action Banner -->
+    <section id="start-walkthrough" class="scroll-mt-20">
+      <div class="relative rounded-2xl border border-gold-500/30 bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 p-8 sm:p-10 overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 max-w-xl text-center md:text-left">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-gold-500/10 text-gold-400 border border-gold-500/30">
+            <BookOpen class="w-3.5 h-3.5" />
+            <span>69 Walkthrough Sections Available</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-serif font-bold text-slate-100">
+            Ready to Venture Across Eurasia?
           </h2>
-          <p class="text-sm sm:text-base text-slate-400 mt-1">
-            Browse all 69 guide sections across the 4 main progression arcs.
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Access the complete walkthrough database featuring item checklists, boss strategies, shop tables, and Judgement Ring calibrations.
           </p>
         </div>
-        <a href={`${baseUrl}/toc`} class="inline-flex items-center gap-1 text-sm sm:text-base font-medium text-gold-500 hover:text-gold-400 transition-colors">
-          <span>View full index</span>
-          <ArrowRight class="w-3.5 h-3.5" />
-        </a>
-      </div>
 
-      <TableOfContents sections={tocData.guide.overview.sections} legend={tocData.guide.overview.legend} />
+        <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
+          <a
+            href={`${baseUrl}/toc`}
+            class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-gold-500 hover:bg-gold-400 text-slate-950 font-semibold text-sm transition-all shadow-lg shadow-gold-500/20 active:scale-95"
+          >
+            <BookOpen class="w-4 h-4 mr-2" />
+            <span>Browse Full Table of Contents</span>
+          </a>
+          <a
+            href={`${baseUrl}/guide/w-1-01`}
+            class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium text-sm transition-all group active:scale-95"
+          >
+            <Compass class="w-4 h-4 mr-2 text-gold-400" />
+            <span>Jump to Part 1 (Trans-Siberian)</span>
+            <ArrowRight class="w-4 h-4 ml-1.5 text-gold-500 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
     </section>
   </div>
 </BaseLayout>

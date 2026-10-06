@@ -278,3 +278,130 @@ export interface PageTocItem {
   label: string;
   count?: number;
 }
+
+/**
+ * Publisher metadata for regional releases.
+ */
+export interface GamePublisher {
+  region: string;
+  publisher: string;
+}
+
+/**
+ * Release date record for regional launches.
+ */
+export interface GameReleaseDate {
+  region: string;
+  date: string;
+}
+
+/**
+ * Production and publishing metadata for Shadow Hearts.
+ */
+export interface GameInfo {
+  title: string;
+  developer: string;
+  publishers: GamePublisher[];
+  director: string;
+  producer: string;
+  designer: string;
+  artist: string;
+  writer: string;
+  composers: string[];
+  series: string;
+  platform: string;
+  release_dates: GameReleaseDate[];
+  genre: string;
+  mode: string;
+}
+
+/**
+ * Historical setting, premise, and narrative roots.
+ */
+export interface WikiOverview {
+  premise: string;
+  historical_setting: string;
+  spiritual_lineage: string;
+}
+
+/**
+ * Core mechanics breakdown for the Judgement Ring.
+ */
+export interface WikiJudgementRing {
+  name: string;
+  description: string;
+  mechanics: string;
+  variations: string;
+}
+
+/**
+ * Mechanics breakdown for Sanity Points and Malice accumulation.
+ */
+export interface WikiSanitySystem {
+  name: string;
+  sp_mechanics: string;
+  malice_mechanics: string;
+}
+
+/**
+ * Mechanics breakdown for Demon Fusion and the Graveyard realm.
+ */
+export interface WikiFusionSystem {
+  name: string;
+  description: string;
+  mechanics: string;
+}
+
+/**
+ * Consolidated gameplay systems.
+ */
+export interface WikiGameplay {
+  exploration_and_encounters: string;
+  judgement_ring: WikiJudgementRing;
+  sanity_system: WikiSanitySystem;
+  fusion_system: WikiFusionSystem;
+}
+
+/**
+ * Playable character encyclopedia profile.
+ */
+export interface WikiCharacter {
+  name: string;
+  japanese_name: string;
+  role: string;
+  element_or_weapon: string;
+  bio: string;
+}
+
+/**
+ * Critical review citation and verdict.
+ */
+export interface WikiReviewHighlight {
+  publication: string;
+  reviewer?: string;
+  verdict: string;
+}
+
+/**
+ * Critical reception, sales, and franchise legacy.
+ */
+export interface WikiReception {
+  sales: string;
+  critical_overview: string;
+  highlights: WikiReviewHighlight[];
+  soundtrack: string;
+  legacy: string;
+}
+
+/**
+ * Complete Game Wiki Overview schema representing structured-content/game-wiki-overview.json.
+ */
+export interface GameWikiData {
+  id: string;
+  title: string;
+  game_info: GameInfo;
+  overview: WikiOverview;
+  gameplay: WikiGameplay;
+  characters: WikiCharacter[];
+  reception_and_legacy: WikiReception;
+}

@@ -39,21 +39,29 @@ To prevent wasteful directory queries and ensure continuity between agent sessio
 - **Before starting any task**, agents should read the first 45 lines of `STATUS.md` or run the summary command. This gives immediate orientation (< 350 tokens) on active milestones, priorities, sequence gaps, and metrics without recursively listing directories.
 - **After completing work** (e.g. creating a structured guide, completing a QA report, or building web pages), agents must run:
   ```powershell
-  & "C:\Users\Admin\AppData\Local\Programs\Python\Python313\python.exe" scripts/status.py --update
+  .\scripts\run-py.cmd scripts/status.py --update
   ```
   to keep `STATUS.md` synchronized.
 
 ### 1.2 Windows Runtime Environment & Tool Paths
 
-To avoid search loops and terminal errors in the sandboxed PowerShell environment:
-- **Python Executable**: Python is installed at:
-  `C:\Users\Admin\AppData\Local\Programs\Python\Python313\python.exe`
-  Because `python` is not in the session's `$env:PATH`, always invoke Python scripts using:
+To avoid search loops and terminal errors across different Windows machines and user accounts:
+- **Python Executable**: Python may be installed in different locations across environments (e.g. `.venv\Scripts\python.exe`, in `$env:PATH`, `C:\Miniconda3\python.exe`, or `$env:LOCALAPPDATA\Programs\Python\Python*\python.exe`).
+  Always invoke Python scripts using the cross-machine launcher:
   ```powershell
-  & "C:\Users\Admin\AppData\Local\Programs\Python\Python313\python.exe" scripts/pipeline.py <section_id> --check
-  & "C:\Users\Admin\AppData\Local\Programs\Python\Python313\python.exe" scripts/status.py --summary
+  .\scripts\run-py.cmd scripts/pipeline.py <section_id> --check
+  .\scripts\run-py.cmd scripts/status.py --summary
   ```
-- **Node / npm**: `node` and `npm` are not available in the default sandboxed terminal `$env:PATH`. All verification, schema validation, QA reports, frontend checks, and status tracking run through the Python pipeline (`scripts/pipeline.py`). Do not execute `npm run build` or search for Node inside the sandbox unless explicitly instructed with elevated/bypass permissions.
+  Alternatively, dynamically resolve Python in PowerShell:
+  ```powershell
+  $py = (Get-Command python, py, "C:\Miniconda3\python.exe", "$env:LOCALAPPDATA\Programs\Python\Python*\python.exe", "C:\Users\Admin\AppData\Local\Programs\Python\Python*\python.exe" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source -First 1)
+  & $py scripts/pipeline.py <section_id> --check
+  ```
+- **Node / npm**: On Windows, running `npm` directly in PowerShell can trigger `PSSecurityException` (ExecutionPolicy) due to `npm.ps1`. Always invoke npm via the command shell wrapper to ensure cross-machine compatibility:
+  ```powershell
+  cmd /c npm run build
+  cmd /c npm test
+  ```
 
 
 ---

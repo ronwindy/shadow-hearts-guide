@@ -1,0 +1,125 @@
+{
+  "id": "game-wiki-overview",
+  "title": "Shadow Hearts — Game Wiki Overview",
+  "game_info": {
+    "title": "Shadow Hearts",
+    "developer": "Sacnoth",
+    "publishers": [
+      { "region": "JP", "publisher": "Aruze" },
+      { "region": "WW", "publisher": "Midway Games" }
+    ],
+    "director": "Matsuzo Machida",
+    "producer": "Jun Mihara",
+    "designer": "Izumi Hamamoto",
+    "artist": "Miyako Kato",
+    "writer": "Matsuzo Machida",
+    "composers": [
+      "Yoshitaka Hirota",
+      "Masaharu Iwata",
+      "Yasunori Mitsuda"
+    ],
+    "series": "Shadow Hearts",
+    "platform": "PlayStation 2",
+    "release_dates": [
+      { "region": "JP", "date": "June 28, 2001" },
+      { "region": "NA", "date": "December 12, 2001" },
+      { "region": "PAL", "date": "March 29, 2002" }
+    ],
+    "genre": "Role-playing (JRPG / Gothic Horror)",
+    "mode": "Single-player"
+  },
+  "overview": {
+    "premise": "Shadow Hearts is a seminal PlayStation 2 gothic role-playing game developed by Sacnoth. Acting as the spiritual and narrative successor to Koudelka (1999), it bridges historical early 20th-century realism with eldritch cosmic horror.",
+    "historical_setting": "Set between 1913 and 1914 on the eve of World War I, the adventure charts an epic transcontinental journey across real-world historical cities in China and Europe—from the bustling, tumultuous streets of Shanghai to the fog-drenched alleys of London and the occult-steeped ruins of Wales.",
+    "spiritual_lineage": "Developed under director and scenario writer Matsuzo Machida, Shadow Hearts distinguishes itself from conventional fantasy RPGs through an irreverent blend of historical drama, dark occultism, irreverent humor, and supernatural demonology inspired by H.P. Lovecraft and Go Nagai's Devilman."
+  },
+  "gameplay": {
+    "exploration_and_encounters": "Players explore atmospheric pre-rendered locales, solving environmental puzzles, bartering with period merchants, and undertaking both pivotal story investigations and optional side quests. Combat takes place in turn-based 3D arenas triggered by random encounters.",
+    "judgement_ring": {
+      "name": "The Judgement Ring",
+      "description": "The defining hallmark of the Shadow Hearts series: an active, precision-based timing ring that governs nearly every action in the game.",
+      "mechanics": "When an action is initiated, an indicator hand sweeps across an antique circular disc. The player must press the confirmation button within designated colored Hit areas to execute commands. Hitting the narrow red sliver at the end of each area—the Strike area—deals critical bonus damage or amplifies magical potency. Failing to hit an area can abort the action prematurely.",
+      "variations": "Beyond combat, the Judgement Ring triggers environmental challenges and allows haggling for merchant discounts. Status ailments and rare equipment actively modify the ring, expanding hit zones, accelerating rotation speed, or obscuring target indicators."
+    },
+    "sanity_system": {
+      "name": "Sanity Points (SP) & Malice",
+      "sp_mechanics": "Every party member tracks Hit Points (HP), Magic Points (MP), and Sanity Points (SP). Battling monstrous aberrations taxes human sanity: every round in combat automatically drains 1 SP. If a character's SP reaches 0, they succumb to the 'Berserk' condition, rampaging out of player control with reckless frenzy.",
+      "malice_mechanics": "Yuri's demon-binding abilities generate a lingering metaphysical residue known as Malice. As monsters are slain, Malice steadily accumulates, shifting the talisman talisman from blue to cursed crimson. If left unpurged, an avatar of Death—the Grim Reaper—manifests to ambush the party. Players must regularly purify this curse by confronting dark manifestations within the inner Graveyard."
+    },
+    "fusion_system": {
+      "name": "Demon Fusion & The Graveyard",
+      "description": "Yuri's inherited ability as a Harmonixer to bind demonic entities and transform directly into formidable elemental beasts during battle.",
+      "mechanics": "Defeating enemies harvests elemental Soul Energy (Earth, Wind, Water, Fire, Light, and Dark). Within the Graveyard—a surreal purgatory realm residing inside Yuri's consciousness—Yuri offers soul energy to unlock trials against legendary demonic avatars. Overcoming these spectral guardians unlocks their Fusion forms, allowing Yuri to shapeshift mid-battle to unleash catastrophic spells and tailored elemental affinities."
+    }
+  },
+  "characters": [
+    {
+      "name": "Yuri Hyuga",
+      "japanese_name": "ウル・ボルト・ヒューガ",
+      "role": "Main Protagonist / Harmonixer",
+      "element_or_weapon": "Dark / Knuckles & Claws",
+      "bio": "A cynical, tough-talking Harmonixer who bears the ability to fuse his soul with demons. Compelled by a mysterious telepathic voice in his head, he intervenes to rescue Alice from an occult train ambush, embarking on an arduous path to uncover his lineage."
+    },
+    {
+      "name": "Alice Elliot",
+      "japanese_name": "アリス・エリオット",
+      "role": "Holy Exorcist / White Magic Healer",
+      "element_or_weapon": "Light / Bibles & Holy Rods",
+      "bio": "A compassionate young exorcist from London gifted with peerless sacred power. Following the tragic murder of her father, she is targeted by powerful occultists and imperial factions seeking to harness her immense spiritual aura."
+    },
+    {
+      "name": "Zhuzhen Liu",
+      "japanese_name": "劉 朱震",
+      "role": "Taoist Sage & Geomancer",
+      "element_or_weapon": "Fire / Walking Staffs & Talismans",
+      "bio": "A quirky yet profoundly knowledgeable Taoist master well-versed in ancient Chinese divination, feng shui, and Yin-Yang geomancy. He lends invaluable supernatural wisdom and elemental fire sorcery to the party."
+    },
+    {
+      "name": "Margarete Gertrude Zelle",
+      "japanese_name": "マルガリータ・G・ツェレ",
+      "role": "International Spy & Demolitions Expert",
+      "element_or_weapon": "Water / Firearms & Explosives",
+      "bio": "A shrewd and glamorous intelligence operative disguised as an exotic performer. Armed with customized revolvers, submachine guns, and timed explosive ordnance, she investigates occult unrest across the continent."
+    },
+    {
+      "name": "Keith Valentine",
+      "japanese_name": "キース・ヴァレンタイン",
+      "role": "Vampire Noble / Aristocratic Fencer",
+      "element_or_weapon": "Earth / Rapiers & Ritual Blades",
+      "bio": "A sophisticated aristocratic vampire who has spent centuries secluded within his Welsh fortress. Seeking renewed purpose after centuries of slumber, he brings deadly fencing finesse, bat transformations, and dark ritual sorcery."
+    },
+    {
+      "name": "Halley Brancket",
+      "japanese_name": "ハリー・プランケット",
+      "role": "London Street Urchin / Psychic Prodigy",
+      "element_or_weapon": "Wind / Slingshots & Telekinesis",
+      "bio": "The plucky, courageous leader of a band of London street orphans who wields formidable telekinetic and psychic abilities. He is the son of Koudelka Iasant and joins forces with Yuri to rescue his captive mother."
+    }
+  ],
+  "reception_and_legacy": {
+    "sales": "Upon release in 2001, Shadow Hearts achieved strong cult success in Japan, selling roughly 110,000 units and earning a devoted following among international players following its Western distribution through Midway Games.",
+    "critical_overview": "Holding a 73/100 aggregate score on Metacritic across 24 critical outlets, Shadow Hearts was celebrated as a creative breath of fresh air that dared to deviate from mainstream high-fantasy tropes.",
+    "highlights": [
+      {
+        "publication": "Famitsu",
+        "verdict": "Applauded the depth and execution of the battle system, highlighting the compelling, multidimensional personalities that set the cast apart from traditional RPG tropes."
+      },
+      {
+        "publication": "GameSpot",
+        "reviewer": "Gerald Villoria",
+        "verdict": "Praised the narrative as 'at once comical, scary, and most of all, exciting', emphasizing the dynamic tension of the Judgement Ring and the ingenious integration of the Malice and Sanity systems."
+      },
+      {
+        "publication": "Computer and Video Games",
+        "reviewer": "Paul Davies",
+        "verdict": "Commended the refreshing gothic ambiance, mature storytelling, and tactical depth of the Harmonixer Demon Fusion mechanic."
+      },
+      {
+        "publication": "RPGFan & IGN",
+        "verdict": "Acclaimed the Judgement Ring as an inspired mechanical breakthrough that keeps turn-based combat consistently tense and engaging."
+      }
+    ],
+    "soundtrack": "The soundtrack, crafted by Yoshitaka Hirota alongside Masaharu Iwata and Yasunori Mitsuda, remains one of the era's most revered RPG scores—blending industrial noise, ritual chanting, symphonic grandeur, and acoustic folk into a sound described as 'beautiful yet destructive'.",
+    "legacy": "Shadow Hearts established an enduring legacy as one of the PS2's preeminent cult classics, paving the way for the masterpiece Shadow Hearts: Covenant (2004) and spin-off Shadow Hearts: From the New World (2005)."
+  }
+}

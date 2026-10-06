@@ -1,0 +1,132 @@
+{
+  "id": "game-wiki-overview",
+  "title": "Shadow Hearts — Game Wiki Overview",
+  "source_type": "wikipedia",
+  "source": {
+    "title": "Shadow Hearts (video game)",
+    "url": "https://en.wikipedia.org/wiki/Shadow_Hearts_(video_game)",
+    "source_file": "raw-source/Shadow Hearts (video game) - Wikipedia.html",
+    "retrieved_date": "2026-10-06"
+  },
+  "game_info": {
+    "title": "Shadow Hearts",
+    "developer": "Sacnoth",
+    "publishers": [
+      { "region": "JP", "publisher": "Aruze" },
+      { "region": "WW", "publisher": "Midway Games" }
+    ],
+    "director": "Matsuzo Machida",
+    "producer": "Jun Mihara",
+    "designer": "Izumi Hamamoto",
+    "artist": "Miyako Kato",
+    "writer": "Matsuzo Machida",
+    "composers": [
+      "Yoshitaka Hirota",
+      "Masaharu Iwata",
+      "Yasunori Mitsuda"
+    ],
+    "series": "Shadow Hearts",
+    "platform": "PlayStation 2",
+    "release_dates": [
+      { "region": "JP", "date": "June 28, 2001" },
+      { "region": "NA", "date": "December 12, 2001" },
+      { "region": "PAL", "date": "March 29, 2002" }
+    ],
+    "genre": "Role-playing",
+    "mode": "Single-player"
+  },
+  "overview": {
+    "premise": "Shadow Hearts is a role-playing video game developed by Sacnoth for the PlayStation 2. Published in Japan by Aruze in 2001 and internationally by Midway Games, it acts as a sequel to the 1999 video game Koudelka, set in the same world and featuring recurring characters.",
+    "historical_setting": "The story of Shadow Hearts is set in an alternate reality during 1913 and 1914, mingling real-world historical events and people with supernatural elements, divine beings, and Lovecraftian cosmic horror. The journey spans locations across China and Europe, prominently featuring Shanghai and London.",
+    "spiritual_lineage": "The titular first game in the Shadow Hearts franchise, it continues the gothic horror RPG lineage started by Koudelka on the original PlayStation, carrying forward its occult themes, historical fiction backdrop, and dark atmosphere."
+  },
+  "gameplay": {
+    "exploration_and_encounters": "Players take control of main protagonist Yuri Hyuga and a party of companions as they progress through a linear storyline. Players explore pre-rendered environments, purchase items and equipment, interact with quest givers and merchants, and complete both main story and side quests. Battles are turn-based and triggered via random encounters in themed 3D battle arenas.",
+    "judgement_ring": {
+      "name": "Judgement Ring",
+      "description": "An integral timing-based mechanic represented as a circular disc with colored areas on its surface. As an indicator hand/pointer sweeps around the disc, players must press the action button when the hand passes over the colored areas.",
+      "mechanics": "Every battle command (standard attacks, spells, items, and special skills) is tied to the Judgement Ring. If the player misses an area, the action is cut short or cancelled completely. The final portion of each target area is colored red (Strike area); hitting this narrow zone grants bonus power to attacks or spells. The ring is also used in environmental quick-time events and shopping negotiations for shop discounts.",
+      "variations": "Various items, accessories, and enemy status ailments can modify the ring's performance—such as altering pointer rotation speed, resizing target areas, shrinking the entire ring, or concealing hit areas."
+    },
+    "sanity_and_malice": {
+      "name": "Sanity Points (SP) & Malice",
+      "sp_mechanics": "Each character possesses Hit Points (HP), Magic Points (MP), and Sanity Points (SP). During combat, SP ordinarily depletes by 1 point at the end of each character turn. If a party member runs out of SP, they fall into the 'Berserk' condition, becoming uncontrollable and attacking allies or enemies indiscriminately. SP can be restored using Pure items or special abilities.",
+      "malice_mechanics": "As Yuri defeats monsters and gathers Soul Energy, he accumulates an occult energy called Malice. If left unchecked, Malice builds to dangerous levels until an avatar of death (such as the Grim Reaper) manifests to hunt down the party. Players must regularly visit the Graveyard to dispel Malice in battle."
+    },
+    "fusion_system": {
+      "name": "Demon Fusion & The Graveyard",
+      "description": "A unique supernatural power possessed exclusively by Yuri as a Harmonixer, allowing him to absorb defeated monster spirits and transform into elemental demonic forms in battle.",
+      "mechanics": "Monsters defeated in combat yield Soul Energy corresponding to their element. Once sufficient elemental energy is amassed, Yuri can enter the Graveyard—a metaphysical realm within his inner soul—and challenge monster avatars to combat. Defeating these trials unlocks their Fusion form, granting Yuri access to unique monster statistics, passive affinities, and specialized magical arts. Transforming into a Fusion consumes SP."
+    }
+  },
+  "characters": [
+    {
+      "name": "Yuri Hyuga",
+      "japanese_name": "ウル・ボルト・ヒューガ (Uru Boruto Hyūga)",
+      "role": "Main Protagonist / Harmonixer",
+      "element_or_weapon": "Dark / Knuckles & Claws",
+      "bio": "A brash young Harmonixer capable of absorbing monster souls and transforming into demonic entities. Guided by a mysterious voice in his mind, he rescues Alice from an occult kidnapper and vows to protect her as their fates become intertwined."
+    },
+    {
+      "name": "Alice Elliot",
+      "japanese_name": "アリス・エリオット",
+      "role": "Exorcist / White Magic Healer",
+      "element_or_weapon": "Light / Bibles & Holy Rods",
+      "bio": "A compassionate young English exorcist possessing exceptional spiritual power that banished dark spirits alongside her father, Father Maurice Elliot. After her father is murdered, she becomes the prime target of ancient sorcerers and occult conspiracies."
+    },
+    {
+      "name": "Zhuzhen Liu",
+      "japanese_name": "劉 朱震",
+      "role": "Taoist Sage & Geomancer",
+      "element_or_weapon": "Fire / Walking Staffs & Talismans",
+      "bio": "An aged Chinese sage and master of Yin-Yang Taoist sorcery. Despite an eccentric exterior, his profound mystical expertise provides vital guidance across Asia and Europe."
+    },
+    {
+      "name": "Margarete Gertrude Zelle",
+      "japanese_name": "マルガリータ・G・ツェレ",
+      "role": "International Spy & Demolitions Expert",
+      "element_or_weapon": "Water / Firearms & Explosives",
+      "bio": "A glamorous and resourceful international secret agent operating under cover of a traveling entertainer. Equipped with state-of-the-art firearms, grenades, and espionage gadgets, she joins the party pursuing covert intelligence."
+    },
+    {
+      "name": "Keith Valentine",
+      "japanese_name": "キース・ヴァレンタイン",
+      "role": "Vampire Noble / Swordsman",
+      "element_or_weapon": "Earth / Rapiers & Ritual Swords",
+      "bio": "A centuries-old aristocratic vampire residing in an isolated castle in Wales. Weary of aristocratic solitude, he wields aristocratic fencing techniques and dark bat magic to aid Yuri's cause."
+    },
+    {
+      "name": "Halley Brancket",
+      "japanese_name": "ハリー・プランケット",
+      "role": "London Street Urchin / Psychic Prodigy",
+      "element_or_weapon": "Wind / Slingshots & Telekinesis",
+      "bio": "A courageous young leader of a London orphan street gang who commands potent latent psychic and telekinetic powers. He is the son of Koudelka Iasant and fights fiercely to rescue his abducted mother."
+    }
+  ],
+  "reception_and_legacy": {
+    "sales": "By the end of 2001, Shadow Hearts sold nearly 104,000 units in Japan, ranking among the region's top 100 best-selling games of that year, eventually reaching approximately 110,000 units. Midway reported a devoted, passionate following in Western markets.",
+    "critical_overview": "Review aggregator Metacritic awarded Shadow Hearts a score of 73/100 based on 24 critic reviews, indicating 'mixed or average' contemporary reception, with critics universally highlighting its distinctive atmosphere and combat innovation.",
+    "highlights": [
+      {
+        "publication": "Famitsu",
+        "verdict": "Praised the rich personalities of the party cast and highlighted the battle system as feeling more complete and engaging than conventional genre entries."
+      },
+      {
+        "publication": "GameSpot",
+        "reviewer": "Gerald Villoria",
+        "verdict": "Lauded the narrative as 'at once comical, scary, and most of all, exciting', giving special praise to the Judgement Ring's risk-reward timing and the deep integration of the Malice system."
+      },
+      {
+        "publication": "Computer and Video Games",
+        "reviewer": "Paul Davies",
+        "verdict": "Applauded the game's distinctive tone, dark horror styling, and gameplay depth introduced by the Demon Fusion mechanic."
+      },
+      {
+        "publication": "RPGFan & IGN",
+        "verdict": "Praised the unique Judgement Ring mechanic and atmospheric soundtrack, while noting early PS2 graphical limitations and sluggish field pacing."
+      }
+    ],
+    "soundtrack": "The soundtrack, primarily composed by Yoshitaka Hirota alongside Masaharu Iwata and Yasunori Mitsuda, received universal critical acclaim for its daring synthesis of punk, industrial rock, techno, and orchestral themes—producing a score famously characterized as 'beautiful yet destructive'.",
+    "legacy": "Shadow Hearts established a beloved cult legacy and launched a celebrated trilogy, directly leading to the critically lauded direct sequel Shadow Hearts: Covenant (2004) and spin-off Shadow Hearts: From the New World (2005)."
+  }
+}

@@ -24,4 +24,8 @@ Thumbs.db
 
 # Raw sources
 raw-sources/
+raw-source/
 scratch/
+scripts/*.ps1
+scripts/*.txt
+scripts/*.js
