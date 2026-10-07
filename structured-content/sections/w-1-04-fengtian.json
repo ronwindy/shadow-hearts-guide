@@ -1,0 +1,678 @@
+{
+  "guide": {
+    "id": "w-1-04",
+    "code": "[W-1-04]",
+    "title": "Fengtian",
+    "type": "walkthrough",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-1-03",
+        "code": "[W-1-03]",
+        "title": "Zhaoyang Village",
+        "file": "sections/w-1-03-zhaoyang-village.json"
+      },
+      "next": {
+        "id": "w-1-05",
+        "code": "[W-1-05]",
+        "title": "Dalian",
+        "file": "sections/w-1-05-dalian.json"
+      }
+    },
+    "route": [
+      "Fengtian (Silent Peddler, fountain, Building-Loving Man)",
+      "West area (alley chest, Item Shop)",
+      "Alley outside the Item Shop",
+      "Sewers",
+      "Manhole above ground",
+      "World Map"
+    ],
+    "objectives": [
+      "Get the **Pedometer** from the **Silent Peddler** and keep it equipped",
+      "Collect the hidden items in **Fengtian** and the **Sewers**",
+      "Win the **Jade Lariat** from **Lottery Member No. 15**",
+      "Recruit **Margarete** in the **Sewers**",
+      "Set the **Jewel** (Sealing Stone) on the manhole cover",
+      "Defeat the **Water Tiger** sub-boss and the **Beast Dog** boss",
+      "Proceed to **Dalian**"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "TalismanOfLuck",
+          "category": "items",
+          "location": "North side of the area behind the fountain ('?' icon)"
+        },
+        {
+          "name": "Gold Hourglass",
+          "category": "items",
+          "location": "Sewers: stairs at the bottom of the screen, a few steps right of the ladder"
+        },
+        {
+          "name": "Tent",
+          "category": "items",
+          "location": "Chest in the alley to the upper-right of the west area"
+        },
+        {
+          "name": "Pure Seed",
+          "category": "items",
+          "location": "Sewers: chest reached by heading north and taking the first left"
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Alley outside the Item Shop (to your left), after the Item Shop scene"
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Sewers: examine the hole in the wall again after the scene"
+        },
+        {
+          "name": "Pedometer",
+          "category": "equipment",
+          "location": "Given by the Silent Peddler on the right side of the first area"
+        },
+        {
+          "name": "Type 94 Pistol",
+          "category": "equipment",
+          "location": "Sewers: chest passed earlier, reached after the ladder event"
+        },
+        {
+          "name": "Mini-Mauser",
+          "category": "equipment",
+          "location": "Margarete's default equipment"
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "category": "equipment",
+          "location": "Sewers: just to the right of the Jewel"
+        },
+        {
+          "name": "Leather Skirt",
+          "category": "equipment",
+          "location": "Margarete's default equipment"
+        },
+        {
+          "name": "Jewel",
+          "category": "valuables",
+          "location": "Sewers: glowing blue sphere in the wall, all the way north past the debris"
+        },
+        {
+          "name": "Lottery Member No. 15",
+          "category": "lottery",
+          "location": ""
+        },
+        {
+          "name": "(Building-loving Man)",
+          "category": "lottery",
+          "location": ""
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#011",
+        "name": "Fire Bat",
+        "hp": 38,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#012",
+        "name": "Shiki Bug",
+        "hp": 26,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Poison"
+      },
+      {
+        "number": "#013",
+        "name": "Mutant Frog",
+        "hp": 34,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#014",
+        "name": "Frog God",
+        "hp": 40,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#015",
+        "name": "Kappa",
+        "hp": 100,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#016",
+        "name": "Water Tiger",
+        "hp": 380,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": ""
+      },
+      {
+        "number": "#017",
+        "name": "Elite Guard",
+        "hp": 45,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#018",
+        "name": "Beast Dog",
+        "hp": 480,
+        "class": "Fire",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": ""
+      }
+    ],
+    "bosses": [
+      {
+        "type": "BOSS",
+        "name": "Beast Dog",
+        "enemies": [
+          {
+            "name": "Beast Dog",
+            "hp": 480,
+            "class": "Fire",
+            "drop": "Voodoo Doll"
+          }
+        ],
+        "party": [
+          {
+            "name": "Yuri",
+            "level": 9,
+            "equipment": [
+              "Knuckle Blade",
+              "Leather Vest",
+              "Bandanna",
+              "Leather Belt",
+              "Jade Lariat"
+            ],
+            "fusions": [
+              "Death Emperor",
+              "Raging Tiger"
+            ]
+          },
+          {
+            "name": "Margarete",
+            "level": 9,
+            "equipment": [
+              "Type 94 Pistol",
+              "Leather Skirt",
+              "Bandanna",
+              "Leather Belt",
+              "Shell Bracelet"
+            ]
+          },
+          {
+            "name": "Alice",
+            "level": 9,
+            "equipment": [
+              "ShootingStarTome",
+              "Leather Skirt",
+              "Bandanna",
+              "Leather Belt",
+              "Star Brooch"
+            ]
+          }
+        ],
+        "exp": 540,
+        "cash": 3000,
+        "strategy": "Be wary of its **Breath of Fire** attack; it'll hit the whole party for pretty good damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own strength, making them that much worse, so keep an eye on your HP.\nTo start, have **Margarete** cast the **Aqua Edge** on **Yuri**, followed by using her **Grenade** skill repeatedly. With a water-based attack, have **Yuri** fuse into the **Raging Tiger** and start attacking normally, doing some major damage. Have **Alice** keep everyone's HP up during the battle, having **Margarete** help out when needed. As usual, make sure **Alice**'s SP doesn't drop to 0."
+      }
+    ],
+    "shops": [
+      {
+        "name": "Fengtian Item Shop",
+        "inventory": [
+          {
+            "name": "Knuckle Blade",
+            "price": 1200
+          },
+          {
+            "name": "Thera Leaf",
+            "price": 50
+          },
+          {
+            "name": "ShootingStarTome",
+            "price": 1420
+          },
+          {
+            "name": "Mana Leaf",
+            "price": 100
+          },
+          {
+            "name": "Leather Vest",
+            "price": 1000
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Leather Skirt",
+            "price": 1200
+          },
+          {
+            "name": "TalismanOfLuck",
+            "price": 480
+          },
+          {
+            "name": "Bandanna",
+            "price": 320
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Leather Belt",
+            "price": 320
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Shell Bracelet",
+            "price": 2770
+          },
+          {
+            "name": "Angel's Feather",
+            "price": 80
+          },
+          {
+            "name": "Bone Bracelet",
+            "price": 2960
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "RosewoodBracelet",
+            "price": 3000
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Spikes",
+            "price": 2810
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "After a long series of events, you'll gain control inside the city of **Fengtian**. Head over to the right side of the screen and talk to the **Silent Peddler**; he'll give you the **Pedometer**, which will count the steps you take when you have it equipped. Later on, you'll be able to trade your 'steps' for prizes, so make sure to ALWAYS have it equipped on an active party member; I put mine on **Alice**.",
+        "type": "story",
+        "rewards": [
+          {
+            "name": "Pedometer",
+            "category": "equipment",
+            "matched_overview_item": "Pedometer"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "Go to the north side of the area behind the fountain until you see the '?' icon to find a **TalismanOfLuck**. Next, head to the left side of the fountain and talk to the man in green, the **Building-Loving Man**. Since you have a **Lottery Ticket** from the **Felinus** battle, he'll offer to let you play the **Lottery**! IGNORE him for now, as we'll be able to save here in a few moments so that if we fail, we can reload and try again.",
+        "type": "exploration",
+        "rewards": [
+          {
+            "name": "TalismanOfLuck",
+            "category": "items",
+            "matched_overview_item": "TalismanOfLuck"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "After talking to everyone, go back and talk to **Alice** to have her rejoin you. Head west to the next area, then check the alley just to your upper-right to find a chest containing a **Tent**. Approach the building to the left to have the shopkeeper invite you in, then enter the shop for a scene.",
+        "type": "exploration",
+        "rewards": [
+          {
+            "name": "Tent",
+            "category": "items",
+            "matched_overview_item": "Tent"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "Talk to the shopkeeper to learn about using your **Guild Card** that you acquired earlier, which will allow you to get a 10% discount while shopping and a 5% price rise when selling. As you can see, everything here is pretty expensive, so you probably won't be able to buy much more than **Yuri**'s and **Alice**'s upgrades for their weapons and armor. Make sure that you have some money left over to have enough for a few **Tents** if needed, as well as necessary healing items.",
+        "type": "shop",
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Save before shopping",
+            "text": "I STRONGLY recommend saving before shopping. If you fail at the Ring while trying to get discounts, you can always reload and try again. If you fail while not having enough money to purchase enough times, you can lose your card, so avoid it if at all possible."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "**Meiyuan** is here as well, but I don't recommend using his acupuncture just yet; it's too expensive for the bonus. When you're done shopping, attempt to leave; **Alice** will ask if you're ready.",
+        "type": "shop",
+        "choices": [
+          {
+            "option": "1. Just a bit more.",
+            "outcome": "Keep shopping."
+          },
+          {
+            "option": "2. I'm ready.",
+            "outcome": "Watch a series of events; you'll regain control outside in the alley."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": "Choose 2 to watch a series of events. Eventually, you'll regain control outside in the alley. Check to your left to find another **Lottery Ticket**, then go back into the **Item Shop** and **SAVE** your game. The **Building-loving Man** is in here now, and you'll be able to play the **Lottery** with him.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tutorial",
+            "title": "Lottery Member No. 15",
+            "text": "There are a very limited amount of Lottery Tickets in the game (30 to be exact), so (FOR NOW) I only recommend playing each person's lottery ONCE, and that is to get the item in RED. You MUST win a prize from each member's game once if you want to be able to participate in EVERY member's lottery, including the chairman's, so try not to miss any!",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Jade Lariat"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "B.Tortoise Fang"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "TalismanOfMercy"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Pure Seed"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "description": "Make sure to win the **Jade Lariat** before continuing on; it widens your **Hit Area** on your Ring, it's well worth it! If you don't win it, reload your last save and try again.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "missable",
+            "title": "Win the Jade Lariat",
+            "text": "Make sure to win the Jade Lariat before continuing on; it widens your Hit Area on your Ring, it's well worth it! If you don't win it, reload your last save and try again."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "Once you've done everything you want in **Fengtian**, go back out into the alley and examine the ladder in the manhole to descend into the **Sewers**.",
+        "type": "navigation",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Return to the Item Shop",
+            "text": "At any point in the Sewers, if needed, you can return to the Item Shop to save and/or shop."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 9,
+        "description": "**Sewers:** Take a few steps to the right, then examine the stairs at the bottom of the screen to find a **Gold Hourglass**. Go back to the ladder and head north now, taking the first left when you can. You'll eventually come to a chest, so open it for a **Pure Seed**, then go back to the last fork. Take the SECOND left this time, and you'll come to a hole in the wall. After the scene, examine it again to receive a **Lottery Ticket**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Gold Hourglass",
+            "category": "items",
+            "matched_overview_item": "Gold Hourglass"
+          },
+          {
+            "name": "Pure Seed",
+            "category": "items",
+            "matched_overview_item": "Pure Seed"
+          },
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "description": "Head back to the fork once again to run into the **Alluring Spy**. This time, she'll decide to join your party, and will introduce herself as **Margarete**.",
+        "type": "story",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Margarete's default equipment",
+            "text": "**Margarete** comes equipped with a **Mini-Mauser**, and a **Leather Skirt** by default."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 11,
+        "description": "Make your way back to the ladder once more, then head east, north, and east to an area with a **Save Point**. Use it if you like, then examine the ladder here for an event. Afterward, continue west and you'll eventually come back to the chest you passed earlier. Open it for a **Type 94 Pistol** for **Margarete**; it increases her P-Atk, but not her S-ATK, but I'd still equip it anyway.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Type 94 Pistol",
+            "category": "equipment",
+            "matched_overview_item": "Type 94 Pistol"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "description": "Since you saw the event at the ladder, there's now one more item we need to get. Make your way back to the first ladder you came down, then head all the way north. The blast created some debris here, so cross it and examine the glowing blue sphere in the wall to obtain the **Jewel**, which is the Sealing Stone for the manhole cover. Once you have it, search just to the right of it to find a **Rosewood Bracelet**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Jewel",
+            "category": "valuables",
+            "matched_overview_item": "Jewel"
+          },
+          {
+            "name": "Rosewood Bracelet",
+            "category": "equipment",
+            "matched_overview_item": "Rosewood Bracelet"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "description": "Make your way back to the **Save Point** and save your game, then attempt to climb the ladder; you'll be asked if you want to set the Sealing Stone.",
+        "type": "preparation",
+        "choices": [
+          {
+            "option": "1. Wait a moment.",
+            "outcome": "Stay in the Sewers."
+          },
+          {
+            "option": "2. Okay, it's set.",
+            "outcome": "Proceed to the sub-boss battle."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 14,
+        "description": "Make sure you're ready for battle, then choose 2 to face a sub-boss.",
+        "type": "boss",
+        "encounter": {
+          "enemies": [
+            "Water Tiger",
+            "Kappa",
+            "Kappa"
+          ]
+        },
+        "rewards": [],
+        "notes": [
+          {
+            "type": "strategy",
+            "title": "Sub-boss: Water Tiger + Kappa x2",
+            "text": "Have **Yuri** fuse into the **Death Emperor** or **Raging Tiger** and wail away on the **Kappas** first, since they have the ability to heal. Have **Margarete** use her **Grenade** skill until she's out of MP, then have her attack normally. Have **Alice** attack normally, unless she's needed for healing. If you want to do some extra damage to the **Water Tiger** once the **Kappas** are gone, have **Margarete** use her **Aqua Edge** on **Yuri** and have him attack the Fire-based **Water Tiger**.\n\nEnemies: Water Tiger (380 HP, Fire; drops Spikes), Kappa x2 (100 HP, Water; each drops Tent). Reward: 400 EXP, 2500 Cash."
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "description": "After that battle, use the **Save Point**, as well as a **Tent**, since we have a boss battle next. When you're ready, check the ladder one more time. Move ahead?",
+        "type": "preparation",
+        "choices": [
+          {
+            "option": "1. Keep searching.",
+            "outcome": "Stay in the Sewers."
+          },
+          {
+            "option": "2. Go above ground.",
+            "outcome": "Climb the ladder and watch the events."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 16,
+        "description": "Nothing left to do but go on ahead, so choose 2 to climb the ladder and watch the events. You'll have to take on two groups of **Elite Guards**, which are pretty simple. After that though, you'll have to take on a beastly demon: the **Beast Dog**.",
+        "type": "boss",
+        "encounter": {
+          "enemies": [
+            "Elite Guard",
+            "Beast Dog"
+          ]
+        },
+        "rewards": []
+      },
+      {
+        "id": 17,
+        "description": "Watch the events after the battle, and you'll be back out on the **World Map**. Save your game, then choose to go to **Dalian**.",
+        "type": "navigation",
+        "rewards": []
+      }
+    ],
+    "boss": {
+      "type": "BOSS",
+      "name": "Beast Dog",
+      "enemies": [
+        {
+          "name": "Beast Dog",
+          "hp": 480,
+          "class": "Fire",
+          "drop": "Voodoo Doll"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 9,
+          "equipment": [
+            "Knuckle Blade",
+            "Leather Vest",
+            "Bandanna",
+            "Leather Belt",
+            "Jade Lariat"
+          ],
+          "fusions": [
+            "Death Emperor",
+            "Raging Tiger"
+          ]
+        },
+        {
+          "name": "Margarete",
+          "level": 9,
+          "equipment": [
+            "Type 94 Pistol",
+            "Leather Skirt",
+            "Bandanna",
+            "Leather Belt",
+            "Shell Bracelet"
+          ]
+        },
+        {
+          "name": "Alice",
+          "level": 9,
+          "equipment": [
+            "ShootingStarTome",
+            "Leather Skirt",
+            "Bandanna",
+            "Leather Belt",
+            "Star Brooch"
+          ]
+        }
+      ],
+      "exp": 540,
+      "cash": 3000,
+      "strategy": "Be wary of its **Breath of Fire** attack; it'll hit the whole party for pretty good damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own strength, making them that much worse, so keep an eye on your HP.\nTo start, have **Margarete** cast the **Aqua Edge** on **Yuri**, followed by using her **Grenade** skill repeatedly. With a water-based attack, have **Yuri** fuse into the **Raging Tiger** and start attacking normally, doing some major damage. Have **Alice** keep everyone's HP up during the battle, having **Margarete** help out when needed. As usual, make sure **Alice**'s SP doesn't drop to 0."
+    },
+    "initial_setup": {
+      "character": "Margarete",
+      "note": "**Margarete** comes equipped with a **Mini-Mauser** and a **Leather Skirt** by default.",
+      "equipment": [
+        "Mini-Mauser",
+        "Leather Skirt"
+      ]
+    }
+  }
+}
