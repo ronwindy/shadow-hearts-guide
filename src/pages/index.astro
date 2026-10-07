@@ -56,8 +56,14 @@ const pageSections = [
           <span>Sacnoth / Aruze</span>
         </div>
 
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-slate-100 tracking-tight">
-          SHADOW HEARTS
+        <img
+          src={`${baseUrl}/logo.png`}
+          alt="Shadow Hearts"
+          class="hero-logo w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto"
+        />
+
+        <h1 class="hero-title font-serif font-extrabold tracking-wide uppercase whitespace-nowrap">
+          Game Wiki &amp; Walkthrough
         </h1>
 
         <p class="text-lg sm:text-xl text-slate-300 font-serif italic">
@@ -425,3 +431,21 @@ const pageSections = [
     </section>
   </div>
 </BaseLayout>
+
+<style>
+  .hero-logo {
+    filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.6));
+  }
+
+  .hero-title {
+    /* single line; scales down with the viewport instead of wrapping */
+    font-size: clamp(1rem, 4.6vw, 2.5rem);
+    line-height: 1.15;
+    background-image: linear-gradient(180deg, #fff3c4 0%, #d4a93c 50%, #8a6a1f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.6));
+  }
+</style>
