@@ -49,72 +49,72 @@
         {
           "name": "Lottery Ticket",
           "category": "items",
-          "location": ""
+          "location": "Chest up the dock on the left, at the start of Dalian (step 1)"
         },
         {
           "name": "TeaOfTheHealer",
           "category": "items",
-          "location": ""
+          "location": "Chest to the lower-right of the old man under the wooden structure (step 5)"
         },
         {
           "name": "Lottery Ticket",
           "category": "items",
-          "location": ""
+          "location": "Prize for finding the turtle in 1-2 tries (Man with Turtle, step 3)"
         },
         {
           "name": "Seal of Aura",
           "category": "items",
-          "location": ""
+          "location": "Upper-right corner of the hallway in the basement weapon & armor shop, on the ground (step 5)"
         },
         {
           "name": "TalismanOfLuck",
           "category": "items",
-          "location": ""
+          "location": "Partly fenced-in area before the next screen, between the two wooden structures near the edge (step 1); also a prize for finding the turtle in 3-4 tries"
         },
         {
           "name": "Tent",
           "category": "items",
-          "location": ""
+          "location": "Prize for finding the turtle in 5-6 tries (Man with Turtle, step 3)"
         },
         {
           "name": "Tent",
           "category": "items",
-          "location": ""
+          "location": "Boxes in the upper-left corner of the Inn bedroom (step 6)"
         },
         {
           "name": "R.Phoenix Talon",
           "category": "items",
-          "location": ""
+          "location": "Left side of the turtle pen, searched before the boss fight (step 8)"
         },
         {
           "name": "Thera Leaf",
           "category": "items",
-          "location": ""
+          "location": "Prize for finding the turtle in 7-8 tries; also a possible leaf-field prize (Man with Turtle, step 3)"
         },
         {
           "name": "Third Key",
           "category": "items",
-          "location": ""
+          "location": "Man with Turtle's leaf field (300 cash to play, step 13); only one"
         },
         {
           "name": "Silver Hourglass",
           "category": "items",
-          "location": ""
+          "location": "Chest behind the back table near the serving window in the Sea Turtle Restaurant (step 4)"
         },
         {
           "name": "Flare Brooch",
           "category": "equipment",
-          "location": ""
+          "location": "Chest in the basement equipment shop of the Inn, from the little kid (for Yuri, step 9)"
         },
         {
           "name": "Salt-dried Fish",
           "category": "valuables",
-          "location": ""
+          "location": "Given by the lady drying her fish, outside (step 10)"
         },
         {
           "name": "Lottery Member No. 14 (Filthy Samo)",
           "category": "lottery",
-          "location": ""
+          "location": "Sea Turtle Restaurant (man in green, Filthy Samo, step 11)"
         }
       ]
     },
