@@ -1,18 +1,18 @@
 # Shadow Hearts Guide Converter — Project Status
 
-> **Last Synced:** `2026-10-07 22:48:50` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
+> **Last Synced:** `2026-10-07 22:53:34` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
 
 ## 1. Quick Orientation (Agent Context)
 
 ```text
 Canonical Import:   [########################] 100.0% (69/69)
-Structured Content: [###---------------------] 13.0% (9/69)
-QA Verified:        [##----------------------] 10.1% (7/69)
-Web Pages Built:    [###---------------------] 13.0% (9/69)
+Structured Content: [###---------------------] 14.5% (10/69)
+QA Verified:        [###---------------------] 11.6% (8/69)
+Web Pages Built:    [###---------------------] 14.5% (10/69)
 ```
 
 ### Next Priority Actions (Immediate Queue)
-1. **[MEDIUM]** `Structure w-1-05 (Dalian)` — *Next chronological section in the walkthrough sequence.*
+1. **[MEDIUM]** `Structure w-1-06 (Smuggler's Boat)` — *Next chronological section in the walkthrough sequence.*
 
 ---
 
@@ -35,7 +35,7 @@ Web Pages Built:    [###---------------------] 13.0% (9/69)
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
 | **Header** | 1 | 1 | 1 | 0 | 1 | `[------------] 0.0%` |
 | **Introduction** | 2 | 2 | 2 | 1 | 2 | `[######------] 50.0%` |
-| **Walkthrough - Asia** | 15 | 15 | 5 | 5 | 5 | `[####--------] 33.3%` |
+| **Walkthrough - Asia** | 15 | 15 | 6 | 6 | 6 | `[#####-------] 40.0%` |
 | **Walkthrough - Europe** | 32 | 32 | 0 | 0 | 0 | `[------------] 0.0%` |
 | **Appendices** | 16 | 16 | 1 | 1 | 1 | `[#-----------] 6.2%` |
 | **Conclusion** | 3 | 3 | 0 | 0 | 0 | `[------------] 0.0%` |
@@ -66,7 +66,7 @@ Web Pages Built:    [###---------------------] 13.0% (9/69)
 | `[W-1-02]` | `w-1-02` | Plains | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 | `[W-1-03]` | `w-1-03` | Zhaoyang Village | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 | `[W-1-04]` | `w-1-04` | Fengtian | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
-| `[W-1-05]` | `w-1-05` | Dalian | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-05` |
+| `[W-1-05]` | `w-1-05` | Dalian | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
 | `[W-1-06]` | `w-1-06` | Smuggler's Boat | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-06` |
 | `[W-1-07]` | `w-1-07` | Shanghai, Huayuan (1) | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-07` |
 | `[W-1-08]` | `w-1-08` | Temple Ruins | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-08` |

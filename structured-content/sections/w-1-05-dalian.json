@@ -1,0 +1,734 @@
+{
+  "guide": {
+    "id": "w-1-05",
+    "code": "[W-1-05]",
+    "title": "Dalian",
+    "type": "walkthrough",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-1-04",
+        "code": "[W-1-04]",
+        "title": "Fengtian",
+        "file": "sections/w-1-04-fengtian.json"
+      },
+      "next": {
+        "id": "w-1-06",
+        "code": "[W-1-06]",
+        "title": "Smuggler's Boat",
+        "file": "sections/w-1-06-smuggler-s-boat.json"
+      }
+    },
+    "route": [
+      "Dalian dock (chest, fenced area)",
+      "Save Point area",
+      "Dock and turtle pen (Man with Turtle)",
+      "Center of town",
+      "Sea Turtle Restaurant",
+      "Inn and basement weapon & armor shop",
+      "Dock (red sphere, Courier Subordinate)"
+    ],
+    "objectives": [
+      "Help the **Man with Turtle** find his turtle for a prize",
+      "Collect the hidden items in **Dalian**",
+      "Win the **Pocket Watch** from **Lottery Member No. 14**",
+      "Defeat the boss **Yamaraja: Wind**",
+      "Get the **Flare Brooch** for **Yuri**",
+      "Get the **Third Key** from the leaf field (optional)",
+      "Proceed to **Smuggler's Boat**"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "TeaOfTheHealer",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "Seal of Aura",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "TalismanOfLuck",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "Tent",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "Tent",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "R.Phoenix Talon",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "Thera Leaf",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "Third Key",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "Silver Hourglass",
+          "category": "items",
+          "location": ""
+        },
+        {
+          "name": "Flare Brooch",
+          "category": "equipment",
+          "location": ""
+        },
+        {
+          "name": "Salt-dried Fish",
+          "category": "valuables",
+          "location": ""
+        },
+        {
+          "name": "Lottery Member No. 14 (Filthy Samo)",
+          "category": "lottery",
+          "location": ""
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#014",
+        "name": "Frog God",
+        "hp": 40,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#019",
+        "name": "Water Creeper",
+        "hp": 55,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#020",
+        "name": "Yamaraja: Wind",
+        "hp": 900,
+        "class": "Earth",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": ""
+      }
+    ],
+    "bosses": [
+      {
+        "type": "BOSS",
+        "name": "Yamaraja: Wind",
+        "enemies": [
+          {
+            "name": "Yamaraja: Wind",
+            "hp": 900,
+            "class": "Earth",
+            "drop": "Seal of Life"
+          }
+        ],
+        "party": [
+          {
+            "name": "Yuri",
+            "level": 10
+          },
+          {
+            "name": "Margarete",
+            "level": 10
+          },
+          {
+            "name": "Zhuzhen",
+            "level": 10
+          }
+        ],
+        "exp": 720,
+        "cash": 3600,
+        "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+      }
+    ],
+    "shops": [
+      {
+        "name": "Sea Turtle Restaurant",
+        "inventory": [
+          {
+            "name": "Bandanna",
+            "price": 320
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Leather Cap",
+            "price": 600
+          },
+          {
+            "name": "TalismanOfLuck",
+            "price": 480
+          },
+          {
+            "name": "Leather Belt",
+            "price": 320
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Casual Belt",
+            "price": 600
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Shell Bracelet",
+            "price": 2770
+          },
+          {
+            "name": "Angel's Feather",
+            "price": 80
+          },
+          {
+            "name": "Bone Bracelet",
+            "price": 2960
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "Rosewood Bracelet",
+            "price": 3000
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Spikes",
+            "price": 2810
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Brigand Earrings",
+            "price": 5000
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Pirate Earrings",
+            "price": 5000
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Thera Leaf",
+            "price": 50
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          },
+          {
+            "name": "Mana Leaf",
+            "price": 100
+          }
+        ]
+      },
+      {
+        "name": "Underground Armory",
+        "inventory": [
+          {
+            "name": "Knuckle Blade",
+            "price": 1200
+          },
+          {
+            "name": "Type 94 Pistol",
+            "price": 1300
+          },
+          {
+            "name": "ShootingStarTome",
+            "price": 1420
+          },
+          {
+            "name": "Leather Vest",
+            "price": 1000
+          },
+          {
+            "name": "Hexagonal Staff",
+            "price": 1100
+          },
+          {
+            "name": "Leather Skirt",
+            "price": 1200
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "When you gain control here in **Dalian**, head left and up the dock to find a chest containing a **Lottery Ticket**. Don't worry about the man guarding the pen; we'll come back to him in a moment. Follow the path as it turns west, but before going to the next screen, go up into the area that is partially fenced in, and look between the two wooden structures near the edge of the screen to find a **TalismanOfLuck**. Once you have it, go to the next area.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Remove Alice's equipment",
+            "text": "Make sure to remove any useful equipment from Alice, as she'll be temporarily leaving your party. Especially the Pedometer, if she has it."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          },
+          {
+            "name": "TalismanOfLuck",
+            "category": "items",
+            "matched_overview_item": "TalismanOfLuck"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "Use the **Save Point** here to **Save**, then go back to the previous area and talk to the **Man with Turtle**. He's lost his turtle, and would like help finding it.",
+        "type": "exploration",
+        "choices": [
+          {
+            "option": "1. That's too bad."
+          },
+          {
+            "option": "2. I'll help if we trade something."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "Choose option 2 to help him out. The turtle hides in a random place, so just run around and press the `CROSS` button repeatedly until you find it. These are the prizes you receive depending on how many tries it took you to find the turtle:",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Turtle search prizes",
+            "text": "If you're not successful at getting a Lottery Ticket, just reload and try again. He also says that if you come here again tomorrow, something good will happen, so don't forget!",
+            "table": {
+              "headers": [
+                "Attempts",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "1-2",
+                  "reward": "Lottery Ticket"
+                },
+                {
+                  "range": "3-4",
+                  "reward": "TalismanOfLuck"
+                },
+                {
+                  "range": "5-6",
+                  "reward": "Tent"
+                },
+                {
+                  "range": "7-8",
+                  "reward": "Thera Leaf"
+                }
+              ]
+            }
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          },
+          {
+            "name": "TalismanOfLuck",
+            "category": "items",
+            "matched_overview_item": "TalismanOfLuck"
+          },
+          {
+            "name": "Tent",
+            "category": "items",
+            "matched_overview_item": "Tent"
+          },
+          {
+            "name": "Thera Leaf",
+            "category": "items",
+            "matched_overview_item": "Thera Leaf"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "Once you have your prize, head back to the center of town. Go into the building on the upper-right, which is the **Sea Turtle Restaurant**. Feel free to do some shopping here; I'd make sure you have plenty of **Thera**, **Mana**, and **Pure Leaves**, and I'd upgrade your three **Leather Belts** to **Casual Belts** and your three **Bandannas** for **Leather Caps**. While you're in here, look behind the back table near the serving window to find a chest containing a **Silver Hourglass**. Head back out into the center of town.",
+        "type": "shop",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Pirate and Brigand Earrings",
+            "text": "The shop here sells both the Pirate and Brigand Earrings. The Pirate Earrings increase your chances of getting an item after a battle, while the Brigand Earrings increase the amount of money you receive after the battle. You may want to buy some Brigand Earrings and equip them now, they'll pay for themselves in no time! Make a note that the effect does stack for each party member that also is wearing them, so make sure to have the whole party wear some when you need to grind for some cash! These can only be bought in Asia, so make sure to get some when you have the extra cash."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Silver Hourglass",
+            "category": "items",
+            "matched_overview_item": "Silver Hourglass"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "To your right you should see an old man standing underneath a wooden structure. Search just his lower-right for a chest containing a **TeaOfTheHealer**. That's it for items out here, so enter the building to the upper-left, which is the **Inn**, for a scene. Once you regain control, head downstairs to visit the weapon and armor shop. Before talking to the shopkeeper, follow the hallway to the upper-right corner and examine the ground here to find a **Seal of Aura**.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "tutorial",
+            "title": "Seals",
+            "text": "The Seals you receive throughout the game increase certain statistics of the character it's used on. Normally, you only get the minimal increase if used outside of battle, but if you use it in battle, you have a chance of increasing it even more, so make sure to use them in battle."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "TeaOfTheHealer",
+            "category": "items",
+            "matched_overview_item": "TeaOfTheHealer"
+          },
+          {
+            "name": "Seal of Aura",
+            "category": "items",
+            "matched_overview_item": "Seal of Aura"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "You can't get the chest inside the shop yet, so go ahead and talk to the shopkeeper if you want to buy something. Nothing is really needed at the moment, so go ahead and head back up to the first floor. The people here are now gone, so examine the boxes in the upper-left corner of the bedroom for a **Tent**. Leave the **Inn** to see that the atmosphere has changed. **Save** your game, and make sure once again that **Alice** has everything removed from her.",
+        "type": "shop",
+        "rewards": [
+          {
+            "name": "Tent",
+            "category": "items",
+            "matched_overview_item": "Tent"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "description": "Take a few steps southeast to start a very long (and... odd) series of events where **Alice** will temporarily leave your party, and **Zhuzhen** will rejoin! Note that there are now monsters outside, and take the opportunity to visit both shops here in town to upgrade **Zhuzhen**'s equipment, as well as to stock up on **Thera** and **Mana Leaves** if you didn't earlier, since your primary healer is temporarily out of commission. 15+ Thera Leaves should cover it.",
+        "type": "story",
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Prepare for the next boss",
+            "text": "The next boss not only is very difficult, but he is also an Earth class. By now, you should be very close to obtaining Yuri's level 1 Wind Fusion, Tornado. The Water Creepers in Dalian are a Wind class, so fight enough battles with them until you are able to go to the Graveyard to challenge Tornado. Also, make sure that you are at least level 10 before challenging the next boss, or you'll have a pretty rough time against him."
+          },
+          {
+            "type": "tip",
+            "title": "Frog Gods and the Light Fusion",
+            "text": "You may also want to take the time to fight more of the Frog Gods to build up your points for your Light Fusion. They come in groups of three, so it wouldn't take very long, and I recommend doing it. Just be careful not to get paralyzed."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "Before doing anything else, **PUT EVERYONE IN THE BACK ROW!** Physical attacks are useless against the next boss, so we might as well keep ourselves a little more protected. When you're ready, make your way back to the screen with the dock and the pen with the turtle. Head inside the pen and search the left side to find a **R.Phoenix Talon**. Once you have that, make your way to the dock and examine the red sphere here to take on the next boss.",
+        "type": "boss",
+        "encounter": {
+          "enemies": [
+            "Yamaraja: Wind"
+          ]
+        },
+        "boss": {
+          "type": "BOSS",
+          "name": "Yamaraja: Wind",
+          "enemies": [
+            {
+              "name": "Yamaraja: Wind",
+              "hp": 900,
+              "class": "Earth",
+              "drop": "Seal of Life"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 10
+            },
+            {
+              "name": "Margarete",
+              "level": 10
+            },
+            {
+              "name": "Zhuzhen",
+              "level": 10
+            }
+          ],
+          "exp": 720,
+          "cash": 3600,
+          "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+        },
+        "notes": [
+          {
+            "type": "warning",
+            "title": "After the battle",
+            "text": "Remove all equipment from both Margarete and Zhuzhen after the battle, as they will both be temporarily unavailable for battle in the next few events."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "R.Phoenix Talon",
+            "category": "items",
+            "matched_overview_item": "R.Phoenix Talon"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "description": "After the battle, make your way back to the **Sea Turtle Restaurant** to check on **Alice**. After another long series of events, **Alice** will rejoin your party, and you'll rest for the evening. When you regain control the next morning, make your way back down to the basement of the **Inn** and take the path all the way around into the equipment shop, where the little kid will finally let you have his treasure, so open the chest here for a **Flare Brooch** for **Yuri**. Always make sure he has this equipped; it reduces the amount of SP needed for his Fusion!",
+        "type": "story",
+        "rewards": [
+          {
+            "name": "Flare Brooch",
+            "category": "equipment",
+            "matched_overview_item": "Flare Brooch"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "description": "Head outside, then go down and talk to the lady drying her fish. She'll give you a **Salt-dried Fish** to give to **Sea Mother**. **SAVE YOUR GAME**, then go into the **Sea Turtle Restaurant** and talk to her; she'll accept the fish and tell you, \"Where the turtle looks, take three steps.\" and you'll find a stash of money. Leave the restaurant, then take, actually, about two and a half steps to the lower-left to find the stash. To get all of the money here, you must hit all three areas of the Ring. If you don't get 2000, reload and try again.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Stash money by Ring hits",
+            "text": "Hitting one area will net you 500 Cash. Hitting two areas will net you 1000 Cash. Hitting all three areas will net you 2000 Cash.",
+            "table": {
+              "headers": [
+                "Ring areas hit",
+                "Cash"
+              ],
+              "rows": [
+                {
+                  "range": "One",
+                  "reward": "500 Cash"
+                },
+                {
+                  "range": "Two",
+                  "reward": "1000 Cash"
+                },
+                {
+                  "range": "All three",
+                  "reward": "2000 Cash"
+                }
+              ]
+            }
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Salt-dried Fish",
+            "category": "valuables",
+            "matched_overview_item": "Salt-dried Fish"
+          },
+          {
+            "name": "500 Cash",
+            "category": "cash",
+            "matched_overview_item": "500 Cash"
+          },
+          {
+            "name": "1000 Cash",
+            "category": "cash",
+            "matched_overview_item": "1000 Cash"
+          },
+          {
+            "name": "2000 Cash",
+            "category": "cash",
+            "matched_overview_item": "2000 Cash"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "description": "Once you're done here, go back into the **Sea Turtle Restaurant** and talk to the man in green, **Filthy Samo**. He'll reveal himself as **Lottery Member No. 14**!",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tutorial",
+            "title": "Lottery Member No. 14",
+            "text": "Prizes by color.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Pocket Watch"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "W.Tiger Hair"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "TeaOfTheHealer"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Pure Leaf"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Lottery Member No. 14 (Filthy Samo)",
+            "category": "lottery",
+            "matched_overview_item": "Lottery Member No. 14 (Filthy Samo)"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "description": "Make sure to win the **Pocket Watch** before continuing on; it gives the wearer resistance to **Judgment Ring** anomalies in battle. If you don't win it, reload your last save and try again. Remember, you need to win something from each member at least once!",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "missable",
+            "title": "Win the Pocket Watch",
+            "text": "Make sure to win the Pocket Watch before continuing on; it gives the wearer resistance to Judgment Ring anomalies in battle. If you don't win it, reload your last save and try again. Remember, you need to win something from each member at least once!"
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 13,
+        "description": "**Save** your game once again, then head over to the area with the dock and pen once again. If you talk to the **Man with Turtle** once again, he'll offer to let you play in his leaf field for 300 cash. You just have to take his hoe and dig up three spots in the field, and anything you find becomes yours. With each dig though, you'll have to complete a Normal Ring. Just like searching for the turtle before, you can win prizes! They're not set like the previous game; prizes include a **Thera Leaf**, a **Mana Leaf**, a **Pure Leaf**, or a **Third Key**!",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Third Key",
+            "category": "items",
+            "matched_overview_item": "Third Key"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "description": "The **Third Key** is worth getting, as it'll let you circle the **Judgment Ring** three times in battle for a potential nine hits! There is only one here in the leaf field, so once you find it, you won't find it again. Try to get it within the first two times of playing the game, and if you don't get it, reload and try again. If its battle effect has no interest to you, feel free to sell it for a WHOPPING 15,000 cash! With a 5% price rise, you can sell it for 15,750! I think you should sell it, to be quite honest!",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "missable",
+            "title": "Only one Third Key",
+            "text": "There is only one here in the leaf field, so once you find it, you won't find it again."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 15,
+        "description": "There's also the **Silent Peddler** on the way to the dock. You can trade in some of your steps for prizes if you want to, but I recommend saving them up until you can get the best prize first, which happens to be someone's best armor at 10,000 steps.",
+        "type": "shop",
+        "rewards": []
+      },
+      {
+        "id": 16,
+        "description": "That's it for **Dalian**, so on to our next destination! Go to the dock and talk to the **Courier Subordinate** beside **Margarete**, who'll ask you if you're ready to go. Choose 2 to take off!",
+        "type": "navigation",
+        "choices": [
+          {
+            "option": "1. No, not yet."
+          },
+          {
+            "option": "2. Yes, let's push off."
+          }
+        ],
+        "rewards": []
+      }
+    ],
+    "boss": {
+      "type": "BOSS",
+      "name": "Yamaraja: Wind",
+      "enemies": [
+        {
+          "name": "Yamaraja: Wind",
+          "hp": 900,
+          "class": "Earth",
+          "drop": "Seal of Life"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 10
+        },
+        {
+          "name": "Margarete",
+          "level": 10
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 10
+        }
+      ],
+      "exp": 720,
+      "cash": 3600,
+      "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+    }
+  }
+}
