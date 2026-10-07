@@ -1,13 +1,13 @@
 # Shadow Hearts Guide Converter — Project Status
 
-> **Last Synced:** `2026-10-06 22:16:43` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
+> **Last Synced:** `2026-10-07 21:57:35` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
 
 ## 1. Quick Orientation (Agent Context)
 
 ```text
 Canonical Import:   [########################] 100.0% (69/69)
-Structured Content: [##----------------------] 10.1% (7/69)
-QA Verified:        [##----------------------] 10.1% (7/69)
+Structured Content: [###---------------------] 11.6% (8/69)
+QA Verified:        [###---------------------] 11.6% (8/69)
 Web Pages Built:    [##----------------------] 10.1% (7/69)
 ```
 
@@ -37,7 +37,7 @@ Web Pages Built:    [##----------------------] 10.1% (7/69)
 | **Introduction** | 2 | 2 | 2 | 2 | 2 | `[############] 100.0%` |
 | **Walkthrough - Asia** | 15 | 15 | 4 | 4 | 4 | `[###---------] 26.7%` |
 | **Walkthrough - Europe** | 32 | 32 | 0 | 0 | 0 | `[------------] 0.0%` |
-| **Appendices** | 16 | 16 | 0 | 0 | 0 | `[------------] 0.0%` |
+| **Appendices** | 16 | 16 | 1 | 1 | 0 | `[#-----------] 6.2%` |
 | **Conclusion** | 3 | 3 | 0 | 0 | 0 | `[------------] 0.0%` |
 
 ---
@@ -123,7 +123,7 @@ Web Pages Built:    [##----------------------] 10.1% (7/69)
 | `[A-1-02]` | `a-1-02` | Weapons | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `a-1-02` |
 | `[A-1-03]` | `a-1-03` | Armor | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `a-1-03` |
 | `[A-1-04]` | `a-1-04` | Accessories | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `a-1-04` |
-| `[A-1-05]` | `a-1-05` | Items | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `a-1-05` |
+| `[A-1-05]` | `a-1-05` | Items | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_circle: | Build web page for `a-1-05` |
 | `[A-1-06]` | `a-1-06` | Valuables | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `a-1-06` |
 | `[A-1-07]` | `a-1-07` | Store/Shop List | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `a-1-07` |
 | `[A-1-08]` | `a-1-08` | Acupuncturist Costs | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `a-1-08` |

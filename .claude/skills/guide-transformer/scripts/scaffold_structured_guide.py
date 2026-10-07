@@ -138,10 +138,46 @@ def split_text_paragraphs(text: str) -> List[Tuple[int, int, str]]:
     return paragraphs
 
 
+def is_reference_section(canonical: Dict[str, Any]) -> bool:
+    """Appendix/reference sections are table-heavy and are scaffolded without LLM refinement."""
+    sec_id = canonical.get("id", "")
+    return sec_id.startswith("a-1-") and sec_id != "a-1-00"
+
+
+def scaffold_reference_guide(canonical: Dict[str, Any]) -> Dict[str, Any]:
+    """Deterministic scaffold: canonical text is carried over byte-for-byte, no steps or prose."""
+    source = canonical["source"]
+    guide: Dict[str, Any] = {
+        "id": canonical.get("id"),
+        "code": canonical.get("code"),
+        "title": canonical.get("title"),
+        "type": "reference",
+        "category": canonical.get("category"),
+        "source": {
+            "game": source.get("game", "Shadow Hearts"),
+            "author": source.get("author", "A_Backdated_Future"),
+            "version": source.get("version", "1.05"),
+            "url": source.get("source_url", ""),
+            "source_file": source.get("source_file", "")
+        },
+        "navigation": canonical.get("navigation", {}),
+        "enemies": canonical.get("enemies", []),
+        "bosses": canonical.get("bosses", []),
+        "shops": canonical.get("shops", []),
+        "reference_blocks": [{"format": "preformatted", "text": canonical.get("text", "")}],
+    }
+    if canonical.get("boss"):
+        guide["boss"] = canonical["boss"]
+    return {"guide": guide}
+
+
 def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
     """Generates structured guide draft dictionary from canonical JSON artifact."""
     with open(canonical_path, "r", encoding="utf-8") as f:
         canonical = json.load(f)
+
+    if is_reference_section(canonical):
+        return scaffold_reference_guide(canonical)
 
     # Determine type
     guide_type = "walkthrough"

@@ -154,6 +154,9 @@ export function buildPageTocSections(guide: any): PageTocItem[] {
   if (shops && shops.length > 0) {
     pageSections.push({ id: 'shops', label: 'Shops & Merchants', count: shops.length });
   }
+  if (guide.reference_blocks && guide.reference_blocks.length > 0) {
+    pageSections.push({ id: 'reference', label: 'Reference Tables' });
+  }
   if (steps && steps.length > 0) {
     pageSections.push({ id: 'steps', label: 'Walkthrough Steps', count: steps.length });
   }

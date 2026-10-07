@@ -4,34 +4,67 @@
   "title": "StructuredGuide",
   "description": "Schema definition for player-friendly structured game guide content converted from canonical source sections.",
   "type": "object",
-  "required": ["guide"],
+  "required": [
+    "guide"
+  ],
   "$defs": {
     "character_profile": {
       "type": "object",
-      "required": ["name", "profile"],
+      "required": [
+        "name",
+        "profile"
+      ],
       "properties": {
-        "name": { "type": "string" },
-        "age": { "type": ["string", "null"] },
-        "class": { "type": ["string", "null"] },
-        "profile": { "type": "string" }
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "class": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "profile": {
+          "type": "string"
+        }
       },
       "additionalProperties": false
     },
     "glossary_entry": {
       "type": "object",
-      "required": ["term", "description"],
+      "required": [
+        "term",
+        "description"
+      ],
       "properties": {
-        "term": { "type": "string" },
-        "description": { "type": "string" }
+        "term": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
       },
       "additionalProperties": false
     },
     "controller_mapping": {
       "type": "object",
-      "required": ["button", "function"],
+      "required": [
+        "button",
+        "function"
+      ],
       "properties": {
-        "button": { "type": "string" },
-        "function": { "type": "string" }
+        "button": {
+          "type": "string"
+        },
+        "function": {
+          "type": "string"
+        }
       },
       "additionalProperties": false
     }
@@ -79,14 +112,30 @@
         },
         "source": {
           "type": "object",
-          "required": ["game", "author", "version"],
+          "required": [
+            "game",
+            "author",
+            "version"
+          ],
           "properties": {
-            "game": { "type": "string" },
-            "author": { "type": "string" },
-            "version": { "type": "string" },
-            "url": { "type": "string" },
-            "source_url": { "type": "string" },
-            "source_file": { "type": "string" }
+            "game": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "source_url": {
+              "type": "string"
+            },
+            "source_file": {
+              "type": "string"
+            }
           },
           "additionalProperties": true
         },
@@ -94,23 +143,55 @@
           "type": "object",
           "properties": {
             "prev": {
-              "type": ["object", "null"],
-              "required": ["id", "code", "title", "file"],
+              "type": [
+                "object",
+                "null"
+              ],
+              "required": [
+                "id",
+                "code",
+                "title",
+                "file"
+              ],
               "properties": {
-                "id": { "type": "string" },
-                "code": { "type": "string" },
-                "title": { "type": "string" },
-                "file": { "type": "string" }
+                "id": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "string"
+                }
               }
             },
             "next": {
-              "type": ["object", "null"],
-              "required": ["id", "code", "title", "file"],
+              "type": [
+                "object",
+                "null"
+              ],
+              "required": [
+                "id",
+                "code",
+                "title",
+                "file"
+              ],
               "properties": {
-                "id": { "type": "string" },
-                "code": { "type": "string" },
-                "title": { "type": "string" },
-                "file": { "type": "string" }
+                "id": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -119,20 +200,30 @@
         "initial_setup": {
           "type": "object",
           "properties": {
-            "character": { "type": "string" },
+            "character": {
+              "type": "string"
+            },
             "equipment": {
               "type": "array",
-              "items": { "type": "string" }
+              "items": {
+                "type": "string"
+              }
             },
             "valuables": {
               "type": "array",
-              "items": { "type": "string" }
+              "items": {
+                "type": "string"
+              }
             },
             "souls": {
               "type": "array",
-              "items": { "type": "string" }
+              "items": {
+                "type": "string"
+              }
             },
-            "note": { "type": "string" }
+            "note": {
+              "type": "string"
+            }
           },
           "additionalProperties": true
         },
@@ -142,20 +233,28 @@
           "properties": {
             "characters": {
               "type": "array",
-              "items": { "$ref": "#/$defs/character_profile" }
+              "items": {
+                "$ref": "#/$defs/character_profile"
+              }
             },
             "glossary": {
               "type": "array",
-              "items": { "$ref": "#/$defs/glossary_entry" }
+              "items": {
+                "$ref": "#/$defs/glossary_entry"
+              }
             },
             "controls": {
               "type": "object",
               "properties": {
                 "controller_layout": {
                   "type": "array",
-                  "items": { "$ref": "#/$defs/controller_mapping" }
+                  "items": {
+                    "$ref": "#/$defs/controller_mapping"
+                  }
                 },
-                "menu_navigation": { "type": "string" }
+                "menu_navigation": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -163,12 +262,16 @@
         },
         "route": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "Ordered progression route of locations or areas"
         },
         "objectives": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "Key player goals for this section"
         },
         "items_summary": {
@@ -178,13 +281,26 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["name", "category"],
+                "required": [
+                  "name",
+                  "category"
+                ],
                 "properties": {
-                  "name": { "type": "string" },
-                  "category": { "type": "string" },
-                  "location": { "type": "string" },
-                  "missable": { "type": "boolean" },
-                  "condition": { "type": "string" }
+                  "name": {
+                    "type": "string"
+                  },
+                  "category": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "string"
+                  },
+                  "missable": {
+                    "type": "boolean"
+                  },
+                  "condition": {
+                    "type": "string"
+                  }
                 }
               }
             },
@@ -192,10 +308,17 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["name", "category"],
+                "required": [
+                  "name",
+                  "category"
+                ],
                 "properties": {
-                  "name": { "type": "string" },
-                  "category": { "type": "string" }
+                  "name": {
+                    "type": "string"
+                  },
+                  "category": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -206,15 +329,41 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["name"],
+            "required": [
+              "name"
+            ],
             "properties": {
-              "number": { "type": ["string", "null"] },
-              "name": { "type": "string" },
-              "hp": { "type": ["integer", "string", "null"] },
-              "class": { "type": ["string", "null"] },
-              "is_boss": { "type": "boolean" },
-              "is_subboss": { "type": "boolean" },
-              "notes": { "type": "string" }
+              "number": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "hp": {
+                "type": [
+                  "integer",
+                  "string",
+                  "null"
+                ]
+              },
+              "class": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "is_boss": {
+                "type": "boolean"
+              },
+              "is_subboss": {
+                "type": "boolean"
+              },
+              "notes": {
+                "type": "string"
+              }
             }
           }
         },
@@ -222,20 +371,43 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["name", "type"],
+            "required": [
+              "name",
+              "type"
+            ],
             "properties": {
-              "type": { "type": "string" },
-              "name": { "type": "string" },
+              "type": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
               "enemies": {
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["name"],
+                  "required": [
+                    "name"
+                  ],
                   "properties": {
-                    "name": { "type": "string" },
-                    "hp": { "type": ["integer", "null"] },
-                    "class": { "type": ["string", "null"] },
-                    "drop": { "type": "string" }
+                    "name": {
+                      "type": "string"
+                    },
+                    "hp": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "class": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "drop": {
+                      "type": "string"
+                    }
                   }
                 }
               },
@@ -243,38 +415,72 @@
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["name", "level"],
+                  "required": [
+                    "name",
+                    "level"
+                  ],
                   "properties": {
-                    "name": { "type": "string" },
-                    "level": { "type": "integer" }
+                    "name": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "integer"
+                    }
                   }
                 }
               },
-              "exp": { "type": ["integer", "null"] },
-              "cash": { "type": ["integer", "null"] },
-              "strategy": { "type": "string" }
+              "exp": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "cash": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "strategy": {
+                "type": "string"
+              }
             }
           }
         },
         "boss": {
-          "type": ["object", "null"],
+          "type": [
+            "object",
+            "null"
+          ],
           "description": "Single boss alias matching canonical structure"
         },
         "shops": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["name", "inventory"],
+            "required": [
+              "name",
+              "inventory"
+            ],
             "properties": {
-              "name": { "type": "string" },
+              "name": {
+                "type": "string"
+              },
               "inventory": {
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["name", "price"],
+                  "required": [
+                    "name",
+                    "price"
+                  ],
                   "properties": {
-                    "name": { "type": "string" },
-                    "price": { "type": "integer" }
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
                   }
                 }
               }
@@ -285,10 +491,18 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["id", "description", "type"],
+            "required": [
+              "id",
+              "description",
+              "type"
+            ],
             "properties": {
-              "id": { "type": "integer" },
-              "description": { "type": "string" },
+              "id": {
+                "type": "integer"
+              },
+              "description": {
+                "type": "string"
+              },
               "type": {
                 "type": "string",
                 "enum": [
@@ -313,8 +527,12 @@
                     "type": "array",
                     "items": {
                       "oneOf": [
-                        { "type": "string" },
-                        { "type": "object" }
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object"
+                        }
                       ]
                     }
                   }
@@ -324,13 +542,29 @@
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["name", "category"],
+                  "required": [
+                    "name",
+                    "category"
+                  ],
                   "properties": {
-                    "name": { "type": "string" },
-                    "category": { "type": "string" },
-                    "matched_overview_item": { "type": "string" },
-                    "quantity": { "type": ["integer", "string"] },
-                    "condition": { "type": "string" }
+                    "name": {
+                      "type": "string"
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "matched_overview_item": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": [
+                        "integer",
+                        "string"
+                      ]
+                    },
+                    "condition": {
+                      "type": "string"
+                    }
                   }
                 }
               },
@@ -338,7 +572,11 @@
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["type", "title", "text"],
+                  "required": [
+                    "type",
+                    "title",
+                    "text"
+                  ],
                   "properties": {
                     "type": {
                       "type": "string",
@@ -352,8 +590,12 @@
                         "discrepancy"
                       ]
                     },
-                    "title": { "type": "string" },
-                    "text": { "type": "string" }
+                    "title": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
                   }
                 }
               },
@@ -361,11 +603,20 @@
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["option", "outcome"],
+                  "required": [
+                    "option",
+                    "outcome"
+                  ],
                   "properties": {
-                    "option": { "type": "string" },
-                    "outcome": { "type": "string" },
-                    "reward": { "type": "string" }
+                    "option": {
+                      "type": "string"
+                    },
+                    "outcome": {
+                      "type": "string"
+                    },
+                    "reward": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -377,7 +628,11 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["type", "title", "text"],
+            "required": [
+              "type",
+              "title",
+              "text"
+            ],
             "properties": {
               "type": {
                 "type": "string",
@@ -391,9 +646,39 @@
                   "discrepancy"
                 ]
               },
-              "title": { "type": "string" },
-              "text": { "type": "string" }
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
             }
+          }
+        },
+        "reference_blocks": {
+          "type": "array",
+          "description": "Verbatim canonical text blocks for reference/appendix sections (deterministic scaffold, no LLM prose)",
+          "items": {
+            "type": "object",
+            "required": [
+              "format",
+              "text"
+            ],
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "format": {
+                "type": "string",
+                "enum": [
+                  "preformatted"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
           }
         }
       },

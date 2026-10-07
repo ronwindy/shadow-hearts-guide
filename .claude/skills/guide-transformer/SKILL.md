@@ -47,6 +47,10 @@ Every piece of game knowledge must remain strictly grounded in the Canonical Sou
 
 ## 3. Workflow: Scaffolding-First Execution
 
+**Choose the path by section type first:**
+- **Reference/appendix sections** (`a-1-01` … `a-1-15`): the scaffold runs in *reference mode*. Canonical text is copied byte-for-byte into `reference_blocks` (type `reference`) with no steps and no LLM prose. Do **not** refine them; run `--verify` and stop. QA checks the text is identical to canonical.
+- **Walkthrough/sidequest/intro sections**: follow the steps below.
+
 Always leverage the deterministic Python scaffold before refining:
 
 1. **Scaffold Draft on Disk (0 Tokens):**

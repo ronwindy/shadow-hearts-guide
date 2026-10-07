@@ -8,6 +8,7 @@ import CharacterProfiles from '../../components/CharacterProfiles.astro';
 import ItemTable from '../../components/ItemTable.astro';
 import EnemyTable from '../../components/EnemyTable.astro';
 import ShopTable from '../../components/ShopTable.astro';
+import ReferenceBlocks from '../../components/ReferenceBlocks.astro';
 import { renderInlineMarkup, renderBlockMarkup } from '../../lib/markup';
 import {
   getAllStructuredSections,
@@ -60,6 +61,7 @@ const boss = guide.boss;
 const bosses = guide.bosses || (boss ? [boss] : []);
 const shops = guide.shops || [];
 const callouts: SectionCallout[] = guide.callouts || [];
+const referenceBlocks = guide.reference_blocks || [];
 
 // Compute local on-page sections for Right TOC and Mobile Drawer
 const pageSections = buildPageTocSections(guide);
@@ -262,6 +264,9 @@ const pageSections = buildPageTocSections(guide);
 
         {/* Shops */}
         <ShopTable shops={shops} />
+
+        {/* Verbatim reference/appendix tables */}
+        <ReferenceBlocks blocks={referenceBlocks} />
 
         {/* Walkthrough Steps List */}
         {steps && steps.length > 0 && (

@@ -61,6 +61,12 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
             if c_link.get("id") != g_link.get("id"):
                 add_finding("medium", "navigation", f"navigation.{direction}.id", c_link.get("id"), g_link.get("id"), f"Navigation {direction} ID mismatch")
 
+    # 1b. Reference sections carry canonical text verbatim; any drift is a fidelity defect
+    if guide.get("type") == "reference":
+        ref_text = "".join(b.get("text", "") for b in guide.get("reference_blocks", []))
+        if ref_text != canonical.get("text", ""):
+            add_finding("critical", "factual discrepancy", "reference_blocks", f"{len(canonical.get('text', ''))} chars", f"{len(ref_text)} chars", "Reference block text differs from canonical source text")
+
     # Collect all structured items (items_summary + all step rewards + initial setup)
     struct_items = set()
     summary = guide.get("items_summary", {})

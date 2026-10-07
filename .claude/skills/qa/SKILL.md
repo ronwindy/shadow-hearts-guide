@@ -90,3 +90,14 @@ A guide section is QA-approved when:
 - [ ] Source fidelity audit reports **0 Critical** and **0 High** findings.
 - [ ] QA report is saved to `qa-reports/<section_id>-qa-report.md` with status `[PASS]`.
 - [ ] Root `STATUS.md` is synchronized via `python scripts/pipeline.py <section_id> --verify`.
+
+---
+
+## 7. Independent QA Subagent (walkthrough sections)
+
+The transformer must not grade its own work. After `--verify` passes, launch a fresh-context, **read-only** subagent (Agent tool, `general-purpose`; do not pass your refine reasoning) with this brief:
+
+> You are an independent QA reviewer for a game-guide conversion. Read only these two files: the canonical source `canonical-sources/sections/<file>.json` (`text` field is authoritative) and the structured guide `structured-content/sections/<file>.json`. Do NOT edit any file. Report findings only, as a list of `severity | location | canonical text | structured text | issue`. Check for: (1) any fact, number, name, item, location or condition in the structured guide that is NOT in the canonical text (invented); (2) any name or number that differs from canonical (altered); (3) canonical steps, warnings, missables, choices or rewards missing from the structured guide (omitted); (4) step order that differs where order matters; (5) source contradictions that were silently resolved. Severity: critical/high/medium/low per the QA skill. If nothing is wrong, say "No findings" and list what you spot-checked.
+
+Handling results: the Guide Transformer fixes critical/high findings and re-runs `--verify`; ambiguous source text is preserved and flagged, never "fixed". Append the subagent's findings summary (or "No findings") to `qa-reports/<id>-qa-report.md`.
+Skip this step for `reference` sections (the deterministic byte-for-byte check is sufficient).

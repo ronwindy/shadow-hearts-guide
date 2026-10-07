@@ -12,7 +12,8 @@ Usage:
     python scripts/pipeline.py <section_id> --verify     # Validate + QA + Save report + Update status
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
     python scripts/pipeline.py --code-review             # Run codebase quality & readability audit
-    python scripts/pipeline.py <section_id> --check      # Complete check: validate + QA + frontend + code review + status
+    python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + status
+    python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit + code review (run every ~5 sections or after UI/code changes)
     python scripts/pipeline.py <section_id>              # Display section status
     python scripts/pipeline.py --backlog                 # Audit & verify all structured guides missing QA
 """
@@ -326,14 +327,16 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
         c_ok = run_code_review()
         success = c_ok and success
 
-    if args.check:
+    if args.check or args.full:
         v_ok = run_validate(sec)
         q_ok = run_qa(sec, save_report=True)
-        f_ok = run_frontend_audit()
-        c_ok = run_code_review()
-        success = v_ok and q_ok and f_ok and c_ok
+        success = v_ok and q_ok
         if v_ok and q_ok:
             update_project_status()
+        if args.full:
+            f_ok = run_frontend_audit()
+            c_ok = run_code_review()
+            success = success and f_ok and c_ok
 
     return success
 
@@ -348,7 +351,8 @@ def main():
     parser.add_argument("--verify", action="store_true", help="Validate + QA + Save report + Update status")
     parser.add_argument("--frontend", action="store_true", help="Run frontend audit")
     parser.add_argument("--code-review", "--review", action="store_true", help="Run codebase quality and readability audit")
-    parser.add_argument("--check", action="store_true", help="Validate + QA + Frontend audit + Code review + Update status")
+    parser.add_argument("--check", action="store_true", help="Lean per-section check: Validate + QA + Update status")
+    parser.add_argument("--full", action="store_true", help="--check plus Frontend audit and Code review")
     parser.add_argument("--backlog", action="store_true", help="Run QA verification on all structured files missing QA reports")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
 
@@ -374,7 +378,7 @@ def main():
         print(f"[ERROR] Could not resolve section for identifier: '{args.section}'")
         sys.exit(1)
 
-    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.code_review, args.check]):
+    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.code_review, args.check, args.full]):
         print_section_status(sec)
         return
 
