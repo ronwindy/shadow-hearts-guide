@@ -67,6 +67,83 @@
         }
       },
       "additionalProperties": false
+    },
+    "boss": {
+      "type": "object",
+      "required": [
+        "name",
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "enemies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "hp": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "class": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "drop": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "party": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "level"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "level": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "exp": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "cash": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "strategy": {
+          "type": "string"
+        }
+      }
     }
   },
   "properties": {
@@ -370,87 +447,23 @@
         "bosses": {
           "type": "array",
           "items": {
-            "type": "object",
-            "required": [
-              "name",
-              "type"
-            ],
-            "properties": {
-              "type": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "enemies": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "name"
-                  ],
-                  "properties": {
-                    "name": {
-                      "type": "string"
-                    },
-                    "hp": {
-                      "type": [
-                        "integer",
-                        "null"
-                      ]
-                    },
-                    "class": {
-                      "type": [
-                        "string",
-                        "null"
-                      ]
-                    },
-                    "drop": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "party": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "name",
-                    "level"
-                  ],
-                  "properties": {
-                    "name": {
-                      "type": "string"
-                    },
-                    "level": {
-                      "type": "integer"
-                    }
-                  }
-                }
-              },
-              "exp": {
-                "type": [
-                  "integer",
-                  "null"
-                ]
-              },
-              "cash": {
-                "type": [
-                  "integer",
-                  "null"
-                ]
-              },
-              "strategy": {
-                "type": "string"
-              }
-            }
+            "$ref": "#/$defs/boss"
           }
         },
         "boss": {
-          "type": [
-            "object",
-            "null"
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/boss"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/boss"
+              }
+            }
           ],
           "description": "Single boss alias matching canonical structure"
         },
@@ -595,6 +608,66 @@
                     },
                     "text": {
                       "type": "string"
+                    },
+                    "table": {
+                      "type": "object",
+                      "required": [
+                        "headers",
+                        "rows"
+                      ],
+                      "properties": {
+                        "headers": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "rows": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": [
+                              "range",
+                              "reward"
+                            ],
+                            "properties": {
+                              "range": {
+                                "type": "string"
+                              },
+                              "reward": {
+                                "type": "string"
+                              },
+                              "is_unique": {
+                                "type": "boolean"
+                              },
+                              "category": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "badges": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "label",
+                          "range"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string"
+                          },
+                          "range": {
+                            "type": "string"
+                          },
+                          "color": {
+                            "type": "string"
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -604,21 +677,25 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "option",
-                    "outcome"
+                    "option"
                   ],
                   "properties": {
                     "option": {
                       "type": "string"
                     },
                     "outcome": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "Only if the source states the outcome. Omit when the source gives just the option text; never infer."
                     },
                     "reward": {
                       "type": "string"
                     }
                   }
                 }
+              },
+              "boss": {
+                "$ref": "#/$defs/boss",
+                "description": "Boss/sub-boss fought in this step (inline alternative to bosses[]). Counted by QA together with bosses[]."
               }
             },
             "additionalProperties": false

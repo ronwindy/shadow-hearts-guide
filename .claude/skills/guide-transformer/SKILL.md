@@ -55,19 +55,20 @@ Always leverage the deterministic Python scaffold before refining:
 
 1. **Scaffold Draft on Disk (0 Tokens):**
    ```powershell
-   python scripts/pipeline.py <section_id> --scaffold
+   .\scriptsun-py.cmd scripts/pipeline.py <section_id> --scaffold
    ```
    This pre-populates metadata, navigation, enemies, bosses, shops, and overview items summary.
 2. **Refine Steps & Markers in Subagent:**
    Edit the generated JSON file in `structured-content/sections/` to:
    - Refine step descriptions for conciseness and gameplay clarity.
    - Apply **Entity Highlighting** (see Section 4).
-   - Ensure step `type` matches one of: `story`, `exploration`, `battle`, `loot`, `puzzle`, `shopping`, `navigation`.
+   - **Before editing, compare the canonical boss count/names** (`canonical.bosses`) with the scaffold. Boss data lives in `bosses[]` (section level) or inline as `step.boss`; every canonical boss must appear with its full `type`, `enemies`, `party`, `exp`, `cash`, `strategy`. Sub-bosses found only in prose may sit on their step as `step.boss`.
    - Embed chronological boss battles directly inside their corresponding steps.
+   - Ensure step `type` is one of the schema enum values (`story`, `exploration`, `battle`, `boss`, `loot`, `puzzle`, `shop`, `dialogue`, `navigation`, `quest`, `preparation`, `misc`).
    - Check reward mappings against `markers.items`.
 3. **Validate & Verify:**
    ```powershell
-   python scripts/pipeline.py <section_id> --validate
+   .\scriptsun-py.cmd scripts/pipeline.py <section_id> --check
    ```
 
 *(See [example-walkthrough.json](file:///d:/Games/GameGuides/shadow-hearts-guide/.claude/skills/guide-transformer/references/example-walkthrough.json) for the canonical structured format).*
@@ -101,6 +102,11 @@ Map canonical narrative callouts and `markers.notes` to the structured `notes` a
 - Match all step loot and rewards to `markers.items` and `overview.items`/`equipment`/`valuables`/`lottery`/`souls`.
 - Provide `matched_overview_item` whenever an inline item corresponds to an overview checklist item.
 - Retain conditional choices (e.g. choice A gives Item X, choice B gives Item Y).
+
+### Choice paraphrase policy
+- `choices[].option` is the source option text, verbatim.
+- `choices[].outcome` is set **only** when the source states the result (e.g. "choose 2 to watch a series of events"). When the source gives just the option text, **omit `outcome`** — never infer or guess it (e.g. do not write "Stay in the Sewers" for "Wait a moment").
+- QA flags options not found in the source and outcomes whose wording is not traceable to the source.
 
 ---
 

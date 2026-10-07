@@ -1,11 +1,40 @@
 # QA Verification Report: w-1-03 - Zhaoyang Village
 
-**Status:** [PASS]
+**Status:** [PASS WITH WARNINGS]
 
 ## Summary
 - **Critical:** 0
 - **High:** 0
 - **Medium:** 0
-- **Low:** 0
+- **Low:** 3
 
-**No discrepancies found! 100% source fidelity verified.**
+## Findings
+
+| ID | Severity | Category | Location | Description | Owner |
+|:---|:---|:---|:---|:---|:---|
+| QA-001 | **LOW** | structural fidelity | `steps.boss[Hellcat x2]` | Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text | Guide Transformer |
+| QA-002 | **LOW** | structural fidelity | `steps.boss[Felinus]` | Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text | Guide Transformer |
+| QA-003 | **LOW** | text drift | `bosses[Yamaraja: Earth].strategy` | Boss strategy text differs from canonical (reworded or edited); review for meaning | Guide Transformer |
+
+### Detailed Discrepancies
+
+#### QA-001 [LOW] - structural fidelity
+- **Location:** `steps.boss[Hellcat x2]`
+- **Source:** `Not in canonical bosses`
+- **Generated:** `Hellcat x2`
+- **Description:** Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text
+- **Recommended Owner:** `Guide Transformer`
+
+#### QA-002 [LOW] - structural fidelity
+- **Location:** `steps.boss[Felinus]`
+- **Source:** `Not in canonical bosses`
+- **Generated:** `Felinus`
+- **Description:** Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text
+- **Recommended Owner:** `Guide Transformer`
+
+#### QA-003 [LOW] - text drift
+- **Location:** `bosses[Yamaraja: Earth].strategy`
+- **Source:** `Note that Yamaraja: Earth is actually a WATER class. As I mentioned above, he's `
+- **Generated:** `Note that **Yamaraja: Earth** is actually a **WATER class**. As I mentioned abov`
+- **Description:** Boss strategy text differs from canonical (reworded or edited); review for meaning
+- **Recommended Owner:** `Guide Transformer`

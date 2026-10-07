@@ -55,12 +55,7 @@ def main():
     script_dir = Path(__file__).resolve().parent
     schema_path = args.schema
     if not schema_path:
-        default_schema = script_dir.parent / "schemas" / "structured-guide.schema.json"
-        if default_schema.exists():
-            schema_path = str(default_schema)
-        else:
-            workspace_root = script_dir.parents[3]
-            schema_path = str(workspace_root / "structured-content" / "schema" / "structured-guide.schema.json")
+        schema_path = str(script_dir.parent / "schemas" / "structured-guide.schema.json")
 
     if not os.path.exists(schema_path):
         print(f"Error: Schema file not found at: {schema_path}")

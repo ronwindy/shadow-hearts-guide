@@ -137,26 +137,41 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
                     f"is_boss flag mismatch for enemy '{name}'"
                 )
 
-    # 4. Bosses Check
+    # 4. Bosses Check (section-level bosses[] plus step-level boss objects)
     c_bosses = canonical.get("bosses", [])
-    g_bosses = guide.get("bosses", [])
-    if len(c_bosses) != len(g_bosses):
-        add_finding(
-            "high", "structural fidelity", "bosses",
-            f"{len(c_bosses)} bosses in canonical", f"{len(g_bosses)} bosses in structured",
-            "Boss count mismatch"
-        )
-    else:
-        for idx, c_b in enumerate(c_bosses):
-            g_b = g_bosses[idx]
-            if c_b.get("name") != g_b.get("name"):
-                add_finding("high", "factual discrepancy", f"bosses[{idx}].name", c_b.get("name"), g_b.get("name"), "Boss name mismatch")
-            if c_b.get("exp") != g_b.get("exp"):
-                add_finding("high", "numerical discrepancy", f"bosses[{idx}].exp", c_b.get("exp"), g_b.get("exp"), f"Boss exp mismatch for {c_b.get('name')}")
-            if c_b.get("cash") != g_b.get("cash"):
-                add_finding("high", "numerical discrepancy", f"bosses[{idx}].cash", c_b.get("cash"), g_b.get("cash"), f"Boss cash mismatch for {c_b.get('name')}")
-            if not g_b.get("strategy"):
-                add_finding("medium", "missing information", f"bosses[{idx}].strategy", "Strategy present", "Empty strategy", "Missing boss battle strategy")
+    g_bosses = list(guide.get("bosses", []))
+    step_bosses = [s["boss"] for s in guide.get("steps", []) if isinstance(s.get("boss"), dict)]
+    g_all_bosses = g_bosses + step_bosses
+    c_names = {normalize_name(b.get("name")) for b in c_bosses}
+    for b in g_bosses:
+        if normalize_name(b.get("name")) not in c_names:
+            add_finding("high", "factual discrepancy", f"bosses[{b.get('name')}]", "Not in canonical bosses", b.get("name"), "bosses[] contains a boss absent from the canonical source")
+    bosses_names = {normalize_name(b.get("name")) for b in g_bosses}
+    for b in step_bosses:
+        n = normalize_name(b.get("name"))
+        if n not in c_names and n not in bosses_names:
+            add_finding("low", "structural fidelity", f"steps.boss[{b.get('name')}]", "Not in canonical bosses", b.get("name"), "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text")
+    g_by_name = {normalize_name(b.get("name")): b for b in g_all_bosses}
+    for c_b in c_bosses:
+        loc = f"bosses[{c_b.get('name')}]"
+        g_b = g_by_name.get(normalize_name(c_b.get("name")))
+        if g_b is None:
+            add_finding("high", "factual discrepancy", loc, c_b.get("name"), "Missing", "Boss name not found in structured output")
+            continue
+        for fld in ("type", "exp", "cash"):
+            if c_b.get(fld) != g_b.get(fld):
+                add_finding("high", "numerical discrepancy", f"{loc}.{fld}", c_b.get(fld), g_b.get(fld), f"Boss {fld} mismatch for {c_b.get('name')}")
+        for fld, keys in (("party", ("name", "level")), ("enemies", ("name", "hp", "class", "drop"))):
+            c_rows = [tuple(r.get(k) for k in keys) for r in c_b.get(fld, [])]
+            g_rows = [tuple(r.get(k) for k in keys) for r in g_b.get(fld, [])]
+            if c_rows != g_rows:
+                add_finding("high", "missing information", f"{loc}.{fld}", c_rows, g_rows, f"Boss {fld} ({'/'.join(keys)}) differs from canonical for {c_b.get('name')}")
+        c_strat = " ".join((c_b.get("strategy") or "").split())
+        g_strat = " ".join((g_b.get("strategy") or "").split())
+        if c_strat and not g_strat:
+            add_finding("medium", "missing information", f"{loc}.strategy", "Strategy present", "Empty strategy", "Missing boss battle strategy")
+        elif c_strat != g_strat and g_strat:
+            add_finding("low", "text drift", f"{loc}.strategy", c_strat[:80], g_strat[:80], "Boss strategy text differs from canonical (reworded or edited); review for meaning")
 
     # 4b. Boss Step Mapping & Redundancy Check (Chronological Flow & Spoiler Prevention)
     all_steps = guide.get("steps", [])
@@ -170,7 +185,7 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
             for en in s["boss"].get("enemies", []):
                 step_boss_names.add(normalize_name(en.get("name", "")))
 
-    for b in g_bosses:
+    for b in g_all_bosses:
         b_norm = normalize_name(b.get("name", ""))
         # Check if mapped to a step
         if b_norm not in step_encounter_names and b_norm not in step_boss_names:
@@ -193,6 +208,21 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
                     "Duplicate strategy text", "Strategy present in both boss card and step note",
                     f"Step {s.get('id')} note duplicates the boss battle strategy for '{b.get('name')}'. Strategy should be in a single location."
                 )
+
+    # 4c. Choice fidelity: options must appear in the source and outcomes must be traceable to it
+    c_text = " ".join((canonical.get("text") or "").split()).lower()
+    stop = {"that", "this", "with", "from", "will", "have", "your", "into", "then", "when"}
+    for s in guide.get("steps", []):
+        for ch in s.get("choices", []):
+            opt = re.sub(r"^\s*(\[\d+\]|\d+[.)])\s*", "", ch.get("option", "")).strip().lower()
+            if opt and opt not in c_text:
+                add_finding("medium", "fidelity", f"steps[{s.get('id')}].choices", ch.get("option"), "Not in source text", "Choice option text not found verbatim in canonical text")
+            outcome = (ch.get("outcome") or "").strip()
+            if outcome:
+                words = [w for w in re.findall(r"[a-z]{4,}", outcome.lower()) if w not in stop]
+                missing = [w for w in words if w not in c_text]
+                if words and len(missing) / len(words) > 0.4:
+                    add_finding("medium", "unsupported claim", f"steps[{s.get('id')}].choices", outcome, f"words not in source: {missing}", "Choice outcome is not traceable to source text (inferred?); omit it unless the source states it")
 
     # 5. Shops Check
     c_shops = canonical.get("shops", [])

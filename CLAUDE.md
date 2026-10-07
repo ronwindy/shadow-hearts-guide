@@ -19,7 +19,7 @@ Forbidden: inventing or guessing facts, adding outside/model knowledge, renaming
 - Next-section priority: fix sequence gaps → fix QA `[FAIL]`s → run pending QA → next chronological section.
 
 ## 3. Windows Runtime
-- Python: always `.\scripts\run-py.cmd scripts/<script>.py ...` (resolves the interpreter across machines).
+- Python: always `.\scripts\run-py.cmd scripts/<script>.py ...` (resolves the interpreter across machines). **Run it from PowerShell**, not the Bash tool (the `.\` pattern hangs or fails there). For ad-hoc Python with quotes, write a temp script file instead of a heredoc.
 - npm: `cmd /c npm run build`, `cmd /c npm test` (avoids PowerShell ExecutionPolicy errors).
 
 ## 4. Roles (logical agents = skills in `.claude/skills/`)
@@ -42,7 +42,9 @@ Section types decide the path:
 .\scripts\run-py.cmd scripts/pipeline.py <id> --scaffold
 .\scripts\run-py.cmd scripts/pipeline.py <id> --verify     # validate + QA report + status
 ```
-Use `--check` (validate + QA + status) per section; `--full` (adds frontend audit + code review) only after UI/code changes or about every 5 sections.
+Use `--check` (validate + QA + `npm run build` + status) per section; `--full` (adds frontend audit + code review) only after UI/code changes or about every 5 sections.
+
+Choice outcomes: set `outcome` only when the source states it; otherwise omit (never infer). Boss data: all canonical bosses must be present in `bosses[]` or as `step.boss`; compare canonical boss count/names before editing.
 
 ## 6. Page Metadata
 Every guide page has metadata (`id`, `title`, `type`, `source`, `related_pages`, `prerequisites`, `unlocks`). Relationship fields may be empty; never fill them speculatively.

@@ -135,7 +135,48 @@ def split_text_paragraphs(text: str) -> List[Tuple[int, int, str]]:
         if p_text:
             paragraphs.append((start_line, end_line, p_text))
 
-    return paragraphs
+    return merge_broken_sentences(paragraphs)
+
+
+NOTE_GAP = 4  # max lines between a paragraph's end and a NOTE box attached to it
+
+_SENTENCE_END =('.', '!', '?', '"', "'", ')', ']', ':', '”')
+
+
+def _is_note_paragraph(p_text: str) -> bool:
+    return p_text.lstrip().startswith("NOTE")
+
+
+def merge_broken_sentences(paragraphs: List[Tuple[int, int, str]]) -> List[Tuple[int, int, str]]:
+    """Rejoins a sentence split by an interleaved table/ASCII-art block or stray blank line.
+
+    A paragraph is merged into the previous one when the previous text does not end
+    in sentence punctuation and the next one starts lowercase.
+    """
+    merged: List[Tuple[int, int, str]] = []
+    for start, end, text in paragraphs:
+        if merged:
+            p_start, _, p_text = merged[-1]
+            if (not _is_note_paragraph(p_text) and not _is_note_paragraph(text)
+                    and not p_text.rstrip().endswith(_SENTENCE_END)
+                    and text[:1].islower()):
+                merged[-1] = (p_start, end, p_text + "\n" + text)
+                continue
+        merged.append((start, end, text))
+    return merged
+
+
+def is_heading_paragraph(p_text: str) -> bool:
+    """Short title-like line (e.g. 'Sewers') with no sentence punctuation."""
+    stripped = p_text.strip()
+    return "\n" not in stripped and len(stripped.split()) <= 4 and not stripped.endswith(_SENTENCE_END)
+
+
+def clean_note_text(text: str) -> str:
+    """Strips [_TAG_] marks and trailing ASCII-art tables from a note."""
+    text = re.sub(r'\[_([^_]+)_\]', r'\1', text.strip())
+    text = re.split(r'\s_{5,}|\s\\[$/]', text)[0]
+    return text.strip()
 
 
 def is_reference_section(canonical: Dict[str, Any]) -> bool:
@@ -224,7 +265,11 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
 
     for start_line, end_line, p_text in paragraphs:
         # Check for NOTE headers in paragraph
-        if p_text.startswith("NOTE") or p_text.startswith("  NOTE"):
+        if _is_note_paragraph(p_text) or is_heading_paragraph(p_text):
+            continue
+        # Tail of a NOTE box that contains a blank line: already captured as a note
+        probe = " ".join(p_text.split())[:40]
+        if any(probe in " ".join(mn.get("text", "").split()) for mn in markers_notes):
             continue
 
         # Find items within start_line - 1 to end_line + 1
@@ -241,14 +286,13 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
 
         # Find notes within start_line - 1 to end_line + 1
         step_notes = []
+        # A note belongs to the nearest preceding paragraph, and is attached only once
         for idx, mn in enumerate(markers_notes):
             n_line = mn.get("line", 0)
-            if start_line - 2 <= n_line <= end_line + 2:
+            if idx not in assigned_notes and start_line <= n_line <= end_line + NOTE_GAP:
                 assigned_notes.add(idx)
                 n_title = mn.get("type", "Note").title()
-                n_text = mn.get("text", "").strip()
-                # Clean [_TAG_] from note text
-                n_text = re.sub(r'\[_([^_]+)_\]', r'\1', n_text)
+                n_text = clean_note_text(mn.get("text", ""))
                 step_notes.append({
                     "type": infer_note_type(n_title, n_text),
                     "title": n_title,
@@ -262,7 +306,7 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
         p_lower = p_text.lower()
         if "boss" in p_lower or any(b.get("name", "").lower() in p_lower for b in canonical.get("bosses", [])):
             step_type = "boss"
-        elif "battle" in p_lower or "fight" in p_lower or any(e.get("name", "").lower() in p_lower for e in canonical.get("enemies", [])):
+        elif re.search(r'\b(battle|fight|combat)\b', p_lower):
             step_type = "battle"
         elif step_rewards and not ("head" in p_lower or "continue" in p_lower):
             step_type = "loot"
@@ -307,7 +351,7 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
     # Attach any unassigned notes
     for idx, mn in enumerate(markers_notes):
         if idx not in assigned_notes:
-            n_text = re.sub(r'\[_([^_]+)_\]', r'\1', mn.get("text", "").strip())
+            n_text = clean_note_text(mn.get("text", ""))
             n_title = mn.get("type", "Note").title()
             if steps:
                 steps[-1].setdefault("notes", []).append({

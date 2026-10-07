@@ -9,10 +9,10 @@ Usage:
     python scripts/pipeline.py <section_id> --scaffold   # Generate structured draft from canonical
     python scripts/pipeline.py <section_id> --validate   # Validate structured JSON against schema
     python scripts/pipeline.py <section_id> --qa         # Run QA verification and save QA report
-    python scripts/pipeline.py <section_id> --verify     # Validate + QA + Save report + Update status
+    python scripts/pipeline.py <section_id> --verify     # Validate + QA + Build + Save report + Update status
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
     python scripts/pipeline.py --code-review             # Run codebase quality & readability audit
-    python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + status
+    python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + build + status
     python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit + code review (run every ~5 sections or after UI/code changes)
     python scripts/pipeline.py <section_id>              # Display section status
     python scripts/pipeline.py --backlog                 # Audit & verify all structured guides missing QA
@@ -132,9 +132,6 @@ def run_validate(sec: Dict[str, Any]) -> bool:
 
     schema_path = ROOT_DIR / ".claude" / "skills" / "guide-transformer" / "schemas" / "structured-guide.schema.json"
     if not schema_path.exists():
-        schema_path = ROOT_DIR / "structured-content" / "schema" / "structured-guide.schema.json"
-
-    if not schema_path.exists():
         print(f"[FAIL] Schema not found at {schema_path}")
         return False
 
@@ -192,6 +189,20 @@ def run_qa(sec: Dict[str, Any], save_report: bool = True) -> bool:
         print(f"[REPORT] Saved QA report to: {qa_path.relative_to(ROOT_DIR)}")
 
     return status == "PASS"
+
+
+def run_build() -> bool:
+    """Runs the Astro build so rendering/type errors surface per section."""
+    import subprocess
+    print("\n--- Frontend Build ---")
+    npm = ["cmd", "/c", "npm", "run", "build"] if os.name == "nt" else ["npm", "run", "build"]
+    result = subprocess.run(npm, cwd=ROOT_DIR, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if result.returncode != 0:
+        print("[FAIL] npm run build failed:")
+        print("\n".join((result.stdout + result.stderr).strip().splitlines()[-25:]))
+        return False
+    print("[PASS] npm run build succeeded.")
+    return True
 
 
 def run_frontend_audit() -> bool:
@@ -315,7 +326,8 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
     if args.verify:
         v_ok = run_validate(sec)
         q_ok = run_qa(sec, save_report=True)
-        success = v_ok and q_ok
+        b_ok = run_build()
+        success = v_ok and q_ok and b_ok
         if success:
             update_project_status()
 
@@ -330,8 +342,9 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
     if args.check or args.full:
         v_ok = run_validate(sec)
         q_ok = run_qa(sec, save_report=True)
-        success = v_ok and q_ok
-        if v_ok and q_ok:
+        b_ok = run_build()
+        success = v_ok and q_ok and b_ok
+        if success:
             update_project_status()
         if args.full:
             f_ok = run_frontend_audit()
@@ -348,10 +361,10 @@ def main():
     parser.add_argument("--scaffold", action="store_true", help="Scaffold structured guide JSON from canonical")
     parser.add_argument("--validate", action="store_true", help="Validate structured guide against schema")
     parser.add_argument("--qa", action="store_true", help="Run QA verification and save markdown report")
-    parser.add_argument("--verify", action="store_true", help="Validate + QA + Save report + Update status")
+    parser.add_argument("--verify", action="store_true", help="Validate + QA + Build + Save report + Update status")
     parser.add_argument("--frontend", action="store_true", help="Run frontend audit")
     parser.add_argument("--code-review", "--review", action="store_true", help="Run codebase quality and readability audit")
-    parser.add_argument("--check", action="store_true", help="Lean per-section check: Validate + QA + Update status")
+    parser.add_argument("--check", action="store_true", help="Lean per-section check: Validate + QA + Build + Update status")
     parser.add_argument("--full", action="store_true", help="--check plus Frontend audit and Code review")
     parser.add_argument("--backlog", action="store_true", help="Run QA verification on all structured files missing QA reports")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")

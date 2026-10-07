@@ -547,12 +547,10 @@
         "type": "preparation",
         "choices": [
           {
-            "option": "1. Wait a moment.",
-            "outcome": "Stay in the Sewers."
+            "option": "1. Wait a moment."
           },
           {
-            "option": "2. Okay, it's set.",
-            "outcome": "Proceed to the sub-boss battle."
+            "option": "2. Okay, it's set."
           }
         ],
         "rewards": []
@@ -583,12 +581,10 @@
         "type": "preparation",
         "choices": [
           {
-            "option": "1. Keep searching.",
-            "outcome": "Stay in the Sewers."
+            "option": "1. Keep searching."
           },
           {
-            "option": "2. Go above ground.",
-            "outcome": "Climb the ladder and watch the events."
+            "option": "2. Go above ground."
           }
         ],
         "rewards": []
