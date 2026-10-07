@@ -15,6 +15,7 @@ Usage:
 
 import sys
 import json
+import hashlib
 import argparse
 import datetime
 from pathlib import Path
@@ -44,7 +45,36 @@ def load_canonical_index(root: Path) -> Tuple[Dict[str, Any], List[Dict[str, Any
     return source_info, sections_index
 
 
-def audit_section(root: Path, sec: Dict[str, Any]) -> Dict[str, Any]:
+QA_STATUS_FILE = "qa-status.json"
+
+
+def file_hash(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+
+
+def load_qa_status(root: Path) -> Dict[str, Any]:
+    path = root / QA_STATUS_FILE
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def record_qa_result(root: Path, sec_id: str, structured_path: Path, status: str, summary: Dict[str, Any]) -> None:
+    """Persist a section's QA result, tied to the structured file's content hash."""
+    data = load_qa_status(root)
+    data[sec_id] = {
+        "status": status,
+        "summary": summary,
+        "content_hash": file_hash(structured_path),
+        "checked_at": datetime.datetime.now().isoformat(timespec="seconds"),
+    }
+    (root / QA_STATUS_FILE).write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def audit_section(root: Path, sec: Dict[str, Any], qa_data: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     """Audit status of a single section across the entire pipeline."""
     sec_id = sec.get("id", "")
     rel_canonical_file = sec.get("file", "")
@@ -53,12 +83,6 @@ def audit_section(root: Path, sec: Dict[str, Any]) -> Dict[str, Any]:
     canonical_path = root / "canonical-sources" / rel_canonical_file
     structured_path = root / "structured-content" / "sections" / filename
     
-    # QA report can be {id}-qa-report.md or {stem}-qa-report.md
-    stem = Path(filename).stem
-    qa_path1 = root / "qa-reports" / f"{sec_id}-qa-report.md"
-    qa_path2 = root / "qa-reports" / f"{stem}-qa-report.md"
-    
-    qa_path = qa_path1 if qa_path1.exists() else (qa_path2 if qa_path2.exists() else None)
 
     # Web output check (dist/guide/{id}/index.html, dist/guide/{id}.html, dist/{id}.html, etc.)
     web_candidates = [
@@ -73,17 +97,10 @@ def audit_section(root: Path, sec: Dict[str, Any]) -> Dict[str, Any]:
     structured_ok = structured_path.exists()
     qa_status = "NONE"
 
-    if qa_path and qa_path.exists():
-        try:
-            content = qa_path.read_text(encoding="utf-8")
-            if "[PASS]" in content or "Status: PASS" in content:
-                qa_status = "PASS"
-            elif "[FAIL]" in content or "Status: FAIL" in content:
-                qa_status = "FAIL"
-            else:
-                qa_status = "REPORTED"
-        except Exception:
-            qa_status = "READ_ERR"
+    entry = (qa_data or {}).get(sec_id)
+    # A stored result only counts while the structured file is unchanged since QA ran.
+    if entry and structured_ok and entry.get("content_hash") == file_hash(structured_path):
+        qa_status = "PASS" if str(entry.get("status", "")).startswith("PASS") else "FAIL"
 
     # Determine overall lifecycle state
     if not canonical_ok:
@@ -92,7 +109,7 @@ def audit_section(root: Path, sec: Dict[str, Any]) -> Dict[str, Any]:
         state = "NOT_STRUCTURED"
     elif qa_status == "NONE":
         state = "STRUCTURED_PENDING_QA"
-    elif qa_status in ("FAIL", "REPORTED"):
+    elif qa_status == "FAIL":
         state = "QA_ISSUES"
     elif not web_built:
         state = "QA_PASSED"
@@ -109,7 +126,6 @@ def audit_section(root: Path, sec: Dict[str, Any]) -> Dict[str, Any]:
         "canonical": canonical_ok,
         "structured": structured_ok,
         "qa_status": qa_status,
-        "qa_report_file": qa_path.name if qa_path else None,
         "web_built": web_built,
         "state": state
     }
@@ -119,7 +135,8 @@ def compute_project_status(root: Path) -> Dict[str, Any]:
     """Compute complete project status, metrics, sequence gaps, and priorities."""
     source_info, sections_index = load_canonical_index(root)
     
-    sections = [audit_section(root, s) for s in sections_index]
+    qa_data = load_qa_status(root)
+    sections = [audit_section(root, s, qa_data) for s in sections_index]
     total_sections = len(sections)
 
     canonical_count = sum(1 for s in sections if s["canonical"])
@@ -202,7 +219,7 @@ def compute_project_status(root: Path) -> Dict[str, Any]:
         next_priorities.append({
             "priority": "MEDIUM",
             "action": f"Run QA on {pqa['id']} ({pqa['title']})",
-            "reason": "Structured JSON exists but QA verification report is missing."
+            "reason": "Structured JSON exists but no current QA result in qa-status.json (missing or content changed)."
         })
     if next_to_structure and (not sequence_gaps or next_to_structure["id"] != sequence_gaps[0]["id"]):
         next_priorities.append({
@@ -300,7 +317,7 @@ def generate_status_markdown(data: Dict[str, Any]) -> str:
         for g in gaps:
             lines.append(f"- :warning: **Sequence Gap:** `{g['id']}` ({g['title']}) was skipped. Expected next in sequence.")
         for pq in pending_qa:
-            lines.append(f"- :mag: **Pending QA:** `{pq['id']}` ({pq['title']}) is structured but lacks a QA report.")
+            lines.append(f"- :mag: **Pending QA:** `{pq['id']}` ({pq['title']}) is structured but has no current QA result.")
         lines.append("")
 
     lines.append("---")
@@ -376,7 +393,7 @@ def generate_status_markdown(data: Dict[str, Any]) -> str:
     lines.append("- **View Compact Status (Terminal):** `python scripts/status.py --summary`")
     lines.append("- **Update Status Dashboard:** `python scripts/status.py --update`")
     lines.append("- **Validate Structured Guide:** `python .claude/skills/guide-transformer/scripts/validate_guide.py <file>`")
-    lines.append("- **Run QA Verification:** `python .claude/skills/qa/scripts/verify_guide.py <canonical_file> <structured_file> -r <report_out>`")
+    lines.append("- **Run QA Verification:** `python scripts/pipeline.py <section_id> --qa`")
     lines.append("")
     return "\n".join(lines)
 

@@ -110,7 +110,7 @@ Run audit_frontend.py (Frontend & Responsive Audit)
   ↓
 Review findings against Frontend Expert Rubric
   ↓
-Record UX status in qa-reports/<section>-qa-report.md
+Report UX status in the hand-off (no report file is kept)
 ```
 
 ### Automated Audit Script

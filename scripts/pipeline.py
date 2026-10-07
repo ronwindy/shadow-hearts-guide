@@ -8,14 +8,14 @@ and status tracking for the Shadow Hearts Game Guide conversion project.
 Usage:
     python scripts/pipeline.py <section_id> --scaffold   # Generate structured draft from canonical
     python scripts/pipeline.py <section_id> --validate   # Validate structured JSON against schema
-    python scripts/pipeline.py <section_id> --qa         # Run QA verification and save QA report
-    python scripts/pipeline.py <section_id> --verify     # Validate + QA + Build + Save report + Update status
+    python scripts/pipeline.py <section_id> --qa         # Run QA verification and record result in qa-status.json
+    python scripts/pipeline.py <section_id> --verify     # Validate + QA + Build + Update status
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
     python scripts/pipeline.py --code-review             # Run codebase quality & readability audit
     python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + build + status
     python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit + code review (run every ~5 sections or after UI/code changes)
     python scripts/pipeline.py <section_id>              # Display section status
-    python scripts/pipeline.py --backlog                 # Audit & verify all structured guides missing QA
+    python scripts/pipeline.py --backlog                 # Run QA on all structured guides lacking a current result
 """
 
 import os
@@ -41,7 +41,7 @@ sys.path.insert(0, str(ROOT_DIR / "scripts"))
 try:
     from scaffold_structured_guide import scaffold_guide
     from validate_guide import load_schema, validate_file
-    from verify_guide import verify_guide, format_markdown_report
+    from verify_guide import verify_guide
     from audit_frontend import audit_astro_sources, audit_built_html
     from audit_code_quality import run_code_audit
     import status as status_module
@@ -83,21 +83,20 @@ def resolve_section(identifier: str) -> Optional[Dict[str, Any]]:
     return None
 
 
-def get_section_paths(sec: Dict[str, Any]) -> Tuple[Path, Path, Path]:
-    """Returns (canonical_path, structured_path, qa_report_path)."""
+def get_section_paths(sec: Dict[str, Any]) -> Tuple[Path, Path]:
+    """Returns (canonical_path, structured_path)."""
     rel_canonical = sec.get("file", "")
     filename = Path(rel_canonical).name if rel_canonical else f"{sec['id']}.json"
     
     canonical_path = ROOT_DIR / "canonical-sources" / rel_canonical
     structured_path = ROOT_DIR / "structured-content" / "sections" / filename
-    qa_path = ROOT_DIR / "qa-reports" / f"{sec['id']}-qa-report.md"
-    
-    return canonical_path, structured_path, qa_path
+
+    return canonical_path, structured_path
 
 
 def run_scaffold(sec: Dict[str, Any], force: bool = False) -> bool:
     """Scaffolds a structured guide JSON draft from the canonical source text."""
-    canonical_path, structured_path, _ = get_section_paths(sec)
+    canonical_path, structured_path = get_section_paths(sec)
     print(f"\n--- [1/1] Scaffolding: {sec['id']} ({sec.get('title')}) ---")
     
     if not canonical_path.exists():
@@ -123,7 +122,7 @@ def run_scaffold(sec: Dict[str, Any], force: bool = False) -> bool:
 
 def run_validate(sec: Dict[str, Any]) -> bool:
     """Validates structured guide JSON against the JSON Schema definition."""
-    _, structured_path, _ = get_section_paths(sec)
+    _, structured_path = get_section_paths(sec)
     print(f"\n--- Schema Validation: {sec['id']} ---")
     
     if not structured_path.exists():
@@ -151,9 +150,9 @@ def run_validate(sec: Dict[str, Any]) -> bool:
         return False
 
 
-def run_qa(sec: Dict[str, Any], save_report: bool = True) -> bool:
-    """Executes QA verification comparing structured content to canonical source."""
-    canonical_path, structured_path, qa_path = get_section_paths(sec)
+def run_qa(sec: Dict[str, Any]) -> bool:
+    """Runs QA verification and records the result in qa-status.json."""
+    canonical_path, structured_path = get_section_paths(sec)
     print(f"\n--- QA Verification: {sec['id']} ---")
 
     if not canonical_path.exists():
@@ -182,13 +181,9 @@ def run_qa(sec: Dict[str, Any], save_report: bool = True) -> bool:
         for f in findings:
             print(f"  - [{f.get('severity', '').upper()}] {f.get('category')}: {f.get('description')}")
 
-    if save_report:
-        qa_path.parent.mkdir(parents=True, exist_ok=True)
-        qa_content = format_markdown_report(report)
-        qa_path.write_text(qa_content, encoding="utf-8")
-        print(f"[REPORT] Saved QA report to: {qa_path.relative_to(ROOT_DIR)}")
+    status_module.record_qa_result(ROOT_DIR, sec["id"], structured_path, status, summary)
 
-    return status == "PASS"
+    return status.startswith("PASS")
 
 
 def run_build() -> bool:
@@ -262,41 +257,34 @@ def update_project_status():
 
 
 def print_section_status(sec: Dict[str, Any]):
-    canonical_path, structured_path, qa_path = get_section_paths(sec)
+    canonical_path, structured_path = get_section_paths(sec)
     print(f"\nSection Status: {sec['id']} - {sec.get('title')}")
     print(f"  Code:       {sec.get('code')}")
     print(f"  Category:   {sec.get('category')}")
     print(f"  Canonical:  {'EXISTS' if canonical_path.exists() else 'MISSING'} ({canonical_path.name})")
     print(f"  Structured: {'EXISTS' if structured_path.exists() else 'MISSING'} ({structured_path.name})")
-    if qa_path.exists():
-        content = qa_path.read_text(encoding="utf-8")
-        status = "PASS" if "[PASS]" in content else "FAIL"
-        print(f"  QA Report:  EXISTS [{status}] ({qa_path.name})")
-    else:
-        print("  QA Report:  MISSING")
+    audited = status_module.audit_section(ROOT_DIR, sec, status_module.load_qa_status(ROOT_DIR))
+    qa = audited["qa_status"]
+    print(f"  QA:         {'PENDING (none or stale)' if qa == 'NONE' else qa}")
 
 
 def resolve_backlog() -> int:
-    """Audits structured sections missing QA reports, verifies them, and writes reports."""
+    """Runs QA on every structured section with no current QA result."""
     print("\n=== Resolving QA Backlog ===")
     _, sections = get_canonical_manifest()
     verified_count = 0
 
     for sec in sections:
-        canonical_path, structured_path, qa_path = get_section_paths(sec)
-        
-        # Check alternative QA report naming
-        qa_alt = ROOT_DIR / "qa-reports" / f"{Path(sec.get('file', '')).stem}-qa-report.md"
-        has_qa = qa_path.exists() or qa_alt.exists()
+        audited = status_module.audit_section(ROOT_DIR, sec, status_module.load_qa_status(ROOT_DIR))
 
-        if structured_path.exists() and not has_qa:
+        if audited["structured"] and audited["qa_status"] == "NONE":
             print(f"\nProcessing backlog for section: {sec['id']} ({sec.get('title')})")
             val_ok = run_validate(sec)
             if not val_ok:
                 print(f"[WARN] Validation issues in {sec['id']}, proceeding to QA...")
-            qa_ok = run_qa(sec, save_report=True)
+            qa_ok = run_qa(sec)
             if qa_ok:
-                print(f"[PASS] Successfully verified and saved report for {sec['id']}.")
+                print(f"[PASS] Successfully verified {sec['id']}.")
                 verified_count += 1
             else:
                 print(f"[WARN] QA reported issues for {sec['id']}.")
@@ -321,11 +309,11 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
         success = run_validate(sec) and success
 
     if args.qa:
-        success = run_qa(sec, save_report=True) and success
+        success = run_qa(sec) and success
 
     if args.verify:
         v_ok = run_validate(sec)
-        q_ok = run_qa(sec, save_report=True)
+        q_ok = run_qa(sec)
         b_ok = run_build()
         success = v_ok and q_ok and b_ok
         if success:
@@ -341,7 +329,7 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
 
     if args.check or args.full:
         v_ok = run_validate(sec)
-        q_ok = run_qa(sec, save_report=True)
+        q_ok = run_qa(sec)
         b_ok = run_build()
         success = v_ok and q_ok and b_ok
         if success:
@@ -360,13 +348,13 @@ def main():
     parser.add_argument("section", nargs="?", default=None, help="Section ID or file stem (e.g., w-1-04, w-1-04-fengtian)")
     parser.add_argument("--scaffold", action="store_true", help="Scaffold structured guide JSON from canonical")
     parser.add_argument("--validate", action="store_true", help="Validate structured guide against schema")
-    parser.add_argument("--qa", action="store_true", help="Run QA verification and save markdown report")
-    parser.add_argument("--verify", action="store_true", help="Validate + QA + Build + Save report + Update status")
+    parser.add_argument("--qa", action="store_true", help="Run QA verification and record result in qa-status.json")
+    parser.add_argument("--verify", action="store_true", help="Validate + QA + Build + Update status")
     parser.add_argument("--frontend", action="store_true", help="Run frontend audit")
     parser.add_argument("--code-review", "--review", action="store_true", help="Run codebase quality and readability audit")
     parser.add_argument("--check", action="store_true", help="Lean per-section check: Validate + QA + Build + Update status")
     parser.add_argument("--full", action="store_true", help="--check plus Frontend audit and Code review")
-    parser.add_argument("--backlog", action="store_true", help="Run QA verification on all structured files missing QA reports")
+    parser.add_argument("--backlog", action="store_true", help="Run QA on all structured files lacking a current QA result")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
 
     args = parser.parse_args()

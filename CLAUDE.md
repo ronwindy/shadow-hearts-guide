@@ -28,7 +28,7 @@ Forbidden: inventing or guessing facts, adding outside/model knowledge, renaming
 | Source Importer | `source-importer` | canonical JSON (done for current source) | rewrite knowledge |
 | Guide Transformer | `guide-transformer` | `structured-content/sections/*.json` | write Astro, add facts |
 | Web Builder | `web-builder`, `frontend-expert` | `src/`, CSS, UX | change game facts |
-| QA | `qa` | verification + `qa-reports/` | silently fix content |
+| QA | `qa` | verification + `qa-status.json` | silently fix content |
 | Code Reviewer | `code-reviewer` | code hygiene, [`TECH-DEBTS.md`](TECH-DEBTS.md) | refactor without staged human approval |
 
 Make the smallest change that fulfils your role; hand other problems to the owning role.
