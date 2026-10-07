@@ -31,10 +31,10 @@ if hasattr(sys.stdout, 'reconfigure'):
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
 # Add skill script directories to sys.path for direct imports
-sys.path.insert(0, str(ROOT_DIR / ".agents" / "skills" / "guide-transformer" / "scripts"))
-sys.path.insert(0, str(ROOT_DIR / ".agents" / "skills" / "qa" / "scripts"))
-sys.path.insert(0, str(ROOT_DIR / ".agents" / "skills" / "frontend-expert" / "scripts"))
-sys.path.insert(0, str(ROOT_DIR / ".agents" / "skills" / "code-reviewer" / "scripts"))
+sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "guide-transformer" / "scripts"))
+sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "qa" / "scripts"))
+sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "frontend-expert" / "scripts"))
+sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "code-reviewer" / "scripts"))
 sys.path.insert(0, str(ROOT_DIR / "scripts"))
 
 try:
@@ -129,7 +129,7 @@ def run_validate(sec: Dict[str, Any]) -> bool:
         print(f"[FAIL] Structured file does not exist: {structured_path}")
         return False
 
-    schema_path = ROOT_DIR / ".agents" / "skills" / "guide-transformer" / "schemas" / "structured-guide.schema.json"
+    schema_path = ROOT_DIR / ".claude" / "skills" / "guide-transformer" / "schemas" / "structured-guide.schema.json"
     if not schema_path.exists():
         schema_path = ROOT_DIR / "structured-content" / "schema" / "structured-guide.schema.json"
 

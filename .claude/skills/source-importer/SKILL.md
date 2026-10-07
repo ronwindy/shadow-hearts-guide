@@ -664,7 +664,7 @@ Its job is intentionally narrow.
 The skill provides an automated, validated CLI tool to import GameFAQs guides:
 
 ```bash
-python .agents/skills/source-importer/scripts/import_gamefaqs.py [html_path] [options]
+python .claude/skills/source-importer/scripts/import_gamefaqs.py [html_path] [options]
 ```
 
 ### CLI Options

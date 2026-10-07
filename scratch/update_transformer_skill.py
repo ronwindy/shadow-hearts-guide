@@ -1,4 +1,4 @@
-with open(".agents/skills/guide-transformer/SKILL.md", "r", encoding="utf-8") as f:
+with open(".claude/skills/guide-transformer/SKILL.md", "r", encoding="utf-8") as f:
     content = f.read()
 
 target = """unless the source explicitly says so.
@@ -39,7 +39,7 @@ if target in content:
 else:
     new_content = content.replace(target.replace("\n", "\r\n"), replacement.replace("\n", "\r\n"))
 
-with open(".agents/skills/guide-transformer/SKILL.md", "w", encoding="utf-8") as f:
+with open(".claude/skills/guide-transformer/SKILL.md", "w", encoding="utf-8") as f:
     f.write(new_content)
 
 print("Updated guide-transformer/SKILL.md successfully!")

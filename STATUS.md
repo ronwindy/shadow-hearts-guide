@@ -149,5 +149,5 @@ Web Pages Built:    [##----------------------] 10.1% (7/69)
 
 - **View Compact Status (Terminal):** `python scripts/status.py --summary`
 - **Update Status Dashboard:** `python scripts/status.py --update`
-- **Validate Structured Guide:** `python .agents/skills/guide-transformer/scripts/validate_guide.py <file>`
-- **Run QA Verification:** `python .agents/skills/qa/scripts/verify_guide.py <canonical_file> <structured_file> -r <report_out>`
+- **Validate Structured Guide:** `python .claude/skills/guide-transformer/scripts/validate_guide.py <file>`
+- **Run QA Verification:** `python .claude/skills/qa/scripts/verify_guide.py <canonical_file> <structured_file> -r <report_out>`

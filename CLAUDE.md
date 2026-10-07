@@ -343,15 +343,7 @@ The Guide Librarian manages **relationships between pages**, not the factual con
 
 Agent architecture must remain independent of any specific AI model or application.
 
-Do not define the architecture as:
-
-```text
-ChatGPT → Agent 1
-Gemini → Agent 2
-Antigravity → Agent 3
-```
-
-Instead:
+Do not define the architecture around specific products (e.g. "Tool A → Agent 1"). Instead:
 
 ```text
 Logical Agent
@@ -360,12 +352,6 @@ AI Model / Tool
 ```
 
 AI tools are implementation choices.
-
-For example:
-
-- ChatGPT may be used for planning, transformation, or QA.
-- Gemini may be used for extraction or reasoning when appropriate.
-- Antigravity may be used for coding, file manipulation, and web building.
 
 These choices may change without changing the project's logical architecture.
 

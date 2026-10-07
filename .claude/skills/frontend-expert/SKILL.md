@@ -117,7 +117,7 @@ Record UX status in qa-reports/<section>-qa-report.md
 
 Run the frontend audit tool:
 ```powershell
-python .agents/skills/frontend-expert/scripts/audit_frontend.py
+python .claude/skills/frontend-expert/scripts/audit_frontend.py
 ```
 
 The script checks:

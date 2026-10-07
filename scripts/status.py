@@ -22,10 +22,10 @@ from typing import Dict, List, Any, Optional, Tuple
 
 
 def get_project_root() -> Path:
-    """Locate project root (contains canonical-sources or .agents)."""
+    """Locate project root (contains canonical-sources or .claude)."""
     curr = Path(__file__).resolve().parent
     for p in [curr, curr.parent, curr.parent.parent]:
-        if (p / "canonical-sources").exists() or (p / ".agents").exists():
+        if (p / "canonical-sources").exists() or (p / ".claude").exists():
             return p
     return Path.cwd()
 
@@ -375,8 +375,8 @@ def generate_status_markdown(data: Dict[str, Any]) -> str:
     lines.append("")
     lines.append("- **View Compact Status (Terminal):** `python scripts/status.py --summary`")
     lines.append("- **Update Status Dashboard:** `python scripts/status.py --update`")
-    lines.append("- **Validate Structured Guide:** `python .agents/skills/guide-transformer/scripts/validate_guide.py <file>`")
-    lines.append("- **Run QA Verification:** `python .agents/skills/qa/scripts/verify_guide.py <canonical_file> <structured_file> -r <report_out>`")
+    lines.append("- **Validate Structured Guide:** `python .claude/skills/guide-transformer/scripts/validate_guide.py <file>`")
+    lines.append("- **Run QA Verification:** `python .claude/skills/qa/scripts/verify_guide.py <canonical_file> <structured_file> -r <report_out>`")
     lines.append("")
     return "\n".join(lines)
 

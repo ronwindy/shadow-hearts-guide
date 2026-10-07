@@ -3,7 +3,7 @@
 audit_code_quality.py - Code Quality & Human Readability Auditor
 
 Performs deterministic static analysis on:
-1. Python scripts (scripts/*.py, .agents/skills/*/scripts/*.py)
+1. Python scripts (scripts/*.py, .claude/skills/*/scripts/*.py)
 2. TypeScript & Astro source files (src/**/*.ts, src/**/*.astro)
 
 Evaluates:
@@ -227,7 +227,7 @@ def run_code_audit(root: Optional[Path] = None) -> Tuple[List[str], List[str]]:
     all_warnings: List[str] = []
 
     # 1. Python files
-    py_dirs = [root / "scripts", root / ".agents" / "skills"]
+    py_dirs = [root / "scripts", root / ".claude" / "skills"]
     py_files: List[Path] = []
     for d in py_dirs:
         if d.exists():

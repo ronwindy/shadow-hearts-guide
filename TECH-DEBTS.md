@@ -1,7 +1,7 @@
 # Technical Debt Register (TECH-DEBTS.md)
 
 > **Repository:** Shadow Hearts Guide Converter  
-> **Authority:** Code Reviewer Agent (`.agents/skills/code-reviewer/SKILL.md`)  
+> **Authority:** Code Reviewer Agent (`.claude/skills/code-reviewer/SKILL.md`)  
 > **Last Updated:** 2026-10-06  
 > **Status:** 6 Active Debts | 0 Resolved
 
@@ -27,11 +27,11 @@ When conducting reviews via the `/code-reviewer` skill, any findings that cannot
 
 | ID | Category / Pillar | Target Location | Severity | Status | Date Added |
 | :--- | :--- | :--- | :---: | :---: | :---: |
-| [`TD-001`](#td-001) | Architectural Modularity | `.agents/skills/source-importer/scripts/import_gamefaqs.py` | Medium | `[ ] Open` | 2026-10-06 |
-| [`TD-002`](#td-002) | Control Flow & Nesting | `.agents/skills/source-importer/scripts/import_gamefaqs.py:379` | Medium | `[ ] Open` | 2026-10-06 |
-| [`TD-003`](#td-003) | Architectural Modularity | `.agents/skills/source-importer/scripts/import_gamefaqs.py:162, 273` | Low | `[ ] Open` | 2026-10-06 |
-| [`TD-004`](#td-004) | Architectural Modularity | `.agents/skills/qa/scripts/verify_guide.py:29` | Medium | `[ ] Open` | 2026-10-06 |
-| [`TD-005`](#td-005) | Architectural Modularity | `.agents/skills/guide-transformer/scripts/scaffold_structured_guide.py:141` | Medium | `[ ] Open` | 2026-10-06 |
+| [`TD-001`](#td-001) | Architectural Modularity | `.claude/skills/source-importer/scripts/import_gamefaqs.py` | Medium | `[ ] Open` | 2026-10-06 |
+| [`TD-002`](#td-002) | Control Flow & Nesting | `.claude/skills/source-importer/scripts/import_gamefaqs.py:379` | Medium | `[ ] Open` | 2026-10-06 |
+| [`TD-003`](#td-003) | Architectural Modularity | `.claude/skills/source-importer/scripts/import_gamefaqs.py:162, 273` | Low | `[ ] Open` | 2026-10-06 |
+| [`TD-004`](#td-004) | Architectural Modularity | `.claude/skills/qa/scripts/verify_guide.py:29` | Medium | `[ ] Open` | 2026-10-06 |
+| [`TD-005`](#td-005) | Architectural Modularity | `.claude/skills/guide-transformer/scripts/scaffold_structured_guide.py:141` | Medium | `[ ] Open` | 2026-10-06 |
 | [`TD-006`](#td-006) | Architectural Modularity | `scripts/status.py` | Low | `[ ] Open` | 2026-10-06 |
 
 ---
@@ -39,7 +39,7 @@ When conducting reviews via the `/code-reviewer` skill, any findings that cannot
 ### Detailed Active Debt Records
 
 #### TD-001
-- **Target File:** `.agents/skills/source-importer/scripts/import_gamefaqs.py`
+- **Target File:** `.claude/skills/source-importer/scripts/import_gamefaqs.py`
 - **Pillar:** Architectural Modularity & Scope
 - **Severity:** Medium
 - **Status:** `[ ] Open`
@@ -48,7 +48,7 @@ When conducting reviews via the `/code-reviewer` skill, any findings that cannot
 - **Proposed Solution:** Split into modular sub-packages (e.g. `parser/bosses.py`, `parser/markers.py`, `importer/cli.py`).
 
 #### TD-002
-- **Target File:** `.agents/skills/source-importer/scripts/import_gamefaqs.py:379` (`import_gamefaqs_guide`)
+- **Target File:** `.claude/skills/source-importer/scripts/import_gamefaqs.py:379` (`import_gamefaqs_guide`)
 - **Pillar:** Control Flow & Cognitive Load / Architectural Modularity
 - **Severity:** Medium
 - **Status:** `[ ] Open`
@@ -57,7 +57,7 @@ When conducting reviews via the `/code-reviewer` skill, any findings that cannot
 - **Proposed Solution:** Extract section-splitting, header parsing, and body extraction loops into dedicated helper functions with guard clauses.
 
 #### TD-003
-- **Target File:** `.agents/skills/source-importer/scripts/import_gamefaqs.py:162, 273`
+- **Target File:** `.claude/skills/source-importer/scripts/import_gamefaqs.py:162, 273`
 - **Pillar:** Architectural Modularity
 - **Severity:** Low
 - **Status:** `[ ] Open`
@@ -66,7 +66,7 @@ When conducting reviews via the `/code-reviewer` skill, any findings that cannot
 - **Proposed Solution:** Decompose pattern matching and dictionary construction into smaller sub-helpers.
 
 #### TD-004
-- **Target File:** `.agents/skills/qa/scripts/verify_guide.py:29` (`verify_guide`)
+- **Target File:** `.claude/skills/qa/scripts/verify_guide.py:29` (`verify_guide`)
 - **Pillar:** Architectural Modularity
 - **Severity:** Medium
 - **Status:** `[ ] Open`
@@ -75,7 +75,7 @@ When conducting reviews via the `/code-reviewer` skill, any findings that cannot
 - **Proposed Solution:** Decompose into distinct verification passes (`verify_items`, `verify_enemies`, `verify_steps`) and a separate formatter.
 
 #### TD-005
-- **Target File:** `.agents/skills/guide-transformer/scripts/scaffold_structured_guide.py:141` (`scaffold_guide`)
+- **Target File:** `.claude/skills/guide-transformer/scripts/scaffold_structured_guide.py:141` (`scaffold_guide`)
 - **Pillar:** Architectural Modularity
 - **Severity:** Medium
 - **Status:** `[ ] Open`

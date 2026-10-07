@@ -111,7 +111,7 @@ The skill is equipped with an automated deterministic audit tool:
 
 ```powershell
 # Standalone execution
-python .agents/skills/code-reviewer/scripts/audit_code_quality.py
+python .claude/skills/code-reviewer/scripts/audit_code_quality.py
 
 # Via unified pipeline orchestrator
 python scripts/pipeline.py --code-review

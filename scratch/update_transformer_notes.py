@@ -1,4 +1,4 @@
-with open(".agents/skills/guide-transformer/SKILL.md", "r", encoding="utf-8") as f:
+with open(".claude/skills/guide-transformer/SKILL.md", "r", encoding="utf-8") as f:
     content = f.read()
 
 target = """However, do not label something "missable" simply because it appears optional.
@@ -28,7 +28,7 @@ if target in content:
 else:
     new_content = content.replace(target.replace("\n", "\r\n"), replacement.replace("\n", "\r\n"))
 
-with open(".agents/skills/guide-transformer/SKILL.md", "w", encoding="utf-8") as f:
+with open(".claude/skills/guide-transformer/SKILL.md", "w", encoding="utf-8") as f:
     f.write(new_content)
 
 print("Updated notes guidance in guide-transformer/SKILL.md successfully!")

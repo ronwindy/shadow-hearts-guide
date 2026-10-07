@@ -66,7 +66,7 @@ Always leverage the deterministic Python scaffold before refining:
    python scripts/pipeline.py <section_id> --validate
    ```
 
-*(See [example-walkthrough.json](file:///d:/Games/GameGuides/shadow-hearts-guide/.agents/skills/guide-transformer/references/example-walkthrough.json) for the canonical structured format).*
+*(See [example-walkthrough.json](file:///d:/Games/GameGuides/shadow-hearts-guide/.claude/skills/guide-transformer/references/example-walkthrough.json) for the canonical structured format).*
 
 ---
 
