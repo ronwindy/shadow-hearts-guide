@@ -39,6 +39,16 @@ interface Props {
 
 const { boss } = Astro.props;
 const isSubBoss = boss.type?.toUpperCase().includes('SUB-BOSS');
+
+// Collapse identical enemies (same stats and drop) into one tile with a count.
+const groupedEnemies: (BossEnemy & { count: number })[] = [];
+for (const enemy of boss.enemies ?? []) {
+  const match = groupedEnemies.find(
+    (g) => g.name === enemy.name && g.hp === enemy.hp && g.class === enemy.class && g.drop === enemy.drop
+  );
+  if (match) match.count += 1;
+  else groupedEnemies.push({ ...enemy, count: 1 });
+}
 ---
 
 <div class={`boss-card relative rounded-xl border p-5 sm:p-6 space-y-4 shadow-gothic-card overflow-hidden ${
@@ -103,14 +113,15 @@ const isSubBoss = boss.type?.toUpperCase().includes('SUB-BOSS');
   )}
 
   <!-- Enemy Units Block -->
-  {boss.enemies && boss.enemies.length > 0 && (
+  {groupedEnemies.length > 0 && (
     <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm">
-      {boss.enemies.map((be) => (
+      {groupedEnemies.map((be) => (
         <div class="p-3.5 rounded-lg bg-slate-900/80 border border-slate-800/80 space-y-2">
           <div class="flex items-center justify-between">
             <h4 class="font-serif font-bold text-slate-200 flex items-center gap-1.5 text-base sm:text-lg">
               <Skull class="w-3.5 h-3.5 text-rose-400" />
               <span>{be.name}</span>
+              {be.count > 1 && <span class="font-mono text-amber-300">x{be.count}</span>}
             </h4>
             {be.class && (
               <span class="px-2 py-0.5 rounded text-xs font-mono bg-amber-950/40 text-amber-300 border border-amber-800/40">

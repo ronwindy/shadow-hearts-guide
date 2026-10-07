@@ -566,14 +566,35 @@
             "Kappa"
           ]
         },
-        "rewards": [],
-        "notes": [
-          {
-            "type": "strategy",
-            "title": "Sub-boss: Water Tiger + Kappa x2",
-            "text": "Have **Yuri** fuse into the **Death Emperor** or **Raging Tiger** and wail away on the **Kappas** first, since they have the ability to heal. Have **Margarete** use her **Grenade** skill until she's out of MP, then have her attack normally. Have **Alice** attack normally, unless she's needed for healing. If you want to do some extra damage to the **Water Tiger** once the **Kappas** are gone, have **Margarete** use her **Aqua Edge** on **Yuri** and have him attack the Fire-based **Water Tiger**.\n\nEnemies: Water Tiger (380 HP, Fire; drops Spikes), Kappa x2 (100 HP, Water; each drops Tent). Reward: 400 EXP, 2500 Cash."
-          }
-        ]
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Water Tiger + Kappa x2",
+          "enemies": [
+            {
+              "name": "Water Tiger",
+              "hp": 380,
+              "class": "Fire",
+              "drop": "Spikes"
+            },
+            {
+              "name": "Kappa",
+              "hp": 100,
+              "class": "Water",
+              "drop": "Tent"
+            },
+            {
+              "name": "Kappa",
+              "hp": 100,
+              "class": "Water",
+              "drop": "Tent"
+            }
+          ],
+          "exp": 400,
+          "cash": 2500,
+          "strategy": "Have **Yuri** fuse into the **Death Emperor** or **Raging Tiger** and wail away on the **Kappas** first, since they have the ability to heal. Have **Margarete** use her **Grenade** skill until she's out of MP, then have her attack normally. Have **Alice** attack normally, unless she's needed for healing. If you want to do some extra damage to the **Water Tiger** once the **Kappas** are gone, have **Margarete** use her **Aqua Edge** on **Yuri** and have him attack the Fire-based **Water Tiger**."
+        },
+        "notes": [],
+        "rewards": []
       },
       {
         "id": 15,
