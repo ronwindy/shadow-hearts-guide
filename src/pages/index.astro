@@ -41,28 +41,19 @@ const pageSections = [
 >
   <div class="space-y-16 py-2">
     <!-- Hero Section -->
-    <section class="relative rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-850/90 via-[#0d1017] to-void p-6 sm:p-10 lg:p-12 overflow-hidden shadow-2xl">
+    <section class="relative rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-850/60 via-[#0d1017]/50 to-void/50 p-6 sm:p-10 lg:p-12 overflow-hidden shadow-2xl">
       <!-- Ambient Glow Behind Hero -->
       <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-crimson-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="relative z-10 max-w-3xl space-y-6">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-mono font-medium bg-gold-500/10 text-gold-400 border border-gold-500/30">
-          <Gamepad2 class="w-4 h-4 text-gold-400" />
-          <span>{game_info.platform}</span>
-          <span>&bull;</span>
-          <span>1913 Gothic Alternate History</span>
-          <span>&bull;</span>
-          <span>Sacnoth / Aruze</span>
-        </div>
-
         <img
           src={`${baseUrl}/logo.png`}
           alt="Shadow Hearts"
           class="hero-logo w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto"
         />
 
-        <h1 class="hero-title font-serif font-extrabold tracking-wide uppercase whitespace-nowrap">
+        <h1 class="hero-title font-serif font-extrabold tracking-wide uppercase sm:whitespace-nowrap">
           Game Wiki &amp; Walkthrough
         </h1>
 
@@ -438,8 +429,8 @@ const pageSections = [
   }
 
   .hero-title {
-    /* single line; scales down with the viewport instead of wrapping */
-    font-size: clamp(1rem, 4.6vw, 2.5rem);
+    /* mobile: larger, may wrap to two lines; sm+: single line scaling with the viewport */
+    font-size: clamp(1.75rem, 9vw, 2.5rem);
     line-height: 1.15;
     background-image: linear-gradient(180deg, #fff3c4 0%, #d4a93c 50%, #8a6a1f 100%);
     -webkit-background-clip: text;
@@ -447,5 +438,11 @@ const pageSections = [
     -webkit-text-fill-color: transparent;
     color: transparent;
     filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.6));
+  }
+
+  @media (min-width: 640px) {
+    .hero-title {
+      font-size: clamp(1rem, 4.6vw, 2.5rem);
+    }
   }
 </style>
