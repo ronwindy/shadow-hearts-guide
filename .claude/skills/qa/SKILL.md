@@ -65,6 +65,7 @@ python scripts/pipeline.py <section_id> --frontend
 - Chronological narrative order is strictly preserved.
 - Overviews contain objectives, routes, and item checklists, but **no tactical or story spoilers**.
 - No duplicated strategy text between overview cards and step descriptions.
+- Long prose (3+ sentences / ~40+ words) is formatted as a list; numbered only where order matters. List-splitting must not change names, numbers, conditions, or meaningful order (flag as `low` if a dense paragraph remains).
 
 ### 4.3 Technical & Frontend Quality
 - Astro templates build cleanly (`npm run build`).

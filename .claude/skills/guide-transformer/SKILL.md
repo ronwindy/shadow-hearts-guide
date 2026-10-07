@@ -35,6 +35,14 @@ Every piece of game knowledge must remain strictly grounded in the Canonical Sou
 - Linking canonical item markers directly to the steps where they are found.
 - Highlighting key gameplay entities (**bold** / `code`).
 - Structuring boss battles chronologically within the steps where they occur.
+- Converting long prose into lists (see **List Formatting Rule** below).
+
+### List Formatting Rule (Long/Dense Text)
+Any prose field (step description, note, overview, boss strategy) with **3+ sentences or ~40+ words** must be written as a markdown list, not a paragraph. The renderer (`src/lib/markup.ts`) already supports `- ` and `1. ` lines.
+- **Numbered (`1. `)** only when order matters (sequential actions, routes, puzzle/dialogue sequences). **Bullets (`- `)** for parallel facts, tips, conditions, items, enemy lists.
+- One action/fact per item. Split by sentence or clause; light tightening is allowed (trim filler), but never alter names, numbers, conditions, or any order that carries gameplay meaning.
+- A short lead-in sentence may stay above the list. Keep warnings/missable flags as callouts, not buried in list items.
+- Do not list-ify short prose (<3 sentences and <40 words), table cells, or fields whose schema expects a plain string.
 
 ### Strictly Forbidden:
 - Inventing facts or inserting outside wiki/model knowledge.
@@ -128,6 +136,7 @@ Before completing transformation of any section:
 - [ ] **Exact Terminology:** All names and numbers match canonical source verbatim.
 - [ ] **Chronological Boss Battles:** Boss encounters appear inside their matching step, not isolated at the top.
 - [ ] **No Spoilers in Overviews:** Tactical spoilers are not hoisted into initial overviews.
+- [ ] **Lists Over Walls of Text:** No prose block with 3+ sentences or ~40+ words remains a paragraph; use numbered lists only for ordered steps.
 - [ ] **Entity Highlighting:** Key items, places, enemies, and mechanics are highlighted.
 - [ ] **Schema Compliance:** Passes `python scripts/pipeline.py <id> --validate`.
 - [ ] **QA Verification:** Passes `python scripts/pipeline.py <id> --qa` with 0 critical/high findings.

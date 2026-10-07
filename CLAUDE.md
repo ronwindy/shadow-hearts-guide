@@ -11,6 +11,8 @@ The source is the sole authority for game facts. Priority when rules conflict: *
 
 Allowed: restructure, reorder for readability (never where order carries gameplay meaning), tighten wording, make steps/checklists/tables, highlight warnings, add cross-references backed by project data.
 
+List rule: prose with 3+ sentences or ~40+ words becomes a bullet list (numbered only if order matters); one fact/action per item, no changes to names/numbers/conditions (details in `guide-transformer`).
+
 Forbidden: inventing or guessing facts, adding outside/model knowledge, renaming items/characters/locations/enemies, changing numbers or requirements, silently resolving contradictions. If the source is ambiguous or contradictory, **preserve and flag it**. Extra research only if explicitly requested, and kept visibly separate.
 
 ## 2. Orientation & Status (do this first)

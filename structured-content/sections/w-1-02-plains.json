@@ -234,7 +234,7 @@
         "party": [],
         "exp": null,
         "cash": null,
-        "strategy": "Hey, we can win this one! Go ahead and use Yuri's Fusion skill to become the **Death Emperor**, then use normal attacks to wipe out the **Raging Tiger**. He's not tough at all, and should take just a couple turns to take out."
+        "strategy": "Hey, we can win this one!\n\n- Go ahead and use Yuri's Fusion skill to become the **Death Emperor**, then use normal attacks to wipe out the **Raging Tiger**.\n- He's not tough at all, and should take just a couple turns to take out."
       }
     ],
     "boss": {
@@ -250,23 +250,23 @@
       "party": [],
       "exp": null,
       "cash": null,
-      "strategy": "Hey, we can win this one! Go ahead and use Yuri's Fusion skill to become the **Death Emperor**, then use normal attacks to wipe out the **Raging Tiger**. He's not tough at all, and should take just a couple turns to take out."
+      "strategy": "Hey, we can win this one!\n\n- Go ahead and use Yuri's Fusion skill to become the **Death Emperor**, then use normal attacks to wipe out the **Raging Tiger**.\n- He's not tough at all, and should take just a couple turns to take out."
     },
     "callouts": [
       {
         "type": "tutorial",
         "title": "Malice and The Graveyard System",
-        "text": "The Talisman Yuri holds shows the level of Malice accumulated in his soul. Each enemy defeated increases the Malice Meter. Make sure Yuri's Malice level does NOT reach the red zone! If it reaches red, Fox Face will invade regular battles. At this stage in the game, fighting Fox Face is lethal—press R1 and Run Away immediately if encountered! Return to the Graveyard whenever Malice builds up to fight Malice incarnates (Evil 1 through Evil 4) and purge it safely."
+        "text": "The Talisman Yuri holds shows the level of Malice accumulated in his soul.\n\n- Each enemy defeated increases the Malice Meter.\n- Make sure Yuri's Malice level does NOT reach the red zone! If it reaches red, Fox Face will invade regular battles.\n- At this stage in the game, fighting Fox Face is lethal—press R1 and Run Away immediately if encountered!\n- Return to the Graveyard whenever Malice builds up to fight Malice incarnates (Evil 1 through Evil 4) and purge it safely."
       },
       {
         "type": "tip",
         "title": "Soul Energy & Fusions",
-        "text": "The Soul Energy results screen appears after battles, displaying points required to level up each fusion element class. Once an element class levels up, visit the Graveyard and examine glowing gravestones to obtain new Level 1 Fusions (Level 2 Fusions unlock later in the story)."
+        "text": "- The Soul Energy results screen appears after battles, displaying points required to level up each fusion element class.\n- Once an element class levels up, visit the Graveyard and examine glowing gravestones to obtain new Level 1 Fusions (Level 2 Fusions unlock later in the story)."
       },
       {
         "type": "tip",
         "title": "Internal Malice Point Tracking",
-        "text": "The only issue with this is that it's a number the system tracks that you cannot see. The levels change at 25/50/75/100, and the early monsters seem to contribute 1 point each toward the total, and it seems that as you go through the game, the stronger monsters give more points. It's something you kind of have to guess point values as you go; it's more of a guideline than anything, since it just shows what's possible to get by doing so."
+        "text": "- The only issue with this is that it's a number the system tracks that you cannot see.\n- The levels change at 25/50/75/100.\n- The early monsters seem to contribute 1 point each toward the total, and it seems that as you go through the game, the stronger monsters give more points.\n- It's something you kind of have to guess point values as you go; it's more of a guideline than anything, since it just shows what's possible to get by doing so."
       }
     ],
     "steps": [
@@ -296,7 +296,7 @@
       },
       {
         "id": 3,
-        "description": "Head back and follow the main path west until you find the girl. Engage in dialogue to name your characters (default names: **Yuri** for the Rude Hero and **Alice** for the Girl In Danger). Alice joins the party.",
+        "description": "1. Head back and follow the main path west until you find the girl.\n2. Engage in dialogue to name your characters (default names: **Yuri** for the Rude Hero and **Alice** for the Girl In Danger).\n3. Alice joins the party.",
         "type": "story",
         "notes": [
           {
@@ -327,7 +327,7 @@
       },
       {
         "id": 6,
-        "description": "Head north to the fork, then east past the fork, following the path as it turns north and west to another sluice gate. Inspect it to learn a handle is missing. Return to the previous fork and use the **Save Point** to the southeast before attempting the handle retrieval task.",
+        "description": "1. Head north to the fork, then east past the fork, following the path as it turns north and west to another sluice gate.\n2. Inspect it to learn a handle is missing.\n3. Return to the previous fork and use the **Save Point** to the southeast before attempting the handle retrieval task.",
         "type": "navigation",
         "notes": [
           {
@@ -365,7 +365,7 @@
       },
       {
         "id": 9,
-        "description": "Start backtracking to the previous area. The party decides to make camp and rest. Shortly after Alice falls asleep, the mysterious **Fox Face** appears and ambushes Yuri.",
+        "description": "1. Start backtracking to the previous area.\n2. The party decides to make camp and rest.\n3. Shortly after Alice falls asleep, the mysterious **Fox Face** appears and ambushes Yuri.",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -383,7 +383,7 @@
       },
       {
         "id": 10,
-        "description": "Yuri awakens in the Graveyard of his soul. Head north and examine the glowing green tombstone to engage sub-boss **Raging Tiger** (75 HP, Earth). Defeat him to acquire Yuri's Earth Fusion soul: **Raging Tiger** (Tigerion!). Open the menu and equip the soul.",
+        "description": "1. Yuri awakens in the Graveyard of his soul.\n2. Head north and examine the glowing green tombstone to engage sub-boss **Raging Tiger** (75 HP, Earth).\n3. Defeat him to acquire Yuri's Earth Fusion soul: **Raging Tiger** (Tigerion!).\n4. Open the menu and equip the soul.",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -400,7 +400,7 @@
       },
       {
         "id": 11,
-        "description": "Head west and speak with the Masks. They explain the rules of Malice and force Yuri to defeat his accumulated Malice in a battle against **Evil 4**. Fuse into **Raging Tiger** and strike with heavy hits to defeat Evil 4 in 1–2 turns, clearing your Malice.",
+        "description": "1. Head west and speak with the Masks.\n2. They explain the rules of Malice and force Yuri to defeat his accumulated Malice in a battle against **Evil 4**.\n3. Fuse into **Raging Tiger** and strike with heavy hits to defeat Evil 4 in 1–2 turns, clearing your Malice.",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -411,58 +411,245 @@
           {
             "type": "tutorial",
             "title": "Malice Colors & Graveyard Re-fights",
-            "text": "You can re-challenge Malice incarnations in the Graveyard whenever your Malice meter is within specific color ranges. Each victory purges Malice and rewards an item corresponding to your exact Malice value (1–100).\n\nSpecial items are awarded once per threshold; repeat clears at the same value yield a Thera Leaf instead.\n\n*Note: The game tracks Malice values internally from 1 to 100 without displaying a numerical counter. Thresholds advance at 25, 50, 75, and 100. Early monsters contribute ~1 point each, while stronger enemies give more.*",
+            "text": "You can re-challenge Malice incarnations in the Graveyard whenever your Malice meter is within specific color ranges.\n\n- Each victory purges Malice and rewards an item corresponding to your exact Malice value (1–100).\n- Special items are awarded once per threshold; repeat clears at the same value yield a Thera Leaf instead.\n\n*Note:*\n- The game tracks Malice values internally from 1 to 100 without displaying a numerical counter.\n- Thresholds advance at 25, 50, 75, and 100.\n- Early monsters contribute ~1 point each, while stronger enemies give more.",
             "badges": [
-              { "label": "Evil 1", "range": "Blue → Turquoise", "color": "cyan" },
-              { "label": "Evil 2", "range": "Turquoise → Green", "color": "emerald" },
-              { "label": "Evil 3", "range": "Green → Yellow", "color": "amber" },
-              { "label": "Evil 4", "range": "Yellow → Red", "color": "rose" }
+              {
+                "label": "Evil 1",
+                "range": "Blue → Turquoise",
+                "color": "cyan"
+              },
+              {
+                "label": "Evil 2",
+                "range": "Turquoise → Green",
+                "color": "emerald"
+              },
+              {
+                "label": "Evil 3",
+                "range": "Green → Yellow",
+                "color": "amber"
+              },
+              {
+                "label": "Evil 4",
+                "range": "Yellow → Red",
+                "color": "rose"
+              }
             ],
             "table": {
-              "headers": ["Malice Value", "Prize"],
+              "headers": [
+                "Malice Value",
+                "Prize"
+              ],
               "rows": [
-                { "range": "01–03", "reward": "Thera Leaf", "is_unique": false },
-                { "range": "04", "reward": "Seal of Wisdom", "is_unique": true },
-                { "range": "05–06", "reward": "Mana Leaf", "is_unique": false },
-                { "range": "07", "reward": "Key to Success", "is_unique": true },
-                { "range": "08–09", "reward": "Pure Leaf", "is_unique": false },
-                { "range": "10–14", "reward": "Thera Leaf", "is_unique": false },
-                { "range": "15–19", "reward": "Mana Leaf", "is_unique": false },
-                { "range": "20–24", "reward": "Pure Leaf", "is_unique": false },
-                { "range": "25", "reward": "Seal of Vitality", "is_unique": true },
-                { "range": "26–29", "reward": "Thera Leaf", "is_unique": false },
-                { "range": "30–34", "reward": "Mana Leaf", "is_unique": false },
-                { "range": "35", "reward": "Silver Hand", "is_unique": true },
-                { "range": "36–39", "reward": "Pure Leaf", "is_unique": false },
-                { "range": "40–41", "reward": "Thera Leaf", "is_unique": false },
-                { "range": "42", "reward": "Kirin Scale", "is_unique": true },
-                { "range": "43–44", "reward": "Mana Leaf", "is_unique": false },
-                { "range": "45–49", "reward": "Pure Leaf", "is_unique": false },
-                { "range": "50", "reward": "Seal of the Soul", "is_unique": true },
-                { "range": "51–52", "reward": "Thera Leaf", "is_unique": false },
-                { "range": "53–55", "reward": "Mana Leaf", "is_unique": false },
-                { "range": "56", "reward": "Seal of Force", "is_unique": true },
-                { "range": "57–59", "reward": "Pure Leaf", "is_unique": false },
-                { "range": "60", "reward": "Seal of Speed", "is_unique": true },
-                { "range": "61–62", "reward": "Thera Leaf", "is_unique": false },
-                { "range": "63", "reward": "Seal of Power", "is_unique": true },
-                { "range": "64–65", "reward": "Mana Leaf", "is_unique": false },
-                { "range": "66–69", "reward": "Pure Leaf", "is_unique": false },
-                { "range": "70", "reward": "Seal of Life", "is_unique": true },
-                { "range": "71–73", "reward": "Thera Leaf", "is_unique": false },
-                { "range": "74–76", "reward": "Mana Leaf", "is_unique": false },
-                { "range": "77", "reward": "Seventh Key", "is_unique": true },
-                { "range": "78–79", "reward": "Pure Leaf", "is_unique": false },
-                { "range": "80–83", "reward": "Thera Leaf", "is_unique": false },
-                { "range": "84", "reward": "Seal of Aura", "is_unique": true },
-                { "range": "85–87", "reward": "Mana Leaf", "is_unique": false },
-                { "range": "88–90", "reward": "Pure Leaf", "is_unique": false },
-                { "range": "91", "reward": "Monkey Paw", "is_unique": true },
-                { "range": "92–93", "reward": "Thera Leaf", "is_unique": false },
-                { "range": "94–97", "reward": "Mana Leaf", "is_unique": false },
-                { "range": "98", "reward": "Seal of Luck", "is_unique": true },
-                { "range": "99", "reward": "Dice of Caesar", "is_unique": true },
-                { "range": "100", "reward": "N/A", "is_unique": false }
+                {
+                  "range": "01–03",
+                  "reward": "Thera Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "04",
+                  "reward": "Seal of Wisdom",
+                  "is_unique": true
+                },
+                {
+                  "range": "05–06",
+                  "reward": "Mana Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "07",
+                  "reward": "Key to Success",
+                  "is_unique": true
+                },
+                {
+                  "range": "08–09",
+                  "reward": "Pure Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "10–14",
+                  "reward": "Thera Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "15–19",
+                  "reward": "Mana Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "20–24",
+                  "reward": "Pure Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "25",
+                  "reward": "Seal of Vitality",
+                  "is_unique": true
+                },
+                {
+                  "range": "26–29",
+                  "reward": "Thera Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "30–34",
+                  "reward": "Mana Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "35",
+                  "reward": "Silver Hand",
+                  "is_unique": true
+                },
+                {
+                  "range": "36–39",
+                  "reward": "Pure Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "40–41",
+                  "reward": "Thera Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "42",
+                  "reward": "Kirin Scale",
+                  "is_unique": true
+                },
+                {
+                  "range": "43–44",
+                  "reward": "Mana Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "45–49",
+                  "reward": "Pure Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "50",
+                  "reward": "Seal of the Soul",
+                  "is_unique": true
+                },
+                {
+                  "range": "51–52",
+                  "reward": "Thera Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "53–55",
+                  "reward": "Mana Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "56",
+                  "reward": "Seal of Force",
+                  "is_unique": true
+                },
+                {
+                  "range": "57–59",
+                  "reward": "Pure Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "60",
+                  "reward": "Seal of Speed",
+                  "is_unique": true
+                },
+                {
+                  "range": "61–62",
+                  "reward": "Thera Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "63",
+                  "reward": "Seal of Power",
+                  "is_unique": true
+                },
+                {
+                  "range": "64–65",
+                  "reward": "Mana Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "66–69",
+                  "reward": "Pure Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "70",
+                  "reward": "Seal of Life",
+                  "is_unique": true
+                },
+                {
+                  "range": "71–73",
+                  "reward": "Thera Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "74–76",
+                  "reward": "Mana Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "77",
+                  "reward": "Seventh Key",
+                  "is_unique": true
+                },
+                {
+                  "range": "78–79",
+                  "reward": "Pure Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "80–83",
+                  "reward": "Thera Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "84",
+                  "reward": "Seal of Aura",
+                  "is_unique": true
+                },
+                {
+                  "range": "85–87",
+                  "reward": "Mana Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "88–90",
+                  "reward": "Pure Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "91",
+                  "reward": "Monkey Paw",
+                  "is_unique": true
+                },
+                {
+                  "range": "92–93",
+                  "reward": "Thera Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "94–97",
+                  "reward": "Mana Leaf",
+                  "is_unique": false
+                },
+                {
+                  "range": "98",
+                  "reward": "Seal of Luck",
+                  "is_unique": true
+                },
+                {
+                  "range": "99",
+                  "reward": "Dice of Caesar",
+                  "is_unique": true
+                },
+                {
+                  "range": "100",
+                  "reward": "N/A",
+                  "is_unique": false
+                }
               ]
             }
           }
@@ -471,7 +658,7 @@
       },
       {
         "id": 12,
-        "description": "Head east to exit the Graveyard and reunite with Alice. From the Save Point, return to the screen with the bridge and river. Drop into the drained riverbed below the bridge to claim the reward chest corresponding to your handle performance (**Leather Belt**, **Thera Seed**, **Thera Leaf**, **Bandanna**, or **Mana Seed**).",
+        "description": "1. Head east to exit the Graveyard and reunite with Alice.\n2. From the Save Point, return to the screen with the bridge and river.\n3. Drop into the drained riverbed below the bridge to claim the reward chest corresponding to your handle performance (**Leather Belt**, **Thera Seed**, **Thera Leaf**, **Bandanna**, or **Mana Seed**).",
         "type": "loot",
         "rewards": [
           {
@@ -503,7 +690,7 @@
       },
       {
         "id": 13,
-        "description": "Head back across the bridge, cross the riverbed to the southwest, and follow the path to the next area. Watch the scene, then open the chest to the northwest for a **Holy Mother Bust**. Continue forward to the gates of **Zhaoyang Village** to conclude this section.",
+        "description": "1. Head back across the bridge, cross the riverbed to the southwest, and follow the path to the next area.\n2. Watch the scene, then open the chest to the northwest for a **Holy Mother Bust**.\n3. Continue forward to the gates of **Zhaoyang Village** to conclude this section.",
         "type": "navigation",
         "rewards": [
           {

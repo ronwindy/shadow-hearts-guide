@@ -198,7 +198,7 @@
         ],
         "exp": 180,
         "cash": 1800,
-        "strategy": "Note that **Yamaraja: Earth** is actually a **WATER class**. As I mentioned above, he's pretty dangerous! If you can't beat him, level up in town for a while before trying again. I recommend at least **Level 6** for everyone.\nHis **Flash Flood** will hit an ally for pretty good damage, while his **Large Whirlpool** will hit your entire party for major damage, as well as possibly halving your **Hit Area** on your **Judgment Ring**, so be sure to heal after it hits. His physical attacks are also nothing to sneeze at, as they can take away large chunks of HP at a time. Make sure that **Alice** and **Zhuzhen** are in the back row, and when in doubt, just heal.\nHave **Yuri** fuse into the **Raging Tiger** and use his **Flying Stones** attack, followed by normal attacks. Have **Alice** stay on healing duty the entire time, and have **Zhuzhen** cast **Ogre Flamedance** continuously. If needed, have Yuri supplement healing since Zhuzhen's fire magic probably hits for more than Yuri does, and make sure to keep Alice from becoming **Berserk**."
+        "strategy": "- Note that **Yamaraja: Earth** is actually a **WATER class**.\n- As I mentioned above, he's pretty dangerous! If you can't beat him, level up in town for a while before trying again. I recommend at least **Level 6** for everyone.\n- His **Flash Flood** will hit an ally for pretty good damage, while his **Large Whirlpool** will hit your entire party for major damage, as well as possibly halving your **Hit Area** on your **Judgment Ring**, so be sure to heal after it hits.\n- His physical attacks are also nothing to sneeze at, as they can take away large chunks of HP at a time.\n- Make sure that **Alice** and **Zhuzhen** are in the back row, and when in doubt, just heal.\n- Have **Yuri** fuse into the **Raging Tiger** and use his **Flying Stones** attack, followed by normal attacks.\n- Have **Alice** stay on healing duty the entire time, and have **Zhuzhen** cast **Ogre Flamedance** continuously.\n- If needed, have Yuri supplement healing since Zhuzhen's fire magic probably hits for more than Yuri does, and make sure to keep Alice from becoming **Berserk**."
       }
     ],
     "boss": {
@@ -296,7 +296,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "When you regain control, head back south to the **first area of town** to find an **Angel's Feather** roughly around the center of the area, just to the lower-right of a pile of sticks. Go back up to the previous screen (**second area**), then follow along the right side until you see the '?' icon near another pile of sticks to find a **Bronze Arrowhead**. Continue north to the next area.",
+        "description": "1. When you regain control, head back south to the **first area of town** to find an **Angel's Feather** roughly around the center of the area, just to the lower-right of a pile of sticks.\n2. Go back up to the previous screen (**second area**), then follow along the right side until you see the '?' icon near another pile of sticks to find a **Bronze Arrowhead**.\n3. Continue north to the next area.",
         "type": "exploration",
         "rewards": [
           {
@@ -313,7 +313,7 @@
       },
       {
         "id": 2,
-        "description": "Use the **Save Point** in the center of town near the well to save your game and clear **Malice** in the **Graveyard** if needed. Check around the right side of the well by a board on the ground to find a **Tent**. Go all the way to the right, then all the way up to the corner by the **Lost Peddler / Wandering Merchant** to find a **TalismanOfLuck** lying on the ground.",
+        "description": "1. Use the **Save Point** in the center of town near the well to save your game and clear **Malice** in the **Graveyard** if needed.\n2. Check around the right side of the well by a board on the ground to find a **Tent**.\n3. Go all the way to the right, then all the way up to the corner by the **Lost Peddler / Wandering Merchant** to find a **TalismanOfLuck** lying on the ground.",
         "type": "exploration",
         "rewards": [
           {
@@ -330,13 +330,13 @@
       },
       {
         "id": 3,
-        "description": "Shop with the **Wandering Merchant** if desired. Prioritize healing supplies such as **Thera**, **Mana**, and **Pure Leaves**. **Pure Leaves** are especially helpful because Alice has low SP and can easily become **Berserk**. If you have extra funds, purchase **Leather Belts** and **Bandannas** (up to 3 each for the active party) and equip both on **Yuri** and **Alice** before proceeding.",
+        "description": "Shop with the **Wandering Merchant** if desired.\n\n- Prioritize healing supplies such as **Thera**, **Mana**, and **Pure Leaves**.\n- **Pure Leaves** are especially helpful because Alice has low SP and can easily become **Berserk**.\n- If you have extra funds, purchase **Leather Belts** and **Bandannas** (up to 3 each for the active party) and equip both on **Yuri** and **Alice** before proceeding.",
         "type": "shop",
         "rewards": []
       },
       {
         "id": 4,
-        "description": "Head all the way north to the next area to reach the **shrine**. Watch the events here, then enter the house the children invite you to and watch the scene. After some rest, take on two **Hellcats** in combat.",
+        "description": "1. Head all the way north to the next area to reach the **shrine**.\n2. Watch the events here, then enter the house the children invite you to and watch the scene.\n3. After some rest, take on two **Hellcats** in combat.",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -381,7 +381,7 @@
       },
       {
         "id": 6,
-        "description": "Go back outside and make your way north back to the **shrine**. After a scene with the **Cat Lady**, head back to the previous area and go to the left side of the well to encounter her again. Head south to the **second area** to run into her yet again, then continue south back to the **first area**.",
+        "description": "1. Go back outside and make your way north back to the **shrine**.\n2. After a scene with the **Cat Lady**, head back to the previous area and go to the left side of the well to encounter her again.\n3. Head south to the **second area** to run into her yet again, then continue south back to the **first area**.",
         "type": "exploration",
         "rewards": []
       },
@@ -393,14 +393,14 @@
           {
             "type": "tutorial",
             "title": "Zhuzhen Equipment & Meiyuan Acupuncture",
-            "text": "**Zhuzhen** comes equipped with an **Oak Staff** and a **Cotton Shirt** by default. As for **Meiyuan**, he can't fight, but his acupuncture allows you to increase the **Attack Power** of your weapon, the **Hit Area** on the **Judgment Ring**, or both. It costs a lot of money to do it at this point, so I don't recommend it. We'll be able to buy new weapons in the next town which will be stronger anyway. However, if you're having trouble hitting areas on the **Judgment Ring**, then by all means, try to increase the **Hit Area** if you can afford it. NOTE: If you want to see how much it would cost to power up your weapons, check out section A-1-08 for the cost for every weapon in the game."
+            "text": "- **Zhuzhen** comes equipped with an **Oak Staff** and a **Cotton Shirt** by default.\n- As for **Meiyuan**, he can't fight, but his acupuncture allows you to increase the **Attack Power** of your weapon, the **Hit Area** on the **Judgment Ring**, or both.\n- It costs a lot of money to do it at this point, so I don't recommend it. We'll be able to buy new weapons in the next town which will be stronger anyway.\n- However, if you're having trouble hitting areas on the **Judgment Ring**, then by all means, try to increase the **Hit Area** if you can afford it.\n- NOTE: If you want to see how much it would cost to power up your weapons, check out section A-1-08 for the cost for every weapon in the game."
           }
         ],
         "rewards": []
       },
       {
         "id": 8,
-        "description": "Continue north to encounter the **Cat Lady** once more, then return to the center of town to see her again, and finally re-enter the house you were originally lured into. After the scene, learn that you need to find a **Metal Vessel** and a **Torch** to combine with the **Anti-Cat Powder** received from **Zhuzhen**.",
+        "description": "1. Continue north to encounter the **Cat Lady** once more, then return to the center of town to see her again, and finally re-enter the house you were originally lured into.\n2. After the scene, learn that you need to find a **Metal Vessel** and a **Torch** to combine with the **Anti-Cat Powder** received from **Zhuzhen**.",
         "type": "quest",
         "rewards": [
           {
@@ -462,7 +462,7 @@
           ],
           "exp": 120,
           "cash": 600,
-          "strategy": "This lady isn't to be taken lightly. She can use the **Wind Fang** ability to hit everyone for Wind damage, and after a couple of turns, your whole party will be in need of healing, so beware. Since she's a **Wind class**, have **Yuri** fuse into the **Raging Tiger** and use the **Flying Stones** skill to do some decent damage to her, followed by regular attacks. **Alice** should be keeping everyone healed, as should **Zhuzhen**. If no one needs healing then, have **Zhuzhen** use his **Ogre Flamedance** spell, and **Alice** should attack normally. As long as you stay healed and don't let Alice go **Berserk**, you should be fine."
+          "strategy": "- This lady isn't to be taken lightly. She can use the **Wind Fang** ability to hit everyone for Wind damage, and after a couple of turns, your whole party will be in need of healing, so beware.\n- Since she's a **Wind class**, have **Yuri** fuse into the **Raging Tiger** and use the **Flying Stones** skill to do some decent damage to her, followed by regular attacks.\n- **Alice** should be keeping everyone healed, as should **Zhuzhen**.\n- If no one needs healing then, have **Zhuzhen** use his **Ogre Flamedance** spell, and **Alice** should attack normally.\n- As long as you stay healed and don't let Alice go **Berserk**, you should be fine."
         },
         "notes": [],
         "rewards": []
@@ -475,7 +475,7 @@
           {
             "type": "warning",
             "title": "Level Recommendation & Boss Preparation",
-            "text": "This next boss is REALLY tough if you're at a low level. I strongly recommend fighting until everyone in your party is at least **Level 6** before continuing on; it should only take a few battles. If you get some extra money, those **Leather Belts** and **Bandannas** for everyone would probably be a good idea."
+            "text": "- This next boss is REALLY tough if you're at a low level.\n- I strongly recommend fighting until everyone in your party is at least **Level 6** before continuing on; it should only take a few battles.\n- If you get some extra money, those **Leather Belts** and **Bandannas** for everyone would probably be a good idea."
           }
         ],
         "rewards": []
@@ -532,7 +532,7 @@
           ],
           "exp": 180,
           "cash": 1800,
-          "strategy": "Note that **Yamaraja: Earth** is actually a **WATER class**. As I mentioned above, he's pretty dangerous! If you can't beat him, level up in town for a while before trying again. I recommend at least **Level 6** for everyone.\nHis **Flash Flood** will hit an ally for pretty good damage, while his **Large Whirlpool** will hit your entire party for major damage, as well as possibly halving your **Hit Area** on your **Judgment Ring**, so be sure to heal after it hits. His physical attacks are also nothing to sneeze at, as they can take away large chunks of HP at a time. Make sure that **Alice** and **Zhuzhen** are in the back row, and when in doubt, just heal.\nHave **Yuri** fuse into the **Raging Tiger** and use his **Flying Stones** attack, followed by normal attacks. Have **Alice** stay on healing duty the entire time, and have **Zhuzhen** cast **Ogre Flamedance** continuously. If needed, have Yuri supplement healing since Zhuzhen's fire magic probably hits for more than Yuri does, and make sure to keep Alice from becoming **Berserk**."
+          "strategy": "- Note that **Yamaraja: Earth** is actually a **WATER class**.\n- As I mentioned above, he's pretty dangerous! If you can't beat him, level up in town for a while before trying again. I recommend at least **Level 6** for everyone.\n- His **Flash Flood** will hit an ally for pretty good damage, while his **Large Whirlpool** will hit your entire party for major damage, as well as possibly halving your **Hit Area** on your **Judgment Ring**, so be sure to heal after it hits.\n- His physical attacks are also nothing to sneeze at, as they can take away large chunks of HP at a time.\n- Make sure that **Alice** and **Zhuzhen** are in the back row, and when in doubt, just heal.\n- Have **Yuri** fuse into the **Raging Tiger** and use his **Flying Stones** attack, followed by normal attacks.\n- Have **Alice** stay on healing duty the entire time, and have **Zhuzhen** cast **Ogre Flamedance** continuously.\n- If needed, have Yuri supplement healing since Zhuzhen's fire magic probably hits for more than Yuri does, and make sure to keep Alice from becoming **Berserk**."
         },
         "notes": [],
         "rewards": []

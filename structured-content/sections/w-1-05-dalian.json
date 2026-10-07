@@ -175,7 +175,7 @@
         ],
         "exp": 720,
         "cash": 3600,
-        "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+        "strategy": "- Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the Raging Tiger.\n- Its Shockwave attack will do decent damage to each character, while its Flying Stones attack will do major damage, but to only one character.\n- However, its PHYSICAL attacks are the ones you have to worry about; it can do a three hit attack that will easily kill a party member, even if they're in the back row, so be sure to stay healed.\n- If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have him fuse into the Death Emperor.\n- Use his Wind Shear/Dark Messenger Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage.\n- Have Margarete on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on Yuri and Zhuzhen to keep their MP up.\n- Have Zhuzhen use his Ogre Flamedance continuously, stopping to heal if someone needs it.\n- Yuri should be doing the most damage if he has the Tornado Fusion, so keep his MP up while keeping everyone else healed."
       }
     ],
     "shops": [
@@ -309,7 +309,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "When you gain control here in **Dalian**, head left and up the dock to find a chest containing a **Lottery Ticket**. Don't worry about the man guarding the pen; we'll come back to him in a moment. Follow the path as it turns west, but before going to the next screen, go up into the area that is partially fenced in, and look between the two wooden structures near the edge of the screen to find a **TalismanOfLuck**. Once you have it, go to the next area.",
+        "description": "1. When you gain control here in **Dalian**, head left and up the dock to find a chest containing a **Lottery Ticket**. Don't worry about the man guarding the pen; we'll come back to him in a moment.\n2. Follow the path as it turns west, but before going to the next screen, go up into the area that is partially fenced in, and look between the two wooden structures near the edge of the screen to find a **TalismanOfLuck**.\n3. Once you have it, go to the next area.",
         "type": "exploration",
         "notes": [
           {
@@ -347,7 +347,7 @@
       },
       {
         "id": 3,
-        "description": "Choose option 2 to help him out. The turtle hides in a random place, so just run around and press the `CROSS` button repeatedly until you find it. These are the prizes you receive depending on how many tries it took you to find the turtle:",
+        "description": "1. Choose option 2 to help him out.\n2. The turtle hides in a random place, so just run around and press the `CROSS` button repeatedly until you find it.\n\nThese are the prizes you receive depending on how many tries it took you to find the turtle:",
         "type": "loot",
         "notes": [
           {
@@ -405,13 +405,13 @@
       },
       {
         "id": 4,
-        "description": "Once you have your prize, head back to the center of town. Go into the building on the upper-right, which is the **Sea Turtle Restaurant**. Feel free to do some shopping here; I'd make sure you have plenty of **Thera**, **Mana**, and **Pure Leaves**, and I'd upgrade your three **Leather Belts** to **Casual Belts** and your three **Bandannas** for **Leather Caps**. While you're in here, look behind the back table near the serving window to find a chest containing a **Silver Hourglass**. Head back out into the center of town.",
+        "description": "1. Once you have your prize, head back to the center of town.\n2. Go into the building on the upper-right, which is the **Sea Turtle Restaurant**.\n3. Feel free to do some shopping here; I'd make sure you have plenty of **Thera**, **Mana**, and **Pure Leaves**, and I'd upgrade your three **Leather Belts** to **Casual Belts** and your three **Bandannas** for **Leather Caps**.\n4. While you're in here, look behind the back table near the serving window to find a chest containing a **Silver Hourglass**.\n5. Head back out into the center of town.",
         "type": "shop",
         "notes": [
           {
             "type": "tip",
             "title": "Pirate and Brigand Earrings",
-            "text": "The shop here sells both the Pirate and Brigand Earrings. The Pirate Earrings increase your chances of getting an item after a battle, while the Brigand Earrings increase the amount of money you receive after the battle. You may want to buy some Brigand Earrings and equip them now, they'll pay for themselves in no time! Make a note that the effect does stack for each party member that also is wearing them, so make sure to have the whole party wear some when you need to grind for some cash! These can only be bought in Asia, so make sure to get some when you have the extra cash."
+            "text": "- The shop here sells both the Pirate and Brigand Earrings.\n- The Pirate Earrings increase your chances of getting an item after a battle, while the Brigand Earrings increase the amount of money you receive after the battle.\n- You may want to buy some Brigand Earrings and equip them now, they'll pay for themselves in no time!\n- Make a note that the effect does stack for each party member that also is wearing them, so make sure to have the whole party wear some when you need to grind for some cash!\n- These can only be bought in Asia, so make sure to get some when you have the extra cash."
           }
         ],
         "rewards": [
@@ -424,13 +424,13 @@
       },
       {
         "id": 5,
-        "description": "To your right you should see an old man standing underneath a wooden structure. Search just his lower-right for a chest containing a **TeaOfTheHealer**. That's it for items out here, so enter the building to the upper-left, which is the **Inn**, for a scene. Once you regain control, head downstairs to visit the weapon and armor shop. Before talking to the shopkeeper, follow the hallway to the upper-right corner and examine the ground here to find a **Seal of Aura**.",
+        "description": "1. To your right you should see an old man standing underneath a wooden structure. Search just his lower-right for a chest containing a **TeaOfTheHealer**.\n2. That's it for items out here, so enter the building to the upper-left, which is the **Inn**, for a scene.\n3. Once you regain control, head downstairs to visit the weapon and armor shop.\n4. Before talking to the shopkeeper, follow the hallway to the upper-right corner and examine the ground here to find a **Seal of Aura**.",
         "type": "exploration",
         "notes": [
           {
             "type": "tutorial",
             "title": "Seals",
-            "text": "The Seals you receive throughout the game increase certain statistics of the character it's used on. Normally, you only get the minimal increase if used outside of battle, but if you use it in battle, you have a chance of increasing it even more, so make sure to use them in battle."
+            "text": "- The Seals you receive throughout the game increase certain statistics of the character it's used on.\n- Normally, you only get the minimal increase if used outside of battle, but if you use it in battle, you have a chance of increasing it even more, so make sure to use them in battle."
           }
         ],
         "rewards": [
@@ -448,7 +448,7 @@
       },
       {
         "id": 6,
-        "description": "You can't get the chest inside the shop yet, so go ahead and talk to the shopkeeper if you want to buy something. Nothing is really needed at the moment, so go ahead and head back up to the first floor. The people here are now gone, so examine the boxes in the upper-left corner of the bedroom for a **Tent**. Leave the **Inn** to see that the atmosphere has changed. **Save** your game, and make sure once again that **Alice** has everything removed from her.",
+        "description": "1. You can't get the chest inside the shop yet, so go ahead and talk to the shopkeeper if you want to buy something. Nothing is really needed at the moment, so go ahead and head back up to the first floor.\n2. The people here are now gone, so examine the boxes in the upper-left corner of the bedroom for a **Tent**.\n3. Leave the **Inn** to see that the atmosphere has changed.\n4. **Save** your game, and make sure once again that **Alice** has everything removed from her.",
         "type": "shop",
         "rewards": [
           {
@@ -460,25 +460,25 @@
       },
       {
         "id": 7,
-        "description": "Take a few steps southeast to start a very long (and... odd) series of events where **Alice** will temporarily leave your party, and **Zhuzhen** will rejoin! Note that there are now monsters outside, and take the opportunity to visit both shops here in town to upgrade **Zhuzhen**'s equipment, as well as to stock up on **Thera** and **Mana Leaves** if you didn't earlier, since your primary healer is temporarily out of commission. 15+ Thera Leaves should cover it.",
+        "description": "1. Take a few steps southeast to start a very long (and... odd) series of events where **Alice** will temporarily leave your party, and **Zhuzhen** will rejoin!\n2. Note that there are now monsters outside, and take the opportunity to visit both shops here in town to upgrade **Zhuzhen**'s equipment, as well as to stock up on **Thera** and **Mana Leaves** if you didn't earlier, since your primary healer is temporarily out of commission. 15+ Thera Leaves should cover it.",
         "type": "story",
         "notes": [
           {
             "type": "warning",
             "title": "Prepare for the next boss",
-            "text": "The next boss not only is very difficult, but he is also an Earth class. By now, you should be very close to obtaining Yuri's level 1 Wind Fusion, Tornado. The Water Creepers in Dalian are a Wind class, so fight enough battles with them until you are able to go to the Graveyard to challenge Tornado. Also, make sure that you are at least level 10 before challenging the next boss, or you'll have a pretty rough time against him."
+            "text": "- The next boss not only is very difficult, but he is also an Earth class.\n- By now, you should be very close to obtaining Yuri's level 1 Wind Fusion, Tornado. The Water Creepers in Dalian are a Wind class, so fight enough battles with them until you are able to go to the Graveyard to challenge Tornado.\n- Also, make sure that you are at least level 10 before challenging the next boss, or you'll have a pretty rough time against him."
           },
           {
             "type": "tip",
             "title": "Frog Gods and the Light Fusion",
-            "text": "You may also want to take the time to fight more of the Frog Gods to build up your points for your Light Fusion. They come in groups of three, so it wouldn't take very long, and I recommend doing it. Just be careful not to get paralyzed."
+            "text": "- You may also want to take the time to fight more of the Frog Gods to build up your points for your Light Fusion.\n- They come in groups of three, so it wouldn't take very long, and I recommend doing it.\n- Just be careful not to get paralyzed."
           }
         ],
         "rewards": []
       },
       {
         "id": 8,
-        "description": "Before doing anything else, **PUT EVERYONE IN THE BACK ROW!** Physical attacks are useless against the next boss, so we might as well keep ourselves a little more protected. When you're ready, make your way back to the screen with the dock and the pen with the turtle. Head inside the pen and search the left side to find a **R.Phoenix Talon**. Once you have that, make your way to the dock and examine the red sphere here to take on the next boss.",
+        "description": "1. Before doing anything else, **PUT EVERYONE IN THE BACK ROW!** Physical attacks are useless against the next boss, so we might as well keep ourselves a little more protected.\n2. When you're ready, make your way back to the screen with the dock and the pen with the turtle.\n3. Head inside the pen and search the left side to find a **R.Phoenix Talon**.\n4. Once you have that, make your way to the dock and examine the red sphere here to take on the next boss.",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -512,7 +512,7 @@
           ],
           "exp": 720,
           "cash": 3600,
-          "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+          "strategy": "- Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the Raging Tiger.\n- Its Shockwave attack will do decent damage to each character, while its Flying Stones attack will do major damage, but to only one character.\n- However, its PHYSICAL attacks are the ones you have to worry about; it can do a three hit attack that will easily kill a party member, even if they're in the back row, so be sure to stay healed.\n- If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have him fuse into the Death Emperor.\n- Use his Wind Shear/Dark Messenger Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage.\n- Have Margarete on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on Yuri and Zhuzhen to keep their MP up.\n- Have Zhuzhen use his Ogre Flamedance continuously, stopping to heal if someone needs it.\n- Yuri should be doing the most damage if he has the Tornado Fusion, so keep his MP up while keeping everyone else healed."
         },
         "notes": [
           {
@@ -531,7 +531,7 @@
       },
       {
         "id": 9,
-        "description": "After the battle, make your way back to the **Sea Turtle Restaurant** to check on **Alice**. After another long series of events, **Alice** will rejoin your party, and you'll rest for the evening. When you regain control the next morning, make your way back down to the basement of the **Inn** and take the path all the way around into the equipment shop, where the little kid will finally let you have his treasure, so open the chest here for a **Flare Brooch** for **Yuri**. Always make sure he has this equipped; it reduces the amount of SP needed for his Fusion!",
+        "description": "1. After the battle, make your way back to the **Sea Turtle Restaurant** to check on **Alice**.\n2. After another long series of events, **Alice** will rejoin your party, and you'll rest for the evening.\n3. When you regain control the next morning, make your way back down to the basement of the **Inn** and take the path all the way around into the equipment shop, where the little kid will finally let you have his treasure, so open the chest here for a **Flare Brooch** for **Yuri**.\n4. Always make sure he has this equipped; it reduces the amount of SP needed for his Fusion!",
         "type": "story",
         "rewards": [
           {
@@ -543,13 +543,13 @@
       },
       {
         "id": 10,
-        "description": "Head outside, then go down and talk to the lady drying her fish. She'll give you a **Salt-dried Fish** to give to **Sea Mother**. **SAVE YOUR GAME**, then go into the **Sea Turtle Restaurant** and talk to her; she'll accept the fish and tell you, \"Where the turtle looks, take three steps.\" and you'll find a stash of money. Leave the restaurant, then take, actually, about two and a half steps to the lower-left to find the stash. To get all of the money here, you must hit all three areas of the Ring. If you don't get 2000, reload and try again.",
+        "description": "1. Head outside, then go down and talk to the lady drying her fish. She'll give you a **Salt-dried Fish** to give to **Sea Mother**.\n2. **SAVE YOUR GAME**, then go into the **Sea Turtle Restaurant** and talk to her; she'll accept the fish and tell you, \"Where the turtle looks, take three steps.\" and you'll find a stash of money.\n3. Leave the restaurant, then take, actually, about two and a half steps to the lower-left to find the stash.\n4. To get all of the money here, you must hit all three areas of the Ring. If you don't get 2000, reload and try again.",
         "type": "loot",
         "notes": [
           {
             "type": "tip",
             "title": "Stash money by Ring hits",
-            "text": "Hitting one area will net you 500 Cash. Hitting two areas will net you 1000 Cash. Hitting all three areas will net you 2000 Cash.",
+            "text": "- Hitting one area will net you 500 Cash.\n- Hitting two areas will net you 1000 Cash.\n- Hitting all three areas will net you 2000 Cash.",
             "table": {
               "headers": [
                 "Ring areas hit",
@@ -597,7 +597,7 @@
       },
       {
         "id": 11,
-        "description": "Once you're done here, go back into the **Sea Turtle Restaurant** and talk to the man in green, **Filthy Samo**. He'll reveal himself as **Lottery Member No. 14**!",
+        "description": "1. Once you're done here, go back into the **Sea Turtle Restaurant** and talk to the man in green, **Filthy Samo**.\n2. He'll reveal himself as **Lottery Member No. 14**!",
         "type": "loot",
         "notes": [
           {
@@ -644,20 +644,20 @@
       },
       {
         "id": 12,
-        "description": "Make sure to win the **Pocket Watch** before continuing on; it gives the wearer resistance to **Judgment Ring** anomalies in battle. If you don't win it, reload your last save and try again. Remember, you need to win something from each member at least once!",
+        "description": "- Make sure to win the **Pocket Watch** before continuing on; it gives the wearer resistance to **Judgment Ring** anomalies in battle.\n- If you don't win it, reload your last save and try again.\n- Remember, you need to win something from each member at least once!",
         "type": "exploration",
         "notes": [
           {
             "type": "missable",
             "title": "Win the Pocket Watch",
-            "text": "Make sure to win the Pocket Watch before continuing on; it gives the wearer resistance to Judgment Ring anomalies in battle. If you don't win it, reload your last save and try again. Remember, you need to win something from each member at least once!"
+            "text": "- Make sure to win the Pocket Watch before continuing on; it gives the wearer resistance to Judgment Ring anomalies in battle.\n- If you don't win it, reload your last save and try again.\n- Remember, you need to win something from each member at least once!"
           }
         ],
         "rewards": []
       },
       {
         "id": 13,
-        "description": "**Save** your game once again, then head over to the area with the dock and pen once again. If you talk to the **Man with Turtle** once again, he'll offer to let you play in his leaf field for 300 cash. You just have to take his hoe and dig up three spots in the field, and anything you find becomes yours. With each dig though, you'll have to complete a Normal Ring. Just like searching for the turtle before, you can win prizes! They're not set like the previous game; prizes include a **Thera Leaf**, a **Mana Leaf**, a **Pure Leaf**, or a **Third Key**!",
+        "description": "1. **Save** your game once again, then head over to the area with the dock and pen once again.\n2. If you talk to the **Man with Turtle** once again, he'll offer to let you play in his leaf field for 300 cash.\n3. You just have to take his hoe and dig up three spots in the field, and anything you find becomes yours. With each dig though, you'll have to complete a Normal Ring.\n4. Just like searching for the turtle before, you can win prizes! They're not set like the previous game; prizes include a **Thera Leaf**, a **Mana Leaf**, a **Pure Leaf**, or a **Third Key**!",
         "type": "loot",
         "rewards": [
           {
@@ -669,7 +669,7 @@
       },
       {
         "id": 14,
-        "description": "The **Third Key** is worth getting, as it'll let you circle the **Judgment Ring** three times in battle for a potential nine hits! There is only one here in the leaf field, so once you find it, you won't find it again. Try to get it within the first two times of playing the game, and if you don't get it, reload and try again. If its battle effect has no interest to you, feel free to sell it for a WHOPPING 15,000 cash! With a 5% price rise, you can sell it for 15,750! I think you should sell it, to be quite honest!",
+        "description": "- The **Third Key** is worth getting, as it'll let you circle the **Judgment Ring** three times in battle for a potential nine hits!\n- There is only one here in the leaf field, so once you find it, you won't find it again. Try to get it within the first two times of playing the game, and if you don't get it, reload and try again.\n- If its battle effect has no interest to you, feel free to sell it for a WHOPPING 15,000 cash! With a 5% price rise, you can sell it for 15,750! I think you should sell it, to be quite honest!",
         "type": "exploration",
         "notes": [
           {
@@ -682,13 +682,13 @@
       },
       {
         "id": 15,
-        "description": "There's also the **Silent Peddler** on the way to the dock. You can trade in some of your steps for prizes if you want to, but I recommend saving them up until you can get the best prize first, which happens to be someone's best armor at 10,000 steps.",
+        "description": "- There's also the **Silent Peddler** on the way to the dock.\n- You can trade in some of your steps for prizes if you want to, but I recommend saving them up until you can get the best prize first, which happens to be someone's best armor at 10,000 steps.",
         "type": "shop",
         "rewards": []
       },
       {
         "id": 16,
-        "description": "That's it for **Dalian**, so on to our next destination! Go to the dock and talk to the **Courier Subordinate** beside **Margarete**, who'll ask you if you're ready to go. Choose 2 to take off!",
+        "description": "1. That's it for **Dalian**, so on to our next destination!\n2. Go to the dock and talk to the **Courier Subordinate** beside **Margarete**, who'll ask you if you're ready to go.\n3. Choose 2 to take off!",
         "type": "navigation",
         "choices": [
           {
@@ -728,7 +728,7 @@
       ],
       "exp": 720,
       "cash": 3600,
-      "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+      "strategy": "- Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the Raging Tiger.\n- Its Shockwave attack will do decent damage to each character, while its Flying Stones attack will do major damage, but to only one character.\n- However, its PHYSICAL attacks are the ones you have to worry about; it can do a three hit attack that will easily kill a party member, even if they're in the back row, so be sure to stay healed.\n- If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have him fuse into the Death Emperor.\n- Use his Wind Shear/Dark Messenger Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage.\n- Have Margarete on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on Yuri and Zhuzhen to keep their MP up.\n- Have Zhuzhen use his Ogre Flamedance continuously, stopping to heal if someone needs it.\n- Yuri should be doing the most damage if he has the Tornado Fusion, so keep his MP up while keeping everyone else healed."
     }
   }
 }

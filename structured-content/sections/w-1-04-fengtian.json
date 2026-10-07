@@ -244,7 +244,7 @@
         ],
         "exp": 540,
         "cash": 3000,
-        "strategy": "Be wary of its **Breath of Fire** attack; it'll hit the whole party for pretty good damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own strength, making them that much worse, so keep an eye on your HP.\nTo start, have **Margarete** cast the **Aqua Edge** on **Yuri**, followed by using her **Grenade** skill repeatedly. With a water-based attack, have **Yuri** fuse into the **Raging Tiger** and start attacking normally, doing some major damage. Have **Alice** keep everyone's HP up during the battle, having **Margarete** help out when needed. As usual, make sure **Alice**'s SP doesn't drop to 0."
+        "strategy": "- Be wary of its **Breath of Fire** attack; it'll hit the whole party for pretty good damage. Have each person heal themselves after the hit to be safe.\n- Its physical attacks are bad enough, but it will increase its own strength, making them that much worse, so keep an eye on your HP.\n- To start, have **Margarete** cast the **Aqua Edge** on **Yuri**, followed by using her **Grenade** skill repeatedly.\n- With a water-based attack, have **Yuri** fuse into the **Raging Tiger** and start attacking normally, doing some major damage.\n- Have **Alice** keep everyone's HP up during the battle, having **Margarete** help out when needed. As usual, make sure **Alice**'s SP doesn't drop to 0."
       }
     ],
     "shops": [
@@ -341,7 +341,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "After a long series of events, you'll gain control inside the city of **Fengtian**. Head over to the right side of the screen and talk to the **Silent Peddler**; he'll give you the **Pedometer**, which will count the steps you take when you have it equipped. Later on, you'll be able to trade your 'steps' for prizes, so make sure to ALWAYS have it equipped on an active party member; I put mine on **Alice**.",
+        "description": "1. After a long series of events, you'll gain control inside the city of **Fengtian**.\n2. Head over to the right side of the screen and talk to the **Silent Peddler**; he'll give you the **Pedometer**, which will count the steps you take when you have it equipped.\n3. Later on, you'll be able to trade your 'steps' for prizes, so make sure to ALWAYS have it equipped on an active party member; I put mine on **Alice**.",
         "type": "story",
         "rewards": [
           {
@@ -353,7 +353,7 @@
       },
       {
         "id": 2,
-        "description": "Go to the north side of the area behind the fountain until you see the '?' icon to find a **TalismanOfLuck**. Next, head to the left side of the fountain and talk to the man in green, the **Building-Loving Man**. Since you have a **Lottery Ticket** from the **Felinus** battle, he'll offer to let you play the **Lottery**! IGNORE him for now, as we'll be able to save here in a few moments so that if we fail, we can reload and try again.",
+        "description": "1. Go to the north side of the area behind the fountain until you see the '?' icon to find a **TalismanOfLuck**.\n2. Next, head to the left side of the fountain and talk to the man in green, the **Building-Loving Man**.\n3. Since you have a **Lottery Ticket** from the **Felinus** battle, he'll offer to let you play the **Lottery**! IGNORE him for now, as we'll be able to save here in a few moments so that if we fail, we can reload and try again.",
         "type": "exploration",
         "rewards": [
           {
@@ -365,7 +365,7 @@
       },
       {
         "id": 3,
-        "description": "After talking to everyone, go back and talk to **Alice** to have her rejoin you. Head west to the next area, then check the alley just to your upper-right to find a chest containing a **Tent**. Approach the building to the left to have the shopkeeper invite you in, then enter the shop for a scene.",
+        "description": "1. After talking to everyone, go back and talk to **Alice** to have her rejoin you.\n2. Head west to the next area, then check the alley just to your upper-right to find a chest containing a **Tent**.\n3. Approach the building to the left to have the shopkeeper invite you in, then enter the shop for a scene.",
         "type": "exploration",
         "rewards": [
           {
@@ -377,13 +377,13 @@
       },
       {
         "id": 4,
-        "description": "Talk to the shopkeeper to learn about using your **Guild Card** that you acquired earlier, which will allow you to get a 10% discount while shopping and a 5% price rise when selling. As you can see, everything here is pretty expensive, so you probably won't be able to buy much more than **Yuri**'s and **Alice**'s upgrades for their weapons and armor. Make sure that you have some money left over to have enough for a few **Tents** if needed, as well as necessary healing items.",
+        "description": "- Talk to the shopkeeper to learn about using your **Guild Card** that you acquired earlier, which will allow you to get a 10% discount while shopping and a 5% price rise when selling.\n- As you can see, everything here is pretty expensive, so you probably won't be able to buy much more than **Yuri**'s and **Alice**'s upgrades for their weapons and armor.\n- Make sure that you have some money left over to have enough for a few **Tents** if needed, as well as necessary healing items.",
         "type": "shop",
         "notes": [
           {
             "type": "warning",
             "title": "Save before shopping",
-            "text": "I STRONGLY recommend saving before shopping. If you fail at the Ring while trying to get discounts, you can always reload and try again. If you fail while not having enough money to purchase enough times, you can lose your card, so avoid it if at all possible."
+            "text": "- I STRONGLY recommend saving before shopping.\n- If you fail at the Ring while trying to get discounts, you can always reload and try again.\n- If you fail while not having enough money to purchase enough times, you can lose your card, so avoid it if at all possible."
           }
         ],
         "rewards": []
@@ -406,13 +406,13 @@
       },
       {
         "id": 6,
-        "description": "Choose 2 to watch a series of events. Eventually, you'll regain control outside in the alley. Check to your left to find another **Lottery Ticket**, then go back into the **Item Shop** and **SAVE** your game. The **Building-loving Man** is in here now, and you'll be able to play the **Lottery** with him.",
+        "description": "1. Choose 2 to watch a series of events. Eventually, you'll regain control outside in the alley.\n2. Check to your left to find another **Lottery Ticket**, then go back into the **Item Shop** and **SAVE** your game.\n3. The **Building-loving Man** is in here now, and you'll be able to play the **Lottery** with him.",
         "type": "loot",
         "notes": [
           {
             "type": "tutorial",
             "title": "Lottery Member No. 15",
-            "text": "There are a very limited amount of Lottery Tickets in the game (30 to be exact), so (FOR NOW) I only recommend playing each person's lottery ONCE, and that is to get the item in RED. You MUST win a prize from each member's game once if you want to be able to participate in EVERY member's lottery, including the chairman's, so try not to miss any!",
+            "text": "- There are a very limited amount of Lottery Tickets in the game (30 to be exact), so (FOR NOW) I only recommend playing each person's lottery ONCE, and that is to get the item in RED.\n- You MUST win a prize from each member's game once if you want to be able to participate in EVERY member's lottery, including the chairman's, so try not to miss any!",
             "table": {
               "headers": [
                 "Color",
@@ -479,7 +479,7 @@
       },
       {
         "id": 9,
-        "description": "**Sewers:** Take a few steps to the right, then examine the stairs at the bottom of the screen to find a **Gold Hourglass**. Go back to the ladder and head north now, taking the first left when you can. You'll eventually come to a chest, so open it for a **Pure Seed**, then go back to the last fork. Take the SECOND left this time, and you'll come to a hole in the wall. After the scene, examine it again to receive a **Lottery Ticket**.",
+        "description": "1. **Sewers:** Take a few steps to the right, then examine the stairs at the bottom of the screen to find a **Gold Hourglass**.\n2. Go back to the ladder and head north now, taking the first left when you can. You'll eventually come to a chest, so open it for a **Pure Seed**, then go back to the last fork.\n3. Take the SECOND left this time, and you'll come to a hole in the wall. After the scene, examine it again to receive a **Lottery Ticket**.",
         "type": "loot",
         "rewards": [
           {
@@ -514,7 +514,7 @@
       },
       {
         "id": 11,
-        "description": "Make your way back to the ladder once more, then head east, north, and east to an area with a **Save Point**. Use it if you like, then examine the ladder here for an event. Afterward, continue west and you'll eventually come back to the chest you passed earlier. Open it for a **Type 94 Pistol** for **Margarete**; it increases her P-Atk, but not her S-ATK, but I'd still equip it anyway.",
+        "description": "1. Make your way back to the ladder once more, then head east, north, and east to an area with a **Save Point**. Use it if you like, then examine the ladder here for an event.\n2. Afterward, continue west and you'll eventually come back to the chest you passed earlier.\n3. Open it for a **Type 94 Pistol** for **Margarete**; it increases her P-Atk, but not her S-ATK, but I'd still equip it anyway.",
         "type": "loot",
         "rewards": [
           {
@@ -526,7 +526,7 @@
       },
       {
         "id": 12,
-        "description": "Since you saw the event at the ladder, there's now one more item we need to get. Make your way back to the first ladder you came down, then head all the way north. The blast created some debris here, so cross it and examine the glowing blue sphere in the wall to obtain the **Jewel**, which is the Sealing Stone for the manhole cover. Once you have it, search just to the right of it to find a **Rosewood Bracelet**.",
+        "description": "1. Since you saw the event at the ladder, there's now one more item we need to get. Make your way back to the first ladder you came down, then head all the way north.\n2. The blast created some debris here, so cross it and examine the glowing blue sphere in the wall to obtain the **Jewel**, which is the Sealing Stone for the manhole cover.\n3. Once you have it, search just to the right of it to find a **Rosewood Bracelet**.",
         "type": "loot",
         "rewards": [
           {
@@ -591,14 +591,14 @@
           ],
           "exp": 400,
           "cash": 2500,
-          "strategy": "Have **Yuri** fuse into the **Death Emperor** or **Raging Tiger** and wail away on the **Kappas** first, since they have the ability to heal. Have **Margarete** use her **Grenade** skill until she's out of MP, then have her attack normally. Have **Alice** attack normally, unless she's needed for healing. If you want to do some extra damage to the **Water Tiger** once the **Kappas** are gone, have **Margarete** use her **Aqua Edge** on **Yuri** and have him attack the Fire-based **Water Tiger**."
+          "strategy": "- Have **Yuri** fuse into the **Death Emperor** or **Raging Tiger** and wail away on the **Kappas** first, since they have the ability to heal.\n- Have **Margarete** use her **Grenade** skill until she's out of MP, then have her attack normally.\n- Have **Alice** attack normally, unless she's needed for healing.\n- If you want to do some extra damage to the **Water Tiger** once the **Kappas** are gone, have **Margarete** use her **Aqua Edge** on **Yuri** and have him attack the Fire-based **Water Tiger**."
         },
         "notes": [],
         "rewards": []
       },
       {
         "id": 15,
-        "description": "After that battle, use the **Save Point**, as well as a **Tent**, since we have a boss battle next. When you're ready, check the ladder one more time. Move ahead?",
+        "description": "1. After that battle, use the **Save Point**, as well as a **Tent**, since we have a boss battle next.\n2. When you're ready, check the ladder one more time. Move ahead?",
         "type": "preparation",
         "choices": [
           {
@@ -612,7 +612,7 @@
       },
       {
         "id": 16,
-        "description": "Nothing left to do but go on ahead, so choose 2 to climb the ladder and watch the events. You'll have to take on two groups of **Elite Guards**, which are pretty simple. After that though, you'll have to take on a beastly demon: the **Beast Dog**.",
+        "description": "1. Nothing left to do but go on ahead, so choose 2 to climb the ladder and watch the events.\n2. You'll have to take on two groups of **Elite Guards**, which are pretty simple.\n3. After that though, you'll have to take on a beastly demon: the **Beast Dog**.",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -681,7 +681,7 @@
       ],
       "exp": 540,
       "cash": 3000,
-      "strategy": "Be wary of its **Breath of Fire** attack; it'll hit the whole party for pretty good damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own strength, making them that much worse, so keep an eye on your HP.\nTo start, have **Margarete** cast the **Aqua Edge** on **Yuri**, followed by using her **Grenade** skill repeatedly. With a water-based attack, have **Yuri** fuse into the **Raging Tiger** and start attacking normally, doing some major damage. Have **Alice** keep everyone's HP up during the battle, having **Margarete** help out when needed. As usual, make sure **Alice**'s SP doesn't drop to 0."
+      "strategy": "- Be wary of its **Breath of Fire** attack; it'll hit the whole party for pretty good damage. Have each person heal themselves after the hit to be safe.\n- Its physical attacks are bad enough, but it will increase its own strength, making them that much worse, so keep an eye on your HP.\n- To start, have **Margarete** cast the **Aqua Edge** on **Yuri**, followed by using her **Grenade** skill repeatedly.\n- With a water-based attack, have **Yuri** fuse into the **Raging Tiger** and start attacking normally, doing some major damage.\n- Have **Alice** keep everyone's HP up during the battle, having **Margarete** help out when needed. As usual, make sure **Alice**'s SP doesn't drop to 0."
     },
     "initial_setup": {
       "character": "Margarete",
