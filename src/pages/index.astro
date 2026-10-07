@@ -21,6 +21,9 @@ import {
   Quote,
   Star,
   Swords,
+  Target,
+  Brain,
+  Ghost,
   Sparkles,
   ShieldCheck
 } from '@lucide/astro';
@@ -28,6 +31,17 @@ import {
 const wikiData = getGameWikiData();
 const { game_info, overview, gameplay, characters, reception_and_legacy } = wikiData;
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Split prose into sentences (no wording change) so dense paragraphs can render as bullets.
+// Re-joins splits after a single initial such as "H.P." so names stay intact.
+const toSentences = (text: string): string[] =>
+  text
+    .split(/(?<=[.!?])\s+(?=[A-Z"'])/)
+    .reduce<string[]>((acc, part) => {
+      if (acc.length && /[A-Z]\.$/.test(acc[acc.length - 1])) acc[acc.length - 1] += ' ' + part;
+      else acc.push(part);
+      return acc;
+    }, []);
 
 // Portrait files in /public/characters, keyed by first name (file names are case-sensitive on GitHub Pages)
 const portraits: Record<string, string> = {
@@ -249,13 +263,16 @@ const pageSections = [
         <!-- Judgement Ring -->
         <div class="p-6 rounded-xl bg-slate-850/70 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-gold-500/40 transition-colors">
           <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400">
-              <Disc class="w-5 h-5" />
+            <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400">
+              <Disc class="w-7 h-7" />
             </div>
             <h3 class="text-xl font-serif font-bold text-slate-100">{gameplay.judgement_ring.name}</h3>
             <p class="text-base text-slate-300 leading-relaxed">{gameplay.judgement_ring.description}</p>
-            <div class="pt-3 text-sm text-slate-300 border-t border-slate-800 space-y-1.5">
-              <p><strong class="text-slate-200">Strike Areas:</strong> {gameplay.judgement_ring.mechanics}</p>
+            <div class="pt-3 text-base text-slate-300 border-t border-slate-800 space-y-1.5">
+              <div class="flex items-start gap-2"><Target class="w-5 h-5 mt-0.5 shrink-0 text-gold-400" /><span class="block"><strong class="text-slate-200">Strike Areas</strong>
+                  <ul class="bullet-list mt-1.5">
+                    {toSentences(gameplay.judgement_ring.mechanics).map((t) => <li>{t}</li>)}
+                  </ul></span></div>
             </div>
           </div>
         </div>
@@ -263,13 +280,21 @@ const pageSections = [
         <!-- Sanity System & Malice -->
         <div class="p-6 rounded-xl bg-slate-850/70 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-crimson-500/40 transition-colors">
           <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-crimson-500/10 border border-crimson-500/30 flex items-center justify-center text-crimson-400">
-              <Skull class="w-5 h-5" />
+            <div class="w-14 h-14 rounded-xl bg-crimson-500/10 border border-crimson-500/30 flex items-center justify-center text-crimson-400">
+              <Skull class="w-7 h-7" />
             </div>
             <h3 class="text-xl font-serif font-bold text-slate-100">{gameplay.sanity_system.name}</h3>
-            <p class="text-base text-slate-300 leading-relaxed">{gameplay.sanity_system.sp_mechanics}</p>
-            <div class="pt-3 text-sm text-slate-300 border-t border-slate-800 space-y-1.5">
-              <p><strong class="text-slate-200">The Curse of Malice:</strong> {gameplay.sanity_system.malice_mechanics}</p>
+            <div class="flex items-start gap-2">
+              <Brain class="w-5 h-5 mt-1 shrink-0 text-crimson-400" />
+              <ul class="bullet-list text-base text-slate-300 leading-relaxed">
+                {toSentences(gameplay.sanity_system.sp_mechanics).map((t) => <li>{t}</li>)}
+              </ul>
+            </div>
+            <div class="pt-3 text-base text-slate-300 border-t border-slate-800 space-y-1.5">
+              <div class="flex items-start gap-2"><Ghost class="w-5 h-5 mt-0.5 shrink-0 text-crimson-400" /><span class="block"><strong class="text-slate-200">The Curse of Malice</strong>
+                  <ul class="bullet-list mt-1.5">
+                    {toSentences(gameplay.sanity_system.malice_mechanics).map((t) => <li>{t}</li>)}
+                  </ul></span></div>
             </div>
           </div>
         </div>
@@ -277,13 +302,16 @@ const pageSections = [
         <!-- Demon Fusion -->
         <div class="p-6 rounded-xl bg-slate-850/70 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-purple-500/40 transition-colors">
           <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
-              <Flame class="w-5 h-5" />
+            <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+              <Flame class="w-7 h-7" />
             </div>
             <h3 class="text-xl font-serif font-bold text-slate-100">{gameplay.fusion_system.name}</h3>
             <p class="text-base text-slate-300 leading-relaxed">{gameplay.fusion_system.description}</p>
-            <div class="pt-3 text-sm text-slate-300 border-t border-slate-800 space-y-1.5">
-              <p><strong class="text-slate-200">Graveyard Trials:</strong> {gameplay.fusion_system.mechanics}</p>
+            <div class="pt-3 text-base text-slate-300 border-t border-slate-800 space-y-1.5">
+              <div class="flex items-start gap-2"><Swords class="w-5 h-5 mt-0.5 shrink-0 text-purple-400" /><span class="block"><strong class="text-slate-200">Graveyard Trials</strong>
+                  <ul class="bullet-list mt-1.5">
+                    {toSentences(gameplay.fusion_system.mechanics).map((t) => <li>{t}</li>)}
+                  </ul></span></div>
             </div>
           </div>
         </div>
@@ -328,9 +356,9 @@ const pageSections = [
                 </span>
               </div>
               <p class="text-sm font-medium text-gold-300/90">{char.role}</p>
-              <p class="text-base text-slate-300 leading-relaxed pt-2 border-t border-slate-800/80">
-                {char.bio}
-              </p>
+              <ul class="bullet-list text-base text-slate-300 leading-relaxed pt-2 border-t border-slate-800/80">
+                {toSentences(char.bio).map((t) => <li>{t}</li>)}
+              </ul>
             </div>
             <div class="pt-2 text-sm font-mono text-slate-400 flex items-center gap-1.5">
               <Swords class="w-4 h-4 text-gold-400/80" />Weapon: <span class="text-slate-300">{char.element_or_weapon.split('/')[1]?.trim() || 'Custom'}</span>
@@ -502,6 +530,28 @@ const pageSections = [
     object-position: top;
     border: 1px solid rgba(212, 175, 55, 0.5);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .bullet-list {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+  }
+  .bullet-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-top: 0.4rem;
+  }
+  .bullet-list li:first-child {
+    margin-top: 0;
+  }
+  .bullet-list li::before {
+    content: '\2726';
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    font-size: 0.7em;
+    color: #d4af37;
   }
 
   .ornament-divider {
