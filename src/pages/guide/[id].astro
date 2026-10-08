@@ -12,7 +12,6 @@ import ReferenceBlocks from '../../components/ReferenceBlocks.astro';
 import { renderInlineMarkup, renderBlockMarkup } from '../../lib/markup';
 import {
   getAllStructuredSections,
-  getHumanReadableLabel,
   buildPageTocSections
 } from '../../lib/guideData';
 import type { SectionCallout } from '../../lib/types';
@@ -104,21 +103,8 @@ const pageSections = buildPageTocSections(guide);
         </div>
       </nav>
 
-      <!-- Section Title & Header Badges -->
-      <header class="space-y-3">
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/40 text-amber-300 border border-amber-800/50 text-sm font-serif tracking-wide">
-            <span>{guide.category}</span>
-            <span>&bull;</span>
-            <span>{getHumanReadableLabel(guide.code, guide.category, guide.is_sidequest)}</span>
-          </span>
-          {guide.is_sidequest && (
-            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-mono bg-purple-950/60 text-purple-300 border border-purple-800/50">
-              <Sparkles class="w-3 h-3 text-purple-300" />
-              <span>Optional Side Quest</span>
-            </span>
-          )}
-        </div>
+      <!-- Section Title -->
+      <header>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-extrabold text-slate-100">
           {guide.title}
         </h1>
