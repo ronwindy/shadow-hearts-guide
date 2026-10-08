@@ -1,18 +1,28 @@
 # Shadow Hearts Guide Converter — Project Status
 
-> **Last Synced:** `2026-10-07 23:59:32` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
+> **Last Synced:** `2026-10-08 22:55:25` | **Active Milestone:** Milestone 2: Asia Walkthrough Content Transformation
 
 ## 1. Quick Orientation (Agent Context)
 
 ```text
 Canonical Import:   [########################] 100.0% (69/69)
 Structured Content: [###---------------------] 14.5% (10/69)
-QA Verified:        [###---------------------] 11.6% (8/69)
+QA Verified:        [#-----------------------] 2.9% (2/69)
 Web Pages Built:    [###---------------------] 14.5% (10/69)
 ```
 
 ### Next Priority Actions (Immediate Queue)
-1. **[MEDIUM]** `Structure w-1-06 (Smuggler's Boat)` — *Next chronological section in the walkthrough sequence.*
+1. **[MEDIUM]** `Run QA on header (Title, Metadata & Intro Notes)` — *Structured JSON exists but no current QA result in qa-status.json (missing or content changed).*
+2. **[MEDIUM]** `Structure w-1-06 (Smuggler's Boat)` — *Next chronological section in the walkthrough sequence.*
+
+### Pipeline Notices & Gaps
+- :mag: **Pending QA:** `header` (Title, Metadata & Intro Notes) is structured but has no current QA result.
+- :mag: **Pending QA:** `i-1-01` (Game Manual / Instructions) is structured but has no current QA result.
+- :mag: **Pending QA:** `w-1-00` (Walkthrough - Asia) is structured but has no current QA result.
+- :mag: **Pending QA:** `w-1-02` (Plains) is structured but has no current QA result.
+- :mag: **Pending QA:** `w-1-03` (Zhaoyang Village) is structured but has no current QA result.
+- :mag: **Pending QA:** `w-1-04` (Fengtian) is structured but has no current QA result.
+- :mag: **Pending QA:** `w-1-05` (Dalian) is structured but has no current QA result.
 
 ---
 
@@ -34,8 +44,8 @@ Web Pages Built:    [###---------------------] 14.5% (10/69)
 | Category | Total | Canonical | Structured | QA Passed | Web Built | Progress |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
 | **Header** | 1 | 1 | 1 | 0 | 1 | `[------------] 0.0%` |
-| **Introduction** | 2 | 2 | 2 | 1 | 2 | `[######------] 50.0%` |
-| **Walkthrough - Asia** | 15 | 15 | 6 | 6 | 6 | `[#####-------] 40.0%` |
+| **Introduction** | 2 | 2 | 2 | 0 | 2 | `[------------] 0.0%` |
+| **Walkthrough - Asia** | 15 | 15 | 6 | 1 | 6 | `[#-----------] 6.7%` |
 | **Walkthrough - Europe** | 32 | 32 | 0 | 0 | 0 | `[------------] 0.0%` |
 | **Appendices** | 16 | 16 | 1 | 1 | 1 | `[#-----------] 6.2%` |
 | **Conclusion** | 3 | 3 | 0 | 0 | 0 | `[------------] 0.0%` |
@@ -48,25 +58,25 @@ Web Pages Built:    [###---------------------] 14.5% (10/69)
 
 | Code | ID | Section Title | Canon | Struct | QA | Web | Next Action |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| `[HEADER]` | `header` | Title, Metadata & Intro Notes | :white_check_mark: | :white_check_mark: | :warning: | :white_check_mark: | Fix QA defects in `header` |
+| `[HEADER]` | `header` | Title, Metadata & Intro Notes | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `header` |
 
 ### Introduction (2 sections)
 
 | Code | ID | Section Title | Canon | Struct | QA | Web | Next Action |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | `[I-1-00]` | `i-1-00` | Table of Contents | :white_check_mark: | :white_check_mark: | :warning: | :white_check_mark: | Fix QA defects in `i-1-00` |
-| `[I-1-01]` | `i-1-01` | Game Manual / Instructions | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
+| `[I-1-01]` | `i-1-01` | Game Manual / Instructions | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `i-1-01` |
 
 ### Walkthrough - Asia (15 sections)
 
 | Code | ID | Section Title | Canon | Struct | QA | Web | Next Action |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| `[W-1-00]` | `w-1-00` | Walkthrough - Asia | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
+| `[W-1-00]` | `w-1-00` | Walkthrough - Asia | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `w-1-00` |
 | `[W-1-01]` | `w-1-01` | Trans-Siberian Express | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
-| `[W-1-02]` | `w-1-02` | Plains | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
-| `[W-1-03]` | `w-1-03` | Zhaoyang Village | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
-| `[W-1-04]` | `w-1-04` | Fengtian | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
-| `[W-1-05]` | `w-1-05` | Dalian | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | Completed |
+| `[W-1-02]` | `w-1-02` | Plains | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `w-1-02` |
+| `[W-1-03]` | `w-1-03` | Zhaoyang Village | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `w-1-03` |
+| `[W-1-04]` | `w-1-04` | Fengtian | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `w-1-04` |
+| `[W-1-05]` | `w-1-05` | Dalian | :white_check_mark: | :white_check_mark: | :white_circle: | :white_check_mark: | QA Verify `w-1-05` |
 | `[W-1-06]` | `w-1-06` | Smuggler's Boat | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-06` |
 | `[W-1-07]` | `w-1-07` | Shanghai, Huayuan (1) | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-07` |
 | `[W-1-08]` | `w-1-08` | Temple Ruins | :white_check_mark: | :white_circle: | :white_circle: | :white_circle: | Transform `w-1-08` |
