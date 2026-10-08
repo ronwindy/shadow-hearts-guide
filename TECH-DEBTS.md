@@ -2,8 +2,8 @@
 
 > **Repository:** Shadow Hearts Guide Converter  
 > **Authority:** Code Reviewer Agent (`.claude/skills/code-reviewer/SKILL.md`)  
-> **Last Updated:** 2026-10-06  
-> **Status:** 6 Active Debts | 0 Resolved
+> **Last Updated:** 2026-10-08  
+> **Status:** 6 Active Debts | 3 Resolved
 
 This document serves as the single source of truth for technical debt, architectural smell, and deferred readability warnings identified during code reviews. 
 
@@ -19,7 +19,7 @@ When conducting reviews via the `/code-reviewer` skill, any findings that cannot
 | **High Severity** | 0 |
 | **Medium Severity** | 4 |
 | **Low Severity** | 2 |
-| **Resolved Debts** | 0 |
+| **Resolved Debts** | 3 |
 
 ---
 
@@ -92,12 +92,13 @@ When conducting reviews via the `/code-reviewer` skill, any findings that cannot
 - **Description:** `status.py` has grown to 482 lines. Functions `compute_project_status` (145 lines) and `generate_status_markdown` (111 lines) mix status calculation with Markdown rendering.
 - **Proposed Solution:** Separate status metric computation from Markdown report rendering into dedicated modules.
 
+
 ---
 
 ## Resolved Technical Debts
 
-*(No debts resolved yet. When debts are addressed, move the entry here with resolution notes and completion date.)*
-
 | ID | Category | Target Location | Resolved Date | Resolution Notes |
 | :--- | :--- | :--- | :---: | :--- |
-| *Example* | *Modularity* | *scripts/example.py* | *YYYY-MM-DD* | *Decomposed into submodules.* |
+| TD-007 | Modularity | `src/pages/guide/[id].astro` | 2026-10-08 | Extracted `Callouts`, `ObjectivesList`, `RouteProgression`, `InitialSetup`, `DocumentInfo`, `SectionHeading`; added `.card` class and `GuideContent` type; callout style map; URL helper. |
+| TD-008 | Readability | `src/styles/global.css` | 2026-10-08 | Gold token via `theme()`, scoped transition, removed unused `.gothic-divider`, fixed stale comment. Checked-step selector coupling to `StepChecklist` kept and documented; `:focus-visible` not verified in browser. |
+| TD-009 | UX | `src/pages/guide/[id].astro`, `guideData.ts` | 2026-10-08 | Steps now render (and list in page TOC) before items/enemies/shops/reference tables. |

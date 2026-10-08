@@ -1,0 +1,39 @@
+---
+import { TriangleAlert, Lightbulb, Info } from '@lucide/astro';
+import type { SectionCallout } from '../lib/types';
+import { renderBlockMarkup } from '../lib/markup';
+
+interface Props {
+  callouts?: SectionCallout[];
+}
+
+const { callouts = [] } = Astro.props;
+
+const STYLES = {
+  warning: { icon: TriangleAlert, box: 'bg-rose-950/30 border-rose-800/50 text-rose-200', iconClass: 'text-rose-400' },
+  tip: { icon: Lightbulb, box: 'bg-amber-950/30 border-amber-800/50 text-amber-200', iconClass: 'text-amber-400' },
+  info: { icon: Info, box: 'bg-blue-950/30 border-blue-800/50 text-blue-200', iconClass: 'text-blue-400' },
+};
+---
+
+{callouts.length > 0 && (
+  <div class="space-y-3">
+    {callouts.map((c) => {
+      const style = STYLES[c.type as keyof typeof STYLES] ?? STYLES.info;
+      const Icon = style.icon;
+      return (
+        <div class={`p-4 rounded-xl border text-sm sm:text-base flex gap-3 ${style.box}`}>
+          <div class="mt-0.5 flex-shrink-0">
+            <Icon class:list={['w-5 h-5', style.iconClass]} aria-hidden="true" />
+          </div>
+          <div class="space-y-1 flex-1">
+            {c.title && <div class="font-semibold text-slate-100">{c.title}</div>}
+            <div class="leading-relaxed opacity-95 space-y-2">
+              <Fragment set:html={renderBlockMarkup(c.text)} />
+            </div>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+)}

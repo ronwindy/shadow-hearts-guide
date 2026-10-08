@@ -1,0 +1,29 @@
+---
+import { Compass, MapPin, ChevronRight } from '@lucide/astro';
+import SectionHeading from './SectionHeading.astro';
+
+interface Props {
+  route?: string[];
+}
+
+const { route = [] } = Astro.props;
+---
+
+{route.length > 0 && (
+  <section id="route" class="space-y-3">
+    <SectionHeading icon={Compass}>Route Progression</SectionHeading>
+    <div class="card p-5">
+      <ol class="flex flex-wrap items-center gap-2.5 text-sm sm:text-base text-slate-200">
+        {route.map((step, idx) => (
+          <li class="flex items-center gap-2">
+            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-700/80 font-medium text-slate-100 shadow-sm flex items-center gap-1.5">
+              <MapPin class="w-3.5 h-3.5 text-gold-400 flex-shrink-0" aria-hidden="true" />
+              <span>{step}</span>
+            </span>
+            {idx < route.length - 1 && <ChevronRight class="w-4 h-4 text-gold-500 flex-shrink-0" aria-hidden="true" />}
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+)}

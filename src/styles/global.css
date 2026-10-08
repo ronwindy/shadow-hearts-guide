@@ -8,8 +8,13 @@
   }
   
   html {
-    scroll-behavior: smooth;
     font-size: 16.5px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 
   body {
@@ -46,30 +51,10 @@
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d4af37;
+  background: theme('colors.gold.500');
 }
 
-/* Gothic decorative divider */
-.gothic-divider {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #d4af37;
-}
-.gothic-divider::before,
-.gothic-divider::after {
-  content: '';
-  flex: 1;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-}
-.gothic-divider:not(:empty)::before {
-  margin-right: .75em;
-}
-.gothic-divider:not(:empty)::after {
-  margin-left: .75em;
-}
-
-/* Checkbox animations & checked state */
+/* Checked step state (relies on StepChecklist: checkbox followed by a sibling div) */
 .step-checkbox:checked + div .step-text {
   text-decoration: line-through;
   opacity: 0.6;
@@ -82,7 +67,7 @@
   border-bottom: 1.5px solid rgba(212, 175, 55, 0.6);
   padding-bottom: 1px;
   text-shadow: 0 0 6px rgba(212, 175, 55, 0.2);
-  transition: all 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out, text-shadow 0.15s ease-in-out;
 }
 
 .highlight-term:hover {
@@ -98,7 +83,12 @@
   text-decoration: line-through;
 }
 
-
+/* Shared panel surface used by guide page cards */
+@layer components {
+  .card {
+    @apply rounded-xl bg-slate-850/90 border border-slate-800 shadow-sm;
+  }
+}
 
 /* Ornamental heading underline: gold line fading right, with a small cross ornament at the left */
 .heading-flourish {
@@ -124,6 +114,6 @@
   transform: translateY(50%);
   font-size: 0.85rem;
   line-height: 1;
-  color: #d4af37;
+  color: theme('colors.gold.500');
   text-shadow: 0 0 6px rgba(212, 175, 55, 0.5);
 }

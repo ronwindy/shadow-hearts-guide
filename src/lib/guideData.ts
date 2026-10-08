@@ -145,6 +145,9 @@ export function buildPageTocSections(guide: any): PageTocItem[] {
   if (initialSetup) {
     pageSections.push({ id: 'setup', label: 'Initial Setup' });
   }
+  if (steps && steps.length > 0) {
+    pageSections.push({ id: 'steps', label: 'Walkthrough Steps', count: steps.length });
+  }
   if (itemsSummary?.obtainable && itemsSummary.obtainable.length > 0) {
     pageSections.push({ id: 'items', label: 'Obtainable Items', count: itemsSummary.obtainable.length });
   }
@@ -156,9 +159,6 @@ export function buildPageTocSections(guide: any): PageTocItem[] {
   }
   if (guide.reference_blocks && guide.reference_blocks.length > 0) {
     pageSections.push({ id: 'reference', label: 'Reference Tables' });
-  }
-  if (steps && steps.length > 0) {
-    pageSections.push({ id: 'steps', label: 'Walkthrough Steps', count: steps.length });
   }
   if (overview.sections && overview.sections.length > 0) {
     pageSections.push({ id: 'toc-index', label: 'Guide Directory' });

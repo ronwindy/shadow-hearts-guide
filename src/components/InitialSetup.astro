@@ -1,0 +1,37 @@
+---
+import { Shield, Sword, Scroll, Sparkles } from '@lucide/astro';
+import type { InitialPartySetup } from '../lib/types';
+import { renderInlineMarkup } from '../lib/markup';
+import SectionHeading from './SectionHeading.astro';
+
+interface Props {
+  setup?: InitialPartySetup;
+}
+
+const { setup } = Astro.props;
+
+const GROUPS = setup
+  ? [
+      { items: setup.equipment, suffix: 'Equipment', icon: Sword, chip: 'bg-slate-900 text-slate-200 border-slate-700', iconClass: 'text-slate-300' },
+      { items: setup.valuables, suffix: 'Valuable', icon: Scroll, chip: 'bg-blue-950/40 text-blue-300 border-blue-800/40', iconClass: 'text-blue-300' },
+      { items: setup.souls, suffix: 'Soul', icon: Sparkles, chip: 'bg-purple-950/40 text-purple-300 border-purple-800/40', iconClass: 'text-purple-300' },
+    ]
+  : [];
+---
+
+{setup && (
+  <section id="setup" class="space-y-3">
+    <SectionHeading icon={Shield}>Initial Party & Setup: {setup.character}</SectionHeading>
+    <div class="card p-5 space-y-3.5 text-sm sm:text-base">
+      {setup.note && <p class="text-slate-300 text-base leading-relaxed"><Fragment set:html={renderInlineMarkup(setup.note)} /></p>}
+      <div class="flex flex-wrap gap-2 pt-1">
+        {GROUPS.map((g) => g.items?.map((name) => (
+          <span class={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded border font-mono text-sm ${g.chip}`}>
+            <g.icon class:list={['w-3.5 h-3.5', g.iconClass]} aria-hidden="true" />
+            <span>{name} ({g.suffix})</span>
+          </span>
+        )))}
+      </div>
+    </div>
+  </section>
+)}

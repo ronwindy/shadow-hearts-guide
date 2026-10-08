@@ -227,6 +227,8 @@ export interface JudgmentRingInfo {
 
 export interface ManualOverviewData {
   intro?: string;
+  objective?: string;
+  route?: string[];
   directions?: {
     compass_note?: string;
     mappings?: DirectionMapping[];
@@ -402,4 +404,28 @@ export interface GameWikiData {
   gameplay: WikiGameplay;
   characters: WikiCharacter[];
   reception_and_legacy: WikiReception;
+}
+
+/**
+ * Shape of a structured section's `guide` object. Walkthrough and reference
+ * sections share this loose schema; every field is optional.
+ */
+export interface GuideContent {
+  id?: string;
+  code?: string;
+  title?: string;
+  category?: string;
+  navigation?: { prev?: NavigationLink; next?: NavigationLink };
+  overview?: ManualOverviewData;
+  callouts?: SectionCallout[];
+  objectives?: string[];
+  route?: string[];
+  initial_setup?: InitialPartySetup;
+  items_summary?: ItemsSummary;
+  enemies?: EnemyInfo[];
+  boss?: BossData;
+  bosses?: BossData[];
+  shops?: ShopInfo[];
+  reference_blocks?: any[];
+  steps?: StepChecklistItem[];
 }

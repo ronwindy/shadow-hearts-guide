@@ -1,0 +1,48 @@
+---
+import { FileText } from '@lucide/astro';
+import type { GuideMetadata } from '../lib/types';
+import SectionHeading from './SectionHeading.astro';
+
+interface Props {
+  metadata?: GuideMetadata;
+  purpose?: string;
+  guideScope?: string;
+}
+
+const { metadata, purpose, guideScope } = Astro.props;
+
+const FIELDS: [string, keyof GuideMetadata][] = [
+  ['Author', 'author'],
+  ['Version', 'version'],
+  ['Last Updated', 'last_updated'],
+  ['Platform', 'platform'],
+  ['Region', 'region'],
+  ['Guide Type', 'type'],
+];
+const rows = FIELDS.filter(([, key]) => metadata?.[key]);
+const prose = [
+  { title: 'Guide Purpose', text: purpose },
+  { title: 'Guide Scope', text: guideScope },
+].filter((p) => p.text);
+---
+
+{metadata && (
+  <section id="metadata" class="card p-5 space-y-4 text-sm sm:text-base">
+    <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+      <FileText class="w-5 h-5 text-gold-400 flex-shrink-0" aria-hidden="true" />
+      <span>Document Information</span>
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-slate-300 font-mono text-xs sm:text-sm">
+      {rows.map(([label, key]) => (
+        <div><span class="text-slate-400 block">{label}:</span> {metadata[key]}</div>
+      ))}
+    </div>
+  </section>
+)}
+
+{prose.map((p) => (
+  <div class="card p-5 space-y-2">
+    <h2 class="text-lg sm:text-xl font-serif font-bold text-gold-500">{p.title}</h2>
+    <p class="text-slate-300 text-base leading-relaxed">{p.text}</p>
+  </div>
+))}

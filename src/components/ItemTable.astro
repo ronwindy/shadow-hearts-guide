@@ -4,7 +4,7 @@ import type { ObtainableItem } from '../lib/types';
 import { spaceCamelCase } from '../lib/markup';
 
 interface Props {
-  items: ObtainableItem[];
+  items?: ObtainableItem[];
 }
 
 const { items = [] } = Astro.props;

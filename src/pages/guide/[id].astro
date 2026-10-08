@@ -9,31 +9,18 @@ import ItemTable from '../../components/ItemTable.astro';
 import EnemyTable from '../../components/EnemyTable.astro';
 import ShopTable from '../../components/ShopTable.astro';
 import ReferenceBlocks from '../../components/ReferenceBlocks.astro';
-import { renderInlineMarkup, renderBlockMarkup } from '../../lib/markup';
+import Callouts from '../../components/Callouts.astro';
+import ObjectivesList from '../../components/ObjectivesList.astro';
+import RouteProgression from '../../components/RouteProgression.astro';
+import InitialSetup from '../../components/InitialSetup.astro';
+import DocumentInfo from '../../components/DocumentInfo.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
 import {
   getAllStructuredSections,
   buildPageTocSections
 } from '../../lib/guideData';
-import type { SectionCallout } from '../../lib/types';
-import {
-  ChevronLeft,
-  ChevronRight,
-  ArrowLeft,
-  ArrowRight,
-  Target,
-  CircleCheck,
-  Compass,
-  MapPin,
-  Shield,
-  Sword,
-  Scroll,
-  Sparkles,
-  ListChecks,
-  TriangleAlert,
-  Lightbulb,
-  Info,
-  FileText
-} from '@lucide/astro';
+import type { GuideContent } from '../../lib/types';
+import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight, ListChecks } from '@lucide/astro';
 
 export async function getStaticPaths() {
   const sections = getAllStructuredSections();
@@ -44,23 +31,19 @@ export async function getStaticPaths() {
 }
 
 const { section } = Astro.props;
-const guide = section.guide || {};
+const guide: GuideContent = section.guide || {};
 const overview = guide.overview || {};
 const navigation = guide.navigation || {};
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const guideHref = (id: string) => `${baseUrl}/guide/${id}`;
 
 // Normalizations across walkthrough and reference schemas
 const objectives = guide.objectives || (overview.objective ? [overview.objective] : []);
 const route = guide.route || overview.route || [];
 const steps = guide.steps || [];
-const initialSetup = guide.initial_setup;
-const itemsSummary = guide.items_summary;
 const enemies = guide.enemies || [];
-const boss = guide.boss;
-const bosses = guide.bosses || (boss ? [boss] : []);
+const bosses = guide.bosses || (guide.boss ? [guide.boss] : []);
 const shops = guide.shops || [];
-const callouts: SectionCallout[] = guide.callouts || [];
-const referenceBlocks = guide.reference_blocks || [];
 
 // Compute local on-page sections for Right TOC and Mobile Drawer
 const pageSections = buildPageTocSections(guide);
@@ -68,84 +51,49 @@ const pageSections = buildPageTocSections(guide);
 
 <BaseLayout
   title={`${guide.title || 'Guide Section'} — Shadow Hearts Strategy Guide`}
-  description={`Shadow Hearts Strategy Guide & Walkthrough — ${guide.title}`}
+  description={`Shadow Hearts Strategy Guide & Walkthrough — ${guide.title || 'Guide Section'}`}
   currentId={guide.id || ''}
   pageSections={pageSections}
   isWide={true}
 >
-  <!-- Walkthrough Page Layout: Center Content + Right Local TOC -->
+  <!-- Guide Page Layout: Center Content + Right Local TOC -->
   <div class="flex gap-6 lg:gap-8 items-start relative">
-    <!-- Center Column: Walkthrough Main Content -->
+    <!-- Center Column: Main Content -->
     <article class="flex-1 min-w-0 max-w-4xl mx-auto space-y-8">
       <!-- Breadcrumb & Top Prev/Next -->
-      <nav class="flex items-center justify-between text-sm text-slate-400 border-b border-slate-800/80 pb-4">
-        <div class="flex items-center gap-2 min-w-0">
+      <div class="flex items-center justify-between text-sm text-slate-400 border-b border-slate-800/80 pb-4">
+        <nav aria-label="Breadcrumb" class="flex items-center gap-2 min-w-0">
           <a href={`${baseUrl}/toc`} class="hover:text-gold-400 transition-colors flex-shrink-0">Chapters</a>
-          <span>/</span>
+          <span aria-hidden="true">/</span>
           <span class="text-slate-400 truncate max-w-[120px] sm:max-w-xs">{guide.category}</span>
-          <span>/</span>
-          <span class="text-gold-400 font-medium truncate max-w-[150px] sm:max-w-md">{guide.title}</span>
-        </div>
-        
-        <div class="flex items-center gap-3 flex-shrink-0 ml-2">
+          <span aria-hidden="true">/</span>
+          <span aria-current="page" class="text-gold-400 font-medium truncate max-w-[150px] sm:max-w-md">{guide.title}</span>
+        </nav>
+
+        <nav aria-label="Previous and next chapter" class="flex items-center gap-3 flex-shrink-0 ml-2">
           {navigation.prev && (
-            <a href={`${baseUrl}/guide/${navigation.prev.id}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
-              <ChevronLeft class="w-3.5 h-3.5" />
+            <a href={guideHref(navigation.prev.id)} aria-label={`Previous chapter: ${navigation.prev.title}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
+              <ChevronLeft class="w-3.5 h-3.5" aria-hidden="true" />
               <span class="hidden sm:inline">Prev</span>
             </a>
           )}
           {navigation.next && (
-            <a href={`${baseUrl}/guide/${navigation.next.id}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
+            <a href={guideHref(navigation.next.id)} aria-label={`Next chapter: ${navigation.next.title}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
               <span class="hidden sm:inline">Next</span>
-              <ChevronRight class="w-3.5 h-3.5" />
+              <ChevronRight class="w-3.5 h-3.5" aria-hidden="true" />
             </a>
           )}
-        </div>
-      </nav>
+        </nav>
+      </div>
 
-      <!-- Section Title -->
       <header>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-extrabold text-slate-100">
           {guide.title}
         </h1>
       </header>
 
-      <!-- Main Content Sections -->
       <div class="space-y-8">
-        {/* Callouts (tips, notes, warnings) */}
-        {callouts && callouts.length > 0 && (
-          <div class="space-y-3">
-            {callouts.map((c) => {
-              const isWarn = c.type === 'warning';
-              const isTip = c.type === 'tip';
-              return (
-                <div class={`p-4 rounded-xl border text-sm sm:text-base flex gap-3 ${
-                  isWarn
-                    ? 'bg-rose-950/30 border-rose-800/50 text-rose-200'
-                    : isTip
-                    ? 'bg-amber-950/30 border-amber-800/50 text-amber-200'
-                    : 'bg-blue-950/30 border-blue-800/50 text-blue-200'
-                }`}>
-                  <div class="mt-0.5 flex-shrink-0">
-                    {isWarn ? (
-                      <TriangleAlert class="w-5 h-5 text-rose-400" />
-                    ) : isTip ? (
-                      <Lightbulb class="w-5 h-5 text-amber-400" />
-                    ) : (
-                      <Info class="w-5 h-5 text-blue-400" />
-                    )}
-                  </div>
-                  <div class="space-y-1 flex-1">
-                    {c.title && <div class="font-semibold text-slate-100">{c.title}</div>}
-                    <div class="leading-relaxed opacity-95 space-y-2">
-                      <Fragment set:html={renderBlockMarkup(c.text)} />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
+        <Callouts callouts={guide.callouts} />
 
         {/* Table of Contents Section (e.g. I-1-00) */}
         {overview.sections && overview.sections.length > 0 && (
@@ -154,165 +102,42 @@ const pageSections = buildPageTocSections(guide);
           </section>
         )}
 
-        {/* Manual Overview, Controls, Battle Mechanics & Compass */}
         <ManualOverview overview={overview} />
-
-        {/* Character Profiles & Glossary */}
         <CharacterProfiles characters={overview.characters} glossary={overview.glossary} />
 
-        {/* Primary Objectives (Walkthroughs) */}
-        {objectives && objectives.length > 0 && (
-          <section id="objectives" class="space-y-3">
-            <div class="heading-flourish">
-              <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-                <Target class="w-5 h-5 text-gold-400 flex-shrink-0" />
-                <span>Primary Objectives</span>
-              </h2>
-            </div>
-            <div class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 shadow-sm">
-              <ul class="space-y-2.5 text-slate-200 text-base">
-                {objectives.map((obj: string) => (
-                  <li class="flex items-start gap-2.5">
-                    <CircleCheck class="w-4 h-4 text-gold-400 mt-1 flex-shrink-0" />
-                    <span class="leading-relaxed"><Fragment set:html={renderInlineMarkup(obj)} /></span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <ObjectivesList objectives={objectives} />
+        <RouteProgression route={route} />
+        <InitialSetup setup={guide.initial_setup} />
+
+        {/* Walkthrough steps come before reference tables so the checklist is reachable while playing */}
+        {steps.length > 0 && (
+          <section id="steps" class="space-y-4">
+            <SectionHeading icon={ListChecks}>
+              Walkthrough Steps
+              <span slot="aside" class="text-sm font-mono text-slate-400">{steps.length} steps &bull; Tap to track</span>
+            </SectionHeading>
+            <StepChecklist guideId={guide.id || guide.code || ""} steps={steps} bosses={bosses} />
           </section>
         )}
 
-        {/* Route Progression */}
-        {route && route.length > 0 && (
-          <section id="route" class="space-y-3">
-            <div class="heading-flourish">
-              <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-                <Compass class="w-5 h-5 text-gold-400 flex-shrink-0" />
-                <span>Route Progression</span>
-              </h2>
-            </div>
-            <div class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 shadow-sm">
-              <div class="flex flex-wrap items-center gap-2.5 text-sm sm:text-base text-slate-200">
-                {route.map((step: string, idx: number) => (
-                  <span class="flex items-center gap-2">
-                    <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-700/80 font-medium text-slate-100 shadow-sm flex items-center gap-1.5">
-                      <MapPin class="w-3.5 h-3.5 text-gold-400 flex-shrink-0" />
-                      <span>{step}</span>
-                    </span>
-                    {idx < route.length - 1 && <ChevronRight class="w-4 h-4 text-gold-500 flex-shrink-0" />}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Initial Setup */}
-        {initialSetup && (
-          <section id="setup" class="space-y-3">
-            <div class="heading-flourish">
-              <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-                <Shield class="w-5 h-5 text-gold-400 flex-shrink-0" />
-                <span>Initial Party & Setup: {initialSetup.character}</span>
-              </h2>
-            </div>
-            <div class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-3.5 shadow-sm text-sm sm:text-base">
-              {initialSetup.note && <p class="text-slate-300 text-base leading-relaxed"><Fragment set:html={renderInlineMarkup(initialSetup.note)} /></p>}
-              <div class="flex flex-wrap gap-2 pt-1">
-                {initialSetup.equipment?.map((eq: string) => (
-                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-900 text-slate-200 border border-slate-700 font-mono text-sm">
-                    <Sword class="w-3.5 h-3.5 text-slate-300" />
-                    <span>{eq} (Equipment)</span>
-                  </span>
-                ))}
-                {initialSetup.valuables?.map((v: string) => (
-                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-blue-950/40 text-blue-300 border border-blue-800/40 font-mono text-sm">
-                    <Scroll class="w-3.5 h-3.5 text-blue-300" />
-                    <span>{v} (Valuable)</span>
-                  </span>
-                ))}
-                {initialSetup.souls?.map((s: string) => (
-                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-800/40 font-mono text-sm">
-                    <Sparkles class="w-3.5 h-3.5 text-purple-300" />
-                    <span>{s} (Soul)</span>
-                  </span>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Obtainable Items */}
-        <ItemTable items={itemsSummary?.obtainable} />
-
-        {/* Enemies */}
+        <ItemTable items={guide.items_summary?.obtainable} />
         <EnemyTable enemies={enemies} />
-
-        {/* Shops */}
         <ShopTable shops={shops} />
 
         {/* Verbatim reference/appendix tables */}
-        <ReferenceBlocks blocks={referenceBlocks} />
+        <ReferenceBlocks blocks={guide.reference_blocks || []} />
 
-        {/* Walkthrough Steps List */}
-        {steps && steps.length > 0 && (
-          <section id="steps" class="space-y-4">
-            <div class="flex items-center justify-between heading-flourish">
-              <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-                <ListChecks class="w-5 h-5 text-gold-400 flex-shrink-0" />
-                <span>Walkthrough Steps</span>
-              </h2>
-              <span class="text-sm font-mono text-slate-400">{steps.length} steps &bull; Click to track</span>
-            </div>
-            <StepChecklist guideId={guide.id || guide.code} steps={steps} bosses={bosses} />
-          </section>
-        )}
-
-        {/* Fallback & Document Metadata */}
-        {overview.metadata && (
-          <section id="metadata" class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-4 text-sm sm:text-base">
-            <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-              <FileText class="w-5 h-5 text-gold-400 flex-shrink-0" />
-              <span>Document Information</span>
-            </h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-slate-300 font-mono text-xs sm:text-sm">
-              {overview.metadata.author && <div><span class="text-slate-500 block">Author:</span> {overview.metadata.author}</div>}
-              {overview.metadata.version && <div><span class="text-slate-500 block">Version:</span> {overview.metadata.version}</div>}
-              {overview.metadata.last_updated && <div><span class="text-slate-500 block">Last Updated:</span> {overview.metadata.last_updated}</div>}
-              {overview.metadata.platform && <div><span class="text-slate-500 block">Platform:</span> {overview.metadata.platform}</div>}
-              {overview.metadata.region && <div><span class="text-slate-500 block">Region:</span> {overview.metadata.region}</div>}
-              {overview.metadata.type && <div><span class="text-slate-500 block">Guide Type:</span> {overview.metadata.type}</div>}
-            </div>
-          </section>
-        )}
-
-        {overview.purpose && (
-          <div class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2">
-            <h2 class="text-lg sm:text-xl font-serif font-bold text-gold-500 flex items-center gap-2">
-              <span>Guide Purpose</span>
-            </h2>
-            <p class="text-slate-300 text-base leading-relaxed">{overview.purpose}</p>
-          </div>
-        )}
-
-        {overview.guide_scope && (
-          <div class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2">
-            <h2 class="text-lg sm:text-xl font-serif font-bold text-gold-500 flex items-center gap-2">
-              <span>Guide Scope</span>
-            </h2>
-            <p class="text-slate-300 text-base leading-relaxed">{overview.guide_scope}</p>
-          </div>
-        )}
+        <DocumentInfo metadata={overview.metadata} purpose={overview.purpose} guideScope={overview.guide_scope} />
       </div>
 
       <!-- Prev / Next Navigation Footer (Responsive Grid) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 border-t border-slate-800/80 pt-6 mt-12">
         {navigation.prev ? (
           <a
-            href={`${baseUrl}/guide/${navigation.prev.id}`}
-            class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 hover:border-gold-500/50 flex items-center gap-3 group transition-all"
+            href={guideHref(navigation.prev.id)}
+            class="card p-4 hover:border-gold-500/50 flex items-center gap-3 group transition-all"
           >
-            <ArrowLeft class="w-5 h-5 text-gold-500 group-hover:-translate-x-1 transition-transform flex-shrink-0" />
+            <ArrowLeft class="w-5 h-5 text-gold-500 group-hover:-translate-x-1 motion-reduce:transform-none transition-transform flex-shrink-0" aria-hidden="true" />
             <div class="min-w-0 flex-1">
               <div class="text-xs font-mono text-slate-400 uppercase">Previous Chapter</div>
               <div class="text-sm sm:text-base font-medium text-slate-200 group-hover:text-gold-300 truncate">
@@ -322,10 +147,10 @@ const pageSections = buildPageTocSections(guide);
           </a>
         ) : <div class="hidden sm:block"></div>}
 
-        {navigation.next ? (
+        {navigation.next && (
           <a
-            href={`${baseUrl}/guide/${navigation.next.id}`}
-            class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 hover:border-gold-500/50 flex items-center justify-between gap-3 text-right group transition-all"
+            href={guideHref(navigation.next.id)}
+            class="card p-4 hover:border-gold-500/50 flex items-center justify-between gap-3 text-right group transition-all sm:col-start-2"
           >
             <div class="min-w-0 flex-1">
               <div class="text-xs font-mono text-slate-400 uppercase">Next Chapter</div>
@@ -333,9 +158,9 @@ const pageSections = buildPageTocSections(guide);
                 {navigation.next.title}
               </div>
             </div>
-            <ArrowRight class="w-5 h-5 text-gold-500 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+            <ArrowRight class="w-5 h-5 text-gold-500 group-hover:translate-x-1 motion-reduce:transform-none transition-transform flex-shrink-0" aria-hidden="true" />
           </a>
-        ) : <div></div>}
+        )}
       </div>
     </article>
 
