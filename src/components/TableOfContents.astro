@@ -9,7 +9,9 @@ import {
   Sparkles,
   ArrowRight,
   Clock,
-  SearchX
+  SearchX,
+  ChevronsDownUp,
+  ChevronsUpDown
 } from '@lucide/astro';
 
 interface Props {
@@ -57,19 +59,27 @@ function getCategoryFullTitle(name: string): string {
 
   <!-- Sections Categories -->
   <div class="space-y-10" id="toc-categories">
-    {sections.map((cat) => {
+    {sections.map((cat, catIndex) => {
       const CatIcon = getCategoryIcon(cat.category);
       return (
         <section class="category-block space-y-4" data-category={cat.category}>
-          <div class="flex items-baseline justify-between heading-flourish">
+          <button
+            type="button"
+            class="category-toggle w-full text-left flex items-center justify-between heading-flourish"
+            aria-expanded="true"
+            aria-controls={`toc-panel-${catIndex}`}
+          >
             <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
               <CatIcon class="w-5 h-5 text-gold-400 flex-shrink-0" />
               <span title={getCategoryFullTitle(cat.category)}>{cat.category}</span>
             </h2>
-            <span class="text-sm font-mono text-slate-400">{cat.entries.length} sections</span>
-          </div>
+            <span class="category-state text-slate-400" aria-hidden="true">
+              <ChevronsDownUp class="icon-collapse w-5 h-5" />
+              <ChevronsUpDown class="icon-expand w-5 h-5" />
+            </span>
+          </button>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-3">
+          <div id={`toc-panel-${catIndex}`} class="toc-panel grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-3">
             {cat.entries.map((entry) => {
               const isAvailable = entry.has_structured;
               const label = entry.label || getHumanReadableLabel(entry.code, cat.category, entry.is_sidequest);
@@ -153,6 +163,16 @@ function getCategoryFullTitle(name: string): string {
   </div>
 </div>
 
+<style>
+  .category-toggle { cursor: pointer; }
+  .category-state { display: inline-flex; transition: color 0.2s; }
+  .category-toggle:hover .category-state { color: var(--color-gold-400, #d4a73a); }
+  .icon-expand { display: none; }
+  #toc-root:not(.searching) .category-block.collapsed .icon-collapse { display: none; }
+  #toc-root:not(.searching) .category-block.collapsed .icon-expand { display: block; }
+  #toc-root:not(.searching) .category-block.collapsed .toc-panel { display: none; }
+</style>
+
 <script>
   const searchInput = document.getElementById('toc-search') as HTMLInputElement | null;
   const items = document.querySelectorAll<HTMLElement>('.toc-item');
@@ -160,10 +180,21 @@ function getCategoryFullTitle(name: string): string {
   const noResults = document.getElementById('no-results');
   const resultsCount = document.getElementById('results-count');
 
+  categories.forEach((cat) => {
+    const toggle = cat.querySelector<HTMLButtonElement>('.category-toggle');
+    toggle?.addEventListener('click', () => {
+      const collapsed = cat.classList.toggle('collapsed');
+      toggle.setAttribute('aria-expanded', String(!collapsed));
+    });
+  });
+
   if (searchInput) {
     searchInput.addEventListener('input', () => {
       const q = searchInput.value.trim().toLowerCase();
       let matchCount = 0;
+
+      // While filtering, show matches even inside collapsed categories
+      document.getElementById('toc-root')?.classList.toggle('searching', !!q);
 
       items.forEach((item) => {
         const title = item.getAttribute('data-title') || '';
