@@ -1,0 +1,22 @@
+---
+interface Props {
+  icon: any;
+  label?: string;
+  badgeClass: string;
+  labelClass?: string;
+}
+
+const { icon: Icon, label, badgeClass, labelClass = 'text-xs font-semibold' } = Astro.props;
+---
+
+<div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2">
+  <div class="flex items-center gap-2">
+    <span class:list={['inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border', labelClass, badgeClass]}>
+      <Icon class="w-3.5 h-3.5" aria-hidden="true" />
+      {label && <span>{label}</span>}
+    </span>
+  </div>
+  <div class="text-slate-300 leading-relaxed text-sm sm:text-base">
+    <slot />
+  </div>
+</div>

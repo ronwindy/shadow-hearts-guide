@@ -1,0 +1,68 @@
+---
+import { ChevronsDownUp, ChevronsUpDown } from '@lucide/astro';
+
+interface Props {
+  id: string;
+  title: string;
+  icon: any;
+  flourish?: boolean;
+  class?: string;
+}
+
+const { id, title, icon: Icon, flourish = true, class: className = 'space-y-4' } = Astro.props;
+---
+
+<section id={id} class:list={['overview-section', 'collapsed', className]}>
+  <h2 id={`heading-${id}`} class:list={['text-xl sm:text-2xl font-serif font-bold text-slate-100', { 'heading-flourish': flourish }]}>
+    <button type="button" class="section-toggle w-full text-left flex items-center justify-between gap-2.5" aria-expanded="false" aria-controls={`panel-${id}`}>
+      <span class="flex items-center gap-2.5">
+        <Icon class="w-5 h-5 text-gold-400" aria-hidden="true" />
+        <span>{title}</span>
+      </span>
+      <span class="section-state text-slate-400" aria-hidden="true">
+        <ChevronsDownUp class="icon-collapse w-5 h-5" />
+        <ChevronsUpDown class="icon-expand w-5 h-5" />
+      </span>
+    </button>
+  </h2>
+  <div id={`panel-${id}`} class="section-panel space-y-4" role="region" aria-labelledby={`heading-${id}`}>
+    <slot />
+  </div>
+</section>
+
+<style is:global>
+  .section-toggle { cursor: pointer; }
+  .section-state { display: inline-flex; transition: color 0.2s; }
+  .section-toggle:hover .section-state { color: var(--color-gold-400, #d4a73a); }
+  .icon-expand { display: none; }
+  .overview-section.collapsed .icon-collapse { display: none; }
+  .overview-section.collapsed .icon-expand { display: block; }
+  .overview-section.collapsed .section-panel { display: none; }
+</style>
+
+<script>
+  const sections = document.querySelectorAll<HTMLElement>('.overview-section');
+
+  const setCollapsed = (section: HTMLElement, collapsed: boolean) => {
+    section.classList.toggle('collapsed', collapsed);
+    section.querySelector('.section-toggle')?.setAttribute('aria-expanded', String(!collapsed));
+  };
+
+  sections.forEach((section) => {
+    section.querySelector('.section-toggle')?.addEventListener('click', () => {
+      setCollapsed(section, !section.classList.contains('collapsed'));
+    });
+  });
+
+  // Open the targeted section when reached via a #hash link
+  const revealHash = () => {
+    const target = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+    const section = target?.closest<HTMLElement>('.overview-section');
+    if (section) {
+      setCollapsed(section, false);
+      target?.scrollIntoView();
+    }
+  };
+  revealHash();
+  window.addEventListener('hashchange', revealHash);
+</script>

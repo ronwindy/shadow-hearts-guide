@@ -1,27 +1,9 @@
-﻿---
-import {
-  Compass,
-  ScrollText,
-  Gamepad2,
-  SlidersHorizontal,
-  Swords,
-  Sword,
-  Shield,
-  Package,
-  Heart,
-  Ghost,
-  Save,
-  FolderOpen,
-  MapPin,
-  Sparkles,
-  Clock,
-  Target,
-  Flame,
-  Info,
-  ChevronsDownUp,
-  ChevronsUpDown
-} from '@lucide/astro';
+---
+import { Compass, ScrollText, Gamepad2, SlidersHorizontal, Swords, MapPin, Sparkles, Clock, Target } from '@lucide/astro';
+import CollapsibleSection from './CollapsibleSection.astro';
+import BadgeCard from './BadgeCard.astro';
 import { renderInlineMarkup } from '../lib/markup';
+import { getSystemMeta, getAttributeMeta, getActionMeta } from '../lib/manualMeta';
 import type { ManualOverviewData } from '../lib/types';
 
 interface Props {
@@ -30,392 +12,170 @@ interface Props {
 
 const { overview } = Astro.props;
 
-// Helpers for semantic badges
-const getSystemMeta = (key: string) => {
-  switch (key.toLowerCase()) {
-    case 'starting':
-      return { label: 'Starting the Game', icon: Gamepad2, badgeClass: 'bg-amber-950/40 text-amber-300 border-amber-800/50' };
-    case 'vibration':
-      return { label: 'Controller Vibration', icon: SlidersHorizontal, badgeClass: 'bg-cyan-950/40 text-cyan-300 border-cyan-800/50' };
-    case 'saving':
-      return { label: 'Saving Data', icon: Save, badgeClass: 'bg-emerald-950/40 text-emerald-300 border-emerald-800/50' };
-    case 'loading':
-      return { label: 'Loading Saved Game', icon: FolderOpen, badgeClass: 'bg-sky-950/40 text-sky-300 border-sky-800/50' };
-    default:
-      return { label: key.replace(/_/g, ' '), icon: Info, badgeClass: 'bg-slate-900 text-slate-300 border-slate-700/80' };
-  }
-};
+// Prologue badges are icon-only: the source text already carries its own place/time label.
+const prologueEntries = [
+  { text: overview.story_prologue?.setting_1, icon: MapPin, badgeClass: 'bg-amber-950/50 text-amber-300 border-amber-800/50' },
+  { text: overview.story_prologue?.setting_2, icon: Clock, badgeClass: 'bg-sky-950/50 text-sky-300 border-sky-800/50' },
+  { text: overview.story_prologue?.inciting_incident, icon: Sparkles, badgeClass: 'bg-rose-950/50 text-rose-300 border-rose-800/50' }
+].filter((e) => e.text);
 
-const getAttributeMeta = (key: string) => {
-  switch (key.toLowerCase()) {
-    case 'hp':
-      return { label: 'HP (Hit Points)', icon: Heart, badgeClass: 'bg-rose-950/50 text-rose-300 border-rose-800/60' };
-    case 'mp':
-      return { label: 'MP (Magic Points)', icon: Sparkles, badgeClass: 'bg-sky-950/50 text-sky-300 border-sky-800/60' };
-    case 'sp':
-      return { label: 'SP (Sanity Points)', icon: Ghost, badgeClass: 'bg-purple-950/50 text-purple-300 border-purple-800/60' };
-    case 'battle_system':
-      return { label: 'Battle System', icon: Swords, badgeClass: 'bg-amber-950/50 text-amber-300 border-amber-800/60' };
-    default:
-      return { label: key.replace(/_/g, ' '), icon: Info, badgeClass: 'bg-slate-900 text-slate-300 border-slate-700/80' };
-  }
-};
+const keyedSections = [
+  { entries: overview.playing_the_game, id: 'system', title: 'System & Operations', icon: SlidersHorizontal, getMeta: getSystemMeta },
+  { entries: overview.player_attributes, id: 'attributes', title: 'Player Attributes & Battle System', icon: Swords, getMeta: getAttributeMeta }
+];
 
-const getActionMeta = (action: string) => {
-  const norm = action.toUpperCase();
-  if (norm.includes('ATTACK')) {
-    return { icon: Sword, badgeClass: 'bg-rose-950/50 text-rose-300 border-rose-800/60' };
-  }
-  if (norm.includes('FUSION')) {
-    return { icon: Flame, badgeClass: 'bg-purple-950/50 text-purple-300 border-purple-800/60' };
-  }
-  if (norm.includes('ITEM')) {
-    return { icon: Package, badgeClass: 'bg-emerald-950/50 text-emerald-300 border-emerald-800/60' };
-  }
-  if (norm.includes('DEFEND')) {
-    return { icon: Shield, badgeClass: 'bg-sky-950/50 text-sky-300 border-sky-800/60' };
-  }
-  return { icon: Swords, badgeClass: 'bg-slate-900 text-gold-400 border-slate-700/80' };
-};
+const { directions, controls, battle_mechanics: battle } = overview;
 ---
 
 <div class="space-y-8">
-  {/* Intro Directions & Compass Mapping */}
-  {overview.directions && (
-    <section id="compass" class="overview-section collapsed p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-4 shadow-sm">
-      <button type="button" class="section-toggle w-full text-left flex items-center justify-between" aria-expanded="false" aria-controls="panel-compass">
-        <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-        <Compass class="w-5 h-5 text-gold-400" />
-        <span>Compass & Orientation</span>
-        </h2>
-        <span class="section-state text-slate-400" aria-hidden="true">
-          <ChevronsDownUp class="icon-collapse w-5 h-5" />
-          <ChevronsUpDown class="icon-expand w-5 h-5" />
-        </span>
-      </button>
-      <div id="panel-compass" class="section-panel space-y-4">
-        {overview.directions.compass_note && (
-          <p class="text-slate-300 text-base leading-relaxed">
-            <Fragment set:html={renderInlineMarkup(overview.directions.compass_note)} />
-          </p>
-        )}
-        {overview.directions.mappings && overview.directions.mappings.length > 0 && (
-          <div class="overflow-x-auto rounded-lg border border-slate-800">
-            <table class="w-full text-sm text-left border-collapse">
-              <thead>
-                <tr class="border-b border-slate-700/80 text-slate-400 font-mono bg-slate-900/60">
-                  <th class="py-2.5 px-3">Screen Direction</th>
-                  <th class="py-2.5 px-3">Cardinal Direction</th>
-                  <th class="py-2.5 px-3">Abbreviation</th>
+  {directions && (
+    <CollapsibleSection id="compass" title="Compass & Orientation" icon={Compass} flourish={false} class="p-5 rounded-xl bg-slate-850/90 border border-slate-800 space-y-4 shadow-sm">
+      {directions.compass_note && (
+        <p class="text-slate-300 text-base leading-relaxed">
+          <Fragment set:html={renderInlineMarkup(directions.compass_note)} />
+        </p>
+      )}
+      {directions.mappings && directions.mappings.length > 0 && (
+        <div class="overflow-x-auto rounded-lg border border-slate-800">
+          <table class="w-full text-sm text-left border-collapse">
+            <thead>
+              <tr class="border-b border-slate-700/80 text-slate-400 font-mono bg-slate-900/60">
+                <th scope="col" class="py-2.5 px-3">Screen Direction</th>
+                <th scope="col" class="py-2.5 px-3">Cardinal Direction</th>
+                <th scope="col" class="py-2.5 px-3">Abbreviation</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-slate-300">
+              {directions.mappings.map((m) => (
+                <tr class="hover:bg-slate-800/40">
+                  <td class="py-2 px-3 font-medium">{m.screen}</td>
+                  <td class="py-2 px-3 text-gold-400 font-semibold">{m.cardinal}</td>
+                  <td class="py-2 px-3 font-mono text-slate-400">{m.abbr}</td>
                 </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-800 text-slate-300">
-                {overview.directions.mappings.map((m) => (
-                  <tr class="hover:bg-slate-800/40">
-                    <td class="py-2 px-3 font-medium">{m.screen}</td>
-                    <td class="py-2 px-3 text-gold-400 font-semibold">{m.cardinal}</td>
-                    <td class="py-2 px-3 font-mono text-slate-400">{m.abbr}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-      </div>
-    </section>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </CollapsibleSection>
   )}
 
-  {/* Game Manual Intro */}
   {overview.intro && (
     <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-slate-300 text-base italic leading-relaxed">
       <Fragment set:html={renderInlineMarkup(overview.intro)} />
     </div>
   )}
 
-  {/* Story Prologue */}
-  {overview.story_prologue && (
-    <section id="prologue" class="overview-section collapsed space-y-4">
-      <button type="button" class="section-toggle w-full text-left flex items-center justify-between heading-flourish" aria-expanded="false" aria-controls="panel-prologue">
-        <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-        <ScrollText class="w-5 h-5 text-gold-400" />
-        <span>Story Prologue</span>
-        </h2>
-        <span class="section-state text-slate-400" aria-hidden="true">
-          <ChevronsDownUp class="icon-collapse w-5 h-5" />
-          <ChevronsUpDown class="icon-expand w-5 h-5" />
-        </span>
-      </button>
-      <div id="panel-prologue" class="section-panel space-y-4">
-        <div class="grid gap-3">
-          {overview.story_prologue.setting_1 && (
-            <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed space-y-1.5">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-amber-950/50 text-amber-300 border border-amber-800/50">
-                  <MapPin class="w-3.5 h-3.5" />
-                  <span>Rouen, France (1913)</span>
-                </span>
-              </div>
-              <p><Fragment set:html={renderInlineMarkup(overview.story_prologue.setting_1)} /></p>
-            </div>
-          )}
-          {overview.story_prologue.setting_2 && (
-            <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed space-y-1.5">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-950/50 text-sky-300 border border-sky-800/50">
-                  <Clock class="w-3.5 h-3.5" />
-                  <span>One Month Later</span>
-                </span>
-              </div>
-              <p><Fragment set:html={renderInlineMarkup(overview.story_prologue.setting_2)} /></p>
-            </div>
-          )}
-          {overview.story_prologue.inciting_incident && (
-            <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 text-base text-slate-300 leading-relaxed space-y-1.5">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-rose-950/50 text-rose-300 border border-rose-800/50">
-                  <Sparkles class="w-3.5 h-3.5" />
-                  <span>Inciting Incident</span>
-                </span>
-              </div>
-              <p><Fragment set:html={renderInlineMarkup(overview.story_prologue.inciting_incident)} /></p>
-            </div>
-          )}
-        </div>
+  {prologueEntries.length > 0 && (
+    <CollapsibleSection id="prologue" title="Story Prologue" icon={ScrollText}>
+      <div class="grid gap-3">
+        {prologueEntries.map((e) => (
+          <BadgeCard icon={e.icon} badgeClass={e.badgeClass}>
+            <p><Fragment set:html={renderInlineMarkup(e.text!)} /></p>
+          </BadgeCard>
+        ))}
       </div>
-    </section>
+    </CollapsibleSection>
   )}
 
-  {/* Controls & Controller Layout */}
-  {overview.controls && (
-    <section id="controls" class="overview-section collapsed space-y-4">
-      <button type="button" class="section-toggle w-full text-left flex items-center justify-between heading-flourish" aria-expanded="false" aria-controls="panel-controls">
-        <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-        <Gamepad2 class="w-5 h-5 text-gold-400" />
-        <span>Controls & Controller Layout</span>
-        </h2>
-        <span class="section-state text-slate-400" aria-hidden="true">
-          <ChevronsDownUp class="icon-collapse w-5 h-5" />
-          <ChevronsUpDown class="icon-expand w-5 h-5" />
-        </span>
-      </button>
-      <div id="panel-controls" class="section-panel space-y-4">
-        {overview.controls.controller_layout && (
-          <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90">
-            <table class="w-full text-sm sm:text-base text-left">
-              <thead>
-                <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/60">
-                  <th class="py-2.5 px-3">Button / Input</th>
-                  <th class="py-2.5 px-3">Function</th>
+  {controls && (
+    <CollapsibleSection id="controls" title="Controls & Controller Layout" icon={Gamepad2}>
+      {controls.controller_layout && (
+        <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90">
+          <table class="w-full text-sm sm:text-base text-left">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/60">
+                <th scope="col" class="py-2.5 px-3">Button / Input</th>
+                <th scope="col" class="py-2.5 px-3">Function</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/60 text-slate-300">
+              {controls.controller_layout.map((c) => (
+                <tr class="hover:bg-slate-800/40">
+                  <td class="py-2.5 px-3 font-mono text-gold-400 font-semibold whitespace-nowrap">
+                    <Fragment set:html={renderInlineMarkup(c.button)} />
+                  </td>
+                  <td class="py-2.5 px-3">
+                    <Fragment set:html={renderInlineMarkup(c.function)} />
+                  </td>
                 </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-800/60 text-slate-300">
-                {overview.controls.controller_layout.map((c) => (
-                  <tr class="hover:bg-slate-800/40">
-                    <td class="py-2.5 px-3 font-mono text-gold-400 font-semibold whitespace-nowrap">
-                      <Fragment set:html={renderInlineMarkup(c.button)} />
-                    </td>
-                    <td class="py-2.5 px-3">
-                      <Fragment set:html={renderInlineMarkup(c.function)} />
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-        {overview.controls.menu_navigation && (
-          <p class="text-sm text-slate-300 italic mt-2 leading-relaxed">
-            <Fragment set:html={renderInlineMarkup(overview.controls.menu_navigation)} />
-          </p>
-        )}
-      </div>
-    </section>
-  )}
-
-  {/* System & Operations */}
-  {overview.playing_the_game && (
-    <section id="system" class="overview-section collapsed space-y-4">
-      <button type="button" class="section-toggle w-full text-left flex items-center justify-between heading-flourish" aria-expanded="false" aria-controls="panel-system">
-        <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-        <SlidersHorizontal class="w-5 h-5 text-gold-400" />
-        <span>System & Operations</span>
-        </h2>
-        <span class="section-state text-slate-400" aria-hidden="true">
-          <ChevronsDownUp class="icon-collapse w-5 h-5" />
-          <ChevronsUpDown class="icon-expand w-5 h-5" />
-        </span>
-      </button>
-      <div id="panel-system" class="section-panel space-y-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
-          {Object.entries(overview.playing_the_game).map(([key, val]) => {
-            const meta = getSystemMeta(key);
-            const Icon = meta.icon;
-            return (
-              <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2">
-                <div class="flex items-center gap-2">
-                  <span class={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold border ${meta.badgeClass}`}>
-                    <Icon class="w-3.5 h-3.5" />
-                    <span>{meta.label}</span>
-                  </span>
-                </div>
-                <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-                  <Fragment set:html={renderInlineMarkup(val)} />
-                </p>
-              </div>
-            );
-          })}
+              ))}
+            </tbody>
+          </table>
         </div>
-      </div>
-    </section>
+      )}
+      {controls.menu_navigation && (
+        <p class="text-sm text-slate-300 italic mt-2 leading-relaxed">
+          <Fragment set:html={renderInlineMarkup(controls.menu_navigation)} />
+        </p>
+      )}
+    </CollapsibleSection>
   )}
 
-  {/* Player Attributes */}
-  {overview.player_attributes && (
-    <section id="attributes" class="overview-section collapsed space-y-4">
-      <button type="button" class="section-toggle w-full text-left flex items-center justify-between heading-flourish" aria-expanded="false" aria-controls="panel-attributes">
-        <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-        <Swords class="w-5 h-5 text-gold-400" />
-        <span>Player Attributes & Battle System</span>
-        </h2>
-        <span class="section-state text-slate-400" aria-hidden="true">
-          <ChevronsDownUp class="icon-collapse w-5 h-5" />
-          <ChevronsUpDown class="icon-expand w-5 h-5" />
-        </span>
-      </button>
-      <div id="panel-attributes" class="section-panel space-y-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
-          {Object.entries(overview.player_attributes).map(([key, val]) => {
-            const meta = getAttributeMeta(key);
-            const Icon = meta.icon;
-            return (
-              <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2">
-                <div class="flex items-center gap-2">
-                  <span class={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold border ${meta.badgeClass}`}>
-                    <Icon class="w-3.5 h-3.5" />
-                    <span>{meta.label}</span>
-                  </span>
-                </div>
-                <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-                  <Fragment set:html={renderInlineMarkup(val)} />
-                </p>
-              </div>
-            );
-          })}
+  {keyedSections.filter((s) => s.entries).map((s) => (
+    <CollapsibleSection id={s.id} title={s.title} icon={s.icon}>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {Object.entries(s.entries!).map(([key, val]) => {
+          const meta = s.getMeta(key);
+          return (
+            <BadgeCard icon={meta.icon} label={meta.label} badgeClass={meta.badgeClass}>
+              <Fragment set:html={renderInlineMarkup(val)} />
+            </BadgeCard>
+          );
+        })}
+      </div>
+    </CollapsibleSection>
+  ))}
+
+  {battle && (
+    <CollapsibleSection id="battle-mechanics" title="Battle Mechanics" icon={Swords}>
+      {battle.encounter_flow && (
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <Fragment set:html={renderInlineMarkup(battle.encounter_flow)} />
+        </p>
+      )}
+      {battle.action_menu && (
+        <div class="space-y-2.5">
+          <h3 class="text-base sm:text-lg font-serif font-bold text-slate-200">Battle Actions</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {battle.action_menu.map((a) => {
+              const meta = getActionMeta(a.action);
+              return (
+                <BadgeCard icon={meta.icon} label={a.action} badgeClass={meta.badgeClass} labelClass="text-xs font-mono font-bold uppercase tracking-wider">
+                  <Fragment set:html={renderInlineMarkup(a.description)} />
+                </BadgeCard>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </section>
-  )}
-
-  {/* Battle Mechanics */}
-  {overview.battle_mechanics && (
-    <section id="battle-mechanics" class="overview-section collapsed space-y-4">
-      <button type="button" class="section-toggle w-full text-left flex items-center justify-between heading-flourish" aria-expanded="false" aria-controls="panel-battle-mechanics">
-        <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-        <Swords class="w-5 h-5 text-gold-400" />
-        <span>Battle Mechanics</span>
-        </h2>
-        <span class="section-state text-slate-400" aria-hidden="true">
-          <ChevronsDownUp class="icon-collapse w-5 h-5" />
-          <ChevronsUpDown class="icon-expand w-5 h-5" />
-        </span>
-      </button>
-      <div id="panel-battle-mechanics" class="section-panel space-y-4">
-        {overview.battle_mechanics.encounter_flow && (
-          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-            <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.encounter_flow)} />
-          </p>
-        )}
-        {overview.battle_mechanics.action_menu && (
-          <div class="space-y-2.5">
-            <h3 class="text-base sm:text-lg font-serif font-bold text-slate-200">Battle Actions</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
-              {overview.battle_mechanics.action_menu.map((a) => {
-                const meta = getActionMeta(a.action);
-                const ActionIcon = meta.icon;
-                return (
-                  <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2">
-                    <div class="flex items-center gap-2">
-                      <span class={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-mono font-bold uppercase tracking-wider border ${meta.badgeClass}`}>
-                        <ActionIcon class="w-3.5 h-3.5" />
-                        <span>{a.action}</span>
-                      </span>
-                    </div>
-                    <p class="text-slate-300 leading-relaxed text-sm">
-                      <Fragment set:html={renderInlineMarkup(a.description)} />
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
+      )}
+      {battle.judgment_ring && (
+        <div class="p-5 rounded-xl bg-amber-950/20 border border-amber-800/50 text-sm sm:text-base space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-amber-900/60 text-amber-200 border border-amber-700/60">
+              <Target class="w-3.5 h-3.5 text-amber-300" aria-hidden="true" />
+              <span>Core Combat Mechanic</span>
+            </span>
           </div>
-        )}
-        {overview.battle_mechanics.judgment_ring && (
-          <div class="p-5 rounded-xl bg-amber-950/20 border border-amber-800/50 text-sm sm:text-base space-y-3">
-            <div class="flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-amber-900/60 text-amber-200 border border-amber-700/60">
-                <Target class="w-3.5 h-3.5 text-amber-300" />
-                <span>Core Combat Mechanic</span>
-              </span>
-            </div>
-            <h3 class="font-serif font-bold text-amber-300 text-lg sm:text-xl">
-              Judgment Ring System
-            </h3>
-            <p class="text-slate-200 text-base leading-relaxed">
-              <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.judgment_ring.description)} />
-            </p>
-            <p class="text-slate-300 text-base leading-relaxed">
-              <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.judgment_ring.mechanics)} />
-            </p>
-            {overview.battle_mechanics.judgment_ring.character_variation && (
-              <p class="text-amber-300/90 text-sm italic">
-                <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.judgment_ring.character_variation)} />
-              </p>
-            )}
-          </div>
-        )}
-        {overview.battle_mechanics.command_menu && (
-          <p class="text-sm sm:text-base text-slate-400 italic">
-            <Fragment set:html={renderInlineMarkup(overview.battle_mechanics.command_menu)} />
+          <h3 class="font-serif font-bold text-amber-300 text-lg sm:text-xl">Judgment Ring System</h3>
+          <p class="text-slate-200 text-base leading-relaxed">
+            <Fragment set:html={renderInlineMarkup(battle.judgment_ring.description)} />
           </p>
-        )}
-      </div>
-    </section>
+          <p class="text-slate-300 text-base leading-relaxed">
+            <Fragment set:html={renderInlineMarkup(battle.judgment_ring.mechanics)} />
+          </p>
+          {battle.judgment_ring.character_variation && (
+            <p class="text-amber-300/90 text-sm italic">
+              <Fragment set:html={renderInlineMarkup(battle.judgment_ring.character_variation)} />
+            </p>
+          )}
+        </div>
+      )}
+      {battle.command_menu && (
+        <p class="text-sm sm:text-base text-slate-400 italic">
+          <Fragment set:html={renderInlineMarkup(battle.command_menu)} />
+        </p>
+      )}
+    </CollapsibleSection>
   )}
 </div>
-
-<style is:global>
-  .section-toggle { cursor: pointer; }
-  .section-state { display: inline-flex; transition: color 0.2s; }
-  .section-toggle:hover .section-state { color: var(--color-gold-400, #d4a73a); }
-  .icon-expand { display: none; }
-  .overview-section.collapsed .icon-collapse { display: none; }
-  .overview-section.collapsed .icon-expand { display: block; }
-  .overview-section.collapsed .section-panel { display: none; }
-</style>
-
-<script>
-  const sections = document.querySelectorAll<HTMLElement>('.overview-section');
-
-  const setCollapsed = (section: HTMLElement, collapsed: boolean) => {
-    section.classList.toggle('collapsed', collapsed);
-    section.querySelector('.section-toggle')?.setAttribute('aria-expanded', String(!collapsed));
-  };
-
-  sections.forEach((section) => {
-    section.querySelector('.section-toggle')?.addEventListener('click', () => {
-      setCollapsed(section, !section.classList.contains('collapsed'));
-    });
-  });
-
-  // Open the targeted section when reached via a #hash link
-  const revealHash = () => {
-    const target = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
-    const section = target?.closest<HTMLElement>('.overview-section');
-    if (section) {
-      setCollapsed(section, false);
-      target?.scrollIntoView();
-    }
-  };
-  revealHash();
-  window.addEventListener('hashchange', revealHash);
-</script>
