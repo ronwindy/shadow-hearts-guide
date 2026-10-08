@@ -1,4 +1,4 @@
----
+﻿---
 import { Package, Sword, Scroll, Sparkles, MapPin } from '@lucide/astro';
 import type { ObtainableItem } from '../lib/types';
 import { spaceCamelCase } from '../lib/markup';
@@ -12,7 +12,7 @@ const { items = [] } = Astro.props;
 
 {items && items.length > 0 && (
   <section id="items" class="space-y-3">
-    <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+    <div class="flex items-center justify-between heading-flourish">
       <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
         <Package class="w-5 h-5 text-emerald-400 flex-shrink-0" />
         <span>Obtainable Items & Treasures</span>

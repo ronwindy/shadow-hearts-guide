@@ -99,3 +99,31 @@
 }
 
 
+
+/* Ornamental heading underline: gold line fading right, with a small cross ornament at the left */
+.heading-flourish {
+  position: relative;
+  padding-bottom: 0.9rem;
+}
+.heading-flourish::before {
+  content: '';
+  position: absolute;
+  left: 1.1rem;
+  right: 0;
+  bottom: 0.2rem;
+  height: 3px;
+  background:
+    linear-gradient(to right, rgba(212, 175, 55, 0.75), rgba(212, 175, 55, 0.15) 70%, transparent) top / 100% 1px no-repeat,
+    linear-gradient(to right, rgba(212, 175, 55, 0.4), transparent 45%) bottom / 100% 1px no-repeat;
+}
+.heading-flourish::after {
+  content: '\2726';
+  position: absolute;
+  left: 0;
+  bottom: 0.29rem;
+  transform: translateY(50%);
+  font-size: 0.85rem;
+  line-height: 1;
+  color: #d4af37;
+  text-shadow: 0 0 6px rgba(212, 175, 55, 0.5);
+}
