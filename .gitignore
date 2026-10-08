@@ -22,9 +22,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Raw sources
-raw-sources/
-raw-source/
 scratch/
 scripts/*.ps1
 scripts/*.txt
