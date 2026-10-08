@@ -14,10 +14,9 @@ import {
 
 interface Props {
   sections: TocCategory[];
-  legend?: string;
 }
 
-const { sections, legend = "* = Side Quest" } = Astro.props;
+const { sections } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 function getCategoryIcon(name: string) {
@@ -52,10 +51,6 @@ function getCategoryFullTitle(name: string): string {
     </div>
 
     <div class="flex items-center gap-3 text-sm text-slate-400 self-center sm:self-auto">
-      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-800/40">
-        <Sparkles class="w-3.5 h-3.5 text-purple-400" />
-        <span>{legend}</span>
-      </span>
       <span id="results-count" class="font-mono text-slate-400"></span>
     </div>
   </div>

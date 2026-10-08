@@ -164,7 +164,7 @@ const pageSections = buildPageTocSections(guide);
         {/* Table of Contents Section (e.g. I-1-00) */}
         {overview.sections && overview.sections.length > 0 && (
           <section id="toc-index" class="space-y-4">
-            <TableOfContents sections={overview.sections} legend={overview.legend} />
+            <TableOfContents sections={overview.sections} />
           </section>
         )}
 

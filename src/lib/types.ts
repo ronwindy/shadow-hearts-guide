@@ -53,7 +53,6 @@ export interface TocData {
     };
     overview: {
       sections: TocCategory[];
-      legend: string;
     };
   };
 }
@@ -255,7 +254,6 @@ export interface ManualOverviewData {
   purpose?: string;
   guide_scope?: string;
   sections?: TocCategory[];
-  legend?: string;
 }
 
 export interface InitialPartySetup {
