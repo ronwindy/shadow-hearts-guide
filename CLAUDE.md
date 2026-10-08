@@ -31,7 +31,6 @@ Forbidden: inventing or guessing facts, adding outside/model knowledge, renaming
 | Guide Transformer | `guide-transformer` | `structured-content/sections/*.json` | write Astro, add facts |
 | Web Builder | `web-builder`, `frontend-expert` | `src/`, CSS, UX | change game facts |
 | QA | `qa` | verification + `qa-status.json` | silently fix content |
-| Code Reviewer | `code-reviewer` | code hygiene, [`TECH-DEBTS.md`](TECH-DEBTS.md) | refactor without staged human approval |
 
 Make the smallest change that fulfils your role; hand other problems to the owning role.
 
@@ -44,7 +43,7 @@ Section types decide the path:
 .\scripts\run-py.cmd scripts/pipeline.py <id> --scaffold
 .\scripts\run-py.cmd scripts/pipeline.py <id> --verify     # validate + QA report + status
 ```
-Use `--check` (validate + QA + `npm run build` + status) per section; `--full` (adds frontend audit + code review) only after UI/code changes or about every 5 sections.
+Use `--check` (validate + QA + `npm run build` + status) per section; `--full` (adds frontend audit) only after UI/code changes or about every 5 sections.
 
 Choice outcomes: set `outcome` only when the source states it; otherwise omit (never infer). Boss data: all canonical bosses must be present in `bosses[]` or as `step.boss`; compare canonical boss count/names before editing.
 

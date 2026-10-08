@@ -11,9 +11,8 @@ Usage:
     python scripts/pipeline.py <section_id> --qa         # Run QA verification and record result in qa-status.json
     python scripts/pipeline.py <section_id> --verify     # Validate + QA + Build + Update status
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
-    python scripts/pipeline.py --code-review             # Run codebase quality & readability audit
     python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + build + status
-    python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit + code review (run every ~5 sections or after UI/code changes)
+    python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit (run every ~5 sections or after UI/code changes)
     python scripts/pipeline.py <section_id>              # Display section status
     python scripts/pipeline.py --backlog                 # Run QA on all structured guides lacking a current result
 """
@@ -35,7 +34,6 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "guide-transformer" / "scripts"))
 sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "qa" / "scripts"))
 sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "frontend-expert" / "scripts"))
-sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "code-reviewer" / "scripts"))
 sys.path.insert(0, str(ROOT_DIR / "scripts"))
 
 try:
@@ -43,7 +41,6 @@ try:
     from validate_guide import load_schema, validate_file
     from verify_guide import verify_guide
     from audit_frontend import audit_astro_sources, audit_built_html
-    from audit_code_quality import run_code_audit
     import status as status_module
     from jsonschema import Draft202012Validator
 except ImportError as err:
@@ -224,29 +221,6 @@ def run_frontend_audit() -> bool:
         return True
 
 
-def run_code_review() -> bool:
-    """Runs codebase quality, architecture, and human-readability audit."""
-    print("\n--- Code Quality & Readability Review ---")
-    critical, warnings = run_code_audit(ROOT_DIR)
-
-    if critical:
-        print(f"[FAIL] {len(critical)} critical code quality defect(s):")
-        for item in critical:
-            print(f"  - CRITICAL: {item}")
-        return False
-
-    if warnings:
-        print(f"[PASS] 0 critical defects. {len(warnings)} readability recommendation(s):")
-        for item in warnings[:5]:
-            print(f"  - {item}")
-        if len(warnings) > 5:
-            print(f"  ... and {len(warnings) - 5} more recommendations.")
-    else:
-        print("[PASS] Pristine code quality! Zero defects or warnings.")
-
-    return True
-
-
 def update_project_status():
     print("\n--- Updating Project Status ---")
     root = status_module.get_project_root()
@@ -323,10 +297,6 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
         f_ok = run_frontend_audit()
         success = f_ok and success
 
-    if args.code_review:
-        c_ok = run_code_review()
-        success = c_ok and success
-
     if args.check or args.full:
         v_ok = run_validate(sec)
         q_ok = run_qa(sec)
@@ -336,8 +306,7 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
             update_project_status()
         if args.full:
             f_ok = run_frontend_audit()
-            c_ok = run_code_review()
-            success = success and f_ok and c_ok
+            success = success and f_ok
 
     return success
 
@@ -351,9 +320,8 @@ def main():
     parser.add_argument("--qa", action="store_true", help="Run QA verification and record result in qa-status.json")
     parser.add_argument("--verify", action="store_true", help="Validate + QA + Build + Update status")
     parser.add_argument("--frontend", action="store_true", help="Run frontend audit")
-    parser.add_argument("--code-review", "--review", action="store_true", help="Run codebase quality and readability audit")
     parser.add_argument("--check", action="store_true", help="Lean per-section check: Validate + QA + Build + Update status")
-    parser.add_argument("--full", action="store_true", help="--check plus Frontend audit and Code review")
+    parser.add_argument("--full", action="store_true", help="--check plus Frontend audit")
     parser.add_argument("--backlog", action="store_true", help="Run QA on all structured files lacking a current QA result")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
 
@@ -367,10 +335,6 @@ def main():
         if args.frontend:
             run_frontend_audit()
             return
-        if args.code_review:
-            if not run_code_review():
-                sys.exit(1)
-            return
         parser.print_help()
         sys.exit(1)
 
@@ -379,7 +343,7 @@ def main():
         print(f"[ERROR] Could not resolve section for identifier: '{args.section}'")
         sys.exit(1)
 
-    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.code_review, args.check, args.full]):
+    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.check, args.full]):
         print_section_status(sec)
         return
 
