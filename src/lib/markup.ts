@@ -124,6 +124,25 @@ export function formatControllerButtons(text: string): string {
   return res;
 }
 
+/** CamelCase words that are real single terms and must not be split. */
+const CAMEL_EXCEPTIONS = new Set(['PlayStation']);
+const SMALL_WORDS = new Set(['Of', 'The']);
+
+/**
+ * Display-only: splits run-together item names ("SluiceGateHandle" -> "Sluice Gate Handle",
+ * "TalismanOfLuck" -> "Talisman of Luck"). Source data is never modified.
+ */
+export function spaceCamelCase(text: string | null | undefined): string {
+  if (!text) return '';
+  return text.replace(/\b[A-Z][a-z]+(?:[A-Z][a-z]+)+\b/g, (word) => {
+    if (CAMEL_EXCEPTIONS.has(word)) return word;
+    return word
+      .match(/[A-Z][a-z]+/g)!
+      .map((w) => (SMALL_WORDS.has(w) ? w.toLowerCase() : w))
+      .join(' ');
+  });
+}
+
 /**
  * Converts standard Markdown emphasis and controller badges for inline text.
  * Escapes raw HTML, tokenizes controller prompts, and applies styled formatting.
@@ -132,7 +151,7 @@ export function renderInlineMarkup(text: string | null | undefined): string {
   if (!text) return '';
 
   // 1. Escape HTML special characters to prevent raw HTML injection
-  let html = text
+  let html = spaceCamelCase(text)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');

@@ -1,6 +1,6 @@
 ---
 import BossCard from './BossCard.astro';
-import { renderInlineMarkup, renderBlockMarkup } from '../lib/markup';
+import { renderInlineMarkup, renderBlockMarkup, spaceCamelCase } from '../lib/markup';
 import {
   Swords,
   Gem,
@@ -160,7 +160,7 @@ function getStepTypeMeta(type: string = 'exploration') {
                   return (
                     <span class="inline-flex items-center gap-1.5 text-xs px-2.5 py-0.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-800/40 font-mono">
                       <Gem class="w-3.5 h-3.5 text-emerald-400" />
-                      <span>{rewardName}</span>
+                      <span>{spaceCamelCase(rewardName)}</span>
                     </span>
                   );
                 })}

@@ -1,6 +1,7 @@
 ---
 import { Package, Sword, Scroll, Sparkles, MapPin } from '@lucide/astro';
 import type { ObtainableItem } from '../lib/types';
+import { spaceCamelCase } from '../lib/markup';
 
 interface Props {
   items: ObtainableItem[];
@@ -42,7 +43,7 @@ const { items = [] } = Astro.props;
                     ) : (
                       <Sparkles class="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
                     )}
-                    <span>{it.name}</span>
+                    <span>{spaceCamelCase(it.name)}</span>
                   </span>
                 </td>
                 <td class="py-2.5 px-4 font-mono text-amber-300 capitalize text-sm">{it.category}</td>
