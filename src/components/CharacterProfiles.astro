@@ -13,7 +13,9 @@ import {
   Skull,
   Cross,
   Compass,
-  Tag
+  Tag,
+  ChevronsDownUp,
+  ChevronsUpDown
 } from '@lucide/astro';
 import { renderInlineMarkup } from '../lib/markup';
 import type { CharacterProfile, GlossaryTerm } from '../lib/types';
@@ -65,76 +67,93 @@ const getGlossaryMeta = (term: string) => {
 };
 ---
 
+{/* Toggle styles and script live in ManualOverview.astro (shared .overview-section behavior) */}
 <div class="space-y-8">
   {/* Character Profiles */}
   {characters && characters.length > 0 && (
-    <section id="characters" class="space-y-3">
-      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 heading-flourish flex items-center gap-2.5">
+    <section id="characters" class="overview-section collapsed space-y-4">
+      <button type="button" class="section-toggle w-full text-left flex items-center justify-between heading-flourish" aria-expanded="false" aria-controls="panel-characters">
+        <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
         <Users class="w-5 h-5 text-gold-400" />
         <span>Character Profiles</span>
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {characters.map((char) => {
-          const elementMeta = char.class ? getElementMeta(char.class) : null;
-          const ElementIcon = elementMeta ? elementMeta.icon : Sparkles;
-          return (
-            <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2.5 text-sm sm:text-base shadow-sm">
-              <div class="flex items-center justify-between flex-wrap gap-2">
-                <h3 class="text-lg sm:text-xl font-serif font-bold text-slate-100 flex items-center gap-2">
-                  <span class="w-7 h-7 rounded-lg bg-amber-950/40 border border-amber-800/50 flex items-center justify-center flex-shrink-0">
-                    <User class="w-4 h-4 text-amber-300" />
-                  </span>
-                  <span>{char.name}</span>
-                </h3>
-                <div class="flex items-center gap-2">
-                  {char.class && elementMeta && (
-                    <span class={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md border font-mono text-xs font-semibold ${elementMeta.badgeClass}`}>
-                      <ElementIcon class="w-3 h-3" />
-                      <span>{char.class}</span>
+        </h2>
+        <span class="section-state text-slate-400" aria-hidden="true">
+          <ChevronsDownUp class="icon-collapse w-5 h-5" />
+          <ChevronsUpDown class="icon-expand w-5 h-5" />
+        </span>
+      </button>
+      <div id="panel-characters" class="section-panel">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {characters.map((char) => {
+            const elementMeta = char.class ? getElementMeta(char.class) : null;
+            const ElementIcon = elementMeta ? elementMeta.icon : Sparkles;
+            return (
+              <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2.5 text-sm sm:text-base shadow-sm">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <h3 class="text-lg sm:text-xl font-serif font-bold text-slate-100 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-amber-950/40 border border-amber-800/50 flex items-center justify-center flex-shrink-0">
+                      <User class="w-4 h-4 text-amber-300" />
                     </span>
-                  )}
-                  {char.age && (
-                    <span class="text-slate-400 font-mono text-xs px-2 py-0.5 rounded bg-slate-900/60 border border-slate-800">
-                      Age: {char.age}
-                    </span>
-                  )}
+                    <span>{char.name}</span>
+                  </h3>
+                  <div class="flex items-center gap-2">
+                    {char.class && elementMeta && (
+                      <span class={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md border font-mono text-xs font-semibold ${elementMeta.badgeClass}`}>
+                        <ElementIcon class="w-3 h-3" />
+                        <span>{char.class}</span>
+                      </span>
+                    )}
+                    {char.age && (
+                      <span class="text-slate-400 font-mono text-xs px-2 py-0.5 rounded bg-slate-900/60 border border-slate-800">
+                        Age: {char.age}
+                      </span>
+                    )}
+                  </div>
                 </div>
+                <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                  <Fragment set:html={renderInlineMarkup(char.profile)} />
+                </p>
               </div>
-              <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-                <Fragment set:html={renderInlineMarkup(char.profile)} />
-              </p>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   )}
 
   {/* Lore & Terminology Glossary */}
   {glossary && glossary.length > 0 && (
-    <section id="glossary" class="space-y-3">
-      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 heading-flourish flex items-center gap-2.5">
+    <section id="glossary" class="overview-section collapsed space-y-4">
+      <button type="button" class="section-toggle w-full text-left flex items-center justify-between heading-flourish" aria-expanded="false" aria-controls="panel-glossary">
+        <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
         <BookOpen class="w-5 h-5 text-gold-400" />
         <span>Lore & Terminology</span>
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {glossary.map((g) => {
-          const loreMeta = getGlossaryMeta(g.term);
-          const LoreIcon = loreMeta.icon;
-          return (
-            <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2 text-sm sm:text-base shadow-sm">
-              <div class="flex items-center gap-2">
-                <span class={`w-6 h-6 rounded-md border flex items-center justify-center flex-shrink-0 ${loreMeta.badgeClass}`}>
-                  <LoreIcon class="w-3.5 h-3.5" />
-                </span>
-                <h3 class="font-serif font-bold text-gold-400 text-base sm:text-lg">{g.term}</h3>
+        </h2>
+        <span class="section-state text-slate-400" aria-hidden="true">
+          <ChevronsDownUp class="icon-collapse w-5 h-5" />
+          <ChevronsUpDown class="icon-expand w-5 h-5" />
+        </span>
+      </button>
+      <div id="panel-glossary" class="section-panel">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {glossary.map((g) => {
+            const loreMeta = getGlossaryMeta(g.term);
+            const LoreIcon = loreMeta.icon;
+            return (
+              <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2 text-sm sm:text-base shadow-sm">
+                <div class="flex items-center gap-2">
+                  <span class={`w-6 h-6 rounded-md border flex items-center justify-center flex-shrink-0 ${loreMeta.badgeClass}`}>
+                    <LoreIcon class="w-3.5 h-3.5" />
+                  </span>
+                  <h3 class="font-serif font-bold text-gold-400 text-base sm:text-lg">{g.term}</h3>
+                </div>
+                <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                  <Fragment set:html={renderInlineMarkup(g.description)} />
+                </p>
               </div>
-              <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-                <Fragment set:html={renderInlineMarkup(g.description)} />
-              </p>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   )}
