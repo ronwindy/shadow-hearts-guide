@@ -11,7 +11,9 @@ import {
   Clock,
   SearchX,
   ChevronsDownUp,
-  ChevronsUpDown
+  ChevronsUpDown,
+  Map,
+  Table
 } from '@lucide/astro';
 
 interface Props {
@@ -27,6 +29,13 @@ function getCategoryIcon(name: string) {
   if (n.includes('asia')) return Compass;
   if (n.includes('europe')) return Castle;
   return Scroll;
+}
+
+function getEntryType(code: string) {
+  if (code.startsWith('[W-S')) return { Icon: Sparkles, tone: 'bg-purple-950/50 text-purple-300 border-purple-800/40' };
+  if (code.startsWith('[W-')) return { Icon: Map, tone: 'bg-amber-950/40 text-amber-300 border-amber-800/40' };
+  if (code.startsWith('[A-')) return { Icon: Table, tone: 'bg-blue-950/40 text-blue-300 border-blue-800/40' };
+  return { Icon: Scroll, tone: 'bg-slate-800 text-slate-300 border-slate-700' };
 }
 
 function getCategoryFullTitle(name: string): string {
@@ -83,9 +92,10 @@ function getCategoryFullTitle(name: string): string {
             {cat.entries.map((entry) => {
               const isAvailable = entry.has_structured;
               const label = entry.label || getHumanReadableLabel(entry.code, cat.category, entry.is_sidequest);
+              const { Icon: EntryIcon, tone } = getEntryType(entry.code);
               return (
                 <div
-                  class={`toc-item group relative p-3.5 rounded-lg border transition-all duration-200 flex flex-col justify-between ${
+                  class={`toc-item group relative p-3.5 rounded-lg border transition-all duration-200 flex items-start gap-3 ${
                     isAvailable 
                       ? 'bg-slate-850/80 hover:bg-slate-800/90 border-slate-800 hover:border-gold-500/50 shadow-sm'
                       : 'bg-slate-900/40 border-slate-850 text-slate-400'
@@ -95,17 +105,19 @@ function getCategoryFullTitle(name: string): string {
                   data-label={label.toLowerCase()}
                   data-sidequest={entry.is_sidequest ? 'true' : 'false'}
                 >
+                  <span
+                    class={`flex-shrink-0 w-10 h-10 rounded-md border inline-flex items-center justify-center ${
+                      isAvailable ? tone : 'bg-slate-900 text-slate-500 border-slate-800'
+                    }`}
+                    aria-hidden="true"
+                  >
+                    <EntryIcon class="w-5 h-5" />
+                  </span>
+
+                  <div class="flex-1 min-w-0 self-stretch flex flex-col justify-between">
                   <div class="space-y-1.5">
                     <div class="flex items-center justify-between gap-2">
-                      <span class={`text-xs px-2.5 py-1 rounded font-medium border ${
-                        entry.code.startsWith('[W-S')
-                          ? 'bg-purple-950/50 text-purple-300 border-purple-800/40'
-                          : entry.code.startsWith('[W-')
-                          ? 'bg-amber-950/40 text-amber-300 border-amber-800/40'
-                          : entry.code.startsWith('[A-')
-                          ? 'bg-blue-950/40 text-blue-300 border-blue-800/40'
-                          : 'bg-slate-800 text-slate-300 border-slate-700'
-                      }`}>
+                      <span class={`text-xs px-2.5 py-1 rounded font-medium border ${tone}`}>
                         {label}
                       </span>
 
@@ -146,6 +158,7 @@ function getCategoryFullTitle(name: string): string {
                         <span>In Transformation</span>
                       </span>
                     )}
+                  </div>
                   </div>
                 </div>
               );
