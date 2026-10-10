@@ -1,6 +1,6 @@
 {
   "a-1-05": {
-    "checked_at": "2026-10-07T22:48:39",
+    "checked_at": "2026-10-10T15:16:30",
     "content_hash": "e1e629013f813e53",
     "status": "PASS",
     "summary": {
@@ -11,22 +11,22 @@
     }
   },
   "header": {
-    "checked_at": "2026-10-07T22:48:39",
+    "checked_at": "2026-10-10T15:16:29",
     "content_hash": "2fd4afa81792b50e",
-    "status": "FAIL",
+    "status": "PASS",
     "summary": {
-      "critical": 1,
+      "critical": 0,
       "high": 0,
       "low": 0,
       "medium": 0
     }
   },
   "i-1-00": {
-    "checked_at": "2026-10-07T22:48:39",
-    "content_hash": "5256b560100a5a8b",
-    "status": "FAIL",
+    "checked_at": "2026-10-10T15:16:30",
+    "content_hash": "c98d518728820a51",
+    "status": "PASS",
     "summary": {
-      "critical": 1,
+      "critical": 0,
       "high": 0,
       "low": 0,
       "medium": 0
