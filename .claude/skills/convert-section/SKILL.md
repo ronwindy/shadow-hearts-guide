@@ -24,7 +24,10 @@ Run `pipeline.py <id> --scaffold`, then compare the draft with the canonical `te
 The scaffold is garbled (hand-patch it with `scripts/patch_section.py <id> <patch.json>`; arrays replace) when any of these hold:
 - it printed `fragment` / `mixed-list` warnings, or a step starts lowercase or mid-sentence;
 - words or sentences are missing or reordered against the canonical (QA will still PASS: it does not catch this);
-- a step type is a guess (fallback `exploration`, or `battle` with no encounter). Teasers pointing to side-quest sections are `quest`.
+- a step type is a guess (fallback `exploration`, or `battle` with no encounter). Teasers pointing to side-quest sections are `quest`;
+- an `items_summary` item `location` is empty or disagrees with the canonical (enemy notes / text). Lint reports empty ones as `empty-location` (info); fill only from the source.
+
+The scaffold already bolds prev/next `[CODE] Title` cross-references from `navigation` and defaults to bullets (numbered only with a sequence cue), so do not re-do those by hand.
 
 Patch from the canonical text only. Keep the source order, one fact per bullet, no changed names/numbers/conditions.
 
@@ -44,6 +47,7 @@ Patch file format: write it with the Write tool, wrapped as `{"guide": {...}}`. 
 1. `pipeline.py <id> --qa-subagent-prompt` prints the exact prompt and draft path.
 2. Launch a subagent with that prompt (it writes `qa-reports/<id>.subagent-draft.json` and must not run `--verdict`).
 3. Read the verdict. On PASS (or only low findings you accept) run `pipeline.py <id> --verdict qa-reports/<id>.subagent-draft.json` (this deletes the draft). On FAIL/findings, patch the structured file and repeat from step 4.
+4. The verdict stores a hash of the structured file. If the file changes afterwards, `--check`/`--finalize` warn that the verdict is stale: re-run the subagent and re-record the verdict.
 
 ## 6. Finalize with one confirmation
 Run `pipeline.py <id> --finalize` (stages exactly the section's files, never commits). Show the user the staged list and the suggested message, ask once, and commit only on a yes. Do not push.
