@@ -161,7 +161,9 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
                 : <span class="char-avatar" aria-hidden="true">{char.name.charAt(0)}</span>}
               <h3 class="text-xl font-serif font-bold text-slate-100">{char.name}</h3>
             </div>
-            <SentenceList texts={[char.text]} class="pt-3 border-t border-slate-800/80" />
+            <div class="pt-5 border-t border-slate-800/80">
+              <SentenceList texts={[char.text]} />
+            </div>
           </article>
         ))}
       </div>
