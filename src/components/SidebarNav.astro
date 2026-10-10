@@ -1,6 +1,12 @@
 ---
 import { getTocData } from '../lib/guideData';
-import { BookOpen, Compass, Castle, Scroll, ChevronRight } from '@lucide/astro';
+import {
+  BookOpen, Compass, Castle, Scroll, ChevronRight, TrainFront, Trees, House, Landmark, Anchor, Ship,
+  Church, Hospital, Mountain, Swords, Sword, Shield, Shirt, Gem, Store, Coins, Ticket, Skull, Users,
+  Footprints, Sparkles, Gift, Syringe, Pickaxe, Ghost, Flag, RotateCcw, Cog, Hammer, Map as MapIcon,
+  Trophy, FileText, Copyright, ScrollText, Ribbon, Package, Receipt, Dices, HandCoins, Flame, Heart,
+  TowerControl, Bug, Tent, DoorOpen, Info, Scale
+} from '@lucide/astro';
 
 interface Props {
   currentId?: string;
@@ -18,6 +24,61 @@ function getCategoryIcon(name: string) {
   if (n.includes('asia')) return Compass;
   if (n.includes('europe')) return Castle;
   return Scroll;
+}
+
+// Keyword map: first match on "<code> <title>" wins; falls back to a generic icon.
+const ENTRY_ICON_RULES: Array<[RegExp, any]> = [
+  [/i-1-00|table of contents|directory/, MapIcon],
+  [/i-1-01|manual|instructions/, BookOpen],
+  [/overview/, Compass],
+  [/trans-siberian|express/, TrainFront],
+  [/plains/, Trees],
+  [/village/, House],
+  [/fengtian|prague|london|bistritz/, Landmark],
+  [/dalian/, Anchor],
+  [/boat/, Ship],
+  [/shanghai|kuihai|tower/, TowerControl],
+  [/temple|ruins|monastery|nemeton/, Church],
+  [/hospital|calios/, Hospital],
+  [/orphanage/, Heart],
+  [/castle/, Castle],
+  [/rouen/, Landmark],
+  [/cave/, Mountain],
+  [/kowloon|fortress/, Castle],
+  [/pit fight/, Swords],
+  [/gravestone/, Skull],
+  [/fusion|attacks/, Flame],
+  [/good ending|ending/, Sparkles],
+  [/final preparations/, Flag],
+  [/neameeto/, DoorOpen],
+  [/new game\+/, RotateCcw],
+  [/side quests/, Scroll],
+  [/special skills|souls/, Sparkles],
+  [/weapons/, Sword],
+  [/armor/, Shield],
+  [/accessories/, Shirt],
+  [/valuables/, Gem],
+  [/items/, Package],
+  [/store|shop/, Store],
+  [/acupuncturist/, Syringe],
+  [/lottery/, Ticket],
+  [/malice/, Ghost],
+  [/pedometer/, Footprints],
+  [/npc/, Users],
+  [/monster|bestiary/, Bug],
+  [/boss/, Skull],
+  [/help/, Info],
+  [/version history/, ScrollText],
+  [/thanks/, Heart],
+  [/copyright|disclaimer|credits/, Copyright],
+];
+
+function getEntryIcon(code: string, title: string, categoryIcon: any) {
+  const hay = `${code} ${title}`.toLowerCase();
+  for (const [re, icon] of ENTRY_ICON_RULES) {
+    if (re.test(hay)) return icon;
+  }
+  return categoryIcon;
 }
 
 function getCategoryFullTitle(name: string): string {
@@ -73,6 +134,11 @@ function getCategoryFullTitle(name: string): string {
             {cat.entries.map((entry) => {
               const isActive = entry.id === currentId;
               const isAvailable = entry.has_structured;
+              const EntryIcon = entry.is_sidequest
+                ? Scroll
+                : getEntryIcon(entry.code, entry.title, CatIcon);
+              const rowCls = 'flex items-center gap-2 min-w-0';
+              const labelCls = 'truncate';
               return (
                 <li 
                   class="sidebar-item" 
@@ -81,21 +147,37 @@ function getCategoryFullTitle(name: string): string {
                   {isAvailable ? (
                     <a
                       href={`${baseUrl}/guide/${entry.id}`}
-                      class={`block px-2.5 py-1.5 rounded text-sm transition-colors truncate ${
+                      class={`block px-2.5 py-1.5 rounded text-sm transition-colors ${
                         isActive
                           ? 'bg-gold-500/15 text-gold-300 font-medium border-l-2 border-gold-400 shadow-sm shadow-gold-500/10'
                           : 'text-slate-300 hover:text-gold-300 hover:bg-slate-850/80'
                       }`}
                       title={entry.title}
                     >
-                      {entry.title}
+                      <span class={rowCls}>
+                        <EntryIcon class="w-3.5 h-3.5 flex-shrink-0 text-gold-400/80" aria-hidden="true" />
+                        <span class="min-w-0 flex flex-col">
+                          {entry.is_sidequest && (
+                            <span class="text-[10px] leading-tight uppercase tracking-wider text-purple-300">Side quest</span>
+                          )}
+                          <span class={labelCls}>{entry.title}</span>
+                        </span>
+                      </span>
                     </a>
                   ) : (
                     <div 
                       class="px-2.5 py-1.5 text-slate-500 text-sm opacity-60 cursor-default truncate"
                       title={entry.title}
                     >
-                      {entry.title}
+                      <span class={rowCls}>
+                        <EntryIcon class="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
+                        <span class="min-w-0 flex flex-col">
+                          {entry.is_sidequest && (
+                            <span class="text-[10px] leading-tight uppercase tracking-wider">Side quest</span>
+                          )}
+                          <span class={labelCls}>{entry.title}</span>
+                        </span>
+                      </span>
                     </div>
                   )}
                 </li>
