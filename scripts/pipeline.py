@@ -39,7 +39,7 @@ sys.path.insert(0, str(ROOT_DIR / "scripts"))
 try:
     from scaffold_structured_guide import scaffold_guide
     from validate_guide import load_schema, validate_file
-    from verify_guide import verify_guide
+    from verify_guide import verify_guide, format_markdown_report
     from audit_frontend import audit_astro_sources, audit_built_html
     import status as status_module
     from jsonschema import Draft202012Validator
@@ -147,6 +147,22 @@ def run_validate(sec: Dict[str, Any]) -> bool:
         return False
 
 
+def _short(text: Any, limit: int = 90) -> str:
+    s = " ".join(str(text).split())
+    return s if len(s) <= limit else s[: limit - 3] + "..."
+
+
+def save_qa_report(section_id: str, report: Dict[str, Any]) -> Path:
+    """Writes the full QA report to qa-reports/<id>.md (+ .json) and returns the markdown path."""
+    out_dir = ROOT_DIR / "qa-reports"
+    out_dir.mkdir(exist_ok=True)
+    md_path = out_dir / f"{section_id}.md"
+    md_path.write_text(format_markdown_report(report) + "\n", encoding="utf-8")
+    (out_dir / f"{section_id}.json").write_text(
+        json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return md_path
+
+
 def run_qa(sec: Dict[str, Any]) -> bool:
     """Runs QA verification and records the result in qa-status.json."""
     canonical_path, structured_path = get_section_paths(sec)
@@ -173,10 +189,14 @@ def run_qa(sec: Dict[str, Any]) -> bool:
     print(f"  Critical: {summary.get('critical', 0)} | High: {summary.get('high', 0)} | "
           f"Medium: {summary.get('medium', 0)} | Low: {summary.get('low', 0)}")
 
-    findings = report.get("findings", [])
-    if findings:
-        for f in findings:
-            print(f"  - [{f.get('severity', '').upper()}] {f.get('category')}: {f.get('description')}")
+    findings = qa_meta.get("findings", [])
+    for f in findings:
+        print(f"  {f.get('id')} [{f.get('severity', '').upper()}] {f.get('location')}")
+        print(f"      {f.get('category')}: {f.get('description')}")
+        print(f"      source: {_short(f.get('source', {}).get('text'))} | generated: {_short(f.get('generated', {}).get('text'))}")
+
+    report_path = save_qa_report(sec["id"], report)
+    print(f"  Full report: {report_path.relative_to(ROOT_DIR)}")
 
     status_module.record_qa_result(ROOT_DIR, sec["id"], structured_path, status, summary)
 
@@ -219,6 +239,13 @@ def run_frontend_audit() -> bool:
         else:
             print("[PASS] All Frontend & UX checks passed cleanly.")
         return True
+
+
+def remind_independent_qa(sec: Dict[str, Any]) -> None:
+    """Walkthroughs need an independent QA subagent pass (manual step, see CLAUDE.md section 5)."""
+    if str(sec.get("id", "")).startswith("w-"):
+        print(f"\n[REMINDER] Independent QA subagent not run by the pipeline. For {sec['id']}, ask the "
+              f"qa skill to review it against canonical-sources/sections before finishing the section.")
 
 
 def update_project_status():
@@ -292,6 +319,7 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
         success = v_ok and q_ok and b_ok
         if success:
             update_project_status()
+            remind_independent_qa(sec)
 
     if args.frontend:
         f_ok = run_frontend_audit()
@@ -304,6 +332,7 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
         success = v_ok and q_ok and b_ok
         if success:
             update_project_status()
+            remind_independent_qa(sec)
         if args.full:
             f_ok = run_frontend_audit()
             success = success and f_ok

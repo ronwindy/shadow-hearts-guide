@@ -63,7 +63,7 @@ Always leverage the deterministic Python scaffold before refining:
 
 1. **Scaffold Draft on Disk (0 Tokens):**
    ```powershell
-   .\scriptsun-py.cmd scripts/pipeline.py <section_id> --scaffold
+   .\scripts\run-py.cmd scripts/pipeline.py <section_id> --scaffold
    ```
    This pre-populates metadata, navigation, enemies, bosses, shops, and overview items summary.
 2. **Refine Steps & Markers in Subagent:**
@@ -76,10 +76,10 @@ Always leverage the deterministic Python scaffold before refining:
    - Check reward mappings against `markers.items`.
 3. **Validate & Verify:**
    ```powershell
-   .\scriptsun-py.cmd scripts/pipeline.py <section_id> --check
+   .\scripts\run-py.cmd scripts/pipeline.py <section_id> --check
    ```
 
-*(See [example-walkthrough.json](file:///d:/Games/GameGuides/shadow-hearts-guide/.claude/skills/guide-transformer/references/example-walkthrough.json) for the canonical structured format).*
+*(Field-by-field reference: [docs/structured-schema.md](../../../docs/structured-schema.md). Patch edits with `scripts/patch_section.py <id> <patch.json>`. See [example-walkthrough.json](file:///d:/Games/GameGuides/shadow-hearts-guide/.claude/skills/guide-transformer/references/example-walkthrough.json) for the canonical structured format).*
 
 ---
 

@@ -105,7 +105,10 @@
                 ]
               },
               "drop": {
-                "type": "string"
+                "type": [
+                  "string",
+                  "null"
+                ]
               }
             }
           }

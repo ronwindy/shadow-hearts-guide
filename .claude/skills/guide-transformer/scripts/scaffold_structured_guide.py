@@ -66,18 +66,32 @@ def infer_note_type(title: str, text: str) -> str:
     return "tip"
 
 
-def parse_choices(text: str) -> List[Dict[str, str]]:
-    """Detects bracketed choices like [1] No, I don't... [2] Yes, I do!"""
-    pattern = re.compile(r'\[([0-9]+)\]\s*([^\[\n\r]+)')
-    matches = pattern.findall(text)
-    choices = []
-    for num, option in matches:
-        opt_text = option.strip()
-        choices.append({
-            "option": f"[{num}] {opt_text}",
-            "outcome": ""
-        })
-    return choices
+_CHOICE_LINE = re.compile(r'^\s*\[(\d+)\]\s+(\S.*?)\s*$')
+
+
+def find_choice_blocks(text: str) -> List[Tuple[int, List[Dict[str, str]]]]:
+    """Finds dialogue choice blocks (consecutive "[1] Option" lines).
+
+    Returns [(first_line_number, [{"option": "1. Option"}, ...])]. `outcome` is deliberately
+    never set: the source states outcomes in prose, so a human/LLM refiner adds them (or not).
+    """
+    blocks: List[Tuple[int, List[Dict[str, str]]]] = []
+    current: List[Dict[str, str]] = []
+    first = 0
+    for i, line in enumerate(text.splitlines(), start=1):
+        m = _CHOICE_LINE.match(line)
+        if m:
+            if not current:
+                first = i
+            current.append({"option": f"{m.group(1)}. {m.group(2)}"})
+        elif current and not line.strip("—-_ \t"):
+            continue  # rule line / blank inside a block
+        elif current:
+            blocks.append((first, current))
+            current = []
+    if current:
+        blocks.append((first, current))
+    return blocks
 
 
 def is_header_or_table_line(line: str) -> bool:
@@ -212,6 +226,75 @@ def scaffold_reference_guide(canonical: Dict[str, Any]) -> Dict[str, Any]:
     return {"guide": guide}
 
 
+_FIGHT_CUE = re.compile(r'\b(fight|battle|combat|take on|face|defeat|boss)\b', re.I)
+_PREP_CUE = re.compile(r'\b(prepared|prepare|ready|before)\b', re.I)
+_SHOP_CUE = re.compile(r'\b(for sale|shop|store|merchant|peddler|buy|sells?)\b', re.I)
+_STORY_CUE = re.compile(r'\b(scene|event|watch|cutscene|dialogue)\b', re.I)
+_NAV_CUE = re.compile(r"^(head|go|make your way|travel|exit|leave|return|walk|proceed)\b", re.I)
+
+
+def infer_step_type(p_text: str, bosses: List[Dict[str, Any]], has_rewards: bool, has_choices: bool) -> str:
+    """Maps a paragraph to a schema `type` (see docs/structured-schema.md). Conservative on purpose."""
+    if has_choices:
+        return "dialogue"
+    named_boss = any(
+        b.get("name") and re.search(r'\b' + re.escape(b["name"]) + r'\b', p_text, re.I)
+        for b in bosses
+    )
+    if named_boss and _FIGHT_CUE.search(p_text):
+        return "boss"
+    if re.search(r'\bboss\b', p_text, re.I) and _PREP_CUE.search(p_text):
+        return "preparation"
+    if _SHOP_CUE.search(p_text):
+        return "shop"
+    if re.search(r'\b(battle|fight|combat)\b', p_text, re.I):
+        return "battle"
+    if has_rewards and not re.search(r'\b(head|continue)\b', p_text, re.I):
+        return "loot"
+    if _STORY_CUE.search(p_text):
+        return "story"
+    if _NAV_CUE.match(p_text.strip()):
+        return "navigation"
+    return "exploration"
+
+
+def _sentence_with(description: str, name: str) -> str:
+    """First sentence of a step description that mentions `name` (case-insensitive), else ""."""
+    needle = name.strip("() ").lower()
+    if not needle:
+        return ""
+    for sent in re.split(r'(?<=[.!?])\s+', " ".join(description.split())):
+        if needle in sent.lower():
+            return re.sub(r'^\d+\.\s*', '', sent.strip())
+    return ""
+
+
+def fill_item_locations(items_summary: Dict[str, Any], steps: List[Dict[str, Any]]) -> None:
+    """Fills obtainable[].location with the verbatim source sentence + "(step N)" where the item appears.
+
+    Prefers the step that carries the item as a reward; falls back to the first step mentioning the name.
+    Items not mentioned in any step text keep an empty location (never guessed).
+    """
+    def norm(n: str) -> str:
+        return re.sub(r'[^a-z0-9]', '', n.lower())
+
+    reward_step: Dict[str, Dict[str, Any]] = {}
+    for st in steps:
+        for r in st.get("rewards", []):
+            reward_step.setdefault(norm(r.get("matched_overview_item") or r.get("name") or ""), st)
+
+    for item in items_summary.get("obtainable", []):
+        candidates = []
+        if norm(item["name"]) in reward_step:
+            candidates.append(reward_step[norm(item["name"])])
+        candidates.extend(steps)
+        for st in candidates:
+            sent = _sentence_with(st["description"], item["name"])
+            if sent:
+                item["location"] = f"{sent} (step {st['id']})"
+                break
+
+
 def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
     """Generates structured guide draft dictionary from canonical JSON artifact."""
     with open(canonical_path, "r", encoding="utf-8") as f:
@@ -255,6 +338,7 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
     raw_text = canonical.get("text", "")
 
     paragraphs = split_text_paragraphs(raw_text)
+    choice_blocks = find_choice_blocks(raw_text)
 
     steps: List[Dict[str, Any]] = []
     step_id = 1
@@ -263,7 +347,8 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
     assigned_items = set()
     assigned_notes = set()
 
-    for start_line, end_line, p_text in paragraphs:
+    for p_idx, (start_line, end_line, p_text) in enumerate(paragraphs):
+        next_start = paragraphs[p_idx + 1][0] if p_idx + 1 < len(paragraphs) else 10 ** 9
         # Check for NOTE headers in paragraph
         if _is_note_paragraph(p_text) or is_heading_paragraph(p_text):
             continue
@@ -278,11 +363,14 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
             m_line = mi.get("line", 0)
             if start_line - 1 <= m_line <= end_line + 1:
                 assigned_items.add(idx)
-                step_rewards.append({
-                    "name": mi.get("matched_overview_item", mi.get("name")),
-                    "category": mi.get("category", "items"),
-                    "matched_overview_item": mi.get("matched_overview_item", mi.get("name"))
-                })
+                matched = mi.get("matched_overview_item")
+                reward = {
+                    "name": matched or mi.get("name") or "",
+                    "category": mi.get("category") or "items",
+                }
+                if matched:
+                    reward["matched_overview_item"] = matched
+                step_rewards.append(reward)
 
         # Find notes within start_line - 1 to end_line + 1
         step_notes = []
@@ -299,24 +387,12 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
                     "text": n_text
                 })
 
-        # Infer step type
-        step_type = "exploration"
-        encounter = None
+        choices: List[Dict[str, str]] = []
+        for first_line, block in choice_blocks:
+            if end_line < first_line <= next_start:
+                choices.extend(block)
 
-        p_lower = p_text.lower()
-        if "boss" in p_lower or any(b.get("name", "").lower() in p_lower for b in canonical.get("bosses", [])):
-            step_type = "boss"
-        elif re.search(r'\b(battle|fight|combat)\b', p_lower):
-            step_type = "battle"
-        elif step_rewards and not ("head" in p_lower or "continue" in p_lower):
-            step_type = "loot"
-        elif "shop" in p_lower or "merchant" in p_lower or "peddler" in p_lower:
-            step_type = "shop"
-        elif "scene" in p_lower or "event" in p_lower or "watch" in p_lower:
-            step_type = "story"
-
-        # Check for choices
-        choices = parse_choices(p_text)
+        step_type = infer_step_type(p_text, canonical.get("bosses", []), bool(step_rewards), bool(choices))
 
         # Clean description text: strip [_TAG_] marks
         clean_desc = re.sub(r'\[_([^_]+)_\]', r'\1', p_text)
@@ -329,10 +405,11 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
             "type": step_type
         }
 
+        p_lower = p_text.lower()
         # Check matching enemy encounter
         matched_enemies = []
         for enemy in canonical.get("enemies", []):
-            if enemy.get("name", "").lower() in p_lower:
+            if (enemy.get("name") or "").lower() in p_lower:
                 matched_enemies.append(enemy.get("name"))
         if matched_enemies:
             step["encounter"] = {"enemies": list(dict.fromkeys(matched_enemies))}
@@ -359,6 +436,8 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
                     "title": n_title,
                     "text": n_text
                 })
+
+    fill_item_locations(items_summary, steps)
 
     guide_dict: Dict[str, Any] = {
         "guide": {

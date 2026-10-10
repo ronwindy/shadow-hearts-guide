@@ -37,6 +37,7 @@ Make the smallest change that fulfils your role; hand other problems to the owni
 ## 5. Per-Section Workflow
 Section types decide the path:
 - **Walkthrough** (`w-*`): scaffold → LLM refine → validate → QA → independent QA subagent → status.
+  The independent QA subagent is a **manual step** (a script cannot spawn one): after `--check` passes, launch a subagent with the `qa` skill comparing `canonical-sources/sections/<id>.json` with the structured file, and act on its verdict before `status.py --update`. `--check`/`--verify` print a reminder for `w-*` sections.
 - **Reference/table appendices** (`a-*`, items, shops, bestiary, bosses): deterministic scaffold only, no LLM prose; validate → QA → status.
 
 ```powershell
@@ -44,6 +45,8 @@ Section types decide the path:
 .\scripts\run-py.cmd scripts/pipeline.py <id> --verify     # validate + QA report + status
 ```
 Use `--check` (validate + QA + `npm run build` + status) per section; `--full` (adds frontend audit) only after UI/code changes or about every 5 sections.
+
+Schema reference: [`docs/structured-schema.md`](docs/structured-schema.md). Edit structured files with `scripts/patch_section.py <id> <patch.json>` (merge patch; re-validates; writes only if valid; write the patch with the Write tool, not a shell heredoc). `--qa`/`--verify` print every finding and save the full report to `qa-reports/<id>.md`.
 
 Choice outcomes: set `outcome` only when the source states it; otherwise omit (never infer). Boss data: all canonical bosses must be present in `bosses[]` or as `step.boss`; compare canonical boss count/names before editing.
 
