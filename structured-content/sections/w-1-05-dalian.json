@@ -165,15 +165,41 @@
         "party": [
           {
             "name": "Yuri",
-            "level": 10
+            "level": 10,
+            "equipment": [
+              "Knuckle Blade",
+              "Leather Vest",
+              "Leather Cap",
+              "Casual Belt",
+              "Jade Lariat"
+            ],
+            "fusions": [
+              "Death Emperor",
+              "Heaven's Fiend",
+              "Tornado"
+            ]
           },
           {
             "name": "Margarete",
-            "level": 10
+            "level": 10,
+            "equipment": [
+              "Type 94 Pistol",
+              "Leather Skirt",
+              "Leather Cap",
+              "Casual Belt",
+              "Shell Bracelet"
+            ]
           },
           {
             "name": "Zhuzhen",
-            "level": 10
+            "level": 10,
+            "equipment": [
+              "Hexagonal Staff",
+              "Leather Vest",
+              "Leather Cap",
+              "Casual Belt",
+              "Star Brooch"
+            ]
           }
         ],
         "exp": 720,
@@ -502,15 +528,41 @@
           "party": [
             {
               "name": "Yuri",
-              "level": 10
+              "level": 10,
+              "equipment": [
+                "Knuckle Blade",
+                "Leather Vest",
+                "Leather Cap",
+                "Casual Belt",
+                "Jade Lariat"
+              ],
+              "fusions": [
+                "Death Emperor",
+                "Heaven's Fiend",
+                "Tornado"
+              ]
             },
             {
               "name": "Margarete",
-              "level": 10
+              "level": 10,
+              "equipment": [
+                "Type 94 Pistol",
+                "Leather Skirt",
+                "Leather Cap",
+                "Casual Belt",
+                "Shell Bracelet"
+              ]
             },
             {
               "name": "Zhuzhen",
-              "level": 10
+              "level": 10,
+              "equipment": [
+                "Hexagonal Staff",
+                "Leather Vest",
+                "Leather Cap",
+                "Casual Belt",
+                "Star Brooch"
+              ]
             }
           ],
           "exp": 720,
@@ -718,15 +770,41 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 10
+          "level": 10,
+          "equipment": [
+            "Knuckle Blade",
+            "Leather Vest",
+            "Leather Cap",
+            "Casual Belt",
+            "Jade Lariat"
+          ],
+          "fusions": [
+            "Death Emperor",
+            "Heaven's Fiend",
+            "Tornado"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 10
+          "level": 10,
+          "equipment": [
+            "Type 94 Pistol",
+            "Leather Skirt",
+            "Leather Cap",
+            "Casual Belt",
+            "Shell Bracelet"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 10
+          "level": 10,
+          "equipment": [
+            "Hexagonal Staff",
+            "Leather Vest",
+            "Leather Cap",
+            "Casual Belt",
+            "Star Brooch"
+          ]
         }
       ],
       "exp": 720,

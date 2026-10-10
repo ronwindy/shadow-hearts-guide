@@ -7,53 +7,25 @@
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 4
+      "low": 2
     },
     "findings": [
       {
         "id": "QA-001",
         "severity": "low",
-        "category": "structural fidelity",
-        "location": "steps.boss[Xieshi]",
+        "category": "text drift",
+        "location": "bosses[Qinggu].strategy",
         "source": {
-          "text": "Not in canonical bosses"
+          "text": "Hopefully you equipped the Pocket Watch on Yuri so that his Judgment Ring is una"
         },
         "generated": {
-          "text": "Xieshi"
+          "text": "Hopefully you equipped the Pocket Watch on Yuri so that his Judgment Ring is una"
         },
-        "description": "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text",
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
         "recommended_owner": "Guide Transformer"
       },
       {
         "id": "QA-002",
-        "severity": "low",
-        "category": "structural fidelity",
-        "location": "steps.boss[Baigu]",
-        "source": {
-          "text": "Not in canonical bosses"
-        },
-        "generated": {
-          "text": "Baigu"
-        },
-        "description": "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-003",
-        "severity": "low",
-        "category": "structural fidelity",
-        "location": "steps.boss[Qinggu]",
-        "source": {
-          "text": "Not in canonical bosses"
-        },
-        "generated": {
-          "text": "Qinggu"
-        },
-        "description": "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-004",
         "severity": "low",
         "category": "text drift",
         "location": "bosses[Yamaraja: War].strategy",

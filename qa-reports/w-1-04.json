@@ -7,25 +7,11 @@
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 2
+      "low": 1
     },
     "findings": [
       {
         "id": "QA-001",
-        "severity": "low",
-        "category": "structural fidelity",
-        "location": "steps.boss[Water Tiger + Kappa x2]",
-        "source": {
-          "text": "Not in canonical bosses"
-        },
-        "generated": {
-          "text": "Water Tiger + Kappa x2"
-        },
-        "description": "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-002",
         "severity": "low",
         "category": "text drift",
         "location": "bosses[Beast Dog].strategy",

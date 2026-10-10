@@ -71,19 +71,8 @@
     }
   },
   "w-1-03": {
-    "checked_at": "2026-10-10T16:54:45",
-    "content_hash": "a920022fa8eec6db",
-    "status": "PASS WITH WARNINGS",
-    "summary": {
-      "critical": 0,
-      "high": 0,
-      "low": 3,
-      "medium": 0
-    }
-  },
-  "w-1-04": {
-    "checked_at": "2026-10-10T16:54:46",
-    "content_hash": "685d83d05676d29b",
+    "checked_at": "2026-10-10T23:08:42",
+    "content_hash": "760db057c2b4eaab",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -92,9 +81,20 @@
       "medium": 0
     }
   },
+  "w-1-04": {
+    "checked_at": "2026-10-10T23:08:16",
+    "content_hash": "999af86bf65e4049",
+    "status": "PASS WITH WARNINGS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 1,
+      "medium": 0
+    }
+  },
   "w-1-05": {
-    "checked_at": "2026-10-10T16:54:46",
-    "content_hash": "169546ee1ab07398",
+    "checked_at": "2026-10-10T23:08:49",
+    "content_hash": "b16c268d3abdb5a5",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -104,8 +104,8 @@
     }
   },
   "w-1-06": {
-    "checked_at": "2026-10-10T16:54:46",
-    "content_hash": "b1503f39cc81f96c",
+    "checked_at": "2026-10-10T23:08:35",
+    "content_hash": "0dec5af4df2dc923",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -126,13 +126,13 @@
     }
   },
   "w-1-08": {
-    "checked_at": "2026-10-10T16:54:47",
-    "content_hash": "73c2f24906e0f6f1",
+    "checked_at": "2026-10-10T23:08:17",
+    "content_hash": "b340913dcec726a3",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
-      "low": 4,
+      "low": 2,
       "medium": 0
     }
   },
@@ -159,14 +159,14 @@
     }
   },
   "w-1-11": {
-    "checked_at": "2026-10-10T17:21:34",
-    "content_hash": "843afb555fdacc79",
+    "checked_at": "2026-10-10T23:08:35",
+    "content_hash": "9544b7e13f30bc50",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
       "low": 2,
-      "medium": 1
+      "medium": 0
     }
   }
 }

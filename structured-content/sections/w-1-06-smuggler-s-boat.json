@@ -123,15 +123,41 @@
         "party": [
           {
             "name": "Yuri",
-            "level": 14
+            "level": 14,
+            "equipment": [
+              "Knuckle Blade",
+              "Leather Vest",
+              "Flare Brooch",
+              "Jade Lariat",
+              "Rosewood Bracelet"
+            ],
+            "fusions": [
+              "Heaven's Fiend",
+              "Raging Tiger",
+              "Inferno"
+            ]
           },
           {
             "name": "Margarete",
-            "level": 14
+            "level": 14,
+            "equipment": [
+              "Type 94 Pistol",
+              "Leather Skirt",
+              "Leather Cap",
+              "Causal Belt",
+              "Rosewood Bracelet"
+            ]
           },
           {
             "name": "Alice",
-            "level": 13
+            "level": 13,
+            "equipment": [
+              "Shooting Star Tome",
+              "Leather Skirt",
+              "Leather Cap",
+              "Star Brooch",
+              "Rosewood Bracelet"
+            ]
           }
         ],
         "exp": 1000,
@@ -430,12 +456,13 @@
             {
               "name": "Li Li",
               "hp": 580,
-              "class": "Dark"
+              "class": "Dark",
+              "drop": "W.Tiger Hair"
             }
           ],
           "exp": 800,
           "cash": 3800,
-          "strategy": "- She can and will use **Dark Messenger**, which not only deals major damage, but can instantly kill a party member, so be careful.\n- Her other attacks are **Paralysis** (which does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**) and a normal attack, which you shouldn't need to worry about.\n- If you have it, have Yuri use **Heaven's Fiend** and use the **Exorcist Arrow** attack; it should do MAJOR damage.\n- Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**.\n- Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low.\n- If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party.\n- If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.\n- If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her.\n- Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light**.\n- Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low.\n- Not much to worry about (other than **Dark Messenger**) here."
+          "strategy": "- This is just a warm-up, so try to avoid using **TOO** much MP if possible for the next boss battle.\n- She can and will use **Dark Messenger**, which not only deals major damage, but can instantly kill a party member, so be careful.\n- Her other attacks are **Paralysis** (which does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**) and a normal attack, which you shouldn't need to worry about.\n- If you have it, have Yuri use **Heaven's Fiend** and use the **Exorcist Arrow** attack; it should do MAJOR damage.\n- Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**.\n- Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low.\n- If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party.\n- If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.\n- If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her.\n- Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light**.\n- Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low.\n- Not much to worry about (other than **Dark Messenger**) here."
         },
         "rewards": []
       },
@@ -462,15 +489,41 @@
           "party": [
             {
               "name": "Yuri",
-              "level": 14
+              "level": 14,
+              "equipment": [
+                "Knuckle Blade",
+                "Leather Vest",
+                "Flare Brooch",
+                "Jade Lariat",
+                "Rosewood Bracelet"
+              ],
+              "fusions": [
+                "Heaven's Fiend",
+                "Raging Tiger",
+                "Inferno"
+              ]
             },
             {
               "name": "Margarete",
-              "level": 14
+              "level": 14,
+              "equipment": [
+                "Type 94 Pistol",
+                "Leather Skirt",
+                "Leather Cap",
+                "Causal Belt",
+                "Rosewood Bracelet"
+              ]
             },
             {
               "name": "Alice",
-              "level": 13
+              "level": 13,
+              "equipment": [
+                "Shooting Star Tome",
+                "Leather Skirt",
+                "Leather Cap",
+                "Star Brooch",
+                "Rosewood Bracelet"
+              ]
             }
           ],
           "exp": 1000,
@@ -507,15 +560,41 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 14
+          "level": 14,
+          "equipment": [
+            "Knuckle Blade",
+            "Leather Vest",
+            "Flare Brooch",
+            "Jade Lariat",
+            "Rosewood Bracelet"
+          ],
+          "fusions": [
+            "Heaven's Fiend",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 14
+          "level": 14,
+          "equipment": [
+            "Type 94 Pistol",
+            "Leather Skirt",
+            "Leather Cap",
+            "Causal Belt",
+            "Rosewood Bracelet"
+          ]
         },
         {
           "name": "Alice",
-          "level": 13
+          "level": 13,
+          "equipment": [
+            "Shooting Star Tome",
+            "Leather Skirt",
+            "Leather Cap",
+            "Star Brooch",
+            "Rosewood Bracelet"
+          ]
         }
       ],
       "exp": 1000,

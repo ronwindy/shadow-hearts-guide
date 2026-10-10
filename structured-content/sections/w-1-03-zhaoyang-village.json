@@ -188,15 +188,37 @@
         "party": [
           {
             "name": "Yuri",
-            "level": 7
+            "level": 7,
+            "equipment": [
+              "Leather Gloves",
+              "Cotton Shirt",
+              "Bandanna",
+              "Leather Belt"
+            ],
+            "fusions": [
+              "Death Emperor",
+              "Raging Tiger"
+            ]
           },
           {
             "name": "Alice",
-            "level": 6
+            "level": 6,
+            "equipment": [
+              "Small Bible",
+              "Cotton Blouse",
+              "Bandanna",
+              "Leather Belt"
+            ]
           },
           {
             "name": "Zhuzhen",
-            "level": 6
+            "level": 6,
+            "equipment": [
+              "Oak Staff",
+              "Cotton Shirt",
+              "Bandanna",
+              "Leather Belt"
+            ]
           }
         ],
         "exp": 180,
@@ -218,15 +240,37 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 7
+          "level": 7,
+          "equipment": [
+            "Leather Gloves",
+            "Cotton Shirt",
+            "Bandanna",
+            "Leather Belt"
+          ],
+          "fusions": [
+            "Death Emperor",
+            "Raging Tiger"
+          ]
         },
         {
           "name": "Alice",
-          "level": 6
+          "level": 6,
+          "equipment": [
+            "Small Bible",
+            "Cotton Blouse",
+            "Bandanna",
+            "Leather Belt"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 6
+          "level": 6,
+          "equipment": [
+            "Oak Staff",
+            "Cotton Shirt",
+            "Bandanna",
+            "Leather Belt"
+          ]
         }
       ],
       "exp": 180,
@@ -348,7 +392,7 @@
         },
         "boss": {
           "type": "SUB-BOSS",
-          "name": "Hellcat x2",
+          "name": "Hellcat, Hellcat",
           "enemies": [
             {
               "name": "Hellcat",
@@ -522,15 +566,37 @@
           "party": [
             {
               "name": "Yuri",
-              "level": 7
+              "level": 7,
+              "equipment": [
+                "Leather Gloves",
+                "Cotton Shirt",
+                "Bandanna",
+                "Leather Belt"
+              ],
+              "fusions": [
+                "Death Emperor",
+                "Raging Tiger"
+              ]
             },
             {
               "name": "Alice",
-              "level": 6
+              "level": 6,
+              "equipment": [
+                "Small Bible",
+                "Cotton Blouse",
+                "Bandanna",
+                "Leather Belt"
+              ]
             },
             {
               "name": "Zhuzhen",
-              "level": 6
+              "level": 6,
+              "equipment": [
+                "Oak Staff",
+                "Cotton Shirt",
+                "Bandanna",
+                "Leather Belt"
+              ]
             }
           ],
           "exp": 180,

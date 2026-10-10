@@ -289,15 +289,41 @@
         "party": [
           {
             "name": "Yuri",
-            "level": 17
+            "level": 17,
+            "equipment": [
+              "Steel Claw",
+              "Studded Harness",
+              "Flare Brooch",
+              "Western Belt",
+              "Leonardo's Bear"
+            ],
+            "fusions": [
+              "Heaven's Fiend",
+              "Raging Tiger",
+              "Inferno"
+            ]
           },
           {
             "name": "Margarete",
-            "level": 16
+            "level": 16,
+            "equipment": [
+              "Nanbu Pistol",
+              "Studded Bustier",
+              "Studded Cap",
+              "Western Belt",
+              "Leonardo's Bear"
+            ]
           },
           {
             "name": "Zhuzhen",
-            "level": 15
+            "level": 15,
+            "equipment": [
+              "Pilgrim's Staff",
+              "Studded Harness",
+              "Studded Cap",
+              "Jade Lariat",
+              "Leonardo's Bear"
+            ]
           }
         ],
         "exp": 2000,
@@ -1104,15 +1130,41 @@
           "party": [
             {
               "name": "Yuri",
-              "level": 17
+              "level": 17,
+              "equipment": [
+                "Steel Claw",
+                "Studded Harness",
+                "Flare Brooch",
+                "Western Belt",
+                "Leonardo's Bear"
+              ],
+              "fusions": [
+                "Heaven's Fiend",
+                "Raging Tiger",
+                "Inferno"
+              ]
             },
             {
               "name": "Margarete",
-              "level": 16
+              "level": 16,
+              "equipment": [
+                "Nanbu Pistol",
+                "Studded Bustier",
+                "Studded Cap",
+                "Western Belt",
+                "Leonardo's Bear"
+              ]
             },
             {
               "name": "Zhuzhen",
-              "level": 15
+              "level": 15,
+              "equipment": [
+                "Pilgrim's Staff",
+                "Studded Harness",
+                "Studded Cap",
+                "Jade Lariat",
+                "Leonardo's Bear"
+              ]
             }
           ],
           "exp": 2000,
@@ -1146,15 +1198,41 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 17
+          "level": 17,
+          "equipment": [
+            "Steel Claw",
+            "Studded Harness",
+            "Flare Brooch",
+            "Western Belt",
+            "Leonardo's Bear"
+          ],
+          "fusions": [
+            "Heaven's Fiend",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 16
+          "level": 16,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Studded Cap",
+            "Western Belt",
+            "Leonardo's Bear"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 15
+          "level": 15,
+          "equipment": [
+            "Pilgrim's Staff",
+            "Studded Harness",
+            "Studded Cap",
+            "Jade Lariat",
+            "Leonardo's Bear"
+          ]
         }
       ],
       "exp": 2000,

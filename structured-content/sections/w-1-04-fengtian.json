@@ -572,7 +572,7 @@
         },
         "boss": {
           "type": "SUB-BOSS",
-          "name": "Water Tiger + Kappa x2",
+          "name": "Water Tiger, Kappa, Kappa",
           "enemies": [
             {
               "name": "Water Tiger",
