@@ -92,6 +92,8 @@ To make steps instantly scannable during active gameplay, systematically emphasi
 3. **Mechanics & Classes**: `**Judgment Ring**`, `**Malice**`, `**Hit Area**`, `**Wind class**`.
 4. **Enemies & NPCs**: `**Wind Shear**`, `**Roger Bacon**`, `**Master Li Zhuzhen**`.
 5. **Controller Inputs**: `` `CROSS` `` or `**CROSS button**`.
+6. **Source shouting** (`ONLY`, `LAST OPPORTUNITY`, `MAKE SURE TO SAVE`): keep the emphasis as bold in normal case (`**only**`, `**last opportunity**`), never UPPERCASE. `lint` flags UPPERCASE runs as item tags (`upper-item`) on purpose; the fix is the bold form, not a lint exemption.
+7. **Hub teasers** (`[W-S-01] Title` + bullets): one step per teaser, `type: quest`, bold `[CODE] Title` as the first line, one sentence per bullet. Relationships between pages live here and in `navigation`, not in extra fields.
 
 ---
 

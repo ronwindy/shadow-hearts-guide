@@ -488,6 +488,10 @@ def party_names(canonical: Dict[str, Any]) -> List[str]:
     return sorted(n for n in names if n and len(n) > 2)
 
 
+# `[W-S-01] Yuri's Level 1 Fusions` on a hub page: a code, then a title (which may wrap)
+_TEASER_HEADER = re.compile(r'^\s*\[[A-Z]-[A-Z0-9-]+\]\s+\S')
+
+
 def is_header_or_table_line(line: str) -> bool:
     s = line.strip()
     if not s:
@@ -498,8 +502,14 @@ def is_header_or_table_line(line: str) -> bool:
         return True
     if s.startswith(('___', '===', '---', '¯¯¯', '.——', '\'——', '——', '\\', '/', '-$-')):
         return True
-    if re.match(r'^(?:#\d{3}|Enemy|Save Points|Items|Equipment|Valuables|Souls|Cash|Lottery)\b', s):
+    # Table labels sit at the left margin; an indented line or one that ends a sentence is wrapped
+    # prose ("... one of the final / Lottery Members.") and must not be dropped.
+    indented_prose = (len(line) - len(line.lstrip())) >= 8 or s.endswith(('.', '!', '?'))
+    if not indented_prose and re.match(
+            r'^(?:#\d{3}|Enemy|Save Points|Items|Equipment|Valuables|Souls|Cash|Lottery)\b', s):
         return True
+    if _TEASER_HEADER.match(s) and '|' not in s:
+        return False  # hub teaser: `[W-S-01] Title` introduces a bullet list, it is content
     if re.match(r'^(?:Shadow Hearts|\[[A-Z0-9-]+\])', s):
         return True
     return False
@@ -645,6 +655,8 @@ def infer_step_type(p_text: str, bosses: List[Dict[str, Any]], has_rewards: bool
     """Maps a paragraph to a schema `type` (see docs/structured-schema.md). Conservative on purpose."""
     if has_choices:
         return "dialogue"
+    if _TEASER_HEADER.match(p_text):
+        return "quest"  # hub teaser pointing at a side-quest section
     named_boss = any(
         b.get("name") and re.search(r'\b' + re.escape(b["name"]) + r'\b', p_text, re.I)
         for b in bosses
@@ -861,6 +873,45 @@ def fold_paragraphs(paragraphs: List[Tuple[int, int, str]], blocks: List[Dict[st
     return out, extras
 
 
+def _split_bullets(lines: List[str]) -> Tuple[List[str], List[str]]:
+    """Separates prose lines from `- ` bullets, re-joining each bullet's wrapped lines.
+
+    A non-bullet line indented deeper than the bullet marker continues that bullet; any other
+    non-bullet line is prose.
+    """
+    prose: List[str] = []
+    bullets: List[str] = []
+    marker_indent = -1
+    for ln in lines:
+        if not ln.strip():
+            continue
+        indent = len(ln) - len(ln.lstrip())
+        m = _BULLET_LINE.match(ln)
+        if m:
+            bullets.append(m.group(1).strip())
+            marker_indent = indent
+        elif bullets and indent > marker_indent >= 0:
+            bullets[-1] += " " + ln.strip()
+        else:
+            prose.append(ln.strip())
+            marker_indent = -1
+    return prose, bullets
+
+
+def _teaser_description(lines: List[str], clean: Any) -> str:
+    """Hub teaser (`[W-S-01] Title` + bullets): bold title, one sentence per bullet, source order."""
+    title = [lines[0].strip()]
+    i = 1
+    while i < len(lines) and lines[i].strip() and not _BULLET_LINE.match(lines[i]):
+        title.append(lines[i].strip())  # wrapped title
+        i += 1
+    _, bullets = _split_bullets(lines[i:])
+    out = [f"**{' '.join(title)}**"]
+    for b in bullets:
+        out.extend(f"- {s}" for s in split_sentences(clean(b)))
+    return "\n".join(out)
+
+
 def build_description(p_text: str, cases: Dict[str, str], characters: List[str],
                       answers: Optional[List[str]] = None, tail: str = "") -> str:
     """Step description: cleaned prose as a numbered list, source bullets kept one per line.
@@ -872,8 +923,10 @@ def build_description(p_text: str, cases: Dict[str, str], characters: List[str],
         return bold_names(" ".join(soften_caps(fix_tag_case(txt, cases, bold=True)).split()), characters)
 
     lines = p_text.splitlines()
-    bullets = [m.group(1).strip() for m in map(_BULLET_LINE.match, lines) if m]
-    prose = " ".join(ln.strip() for ln in lines if ln.strip() and not _BULLET_LINE.match(ln))
+    if _TEASER_HEADER.match(lines[0]):
+        return _teaser_description(lines, clean)
+    prose_lines, bullets = _split_bullets(lines)
+    prose = " ".join(prose_lines)
     if answers or tail:
         items = split_sentences(clean(prose)) + (answers or []) + (split_sentences(clean(tail)) if tail else [])
         desc = "\n".join(f"{i}. {s}" for i, s in enumerate(items, start=1)) if len(items) > 1 else " ".join(items)

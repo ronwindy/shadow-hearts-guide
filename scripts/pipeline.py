@@ -14,6 +14,7 @@ Usage:
     python scripts/pipeline.py [<section_id>] --lint     # Presentation lint (prose blocks, UPPERCASE item tags, [_TAG_], ASCII borders)
     python scripts/pipeline.py <section_id> --verdict F  # Validate + store the independent QA subagent's JSON verdict (F = "-" reads stdin)
     python scripts/pipeline.py <section_id> --qa-subagent-prompt  # Print the independent QA subagent prompt + verdict path
+    python scripts/pipeline.py <section_id> --finalize   # Stage exactly this section's files (no commit); prints the commit message
     python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + build + status
     python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit (run every ~5 sections or after UI/code changes)
     python scripts/pipeline.py <section_id>              # Display section status
@@ -115,10 +116,31 @@ def run_scaffold(sec: Dict[str, Any], force: bool = False) -> bool:
         with open(structured_path, "w", encoding="utf-8") as f:
             json.dump(scaffolded, f, indent=2, ensure_ascii=False)
         print(f"[PASS] Successfully scaffolded: {structured_path.relative_to(ROOT_DIR)}")
+        report_scaffold_warnings(sec, scaffolded)
         return True
     except Exception as e:
         print(f"[FAIL] Scaffolding failed: {e}")
         return False
+
+
+def report_scaffold_warnings(sec: Dict[str, Any], scaffolded: Dict[str, Any]) -> None:
+    """Flags a scaffold that probably needs a hand-written patch (fragments, guessed step types).
+
+    The scaffold is a draft: fragments and fallback step types are printed, never fatal.
+    """
+    guide = scaffolded.get("guide", {})
+    warns = [f for f in lint_guide(guide) if f["severity"] == "warn" and f["check"] in ("fragment", "mixed-list")]
+    for f in warns:
+        print(f"  [WARN] {f['check']:<10} {f['location']}: {f['text']}")
+    guessed = [str(st["id"]) for st in guide.get("steps", [])
+               if st.get("type") == "exploration"
+               or (st.get("type") == "battle" and not st.get("encounter") and not st.get("boss"))]
+    if guessed:
+        print(f"  [WARN] low-confidence step type (fallback 'exploration' or 'battle' with no encounter): "
+              f"step(s) {', '.join(guessed)} - confirm the type against the source")
+    if warns:
+        print(f"  [WARN] {sec['id']}: scaffold has fragments; compare with the canonical text and fix via "
+              f"scripts/patch_section.py (arrays replace) before QA.")
 
 
 def run_validate(sec: Dict[str, Any]) -> bool:
@@ -291,6 +313,9 @@ def run_verdict(sec: Dict[str, Any], verdict_file: str) -> bool:
     for f in findings:
         print(f"  [{f['severity'].upper()}] {f['category']} @ {f['location']}: {f['issue']}")
     print(f"  Stored: qa-reports/{sec['id']}.subagent.json")
+    draft = out / f"{sec['id']}.subagent-draft.json"
+    if draft.exists():
+        draft.unlink()  # the stored verdict supersedes the subagent's scratch file
     return verdict["verdict"] != "FAIL"
 
 
@@ -327,8 +352,39 @@ items, save points, ordering). Do not edit any file except the verdict.
 Return ONLY a JSON verdict that validates against {schema.as_posix()} and write it to
 {rel(verdict_path)}.
 
-Then store it with:
-  .\\scripts\\run-py.cmd scripts/pipeline.py {sec['id']} --verdict {rel(verdict_path)}""")
+Do NOT run `pipeline.py --verdict` yourself: the caller records the verdict after reading it.
+(The caller stores it with: .\\scripts\\run-py.cmd scripts/pipeline.py {sec['id']} --verdict {rel(verdict_path)})""")
+    return True
+
+
+def run_finalize(sec: Dict[str, Any]) -> bool:
+    """Stages exactly this section's files for one commit (never commits)."""
+    import subprocess
+    _, structured_path = get_section_paths(sec)
+    sid = sec["id"]
+    candidates = [structured_path, ROOT_DIR / "qa-status.json", ROOT_DIR / "STATUS.md",
+                  ROOT_DIR / "qa-reports" / f"{sid}.md", ROOT_DIR / "qa-reports" / f"{sid}.json",
+                  ROOT_DIR / "qa-reports" / f"{sid}.subagent.json"]
+    print(f"\n--- Finalize: {sid} ---")
+    if not structured_path.exists():
+        print(f"[FAIL] Structured file does not exist: {structured_path}")
+        return False
+    if sid.startswith("w-") and not candidates[-1].exists():
+        print(f"[FAIL] Independent QA verdict missing (qa-reports/{sid}.subagent.json); run --verdict first.")
+        return False
+    qa = status_module.audit_section(ROOT_DIR, sec, status_module.load_qa_status(ROOT_DIR))["qa_status"]
+    if not str(qa).startswith("PASS"):
+        print(f"[FAIL] Script QA is {qa}; run --check until it passes.")
+        return False
+    paths = [str(p.relative_to(ROOT_DIR)) for p in candidates if p.exists()]
+    result = subprocess.run(["git", "add", "--", *paths], cwd=ROOT_DIR, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"[FAIL] git add failed: {result.stderr.strip()}")
+        return False
+    print("Staged:")
+    for path in paths:
+        print(f"  {path}")
+    print(f"Suggested message: feat(guide): add {sid} {sec.get('title')} structured section with QA verdict")
     return True
 
 
@@ -336,8 +392,7 @@ def update_project_status():
     print("\n--- Updating Project Status ---")
     root = status_module.get_project_root()
     data = status_module.compute_project_status(root)
-    md_content = status_module.generate_status_markdown(data)
-    (root / "STATUS.md").write_text(md_content, encoding="utf-8")
+    status_module.write_status_markdown(root, data)
     print(status_module.render_compact_summary(data))
 
 
@@ -418,6 +473,9 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
         f_ok = run_frontend_audit()
         success = f_ok and success
 
+    if args.finalize:
+        success = run_finalize(sec) and success
+
     if args.check or args.full:
         v_ok = run_validate(sec)
         q_ok = run_qa(sec)
@@ -447,6 +505,7 @@ def main():
     parser.add_argument("--lint", action="store_true", help="Presentation lint (all structured guides when no section is given)")
     parser.add_argument("--verdict", metavar="FILE", help="Validate and store the independent QA subagent's JSON verdict ('-' reads stdin)")
     parser.add_argument("--qa-subagent-prompt", action="store_true", help="Print the prompt for the independent QA subagent and its verdict path")
+    parser.add_argument("--finalize", action="store_true", help="Stage exactly this section's files (section JSON, QA reports, status files); does not commit")
     parser.add_argument("--backlog", action="store_true", help="Run QA on all structured files lacking a current QA result")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
 
@@ -473,7 +532,7 @@ def main():
         sys.exit(1)
 
     if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.check, args.full,
-                args.lint, args.verdict, args.qa_subagent_prompt]):
+                args.lint, args.verdict, args.qa_subagent_prompt, args.finalize]):
         print_section_status(sec)
         return
 

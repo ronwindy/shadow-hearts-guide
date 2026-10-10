@@ -14,6 +14,7 @@ import json
 import hashlib
 import argparse
 import datetime
+import re
 from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple
 
@@ -53,6 +54,9 @@ def load_qa_status(root: Path) -> Dict[str, Any]:
 def record_qa_result(root: Path, sec_id: str, structured_path: Path, status: str, summary: Dict[str, Any]) -> None:
     """Persist a section's QA result, tied to the structured file's content hash."""
     data = load_qa_status(root)
+    prev = data.get(sec_id, {})
+    if (prev.get("status"), prev.get("summary"), prev.get("content_hash")) == (status, summary, file_hash(structured_path)):
+        return  # same result for the same content: keep checked_at so reruns do not churn the diff
     data[sec_id] = {
         "status": status,
         "summary": summary,
@@ -199,6 +203,18 @@ def generate_status_markdown(data: Dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def write_status_markdown(root: Path, data: Dict[str, Any]) -> bool:
+    """Writes STATUS.md unless only the timestamps differ. Returns True when the file changed."""
+    path = root / "STATUS.md"
+    content = generate_status_markdown(data)
+    if path.exists():
+        mask = lambda t: re.sub(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}", "<ts>", t)
+        if mask(path.read_text(encoding="utf-8")) == mask(content):
+            return False
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
 def main():
     parser = argparse.ArgumentParser(description="Project status summary.")
     parser.add_argument("--update", "-u", action="store_true", help="Regenerate root STATUS.md")
@@ -213,8 +229,8 @@ def main():
         print(json.dumps(data, indent=2))
         return
     if args.update:
-        (root / "STATUS.md").write_text(generate_status_markdown(data), encoding="utf-8")
-        print(f"Updated {root / 'STATUS.md'}")
+        changed = write_status_markdown(root, data)
+        print(f"{'Updated' if changed else 'Unchanged'} {root / 'STATUS.md'}")
     print(render_compact_summary(data))
 
 

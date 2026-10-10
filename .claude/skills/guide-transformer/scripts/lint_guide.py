@@ -6,6 +6,8 @@ Flags text that the Guide Transformer should still have cleaned up:
   prose            paragraph with 3+ sentences or ~40+ words that is not a bullet/numbered list
   upper-item       item name left in UPPERCASE (e.g. TALISMANOFMERCY, B.DRAGON HORN)
   raw-tag          a leftover `[_TAG_]` source marker
+  fragment         a step line that starts lowercase (a wrapped source line split off its sentence)
+  mixed-list       a numbered item after a bullet in one step (a bullet's wrapped text leaked)
   ascii-border     ASCII-art border/box characters (`____`, `¯¯¯`, `.———`, `|` tables, `$$$$`)
   narrative-item   (info) reward/tag that is not in items_summary (overview omitted it)
 
@@ -20,6 +22,7 @@ MAX_WORDS = 39      # ~40+ words  -> list
 
 _LIST_LINE = re.compile(r'^\s*(?:[-*]\s+|\d+\.\s+)')
 _SENTENCE_SPLIT = re.compile(r'(?<=[.!?])["\')\]]*\s+(?=["\'(\[*]*[A-Z0-9])')
+_LIST_MARK = re.compile(r'^\s*(?:[-*]|\d+\.)\s+')
 _RAW_TAG = re.compile(r'\[_[^\]]*_\]')
 _ASCII = re.compile(r'(_{5,}|¯{3,}|—{5,}|-{5,}|={5,}|\$\$\$\$|\.—|—\.|\\\s*\$|^\s*\|.*\|\s*$)', re.M)
 _UPPER_RUN = re.compile(r"\b[A-Z][A-Z.'’]*(?:[ ][A-Z][A-Z.'’]*)*\b")
@@ -92,6 +95,18 @@ def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
             words = len(text.split())
             if len(sentences) > MAX_SENTENCES or words > MAX_WORDS:
                 add("prose", "warn", loc, f"{len(sentences)} sentences / {words} words: {text}")
+        if loc.count(" ") == 1:  # step description only (not notes / boss strategy)
+            seen_bullet = False
+            for line in raw.splitlines():
+                if not line.strip():
+                    continue
+                body = _plain(_LIST_MARK.sub("", line)).lstrip(" \"'([")
+                if body[:1].islower():
+                    add("fragment", "warn", loc, line.strip())
+                if re.match(r'^\s*\d+\.\s', line) and seen_bullet:
+                    add("mixed-list", "warn", loc, line.strip())
+                if re.match(r'^\s*[-*]\s', line):
+                    seen_bullet = True
         plain = _plain(raw)
         for m in _UPPER_RUN.finditer(plain):
             run = m.group(0)

@@ -37,7 +37,7 @@ Make the smallest change that fulfils your role; hand other problems to the owni
 ## 5. Per-Section Workflow
 Section types decide the path:
 - **Walkthrough** (`w-*`): scaffold → LLM refine → validate → QA → independent QA subagent → status.
-  The independent QA subagent is a **manual step** (a script cannot spawn one): after `--check` passes, run `pipeline.py <id> --qa-subagent-prompt` (prints the exact prompt and verdict path), launch a subagent with it, and act on its verdict. The subagent returns a JSON verdict (`.claude/skills/qa/schemas/qa-verdict.schema.json`); record it with `pipeline.py <id> --verdict <file.json>`. Run `pipeline.py <id> --lint` (or without an id for all sections) to catch leftover prose blocks, UPPERCASE item tags, `[_TAG_]` and ASCII borders. `--check`/`--verify` print a reminder for `w-*` sections until `qa-reports/<id>.subagent.json` exists.
+  The independent QA subagent is a **manual step** (a script cannot spawn one): after `--check` passes, run `pipeline.py <id> --qa-subagent-prompt` (prints the exact prompt and verdict path), launch a subagent with it, and act on its verdict. The subagent returns a JSON verdict (`.claude/skills/qa/schemas/qa-verdict.schema.json`); record it with `pipeline.py <id> --verdict <file.json>`. Run `pipeline.py <id> --lint` (or without an id for all sections) to catch leftover prose blocks, UPPERCASE item tags, `[_TAG_]`, ASCII borders, and fragments (a step line starting lowercase = a wrapped source line split off). `--scaffold` prints fragment / low-confidence step-type warnings: a flagged scaffold is a draft, compare it with the canonical and patch it before QA (QA does not catch garbled steps). The subagent writes `qa-reports/<id>.subagent-draft.json` and must not run `--verdict`; `--verdict` removes the draft. `pipeline.py <id> --finalize` stages exactly the section's files (no commit). `--check`/`--verify` print a reminder for `w-*` sections until `qa-reports/<id>.subagent.json` exists.
 - **Reference/table appendices** (`a-*`, items, shops, bestiary, bosses): deterministic scaffold only, no LLM prose; validate → QA → status.
 
 ```powershell
@@ -51,7 +51,7 @@ Schema reference: [`docs/structured-schema.md`](docs/structured-schema.md). Edit
 Choice outcomes: set `outcome` only when the source states it; otherwise omit (never infer). Boss data: all canonical bosses must be present in `bosses[]` or as `step.boss`; compare canonical boss count/names before editing.
 
 ## 6. Page Metadata
-Every guide page has metadata (`id`, `title`, `type`, `source`, `related_pages`, `prerequisites`, `unlocks`). Relationship fields may be empty; never fill them speculatively.
+Every guide page has metadata: `id`, `title`, `type`, `source` and `navigation` (`prev` / `next`) — see [`docs/structured-schema.md`](docs/structured-schema.md). The schema has no `related_pages` / `prerequisites` / `unlocks` fields. Relationships the source states live in the step text (a hub teaser names the target as bold `[CODE] Title`) and in `navigation`; never add them speculatively.
 
 ## 7. UX Goal
 Make the guide easier to follow *while playing*: objective, route, checklist steps, missable/important callouts, rewards, items, boss/encounter, optional content, each only when the source supports it.
