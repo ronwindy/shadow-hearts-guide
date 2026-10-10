@@ -1,0 +1,50 @@
+{
+  "section_id": "w-1-08",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Overview checklist items, equipment, valuables and lottery entry match items_summary with correct step references",
+    "Enemy table: all 10 rows match",
+    "Shops: both inventories match names, prices and order",
+    "Choices at steps 7, 17, 26, 27 match",
+    "Sub-bosses Xieshi, Baigu, Qinggu stats, drops, EXP/cash match",
+    "Boss Yamaraja: War stats, party levels, strategy preserved and attached to step 30",
+    "Lottery table and Flash Badge missable text match",
+    "All source notes present in source order",
+    "Route directions in steps 3-6, 10-15, 20-24 unchanged",
+    "No facts invented"
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "category": "omitted",
+      "location": "steps[30].boss (and guide.boss / bosses[0])",
+      "canonical": "Boss card party grid with recommended equipment and fusions per character",
+      "structured": "party[] keeps only name and level",
+      "issue": "Recommended equipment and fusion loadout for Yamaraja: War not carried over; schema party[] supports only name and level."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "guide.objectives[1]",
+      "canonical": "no explicit objective",
+      "structured": "Proceed to Shanghai, Huayuan (2)",
+      "issue": "Derived from navigation metadata, not verbatim source text."
+    },
+    {
+      "severity": "low",
+      "category": "omitted",
+      "location": "steps[9], steps[19]",
+      "canonical": "'Damn cat......' author aside; 'NOTHING' emphasis",
+      "structured": "dropped / lowercased",
+      "issue": "Author flavour comment removed; no gameplay meaning lost."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[30].boss vs guide.boss / bosses[0]",
+      "canonical": "single boss card",
+      "structured": "strategy text appears three times",
+      "issue": "Duplicate strategy text; confirm template renders only one."
+    }
+  ]
+}

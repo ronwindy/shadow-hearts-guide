@@ -1,0 +1,71 @@
+{
+  "qa": {
+    "status": "PASS WITH WARNINGS",
+    "section_id": "w-1-08",
+    "section_title": "Temple Ruins",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 4
+    },
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "structural fidelity",
+        "location": "steps.boss[Xieshi]",
+        "source": {
+          "text": "Not in canonical bosses"
+        },
+        "generated": {
+          "text": "Xieshi"
+        },
+        "description": "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "low",
+        "category": "structural fidelity",
+        "location": "steps.boss[Baigu]",
+        "source": {
+          "text": "Not in canonical bosses"
+        },
+        "generated": {
+          "text": "Baigu"
+        },
+        "description": "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-003",
+        "severity": "low",
+        "category": "structural fidelity",
+        "location": "steps.boss[Qinggu]",
+        "source": {
+          "text": "Not in canonical bosses"
+        },
+        "generated": {
+          "text": "Qinggu"
+        },
+        "description": "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-004",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Yamaraja: War].strategy",
+        "source": {
+          "text": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful only a"
+        },
+        "generated": {
+          "text": "- As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen**"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
+  }
+}

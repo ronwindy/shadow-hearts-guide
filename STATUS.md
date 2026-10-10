@@ -1,14 +1,14 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-10 14:07:56`
+> Last synced: `2026-10-10 14:20:08`
 
 ```text
-=== PROJECT STATUS (2026-10-10 14:07:56) ===
-Canonical 68/68 | Structured 11/68 | QA pass 9/68 (fail 1) | Web built 11/68
+=== PROJECT STATUS (2026-10-10 14:20:08) ===
+Canonical 68/68 | Structured 12/68 | QA pass 10/68 (fail 1) | Web built 12/68
 Next:
   1. Fix QA FAIL in header (Title, Metadata & Intro Notes)
   2. Run QA on i-1-00 (Table of Contents)
-  3. Structure w-1-08 (Temple Ruins) - next chronological
+  3. Structure w-1-09 (Shanghai, Huayuan (2)) - next chronological
 QA FAIL:       header
 Pending QA:    i-1-00
 ```
@@ -27,7 +27,7 @@ Pending QA:    i-1-00
 | `[W-1-05]` | `w-1-05` | Dalian | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-06]` | `w-1-06` | Smuggler's Boat | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-07]` | `w-1-07` | Shanghai, Huayuan (1) | Walkthrough - Asia | WEB_BUILT |
-| `[W-1-08]` | `w-1-08` | Temple Ruins | Walkthrough - Asia | NOT_STRUCTURED |
+| `[W-1-08]` | `w-1-08` | Temple Ruins | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-09]` | `w-1-09` | Shanghai, Huayuan (2) | Walkthrough - Asia | NOT_STRUCTURED |
 | `[W-1-10]` | `w-1-10` | Asia Side Quests | Walkthrough - Asia | NOT_STRUCTURED |
 | `[W-S-01]` | `w-s-01` | Yuri's Level 1 Fusions | Walkthrough - Asia | NOT_STRUCTURED |

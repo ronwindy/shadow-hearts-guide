@@ -1,0 +1,1158 @@
+{
+  "guide": {
+    "id": "w-1-08",
+    "code": "[W-1-08]",
+    "title": "Temple Ruins",
+    "type": "walkthrough",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-1-07",
+        "code": "[W-1-07]",
+        "title": "Shanghai, Huayuan (1)",
+        "file": "sections/w-1-07-shanghai-huayuan-1.json"
+      },
+      "next": {
+        "id": "w-1-09",
+        "code": "[W-1-09]",
+        "title": "Shanghai, Huayuan (2)",
+        "file": "sections/w-1-09-shanghai-huayuan-2.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat Yamaraja: War",
+      "Proceed to Shanghai, Huayuan (2)"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Move forward to the stage area in the center, but before examining the statue, check around the left pillar to find a chest containing a Lottery Ticket. (step 1)"
+        },
+        {
+          "name": "Silver Hourglass",
+          "category": "items",
+          "location": "Continue along to the next area for another chest; this one has a Silver Hourglass. (step 13)"
+        },
+        {
+          "name": "Talisman of Mercy",
+          "category": "items",
+          "location": "Make your way west to the next area, then continue along to find a Save Point and a chest; open the chest for a Talisman of Mercy. (step 1)"
+        },
+        {
+          "name": "Thera Seed",
+          "category": "items",
+          "location": "Open the empty chest here if you like, then move north, opening the chest in this area for a Thera Seed. (step 14)"
+        },
+        {
+          "name": "Tent",
+          "category": "items",
+          "location": "Open the chest here for a Tent, then continue to the next area. (step 3)"
+        },
+        {
+          "name": "Gold Hourglass",
+          "category": "items",
+          "location": "Take the eastern path, opening the chest here for a Gold Hourglass. (step 15)"
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "category": "items",
+          "location": "Keep going to the next screen, where you'll be at a fork in the path with a chest containing a Bronze Arrowhead inside. (step 3)"
+        },
+        {
+          "name": "Witch's Broth",
+          "category": "items",
+          "location": "Make your way east, following the path through two screens to the last chest in the section, a Witch's Broth. (step 15)"
+        },
+        {
+          "name": "Tea of the Healer",
+          "category": "items",
+          "location": "There'll be a full chest here this time, so grab the Tea of the Healer out of it and keep going. (step 4)"
+        },
+        {
+          "name": "Thera Seed",
+          "category": "items",
+          "location": "Ignore the eastern path at this fork, taking the north path to a chest containing a Thera Seed. (step 21)"
+        },
+        {
+          "name": "W.Tiger Hair",
+          "category": "items",
+          "location": "At the fork here, take the top eastern path first, where you'll find a W.Tiger Hair. (step 4)"
+        },
+        {
+          "name": "Mana Seed",
+          "category": "items",
+          "location": "Open the chest here for a Mana Seed, then take the western path from this room to find a Bell Bracelet, which you should immediately equip to Zhuzhen. (step 6)"
+        },
+        {
+          "name": "Bronze Dagger",
+          "category": "items",
+          "location": "Back at the fork, north leads to a dead-end, so take the lower western path to find yet another chest, this time with a Bronze Dagger. (step 4)"
+        },
+        {
+          "name": "Soul Benediction",
+          "category": "items",
+          "location": "Ignore the southern path and head north instead, opening the chest here for a Soul Benediction. (step 21)"
+        },
+        {
+          "name": "Talisman of Mercy",
+          "category": "items",
+          "location": "Head south first, opening the chest here for a whole lot of NOTHING, then head south to the next screen for a Talisman of Mercy. (step 5)"
+        },
+        {
+          "name": "Seal of Wisdom",
+          "category": "items",
+          "location": "Make your way north first, as it leads to a dead-end with a Seal of Wisdom at the end. (step 23)"
+        },
+        {
+          "name": "Mana Seed",
+          "category": "items",
+          "location": "At this four-way fork, head east first, opening the chest here for a Mana Seed. (step 21)"
+        },
+        {
+          "name": "Pure Seed",
+          "category": "items",
+          "location": "Head south first, opening the chest here for a Pure Seed, then head south one more screen for a Wood Token. (step 24)"
+        },
+        {
+          "name": "Tent",
+          "category": "items",
+          "location": "Open the chest here for a Tent, then continue to the next area. (step 10)"
+        },
+        {
+          "name": "Fruit of Yggdrasil",
+          "category": "items",
+          "location": "Watch a long series of events, where you'll receive a Fruit of Yggdrasil, Alice will temporarily leave your party, and you'll regain control back at the start of the maze. (step 29)"
+        },
+        {
+          "name": "B.Tortoise Fang",
+          "category": "items",
+          "location": "Open the empty chest here if you like, then take the northern path to find another chest containing a B.Tortoise Fang. (step 11)"
+        },
+        {
+          "name": "Bell Bracelet",
+          "category": "equipment",
+          "location": "Open the chest here for a Mana Seed, then take the western path from this room to find a Bell Bracelet, which you should immediately equip to Zhuzhen. (step 6)"
+        },
+        {
+          "name": "Leonardo's Bear",
+          "category": "equipment",
+          "location": "Open the chest for a Leonardo's Bear, then use the yellow Warp Point to go to the next area. (step 22)"
+        },
+        {
+          "name": "Western Belt",
+          "category": "equipment",
+          "location": "Open the chest to the south for a Western Belt, then continue south to the next area, which is a dead- end containing a Voodoo Doll. (step 12)"
+        },
+        {
+          "name": "Studded Cap",
+          "category": "equipment",
+          "location": "Continuing south leads to a dead-end, so go back to the last fork and head west, opening the chest here for a Studded Cap. (step 24)"
+        },
+        {
+          "name": "Voodoo Doll",
+          "category": "equipment",
+          "location": "Open the chest to the south for a Western Belt, then continue south to the next area, which is a dead- end containing a Voodoo Doll. (step 12)"
+        },
+        {
+          "name": "Wood Token",
+          "category": "valuables",
+          "location": "Head south first, opening the chest here for a Pure Seed, then head south one more screen for a Wood Token. (step 24)"
+        },
+        {
+          "name": "Lottery Member No. 11 (Master Xiaofang)",
+          "category": "lottery",
+          "location": ""
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#024",
+        "name": "Python",
+        "hp": 40,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#025",
+        "name": "Sea Gremlin",
+        "hp": 70,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#026",
+        "name": "Xieshi",
+        "hp": 530,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Inflicts Silence"
+      },
+      {
+        "number": "#027",
+        "name": "Raging Spirit",
+        "hp": 38,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#028",
+        "name": "Puppet Guard",
+        "hp": 45,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#029",
+        "name": "Baigu",
+        "hp": 380,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#030",
+        "name": "Succubus Queen",
+        "hp": 60,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Confusion"
+      },
+      {
+        "number": "#031",
+        "name": "Brain Sucker",
+        "hp": 40,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#032",
+        "name": "Qinggu",
+        "hp": 600,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#033",
+        "name": "Yamaraja: War",
+        "hp": 840,
+        "class": "Dark",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Inflicts Instant Death, S-Atk Resistant"
+      }
+    ],
+    "bosses": [
+      {
+        "type": "BOSS",
+        "name": "Yamaraja: War",
+        "enemies": [
+          {
+            "name": "Yamaraja: War",
+            "hp": 840,
+            "class": "Dark",
+            "drop": "R.Phoenix Talon"
+          }
+        ],
+        "party": [
+          {
+            "name": "Yuri",
+            "level": 17
+          },
+          {
+            "name": "Margarete",
+            "level": 16
+          },
+          {
+            "name": "Zhuzhen",
+            "level": 15
+          }
+        ],
+        "exp": 2000,
+        "cash": 5400,
+        "strategy": "- As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer.\n- He also uses the **Game of Death**, just like Wugui; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you.\n- His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward.\n- The only other thing he does is a hellacious physical attack that'll hit for major damage.\n- Once he starts using Nightmare repeatedly, you could be in a bit of trouble.\n- Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.\n- **Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed.\n- **Zhuzhen** should focus completely on recovery.\n- If you're having trouble staying healed, have Yuri fuse into **Heaven's Fiend** so you have the whole party healing spell."
+      }
+    ],
+    "shops": [
+      {
+        "name": "Kato Pachimon General Store",
+        "inventory": [
+          {
+            "name": "Leather Cap",
+            "price": 600
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Studded Cap",
+            "price": 1700
+          },
+          {
+            "name": "Pure Seed",
+            "price": 510
+          },
+          {
+            "name": "Casual Belt",
+            "price": 600
+          },
+          {
+            "name": "Talisman of Luck",
+            "price": 480
+          },
+          {
+            "name": "Western Belt",
+            "price": 1700
+          },
+          {
+            "name": "Talisman of Mercy",
+            "price": 820
+          },
+          {
+            "name": "Shell Bracelet",
+            "price": 2770
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Bone Bracelet",
+            "price": 2960
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Rosewood Bracelet",
+            "price": 3000
+          },
+          {
+            "name": "Angel's Feather",
+            "price": 80
+          },
+          {
+            "name": "Bell Bracelet",
+            "price": 3120
+          },
+          {
+            "name": "Faerie's Sigh",
+            "price": 85
+          },
+          {
+            "name": "Spikes",
+            "price": 2810
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "Leonardo's Bear",
+            "price": 3330
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Voodoo Doll",
+            "price": 5200
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Thera Leaf",
+            "price": 50
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Thera Seed",
+            "price": 120
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Mana Leaf",
+            "price": 100
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          },
+          {
+            "name": "Mana Seed",
+            "price": 300
+          }
+        ]
+      },
+      {
+        "name": "Master Shoho's Allowance Job",
+        "inventory": [
+          {
+            "name": "Steel Claw",
+            "price": 2800
+          },
+          {
+            "name": "Thera Leaf",
+            "price": 50
+          },
+          {
+            "name": "Tome of the Moon",
+            "price": 3000
+          },
+          {
+            "name": "Thera Seed",
+            "price": 120
+          },
+          {
+            "name": "Pilgrim's Staff",
+            "price": 2700
+          },
+          {
+            "name": "Mana Leaf",
+            "price": 100
+          },
+          {
+            "name": "Nanbu Pistol",
+            "price": 2900
+          },
+          {
+            "name": "Mana Seed",
+            "price": 300
+          },
+          {
+            "name": "Studded Harness",
+            "price": 2500
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Studded Bustier",
+            "price": 2700
+          },
+          {
+            "name": "Pure Seed",
+            "price": 510
+          },
+          {
+            "name": "Leather Cap",
+            "price": 600
+          },
+          {
+            "name": "Talisman of Luck",
+            "price": 480
+          },
+          {
+            "name": "Studded Cap",
+            "price": 1700
+          },
+          {
+            "name": "Talisman of Mercy",
+            "price": 820
+          },
+          {
+            "name": "Casual Belt",
+            "price": 600
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Western Belt",
+            "price": 1700
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Shell Bracelet",
+            "price": 2770
+          },
+          {
+            "name": "Angel's Feather",
+            "price": 80
+          },
+          {
+            "name": "Bone Bracelet",
+            "price": 2960
+          },
+          {
+            "name": "Faerie's Sigh",
+            "price": 85
+          },
+          {
+            "name": "Rosewood Bracelet",
+            "price": 3000
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "Bell Bracelet",
+            "price": 3120
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Spikes",
+            "price": 2810
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Leonardo's Bear",
+            "price": 3330
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Voodoo Doll",
+            "price": 5200
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Make your way into the Temple itself after a bit of dialogue.\n2. Move forward to the stage area in the center; before examining the statue, check around the left pillar for a chest containing a **Lottery Ticket**.\n3. Examine the statue to have **Zhuzhen** try to remember the rites to unlock the temple's entrance.\n4. Make your way west to the next area, then continue along to find a **Save Point** and a chest; open the chest for a **Talisman of Mercy**.\n5. Use the **Save Point**, and talk to both the **Smuggler Boss** and the **Courier Subordinate** (you can do some shopping with the latter, if needed).\n6. Go back and talk to **Zhuzhen** to continue.",
+        "type": "preparation",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Enemies of every class",
+            "text": "- The Temple Ruins have an enemy of every class.\n- If you don't have all of the level 1 Fusions the source recommended earlier, use this place to get enough Soul Energy to get the Fusions."
+          },
+          {
+            "type": "warning",
+            "title": "Buy a Leonardo's Bear",
+            "text": "- The **Courier Subordinate** has **Leonardo's Bears** for sale.\n- You will find two here in the dungeon, but make **absolutely sure** that you buy one more for your active party.\n- The last boss here **will** use Instant Death attacks."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          },
+          {
+            "name": "Talisman of Mercy",
+            "category": "items",
+            "matched_overview_item": "Talisman of Mercy"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. **Zhuzhen** will unlock the passage; go down the stairs to the next area.\n2. Follow the path and you'll arrive in a small room with a **Save Point** and two doors.\n3. After some dialogue, your party will be split into two groups: **Yuri** and **Zhuzhen**, and **Alice** and **Margarete**.\n4. Your items will also be sealed in battle, so make sure to do any healing outside of battle.",
+        "type": "battle",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Xiaofang's shop",
+            "text": "**Xiaofang** has a shop as well. As mentioned before, make sure to buy an additional **Leonardo's Bear** if you haven't already."
+          },
+          {
+            "type": "warning",
+            "title": "Clear your Malice",
+            "text": "Clear your Malice before starting."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "**Yuri / Zhuzhen**\n\n1. Use the **Save Point**, then enter the trial.\n2. Open the chest here for a **Tent**, then continue to the next area.\n3. Continue following the path until you reach the **Warp Point**; press the CROSS button to warp to another area.\n4. Move east to the next screen, then east to another, where you'll find an empty treasure chest.\n5. Keep going to the next screen, where you'll be at a fork in the path with a chest containing a **Bronze Arrowhead**.\n6. Ignore the north and east paths since they lead to each other.\n7. Take the western path to a yellow **Warp Point**, using it to warp to the next section of the maze.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Tent",
+            "category": "items",
+            "matched_overview_item": "Tent"
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "category": "items",
+            "matched_overview_item": "Bronze Arrowhead"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "1. **Xiaofang** is here this time, so feel free to buy some items if you like, then head north to the next area.\n2. Continue north to an empty chest, then keep going right to the next screen.\n3. There's a full chest here this time; grab the **Tea of the Healer** out of it and keep going.\n4. At the fork here, take the top eastern path first, where you'll find a **W.Tiger Hair**.\n5. Back at the fork, north leads to a dead-end, so take the lower western path to find yet another chest, this time with a **Bronze Dagger**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Tea of the Healer",
+            "category": "items",
+            "matched_overview_item": "Tea of the Healer"
+          },
+          {
+            "name": "W.Tiger Hair",
+            "category": "items",
+            "matched_overview_item": "W.Tiger Hair"
+          },
+          {
+            "name": "Bronze Dagger",
+            "category": "items",
+            "matched_overview_item": "Bronze Dagger"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "1. Make your way south to the next area, opening an empty chest in this area.\n2. Continue west to the next area, to another fork.\n3. Head south first, opening the chest here for nothing at all, then head south to the next screen for a **Talisman of Mercy**.\n4. Ignore the path to the west and head back to the last fork.\n5. Take the north path to the next screen.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Talisman of Mercy",
+            "category": "items",
+            "matched_overview_item": "Talisman of Mercy"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "1. Open the chest here for a **Mana Seed**.\n2. Take the western path from this room to find a **Bell Bracelet**, which you should immediately equip to **Zhuzhen**.\n3. Go back to the fork one last time and head north to the next screen.\n4. If you like, head one screen east and open the empty chest here; otherwise, ignore that entire direction, as it leads to the last area the source had you ignore.\n5. Head west to the next area, then north at the fork here (since south is a dead-end).\n6. Step on the red **Warp Point** to go to the next section of the maze.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Before the next battle",
+            "text": "- Make sure that **Zhuzhen** is at least level 12 and has the **NourishingPotion** spell learned so that he has healing capabilities.\n- You should also invest in a second **Bell Bracelet** for the upcoming battle to prevent Silence."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Mana Seed",
+            "category": "items",
+            "matched_overview_item": "Mana Seed"
+          },
+          {
+            "name": "Bell Bracelet",
+            "category": "equipment",
+            "matched_overview_item": "Bell Bracelet"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "description": "1. Talk/shop with **Xiaofang** if needed, then head all the way north until you reach a room.\n2. Use the **Save Point**, then examine the altar to find a glowing gem.\n3. You are asked: \"Do you wish to put your hand in front of it?\"",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. I'm not ready yet."
+          },
+          {
+            "option": "2. Go for it!"
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "Choose 2, and you'll be thrown into a sub-boss battle.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Xieshi",
+          "enemies": [
+            {
+              "name": "Xieshi",
+              "hp": 530,
+              "class": "Fire",
+              "drop": "Jade Lariat"
+            }
+          ],
+          "exp": 1600,
+          "cash": 4200,
+          "strategy": "- His Flaming Arm of Death spell will hit your party for a decent amount of damage, but also can Silence your party, so having Bell Bracelets equipped definitely helps a ton.\n- You don't want to be stuck with NO healing abilities at all!\n- I strongly recommend fusing Yuri in the Man Dragon Fusion if you have it, as not only is the enemy fire-based, but you'll be able to heal yourself in a pinch, if need be.\n- Have Yuri use the Flash Flood skill repeatedly, and it should do massive damage each round.\n- If you don't have Man Dragon, then fuse into Raging Tiger and cast Flying Stones to do some decent damage.\n- Zhuzhen should be healing pretty much the entire time.\n- If he does have a free round, have him use Ogre Flamedance, since it'll still do some okay damage, even though the boss is fire-based."
+        },
+        "encounter": {
+          "enemies": [
+            "Xieshi"
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "description": "- After the battle, control will switch over to **Alice** and **Margarete**.\n- This time, your Special Skills will be sealed, so no magic.",
+        "type": "battle",
+        "rewards": []
+      },
+      {
+        "id": 10,
+        "description": "**Alice / Margarete**\n\n1. Use the **Save Point**, then enter the trial.\n2. Open the chest here for a **Tent**, then continue to the next area.\n3. The west and east paths lead to dead-ends, so continue north to a green **Warp Point** that'll take you to the next area.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Tent",
+            "category": "items",
+            "matched_overview_item": "Tent"
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Soul Energy and Malice",
+            "text": "- Monsters defeated while **Yuri** isn't in the party DO count toward his Soul Energy.\n- If you want the Light Fusion, you can fight plenty of **Raging Spirits** here to get it.\n- The Malice meter will not build when Yuri isn't in the party."
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "description": "1. Move west two areas to a fork.\n2. Open the empty chest here if you like, then take the northern path to find another chest containing a **B.Tortoise Fang**.\n3. Ignore the southern path, taking the western path instead to the next screen.\n4. Ignore the fork to the north as well, as it leads to the last area.\n5. Make your way west and south, using the yellow **Warp Point** to go to the next area.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "B.Tortoise Fang",
+            "category": "items",
+            "matched_overview_item": "B.Tortoise Fang"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "description": "1. **Xiaofang** is here if you need him.\n2. The next screen to the east has a fork; make your way south, then south again to another fork.\n3. Open the chest to the south for a **Western Belt**.\n4. Continue south to the next area, which is a dead-end containing a **Voodoo Doll**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Western Belt",
+            "category": "equipment",
+            "matched_overview_item": "Western Belt"
+          },
+          {
+            "name": "Voodoo Doll",
+            "category": "equipment",
+            "matched_overview_item": "Voodoo Doll"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "description": "1. Head back to the last screen and take the eastern path to be at a four-way fork.\n2. Ignore the southern path and take the eastern path, opening an empty treasure chest in the next area.\n3. Continue along to the next area for another chest; this one has a **Silver Hourglass**.\n4. Keep going to the next area.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Silver Hourglass",
+            "category": "items",
+            "matched_overview_item": "Silver Hourglass"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "description": "1. At this four-way fork, open the chest for an extra little bit of nothing.\n2. Ignore the northern path, unless you want to explore the area and open an empty chest at a dead-end.\n3. Head west first, continuing west once more to a fork.\n4. Open the empty chest here if you like, then move north, opening the chest in this area for a **Thera Seed**.\n5. Make your way back to the four-way fork by going back south once, then east twice.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Thera Seed",
+            "category": "items",
+            "matched_overview_item": "Thera Seed"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "description": "1. Take the eastern path, opening the chest here for a **Gold Hourglass**.\n2. Make your way east, following the path through two screens to the last chest in the section, a **Witch's Broth**.\n3. Head north and step on the red **Warp Point** to take you to the next section.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Before the next battle",
+            "text": "If you don't have enough already, you should invest in two **Rosewood Bracelets** for the upcoming boss battle to prevent Paralysis."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Gold Hourglass",
+            "category": "items",
+            "matched_overview_item": "Gold Hourglass"
+          },
+          {
+            "name": "Witch's Broth",
+            "category": "items",
+            "matched_overview_item": "Witch's Broth"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "description": "- You won't get to control **Alice** again after the battle.\n- She'll be temporarily unavailable for a while.\n- Make sure she doesn't have any equipment on that you may need.",
+        "type": "preparation",
+        "rewards": []
+      },
+      {
+        "id": 17,
+        "description": "1. **Xiaofang**'s here yet again; shop if you like, then head north until you reach your destination.\n2. Use the **Save Point**, then examine the altar to find a glowing gem.\n3. You are asked: \"Do you wish to put your hand in front of it?\"",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. Not yet."
+          },
+          {
+            "option": "2. I'll do it anyway!"
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 18,
+        "description": "Choose 2, and you'll be thrown into a sub-boss battle.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Baigu",
+          "enemies": [
+            {
+              "name": "Baigu",
+              "hp": 380,
+              "class": "Light",
+              "drop": "Coral Lariat"
+            }
+          ],
+          "exp": 1600,
+          "cash": 4200,
+          "strategy": "- His Shining Arm of Death spell will hit your party for a decent amount of damage, but also can Paralyze your party, so having Rosewood Bracelets equipped definitely helps a ton.\n- You don't want to be stuck with NO healing abilities at all!\n- Not much of a strategy here, since there's only one thing you can do: Attack.\n- Have Alice be the preferred healer, using Thera Seeds and such, since her attack is the weakest.\n- Keep hammering away, and as long as you stay healed, Baigu will eventually fall."
+        },
+        "encounter": {
+          "enemies": [
+            "Baigu"
+          ]
+        }
+      },
+      {
+        "id": 19,
+        "description": "- After the battle, control will switch back over to **Yuri** and **Zhuzhen**.\n- This time, BOTH your Items and Special Skills will be sealed, so nothing but attacks.",
+        "type": "battle",
+        "rewards": []
+      },
+      {
+        "id": 20,
+        "description": "**Yuri / Zhuzhen**\n\n1. Enter the next part of the trial and open the chest for a tent.\n2. Move on two screens to the north to be at a fork.\n3. Ignore the path to the west, unless you want to open an empty chest, then continue east, following the path through this screen and to another with a fork.\n4. East leads to a dead-end, so keep going north to a green **Warp Point** that will take you to the next area.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 21,
+        "description": "1. Move north, where you'll find even more of nothing in a chest.\n2. Ignore the eastern path at this fork, taking the north path to a chest containing a **Thera Seed**.\n3. At this four-way fork, head east first, opening the chest here for a **Mana Seed**.\n4. Go back and take the western path next to another fork.\n5. Ignore the southern path and head north instead, opening the chest here for a **Soul Benediction**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Thera Seed",
+            "category": "items",
+            "matched_overview_item": "Thera Seed"
+          },
+          {
+            "name": "Mana Seed",
+            "category": "items",
+            "matched_overview_item": "Mana Seed"
+          },
+          {
+            "name": "Soul Benediction",
+            "category": "items",
+            "matched_overview_item": "Soul Benediction"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "description": "1. At the fork here, the northern path is a dead-end, so take the eastern path, opening the empty chest on the next screen.\n2. South leads back to the four-way fork, so continue east two screens to another fork.\n3. South here also leads back to the four-way fork, so keep going east until you reach the last section of this area.\n4. Open the chest for a **Leonardo's Bear**, then use the yellow **Warp Point** to go to the next area.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Leonardo's Bear",
+            "category": "equipment",
+            "matched_overview_item": "Leonardo's Bear"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "description": "1. **Xiaofang** will be here once again if you need to shop.\n2. Go west to a fork; ignore the path to the south and head west to a four-way fork.\n3. Make your way north first, as it leads to a dead-end with a **Seal of Wisdom** at the end.\n4. Ignore the southern path and take the western path, which leads to another four-way fork with an empty chest near the bottom of the screen.\n5. Take the southern path now, ignoring the eastern path at the next fork (since it leads back to the other four-way fork), and keep going south.\n6. Keep following it to a dead-end with **Xiaofang**. Instead of a shop, this time Xiaofang is a Lottery Member (**Lottery Member No. 11**).",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Seal of Wisdom",
+            "category": "items",
+            "matched_overview_item": "Seal of Wisdom"
+          }
+        ],
+        "notes": [
+          {
+            "type": "missable",
+            "title": "Win the Flash Badge",
+            "text": "- The ring here moves fast; equipping the **Pocket Watch** will make it easier to hit the areas.\n- Make sure to win the **Flash Badge** before continuing on.\n- It increases your agility by 25 points, but it makes the indicator on your Judgment Ring spin twice as fast.\n- If you don't win it, reload your last save and try again.\n- You need to win something from each member at least once.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Flash Badge"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "Kirin Scale"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "Priest's Wine"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Pure Seed"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "description": "1. Go back north to the four-way intersection with the empty chest.\n2. Ignore the northern path and head west instead to another fork.\n3. Head south first, opening the chest here for a **Pure Seed**, then head south one more screen for a **Wood Token**.\n4. Continuing south leads to a dead-end, so go back to the last fork and head west, opening the chest here for a **Studded Cap**.\n5. At the last fork here, ignore the path to the west and move south, continuing south three screens until you reach the red **Warp Point** that leads to the next area.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Pure Seed",
+            "category": "items",
+            "matched_overview_item": "Pure Seed"
+          },
+          {
+            "name": "Wood Token",
+            "category": "valuables",
+            "matched_overview_item": "Wood Token"
+          },
+          {
+            "name": "Studded Cap",
+            "category": "equipment",
+            "matched_overview_item": "Studded Cap"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "description": "- Talk to **Xiaofang** here, and you'll find out that you need the **Wood Token** to continue.\n- You already have it.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Before the next battle",
+            "text": "Make sure that **Yuri** has the **Pocket Watch** equipped for the next battle."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 26,
+        "description": "1. Head all the way north until you reach a room.\n2. Use the **Save Point**, then examine the altar to find a glowing gem.\n3. You are asked: \"Look at the stone plate?\"",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. Sure."
+          },
+          {
+            "option": "2. Who cares?"
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 27,
+        "description": "- Choose 1.\n- You'll be told one space is empty and needs a wooden tag.\n- You are asked: \"Set the Wood Token?\"",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. No."
+          },
+          {
+            "option": "2. Yes."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 28,
+        "description": "Choose 2, and you'll be thrown into your last sub-boss battle.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Qinggu",
+          "enemies": [
+            {
+              "name": "Qinggu",
+              "hp": 600,
+              "class": "Water",
+              "drop": "Leonardo's Bear"
+            }
+          ],
+          "exp": 1800,
+          "cash": 4200,
+          "strategy": "- Hopefully you equipped the **Pocket Watch** on Yuri so that his Judgment Ring is unaffected.\n- No strategy at all here, since all you can do is Attack and Defend.\n- Just battle back and forth until you eventually win.\n- If you've become proficient with your Judgment Ring, try equipping the **Flash Badge** on Yuri so he'll get a few more turns in.\n- If you still can't win, then you'll have to level up some more and try again."
+        },
+        "encounter": {
+          "enemies": [
+            "Qinggu"
+          ]
+        }
+      },
+      {
+        "id": 29,
+        "description": "1. After the battle, your party will reunite.\n2. **Make sure to save**, then go into the door **Xiaofang** unlocks.\n3. Watch a long series of events.\n4. You'll receive a **Fruit of Yggdrasil**.\n5. **Alice** will temporarily leave your party.\n6. You'll regain control back at the start of the maze.",
+        "type": "story",
+        "rewards": [
+          {
+            "name": "Fruit of Yggdrasil",
+            "category": "items",
+            "matched_overview_item": "Fruit of Yggdrasil"
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Last shop visit",
+            "text": "This is the last time **Xiaofang** appears with a shop. If you haven't yet, buy one **Leonardo's Bear** so that you will have three in the last boss battle of this area."
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "description": "1. Take a moment to make sure everyone has a **Leonardo's Bear** equipped.\n2. Once they do, attempt to leave to face the next **Yamaraja**.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "BOSS",
+          "name": "Yamaraja: War",
+          "enemies": [
+            {
+              "name": "Yamaraja: War",
+              "hp": 840,
+              "class": "Dark",
+              "drop": "R.Phoenix Talon"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 17
+            },
+            {
+              "name": "Margarete",
+              "level": 16
+            },
+            {
+              "name": "Zhuzhen",
+              "level": 15
+            }
+          ],
+          "exp": 2000,
+          "cash": 5400,
+          "strategy": "- As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer.\n- He also uses the **Game of Death**, just like Wugui; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you.\n- His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward.\n- The only other thing he does is a hellacious physical attack that'll hit for major damage.\n- Once he starts using Nightmare repeatedly, you could be in a bit of trouble.\n- Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.\n- **Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed.\n- **Zhuzhen** should focus completely on recovery.\n- If you're having trouble staying healed, have Yuri fuse into **Heaven's Fiend** so you have the whole party healing spell."
+        },
+        "encounter": {
+          "enemies": [
+            "Yamaraja: War"
+          ]
+        }
+      },
+      {
+        "id": 31,
+        "description": "After the battle and a bit of dialogue, you'll be back in Shanghai.",
+        "type": "story",
+        "rewards": []
+      }
+    ],
+    "boss": {
+      "type": "BOSS",
+      "name": "Yamaraja: War",
+      "enemies": [
+        {
+          "name": "Yamaraja: War",
+          "hp": 840,
+          "class": "Dark",
+          "drop": "R.Phoenix Talon"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 17
+        },
+        {
+          "name": "Margarete",
+          "level": 16
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 15
+        }
+      ],
+      "exp": 2000,
+      "cash": 5400,
+      "strategy": "- As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer.\n- He also uses the **Game of Death**, just like Wugui; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you.\n- His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward.\n- The only other thing he does is a hellacious physical attack that'll hit for major damage.\n- Once he starts using Nightmare repeatedly, you could be in a bit of trouble.\n- Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.\n- **Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed.\n- **Zhuzhen** should focus completely on recovery.\n- If you're having trouble staying healed, have Yuri fuse into **Heaven's Fiend** so you have the whole party healing spell."
+    }
+  }
+}
