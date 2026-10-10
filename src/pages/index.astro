@@ -1,9 +1,9 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import CollapsibleSection from '../components/CollapsibleSection.astro';
-import SentenceList from '../components/SentenceList.astro';
-import { getGameWikiData } from '../lib/guideData';
-import type { WikiImage, WikiVoiceCast } from '../lib/guideData';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CollapsibleSection from "../components/CollapsibleSection.astro";
+import SentenceList from "../components/SentenceList.astro";
+import { getGameWikiData } from "../lib/guideData";
+import type { WikiImage, WikiVoiceCast } from "../lib/guideData";
 import {
   BookOpen,
   Compass,
@@ -22,39 +22,58 @@ import {
   ExternalLink,
   Music,
   Mic,
-  FileText
-} from '@lucide/astro';
+  FileText,
+} from "@lucide/astro";
 
 const wiki = getGameWikiData();
-const { intro, gameplay, characters, development, media_audio: media, reception, gallery, external_links, flags, source } = wiki;
-const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const {
+  intro,
+  gameplay,
+  characters,
+  development,
+  media_audio: media,
+  reception,
+  gallery,
+  external_links,
+  flags,
+  source,
+} = wiki;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 const assetUrl = (img: WikiImage) => `${baseUrl}/${img.file}`;
 
 // Icon for each Gameplay subsection (keyed by the section id built from the wiki heading)
 const gameplayIcons: Record<string, typeof Disc> = {
-  'environment-world-map-submap': MapIcon,
+  "environment-world-map-submap": MapIcon,
   battle: Swords,
-  'judgement-ring': Disc,
-  'special-abilities': Sparkles,
+  "judgement-ring": Disc,
+  "special-abilities": Sparkles,
   malice: Skull,
-  shopping: ShoppingBag
+  shopping: ShoppingBag,
 };
 
 // On-page navigation anchors for the sidebar table of contents
 const pageSections = [
-  { id: 'gameplay', label: 'Gameplay', count: gameplay.sections.length },
-  { id: 'characters', label: 'Playable Characters', count: characters.playable.length },
-  { id: 'development', label: 'Development' },
-  { id: 'media-audio', label: 'Media & Audio' },
-  { id: 'reception', label: 'Reception' },
-  { id: 'gallery', label: 'Gallery' },
-  { id: 'external-links', label: 'External Links' },
-  { id: 'start-walkthrough', label: 'Strategy Guide' }
+  { id: "gameplay", label: "Gameplay", count: gameplay.sections.length },
+  {
+    id: "characters",
+    label: "Playable Characters",
+    count: characters.playable.length,
+  },
+  { id: "development", label: "Development" },
+  { id: "media-audio", label: "Media & Audio" },
+  { id: "reception", label: "Reception" },
+  { id: "gallery", label: "Gallery" },
+  { id: "external-links", label: "External Links" },
+  { id: "start-walkthrough", label: "Strategy Guide" },
 ];
 
 const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
-  { id: 'voice-english', title: 'English', cast: media.voice_acting.english },
-  { id: 'voice-japanese', title: 'Japanese', cast: media.voice_acting.japanese }
+  { id: "voice-english", title: "English", cast: media.voice_acting.english },
+  {
+    id: "voice-japanese",
+    title: "Japanese",
+    cast: media.voice_acting.japanese,
+  },
 ];
 ---
 
@@ -67,9 +86,17 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
 >
   <div class="space-y-12 py-2">
     <!-- Hero -->
-    <section class="relative rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-850/60 via-[#0d1017]/50 to-void/50 p-6 sm:p-10 lg:p-12 overflow-hidden shadow-2xl">
-      <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-crimson-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <section
+      class="relative rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-850/60 via-[#0d1017]/50 to-void/50 p-6 sm:p-10 lg:p-12 overflow-hidden shadow-2xl"
+    >
+      <div
+        class="absolute -top-24 -right-24 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"
+      >
+      </div>
+      <div
+        class="absolute -bottom-24 -left-24 w-96 h-96 bg-crimson-500/10 rounded-full blur-3xl pointer-events-none"
+      >
+      </div>
 
       <div class="relative z-10 flex flex-col md:flex-row md:items-start gap-8">
         <div class="space-y-6 flex-1 min-w-0">
@@ -79,13 +106,19 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
             class="hero-logo w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto"
           />
 
-          <h1 class="hero-title font-serif font-extrabold tracking-wide uppercase">
+          <h1
+            class="hero-title font-serif font-extrabold tracking-wide uppercase"
+          >
             Game Wiki &amp; Walkthrough
           </h1>
 
           <SentenceList texts={intro.paragraphs} class="max-w-2xl sm:text-lg" />
 
-          {intro.notes.map((note) => <p class="text-sm text-slate-400 italic">{note}</p>)}
+          {
+            intro.notes.map((note) => (
+              <p class="text-sm text-slate-400 italic">{note}</p>
+            ))
+          }
 
           <div class="flex flex-wrap items-center gap-4 pt-2">
             <a
@@ -101,215 +134,397 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
             >
               <Compass class="w-5 h-5 mr-3 shrink-0 text-gold-400" />
               <span>Begin Asia Walkthrough</span>
-              <ArrowRight class="w-5 h-5 ml-3 shrink-0 text-gold-500 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight
+                class="w-5 h-5 ml-3 shrink-0 text-gold-500 group-hover:translate-x-1 transition-transform"
+              />
             </a>
           </div>
         </div>
 
-        {intro.image && (
-          <figure class="shrink-0 mx-auto md:mx-0 md:w-56 lg:w-64">
-            <img
-              src={assetUrl(intro.image)}
-              alt={intro.image.alt}
-              class="cover-art w-full h-auto rounded-lg"
-            />
-            <figcaption class="mt-2 text-sm text-slate-400 text-center font-mono">{intro.image.caption}</figcaption>
-          </figure>
-        )}
+        {
+          intro.image && (
+            <figure class="shrink-0 mx-auto md:mx-0 md:w-56 lg:w-64">
+              <img
+                src={assetUrl(intro.image)}
+                alt={intro.image.alt}
+                class="cover-art w-full h-auto rounded-lg"
+              />
+              <figcaption class="mt-2 text-sm text-slate-400 text-center font-mono">
+                {intro.image.caption}
+              </figcaption>
+            </figure>
+          )
+        }
       </div>
     </section>
 
     <!-- Gameplay -->
-    <CollapsibleSection id="gameplay" title="Gameplay" icon={Swords} open class="scroll-mt-20 space-y-4">
+    <CollapsibleSection
+      id="gameplay"
+      title="Gameplay"
+      icon={Swords}
+      open
+      class="scroll-mt-20 space-y-4"
+    >
       <SentenceList texts={gameplay.paragraphs} />
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-        {gameplay.sections.map((section) => {
-          const Icon = gameplayIcons[section.id] ?? Sparkles;
-          const wide = Boolean(section.items?.length);
-          return (
-            <article id={section.id} class:list={['scroll-mt-20 p-6 rounded-xl bg-slate-850/70 border border-slate-800 space-y-3 hover:border-gold-500/40 transition-colors', { 'md:col-span-2': wide }]}>
-              <h3 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-                <span class="icon-badge icon-badge-sm"><Icon class="w-5 h-5 text-gold-400" aria-hidden="true" /></span>
-                <span>{section.title}</span>
-              </h3>
-              <SentenceList texts={section.paragraphs} />
-              {section.items && (
-                <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-3 border-t border-slate-800">
-                  {section.items.map((item) => (
-                    <li class="p-4 rounded-lg bg-slate-900/50 border border-slate-800/80 space-y-2">
-                      {item.lead && <p class="text-base font-serif font-bold text-gold-300">{item.lead}</p>}
-                      <SentenceList texts={[item.rest]} />
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </article>
-          );
-        })}
+        {
+          gameplay.sections.map((section) => {
+            const Icon = gameplayIcons[section.id] ?? Sparkles;
+            const wide = Boolean(section.items?.length);
+            return (
+              <article
+                id={section.id}
+                class:list={[
+                  "scroll-mt-20 p-6 rounded-xl bg-slate-850/70 border border-slate-800 space-y-3 hover:border-gold-500/40 transition-colors",
+                  { "md:col-span-2": wide },
+                ]}
+              >
+                <h3 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2.5 pb-3 heading-rule">
+                  <span class="icon-badge icon-badge-sm">
+                    <Icon class="w-5 h-5 text-gold-400" aria-hidden="true" />
+                  </span>
+                  <span>{section.title}</span>
+                </h3>
+                <SentenceList texts={section.paragraphs} />
+                {section.items && (
+                  <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-3 border-t border-slate-800">
+                    {section.items.map((item) => (
+                      <li class="p-4 rounded-lg bg-slate-900/50 border border-slate-800/80 space-y-2">
+                        {item.lead && (
+                          <p class="text-base font-serif font-bold text-gold-300">
+                            {item.lead}
+                          </p>
+                        )}
+                        <SentenceList texts={[item.rest]} />
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </article>
+            );
+          })
+        }
       </div>
     </CollapsibleSection>
 
     <!-- Playable Characters -->
-    <CollapsibleSection id="characters" title="Playable Characters" icon={Users} open class="scroll-mt-20 space-y-4">
+    <CollapsibleSection
+      id="characters"
+      title="Playable Characters"
+      icon={Users}
+      open
+      class="scroll-mt-20 space-y-4"
+    >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {characters.playable.map((char) => (
-          <article class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 hover:border-slate-700 transition-colors space-y-3">
-            <div class="flex items-center gap-3">
-              {char.portrait
-                ? <img src={assetUrl(char.portrait)} alt={char.portrait.alt} class="char-portrait" loading="lazy" />
-                : <span class="char-avatar" aria-hidden="true">{char.name.charAt(0)}</span>}
-              <h3 class="text-xl font-serif font-bold text-slate-100">{char.name}</h3>
-            </div>
-            <div class="pt-5 border-t border-slate-800/80">
-              <SentenceList texts={[char.text]} />
-            </div>
-          </article>
-        ))}
+        {
+          characters.playable.map((char) => (
+            <article class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 hover:border-slate-700 transition-colors space-y-3">
+              <div class="flex items-center gap-3 pb-3 heading-rule">
+                {char.portrait ? (
+                  <img
+                    src={assetUrl(char.portrait)}
+                    alt={char.portrait.alt}
+                    class="char-portrait"
+                    loading="lazy"
+                  />
+                ) : (
+                  <span class="char-avatar" aria-hidden="true">
+                    {char.name.charAt(0)}
+                  </span>
+                )}
+                <h3 class="text-xl font-serif font-bold text-slate-100">
+                  {char.name}
+                </h3>
+              </div>
+              <div class="pt-4">
+                <SentenceList texts={[char.text]} />
+              </div>
+            </article>
+          ))
+        }
       </div>
     </CollapsibleSection>
 
     <!-- Development -->
-    <CollapsibleSection id="development" title="Development" icon={Hammer} class="scroll-mt-20 space-y-4">
+    <CollapsibleSection
+      id="development"
+      title="Development"
+      icon={Hammer}
+      class="scroll-mt-20 space-y-4"
+    >
       <SentenceList texts={development.paragraphs} />
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-        {development.sections.map((section) => (
-          <article id={section.id} class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
-            <h3 class="text-xl font-serif font-semibold text-gold-300">{section.title}</h3>
-            {section.notes?.map((n) => <p class="text-sm text-slate-400 italic">{n}</p>)}
-            {section.image && (
-              <figure class="w-32">
-                <img src={assetUrl(section.image)} alt={section.image.alt} class="cover-art w-full h-auto rounded-md" loading="lazy" />
-                <figcaption class="mt-1 text-xs text-slate-400 font-mono">{section.image.caption}</figcaption>
-              </figure>
-            )}
-            <SentenceList texts={section.paragraphs} />
-          </article>
-        ))}
+        {
+          development.sections.map((section) => (
+            <article
+              id={section.id}
+              class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3"
+            >
+              <h3 class="text-xl font-serif font-semibold text-gold-300 pb-3 heading-rule">
+                {section.title}
+              </h3>
+              {section.notes?.map((n) => (
+                <p class="text-sm text-slate-400 italic">{n}</p>
+              ))}
+              {section.image && (
+                <figure class="w-32">
+                  <img
+                    src={assetUrl(section.image)}
+                    alt={section.image.alt}
+                    class="cover-art w-full h-auto rounded-md"
+                    loading="lazy"
+                  />
+                  <figcaption class="mt-1 text-xs text-slate-400 font-mono">
+                    {section.image.caption}
+                  </figcaption>
+                </figure>
+              )}
+              <SentenceList texts={section.paragraphs} />
+            </article>
+          ))
+        }
       </div>
     </CollapsibleSection>
 
     <!-- Media & Audio -->
-    <CollapsibleSection id="media-audio" title="Media & Audio" icon={Clapperboard} class="scroll-mt-20 space-y-4">
+    <CollapsibleSection
+      id="media-audio"
+      title="Media & Audio"
+      icon={Clapperboard}
+      class="scroll-mt-20 space-y-4"
+    >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <article id={media.media.id} class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
-          <h3 class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2"><Disc class="w-4 h-4" aria-hidden="true" />{media.media.title}</h3>
-          {media.media.image && (
-            <figure class="w-32">
-              <img src={assetUrl(media.media.image)} alt={media.media.image.alt} class="cover-art w-full h-auto rounded-md" loading="lazy" />
-              <figcaption class="mt-1 text-xs text-slate-400 font-mono">{media.media.image.caption}</figcaption>
-            </figure>
-          )}
+        <article
+          id={media.media.id}
+          class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3"
+        >
+          <h3
+            class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2 pb-3 heading-rule"
+          >
+            <Disc class="w-4 h-4" aria-hidden="true" />{media.media.title}
+          </h3>
+          {
+            media.media.image && (
+              <figure class="w-32">
+                <img
+                  src={assetUrl(media.media.image)}
+                  alt={media.media.image.alt}
+                  class="cover-art w-full h-auto rounded-md"
+                  loading="lazy"
+                />
+                <figcaption class="mt-1 text-xs text-slate-400 font-mono">
+                  {media.media.image.caption}
+                </figcaption>
+              </figure>
+            )
+          }
           <SentenceList texts={media.media.paragraphs} />
         </article>
 
-        <article id={media.audio.id} class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
-          <h3 class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2"><Mic class="w-4 h-4" aria-hidden="true" />{media.audio.title}</h3>
+        <article
+          id={media.audio.id}
+          class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3"
+        >
+          <h3
+            class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2 pb-3 heading-rule"
+          >
+            <Mic class="w-4 h-4" aria-hidden="true" />{media.audio.title}
+          </h3>
           <SentenceList texts={media.audio.paragraphs} />
         </article>
       </div>
 
-      <h3 id="voice-acting" class="scroll-mt-20 text-xl font-serif font-semibold text-slate-100 pt-4 flex items-center gap-2"><Mic class="w-4 h-4 text-gold-400" aria-hidden="true" />Voice acting</h3>
+      <h3
+        id="voice-acting"
+        class="scroll-mt-20 text-xl font-serif font-semibold text-slate-100 pt-4 flex items-center gap-2"
+      >
+        <Mic class="w-4 h-4 text-gold-400" aria-hidden="true" />Voice acting
+      </h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {castGroups.map((group) => (
-          <div id={group.id} class="scroll-mt-20 rounded-xl border border-slate-800 bg-slate-850/60 overflow-hidden">
-            <div class="p-4 space-y-1">
-              <h4 class="text-lg font-serif font-bold text-purple-300">{group.title}</h4>
-              <p class="text-sm text-slate-400">{group.cast.intro}</p>
-            </div>
-            <table class="w-full text-sm sm:text-base text-left">
-              <thead>
-                <tr class="border-y border-slate-800 text-slate-400 font-mono bg-slate-900/60">
-                  <th scope="col" class="py-2 px-4">Voice actor</th>
-                  <th scope="col" class="py-2 px-4">Role</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-800 text-slate-300">
-                {group.cast.credits.map((c) => (
-                  <tr>
-                    <td class="py-2 px-4 font-medium text-slate-200">{c.actor}</td>
-                    <td class="py-2 px-4">{c.roles || '—'}</td>
+        {
+          castGroups.map((group) => (
+            <div
+              id={group.id}
+              class="scroll-mt-20 rounded-xl border border-slate-800 bg-slate-850/60 overflow-hidden"
+            >
+              <div class="p-4 space-y-1">
+                <h4 class="text-lg font-serif font-bold text-purple-300 pb-3 heading-rule">
+                  {group.title}
+                </h4>
+                <p class="text-sm text-slate-400">{group.cast.intro}</p>
+              </div>
+              <table class="w-full text-sm sm:text-base text-left">
+                <thead>
+                  <tr class="border-y border-slate-800 text-slate-400 font-mono bg-slate-900/60">
+                    <th scope="col" class="py-2 px-4">
+                      Voice actor
+                    </th>
+                    <th scope="col" class="py-2 px-4">
+                      Role
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        ))}
+                </thead>
+                <tbody class="divide-y divide-slate-800 text-slate-300">
+                  {group.cast.credits.map((c) => (
+                    <tr>
+                      <td class="py-2 px-4 font-medium text-slate-200">
+                        {c.actor}
+                      </td>
+                      <td class="py-2 px-4">{c.roles || "—"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ))
+        }
       </div>
 
-      <article id={media.soundtrack.id} class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3 mt-2">
-        <h3 class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2"><Music class="w-4 h-4" aria-hidden="true" />{media.soundtrack.title}</h3>
+      <article
+        id={media.soundtrack.id}
+        class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3 mt-2"
+      >
+        <h3
+          class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2 pb-3 heading-rule"
+        >
+          <Music class="w-4 h-4" aria-hidden="true" />{media.soundtrack.title}
+        </h3>
         <SentenceList texts={media.soundtrack.paragraphs} />
       </article>
 
-      <article id={media.production_credits.id} class="scroll-mt-20 p-4 rounded-xl bg-slate-850/40 border border-slate-800/80 flex items-start gap-2.5">
-        <FileText class="w-4 h-4 mt-1 shrink-0 text-gold-400" aria-hidden="true" />
+      <article
+        id={media.production_credits.id}
+        class="scroll-mt-20 p-4 rounded-xl bg-slate-850/40 border border-slate-800/80 flex items-start gap-2.5"
+      >
+        <FileText
+          class="w-4 h-4 mt-1 shrink-0 text-gold-400"
+          aria-hidden="true"
+        />
         <div>
-          <h3 class="text-base font-serif font-semibold text-slate-200">{media.production_credits.title}</h3>
-          {media.production_credits.notes?.map((n) => <p class="text-sm text-slate-400 italic">{n}</p>)}
+          <h3
+            class="text-base font-serif font-semibold text-slate-200 pb-3 heading-rule"
+          >
+            {media.production_credits.title}
+          </h3>
+          {
+            media.production_credits.notes?.map((n) => (
+              <p class="text-sm text-slate-400 italic">{n}</p>
+            ))
+          }
         </div>
       </article>
     </CollapsibleSection>
 
     <!-- Reception -->
-    <CollapsibleSection id="reception" title="Reception" icon={Award} class="scroll-mt-20 space-y-4">
+    <CollapsibleSection
+      id="reception"
+      title="Reception"
+      icon={Award}
+      class="scroll-mt-20 space-y-4"
+    >
       <SentenceList texts={reception.paragraphs} />
-      {reception.footnote && (
-        <p class="text-sm text-slate-400">
-          <a href={reception.footnote.href} target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">{reception.footnote.text}</a>
-        </p>
-      )}
+      {
+        reception.footnote && (
+          <p class="text-sm text-slate-400">
+            <a
+              href={reception.footnote.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gold-400 hover:text-gold-300 underline"
+            >
+              {reception.footnote.text}
+            </a>
+          </p>
+        )
+      }
     </CollapsibleSection>
 
     <!-- Gallery -->
-    <CollapsibleSection id="gallery" title="Gallery" icon={Images} class="scroll-mt-20 space-y-4">
-      {gallery.map((group) => (
-        <div class="space-y-3">
-          <h3 class="text-lg font-serif font-semibold text-gold-300">{group.title}</h3>
-          <ul class="flex flex-wrap gap-6">
-            {group.images.map((image) => (
-              <li>
-                <figure class="space-y-2">
-                  <img src={assetUrl(image)} alt={image.alt} class="cover-art gallery-thumb rounded-md" loading="lazy" />
-                  <figcaption class="max-w-[10rem] text-sm text-slate-400 font-mono">{image.caption}</figcaption>
-                </figure>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+    <CollapsibleSection
+      id="gallery"
+      title="Gallery"
+      icon={Images}
+      class="scroll-mt-20 space-y-4"
+    >
+      {
+        gallery.map((group) => (
+          <div class="space-y-3">
+            <h3 class="text-lg font-serif font-semibold text-gold-300">
+              {group.title}
+            </h3>
+            <ul class="flex flex-wrap gap-6">
+              {group.images.map((image) => (
+                <li>
+                  <figure class="space-y-2">
+                    <img
+                      src={assetUrl(image)}
+                      alt={image.alt}
+                      class="cover-art gallery-thumb rounded-md"
+                      loading="lazy"
+                    />
+                    <figcaption class="max-w-[10rem] text-sm text-slate-400 font-mono">
+                      {image.caption}
+                    </figcaption>
+                  </figure>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
     </CollapsibleSection>
 
     <!-- External links -->
-    <CollapsibleSection id="external-links" title="External Links" icon={ExternalLink} class="scroll-mt-20 space-y-4">
+    <CollapsibleSection
+      id="external-links"
+      title="External Links"
+      icon={ExternalLink}
+      class="scroll-mt-20 space-y-4"
+    >
       <ul class="space-y-2">
-        {external_links.map((link) => (
-          <li>
-            <a href={link.href} target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline text-base">{link.text}</a>
-          </li>
-        ))}
+        {
+          external_links.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gold-400 hover:text-gold-300 underline text-base"
+              >
+                {link.text}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </CollapsibleSection>
 
     <!-- Strategy Guide CTA -->
     <section id="start-walkthrough" class="scroll-mt-20">
-      <div class="relative rounded-2xl border border-gold-500/30 bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 p-8 sm:p-10 overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+      <div
+        class="relative rounded-2xl border border-gold-500/30 bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 p-8 sm:p-10 overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6"
+      >
         <div class="space-y-2 max-w-xl text-center md:text-left">
           <h2 class="text-2xl sm:text-3xl font-serif font-bold text-slate-100">
             Ready to Venture Across Eurasia?
           </h2>
           <p class="text-base text-slate-300 leading-relaxed">
-            Access the complete walkthrough database featuring item checklists, boss strategies, shop tables, and Judgement Ring calibrations.
+            Access the complete walkthrough database featuring item checklists,
+            boss strategies, shop tables, and Judgement Ring calibrations.
           </p>
         </div>
 
-        <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
+        <div
+          class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto"
+        >
           <a
             href={`${baseUrl}/toc`}
             class="w-full sm:w-auto inline-flex items-center justify-center text-left leading-snug px-6 py-3.5 rounded-lg bg-gold-500 hover:bg-gold-400 text-slate-950 font-semibold text-base transition-all shadow-lg shadow-gold-500/20 active:scale-95"
           >
             <BookOpen class="w-5 h-5 mr-3 shrink-0" />
-            <span>Browse Full Table of Contents</span>
+            <span>Table of Contents</span>
           </a>
           <a
             href={`${baseUrl}/guide/w-1-01`}
@@ -317,27 +532,43 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
           >
             <Compass class="w-5 h-5 mr-3 shrink-0 text-gold-400" />
             <span>Jump to Part 1 (Trans-Siberian)</span>
-            <ArrowRight class="w-5 h-5 ml-3 shrink-0 text-gold-500 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight
+              class="w-5 h-5 ml-3 shrink-0 text-gold-500 group-hover:translate-x-1 transition-transform"
+            />
           </a>
         </div>
       </div>
     </section>
 
     <!-- Source attribution & flagged irregularities -->
-    <footer class="text-sm text-slate-400 space-y-3 border-t border-slate-800 pt-6">
+    <footer
+      class="text-sm text-slate-400 space-y-3 border-t border-slate-800 pt-6"
+    >
       <p>
         Wiki content on this page is taken from the
-        <a href={source.url} target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">Shadow Hearts article on the Shadowhearts Wiki (Fandom)</a>.
+        <a
+          href={source.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gold-400 hover:text-gold-300 underline"
+          >Shadow Hearts article on the Shadowhearts Wiki (Fandom)</a
+        >.
         {source.license_note}
       </p>
-      {flags.length > 0 && (
-        <details>
-          <summary class="cursor-pointer text-slate-300">Notes on the source text ({flags.length})</summary>
-          <ul class="mt-2 space-y-1 list-disc pl-5">
-            {flags.map((f) => <li>{f.note}</li>)}
-          </ul>
-        </details>
-      )}
+      {
+        flags.length > 0 && (
+          <details>
+            <summary class="cursor-pointer text-slate-300">
+              Notes on the source text ({flags.length})
+            </summary>
+            <ul class="mt-2 space-y-1 list-disc pl-5">
+              {flags.map((f) => (
+                <li>{f.note}</li>
+              ))}
+            </ul>
+          </details>
+        )
+      }
     </footer>
   </div>
 </BaseLayout>
@@ -351,7 +582,12 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
     /* wraps to two lines when the cover art sits beside the text */
     font-size: clamp(1.75rem, 6vw, 2.5rem);
     line-height: 1.15;
-    background-image: linear-gradient(180deg, #fff3c4 0%, #d4a93c 50%, #8a6a1f 100%);
+    background-image: linear-gradient(
+      180deg,
+      #fff3c4 0%,
+      #d4a93c 50%,
+      #8a6a1f 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -383,11 +619,15 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
     width: 2.75rem;
     height: 2.75rem;
     border-radius: 9999px;
-    font-family: 'EB Garamond', Georgia, serif;
+    font-family: "EB Garamond", Georgia, serif;
     font-weight: 700;
     font-size: 1.35rem;
     color: #f0d27a;
-    background: radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.3), rgba(20, 24, 34, 0.9));
+    background: radial-gradient(
+      circle at 30% 30%,
+      rgba(212, 175, 55, 0.3),
+      rgba(20, 24, 34, 0.9)
+    );
     border: 1px solid rgba(212, 175, 55, 0.5);
   }
 
@@ -405,6 +645,17 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
   .cover-art {
     border: 1px solid rgba(212, 175, 55, 0.35);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
+  }
+
+  /* Heading underline: gold fading out toward the right edge */
+  .heading-rule {
+    background: linear-gradient(
+        to right,
+        rgba(212, 175, 55, 0.6),
+        rgba(212, 175, 55, 0.25) 50%,
+        transparent
+      )
+      no-repeat left bottom / 100% 1px;
   }
 
   .gallery-thumb {
