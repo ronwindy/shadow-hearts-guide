@@ -363,7 +363,7 @@ export interface WikiSourceFlag {
 /**
  * Complete Game Wiki Overview schema representing structured-content/game-wiki-overview.json.
  * Built deterministically from canonical-sources/game-wiki-fandom.canonical.json
- * (scripts/build_wiki_structured.py); Plot and Non Playable Characters are out of scope here.
+ * (by a since-removed build script); Plot and Non Playable Characters are out of scope here.
  */
 export interface GameWikiData {
   id: string;
