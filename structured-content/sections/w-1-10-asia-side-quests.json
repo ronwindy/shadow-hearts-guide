@@ -1,0 +1,71 @@
+{
+  "guide": {
+    "id": "w-1-10",
+    "code": "[W-1-10]",
+    "title": "Asia Side Quests",
+    "type": "walkthrough",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-1-09",
+        "code": "[W-1-09]",
+        "title": "Shanghai, Huayuan (2)",
+        "file": "sections/w-1-09-shanghai-huayuan-2.json"
+      },
+      "next": {
+        "id": "w-s-01",
+        "code": "[W-S-01]",
+        "title": "Yuri's Level 1 Fusions",
+        "file": "sections/w-s-01-yuri-s-level-1-fusions.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": []
+    },
+    "enemies": [],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "**[W-S-01] Yuri's Level 1 Fusions**\n- Enough **Soul Energy** needs to be acquired to accumulate the rest of **Yuri**'s level 1 **Fusions**.\n- Luckily, we can revisit a dungeon that has all we need.",
+        "type": "quest",
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "**[W-S-02] Kowloon Fortress**\n- What happened to **Wugui**?\n- As long as you answered the prompts correctly as **Alice** in **Kuihai Tower**, you can go to **Kowloon Fortress** to find out.",
+        "type": "quest",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "missable",
+            "title": "Only time for this quest",
+            "text": "This is the **only** time that you can do this quest!"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "**[W-S-03] Mr. Zhen's Pit Fight**\n- **Mr. Zhen** has an array of monsters for **Yuri** to fight.\n- There is a very memorable prize for him when the **Pit Fight** is completed.\n- You'll definitely want it.",
+        "type": "quest",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "missable",
+            "title": "Last opportunity for this quest",
+            "text": "This is the **last opportunity** to do this quest!"
+          }
+        ]
+      }
+    ]
+  }
+}

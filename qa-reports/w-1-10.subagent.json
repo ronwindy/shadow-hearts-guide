@@ -1,0 +1,13 @@
+{
+  "section_id": "w-1-10",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Three quest entries W-S-01, W-S-02, W-S-03 present, in source order, with exact codes and titles",
+    "W-S-01 Soul Energy / Yuri level 1 Fusions / revisit a dungeon sentence preserved",
+    "W-S-02 Wugui, Alice, Kuihai Tower, Kowloon Fortress conditions preserved; ONLY time warning kept as missable note",
+    "W-S-03 Mr. Zhen, array of monsters, memorable prize, Pit Fight preserved; LAST OPPORTUNITY warning kept as missable note",
+    "No items, bosses, enemies, shops, save points, or choices in canonical; none invented in structured",
+    "Navigation prev w-1-09 / next w-s-01 matches canonical; source metadata matches"
+  ],
+  "findings": []
+}
