@@ -1,0 +1,27 @@
+---
+import { Save } from '@lucide/astro';
+import { renderInlineMarkup } from '../lib/markup';
+import SectionHeading from './SectionHeading.astro';
+
+interface Props {
+  savePoints?: string[];
+}
+
+const { savePoints = [] } = Astro.props;
+---
+
+{savePoints.length > 0 && (
+  <section id="save-points" class="space-y-3">
+    <SectionHeading icon={Save}>Save Points</SectionHeading>
+    <div class="card p-5">
+      <ul class="space-y-2.5 text-slate-200 text-base">
+        {savePoints.map((sp) => (
+          <li class="flex items-start gap-2.5">
+            <Save class="w-4 h-4 text-gold-400 mt-1 flex-shrink-0" aria-hidden="true" />
+            <span class="leading-relaxed"><Fragment set:html={renderInlineMarkup(sp)} /></span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}

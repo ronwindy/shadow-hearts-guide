@@ -60,19 +60,19 @@
     }
   },
   "w-1-02": {
-    "checked_at": "2026-10-10T14:06:58",
-    "content_hash": "7ec2ef28192a0cad",
+    "checked_at": "2026-10-10T16:54:45",
+    "content_hash": "65a092475a27be2f",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
-      "low": 1,
+      "low": 2,
       "medium": 0
     }
   },
   "w-1-03": {
-    "checked_at": "2026-10-10T14:07:08",
-    "content_hash": "f7dfea0e8ad068a6",
+    "checked_at": "2026-10-10T16:54:45",
+    "content_hash": "a920022fa8eec6db",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -82,8 +82,8 @@
     }
   },
   "w-1-04": {
-    "checked_at": "2026-10-10T14:07:17",
-    "content_hash": "42e3c7099076155e",
+    "checked_at": "2026-10-10T16:54:46",
+    "content_hash": "685d83d05676d29b",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -93,8 +93,8 @@
     }
   },
   "w-1-05": {
-    "checked_at": "2026-10-10T14:07:26",
-    "content_hash": "d5c9466010399d89",
+    "checked_at": "2026-10-10T16:54:46",
+    "content_hash": "169546ee1ab07398",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -104,8 +104,8 @@
     }
   },
   "w-1-06": {
-    "checked_at": "2026-10-10T14:07:36",
-    "content_hash": "b2541b39ad773934",
+    "checked_at": "2026-10-10T16:54:46",
+    "content_hash": "b1503f39cc81f96c",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -115,8 +115,8 @@
     }
   },
   "w-1-07": {
-    "checked_at": "2026-10-10T14:07:47",
-    "content_hash": "bb7c16a1c4f528bf",
+    "checked_at": "2026-10-10T16:54:47",
+    "content_hash": "88b96775c3ddbb39",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -126,8 +126,8 @@
     }
   },
   "w-1-08": {
-    "checked_at": "2026-10-10T14:18:36",
-    "content_hash": "b8682ddf07499ea1",
+    "checked_at": "2026-10-10T16:54:47",
+    "content_hash": "73c2f24906e0f6f1",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -137,8 +137,8 @@
     }
   },
   "w-1-09": {
-    "checked_at": "2026-10-10T16:41:43",
-    "content_hash": "6d6333c1aae08b01",
+    "checked_at": "2026-10-10T16:54:27",
+    "content_hash": "769f58c50f07c7ee",
     "status": "PASS",
     "summary": {
       "critical": 0,

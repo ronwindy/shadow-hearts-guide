@@ -56,6 +56,8 @@ python scripts/pipeline.py <section_id> --frontend
 
 ### 4.1 Content Fidelity (Priority 1)
 - **Overview Items & Inline Loot:** All overview items (`items`, `equipment`, `valuables`, `lottery`, `souls`) exist in `items_summary` and are awarded in steps with exact names.
+- **Allowed name normalization:** Re-spacing a source token that is only run together (`TeaOfTheHealer` -> `Tea of the Healer`, done by the scaffold's `space_camel_case`) is presentation, not a rename. Do not flag it; flag any change of letters, words or numbers.
+- **Save Points & Choices:** Every canonical `overview.save_points` entry is in `guide.save_points`; every dialogue option is in `choices[]` (grouped by `prompt`, with `required` where the source marks the answer).
 - **Enemies & Numbers:** Monster IDs, names, HP values, affinities, and drops match canonical tables verbatim.
 - **Boss Stats & Chronology:** Boss cards match source stats and strategies. Boss battles must appear inside their chronological walkthrough steps—never hoisted into introductory overviews.
 - **Shops & Economy:** Inventory item names, prices, and discounts match source data.

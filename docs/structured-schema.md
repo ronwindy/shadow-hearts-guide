@@ -47,7 +47,8 @@ A single object with one key, `guide`. Unknown keys anywhere under `guide` are r
 | `source` | yes | `game`, `author`, `version` required; `url`, `source_url`, `source_file` optional; extra keys allowed. |
 | `navigation` | yes | `prev` / `next`: `null` or `{id, code, title, file}` (all four required). Copy from canonical. |
 | `route` | no | Ordered list of location strings. |
-| `objectives` | no | Short goal strings. |
+| `objectives` | no | Short goal strings. Only what the source states; never derived from `navigation.next` (a source may offer a branch). QA flags wording that is not traceable. |
+| `save_points` | no | Strings copied verbatim from the canonical `overview.save_points` (not a route). Shown as a "Save Points" section; QA requires them. |
 | `items_summary` | no | See section 3. |
 | `enemies` | no | Copy of canonical `enemies` (section 5). |
 | `bosses` | no | Boss cards (section 5). |
@@ -233,9 +234,11 @@ the step where the fight happens; do not hoist boss tactics into overviews.
   allow you to see what items he has for sale."). Otherwise omit the key. Never infer. QA warns
   when an outcome's wording is not traceable to the source. Never use `""`.
 - `reward` (optional string): when the source says that option gives an item.
+- `prompt` (optional integer, 1-based): which prompt of a multi-prompt dialogue the option belongs to. Set it on every option when a step has 2+ prompts.
+- `required` (optional boolean): `true` when the source marks the option as the required answer (e.g. an `>` arrow). The scaffold also adds an "Answer the first prompt with [1] ..." item to the description.
 - Put the step `type` as `dialogue` when the choice is the point of the step.
-- **Renderer limitation:** `choices` are not shown on the page today. The `description` must
-  therefore still say what the choice is (the source prose usually does).
+- **Rendering:** the step shows `choices` grouped per `prompt`, with `required` options
+  highlighted. The `description` should still say what the choice is (the source prose usually does).
 
 ## 8. Minimal step recipes
 

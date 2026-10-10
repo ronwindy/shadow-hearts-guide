@@ -13,6 +13,7 @@ Usage:
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
     python scripts/pipeline.py [<section_id>] --lint     # Presentation lint (prose blocks, UPPERCASE item tags, [_TAG_], ASCII borders)
     python scripts/pipeline.py <section_id> --verdict F  # Validate + store the independent QA subagent's JSON verdict (F = "-" reads stdin)
+    python scripts/pipeline.py <section_id> --qa-subagent-prompt  # Print the independent QA subagent prompt + verdict path
     python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + build + status
     python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit (run every ~5 sections or after UI/code changes)
     python scripts/pipeline.py <section_id>              # Display section status
@@ -295,10 +296,40 @@ def run_verdict(sec: Dict[str, Any], verdict_file: str) -> bool:
 
 def remind_independent_qa(sec: Dict[str, Any]) -> None:
     """Walkthroughs need an independent QA subagent pass (manual step, see CLAUDE.md section 5)."""
-    if str(sec.get("id", "")).startswith("w-"):
-        print(f"\n[REMINDER] Independent QA subagent not run by the pipeline. For {sec['id']}, ask the "
-              f"qa skill to review it against canonical-sources/sections, have it return the JSON verdict "
-              f"(qa-verdict.schema.json), then run: pipeline.py {sec['id']} --verdict <file.json>")
+    if not str(sec.get("id", "")).startswith("w-"):
+        return
+    if (ROOT_DIR / "qa-reports" / f"{sec['id']}.subagent.json").exists():
+        return  # verdict already stored via --verdict
+    print(f"\n[REMINDER] Independent QA subagent not run by the pipeline. For {sec['id']}, run "
+          f"pipeline.py {sec['id']} --qa-subagent-prompt, give that prompt to a subagent, then store its "
+          f"verdict with: pipeline.py {sec['id']} --verdict <file.json>")
+
+
+def print_subagent_prompt(sec: Dict[str, Any]) -> bool:
+    """Prints the exact prompt for the independent QA subagent and the path it should write to."""
+    canonical_path, structured_path = get_section_paths(sec)
+    if not structured_path.exists():
+        print(f"[FAIL] Structured file does not exist: {structured_path}")
+        return False
+    verdict_path = ROOT_DIR / "qa-reports" / f"{sec['id']}.subagent-draft.json"
+    schema = (ROOT_DIR / ".claude" / "skills" / "qa" / "schemas" / "qa-verdict.schema.json").relative_to(ROOT_DIR)
+    rel = lambda p: p.relative_to(ROOT_DIR).as_posix()
+    print(f"""Use the `qa` skill. Independently review section {sec['id']} ({sec.get('title')}).
+
+Compare the canonical source with the structured guide and judge whether the presentation changed
+while the source meaning stayed intact (names, numbers, conditions, warnings, choices, bosses,
+items, save points, ordering). Do not edit any file except the verdict.
+
+  canonical:  {rel(canonical_path)}
+  structured: {rel(structured_path)}
+  script QA:  qa-reports/{sec['id']}.md (for context only; do not trust it)
+
+Return ONLY a JSON verdict that validates against {schema.as_posix()} and write it to
+{rel(verdict_path)}.
+
+Then store it with:
+  .\\scripts\\run-py.cmd scripts/pipeline.py {sec['id']} --verdict {rel(verdict_path)}""")
+    return True
 
 
 def update_project_status():
@@ -380,6 +411,9 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
     if args.verdict:
         success = run_verdict(sec, args.verdict) and success
 
+    if args.qa_subagent_prompt:
+        success = print_subagent_prompt(sec) and success
+
     if args.frontend:
         f_ok = run_frontend_audit()
         success = f_ok and success
@@ -412,6 +446,7 @@ def main():
     parser.add_argument("--full", action="store_true", help="--check plus Frontend audit")
     parser.add_argument("--lint", action="store_true", help="Presentation lint (all structured guides when no section is given)")
     parser.add_argument("--verdict", metavar="FILE", help="Validate and store the independent QA subagent's JSON verdict ('-' reads stdin)")
+    parser.add_argument("--qa-subagent-prompt", action="store_true", help="Print the prompt for the independent QA subagent and its verdict path")
     parser.add_argument("--backlog", action="store_true", help="Run QA on all structured files lacking a current QA result")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
 
@@ -438,7 +473,7 @@ def main():
         sys.exit(1)
 
     if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.check, args.full,
-                args.lint, args.verdict]):
+                args.lint, args.verdict, args.qa_subagent_prompt]):
         print_section_status(sec)
         return
 

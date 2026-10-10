@@ -49,6 +49,9 @@
       "Drained Riverbed (Reward Chest)",
       "Village Approach & Gates"
     ],
+    "save_points": [
+      "By the sluice gate"
+    ],
     "objectives": [
       "Collect the **Pure Leaf** and **Leather Belt** before reuniting with Alice",
       "Meet the girl, confirm default character names (**Yuri** & **Alice**), and have Alice join the party",

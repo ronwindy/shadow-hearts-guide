@@ -189,6 +189,15 @@ export interface StepChecklistItem {
     enemies?: string[];
   };
   notes?: StepNote[];
+  choices?: StepChoice[];
+}
+
+export interface StepChoice {
+  option: string;
+  outcome?: string;
+  reward?: string;
+  prompt?: number;
+  required?: boolean;
 }
 
 export interface CharacterProfile {
@@ -389,6 +398,7 @@ export interface GuideContent {
   callouts?: SectionCallout[];
   objectives?: string[];
   route?: string[];
+  save_points?: string[];
   initial_setup?: InitialPartySetup;
   items_summary?: ItemsSummary;
   enemies?: EnemyInfo[];

@@ -13,15 +13,15 @@
       {
         "id": "QA-001",
         "severity": "low",
-        "category": "text drift",
-        "location": "bosses[Yamaraja: Wind].strategy",
+        "category": "unsupported claim",
+        "location": "objectives[6]",
         "source": {
-          "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse in"
+          "text": "Proceed to **Smuggler's Boat**"
         },
         "generated": {
-          "text": "- Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse "
+          "text": "words not in source: ['smuggler']"
         },
-        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "description": "Objective wording is not traceable to the source text; omit it unless the source states a goal",
         "recommended_owner": "Guide Transformer"
       }
     ]

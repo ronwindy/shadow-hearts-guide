@@ -67,32 +67,78 @@ def infer_note_type(title: str, text: str) -> str:
     return "tip"
 
 
-_CHOICE_LINE = re.compile(r'^\s*\[(\d+)\]\s+(\S.*?)\s*$')
+_CHOICE_LINE = re.compile(
+    r'^\s*(?P<arrow>\S*>)?\s*\[(?P<num>\d+)\]\s+(?P<text>\S.*?)(?:\s+<\S*)?\s*$')
+_HAS_WORD = re.compile(r'[A-Za-z0-9]')
+_ORDINALS = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"]
 
 
-def find_choice_blocks(text: str) -> List[Tuple[int, List[Dict[str, str]]]]:
-    """Finds dialogue choice blocks (consecutive "[1] Option" lines).
+def find_choice_blocks(text: str) -> List[Dict[str, Any]]:
+    """Finds dialogue choice blocks: consecutive `[n] Option` lines, optionally framed by `>` ... `<`
+    arrows that mark the required answer.
 
-    Returns [(first_line_number, [{"option": "1. Option"}, ...])]. `outcome` is deliberately
-    never set: the source states outcomes in prose, so a human/LLM refiner adds them (or not).
+    Returns [{"first", "last", "groups"}] (1-indexed lines). `groups` holds one list of
+    {"num", "text", "marked"} per prompt: a new prompt starts when the option number restarts.
+    `outcome` is deliberately never set: the source states outcomes in prose, so a human/LLM
+    refiner adds them (or not).
     """
-    blocks: List[Tuple[int, List[Dict[str, str]]]] = []
-    current: List[Dict[str, str]] = []
-    first = 0
+    blocks: List[Dict[str, Any]] = []
+    groups: List[List[Dict[str, Any]]] = []
+    first = last = 0
+
+    def close() -> None:
+        nonlocal groups
+        if groups:
+            blocks.append({"first": first, "last": last, "groups": groups})
+        groups = []
+
     for i, line in enumerate(text.splitlines(), start=1):
         m = _CHOICE_LINE.match(line)
         if m:
-            if not current:
+            num = int(m.group("num"))
+            if not groups:
                 first = i
-            current.append({"option": f"{m.group(1)}. {m.group(2)}"})
-        elif current and not line.strip("—-_ \t"):
+                groups.append([])
+            elif num <= groups[-1][-1]["num"]:
+                groups.append([])
+            groups[-1].append({"num": num, "text": m.group("text"), "marked": bool(m.group("arrow"))})
+            last = i
+        elif groups and not _HAS_WORD.search(line):
             continue  # rule line / blank inside a block
-        elif current:
-            blocks.append((first, current))
-            current = []
-    if current:
-        blocks.append((first, current))
+        elif groups:
+            close()
+    close()
     return blocks
+
+
+def choice_entries(block: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """Schema `choices[]` for a block: every option verbatim, tagged with its prompt and required mark."""
+    multi = len(block["groups"]) > 1
+    entries: List[Dict[str, Any]] = []
+    for gi, group in enumerate(block["groups"], start=1):
+        for opt in group:
+            entry: Dict[str, Any] = {"option": f"{opt['num']}. {opt['text']}"}
+            if multi:
+                entry["prompt"] = gi
+            if opt["marked"]:
+                entry["required"] = True
+            entries.append(entry)
+    return entries
+
+
+def required_answers(block: Dict[str, Any]) -> List[str]:
+    """One sentence per marked option: "Answer the first prompt with [1] Option"."""
+    multi = len(block["groups"]) > 1
+    lines: List[str] = []
+    for gi, group in enumerate(block["groups"], start=1):
+        which = f" the {_ORDINALS[gi - 1] if gi <= len(_ORDINALS) else gi} prompt" if multi else ""
+        for o in group:
+            if o["marked"]:
+                body = f"[{o['num']}] {o['text']}"
+                if not body.endswith((".", "!", "?", "…")):
+                    body += "."
+                lines.append(f"Answer{which} with {body}")
+    return lines
 
 
 # --- ASCII info boxes (lottery prize table, footnote, boss card) -----------------------------
@@ -351,7 +397,7 @@ def normalize_item_names(guide: Dict[str, Any]) -> None:
 
 
 _BOX_CHARS = re.compile(r'\s*\|+\s*')
-_CAPS_RUN = re.compile(r"\b[A-Z][A-Z'’]+(?:\s+[A-Z][A-Z'’]+)+\b")
+_CAPS_RUN = re.compile(r"\b[A-Z][A-Z'’]+(?:\s+[A-Z][A-Z'’]+)*\b")
 _CAPS_KEEP = {"EXP", "HP", "MP", "SP", "NOTE", "BOSS", "SUB-BOSS", "ATK", "DEF", "OK", "TV", "NPC", "VS"}
 
 
@@ -363,12 +409,13 @@ def strip_box_chars(text: str) -> str:
 def soften_caps(text: str) -> str:
     """SHOUTED multi-word emphasis -> bold lowercase ("MAKE SURE TO SAVE" -> "**Make sure to save**").
 
-    Only runs of 2+ capitalised words with 6+ letters; acronyms and item tags are left alone.
+    Runs of 2+ capitalised words with 6+ letters, or a single word with 4+ letters ("PLEASE");
+    acronyms and item tags are left alone.
     """
     def repl(m: "re.Match[str]") -> str:
         run = m.group(0)
         letters = re.sub(r'[^A-Z]', '', run)
-        if len(letters) < 6 or run in _CAPS_KEEP or all(w in _CAPS_KEEP for w in run.split()):
+        if len(letters) < (6 if " " in run else 4) or run in _CAPS_KEEP or all(w in _CAPS_KEEP for w in run.split()):
             return run
         low = run.lower()
         start = m.start()
@@ -388,18 +435,25 @@ MAX_SENTENCES = 2   # same thresholds as lint_guide: 3+ sentences or ~40+ words 
 MAX_WORDS = 39
 
 
+def split_sentences(text: str) -> List[str]:
+    """One entry per sentence (abbreviations like "Mr." do not end one). Text is not reworded."""
+    flat = " ".join(text.split())
+    guarded = _ABBREV.sub(lambda m: m.group(1) + "\x00", flat)
+    return [s.replace("\x00", ".").strip() for s in _SENT_SPLIT.split(guarded) if s.strip()]
+
+
 def listify(text: str, numbered: bool) -> str:
     """Splits prose with 3+ sentences or ~40+ words into one sentence per list item.
 
     Text is only re-cut at sentence ends (nothing is reworded). Numbered when order matters
-    (step descriptions), bulleted otherwise. Short text and existing lists are returned as-is.
+    (step descriptions), bulleted otherwise. Short text, a single sentence and existing lists
+    are returned as-is (a list of one item is never made).
     """
     if "\n" in text and _LIST_LINE.search(text):
         return text
     flat = " ".join(text.split())
-    guarded = _ABBREV.sub(lambda m: m.group(1) + "\x00", flat)
-    sentences = [s.replace("\x00", ".").strip() for s in _SENT_SPLIT.split(guarded) if s.strip()]
-    if len(sentences) <= MAX_SENTENCES and len(flat.split()) <= MAX_WORDS:
+    sentences = split_sentences(text)
+    if len(sentences) < 2 or (len(sentences) <= MAX_SENTENCES and len(flat.split()) <= MAX_WORDS):
         return flat
     return "\n".join(f"{i}. {s}" if numbered else f"- {s}" for i, s in enumerate(sentences, start=1))
 
@@ -438,6 +492,8 @@ def is_header_or_table_line(line: str) -> bool:
     s = line.strip()
     if not s:
         return False
+    if not _HAS_WORD.search(s):
+        return True  # ASCII divider (`¯ ¯ ¯`, `_ _ _`, `___`): never content
     if '|' in s:
         return True
     if s.startswith(('___', '===', '---', '¯¯¯', '.——', '\'——', '——', '\\', '/', '-$-')):
@@ -580,6 +636,8 @@ _SHOP_CUE = re.compile(r'\b(for sale|shop|store|buy|buying|purchase|sells?)\b', 
 _STORY_CUE = re.compile(r'\b(scene|event|watch|cutscene|dialogue)\b', re.I)
 _AFTER_BATTLE = re.compile(r'^\s*after the (?:battle|fight)\b', re.I)
 _BEAT_CUE = re.compile(r'\b(dialogue|events?|scene|cutscene|watch|conversation|reunite)\b', re.I)
+_MINIGAME_CUE = re.compile(r'\b(play a game|mini-?game|contest|pay (?:him|her|them|it)\b)', re.I)
+_MEANWHILE_CUE = re.compile(r'^\s*meanwhile\b', re.I)
 _NAV_CUE = re.compile(r"^(head|go|make your way|travel|exit|leave|return|walk|proceed)\b", re.I)
 
 
@@ -605,7 +663,9 @@ def infer_step_type(p_text: str, bosses: List[Dict[str, Any]], has_rewards: bool
         return "battle"
     if has_rewards:
         return "loot"
-    if _STORY_CUE.search(p_text):
+    if _MINIGAME_CUE.search(p_text):
+        return "quest"
+    if _STORY_CUE.search(p_text) or _MEANWHILE_CUE.match(p_text):
         return "story"
     if _NAV_CUE.match(p_text.strip()):
         return "navigation"
@@ -746,6 +806,85 @@ def merge_across_info_boxes(paragraphs: List[Tuple[int, int, str]],
     return result
 
 
+_BULLET_LINE = re.compile(r'^\s*[-*]\s+(\S.*)$')
+_INTERSTITIAL = re.compile(r'^\s*meanwhile\b', re.I)
+_CHOICE_TAIL_GAP = 3  # max lines between a choice block and the text that continues it
+
+
+def _is_interstitial(text: str) -> bool:
+    """A one-line scene lead-in ("Meanwhile, in Kuihai Tower...") that belongs with what follows."""
+    s = text.strip()
+    return "\n" not in s and len(s.split()) <= 8 and (bool(_INTERSTITIAL.match(s)) or s.endswith(("...", "…")))
+
+
+def fold_paragraphs(paragraphs: List[Tuple[int, int, str]], blocks: List[Dict[str, Any]]
+                    ) -> Tuple[List[Tuple[int, int, str]], Dict[int, Dict[str, Any]]]:
+    """Folds fragments into the step they belong to; returns (paragraphs, extras by start line).
+
+    - a one-line interstitial ("Meanwhile, ...") joins the paragraph after it;
+    - a source bullet list (`- ...`) joins the paragraph before it;
+    - a dialogue choice block belongs to the paragraph before it, and the text right after the
+      block ("Choosing ANYTHING other than ...") continues that step.
+    extras[start] = {"blocks": [...], "tail": str} for paragraphs that carry choice blocks.
+    """
+    out: List[Tuple[int, int, str]] = []
+    pending, pending_start = "", 0
+    for start, end, text in paragraphs:
+        if not pending and _is_interstitial(text) and not _is_note_paragraph(text):
+            pending, pending_start = text.strip(), start
+            continue
+        if pending:
+            text, start, pending = pending + "\n" + text, pending_start, ""
+        lines = [ln for ln in text.splitlines() if ln.strip()]
+        if out and lines and all(_BULLET_LINE.match(ln) for ln in lines):
+            p_start, _, p_text = out[-1]
+            out[-1] = (p_start, end, p_text + "\n" + text)
+            continue
+        out.append((start, end, text))
+    if pending:  # nothing follows it: keep it on its own
+        out.append((pending_start, pending_start, pending))
+
+    extras: Dict[int, Dict[str, Any]] = {}
+    for block in blocks:
+        owner = max((i for i, p in enumerate(out) if p[1] < block["first"]), default=None)
+        if owner is None:
+            continue
+        start, end, text = out[owner]
+        info = extras.setdefault(start, {"blocks": [], "tail": ""})
+        info["blocks"].append(block)
+        nxt = owner + 1
+        if (nxt < len(out) and 0 < out[nxt][0] - block["last"] <= _CHOICE_TAIL_GAP
+                and not _is_note_paragraph(out[nxt][2])):
+            _, n_end, n_text = out.pop(nxt)
+            info["tail"] = (info["tail"] + "\n" + n_text).strip()
+            out[owner] = (start, n_end, text)
+    return out, extras
+
+
+def build_description(p_text: str, cases: Dict[str, str], characters: List[str],
+                      answers: Optional[List[str]] = None, tail: str = "") -> str:
+    """Step description: cleaned prose as a numbered list, source bullets kept one per line.
+
+    `answers` (the required choice replies) and `tail` (text that continues after the choice
+    block) are woven in after the paragraph, in source order.
+    """
+    def clean(txt: str) -> str:
+        return bold_names(" ".join(soften_caps(fix_tag_case(txt, cases, bold=True)).split()), characters)
+
+    lines = p_text.splitlines()
+    bullets = [m.group(1).strip() for m in map(_BULLET_LINE.match, lines) if m]
+    prose = " ".join(ln.strip() for ln in lines if ln.strip() and not _BULLET_LINE.match(ln))
+    if answers or tail:
+        items = split_sentences(clean(prose)) + (answers or []) + (split_sentences(clean(tail)) if tail else [])
+        desc = "\n".join(f"{i}. {s}" for i, s in enumerate(items, start=1)) if len(items) > 1 else " ".join(items)
+    else:
+        desc = listify(clean(prose), numbered=True) if prose else ""
+    if bullets:
+        lst = "\n".join(f"- {clean(b)}" for b in bullets)
+        desc = f"{desc}\n{lst}" if desc else lst
+    return desc
+
+
 def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
     """Generates structured guide draft dictionary from canonical JSON artifact."""
     with open(canonical_path, "r", encoding="utf-8") as f:
@@ -765,15 +904,9 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
     # source states one (a refiner fills it by hand).
     route: List[str] = []
 
-    # Objectives placeholder / inference
-    objectives = []
-    for b in canonical.get("bosses", []):
-        objectives.append(f"Defeat {b.get('name')}")
-    if canonical.get("navigation", {}).get("next"):
-        next_title = canonical["navigation"]["next"]["title"]
-        objectives.append(f"Proceed to {next_title}")
-    if not objectives:
-        objectives = [f"Complete exploration of {canonical.get('title')}"]
+    # Objectives: only what the source states. A boss in the data is a stated goal ("Defeat X");
+    # the next section is NOT an objective (the source may offer a branch) and there is no placeholder.
+    objectives = [f"Defeat {b.get('name')}" for b in canonical.get("bosses", []) if b.get("name")]
 
     items_summary = build_items_summary(canonical)
 
@@ -785,8 +918,8 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
 
     boxes = _find_boxes(raw_text.splitlines())
     paragraphs = merge_across_info_boxes(split_text_paragraphs(raw_text), boxes)
+    paragraphs, extras = fold_paragraphs(paragraphs, find_choice_blocks(raw_text))
     box_lines = {ln for b in boxes for ln in range(b["start"], b["end"] + 1)}
-    choice_blocks = find_choice_blocks(raw_text)
     cases = build_name_cases(canonical)
     characters = party_names(canonical)
     para_step: Dict[int, Dict[str, Any]] = {}
@@ -800,7 +933,6 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
     assigned_notes = set()
 
     for p_idx, (start_line, end_line, p_text) in enumerate(paragraphs):
-        next_start = paragraphs[p_idx + 1][0] if p_idx + 1 < len(paragraphs) else 10 ** 9
         # Check for NOTE headers in paragraph
         if _is_note_paragraph(p_text) or is_heading_paragraph(p_text):
             continue
@@ -842,17 +974,17 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
                 reach = max(reach, mn.get("end", n_line) + NOTE_GAP)
                 step_notes.append(make_note(mn, cases, characters))
 
-        choices: List[Dict[str, str]] = []
-        for first_line, block in choice_blocks:
-            if end_line < first_line <= next_start:
-                choices.extend(block)
+        extra = extras.get(start_line, {})
+        choices: List[Dict[str, Any]] = []
+        answers: List[str] = []
+        for block in extra.get("blocks", []):
+            choices.extend(choice_entries(block))
+            answers.extend(required_answers(block))
 
         step_type = infer_step_type(p_text, canonical.get("bosses", []), bool(step_rewards), bool(choices))
 
-        # Clean description text: strip [_TAG_] marks
-        clean_desc = soften_caps(fix_tag_case(p_text, cases, bold=True))
-        # Collapse multiple spaces and newlines, then cut long prose into a numbered list
-        clean_desc = listify(bold_names(" ".join(clean_desc.split()), characters), numbered=True)
+        # Strip [_TAG_] marks, cut long prose into a numbered list, keep source bullets one per line
+        clean_desc = build_description(p_text, cases, characters, answers, extra.get("tail", ""))
 
         step: Dict[str, Any] = {
             "id": step_id,
@@ -934,7 +1066,7 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
             },
             "navigation": canonical.get("navigation", {}),
             "route": route,
-            "objectives": objectives,
+            **({"objectives": objectives} if objectives else {}),
             "items_summary": items_summary,
             "enemies": canonical.get("enemies", []),
             "bosses": canonical.get("bosses", []),
@@ -945,6 +1077,12 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
 
     if canonical.get("boss"):
         guide_dict["guide"]["boss"] = canonical.get("boss")
+
+    # `have one` is the importer picking up the "! = Can only have one" legend, `|` a table border
+    save_points = [sp.strip() for sp in canonical.get("overview", {}).get("save_points", [])
+                   if _HAS_WORD.search(sp) and sp.strip().lower() != "have one"]
+    if save_points:
+        guide_dict["guide"]["save_points"] = save_points
 
     # One home per canonical boss: a boss card attached to its step is not repeated in
     # bosses[] / the `boss` alias (the page renders step.boss; QA counts both places).

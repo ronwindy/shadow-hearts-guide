@@ -347,6 +347,13 @@
           },
           "description": "Ordered progression route of locations or areas"
         },
+        "save_points": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Save points listed in the source overview, verbatim (not a route)"
+        },
         "objectives": {
           "type": "array",
           "items": {
@@ -692,6 +699,15 @@
                     },
                     "reward": {
                       "type": "string"
+                    },
+                    "prompt": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "description": "Which prompt of a multi-prompt dialogue this option belongs to (1-based)."
+                    },
+                    "required": {
+                      "type": "boolean",
+                      "description": "True when the source marks this option as the required answer (e.g. an `>` arrow)."
                     }
                   }
                 }

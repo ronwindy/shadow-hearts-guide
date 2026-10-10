@@ -27,8 +27,8 @@
       }
     },
     "route": [],
-    "objectives": [
-      "Continue with Kuihai Tower (W-1-11), or take on side quests"
+    "save_points": [
+      "Hotel ground floor"
     ],
     "items_summary": {
       "obtainable": [
@@ -137,31 +137,43 @@
         ],
         "choices": [
           {
-            "option": "[1] Quit it, you dirty old man!"
+            "option": "1. Quit it, you dirty old man!",
+            "prompt": 1,
+            "required": true
           },
           {
-            "option": "[2] This strange machine is so sexy!"
+            "option": "2. This strange machine is so sexy!",
+            "prompt": 1
           },
           {
-            "option": "[3] Please don't hurt me..."
+            "option": "3. Please don't hurt me...",
+            "prompt": 1
           },
           {
-            "option": "[1] Just get away from me!"
+            "option": "1. Just get away from me!",
+            "prompt": 2,
+            "required": true
           },
           {
-            "option": "[2] This scary tower is sexy, too!"
+            "option": "2. This scary tower is sexy, too!",
+            "prompt": 2
           },
           {
-            "option": "[3] Please, stop..."
+            "option": "3. Please, stop...",
+            "prompt": 2
           },
           {
-            "option": "[1] Ignore him."
+            "option": "1. Ignore him.",
+            "prompt": 3,
+            "required": true
           },
           {
-            "option": "[2] But YOU'RE the sexiest!"
+            "option": "2. But YOU'RE the sexiest!",
+            "prompt": 3
           },
           {
-            "option": "[3] Forgive me..."
+            "option": "3. Forgive me...",
+            "prompt": 3
           }
         ],
         "rewards": []

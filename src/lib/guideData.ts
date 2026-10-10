@@ -141,6 +141,9 @@ export function buildPageTocSections(guide: any): PageTocItem[] {
   if (route && route.length > 0) {
     pageSections.push({ id: 'route', label: 'Route Progression' });
   }
+  if (guide.save_points && guide.save_points.length > 0) {
+    pageSections.push({ id: 'save-points', label: 'Save Points', count: guide.save_points.length });
+  }
   if (initialSetup) {
     pageSections.push({ id: 'setup', label: 'Initial Setup' });
   }

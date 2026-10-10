@@ -1,9 +1,9 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-10 16:41:52`
+> Last synced: `2026-10-10 16:54:47`
 
 ```text
-=== PROJECT STATUS (2026-10-10 16:41:52) ===
+=== PROJECT STATUS (2026-10-10 16:54:47) ===
 Canonical 68/68 | Structured 13/68 | QA pass 13/68 (fail 0) | Web built 13/68
 Next:
   1. Structure w-1-10 (Asia Side Quests) - next chronological

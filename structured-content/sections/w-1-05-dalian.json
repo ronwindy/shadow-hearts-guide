@@ -35,6 +35,9 @@
       "Inn and basement weapon & armor shop",
       "Dock (red sphere, Courier Subordinate)"
     ],
+    "save_points": [
+      "Center of town"
+    ],
     "objectives": [
       "Help the **Man with Turtle** find his turtle for a prize",
       "Collect the hidden items in **Dalian**",

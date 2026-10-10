@@ -7,21 +7,35 @@
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 1
+      "low": 2
     },
     "findings": [
       {
         "id": "QA-001",
         "severity": "low",
-        "category": "text drift",
-        "location": "bosses[Raging Tiger].strategy",
+        "category": "unsupported claim",
+        "location": "objectives[7]",
         "source": {
-          "text": "Hey, we can win this one! Go ahead and use Yuri's Fusion skill to become the Dea"
+          "text": "Retrieve the performance-tiered reward chest from the drained riverbed and collect the **Holy Mother Bust**"
         },
         "generated": {
-          "text": "Hey, we can win this one! - Go ahead and use Yuri's Fusion skill to become the *"
+          "text": "words not in source: ['retrieve', 'performance', 'tiered', 'reward', 'drained', 'riverbed']"
         },
-        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "description": "Objective wording is not traceable to the source text; omit it unless the source states a goal",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "low",
+        "category": "unsupported claim",
+        "location": "objectives[8]",
+        "source": {
+          "text": "Proceed to the entrance of **Zhaoyang Village**"
+        },
+        "generated": {
+          "text": "words not in source: ['entrance', 'zhaoyang']"
+        },
+        "description": "Objective wording is not traceable to the source text; omit it unless the source states a goal",
         "recommended_owner": "Guide Transformer"
       }
     ]

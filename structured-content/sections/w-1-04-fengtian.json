@@ -34,6 +34,10 @@
       "Manhole above ground",
       "World Map"
     ],
+    "save_points": [
+      "Item Shop",
+      "Near the Sewers' exit"
+    ],
     "objectives": [
       "Get the **Pedometer** from the **Silent Peddler** and keep it equipped",
       "Collect the hidden items in **Fengtian** and the **Sewers**",

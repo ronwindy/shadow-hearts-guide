@@ -27,6 +27,13 @@
       }
     },
     "route": [],
+    "save_points": [
+      "Corridor (Outside)",
+      "Samsara Pavilion (Trial Entrance)",
+      "Dan Tian Court (End of Trial 1)",
+      "Jiang Palace (End of Trial 2)",
+      "Nu Wan Palace (End of Trial 3)"
+    ],
     "objectives": [
       "Defeat Yamaraja: War",
       "Proceed to Shanghai, Huayuan (2)"

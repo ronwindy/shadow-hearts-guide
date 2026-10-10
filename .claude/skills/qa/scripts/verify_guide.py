@@ -286,6 +286,48 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
                 f"Canonical note starting with '{mn.get('text', '')[:40]}' may be missing from structured notes."
             )
 
+    # 7. Overview save points are carried through (`guide.save_points`, or an intro's overview)
+    c_save = [s.strip() for s in canonical.get("overview", {}).get("save_points", [])
+              if re.search(r'[A-Za-z0-9]', s) and s.strip().lower() != "have one"]
+    g_save = " ".join(list(guide.get("save_points", [])) + list(guide.get("overview", {}).get("save_points", []))).lower()
+    for sp in c_save:
+        if normalize_name(sp) not in normalize_name(g_save):
+            add_finding("medium", "missing information", "save_points", sp, "Missing",
+                        f"Canonical overview save point '{sp}' is not in guide.save_points")
+
+    # 8. Objectives must be traceable to the source: most distinctive words occur in the canonical text
+    c_all = (canonical.get("text") or "").lower()
+    boss_names = {normalize_name(b.get("name")) for b in canonical.get("bosses", [])}
+    for idx, obj in enumerate(guide.get("objectives", []) or []):
+        plain = re.sub(r"\*\*|`", "", str(obj))
+        if normalize_name(re.sub(r"^defeat\s+", "", plain.strip(), flags=re.I)) in boss_names:
+            continue
+        generic = {"which", "their", "other", "there", "proceed", "defeat", "collect", "complete", "continue", "reach"}
+        words = [w for w in re.findall(r"[a-z]{5,}", plain.lower()) if w not in generic]
+        missing = [w for w in words if w not in c_all]
+        if words and len(missing) / len(words) > 0.5:
+            add_finding("low", "unsupported claim", f"objectives[{idx}]", obj, f"words not in source: {missing}",
+                        "Objective wording is not traceable to the source text; omit it unless the source states a goal")
+
+    # 9. Every canonical dialogue option appears in choices[] (scaffold groups them per prompt)
+    c_options = re.findall(r"^\s*\S*?>?\s*\[(\d+)\]\s+(\S.*?)(?:\s+<\S*)?\s*$", canonical.get("text") or "", re.M)
+    g_options = [c for s in guide.get("steps", []) for c in s.get("choices", [])]
+    if c_options and len(g_options) < len(c_options):
+        add_finding("medium", "missing information", "steps[].choices", f"{len(c_options)} options in source",
+                    f"{len(g_options)} in structured", "Some dialogue choice options of the source are missing")
+
+    # 10. Reward names match a source token (normalization such as "TeaOfTheHealer" -> "Tea of the Healer" is allowed)
+    tokens = {normalize_name(m) for m in re.findall(r"\[_([^\]]+?)_\]", canonical.get("text") or "")}
+    for cat in ("items", "equipment", "valuables", "lottery", "souls"):
+        tokens.update(normalize_name(re.sub(r"[*]|\[_\]", "", i)) for i in canonical.get("overview", {}).get(cat, []))
+    if tokens:
+        for s in guide.get("steps", []):
+            for r in s.get("rewards", []):
+                name = r.get("matched_overview_item") or r.get("name")
+                if isinstance(name, str) and normalize_name(name) not in tokens:
+                    add_finding("low", "fidelity", f"steps[{s.get('id')}].rewards", name, "No matching source token",
+                                f"Reward '{name}' does not match any item tag or overview item of the source (spelling?)")
+
     # Calculate status and summary
     summary_counts = {
         "critical": sum(1 for f in findings if f["severity"] == "critical"),
