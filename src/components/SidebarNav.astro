@@ -138,7 +138,7 @@ function getCategoryFullTitle(name: string): string {
                 ? Scroll
                 : getEntryIcon(entry.code, entry.title, CatIcon);
               const rowCls = 'flex items-center gap-2 min-w-0';
-              const labelCls = 'truncate';
+              const labelCls = 'truncate min-w-0';
               return (
                 <li 
                   class="sidebar-item" 
@@ -156,12 +156,10 @@ function getCategoryFullTitle(name: string): string {
                     >
                       <span class={rowCls}>
                         <EntryIcon class="w-3.5 h-3.5 flex-shrink-0 text-gold-400/80" aria-hidden="true" />
-                        <span class="min-w-0 flex flex-col">
-                          {entry.is_sidequest && (
-                            <span class="text-[10px] leading-tight uppercase tracking-wider text-purple-300">Side quest</span>
-                          )}
-                          <span class={labelCls}>{entry.title}</span>
-                        </span>
+                        <span class={labelCls}>{entry.title}</span>
+                        {entry.is_sidequest && (
+                          <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border bg-purple-950/60 text-purple-300 border-purple-700/60">Side quest</span>
+                        )}
                       </span>
                     </a>
                   ) : (
@@ -171,12 +169,10 @@ function getCategoryFullTitle(name: string): string {
                     >
                       <span class={rowCls}>
                         <EntryIcon class="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
-                        <span class="min-w-0 flex flex-col">
-                          {entry.is_sidequest && (
-                            <span class="text-[10px] leading-tight uppercase tracking-wider">Side quest</span>
-                          )}
-                          <span class={labelCls}>{entry.title}</span>
-                        </span>
+                        <span class={labelCls}>{entry.title}</span>
+                        {entry.is_sidequest && (
+                          <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border border-slate-700">Side quest</span>
+                        )}
                       </span>
                     </div>
                   )}
