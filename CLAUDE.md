@@ -37,7 +37,7 @@ Make the smallest change that fulfils your role; hand other problems to the owni
 ## 5. Per-Section Workflow
 Section types decide the path:
 - **Walkthrough** (`w-*`): scaffold → LLM refine → validate → QA → independent QA subagent → status.
-  The independent QA subagent is a **manual step** (a script cannot spawn one): after `--check` passes, launch a subagent with the `qa` skill comparing `canonical-sources/sections/<id>.json` with the structured file, and act on its verdict before `status.py --update`. `--check`/`--verify` print a reminder for `w-*` sections.
+  The independent QA subagent is a **manual step** (a script cannot spawn one): after `--check` passes, launch a subagent with the `qa` skill comparing `canonical-sources/sections/<id>.json` with the structured file, and act on its verdict before `status.py --update`. The subagent returns a JSON verdict (`.claude/skills/qa/schemas/qa-verdict.schema.json`); record it with `pipeline.py <id> --verdict <file.json>`. Run `pipeline.py <id> --lint` (or without an id for all sections) to catch leftover prose blocks, UPPERCASE item tags, `[_TAG_]` and ASCII borders. `--check`/`--verify` print a reminder for `w-*` sections.
 - **Reference/table appendices** (`a-*`, items, shops, bestiary, bosses): deterministic scaffold only, no LLM prose; validate → QA → status.
 
 ```powershell

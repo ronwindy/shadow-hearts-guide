@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independent QA subagent verdict",
+  "type": "object",
+  "required": ["section_id", "verdict", "findings"],
+  "additionalProperties": false,
+  "properties": {
+    "section_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "verdict": { "enum": ["PASS", "PASS_WITH_NOTES", "FAIL"] },
+    "spot_checked": { "type": "array", "items": { "type": "string" } },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "category", "location", "issue"],
+        "additionalProperties": false,
+        "properties": {
+          "severity": { "enum": ["critical", "high", "medium", "low"] },
+          "category": { "enum": ["invented", "altered", "omitted", "order", "contradiction", "other"] },
+          "location": { "type": "string" },
+          "canonical": { "type": "string" },
+          "structured": { "type": "string" },
+          "issue": { "type": "string" }
+        }
+      }
+    }
+  }
+}

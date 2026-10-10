@@ -128,6 +128,7 @@ distinction is still kept in data.
   plus `(step N)`; shorten by hand only by cutting words, never by adding facts. Leave `""`
   when the text does not say.
 - Set `missable: true` only when the source says it can be missed.
+- Items tagged in the narrative but absent from the canonical overview (e.g. `B.Dragon Horn` in w-1-07) are **not** added to `obtainable`: the overview is the authority for this list. They stay as step `rewards`; `--lint` reports them as `narrative-item` (info).
 
 ### 3.2 Step `notes`
 

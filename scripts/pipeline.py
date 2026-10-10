@@ -11,6 +11,8 @@ Usage:
     python scripts/pipeline.py <section_id> --qa         # Run QA verification and record result in qa-status.json
     python scripts/pipeline.py <section_id> --verify     # Validate + QA + Build + Update status
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
+    python scripts/pipeline.py [<section_id>] --lint     # Presentation lint (prose blocks, UPPERCASE item tags, [_TAG_], ASCII borders)
+    python scripts/pipeline.py <section_id> --verdict F  # Validate + store the independent QA subagent's JSON verdict
     python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + build + status
     python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit (run every ~5 sections or after UI/code changes)
     python scripts/pipeline.py <section_id>              # Display section status
@@ -41,6 +43,7 @@ try:
     from validate_guide import load_schema, validate_file
     from verify_guide import verify_guide, format_markdown_report
     from audit_frontend import audit_astro_sources, audit_built_html
+    from lint_guide import lint_guide
     import status as status_module
     from jsonschema import Draft202012Validator
 except ImportError as err:
@@ -241,11 +244,60 @@ def run_frontend_audit() -> bool:
         return True
 
 
+def run_lint(sec: Dict[str, Any]) -> bool:
+    """Presentation lint of a structured guide. Warnings fail the run; `info` findings do not."""
+    _, structured_path = get_section_paths(sec)
+    if not structured_path.exists():
+        print(f"[SKIP] {sec['id']}: not structured")
+        return True
+    with open(structured_path, "r", encoding="utf-8") as f:
+        guide = json.load(f).get("guide", {})
+    findings = lint_guide(guide)
+    warns = [f for f in findings if f["severity"] == "warn"]
+    print(f"\n--- Lint: {sec['id']} --- {len(warns)} warning(s), {len(findings) - len(warns)} info")
+    for f in findings:
+        tag = "WARN" if f["severity"] == "warn" else "INFO"
+        print(f"  [{tag}] {f['check']:<14} {f['location']}: {f['text']}")
+    return not warns
+
+
+def run_verdict(sec: Dict[str, Any], verdict_file: str) -> bool:
+    """Validates the independent QA subagent's JSON verdict and stores it next to the QA report."""
+    print(f"\n--- Subagent QA Verdict: {sec['id']} ---")
+    try:
+        verdict = json.loads(Path(verdict_file).read_text(encoding="utf-8"))
+    except (OSError, ValueError) as err:
+        print(f"[FAIL] Cannot read verdict JSON '{verdict_file}': {err}")
+        return False
+    schema_path = ROOT_DIR / ".claude" / "skills" / "qa" / "schemas" / "qa-verdict.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    errors = sorted(Draft202012Validator(schema).iter_errors(verdict), key=lambda e: list(e.path))
+    if errors:
+        print(f"[FAIL] Verdict does not match qa-verdict.schema.json ({len(errors)} error(s)):")
+        for e in errors[:10]:
+            print(f"  - {'/'.join(map(str, e.path)) or '<root>'}: {e.message}")
+        return False
+    if verdict["section_id"] != sec["id"]:
+        print(f"[FAIL] Verdict is for '{verdict['section_id']}', not '{sec['id']}'")
+        return False
+    out = ROOT_DIR / "qa-reports"
+    out.mkdir(exist_ok=True)
+    (out / f"{sec['id']}.subagent.json").write_text(
+        json.dumps(verdict, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    findings = verdict["findings"]
+    print(f"Verdict: [{verdict['verdict']}] with {len(findings)} finding(s)")
+    for f in findings:
+        print(f"  [{f['severity'].upper()}] {f['category']} @ {f['location']}: {f['issue']}")
+    print(f"  Stored: qa-reports/{sec['id']}.subagent.json")
+    return verdict["verdict"] != "FAIL"
+
+
 def remind_independent_qa(sec: Dict[str, Any]) -> None:
     """Walkthroughs need an independent QA subagent pass (manual step, see CLAUDE.md section 5)."""
     if str(sec.get("id", "")).startswith("w-"):
         print(f"\n[REMINDER] Independent QA subagent not run by the pipeline. For {sec['id']}, ask the "
-              f"qa skill to review it against canonical-sources/sections before finishing the section.")
+              f"qa skill to review it against canonical-sources/sections, have it return the JSON verdict "
+              f"(qa-verdict.schema.json), then run: pipeline.py {sec['id']} --verdict <file.json>")
 
 
 def update_project_status():
@@ -321,6 +373,12 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
             update_project_status()
             remind_independent_qa(sec)
 
+    if args.lint:
+        success = run_lint(sec) and success
+
+    if args.verdict:
+        success = run_verdict(sec, args.verdict) and success
+
     if args.frontend:
         f_ok = run_frontend_audit()
         success = f_ok and success
@@ -351,6 +409,8 @@ def main():
     parser.add_argument("--frontend", action="store_true", help="Run frontend audit")
     parser.add_argument("--check", action="store_true", help="Lean per-section check: Validate + QA + Build + Update status")
     parser.add_argument("--full", action="store_true", help="--check plus Frontend audit")
+    parser.add_argument("--lint", action="store_true", help="Presentation lint (all structured guides when no section is given)")
+    parser.add_argument("--verdict", metavar="FILE", help="Validate and store the independent QA subagent's JSON verdict")
     parser.add_argument("--backlog", action="store_true", help="Run QA on all structured files lacking a current QA result")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
 
@@ -361,6 +421,10 @@ def main():
         return
 
     if not args.section:
+        if args.lint:
+            _, sections = get_canonical_manifest()
+            ok = all([run_lint(sec) for sec in sections])
+            sys.exit(0 if ok else 1)
         if args.frontend:
             run_frontend_audit()
             return
@@ -372,7 +436,8 @@ def main():
         print(f"[ERROR] Could not resolve section for identifier: '{args.section}'")
         sys.exit(1)
 
-    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.check, args.full]):
+    if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.check, args.full,
+                args.lint, args.verdict]):
         print_section_status(sec)
         return
 

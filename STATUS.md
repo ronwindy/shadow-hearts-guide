@@ -1,9 +1,9 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-10 13:36:22`
+> Last synced: `2026-10-10 13:55:02`
 
 ```text
-=== PROJECT STATUS (2026-10-10 13:36:22) ===
+=== PROJECT STATUS (2026-10-10 13:55:02) ===
 Canonical 68/68 | Structured 11/68 | QA pass 6/68 (fail 1) | Web built 11/68
 Next:
   1. Fix QA FAIL in header (Title, Metadata & Intro Notes)

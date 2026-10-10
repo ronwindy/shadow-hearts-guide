@@ -26,9 +26,7 @@
         "file": "sections/w-1-08-temple-ruins.json"
       }
     },
-    "route": [
-      "Hotel ground floor"
-    ],
+    "route": [],
     "objectives": [
       "Proceed to Temple Ruins"
     ],
@@ -307,7 +305,7 @@
       {
         "id": 5,
         "type": "loot",
-        "description": "1. Go right, then follow the wall as you go south until you run across a '?' icon at the yellow banner; check here for a **TalismanOfMercy**.\n2. Keep following along the eastern wall until you come across another '?' icon near a long red banner; check here for a **B.DRAGON HORN**.\n3. To your left from here is a blue door; this is a shop (**Mika's House**). The source says to save shopping here for a little later, when you have another discount card.\n4. Continue southwest to the next area.",
+        "description": "1. Go right, then follow the wall as you go south until you run across a '?' icon at the yellow banner; check here for a **TalismanOfMercy**.\n2. Keep following along the eastern wall until you come across another '?' icon near a long red banner; check here for a **B.Dragon Horn**.\n3. To your left from here is a blue door; this is a shop (**Mika's House**). The source says to save shopping here for a little later, when you have another discount card.\n4. Continue southwest to the next area.",
         "rewards": [
           {
             "name": "TalismanOfMercy",
@@ -315,7 +313,7 @@
             "matched_overview_item": "TalismanOfMercy"
           },
           {
-            "name": "B.DRAGON HORN",
+            "name": "B.Dragon Horn",
             "category": "items"
           }
         ]
@@ -414,7 +412,7 @@
       {
         "id": 9,
         "type": "story",
-        "description": "Watch the long series of events afterward, and you regain control in the hotel room. Before moving on, there are a couple more things to do in Shanghai. Save first.",
+        "description": "Watch the long series of events afterward.\n\n- You regain control in the hotel room.\n- Before moving on, there are a couple more things to do in Shanghai.\n- Save first.",
         "rewards": []
       },
       {
@@ -426,7 +424,7 @@
       {
         "id": 11,
         "type": "preparation",
-        "description": "The source recommends the following purchases:\n\n- A decent amount of the new 2nd level recovery items (**Thera Seed**/**Mana Seed**/**Pure Seed** and **TalismanOfMercy**).\n- Upgrading everyone's weapons and armor.\n- Four (this time) each of the **Studded Cap** and **Western Belt**, as all four party members will be participating in the next dungeon.",
+        "description": "The source recommends the following purchases:\n\n- A decent amount of the new 2nd level recovery items (**Thera**/**Mana**/**Pure Seed** and **TalismanOfMercy**).\n- Upgrading everyone's weapons and armor.\n- Four (this time) each of the **Studded Cap** and **Western Belt**, as all four party members will be participating in the next dungeon.",
         "notes": [
           {
             "type": "tip",
