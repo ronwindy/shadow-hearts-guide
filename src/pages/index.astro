@@ -1,464 +1,295 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CollapsibleSection from '../components/CollapsibleSection.astro';
+import SentenceList from '../components/SentenceList.astro';
 import { getGameWikiData } from '../lib/guideData';
+import type { WikiImage, WikiVoiceCast } from '../lib/guideData';
 import {
   BookOpen,
   Compass,
   ArrowRight,
   Disc,
   Skull,
-  Flame,
-  Gamepad2,
-  Users,
-  Award,
-  Globe,
-  Building2,
-  PenTool,
-  Palette,
-  Music,
-  Layers,
-  Calendar,
-  Quote,
-  Star,
   Swords,
-  Target,
-  Brain,
-  Ghost,
+  Map as MapIcon,
   Sparkles,
-  ShieldCheck,
-  Moon,
-  Sun,
-  Droplet,
-  Mountain,
-  Wind
+  ShoppingBag,
+  Users,
+  Hammer,
+  Clapperboard,
+  Award,
+  Images,
+  ExternalLink,
+  Music,
+  Mic,
+  FileText
 } from '@lucide/astro';
 
-const wikiData = getGameWikiData();
-const { game_info, overview, gameplay, characters, reception_and_legacy } = wikiData;
+const wiki = getGameWikiData();
+const { intro, gameplay, characters, development, media_audio: media, reception, gallery, external_links, flags, source } = wiki;
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const assetUrl = (img: WikiImage) => `${baseUrl}/${img.file}`;
 
-// Split prose into sentences (no wording change) so dense paragraphs can render as bullets.
-// Re-joins splits after a single initial such as "H.P." so names stay intact.
-const toSentences = (text: string): string[] =>
-  text
-    .split(/(?<=[.!?])\s+(?=[A-Z"'])/)
-    .reduce<string[]>((acc, part) => {
-      if (acc.length && /[A-Z]\.$/.test(acc[acc.length - 1])) acc[acc.length - 1] += ' ' + part;
-      else acc.push(part);
-      return acc;
-    }, []);
-
-// Portrait files in /public/characters, keyed by first name (file names are case-sensitive on GitHub Pages)
-const portraits: Record<string, string> = {
-  yuri: 'Yuri.webp',
-  alice: 'alice.webp',
-  zhuzhen: 'Zhuzhen.webp',
-  margarete: 'Margarete.webp',
-  keith: 'Keith.webp',
-  halley: 'Halley.webp'
-};
-const portraitFor = (name: string) => {
-  const file = portraits[name.split(' ')[0].toLowerCase()];
-  return file ? `${baseUrl}/characters/${file}` : null;
-};
-
-// Element icon and tint for each character's element badge
-const elementStyles: Record<string, { icon: typeof Moon; color: string }> = {
-  Dark: { icon: Moon, color: 'text-purple-400' },
-  Light: { icon: Sun, color: 'text-yellow-200' },
-  Fire: { icon: Flame, color: 'text-orange-400' },
-  Water: { icon: Droplet, color: 'text-sky-400' },
-  Earth: { icon: Mountain, color: 'text-amber-600' },
-  Wind: { icon: Wind, color: 'text-emerald-300' }
+// Icon for each Gameplay subsection (keyed by the section id built from the wiki heading)
+const gameplayIcons: Record<string, typeof Disc> = {
+  'environment-world-map-submap': MapIcon,
+  battle: Swords,
+  'judgement-ring': Disc,
+  'special-abilities': Sparkles,
+  malice: Skull,
+  shopping: ShoppingBag
 };
 
 // On-page navigation anchors for the sidebar table of contents
 const pageSections = [
-  { id: 'quick-facts', label: 'Game Info' },
-  { id: 'overview', label: 'Setting & Lore' },
-  { id: 'gameplay', label: 'Gameplay Systems' },
-  { id: 'characters', label: 'Characters', count: characters.length },
-  { id: 'reception', label: 'Reception & Legacy' },
+  { id: 'gameplay', label: 'Gameplay', count: gameplay.sections.length },
+  { id: 'characters', label: 'Playable Characters', count: characters.playable.length },
+  { id: 'development', label: 'Development' },
+  { id: 'media-audio', label: 'Media & Audio' },
+  { id: 'reception', label: 'Reception' },
+  { id: 'gallery', label: 'Gallery' },
+  { id: 'external-links', label: 'External Links' },
   { id: 'start-walkthrough', label: 'Strategy Guide' }
+];
+
+const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
+  { id: 'voice-english', title: 'English', cast: media.voice_acting.english },
+  { id: 'voice-japanese', title: 'Japanese', cast: media.voice_acting.japanese }
 ];
 ---
 
 <BaseLayout
   title="Shadow Hearts — Game Wiki & Walkthrough Hub"
-  description="Comprehensive encyclopedia and companion for Shadow Hearts (PlayStation 2) — premise, Judgement Ring mechanics, demon fusion, character profiles, and complete strategy guide."
+  description="Shadow Hearts (PlayStation 2): gameplay, Judgement Ring, Malice, playable characters, development, voice cast, soundtrack and reception — plus the complete strategy guide."
   currentId=""
   pageSections={pageSections}
   showSidebar={true}
 >
-  <div class="space-y-16 py-2">
-    <!-- Hero Section -->
+  <div class="space-y-12 py-2">
+    <!-- Hero -->
     <section class="relative rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-850/60 via-[#0d1017]/50 to-void/50 p-6 sm:p-10 lg:p-12 overflow-hidden shadow-2xl">
-      <!-- Ambient Glow Behind Hero -->
       <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-crimson-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div class="relative z-10 max-w-3xl space-y-6">
-        <img
-          src={`${baseUrl}/logo.png`}
-          alt="Shadow Hearts"
-          class="hero-logo w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto"
-        />
+      <div class="relative z-10 flex flex-col md:flex-row md:items-start gap-8">
+        <div class="space-y-6 flex-1 min-w-0">
+          <img
+            src={`${baseUrl}/logo.png`}
+            alt="Shadow Hearts"
+            class="hero-logo w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto"
+          />
 
-        <h1 class="hero-title font-serif font-extrabold tracking-wide uppercase sm:whitespace-nowrap">
-          Game Wiki &amp; Walkthrough
-        </h1>
+          <h1 class="hero-title font-serif font-extrabold tracking-wide uppercase">
+            Game Wiki &amp; Walkthrough
+          </h1>
 
-        <p class="text-lg sm:text-xl text-slate-300 font-serif italic">
-          Gothic Horror JRPG &bull; PlayStation 2 Classic
-        </p>
+          <SentenceList texts={intro.paragraphs} class="max-w-2xl sm:text-lg" />
 
-        <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
-          {overview.premise}
-        </p>
+          {intro.notes.map((note) => <p class="text-sm text-slate-400 italic">{note}</p>)}
 
-        <!-- Primary Call to Actions -->
-        <div class="flex flex-wrap items-center gap-4 pt-2">
-          <a
-            href={`${baseUrl}/toc`}
-            class="inline-flex items-center justify-center text-left leading-snug px-6 py-3 rounded-lg bg-gold-500 hover:bg-gold-400 text-slate-950 font-semibold text-base transition-all shadow-lg shadow-gold-500/20 active:scale-95"
-          >
-            <BookOpen class="w-5 h-5 mr-3 shrink-0" />
-            <span>Explore Strategy Guide & Walkthrough</span>
-          </a>
-          <a
-            href={`${baseUrl}/guide/w-1-01`}
-            class="inline-flex items-center justify-center text-left leading-snug px-6 py-3 rounded-lg bg-slate-800/90 hover:bg-slate-750 text-slate-200 border border-slate-700 font-medium text-base transition-all group active:scale-95"
-          >
-            <Compass class="w-5 h-5 mr-3 shrink-0 text-gold-400" />
-            <span>Begin Asia Walkthrough</span>
-            <ArrowRight class="w-5 h-5 ml-3 shrink-0 text-gold-500 group-hover:translate-x-1 transition-transform" />
-          </a>
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a
+              href={`${baseUrl}/toc`}
+              class="inline-flex items-center justify-center text-left leading-snug px-6 py-3 rounded-lg bg-gold-500 hover:bg-gold-400 text-slate-950 font-semibold text-base transition-all shadow-lg shadow-gold-500/20 active:scale-95"
+            >
+              <BookOpen class="w-5 h-5 mr-3 shrink-0" />
+              <span>Explore Strategy Guide & Walkthrough</span>
+            </a>
+            <a
+              href={`${baseUrl}/guide/w-1-01`}
+              class="inline-flex items-center justify-center text-left leading-snug px-6 py-3 rounded-lg bg-slate-800/90 hover:bg-slate-750 text-slate-200 border border-slate-700 font-medium text-base transition-all group active:scale-95"
+            >
+              <Compass class="w-5 h-5 mr-3 shrink-0 text-gold-400" />
+              <span>Begin Asia Walkthrough</span>
+              <ArrowRight class="w-5 h-5 ml-3 shrink-0 text-gold-500 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
         </div>
+
+        {intro.image && (
+          <figure class="shrink-0 mx-auto md:mx-0 md:w-56 lg:w-64">
+            <img
+              src={assetUrl(intro.image)}
+              alt={intro.image.alt}
+              class="cover-art w-full h-auto rounded-lg"
+            />
+            <figcaption class="mt-2 text-sm text-slate-400 text-center font-mono">{intro.image.caption}</figcaption>
+          </figure>
+        )}
       </div>
     </section>
 
-    <!-- Quick Facts / Game Infobox -->
-    <section id="quick-facts" class="scroll-mt-20">
-      <div class="rounded-xl border border-slate-800 bg-slate-850/70 p-6 shadow-md backdrop-blur-sm space-y-6">
-        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
-          <h2 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-            <Gamepad2 class="w-5 h-5 text-gold-400" />
-            <span>Game Overview & Specifications</span>
-          </h2>
-        </div>
+    <!-- Gameplay -->
+    <CollapsibleSection id="gameplay" title="Gameplay" icon={Swords} open class="scroll-mt-20 space-y-4">
+      <SentenceList texts={gameplay.paragraphs} />
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-6 text-base">
-          <!-- Column 1: Core Credits -->
-          <div class="space-y-3">
-            <div>
-              <span class="text-[13px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><Building2 class="w-3.5 h-3.5 text-gold-400/80" />Developer</span>
-              <span class="text-slate-200 font-medium">{game_info.developer}</span>
-            </div>
-            <div>
-              <span class="text-[13px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><PenTool class="w-3.5 h-3.5 text-gold-400/80" />Director & Writer</span>
-              <span class="text-slate-200 font-medium">{game_info.director}</span>
-            </div>
-            <div>
-              <span class="text-[13px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><Palette class="w-3.5 h-3.5 text-gold-400/80" />Character Artist</span>
-              <span class="text-slate-200 font-medium">{game_info.artist}</span>
-            </div>
-          </div>
-
-          <!-- Column 2: Publishing & Series -->
-          <div class="space-y-3">
-            <div>
-              <span class="text-[13px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><Building2 class="w-3.5 h-3.5 text-gold-400/80" />Publishers</span>
-              <ul class="text-slate-200 space-y-0.5">
-                {game_info.publishers.map((pub) => (
-                  <li>
-                    <span class="text-sm font-mono text-gold-400/90 mr-1">[{pub.region}]</span>
-                    <span>{pub.publisher}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <span class="text-[13px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><Layers class="w-3.5 h-3.5 text-gold-400/80" />Series</span>
-              <span class="text-slate-200 font-medium">{game_info.series}</span>
-            </div>
-          </div>
-
-          <!-- Column 3: Music Composers -->
-          <div class="space-y-3">
-            <div>
-              <span class="text-[13px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><Music class="w-3.5 h-3.5 text-gold-400/80" />Music Composers</span>
-              <ul class="text-slate-200 space-y-0.5">
-                {game_info.composers.map((composer) => (
-                  <li>{composer}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <span class="text-[13px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><Gamepad2 class="w-3.5 h-3.5 text-gold-400/80" />Genre & Mode</span>
-              <span class="text-slate-200">{game_info.genre} &bull; {game_info.mode}</span>
-            </div>
-          </div>
-
-          <!-- Column 4: Release Dates -->
-          <div class="space-y-3">
-            <div>
-              <span class="text-[13px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><Calendar class="w-3.5 h-3.5 text-gold-400/80" />Release Dates</span>
-              <ul class="text-slate-200 space-y-0.5">
-                {game_info.release_dates.map((rel) => (
-                  <li class="flex items-center gap-1.5">
-                                        <span class="font-mono text-sm text-gold-400/90">{rel.region}:</span>
-                    <span>{rel.date}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <span class="text-[13px] font-mono uppercase tracking-wider text-slate-400 flex items-center gap-1.5"><Disc class="w-3.5 h-3.5 text-gold-400/80" />Platform</span>
-              <span class="text-slate-200 font-mono text-sm bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700/60 inline-block">
-                {game_info.platform}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="ornament-divider" aria-hidden="true"><span>&#10022;</span></div>
-
-    <!-- World & Historical Setting -->
-    <section id="overview" class="scroll-mt-20 space-y-6">
-      <div class="border-b border-slate-800 pb-3">
-        <h2 class="text-3xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-          <span class="icon-badge"><Globe class="w-6 h-6 text-gold-400" /></span>
-          <span>World, Historical Setting & Lineage</span>
-        </h2>
-        <p class="text-base text-slate-400 mt-1">
-          An unprecedented convergence of 20th-century geopolitical tension and cosmic occultism.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
-          <h3 class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2">
-            <Compass class="w-4 h-4 text-gold-400" />
-            <span>1913 Alternate History & Locations</span>
-          </h3>
-          <p class="text-base text-slate-300 leading-relaxed">
-            {overview.historical_setting}
-          </p>
-        </div>
-
-        <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
-          <h3 class="text-xl font-serif font-semibold text-purple-300 flex items-center gap-2">
-            <Sparkles class="w-4 h-4 text-purple-400" />
-            <span>Spiritual Lineage & Koudelka Legacy</span>
-          </h3>
-          <p class="text-base text-slate-300 leading-relaxed">
-            {overview.spiritual_lineage}
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="ornament-divider" aria-hidden="true"><span>&#10022;</span></div>
-
-    <!-- Core Gameplay Systems -->
-    <section id="gameplay" class="scroll-mt-20 space-y-6">
-      <div class="border-b border-slate-800 pb-3">
-        <h2 class="text-3xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-          <span class="icon-badge"><Disc class="w-6 h-6 text-gold-400" /></span>
-          <span>Signature Gameplay Systems</span>
-        </h2>
-        <p class="text-base text-slate-400 mt-1">
-          Distinctive tactical mechanics that define combat tension and character progression.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Judgement Ring -->
-        <div class="p-6 rounded-xl bg-slate-850/70 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-gold-500/40 transition-colors">
-          <div class="space-y-3">
-            <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400">
-              <Disc class="w-7 h-7" />
-            </div>
-            <h3 class="text-xl font-serif font-bold text-slate-100">{gameplay.judgement_ring.name}</h3>
-            <p class="text-base text-slate-300 leading-relaxed">{gameplay.judgement_ring.description}</p>
-            <div class="pt-3 text-base text-slate-300 border-t border-slate-800 space-y-1.5">
-              <div class="flex items-start gap-2"><Target class="w-5 h-5 mt-0.5 shrink-0 text-gold-400" /><span class="block"><strong class="text-slate-200">Strike Areas</strong>
-                  <ul class="bullet-list mt-1.5">
-                    {toSentences(gameplay.judgement_ring.mechanics).map((t) => <li>{t}</li>)}
-                  </ul></span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sanity System & Malice -->
-        <div class="p-6 rounded-xl bg-slate-850/70 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-crimson-500/40 transition-colors">
-          <div class="space-y-3">
-            <div class="w-14 h-14 rounded-xl bg-crimson-500/10 border border-crimson-500/30 flex items-center justify-center text-crimson-400">
-              <Skull class="w-7 h-7" />
-            </div>
-            <h3 class="text-xl font-serif font-bold text-slate-100">{gameplay.sanity_system.name}</h3>
-            <div class="flex items-start gap-2">
-              <Brain class="w-5 h-5 mt-1 shrink-0 text-crimson-400" />
-              <ul class="bullet-list text-base text-slate-300 leading-relaxed">
-                {toSentences(gameplay.sanity_system.sp_mechanics).map((t) => <li>{t}</li>)}
-              </ul>
-            </div>
-            <div class="pt-3 text-base text-slate-300 border-t border-slate-800 space-y-1.5">
-              <div class="flex items-start gap-2"><Ghost class="w-5 h-5 mt-0.5 shrink-0 text-crimson-400" /><span class="block"><strong class="text-slate-200">The Curse of Malice</strong>
-                  <ul class="bullet-list mt-1.5">
-                    {toSentences(gameplay.sanity_system.malice_mechanics).map((t) => <li>{t}</li>)}
-                  </ul></span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Demon Fusion -->
-        <div class="p-6 rounded-xl bg-slate-850/70 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-purple-500/40 transition-colors">
-          <div class="space-y-3">
-            <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
-              <Flame class="w-7 h-7" />
-            </div>
-            <h3 class="text-xl font-serif font-bold text-slate-100">{gameplay.fusion_system.name}</h3>
-            <p class="text-base text-slate-300 leading-relaxed">{gameplay.fusion_system.description}</p>
-            <div class="pt-3 text-base text-slate-300 border-t border-slate-800 space-y-1.5">
-              <div class="flex items-start gap-2"><Swords class="w-5 h-5 mt-0.5 shrink-0 text-purple-400" /><span class="block"><strong class="text-slate-200">Graveyard Trials</strong>
-                  <ul class="bullet-list mt-1.5">
-                    {toSentences(gameplay.fusion_system.mechanics).map((t) => <li>{t}</li>)}
-                  </ul></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="ornament-divider" aria-hidden="true"><span>&#10022;</span></div>
-
-    <!-- Playable Character Roster -->
-    <section id="characters" class="scroll-mt-20 space-y-6">
-      <div class="border-b border-slate-800 pb-3 flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <h2 class="text-3xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-            <span class="icon-badge"><Users class="w-6 h-6 text-gold-400" /></span>
-            <span>Playable Characters & Companions</span>
-          </h2>
-          <p class="text-base text-slate-400 mt-1">
-            The diverse cast of exorcists, rogues, sages, and harmonixers traveling across Eurasia.
-          </p>
-        </div>
-        <span class="text-sm font-mono text-slate-400 bg-slate-850 px-3 py-1 rounded-full border border-slate-800">
-          {characters.length} Playable Heroes
-        </span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {characters.map((char) => {
-          const element = char.element_or_weapon.split('/')[0].trim();
-          const Icon = elementStyles[element]?.icon;
-          const iconColor = elementStyles[element]?.color ?? '';
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+        {gameplay.sections.map((section) => {
+          const Icon = gameplayIcons[section.id] ?? Sparkles;
+          const wide = Boolean(section.items?.length);
           return (
-          <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 hover:border-slate-700 transition-colors space-y-3 flex flex-col justify-between">
-            <div class="space-y-2">
-              <div class="flex items-start justify-between gap-2">
-                <div class="flex items-center gap-3">
-                  {portraitFor(char.name)
-                    ? <img src={portraitFor(char.name)} alt={char.name} class="char-portrait" loading="lazy" />
-                    : <span class="char-avatar" aria-hidden="true">{char.name.charAt(0)}</span>}
-                  <div>
-                  <h3 class="text-xl font-serif font-bold text-slate-100">{char.name}</h3>
-                  <p class="text-sm text-slate-400 font-mono">{char.japanese_name}</p>
-                  </div>
-                </div>
-                <span class="inline-flex items-center gap-1.5 text-sm font-mono px-2 py-0.5 rounded bg-slate-800 text-gold-400/90 border border-slate-700/60">
-                  {Icon && <Icon class={`w-4 h-4 ${iconColor}`} aria-hidden="true" />}
-                  {element}
-                </span>
-              </div>
-              <p class="text-sm font-medium text-gold-300/90">{char.role}</p>
-              <ul class="bullet-list text-base text-slate-300 leading-relaxed pt-2 border-t border-slate-800/80">
-                {toSentences(char.bio).map((t) => <li>{t}</li>)}
-              </ul>
-            </div>
-            <div class="pt-2 text-sm font-mono text-slate-400 flex items-center gap-1.5">
-              <Swords class="w-4 h-4 text-gold-400/80" />Weapon: <span class="text-slate-300">{char.element_or_weapon.split('/')[1]?.trim() || 'Custom'}</span>
-            </div>
-          </div>
+            <article id={section.id} class:list={['scroll-mt-20 p-6 rounded-xl bg-slate-850/70 border border-slate-800 space-y-3 hover:border-gold-500/40 transition-colors', { 'md:col-span-2': wide }]}>
+              <h3 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+                <span class="icon-badge icon-badge-sm"><Icon class="w-5 h-5 text-gold-400" aria-hidden="true" /></span>
+                <span>{section.title}</span>
+              </h3>
+              <SentenceList texts={section.paragraphs} />
+              {section.items && (
+                <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-3 border-t border-slate-800">
+                  {section.items.map((item) => (
+                    <li class="p-4 rounded-lg bg-slate-900/50 border border-slate-800/80 space-y-2">
+                      {item.lead && <p class="text-base font-serif font-bold text-gold-300">{item.lead}</p>}
+                      <SentenceList texts={[item.rest]} />
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </article>
           );
         })}
       </div>
-    </section>
+    </CollapsibleSection>
 
-    <div class="ornament-divider" aria-hidden="true"><span>&#10022;</span></div>
-
-    <!-- Critical Acclaim, Reception & Series Legacy -->
-    <section id="reception" class="scroll-mt-20 space-y-6">
-      <div class="border-b border-slate-800 pb-3">
-        <h2 class="text-3xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
-          <span class="icon-badge"><Award class="w-6 h-6 text-gold-400" /></span>
-          <span>Critical Reception & Franchise Legacy</span>
-        </h2>
-        <p class="text-base text-slate-400 mt-1">
-          Contemporary reception, historic review scores, and enduring cultural impact.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <!-- Highlights & Scores -->
-        <div class="lg:col-span-2 space-y-4">
-          <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
-            <div class="flex items-center justify-between">
-              <h3 class="text-lg font-serif font-bold text-slate-200">Contemporary Critical Reception</h3>
-              <span class="text-sm font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 px-2.5 py-1 rounded">
-                Metacritic: 73 / 100
-              </span>
+    <!-- Playable Characters -->
+    <CollapsibleSection id="characters" title="Playable Characters" icon={Users} open class="scroll-mt-20 space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {characters.playable.map((char) => (
+          <article class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 hover:border-slate-700 transition-colors space-y-3">
+            <div class="flex items-center gap-3">
+              {char.portrait
+                ? <img src={assetUrl(char.portrait)} alt={char.portrait.alt} class="char-portrait" loading="lazy" />
+                : <span class="char-avatar" aria-hidden="true">{char.name.charAt(0)}</span>}
+              <h3 class="text-xl font-serif font-bold text-slate-100">{char.name}</h3>
             </div>
-            <p class="text-base text-slate-300 leading-relaxed">
-              {reception_and_legacy.critical_overview}
-            </p>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {reception_and_legacy.highlights.map((h) => (
-              <div class="p-4 rounded-lg bg-slate-850/40 border border-slate-800/80 space-y-1.5">
-                <div class="flex items-center justify-between">
-                  <span class="text-sm font-bold font-serif text-gold-300 flex items-center gap-1.5"><Star class="w-3.5 h-3.5" />{h.publication}</span>
-                  {h.reviewer && <span class="text-sm text-slate-400 font-mono">{h.reviewer}</span>}
-                </div>
-                <p class="text-base text-slate-300 leading-relaxed italic">
-                  <Quote class="w-4 h-4 text-gold-400/60 inline -mt-1 mr-1" />{h.verdict}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <!-- Soundtrack & Legacy Card -->
-        <div class="space-y-4">
-          <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
-            <h3 class="text-lg font-serif font-bold text-purple-300 flex items-center gap-2">
-              <Sparkles class="w-4 h-4 text-purple-400" />
-              <span>Acoustic & Industrial Score</span>
-            </h3>
-            <p class="text-base text-slate-300 leading-relaxed">
-              {reception_and_legacy.soundtrack}
-            </p>
-          </div>
-
-          <div class="p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
-            <h3 class="text-lg font-serif font-bold text-gold-300 flex items-center gap-2">
-              <ShieldCheck class="w-4 h-4 text-gold-400" />
-              <span>Series Legacy & Sequels</span>
-            </h3>
-            <p class="text-base text-slate-300 leading-relaxed">
-              {reception_and_legacy.legacy}
-            </p>
-          </div>
-        </div>
+            <SentenceList texts={[char.text]} class="pt-3 border-t border-slate-800/80" />
+          </article>
+        ))}
       </div>
-    </section>
+    </CollapsibleSection>
 
-    <!-- Strategy Guide & Walkthrough Call-to-Action Banner -->
+    <!-- Development -->
+    <CollapsibleSection id="development" title="Development" icon={Hammer} class="scroll-mt-20 space-y-4">
+      <SentenceList texts={development.paragraphs} />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+        {development.sections.map((section) => (
+          <article id={section.id} class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
+            <h3 class="text-xl font-serif font-semibold text-gold-300">{section.title}</h3>
+            {section.notes?.map((n) => <p class="text-sm text-slate-400 italic">{n}</p>)}
+            {section.image && (
+              <figure class="w-32">
+                <img src={assetUrl(section.image)} alt={section.image.alt} class="cover-art w-full h-auto rounded-md" loading="lazy" />
+                <figcaption class="mt-1 text-xs text-slate-400 font-mono">{section.image.caption}</figcaption>
+              </figure>
+            )}
+            <SentenceList texts={section.paragraphs} />
+          </article>
+        ))}
+      </div>
+    </CollapsibleSection>
+
+    <!-- Media & Audio -->
+    <CollapsibleSection id="media-audio" title="Media & Audio" icon={Clapperboard} class="scroll-mt-20 space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article id={media.media.id} class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
+          <h3 class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2"><Disc class="w-4 h-4" aria-hidden="true" />{media.media.title}</h3>
+          {media.media.image && (
+            <figure class="w-32">
+              <img src={assetUrl(media.media.image)} alt={media.media.image.alt} class="cover-art w-full h-auto rounded-md" loading="lazy" />
+              <figcaption class="mt-1 text-xs text-slate-400 font-mono">{media.media.image.caption}</figcaption>
+            </figure>
+          )}
+          <SentenceList texts={media.media.paragraphs} />
+        </article>
+
+        <article id={media.audio.id} class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3">
+          <h3 class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2"><Mic class="w-4 h-4" aria-hidden="true" />{media.audio.title}</h3>
+          <SentenceList texts={media.audio.paragraphs} />
+        </article>
+      </div>
+
+      <h3 id="voice-acting" class="scroll-mt-20 text-xl font-serif font-semibold text-slate-100 pt-4 flex items-center gap-2"><Mic class="w-4 h-4 text-gold-400" aria-hidden="true" />Voice acting</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {castGroups.map((group) => (
+          <div id={group.id} class="scroll-mt-20 rounded-xl border border-slate-800 bg-slate-850/60 overflow-hidden">
+            <div class="p-4 space-y-1">
+              <h4 class="text-lg font-serif font-bold text-purple-300">{group.title}</h4>
+              <p class="text-sm text-slate-400">{group.cast.intro}</p>
+            </div>
+            <table class="w-full text-sm sm:text-base text-left">
+              <thead>
+                <tr class="border-y border-slate-800 text-slate-400 font-mono bg-slate-900/60">
+                  <th scope="col" class="py-2 px-4">Voice actor</th>
+                  <th scope="col" class="py-2 px-4">Role</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800 text-slate-300">
+                {group.cast.credits.map((c) => (
+                  <tr>
+                    <td class="py-2 px-4 font-medium text-slate-200">{c.actor}</td>
+                    <td class="py-2 px-4">{c.roles || '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+      </div>
+
+      <article id={media.soundtrack.id} class="scroll-mt-20 p-6 rounded-xl bg-slate-850/60 border border-slate-800 space-y-3 mt-2">
+        <h3 class="text-xl font-serif font-semibold text-gold-300 flex items-center gap-2"><Music class="w-4 h-4" aria-hidden="true" />{media.soundtrack.title}</h3>
+        <SentenceList texts={media.soundtrack.paragraphs} />
+      </article>
+
+      <article id={media.production_credits.id} class="scroll-mt-20 p-4 rounded-xl bg-slate-850/40 border border-slate-800/80 flex items-start gap-2.5">
+        <FileText class="w-4 h-4 mt-1 shrink-0 text-gold-400" aria-hidden="true" />
+        <div>
+          <h3 class="text-base font-serif font-semibold text-slate-200">{media.production_credits.title}</h3>
+          {media.production_credits.notes?.map((n) => <p class="text-sm text-slate-400 italic">{n}</p>)}
+        </div>
+      </article>
+    </CollapsibleSection>
+
+    <!-- Reception -->
+    <CollapsibleSection id="reception" title="Reception" icon={Award} class="scroll-mt-20 space-y-4">
+      <SentenceList texts={reception.paragraphs} />
+      {reception.footnote && (
+        <p class="text-sm text-slate-400">
+          <a href={reception.footnote.href} target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">{reception.footnote.text}</a>
+        </p>
+      )}
+    </CollapsibleSection>
+
+    <!-- Gallery -->
+    <CollapsibleSection id="gallery" title="Gallery" icon={Images} class="scroll-mt-20 space-y-4">
+      {gallery.map((group) => (
+        <div class="space-y-3">
+          <h3 class="text-lg font-serif font-semibold text-gold-300">{group.title}</h3>
+          <ul class="flex flex-wrap gap-6">
+            {group.images.map((image) => (
+              <li>
+                <figure class="space-y-2">
+                  <img src={assetUrl(image)} alt={image.alt} class="cover-art gallery-thumb rounded-md" loading="lazy" />
+                  <figcaption class="max-w-[10rem] text-sm text-slate-400 font-mono">{image.caption}</figcaption>
+                </figure>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </CollapsibleSection>
+
+    <!-- External links -->
+    <CollapsibleSection id="external-links" title="External Links" icon={ExternalLink} class="scroll-mt-20 space-y-4">
+      <ul class="space-y-2">
+        {external_links.map((link) => (
+          <li>
+            <a href={link.href} target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline text-base">{link.text}</a>
+          </li>
+        ))}
+      </ul>
+    </CollapsibleSection>
+
+    <!-- Strategy Guide CTA -->
     <section id="start-walkthrough" class="scroll-mt-20">
       <div class="relative rounded-2xl border border-gold-500/30 bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 p-8 sm:p-10 overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="space-y-2 max-w-xl text-center md:text-left">
@@ -489,6 +320,23 @@ const pageSections = [
         </div>
       </div>
     </section>
+
+    <!-- Source attribution & flagged irregularities -->
+    <footer class="text-sm text-slate-400 space-y-3 border-t border-slate-800 pt-6">
+      <p>
+        Wiki content on this page is taken from the
+        <a href={source.url} target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 underline">Shadow Hearts article on the Shadowhearts Wiki (Fandom)</a>.
+        {source.license_note}
+      </p>
+      {flags.length > 0 && (
+        <details>
+          <summary class="cursor-pointer text-slate-300">Notes on the source text ({flags.length})</summary>
+          <ul class="mt-2 space-y-1 list-disc pl-5">
+            {flags.map((f) => <li>{f.note}</li>)}
+          </ul>
+        </details>
+      )}
+    </footer>
   </div>
 </BaseLayout>
 
@@ -498,8 +346,8 @@ const pageSections = [
   }
 
   .hero-title {
-    /* mobile: larger, may wrap to two lines; sm+: single line scaling with the viewport */
-    font-size: clamp(1.75rem, 9vw, 2.5rem);
+    /* wraps to two lines when the cover art sits beside the text */
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
     line-height: 1.15;
     background-image: linear-gradient(180deg, #fff3c4 0%, #d4a93c 50%, #8a6a1f 100%);
     -webkit-background-clip: text;
@@ -509,21 +357,20 @@ const pageSections = [
     filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.6));
   }
 
-  @media (min-width: 640px) {
-    .hero-title {
-      font-size: clamp(1rem, 4.6vw, 2.5rem);
-    }
-  }
-
   .icon-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex: none;
     width: 2.75rem;
     height: 2.75rem;
     border-radius: 0.75rem;
     background: rgba(212, 175, 55, 0.1);
     border: 1px solid rgba(212, 175, 55, 0.35);
+  }
+  .icon-badge-sm {
+    width: 2.25rem;
+    height: 2.25rem;
   }
 
   .char-avatar {
@@ -553,39 +400,14 @@ const pageSections = [
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   }
 
-  .bullet-list {
-    list-style: none;
-    padding: 0;
-    margin-left: 0;
-  }
-  .bullet-list li {
-    position: relative;
-    padding-left: 1.25rem;
-    margin-top: 0.4rem;
-  }
-  .bullet-list li:first-child {
-    margin-top: 0;
-  }
-  .bullet-list li::before {
-    content: '\2726';
-    position: absolute;
-    left: 0;
-    top: 0.2em;
-    font-size: 0.7em;
-    color: #d4af37;
+  .cover-art {
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
   }
 
-  .ornament-divider {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: #d4af37;
-  }
-  .ornament-divider::before,
-  .ornament-divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+  .gallery-thumb {
+    height: 9rem;
+    width: auto;
+    object-fit: contain;
   }
 </style>

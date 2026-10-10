@@ -1,125 +1,413 @@
 {
   "id": "game-wiki-overview",
   "title": "Shadow Hearts — Game Wiki Overview",
-  "game_info": {
-    "title": "Shadow Hearts",
-    "developer": "Sacnoth",
-    "publishers": [
-      { "region": "JP", "publisher": "Aruze" },
-      { "region": "WW", "publisher": "Midway Games" }
-    ],
-    "director": "Matsuzo Machida",
-    "producer": "Jun Mihara",
-    "designer": "Izumi Hamamoto",
-    "artist": "Miyako Kato",
-    "writer": "Matsuzo Machida",
-    "composers": [
-      "Yoshitaka Hirota",
-      "Masaharu Iwata",
-      "Yasunori Mitsuda"
-    ],
-    "series": "Shadow Hearts",
-    "platform": "PlayStation 2",
-    "release_dates": [
-      { "region": "JP", "date": "June 28, 2001" },
-      { "region": "NA", "date": "December 12, 2001" },
-      { "region": "PAL", "date": "March 29, 2002" }
-    ],
-    "genre": "Role-playing (JRPG / Gothic Horror)",
-    "mode": "Single-player"
+  "source": {
+    "url": "https://shadowhearts.fandom.com/wiki/Shadow_Hearts",
+    "file": "raw-sources/Shadow Hearts ｜ Shadowhearts Wiki ｜ Fandom (9_10_2026 00：02：02).html",
+    "license_note": "Community content is available under CC-BY-SA unless otherwise noted."
   },
-  "overview": {
-    "premise": "Shadow Hearts is a seminal PlayStation 2 gothic role-playing game developed by Sacnoth. Acting as the spiritual and narrative successor to Koudelka (1999), it bridges historical early 20th-century realism with eldritch cosmic horror.",
-    "historical_setting": "Set between 1913 and 1914 on the eve of World War I, the adventure charts an epic transcontinental journey across real-world historical cities in China and Europe—from the bustling, tumultuous streets of Shanghai to the fog-drenched alleys of London and the occult-steeped ruins of Wales.",
-    "spiritual_lineage": "Developed under director and scenario writer Matsuzo Machida, Shadow Hearts distinguishes itself from conventional fantasy RPGs through an irreverent blend of historical drama, dark occultism, irreverent humor, and supernatural demonology inspired by H.P. Lovecraft and Go Nagai's Devilman."
+  "intro": {
+    "notes": [
+      "For the series, see Shadow Hearts (series)."
+    ],
+    "paragraphs": [
+      "Shadow Hearts is a console role-playing game developed by Sacnoth and published by Aruze Corp in Japan and in the United States and Europe by Midway Games in 2001. It is the first official game in the Shadow Hearts series and Koudelka is its prequel. Shadow Hearts follows the adventures of Yuri Hyuga, a Harmonixer guided by a mysterious voice in his head. He finds himself thrown into the conflicts prior to World War I where he must save the woman he loves and the world from destruction. Released in North America only one week before Square Enix's Final Fantasy X, and was not helped by Midway's nominal marketing campaign, Shadow Hearts initially struggled to gain the attention of gamers. The use of 2D pre-rendered backgrounds rather than a full 3D environment drew criticism as well. The game was praised for its original battle system. Shadow Hearts gained a cult following for its quirky use and misuse of historical facts and situations in a form of secret history."
+    ],
+    "image": {
+      "file": "wiki/sh---us-box-art1.webp",
+      "alt": "Shadow Hearts US Cover",
+      "caption": "Shadow Hearts US Cover",
+      "width": 300,
+      "height": 428
+    }
   },
   "gameplay": {
-    "exploration_and_encounters": "Players explore atmospheric pre-rendered locales, solving environmental puzzles, bartering with period merchants, and undertaking both pivotal story investigations and optional side quests. Combat takes place in turn-based 3D arenas triggered by random encounters.",
-    "judgement_ring": {
-      "name": "The Judgement Ring",
-      "description": "The defining hallmark of the Shadow Hearts series: an active, precision-based timing ring that governs nearly every action in the game.",
-      "mechanics": "When an action is initiated, an indicator hand sweeps across an antique circular disc. The player must press the confirmation button within designated colored Hit areas to execute commands. Hitting the narrow red sliver at the end of each area—the Strike area—deals critical bonus damage or amplifies magical potency. Failing to hit an area can abort the action prematurely.",
-      "variations": "Beyond combat, the Judgement Ring triggers environmental challenges and allows haggling for merchant discounts. Status ailments and rare equipment actively modify the ring, expanding hit zones, accelerating rotation speed, or obscuring target indicators."
+    "paragraphs": [
+      "With a linear storyline, random encounters, turn-based battles, and traditional elements such as hit points and magic points, Shadow Hearts plays similarly to other console RPGs. The Judgement Ring, designed to incorporate an element of chance in various outcomes based on the player's skill, is unique to the genre. There are also side-quests and an option for an additional playthrough (or New Game Plus) with the previous game's data saved to allow for completion of the monster library, to attain further collectible items or equipment, and for a statistical side-by-side comparison of the first playthrough."
+    ],
+    "sections": [
+      {
+        "id": "environment-world-map-submap",
+        "title": "Environment/World Map/Submap",
+        "paragraphs": [
+          "The player maneuvers a 3D character in the submap, a 2D pre-rendered background representing the environment. Many items are found in the submap, typically in the form of chests, while others are marked with a shining dot. There are also items noticeable only when the player is directly in front of them. To change locations in Shadow Hearts, the player can choose from a World Map. The world map is a stylized map of Europe and China with locations indicated by dots."
+        ]
+      },
+      {
+        "id": "battle",
+        "title": "Battle",
+        "paragraphs": [
+          "Shadow Hearts uses a turn-based battle system where the player chooses actions from a menu. The list of actions include many basic commands such as Attack, Items, and Escape. Enemies are encountered randomly and are not visible in the submap. Battle commences in a 3D environment modeled after a section of the current location. The characters and enemies stay in their respective positions and only move from their position when executing an attack. The characters are controlled by the player and the enemies are controlled by the CPU. The party is made up of three characters and can be changed, with the exception of Yuri, by speaking with the NPC Meiyuan. Characters can be positioned either in the back row or front row. The back row is suited for characters with lower physical defense and attack while the front row is suited for characters with higher physical defense and attack. Another aspect of the battle is the character's base statistics. There are the traditional Hit Points (HP) and Magic Points (MP) plus the new Sanity Points (SP). Like many other RPGs, the character's HP will decrease every time they receive damage and their MP decreases when a skill is used. SP decreases every turn and dictate how long a character can last in a battle before they become 'mentally unstable'. When SP decreases to zero, the character automatically goes into a state of berserk and the player will lose control of that character. At the end of every battle all the character’s SP is replenished. Each character gains HP, MP, and SP every time they gain a level and there are many items which help restore lost HP, MP, and SP. There are also items which alleviate status ailments as well as revival items."
+        ]
+      },
+      {
+        "id": "judgement-ring",
+        "title": "Judgement Ring",
+        "paragraphs": [
+          "The Judgement Ring is a unique element in Shadow Hearts and is used in many aspects of the game including battles, minigames, and even shopping. The success of the characters actions is dependent on the outcome of the Judgment Ring. Essentially, the Judgement Ring is a circle with different colored segments and a rotating needle which is stopped by the player's input. When an action is chosen, the Judgement Ring is presented on the screen. Players then have to watch the rotating needle carefully as it rotates and hit the colored segments."
+        ],
+        "items": [
+          {
+            "lead": "Physical Attack Rings",
+            "rest": "possess three Hit Areas coupled with Strike Areas. By hitting all of the hit areas, the character will perform three attacks. If any of the hit areas are missed, the character’s turn will be skipped or their amount of attacks will be reduced depending on which hit area is missed. If the first hit area is missed the turn is automatically skipped. If the player hits the first hit area but misses the subsequent hit areas, the amount of attacks will be reduced."
+          },
+          {
+            "lead": "Magic Attack/Special Ability Rings",
+            "rest": "differ from Physical Attacks Rings. These rings possess Step Areas and a Modulation Area with a Strike Area. All the step areas must be hit or else the special attack will fail. The modulation area operates like the hit areas of a physical attack."
+          },
+          {
+            "lead": "Item Rings",
+            "rest": "only possess one Hit Area by itself or coupled with a Strike Area. This depends on the item being used and its effect. Items that cure HP, MP, or SP for a specific amount can be enhanced by strike areas whereas items that cure fully or alleviate status effects don’t require a strike area to enhance the effect."
+          },
+          {
+            "lead": "Minigame Rings",
+            "rest": "only possess Hit Areas which must all be hit in order to win the minigame (with the exception of the Lottery). The Push Ring is a timed game, which has only one hit area, where the player must make the needle move towards the hit area and keep it there until the time runs out. The Normal Ring has three hit areas and the player must hit all three of them and for as many rotations the game states. Lastly, there is the Lottery. The Lottery has many different colored hit areas each corresponding to a different prize. The player only needs to hit one of the hit areas to be successful."
+          }
+        ]
+      },
+      {
+        "id": "special-abilities",
+        "title": "Special Abilities",
+        "paragraphs": [
+          "Every character in Shadow Hearts has their own unique special abilities. These abilities include offensive, restorative and supportive spells. Every character, except for Yuri, will gain their abilities as they gain experience and level up. Yuri, on the other hand, must acquire his Fusions by collecting Soul Energy."
+        ]
+      },
+      {
+        "id": "malice",
+        "title": "Malice",
+        "paragraphs": [
+          "Malice in Shadow Hearts is the vengeance of the enemies that the party has killed. Malice accumulates every time the player finishes a battle. Most enemies give one point of malice while bosses give higher amounts. Yuri possesses an accessory called a Talisman that can display how much malice has accumulated. It changes color from Dark Blue (lowest) to Red (maximum). Once it has reached the maximum, the door to the dark side opens and the Grim Reaper is summoned to the real world. The Grim Reaper manifests itself as the one Yuri fears the most. Once this occurs, the party will randomly encounter the Grim Reaper forcing Yuri to fight him alone. To clear the malice the player must go into the Graveyard in Yuri’s mental realm. Once inside, there are four masks (Sword, Grail, Staff, and Gold) that will allow the player to fight a monster to clear the malice. This monster is a manifestation of the accumulated malice. Depending on the amount of malice, the monster will be different."
+        ]
+      },
+      {
+        "id": "shopping",
+        "title": "Shopping",
+        "paragraphs": [
+          "Shopping in Shadow Hearts is similar to most RPGs. The player can buy items or equipment using the in-game currency, Cash. The element that sets shopping in Shadow Hearts apart from other games is the use of the Judgment Ring. Throughout the course of the game, the player can collect certain Guild Cards to attain different ranks. Once the player has a card, they are automatically given an option to get a discount when buying or a price rise when selling. By collecting different guild cards, the player can receive different privileges. Once the player chooses to receive a discount a ring with three Hit Areas is presented. To be successful, all three hit areas must be hit. Depending on the item being bought or sold, the size of the hit areas and the speed of the needle changes. When the player aims for higher discount or price raise rates, they must complete individual rings for each level."
+        ]
+      }
+    ]
+  },
+  "characters": {
+    "playable": [
+      {
+        "name": "Yuri Volte Hyuga",
+        "text": "Yuri Volte Hyuga (Urmnaf \"Uru\" Bort Hyuga, ウルムナフ・ボルテ・ヒューガ, Urumunafu Borute Hyūga in the Japanese version) is the main protagonist of the game and was born in Katsuragi in 1889 to a Japanese father, Ben Hyuga, and a Russian mother, Anne Hyuga. An anti-hero, Yuri speaks his mind, is often impolite, and is reluctant to accept his special abilities. Indeed, he is called \"Rude Hero\" before his name is revealed to the player. At the beginning of the game it is clear that his actions are influenced by a mysterious voice. Although he would rather ignore the voice, he obeys its commands mainly for the thrill of fighting monsters. Once he meets Alice Elliot his attitude begins to change, although he remains troubled about his fusion powers. His desire to change is fueled further when he discovers Alice had sacrificed her soul to save him. He is additionally motivated by the memory of his father, who fought hard and died protecting the world. A Harmonixer, he possesses the powers of Fusion, which he inherited from his father. These powers were awakened in his childhood when zombies attacked his home, and Yuri's mother died trying to protect him. By fusing into elemental and non-elemental demons, Yuri gains new abilities in battles.When he is not using his fusions, he fights with knuckle-mounted blades.",
+        "portrait": {
+          "file": "characters/Yuri.webp",
+          "alt": "Yuri Volte Hyuga",
+          "caption": "Yuri Volte Hyuga"
+        }
+      },
+      {
+        "name": "Alice Elliot",
+        "text": "Alice Elliot (アリス・エリオット, Arisu Eriotto in the Japanese version), born in 1892 to Father Morris Elliot, an English Priest, was raised in London, England. Hearing supernatural voices in her early childhood, Alice later became an exorcist and together with her father they performed exorcisms. When Alice was saved by Yuri, she was unsure what to think of him. But after spending more time with him and seeing him risk his own life to defeat Dehuai, she grew attached to him. After Yuri attempted to fuse with Seraphic Radiance, Alice chose to use her own soul to save him. In battle, Alice has the ability to do White Magic allowing her to heal party members and damage enemies. Alice is the best healer in the game, and books are her primary weapons.",
+        "portrait": {
+          "file": "characters/alice.webp",
+          "alt": "Alice Elliot",
+          "caption": "Alice Elliot"
+        }
+      },
+      {
+        "name": "Li Zhuzhen",
+        "text": "Li Zhuzhen (\"劉朱震\", Liú Zhūzhèn in the Japanese version) was born in China and is over 60 years old. He is a sage who was taught by Master Xifa along with his peer Dehuai, he proceeds his name with \"Ruler of the Nine Heavens, Earth Sage\" when meeting people formally. 15 years prior to Shadow Hearts, Ben Hyuga helped him when he was being harassed by Dehuai’s underlings. As a result, Zhuzhen helped Hyuga to stop Dehuai from succeeding in the Demon's Gate Invocation. He joins with Yuri and Alice in the village of Zhaoyang. In battle, his special skills are Yin and Yang, giving him the ability to heal allies or damage enemies. His primary weapons are staves.",
+        "portrait": {
+          "file": "characters/Zhuzhen.webp",
+          "alt": "Li Zhuzhen",
+          "caption": "Li Zhuzhen"
+        }
+      },
+      {
+        "name": "Margarete Gertrude Zelle",
+        "text": "Margarete Gertrude Zelle (\"マルガリータ・G・ツェル\", Marugarīta G. Tseru in the Japanese version), codenamed \"Malkovich,\" is a world famous spy, and she met Yuri and Alice during her mission in Fengtian. Her mission was to prevent the Japanese soldiers from leaving Fengtian by bombing the railway but Yuri and Alice get caught in the explosion, too. Margarete uses Secret Weapons during battle to deal damage to enemies. She receives her weapons by using her cell phone to call for aid. Her weapons are guns.",
+        "portrait": {
+          "file": "characters/Margarete.webp",
+          "alt": "Margarete Gertrude Zelle",
+          "caption": "Margarete Gertrude Zelle"
+        }
+      },
+      {
+        "name": "Keith Valentine",
+        "text": "Keith Valentine (\"キース・ヴァレンティーナ\", Kīsu Varentīna) is a vampire believed to be over 400 years old. He occupies Blue Castle, the home of his ancestors, and had been asleep for a long time before he met Yuri and party. Bored, Keith decides to join Alice and Yuri. Keith performs Rituals during battle allowing him to heal himself while simultaneously dealing damage to enemies. His weapons are swords. Keith also appreciates other types of rituals and powers.",
+        "portrait": {
+          "file": "characters/Keith.webp",
+          "alt": "Keith Valentine",
+          "caption": "Keith Valentine"
+        }
+      },
+      {
+        "name": "Halley Brancket",
+        "text": "Halley Brancket (\"ハリー・プランケット\", Harī Puranketto) is the son of Koudelka Iasant, the main character of Koudelka. He was separated from his mother in London when she was taken away in a witch hunt. A big brother to the orphans in London, Halley is aided by Yuri to rescue kids at an orphanage. There they discover Jack's plan to use the Émigré Manuscript to revive Jack's mother. Halley's surname was incorrectly romanised for the English language release. Brancket should have been written as Plunkett (the katakana ブ (bu) and プ (pu) having been confused), the last name of his father, Edward. Like his mother, Halley has the ability of ESP. However, he has difficulty controlling his powers. Halley uses slingshots in battle.",
+        "portrait": {
+          "file": "characters/Halley.webp",
+          "alt": "Halley Brancket",
+          "caption": "Halley Brancket"
+        }
+      }
+    ]
+  },
+  "development": {
+    "paragraphs": [
+      "The brainchild of Matsuzo Itakura (art director of Koudelka), who succeeded Hiroki Kikuta as the president of Sacnoth, this game plays more similarly to standard console RPGs than Koudelka yet features some innovations that set it apart. It marks the introduction of the \"Judgment Ring\" system as well as Sanity Points, a somewhat Lovecraftian addition."
+    ],
+    "sections": [
+      {
+        "id": "demo-version",
+        "title": "Demo Version",
+        "notes": [
+          "Main article: Shadow Hearts Trial Version"
+        ],
+        "image": {
+          "file": "wiki/sh1-trial-version-cover.webp",
+          "alt": "SH1 Trial Version Cover",
+          "caption": "SH1 Trial Version Cover",
+          "width": 180,
+          "height": 179
+        },
+        "paragraphs": [
+          "The Shadow Hearts Trial Version is the demo disc released to the public as a taster of what to expect from the full game. It was given away at promotional events, or from magazines, and was not intented for resale. It includes five scenarios to play - four of which are slight adapations of those found in the final game, and a fifth one exclusive to the trial version."
+        ]
+      },
+      {
+        "id": "prototype",
+        "title": "Prototype",
+        "notes": [
+          "Main article: Shadow Hearts/Oct 18 2001 Prototype"
+        ],
+        "paragraphs": [
+          "A prototype consisting of an near-final English release build of the game was uploaded to the internet, and showcases a few differences between the versions."
+        ]
+      }
+    ]
+  },
+  "media_audio": {
+    "media": {
+      "id": "media",
+      "title": "Media",
+      "image": {
+        "file": "wiki/dvd.webp",
+        "alt": "Shadow Hearts Promotional DVD (JP)",
+        "caption": "Shadow Hearts Promotional DVD (JP)",
+        "width": 180,
+        "height": 181
+      },
+      "paragraphs": [
+        "With the re-relase of the game in Japan, it was accompanied by a DVD containing: promotional videos, an introduction to the game and the characters, and an interview with the staff and development team."
+      ]
     },
-    "sanity_system": {
-      "name": "Sanity Points (SP) & Malice",
-      "sp_mechanics": "Every party member tracks Hit Points (HP), Magic Points (MP), and Sanity Points (SP). Battling monstrous aberrations taxes human sanity: every round in combat automatically drains 1 SP. If a character's SP reaches 0, they succumb to the 'Berserk' condition, rampaging out of player control with reckless frenzy.",
-      "malice_mechanics": "Yuri's demon-binding abilities generate a lingering metaphysical residue known as Malice. As monsters are slain, Malice steadily accumulates, shifting the talisman talisman from blue to cursed crimson. If left unpurged, an avatar of Death—the Grim Reaper—manifests to ambush the party. Players must regularly purify this curse by confronting dark manifestations within the inner Graveyard."
+    "audio": {
+      "id": "audio",
+      "title": "Audio",
+      "paragraphs": [
+        "Shadow Hearts only features vocals during certain cut scenes and full motion videos. Most of the game consists of written dialogue accompanied by emoticons to display emotions or reactions. In the North American and PAL versions, some of the battle cries for spells and item use remain in their original Japanese."
+      ]
     },
-    "fusion_system": {
-      "name": "Demon Fusion & The Graveyard",
-      "description": "Yuri's inherited ability as a Harmonixer to bind demonic entities and transform directly into formidable elemental beasts during battle.",
-      "mechanics": "Defeating enemies harvests elemental Soul Energy (Earth, Wind, Water, Fire, Light, and Dark). Within the Graveyard—a surreal purgatory realm residing inside Yuri's consciousness—Yuri offers soul energy to unlock trials against legendary demonic avatars. Overcoming these spectral guardians unlocks their Fusion forms, allowing Yuri to shapeshift mid-battle to unleash catastrophic spells and tailored elemental affinities."
+    "voice_acting": {
+      "english": {
+        "intro": "The voice actors in the North American and PAL versions of the game are as follows:",
+        "credits": [
+          {
+            "actor": "Ted Lewis",
+            "roles": "Yuri Hyuga",
+            "raw": "Ted Lewis — Yuri Hyuga"
+          },
+          {
+            "actor": "Veronica Taylor",
+            "roles": "Alice Elliot, Margarete G. Zelle",
+            "raw": "Veronica Taylor — Alice Elliot, Margarete G. Zelle"
+          },
+          {
+            "actor": "Madeleine Blaustein",
+            "roles": "Liu Zhuzhen",
+            "raw": "Madeleine Blaustein — Liu Zhuzhen"
+          },
+          {
+            "actor": "Scott Rayow",
+            "roles": "Keith Valentine, Albert Simon",
+            "raw": "Scott Rayow — Keith Valentine, Albert Simon"
+          },
+          {
+            "actor": "James Carter Cathcart",
+            "roles": "Roger Bacon",
+            "raw": "James Carter Cathcart — Roger Bacon"
+          },
+          {
+            "actor": "Wayne Grayson",
+            "roles": "Halley Brancket",
+            "raw": "Wayne Grayson — Halley Brancket"
+          },
+          {
+            "actor": "Eric Stuart",
+            "roles": "",
+            "raw": "Eric Stuart —"
+          }
+        ]
+      },
+      "japanese": {
+        "intro": "The voice actors in the original Japanese version of the game are as follows:",
+        "credits": [
+          {
+            "actor": "Hiroki Takahashi",
+            "roles": "Urmnaf \"Uru\" Bort Hyuga",
+            "raw": "Hiroki Takahashi — Urmnaf \"Uru\" Bort Hyuga"
+          },
+          {
+            "actor": "Chie Sawaguchi",
+            "roles": "Alice Eliot",
+            "raw": "Chie Sawaguchi — Alice Eliot"
+          },
+          {
+            "actor": "Katsuya Gashuin",
+            "roles": "Roger Bacon",
+            "raw": "Katsuya Gashuin — Roger Bacon"
+          },
+          {
+            "actor": "Kenji Nojima",
+            "roles": "Keith Valentine",
+            "raw": "Kenji Nojima — Keith Valentine"
+          },
+          {
+            "actor": "Mie Sonozaki",
+            "roles": "Margareta G. Zelle",
+            "raw": "Mie Sonozaki — Margareta G. Zelle"
+          },
+          {
+            "actor": "Kenichirō Sanada",
+            "roles": "Liu Zhuzhen",
+            "raw": "Kenichirō Sanada — Liu Zhuzhen"
+          },
+          {
+            "actor": "Daisuke Gōri",
+            "roles": "Albert Simon",
+            "raw": "Daisuke Gōri — Albert Simon"
+          },
+          {
+            "actor": "Hiroko Kasahara",
+            "roles": "Koudelka Iasant",
+            "raw": "Hiroko Kasahara — Koudelka Iasant"
+          },
+          {
+            "actor": "Hideyuki Tanaka",
+            "roles": "Jinpachiro Hyuga",
+            "raw": "Hideyuki Tanaka — Jinpachiro Hyuga"
+          },
+          {
+            "actor": "Satoshi Hino",
+            "roles": "Halley Brancket",
+            "raw": "Satoshi Hino — Halley Brancket"
+          },
+          {
+            "actor": "Kiyoshi Kawakubo",
+            "roles": "Dehuai",
+            "raw": "Kiyoshi Kawakubo — Dehuai"
+          },
+          {
+            "actor": "Manami Nakayama",
+            "roles": "Yoshiko Kawashima",
+            "raw": "Manami Nakayama — Yoshiko Kawashima"
+          }
+        ]
+      }
+    },
+    "soundtrack": {
+      "id": "soundtrack",
+      "title": "Soundtrack",
+      "paragraphs": [
+        "The Shadow Hearts OST of was released as two Compact Discs under the name of Shadow Hearts Original Soundtracks Plus1 by Scitron in Japan on July 18, 2001. It was composed and arranged by Yoshitaka Hirota and Yasunori Mitsuda and recorded at TwinTail Studios. Whilst this was Hirota's first major video game music compositional work, Mitsuda is a veteran video game music composer having previously worked on Chrono Trigger, Chrono Cross and Xenogears. The OST packaging was unique in that it was released as a small hardcover book with the CDs contained in cardboard sleeves serving as the first and last pages. The soundtrack was later re-released on January 19, 2005 in a regular plastic CD case and having an altered cover. A review of the soundtrack along with some samples can be viewedhere. The ending theme, titled Ending Theme ~ Shadow Hearts, was composed by Hirota and the lyrics were written by James H. Woan. It features vocals by Hiroko Kasahara and Kyoko Kishikawa. The 'plus1' in the OST title refers to a bonus track titled Bonus Track ~ true voice. The track was composed by Hirota with lyrics written by Kishikawa who also performed the song."
+      ]
+    },
+    "production_credits": {
+      "id": "production-credits",
+      "title": "Production Credits",
+      "notes": [
+        "Main article: Production Credits of Shadow Hearts"
+      ],
+      "paragraphs": []
     }
   },
-  "characters": [
+  "reception": {
+    "paragraphs": [
+      "Shadow Hearts is considered unique by its fans for its quirky style. The setting is an alternate Earth where monsters and mystical forces seem common. Throughout the game, the seriousness of some of the game's subject matter and the horror elements clash with its sense of humor. Reviews were somewhat mixed, some gave the game a low score claiming that it lacked originality, while others praised it for being original and innovative."
+    ],
+    "footnote": {
+      "text": "[1]",
+      "href": "http://www.mobygames.com/game/ps2/shadow-hearts/mobyrank"
+    }
+  },
+  "gallery": [
     {
-      "name": "Yuri Hyuga",
-      "japanese_name": "ウル・ボルト・ヒューガ",
-      "role": "Main Protagonist / Harmonixer",
-      "element_or_weapon": "Dark / Knuckles & Claws",
-      "bio": "A cynical, tough-talking Harmonixer who bears the ability to fuse his soul with demons. Compelled by a mysterious telepathic voice in his head, he intervenes to rescue Alice from an occult train ambush, embarking on an arduous path to uncover his lineage."
+      "title": "Covers",
+      "images": [
+        {
+          "file": "wiki/sh.webp",
+          "alt": "Shadow Hearts (JP Cover)",
+          "caption": "Shadow Hearts (JP Cover)",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "file": "wiki/shbest.webp",
+          "alt": "Shadow Hearts Rerelease Cover (JP)",
+          "caption": "Shadow Hearts Rerelease Cover (JP)",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "file": "wiki/1038095579-00.webp",
+          "alt": "Shadow Hearts Cover (PAL)",
+          "caption": "Shadow Hearts Cover (PAL)",
+          "width": 120,
+          "height": 120
+        }
+      ]
     },
     {
-      "name": "Alice Elliot",
-      "japanese_name": "アリス・エリオット",
-      "role": "Holy Exorcist / White Magic Healer",
-      "element_or_weapon": "Light / Bibles & Holy Rods",
-      "bio": "A compassionate young exorcist from London gifted with peerless sacred power. Following the tragic murder of her father, she is targeted by powerful occultists and imperial factions seeking to harness her immense spiritual aura."
-    },
-    {
-      "name": "Zhuzhen Liu",
-      "japanese_name": "劉 朱震",
-      "role": "Taoist Sage & Geomancer",
-      "element_or_weapon": "Fire / Walking Staffs & Talismans",
-      "bio": "A quirky yet profoundly knowledgeable Taoist master well-versed in ancient Chinese divination, feng shui, and Yin-Yang geomancy. He lends invaluable supernatural wisdom and elemental fire sorcery to the party."
-    },
-    {
-      "name": "Margarete Gertrude Zelle",
-      "japanese_name": "マルガリータ・G・ツェレ",
-      "role": "International Spy & Demolitions Expert",
-      "element_or_weapon": "Water / Firearms & Explosives",
-      "bio": "A shrewd and glamorous intelligence operative disguised as an exotic performer. Armed with customized revolvers, submachine guns, and timed explosive ordnance, she investigates occult unrest across the continent."
-    },
-    {
-      "name": "Keith Valentine",
-      "japanese_name": "キース・ヴァレンタイン",
-      "role": "Vampire Noble / Aristocratic Fencer",
-      "element_or_weapon": "Earth / Rapiers & Ritual Blades",
-      "bio": "A sophisticated aristocratic vampire who has spent centuries secluded within his Welsh fortress. Seeking renewed purpose after centuries of slumber, he brings deadly fencing finesse, bat transformations, and dark ritual sorcery."
-    },
-    {
-      "name": "Halley Brancket",
-      "japanese_name": "ハリー・プランケット",
-      "role": "London Street Urchin / Psychic Prodigy",
-      "element_or_weapon": "Wind / Slingshots & Telekinesis",
-      "bio": "The plucky, courageous leader of a band of London street orphans who wields formidable telekinetic and psychic abilities. He is the son of Koudelka Iasant and joins forces with Yuri to rescue his captive mother."
+      "title": "Promotional",
+      "images": [
+        {
+          "file": "wiki/sh1-promotional-01.webp",
+          "alt": "Promotional poster",
+          "caption": "Promotional poster",
+          "width": 120,
+          "height": 120
+        }
+      ]
     }
   ],
-  "reception_and_legacy": {
-    "sales": "Upon release in 2001, Shadow Hearts achieved strong cult success in Japan, selling roughly 110,000 units and earning a devoted following among international players following its Western distribution through Midway Games.",
-    "critical_overview": "Holding a 73/100 aggregate score on Metacritic across 24 critical outlets, Shadow Hearts was celebrated as a creative breath of fresh air that dared to deviate from mainstream high-fantasy tropes.",
-    "highlights": [
-      {
-        "publication": "Famitsu",
-        "verdict": "Applauded the depth and execution of the battle system, highlighting the compelling, multidimensional personalities that set the cast apart from traditional RPG tropes."
-      },
-      {
-        "publication": "GameSpot",
-        "reviewer": "Gerald Villoria",
-        "verdict": "Praised the narrative as 'at once comical, scary, and most of all, exciting', emphasizing the dynamic tension of the Judgement Ring and the ingenious integration of the Malice and Sanity systems."
-      },
-      {
-        "publication": "Computer and Video Games",
-        "reviewer": "Paul Davies",
-        "verdict": "Commended the refreshing gothic ambiance, mature storytelling, and tactical depth of the Harmonixer Demon Fusion mechanic."
-      },
-      {
-        "publication": "RPGFan & IGN",
-        "verdict": "Acclaimed the Judgement Ring as an inspired mechanical breakthrough that keeps turn-based combat consistently tense and engaging."
-      }
-    ],
-    "soundtrack": "The soundtrack, crafted by Yoshitaka Hirota alongside Masaharu Iwata and Yasunori Mitsuda, remains one of the era's most revered RPG scores—blending industrial noise, ritual chanting, symphonic grandeur, and acoustic folk into a sound described as 'beautiful yet destructive'.",
-    "legacy": "Shadow Hearts established an enduring legacy as one of the PS2's preeminent cult classics, paving the way for the masterpiece Shadow Hearts: Covenant (2004) and spin-off Shadow Hearts: From the New World (2005)."
-  }
+  "external_links": [
+    {
+      "text": "Official Shadow Hearts site (Japanese)",
+      "href": "http://www.shadowhearts.net/sh/index.html"
+    }
+  ],
+  "flags": [
+    {
+      "id": "deuhai-typo",
+      "note": "Source spells the antagonist \"Deuhai\" once; \"Dehuai\" elsewhere. Preserved."
+    },
+    {
+      "id": "zhuzhen-name",
+      "note": "Source alternates \"Li Zhuzhen\" / \"Liu Zhuzhen\" / \"Zhuzhen Liu\". Preserved."
+    },
+    {
+      "id": "empty-voice-actor",
+      "note": "English voice cast lists \"Eric Stuart —\" with no role. Preserved."
+    },
+    {
+      "id": "roger-stub",
+      "note": "Stray \"Roger:\" label inside the Roger Bacon paragraph. Preserved."
+    },
+    {
+      "id": "viewedhere",
+      "note": "Source text has \"viewedhere\" (missing space before link). Preserved."
+    },
+    {
+      "id": "missing-space",
+      "note": "Source text has a missing space after a full stop (\"fusions.When\"). Preserved."
+    },
+    {
+      "id": "footnote-removed",
+      "note": "Footnote marker \"[1]\" (link to MobyGames) was removed from the Reception text; its link is kept in links[]."
+    }
+  ]
 }

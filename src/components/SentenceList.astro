@@ -1,0 +1,40 @@
+---
+import { toSentences } from '../lib/sentences';
+
+interface Props {
+  /** Verbatim paragraph(s); each is split into one sentence per bullet. */
+  texts: string[];
+  class?: string;
+}
+
+const { texts, class: className = '' } = Astro.props;
+const sentences = texts.flatMap(toSentences);
+---
+
+<ul class:list={['sentence-list text-base text-slate-300 leading-relaxed', className]}>
+  {sentences.map((s) => <li>{s}</li>)}
+</ul>
+
+<style>
+  .sentence-list {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+  }
+  .sentence-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-top: 0.4rem;
+  }
+  .sentence-list li:first-child {
+    margin-top: 0;
+  }
+  .sentence-list li::before {
+    content: '\2726';
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    font-size: 0.7em;
+    color: #d4af37;
+  }
+</style>

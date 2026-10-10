@@ -280,130 +280,99 @@ export interface PageTocItem {
 }
 
 /**
- * Publisher metadata for regional releases.
+ * Article image extracted from the wiki source (file lives under public/).
  */
-export interface GamePublisher {
-  region: string;
-  publisher: string;
+export interface WikiImage {
+  /** Path relative to the site base, e.g. "wiki/dvd.webp" or "characters/Yuri.webp". */
+  file: string;
+  alt: string;
+  caption: string;
+  width?: number;
+  height?: number;
 }
 
 /**
- * Release date record for regional launches.
+ * Hyperlink carried over from the wiki source.
  */
-export interface GameReleaseDate {
-  region: string;
-  date: string;
+export interface WikiLink {
+  text: string;
+  href: string;
 }
 
 /**
- * Production and publishing metadata for Shadow Hearts.
+ * A titled block of verbatim wiki prose, optionally with a bullet list and notes.
  */
-export interface GameInfo {
+export interface WikiTextSection {
+  id: string;
   title: string;
-  developer: string;
-  publishers: GamePublisher[];
-  director: string;
-  producer: string;
-  designer: string;
-  artist: string;
-  writer: string;
-  composers: string[];
-  series: string;
-  platform: string;
-  release_dates: GameReleaseDate[];
-  genre: string;
-  mode: string;
+  /** "For the series..." / "Main article: ..." lines, verbatim. */
+  notes?: string[];
+  image?: WikiImage;
+  paragraphs: string[];
+  /** Bullet items; `lead` is the opening words of `text` rendered in bold, `rest` is the remainder. */
+  items?: Array<{ lead: string; rest: string }>;
 }
 
 /**
- * Historical setting, premise, and narrative roots.
- */
-export interface WikiOverview {
-  premise: string;
-  historical_setting: string;
-  spiritual_lineage: string;
-}
-
-/**
- * Core mechanics breakdown for the Judgement Ring.
- */
-export interface WikiJudgementRing {
-  name: string;
-  description: string;
-  mechanics: string;
-  variations: string;
-}
-
-/**
- * Mechanics breakdown for Sanity Points and Malice accumulation.
- */
-export interface WikiSanitySystem {
-  name: string;
-  sp_mechanics: string;
-  malice_mechanics: string;
-}
-
-/**
- * Mechanics breakdown for Demon Fusion and the Graveyard realm.
- */
-export interface WikiFusionSystem {
-  name: string;
-  description: string;
-  mechanics: string;
-}
-
-/**
- * Consolidated gameplay systems.
- */
-export interface WikiGameplay {
-  exploration_and_encounters: string;
-  judgement_ring: WikiJudgementRing;
-  sanity_system: WikiSanitySystem;
-  fusion_system: WikiFusionSystem;
-}
-
-/**
- * Playable character encyclopedia profile.
+ * Playable character entry. `text` is the wiki entry verbatim.
  */
 export interface WikiCharacter {
   name: string;
-  japanese_name: string;
-  role: string;
-  element_or_weapon: string;
-  bio: string;
+  text: string;
+  portrait?: WikiImage;
 }
 
 /**
- * Critical review citation and verdict.
+ * One voice-cast line: "Actor — Role, Role". `roles` is empty when the source line has no role.
  */
-export interface WikiReviewHighlight {
-  publication: string;
-  reviewer?: string;
-  verdict: string;
+export interface WikiVoiceCredit {
+  actor: string;
+  roles: string;
+  raw: string;
+}
+
+export interface WikiVoiceCast {
+  intro: string;
+  credits: WikiVoiceCredit[];
+}
+
+export interface WikiGalleryGroup {
+  title: string;
+  images: WikiImage[];
 }
 
 /**
- * Critical reception, sales, and franchise legacy.
+ * Source irregularity preserved and flagged rather than corrected.
  */
-export interface WikiReception {
-  sales: string;
-  critical_overview: string;
-  highlights: WikiReviewHighlight[];
-  soundtrack: string;
-  legacy: string;
+export interface WikiSourceFlag {
+  id: string;
+  note: string;
 }
 
 /**
  * Complete Game Wiki Overview schema representing structured-content/game-wiki-overview.json.
+ * Built deterministically from canonical-sources/game-wiki-fandom.canonical.json
+ * (scripts/build_wiki_structured.py); Plot and Non Playable Characters are out of scope here.
  */
 export interface GameWikiData {
   id: string;
   title: string;
-  game_info: GameInfo;
-  overview: WikiOverview;
-  gameplay: WikiGameplay;
-  characters: WikiCharacter[];
-  reception_and_legacy: WikiReception;
+  source: { url: string; file: string; license_note: string };
+  intro: { notes: string[]; image?: WikiImage; paragraphs: string[] };
+  gameplay: { paragraphs: string[]; sections: WikiTextSection[] };
+  characters: { playable: WikiCharacter[] };
+  development: { paragraphs: string[]; sections: WikiTextSection[] };
+  media_audio: {
+    media: WikiTextSection;
+    audio: WikiTextSection;
+    voice_acting: { english: WikiVoiceCast; japanese: WikiVoiceCast };
+    soundtrack: WikiTextSection;
+    production_credits: WikiTextSection;
+  };
+  reception: { paragraphs: string[]; footnote?: WikiLink };
+  gallery: WikiGalleryGroup[];
+  external_links: WikiLink[];
+  flags: WikiSourceFlag[];
 }
 
 /**

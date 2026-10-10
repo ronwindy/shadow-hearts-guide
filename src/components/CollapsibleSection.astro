@@ -7,14 +7,16 @@ interface Props {
   icon: any;
   flourish?: boolean;
   class?: string;
+  /** Render expanded on load (default: collapsed). */
+  open?: boolean;
 }
 
-const { id, title, icon: Icon, flourish = true, class: className = 'space-y-4' } = Astro.props;
+const { id, title, icon: Icon, flourish = true, class: className = 'space-y-4', open = false } = Astro.props;
 ---
 
-<section id={id} class:list={['overview-section', 'collapsed', className]}>
+<section id={id} class:list={['overview-section', { collapsed: !open }, className]}>
   <h2 id={`heading-${id}`} class:list={['text-xl sm:text-2xl font-serif font-bold text-slate-100', { 'heading-flourish': flourish }]}>
-    <button type="button" class="section-toggle w-full text-left flex items-center justify-between gap-2.5" aria-expanded="false" aria-controls={`panel-${id}`}>
+    <button type="button" class="section-toggle w-full text-left flex items-center justify-between gap-2.5" aria-expanded={open ? 'true' : 'false'} aria-controls={`panel-${id}`}>
       <span class="flex items-center gap-2.5">
         <Icon class="w-5 h-5 text-gold-400" aria-hidden="true" />
         <span>{title}</span>
