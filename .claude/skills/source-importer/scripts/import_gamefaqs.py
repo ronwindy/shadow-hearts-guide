@@ -315,7 +315,7 @@ def parse_shops(text: str) -> List[Dict[str, Any]]:
     """
     Extracts merchant and shop tables.
     """
-    pattern = re.compile(r'-[$-]-\s*([^-\n]+?)\s*-[$-]-(.*?)(?=\'[—\'-]+|\Z)', re.DOTALL)
+    pattern = re.compile(r'-[$-]-\s*([^\n]+?)\s*-[$-]-(.*?)(?=\'[—\'-]+|\Z)', re.DOTALL)
     shops = []
     for m in pattern.finditer(text):
         shop_name = m.group(1).strip()

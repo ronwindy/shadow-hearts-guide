@@ -848,6 +848,127 @@
       ]
     },
     {
+      "name": "Tight-lipped Merchant",
+      "inventory": [
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfWisdom",
+          "price": 1280
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Zodiac Bracelet",
+          "price": 10300
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Cosmic Bracelet",
+          "price": 11500
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Imp's Fang",
+          "price": 95
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        }
+      ]
+    },
+    {
       "name": "Shanghai Transport Reg. Logistic Comp. 8",
       "inventory": [
         {
@@ -1264,6 +1385,312 @@
       ]
     },
     {
+      "name": "Tight-lipped Merchant",
+      "inventory": [
+        {
+          "name": "Ever-Bible",
+          "price": 9800
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Oracle's Staff",
+          "price": 8600
+        },
+        {
+          "name": "Jade Lariat",
+          "price": 5050
+        },
+        {
+          "name": "SilverCrscntSwd",
+          "price": 8300
+        },
+        {
+          "name": "Coral Lariat",
+          "price": 5050
+        },
+        {
+          "name": "RedLeatherJacket",
+          "price": 8800
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Jasper Cape",
+          "price": 9200
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Headgear",
+          "price": 5400
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Circlet",
+          "price": 5800
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Charming Pareo",
+          "price": 5500
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Loin Guard",
+          "price": 5200
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "TalismanOfWisdom",
+          "price": 1280
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "TalismanOfPurity",
+          "price": 1760
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Soul Benediction",
+          "price": 500
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Cosmic Bracelet",
+          "price": 11500
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Pocket Watch",
+          "price": 5200
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Will Power",
+          "price": 6000
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        }
+      ]
+    },
+    {
+      "name": "Tight-lipped Merchant",
+      "inventory": [
+        {
+          "name": "Ever-Bible",
+          "price": 9800
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Oracle's Staff",
+          "price": 8600
+        },
+        {
+          "name": "Jade Lariat",
+          "price": 5050
+        },
+        {
+          "name": "SilverCrscntSwd",
+          "price": 8300
+        },
+        {
+          "name": "Coral Lariat",
+          "price": 5050
+        },
+        {
+          "name": "RedLeatherJacket",
+          "price": 8800
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Jasper Cape",
+          "price": 9200
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Headgear",
+          "price": 5400
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Circlet",
+          "price": 5800
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Charming Pareo",
+          "price": 5500
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Loin Guard",
+          "price": 5200
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "TalismanOfWisdom",
+          "price": 1280
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "TalismanOfPurity",
+          "price": 1760
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Soul Benediction",
+          "price": 500
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Cosmic Bracelet",
+          "price": 11500
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Pocket Watch",
+          "price": 5200
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Will Power",
+          "price": 6000
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        }
+      ]
+    },
+    {
       "name": "Continental Zero",
       "inventory": [
         {
@@ -1421,6 +1848,31 @@
         {
           "name": "Cosmic Bracelet",
           "price": 11500
+        }
+      ]
+    },
+    {
+      "name": "Tight-lipped Merchant",
+      "inventory": [
+        {
+          "name": "Weird Bottle",
+          "price": 18000
+        },
+        {
+          "name": "Pure Extract",
+          "price": 20000
+        },
+        {
+          "name": "Thera Extract",
+          "price": 5000
+        },
+        {
+          "name": "Third Key",
+          "price": 30000
+        },
+        {
+          "name": "Mana Extract",
+          "price": 10000
         }
       ]
     }

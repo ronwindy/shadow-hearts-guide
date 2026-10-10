@@ -239,7 +239,129 @@
     "cash": 6000,
     "strategy": "This is basically the same battle as with Yamaraja: War, only easier. As\nwith Yamaraja: War, the Cursed Puppet will absorb all magic, making\nZhuzhen useful only as a healer. He also uses the Game of Death, just as\nusual; if you don't have those Leonardo's Bears equipped to everyone,\nthey'll have a chance to instantly kill you. His Nightmare attack will\nhit the entire party for a lot of damage, so make sure heal afterward.\nThe only other thing he does is a hellacious physical attack that'll hit\nfor major damage. Once he starts using Nightmare repeatedly, you could be\nin a bit of trouble.\n\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. If he has the Mind's Eye\nequipped, it won't take very long. Margarete should be attacking\nnormally, but having her jump in to use Thera Seeds if needed, and\nZhuzhen should focus completely on recovery.\n\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
   },
-  "shops": [],
+  "shops": [
+    {
+      "name": "Tight-lipped Merchant",
+      "inventory": [
+        {
+          "name": "Leather Cap",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Studded Cap",
+          "price": 1700
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Casual Belt",
+          "price": 600
+        },
+        {
+          "name": "TalismanOfWisdom",
+          "price": 1280
+        },
+        {
+          "name": "Western Belt",
+          "price": 1700
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Zodiac Bracelet",
+          "price": 10300
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Cosmic Bracelet",
+          "price": 11500
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Faerie's Sigh",
+          "price": 85
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        },
+        {
+          "name": "Imp's Fang",
+          "price": 95
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        }
+      ]
+    }
+  ],
   "markers": {
     "items": [
       {

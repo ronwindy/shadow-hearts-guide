@@ -235,7 +235,161 @@
     "cash": null,
     "strategy": "Olga's Black Fog attack will do MAJOR damage to your party, as well as\nPoison each one of them, so it's a good idea to come in with Shell or\nCosmic Bracelets equipped. Her Nova attack will do decent damage to a\nsingle ally, her Icy Breath attack will hit your whole party for decent\ndamage, and her physical attack just does pathetic damage to a single\nally. Watch out if she uses Mind Assault to steal your MP, as you'll want\nto recover it immediately if she takes too much.\n\nYuri and Alice are obvious choices for this battle, and you could pretty\nmuch pick whomever your favorite is, as they'll all do roughly the same\namount of damage. I recommend Margarete just because I had her at a\nhigher level than Keith and Zhuzhen, therefore having more STR and HP.\nThat, and I find Margarete's Ring easier to hit than Keith's. Zhuzhen\njust sucks up a lot of MP and takes extra turns to replenish it. Okay,\nokay, I really like her too, if that matters any.\n\nFuse Yuri into Baldo (if you didn't get his level 2 Light Fusion, then\nfuse into the Heaven's Fiend, as you'll need the healing) and start\nphysically attacking; with the Mind's Eye equipped, he'll be doing major\ndamage. If you didn't put the Mind's Eye on him, then go with the Nova\nspell instead.\n\nHave Alice cast Holy Edge on Yuri her first round so he can keep piling\nthe damage up, then have her cast it on Margarete her second turn so she\ncan start adding in to the damage. Margarete should also be attacking\nnormally. If for some reason Alice doesn't need to heal, have her cast\nBlessed Light on Olga.\n\nIf a single ally just needs healed, have Alice do it. If two people need\nit, have Alice and Margarete do it. If all three need it, then have Yuri\ndo it, as Olga doesn't mess around, and can easily kill your entire party"
   },
-  "shops": [],
+  "shops": [
+    {
+      "name": "Tight-lipped Merchant",
+      "inventory": [
+        {
+          "name": "Ever-Bible",
+          "price": 9800
+        },
+        {
+          "name": "Voodoo Doll",
+          "price": 5200
+        },
+        {
+          "name": "Oracle's Staff",
+          "price": 8600
+        },
+        {
+          "name": "Jade Lariat",
+          "price": 5050
+        },
+        {
+          "name": "SilverCrscntSwd",
+          "price": 8300
+        },
+        {
+          "name": "Coral Lariat",
+          "price": 5050
+        },
+        {
+          "name": "RedLeatherJacket",
+          "price": 8800
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Jasper Cape",
+          "price": 9200
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Headgear",
+          "price": 5400
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Circlet",
+          "price": 5800
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Charming Pareo",
+          "price": 5500
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Loin Guard",
+          "price": 5200
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "Shell Bracelet",
+          "price": 2770
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Bone Bracelet",
+          "price": 2960
+        },
+        {
+          "name": "TalismanOfWisdom",
+          "price": 1280
+        },
+        {
+          "name": "Rosewood Bracelet",
+          "price": 3000
+        },
+        {
+          "name": "TalismanOfPurity",
+          "price": 1760
+        },
+        {
+          "name": "Bell Bracelet",
+          "price": 3120
+        },
+        {
+          "name": "Soul Benediction",
+          "price": 500
+        },
+        {
+          "name": "Mirror Bracelet",
+          "price": 3240
+        },
+        {
+          "name": "Bronze Arrowhead",
+          "price": 100
+        },
+        {
+          "name": "Cosmic Bracelet",
+          "price": 11500
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Spikes",
+          "price": 2810
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
+        },
+        {
+          "name": "Pocket Watch",
+          "price": 5200
+        },
+        {
+          "name": "Gold Hourglass",
+          "price": 200
+        },
+        {
+          "name": "Will Power",
+          "price": 6000
+        },
+        {
+          "name": "Tent",
+          "price": 480
+        },
+        {
+          "name": "Leonardo's Bear",
+          "price": 3330
+        }
+      ]
+    }
+  ],
   "markers": {
     "items": [
       {
