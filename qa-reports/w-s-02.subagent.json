@@ -1,0 +1,25 @@
+{
+  "section_id": "w-s-02",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "all 29 shop items and prices (Tight-lipped Merchant)",
+    "Lottery Member No. 10 prize table (5 colors/prizes)",
+    "boss card: party levels, equipment (Yuri/Margarete/Zhuzhen), Yuri fusions, 2000 EXP, 6000 Cash, Seal of Wisdom drop, 1080 HP Dark",
+    "boss strategy: all 10 sentences present and in source order; Yamaraja/Nightmare/Game of Death/Leonardo's Bears details intact",
+    "both dialogue choice prompts (launch ship, enter Wugui's room) and the 'Choose 2' instruction",
+    "NOTE about equipping Leonardo's Bears before Wugui's room",
+    "save points, overview items/equipment/valuables, enemy table (7 enemies, HP/class/notes)",
+    "step ordering 1-10 vs canonical prose order; item locations and step cross-references"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "shops[0].inventory (Talisman of Luck / Mercy / Wisdom)",
+      "canonical": "TalismanOfLuck, TalismanOfMercy, TalismanOfWisdom",
+      "structured": "Talisman of Luck, Talisman of Mercy, Talisman of Wisdom",
+      "issue": "Shop item names were respaced from the source's CamelCase spelling, while the Lottery Member No. 10 prize table in step 3 keeps 'TalismanOfWisdom'. The same item is therefore spelled two ways on one page. Presentation-only and the meaning is intact, but the spelling is inconsistent; pick one convention (source spelling preferred)."
+    }
+  ],
+  "structured_sha256": "537465076305c23100684204ad6ec3b73541c49bbee5fb0988643373cf83e4d4"
+}

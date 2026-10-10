@@ -1,0 +1,504 @@
+{
+  "guide": {
+    "id": "w-s-02",
+    "code": "[W-S-02]",
+    "title": "Kowloon Fortress",
+    "type": "sidequest",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-01",
+        "code": "[W-S-01]",
+        "title": "Yuri's Level 1 Fusions",
+        "file": "sections/w-s-01-yuri-s-level-1-fusions.json"
+      },
+      "next": {
+        "id": "w-s-03",
+        "code": "[W-S-03]",
+        "title": "Mr. Zhen's Pit Fight",
+        "file": "sections/w-s-03-mr-zhen-s-pit-fight.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat Cursed Puppet"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Mana Root",
+          "category": "items",
+          "location": "Open the chest beside the stairs to the north for a Mana Root, then go up the stairs and north to the next area. (step 5)"
+        },
+        {
+          "name": "Pure Root",
+          "category": "items",
+          "location": "Get the Pure Root out of the chest here in the stairwell, then continue up to the next screen. (step 8)"
+        },
+        {
+          "name": "Seal of the Soul",
+          "category": "items",
+          "location": "Look on the floor to the left near the westernmost barrel to find a Seal of the Soul, then move up and right through the next door to be on the other side of the striped gate. (step 7)"
+        },
+        {
+          "name": "Soul Benediction",
+          "category": "items",
+          "location": "Move southwest and cross the bridge, opening the chest on the other side for a Soul Benediction. (step 8)"
+        },
+        {
+          "name": "Thera Root",
+          "category": "items",
+          "location": "Open the chest to your southeast for a Thera Root, then go up the stairs here to the next area. (step 7)"
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Just above it to the left of the bridge is either a urinal or a water fountain or something... who knows. In any case, examine it to find another Lottery Ticket. (step 8)"
+        },
+        {
+          "name": "Hand Needle",
+          "category": "equipment",
+          "location": "Make your way toward the set of stairs on the right side of the room, but before going up, go behind them on the back side to find a chest containing an awesome weapon for Yuri: the Hand Needle. (step 5)"
+        },
+        {
+          "name": "Face Guard",
+          "category": "equipment",
+          "location": "Go up the stairs and to the next screen, and in this bloody room, go up the ladder in the eastern corner; you'll find a Face Guard to the left up here. (step 6)"
+        },
+        {
+          "name": "Wugui Room Key",
+          "category": "valuables",
+          "location": "Once you have that, descend the ladder and check the table at the bottom of the screen to find the Wugui Room Key. (step 6)"
+        },
+        {
+          "name": "Lottery Member No. 10 (Invincible Nee)",
+          "category": "lottery",
+          "location": "Talk to the very first person you come to, Invincible Nee. As it turns out, he's a Lottery Member! (step 3)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#036",
+        "name": "Namida",
+        "hp": 200,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#037",
+        "name": "Speckled Creeper",
+        "hp": 250,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "P-Atk Resistant"
+      },
+      {
+        "number": "#038",
+        "name": "Happy Creeper",
+        "hp": 250,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Instant Death, S-Atk Resistant"
+      },
+      {
+        "number": "#039",
+        "name": "Blue Ogre",
+        "hp": 400,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Petrification"
+      },
+      {
+        "number": "#040",
+        "name": "Red Ogre",
+        "hp": 400,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#041",
+        "name": "Dark Judge",
+        "hp": 500,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#042",
+        "name": "Cursed Puppet",
+        "hp": 1080,
+        "class": "Dark",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Inflicts Instant Death, S-Atk Resistant"
+      }
+    ],
+    "bosses": [],
+    "shops": [
+      {
+        "name": "Tight-lipped Merchant",
+        "inventory": [
+          {
+            "name": "Leather Cap",
+            "price": 600
+          },
+          {
+            "name": "Talisman of Luck",
+            "price": 480
+          },
+          {
+            "name": "Studded Cap",
+            "price": 1700
+          },
+          {
+            "name": "Talisman of Mercy",
+            "price": 820
+          },
+          {
+            "name": "Casual Belt",
+            "price": 600
+          },
+          {
+            "name": "Talisman of Wisdom",
+            "price": 1280
+          },
+          {
+            "name": "Western Belt",
+            "price": 1700
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Zodiac Bracelet",
+            "price": 10300
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Cosmic Bracelet",
+            "price": 11500
+          },
+          {
+            "name": "Angel's Feather",
+            "price": 80
+          },
+          {
+            "name": "Spikes",
+            "price": 2810
+          },
+          {
+            "name": "Faerie's Sigh",
+            "price": 85
+          },
+          {
+            "name": "Leonardo's Bear",
+            "price": 3330
+          },
+          {
+            "name": "Imp's Fang",
+            "price": 95
+          },
+          {
+            "name": "Voodoo Doll",
+            "price": 5200
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "Thera Leaf",
+            "price": 50
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Thera Seed",
+            "price": 120
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Mana Leaf",
+            "price": 100
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Mana Seed",
+            "price": 300
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          },
+          {
+            "name": "Pure Seed",
+            "price": 510
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "As long as you answered the prompts correctly as **Alice** in Kuihai Tower, you can go to Kowloon Fortress to find out what happened to Wugui. If you answered differently... then tough luck; you can't do this side quest.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "1. To get to Kowloon Fortress, make your way to the docks in Huayuan in Shanghai.\n2. Talk to Junk-dealer Taka, the old man beside the ship, and he'll tell you that he fixed your boat.\n3. Board it; you'll be asked if you want to launch the ship.\n4. Choose 2, and a new destination will open on the World Map, and it's only accessible from this point: Kowloon Fortress.\n5. **Save** on the World Map before entering.",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. It'll sink, so forget it."
+          },
+          {
+            "option": "2. Let's sail the open seas!"
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "1. Talk to the very first person you come to, Invincible Nee.\n2. As it turns out, he's a Lottery Member!\n3. The ring here moves **really** fast.\n4. Normally, equipping the Pocket Watch would make it run normally, but it has no effect this time, so it'll probably take you **quite** a few tries to get this.\n5. Make sure to win the Mind's Eye before continuing on; it's arguably the best accessory in the game.\n6. It will make the areas on your Judgment Ring invisible, but it'll **double** (yes, **double**) your physical attack!\n7. Paired with a Jade Lariat and weapons that have the Hit Area widened on them, (or if you're just that good at **Yuri**'s ring) **Yuri** becomes ridiculously overpowered.\n8. If you don't win it, reload your last save and try again.\n9. Remember, you need to win something from each member at least once!",
+        "type": "story",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Lottery Member No. 10 Prizes",
+            "text": "Prize listing for Lottery Member No. 10, by color.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Mind's Eye"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "Moon Swallow"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "TalismanOfWisdom"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Pure Seed"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "- If you talk to the Silent Peddler here, you'll find out that he also is a Tight-lipped Merchant with goods for sale!\n- Most notably, he has the Zodiac and Cosmic Bracelets; the Zodiac Bracelet renders Paralysis and Petrification ineffectual, and the Cosmic Bracelets renders Poison, Silence, and Confusion ineffectual.\n- These are two very useful accessories that you may want to buy if you have the spare cash!",
+        "type": "shop",
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "1. When you're ready, head north to the next area within the fortress.\n2. Open the chest beside the stairs to the north for a **Mana Root**, then go up the stairs and north to the next area.\n3. You'll be at a fork, having to choose to go up two different sets of stairs.\n4. Go up the eastern stairs first, following the path to the ground.\n5. Make your way toward the set of stairs on the right side of the room, but before going up, go behind them on the back side to find a chest containing an awesome weapon for **Yuri**: the **Hand Needle**.\n6. Equip it immediately!",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Mana Root",
+            "category": "items",
+            "matched_overview_item": "Mana Root"
+          },
+          {
+            "name": "Hand Needle",
+            "category": "equipment",
+            "matched_overview_item": "Hand Needle"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "1. Go up the stairs and to the next screen, and in this bloody room, go up the ladder in the eastern corner; you'll find a **Face Guard** to the left up here.\n2. Once you have that, descend the ladder and check the table at the bottom of the screen to find the **Wugui Room Key**.\n3. Leave this room the way you entered, and continue back one more screen to the original fork with two sets of stairs.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Face Guard",
+            "category": "equipment",
+            "matched_overview_item": "Face Guard"
+          },
+          {
+            "name": "Wugui Room Key",
+            "category": "valuables",
+            "matched_overview_item": "Wugui Room Key"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "description": "1. Head north and take the western stairs now, continue west to the next area, climb the stairs here to the next, then enter the door when you reach the path blocked by a striped gate.\n2. Look on the floor to the left near the westernmost barrel to find a **Seal of the Soul**, then move up and right through the next door to be on the other side of the striped gate.\n3. Open the chest to your southeast for a **Thera Root**, then go up the stairs here to the next area.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Seal of the Soul",
+            "category": "items",
+            "matched_overview_item": "Seal of the Soul"
+          },
+          {
+            "name": "Thera Root",
+            "category": "items",
+            "matched_overview_item": "Thera Root"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "description": "1. Get the **Pure Root** out of the chest here in the stairwell, then continue up to the next screen.\n2. Move southwest and cross the bridge, opening the chest on the other side for a **Soul Benediction**.\n3. Just above it to the left of the bridge is either a urinal or a water fountain or something... who knows.\n4. In any case, examine it to find another **Lottery Ticket**.\n5. That's it for treasure, so go up the stairs to the west and save your game here.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Make sure to equip Leonardo's Bears before entering Wugui's room!"
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Pure Root",
+            "category": "items",
+            "matched_overview_item": "Pure Root"
+          },
+          {
+            "name": "Soul Benediction",
+            "category": "items",
+            "matched_overview_item": "Soul Benediction"
+          },
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "description": "1. When you're prepared, check out the door to Wugui's room to unlock it.\n2. Enter?\n3. Wugui's room for a scene and a boss battle.",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. Nah, too strange-looking."
+          },
+          {
+            "option": "2. Yeah, let's check it out!"
+          }
+        ],
+        "rewards": [],
+        "boss": {
+          "type": "BOSS",
+          "name": "Cursed Puppet",
+          "enemies": [
+            {
+              "name": "Cursed Puppet",
+              "hp": 1080,
+              "class": "Dark",
+              "drop": "Seal of Wisdom"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 19,
+              "equipment": [
+                "Hand Needle",
+                "Studded Harness",
+                "Mind's Eye",
+                "Jade Lariat",
+                "Leonardo's Bear"
+              ],
+              "fusions": [
+                "Heaven's Fiend",
+                "Raging Tiger",
+                "Inferno"
+              ]
+            },
+            {
+              "name": "Margarete",
+              "level": 18,
+              "equipment": [
+                "Nanbu Pistol",
+                "Studded Bustier",
+                "Studded Cap",
+                "Western Belt",
+                "Leonardo's Bear"
+              ]
+            },
+            {
+              "name": "Zhuzhen",
+              "level": 17,
+              "equipment": [
+                "Pilgrim's Staff",
+                "Studded Harness",
+                "Face Guard",
+                "Coral Lariat",
+                "Leonardo's Bear"
+              ]
+            }
+          ],
+          "exp": 2000,
+          "cash": 6000,
+          "strategy": "- This is basically the same battle as with Yamaraja: War, only easier.\n- As with Yamaraja: War, the Cursed Puppet will absorb all magic, making **Zhuzhen** useful only as a healer.\n- He also uses the Game of Death, just as usual; if you don't have those Leonardo's Bears equipped to everyone, they'll have a chance to instantly kill you.\n- His Nightmare attack will hit the entire party for a lot of damage, so make sure heal afterward.\n- The only other thing he does is a hellacious physical attack that'll hit for major damage.\n- Once he starts using Nightmare repeatedly, you could be in a bit of trouble.\n- Have **Yuri** fuse into Inferno and cast Fighting Spirit on himself, followed by physically attacking Yamaraja every turn.\n- If he has the Mind's Eye equipped, it won't take very long.\n- **Margarete** should be attacking normally, but having her jump in to use Thera Seeds if needed, and **Zhuzhen** should focus completely on recovery.\n- If you're having trouble staying healed, have **Yuri** fuse into Heaven's Fiend so you have the whole party healing spell."
+        }
+      },
+      {
+        "id": 10,
+        "description": "Once the battle is over, there'll just be a bit more dialogue, then you'll be finished, and all of the monsters will be gone as well. That's it, so make your way back to Shanghai.",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "Outside of Wugui's room"
+    ]
+  }
+}
