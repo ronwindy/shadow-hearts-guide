@@ -70,7 +70,11 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
                 add_finding("medium", "navigation", f"navigation.{direction}.id", c_link.get("id"), g_link.get("id"), f"Navigation {direction} ID mismatch")
 
     # 1b. Reference sections carry canonical text verbatim; any drift is a fidelity defect
-    if guide.get("type") == "reference":
+    # Applies to scaffolded appendices (a-1-*, except the a-1-00 index) and to any file that
+    # carries reference_blocks; hand-structured intro pages (header, TOC) are exempt.
+    sec_id = str(canonical.get("id") or guide.get("id") or "")
+    is_verbatim_reference = (sec_id.startswith("a-1-") and sec_id != "a-1-00") or bool(guide.get("reference_blocks"))
+    if guide.get("type") == "reference" and is_verbatim_reference:
         ref_text = "".join(b.get("text", "") for b in guide.get("reference_blocks", []))
         if ref_text != canonical.get("text", ""):
             add_finding("critical", "factual discrepancy", "reference_blocks", f"{len(canonical.get('text', ''))} chars", f"{len(ref_text)} chars", "Reference block text differs from canonical source text")
@@ -174,8 +178,12 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
             g_rows = [tuple(r.get(k) for k in keys) for r in g_b.get(fld, [])]
             if c_rows != g_rows:
                 add_finding("high", "missing information", f"{loc}.{fld}", c_rows, g_rows, f"Boss {fld} ({'/'.join(keys)}) differs from canonical for {c_b.get('name')}")
-        c_strat = " ".join((c_b.get("strategy") or "").split())
-        g_strat = " ".join((g_b.get("strategy") or "").split())
+        # Presentation (list bullets, **bold**) is not a text change: compare plain words only.
+        def plain_strategy(text: str) -> str:
+            text = re.sub(r'^\s*(?:[-*]|\d+\.)\s+', '', text or "", flags=re.M).replace("**", "")
+            return " ".join(text.split())
+        c_strat = plain_strategy(c_b.get("strategy"))
+        g_strat = plain_strategy(g_b.get("strategy"))
         if c_strat and not g_strat:
             add_finding("medium", "missing information", f"{loc}.strategy", "Strategy present", "Empty strategy", "Missing boss battle strategy")
         elif c_strat != g_strat and g_strat:

@@ -12,7 +12,7 @@ Usage:
     python scripts/pipeline.py <section_id> --verify     # Validate + QA + Build + Update status
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
     python scripts/pipeline.py [<section_id>] --lint     # Presentation lint (prose blocks, UPPERCASE item tags, [_TAG_], ASCII borders)
-    python scripts/pipeline.py <section_id> --verdict F  # Validate + store the independent QA subagent's JSON verdict
+    python scripts/pipeline.py <section_id> --verdict F  # Validate + store the independent QA subagent's JSON verdict (F = "-" reads stdin)
     python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + build + status
     python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit (run every ~5 sections or after UI/code changes)
     python scripts/pipeline.py <section_id>              # Display section status
@@ -265,7 +265,8 @@ def run_verdict(sec: Dict[str, Any], verdict_file: str) -> bool:
     """Validates the independent QA subagent's JSON verdict and stores it next to the QA report."""
     print(f"\n--- Subagent QA Verdict: {sec['id']} ---")
     try:
-        verdict = json.loads(Path(verdict_file).read_text(encoding="utf-8"))
+        raw = sys.stdin.read() if verdict_file == "-" else Path(verdict_file).read_text(encoding="utf-8")
+        verdict = json.loads(raw)
     except (OSError, ValueError) as err:
         print(f"[FAIL] Cannot read verdict JSON '{verdict_file}': {err}")
         return False
@@ -410,7 +411,7 @@ def main():
     parser.add_argument("--check", action="store_true", help="Lean per-section check: Validate + QA + Build + Update status")
     parser.add_argument("--full", action="store_true", help="--check plus Frontend audit")
     parser.add_argument("--lint", action="store_true", help="Presentation lint (all structured guides when no section is given)")
-    parser.add_argument("--verdict", metavar="FILE", help="Validate and store the independent QA subagent's JSON verdict")
+    parser.add_argument("--verdict", metavar="FILE", help="Validate and store the independent QA subagent's JSON verdict ('-' reads stdin)")
     parser.add_argument("--backlog", action="store_true", help="Run QA on all structured files lacking a current QA result")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
 

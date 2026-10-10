@@ -46,7 +46,7 @@ Section types decide the path:
 ```
 Use `--check` (validate + QA + `npm run build` + status) per section; `--full` (adds frontend audit) only after UI/code changes or about every 5 sections.
 
-Schema reference: [`docs/structured-schema.md`](docs/structured-schema.md). Edit structured files with `scripts/patch_section.py <id> <patch.json>` (merge patch; re-validates; writes only if valid; write the patch with the Write tool, not a shell heredoc). `--qa`/`--verify` print every finding and save the full report to `qa-reports/<id>.md`.
+Schema reference: [`docs/structured-schema.md`](docs/structured-schema.md). Edit structured files with `scripts/patch_section.py <id> <patch.json>` (merge patch; re-validates; writes only if valid; write the patch with the Write tool, not a shell heredoc). Rename an item everywhere with `--rename OLD=NEW` (or `"$rename"` in the patch). `pipeline.py <id> --verdict -` reads the verdict JSON from stdin. `--qa`/`--verify` print every finding and save the full report to `qa-reports/<id>.md`.
 
 Choice outcomes: set `outcome` only when the source states it; otherwise omit (never infer). Boss data: all canonical bosses must be present in `bosses[]` or as `step.boss`; compare canonical boss count/names before editing.
 

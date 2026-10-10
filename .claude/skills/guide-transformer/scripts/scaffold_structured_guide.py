@@ -13,6 +13,7 @@ Takes a canonical section JSON file and generates a structured guide JSON draft:
 import os
 import re
 import sys
+import copy
 import json
 import argparse
 from pathlib import Path
@@ -170,7 +171,7 @@ def _find_boxes(lines: List[str]) -> List[Dict[str, Any]]:
 
 def _strategy_sentences(rows: List[str]) -> List[str]:
     """Re-joins the card's wrapped strategy lines and splits them into one sentence per item."""
-    text = " ".join(r for r in rows if r)
+    text = strip_box_chars(" ".join(r for r in rows if r))
     return [s.strip() for s in re.split(r'(?<=[.!?])\s+(?=[A-Z])', text) if s.strip()]
 
 
@@ -232,13 +233,205 @@ def build_name_cases(canonical: Dict[str, Any]) -> Dict[str, str]:
     return cases
 
 
-def fix_tag_case(text: str, cases: Dict[str, str]) -> str:
-    """Replaces `[_TAG_]` with the properly-cased item name when one is known (else the tag text)."""
+def fix_tag_case(text: str, cases: Dict[str, str], bold: bool = False) -> str:
+    """Replaces `[_TAG_]` with the properly-cased item name when one is known (else the tag text).
+
+    With bold=True the name is emitted as `**Name**` (prose fields); tables keep plain names.
+    """
     def repl(m: "re.Match[str]") -> str:
         raw = m.group(1)
-        return cases.get(_norm_name(raw), raw)
+        name = cases.get(_norm_name(raw), raw)
+        return f"**{name}**" if bold else name
     return re.sub(r'\[_([^_]+)_\]', repl, text)
 
+
+
+_NOTE_START = re.compile(r'^\s*NOTE\s{2,}(\S.*)$')
+_NOTE_CONT = re.compile(r'^\s*(?:¯+\s+|\s{6,})(\S.*)$')
+
+
+def parse_note_boxes(lines: List[str]) -> List[Dict[str, Any]]:
+    """Reads NOTE boxes straight from the source text: [{line, end, text}] (1-indexed).
+
+    A box is the `NOTE` line, its wrapped continuation lines (after the rule line), and any
+    deeply indented bullet lines that follow a blank line (a note with a list).
+    """
+    boxes: List[Dict[str, Any]] = []
+    i, n = 0, len(lines)
+    while i < n:
+        m = _NOTE_START.match(lines[i])
+        if not m:
+            i += 1
+            continue
+        parts, j, last = [m.group(1).strip()], i + 1, i + 1
+        while j < n:
+            line = lines[j]
+            if not line.strip():
+                j += 1
+                continue
+            cm = _NOTE_CONT.match(line)
+            indented = re.match(r"^\s{8,}[^\s.'/\|]", line)
+            if _NOTE_START.match(line) or '|' in line or not (cm or (indented and j > last)):
+                break
+            parts.append((cm.group(1) if cm else line).strip())
+            j += 1
+            last = j
+        boxes.append({"line": i + 1, "end": last, "text": " ".join(parts)})
+        i = last
+    return boxes
+
+
+def build_notes(markers_notes: List[Dict[str, Any]], lines: List[str]) -> List[Dict[str, Any]]:
+    """Canonical note markers plus the NOTE boxes the canonical import dropped.
+
+    The importer merges two adjacent NOTE boxes into the first marker (text cut off mid-way);
+    the embedded `NOTE` tail is cut from the marker and the second box is re-read from the raw
+    text. Returns [{line, end, type, text}] sorted by source line.
+    """
+    boxes = {b["line"]: b for b in parse_note_boxes(lines)}
+    notes: Dict[int, Dict[str, Any]] = {}
+    for mn in markers_notes:
+        ln = mn.get("line", 0)
+        text = re.split(r'\s+NOTE\s{3,}', mn.get("text", ""))[0]
+        notes[ln] = {"line": ln, "end": boxes.get(ln, {}).get("end", ln),
+                     "type": mn.get("type", "Note"), "text": text}
+    for ln, box in boxes.items():
+        if ln not in notes:
+            notes[ln] = {"line": ln, "end": box["end"], "type": "NOTE", "text": box["text"]}
+    return [notes[k] for k in sorted(notes)]
+
+
+_CAMEL_WORD = re.compile(r'\b[A-Z][a-z]+(?:[A-Z][a-z]+)+\b')
+_CAMEL_EXCEPTIONS = {"PlayStation"}
+_SMALL_WORDS = {"Of", "The"}
+
+
+def space_camel_case(text: Any) -> Any:
+    """"TalismanOfLuck" -> "Talisman of Luck" (same rule as spaceCamelCase in src/lib/markup.ts)."""
+    if not isinstance(text, str) or not text:
+        return text
+
+    def split(m: "re.Match[str]") -> str:
+        word = m.group(0)
+        if word in _CAMEL_EXCEPTIONS:
+            return word
+        return " ".join(w.lower() if w in _SMALL_WORDS else w for w in re.findall(r'[A-Z][a-z]+', word))
+
+    return _CAMEL_WORD.sub(split, text)
+
+
+def normalize_item_names(guide: Dict[str, Any]) -> None:
+    """Spaces CamelCase item names in items_summary, shop inventories, rewards and boss drops/gear."""
+    summary = guide.get("items_summary", {})
+    for key in ("obtainable", "initial"):
+        for it in summary.get(key, []):
+            it["name"] = space_camel_case(it.get("name"))
+    for shop in guide.get("shops", []):
+        for inv in shop.get("inventory", []):
+            inv["name"] = space_camel_case(inv.get("name"))
+    for it in summary.get("obtainable", []):
+        it["location"] = space_camel_case(it.get("location"))
+    for st in guide.get("steps", []):
+        st["description"] = space_camel_case(st.get("description"))
+        for note in st.get("notes", []):
+            note["text"] = space_camel_case(note.get("text"))
+        for r in st.get("rewards", []):
+            r["name"] = space_camel_case(r.get("name"))
+            if r.get("matched_overview_item"):
+                r["matched_overview_item"] = space_camel_case(r["matched_overview_item"])
+    cards = list(guide.get("bosses", []) or [])
+    cards += [st["boss"] for st in guide.get("steps", []) if isinstance(st.get("boss"), dict)]
+    for card in cards:
+        for e in card.get("enemies", []):
+            if e.get("drop"):
+                e["drop"] = space_camel_case(e["drop"])
+        for member in card.get("party", []) or []:
+            if isinstance(member.get("equipment"), list):
+                member["equipment"] = [space_camel_case(x) for x in member["equipment"]]
+
+
+_BOX_CHARS = re.compile(r'\s*\|+\s*')
+_CAPS_RUN = re.compile(r"\b[A-Z][A-Z'’]+(?:\s+[A-Z][A-Z'’]+)+\b")
+_CAPS_KEEP = {"EXP", "HP", "MP", "SP", "NOTE", "BOSS", "SUB-BOSS", "ATK", "DEF", "OK", "TV", "NPC", "VS"}
+
+
+def strip_box_chars(text: str) -> str:
+    """Removes ASCII-box border characters that leaked into wrapped text ("... you'll   ||  have to")."""
+    return " ".join(_BOX_CHARS.sub(" ", text).split())
+
+
+def soften_caps(text: str) -> str:
+    """SHOUTED multi-word emphasis -> bold lowercase ("MAKE SURE TO SAVE" -> "**Make sure to save**").
+
+    Only runs of 2+ capitalised words with 6+ letters; acronyms and item tags are left alone.
+    """
+    def repl(m: "re.Match[str]") -> str:
+        run = m.group(0)
+        letters = re.sub(r'[^A-Z]', '', run)
+        if len(letters) < 6 or run in _CAPS_KEEP or all(w in _CAPS_KEEP for w in run.split()):
+            return run
+        low = run.lower()
+        start = m.start()
+        before = text[:start].rstrip()
+        if not before or before[-1] in '.!?:"“':
+            low = low[:1].upper() + low[1:]
+        return f"**{low}**"
+
+    return _CAPS_RUN.sub(repl, text)
+
+
+_ABBREV = re.compile(r'\b(Mr|Mrs|Ms|Dr|St|vs|No)\.(?=\s)')
+_SENT_SPLIT = re.compile(r"""(?<=[.!?])["')\]*]*\s+(?=["'(\[*]*[A-Z0-9])""")
+_BOLD_SPAN = re.compile(r'\*\*.+?\*\*')
+_LIST_LINE = re.compile(r'^\s*(?:[-*]|\d+\.)\s', re.M)
+MAX_SENTENCES = 2   # same thresholds as lint_guide: 3+ sentences or ~40+ words => list
+MAX_WORDS = 39
+
+
+def listify(text: str, numbered: bool) -> str:
+    """Splits prose with 3+ sentences or ~40+ words into one sentence per list item.
+
+    Text is only re-cut at sentence ends (nothing is reworded). Numbered when order matters
+    (step descriptions), bulleted otherwise. Short text and existing lists are returned as-is.
+    """
+    if "\n" in text and _LIST_LINE.search(text):
+        return text
+    flat = " ".join(text.split())
+    guarded = _ABBREV.sub(lambda m: m.group(1) + "\x00", flat)
+    sentences = [s.replace("\x00", ".").strip() for s in _SENT_SPLIT.split(guarded) if s.strip()]
+    if len(sentences) <= MAX_SENTENCES and len(flat.split()) <= MAX_WORDS:
+        return flat
+    return "\n".join(f"{i}. {s}" if numbered else f"- {s}" for i, s in enumerate(sentences, start=1))
+
+
+def bold_names(text: str, names: List[str]) -> str:
+    """Bolds known character names outside existing **bold** spans."""
+    if not names:
+        return text
+    alt = "|".join(re.escape(n) for n in sorted(names, key=len, reverse=True))
+    pattern = re.compile(r'\b(' + alt + r')\b')
+    out, pos = [], 0
+    for m in _BOLD_SPAN.finditer(text):
+        out.append(pattern.sub(r'**\1**', text[pos:m.start()]))
+        out.append(m.group(0))
+        pos = m.end()
+    out.append(pattern.sub(r'**\1**', text[pos:]))
+    return "".join(out)
+
+
+def party_names(canonical: Dict[str, Any]) -> List[str]:
+    """Playable-character names, taken from the project's own boss `party` lists."""
+    names = set()
+    for f in (Path(__file__).resolve().parents[4] / "canonical-sources" / "sections").glob("*.json"):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for b in d.get("bosses", []):
+            names.update(m.get("name") for m in b.get("party", []) if m.get("name"))
+    for b in canonical.get("bosses", []):
+        names.update(m.get("name") for m in b.get("party", []) if m.get("name"))
+    return sorted(n for n in names if n and len(n) > 2)
 
 
 def is_header_or_table_line(line: str) -> bool:
@@ -337,7 +530,15 @@ def clean_note_text(text: str) -> str:
     """Strips [_TAG_] marks and trailing ASCII-art tables from a note."""
     text = re.sub(r'\[_([^_]+)_\]', r'\1', text.strip())
     text = re.split(r'\s_{5,}|\s\\[$/]', text)[0]
-    return text.strip()
+    return soften_caps(text.strip())
+
+
+def make_note(mn: Dict[str, Any], cases: Dict[str, str], characters: List[str]) -> Dict[str, Any]:
+    """A structured note from a canonical note marker: tags cased + bolded, long prose as a list."""
+    title = mn.get("type", "Note").title()
+    text = clean_note_text(fix_tag_case(mn.get("text", ""), cases, bold=True))
+    text = listify(bold_names(text, characters), numbered=False)
+    return {"type": infer_note_type(title, text), "title": title, "text": text, "_line": mn.get("line", 0)}
 
 
 def is_reference_section(canonical: Dict[str, Any]) -> bool:
@@ -377,6 +578,8 @@ _FIGHT_CUE = re.compile(r'\b(fight|battle|combat|take on|face|defeat|boss)\b', r
 _PREP_CUE = re.compile(r'\b(prepared|prepare|ready|before)\b', re.I)
 _SHOP_CUE = re.compile(r'\b(for sale|shop|store|buy|buying|purchase|sells?)\b', re.I)
 _STORY_CUE = re.compile(r'\b(scene|event|watch|cutscene|dialogue)\b', re.I)
+_AFTER_BATTLE = re.compile(r'^\s*after the (?:battle|fight)\b', re.I)
+_BEAT_CUE = re.compile(r'\b(dialogue|events?|scene|cutscene|watch|conversation|reunite)\b', re.I)
 _NAV_CUE = re.compile(r"^(head|go|make your way|travel|exit|leave|return|walk|proceed)\b", re.I)
 
 
@@ -392,6 +595,9 @@ def infer_step_type(p_text: str, bosses: List[Dict[str, Any]], has_rewards: bool
         return "boss"
     if re.search(r'\bboss\b', p_text, re.I) and _PREP_CUE.search(p_text):
         return "preparation"
+    # "After the battle ... dialogue / events": the fight is over, this is a story beat.
+    if _AFTER_BATTLE.match(p_text) and _BEAT_CUE.search(p_text):
+        return "story"
     # Items tagged in the text make it a loot step; "shop" only when buying is the point.
     if _SHOP_CUE.search(p_text) and not has_rewards:
         return "shop"
@@ -413,7 +619,7 @@ def _sentence_with(description: str, name: str) -> str:
         return ""
     for sent in re.split(r'(?<=[.!?])\s+', " ".join(description.split())):
         if needle in sent.lower():
-            return re.sub(r'^\d+\.\s*', '', sent.strip())
+            return re.sub(r'^\d+\.\s*', '', sent.strip()).replace("**", "")
     return ""
 
 
@@ -458,7 +664,8 @@ def _title_case_tag(raw: str) -> str:
 
 def _attach_boxes(boxes: List[Dict[str, Any]], paragraphs: List[Tuple[int, int, str]],
                   para_step: Dict[int, Dict[str, Any]], steps: List[Dict[str, Any]],
-                  canonical: Dict[str, Any], cases: Dict[str, str]) -> None:
+                  canonical: Dict[str, Any], cases: Dict[str, str],
+                  characters: Optional[List[str]] = None) -> None:
     """Attaches lottery tables, footnotes and boss cards to the step whose paragraph precedes them."""
     boss_names = {(b.get("name") or "").lower() for b in canonical.get("bosses", [])}
     for b in boxes:
@@ -490,12 +697,20 @@ def _attach_boxes(boxes: List[Dict[str, Any]], paragraphs: List[Tuple[int, int, 
             kind = "discrepancy" if re.search(r'\b(however|instead|actually)\b', text, re.I) else "tip"
             step.setdefault("notes", []).append({"type": kind, "title": "Footnote", "text": text})
         elif b["kind"] == "boss_card" and data.get("name"):
-            if data["name"].lower() in boss_names:
-                continue  # already a canonical boss card
+            canon = next((cb for cb in canonical.get("bosses", [])
+                          if (cb.get("name") or "").lower() == data["name"].lower()), None)
+            if canon is not None:
+                card = copy.deepcopy(canon)
+                strategy = "\n".join(strip_box_chars(ln) for ln in card.get("strategy", "").splitlines())
+                card["strategy"] = listify(bold_names(strategy, characters), numbered=False)
+                step["boss"] = card
+                if step["type"] in ("battle", "exploration", "story", "preparation", "loot"):
+                    step["type"] = "boss"
+                continue
             card = dict(data)
             card["enemies"] = [dict(e, drop=cases.get(_norm_name(e["drop"]), e["drop"]) if e.get("drop") else None)
                                for e in card["enemies"]]
-            card["strategy"] = fix_tag_case(card.get("strategy", ""), cases)
+            card["strategy"] = soften_caps(fix_tag_case(card.get("strategy", ""), cases))
             step["boss"] = card
             if step["type"] in ("battle", "exploration", "story", "preparation"):
                 step["type"] = "boss"
@@ -564,14 +779,16 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
 
     # Align markers with paragraphs
     markers_items = canonical.get("markers", {}).get("items", [])
-    markers_notes = canonical.get("markers", {}).get("notes", [])
     raw_text = canonical.get("text", "")
+    markers_notes = build_notes(canonical.get("markers", {}).get("notes", []), raw_text.splitlines())
+    note_ranges = [(mn["line"], mn["end"]) for mn in markers_notes]
 
     boxes = _find_boxes(raw_text.splitlines())
     paragraphs = merge_across_info_boxes(split_text_paragraphs(raw_text), boxes)
     box_lines = {ln for b in boxes for ln in range(b["start"], b["end"] + 1)}
     choice_blocks = find_choice_blocks(raw_text)
     cases = build_name_cases(canonical)
+    characters = party_names(canonical)
     para_step: Dict[int, Dict[str, Any]] = {}
     step_enemies: Dict[int, List[str]] = {}
 
@@ -587,7 +804,9 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
         # Check for NOTE headers in paragraph
         if _is_note_paragraph(p_text) or is_heading_paragraph(p_text):
             continue
-        # Tail of a NOTE box that contains a blank line: already captured as a note
+        # Tail of a NOTE box (wrapped lines after the rule line): already captured as a note
+        if any(a <= start_line <= b for a, b in note_ranges):
+            continue
         probe = " ".join(p_text.split())[:40]
         if any(probe in " ".join(mn.get("text", "").split()) for mn in markers_notes):
             continue
@@ -612,18 +831,16 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
 
         # Find notes within start_line - 1 to end_line + 1
         step_notes = []
-        # A note belongs to the nearest preceding paragraph, and is attached only once
+        # A note belongs to the nearest preceding paragraph (a chain of adjacent NOTE boxes stays
+        # together), and is attached only once. Notes with no preceding paragraph nearby are
+        # attached below to the step that follows them.
+        reach = end_line + NOTE_GAP
         for idx, mn in enumerate(markers_notes):
             n_line = mn.get("line", 0)
-            if idx not in assigned_notes and start_line <= n_line <= end_line + NOTE_GAP:
+            if idx not in assigned_notes and start_line <= n_line <= reach:
                 assigned_notes.add(idx)
-                n_title = mn.get("type", "Note").title()
-                n_text = clean_note_text(fix_tag_case(mn.get("text", ""), cases))
-                step_notes.append({
-                    "type": infer_note_type(n_title, n_text),
-                    "title": n_title,
-                    "text": n_text
-                })
+                reach = max(reach, mn.get("end", n_line) + NOTE_GAP)
+                step_notes.append(make_note(mn, cases, characters))
 
         choices: List[Dict[str, str]] = []
         for first_line, block in choice_blocks:
@@ -633,9 +850,9 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
         step_type = infer_step_type(p_text, canonical.get("bosses", []), bool(step_rewards), bool(choices))
 
         # Clean description text: strip [_TAG_] marks
-        clean_desc = fix_tag_case(p_text, cases)
-        # Collapse multiple spaces and newlines
-        clean_desc = " ".join(clean_desc.split())
+        clean_desc = soften_caps(fix_tag_case(p_text, cases, bold=True))
+        # Collapse multiple spaces and newlines, then cut long prose into a numbered list
+        clean_desc = listify(bold_names(" ".join(clean_desc.split()), characters), numbered=True)
 
         step: Dict[str, Any] = {
             "id": step_id,
@@ -664,22 +881,26 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
         para_step[p_idx] = step
         step_id += 1
 
-    # Attach any unassigned notes
+    # Notes that precede their paragraph (nothing before them within NOTE_GAP) go to the step
+    # built from the paragraph that follows them in source order; after the last step, the last.
+    step_starts = [(paragraphs[p_idx][0], st) for p_idx, st in sorted(para_step.items())]
     for idx, mn in enumerate(markers_notes):
-        if idx not in assigned_notes:
-            n_text = clean_note_text(fix_tag_case(mn.get("text", ""), cases))
-            n_title = mn.get("type", "Note").title()
-            if steps:
-                steps[-1].setdefault("notes", []).append({
-                    "type": infer_note_type(n_title, n_text),
-                    "title": n_title,
-                    "text": n_text
-                })
+        if idx in assigned_notes or not steps:
+            continue
+        target = next((st for first, st in step_starts if first > mn.get("line", 0)), steps[-1])
+        target.setdefault("notes", []).append(make_note(mn, cases, characters))
 
-    _attach_boxes(boxes, paragraphs, para_step, steps, canonical, cases)
+    _attach_boxes(boxes, paragraphs, para_step, steps, canonical, cases, characters)
+
+    for st in steps:
+        if st.get("notes"):
+            st["notes"].sort(key=lambda n: n.get("_line", 10 ** 9))
+            for n in st["notes"]:
+                n.pop("_line", None)
 
     # An encounter is only recorded for fight steps: a name in a shop or story step ("Wugui is
     # gone") is not a fight.
+    canon_boss_names = {(b.get("name") or "").lower() for b in canonical.get("bosses", [])}
     for st in steps:
         names = list(step_enemies.get(st["id"], []))
         if st["type"] in ("battle", "boss"):
@@ -689,6 +910,9 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
                     if (e.get("name") or "").lower() in known:
                         names.append(known[e["name"].lower()])
             names = list(dict.fromkeys(names))
+            if st.get("boss") and (st["boss"].get("name") or "").lower() in canon_boss_names:
+                names.append(st["boss"]["name"])
+                names = list(dict.fromkeys(names))
             if names:
                 st["encounter"] = {"enemies": names}
 
@@ -722,6 +946,15 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
     if canonical.get("boss"):
         guide_dict["guide"]["boss"] = canonical.get("boss")
 
+    # One home per canonical boss: a boss card attached to its step is not repeated in
+    # bosses[] / the `boss` alias (the page renders step.boss; QA counts both places).
+    attached = {(st["boss"].get("name") or "").lower() for st in steps if isinstance(st.get("boss"), dict)}
+    canon_names = {(b.get("name") or "").lower() for b in canonical.get("bosses", [])}
+    if canon_names and canon_names <= attached:
+        guide_dict["guide"]["bosses"] = []
+        guide_dict["guide"].pop("boss", None)
+
+    normalize_item_names(guide_dict["guide"])
     return guide_dict
 
 

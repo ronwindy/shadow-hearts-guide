@@ -19,6 +19,12 @@ Patch format: the same shape as the structured file, containing only what change
     {"guide": {"steps": {"4": {"type": "shop"}, "5": null},
                "objectives": ["Defeat Li Li"]}}
 
+Rename an item everywhere (names in items_summary, shops, rewards, boss drops and gear) with
+the reserved top-level key `$rename`, or the `--rename OLD=NEW` flag (repeatable, patch file
+optional). Only exact `name` / `matched_overview_item` / `drop` / `equipment[]` values change:
+
+    {"$rename": {"TalismanOfLuck": "Talisman of Luck"}}
+
 The file is written only if the result passes schema validation (override with --force).
 """
 
@@ -41,6 +47,30 @@ def _is_id_list(value: Any) -> bool:
 
 def _coerce_id(key: str, sample: Any) -> Any:
     return int(key) if isinstance(sample, int) and key.lstrip("-").isdigit() else key
+
+
+_RENAME_KEYS = ("name", "matched_overview_item", "drop")
+
+
+def rename_names(node: Any, mapping: dict) -> int:
+    """Renames item-name values in place (recursively); returns the number of replacements."""
+    count = 0
+    if isinstance(node, dict):
+        for key, value in node.items():
+            if key in _RENAME_KEYS and isinstance(value, str) and value in mapping:
+                node[key] = mapping[value]
+                count += 1
+            elif key == "equipment" and isinstance(value, list):
+                for i, entry in enumerate(value):
+                    if isinstance(entry, str) and entry in mapping:
+                        value[i] = mapping[entry]
+                        count += 1
+            else:
+                count += rename_names(value, mapping)
+    elif isinstance(node, list):
+        for entry in node:
+            count += rename_names(entry, mapping)
+    return count
 
 
 def merge(target: Any, patch: Any) -> Any:
@@ -73,7 +103,9 @@ def merge(target: Any, patch: Any) -> Any:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Merge a JSON patch into a structured section and re-validate.")
     parser.add_argument("section", help="Section id, code or file stem (e.g. w-1-06)")
-    parser.add_argument("patch", help="Path to the patch JSON file")
+    parser.add_argument("patch", nargs="?", default=None, help="Path to the patch JSON file (optional with --rename)")
+    parser.add_argument("--rename", action="append", default=[], metavar="OLD=NEW",
+                        help="Rename an item name everywhere in the section (repeatable)")
     parser.add_argument("--dry-run", action="store_true", help="Validate the merged result without writing")
     parser.add_argument("--force", action="store_true", help="Write even if schema validation fails")
     args = parser.parse_args()
@@ -87,9 +119,22 @@ def main() -> int:
         print(f"[ERROR] Structured file does not exist: {structured_path}")
         return 1
 
-    patch = json.loads(Path(args.patch).read_text(encoding="utf-8"))
+    if not args.patch and not args.rename:
+        print("[ERROR] Give a patch file and/or at least one --rename OLD=NEW")
+        return 1
+    patch = json.loads(Path(args.patch).read_text(encoding="utf-8")) if args.patch else {}
+    mapping = dict(patch.pop("$rename", {}) or {})
+    for spec in args.rename:
+        old, sep, new = spec.partition("=")
+        if not sep or not old or not new:
+            print(f"[ERROR] --rename expects OLD=NEW, got '{spec}'")
+            return 1
+        mapping[old] = new
     original = json.loads(structured_path.read_text(encoding="utf-8"))
     merged = merge(original, patch)
+    if mapping:
+        renamed = rename_names(merged, mapping)
+        print(f"[INFO] Renamed {renamed} value(s) for {len(mapping)} name(s).")
 
     schema_path = pipeline.ROOT_DIR / ".claude" / "skills" / "guide-transformer" / "schemas" / "structured-guide.schema.json"
     validator = Draft202012Validator(load_schema(str(schema_path)))
