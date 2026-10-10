@@ -24,7 +24,7 @@ const { characters = [], glossary = [] } = Astro.props;
           return (
             <div class="p-4 rounded-xl bg-slate-850/90 border border-slate-800 space-y-2.5 text-sm sm:text-base shadow-sm">
               <div class="flex items-center justify-between flex-wrap gap-2">
-                <h3 class="text-lg sm:text-xl font-serif font-bold text-slate-100 flex items-center gap-2">
+                <h3 class="text-lg sm:text-xl font-serif font-semibold text-slate-100 flex items-center gap-2">
                   <span class="w-7 h-7 rounded-lg bg-amber-950/40 border border-amber-800/50 flex items-center justify-center flex-shrink-0">
                     <User class="w-4 h-4 text-amber-300" aria-hidden="true" />
                   </span>
@@ -60,7 +60,7 @@ const { characters = [], glossary = [] } = Astro.props;
         {glossary.map((g) => {
           const meta = getGlossaryMeta(g.term);
           return (
-            <BadgeCard icon={meta.icon} label={g.term} badgeClass={meta.badgeClass} labelClass="text-sm font-serif font-bold">
+            <BadgeCard icon={meta.icon} label={g.term} badgeClass={meta.badgeClass} labelClass="text-sm font-serif font-semibold">
               <Fragment set:html={renderInlineMarkup(g.description)} />
             </BadgeCard>
           );

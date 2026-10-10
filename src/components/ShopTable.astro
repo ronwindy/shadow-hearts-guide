@@ -13,14 +13,14 @@ const { shops = [] } = Astro.props;
 {shops && shops.length > 0 && (
   <section id="shops" class="space-y-4">
     <div class="heading-flourish">
-      <h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-100 flex items-center gap-2.5">
+      <h2 class="text-xl sm:text-2xl font-serif font-semibold text-slate-100 flex items-center gap-2.5">
         <Store class="w-5 h-5 text-gold-400 flex-shrink-0" />
         <span>Shops & Merchants</span>
       </h2>
     </div>
     {shops.map((s) => (
       <div class="space-y-2.5">
-        <h3 class="text-lg sm:text-xl font-serif font-bold text-gold-400 flex items-center gap-2">
+        <h3 class="text-lg sm:text-xl font-serif font-semibold text-gold-400 flex items-center gap-2">
           <Store class="w-4 h-4 text-amber-400 flex-shrink-0" />
           <span>{s.name}</span>
         </h3>

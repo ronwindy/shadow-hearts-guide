@@ -136,7 +136,7 @@ const { directions, controls, battle_mechanics: battle } = overview;
       )}
       {battle.action_menu && (
         <div class="space-y-2.5">
-          <h3 class="text-base sm:text-lg font-serif font-bold text-slate-200">Battle Actions</h3>
+          <h3 class="text-base sm:text-lg font-serif font-semibold text-slate-200">Battle Actions</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {battle.action_menu.map((a) => {
               const meta = getActionMeta(a.action);
@@ -157,7 +157,7 @@ const { directions, controls, battle_mechanics: battle } = overview;
               <span>Core Combat Mechanic</span>
             </span>
           </div>
-          <h3 class="font-serif font-bold text-amber-300 text-lg sm:text-xl">Judgment Ring System</h3>
+          <h3 class="font-serif font-semibold text-amber-300 text-lg sm:text-xl">Judgment Ring System</h3>
           <p class="text-slate-200 text-base leading-relaxed">
             <Fragment set:html={renderInlineMarkup(battle.judgment_ring.description)} />
           </p>

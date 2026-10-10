@@ -15,7 +15,7 @@ const { id, title, icon: Icon, flourish = true, class: className = 'space-y-4', 
 ---
 
 <section id={id} class:list={['overview-section', { collapsed: !open }, className]}>
-  <h2 id={`heading-${id}`} class:list={['text-xl sm:text-2xl font-serif font-bold text-slate-100', { 'heading-flourish': flourish }]}>
+  <h2 id={`heading-${id}`} class:list={['text-xl sm:text-2xl font-serif font-semibold text-slate-100', { 'heading-flourish': flourish }]}>
     <button type="button" class="section-toggle w-full text-left flex items-center justify-between gap-2.5" aria-expanded={open ? 'true' : 'false'} aria-controls={`panel-${id}`}>
       <span class="flex items-center gap-2.5">
         <Icon class="w-5 h-5 text-gold-400" aria-hidden="true" />

@@ -50,12 +50,10 @@ The palette balances dark gothic aesthetics with strict WCAG AA contrast standar
 
 ## 3. Typography
 
-- **Headings Font**: `'Cinzel', 'Trajan Pro', 'Georgia', serif`
-  - Evokes classical occult manuscripts, PlayStation 2 title aesthetics, and gothic architecture.
-- **Body Font**: `'Inter', system-ui, -apple-system, sans-serif`
-  - High legibility across desktop, tablet, and mobile screens.
-- **Accent / Numbers Font**: `'Jost', 'Inter', system-ui, sans-serif`
-  - High legibility clean sans-serif used for stats, numerical data, badges, and controls.
+- **Headings Font**: `'Cinzel', 'Trajan Pro', 'Georgia', serif` at semibold (600)
+  - Evokes classical occult manuscripts and gothic architecture. Tailwind `serif`.
+- **Body / UI / Numbers Font**: `'Jost', 'Inter', system-ui, -apple-system, sans-serif`
+  - Body text, stats, numbers, badges, and controls. Tailwind `sans` and `mono`.
 
 ### Scale
 - **H1 (Page Title)**: `2.25rem` (36px) — Bold / Semibold, tracking-tight, gold accent

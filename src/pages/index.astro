@@ -103,7 +103,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
           />
 
           <h1
-            class="hero-title font-serif font-extrabold tracking-wide uppercase"
+            class="hero-title font-serif font-semibold tracking-wide uppercase"
           >
             Game Wiki &amp; Walkthrough
           </h1>
@@ -177,7 +177,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
                   { "md:col-span-2": wide },
                 ]}
               >
-                <h3 class="text-xl font-serif font-bold text-slate-100 flex items-center gap-2.5 pb-3 heading-rule">
+                <h3 class="text-xl font-serif font-semibold text-slate-100 flex items-center gap-2.5 pb-3 heading-rule">
                   <span class="icon-badge icon-badge-sm">
                     <Icon class="w-5 h-5 text-gold-400" aria-hidden="true" />
                   </span>
@@ -189,7 +189,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
                     {section.items.map((item) => (
                       <li class="p-4 rounded-lg bg-slate-900/50 border border-slate-800/80 space-y-2">
                         {item.lead && (
-                          <p class="text-base font-serif font-bold text-gold-300">
+                          <p class="text-base font-serif font-semibold text-gold-300">
                             {item.lead}
                           </p>
                         )}
@@ -230,7 +230,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
                     {char.name.charAt(0)}
                   </span>
                 )}
-                <h3 class="text-xl font-serif font-bold text-slate-100">
+                <h3 class="text-xl font-serif font-semibold text-slate-100">
                   {char.name}
                 </h3>
               </div>
@@ -346,7 +346,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
               class="scroll-mt-20 rounded-xl border border-slate-800 bg-slate-850/60 overflow-hidden"
             >
               <div class="p-4 space-y-1">
-                <h4 class="text-lg font-serif font-bold text-purple-300 pb-3 heading-rule">
+                <h4 class="text-lg font-serif font-semibold text-purple-300 pb-3 heading-rule">
                   {group.title}
                 </h4>
                 <p class="text-sm text-slate-400">{group.cast.intro}</p>
@@ -443,7 +443,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
         class="relative rounded-2xl border border-gold-500/30 bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 p-8 sm:p-10 overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6"
       >
         <div class="space-y-2 max-w-xl text-center md:text-left">
-          <h2 class="text-2xl sm:text-3xl font-serif font-bold text-slate-100">
+          <h2 class="text-2xl sm:text-3xl font-serif font-semibold text-slate-100">
             Ready to Venture Across Eurasia?
           </h2>
           <p class="text-base text-slate-300 leading-relaxed">
@@ -555,7 +555,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
     width: 2.75rem;
     height: 2.75rem;
     border-radius: 9999px;
-    font-family: "EB Garamond", Georgia, serif;
+    font-family: Jost, Inter, system-ui, -apple-system, sans-serif;
     font-weight: 700;
     font-size: 1.35rem;
     color: #f0d27a;
