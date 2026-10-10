@@ -1,13 +1,13 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-10 17:20:30`
+> Last synced: `2026-10-10 23:48:18`
 
 ```text
-=== PROJECT STATUS (2026-10-10 17:20:30) ===
-Canonical 68/68 | Structured 15/68 | QA pass 15/68 (fail 0) | Web built 15/68
+=== PROJECT STATUS (2026-10-10 23:48:18) ===
+Canonical 68/68 | Structured 16/68 | QA pass 16/68 (fail 0) | Web built 16/68
 Next:
-  1. Structure w-s-01 (Yuri's Level 1 Fusions) - sequence gap
-Sequence gaps: w-s-01, w-s-02, w-s-03
+  1. Structure w-s-02 (Kowloon Fortress) - sequence gap
+Sequence gaps: w-s-02, w-s-03
 ```
 
 ## Section Matrix
@@ -27,7 +27,7 @@ Sequence gaps: w-s-01, w-s-02, w-s-03
 | `[W-1-08]` | `w-1-08` | Temple Ruins | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-09]` | `w-1-09` | Shanghai, Huayuan (2) | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-10]` | `w-1-10` | Asia Side Quests | Walkthrough - Asia | WEB_BUILT |
-| `[W-S-01]` | `w-s-01` | Yuri's Level 1 Fusions | Walkthrough - Asia | NOT_STRUCTURED |
+| `[W-S-01]` | `w-s-01` | Yuri's Level 1 Fusions | Walkthrough - Asia | WEB_BUILT |
 | `[W-S-02]` | `w-s-02` | Kowloon Fortress | Walkthrough - Asia | NOT_STRUCTURED |
 | `[W-S-03]` | `w-s-03` | Mr. Zhen's Pit Fight | Walkthrough - Asia | NOT_STRUCTURED |
 | `[W-1-11]` | `w-1-11` | Shanghai, Kuihai Tower | Walkthrough - Asia | WEB_BUILT |

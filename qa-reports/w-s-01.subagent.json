@@ -1,0 +1,23 @@
+{
+  "section_id": "w-s-01",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "souls list (Man Dragon, Tornado, Inferno, Heaven's Fiend) vs items_summary",
+    "enemy table: numbers #024-#031, HP, classes, Succubus Queen 'Inflicts Confusion', 4 sub-bosses HP Varies / Lv. 1 Fusion (Graveyard)",
+    "intro step: STRONGLY recommend, level up to level 2 caveat",
+    "Temple Ruins four location bullets: western door Fire/Wind, eastern door Light/Dark, second western maze Water/Earth, Kowloon Fortress grind",
+    "Graveyard sub-boss step and strategy (HP varies with Yuri, opposite-class fusion, Raging Tiger fallback, keep healed)",
+    "closing step: Kowloon Fortress before Mr. Zhen's Pit Fight; W-S-02/W-S-03 codes match project canonical sections",
+    "navigation prev/next"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "omitted",
+      "location": "guide.route / section heading",
+      "canonical": "Section header 'Temple Ruins' above the soul/enemy tables",
+      "structured": "route is empty; location only implied in step 2 prose",
+      "issue": "The 'Temple Ruins' heading that frames the enemy table is not carried as a location field. Step 2 still names Temple Ruins, so no game fact is lost; cosmetic only."
+    }
+  ]
+}
