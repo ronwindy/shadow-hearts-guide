@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-10 15:16:33`
+> Last synced: `2026-10-10 16:41:52`
 
 ```text
-=== PROJECT STATUS (2026-10-10 15:16:33) ===
-Canonical 68/68 | Structured 12/68 | QA pass 12/68 (fail 0) | Web built 12/68
+=== PROJECT STATUS (2026-10-10 16:41:52) ===
+Canonical 68/68 | Structured 13/68 | QA pass 13/68 (fail 0) | Web built 13/68
 Next:
-  1. Structure w-1-09 (Shanghai, Huayuan (2)) - next chronological
+  1. Structure w-1-10 (Asia Side Quests) - next chronological
 ```
 
 ## Section Matrix
@@ -24,7 +24,7 @@ Next:
 | `[W-1-06]` | `w-1-06` | Smuggler's Boat | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-07]` | `w-1-07` | Shanghai, Huayuan (1) | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-08]` | `w-1-08` | Temple Ruins | Walkthrough - Asia | WEB_BUILT |
-| `[W-1-09]` | `w-1-09` | Shanghai, Huayuan (2) | Walkthrough - Asia | NOT_STRUCTURED |
+| `[W-1-09]` | `w-1-09` | Shanghai, Huayuan (2) | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-10]` | `w-1-10` | Asia Side Quests | Walkthrough - Asia | NOT_STRUCTURED |
 | `[W-S-01]` | `w-s-01` | Yuri's Level 1 Fusions | Walkthrough - Asia | NOT_STRUCTURED |
 | `[W-S-02]` | `w-s-02` | Kowloon Fortress | Walkthrough - Asia | NOT_STRUCTURED |

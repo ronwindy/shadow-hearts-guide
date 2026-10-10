@@ -1,0 +1,217 @@
+{
+  "guide": {
+    "id": "w-1-09",
+    "code": "[W-1-09]",
+    "title": "Shanghai, Huayuan (2)",
+    "type": "walkthrough",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-1-08",
+        "code": "[W-1-08]",
+        "title": "Temple Ruins",
+        "file": "sections/w-1-08-temple-ruins.json"
+      },
+      "next": {
+        "id": "w-1-10",
+        "code": "[W-1-10]",
+        "title": "Asia Side Quests",
+        "file": "sections/w-1-10-asia-side-quests.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Continue with Kuihai Tower (W-1-11), or take on side quests"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Tea of the Healer",
+          "category": "items",
+          "location": "There's nothing too terribly important here, but if you check the cabinet at the top of the screen that a bird cage is sitting on, you can get a Tea of the Healer. (step 10)"
+        },
+        {
+          "name": "Monkey Paw",
+          "category": "items",
+          "location": "- Third win (four dogs) - A Monkey Paw! (step 12)"
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "- First win (three dogs) - A Lottery Ticket! (step 12)"
+        },
+        {
+          "name": "Leonardo's Bear",
+          "category": "equipment",
+          "location": "- Second win (four dogs) - A Leonardo's Bear! (step 12)"
+        },
+        {
+          "name": "Yawang Gate Key",
+          "category": "valuables",
+          "location": "Open the fish well on the left side of the ship, and you'll find the Yawang Gate Key wrapped in cloth. (step 2)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#034",
+        "name": "Corporal",
+        "hp": 70,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#035",
+        "name": "Sergeant",
+        "hp": 160,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. When you regain control, go next door and watch a series of events unfold.\n2. You'll eventually regain control outside of the **hotel**.\n3. Make your way to **Zhen's bar** to see an event.\n4. Watch some dialogue here, then head back outside the bar.",
+        "type": "story",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "From here on out, there are Japanese soldiers (**Corporals**) all over the city.\n- They will appear randomly in battle.\n- If you talk to one of them, you'll have to fight them as well."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "1. Go to the intersection near the hotel to run into **Kato**, who'll tell you of another event that happened, and also where to find the key that will let you into **Kuihai Tower**.\n2. Make your way east to the next area, then southwest back down to the dock, and head over to the ship.\n3. Open the fish well on the left side of the ship, and you'll find the **Yawang Gate Key** wrapped in cloth.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Yawang Gate Key",
+            "category": "valuables",
+            "matched_overview_item": "Yawang Gate Key"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "1. Make your way back to the second floor of the **Inn**, to the back room.\n2. Watch the event here and fight a couple of **Sergeants**.\n3. Then finish out the dialogue.",
+        "type": "battle",
+        "rewards": [],
+        "encounter": {
+          "enemies": [
+            "Sergeant"
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "description": "Meanwhile, in **Kuihai Tower**...",
+        "type": "story",
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "1. You see **Alice** trapped.\n2. Watch the dialogue, and pay attention, or you will miss out on a side quest.\n3. Answer the first prompt with [1] Quit it, you dirty old man!\n4. Answer the second prompt with [1] Just get away from me!\n5. Answer the third prompt with [1] Ignore him.\n6. Watch the rest of the events, and you'll eventually regain control.",
+        "type": "dialogue",
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Missable side quest",
+            "text": "Choosing ANYTHING other than what's specified above will lead to you not being able to go to Kowloon and do the side quest there."
+          }
+        ],
+        "choices": [
+          {
+            "option": "[1] Quit it, you dirty old man!"
+          },
+          {
+            "option": "[2] This strange machine is so sexy!"
+          },
+          {
+            "option": "[3] Please don't hurt me..."
+          },
+          {
+            "option": "[1] Just get away from me!"
+          },
+          {
+            "option": "[2] This scary tower is sexy, too!"
+          },
+          {
+            "option": "[3] Please, stop..."
+          },
+          {
+            "option": "[1] Ignore him."
+          },
+          {
+            "option": "[2] But YOU'RE the sexiest!"
+          },
+          {
+            "option": "[3] Forgive me..."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": "1. You'll regain control at the entrance to **Kuihai Tower**.\n2. **Leave now**, as there is more to do.\n3. Head back to **Huayuan** in Shanghai.",
+        "type": "navigation",
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "1. At the intersection near the hotel, head east to the next section.\n2. Head south toward the dock, but stop at the fork with the shop at **Mika's House**.\n3. Go southeast and enter the building that was previously locked.\n4. There's nothing too terribly important here, but if you check the cabinet at the top of the screen that a bird cage is sitting on, you can get a **Tea of the Healer**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Tea of the Healer",
+            "category": "items",
+            "matched_overview_item": "Tea of the Healer"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "description": "1. Make your way to the dock now where you'll find several dogs, along with the **Man with Dog**.\n2. Talk to him to play a game: Shanghai's famous dog-picking contest!\n3. Pay him 300 Cash, and you'll be able to play.\n4. Pick a dog, then it'll move around, and you'll have to pick him again when you're done.\n5. It's basically a glorified cup game.\n\nPrizes for winning:\n- First win (three dogs) - A **Lottery Ticket**\n- Second win (four dogs) - A **Leonardo's Bear**\n- Third win (four dogs) - A **Monkey Paw**",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          },
+          {
+            "name": "Leonardo's Bear",
+            "category": "equipment",
+            "matched_overview_item": "Leonardo's Bear"
+          },
+          {
+            "name": "Monkey Paw",
+            "category": "items",
+            "matched_overview_item": "Monkey Paw"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "description": "1. That's it for treasure in Shanghai.\n2. Now, you can either continue with Kuihai Tower, or you can take on a couple of side quests!\n3. If you don't care about the side quests, then continue on to W-1-11 - Kuihai Tower.\n4. Otherwise, read below!",
+        "type": "navigation",
+        "rewards": []
+      }
+    ]
+  }
+}

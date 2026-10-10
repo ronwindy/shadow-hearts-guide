@@ -1,0 +1,49 @@
+{
+  "section_id": "w-1-09",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "enemy table (#034 Corporal 70 Earth, #035 Sergeant 160 Light)",
+    "all 5 item/equipment/valuable rewards and their step placement",
+    "dog-contest prizes and win order (first/second/third, three/four dogs)",
+    "300 Cash fee",
+    "Alice dialogue: all 9 options and the 3 correct answers [1],[1],[1]",
+    "missable side quest warning (Kowloon)",
+    "Corporal NOTE",
+    "step chronology steps 1-9",
+    "navigation prev/next and W-1-11 reference"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "items_summary / step 7 reward name",
+      "canonical": "TeaOfTheHealer",
+      "structured": "Tea of the Healer",
+      "issue": "Item name respaced from the source spelling 'TeaOfTheHealer'. Likely benign (source appears to use it as a single token) but is technically a rename."
+    },
+    {
+      "severity": "low",
+      "category": "omitted",
+      "location": "guide (save points)",
+      "canonical": "Save Points | Hotel ground floor",
+      "structured": "(no save point information)",
+      "issue": "Overview save point 'Hotel ground floor' is not carried into the structured guide."
+    },
+    {
+      "severity": "low",
+      "category": "invented",
+      "location": "objectives[0]",
+      "canonical": "you can either continue with Kuihai Tower, or you can take on a couple of side quests! ... continue on to W-1-11 - Kuihai Tower. Otherwise, read below!",
+      "structured": "Proceed to Asia Side Quests",
+      "issue": "Objective states only the side-quest branch; the source presents Kuihai Tower (W-1-11) as the main continuation and side quests as optional. Objective is derived from navigation.next, not the source wording, and could mislead."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "step 5 choices",
+      "canonical": "Three prompts, each with 3 options; correct option marked with arrows",
+      "structured": "Flat list of 9 options with no prompt grouping or correct-answer marker",
+      "issue": "Correct answers are stated in the description, but the choices list loses prompt grouping and the marked answer; options are all present and verbatim."
+    }
+  ]
+}
