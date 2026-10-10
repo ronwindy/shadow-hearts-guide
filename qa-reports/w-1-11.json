@@ -1,0 +1,57 @@
+{
+  "qa": {
+    "status": "PASS WITH WARNINGS",
+    "section_id": "w-1-11",
+    "section_title": "Shanghai, Kuihai Tower",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "low": 2
+    },
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "structural fidelity",
+        "location": "steps.boss[Badger Devil]",
+        "source": {
+          "text": "Not in canonical bosses"
+        },
+        "generated": {
+          "text": "Badger Devil"
+        },
+        "description": "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Yamaraja: Stone, Badger Devil].strategy",
+        "source": {
+          "text": "Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be your g"
+        },
+        "generated": {
+          "text": "Note that Yamaraja: Stone is actually a fire class, so Man Dragon will be your g"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-003",
+        "severity": "medium",
+        "category": "structural fidelity",
+        "location": "bosses[Yamaraja: Stone, Badger Devil]",
+        "source": {
+          "text": "Yamaraja: Stone, Badger Devil"
+        },
+        "generated": {
+          "text": "Not mapped to any walkthrough step"
+        },
+        "description": "Boss 'Yamaraja: Stone, Badger Devil' is defined in bosses overview but is not mapped to any walkthrough step.",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
+  }
+}

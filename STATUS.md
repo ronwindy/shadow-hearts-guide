@@ -1,12 +1,13 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-10 16:59:45`
+> Last synced: `2026-10-10 17:20:30`
 
 ```text
-=== PROJECT STATUS (2026-10-10 16:59:45) ===
-Canonical 68/68 | Structured 14/68 | QA pass 14/68 (fail 0) | Web built 14/68
+=== PROJECT STATUS (2026-10-10 17:20:30) ===
+Canonical 68/68 | Structured 15/68 | QA pass 15/68 (fail 0) | Web built 15/68
 Next:
-  1. Structure w-s-01 (Yuri's Level 1 Fusions) - next chronological
+  1. Structure w-s-01 (Yuri's Level 1 Fusions) - sequence gap
+Sequence gaps: w-s-01, w-s-02, w-s-03
 ```
 
 ## Section Matrix
@@ -29,7 +30,7 @@ Next:
 | `[W-S-01]` | `w-s-01` | Yuri's Level 1 Fusions | Walkthrough - Asia | NOT_STRUCTURED |
 | `[W-S-02]` | `w-s-02` | Kowloon Fortress | Walkthrough - Asia | NOT_STRUCTURED |
 | `[W-S-03]` | `w-s-03` | Mr. Zhen's Pit Fight | Walkthrough - Asia | NOT_STRUCTURED |
-| `[W-1-11]` | `w-1-11` | Shanghai, Kuihai Tower | Walkthrough - Asia | NOT_STRUCTURED |
+| `[W-1-11]` | `w-1-11` | Shanghai, Kuihai Tower | Walkthrough - Asia | WEB_BUILT |
 | `[W-2-00]` | `w-2-00` | Walkthrough - Europe | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-01]` | `w-2-01` | Prague (1) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-02]` | `w-2-02` | Bistritz (1) | Walkthrough - Europe | NOT_STRUCTURED |

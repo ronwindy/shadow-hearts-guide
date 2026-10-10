@@ -1,0 +1,36 @@
+{
+  "section_id": "w-1-11",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "overview save_points (3 entries) vs guide.save_points",
+    "all 10 enemy rows: numbers, names, HP, class, notes",
+    "shop: all 35 items and prices (TalismanOfLuck/Mercy and RosewoodBracelet only re-spaced)",
+    "all 11 overview items/valuables present as step rewards and in items_summary, with matching step locations",
+    "Lottery Member No. 09 prize table (Red/Yellow/Turquoise/Green/White) and Pocket Watch / Warlock Earrings +20% / -20% caveat",
+    "boss stats: Yamaraja: Stone 1800 HP Fire, 2600 EXP, 6000 Cash, party 20/19/18, drop B.Dragon Horn; Badger Devil 700 HP, 1000 EXP, 600 Cash, drop Seal of Luck; Dehuai 1700 HP, 3500 EXP, 7000 Cash, party 22/20/19, drop Hermit's Staff; Yamaraja: Calamity 3000 HP class None, 6000 EXP, 11000 Cash, party 22/21/20, drop Fifth Key",
+    "boss strategy text for all four fights, including Instant Death options for Badger Devil and the Petrification/Silence warning",
+    "3 NOTE callouts (Pure Extract 10,000 Cash; point of no return + four Evil enemies in the Graveyard; two party members leaving temporarily)",
+    "step order 1-15 against canonical walkthrough order, including the puzzle sequence (Black Tortoise, Blue Dragon, Red Phoenix, White Tiger)",
+    "save prompts: after Dehuai, before the Lottery Member, at top of tower, after Badger Devil",
+    "Yamaraja: Stone + Badger Devil merged bosses[] entry vs step 2 encounter and step 8 sub-boss card (known importer merge, not flagged)",
+    "LaLa mojibake rendered as LàLà and ÀLÀ in step 4 as the canonical shows"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "omitted",
+      "location": "bosses[] / steps 2, 10, 14 boss cards (party)",
+      "canonical": "Each boss card lists per-character equipment (e.g. Hand Needle, Studded Harness, Warlock Earrings, Bell Bracelet, Mirror Bracelet ...) and available fusions (Man Dragon, Raging Tiger, Inferno; Heaven's Fiend for Calamity).",
+      "structured": "party[] keeps only name and level; equipment and fusion lists are not present.",
+      "issue": "The source's recommended loadout per boss is dropped. The strategy text still names the fusions and step 13 names the bracelets, so no instruction is lost outright, but the Yamaraja: Calamity loadout (Bell/Mirror Bracelet on everyone, Warlock Earrings on Yuri, Hermit's Staff on Zhuzhen) is not shown as a table. Appears to be a schema-level limitation (party has only name/level); noting for the owner."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "guide.objectives[0]",
+      "canonical": "Yamaraja: Stone (BOSS) and Badger Devil (SUB-BOSS) are separate fights, in different places in the walkthrough.",
+      "structured": "Defeat Yamaraja: Stone, Badger Devil",
+      "issue": "The merged importer name is carried into the objective, so it reads as one fight and omits the fact that Badger Devil is a later sub-boss (step 8). Consider splitting the objective into two entries; no facts are wrong."
+    }
+  ]
+}
