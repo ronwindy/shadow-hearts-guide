@@ -83,8 +83,40 @@
       "notes": ""
     }
   ],
-  "bosses": [],
-  "boss": null,
+  "bosses": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Golden Bat",
+      "enemies": [
+        {
+          "name": "Golden Bat",
+          "hp": 1500,
+          "class": "None",
+          "drop": "DemonSwd-Tyrving"
+        }
+      ],
+      "party": [],
+      "exp": 40000,
+      "cash": 15000,
+      "strategy": "He says you have 5 turns to defeat him before he obliterates Keith, but\nyou technically have 6.\n\nIt's not hard to succeed, but if you miss some hits, you could be in\ntrouble. Keith can only attack normally, so just keep doing that. It\nshould only take three turns max, unless you didn't equip the Mind's Eye,\nthen it'll probably take all six.\n\nIf you're having a hard time with this battle, then level Keith up to\nwhere he can definitely deal 1500 damage within four or five turns, to be\nsafe.\n\nNOTE     Even though you already have it equipped for this battle, the\n¯¯¯¯¯¯¯¯   reward for winning is the DemonSwd-Tyrving......"
+    }
+  ],
+  "boss": {
+    "type": "SUB-BOSS",
+    "name": "Golden Bat",
+    "enemies": [
+      {
+        "name": "Golden Bat",
+        "hp": 1500,
+        "class": "None",
+        "drop": "DemonSwd-Tyrving"
+      }
+    ],
+    "party": [],
+    "exp": 40000,
+    "cash": 15000,
+    "strategy": "He says you have 5 turns to defeat him before he obliterates Keith, but\nyou technically have 6.\n\nIt's not hard to succeed, but if you miss some hits, you could be in\ntrouble. Keith can only attack normally, so just keep doing that. It\nshould only take three turns max, unless you didn't equip the Mind's Eye,\nthen it'll probably take all six.\n\nIf you're having a hard time with this battle, then level Keith up to\nwhere he can definitely deal 1500 damage within four or five turns, to be\nsafe.\n\nNOTE     Even though you already have it equipped for this battle, the\n¯¯¯¯¯¯¯¯   reward for winning is the DemonSwd-Tyrving......"
+  },
   "shops": [],
   "markers": {
     "items": [

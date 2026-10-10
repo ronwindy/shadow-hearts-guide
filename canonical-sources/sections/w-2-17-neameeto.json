@@ -213,20 +213,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 62
+          "level": 62,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Warlock Earrings",
+            "Priest Earrings",
+            "Oracle Earrings"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Czernobog"
+          ]
         },
         {
           "name": "Alice",
-          "level": 52
+          "level": 52,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Seven-Eyed Mask",
+            "Brsrkr Earrings"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 50
+          "level": 50,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Warlock Earrings",
+            "Priest Earrings",
+            "Oracle Earrings"
+          ]
         }
       ],
       "exp": 40000,
       "cash": 22500,
-      "strategy": "Yes, I know, Yuri's level is insanely high, but blame the game for not\nletting you be able to take him out of your party so you can level others\nup. It shouldn't affect much, as he's just as much of a powerhouse ten\nlevels earlier.\nIn any case, the Soul Block CANNOT be harmed physically, so it'll be up\nto your special attacks to take him out. He has some really strong\nphysical attacks, as well as the light spell, Pulse, and the Shockwave\nspell, neither of which are quite as strong, but hit everyone.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually cast For Tomorrow. (Just\nknow that For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice use Advent and have Margarete use Diving Bomber; whoever is\ndealing the least amount of damage (likely Alice), have her replenish\nYuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD\nkeep your party healed, but in case it falls behind, have Alice ready\nwith an Arc to bring you back up to snuff.\nIf you're having trouble with the hit areas of the SeraphicRadiance, then\nyou may want to start using Bronze Daggers (or Arrowheads for just Yuri)\non your party to widen the hit areas. If you're STILL having trouble,\nthen you'll probably be better of using Amon and his Demon Rays spell."
+      "strategy": "Yes, I know, Yuri's level is insanely high, but blame the game for not\nletting you be able to take him out of your party so you can level others\nup. It shouldn't affect much, as he's just as much of a powerhouse ten\nlevels earlier.\n\nIn any case, the Soul Block CANNOT be harmed physically, so it'll be up\nto your special attacks to take him out. He has some really strong\nphysical attacks, as well as the light spell, Pulse, and the Shockwave\nspell, neither of which are quite as strong, but hit everyone.\n\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually cast For Tomorrow. (Just\nknow that For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\n\nHave Alice use Advent and have Margarete use Diving Bomber; whoever is\ndealing the least amount of damage (likely Alice), have her replenish\nYuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD\nkeep your party healed, but in case it falls behind, have Alice ready\nwith an Arc to bring you back up to snuff.\n\nIf you're having trouble with the hit areas of the SeraphicRadiance, then\nyou may want to start using Bronze Daggers (or Arrowheads for just Yuri)\non your party to widen the hit areas. If you're STILL having trouble,\nthen you'll probably be better of using Amon and his Demon Rays spell."
     },
     {
       "type": "BOSS",
@@ -242,20 +268,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 63
+          "level": 63,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Forron"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 51
+          "level": 51,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ]
         },
         {
           "name": "Alice",
-          "level": 53
+          "level": 53,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Priest Earrings",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 45000,
       "cash": 25000,
-      "strategy": "Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes\nnow, so as long as they're equipped, we'll just receive minor to decent\ndamage to the whole party instead of ring anomalies and poison. It'll\nalso attempt to paralyze you, but will do a decent amount of damage to a\nsingle ally instead.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually attack from there on,\nusing Third Keys if you have spares, with Alice's Holy Edge on him.\n(Remember, For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice start off by casting Holy Edge on both Yuri and Margarete,\nthen use Advent when healing isn't needed, and have her use Arc when it\nis. Margarete should be attacking physically as well with Third Keys.\nThis boss is actually a lot easier than the last."
+      "strategy": "Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes\nnow, so as long as they're equipped, we'll just receive minor to decent\ndamage to the whole party instead of ring anomalies and poison. It'll\nalso attempt to paralyze you, but will do a decent amount of damage to a\nsingle ally instead.\n\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually attack from there on,\nusing Third Keys if you have spares, with Alice's Holy Edge on him.\n(Remember, For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\n\nHave Alice start off by casting Holy Edge on both Yuri and Margarete,\nthen use Advent when healing isn't needed, and have her use Arc when it\nis. Margarete should be attacking physically as well with Third Keys.\nThis boss is actually a lot easier than the last."
     },
     {
       "type": "BOSS",
@@ -271,20 +323,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 64
+          "level": 64,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Weird Bottle"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Forron"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 53
+          "level": 53,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Weird Bottle"
+          ]
         },
         {
           "name": "Alice",
-          "level": 55
+          "level": 55,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Priest Earrings",
+            "Seven-Eyed Mask"
+          ]
         }
       ],
       "exp": 50000,
       "cash": 27500,
-      "strategy": "The Scapegoat will use Wind Fang that will hit your whole party for a\nsmall amount of damage, and will also attack normally on a single ally\nfor decent damage. He can also use Deathtouch, which if you remember,\ninstantly puts an ally into critical HP status, so make sure to heal\nstraight away when he uses it.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys if you have spares. (Remember, For Everyone\nALSO boosts your AGL, and that means a faster ring, so if you can't keep\nup with it, don't worry about casting it to begin with.)\nHave Alice use Advent when healing isn't needed, and have her use Arc\nwhen it is. Margarete should be attacking physically as well with Third\nKeys. Just make sure to stay healed and you should be fine."
+      "strategy": "The Scapegoat will use Wind Fang that will hit your whole party for a\nsmall amount of damage, and will also attack normally on a single ally\nfor decent damage. He can also use Deathtouch, which if you remember,\ninstantly puts an ally into critical HP status, so make sure to heal\nstraight away when he uses it.\n\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys if you have spares. (Remember, For Everyone\nALSO boosts your AGL, and that means a faster ring, so if you can't keep\nup with it, don't worry about casting it to begin with.)\n\nHave Alice use Advent when healing isn't needed, and have her use Arc\nwhen it is. Margarete should be attacking physically as well with Third\nKeys. Just make sure to stay healed and you should be fine."
     },
     {
       "type": "BOSS",
@@ -306,20 +384,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 65
+          "level": 65,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Mind's Eye",
+            "Will Power",
+            "Crucifix"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Sandalphon"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 54
+          "level": 54,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Will Power",
+            "Crucifix"
+          ]
         },
         {
           "name": "Alice",
-          "level": 56
+          "level": 56,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Will Power",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 60000,
       "cash": 0,
-      "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
+      "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\n\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\n\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\n\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
     }
   ],
   "boss": [
@@ -337,20 +441,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 62
+          "level": 62,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Warlock Earrings",
+            "Priest Earrings",
+            "Oracle Earrings"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Czernobog"
+          ]
         },
         {
           "name": "Alice",
-          "level": 52
+          "level": 52,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Seven-Eyed Mask",
+            "Brsrkr Earrings"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 50
+          "level": 50,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Warlock Earrings",
+            "Priest Earrings",
+            "Oracle Earrings"
+          ]
         }
       ],
       "exp": 40000,
       "cash": 22500,
-      "strategy": "Yes, I know, Yuri's level is insanely high, but blame the game for not\nletting you be able to take him out of your party so you can level others\nup. It shouldn't affect much, as he's just as much of a powerhouse ten\nlevels earlier.\nIn any case, the Soul Block CANNOT be harmed physically, so it'll be up\nto your special attacks to take him out. He has some really strong\nphysical attacks, as well as the light spell, Pulse, and the Shockwave\nspell, neither of which are quite as strong, but hit everyone.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually cast For Tomorrow. (Just\nknow that For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice use Advent and have Margarete use Diving Bomber; whoever is\ndealing the least amount of damage (likely Alice), have her replenish\nYuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD\nkeep your party healed, but in case it falls behind, have Alice ready\nwith an Arc to bring you back up to snuff.\nIf you're having trouble with the hit areas of the SeraphicRadiance, then\nyou may want to start using Bronze Daggers (or Arrowheads for just Yuri)\non your party to widen the hit areas. If you're STILL having trouble,\nthen you'll probably be better of using Amon and his Demon Rays spell."
+      "strategy": "Yes, I know, Yuri's level is insanely high, but blame the game for not\nletting you be able to take him out of your party so you can level others\nup. It shouldn't affect much, as he's just as much of a powerhouse ten\nlevels earlier.\n\nIn any case, the Soul Block CANNOT be harmed physically, so it'll be up\nto your special attacks to take him out. He has some really strong\nphysical attacks, as well as the light spell, Pulse, and the Shockwave\nspell, neither of which are quite as strong, but hit everyone.\n\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually cast For Tomorrow. (Just\nknow that For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\n\nHave Alice use Advent and have Margarete use Diving Bomber; whoever is\ndealing the least amount of damage (likely Alice), have her replenish\nYuri's MP with Mana Roots every other round. Yuri's For Tomorrow SHOULD\nkeep your party healed, but in case it falls behind, have Alice ready\nwith an Arc to bring you back up to snuff.\n\nIf you're having trouble with the hit areas of the SeraphicRadiance, then\nyou may want to start using Bronze Daggers (or Arrowheads for just Yuri)\non your party to widen the hit areas. If you're STILL having trouble,\nthen you'll probably be better of using Amon and his Demon Rays spell."
     },
     {
       "type": "BOSS",
@@ -366,20 +496,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 63
+          "level": 63,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Forron"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 51
+          "level": 51,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ]
         },
         {
           "name": "Alice",
-          "level": 53
+          "level": 53,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Priest Earrings",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 45000,
       "cash": 25000,
-      "strategy": "Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes\nnow, so as long as they're equipped, we'll just receive minor to decent\ndamage to the whole party instead of ring anomalies and poison. It'll\nalso attempt to paralyze you, but will do a decent amount of damage to a\nsingle ally instead.\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually attack from there on,\nusing Third Keys if you have spares, with Alice's Holy Edge on him.\n(Remember, For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\nHave Alice start off by casting Holy Edge on both Yuri and Margarete,\nthen use Advent when healing isn't needed, and have her use Arc when it\nis. Margarete should be attacking physically as well with Third Keys.\nThis boss is actually a lot easier than the last."
+      "strategy": "Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes\nnow, so as long as they're equipped, we'll just receive minor to decent\ndamage to the whole party instead of ring anomalies and poison. It'll\nalso attempt to paralyze you, but will do a decent amount of damage to a\nsingle ally instead.\n\nFuse Yuri into the SeraphicRadiance and start off by casting For Everyone\nto boost your party, then have him continually attack from there on,\nusing Third Keys if you have spares, with Alice's Holy Edge on him.\n(Remember, For Everyone ALSO boosts your AGL, and that means a faster\nring, so if you can't keep up with it, don't worry about casting it to\nbegin with.)\n\nHave Alice start off by casting Holy Edge on both Yuri and Margarete,\nthen use Advent when healing isn't needed, and have her use Arc when it\nis. Margarete should be attacking physically as well with Third Keys.\nThis boss is actually a lot easier than the last."
     },
     {
       "type": "BOSS",
@@ -395,20 +551,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 64
+          "level": 64,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Weird Bottle"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Forron"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 53
+          "level": 53,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Weird Bottle"
+          ]
         },
         {
           "name": "Alice",
-          "level": 55
+          "level": 55,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Priest Earrings",
+            "Seven-Eyed Mask"
+          ]
         }
       ],
       "exp": 50000,
       "cash": 27500,
-      "strategy": "The Scapegoat will use Wind Fang that will hit your whole party for a\nsmall amount of damage, and will also attack normally on a single ally\nfor decent damage. He can also use Deathtouch, which if you remember,\ninstantly puts an ally into critical HP status, so make sure to heal\nstraight away when he uses it.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys if you have spares. (Remember, For Everyone\nALSO boosts your AGL, and that means a faster ring, so if you can't keep\nup with it, don't worry about casting it to begin with.)\nHave Alice use Advent when healing isn't needed, and have her use Arc\nwhen it is. Margarete should be attacking physically as well with Third\nKeys. Just make sure to stay healed and you should be fine."
+      "strategy": "The Scapegoat will use Wind Fang that will hit your whole party for a\nsmall amount of damage, and will also attack normally on a single ally\nfor decent damage. He can also use Deathtouch, which if you remember,\ninstantly puts an ally into critical HP status, so make sure to heal\nstraight away when he uses it.\n\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys if you have spares. (Remember, For Everyone\nALSO boosts your AGL, and that means a faster ring, so if you can't keep\nup with it, don't worry about casting it to begin with.)\n\nHave Alice use Advent when healing isn't needed, and have her use Arc\nwhen it is. Margarete should be attacking physically as well with Third\nKeys. Just make sure to stay healed and you should be fine."
     },
     {
       "type": "BOSS",
@@ -430,20 +612,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 65
+          "level": 65,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Mind's Eye",
+            "Will Power",
+            "Crucifix"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Sandalphon"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 54
+          "level": 54,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Will Power",
+            "Crucifix"
+          ]
         },
         {
           "name": "Alice",
-          "level": 56
+          "level": 56,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Will Power",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 60000,
       "cash": 0,
-      "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
+      "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\n\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\n\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\n\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
     }
   ],
   "shops": [],

@@ -161,14 +161,63 @@
   "bosses": [
     {
       "type": "BOSS",
-      "name": "Yamaraja: Stone, Badger Devil",
+      "name": "Yamaraja: Stone",
       "enemies": [
         {
           "name": "Yamaraja: Stone",
           "hp": 1800,
           "class": "Fire",
           "drop": "B.Dragon Horn"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 20,
+          "equipment": [
+            "Hand Needle",
+            "Studded Harness",
+            "Mind's Eye",
+            "Jade Lariat",
+            "Western Belt"
+          ],
+          "fusions": [
+            "Man Dragon",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
+        {
+          "name": "Margarete",
+          "level": 19,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Studded Cap",
+            "Western Belt",
+            "Weird Bottle"
+          ]
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 18,
+          "equipment": [
+            "Pilgrim's Staff",
+            "Studded Harness",
+            "Face Guard",
+            "Coral Lariat",
+            "Voodoo Doll"
+          ]
+        }
+      ],
+      "exp": 2600,
+      "cash": 6000,
+      "strategy": "Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be\nyour go-to Fusion if you're taking the magic route.\n\nOther than the fact that he uses defensive spells (that don't seem to\nhelp him at all), all he'll use are physical attacks. They're not TOO\nstrong, but if he focuses on just one person on two different attacks,\nhe'll whittle their HP down quicker than you realize, so stay healed.\n\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. This Yamaraja is fairly easy\ncompared to the last two bosses."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Badger Devil",
+      "enemies": [
         {
           "name": "Badger Devil",
           "hp": 700,
@@ -176,23 +225,10 @@
           "drop": "Seal of Luck"
         }
       ],
-      "party": [
-        {
-          "name": "Yuri",
-          "level": 20
-        },
-        {
-          "name": "Margarete",
-          "level": 19
-        },
-        {
-          "name": "Zhuzhen",
-          "level": 18
-        }
-      ],
-      "exp": 2600,
-      "cash": 6000,
-      "strategy": "Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be\nyour go-to Fusion if you're taking the magic route.\nOther than the fact that he uses defensive spells (that don't seem to\nhelp him at all), all he'll use are physical attacks. They're not TOO\nstrong, but if he focuses on just one person on two different attacks,\nhe'll whittle their HP down quicker than you realize, so stay healed.\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. This Yamaraja is fairly easy\ncompared to the last two bosses."
+      "party": [],
+      "exp": 1000,
+      "cash": 600,
+      "strategy": "The Badger Devil uses a Fire Ball attack that doesn't hit for much damage\nat all, and a physical attack that hits for a slightly decent amount.\nEither way, it's not much to worry about.\n\nThe Badger Devil is susceptible to Instant Death, so do one of the\nfollowing two things:\n\n1) Fuse Yuri into the Death Emperor and cast Dark Messenger. Make sure to\nhit the small red \"Perfect!!\" area, and voilà! Dead-dead-deadski.\n\n2) Have Margarete use her Snipe ability. Make sure to hit the small red\n\"Perfect!!\" area, and BAM!!! History.\n\nIf you're lucky, one of the first two steps will kill it. Sadly, it\ndoesn't ALWAYS work.\n\nIf you don't have luck with either of those, no worries; he's still easy.\nHave Yuri fuse into the Raging Tiger or Inferno (with Fighting Spirit)\nand hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first, then have her use Snipe continuously. He'll fall quickly."
     },
     {
       "type": "BOSS",
@@ -208,20 +244,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 22
+          "level": 22,
+          "equipment": [
+            "Hand Needle",
+            "Studded Harness",
+            "Mind's Eye",
+            "Jade Lariat",
+            "Western Belt"
+          ],
+          "fusions": [
+            "Man Dragon",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 20
+          "level": 20,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Studded Cap",
+            "Western Belt",
+            "Weird Bottle"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 19
+          "level": 19,
+          "equipment": [
+            "Pilgrim's Staff",
+            "Studded Harness",
+            "Face Guard",
+            "Coral Lariat",
+            "Voodoo Doll"
+          ]
         }
       ],
       "exp": 3500,
       "cash": 7000,
-      "strategy": "Another Fire-based boss? Don't mind if I do! Makes Margarete that much\nmore useful!\nDehuai's fire attacks, Magnard and Blaze, will hit your whole party for\ndecent damage, and he also has a rather quick (and interestingly bizarre)\nphysical attack that also does decent to major damage. He also has a Fast\nRing attack that hits for decent damage, and it can possibly make your\nJudgment Ring spin faster. Make sure to keep healed and try to keep that\nRing status off!\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. He's pretty easy as well, but the\nchallenge is upcoming."
+      "strategy": "Another Fire-based boss? Don't mind if I do! Makes Margarete that much\nmore useful!\n\nDehuai's fire attacks, Magnard and Blaze, will hit your whole party for\ndecent damage, and he also has a rather quick (and interestingly bizarre)\nphysical attack that also does decent to major damage. He also has a Fast\nRing attack that hits for decent damage, and it can possibly make your\nJudgment Ring spin faster. Make sure to keep healed and try to keep that\nRing status off!\n\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. He's pretty easy as well, but the\nchallenge is upcoming."
     },
     {
       "type": "BOSS",
@@ -237,33 +299,108 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 22
+          "level": 22,
+          "equipment": [
+            "Hand Needle",
+            "Studded Harness",
+            "Warlock Earrings",
+            "Bell Bracelet",
+            "Mirror Bracelet"
+          ],
+          "fusions": [
+            "Heaven's Fiend",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 21
+          "level": 21,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Western Belt",
+            "Bell Bracelet",
+            "Mirror Bracelet"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 20
+          "level": 20,
+          "equipment": [
+            "Hermit's Staff",
+            "Studded Harness",
+            "Face Guard",
+            "Bell Bracelet",
+            "Mirror Bracelet"
+          ]
         }
       ],
       "exp": 6000,
       "cash": 11000,
-      "strategy": "Yamaraja will most likely start off with the Crimson Flame spell, dealing\nMAJOR fire damage to your party and possibly Silencing them as well. His\nPetrification attack should only do medium damage to your party IF you're\nprotected against it; otherwise, you'll turn to stone, and three\nPetrified party members equals a game over. He'll also use a Shockwave\nattack, but it only does a small amount of damage to your whole party.\nHis physical attacks are nothing to sneeze at either; a series of three\nattacks will do MAJOR damage to a party member.\nAs much as I hate to say this, Yuri will need to be the primary healer of\nthis battle, as he's the only one that has a heal-all spell, and without\nit, it will be hard to keep up with the healing with just two party\nmembers. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if\nyour party needs healing, and if they don't, then use Exorcist Arrow.\nZhuzhen should be constantly casting Life Sucker, and Margarete should be\nusing Snipe. When the party's MP starts getting low, have Margarete use\nMana Seeds to boost them back up.\nDue to the sheer amount of HP Yamaraja has, and the fact that your main\ndamage dealer is on healing duty, prepare for a very long battle. You'll\nmost likely need to use at least two Pure Seeds to keep Zhuzhen's and\nMargarete's SP up."
+      "strategy": "Yamaraja will most likely start off with the Crimson Flame spell, dealing\nMAJOR fire damage to your party and possibly Silencing them as well. His\nPetrification attack should only do medium damage to your party IF you're\nprotected against it; otherwise, you'll turn to stone, and three\nPetrified party members equals a game over. He'll also use a Shockwave\nattack, but it only does a small amount of damage to your whole party.\nHis physical attacks are nothing to sneeze at either; a series of three\nattacks will do MAJOR damage to a party member.\n\nAs much as I hate to say this, Yuri will need to be the primary healer of\nthis battle, as he's the only one that has a heal-all spell, and without\nit, it will be hard to keep up with the healing with just two party\nmembers. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if\nyour party needs healing, and if they don't, then use Exorcist Arrow.\nZhuzhen should be constantly casting Life Sucker, and Margarete should be\nusing Snipe. When the party's MP starts getting low, have Margarete use\nMana Seeds to boost them back up.\n\nDue to the sheer amount of HP Yamaraja has, and the fact that your main\ndamage dealer is on healing duty, prepare for a very long battle. You'll\nmost likely need to use at least two Pure Seeds to keep Zhuzhen's and\nMargarete's SP up."
     }
   ],
   "boss": [
     {
       "type": "BOSS",
-      "name": "Yamaraja: Stone, Badger Devil",
+      "name": "Yamaraja: Stone",
       "enemies": [
         {
           "name": "Yamaraja: Stone",
           "hp": 1800,
           "class": "Fire",
           "drop": "B.Dragon Horn"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 20,
+          "equipment": [
+            "Hand Needle",
+            "Studded Harness",
+            "Mind's Eye",
+            "Jade Lariat",
+            "Western Belt"
+          ],
+          "fusions": [
+            "Man Dragon",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
+        {
+          "name": "Margarete",
+          "level": 19,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Studded Cap",
+            "Western Belt",
+            "Weird Bottle"
+          ]
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 18,
+          "equipment": [
+            "Pilgrim's Staff",
+            "Studded Harness",
+            "Face Guard",
+            "Coral Lariat",
+            "Voodoo Doll"
+          ]
+        }
+      ],
+      "exp": 2600,
+      "cash": 6000,
+      "strategy": "Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be\nyour go-to Fusion if you're taking the magic route.\n\nOther than the fact that he uses defensive spells (that don't seem to\nhelp him at all), all he'll use are physical attacks. They're not TOO\nstrong, but if he focuses on just one person on two different attacks,\nhe'll whittle their HP down quicker than you realize, so stay healed.\n\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. This Yamaraja is fairly easy\ncompared to the last two bosses."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Badger Devil",
+      "enemies": [
         {
           "name": "Badger Devil",
           "hp": 700,
@@ -271,23 +408,10 @@
           "drop": "Seal of Luck"
         }
       ],
-      "party": [
-        {
-          "name": "Yuri",
-          "level": 20
-        },
-        {
-          "name": "Margarete",
-          "level": 19
-        },
-        {
-          "name": "Zhuzhen",
-          "level": 18
-        }
-      ],
-      "exp": 2600,
-      "cash": 6000,
-      "strategy": "Note that Yamaraja: Stone is actually a FIRE class, so Man Dragon will be\nyour go-to Fusion if you're taking the magic route.\nOther than the fact that he uses defensive spells (that don't seem to\nhelp him at all), all he'll use are physical attacks. They're not TOO\nstrong, but if he focuses on just one person on two different attacks,\nhe'll whittle their HP down quicker than you realize, so stay healed.\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. This Yamaraja is fairly easy\ncompared to the last two bosses."
+      "party": [],
+      "exp": 1000,
+      "cash": 600,
+      "strategy": "The Badger Devil uses a Fire Ball attack that doesn't hit for much damage\nat all, and a physical attack that hits for a slightly decent amount.\nEither way, it's not much to worry about.\n\nThe Badger Devil is susceptible to Instant Death, so do one of the\nfollowing two things:\n\n1) Fuse Yuri into the Death Emperor and cast Dark Messenger. Make sure to\nhit the small red \"Perfect!!\" area, and voilà! Dead-dead-deadski.\n\n2) Have Margarete use her Snipe ability. Make sure to hit the small red\n\"Perfect!!\" area, and BAM!!! History.\n\nIf you're lucky, one of the first two steps will kill it. Sadly, it\ndoesn't ALWAYS work.\n\nIf you don't have luck with either of those, no worries; he's still easy.\nHave Yuri fuse into the Raging Tiger or Inferno (with Fighting Spirit)\nand hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first, then have her use Snipe continuously. He'll fall quickly."
     },
     {
       "type": "BOSS",
@@ -303,20 +427,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 22
+          "level": 22,
+          "equipment": [
+            "Hand Needle",
+            "Studded Harness",
+            "Mind's Eye",
+            "Jade Lariat",
+            "Western Belt"
+          ],
+          "fusions": [
+            "Man Dragon",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 20
+          "level": 20,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Studded Cap",
+            "Western Belt",
+            "Weird Bottle"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 19
+          "level": 19,
+          "equipment": [
+            "Pilgrim's Staff",
+            "Studded Harness",
+            "Face Guard",
+            "Coral Lariat",
+            "Voodoo Doll"
+          ]
         }
       ],
       "exp": 3500,
       "cash": 7000,
-      "strategy": "Another Fire-based boss? Don't mind if I do! Makes Margarete that much\nmore useful!\nDehuai's fire attacks, Magnard and Blaze, will hit your whole party for\ndecent damage, and he also has a rather quick (and interestingly bizarre)\nphysical attack that also does decent to major damage. He also has a Fast\nRing attack that hits for decent damage, and it can possibly make your\nJudgment Ring spin faster. Make sure to keep healed and try to keep that\nRing status off!\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. He's pretty easy as well, but the\nchallenge is upcoming."
+      "strategy": "Another Fire-based boss? Don't mind if I do! Makes Margarete that much\nmore useful!\n\nDehuai's fire attacks, Magnard and Blaze, will hit your whole party for\ndecent damage, and he also has a rather quick (and interestingly bizarre)\nphysical attack that also does decent to major damage. He also has a Fast\nRing attack that hits for decent damage, and it can possibly make your\nJudgment Ring spin faster. Make sure to keep healed and try to keep that\nRing status off!\n\nHave Yuri either fuse into the Man Dragon and blast him continuously with\nFlash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting\nSpirit) and hammer away at him with physical attacks. Zhuzhen should be\ncontinually casting Life Sucker, and Margarete should use Aqua Edge on\nYuri first (if he's attacking), then have her use Snipe continuously.\nZhuzhen will probably be doing the least amount of damage, so have him on\nhealing duty when HP starts to drop. He's pretty easy as well, but the\nchallenge is upcoming."
     },
     {
       "type": "BOSS",
@@ -332,20 +482,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 22
+          "level": 22,
+          "equipment": [
+            "Hand Needle",
+            "Studded Harness",
+            "Warlock Earrings",
+            "Bell Bracelet",
+            "Mirror Bracelet"
+          ],
+          "fusions": [
+            "Heaven's Fiend",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 21
+          "level": 21,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Western Belt",
+            "Bell Bracelet",
+            "Mirror Bracelet"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 20
+          "level": 20,
+          "equipment": [
+            "Hermit's Staff",
+            "Studded Harness",
+            "Face Guard",
+            "Bell Bracelet",
+            "Mirror Bracelet"
+          ]
         }
       ],
       "exp": 6000,
       "cash": 11000,
-      "strategy": "Yamaraja will most likely start off with the Crimson Flame spell, dealing\nMAJOR fire damage to your party and possibly Silencing them as well. His\nPetrification attack should only do medium damage to your party IF you're\nprotected against it; otherwise, you'll turn to stone, and three\nPetrified party members equals a game over. He'll also use a Shockwave\nattack, but it only does a small amount of damage to your whole party.\nHis physical attacks are nothing to sneeze at either; a series of three\nattacks will do MAJOR damage to a party member.\nAs much as I hate to say this, Yuri will need to be the primary healer of\nthis battle, as he's the only one that has a heal-all spell, and without\nit, it will be hard to keep up with the healing with just two party\nmembers. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if\nyour party needs healing, and if they don't, then use Exorcist Arrow.\nZhuzhen should be constantly casting Life Sucker, and Margarete should be\nusing Snipe. When the party's MP starts getting low, have Margarete use\nMana Seeds to boost them back up.\nDue to the sheer amount of HP Yamaraja has, and the fact that your main\ndamage dealer is on healing duty, prepare for a very long battle. You'll\nmost likely need to use at least two Pure Seeds to keep Zhuzhen's and\nMargarete's SP up."
+      "strategy": "Yamaraja will most likely start off with the Crimson Flame spell, dealing\nMAJOR fire damage to your party and possibly Silencing them as well. His\nPetrification attack should only do medium damage to your party IF you're\nprotected against it; otherwise, you'll turn to stone, and three\nPetrified party members equals a game over. He'll also use a Shockwave\nattack, but it only does a small amount of damage to your whole party.\nHis physical attacks are nothing to sneeze at either; a series of three\nattacks will do MAJOR damage to a party member.\n\nAs much as I hate to say this, Yuri will need to be the primary healer of\nthis battle, as he's the only one that has a heal-all spell, and without\nit, it will be hard to keep up with the healing with just two party\nmembers. Fuse him into the Heaven's Fiend, then cast Sacred Remedy if\nyour party needs healing, and if they don't, then use Exorcist Arrow.\nZhuzhen should be constantly casting Life Sucker, and Margarete should be\nusing Snipe. When the party's MP starts getting low, have Margarete use\nMana Seeds to boost them back up.\n\nDue to the sheer amount of HP Yamaraja has, and the fact that your main\ndamage dealer is on healing duty, prepare for a very long battle. You'll\nmost likely need to use at least two Pure Seeds to keep Zhuzhen's and\nMargarete's SP up."
     }
   ],
   "shops": [

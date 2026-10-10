@@ -108,6 +108,38 @@
   ],
   "bosses": [
     {
+      "type": "SUB-BOSS",
+      "name": "Night Stalker",
+      "enemies": [
+        {
+          "name": "Night Stalker",
+          "hp": 2500,
+          "class": "Wind",
+          "drop": "Kid's Room Key"
+        }
+      ],
+      "party": [],
+      "exp": 4000,
+      "cash": 3600,
+      "strategy": "There's not much to worry about with this guy; other than boosting\nhimself up, his physical attacks do a decent amount of damage, but that's\nit. Have Alice whoever is attacked.\n\nHave Yuri fuse into Ifrit, using Ignition to boost his attack power, then\nstart wailing on the Night Stalker with physical attacks. Have Halley\nconstantly use his Strong Earth attack, which should do pretty decent\ndamage to the wind-based enemy. Have Alice keep everyone healed, using\nBlessed Light when she's not healing."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Jack",
+      "enemies": [
+        {
+          "name": "Jack",
+          "hp": 2500,
+          "class": "Water",
+          "drop": "Seal of Speed"
+        }
+      ],
+      "party": [],
+      "exp": 17000,
+      "cash": 15000,
+      "strategy": "Jack will mainly just use his Paralysis attack against you, though you\nshould be guarded by a Zodiac Bracelet or a Crucifix. He will also use\npretty strong physical attacks, and his Slash attack, which will do MAJOR\ndamage to one party member, so make sure to stay healed. He will use\nThera Seeds when his HP starts to drop.\n\nWhen fighting, keep in mind that you have a harder boss battle right\nafter this, with no chance to heal.\n\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. Have Halley cast Strong Earth continuously\n(not Aqua Blade, since Jack is water based) for the whole battle, unless\nhe's learned Air Shot by now, then by all means, use that. Alice should\nbe healing as needed, using Blessed Light when no healing is needed.\n\nIf you're comfortable at the end, take a turn or two to make sure\neveryone is healed to the max and ready for the next battle."
+    },
+    {
       "type": "BOSS",
       "name": "Mammon",
       "enemies": [
@@ -121,51 +153,137 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 31
+          "level": 31,
+          "equipment": [
+            "Brass Knuckles",
+            "RedLeatherJacket",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Zodiac Bracelet"
+          ],
+          "fusions": [
+            "Baldo",
+            "Charon",
+            "Ifrit"
+          ]
         },
         {
           "name": "Halley",
-          "level": 29
+          "level": 29,
+          "equipment": [
+            "Oak Slingshot",
+            "RedLeatherJacket",
+            "Priest Earrings",
+            "Warlock Earrings",
+            "Zodiac Bracelet"
+          ]
         },
         {
           "name": "Alice",
-          "level": 31
+          "level": 31,
+          "equipment": [
+            "Ever-Bible",
+            "Jasper Cape",
+            "Anne's Cross",
+            "Brsrkr Earrings",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 20000,
       "cash": 16000,
-      "strategy": "Mammon's normal attacks will hit for pretty decent damage, but its\nbiggest threat is its Petrification attack, which hopefully you've\nprevented with either a Zodiac Bracelet or a Crucifix, though it'll still\ndo a decent amount of damage, even if you did. It will also use a\nShockwave spell, doing quite a bit a damage to your entire party, as well\nas Needlerain, a strong attack to just one party member.\nIts Howling skill will replenish its HP by 500+ once it's near dying, but\nlucky for you, Yuri's a powerhouse and will take that away and then some\nin one round.\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use his Air Edge on\nYuri to increase Yuri's damage output, then have him cast Aqua Blade for\nthe remainder of the battle, unless he's learned Air Shot by now, then by\nall means, use that. Alice should be healing as needed, using Blessed\nLight when no healing is needed."
+      "strategy": "Mammon's normal attacks will hit for pretty decent damage, but its\nbiggest threat is its Petrification attack, which hopefully you've\nprevented with either a Zodiac Bracelet or a Crucifix, though it'll still\ndo a decent amount of damage, even if you did. It will also use a\nShockwave spell, doing quite a bit a damage to your entire party, as well\nas Needlerain, a strong attack to just one party member.\n\nIts Howling skill will replenish its HP by 500+ once it's near dying, but\nlucky for you, Yuri's a powerhouse and will take that away and then some\nin one round.\n\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use his Air Edge on\nYuri to increase Yuri's damage output, then have him cast Aqua Blade for\nthe remainder of the battle, unless he's learned Air Shot by now, then by\nall means, use that. Alice should be healing as needed, using Blessed\nLight when no healing is needed."
     }
   ],
-  "boss": {
-    "type": "BOSS",
-    "name": "Mammon",
-    "enemies": [
-      {
-        "name": "Mammon",
-        "hp": 3600,
-        "class": "Earth",
-        "drop": "Demon Earrings"
-      }
-    ],
-    "party": [
-      {
-        "name": "Yuri",
-        "level": 31
-      },
-      {
-        "name": "Halley",
-        "level": 29
-      },
-      {
-        "name": "Alice",
-        "level": 31
-      }
-    ],
-    "exp": 20000,
-    "cash": 16000,
-    "strategy": "Mammon's normal attacks will hit for pretty decent damage, but its\nbiggest threat is its Petrification attack, which hopefully you've\nprevented with either a Zodiac Bracelet or a Crucifix, though it'll still\ndo a decent amount of damage, even if you did. It will also use a\nShockwave spell, doing quite a bit a damage to your entire party, as well\nas Needlerain, a strong attack to just one party member.\nIts Howling skill will replenish its HP by 500+ once it's near dying, but\nlucky for you, Yuri's a powerhouse and will take that away and then some\nin one round.\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use his Air Edge on\nYuri to increase Yuri's damage output, then have him cast Aqua Blade for\nthe remainder of the battle, unless he's learned Air Shot by now, then by\nall means, use that. Alice should be healing as needed, using Blessed\nLight when no healing is needed."
-  },
+  "boss": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Night Stalker",
+      "enemies": [
+        {
+          "name": "Night Stalker",
+          "hp": 2500,
+          "class": "Wind",
+          "drop": "Kid's Room Key"
+        }
+      ],
+      "party": [],
+      "exp": 4000,
+      "cash": 3600,
+      "strategy": "There's not much to worry about with this guy; other than boosting\nhimself up, his physical attacks do a decent amount of damage, but that's\nit. Have Alice whoever is attacked.\n\nHave Yuri fuse into Ifrit, using Ignition to boost his attack power, then\nstart wailing on the Night Stalker with physical attacks. Have Halley\nconstantly use his Strong Earth attack, which should do pretty decent\ndamage to the wind-based enemy. Have Alice keep everyone healed, using\nBlessed Light when she's not healing."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Jack",
+      "enemies": [
+        {
+          "name": "Jack",
+          "hp": 2500,
+          "class": "Water",
+          "drop": "Seal of Speed"
+        }
+      ],
+      "party": [],
+      "exp": 17000,
+      "cash": 15000,
+      "strategy": "Jack will mainly just use his Paralysis attack against you, though you\nshould be guarded by a Zodiac Bracelet or a Crucifix. He will also use\npretty strong physical attacks, and his Slash attack, which will do MAJOR\ndamage to one party member, so make sure to stay healed. He will use\nThera Seeds when his HP starts to drop.\n\nWhen fighting, keep in mind that you have a harder boss battle right\nafter this, with no chance to heal.\n\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. Have Halley cast Strong Earth continuously\n(not Aqua Blade, since Jack is water based) for the whole battle, unless\nhe's learned Air Shot by now, then by all means, use that. Alice should\nbe healing as needed, using Blessed Light when no healing is needed.\n\nIf you're comfortable at the end, take a turn or two to make sure\neveryone is healed to the max and ready for the next battle."
+    },
+    {
+      "type": "BOSS",
+      "name": "Mammon",
+      "enemies": [
+        {
+          "name": "Mammon",
+          "hp": 3600,
+          "class": "Earth",
+          "drop": "Demon Earrings"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 31,
+          "equipment": [
+            "Brass Knuckles",
+            "RedLeatherJacket",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Zodiac Bracelet"
+          ],
+          "fusions": [
+            "Baldo",
+            "Charon",
+            "Ifrit"
+          ]
+        },
+        {
+          "name": "Halley",
+          "level": 29,
+          "equipment": [
+            "Oak Slingshot",
+            "RedLeatherJacket",
+            "Priest Earrings",
+            "Warlock Earrings",
+            "Zodiac Bracelet"
+          ]
+        },
+        {
+          "name": "Alice",
+          "level": 31,
+          "equipment": [
+            "Ever-Bible",
+            "Jasper Cape",
+            "Anne's Cross",
+            "Brsrkr Earrings",
+            "Crucifix"
+          ]
+        }
+      ],
+      "exp": 20000,
+      "cash": 16000,
+      "strategy": "Mammon's normal attacks will hit for pretty decent damage, but its\nbiggest threat is its Petrification attack, which hopefully you've\nprevented with either a Zodiac Bracelet or a Crucifix, though it'll still\ndo a decent amount of damage, even if you did. It will also use a\nShockwave spell, doing quite a bit a damage to your entire party, as well\nas Needlerain, a strong attack to just one party member.\n\nIts Howling skill will replenish its HP by 500+ once it's near dying, but\nlucky for you, Yuri's a powerhouse and will take that away and then some\nin one round.\n\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use his Air Edge on\nYuri to increase Yuri's damage output, then have him cast Aqua Blade for\nthe remainder of the battle, unless he's learned Air Shot by now, then by\nall means, use that. Alice should be healing as needed, using Blessed\nLight when no healing is needed."
+    }
+  ],
   "shops": [],
   "markers": {
     "items": [

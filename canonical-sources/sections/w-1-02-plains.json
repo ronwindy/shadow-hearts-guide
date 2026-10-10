@@ -328,8 +328,8 @@
       {
         "name": "THERA LEAF",
         "raw_tag": "[_THERA LEAF_]",
-        "matched_overview_item": null,
-        "category": null,
+        "matched_overview_item": "Thera Leaf",
+        "category": "items",
         "line": 194,
         "char_offset": [
           12060,
@@ -364,8 +364,8 @@
       {
         "name": "THERA LEAF",
         "raw_tag": "[_THERA LEAF_]",
-        "matched_overview_item": null,
-        "category": null,
+        "matched_overview_item": "Thera Leaf",
+        "category": "items",
         "line": 198,
         "char_offset": [
           12298,

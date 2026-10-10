@@ -123,8 +123,118 @@
       "notes": "Graveyard Malice"
     }
   ],
-  "bosses": [],
-  "boss": null,
+  "bosses": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Olga",
+      "enemies": [
+        {
+          "name": "Olga",
+          "hp": 3300,
+          "class": "Dark",
+          "drop": "Small Jug"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 27,
+          "equipment": [
+            "Brass Knuckles",
+            "RedLeatherJacket",
+            "Mind's Eye",
+            "Loin Guard",
+            "Shell Bracelet"
+          ],
+          "fusions": [
+            "Baldo",
+            "Charon",
+            "Inferno"
+          ]
+        },
+        {
+          "name": "Margarete",
+          "level": 26,
+          "equipment": [
+            "Zeruel",
+            "Jasper Cape",
+            "Charming Pareo",
+            "Weird Bottle",
+            "Shell Bracelet"
+          ]
+        },
+        {
+          "name": "Alice",
+          "level": 26,
+          "equipment": [
+            "Ever-Bible",
+            "Jasper Cape",
+            "Anne's Cross",
+            "Brsrkr Earrings",
+            "Shell Bracelet"
+          ]
+        }
+      ],
+      "exp": null,
+      "cash": null,
+      "strategy": "Olga's Black Fog attack will do MAJOR damage to your party, as well as\nPoison each one of them, so it's a good idea to come in with Shell or\nCosmic Bracelets equipped. Her Nova attack will do decent damage to a\nsingle ally, her Icy Breath attack will hit your whole party for decent\ndamage, and her physical attack just does pathetic damage to a single\nally. Watch out if she uses Mind Assault to steal your MP, as you'll want\nto recover it immediately if she takes too much.\n\nYuri and Alice are obvious choices for this battle, and you could pretty\nmuch pick whomever your favorite is, as they'll all do roughly the same\namount of damage. I recommend Margarete just because I had her at a\nhigher level than Keith and Zhuzhen, therefore having more STR and HP.\nThat, and I find Margarete's Ring easier to hit than Keith's. Zhuzhen\njust sucks up a lot of MP and takes extra turns to replenish it. Okay,\nokay, I really like her too, if that matters any.\n\nFuse Yuri into Baldo (if you didn't get his level 2 Light Fusion, then\nfuse into the Heaven's Fiend, as you'll need the healing) and start\nphysically attacking; with the Mind's Eye equipped, he'll be doing major\ndamage. If you didn't put the Mind's Eye on him, then go with the Nova\nspell instead.\n\nHave Alice cast Holy Edge on Yuri her first round so he can keep piling\nthe damage up, then have her cast it on Margarete her second turn so she\ncan start adding in to the damage. Margarete should also be attacking\nnormally. If for some reason Alice doesn't need to heal, have her cast\nBlessed Light on Olga.\n\nIf a single ally just needs healed, have Alice do it. If two people need\nit, have Alice and Margarete do it. If all three need it, then have Yuri\ndo it, as Olga doesn't mess around, and can easily kill your entire party"
+    }
+  ],
+  "boss": {
+    "type": "SUB-BOSS",
+    "name": "Olga",
+    "enemies": [
+      {
+        "name": "Olga",
+        "hp": 3300,
+        "class": "Dark",
+        "drop": "Small Jug"
+      }
+    ],
+    "party": [
+      {
+        "name": "Yuri",
+        "level": 27,
+        "equipment": [
+          "Brass Knuckles",
+          "RedLeatherJacket",
+          "Mind's Eye",
+          "Loin Guard",
+          "Shell Bracelet"
+        ],
+        "fusions": [
+          "Baldo",
+          "Charon",
+          "Inferno"
+        ]
+      },
+      {
+        "name": "Margarete",
+        "level": 26,
+        "equipment": [
+          "Zeruel",
+          "Jasper Cape",
+          "Charming Pareo",
+          "Weird Bottle",
+          "Shell Bracelet"
+        ]
+      },
+      {
+        "name": "Alice",
+        "level": 26,
+        "equipment": [
+          "Ever-Bible",
+          "Jasper Cape",
+          "Anne's Cross",
+          "Brsrkr Earrings",
+          "Shell Bracelet"
+        ]
+      }
+    ],
+    "exp": null,
+    "cash": null,
+    "strategy": "Olga's Black Fog attack will do MAJOR damage to your party, as well as\nPoison each one of them, so it's a good idea to come in with Shell or\nCosmic Bracelets equipped. Her Nova attack will do decent damage to a\nsingle ally, her Icy Breath attack will hit your whole party for decent\ndamage, and her physical attack just does pathetic damage to a single\nally. Watch out if she uses Mind Assault to steal your MP, as you'll want\nto recover it immediately if she takes too much.\n\nYuri and Alice are obvious choices for this battle, and you could pretty\nmuch pick whomever your favorite is, as they'll all do roughly the same\namount of damage. I recommend Margarete just because I had her at a\nhigher level than Keith and Zhuzhen, therefore having more STR and HP.\nThat, and I find Margarete's Ring easier to hit than Keith's. Zhuzhen\njust sucks up a lot of MP and takes extra turns to replenish it. Okay,\nokay, I really like her too, if that matters any.\n\nFuse Yuri into Baldo (if you didn't get his level 2 Light Fusion, then\nfuse into the Heaven's Fiend, as you'll need the healing) and start\nphysically attacking; with the Mind's Eye equipped, he'll be doing major\ndamage. If you didn't put the Mind's Eye on him, then go with the Nova\nspell instead.\n\nHave Alice cast Holy Edge on Yuri her first round so he can keep piling\nthe damage up, then have her cast it on Margarete her second turn so she\ncan start adding in to the damage. Margarete should also be attacking\nnormally. If for some reason Alice doesn't need to heal, have her cast\nBlessed Light on Olga.\n\nIf a single ally just needs healed, have Alice do it. If two people need\nit, have Alice and Margarete do it. If all three need it, then have Yuri\ndo it, as Olga doesn't mess around, and can easily kill your entire party"
+  },
   "shops": [],
   "markers": {
     "items": [

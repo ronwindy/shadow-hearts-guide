@@ -62,16 +62,35 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 51
+          "level": 51,
+          "equipment": [
+            "Silver Wolf Fang",
+            "Stygian Robe",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ],
+          "fusions": [
+            "Amon",
+            "Czernobog",
+            "Forron"
+          ]
         },
         {
           "name": "Alice",
-          "level": 51
+          "level": 51,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "Oracle Earrings",
+            "Priest Earrings",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 50000,
       "cash": 20000,
-      "strategy": "Atman can still kill Alice in two rounds, so make sure that she stays\nhealed. As for attacks, this time around, Atman will still use\nEradication, but it won't kill; instead, it'll just do a pretty good\namount of damage, as well as reduce SP. He can also attack normally, as\nwell as use Dragon Cry and other strong class spells for decent damage.\nHave Yuri fuse into Amon and rip into Atman with physical attacks, while\nAlice should be using Arc every round to keep their HP maxed. If for some\nreason she gets a free turn, have her cast Advent to help Yuri deal some\ndamage."
+      "strategy": "Atman can still kill Alice in two rounds, so make sure that she stays\nhealed. As for attacks, this time around, Atman will still use\nEradication, but it won't kill; instead, it'll just do a pretty good\namount of damage, as well as reduce SP. He can also attack normally, as\nwell as use Dragon Cry and other strong class spells for decent damage.\n\nHave Yuri fuse into Amon and rip into Atman with physical attacks, while\nAlice should be using Arc every round to keep their HP maxed. If for some\nreason she gets a free turn, have her cast Advent to help Yuri deal some\ndamage."
     }
   ],
   "boss": {
@@ -88,16 +107,35 @@
     "party": [
       {
         "name": "Yuri",
-        "level": 51
+        "level": 51,
+        "equipment": [
+          "Silver Wolf Fang",
+          "Stygian Robe",
+          "Mind's Eye",
+          "Demon Earrings",
+          "Crucifix"
+        ],
+        "fusions": [
+          "Amon",
+          "Czernobog",
+          "Forron"
+        ]
       },
       {
         "name": "Alice",
-        "level": 51
+        "level": 51,
+        "equipment": [
+          "Holy Book-Flesh",
+          "GoldThreadCoat",
+          "Oracle Earrings",
+          "Priest Earrings",
+          "Crucifix"
+        ]
       }
     ],
     "exp": 50000,
     "cash": 20000,
-    "strategy": "Atman can still kill Alice in two rounds, so make sure that she stays\nhealed. As for attacks, this time around, Atman will still use\nEradication, but it won't kill; instead, it'll just do a pretty good\namount of damage, as well as reduce SP. He can also attack normally, as\nwell as use Dragon Cry and other strong class spells for decent damage.\nHave Yuri fuse into Amon and rip into Atman with physical attacks, while\nAlice should be using Arc every round to keep their HP maxed. If for some\nreason she gets a free turn, have her cast Advent to help Yuri deal some\ndamage."
+    "strategy": "Atman can still kill Alice in two rounds, so make sure that she stays\nhealed. As for attacks, this time around, Atman will still use\nEradication, but it won't kill; instead, it'll just do a pretty good\namount of damage, as well as reduce SP. He can also attack normally, as\nwell as use Dragon Cry and other strong class spells for decent damage.\n\nHave Yuri fuse into Amon and rip into Atman with physical attacks, while\nAlice should be using Arc every round to keep their HP maxed. If for some\nreason she gets a free turn, have her cast Advent to help Yuri deal some\ndamage."
   },
   "shops": [],
   "markers": {

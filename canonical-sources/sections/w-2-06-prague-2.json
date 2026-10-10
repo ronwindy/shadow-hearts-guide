@@ -53,8 +53,40 @@
       "notes": ""
     }
   ],
-  "bosses": [],
-  "boss": null,
+  "bosses": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Olga",
+      "enemies": [
+        {
+          "name": "Olga",
+          "hp": 680,
+          "class": "Dark",
+          "drop": "Monk Earrings"
+        }
+      ],
+      "party": [],
+      "exp": 15000,
+      "cash": 13000,
+      "strategy": "Olga will use normal attacks, Blaze, Rock Storm, Nova, Icy Breath, and\nLightning to do decent damage each round, maybe 50-60 HP of damage every\nround. Watch out if she uses Mind Assault to steal your MP, as you'll\nwant to recover it immediately if she takes too much.\n\nCast Blessed Light rounds one and two, then Cure the next if needed.\nBlessed Light two rounds, Cure the third. Lather, rinse, repeat. Oh, and\ndon't forget to recover your SP if needed. Not much else you can do since\nit's just Alice."
+    }
+  ],
+  "boss": {
+    "type": "SUB-BOSS",
+    "name": "Olga",
+    "enemies": [
+      {
+        "name": "Olga",
+        "hp": 680,
+        "class": "Dark",
+        "drop": "Monk Earrings"
+      }
+    ],
+    "party": [],
+    "exp": 15000,
+    "cash": 13000,
+    "strategy": "Olga will use normal attacks, Blaze, Rock Storm, Nova, Icy Breath, and\nLightning to do decent damage each round, maybe 50-60 HP of damage every\nround. Watch out if she uses Mind Assault to steal your MP, as you'll\nwant to recover it immediately if she takes too much.\n\nCast Blessed Light rounds one and two, then Cure the next if needed.\nBlessed Light two rounds, Cure the third. Lather, rinse, repeat. Oh, and\ndon't forget to recover your SP if needed. Not much else you can do since\nit's just Alice."
+  },
   "shops": [
     {
       "name": "Time is Money",

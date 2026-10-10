@@ -134,8 +134,76 @@
       "notes": "Lv. 1 Fusion (Graveyard)"
     }
   ],
-  "bosses": [],
-  "boss": null,
+  "bosses": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Man Dragon, Inferno, Tornado, Heaven's Fiend",
+      "enemies": [
+        {
+          "name": "Man Dragon",
+          "hp": null,
+          "class": "Water",
+          "drop": null
+        },
+        {
+          "name": "Inferno",
+          "hp": null,
+          "class": "Fire",
+          "drop": null
+        },
+        {
+          "name": "Tornado",
+          "hp": null,
+          "class": "Wind",
+          "drop": null
+        },
+        {
+          "name": "Heaven's Fiend",
+          "hp": null,
+          "class": "Light",
+          "drop": null
+        }
+      ],
+      "party": [],
+      "exp": null,
+      "cash": null,
+      "strategy": "Rather than list each sub-boss separately, I'm covering them all in this\none section, since each one requires basically the same strategy.\n\nEach of their HP varies depending on Yuri, so if he's weaker, they'll be\nweaker as well, and vice versa.\n\nIf you have the Fusion with the class opposite of one already, fuse into\nthat monster and use its highest powered magic spell against them for\nmajor damage. If you don't, then just fuse into the Raging Tiger and wail\non them with normal attacks for a few rounds. Make sure to keep yourself\nhealed if you fear that you'll be taken down fairly easily."
+    }
+  ],
+  "boss": {
+    "type": "SUB-BOSS",
+    "name": "Man Dragon, Inferno, Tornado, Heaven's Fiend",
+    "enemies": [
+      {
+        "name": "Man Dragon",
+        "hp": null,
+        "class": "Water",
+        "drop": null
+      },
+      {
+        "name": "Inferno",
+        "hp": null,
+        "class": "Fire",
+        "drop": null
+      },
+      {
+        "name": "Tornado",
+        "hp": null,
+        "class": "Wind",
+        "drop": null
+      },
+      {
+        "name": "Heaven's Fiend",
+        "hp": null,
+        "class": "Light",
+        "drop": null
+      }
+    ],
+    "party": [],
+    "exp": null,
+    "cash": null,
+    "strategy": "Rather than list each sub-boss separately, I'm covering them all in this\none section, since each one requires basically the same strategy.\n\nEach of their HP varies depending on Yuri, so if he's weaker, they'll be\nweaker as well, and vice versa.\n\nIf you have the Fusion with the class opposite of one already, fuse into\nthat monster and use its highest powered magic spell against them for\nmajor damage. If you don't, then just fuse into the Raging Tiger and wail\non them with normal attacks for a few rounds. Make sure to keep yourself\nhealed if you fear that you'll be taken down fairly easily."
+  },
   "shops": [],
   "markers": {
     "items": [],

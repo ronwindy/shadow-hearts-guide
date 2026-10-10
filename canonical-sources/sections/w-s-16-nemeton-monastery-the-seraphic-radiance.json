@@ -92,12 +92,24 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 52
+          "level": 52,
+          "equipment": [
+            "Nightbird Claw",
+            "Stygian Robe",
+            "Mind's Eye",
+            "Brsrkr Earrings",
+            "Comet Mask"
+          ],
+          "fusions": [
+            "Amon",
+            "Lobo",
+            "Forron"
+          ]
         }
       ],
       "exp": 60000,
       "cash": 99999,
-      "strategy": "'———————————————————'   preferably, a Thera Extract.\nFuse into Amon, or if you need some spare SP, then Lobo (since he has the\n2nd highest P-Def at this point, as well as the same P-Atk as Amon). All\nyou'll be doing is physically attacking a round or two, then healing the\nnext. Yep, that's it... pretty boring actually, but any other route will\nlikely get you killed. Trust me, it's worth it.\nIf you find yourself in trouble, try using Third Keys to help dish out\ndamage when you have an opportunity to. If you're STILL having trouble\nwith him, then you'll just have to level up and try again."
+      "strategy": "'———————————————————'   preferably, a Thera Extract.\n\nFuse into Amon, or if you need some spare SP, then Lobo (since he has the\n2nd highest P-Def at this point, as well as the same P-Atk as Amon). All\nyou'll be doing is physically attacking a round or two, then healing the\nnext. Yep, that's it... pretty boring actually, but any other route will\nlikely get you killed. Trust me, it's worth it.\n\nIf you find yourself in trouble, try using Third Keys to help dish out\ndamage when you have an opportunity to. If you're STILL having trouble\nwith him, then you'll just have to level up and try again."
     }
   ],
   "boss": {
@@ -120,12 +132,24 @@
     "party": [
       {
         "name": "Yuri",
-        "level": 52
+        "level": 52,
+        "equipment": [
+          "Nightbird Claw",
+          "Stygian Robe",
+          "Mind's Eye",
+          "Brsrkr Earrings",
+          "Comet Mask"
+        ],
+        "fusions": [
+          "Amon",
+          "Lobo",
+          "Forron"
+        ]
       }
     ],
     "exp": 60000,
     "cash": 99999,
-    "strategy": "'———————————————————'   preferably, a Thera Extract.\nFuse into Amon, or if you need some spare SP, then Lobo (since he has the\n2nd highest P-Def at this point, as well as the same P-Atk as Amon). All\nyou'll be doing is physically attacking a round or two, then healing the\nnext. Yep, that's it... pretty boring actually, but any other route will\nlikely get you killed. Trust me, it's worth it.\nIf you find yourself in trouble, try using Third Keys to help dish out\ndamage when you have an opportunity to. If you're STILL having trouble\nwith him, then you'll just have to level up and try again."
+    "strategy": "'———————————————————'   preferably, a Thera Extract.\n\nFuse into Amon, or if you need some spare SP, then Lobo (since he has the\n2nd highest P-Def at this point, as well as the same P-Atk as Amon). All\nyou'll be doing is physically attacking a round or two, then healing the\nnext. Yep, that's it... pretty boring actually, but any other route will\nlikely get you killed. Trust me, it's worth it.\n\nIf you find yourself in trouble, try using Third Keys to help dish out\ndamage when you have an opportunity to. If you're STILL having trouble\nwith him, then you'll just have to level up and try again."
   },
   "shops": [],
   "markers": {

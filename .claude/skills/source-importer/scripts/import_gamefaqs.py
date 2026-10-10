@@ -159,6 +159,72 @@ def parse_enemy_tables(text: str) -> List[Dict[str, Any]]:
     return enemies_list
 
 
+_PARTY_SEP_RE = re.compile(r'^\|[ ]*\|=+(?:\|=+)*\|')
+_PARTY_NAME_RE = re.compile(r"([A-Za-z][A-Za-z' .]*?)\s*\[(\d+)\]")
+
+
+def parse_party_grid(card_text: str) -> Optional[List[Dict[str, Any]]]:
+    """
+    Parses a boss box's recommended-party grid: header cells "Name [lvl]" (staggered over up to
+    two rows), a |====| separator, equipment rows, one blank row, then fusion rows. Member columns
+    are the `=` runs of the separator; text beside the grid (strategy) is ignored. Returns None
+    when the box has no such grid.
+    """
+    lines = card_text.splitlines()
+    sep_idx = next((i for i, l in enumerate(lines) if _PARTY_SEP_RE.match(l)), None)
+    if sep_idx is None:
+        return None
+    sep_match = _PARTY_SEP_RE.match(lines[sep_idx])
+    spans = [(m.start() + 1, m.end()) for m in re.finditer(r'\|=+', sep_match.group(0))]
+    left, right = spans[0][0] - 1, spans[-1][1] + 1
+
+    def cell(line: str, span: Tuple[int, int]) -> str:
+        return line[span[0]:span[1]].strip()
+
+    header_lines = []
+    k = sep_idx - 1
+    while k >= 0 and k >= sep_idx - 3:
+        region = lines[k][left:right]
+        if _PARTY_NAME_RE.search(region):
+            header_lines.insert(0, lines[k])
+        elif region.strip('| '):
+            break  # not a header row (e.g. the box's enemy table)
+        k -= 1
+    members: List[Dict[str, Any]] = []
+    columns: List[int] = []
+    for hl in header_lines:
+        for ci, span in enumerate(spans):
+            m = _PARTY_NAME_RE.fullmatch(cell(hl, span))
+            if m:
+                members.append({"name": m.group(1).strip(), "level": int(m.group(2))})
+                columns.append(ci)
+    if not members:
+        return None
+
+    section = "equipment"
+    gear: Dict[int, Dict[str, List[str]]] = {ci: {"equipment": [], "fusions": []} for ci in columns}
+    for l in lines[sep_idx + 1:]:
+        if not l.startswith('|'):
+            break
+        region = l[left:right]
+        if not re.search(r'[A-Za-z0-9]', region):
+            if "'" in region:
+                break  # bottom border of the grid
+            if section == "equipment" and any(gear[c]["equipment"] for c in columns):
+                section = "fusions"
+            continue
+        for ci in columns:
+            text = cell(l, spans[ci])
+            if text:
+                gear[ci][section].append(text)
+    for member, ci in zip(members, columns):
+        if gear[ci]["equipment"]:
+            member["equipment"] = gear[ci]["equipment"]
+        if gear[ci]["fusions"]:
+            member["fusions"] = gear[ci]["fusions"]
+    return members
+
+
 def parse_boss_cards(text: str) -> List[Dict[str, Any]]:
     """
     Extracts boss cards into structured objects including boss details, recommended party,
@@ -182,12 +248,13 @@ def parse_boss_cards(text: str) -> List[Dict[str, Any]]:
         # Parse boss enemies at the top of the card
         boss_enemies = []
         enemy_lines = re.findall(
-            r'\|\s*([^|\n]+?)\s*\|\s*(\d+)\s*HP\s*\|\s*Class:\s*([^|\n]+?)\s*\|\s*([^|\n]*?)\s*\|',
+            r'\|\s*([^|\n]+?)\s*\|\s*(\d+\s*HP|HP\s+Varies)\s*\|\s*Class:\s*([^|\n]+?)\s*\|\s*([^|\n]*?)\s*\|',
             card_text
         )
         for be in enemy_lines:
             b_name = be[0].strip()
-            b_hp = int(be[1].strip())
+            hp_digits = re.match(r'\d+', be[1].strip())
+            b_hp = int(hp_digits.group(0)) if hp_digits else None  # "HP Varies" -> None
             b_class = be[2].strip()
             drop_raw = be[3].strip()
             drop = re.sub(r'^[*!^]?\[_\]\s*', '', drop_raw).strip() if drop_raw else None
@@ -199,16 +266,18 @@ def parse_boss_cards(text: str) -> List[Dict[str, Any]]:
             })
             
         # Parse recommended party members (e.g. Yuri [07])
-        party_members = re.findall(r'([A-Za-z]+)\s*\[(\d+)\]', card_text[:1000])
-        party = []
-        seen_party = set()
-        for p_name, p_lvl in party_members:
-            if p_name not in seen_party and p_name not in ["BOSS", "HP"]:
-                seen_party.add(p_name)
-                party.append({
-                    "name": p_name,
-                    "level": int(p_lvl)
-                })
+        party = parse_party_grid(card_text)
+        if party is None:
+            party_members = re.findall(r'([A-Za-z]+)\s*\[(\d+)\]', card_text[:1000])
+            party = []
+            seen_party = set()
+            for p_name, p_lvl in party_members:
+                if p_name not in seen_party and p_name not in ["BOSS", "HP"]:
+                    seen_party.add(p_name)
+                    party.append({
+                        "name": p_name,
+                        "level": int(p_lvl)
+                    })
                 
         # Parse strategy text lines
         lines = card_text.splitlines()
@@ -221,6 +290,8 @@ def parse_boss_cards(text: str) -> List[Dict[str, Any]]:
                     # Exclude ascii border remnants
                     if inner_str and not set(inner_str).issubset(set(".'\"—-_ ")):
                         strat_lines.append(inner_str)
+                    elif not inner_str and strat_lines and strat_lines[-1] != "":
+                        strat_lines.append("")  # blank row = paragraph break (kept for reflow)
             elif l.strip().startswith('\\') and ('EXP' in l or 'Cash' in l):
                 break
                 
@@ -687,6 +758,37 @@ def import_gamefaqs_guide(
     return master_output
 
 
+def rederive_sections(sections_dir: str, dry_run: bool = False) -> None:
+    """
+    Recompute the typed sub-blocks (enemies, bosses, boss, shops, markers) of already-written
+    section files from their stored `text`, without the raw HTML. Only changed fields are
+    rewritten; `text`, overview, items and navigation are never touched.
+    """
+    for fn in sorted(os.listdir(sections_dir)):
+        if not fn.endswith(".json"):
+            continue
+        path = os.path.join(sections_dir, fn)
+        with open(path, encoding="utf-8") as f:
+            sec = json.load(f)
+        text = sec["text"]
+        bosses = parse_boss_cards(text)
+        fresh = {
+            "enemies": parse_enemy_tables(text),
+            "bosses": bosses,
+            "boss": bosses[0] if len(bosses) == 1 else (bosses if bosses else None),
+            "shops": parse_shops(text),
+            "markers": parse_inline_markers(text, sec.get("overview") or {}),
+        }
+        changed = [k for k, v in fresh.items() if sec.get(k) != v]
+        if not changed:
+            continue
+        print(f"{fn}: {', '.join(changed)}")
+        if not dry_run:
+            sec.update(fresh)
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(sec, f, indent=2, ensure_ascii=False)
+
+
 def main():
     """CLI entry point for importing GameFAQs guides into canonical sections."""
     parser = argparse.ArgumentParser(description="Import GameFAQs guide into canonical source and split sections.")
@@ -728,7 +830,20 @@ def main():
         help="Write lightweight master index with metadata and sections_index only (<30 KB) (default: True)"
     )
 
+    parser.add_argument(
+        "--rederive", action="store_true",
+        help="Recompute enemies/bosses/shops/markers in <output-dir>/sections from stored text (no HTML needed)"
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true",
+        help="With --rederive: only list the sections whose fields would change"
+    )
+
     args = parser.parse_args()
+
+    if args.rederive:
+        rederive_sections(os.path.join(args.output_dir, "sections"), dry_run=args.dry_run)
+        return
 
     if not os.path.exists(args.html_file):
         print(f"Error: Specified HTML file not found: {args.html_file}")

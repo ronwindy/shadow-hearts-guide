@@ -123,6 +123,44 @@
   ],
   "bosses": [
     {
+      "type": "SUB-BOSS",
+      "name": "Hellcat, Hellcat",
+      "enemies": [
+        {
+          "name": "Hellcat",
+          "hp": 45,
+          "class": "Light",
+          "drop": "TalismanOfLuck"
+        },
+        {
+          "name": "Hellcat",
+          "hp": 45,
+          "class": "Light",
+          "drop": "TalismanOfLuck"
+        }
+      ],
+      "party": [],
+      "exp": 40,
+      "cash": 300,
+      "strategy": "They're not too bad; just have Yuri fuse into the Raging Tiger and wail\non them with regular attacks while Alice keeps both of you healed with\neither Cure or Thera Leaves."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Felinus",
+      "enemies": [
+        {
+          "name": "Felinus",
+          "hp": 250,
+          "class": "Wind",
+          "drop": "Lottery Ticket"
+        }
+      ],
+      "party": [],
+      "exp": 120,
+      "cash": 600,
+      "strategy": "This lady isn't to be taken lightly. She can use the Wind Fang ability to\nhit everyone for Wind damage, and after a couple of turns, your whole\nparty will be in need of healing, so beware.\n\nSince she's a Wind class, have Yuri fuse into the Raging Tiger and use\nthe Flying Stones skill to do some decent damage to her, followed by\nregular attack. Alice should be keeping everyone healed, as should\nZhuzhen. If no one needs healing then, have Zhuzhen use his Ogre\nFlamedance spell, and Alice should attack normally. As long as you stay\nhealed and don't let Alice go Berserk, you should be fine."
+    },
+    {
       "type": "BOSS",
       "name": "Yamaraja: Earth",
       "enemies": [
@@ -136,51 +174,135 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 7
+          "level": 7,
+          "equipment": [
+            "Leather Gloves",
+            "Cotton Shirt",
+            "Bandanna",
+            "Leather Belt"
+          ],
+          "fusions": [
+            "Death Emperor",
+            "Raging Tiger"
+          ]
         },
         {
           "name": "Alice",
-          "level": 6
+          "level": 6,
+          "equipment": [
+            "Small Bible",
+            "Cotton Blouse",
+            "Bandanna",
+            "Leather Belt"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 6
+          "level": 6,
+          "equipment": [
+            "Oak Staff",
+            "Cotton Shirt",
+            "Bandanna",
+            "Leather Belt"
+          ]
         }
       ],
       "exp": 180,
       "cash": 1800,
-      "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
+      "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\n\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\n\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
     }
   ],
-  "boss": {
-    "type": "BOSS",
-    "name": "Yamaraja: Earth",
-    "enemies": [
-      {
-        "name": "Yamaraja: Earth",
-        "hp": 300,
-        "class": "Water",
-        "drop": "Star Brooch"
-      }
-    ],
-    "party": [
-      {
-        "name": "Yuri",
-        "level": 7
-      },
-      {
-        "name": "Alice",
-        "level": 6
-      },
-      {
-        "name": "Zhuzhen",
-        "level": 6
-      }
-    ],
-    "exp": 180,
-    "cash": 1800,
-    "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
-  },
+  "boss": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Hellcat, Hellcat",
+      "enemies": [
+        {
+          "name": "Hellcat",
+          "hp": 45,
+          "class": "Light",
+          "drop": "TalismanOfLuck"
+        },
+        {
+          "name": "Hellcat",
+          "hp": 45,
+          "class": "Light",
+          "drop": "TalismanOfLuck"
+        }
+      ],
+      "party": [],
+      "exp": 40,
+      "cash": 300,
+      "strategy": "They're not too bad; just have Yuri fuse into the Raging Tiger and wail\non them with regular attacks while Alice keeps both of you healed with\neither Cure or Thera Leaves."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Felinus",
+      "enemies": [
+        {
+          "name": "Felinus",
+          "hp": 250,
+          "class": "Wind",
+          "drop": "Lottery Ticket"
+        }
+      ],
+      "party": [],
+      "exp": 120,
+      "cash": 600,
+      "strategy": "This lady isn't to be taken lightly. She can use the Wind Fang ability to\nhit everyone for Wind damage, and after a couple of turns, your whole\nparty will be in need of healing, so beware.\n\nSince she's a Wind class, have Yuri fuse into the Raging Tiger and use\nthe Flying Stones skill to do some decent damage to her, followed by\nregular attack. Alice should be keeping everyone healed, as should\nZhuzhen. If no one needs healing then, have Zhuzhen use his Ogre\nFlamedance spell, and Alice should attack normally. As long as you stay\nhealed and don't let Alice go Berserk, you should be fine."
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: Earth",
+      "enemies": [
+        {
+          "name": "Yamaraja: Earth",
+          "hp": 300,
+          "class": "Water",
+          "drop": "Star Brooch"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 7,
+          "equipment": [
+            "Leather Gloves",
+            "Cotton Shirt",
+            "Bandanna",
+            "Leather Belt"
+          ],
+          "fusions": [
+            "Death Emperor",
+            "Raging Tiger"
+          ]
+        },
+        {
+          "name": "Alice",
+          "level": 6,
+          "equipment": [
+            "Small Bible",
+            "Cotton Blouse",
+            "Bandanna",
+            "Leather Belt"
+          ]
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 6,
+          "equipment": [
+            "Oak Staff",
+            "Cotton Shirt",
+            "Bandanna",
+            "Leather Belt"
+          ]
+        }
+      ],
+      "exp": 180,
+      "cash": 1800,
+      "strategy": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned\nabove, he's pretty dangerous! If you can't beat him, level up in town for\na while before trying again. I recommend at least level 6 for everyone.\n\nHis Flash Flood will hit an ally for pretty good damage, while his Large\nWhirlpool will hit your entire party for major damage, as well as\npossibly halving your Hit Area on your Ring, so be sure to heal after it\nhits. His physical attacks are also nothing to sneeze at, as they can\ntake away large chunks of HP at a time. Make sure that Alice and Zhuzhen\nare in the back row, and when in doubt, just heal.\n\nHave Yuri fuse into the Raging Tiger and use his Flying Stones attack,\nfollowed by normal attacks. Have Alice stay on healing duty the entire\ntime, and have Zhuzhen cast Ogre Flamedance continuously. If needed, have\nYuri supplement healing since Zhuzhen's fire magic probably hits for more\nthan Yuri does, and make sure to keep Alice from becoming Berserk."
+    }
+  ],
   "shops": [
     {
       "name": "Wandering Merchant",

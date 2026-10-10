@@ -149,20 +149,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 37
+          "level": 37,
+          "equipment": [
+            "Silver Wolf Fang",
+            "Stygian Robe",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Will Power"
+          ],
+          "fusions": [
+            "Baldo",
+            "Czernobog",
+            "Ifrit"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 30
+          "level": 30,
+          "equipment": [
+            "Mauser Prototype",
+            "Snow-White Robe",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Will Power"
+          ]
         },
         {
           "name": "Alice",
-          "level": 36
+          "level": 36,
+          "equipment": [
+            "HolyBook-Martyrs",
+            "Snow-White Robe",
+            "Oracle Earrings",
+            "Priest Earrings",
+            "Will Power"
+          ]
         }
       ],
       "exp": 35000,
       "cash": 18000,
-      "strategy": "Albert's Holy Chest attack will do some decent damage, but even worse,\nit'll reduce the amount of SP your entire party has by half, so making\nsure that you had those Will Power Accessories equipped will help MAJORLY\nin keeping the SP damage from happening. Other than that, he has a\nphysical attack that will do a decent amount of damage, and his\nRevelation attack will also do a decent amount of damage, but to your\nentire party with a chance of Instant Death. He rarely uses Revelation,\nbut if you have problems with the Instant Death it causes, equip some\nLeonardo's Bears and try again.\nHave Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or\nBattle Cry) to boost his attack (as well as Margarete's, if you're using\nIfrit and have the time), then have him attack normally every round.\nAlice should cast Holy Edge on both Yuri and Margarete to start with,\nthen have her be devoted each round to casting Arc to keep everyone\nhealed. Margarete should have the Mind's Eye equipped and attacking\nnormally while being laced with Holy Edge, just like Yuri.\nAny time after dealing over 2000 damage to Albert, he will fuse into\nAmon. Continue with the exact same strategy as above, minus the Holy Edge\nsince Amon is non-class.\nAmon's Atomic Dust spell will do pretty good damage to your entire party,\nand he'll also hit with his physical attacks, which can cause major\ndamage to a single ally. You need to watch out for Demon Rays though, as\nit'll either kill or nearly kill whomever it hits."
+      "strategy": "Albert's Holy Chest attack will do some decent damage, but even worse,\nit'll reduce the amount of SP your entire party has by half, so making\nsure that you had those Will Power Accessories equipped will help MAJORLY\nin keeping the SP damage from happening. Other than that, he has a\nphysical attack that will do a decent amount of damage, and his\nRevelation attack will also do a decent amount of damage, but to your\nentire party with a chance of Instant Death. He rarely uses Revelation,\nbut if you have problems with the Instant Death it causes, equip some\nLeonardo's Bears and try again.\n\nHave Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or\nBattle Cry) to boost his attack (as well as Margarete's, if you're using\nIfrit and have the time), then have him attack normally every round.\nAlice should cast Holy Edge on both Yuri and Margarete to start with,\nthen have her be devoted each round to casting Arc to keep everyone\nhealed. Margarete should have the Mind's Eye equipped and attacking\nnormally while being laced with Holy Edge, just like Yuri.\n\nAny time after dealing over 2000 damage to Albert, he will fuse into\nAmon. Continue with the exact same strategy as above, minus the Holy Edge\nsince Amon is non-class.\n\nAmon's Atomic Dust spell will do pretty good damage to your entire party,\nand he'll also hit with his physical attacks, which can cause major\ndamage to a single ally. You need to watch out for Demon Rays though, as\nit'll either kill or nearly kill whomever it hits."
     }
   ],
   "boss": {
@@ -185,20 +211,46 @@
     "party": [
       {
         "name": "Yuri",
-        "level": 37
+        "level": 37,
+        "equipment": [
+          "Silver Wolf Fang",
+          "Stygian Robe",
+          "Mind's Eye",
+          "Demon Earrings",
+          "Will Power"
+        ],
+        "fusions": [
+          "Baldo",
+          "Czernobog",
+          "Ifrit"
+        ]
       },
       {
         "name": "Margarete",
-        "level": 30
+        "level": 30,
+        "equipment": [
+          "Mauser Prototype",
+          "Snow-White Robe",
+          "Mind's Eye",
+          "Demon Earrings",
+          "Will Power"
+        ]
       },
       {
         "name": "Alice",
-        "level": 36
+        "level": 36,
+        "equipment": [
+          "HolyBook-Martyrs",
+          "Snow-White Robe",
+          "Oracle Earrings",
+          "Priest Earrings",
+          "Will Power"
+        ]
       }
     ],
     "exp": 35000,
     "cash": 18000,
-    "strategy": "Albert's Holy Chest attack will do some decent damage, but even worse,\nit'll reduce the amount of SP your entire party has by half, so making\nsure that you had those Will Power Accessories equipped will help MAJORLY\nin keeping the SP damage from happening. Other than that, he has a\nphysical attack that will do a decent amount of damage, and his\nRevelation attack will also do a decent amount of damage, but to your\nentire party with a chance of Instant Death. He rarely uses Revelation,\nbut if you have problems with the Instant Death it causes, equip some\nLeonardo's Bears and try again.\nHave Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or\nBattle Cry) to boost his attack (as well as Margarete's, if you're using\nIfrit and have the time), then have him attack normally every round.\nAlice should cast Holy Edge on both Yuri and Margarete to start with,\nthen have her be devoted each round to casting Arc to keep everyone\nhealed. Margarete should have the Mind's Eye equipped and attacking\nnormally while being laced with Holy Edge, just like Yuri.\nAny time after dealing over 2000 damage to Albert, he will fuse into\nAmon. Continue with the exact same strategy as above, minus the Holy Edge\nsince Amon is non-class.\nAmon's Atomic Dust spell will do pretty good damage to your entire party,\nand he'll also hit with his physical attacks, which can cause major\ndamage to a single ally. You need to watch out for Demon Rays though, as\nit'll either kill or nearly kill whomever it hits."
+    "strategy": "Albert's Holy Chest attack will do some decent damage, but even worse,\nit'll reduce the amount of SP your entire party has by half, so making\nsure that you had those Will Power Accessories equipped will help MAJORLY\nin keeping the SP damage from happening. Other than that, he has a\nphysical attack that will do a decent amount of damage, and his\nRevelation attack will also do a decent amount of damage, but to your\nentire party with a chance of Instant Death. He rarely uses Revelation,\nbut if you have problems with the Instant Death it causes, equip some\nLeonardo's Bears and try again.\n\nHave Yuri fuse into Ifrit (or Forron if he has it) and cast Ignition (or\nBattle Cry) to boost his attack (as well as Margarete's, if you're using\nIfrit and have the time), then have him attack normally every round.\nAlice should cast Holy Edge on both Yuri and Margarete to start with,\nthen have her be devoted each round to casting Arc to keep everyone\nhealed. Margarete should have the Mind's Eye equipped and attacking\nnormally while being laced with Holy Edge, just like Yuri.\n\nAny time after dealing over 2000 damage to Albert, he will fuse into\nAmon. Continue with the exact same strategy as above, minus the Holy Edge\nsince Amon is non-class.\n\nAmon's Atomic Dust spell will do pretty good damage to your entire party,\nand he'll also hit with his physical attacks, which can cause major\ndamage to a single ally. You need to watch out for Demon Rays though, as\nit'll either kill or nearly kill whomever it hits."
   },
   "shops": [
     {

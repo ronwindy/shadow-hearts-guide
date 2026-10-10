@@ -197,6 +197,54 @@
   ],
   "bosses": [
     {
+      "type": "SUB-BOSS",
+      "name": "Xieshi",
+      "enemies": [
+        {
+          "name": "Xieshi",
+          "hp": 530,
+          "class": "Fire",
+          "drop": "Jade Lariat"
+        }
+      ],
+      "party": [],
+      "exp": 1600,
+      "cash": 4200,
+      "strategy": "His Flaming Arm of Death spell will hit your party for a decent amount of\ndamage, but also can Silence your party, so having Bell Bracelets\nequipped definitely helps a ton. You don't want to be stuck with NO\nhealing abilities at all!\n\nI strongly recommend fusing Yuri in the Man Dragon Fusion if you have it,\nas not only is the enemy fire-based, but you'll be able to heal yourself\nin a pinch, if need be. Have Yuri use the Flash Flood skill repeatedly,\nand it should do massive damage each round. If you don't have Man Dragon,\nthen fuse into Raging Tiger and cast Flying Stones to do some decent\ndamage.\n\nZhuzhen should be healing pretty much the entire time. If he does have a\nfree round, have him use Ogre Flamedance, since it'll still do some okay\ndamage, even though the boss is fire-based."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Baigu",
+      "enemies": [
+        {
+          "name": "Baigu",
+          "hp": 380,
+          "class": "Light",
+          "drop": "Coral Lariat"
+        }
+      ],
+      "party": [],
+      "exp": 1600,
+      "cash": 4200,
+      "strategy": "His Shining Arm of Death spell will hit your party for a decent amount of\ndamage, but also can Paralyze your party, so having Rosewood Bracelets\nequipped definitely helps a ton. You don't want to be stuck with NO\nhealing abilities at all!\n\nNot much of a strategy here, since there's only one thing you can do:\nAttack. Have Alice be the preferred healer, using Thera Seeds and such,\nsince her attack is the weakest. Keep hammering away, and as long as you\nstay healed, Baigu will eventually fall."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Qinggu",
+      "enemies": [
+        {
+          "name": "Qinggu",
+          "hp": 600,
+          "class": "Water",
+          "drop": "Leonardo's Bear"
+        }
+      ],
+      "party": [],
+      "exp": 1800,
+      "cash": 4200,
+      "strategy": "Hopefully you equipped the Pocket Watch on Yuri so that his Judgment Ring\nis unaffected.\n\nNo strategy at all here, since all you can do is Attack and Defend. Just\nbattle back and forth until you eventually win. If you've become\nproficient with your Judgment Ring, try equipping the Flash Badge on Yuri"
+    },
+    {
       "type": "BOSS",
       "name": "Yamaraja: War",
       "enemies": [
@@ -210,51 +258,153 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 17
+          "level": 17,
+          "equipment": [
+            "Steel Claw",
+            "Studded Harness",
+            "Flare Brooch",
+            "Western Belt",
+            "Leonardo's Bear"
+          ],
+          "fusions": [
+            "Heaven's Fiend",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 16
+          "level": 16,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Studded Cap",
+            "Western Belt",
+            "Leonardo's Bear"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 15
+          "level": 15,
+          "equipment": [
+            "Pilgrim's Staff",
+            "Studded Harness",
+            "Studded Cap",
+            "Jade Lariat",
+            "Leonardo's Bear"
+          ]
         }
       ],
       "exp": 2000,
       "cash": 5400,
-      "strategy": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful\nonly as a healer. He also uses the Game of Death, just like Wugui; if you\ndon't have those Leonardo's Bears equipped to everyone, they'll have a\nchance to instantly kill you. His Nightmare attack will hit the entire\nparty for a lot of damage, so make sure heal afterward. The only other\nthing he does is a hellacious physical attack that'll hit for major\ndamage. Once he starts using Nightmare repeatedly, you could be in a bit\nof trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. Margarete should be\nattacking normally, but having her jump in to use Thera Seeds if needed,\nand Zhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+      "strategy": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful\nonly as a healer. He also uses the Game of Death, just like Wugui; if you\ndon't have those Leonardo's Bears equipped to everyone, they'll have a\nchance to instantly kill you. His Nightmare attack will hit the entire\nparty for a lot of damage, so make sure heal afterward. The only other\nthing he does is a hellacious physical attack that'll hit for major\ndamage. Once he starts using Nightmare repeatedly, you could be in a bit\nof trouble.\n\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. Margarete should be\nattacking normally, but having her jump in to use Thera Seeds if needed,\nand Zhuzhen should focus completely on recovery.\n\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
     }
   ],
-  "boss": {
-    "type": "BOSS",
-    "name": "Yamaraja: War",
-    "enemies": [
-      {
-        "name": "Yamaraja: War",
-        "hp": 840,
-        "class": "Dark",
-        "drop": "R.Phoenix Talon"
-      }
-    ],
-    "party": [
-      {
-        "name": "Yuri",
-        "level": 17
-      },
-      {
-        "name": "Margarete",
-        "level": 16
-      },
-      {
-        "name": "Zhuzhen",
-        "level": 15
-      }
-    ],
-    "exp": 2000,
-    "cash": 5400,
-    "strategy": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful\nonly as a healer. He also uses the Game of Death, just like Wugui; if you\ndon't have those Leonardo's Bears equipped to everyone, they'll have a\nchance to instantly kill you. His Nightmare attack will hit the entire\nparty for a lot of damage, so make sure heal afterward. The only other\nthing he does is a hellacious physical attack that'll hit for major\ndamage. Once he starts using Nightmare repeatedly, you could be in a bit\nof trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. Margarete should be\nattacking normally, but having her jump in to use Thera Seeds if needed,\nand Zhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
-  },
+  "boss": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Xieshi",
+      "enemies": [
+        {
+          "name": "Xieshi",
+          "hp": 530,
+          "class": "Fire",
+          "drop": "Jade Lariat"
+        }
+      ],
+      "party": [],
+      "exp": 1600,
+      "cash": 4200,
+      "strategy": "His Flaming Arm of Death spell will hit your party for a decent amount of\ndamage, but also can Silence your party, so having Bell Bracelets\nequipped definitely helps a ton. You don't want to be stuck with NO\nhealing abilities at all!\n\nI strongly recommend fusing Yuri in the Man Dragon Fusion if you have it,\nas not only is the enemy fire-based, but you'll be able to heal yourself\nin a pinch, if need be. Have Yuri use the Flash Flood skill repeatedly,\nand it should do massive damage each round. If you don't have Man Dragon,\nthen fuse into Raging Tiger and cast Flying Stones to do some decent\ndamage.\n\nZhuzhen should be healing pretty much the entire time. If he does have a\nfree round, have him use Ogre Flamedance, since it'll still do some okay\ndamage, even though the boss is fire-based."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Baigu",
+      "enemies": [
+        {
+          "name": "Baigu",
+          "hp": 380,
+          "class": "Light",
+          "drop": "Coral Lariat"
+        }
+      ],
+      "party": [],
+      "exp": 1600,
+      "cash": 4200,
+      "strategy": "His Shining Arm of Death spell will hit your party for a decent amount of\ndamage, but also can Paralyze your party, so having Rosewood Bracelets\nequipped definitely helps a ton. You don't want to be stuck with NO\nhealing abilities at all!\n\nNot much of a strategy here, since there's only one thing you can do:\nAttack. Have Alice be the preferred healer, using Thera Seeds and such,\nsince her attack is the weakest. Keep hammering away, and as long as you\nstay healed, Baigu will eventually fall."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Qinggu",
+      "enemies": [
+        {
+          "name": "Qinggu",
+          "hp": 600,
+          "class": "Water",
+          "drop": "Leonardo's Bear"
+        }
+      ],
+      "party": [],
+      "exp": 1800,
+      "cash": 4200,
+      "strategy": "Hopefully you equipped the Pocket Watch on Yuri so that his Judgment Ring\nis unaffected.\n\nNo strategy at all here, since all you can do is Attack and Defend. Just\nbattle back and forth until you eventually win. If you've become\nproficient with your Judgment Ring, try equipping the Flash Badge on Yuri"
+    },
+    {
+      "type": "BOSS",
+      "name": "Yamaraja: War",
+      "enemies": [
+        {
+          "name": "Yamaraja: War",
+          "hp": 840,
+          "class": "Dark",
+          "drop": "R.Phoenix Talon"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 17,
+          "equipment": [
+            "Steel Claw",
+            "Studded Harness",
+            "Flare Brooch",
+            "Western Belt",
+            "Leonardo's Bear"
+          ],
+          "fusions": [
+            "Heaven's Fiend",
+            "Raging Tiger",
+            "Inferno"
+          ]
+        },
+        {
+          "name": "Margarete",
+          "level": 16,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Studded Cap",
+            "Western Belt",
+            "Leonardo's Bear"
+          ]
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 15,
+          "equipment": [
+            "Pilgrim's Staff",
+            "Studded Harness",
+            "Studded Cap",
+            "Jade Lariat",
+            "Leonardo's Bear"
+          ]
+        }
+      ],
+      "exp": 2000,
+      "cash": 5400,
+      "strategy": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful\nonly as a healer. He also uses the Game of Death, just like Wugui; if you\ndon't have those Leonardo's Bears equipped to everyone, they'll have a\nchance to instantly kill you. His Nightmare attack will hit the entire\nparty for a lot of damage, so make sure heal afterward. The only other\nthing he does is a hellacious physical attack that'll hit for major\ndamage. Once he starts using Nightmare repeatedly, you could be in a bit\nof trouble.\n\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. Margarete should be\nattacking normally, but having her jump in to use Thera Seeds if needed,\nand Zhuzhen should focus completely on recovery.\n\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+    }
+  ],
   "shops": [
     {
       "name": "Kato Pachimon General Store",

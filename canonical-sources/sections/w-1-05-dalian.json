@@ -120,20 +120,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 10
+          "level": 10,
+          "equipment": [
+            "Knuckle Blade",
+            "Leather Vest",
+            "Leather Cap",
+            "Casual Belt",
+            "Jade Lariat"
+          ],
+          "fusions": [
+            "Death Emperor",
+            "Heaven's Fiend",
+            "Tornado"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 10
+          "level": 10,
+          "equipment": [
+            "Type 94 Pistol",
+            "Leather Skirt",
+            "Leather Cap",
+            "Casual Belt",
+            "Shell Bracelet"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 10
+          "level": 10,
+          "equipment": [
+            "Hexagonal Staff",
+            "Leather Vest",
+            "Leather Cap",
+            "Casual Belt",
+            "Star Brooch"
+          ]
         }
       ],
       "exp": 720,
       "cash": 3600,
-      "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+      "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\n\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\n\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\n\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
     }
   ],
   "boss": {
@@ -150,20 +176,46 @@
     "party": [
       {
         "name": "Yuri",
-        "level": 10
+        "level": 10,
+        "equipment": [
+          "Knuckle Blade",
+          "Leather Vest",
+          "Leather Cap",
+          "Casual Belt",
+          "Jade Lariat"
+        ],
+        "fusions": [
+          "Death Emperor",
+          "Heaven's Fiend",
+          "Tornado"
+        ]
       },
       {
         "name": "Margarete",
-        "level": 10
+        "level": 10,
+        "equipment": [
+          "Type 94 Pistol",
+          "Leather Skirt",
+          "Leather Cap",
+          "Casual Belt",
+          "Shell Bracelet"
+        ]
       },
       {
         "name": "Zhuzhen",
-        "level": 10
+        "level": 10,
+        "equipment": [
+          "Hexagonal Staff",
+          "Leather Vest",
+          "Leather Cap",
+          "Casual Belt",
+          "Star Brooch"
+        ]
       }
     ],
     "exp": 720,
     "cash": 3600,
-    "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
+    "strategy": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to\nfuse into the Raging Tiger.\n\nIts Shockwave attack will do decent damage to each character, while its\nFlying Stones attack will do major damage, but to only one character.\nHowever, its PHYSICAL attacks are the ones you have to worry about; it\ncan do a three hit attack that will easily kill a party member, even if\nthey're in the back row, so be sure to stay healed.\n\nIf you have the Tornado Fusion, have Yuri fuse into that; otherwise, have\nhim fuse into the Death Emperor. Use his Wind Shear/Dark Messenger Spells\ncontinuously; if he runs out of MP, have either him or someone else\nreplenish it so he can keep dishing out the damage. Have Margarete on\nhealing duty, using Thera Leaves on whoever needs them, as well as using\nMana Leaves on Yuri and Zhuzhen to keep their MP up. Have Zhuzhen use his\nOgre Flamedance continuously, stopping to heal if someone needs it.\n\nYuri should be doing the most damage if he has the Tornado Fusion, so\nkeep his MP up while keeping everyone else healed."
   },
   "shops": [
     {

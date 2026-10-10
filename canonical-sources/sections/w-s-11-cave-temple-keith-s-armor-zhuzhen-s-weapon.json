@@ -103,20 +103,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 40
+          "level": 40,
+          "equipment": [
+            "Silver Wolf Fang",
+            "Stygian Robe",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ],
+          "fusions": [
+            "Amon",
+            "Czernobog",
+            "Ifrit"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 35
+          "level": 35,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ]
         },
         {
           "name": "Alice",
-          "level": 40
+          "level": 40,
+          "equipment": [
+            "Holy Book-Flesh",
+            "Snow-White Robe",
+            "Oracle Earrings",
+            "Priest Earrings",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 120,
       "cash": 600,
-      "strategy": "Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually\nstart the battle with the !!! attack, reducing a party member's HP to 1,\nor Divine Punishment, doing pretty good damage to your entire party, as\nwell as causing various status effects, so make sure to heal them\nstraight away. He will continue using them throughout the battle, and his\nphysical attacks will hit an ally for pretty decent damage as well.\nNote that he won't take hardly any damage from your special attacks, so\nfocus only on physical attacks. Have Yuri fuse into Amon and attack\nnormally while Alice casts Arc as needed, leaving Margarete to also\nattack normally, supporting Alice when needed to replenish Yuri's SP, as\nwell as Alice's MP.\nCherubim isn't really that complicated, so as long as you have Crucifixes\nequipped to everyone and have Alice use Arc every round, then it's just a\nmatter of taking the time to whittle away his HP. Just make sure not to\nlet anyone go Berserk.\nNOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Peak Staff."
+      "strategy": "Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually\nstart the battle with the !!! attack, reducing a party member's HP to 1,\nor Divine Punishment, doing pretty good damage to your entire party, as\nwell as causing various status effects, so make sure to heal them\nstraight away. He will continue using them throughout the battle, and his\nphysical attacks will hit an ally for pretty decent damage as well.\n\nNote that he won't take hardly any damage from your special attacks, so\nfocus only on physical attacks. Have Yuri fuse into Amon and attack\nnormally while Alice casts Arc as needed, leaving Margarete to also\nattack normally, supporting Alice when needed to replenish Yuri's SP, as\nwell as Alice's MP.\n\nCherubim isn't really that complicated, so as long as you have Crucifixes\nequipped to everyone and have Alice use Arc every round, then it's just a\nmatter of taking the time to whittle away his HP. Just make sure not to\nlet anyone go Berserk.\n\nNOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Peak Staff."
     }
   ],
   "boss": {
@@ -133,20 +159,46 @@
     "party": [
       {
         "name": "Yuri",
-        "level": 40
+        "level": 40,
+        "equipment": [
+          "Silver Wolf Fang",
+          "Stygian Robe",
+          "Mind's Eye",
+          "Demon Earrings",
+          "Crucifix"
+        ],
+        "fusions": [
+          "Amon",
+          "Czernobog",
+          "Ifrit"
+        ]
       },
       {
         "name": "Margarete",
-        "level": 35
+        "level": 35,
+        "equipment": [
+          "10 Gauge",
+          "Leather Suit",
+          "Mind's Eye",
+          "Demon Earrings",
+          "Crucifix"
+        ]
       },
       {
         "name": "Alice",
-        "level": 40
+        "level": 40,
+        "equipment": [
+          "Holy Book-Flesh",
+          "Snow-White Robe",
+          "Oracle Earrings",
+          "Priest Earrings",
+          "Crucifix"
+        ]
       }
     ],
     "exp": 120,
     "cash": 600,
-    "strategy": "Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually\nstart the battle with the !!! attack, reducing a party member's HP to 1,\nor Divine Punishment, doing pretty good damage to your entire party, as\nwell as causing various status effects, so make sure to heal them\nstraight away. He will continue using them throughout the battle, and his\nphysical attacks will hit an ally for pretty decent damage as well.\nNote that he won't take hardly any damage from your special attacks, so\nfocus only on physical attacks. Have Yuri fuse into Amon and attack\nnormally while Alice casts Arc as needed, leaving Margarete to also\nattack normally, supporting Alice when needed to replenish Yuri's SP, as\nwell as Alice's MP.\nCherubim isn't really that complicated, so as long as you have Crucifixes\nequipped to everyone and have Alice use Arc every round, then it's just a\nmatter of taking the time to whittle away his HP. Just make sure not to\nlet anyone go Berserk.\nNOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Peak Staff."
+    "strategy": "Ah, Brain Hopper; I miss this music. In any case, Cherubim will usually\nstart the battle with the !!! attack, reducing a party member's HP to 1,\nor Divine Punishment, doing pretty good damage to your entire party, as\nwell as causing various status effects, so make sure to heal them\nstraight away. He will continue using them throughout the battle, and his\nphysical attacks will hit an ally for pretty decent damage as well.\n\nNote that he won't take hardly any damage from your special attacks, so\nfocus only on physical attacks. Have Yuri fuse into Amon and attack\nnormally while Alice casts Arc as needed, leaving Margarete to also\nattack normally, supporting Alice when needed to replenish Yuri's SP, as\nwell as Alice's MP.\n\nCherubim isn't really that complicated, so as long as you have Crucifixes\nequipped to everyone and have Alice use Arc every round, then it's just a\nmatter of taking the time to whittle away his HP. Just make sure not to\nlet anyone go Berserk.\n\nNOTE     Once the battle is over, you'll receive Zhuzhen's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Peak Staff."
   },
   "shops": [],
   "markers": {

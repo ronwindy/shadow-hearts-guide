@@ -98,20 +98,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 42
+          "level": 42,
+          "equipment": [
+            "Silver Wolf Fang",
+            "Stygian Robe",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ],
+          "fusions": [
+            "Amon",
+            "Czernobog",
+            "Ifrit"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 38
+          "level": 38,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ]
         },
         {
           "name": "Alice",
-          "level": 42
+          "level": 42,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "Oracle Earrings",
+            "Priest Earrings",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 60000,
       "cash": 38000,
-      "strategy": "Seraphim hits pretty hard, enough to kill right off the bat, so once\nagain, Alice will be doing nothing but Arc this battle. Other than his\nnormal attacks, he will use Divine Punishment, doing pretty good damage\nto your entire party, as well as causing various status effects, so make\nsure to heal them straight away.\nHave Yuri fuse into Amon and keep at him with physical attacks, and have\nMargarete attack normally as well, taking breaks to help replenish MP and\nSP as needed. Since Seraphim has lower HP than Cherubim, you probably\nwon't have to replenish either MP nor SP.\nLike Cherubim, Seraphim isn't really that complicated, so as long as you\nhave Crucifixes equipped to everyone and have Alice use Arc every round,\nthen it's just a matter of taking the time to whittle away his HP. It\nactually won't take nearly as long, since Seraphim only has 40% the HP\nthat Cherubim had.\nNOTE     Once the battle is over, you'll receive Halley's best weapon,\n¯¯¯¯¯¯¯¯   the Volt Snipe."
+      "strategy": "Seraphim hits pretty hard, enough to kill right off the bat, so once\nagain, Alice will be doing nothing but Arc this battle. Other than his\nnormal attacks, he will use Divine Punishment, doing pretty good damage\nto your entire party, as well as causing various status effects, so make\nsure to heal them straight away.\n\nHave Yuri fuse into Amon and keep at him with physical attacks, and have\nMargarete attack normally as well, taking breaks to help replenish MP and\nSP as needed. Since Seraphim has lower HP than Cherubim, you probably\nwon't have to replenish either MP nor SP.\n\nLike Cherubim, Seraphim isn't really that complicated, so as long as you\nhave Crucifixes equipped to everyone and have Alice use Arc every round,\nthen it's just a matter of taking the time to whittle away his HP. It\nactually won't take nearly as long, since Seraphim only has 40% the HP\nthat Cherubim had.\n\nNOTE     Once the battle is over, you'll receive Halley's best weapon,\n¯¯¯¯¯¯¯¯   the Volt Snipe."
     }
   ],
   "boss": {
@@ -128,20 +154,46 @@
     "party": [
       {
         "name": "Yuri",
-        "level": 42
+        "level": 42,
+        "equipment": [
+          "Silver Wolf Fang",
+          "Stygian Robe",
+          "Mind's Eye",
+          "Demon Earrings",
+          "Crucifix"
+        ],
+        "fusions": [
+          "Amon",
+          "Czernobog",
+          "Ifrit"
+        ]
       },
       {
         "name": "Margarete",
-        "level": 38
+        "level": 38,
+        "equipment": [
+          "10 Gauge",
+          "Leather Suit",
+          "Mind's Eye",
+          "Demon Earrings",
+          "Crucifix"
+        ]
       },
       {
         "name": "Alice",
-        "level": 42
+        "level": 42,
+        "equipment": [
+          "Holy Book-Flesh",
+          "GoldThreadCoat",
+          "Oracle Earrings",
+          "Priest Earrings",
+          "Crucifix"
+        ]
       }
     ],
     "exp": 60000,
     "cash": 38000,
-    "strategy": "Seraphim hits pretty hard, enough to kill right off the bat, so once\nagain, Alice will be doing nothing but Arc this battle. Other than his\nnormal attacks, he will use Divine Punishment, doing pretty good damage\nto your entire party, as well as causing various status effects, so make\nsure to heal them straight away.\nHave Yuri fuse into Amon and keep at him with physical attacks, and have\nMargarete attack normally as well, taking breaks to help replenish MP and\nSP as needed. Since Seraphim has lower HP than Cherubim, you probably\nwon't have to replenish either MP nor SP.\nLike Cherubim, Seraphim isn't really that complicated, so as long as you\nhave Crucifixes equipped to everyone and have Alice use Arc every round,\nthen it's just a matter of taking the time to whittle away his HP. It\nactually won't take nearly as long, since Seraphim only has 40% the HP\nthat Cherubim had.\nNOTE     Once the battle is over, you'll receive Halley's best weapon,\n¯¯¯¯¯¯¯¯   the Volt Snipe."
+    "strategy": "Seraphim hits pretty hard, enough to kill right off the bat, so once\nagain, Alice will be doing nothing but Arc this battle. Other than his\nnormal attacks, he will use Divine Punishment, doing pretty good damage\nto your entire party, as well as causing various status effects, so make\nsure to heal them straight away.\n\nHave Yuri fuse into Amon and keep at him with physical attacks, and have\nMargarete attack normally as well, taking breaks to help replenish MP and\nSP as needed. Since Seraphim has lower HP than Cherubim, you probably\nwon't have to replenish either MP nor SP.\n\nLike Cherubim, Seraphim isn't really that complicated, so as long as you\nhave Crucifixes equipped to everyone and have Alice use Arc every round,\nthen it's just a matter of taking the time to whittle away his HP. It\nactually won't take nearly as long, since Seraphim only has 40% the HP\nthat Cherubim had.\n\nNOTE     Once the battle is over, you'll receive Halley's best weapon,\n¯¯¯¯¯¯¯¯   the Volt Snipe."
   },
   "shops": [],
   "markers": {

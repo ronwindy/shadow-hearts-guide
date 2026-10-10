@@ -83,8 +83,40 @@
       "notes": "S-Atk Resistant"
     }
   ],
-  "bosses": [],
-  "boss": null,
+  "bosses": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Wugui",
+      "enemies": [
+        {
+          "name": "Wugui",
+          "hp": 330,
+          "class": "Dark",
+          "drop": "Weird Bottle"
+        }
+      ],
+      "party": [],
+      "exp": 1500,
+      "cash": 4500,
+      "strategy": "As with the battle as his father, have Yuri fuse into your physically\nstrongest Soul, Raging Tiger, and just rip into Wugui with physical\nattacks. He doesn't pose much of a threat, but if you let the battle go\non too long, make sure to heal."
+    }
+  ],
+  "boss": {
+    "type": "SUB-BOSS",
+    "name": "Wugui",
+    "enemies": [
+      {
+        "name": "Wugui",
+        "hp": 330,
+        "class": "Dark",
+        "drop": "Weird Bottle"
+      }
+    ],
+    "party": [],
+    "exp": 1500,
+    "cash": 4500,
+    "strategy": "As with the battle as his father, have Yuri fuse into your physically\nstrongest Soul, Raging Tiger, and just rip into Wugui with physical\nattacks. He doesn't pose much of a threat, but if you let the battle go\non too long, make sure to heal."
+  },
   "shops": [
     {
       "name": "Mika's House",

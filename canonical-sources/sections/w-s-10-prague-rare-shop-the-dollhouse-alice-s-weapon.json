@@ -108,20 +108,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 38
+          "level": 38,
+          "equipment": [
+            "Silver Wolf Fang",
+            "Stygian Robe",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ],
+          "fusions": [
+            "Amon",
+            "Czernobog",
+            "Ifrit"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 33
+          "level": 33,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Crucifix"
+          ]
         },
         {
           "name": "Alice",
-          "level": 38
+          "level": 38,
+          "equipment": [
+            "HolyBook-Martyrs",
+            "Snow-White Robe",
+            "Oracle Earrings",
+            "Priest Earrings",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 48000,
       "cash": 27500,
-      "strategy": "She has several different spells that will increase her stats by 25-30%,\nso once she's done doing that, be very careful, as they went from very\nstrong to deadly. She WILL almost kill Yuri in one set of attacks once\nher attack is boosted, she's THAT strong! Alice won't have time to do\nanything except Arc once Orb Chaos starts attacking.\nOther than the boosting spells, Orb Chaos attacks normally for major\ndamage, and uses a spell called Expression that can not only do pretty\ngood damage, but can also Paralyze your entire party! If you don't have\nthose Crucifixes equipped, good luck winning, especially when she starts\nusing Expression each turn, one after another.\nEven though he may barely have enough SP to do it, have Yuri fuse into\nAmon, then have one of the girls use a Pure Seed/Root on him to give him\nsome breathing room, then have him attack normally. Alice should be\ncasting Arc every round, and Margarete should be attacking normally every\nround, since both she and Yuri should have Mind's Eyes equipped.\nNOTE     Once the battle is over, you'll receive Alice's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Book-Flesh."
+      "strategy": "She has several different spells that will increase her stats by 25-30%,\nso once she's done doing that, be very careful, as they went from very\nstrong to deadly. She WILL almost kill Yuri in one set of attacks once\nher attack is boosted, she's THAT strong! Alice won't have time to do\nanything except Arc once Orb Chaos starts attacking.\n\nOther than the boosting spells, Orb Chaos attacks normally for major\ndamage, and uses a spell called Expression that can not only do pretty\ngood damage, but can also Paralyze your entire party! If you don't have\nthose Crucifixes equipped, good luck winning, especially when she starts\nusing Expression each turn, one after another.\n\nEven though he may barely have enough SP to do it, have Yuri fuse into\nAmon, then have one of the girls use a Pure Seed/Root on him to give him\nsome breathing room, then have him attack normally. Alice should be\ncasting Arc every round, and Margarete should be attacking normally every\nround, since both she and Yuri should have Mind's Eyes equipped.\n\nNOTE     Once the battle is over, you'll receive Alice's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Book-Flesh."
     }
   ],
   "boss": {
@@ -138,20 +164,46 @@
     "party": [
       {
         "name": "Yuri",
-        "level": 38
+        "level": 38,
+        "equipment": [
+          "Silver Wolf Fang",
+          "Stygian Robe",
+          "Mind's Eye",
+          "Demon Earrings",
+          "Crucifix"
+        ],
+        "fusions": [
+          "Amon",
+          "Czernobog",
+          "Ifrit"
+        ]
       },
       {
         "name": "Margarete",
-        "level": 33
+        "level": 33,
+        "equipment": [
+          "10 Gauge",
+          "Leather Suit",
+          "Mind's Eye",
+          "Demon Earrings",
+          "Crucifix"
+        ]
       },
       {
         "name": "Alice",
-        "level": 38
+        "level": 38,
+        "equipment": [
+          "HolyBook-Martyrs",
+          "Snow-White Robe",
+          "Oracle Earrings",
+          "Priest Earrings",
+          "Crucifix"
+        ]
       }
     ],
     "exp": 48000,
     "cash": 27500,
-    "strategy": "She has several different spells that will increase her stats by 25-30%,\nso once she's done doing that, be very careful, as they went from very\nstrong to deadly. She WILL almost kill Yuri in one set of attacks once\nher attack is boosted, she's THAT strong! Alice won't have time to do\nanything except Arc once Orb Chaos starts attacking.\nOther than the boosting spells, Orb Chaos attacks normally for major\ndamage, and uses a spell called Expression that can not only do pretty\ngood damage, but can also Paralyze your entire party! If you don't have\nthose Crucifixes equipped, good luck winning, especially when she starts\nusing Expression each turn, one after another.\nEven though he may barely have enough SP to do it, have Yuri fuse into\nAmon, then have one of the girls use a Pure Seed/Root on him to give him\nsome breathing room, then have him attack normally. Alice should be\ncasting Arc every round, and Margarete should be attacking normally every\nround, since both she and Yuri should have Mind's Eyes equipped.\nNOTE     Once the battle is over, you'll receive Alice's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Book-Flesh."
+    "strategy": "She has several different spells that will increase her stats by 25-30%,\nso once she's done doing that, be very careful, as they went from very\nstrong to deadly. She WILL almost kill Yuri in one set of attacks once\nher attack is boosted, she's THAT strong! Alice won't have time to do\nanything except Arc once Orb Chaos starts attacking.\n\nOther than the boosting spells, Orb Chaos attacks normally for major\ndamage, and uses a spell called Expression that can not only do pretty\ngood damage, but can also Paralyze your entire party! If you don't have\nthose Crucifixes equipped, good luck winning, especially when she starts\nusing Expression each turn, one after another.\n\nEven though he may barely have enough SP to do it, have Yuri fuse into\nAmon, then have one of the girls use a Pure Seed/Root on him to give him\nsome breathing room, then have him attack normally. Alice should be\ncasting Arc every round, and Margarete should be attacking normally every\nround, since both she and Yuri should have Mind's Eyes equipped.\n\nNOTE     Once the battle is over, you'll receive Alice's best weapon,\n¯¯¯¯¯¯¯¯   the Holy Book-Flesh."
   },
   "shops": [],
   "markers": {

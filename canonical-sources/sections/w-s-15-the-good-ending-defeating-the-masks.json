@@ -104,8 +104,124 @@
       "notes": ""
     }
   ],
-  "bosses": [],
-  "boss": null,
+  "bosses": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Grail Mask, Gold Mask, Staff Mask, Sword Mask, Grail Mask, Gold Mask, Staff Mask, Sword Mask",
+      "enemies": [
+        {
+          "name": "Grail Mask",
+          "hp": 2000,
+          "class": "Water",
+          "drop": "Amber Ring"
+        },
+        {
+          "name": "Gold Mask",
+          "hp": 2625,
+          "class": "Earth",
+          "drop": "Carnelian Ring"
+        },
+        {
+          "name": "Staff Mask",
+          "hp": 2250,
+          "class": "Fire",
+          "drop": "Lazurite Ring"
+        },
+        {
+          "name": "Sword Mask",
+          "hp": 1875,
+          "class": "Wind",
+          "drop": "Obsidian Ring"
+        },
+        {
+          "name": "Grail Mask",
+          "hp": 1,
+          "class": "Water",
+          "drop": "Thera Leaf"
+        },
+        {
+          "name": "Gold Mask",
+          "hp": 1,
+          "class": "Earth",
+          "drop": "Thera Leaf"
+        },
+        {
+          "name": "Staff Mask",
+          "hp": 1,
+          "class": "Fire",
+          "drop": "Thera Leaf"
+        },
+        {
+          "name": "Sword Mask",
+          "hp": 1,
+          "class": "Wind",
+          "drop": "Thera Leaf"
+        }
+      ],
+      "party": [],
+      "exp": null,
+      "cash": null,
+      "strategy": "1st Encounter = Stronger form, must be fought in order for easy battles.\n2nd Encounter = Weaker form, defeated once and have lost their powers.\n\n1) Grail Mask - He's a joke. Your hit area will be DOUBLED, and he's\neasily damaged by physical attacks. He should only take two turns, max.\n\n2) Gold Mask - A little harder than the Grail Mask, but not by much. He\ncan't be harmed by physical attacks, so you must take him out with\nnothing but special attacks. It'll take longer than the Grail Mask, but\nhe's not a threat at all.\n\n3) Staff Mask - A little easier than the Gold Mask, but not by much. He's\njust the opposite of the Gold Mask; he can't be harmed by special\nattacks, so you must take him out with nothing but physical attacks, so\nit shouldn't be a problem. Again, not very much of a threat at this\npoint.\n\n4) Sword Mask - The last of the Masks is actually almost as easy as the\nfirst! He doesn't have any strong points like the last two, nor do you\nhave a wider hit area, but either way, it should only take two,\npossibly three rounds to take this one out.\n\n5) Round Two! - Once you have defeated all Four Masks, keep your Malice\nin the red and wait for them to come around to fight once more! This\ntime around, they don't need to be fought in any order, and they only\ntake one hit to die. Make sure to do this so you get all eight of their\nentries for the Monster Library."
+    }
+  ],
+  "boss": {
+    "type": "SUB-BOSS",
+    "name": "Grail Mask, Gold Mask, Staff Mask, Sword Mask, Grail Mask, Gold Mask, Staff Mask, Sword Mask",
+    "enemies": [
+      {
+        "name": "Grail Mask",
+        "hp": 2000,
+        "class": "Water",
+        "drop": "Amber Ring"
+      },
+      {
+        "name": "Gold Mask",
+        "hp": 2625,
+        "class": "Earth",
+        "drop": "Carnelian Ring"
+      },
+      {
+        "name": "Staff Mask",
+        "hp": 2250,
+        "class": "Fire",
+        "drop": "Lazurite Ring"
+      },
+      {
+        "name": "Sword Mask",
+        "hp": 1875,
+        "class": "Wind",
+        "drop": "Obsidian Ring"
+      },
+      {
+        "name": "Grail Mask",
+        "hp": 1,
+        "class": "Water",
+        "drop": "Thera Leaf"
+      },
+      {
+        "name": "Gold Mask",
+        "hp": 1,
+        "class": "Earth",
+        "drop": "Thera Leaf"
+      },
+      {
+        "name": "Staff Mask",
+        "hp": 1,
+        "class": "Fire",
+        "drop": "Thera Leaf"
+      },
+      {
+        "name": "Sword Mask",
+        "hp": 1,
+        "class": "Wind",
+        "drop": "Thera Leaf"
+      }
+    ],
+    "party": [],
+    "exp": null,
+    "cash": null,
+    "strategy": "1st Encounter = Stronger form, must be fought in order for easy battles.\n2nd Encounter = Weaker form, defeated once and have lost their powers.\n\n1) Grail Mask - He's a joke. Your hit area will be DOUBLED, and he's\neasily damaged by physical attacks. He should only take two turns, max.\n\n2) Gold Mask - A little harder than the Grail Mask, but not by much. He\ncan't be harmed by physical attacks, so you must take him out with\nnothing but special attacks. It'll take longer than the Grail Mask, but\nhe's not a threat at all.\n\n3) Staff Mask - A little easier than the Gold Mask, but not by much. He's\njust the opposite of the Gold Mask; he can't be harmed by special\nattacks, so you must take him out with nothing but physical attacks, so\nit shouldn't be a problem. Again, not very much of a threat at this\npoint.\n\n4) Sword Mask - The last of the Masks is actually almost as easy as the\nfirst! He doesn't have any strong points like the last two, nor do you\nhave a wider hit area, but either way, it should only take two,\npossibly three rounds to take this one out.\n\n5) Round Two! - Once you have defeated all Four Masks, keep your Malice\nin the red and wait for them to come around to fight once more! This\ntime around, they don't need to be fought in any order, and they only\ntake one hit to die. Make sure to do this so you get all eight of their\nentries for the Monster Library."
+  },
   "shops": [],
   "markers": {
     "items": [],

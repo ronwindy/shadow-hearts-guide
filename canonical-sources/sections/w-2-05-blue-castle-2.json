@@ -115,14 +115,58 @@
   "bosses": [
     {
       "type": "BOSS",
-      "name": "Yuri, Fox Face",
+      "name": "Yuri",
       "enemies": [
         {
           "name": "Yuri",
           "hp": 1400,
           "class": "Dark",
           "drop": null
+        }
+      ],
+      "party": [
+        {
+          "name": "Keith",
+          "level": 23,
+          "equipment": [
+            "Royal Estoc",
+            "Chainmail Vest",
+            "Mind's Eye",
+            "Metal Belt",
+            "Leonardo's Bear"
+          ]
         },
+        {
+          "name": "Alice",
+          "level": 23,
+          "equipment": [
+            "Tome of the Sun",
+            "Silk Bolero",
+            "Anne's Cross",
+            "Face Guard",
+            "Leonardo's Bear"
+          ]
+        },
+        {
+          "name": "Zhuzhen",
+          "level": 24,
+          "equipment": [
+            "Hermit's Staff",
+            "Chainmail Vest",
+            "Face Guard",
+            "Warlock Earrings",
+            "Leonardo's Bear"
+          ]
+        }
+      ],
+      "exp": null,
+      "cash": null,
+      "strategy": "so heal the survivor immediately. Yuri has quite a bit of HP, and hits\nharder than anyone else thus far, so healing will be your immediate\npriority.\n\nAfter just about 400 HP worth of damage, Yuri will fuse into the Death\nEmperor, starting to use Dark Messenger. As long as you have Leonardo's\nBears equipped, you won't die instantly, but you'll still be hit pretty\nhard. Again, to reiterate: healing will be your immediate priority. Have\ntwo people healing, if needed.\n\nFor the first round, have Alice cast Holy Edge on Keith to add a Light\nclass to his attack, then devote Alice to healing. There most likely\nwon't be a round where she can attack, but if you can, then use Blessed\nLight. Zhuzhen should be using Corpse Arm every round, and Keith should\nbe attacking normally every round, with his weapon laced with Holy Edge.\nWhoever is doing the least amount of damage needs to be helping Alice\nheal if it's needed.\n\nLike the last few battles, it'll probably take long enough that you'll\nneed to replenish your MP and SP as well. Again, have whoever is doing\nthe least amount of damage take care of this."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Fox Face",
+      "enemies": [
         {
           "name": "Fox Face",
           "hp": 555,
@@ -130,60 +174,80 @@
           "drop": "Brass Knuckles"
         }
       ],
+      "party": [],
+      "exp": 13000,
+      "cash": 12500,
+      "strategy": "He won't fuse into the Death Emperor this time, but he'll still use his\n!!! attack. When he does, IMMEDIATELY use a Thera Seed, and DON'T even\ntry to hit the 'Perfect!!' mark; just get Yuri away from 1 HP, and you'll\nbe fine.\n\nFuse into either the Raging Tiger or Inferno (with Fighting Spirit) and\njust start wailing away on him with physical attacks. Just keep trading\nblows, using Thera Seeds to heal whenever your HP starts to get low, and\nESPECIALLY after the !!! attack."
+    }
+  ],
+  "boss": [
+    {
+      "type": "BOSS",
+      "name": "Yuri",
+      "enemies": [
+        {
+          "name": "Yuri",
+          "hp": 1400,
+          "class": "Dark",
+          "drop": null
+        }
+      ],
       "party": [
         {
           "name": "Keith",
-          "level": 23
+          "level": 23,
+          "equipment": [
+            "Royal Estoc",
+            "Chainmail Vest",
+            "Mind's Eye",
+            "Metal Belt",
+            "Leonardo's Bear"
+          ]
         },
         {
           "name": "Alice",
-          "level": 23
+          "level": 23,
+          "equipment": [
+            "Tome of the Sun",
+            "Silk Bolero",
+            "Anne's Cross",
+            "Face Guard",
+            "Leonardo's Bear"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 24
+          "level": 24,
+          "equipment": [
+            "Hermit's Staff",
+            "Chainmail Vest",
+            "Face Guard",
+            "Warlock Earrings",
+            "Leonardo's Bear"
+          ]
         }
       ],
       "exp": null,
       "cash": null,
-      "strategy": "so heal the survivor immediately. Yuri has quite a bit of HP, and hits\nharder than anyone else thus far, so healing will be your immediate\npriority.\nAfter just about 400 HP worth of damage, Yuri will fuse into the Death\nEmperor, starting to use Dark Messenger. As long as you have Leonardo's\nBears equipped, you won't die instantly, but you'll still be hit pretty\nhard. Again, to reiterate: healing will be your immediate priority. Have\ntwo people healing, if needed.\nFor the first round, have Alice cast Holy Edge on Keith to add a Light\nclass to his attack, then devote Alice to healing. There most likely\nwon't be a round where she can attack, but if you can, then use Blessed\nLight. Zhuzhen should be using Corpse Arm every round, and Keith should\nbe attacking normally every round, with his weapon laced with Holy Edge.\nWhoever is doing the least amount of damage needs to be helping Alice\nheal if it's needed.\nLike the last few battles, it'll probably take long enough that you'll\nneed to replenish your MP and SP as well. Again, have whoever is doing\nthe least amount of damage take care of this.\nHe won't fuse into the Death Emperor this time, but he'll still use his\n!!! attack. When he does, IMMEDIATELY use a Thera Seed, and DON'T even\ntry to hit the 'Perfect!!' mark; just get Yuri away from 1 HP, and you'll\nbe fine."
+      "strategy": "so heal the survivor immediately. Yuri has quite a bit of HP, and hits\nharder than anyone else thus far, so healing will be your immediate\npriority.\n\nAfter just about 400 HP worth of damage, Yuri will fuse into the Death\nEmperor, starting to use Dark Messenger. As long as you have Leonardo's\nBears equipped, you won't die instantly, but you'll still be hit pretty\nhard. Again, to reiterate: healing will be your immediate priority. Have\ntwo people healing, if needed.\n\nFor the first round, have Alice cast Holy Edge on Keith to add a Light\nclass to his attack, then devote Alice to healing. There most likely\nwon't be a round where she can attack, but if you can, then use Blessed\nLight. Zhuzhen should be using Corpse Arm every round, and Keith should\nbe attacking normally every round, with his weapon laced with Holy Edge.\nWhoever is doing the least amount of damage needs to be helping Alice\nheal if it's needed.\n\nLike the last few battles, it'll probably take long enough that you'll\nneed to replenish your MP and SP as well. Again, have whoever is doing\nthe least amount of damage take care of this."
+    },
+    {
+      "type": "SUB-BOSS",
+      "name": "Fox Face",
+      "enemies": [
+        {
+          "name": "Fox Face",
+          "hp": 555,
+          "class": "Dark",
+          "drop": "Brass Knuckles"
+        }
+      ],
+      "party": [],
+      "exp": 13000,
+      "cash": 12500,
+      "strategy": "He won't fuse into the Death Emperor this time, but he'll still use his\n!!! attack. When he does, IMMEDIATELY use a Thera Seed, and DON'T even\ntry to hit the 'Perfect!!' mark; just get Yuri away from 1 HP, and you'll\nbe fine.\n\nFuse into either the Raging Tiger or Inferno (with Fighting Spirit) and\njust start wailing away on him with physical attacks. Just keep trading\nblows, using Thera Seeds to heal whenever your HP starts to get low, and\nESPECIALLY after the !!! attack."
     }
   ],
-  "boss": {
-    "type": "BOSS",
-    "name": "Yuri, Fox Face",
-    "enemies": [
-      {
-        "name": "Yuri",
-        "hp": 1400,
-        "class": "Dark",
-        "drop": null
-      },
-      {
-        "name": "Fox Face",
-        "hp": 555,
-        "class": "Dark",
-        "drop": "Brass Knuckles"
-      }
-    ],
-    "party": [
-      {
-        "name": "Keith",
-        "level": 23
-      },
-      {
-        "name": "Alice",
-        "level": 23
-      },
-      {
-        "name": "Zhuzhen",
-        "level": 24
-      }
-    ],
-    "exp": null,
-    "cash": null,
-    "strategy": "so heal the survivor immediately. Yuri has quite a bit of HP, and hits\nharder than anyone else thus far, so healing will be your immediate\npriority.\nAfter just about 400 HP worth of damage, Yuri will fuse into the Death\nEmperor, starting to use Dark Messenger. As long as you have Leonardo's\nBears equipped, you won't die instantly, but you'll still be hit pretty\nhard. Again, to reiterate: healing will be your immediate priority. Have\ntwo people healing, if needed.\nFor the first round, have Alice cast Holy Edge on Keith to add a Light\nclass to his attack, then devote Alice to healing. There most likely\nwon't be a round where she can attack, but if you can, then use Blessed\nLight. Zhuzhen should be using Corpse Arm every round, and Keith should\nbe attacking normally every round, with his weapon laced with Holy Edge.\nWhoever is doing the least amount of damage needs to be helping Alice\nheal if it's needed.\nLike the last few battles, it'll probably take long enough that you'll\nneed to replenish your MP and SP as well. Again, have whoever is doing\nthe least amount of damage take care of this.\nHe won't fuse into the Death Emperor this time, but he'll still use his\n!!! attack. When he does, IMMEDIATELY use a Thera Seed, and DON'T even\ntry to hit the 'Perfect!!' mark; just get Yuri away from 1 HP, and you'll\nbe fine."
-  },
   "shops": [],
   "markers": {
     "items": [

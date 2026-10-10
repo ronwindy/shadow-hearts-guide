@@ -168,8 +168,172 @@
       "notes": "Lv. 3 Fusion (Graveyard)"
     }
   ],
-  "bosses": [],
-  "boss": null,
+  "bosses": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Mad Bull, Dragner, Ifrit, Icarus, Baldo, Charon, Lobo, Egil, Forron, Seravi, Sandalphon, Czernobog",
+      "enemies": [
+        {
+          "name": "Mad Bull",
+          "hp": null,
+          "class": "Earth",
+          "drop": null
+        },
+        {
+          "name": "Dragner",
+          "hp": null,
+          "class": "Water",
+          "drop": null
+        },
+        {
+          "name": "Ifrit",
+          "hp": null,
+          "class": "Fire",
+          "drop": null
+        },
+        {
+          "name": "Icarus",
+          "hp": null,
+          "class": "Wind",
+          "drop": null
+        },
+        {
+          "name": "Baldo",
+          "hp": null,
+          "class": "Light",
+          "drop": null
+        },
+        {
+          "name": "Charon",
+          "hp": null,
+          "class": "Dark",
+          "drop": null
+        },
+        {
+          "name": "Lobo",
+          "hp": null,
+          "class": "Earth",
+          "drop": null
+        },
+        {
+          "name": "Egil",
+          "hp": null,
+          "class": "Water",
+          "drop": null
+        },
+        {
+          "name": "Forron",
+          "hp": null,
+          "class": "Fire",
+          "drop": null
+        },
+        {
+          "name": "Seravi",
+          "hp": null,
+          "class": "Wind",
+          "drop": null
+        },
+        {
+          "name": "Sandalphon",
+          "hp": null,
+          "class": "Light",
+          "drop": null
+        },
+        {
+          "name": "Czernobog",
+          "hp": null,
+          "class": "Dark",
+          "drop": null
+        }
+      ],
+      "party": [],
+      "exp": null,
+      "cash": null,
+      "strategy": "Rather than list each sub-boss separately, I'm covering them all in this\none section, since each one requires basically the same strategy.\n\nEach of their HP varies depending on Yuri, so if he's weaker, they'll be\nweaker as well, and vice versa.\n\nIf you want to use the Mind's Eye, just fuse into Amon and wail on them\nfor a few rounds, making sure to heal if necessary.\n\nIf you don't want to use the Mind's Eye, fuse into the highest level\nmonster that is the opposite class of the one you're fighting. Make sure\nto keep yourself healed if you fear that you'll be taken down fairly\neasily."
+    }
+  ],
+  "boss": {
+    "type": "SUB-BOSS",
+    "name": "Mad Bull, Dragner, Ifrit, Icarus, Baldo, Charon, Lobo, Egil, Forron, Seravi, Sandalphon, Czernobog",
+    "enemies": [
+      {
+        "name": "Mad Bull",
+        "hp": null,
+        "class": "Earth",
+        "drop": null
+      },
+      {
+        "name": "Dragner",
+        "hp": null,
+        "class": "Water",
+        "drop": null
+      },
+      {
+        "name": "Ifrit",
+        "hp": null,
+        "class": "Fire",
+        "drop": null
+      },
+      {
+        "name": "Icarus",
+        "hp": null,
+        "class": "Wind",
+        "drop": null
+      },
+      {
+        "name": "Baldo",
+        "hp": null,
+        "class": "Light",
+        "drop": null
+      },
+      {
+        "name": "Charon",
+        "hp": null,
+        "class": "Dark",
+        "drop": null
+      },
+      {
+        "name": "Lobo",
+        "hp": null,
+        "class": "Earth",
+        "drop": null
+      },
+      {
+        "name": "Egil",
+        "hp": null,
+        "class": "Water",
+        "drop": null
+      },
+      {
+        "name": "Forron",
+        "hp": null,
+        "class": "Fire",
+        "drop": null
+      },
+      {
+        "name": "Seravi",
+        "hp": null,
+        "class": "Wind",
+        "drop": null
+      },
+      {
+        "name": "Sandalphon",
+        "hp": null,
+        "class": "Light",
+        "drop": null
+      },
+      {
+        "name": "Czernobog",
+        "hp": null,
+        "class": "Dark",
+        "drop": null
+      }
+    ],
+    "party": [],
+    "exp": null,
+    "cash": null,
+    "strategy": "Rather than list each sub-boss separately, I'm covering them all in this\none section, since each one requires basically the same strategy.\n\nEach of their HP varies depending on Yuri, so if he's weaker, they'll be\nweaker as well, and vice versa.\n\nIf you want to use the Mind's Eye, just fuse into Amon and wail on them\nfor a few rounds, making sure to heal if necessary.\n\nIf you don't want to use the Mind's Eye, fuse into the highest level\nmonster that is the opposite class of the one you're fighting. Make sure\nto keep yourself healed if you fear that you'll be taken down fairly\neasily."
+  },
   "shops": [],
   "markers": {
     "items": [],

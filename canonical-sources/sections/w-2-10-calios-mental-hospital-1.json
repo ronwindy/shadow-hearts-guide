@@ -127,6 +127,22 @@
   ],
   "bosses": [
     {
+      "type": "SUB-BOSS",
+      "name": "Rausan",
+      "enemies": [
+        {
+          "name": "Rausan",
+          "hp": 3500,
+          "class": "Fire",
+          "drop": "Spade Key"
+        }
+      ],
+      "party": [],
+      "exp": 120,
+      "cash": 600,
+      "strategy": "Rausan will usually start out the battle with Elder Sign, causing your\nspecial attacks to be weakened quite a bit. This should only really\naffect Halley, but not enough to keep him from using his skills. He'll\nattempt to Silence you as well, but as long as you have Cosmic Bracelets,\nit'll just inflict a lot of damage. He'll also use Blaze, which will do\na decent amount of damage to your whole party.\n\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use Aqua Blade every\nround (since Rausan is Fire-based), stopping only to help Alice heal.\nAlice should be healing as needed, using Blessed Light when no healing is\nneeded."
+    },
+    {
       "type": "BOSS",
       "name": "Olga",
       "enemies": [
@@ -140,51 +156,121 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 34
+          "level": 34,
+          "equipment": [
+            "Brass Knuckles",
+            "RedLeatherJacket",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Cosmic Bracelet"
+          ],
+          "fusions": [
+            "Baldo",
+            "Mad Bull",
+            "Ifrit"
+          ]
         },
         {
           "name": "Halley",
-          "level": 33
+          "level": 33,
+          "equipment": [
+            "Laurel Slingshot",
+            "RedLeatherJacket",
+            "Priest Earrings",
+            "Warlock Earrings",
+            "Cosmic Bracelet"
+          ]
         },
         {
           "name": "Alice",
-          "level": 34
+          "level": 34,
+          "equipment": [
+            "Ever-Bible",
+            "Jasper Cape",
+            "Anne's Cross",
+            "Brsrkr Earrings",
+            "Crucifix"
+          ]
         }
       ],
       "exp": 22000,
       "cash": 17000,
-      "strategy": "As before, Olga's Black Fog attack will do MAJOR damage to your party, as\nwell as Poison each one of them, so it's a good idea to come in with\nCosmic Bracelets equipped. Her normal attacks don't do too much damage,\nbut her Icy Breath, Rock Storm and Lightning attacks will also both do\nquite a bit of damage to your entire party, so be careful. Watch out if\nshe uses Mind Assault to steal your MP, as you'll want to recover it\nimmediately if she takes too much.\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. With his attacked laced with Alice's Holy\nEdge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to\nstart with on Yuri, then have her on healing duty. Have Halley use Air\nShot every round, helping Alice heal as needed.\nIf you have it, have Alice take advantage of her Arc spell and just heal\nevery round, it makes this battle MUCH easier.\nIf you're unable to keep up with healing while trying to dish out the\ndamage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo\ninstead of Ifrit, using his healing spell to take care of the party while\nAlice and Halley use Blessed Light and Air Shot to make up the\ndifference."
+      "strategy": "As before, Olga's Black Fog attack will do MAJOR damage to your party, as\nwell as Poison each one of them, so it's a good idea to come in with\nCosmic Bracelets equipped. Her normal attacks don't do too much damage,\nbut her Icy Breath, Rock Storm and Lightning attacks will also both do\nquite a bit of damage to your entire party, so be careful. Watch out if\nshe uses Mind Assault to steal your MP, as you'll want to recover it\nimmediately if she takes too much.\n\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. With his attacked laced with Alice's Holy\nEdge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to\nstart with on Yuri, then have her on healing duty. Have Halley use Air\nShot every round, helping Alice heal as needed.\n\nIf you have it, have Alice take advantage of her Arc spell and just heal\nevery round, it makes this battle MUCH easier.\n\nIf you're unable to keep up with healing while trying to dish out the\ndamage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo\ninstead of Ifrit, using his healing spell to take care of the party while\nAlice and Halley use Blessed Light and Air Shot to make up the\ndifference."
     }
   ],
-  "boss": {
-    "type": "BOSS",
-    "name": "Olga",
-    "enemies": [
-      {
-        "name": "Olga",
-        "hp": 4000,
-        "class": "Dark",
-        "drop": "Warlock Earrings"
-      }
-    ],
-    "party": [
-      {
-        "name": "Yuri",
-        "level": 34
-      },
-      {
-        "name": "Halley",
-        "level": 33
-      },
-      {
-        "name": "Alice",
-        "level": 34
-      }
-    ],
-    "exp": 22000,
-    "cash": 17000,
-    "strategy": "As before, Olga's Black Fog attack will do MAJOR damage to your party, as\nwell as Poison each one of them, so it's a good idea to come in with\nCosmic Bracelets equipped. Her normal attacks don't do too much damage,\nbut her Icy Breath, Rock Storm and Lightning attacks will also both do\nquite a bit of damage to your entire party, so be careful. Watch out if\nshe uses Mind Assault to steal your MP, as you'll want to recover it\nimmediately if she takes too much.\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. With his attacked laced with Alice's Holy\nEdge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to\nstart with on Yuri, then have her on healing duty. Have Halley use Air\nShot every round, helping Alice heal as needed.\nIf you have it, have Alice take advantage of her Arc spell and just heal\nevery round, it makes this battle MUCH easier.\nIf you're unable to keep up with healing while trying to dish out the\ndamage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo\ninstead of Ifrit, using his healing spell to take care of the party while\nAlice and Halley use Blessed Light and Air Shot to make up the\ndifference."
-  },
+  "boss": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Rausan",
+      "enemies": [
+        {
+          "name": "Rausan",
+          "hp": 3500,
+          "class": "Fire",
+          "drop": "Spade Key"
+        }
+      ],
+      "party": [],
+      "exp": 120,
+      "cash": 600,
+      "strategy": "Rausan will usually start out the battle with Elder Sign, causing your\nspecial attacks to be weakened quite a bit. This should only really\naffect Halley, but not enough to keep him from using his skills. He'll\nattempt to Silence you as well, but as long as you have Cosmic Bracelets,\nit'll just inflict a lot of damage. He'll also use Blaze, which will do\na decent amount of damage to your whole party.\n\nAs usual, have Yuri fuse into Ifrit and use his Ignition to boost his\nattack, then have him attack as normal. Have Halley use Aqua Blade every\nround (since Rausan is Fire-based), stopping only to help Alice heal.\nAlice should be healing as needed, using Blessed Light when no healing is\nneeded."
+    },
+    {
+      "type": "BOSS",
+      "name": "Olga",
+      "enemies": [
+        {
+          "name": "Olga",
+          "hp": 4000,
+          "class": "Dark",
+          "drop": "Warlock Earrings"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 34,
+          "equipment": [
+            "Brass Knuckles",
+            "RedLeatherJacket",
+            "Mind's Eye",
+            "Demon Earrings",
+            "Cosmic Bracelet"
+          ],
+          "fusions": [
+            "Baldo",
+            "Mad Bull",
+            "Ifrit"
+          ]
+        },
+        {
+          "name": "Halley",
+          "level": 33,
+          "equipment": [
+            "Laurel Slingshot",
+            "RedLeatherJacket",
+            "Priest Earrings",
+            "Warlock Earrings",
+            "Cosmic Bracelet"
+          ]
+        },
+        {
+          "name": "Alice",
+          "level": 34,
+          "equipment": [
+            "Ever-Bible",
+            "Jasper Cape",
+            "Anne's Cross",
+            "Brsrkr Earrings",
+            "Crucifix"
+          ]
+        }
+      ],
+      "exp": 22000,
+      "cash": 17000,
+      "strategy": "As before, Olga's Black Fog attack will do MAJOR damage to your party, as\nwell as Poison each one of them, so it's a good idea to come in with\nCosmic Bracelets equipped. Her normal attacks don't do too much damage,\nbut her Icy Breath, Rock Storm and Lightning attacks will also both do\nquite a bit of damage to your entire party, so be careful. Watch out if\nshe uses Mind Assault to steal your MP, as you'll want to recover it\nimmediately if she takes too much.\n\nHave Yuri fuse into Ifrit and use his Ignition to boost his attack, then\nhave him attack as normal. With his attacked laced with Alice's Holy\nEdge, he'll be doing MAJOR damage. Of course, have Alice use Holy Edge to\nstart with on Yuri, then have her on healing duty. Have Halley use Air\nShot every round, helping Alice heal as needed.\n\nIf you have it, have Alice take advantage of her Arc spell and just heal\nevery round, it makes this battle MUCH easier.\n\nIf you're unable to keep up with healing while trying to dish out the\ndamage, AND if Alice doesn't have Arc, then have Yuri fuse into Baldo\ninstead of Ifrit, using his healing spell to take care of the party while\nAlice and Halley use Blessed Light and Air Shot to make up the\ndifference."
+    }
+  ],
   "shops": [],
   "markers": {
     "items": [

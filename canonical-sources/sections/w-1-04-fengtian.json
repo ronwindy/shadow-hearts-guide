@@ -146,6 +146,34 @@
   ],
   "bosses": [
     {
+      "type": "SUB-BOSS",
+      "name": "Water Tiger, Kappa, Kappa",
+      "enemies": [
+        {
+          "name": "Water Tiger",
+          "hp": 380,
+          "class": "Fire",
+          "drop": "Spikes"
+        },
+        {
+          "name": "Kappa",
+          "hp": 100,
+          "class": "Water",
+          "drop": "Tent"
+        },
+        {
+          "name": "Kappa",
+          "hp": 100,
+          "class": "Water",
+          "drop": "Tent"
+        }
+      ],
+      "party": [],
+      "exp": 400,
+      "cash": 2500,
+      "strategy": "Have Yuri fuse into the Death Emperor or Raging Tiger and wail away on\nthe Kappas first, since they have the ability to heal. Have Margarete use\nher Grenade skill until she's out of MP, then have her attack normally.\nHave Alice attack normally, unless she's needed for healing. If you want\nto do some extra damage to the Water Tiger once the Kappas are gone, have\nMargarete use her Aqua Edge on Yuri and have him attack the Fire-based\nWater Tiger."
+    },
+    {
       "type": "BOSS",
       "name": "Beast Dog",
       "enemies": [
@@ -159,51 +187,131 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 9
+          "level": 9,
+          "equipment": [
+            "Knuckle Blade",
+            "Leather Vest",
+            "Bandanna",
+            "Leather Belt",
+            "Jade Lariat"
+          ],
+          "fusions": [
+            "Death Emperor",
+            "Raging Tiger"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 9
+          "level": 9,
+          "equipment": [
+            "Type 94 Pistol",
+            "Leather Skirt",
+            "Bandanna",
+            "Leather Belt",
+            "Shell Bracelet"
+          ]
         },
         {
           "name": "Alice",
-          "level": 9
+          "level": 9,
+          "equipment": [
+            "ShootingStarTome",
+            "Leather Skirt",
+            "Bandanna",
+            "Leather Belt",
+            "Star Brooch"
+          ]
         }
       ],
       "exp": 540,
       "cash": 3000,
-      "strategy": "Be wary of its Breath of Fire attack; it'll hit the whole part for pretty\ngood damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own\nstrength, making them that much worse, so keep an eye on your HP.\nTo start, have Margarete cast the Aqua Edge on Yuri, followed by using\nher Grenade skill repeatedly. With a water-based attack, have Yuri fuse\ninto the Raging Tiger and start attacking normally, doing some major\ndamage. Have Alice keep everyone's HP up during the battle, having\nMargarete help out when needed. As usual, make sure Alice's SP doesn't\ndrop to 0."
+      "strategy": "Be wary of its Breath of Fire attack; it'll hit the whole part for pretty\ngood damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own\nstrength, making them that much worse, so keep an eye on your HP.\n\nTo start, have Margarete cast the Aqua Edge on Yuri, followed by using\nher Grenade skill repeatedly. With a water-based attack, have Yuri fuse\ninto the Raging Tiger and start attacking normally, doing some major\ndamage. Have Alice keep everyone's HP up during the battle, having\nMargarete help out when needed. As usual, make sure Alice's SP doesn't\ndrop to 0."
     }
   ],
-  "boss": {
-    "type": "BOSS",
-    "name": "Beast Dog",
-    "enemies": [
-      {
-        "name": "Beast Dog",
-        "hp": 480,
-        "class": "Fire",
-        "drop": "Voodoo Doll"
-      }
-    ],
-    "party": [
-      {
-        "name": "Yuri",
-        "level": 9
-      },
-      {
-        "name": "Margarete",
-        "level": 9
-      },
-      {
-        "name": "Alice",
-        "level": 9
-      }
-    ],
-    "exp": 540,
-    "cash": 3000,
-    "strategy": "Be wary of its Breath of Fire attack; it'll hit the whole part for pretty\ngood damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own\nstrength, making them that much worse, so keep an eye on your HP.\nTo start, have Margarete cast the Aqua Edge on Yuri, followed by using\nher Grenade skill repeatedly. With a water-based attack, have Yuri fuse\ninto the Raging Tiger and start attacking normally, doing some major\ndamage. Have Alice keep everyone's HP up during the battle, having\nMargarete help out when needed. As usual, make sure Alice's SP doesn't\ndrop to 0."
-  },
+  "boss": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Water Tiger, Kappa, Kappa",
+      "enemies": [
+        {
+          "name": "Water Tiger",
+          "hp": 380,
+          "class": "Fire",
+          "drop": "Spikes"
+        },
+        {
+          "name": "Kappa",
+          "hp": 100,
+          "class": "Water",
+          "drop": "Tent"
+        },
+        {
+          "name": "Kappa",
+          "hp": 100,
+          "class": "Water",
+          "drop": "Tent"
+        }
+      ],
+      "party": [],
+      "exp": 400,
+      "cash": 2500,
+      "strategy": "Have Yuri fuse into the Death Emperor or Raging Tiger and wail away on\nthe Kappas first, since they have the ability to heal. Have Margarete use\nher Grenade skill until she's out of MP, then have her attack normally.\nHave Alice attack normally, unless she's needed for healing. If you want\nto do some extra damage to the Water Tiger once the Kappas are gone, have\nMargarete use her Aqua Edge on Yuri and have him attack the Fire-based\nWater Tiger."
+    },
+    {
+      "type": "BOSS",
+      "name": "Beast Dog",
+      "enemies": [
+        {
+          "name": "Beast Dog",
+          "hp": 480,
+          "class": "Fire",
+          "drop": "Voodoo Doll"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 9,
+          "equipment": [
+            "Knuckle Blade",
+            "Leather Vest",
+            "Bandanna",
+            "Leather Belt",
+            "Jade Lariat"
+          ],
+          "fusions": [
+            "Death Emperor",
+            "Raging Tiger"
+          ]
+        },
+        {
+          "name": "Margarete",
+          "level": 9,
+          "equipment": [
+            "Type 94 Pistol",
+            "Leather Skirt",
+            "Bandanna",
+            "Leather Belt",
+            "Shell Bracelet"
+          ]
+        },
+        {
+          "name": "Alice",
+          "level": 9,
+          "equipment": [
+            "ShootingStarTome",
+            "Leather Skirt",
+            "Bandanna",
+            "Leather Belt",
+            "Star Brooch"
+          ]
+        }
+      ],
+      "exp": 540,
+      "cash": 3000,
+      "strategy": "Be wary of its Breath of Fire attack; it'll hit the whole part for pretty\ngood damage. Have each person heal themselves after the hit to be safe.\nIts physical attacks are bad enough, but it will increase its own\nstrength, making them that much worse, so keep an eye on your HP.\n\nTo start, have Margarete cast the Aqua Edge on Yuri, followed by using\nher Grenade skill repeatedly. With a water-based attack, have Yuri fuse\ninto the Raging Tiger and start attacking normally, doing some major\ndamage. Have Alice keep everyone's HP up during the battle, having\nMargarete help out when needed. As usual, make sure Alice's SP doesn't\ndrop to 0."
+    }
+  ],
   "shops": [
     {
       "name": "Fengtian Item Shop",

@@ -142,20 +142,46 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 19
+          "level": 19,
+          "equipment": [
+            "Hand Needle",
+            "Studded Harness",
+            "Mind's Eye",
+            "Jade Lariat",
+            "Leonardo's Bear"
+          ],
+          "fusions": [
+            "Heaven's Fiend",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 18
+          "level": 18,
+          "equipment": [
+            "Nanbu Pistol",
+            "Studded Bustier",
+            "Studded Cap",
+            "Western Belt",
+            "Leonardo's Bear"
+          ]
         },
         {
           "name": "Zhuzhen",
-          "level": 17
+          "level": 17,
+          "equipment": [
+            "Pilgrim's Staff",
+            "Studded Harness",
+            "Face Guard",
+            "Coral Lariat",
+            "Leonardo's Bear"
+          ]
         }
       ],
       "exp": 2000,
       "cash": 6000,
-      "strategy": "This is basically the same battle as with Yamaraja: War, only easier. As\nwith Yamaraja: War, the Cursed Puppet will absorb all magic, making\nZhuzhen useful only as a healer. He also uses the Game of Death, just as\nusual; if you don't have those Leonardo's Bears equipped to everyone,\nthey'll have a chance to instantly kill you. His Nightmare attack will\nhit the entire party for a lot of damage, so make sure heal afterward.\nThe only other thing he does is a hellacious physical attack that'll hit\nfor major damage. Once he starts using Nightmare repeatedly, you could be\nin a bit of trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. If he has the Mind's Eye\nequipped, it won't take very long. Margarete should be attacking\nnormally, but having her jump in to use Thera Seeds if needed, and\nZhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+      "strategy": "This is basically the same battle as with Yamaraja: War, only easier. As\nwith Yamaraja: War, the Cursed Puppet will absorb all magic, making\nZhuzhen useful only as a healer. He also uses the Game of Death, just as\nusual; if you don't have those Leonardo's Bears equipped to everyone,\nthey'll have a chance to instantly kill you. His Nightmare attack will\nhit the entire party for a lot of damage, so make sure heal afterward.\nThe only other thing he does is a hellacious physical attack that'll hit\nfor major damage. Once he starts using Nightmare repeatedly, you could be\nin a bit of trouble.\n\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. If he has the Mind's Eye\nequipped, it won't take very long. Margarete should be attacking\nnormally, but having her jump in to use Thera Seeds if needed, and\nZhuzhen should focus completely on recovery.\n\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
     }
   ],
   "boss": {
@@ -172,20 +198,46 @@
     "party": [
       {
         "name": "Yuri",
-        "level": 19
+        "level": 19,
+        "equipment": [
+          "Hand Needle",
+          "Studded Harness",
+          "Mind's Eye",
+          "Jade Lariat",
+          "Leonardo's Bear"
+        ],
+        "fusions": [
+          "Heaven's Fiend",
+          "Raging Tiger",
+          "Inferno"
+        ]
       },
       {
         "name": "Margarete",
-        "level": 18
+        "level": 18,
+        "equipment": [
+          "Nanbu Pistol",
+          "Studded Bustier",
+          "Studded Cap",
+          "Western Belt",
+          "Leonardo's Bear"
+        ]
       },
       {
         "name": "Zhuzhen",
-        "level": 17
+        "level": 17,
+        "equipment": [
+          "Pilgrim's Staff",
+          "Studded Harness",
+          "Face Guard",
+          "Coral Lariat",
+          "Leonardo's Bear"
+        ]
       }
     ],
     "exp": 2000,
     "cash": 6000,
-    "strategy": "This is basically the same battle as with Yamaraja: War, only easier. As\nwith Yamaraja: War, the Cursed Puppet will absorb all magic, making\nZhuzhen useful only as a healer. He also uses the Game of Death, just as\nusual; if you don't have those Leonardo's Bears equipped to everyone,\nthey'll have a chance to instantly kill you. His Nightmare attack will\nhit the entire party for a lot of damage, so make sure heal afterward.\nThe only other thing he does is a hellacious physical attack that'll hit\nfor major damage. Once he starts using Nightmare repeatedly, you could be\nin a bit of trouble.\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. If he has the Mind's Eye\nequipped, it won't take very long. Margarete should be attacking\nnormally, but having her jump in to use Thera Seeds if needed, and\nZhuzhen should focus completely on recovery.\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
+    "strategy": "This is basically the same battle as with Yamaraja: War, only easier. As\nwith Yamaraja: War, the Cursed Puppet will absorb all magic, making\nZhuzhen useful only as a healer. He also uses the Game of Death, just as\nusual; if you don't have those Leonardo's Bears equipped to everyone,\nthey'll have a chance to instantly kill you. His Nightmare attack will\nhit the entire party for a lot of damage, so make sure heal afterward.\nThe only other thing he does is a hellacious physical attack that'll hit\nfor major damage. Once he starts using Nightmare repeatedly, you could be\nin a bit of trouble.\n\nHave Yuri fuse into Inferno and cast Fighting Spirit on himself, followed\nby physically attacking Yamaraja every turn. If he has the Mind's Eye\nequipped, it won't take very long. Margarete should be attacking\nnormally, but having her jump in to use Thera Seeds if needed, and\nZhuzhen should focus completely on recovery.\n\nIf you're having trouble staying healed, have Yuri fuse into Heaven's\nFiend so you have the whole party healing spell."
   },
   "shops": [],
   "markers": {

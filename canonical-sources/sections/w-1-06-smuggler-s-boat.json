@@ -89,6 +89,22 @@
   ],
   "bosses": [
     {
+      "type": "SUB-BOSS",
+      "name": "Li Li",
+      "enemies": [
+        {
+          "name": "Li Li",
+          "hp": 580,
+          "class": "Dark",
+          "drop": "W.Tiger Hair"
+        }
+      ],
+      "party": [],
+      "exp": 800,
+      "cash": 3800,
+      "strategy": "This is just a warm-up, so try to avoid using TOO much MP if possible for\nthe next boss battle.\n\nShe can and will use Dark Messenger, which not only deals major damage,\nbut can instantly kill a party member, so be careful. Her other attacks\nare Paralysis (which does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets) and a\nnormal attack, which you shouldn't need to worry about.\n\nIf you have it, have Yuri use Heaven's Fiend and use the Exorcist Arrow\nattack; it should do MAJOR damage. Alice should cast Holy Edge on\nMargarete first, so she has Light-based attacks, then she should cast\nBlessed Light. Margaret should just be attacking normally, using Thera\nand Mana Leaves whenever the party's HP/MP are getting low. If you really\nneed a second healer, Heaven's Fiend is perfect for the role, as its\nSacred Remedy will heal EVERYONE in the party.\n\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light. Margaret should just be\nattacking normally, using Thera and Mana Leaves whenever the party's\nHP/MP are getting low. Not much to worry about (other than Dark\nMessenger) here."
+    },
+    {
       "type": "BOSS",
       "name": "Li Li",
       "enemies": [
@@ -102,51 +118,121 @@
       "party": [
         {
           "name": "Yuri",
-          "level": 14
+          "level": 14,
+          "equipment": [
+            "Knuckle Blade",
+            "Leather Vest",
+            "Flare Brooch",
+            "Jade Lariat",
+            "Rosewood Bracelet"
+          ],
+          "fusions": [
+            "Heaven's Fiend",
+            "Raging Tiger",
+            "Inferno"
+          ]
         },
         {
           "name": "Margarete",
-          "level": 14
+          "level": 14,
+          "equipment": [
+            "Type 94 Pistol",
+            "Leather Skirt",
+            "Leather Cap",
+            "Causal Belt",
+            "Rosewood Bracelet"
+          ]
         },
         {
           "name": "Alice",
-          "level": 13
+          "level": 13,
+          "equipment": [
+            "ShootingStarTome",
+            "Leather Skirt",
+            "Leather Cap",
+            "Star Brooch",
+            "Rosewood Bracelet"
+          ]
         }
       ],
       "exp": 1000,
       "cash": 3950,
-      "strategy": "At least this time she won't use Dark Messenger, but she still uses\nParalysis (which, again, does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets.) Watch\nout for Hate Storm, as it'll do decent damage to your whole party.\nStart off by healing, if needed. As with the last battle, if you have it,\nhave Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should\ndo MAJOR damage. Alice should cast Holy Edge on Margarete first, so she\nhas Light-based attacks, then she should cast Blessed Light. Margaret\nshould just be attacking normally, using Thera and Mana Leaves whenever\nthe party's HP/MP are getting low. If you really need a second healer,\nHeaven's Fiend is perfect for the role, as its Sacred Remedy will heal\nEVERYONE in the party, especially after Hate Storm.\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light REPEATEDLY. Margaret will be\nthe primary healer once again, as Yuri and Alice should be shelling out\nsome pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever\nthe party's HP/MP are getting low, and you should be fine."
+      "strategy": "At least this time she won't use Dark Messenger, but she still uses\nParalysis (which, again, does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets.) Watch\nout for Hate Storm, as it'll do decent damage to your whole party.\n\nStart off by healing, if needed. As with the last battle, if you have it,\nhave Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should\ndo MAJOR damage. Alice should cast Holy Edge on Margarete first, so she\nhas Light-based attacks, then she should cast Blessed Light. Margaret\nshould just be attacking normally, using Thera and Mana Leaves whenever\nthe party's HP/MP are getting low. If you really need a second healer,\nHeaven's Fiend is perfect for the role, as its Sacred Remedy will heal\nEVERYONE in the party, especially after Hate Storm.\n\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light REPEATEDLY. Margaret will be\nthe primary healer once again, as Yuri and Alice should be shelling out\nsome pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever\nthe party's HP/MP are getting low, and you should be fine."
     }
   ],
-  "boss": {
-    "type": "BOSS",
-    "name": "Li Li",
-    "enemies": [
-      {
-        "name": "Li Li",
-        "hp": 720,
-        "class": "Dark",
-        "drop": "B.Tortoise Fang"
-      }
-    ],
-    "party": [
-      {
-        "name": "Yuri",
-        "level": 14
-      },
-      {
-        "name": "Margarete",
-        "level": 14
-      },
-      {
-        "name": "Alice",
-        "level": 13
-      }
-    ],
-    "exp": 1000,
-    "cash": 3950,
-    "strategy": "At least this time she won't use Dark Messenger, but she still uses\nParalysis (which, again, does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets.) Watch\nout for Hate Storm, as it'll do decent damage to your whole party.\nStart off by healing, if needed. As with the last battle, if you have it,\nhave Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should\ndo MAJOR damage. Alice should cast Holy Edge on Margarete first, so she\nhas Light-based attacks, then she should cast Blessed Light. Margaret\nshould just be attacking normally, using Thera and Mana Leaves whenever\nthe party's HP/MP are getting low. If you really need a second healer,\nHeaven's Fiend is perfect for the role, as its Sacred Remedy will heal\nEVERYONE in the party, especially after Hate Storm.\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light REPEATEDLY. Margaret will be\nthe primary healer once again, as Yuri and Alice should be shelling out\nsome pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever\nthe party's HP/MP are getting low, and you should be fine."
-  },
+  "boss": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Li Li",
+      "enemies": [
+        {
+          "name": "Li Li",
+          "hp": 580,
+          "class": "Dark",
+          "drop": "W.Tiger Hair"
+        }
+      ],
+      "party": [],
+      "exp": 800,
+      "cash": 3800,
+      "strategy": "This is just a warm-up, so try to avoid using TOO much MP if possible for\nthe next boss battle.\n\nShe can and will use Dark Messenger, which not only deals major damage,\nbut can instantly kill a party member, so be careful. Her other attacks\nare Paralysis (which does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets) and a\nnormal attack, which you shouldn't need to worry about.\n\nIf you have it, have Yuri use Heaven's Fiend and use the Exorcist Arrow\nattack; it should do MAJOR damage. Alice should cast Holy Edge on\nMargarete first, so she has Light-based attacks, then she should cast\nBlessed Light. Margaret should just be attacking normally, using Thera\nand Mana Leaves whenever the party's HP/MP are getting low. If you really\nneed a second healer, Heaven's Fiend is perfect for the role, as its\nSacred Remedy will heal EVERYONE in the party.\n\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light. Margaret should just be\nattacking normally, using Thera and Mana Leaves whenever the party's\nHP/MP are getting low. Not much to worry about (other than Dark\nMessenger) here."
+    },
+    {
+      "type": "BOSS",
+      "name": "Li Li",
+      "enemies": [
+        {
+          "name": "Li Li",
+          "hp": 720,
+          "class": "Dark",
+          "drop": "B.Tortoise Fang"
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 14,
+          "equipment": [
+            "Knuckle Blade",
+            "Leather Vest",
+            "Flare Brooch",
+            "Jade Lariat",
+            "Rosewood Bracelet"
+          ],
+          "fusions": [
+            "Heaven's Fiend",
+            "Raging Tiger",
+            "Inferno"
+          ]
+        },
+        {
+          "name": "Margarete",
+          "level": 14,
+          "equipment": [
+            "Type 94 Pistol",
+            "Leather Skirt",
+            "Leather Cap",
+            "Causal Belt",
+            "Rosewood Bracelet"
+          ]
+        },
+        {
+          "name": "Alice",
+          "level": 13,
+          "equipment": [
+            "ShootingStarTome",
+            "Leather Skirt",
+            "Leather Cap",
+            "Star Brooch",
+            "Rosewood Bracelet"
+          ]
+        }
+      ],
+      "exp": 1000,
+      "cash": 3950,
+      "strategy": "At least this time she won't use Dark Messenger, but she still uses\nParalysis (which, again, does decent damage, but you should be guarded\nagainst the actual Paralysis effect with your Rosewood Bracelets.) Watch\nout for Hate Storm, as it'll do decent damage to your whole party.\n\nStart off by healing, if needed. As with the last battle, if you have it,\nhave Yuri use Heaven's Fiend and use the Exorcist Arrow attack; it should\ndo MAJOR damage. Alice should cast Holy Edge on Margarete first, so she\nhas Light-based attacks, then she should cast Blessed Light. Margaret\nshould just be attacking normally, using Thera and Mana Leaves whenever\nthe party's HP/MP are getting low. If you really need a second healer,\nHeaven's Fiend is perfect for the role, as its Sacred Remedy will heal\nEVERYONE in the party, especially after Hate Storm.\n\nIf you don't have Heaven's Fiend, have Yuri fuse into either Inferno or\nRaging Tiger (they are your two physically strongest Fusions at this\npoint) and use normal attacks on her. If he has Inferno, use the Fighting\nSpirit skill first to increase his attack, then start wailing away on\nher. Alice should cast Holy Edge on Yuri first, so he has Light-based\nattacks, then she should cast Blessed Light REPEATEDLY. Margaret will be\nthe primary healer once again, as Yuri and Alice should be shelling out\nsome pretty wicked damage to Li Li. Use Thera and Mana Leaves whenever\nthe party's HP/MP are getting low, and you should be fine."
+    }
+  ],
   "shops": [
     {
       "name": "Pachimon General Store",

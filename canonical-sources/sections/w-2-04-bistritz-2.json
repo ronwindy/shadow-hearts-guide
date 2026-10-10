@@ -84,8 +84,40 @@
       "notes": ""
     }
   ],
-  "bosses": [],
-  "boss": null,
+  "bosses": [
+    {
+      "type": "SUB-BOSS",
+      "name": "Tindalos",
+      "enemies": [
+        {
+          "name": "Tindalos",
+          "hp": 2000,
+          "class": "Fire",
+          "drop": "Iron Clogs"
+        }
+      ],
+      "party": [],
+      "exp": 8000,
+      "cash": 12000,
+      "strategy": "Watch out for his Deathtouch attack; it takes away 75% of your HP, which\nmost of the time is a MAJOR inconvenience. He can also use Fire breath,\nwhich will hit for a decent amount of damage. Make sure to keep an eye on\nhis physical attacks as well, as they'll quickly whittle down your HP,\nhitting for over 100 to a 150 HP per string of attacks.\n\nHave Alice be the primary healer, using Cure every round. If it's not\nneeded, have her use Blessed Light instead. Zhuzhen should be using Life\nSucker every round (or if you were able to level him up to 23, use Corpse\nArm instead), stopping only to help Alice heal when needed. Keith should\nbe using Drain Touch if he needs HP, or Bat Dance if he doesn't.\n\nIf you were able to get used to Keith's Ring enough to where you're\ncomfortable with him having the Mind's Eye equipped, I recommend that\nover his Rituals, but still have him use Drain Touch when he needs\nhealed.\n\nYou'll most likely need to replenish MP and SP throughout the battle, as\nit will take a while, but be patient and stay healed."
+    }
+  ],
+  "boss": {
+    "type": "SUB-BOSS",
+    "name": "Tindalos",
+    "enemies": [
+      {
+        "name": "Tindalos",
+        "hp": 2000,
+        "class": "Fire",
+        "drop": "Iron Clogs"
+      }
+    ],
+    "party": [],
+    "exp": 8000,
+    "cash": 12000,
+    "strategy": "Watch out for his Deathtouch attack; it takes away 75% of your HP, which\nmost of the time is a MAJOR inconvenience. He can also use Fire breath,\nwhich will hit for a decent amount of damage. Make sure to keep an eye on\nhis physical attacks as well, as they'll quickly whittle down your HP,\nhitting for over 100 to a 150 HP per string of attacks.\n\nHave Alice be the primary healer, using Cure every round. If it's not\nneeded, have her use Blessed Light instead. Zhuzhen should be using Life\nSucker every round (or if you were able to level him up to 23, use Corpse\nArm instead), stopping only to help Alice heal when needed. Keith should\nbe using Drain Touch if he needs HP, or Bat Dance if he doesn't.\n\nIf you were able to get used to Keith's Ring enough to where you're\ncomfortable with him having the Mind's Eye equipped, I recommend that\nover his Rituals, but still have him use Drain Touch when he needs\nhealed.\n\nYou'll most likely need to replenish MP and SP throughout the battle, as\nit will take a while, but be patient and stay healed."
+  },
   "shops": [
     {
       "name": "Chicken Heart",
