@@ -10,6 +10,7 @@ Flags text that the Guide Transformer should still have cleaned up:
   mixed-list       a numbered item after a bullet in one step (a bullet's wrapped text leaked)
   ascii-border     ASCII-art border/box characters (`____`, `¯¯¯`, `.———`, `|` tables, `$$$$`)
   narrative-item   (info) reward/tag that is not in items_summary (overview omitted it)
+  empty-location   (info) items_summary.obtainable[] with location "" (hints a stated location, never fills it)
 
 Each finding is {"id", "check", "severity", "location", "text"}; severity is "warn" or "info".
 """
@@ -66,6 +67,27 @@ def _known_names(guide: Dict[str, Any]) -> set:
         names.update(_norm(r.get("name", "")) for r in step.get("rewards", []))
     names.discard("")
     return names
+
+
+def _location_hint(guide: Dict[str, Any], name: str) -> str:
+    """First source sentence (enemy notes, step text, notes) that mentions `name`, with where it was found."""
+    needle = name.strip().lower()
+    if not needle:
+        return ""
+    for e in guide.get("enemies", []) or []:
+        # an enemy that shares the item's name (e.g. a soul dropped by it): its notes state the location
+        if _norm(e.get("name", "")) == _norm(name) and (e.get("notes") or "").strip():
+            return f"enemy {e.get('name')} notes: {' '.join(e['notes'].split())[:100]}"
+    pools: List[Tuple[str, str]] = [(f"enemy {e.get('name', '')} notes", e.get("notes", "") or "")
+                                    for e in guide.get("enemies", []) or []]
+    pools.extend(_texts(guide))
+    for where, text in pools:
+        if where.startswith("items_summary"):
+            continue
+        for sent in re.split(r'(?<=[.!?])\s+|\n+', _plain(text or "")):
+            if needle in sent.lower():
+                return f"{where}: {' '.join(sent.split())[:100]}"
+    return ""
 
 
 def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
@@ -135,4 +157,11 @@ def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
                 seen.add(key)
                 add("narrative-item", "info", f"step {step.get('id')}",
                     f"{r.get('name')} is a reward here but is not in items_summary (overview omits it)")
+
+    # obtainable items with no stated location: hint where the source mentions them (a human confirms)
+    for item in summary.get("obtainable", []):
+        if not (item.get("location") or "").strip():
+            hint = _location_hint(guide, item.get("name", ""))
+            add("empty-location", "info", f"items_summary {item.get('name', '')}",
+                f"location is empty; source mentions it at {hint}" if hint else "location is empty; no mention in text/notes")
     return findings

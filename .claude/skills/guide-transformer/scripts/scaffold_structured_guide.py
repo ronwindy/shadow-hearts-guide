@@ -703,7 +703,8 @@ def infer_step_type(p_text: str, bosses: List[Dict[str, Any]], has_rewards: bool
             and not re.search(r'\b(battle|fight|combat)\b', _AFTER_FIGHT_PHRASE.sub("", p_text), re.I)):
         return "loot"
     if re.search(r'\b(battle|fight|combat)\b', p_text, re.I):
-        return "battle"
+        # No known enemy in the text: the word is incidental ("avoid the battle"), not a fight step.
+        return "battle" if has_encounter else "exploration"
     if has_rewards:
         return "loot"
     if _MINIGAME_CUE.search(p_text):
@@ -713,6 +714,39 @@ def infer_step_type(p_text: str, bosses: List[Dict[str, Any]], has_rewards: bool
     if _NAV_CUE.match(p_text.strip()):
         return "navigation"
     return "exploration"
+
+
+_SEQ_CUE = re.compile(r'\b(first|then|next|after that|afterwards?|finally)\b', re.I)
+
+
+_XREF_CUE = re.compile(r'\b(side quests?|next|before|after|do that|head to|go to)\b', re.I)
+
+
+def bold_nav_refs(steps: List[Dict[str, Any]], navigation: Dict[str, Any]) -> None:
+    """Bolds `[CODE] Title` of the prev/next section in step text (exact match only).
+
+    A step that names a side-quest section (`[W-S-*]`) and was typed as a plain fallback becomes `quest`.
+    """
+    for key in ("prev", "next"):
+        entry = navigation.get(key) or {}
+        code, title = entry.get("code"), entry.get("title")
+        if not code or not title:
+            continue
+        ref = f"{code} {title}"
+        # `[CODE] Title` as written, or the bare title when the source names the section without its code
+        pattern = re.compile(r'(?<![*\w])(?:' + re.escape(code) + r'\s+)?' + re.escape(title) + r'(?![*\w])')
+        for st in steps:
+            desc = st.get("description", "")
+            if not pattern.search(desc):
+                continue
+            # a bare title is only a cross-reference when the step points onward ("next side quest")
+            full = re.search(re.escape(code) + r'\s+' + re.escape(title), desc)
+            if not full and not _XREF_CUE.search(desc):
+                continue
+            st["description"] = pattern.sub(f"**{ref}**", desc)
+            if (code.upper().startswith("[W-S-") and re.search(r'side quest', desc, re.I)
+                    and st.get("type") in ("exploration", "battle", "navigation")):
+                st["type"] = "quest"
 
 
 def _sentence_with(description: str, name: str) -> str:
@@ -946,7 +980,7 @@ def _teaser_description(lines: List[str], clean: Any) -> str:
 
 def build_description(p_text: str, cases: Dict[str, str], characters: List[str],
                       answers: Optional[List[str]] = None, tail: str = "") -> str:
-    """Step description: cleaned prose as a numbered list, source bullets kept one per line.
+    """Step description: cleaned prose as a list (numbered if the source states a sequence, else bullets).
 
     `answers` (the required choice replies) and `tail` (text that continues after the choice
     block) are woven in after the paragraph, in source order.
@@ -963,7 +997,8 @@ def build_description(p_text: str, cases: Dict[str, str], characters: List[str],
         items = split_sentences(clean(prose)) + (answers or []) + (split_sentences(clean(tail)) if tail else [])
         desc = "\n".join(f"{i}. {s}" for i, s in enumerate(items, start=1)) if len(items) > 1 else " ".join(items)
     else:
-        desc = listify(clean(prose), numbered=True) if prose else ""
+        # Numbered only when the source words a sequence; otherwise one fact per bullet.
+        desc = listify(clean(prose), numbered=bool(_SEQ_CUE.search(prose))) if prose else ""
     if bullets:
         lst = "\n".join(f"- {clean(b)}" for b in bullets)
         desc = f"{desc}\n{lst}" if desc else lst
@@ -1129,6 +1164,7 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
                 st["encounter"] = {"enemies": names}
 
     fill_item_locations(items_summary, steps)
+    bold_nav_refs(steps, canonical.get("navigation", {}) or {})
 
     guide_dict: Dict[str, Any] = {
         "guide": {

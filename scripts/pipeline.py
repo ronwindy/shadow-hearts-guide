@@ -12,7 +12,7 @@ Usage:
     python scripts/pipeline.py <section_id> --verify     # Validate + QA + Build + Update status
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
     python scripts/pipeline.py [<section_id>] --lint     # Presentation lint (prose blocks, UPPERCASE item tags, [_TAG_], ASCII borders)
-    python scripts/pipeline.py <section_id> --verdict F  # Validate + store the independent QA subagent's JSON verdict (F = "-" reads stdin)
+    python scripts/pipeline.py <section_id> --verdict F  # Validate + store the independent QA subagent's JSON verdict (F = "-" reads stdin); records the structured file hash so --check/--finalize warn on a stale verdict
     python scripts/pipeline.py <section_id> --qa-subagent-prompt  # Print the independent QA subagent prompt + verdict path
     python scripts/pipeline.py <section_id> --finalize   # Stage exactly this section's files (no commit); prints the commit message
     python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + build + status
@@ -284,11 +284,35 @@ def run_lint(sec: Dict[str, Any]) -> bool:
     return not warns
 
 
+def structured_sha256(path: Path) -> str:
+    import hashlib
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def stale_verdict_note(sec: Dict[str, Any]) -> Optional[str]:
+    """Returns a warning when the stored subagent verdict no longer matches the structured file."""
+    verdict_path = ROOT_DIR / "qa-reports" / f"{sec['id']}.subagent.json"
+    _, structured_path = get_section_paths(sec)
+    if not verdict_path.exists() or not structured_path.exists():
+        return None
+    try:
+        recorded = json.loads(verdict_path.read_text(encoding="utf-8")).get("structured_sha256")
+    except ValueError:
+        return None
+    if not recorded:
+        return (f"[NOTE] {sec['id']}: stored subagent verdict has no content hash (recorded before hashing); "
+                f"re-record with --verdict to enable the stale check.")
+    if recorded != structured_sha256(structured_path):
+        return (f"[WARN] {sec['id']}: structured file changed after the subagent verdict; "
+                f"re-run the independent QA subagent and record it with --verdict.")
+    return None
+
+
 def run_verdict(sec: Dict[str, Any], verdict_file: str) -> bool:
     """Validates the independent QA subagent's JSON verdict and stores it next to the QA report."""
     print(f"\n--- Subagent QA Verdict: {sec['id']} ---")
     try:
-        raw = sys.stdin.read() if verdict_file == "-" else Path(verdict_file).read_text(encoding="utf-8")
+        raw = sys.stdin.buffer.read().decode("utf-8-sig") if verdict_file == "-" else Path(verdict_file).read_text(encoding="utf-8")
         verdict = json.loads(raw)
     except (OSError, ValueError) as err:
         print(f"[FAIL] Cannot read verdict JSON '{verdict_file}': {err}")
@@ -306,6 +330,9 @@ def run_verdict(sec: Dict[str, Any], verdict_file: str) -> bool:
         return False
     out = ROOT_DIR / "qa-reports"
     out.mkdir(exist_ok=True)
+    _, structured_path = get_section_paths(sec)
+    if structured_path.exists():
+        verdict["structured_sha256"] = structured_sha256(structured_path)  # stale check in --finalize/--check
     (out / f"{sec['id']}.subagent.json").write_text(
         json.dumps(verdict, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     findings = verdict["findings"]
@@ -324,6 +351,9 @@ def remind_independent_qa(sec: Dict[str, Any]) -> None:
     if not str(sec.get("id", "")).startswith("w-"):
         return
     if (ROOT_DIR / "qa-reports" / f"{sec['id']}.subagent.json").exists():
+        note = stale_verdict_note(sec)
+        if note:
+            print(f"\n{note}")
         return  # verdict already stored via --verdict
     print(f"\n[REMINDER] Independent QA subagent not run by the pipeline. For {sec['id']}, run "
           f"pipeline.py {sec['id']} --qa-subagent-prompt, give that prompt to a subagent, then store its "
@@ -376,6 +406,9 @@ def run_finalize(sec: Dict[str, Any]) -> bool:
     if not str(qa).startswith("PASS"):
         print(f"[FAIL] Script QA is {qa}; run --check until it passes.")
         return False
+    note = stale_verdict_note(sec)
+    if note:
+        print(note)
     paths = [str(p.relative_to(ROOT_DIR)) for p in candidates if p.exists()]
     result = subprocess.run(["git", "add", "--", *paths], cwd=ROOT_DIR, capture_output=True, text=True)
     if result.returncode != 0:

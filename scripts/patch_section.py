@@ -5,7 +5,7 @@ patch_section.py - Merge a JSON patch into a structured section file and re-vali
 Replaces ad-hoc edit scripts (and their shell-quoting problems): write the patch with the
 Write tool, then run:
 
-    scripts/run-py.cmd scripts/patch_section.py <section_id> <patch.json> [--dry-run] [--force]
+    scripts/run-py.cmd scripts/patch_section.py <section_id> <patch.json|-> [--dry-run] [--force]
 
 Patch format: the same shape as the structured file, containing only what changes.
     - Objects are merged recursively.
@@ -103,7 +103,7 @@ def merge(target: Any, patch: Any) -> Any:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Merge a JSON patch into a structured section and re-validate.")
     parser.add_argument("section", help="Section id, code or file stem (e.g. w-1-06)")
-    parser.add_argument("patch", nargs="?", default=None, help="Path to the patch JSON file (optional with --rename)")
+    parser.add_argument("patch", nargs="?", default=None, help="Path to the patch JSON file, or '-' to read it from stdin (optional with --rename)")
     parser.add_argument("--rename", action="append", default=[], metavar="OLD=NEW",
                         help="Rename an item name everywhere in the section (repeatable)")
     parser.add_argument("--dry-run", action="store_true", help="Validate the merged result without writing")
@@ -122,7 +122,10 @@ def main() -> int:
     if not args.patch and not args.rename:
         print("[ERROR] Give a patch file and/or at least one --rename OLD=NEW")
         return 1
-    patch = json.loads(Path(args.patch).read_text(encoding="utf-8")) if args.patch else {}
+    if args.patch == "-":
+        patch = json.loads(sys.stdin.buffer.read().decode("utf-8-sig"))
+    else:
+        patch = json.loads(Path(args.patch).read_text(encoding="utf-8")) if args.patch else {}
     mapping = dict(patch.pop("$rename", {}) or {})
     for spec in args.rename:
         old, sep, new = spec.partition("=")
