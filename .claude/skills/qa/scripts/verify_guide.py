@@ -163,19 +163,29 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
         n = normalize_name(b.get("name"))
         if n not in c_names and n not in bosses_names:
             add_finding("low", "structural fidelity", f"steps.boss[{b.get('name')}]", "Not in canonical bosses", b.get("name"), "Step-level boss/sub-boss is not in the canonical bosses list; confirm it comes from source text")
+    # Same-name fights exist (Li Li as SUB-BOSS, then as BOSS): match on (type, name) first.
     g_by_name = {normalize_name(b.get("name")): b for b in g_all_bosses}
+    g_by_type_name = {(str(b.get("type")).upper(), normalize_name(b.get("name"))): b for b in g_all_bosses}
     for c_b in c_bosses:
         loc = f"bosses[{c_b.get('name')}]"
-        g_b = g_by_name.get(normalize_name(c_b.get("name")))
+        g_b = (g_by_type_name.get((str(c_b.get("type")).upper(), normalize_name(c_b.get("name"))))
+               or g_by_name.get(normalize_name(c_b.get("name"))))
         if g_b is None:
             add_finding("high", "factual discrepancy", loc, c_b.get("name"), "Missing", "Boss name not found in structured output")
             continue
         for fld in ("type", "exp", "cash"):
             if c_b.get(fld) != g_b.get(fld):
                 add_finding("high", "numerical discrepancy", f"{loc}.{fld}", c_b.get(fld), g_b.get(fld), f"Boss {fld} mismatch for {c_b.get('name')}")
-        for fld, keys in (("party", ("name", "level")), ("enemies", ("name", "hp", "class", "drop"))):
-            c_rows = [tuple(r.get(k) for k in keys) for r in c_b.get(fld, [])]
-            g_rows = [tuple(r.get(k) for k in keys) for r in g_b.get(fld, [])]
+        def cmp_val(v, key=None):
+            # equipment/fusions lists and drops: spaces/case ignored (the scaffold un-camel-cases "TalismanOfLuck")
+            if isinstance(v, list):
+                return tuple(str(x).replace(" ", "").lower() for x in v)
+            if key == "drop" and isinstance(v, str):
+                return v.replace(" ", "").lower()
+            return v
+        for fld, keys in (("party", ("name", "level", "equipment", "fusions")), ("enemies", ("name", "hp", "class", "drop"))):
+            c_rows = [tuple(cmp_val(r.get(k), k) for k in keys) for r in c_b.get(fld, [])]
+            g_rows = [tuple(cmp_val(r.get(k), k) for k in keys) for r in g_b.get(fld, [])]
             if c_rows != g_rows:
                 add_finding("high", "missing information", f"{loc}.{fld}", c_rows, g_rows, f"Boss {fld} ({'/'.join(keys)}) differs from canonical for {c_b.get('name')}")
         # Presentation (list bullets, **bold**) is not a text change: compare plain words only.

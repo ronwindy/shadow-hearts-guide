@@ -146,7 +146,7 @@ _LOTTERY_ROW = re.compile(r'\(([^)]+)\)\s*\|\s*(.*?)\s*[/\\]*\s*$')
 _LOTTERY_TITLE = re.compile(r'\[_([^_]+)_\]')
 _FOOTNOTE_START = re.compile(r'^\s{0,4}\*\s+-\s+(\S.*)$')
 _CARD_TAG = re.compile(r'\*+\s*(SUB-BOSS|BOSS)\s*\*+')
-_CARD_ROW = re.compile(r'^\|\s*(.+?)\s*\|\s*(\d+)\s*HP\s*\|\s*Class:\s*(\w+)\s*\|\s*\[_\]\s*(.*?)\s*\|\s*$')
+_CARD_ROW = re.compile(r'^\|\s*(.+?)\s*\|\s*(\d+\s*HP|HP\s+Varies)\s*\|\s*Class:\s*(\w+)\s*\|\s*(?:\[_\]\s*)?(.*?)\s*\|\s*$')
 _CARD_EXPCASH = re.compile(r'(\d+)\s*EXP\s*/.*?(\d+)\s*Cash')
 
 
@@ -192,7 +192,8 @@ def _find_boxes(lines: List[str]) -> List[Dict[str, Any]]:
             while j < n and lines[j].strip():
                 row = _CARD_ROW.match(lines[j].strip())
                 if row:
-                    enemies.append({"name": row.group(1), "hp": int(row.group(2)),
+                    hp = re.match(r'\d+', row.group(2))
+                    enemies.append({"name": row.group(1), "hp": int(hp.group(0)) if hp else None,
                                     "class": row.group(3), "drop": row.group(4) or None})
                 else:
                     sm = re.match(r'^\|\s{2}(\S.*?)\s*\|\s*$', lines[j].strip())
@@ -203,7 +204,8 @@ def _find_boxes(lines: List[str]) -> List[Dict[str, Any]]:
                         tail = (int(em.group(1)), int(em.group(2)))
                 j += 1
             end = j
-            card: Dict[str, Any] = {"type": cm.group(1), "name": enemies[0]["name"] if enemies else "",
+            card: Dict[str, Any] = {"type": cm.group(1),
+                                    "name": ", ".join(e["name"] for e in enemies),  # as the importer joins them
                                     "enemies": enemies}
             if tail:
                 card["exp"], card["cash"] = tail
@@ -217,8 +219,7 @@ def _find_boxes(lines: List[str]) -> List[Dict[str, Any]]:
 
 def _strategy_sentences(rows: List[str]) -> List[str]:
     """Re-joins the card's wrapped strategy lines and splits them into one sentence per item."""
-    text = strip_box_chars(" ".join(r for r in rows if r))
-    return [s.strip() for s in re.split(r'(?<=[.!?])\s+(?=[A-Z])', text) if s.strip()]
+    return split_sentences(strip_box_chars(" ".join(r for r in rows if r)))
 
 
 def _blank_boxes(lines: List[str], boxes: List[Dict[str, Any]]) -> List[str]:
@@ -427,7 +428,7 @@ def soften_caps(text: str) -> str:
     return _CAPS_RUN.sub(repl, text)
 
 
-_ABBREV = re.compile(r'\b(Mr|Mrs|Ms|Dr|St|vs|No)\.(?=\s)')
+_ABBREV = re.compile(r'\b(?:Mr|Mrs|Ms|Dr|St|vs|No)\.(?=\s)|\b[A-Z]\.(?=\s+[A-Z][a-z])')
 _SENT_SPLIT = re.compile(r"""(?<=[.!?])["')\]*]*\s+(?=["'(\[*]*[A-Z0-9])""")
 _BOLD_SPAN = re.compile(r'\*\*.+?\*\*')
 _LIST_LINE = re.compile(r'^\s*(?:[-*]|\d+\.)\s', re.M)
@@ -438,8 +439,30 @@ MAX_WORDS = 39
 def split_sentences(text: str) -> List[str]:
     """One entry per sentence (abbreviations like "Mr." do not end one). Text is not reworded."""
     flat = " ".join(text.split())
-    guarded = _ABBREV.sub(lambda m: m.group(1) + "\x00", flat)
+    guarded = _ABBREV.sub(lambda m: m.group(0)[:-1] + "\x00", flat)
     return [s.replace("\x00", ".").strip() for s in _SENT_SPLIT.split(guarded) if s.strip()]
+
+
+_OPTION_PARA = re.compile(r'^\d+[.)]\s')
+
+
+def reflow_strategy(text: str) -> str:
+    """Boss-box strategy -> one item per sentence, cut along the box's blank-line paragraphs.
+
+    Wrapped lines inside a paragraph are re-joined first; a numbered option ("1) ...") stays one
+    item so its sentences are not torn apart. Text is not reworded.
+    """
+    if _LIST_LINE.search(text) and "\n\n" not in text:
+        return text
+    items: List[str] = []
+    for para in re.split(r'\n\s*\n', text):
+        flat = " ".join(para.split())
+        if not flat:
+            continue
+        items.extend([flat] if _OPTION_PARA.match(flat) else split_sentences(flat))
+    if len(items) <= 1:
+        return " ".join(items)
+    return "\n".join(f"- {i}" for i in items)
 
 
 def listify(text: str, numbered: bool) -> str:
@@ -651,7 +674,11 @@ _MEANWHILE_CUE = re.compile(r'^\s*meanwhile\b', re.I)
 _NAV_CUE = re.compile(r"^(head|go|make your way|travel|exit|leave|return|walk|proceed)\b", re.I)
 
 
-def infer_step_type(p_text: str, bosses: List[Dict[str, Any]], has_rewards: bool, has_choices: bool) -> str:
+_AFTER_FIGHT_PHRASE = re.compile(r'\bafter (?:the|that|this) (?:battle|fight)\b', re.I)
+
+
+def infer_step_type(p_text: str, bosses: List[Dict[str, Any]], has_rewards: bool, has_choices: bool,
+                    has_encounter: bool = False) -> str:
     """Maps a paragraph to a schema `type` (see docs/structured-schema.md). Conservative on purpose."""
     if has_choices:
         return "dialogue"
@@ -671,6 +698,10 @@ def infer_step_type(p_text: str, bosses: List[Dict[str, Any]], has_rewards: bool
     # Items tagged in the text make it a loot step; "shop" only when buying is the point.
     if _SHOP_CUE.search(p_text) and not has_rewards:
         return "shop"
+    # Item rewards, no enemy named, and "battle" only as "after the battle": a loot step.
+    if (has_rewards and not has_encounter
+            and not re.search(r'\b(battle|fight|combat)\b', _AFTER_FIGHT_PHRASE.sub("", p_text), re.I)):
+        return "loot"
     if re.search(r'\b(battle|fight|combat)\b', p_text, re.I):
         return "battle"
     if has_rewards:
@@ -769,12 +800,13 @@ def _attach_boxes(boxes: List[Dict[str, Any]], paragraphs: List[Tuple[int, int, 
             kind = "discrepancy" if re.search(r'\b(however|instead|actually)\b', text, re.I) else "tip"
             step.setdefault("notes", []).append({"type": kind, "title": "Footnote", "text": text})
         elif b["kind"] == "boss_card" and data.get("name"):
-            canon = next((cb for cb in canonical.get("bosses", [])
-                          if (cb.get("name") or "").lower() == data["name"].lower()), None)
+            cands = [cb for cb in canonical.get("bosses", [])
+                     if (cb.get("name") or "").lower() == data["name"].lower()]
+            canon = next((cb for cb in cands if cb.get("type") == data.get("type")), cands[0] if cands else None)
             if canon is not None:
                 card = copy.deepcopy(canon)
                 strategy = "\n".join(strip_box_chars(ln) for ln in card.get("strategy", "").splitlines())
-                card["strategy"] = listify(bold_names(strategy, characters), numbered=False)
+                card["strategy"] = reflow_strategy(bold_names(strategy, characters))
                 step["boss"] = card
                 if step["type"] in ("battle", "exploration", "story", "preparation", "loot"):
                     step["type"] = "boss"
@@ -1034,7 +1066,11 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
             choices.extend(choice_entries(block))
             answers.extend(required_answers(block))
 
-        step_type = infer_step_type(p_text, canonical.get("bosses", []), bool(step_rewards), bool(choices))
+        p_lower = p_text.lower()
+        matched_enemies = [e.get("name") for e in canonical.get("enemies", [])
+                           if (e.get("name") or "").lower() in p_lower]
+        step_type = infer_step_type(p_text, canonical.get("bosses", []), bool(step_rewards), bool(choices),
+                                    has_encounter=bool(matched_enemies))
 
         # Strip [_TAG_] marks, cut long prose into a numbered list, keep source bullets one per line
         clean_desc = build_description(p_text, cases, characters, answers, extra.get("tail", ""))
@@ -1045,12 +1081,6 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
             "type": step_type
         }
 
-        p_lower = p_text.lower()
-        # Check matching enemy encounter
-        matched_enemies = []
-        for enemy in canonical.get("enemies", []):
-            if (enemy.get("name") or "").lower() in p_lower:
-                matched_enemies.append(enemy.get("name"))
         if matched_enemies:
             step_enemies[step_id] = list(dict.fromkeys(matched_enemies))
 
@@ -1090,14 +1120,11 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
         names = list(step_enemies.get(st["id"], []))
         if st["type"] in ("battle", "boss"):
             if st.get("boss"):
-                known = {(e.get("name") or "").lower(): e.get("name") for e in canonical.get("enemies", [])}
-                for e in st["boss"].get("enemies", []):
-                    if (e.get("name") or "").lower() in known:
-                        names.append(known[e["name"].lower()])
+                # The card names the fight: a neighbouring boss mentioned in the text is not in it.
+                names = [e["name"] for e in st["boss"].get("enemies", []) if e.get("name")]
+                if not names and (st["boss"].get("name") or "").lower() in canon_boss_names:
+                    names = [st["boss"]["name"]]
             names = list(dict.fromkeys(names))
-            if st.get("boss") and (st["boss"].get("name") or "").lower() in canon_boss_names:
-                names.append(st["boss"]["name"])
-                names = list(dict.fromkeys(names))
             if names:
                 st["encounter"] = {"enemies": names}
 

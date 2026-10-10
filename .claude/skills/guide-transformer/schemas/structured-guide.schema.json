@@ -127,6 +127,18 @@
               },
               "level": {
                 "type": "integer"
+              },
+              "equipment": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "fusions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           }

@@ -21,6 +21,8 @@ interface BossEnemy {
 interface BossPartyMember {
   name: string;
   level?: number | string;
+  equipment?: string[];
+  fusions?: string[];
 }
 
 interface BossData {
@@ -39,6 +41,7 @@ interface Props {
 
 const { boss } = Astro.props;
 const isSubBoss = boss.type?.toUpperCase().includes('SUB-BOSS');
+const loadouts = (boss.party ?? []).filter((p) => p.equipment?.length || p.fusions?.length);
 
 // Collapse identical enemies (same stats and drop) into one tile with a count.
 const groupedEnemies: (BossEnemy & { count: number })[] = [];
@@ -110,6 +113,35 @@ for (const enemy of boss.enemies ?? []) {
         </span>
       ))}
     </div>
+  )}
+
+  <!-- Recommended loadouts (equipment + fusions per party member) -->
+  {loadouts.length > 0 && (
+    <details class="relative z-10 rounded-lg border border-slate-800/80 bg-slate-900/60 text-sm">
+      <summary class="cursor-pointer px-3.5 py-2 font-mono text-xs font-semibold text-slate-300">
+        Recommended equipment &amp; fusions
+      </summary>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 p-3.5 pt-1">
+        {loadouts.map((p) => (
+          <div class="space-y-1.5">
+            <h4 class="font-serif font-bold text-slate-200">{p.name}{p.level ? ` [Lv ${p.level}]` : ''}</h4>
+            {p.equipment && p.equipment.length > 0 && (
+              <ul class="list-disc list-inside text-slate-300 text-xs space-y-0.5">
+                {p.equipment.map((e) => <li>{e}</li>)}
+              </ul>
+            )}
+            {p.fusions && p.fusions.length > 0 && (
+              <div class="text-xs">
+                <span class="font-mono text-slate-400">Fusions:</span>
+                <ul class="list-disc list-inside text-slate-300 space-y-0.5">
+                  {p.fusions.map((f) => <li>{f}</li>)}
+                </ul>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </details>
   )}
 
   <!-- Enemy Units Block -->

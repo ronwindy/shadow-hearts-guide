@@ -203,7 +203,7 @@ as in canonical).
 | Key | Shape |
 | :-- | :-- |
 | `enemies` | `[{name (req), hp (int\|null), class, drop (string\|null)}]` |
-| `party` | `[{name, level:int}]` (both required) |
+| `party` | `[{name, level:int, equipment?: string[], fusions?: string[]}]`; `name`/`level` required. `equipment` = the box's gear rows (weapon, armor, accessories) in source order, `fusions` = the fusion rows; omit when the box lists none |
 | `exp`, `cash` | integer or `null` |
 | `strategy` | string; light list-formatting allowed, wording must stay faithful |
 

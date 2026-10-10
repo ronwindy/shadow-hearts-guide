@@ -122,6 +122,8 @@ export interface BossEnemy {
 export interface BossPartyMember {
   name: string;
   level?: number | string;
+  equipment?: string[];
+  fusions?: string[];
 }
 
 export interface BossData {

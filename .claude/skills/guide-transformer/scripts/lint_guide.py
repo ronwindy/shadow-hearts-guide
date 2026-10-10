@@ -83,6 +83,11 @@ def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
             add("raw-tag", "warn", loc, _RAW_TAG.search(raw).group(0))
         if _ASCII.search(raw):
             add("ascii-border", "warn", loc, _ASCII.search(raw).group(0))
+        if "�" in raw:
+            # Source encoding defect (e.g. "voil�"): the original character is unrecoverable.
+            # Keep the source text, or repair by judgement and record it; never guess silently.
+            i = raw.index("�")
+            add("mojibake", "info", loc, raw[max(0, i - 20):i + 20])
         if loc.startswith("items_summary"):
             continue  # a `location` is one verbatim sentence; list/upper checks are for prose
         # Prose blocks: separated by blank lines, skipping list items
