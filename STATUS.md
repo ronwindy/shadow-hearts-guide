@@ -1,21 +1,23 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-10 12:29:13`
+> Last synced: `2026-10-10 13:21:32`
 
 ```text
-=== PROJECT STATUS (2026-10-10 12:29:13) ===
-Canonical 69/69 | Structured 11/69 | QA pass 5/69 (fail 0) | Web built 11/69
+=== PROJECT STATUS (2026-10-10 13:21:32) ===
+Canonical 69/69 | Structured 11/69 | QA pass 5/69 (fail 1) | Web built 11/69
 Next:
-  1. Run QA on header (Title, Metadata & Intro Notes)
-  2. Structure w-1-07 (Shanghai, Huayuan (1)) - next chronological
-Pending QA:    header, i-1-00, w-1-00, w-1-03, w-1-04, w-1-05
+  1. Fix QA FAIL in header (Title, Metadata & Intro Notes)
+  2. Run QA on i-1-00 (Table of Contents)
+  3. Structure w-1-07 (Shanghai, Huayuan (1)) - next chronological
+QA FAIL:       header
+Pending QA:    i-1-00, w-1-00, w-1-03, w-1-04, w-1-05
 ```
 
 ## Section Matrix
 
 | Code | ID | Title | Category | State |
 | :-- | :-- | :-- | :-- | :-- |
-| `[HEADER]` | `header` | Title, Metadata & Intro Notes | Header | STRUCTURED_PENDING_QA |
+| `[HEADER]` | `header` | Title, Metadata & Intro Notes | Header | QA_ISSUES |
 | `[I-1-00]` | `i-1-00` | Table of Contents | Introduction | STRUCTURED_PENDING_QA |
 | `[I-1-01]` | `i-1-01` | Game Manual / Instructions | Introduction | WEB_BUILT |
 | `[W-1-00]` | `w-1-00` | Walkthrough - Asia | Walkthrough - Asia | STRUCTURED_PENDING_QA |
