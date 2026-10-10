@@ -48,10 +48,12 @@ const { items = [] } = Astro.props;
                 </td>
                 <td class="py-2.5 px-4 font-mono text-amber-300 capitalize text-sm">{it.category}</td>
                 <td class="py-2.5 px-4 text-slate-200 leading-relaxed">
-                  <span class="inline-flex items-center gap-1.5 text-slate-300">
-                    <MapPin class="w-3.5 h-3.5 text-gold-400/80 flex-shrink-0" />
-                    <span>{it.location}</span>
-                  </span>
+                  {it.location && it.location.trim() && (
+                    <span class="inline-flex items-center gap-1.5 text-slate-300">
+                      <MapPin class="w-3.5 h-3.5 text-gold-400/80 flex-shrink-0" />
+                      <span>{it.location}</span>
+                    </span>
+                  )}
                 </td>
               </tr>
             );
