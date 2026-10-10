@@ -1,0 +1,29 @@
+{
+  "qa": {
+    "status": "PASS WITH WARNINGS",
+    "section_id": "w-1-05",
+    "section_title": "Dalian",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 1
+    },
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Yamaraja: Wind].strategy",
+        "source": {
+          "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse in"
+        },
+        "generated": {
+          "text": "- Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse "
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
+  }
+}

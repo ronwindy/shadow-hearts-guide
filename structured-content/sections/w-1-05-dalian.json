@@ -52,7 +52,7 @@
           "location": "Chest up the dock on the left, at the start of Dalian (step 1)"
         },
         {
-          "name": "TeaOfTheHealer",
+          "name": "Tea of the Healer",
           "category": "items",
           "location": "Chest to the lower-right of the old man under the wooden structure (step 5)"
         },
@@ -67,7 +67,7 @@
           "location": "Upper-right corner of the hallway in the basement weapon & armor shop, on the ground (step 5)"
         },
         {
-          "name": "TalismanOfLuck",
+          "name": "Talisman of Luck",
           "category": "items",
           "location": "Partly fenced-in area before the next screen, between the two wooden structures near the edge (step 1); also a prize for finding the turtle in 3-4 tries"
         },
@@ -195,7 +195,7 @@
             "price": 600
           },
           {
-            "name": "TalismanOfLuck",
+            "name": "Talisman of Luck",
             "price": 480
           },
           {
@@ -288,7 +288,7 @@
             "price": 1300
           },
           {
-            "name": "ShootingStarTome",
+            "name": "Shooting Star Tome",
             "price": 1420
           },
           {
@@ -309,7 +309,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. When you gain control here in **Dalian**, head left and up the dock to find a chest containing a **Lottery Ticket**. Don't worry about the man guarding the pen; we'll come back to him in a moment.\n2. Follow the path as it turns west, but before going to the next screen, go up into the area that is partially fenced in, and look between the two wooden structures near the edge of the screen to find a **TalismanOfLuck**.\n3. Once you have it, go to the next area.",
+        "description": "1. When you gain control here in **Dalian**, head left and up the dock to find a chest containing a **Lottery Ticket**. Don't worry about the man guarding the pen; we'll come back to him in a moment.\n2. Follow the path as it turns west, but before going to the next screen, go up into the area that is partially fenced in, and look between the two wooden structures near the edge of the screen to find a **Talisman of Luck**.\n3. Once you have it, go to the next area.",
         "type": "exploration",
         "notes": [
           {
@@ -325,9 +325,9 @@
             "matched_overview_item": "Lottery Ticket"
           },
           {
-            "name": "TalismanOfLuck",
+            "name": "Talisman of Luck",
             "category": "items",
-            "matched_overview_item": "TalismanOfLuck"
+            "matched_overview_item": "Talisman of Luck"
           }
         ]
       },
@@ -366,7 +366,7 @@
                 },
                 {
                   "range": "3-4",
-                  "reward": "TalismanOfLuck"
+                  "reward": "Talisman of Luck"
                 },
                 {
                   "range": "5-6",
@@ -387,9 +387,9 @@
             "matched_overview_item": "Lottery Ticket"
           },
           {
-            "name": "TalismanOfLuck",
+            "name": "Talisman of Luck",
             "category": "items",
-            "matched_overview_item": "TalismanOfLuck"
+            "matched_overview_item": "Talisman of Luck"
           },
           {
             "name": "Tent",
@@ -424,7 +424,7 @@
       },
       {
         "id": 5,
-        "description": "1. To your right you should see an old man standing underneath a wooden structure. Search just his lower-right for a chest containing a **TeaOfTheHealer**.\n2. That's it for items out here, so enter the building to the upper-left, which is the **Inn**, for a scene.\n3. Once you regain control, head downstairs to visit the weapon and armor shop.\n4. Before talking to the shopkeeper, follow the hallway to the upper-right corner and examine the ground here to find a **Seal of Aura**.",
+        "description": "1. To your right you should see an old man standing underneath a wooden structure. Search just his lower-right for a chest containing a **Tea of the Healer**.\n2. That's it for items out here, so enter the building to the upper-left, which is the **Inn**, for a scene.\n3. Once you regain control, head downstairs to visit the weapon and armor shop.\n4. Before talking to the shopkeeper, follow the hallway to the upper-right corner and examine the ground here to find a **Seal of Aura**.",
         "type": "exploration",
         "notes": [
           {
@@ -435,9 +435,9 @@
         ],
         "rewards": [
           {
-            "name": "TeaOfTheHealer",
+            "name": "Tea of the Healer",
             "category": "items",
-            "matched_overview_item": "TeaOfTheHealer"
+            "matched_overview_item": "Tea of the Healer"
           },
           {
             "name": "Seal of Aura",
@@ -620,7 +620,7 @@
                 },
                 {
                   "range": "Turquoise",
-                  "reward": "TeaOfTheHealer"
+                  "reward": "Tea of the Healer"
                 },
                 {
                   "range": "Green",

@@ -53,7 +53,7 @@
       "Collect the **Pure Leaf** and **Leather Belt** before reuniting with Alice",
       "Meet the girl, confirm default character names (**Yuri** & **Alice**), and have Alice join the party",
       "Examine the locked sluice gate, then head northeast and save at the **Save Point**",
-      "Retrieve the **SluiceGateHandle** via either the Southern ('Push Ring') or Northern ('Normal Ring') mini-game",
+      "Retrieve the **Sluice Gate Handle** via either the Southern ('Push Ring') or Northern ('Normal Ring') mini-game",
       "Lower the sluice gate to drain the river, rest at camp, and endure the battle against **Fox Face**",
       "In the Graveyard, defeat sub-boss **Raging Tiger** to obtain Yuri's Earth Fusion (**Tigerion**)",
       "Converse with the **Masks** and defeat **Evil 4** to purge Yuri's accumulated Malice",
@@ -78,7 +78,7 @@
           "location": "Ground just south before stepping onto the bridge"
         },
         {
-          "name": "SluiceGateHandle",
+          "name": "Sluice Gate Handle",
           "category": "valuables",
           "location": "Retrieved from either the Southern or Northern sluice gate mechanism"
         },
@@ -340,7 +340,7 @@
       },
       {
         "id": 7,
-        "description": "Retrieve the **SluiceGateHandle** from one of the two sparkling handle mechanisms. Choose your preferred method:\n1. Southern handle ('Push Ring' — rapid CROSS button taps) awards a **Leather Belt** (1st try), **Thera Seed** (2nd try), or **Thera Leaf** (3rd+ try)\n2. Northern handle ('Normal Ring' — 3 timed ring hits) awards a **Bandanna** (1st try), **Mana Seed** (2nd try), or **Mana Leaf** / **Thera Leaf** (3rd+ try)",
+        "description": "Retrieve the **Sluice Gate Handle** from one of the two sparkling handle mechanisms. Choose your preferred method:\n1. Southern handle ('Push Ring' — rapid CROSS button taps) awards a **Leather Belt** (1st try), **Thera Seed** (2nd try), or **Thera Leaf** (3rd+ try)\n2. Northern handle ('Normal Ring' — 3 timed ring hits) awards a **Bandanna** (1st try), **Mana Seed** (2nd try), or **Mana Leaf** / **Thera Leaf** (3rd+ try)",
         "type": "puzzle",
         "notes": [
           {
@@ -351,15 +351,15 @@
         ],
         "rewards": [
           {
-            "name": "SluiceGateHandle",
+            "name": "Sluice Gate Handle",
             "category": "valuables",
-            "matched_overview_item": "SluiceGateHandle"
+            "matched_overview_item": "Sluice Gate Handle"
           }
         ]
       },
       {
         "id": 8,
-        "description": "Head back to the northeastern sluice gate and insert the **SluiceGateHandle** to lower the gate and drain the water flowing through the plain.",
+        "description": "Head back to the northeastern sluice gate and insert the **Sluice Gate Handle** to lower the gate and drain the water flowing through the plain.",
         "type": "exploration",
         "rewards": []
       },

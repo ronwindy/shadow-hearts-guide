@@ -68,7 +68,7 @@
           "location": "Town center, right side of the well by a board on the ground"
         },
         {
-          "name": "TalismanOfLuck",
+          "name": "Talisman of Luck",
           "category": "items",
           "location": "Town center corner by the Wandering Merchant"
         },
@@ -239,7 +239,7 @@
             "price": 320
           },
           {
-            "name": "TalismanOfLuck",
+            "name": "Talisman of Luck",
             "price": 480
           },
           {
@@ -313,7 +313,7 @@
       },
       {
         "id": 2,
-        "description": "1. Use the **Save Point** in the center of town near the well to save your game and clear **Malice** in the **Graveyard** if needed.\n2. Check around the right side of the well by a board on the ground to find a **Tent**.\n3. Go all the way to the right, then all the way up to the corner by the **Lost Peddler / Wandering Merchant** to find a **TalismanOfLuck** lying on the ground.",
+        "description": "1. Use the **Save Point** in the center of town near the well to save your game and clear **Malice** in the **Graveyard** if needed.\n2. Check around the right side of the well by a board on the ground to find a **Tent**.\n3. Go all the way to the right, then all the way up to the corner by the **Lost Peddler / Wandering Merchant** to find a **Talisman of Luck** lying on the ground.",
         "type": "exploration",
         "rewards": [
           {
@@ -322,9 +322,9 @@
             "matched_overview_item": "Tent"
           },
           {
-            "name": "TalismanOfLuck",
+            "name": "Talisman of Luck",
             "category": "items",
-            "matched_overview_item": "TalismanOfLuck"
+            "matched_overview_item": "Talisman of Luck"
           }
         ]
       },
@@ -351,13 +351,13 @@
               "name": "Hellcat",
               "hp": 45,
               "class": "Light",
-              "drop": "TalismanOfLuck"
+              "drop": "Talisman of Luck"
             },
             {
               "name": "Hellcat",
               "hp": 45,
               "class": "Light",
-              "drop": "TalismanOfLuck"
+              "drop": "Talisman of Luck"
             }
           ],
           "exp": 40,

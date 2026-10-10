@@ -244,8 +244,10 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
     else:
         for idx, c_s in enumerate(c_shops):
             g_s = g_shops[idx]
+            # Compare names ignoring spacing/case (source CamelCase vs. natural-language spacing)
             c_inv = {i.get("name"): i.get("price") for i in c_s.get("inventory", [])}
-            g_inv = {i.get("name"): i.get("price") for i in g_s.get("inventory", [])}
+            g_inv_raw = {normalize_name(i.get("name")): i.get("price") for i in g_s.get("inventory", [])}
+            g_inv = {n: g_inv_raw[normalize_name(n)] for n in c_inv if normalize_name(n) in g_inv_raw}
             for iname, iprice in c_inv.items():
                 if iname not in g_inv:
                     add_finding("high", "missing information", f"shops[{c_s.get('name')}].inventory", iname, "Missing", f"Shop item '{iname}' missing from structured inventory")

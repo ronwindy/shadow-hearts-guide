@@ -53,7 +53,7 @@
           "location": "In the bar down the stairs to the west of the intersection, examine the barrel at the bottom-right of the screen. (step 7)"
         },
         {
-          "name": "TalismanOfMercy",
+          "name": "Talisman of Mercy",
           "category": "items",
           "location": "Go right, then follow the wall as you go south until you run across a '?' icon at the yellow banner. (step 5)"
         },
@@ -132,7 +132,7 @@
             "price": 1700
           },
           {
-            "name": "TalismanOfLuck",
+            "name": "Talisman of Luck",
             "price": 480
           },
           {
@@ -140,7 +140,7 @@
             "price": 2770
           },
           {
-            "name": "TalismanOfMercy",
+            "name": "Talisman of Mercy",
             "price": 820
           },
           {
@@ -305,12 +305,12 @@
       {
         "id": 5,
         "type": "loot",
-        "description": "1. Go right, then follow the wall as you go south until you run across a '?' icon at the yellow banner; check here for a **TalismanOfMercy**.\n2. Keep following along the eastern wall until you come across another '?' icon near a long red banner; check here for a **B.Dragon Horn**.\n3. To your left from here is a blue door; this is a shop (**Mika's House**). The source says to save shopping here for a little later, when you have another discount card.\n4. Continue southwest to the next area.",
+        "description": "1. Go right, then follow the wall as you go south until you run across a '?' icon at the yellow banner; check here for a **Talisman of Mercy**.\n2. Keep following along the eastern wall until you come across another '?' icon near a long red banner; check here for a **B.Dragon Horn**.\n3. To your left from here is a blue door; this is a shop (**Mika's House**). The source says to save shopping here for a little later, when you have another discount card.\n4. Continue southwest to the next area.",
         "rewards": [
           {
-            "name": "TalismanOfMercy",
+            "name": "Talisman of Mercy",
             "category": "items",
-            "matched_overview_item": "TalismanOfMercy"
+            "matched_overview_item": "Talisman of Mercy"
           },
           {
             "name": "B.Dragon Horn",
@@ -343,7 +343,7 @@
                 },
                 {
                   "range": "Turquoise",
-                  "reward": "*TeaOfTheSage"
+                  "reward": "*Tea of the Sage"
                 },
                 {
                   "range": "Green",
@@ -358,8 +358,8 @@
           },
           {
             "type": "discrepancy",
-            "title": "TeaOfTheHolyOne vs TeaOfTheSage",
-            "text": "The Prize Listing in game lists this prize as TeaOfTheHolyOne, and even says that you receive it after winning it. However, if you check your inventory, you will receive a TeaOfTheSage instead."
+            "title": "Tea of the Holy One vs Tea of the Sage",
+            "text": "The Prize Listing in game lists this prize as Tea of the Holy One, and even says that you receive it after winning it. However, if you check your inventory, you will receive a Tea of the Sage instead."
           }
         ],
         "rewards": [
@@ -424,7 +424,7 @@
       {
         "id": 11,
         "type": "preparation",
-        "description": "The source recommends the following purchases:\n\n- A decent amount of the new 2nd level recovery items (**Thera**/**Mana**/**Pure Seed** and **TalismanOfMercy**).\n- Upgrading everyone's weapons and armor.\n- Four (this time) each of the **Studded Cap** and **Western Belt**, as all four party members will be participating in the next dungeon.",
+        "description": "The source recommends the following purchases:\n\n- A decent amount of the new 2nd level recovery items (**Thera**/**Mana**/**Pure Seed** and **Talisman of Mercy**).\n- Upgrading everyone's weapons and armor.\n- Four (this time) each of the **Studded Cap** and **Western Belt**, as all four party members will be participating in the next dungeon.",
         "notes": [
           {
             "type": "tip",

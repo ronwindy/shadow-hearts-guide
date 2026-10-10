@@ -46,7 +46,7 @@
     "items_summary": {
       "obtainable": [
         {
-          "name": "TalismanOfLuck",
+          "name": "Talisman of Luck",
           "category": "items",
           "location": "North side of the area behind the fountain ('?' icon)"
         },
@@ -234,7 +234,7 @@
             "name": "Alice",
             "level": 9,
             "equipment": [
-              "ShootingStarTome",
+              "Shooting Star Tome",
               "Leather Skirt",
               "Bandanna",
               "Leather Belt",
@@ -260,7 +260,7 @@
             "price": 50
           },
           {
-            "name": "ShootingStarTome",
+            "name": "Shooting Star Tome",
             "price": 1420
           },
           {
@@ -280,7 +280,7 @@
             "price": 1200
           },
           {
-            "name": "TalismanOfLuck",
+            "name": "Talisman of Luck",
             "price": 480
           },
           {
@@ -316,7 +316,7 @@
             "price": 90
           },
           {
-            "name": "RosewoodBracelet",
+            "name": "Rosewood Bracelet",
             "price": 3000
           },
           {
@@ -353,13 +353,13 @@
       },
       {
         "id": 2,
-        "description": "1. Go to the north side of the area behind the fountain until you see the '?' icon to find a **TalismanOfLuck**.\n2. Next, head to the left side of the fountain and talk to the man in green, the **Building-Loving Man**.\n3. Since you have a **Lottery Ticket** from the **Felinus** battle, he'll offer to let you play the **Lottery**! IGNORE him for now, as we'll be able to save here in a few moments so that if we fail, we can reload and try again.",
+        "description": "1. Go to the north side of the area behind the fountain until you see the '?' icon to find a **Talisman of Luck**.\n2. Next, head to the left side of the fountain and talk to the man in green, the **Building-Loving Man**.\n3. Since you have a **Lottery Ticket** from the **Felinus** battle, he'll offer to let you play the **Lottery**! IGNORE him for now, as we'll be able to save here in a few moments so that if we fail, we can reload and try again.",
         "type": "exploration",
         "rewards": [
           {
-            "name": "TalismanOfLuck",
+            "name": "Talisman of Luck",
             "category": "items",
-            "matched_overview_item": "TalismanOfLuck"
+            "matched_overview_item": "Talisman of Luck"
           }
         ]
       },
@@ -429,7 +429,7 @@
                 },
                 {
                   "range": "Turquoise",
-                  "reward": "TalismanOfMercy"
+                  "reward": "Talisman of Mercy"
                 },
                 {
                   "range": "Green",
@@ -671,7 +671,7 @@
           "name": "Alice",
           "level": 9,
           "equipment": [
-            "ShootingStarTome",
+            "Shooting Star Tome",
             "Leather Skirt",
             "Bandanna",
             "Leather Belt",
