@@ -1,0 +1,51 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  icon: any;
+  isActive: boolean;
+  isAvailable: boolean;
+  isChild?: boolean;
+  showBadge?: boolean;
+}
+
+const { href, title, icon: EntryIcon, isActive, isAvailable, isChild = false, showBadge = false } = Astro.props;
+
+const rowCls = isChild ? 'flex items-start gap-2 min-w-0' : 'flex items-center gap-2 min-w-0';
+// Nested children may wrap to 2 lines; top-level rows stay single-line.
+const clampStyle = isChild
+  ? 'display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;'
+  : undefined;
+const labelCls = isChild ? 'min-w-0 break-words' : 'truncate min-w-0';
+const iconCls = isChild ? 'mt-0.5' : '';
+---
+
+{isAvailable ? (
+  <a
+    href={href}
+    class={`block px-2.5 py-1.5 rounded text-sm transition-colors ${
+      isActive
+        ? 'bg-gold-500/15 text-gold-300 font-medium border-l-2 border-gold-400 shadow-sm shadow-gold-500/10'
+        : 'text-slate-300 hover:text-gold-300 hover:bg-slate-850/80'
+    }`}
+    title={title}
+  >
+    <span class={rowCls}>
+      <EntryIcon class={`w-3.5 h-3.5 flex-shrink-0 text-gold-400/80 ${iconCls}`} aria-hidden="true" />
+      <span class={labelCls} style={clampStyle}>{title}</span>
+      {showBadge && (
+        <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border bg-purple-950/60 text-purple-300 border-purple-700/60">Side quest</span>
+      )}
+    </span>
+  </a>
+) : (
+  <div class="px-2.5 py-1.5 text-slate-500 text-sm opacity-60 cursor-default" title={title}>
+    <span class={rowCls}>
+      <EntryIcon class={`w-3.5 h-3.5 flex-shrink-0 ${iconCls}`} aria-hidden="true" />
+      <span class={labelCls} style={clampStyle}>{title}</span>
+      {showBadge && (
+        <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border border-slate-700">Side quest</span>
+      )}
+    </span>
+  </div>
+)}

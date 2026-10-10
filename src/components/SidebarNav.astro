@@ -1,5 +1,7 @@
 ---
 import { getTocData } from '../lib/guideData';
+import type { TocEntry } from '../lib/types';
+import SidebarEntry from './SidebarEntry.astro';
 import {
   BookOpen, Compass, Castle, Scroll, ChevronRight, TrainFront, Trees, House, Landmark, Anchor, Ship,
   Church, Hospital, Mountain, Swords, Sword, Shield, Shirt, Gem, Store, Coins, Ticket, Skull, Users,
@@ -81,6 +83,21 @@ function getEntryIcon(code: string, title: string, categoryIcon: any) {
   return categoryIcon;
 }
 
+// Nest each run of side-quest entries under the non-side-quest entry that precedes it.
+// A side quest with no preceding parent stays top-level (and keeps its badge).
+function groupEntries(entries: TocEntry[]): Array<{ entry: TocEntry; children: TocEntry[] }> {
+  const groups: Array<{ entry: TocEntry; children: TocEntry[] }> = [];
+  for (const entry of entries) {
+    const parent = groups[groups.length - 1];
+    if (entry.is_sidequest && parent && !parent.entry.is_sidequest) {
+      parent.children.push(entry);
+    } else {
+      groups.push({ entry, children: [] });
+    }
+  }
+  return groups;
+}
+
 function getCategoryFullTitle(name: string): string {
   const n = name.toLowerCase();
   if (n.includes('asia')) return 'Walkthrough - Shadow Hearts (Asia)';
@@ -131,50 +148,46 @@ function getCategoryFullTitle(name: string): string {
           </summary>
 
           <ul class="mt-1 space-y-0.5 pl-2.5 border-l border-slate-800/80 ml-3 py-1">
-            {cat.entries.map((entry) => {
+            {groupEntries(cat.entries).map((group) => {
+              const entry = group.entry;
               const isActive = entry.id === currentId;
-              const isAvailable = entry.has_structured;
               const EntryIcon = entry.is_sidequest
                 ? Scroll
                 : getEntryIcon(entry.code, entry.title, CatIcon);
-              const rowCls = 'flex items-center gap-2 min-w-0';
-              const labelCls = 'truncate min-w-0';
               return (
-                <li 
-                  class="sidebar-item" 
+                <li
+                  class="sidebar-item"
                   data-active={isActive ? 'true' : undefined}
                 >
-                  {isAvailable ? (
-                    <a
-                      href={`${baseUrl}/guide/${entry.id}`}
-                      class={`block px-2.5 py-1.5 rounded text-sm transition-colors ${
-                        isActive
-                          ? 'bg-gold-500/15 text-gold-300 font-medium border-l-2 border-gold-400 shadow-sm shadow-gold-500/10'
-                          : 'text-slate-300 hover:text-gold-300 hover:bg-slate-850/80'
-                      }`}
-                      title={entry.title}
-                    >
-                      <span class={rowCls}>
-                        <EntryIcon class="w-3.5 h-3.5 flex-shrink-0 text-gold-400/80" aria-hidden="true" />
-                        <span class={labelCls}>{entry.title}</span>
-                        {entry.is_sidequest && (
-                          <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border bg-purple-950/60 text-purple-300 border-purple-700/60">Side quest</span>
-                        )}
-                      </span>
-                    </a>
-                  ) : (
-                    <div 
-                      class="px-2.5 py-1.5 text-slate-500 text-sm opacity-60 cursor-default truncate"
-                      title={entry.title}
-                    >
-                      <span class={rowCls}>
-                        <EntryIcon class="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
-                        <span class={labelCls}>{entry.title}</span>
-                        {entry.is_sidequest && (
-                          <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border border-slate-700">Side quest</span>
-                        )}
-                      </span>
-                    </div>
+                  <SidebarEntry
+                    href={`${baseUrl}/guide/${entry.id}`}
+                    title={entry.title}
+                    icon={EntryIcon}
+                    isActive={isActive}
+                    isAvailable={!!entry.has_structured}
+                    showBadge={entry.is_sidequest}
+                  />
+                  {group.children.length > 0 && (
+                    <ul class="sidebar-children mt-0.5 mb-1 ml-4 pl-2 space-y-0.5 border-l border-slate-800/80">
+                      {group.children.map((child) => {
+                        const childActive = child.id === currentId;
+                        return (
+                          <li
+                            class="sidebar-item"
+                            data-active={childActive ? 'true' : undefined}
+                          >
+                            <SidebarEntry
+                              href={`${baseUrl}/guide/${child.id}`}
+                              title={child.title}
+                              icon={Scroll}
+                              isActive={childActive}
+                              isAvailable={!!child.has_structured}
+                              isChild
+                            />
+                          </li>
+                        );
+                      })}
+                    </ul>
                   )}
                 </li>
               );
