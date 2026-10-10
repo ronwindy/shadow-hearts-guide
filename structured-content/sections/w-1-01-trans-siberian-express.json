@@ -14,10 +14,10 @@
     },
     "navigation": {
       "prev": {
-        "id": "w-1-00",
-        "code": "[W-1-00]",
-        "title": "Walkthrough - Asia",
-        "file": "sections/w-1-00-walkthrough-asia.json"
+        "id": "i-1-01",
+        "code": "[I-1-01]",
+        "title": "Game Manual / Instructions",
+        "file": "sections/i-1-01-game-manual-instructions.json"
       },
       "next": {
         "id": "w-1-02",

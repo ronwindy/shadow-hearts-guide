@@ -18,6 +18,7 @@ import re
 import sys
 import json
 import argparse
+from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple
 
 
@@ -49,7 +50,14 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
         })
         finding_id += 1
 
-    # 1. Navigation Check
+    # 1. Navigation Check (links to sections merged elsewhere are expected to differ)
+    def _is_merged(sec_id):
+        try:
+            qa = json.load(open(Path(__file__).resolve().parents[4] / "qa-status.json", encoding="utf-8"))
+            return qa.get(sec_id, {}).get("status") == "MERGED"
+        except Exception:
+            return False
+
     c_nav = canonical.get("navigation", {})
     g_nav = guide.get("navigation", {})
     for direction in ["prev", "next"]:
@@ -58,7 +66,7 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
         if c_link and not g_link:
             add_finding("high", "navigation", f"navigation.{direction}", c_link, None, f"Missing {direction} navigation link")
         elif c_link and g_link:
-            if c_link.get("id") != g_link.get("id"):
+            if c_link.get("id") != g_link.get("id") and not _is_merged(c_link.get("id")):
                 add_finding("medium", "navigation", f"navigation.{direction}.id", c_link.get("id"), g_link.get("id"), f"Navigation {direction} ID mismatch")
 
     # 1b. Reference sections carry canonical text verbatim; any drift is a fidelity defect

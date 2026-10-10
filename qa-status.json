@@ -33,8 +33,8 @@
     }
   },
   "i-1-01": {
-    "checked_at": "2026-10-08T23:35:59",
-    "content_hash": "8ef8558b1c4ce376",
+    "checked_at": "2026-10-10T13:29:17",
+    "content_hash": "68825de1989b9049",
     "status": "PASS",
     "summary": {
       "critical": 0,
@@ -44,19 +44,13 @@
     }
   },
   "w-1-00": {
-    "checked_at": "2026-10-07T22:48:39",
-    "content_hash": "0c50629d3d2de3c3",
-    "status": "PASS",
-    "summary": {
-      "critical": 0,
-      "high": 0,
-      "low": 0,
-      "medium": 0
-    }
+    "merged_into": "i-1-01",
+    "note": "Compass & Orientation moved to Game Manual; overview page removed",
+    "status": "MERGED"
   },
   "w-1-01": {
-    "checked_at": "2026-10-07T23:54:25",
-    "content_hash": "0c21b66cbb94a85e",
+    "checked_at": "2026-10-10T13:29:26",
+    "content_hash": "09ad2a7c836f6240",
     "status": "PASS",
     "summary": {
       "critical": 0,

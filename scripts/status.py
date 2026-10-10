@@ -111,7 +111,10 @@ def audit_section(root: Path, sec: Dict[str, Any], qa_data: Optional[Dict[str, A
 def compute_project_status(root: Path) -> Dict[str, Any]:
     _, sections_index = load_canonical_index(root)
     qa_data = load_qa_status(root)
-    sections = [audit_section(root, s, qa_data) for s in sections_index]
+    # Sections whose content was merged into another page are marked
+    # {"status": "MERGED", "merged_into": "<id>"} in qa-status.json and excluded here.
+    merged = {k for k, v in qa_data.items() if isinstance(v, dict) and v.get("status") == "MERGED"}
+    sections = [audit_section(root, s, qa_data) for s in sections_index if s.get("id") not in merged]
     total = len(sections)
 
     def ref(s):

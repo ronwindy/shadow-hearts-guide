@@ -20,21 +20,81 @@
         "file": "sections/i-1-00-table-of-contents.json"
       },
       "next": {
-        "id": "w-1-00",
-        "code": "[W-1-00]",
-        "title": "Walkthrough - Asia",
-        "file": "sections/w-1-00-walkthrough-asia.json"
+        "id": "w-1-01",
+        "code": "[W-1-01]",
+        "title": "Trans-Siberian Express",
+        "file": "sections/w-1-01-trans-siberian-express.json"
       }
     },
     "overview": {
+      "directions": {
+        "compass_note": "There is no true \"compass\" to the game; instead, you travel on pre-rendered backgrounds with areas for walking. Sometimes, I will substitute west for left, right for east, etc.",
+        "mappings": [
+          {
+            "screen": "Up",
+            "cardinal": "North",
+            "abbr": "U / N"
+          },
+          {
+            "screen": "Down",
+            "cardinal": "South",
+            "abbr": "D / S"
+          },
+          {
+            "screen": "Left",
+            "cardinal": "West",
+            "abbr": "L / W"
+          },
+          {
+            "screen": "Right",
+            "cardinal": "East",
+            "abbr": "R / E"
+          },
+          {
+            "screen": "Upper-Left",
+            "cardinal": "Northwest",
+            "abbr": "UL / NW"
+          },
+          {
+            "screen": "Upper-Right",
+            "cardinal": "Northeast",
+            "abbr": "UR / NE"
+          },
+          {
+            "screen": "Lower-Left",
+            "cardinal": "Southwest",
+            "abbr": "LL / SW"
+          },
+          {
+            "screen": "Lower-Right",
+            "cardinal": "Southeast",
+            "abbr": "LR / SE"
+          }
+        ]
+      },
       "intro": "This section contains all of the instructions listed in the game's manual.",
       "controls": {
         "controller_layout": [
-          { "button": "UP", "function": "Up direction" },
-          { "button": "DN", "function": "Down direction" },
-          { "button": "LT", "function": "Left direction" },
-          { "button": "RT", "function": "Right direction" },
-          { "button": "/\\ (TRIANGLE)", "function": "Cancel / Back" },
+          {
+            "button": "UP",
+            "function": "Up direction"
+          },
+          {
+            "button": "DN",
+            "function": "Down direction"
+          },
+          {
+            "button": "LT",
+            "function": "Left direction"
+          },
+          {
+            "button": "RT",
+            "function": "Right direction"
+          },
+          {
+            "button": "/\\ (TRIANGLE)",
+            "function": "Cancel / Back"
+          },
           {
             "button": "[] (SQUARE)",
             "function": "Display Command Menu screen"
@@ -43,7 +103,10 @@
             "button": "() (CIRCLE)",
             "function": "Run (when using Directional buttons to move)"
           },
-          { "button": ">< (CROSS)", "function": "Confirm" },
+          {
+            "button": ">< (CROSS)",
+            "function": "Confirm"
+          },
           {
             "button": "L1",
             "function": "L1 Trigger / Display Escape command in battle / Turn pages in Command Menu"
@@ -52,21 +115,42 @@
             "button": "R1",
             "function": "R1 Trigger / Display Escape command in battle / Turn pages in Command Menu"
           },
-          { "button": "L2", "function": "L2 Trigger" },
-          { "button": "R2", "function": "R2 Trigger" },
+          {
+            "button": "L2",
+            "function": "L2 Trigger"
+          },
+          {
+            "button": "R2",
+            "function": "R2 Trigger"
+          },
           {
             "button": "LA (LEFT ANALOG)",
             "function": "Move character / Navigate menus (press lightly to walk, all the way to run)"
           },
-          { "button": "RA (RIGHT ANALOG)", "function": "Right Analog stick" },
-          { "button": "L3", "function": "L3 (Press)" },
-          { "button": "R3", "function": "R3 (Press)" },
-          { "button": "SL (SELECT)", "function": "Select" },
+          {
+            "button": "RA (RIGHT ANALOG)",
+            "function": "Right Analog stick"
+          },
+          {
+            "button": "L3",
+            "function": "L3 (Press)"
+          },
+          {
+            "button": "R3",
+            "function": "R3 (Press)"
+          },
+          {
+            "button": "SL (SELECT)",
+            "function": "Select"
+          },
           {
             "button": "ST (START)",
             "function": "Start the game / Skip cinematics"
           },
-          { "button": "AG", "function": "Toggle Analog" }
+          {
+            "button": "AG",
+            "function": "Toggle Analog"
+          }
         ],
         "menu_navigation": "Highlight selection using directional buttons or Left analog stick. Confirm with CROSS button. Go back to previous screen with TRIANGLE button."
       },

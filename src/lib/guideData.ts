@@ -23,7 +23,6 @@ export function getHumanReadableLabel(
   if (code === 'HEADER') return 'Guide Overview';
   if (code === 'I-1-00') return 'Directory';
   if (code === 'I-1-01') return 'Game Manual';
-  if (code === 'W-1-00') return 'Asia Overview';
   if (code === 'W-2-00') return 'Europe Overview';
   if (code === 'A-1-00') return 'Appendices Overview';
 
@@ -163,11 +162,11 @@ export function buildPageTocSections(guide: any): PageTocItem[] {
   if (overview.sections && overview.sections.length > 0) {
     pageSections.push({ id: 'toc-index', label: 'Guide Directory' });
   }
-  if (overview.directions) {
-    pageSections.push({ id: 'compass', label: 'Compass & Navigation' });
-  }
   if (overview.story_prologue) {
     pageSections.push({ id: 'prologue', label: 'Story Prologue' });
+  }
+  if (overview.directions) {
+    pageSections.push({ id: 'compass', label: 'Compass & Navigation' });
   }
   if (overview.controls) {
     pageSections.push({ id: 'controls', label: 'Controls' });

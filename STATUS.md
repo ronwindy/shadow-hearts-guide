@@ -1,16 +1,16 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-10 13:21:32`
+> Last synced: `2026-10-10 13:29:36`
 
 ```text
-=== PROJECT STATUS (2026-10-10 13:21:32) ===
-Canonical 69/69 | Structured 11/69 | QA pass 5/69 (fail 1) | Web built 11/69
+=== PROJECT STATUS (2026-10-10 13:29:36) ===
+Canonical 68/68 | Structured 10/68 | QA pass 5/68 (fail 1) | Web built 10/68
 Next:
   1. Fix QA FAIL in header (Title, Metadata & Intro Notes)
   2. Run QA on i-1-00 (Table of Contents)
   3. Structure w-1-07 (Shanghai, Huayuan (1)) - next chronological
 QA FAIL:       header
-Pending QA:    i-1-00, w-1-00, w-1-03, w-1-04, w-1-05
+Pending QA:    i-1-00, w-1-03, w-1-04, w-1-05
 ```
 
 ## Section Matrix
@@ -20,7 +20,6 @@ Pending QA:    i-1-00, w-1-00, w-1-03, w-1-04, w-1-05
 | `[HEADER]` | `header` | Title, Metadata & Intro Notes | Header | QA_ISSUES |
 | `[I-1-00]` | `i-1-00` | Table of Contents | Introduction | STRUCTURED_PENDING_QA |
 | `[I-1-01]` | `i-1-01` | Game Manual / Instructions | Introduction | WEB_BUILT |
-| `[W-1-00]` | `w-1-00` | Walkthrough - Asia | Walkthrough - Asia | STRUCTURED_PENDING_QA |
 | `[W-1-01]` | `w-1-01` | Trans-Siberian Express | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-02]` | `w-1-02` | Plains | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-03]` | `w-1-03` | Zhaoyang Village | Walkthrough - Asia | STRUCTURED_PENDING_QA |

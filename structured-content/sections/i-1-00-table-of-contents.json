@@ -38,7 +38,6 @@
         {
           "category": "Walkthrough (Asia)",
           "entries": [
-            { "code": "[W-1-00]", "title": "Walkthrough Overview (Asia)", "is_sidequest": false },
             { "code": "[W-1-01]", "title": "Trans-Siberian Express", "is_sidequest": false },
             { "code": "[W-1-02]", "title": "Plains", "is_sidequest": false },
             { "code": "[W-1-03]", "title": "Zhaoyang Village", "is_sidequest": false },
