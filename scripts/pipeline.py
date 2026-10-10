@@ -374,6 +374,7 @@ def print_subagent_prompt(sec: Dict[str, Any]) -> bool:
 Compare the canonical source with the structured guide and judge whether the presentation changed
 while the source meaning stayed intact (names, numbers, conditions, warnings, choices, bosses,
 items, save points, ordering). Do not edit any file except the verdict.
+Not a finding: a section's heading location that is absent from `route` (side quests).
 
   canonical:  {rel(canonical_path)}
   structured: {rel(structured_path)}
