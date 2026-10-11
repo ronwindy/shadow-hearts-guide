@@ -1,0 +1,17 @@
+{
+  "section_id": "w-2-04",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Overview: save point (Near the entrance), lottery (Member No. 07, Hunter Warda), items (Seal of Strength), equipment (Flash Badge) all present in save_points and items_summary",
+    "Enemies #051-#054: names, HP (54/65/115/2000), classes, notes and sub-boss flag match canonical",
+    "Tindalos sub-boss card: 2000 HP, Fire, drop Iron Clogs, EXP 8000, Cash 12000, strategy bullets all preserved incl. 75% Deathtouch, level 23 Corpse Arm, Mind's Eye recommendation; boss placed inside step 1 (not hoisted)",
+    "Chicken Heart (4 items) and Do Re Mi Shop (26 items) names and prices match; TalismanOfLuck/TalismanOfMercy re-spaced only",
+    "Choices: [1] Not ready yet / [2] I'll do it! present; 'Choose 2' instruction preserved",
+    "NOTE about party level 23 and Garms for EXP and Cash preserved as callout (EXP AND -> EXP and is casing only)",
+    "Lottery prize table: Red Oracle Earrings, Yellow Seal of Life, Turquoise TeaOfTheHolyOne, Green Mana Root, White Tissues; Oracle Earrings +20% max MP and reload-if-not-won warning preserved",
+    "Step order and rewards: Flash Badge chest then Seal of Strength above cart; save points before Mayor's house and after battle preserved",
+    "No invented facts found; route empty is acceptable"
+  ],
+  "findings": [],
+  "structured_sha256": "385297f9a1227beeaf1e99a9cf1104ae9572d23d6f624a36119bea3d9fabc80a"
+}
