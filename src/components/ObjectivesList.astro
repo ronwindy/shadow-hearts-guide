@@ -15,9 +15,12 @@ const { objectives = [] } = Astro.props;
     <SectionHeading icon={Target}>Primary Objectives</SectionHeading>
     <div class="card p-5">
       <ul class="space-y-2.5 text-slate-200 text-base">
-        {objectives.map((obj) => (
-          <li class="flex items-start gap-2.5">
-            <Target class="w-4 h-4 text-gold-400 mt-1 flex-shrink-0" aria-hidden="true" />
+        {objectives.map((obj, i) => (
+          <li class="flex items-start gap-3">
+            <span
+              class="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-gold-400/50 bg-gold-400/10 text-xs font-bold text-gold-400"
+              aria-hidden="true"
+            >{i + 1}</span>
             <span class="leading-relaxed"><Fragment set:html={renderInlineMarkup(obj)} /></span>
           </li>
         ))}
