@@ -150,7 +150,10 @@
 /* Shared panel surface used by guide page cards */
 @layer components {
   .card {
-    @apply rounded-xl bg-slate-850/90 border border-slate-800 shadow-sm;
+    @apply rounded-xl bg-slate-850/30 border border-white/10 shadow-sm;
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    backdrop-filter: blur(16px) saturate(140%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 4px 18px rgba(0, 0, 0, 0.25);
   }
 }
 
