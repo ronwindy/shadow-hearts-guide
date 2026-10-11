@@ -382,6 +382,12 @@ def normalize_item_names(guide: Dict[str, Any]) -> None:
         st["description"] = space_camel_case(st.get("description"))
         for note in st.get("notes", []):
             note["text"] = space_camel_case(note.get("text"))
+            table = note.get("table")
+            if isinstance(table, dict):
+                table["headers"] = [space_camel_case(h) for h in table.get("headers", [])]
+                for row in table.get("rows", []):
+                    for k, v in list(row.items()):
+                        row[k] = space_camel_case(v)
         for r in st.get("rewards", []):
             r["name"] = space_camel_case(r.get("name"))
             if r.get("matched_overview_item"):
@@ -418,10 +424,11 @@ def soften_caps(text: str) -> str:
         letters = re.sub(r'[^A-Z]', '', run)
         if len(letters) < (6 if " " in run else 4) or run in _CAPS_KEEP or all(w in _CAPS_KEEP for w in run.split()):
             return run
-        low = run.lower()
+        # Acronyms inside the run keep their casing ("EXP AND" -> "EXP and", not "exp and").
+        low = " ".join(w if w in _CAPS_KEEP else w.lower() for w in run.split())
         start = m.start()
         before = text[:start].rstrip()
-        if not before or before[-1] in '.!?:"“':
+        if (not before or before[-1] in '.!?:"“') and not low[:1].isupper():
             low = low[:1].upper() + low[1:]
         return f"**{low}**"
 
