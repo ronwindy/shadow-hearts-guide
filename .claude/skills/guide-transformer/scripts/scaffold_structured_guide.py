@@ -148,6 +148,9 @@ _FOOTNOTE_START = re.compile(r'^\s{0,4}\*\s+-\s+(\S.*)$')
 _CARD_TAG = re.compile(r'\*+\s*(SUB-BOSS|BOSS)\s*\*+')
 _CARD_ROW = re.compile(r'^\|\s*(.+?)\s*\|\s*(\d+\s*HP|HP\s+Varies)\s*\|\s*Class:\s*(\w+)\s*\|\s*(?:\[_\]\s*)?(.*?)\s*\|\s*$')
 _CARD_EXPCASH = re.compile(r'(\d+)\s*EXP\s*/.*?(\d+)\s*Cash')
+# `| Malice | Prize |xx| Malice | Prize |`: two copies of one table, side by side (xx = decoration)
+_SIDE_BY_SIDE_HEAD = re.compile(r'^\s*\|\s*([^|=]*[A-Za-z][^|=]*?)\s*\|\s*([^|=]*[A-Za-z][^|=]*?)\s*\|[^|]{0,6}\|\s*\1\s*\|\s*\2\s*\|\s*$')
+_SIDE_BY_SIDE_ROW = re.compile(r'^\s*\|\s*([^|=]*?)\s*\|\s*([^|=]*?)\s*\|[^|]{0,6}\|\s*([^|=]*?)\s*\|\s*([^|=]*?)\s*\|\s*$')
 
 
 def _find_boxes(lines: List[str]) -> List[Dict[str, Any]]:
@@ -174,6 +177,28 @@ def _find_boxes(lines: List[str]) -> List[Dict[str, Any]]:
                           "data": {"title": title, "rows": rows}})
             i = j
             continue
+        # Side-by-side two-column table: `| A | B |xx| A | B |` header, rows read left half then right half.
+        hm = _SIDE_BY_SIDE_HEAD.match(line)
+        if hm:
+            j, rows = i + 1, []
+            while j < n and (_SIDE_BY_SIDE_ROW.match(lines[j]) or re.match(r'^\s*\|\s*=', lines[j])):
+                j += 1
+            left, right = [], []
+            for k in range(i + 1, j):
+                if re.match(r'^\s*\|\s*=', lines[k]):
+                    continue  # `|===|===|` separator row
+                rm = _SIDE_BY_SIDE_ROW.match(lines[k])
+                a, b, c, d = (g.strip() for g in rm.groups())
+                left.append({"range": a, "reward": b})
+                right.append({"range": c, "reward": d})
+            if left:
+                start = i - 1 if i > 0 and lines[i - 1].lstrip().startswith('.') else i
+                end = j + 1 if j < n and lines[j].lstrip().startswith("'") else j
+                boxes.append({"kind": "table", "start": start + 1, "end": end,
+                              "data": {"headers": [hm.group(1).strip(), hm.group(2).strip()],
+                                       "rows": left + right}})
+                i = end
+                continue
         # Footnote: "* - text" followed by indented continuation lines.
         fm = _FOOTNOTE_START.match(line)
         if fm:
@@ -834,6 +859,17 @@ def _attach_boxes(boxes: List[Dict[str, Any]], paragraphs: List[Tuple[int, int, 
                 "table": {
                     "headers": ["Color", "Prize"],
                     "rows": [{"range": r["range"], "reward": recase(r["reward"])} for r in data["rows"]],
+                },
+            })
+        elif b["kind"] == "table":
+            step.setdefault("notes", []).append({
+                "type": "tip",
+                "title": f"{data['headers'][0]} {data['headers'][1]} Table",
+                "text": "Source shows two side-by-side columns; left column first, then right column.",
+                "table": {
+                    "headers": data["headers"],
+                    "rows": [{"range": r["range"], "reward": cases.get(_norm_name(r["reward"]), r["reward"])}
+                             for r in data["rows"]],
                 },
             })
         elif b["kind"] == "footnote":

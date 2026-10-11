@@ -17,7 +17,7 @@ Thin runbook for the parts that need judgement. Commands, schema and role bounda
 Run `pipeline.py <id> --scaffold`, then compare the draft with the canonical `text`.
 
 - Canonical text: `canonical-sources/sections/<id>-<slug>.json`, field `text` (boss cards, parsed enemies and `bosses[]` sit in the same file). Do not search for it.
-- Boss cards are matched to the canonical by `(type, name)`; same-name fights (e.g. Li Li as SUB-BOSS, then BOSS) are separate cards. A `bosses[].name` with a comma is normally ONE box with several enemy rows (`Hellcat, Hellcat`); keep that exact name so QA matches it. If a name joins two different fights, the canonical is stale: run `import_gamefaqs.py --rederive` (see `source-importer`) instead of patching around it.
+- Boss cards are matched to the canonical by `(type, name)`; same-name fights (e.g. Li Li as SUB-BOSS, then BOSS) are separate cards. A `bosses[].name` with a comma is normally ONE box with several enemy rows (`Hellcat, Hellcat`); keep that exact name so QA matches it. If a name joins two different fights, the canonical is stale: run `.\scripts\run-py.cmd .claude/skills/source-importer/scripts/import_gamefaqs.py --rederive` (add `--dry-run` first to list affected sections; see `source-importer`) instead of patching around it. Same for a boss card with `exp`/`cash` null or a strategy cut off mid-sentence while the canonical text has the full box: the canonical is stale (fix the importer, rederive), do not hand-patch the numbers.
 - Boss `party[]` carries the box's `equipment[]` and `fusions[]` from the canonical; keep them (QA compares them, spaces/case ignored).
 - Accented letters (`voilà`, `LàLà`) show as `�` in some consoles but are intact in the canonical (check the codepoint, not the display). A real U+FFFD in a draft is a source encoding defect: lint flags it as `mojibake` (info). Keep the source text, or repair by judgement and note it; never guess silently.
 
@@ -39,6 +39,7 @@ Patch file format: write it with the Write tool, wrapped as `{"guide": {...}}`. 
 - Run the patch on its own, then `--lint` / `--check`. Chaining them hides a failed patch: `--check` still passes on the unpatched scaffold.
 - When you replace `steps` with a different number of steps, renumber the `(step N)` cites in `items_summary` locations. Lint reports a stale one as `step-ref`.
 - Do the cross-reference and wording self-review before launching the QA subagent: any later edit changes the structured hash and forces a second subagent run.
+- Note boxes: check that every table/box in the canonical text reached the draft (prize tables, side-by-side two-column tables, grids). The scaffold detects side-by-side tables (`| A | B |xx| A | B |`; emitted as one table, left half then right half) but QA does not notice a missing one. Check long bulleted notes and `ALICE's`-style possessives (they can come out as `alice'`) too.
 
 ## 3. Conventions (what the scripts will not do for you)
 - Source shouting becomes **bold normal case** (`**last opportunity**`), never UPPERCASE; lint's `upper-item` is not to be silenced.
@@ -54,7 +55,8 @@ Patch file format: write it with the Write tool, wrapped as `{"guide": {...}}`. 
 1. `pipeline.py <id> --qa-subagent-prompt` prints the exact prompt and draft path.
 2. Launch a subagent with that prompt (it writes `qa-reports/<id>.subagent-draft.json` and must not run `--verdict`).
 3. Read the verdict. On PASS (or only low findings you accept) run `pipeline.py <id> --verdict qa-reports/<id>.subagent-draft.json` (this deletes the draft). On FAIL/findings, patch the structured file and repeat from step 4.
-4. The verdict stores a hash of the structured file. If the file changes afterwards, `--check`/`--finalize` warn that the verdict is stale: re-run the subagent and re-record the verdict.
+4. Apply the subagent's cosmetic findings (e.g. a leftover `_WORD_` marker) before recording the verdict in step 3, so it is not stale: patch, re-run `--check`, then `--verdict`.
+5. The verdict stores a hash of the structured file. If the file changes afterwards, `--check`/`--finalize` warn that the verdict is stale: re-run the subagent and re-record the verdict.
 
 ## 6. Finalize with one confirmation
-Run `pipeline.py <id> --finalize` (stages exactly the section's files, never commits). Show the user the staged list and the suggested message, ask once, and commit only on a yes. Do not push.
+Run `pipeline.py <id> --finalize` (stages exactly the section's files, never commits). It stages only the section's files: importer/script fixes and a rederived canonical made along the way stay unstaged. Run `git status --short` and tell the user which other modified files exist, so they can choose to include them. Show the user the staged list and the suggested message, ask once, and commit only on a yes. Do not push.
