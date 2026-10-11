@@ -1,0 +1,16 @@
+{
+  "section_id": "w-2-02",
+  "verdict": "PASS",
+  "spot_checked": [
+    "overview save point 'Near the entrance' present in guide.save_points",
+    "6 overview items/valuables all in items_summary and as step rewards (Lottery Ticket, Mana Seed, Talisman of Wisdom in step 1; East Gate Key step 3; Moon Swallow, Moon Card step 4); TalismanOfWisom/TalismanOfWisdom source typo resolves to overview 'Talisman of Wisdom'",
+    "enemies #051-#053 names, HP 54/65/115, classes, notes match canonical",
+    "shops Chicken Heart (4 items) and Do Re Mi Shop (26 items) names and prices match canonical, TalismanOfLuck/TalismanOfMercy only re-spaced",
+    "step order matches source: Lottery Ticket, Save Point, Mana Seed, Talisman, house/dad prompt, Choose 2, red fog battles, west; NW house, east town, East Gate Key; Moon Swallow/Moon Card, shops, east gate, Unlock it? prompt, Choose 2, World Map Blue Castle",
+    "choices: dad prompt options [1]/[2] verbatim, after_item 1 = the 'ask if you're her dad' line (source order, before 'Choose 2'); gate prompt options verbatim, after_item 4 = 'Unlock it?' line preceding the box, before 'Choose 2 to unlock'",
+    "NOTE about weapon shop / Guild Card preserved verbatim as tip note in step 2, same location as in source",
+    "no invented facts, no numbers or conditions altered, no bosses in source, navigation prev/next match"
+  ],
+  "findings": [],
+  "structured_sha256": "486f8a9c49de5f811d4bb75bc98c4320cb63940310490a9b5dae03a4357ef1cc"
+}

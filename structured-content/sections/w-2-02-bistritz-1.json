@@ -1,0 +1,319 @@
+{
+  "guide": {
+    "id": "w-2-02",
+    "code": "[W-2-02]",
+    "title": "Bistritz (1)",
+    "type": "walkthrough",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-2-01",
+        "code": "[W-2-01]",
+        "title": "Prague (1)",
+        "file": "sections/w-2-01-prague-1.json"
+      },
+      "next": {
+        "id": "w-2-03",
+        "code": "[W-2-03]",
+        "title": "Blue Castle (1)",
+        "file": "sections/w-2-03-blue-castle-1.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Take a few steps southwest to be back on the first screen, then check the ground near the left stone pillar to find a Lottery Ticket. (step 1)"
+        },
+        {
+          "name": "Talisman of Wisdom",
+          "category": "items",
+          "location": "Head east to the next area, then make your way all the way to the right; there's a Talisman of Wisdom in the northeast corner near the gate. (step 1)"
+        },
+        {
+          "name": "Mana Seed",
+          "category": "items",
+          "location": "Go to the northwest part of the area and search the somewhat hidden area to the right of the church to find a Mana Seed. (step 1)"
+        },
+        {
+          "name": "Moon Swallow",
+          "category": "items",
+          "location": "Before leaving, check the floor at the bottom-right of the screen near the barrels and boxes for a Moon Swallow, then open a somewhat hidden chest on the right side of the room for the Moon Card. (step 4)"
+        },
+        {
+          "name": "East Gate Key",
+          "category": "valuables",
+          "location": "Check the doors to the houses to the north for some dialogue, then go back into the southeastern house for a long scene, where you'll receive the East Gate Key. (step 3)"
+        },
+        {
+          "name": "Moon Card",
+          "category": "valuables",
+          "location": "Before leaving, check the floor at the bottom-right of the screen near the barrels and boxes for a Moon Swallow, then open a somewhat hidden chest on the right side of the room for the Moon Card. (step 4)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#051",
+        "name": "Birdman",
+        "hp": 54,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Silence"
+      },
+      {
+        "number": "#052",
+        "name": "Mailman",
+        "hp": 65,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Confusion"
+      },
+      {
+        "number": "#053",
+        "name": "Police Dog",
+        "hp": 115,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      }
+    ],
+    "bosses": [],
+    "shops": [
+      {
+        "name": "Chicken Heart",
+        "inventory": [
+          {
+            "name": "Tome of the Sun",
+            "price": 6020
+          },
+          {
+            "name": "Chainmail Vest",
+            "price": 5500
+          },
+          {
+            "name": "Royal Estoc",
+            "price": 6230
+          },
+          {
+            "name": "Silk Bolero",
+            "price": 5940
+          }
+        ]
+      },
+      {
+        "name": "Do Re Mi Shop",
+        "inventory": [
+          {
+            "name": "Studded Cap",
+            "price": 1700
+          },
+          {
+            "name": "Thera Seed",
+            "price": 120
+          },
+          {
+            "name": "Western Belt",
+            "price": 1700
+          },
+          {
+            "name": "Thera Root",
+            "price": 300
+          },
+          {
+            "name": "Metal Belt",
+            "price": 3000
+          },
+          {
+            "name": "Mana Seed",
+            "price": 300
+          },
+          {
+            "name": "Shell Bracelet",
+            "price": 2770
+          },
+          {
+            "name": "Mana Root",
+            "price": 500
+          },
+          {
+            "name": "Bone Bracelet",
+            "price": 2960
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Rosewood Bracelet",
+            "price": 3000
+          },
+          {
+            "name": "Pure Seed",
+            "price": 510
+          },
+          {
+            "name": "Bell Bracelet",
+            "price": 3120
+          },
+          {
+            "name": "Talisman of Luck",
+            "price": 480
+          },
+          {
+            "name": "Mirror Bracelet",
+            "price": 3240
+          },
+          {
+            "name": "Talisman of Mercy",
+            "price": 820
+          },
+          {
+            "name": "Spikes",
+            "price": 2810
+          },
+          {
+            "name": "Soul Benediction",
+            "price": 500
+          },
+          {
+            "name": "Pocket Watch",
+            "price": 5200
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Leonardo's Bear",
+            "price": 3330
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Voodoo Doll",
+            "price": 5200
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Coral Lariat",
+            "price": 5050
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Take a few steps southwest to be back on the first screen, then check the ground near the left stone pillar to find a **Lottery Ticket**.\n2. Now make your way back into the village, and use the Save Point if you wish.\n3. Go to the northwest part of the area and search the somewhat hidden area to the right of the church to find a **Mana Seed**.\n4. Head east to the next area, then make your way all the way to the right; there's a **Talisman of Wisdom** in the northeast corner near the gate.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          },
+          {
+            "name": "Mana Seed",
+            "category": "items",
+            "matched_overview_item": "Mana Seed"
+          },
+          {
+            "name": "Talisman of Wisdom",
+            "category": "items"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. Once you have those items, check the door to the house to the southeast, where a little girl will ask if you're her dad.\n2. Choose 2 to be let inside, where you'll have some dialogue with Terry's family.\n3. Afterward, you'll regain control outside, and will have to do battle with monsters randomly, as the fog is red.\n4. Head west back to the first area.",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. No, it's a monster",
+            "after_item": 1
+          },
+          {
+            "option": "2. I'm a friend of your father.",
+            "after_item": 1
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Examining the first door to the north here to will give you access to the weapon shop. Again, hold off just a bit until we get that Guild Card."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "1. Examine the door to the house in the northwestern corner for a scene, then go back to the eastern side of town.\n2. Check the doors to the houses to the north for some dialogue, then go back into the southeastern house for a long scene, where you'll receive the **East Gate Key**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "East Gate Key",
+            "category": "valuables",
+            "matched_overview_item": "East Gate Key"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "1. Before leaving, check the floor at the bottom-right of the screen near the barrels and boxes for a **Moon Swallow**, then open a somewhat hidden chest on the right side of the room for the **Moon Card**.\n2. If you like, shop with Nina for some items, and make sure to stop by the weapons shop to upgrade **Alice**'s and **Zhuzhen**'s equipment.\n3. When you're ready, go to the eastern side of the village and examine the eastern gate.\n4. Unlock it?\n5. Choose 2 to unlock the gate and proceed.\n6. Out here on the World Map, enter the Blue Castle.",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. No, I don't want to leave.",
+            "after_item": 4
+          },
+          {
+            "option": "2. Yes, go through the east forest.",
+            "after_item": 4
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Moon Swallow",
+            "category": "items",
+            "matched_overview_item": "Moon Swallow"
+          },
+          {
+            "name": "Moon Card",
+            "category": "valuables",
+            "matched_overview_item": "Moon Card"
+          }
+        ]
+      }
+    ],
+    "save_points": [
+      "Near the entrance"
+    ]
+  }
+}
