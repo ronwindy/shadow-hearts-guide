@@ -280,7 +280,14 @@ def parse_boss_cards(text: str) -> List[Dict[str, Any]]:
                     })
                 
         # Parse strategy text lines
-        lines = card_text.splitlines()
+        # A source line break lost inside the box leaves two rows joined as "|  ...  ||  ...  |"
+        lines = []
+        for raw_line in card_text.splitlines():
+            if raw_line.startswith('|') and raw_line.endswith('|') and '||' in raw_line:
+                head, tail = raw_line.split('||', 1)
+                lines.extend([head + '|', '|' + tail])
+            else:
+                lines.append(raw_line)
         strat_lines = []
         for l in lines:
             if l.startswith('|') and l.endswith('|'):

@@ -121,7 +121,8 @@ def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
             text = _plain(" ".join(l.strip() for l in lines))
             sentences = [s for s in _SENTENCE_SPLIT.split(text) if s.strip()]
             words = len(text.split())
-            if len(sentences) > MAX_SENTENCES or words > MAX_WORDS:
+            # a single sentence cannot be split into one-fact items without rewording it
+            if len(sentences) > MAX_SENTENCES or (words > MAX_WORDS and len(sentences) > 1):
                 add("prose", "warn", loc, f"{len(sentences)} sentences / {words} words: {text}")
         if loc.count(" ") == 1:  # step description only (not notes / boss strategy)
             seen_bullet = False

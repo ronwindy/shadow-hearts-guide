@@ -126,13 +126,13 @@
     }
   },
   "w-1-08": {
-    "checked_at": "2026-10-11T14:47:03",
+    "checked_at": "2026-10-11T15:36:07",
     "content_hash": "f59f3a48f95cc96c",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
-      "low": 2,
+      "low": 1,
       "medium": 0
     }
   },
@@ -219,13 +219,13 @@
     }
   },
   "w-2-05": {
-    "checked_at": "2026-10-11T15:30:25",
+    "checked_at": "2026-10-11T15:35:58",
     "content_hash": "198d85f5abf35bc6",
-    "status": "PASS WITH WARNINGS",
+    "status": "PASS",
     "summary": {
       "critical": 0,
       "high": 0,
-      "low": 1,
+      "low": 0,
       "medium": 0
     }
   },
