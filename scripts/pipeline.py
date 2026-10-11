@@ -312,7 +312,7 @@ def run_verdict(sec: Dict[str, Any], verdict_file: str) -> bool:
     """Validates the independent QA subagent's JSON verdict and stores it next to the QA report."""
     print(f"\n--- Subagent QA Verdict: {sec['id']} ---")
     try:
-        raw = sys.stdin.buffer.read().decode("utf-8-sig") if verdict_file == "-" else Path(verdict_file).read_text(encoding="utf-8")
+        raw = sys.stdin.buffer.read().decode("utf-8-sig") if verdict_file == "-" else Path(verdict_file).read_text(encoding="utf-8-sig")
         verdict = json.loads(raw)
     except (OSError, ValueError) as err:
         print(f"[FAIL] Cannot read verdict JSON '{verdict_file}': {err}")

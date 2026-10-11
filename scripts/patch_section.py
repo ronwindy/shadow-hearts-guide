@@ -125,7 +125,7 @@ def main() -> int:
     if args.patch == "-":
         patch = json.loads(sys.stdin.buffer.read().decode("utf-8-sig"))
     else:
-        patch = json.loads(Path(args.patch).read_text(encoding="utf-8")) if args.patch else {}
+        patch = json.loads(Path(args.patch).read_text(encoding="utf-8-sig")) if args.patch else {}
     mapping = dict(patch.pop("$rename", {}) or {})
     for spec in args.rename:
         old, sep, new = spec.partition("=")

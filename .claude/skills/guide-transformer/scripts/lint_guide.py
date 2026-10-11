@@ -10,6 +10,7 @@ Flags text that the Guide Transformer should still have cleaned up:
   mixed-list       a numbered item after a bullet in one step (a bullet's wrapped text leaked)
   ascii-border     ASCII-art border/box characters (`____`, `¯¯¯`, `.———`, `|` tables, `$$$$`)
   narrative-item   (info) reward/tag that is not in items_summary (overview omitted it)
+  step-ref         items_summary location cites "(step N)" that does not exist or does not mention the item
   empty-location   (info) items_summary.obtainable[] with location "" (hints a stated location, never fills it)
 
 Each finding is {"id", "check", "severity", "location", "text"}; severity is "warn" or "info".
@@ -157,6 +158,22 @@ def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
                 seen.add(key)
                 add("narrative-item", "info", f"step {step.get('id')}",
                     f"{r.get('name')} is a reward here but is not in items_summary (overview omits it)")
+
+    # "(step N)" cites in a location must point at a step that actually mentions the item
+    by_id = {str(st.get("id")): st for st in guide.get("steps", [])}
+    for key in ("obtainable", "initial"):
+        for item in summary.get(key, []):
+            for n in re.findall(r'\bsteps?\s+(\d+)', item.get("location") or "", re.I):
+                st = by_id.get(n)
+                where = f"items_summary {item.get('name', '')}"
+                if st is None:
+                    add("step-ref", "warn", where, f"cites step {n}, which does not exist")
+                    continue
+                blob = " ".join([st.get("description", "")]
+                                + [r.get("name", "") for r in st.get("rewards", [])]
+                                + [x.get("text", "") for x in st.get("notes", [])])
+                if _norm(item.get("name", "")) not in _norm(blob):
+                    add("step-ref", "warn", where, f"cites step {n}, which does not mention {item.get('name')}")
 
     # obtainable items with no stated location: hint where the source mentions them (a human confirms)
     for item in summary.get("obtainable", []):

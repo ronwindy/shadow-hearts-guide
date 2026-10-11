@@ -33,6 +33,11 @@ Patch from the canonical text only. Keep the source order, one fact per bullet, 
 
 Patch file format: write it with the Write tool, wrapped as `{"guide": {...}}`. `steps` as an object keyed by step id merges per step (`null` removes one, an unknown id appends); `steps` as an array replaces ALL steps. Same for other id-keyed lists.
 
+- Do not write patch files with PowerShell `Set-Content`/`Out-File -Encoding utf8` (Windows PowerShell 5.1 adds a BOM); use the Write tool. `patch_section.py` tolerates a BOM, but check its output says `Wrote ...` before going on.
+- Run the patch on its own, then `--lint` / `--check`. Chaining them hides a failed patch: `--check` still passes on the unpatched scaffold.
+- When you replace `steps` with a different number of steps, renumber the `(step N)` cites in `items_summary` locations. Lint reports a stale one as `step-ref`.
+- Do the cross-reference and wording self-review before launching the QA subagent: any later edit changes the structured hash and forces a second subagent run.
+
 ## 3. Conventions (what the scripts will not do for you)
 - Source shouting becomes **bold normal case** (`**last opportunity**`), never UPPERCASE; lint's `upper-item` is not to be silenced.
 - A `missable` / `warning` note only when the source states the warning; the inline bold sentence alone is also valid.
