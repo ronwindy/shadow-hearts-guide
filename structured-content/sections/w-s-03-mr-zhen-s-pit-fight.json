@@ -1,0 +1,302 @@
+{
+  "guide": {
+    "id": "w-s-03",
+    "code": "[W-S-03]",
+    "title": "Mr. Zhen's Pit Fight",
+    "type": "sidequest",
+    "category": "Walkthrough - Asia",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-02",
+        "code": "[W-S-02]",
+        "title": "Kowloon Fortress",
+        "file": "sections/w-s-02-kowloon-fortress.json"
+      },
+      "next": {
+        "id": "w-1-11",
+        "code": "[W-1-11]",
+        "title": "Shanghai, Kuihai Tower",
+        "file": "sections/w-1-11-shanghai-kuihai-tower.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Anne's Cross",
+          "category": "equipment",
+          "location": "Reward for defeating a set of 10 enemies with Yuri in Mr. Zhen's Pit Fight (step 9)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#001",
+        "name": "Wind Shear",
+        "hp": 10,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#005",
+        "name": "Hellcat",
+        "hp": 45,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#010",
+        "name": "Yamaraja: Earth",
+        "hp": 300,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#014",
+        "name": "Frog God",
+        "hp": 40,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#015",
+        "name": "Kappa",
+        "hp": 100,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#016",
+        "name": "Water Tiger",
+        "hp": 380,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#018",
+        "name": "Beast Dog",
+        "hp": 480,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#020",
+        "name": "Yamaraja: Wind",
+        "hp": 900,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#021",
+        "name": "White Wolfling",
+        "hp": 45,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#022",
+        "name": "Ogre Flame",
+        "hp": 40,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#023",
+        "name": "Li Li",
+        "hp": 720,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#101",
+        "name": "Prototype Wind Shear",
+        "hp": 500,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies & Silence"
+      },
+      {
+        "number": "#102",
+        "name": "Custom Wind Shear",
+        "hp": 500,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "- Wind Shear x2: 4 EXP, 0 Cash\n- Hellcat x2: 40 EXP, 0 Cash\n- Yamaraja: Earth: 180 EXP, 0 Cash\n- Frog God x3: 135 EXP, 0 Cash\n- Kappa x2, Water Tiger: 400 EXP, 0 Cash\n- Beast Dog: 540 EXP, 0 Cash\n- Yamaraja: Wind: 720 EXP, 0 Cash\n- White Wolfling x3: 234 EXP, 0 Cash\n- Ogre Flame x4: 260 EXP, 0 Cash\n- Li Li: 1000 EXP, 0 Cash\n- Prototype Wind Shear: 1500 EXP, 0 Cash\n- Custom Wind Shear: 1500 EXP, 0 Cash",
+        "type": "battle",
+        "encounter": {
+          "enemies": [
+            "Wind Shear",
+            "Hellcat",
+            "Yamaraja: Earth",
+            "Frog God",
+            "Kappa",
+            "Water Tiger",
+            "Beast Dog",
+            "Yamaraja: Wind",
+            "White Wolfling",
+            "Ogre Flame",
+            "Li Li",
+            "Prototype Wind Shear",
+            "Custom Wind Shear"
+          ]
+        },
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "- As I mentioned before, Mr. Zhen is now hosting pit fights!\n- Just visit the bar and go behind on the curtain at the top of the screen and talk to him.\n- It costs **300 Cash** to fight, and you'll have to fight **10 consecutive battles**, with **no chance to heal between battles**.\n- There are 12 sets of enemies; the order is random, and you'll only have to fight 10 of the 12 sets of enemies listed in the Enemy Formations section above.",
+        "type": "quest",
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "- You'll want to fight with **Yuri**, as you get a special prize once you've beaten all 10.\n- Two-thirds of the enemy groups listed are pretty easy, however, these four may give you trouble: **Yamaraja: Wind**, **Li Li**, **Prototype Wind Shear**, **Custom Wind Shear**.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": "**Yamaraja: Wind**\n\n- He's decently strong against physical attacks.\n- Make sure that you're able to cast Wind Shear with your Tornado Fusion to try and take him out quickly.",
+        "type": "battle",
+        "encounter": {
+          "enemies": [
+            "Yamaraja: Wind"
+          ]
+        },
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "**Li Li**\n\n- She's a pain just like before.\n- Make sure you have something that prevents Paralysis, or you're in for a rough battle.\n- Other than that, some normal physical attacks while fused should take her out rather quickly, especially if you have the Mind's Eye equipped.",
+        "type": "battle",
+        "encounter": {
+          "enemies": [
+            "Li Li"
+          ]
+        },
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": "**Prototype Wind Shear**\n\n- Unlike the weaklings from the beginning of the game, this guy means serious business, and is as tough as a boss.\n- It has the ability to inflict Judgment Ring anomalies, but also casts Flaming Arm of Death, which can **Silence** you and keep you from being able to use Fusion.\n- Make sure that you heal every other round with Thera Seeds to keep your HP up, because he can decimate of **ton** of it in just two rounds.\n- Stay in the Man Dragon Fusion to keep casting Flash Flood in the rounds you're not healing.\n- If you have the Mind's Eye equipped and you're pretty successful at it, do that instead, as you'll inflict more damage.",
+        "type": "battle",
+        "encounter": {
+          "enemies": [
+            "Prototype Wind Shear"
+          ]
+        },
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "**Custom Wind Shear**\n\n- As with the Prototype Wind Shear, I hope you have the Pocket Watch equipped, otherwise you're going to have a heck of a time hitting your ring.\n- He is also just as strong as his counterpart, easily of boss difficulty.\n- Make sure that you heal every other round with Thera Seeds to keep your HP up, because he can decimate of **ton** of it in just two rounds.\n- Stay in the Inferno Fusion to keep casting Fireball in the rounds you're not healing.\n- If you have the Mind's Eye equipped and you're pretty successful at it, do that instead, as you'll inflict more damage.",
+        "type": "battle",
+        "encounter": {
+          "enemies": [
+            "Custom Wind Shear"
+          ]
+        },
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "Taking into consideration all that the plethora of enemies here can do to you (Paralysis, Ring anomalies, and Silence), I recommend having the following setup for **Yuri** [19]:\n\n- Hand Needle\n- Studded Harness\n- Rosewood Bracelet **or** Zodiac Bracelet **or** Mind's Eye\n- Bell Bracelet **or** Cosmic Bracelet\n- Pocket Watch\n- Fusions: Man Dragon, Inferno, Tornado\n\nIn the source diagram, the Zodiac Bracelet and Cosmic Bracelet are bracketed together with Mind's Eye.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Setup",
+            "text": "- If you're comfortable with the Judgment Ring, even with anomalies on it, then I recommend keeping the Mind's Eye on in place of one of the Bracelets.\n- Paralysis and Silence can easily be cured with an item.\n- If you want to play it ultra-safe, then don't worry about the Mind's Eye."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 9,
+        "description": "Once you've defeated a set of 10 enemies with **Yuri**, you'll receive **5000 Cash**, as well as a memento for **Yuri**, **Anne's Cross**.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "If you're aiming to get a full Monster Library, then make sure that you find both the Prototype and Custom Wind Shears before moving on."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "5000 Cash",
+            "category": "cash",
+            "matched_overview_item": "5000 Cash"
+          },
+          {
+            "name": "Anne's Cross",
+            "category": "equipment",
+            "matched_overview_item": "Anne's Cross"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "description": "That's it for side quests, so let's visit the final area in Asia, **[W-1-11] Shanghai, Kuihai Tower**. Make sure to **save** before entering!",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "If you need a bit of extra cash, see the beginning of the next section, where you can find a Third Key that you can sell."
+          },
+          {
+            "type": "missable",
+            "title": "Note",
+            "text": "- Except for weapons / armor / caps / belts, which are assumed as obvious missables as they are replaced by stronger versions, there are two pieces of equipment that you need to buy now if you ever plan on getting them, as they're only available in Asia.\n- Once you finish Kuihai Tower, you'll never be able to get them again, so make sure to buy as many as you want/need NOW.\n- Brigand Earrings (Shanghai, Huayuan): I recommend purchasing 6.\n- Pirate Earrings (Shanghai, Huayuan): I recommend purchasing 5."
+          }
+        ],
+        "rewards": []
+      }
+    ],
+    "objectives": [
+      "Fight 10 consecutive battles with Yuri in Mr. Zhen's Pit Fight",
+      "Receive 5000 Cash and Anne's Cross",
+      "Proceed to Shanghai, Kuihai Tower"
+    ]
+  }
+}
