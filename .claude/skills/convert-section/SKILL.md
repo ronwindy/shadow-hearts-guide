@@ -27,6 +27,8 @@ The scaffold is garbled (hand-patch it with `scripts/patch_section.py <id> <patc
 - a step type is a guess (fallback `exploration`, or `battle` with no encounter). Teasers pointing to side-quest sections are `quest`;
 - an `items_summary` item `location` is empty or disagrees with the canonical (enemy notes / text). Lint reports empty ones as `empty-location` (info); fill only from the source.
 
+Scan the canonical `text` for non-prose art blocks the scaffold dropped (room maps, grids, diagrams; anything that is not a header, shop, enemy or boss box, a choice box, a NOTE or prose). Keep those whose layout is information as a step note with `preformatted` (verbatim, only a common left indent removed, plus a normal `text` caption; see `docs/structured-schema.md` 3.2). Leave decorative borders and legends already captured as tables.
+
 The scaffold already bolds prev/next `[CODE] Title` cross-references from `navigation` and defaults to bullets (numbered only with a sequence cue), so do not re-do those by hand.
 
 Patch from the canonical text only. Keep the source order, one fact per bullet, no changed names/numbers/conditions.
