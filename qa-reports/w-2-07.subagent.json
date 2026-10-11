@@ -1,0 +1,38 @@
+{
+  "section_id": "w-2-07",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Navigation prev w-2-06 / next w-2-08 and source metadata",
+    "Save point (Inn) present in guide.save_points and step 1/8 save mentions",
+    "All 8 overview items/equipment present in items_summary and awarded in steps 1, 2, 3, 5, 7",
+    "Lottery Member No. 06 (Hooked-nose Robin) in items_summary and step 8, prize table (Red/Yellow/Turquoise/Green/White) matches",
+    "Enemy table: #059 Bifronze 165 Dark, #060 Camazotz 158 Wind, Olga 3300 Dark Inflicts Poison, #109-#112 Gusts Varies",
+    "Olga boss card: HP 3300, class Dark, drop Small Jug, party levels 27/26/26, all equipment and fusions, 16000 EXP, 14500 Cash",
+    "Olga strategy: every sentence preserved in order, list split without altering names or numbers",
+    "Boss placed inside chronological step 6 (not hoisted)",
+    "Malice prize table: all 42 rows (21 left + 21 right) with identical ranges and prizes, left column then right column",
+    "Gust Ein/Zwei/Drei/Vier Malice colour conditions and Malice warnings (R1 Run Away, red level, will die)",
+    "Merchant shop: 37 items with identical prices; only re-spacing of run-together names",
+    "Step ordering 1-9 matches canonical prose order",
+    "Spin Ring 3 / NINE areas, Meiyuan, Silent Peddler, Hollows/Blue Castle recommendation, Accelerator/Pedometer notes"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[4].description item 5",
+      "canonical": "you have to hit _NINE_ areas before you can gain entrance",
+      "structured": "you have to hit _NINE_ areas before you can gain entrance.",
+      "issue": "Source emphasis marker _NINE_ was left as literal underscores instead of being converted to bold like other emphasis; cosmetic only, meaning intact. Also the sentence repeats 'gain entrance' twice after being joined with the preceding clause, as in the source."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "shops[0].name vs steps[2].description",
+      "canonical": "Shop header 'Tight-lipped Merchant'; prose 'talk to the Silent Peddler to find out that he has a shop'",
+      "structured": "Tight-lipped Merchant / Silent Peddler",
+      "issue": "Source uses two different names for the shopkeeper; both preserved verbatim and not reconciled, which is correct. Noted only as a source inconsistency, no fix needed."
+    }
+  ],
+  "structured_sha256": "30b32494997fb32453732f6a2d52e0f9c6861558f05443288754c5607dde3120"
+}

@@ -236,7 +236,7 @@ def parse_boss_cards(text: str) -> List[Dict[str, Any]]:
     for i, m in enumerate(boss_starts):
         btype = m.group(1).upper()
         start = m.start()
-        end_search = boss_starts[i+1].start() if i + 1 < len(boss_starts) else min(len(text), start + 4000)
+        end_search = boss_starts[i+1].start() if i + 1 < len(boss_starts) else len(text)
         card_text = text[start:end_search]
         
         # Reward line: \ ... EXP / \ ... Cash /

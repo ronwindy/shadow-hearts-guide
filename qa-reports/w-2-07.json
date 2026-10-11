@@ -1,0 +1,29 @@
+{
+  "qa": {
+    "status": "PASS WITH WARNINGS",
+    "section_id": "w-2-07",
+    "section_title": "Rouen",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 1
+    },
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Olga].strategy",
+        "source": {
+          "text": "Olga's Black Fog attack will do MAJOR damage to your party, as well as Poison ea"
+        },
+        "generated": {
+          "text": "Olga's Black Fog attack will do major damage to your party, as well as Poison ea"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
+  }
+}

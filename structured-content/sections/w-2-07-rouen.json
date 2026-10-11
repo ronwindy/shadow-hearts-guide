@@ -1,0 +1,715 @@
+{
+  "guide": {
+    "id": "w-2-07",
+    "code": "[W-2-07]",
+    "title": "Rouen",
+    "type": "walkthrough",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-2-06",
+        "code": "[W-2-06]",
+        "title": "Prague (2)",
+        "file": "sections/w-2-06-prague-2.json"
+      },
+      "next": {
+        "id": "w-2-08",
+        "code": "[W-2-08]",
+        "title": "London, Old Castle Street",
+        "file": "sections/w-2-08-london-old-castle-street.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat Olga"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Examine the ground just above the box to your left to find a Lottery Ticket. (step 1)"
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Here, check the two barrels in the upper-right corner to find another Lottery Ticket. (step 5)"
+        },
+        {
+          "name": "Tea of the Holy One",
+          "category": "items",
+          "location": "Return to your room and Keith will step forward, allowing you to check the dresser behind him for a Tea of the Holy One. (step 2)"
+        },
+        {
+          "name": "Seal of the Soul",
+          "category": "items",
+          "location": "Head back into the church and check the altar for a Seal of the Soul, then go through the door on the right. (step 7)"
+        },
+        {
+          "name": "Zeruel",
+          "category": "equipment",
+          "location": "Margarete comes re-equipped with a Zeruel and a Jasper Cape by default. (step 3)"
+        },
+        {
+          "name": "Huge Jug",
+          "category": "equipment",
+          "location": "As you enter, check the ground by the barrels for a Huge Jug, then keep going to the next area. (step 5)"
+        },
+        {
+          "name": "Jasper Cape",
+          "category": "equipment",
+          "location": "Margarete comes re-equipped with a Zeruel and a Jasper Cape by default. (step 3)"
+        },
+        {
+          "name": "Jasper Cape",
+          "category": "equipment",
+          "location": "Enter the first door here to be in a confession booth, where you'll find a chest containing a Jasper Cape. (step 7)"
+        },
+        {
+          "name": "Lottery Member No. 06 (Hooked-nose Robin)",
+          "category": "lottery",
+          "location": "Go back out and re-enter the alleyway, where you'll find Hooked-nose Robin, or as we come to find out, Lottery Member No. 06! (step 8)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#059",
+        "name": "Bifronze",
+        "hp": 165,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#060",
+        "name": "Camazotz",
+        "hp": 158,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": null,
+        "name": "Olga",
+        "hp": 3300,
+        "class": "Dark",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Inflicts Poison"
+      },
+      {
+        "number": "#109",
+        "name": "Gust Ein",
+        "hp": "Varies",
+        "class": null,
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Graveyard Malice"
+      },
+      {
+        "number": "#110",
+        "name": "Gust Zwei",
+        "hp": "Varies",
+        "class": null,
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Graveyard Malice"
+      },
+      {
+        "number": "#111",
+        "name": "Gust Drei",
+        "hp": "Varies",
+        "class": null,
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Graveyard Malice"
+      },
+      {
+        "number": "#112",
+        "name": "Gust Vier",
+        "hp": "Varies",
+        "class": null,
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Graveyard Malice"
+      }
+    ],
+    "bosses": [],
+    "shops": [
+      {
+        "name": "Tight-lipped Merchant",
+        "inventory": [
+          {
+            "name": "Ever-Bible",
+            "price": 9800
+          },
+          {
+            "name": "Voodoo Doll",
+            "price": 5200
+          },
+          {
+            "name": "Oracle's Staff",
+            "price": 8600
+          },
+          {
+            "name": "Jade Lariat",
+            "price": 5050
+          },
+          {
+            "name": "Silver Crscnt Swd",
+            "price": 8300
+          },
+          {
+            "name": "Coral Lariat",
+            "price": 5050
+          },
+          {
+            "name": "Red Leather Jacket",
+            "price": 8800
+          },
+          {
+            "name": "Thera Seed",
+            "price": 120
+          },
+          {
+            "name": "Jasper Cape",
+            "price": 9200
+          },
+          {
+            "name": "Thera Root",
+            "price": 300
+          },
+          {
+            "name": "Headgear",
+            "price": 5400
+          },
+          {
+            "name": "Mana Seed",
+            "price": 300
+          },
+          {
+            "name": "Circlet",
+            "price": 5800
+          },
+          {
+            "name": "Mana Root",
+            "price": 500
+          },
+          {
+            "name": "Charming Pareo",
+            "price": 5500
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Loin Guard",
+            "price": 5200
+          },
+          {
+            "name": "Pure Seed",
+            "price": 510
+          },
+          {
+            "name": "Shell Bracelet",
+            "price": 2770
+          },
+          {
+            "name": "Talisman of Mercy",
+            "price": 820
+          },
+          {
+            "name": "Bone Bracelet",
+            "price": 2960
+          },
+          {
+            "name": "Talisman of Wisdom",
+            "price": 1280
+          },
+          {
+            "name": "Rosewood Bracelet",
+            "price": 3000
+          },
+          {
+            "name": "Talisman of Purity",
+            "price": 1760
+          },
+          {
+            "name": "Bell Bracelet",
+            "price": 3120
+          },
+          {
+            "name": "Soul Benediction",
+            "price": 500
+          },
+          {
+            "name": "Mirror Bracelet",
+            "price": 3240
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Cosmic Bracelet",
+            "price": 11500
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Spikes",
+            "price": 2810
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Pocket Watch",
+            "price": 5200
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Will Power",
+            "price": 6000
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          },
+          {
+            "name": "Leonardo's Bear",
+            "price": 3330
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Watch the events in London as you enter Rouen, then you'll regain control.\n2. Examine the ground just above the box to your left to find a **Lottery Ticket**.\n3. Once you have it, enter the Inn at the top of the screen.\n4. Watch another scene in here, then you'll regain control in the Graveyard.\n5. Head to the left and talk to the Masks.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- To sum up everything that the Masks have said this time: the Talisman **Yuri** holds will show the level of Malice that has accumulated in **Alice**'s soul, meaning that every time **she** participates in a battle, the Malice Meter will increase.\n- To get rid of the Malice, **Yuri** must return to the Graveyard and fight an incarnate of the Malice (Gusts, this time around) to keep from having to face one of the Four Masks.\n- Each enemy you defeat with **Alice** in the party will increase the Malice Meter, so make sure that your Malice level does **not** reach the red.\n- If it does, **immediately** go to the Graveyard and fight your Malice so that you don't fight any of the Masks.\n- Right now, you **will** die if you try to fight them, so if you run into them, press the R1 button and choose to Run Away."
+          },
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "You can fight Gust Ein, Gust Zwei, Gust Drei, and Gust Vier by returning to the Graveyard and fighting them when your Malice level is at a certain color:\n- Gust Ein: Between Blue and Turquoise.\n- Gust Zwei: Between Turquoise and Green.\n- Gust Drei: Between Green and Yellow.\n- Gust Vier: Between Yellow and Red.\n- After each battle, you'll receive an item based on your Malice!"
+          },
+          {
+            "type": "tip",
+            "title": "Malice Prizes",
+            "text": "Prize listing by Malice level (source shows two side-by-side columns; left column first, then right column).",
+            "table": {
+              "headers": [
+                "Malice",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "01 - 03",
+                  "reward": "Thera Leaf"
+                },
+                {
+                  "range": "04",
+                  "reward": "Seal of Wisdom"
+                },
+                {
+                  "range": "05 - 06",
+                  "reward": "Mana Leaf"
+                },
+                {
+                  "range": "07",
+                  "reward": "Key to Success"
+                },
+                {
+                  "range": "08 - 09",
+                  "reward": "Pure Leaf"
+                },
+                {
+                  "range": "10 - 14",
+                  "reward": "Thera Leaf"
+                },
+                {
+                  "range": "15 - 19",
+                  "reward": "Mana Leaf"
+                },
+                {
+                  "range": "20 - 24",
+                  "reward": "Pure Leaf"
+                },
+                {
+                  "range": "25",
+                  "reward": "Seal of Vitality"
+                },
+                {
+                  "range": "26 - 29",
+                  "reward": "Thera Leaf"
+                },
+                {
+                  "range": "30 - 34",
+                  "reward": "Mana Leaf"
+                },
+                {
+                  "range": "35",
+                  "reward": "Silver Hand"
+                },
+                {
+                  "range": "36 - 39",
+                  "reward": "Pure Leaf"
+                },
+                {
+                  "range": "40 - 41",
+                  "reward": "Thera Leaf"
+                },
+                {
+                  "range": "42",
+                  "reward": "Kirin Scale"
+                },
+                {
+                  "range": "43 - 44",
+                  "reward": "Mana Leaf"
+                },
+                {
+                  "range": "45 - 49",
+                  "reward": "Pure Leaf"
+                },
+                {
+                  "range": "50",
+                  "reward": "Seal of the Soul"
+                },
+                {
+                  "range": "51 - 52",
+                  "reward": "Thera Leaf"
+                },
+                {
+                  "range": "53 - 55",
+                  "reward": "Mana Leaf"
+                },
+                {
+                  "range": "56",
+                  "reward": "Seal of Force"
+                },
+                {
+                  "range": "57 - 59",
+                  "reward": "Pure Leaf"
+                },
+                {
+                  "range": "60",
+                  "reward": "Seal of Speed"
+                },
+                {
+                  "range": "61 - 62",
+                  "reward": "Thera Leaf"
+                },
+                {
+                  "range": "63",
+                  "reward": "Seal of Power"
+                },
+                {
+                  "range": "64 - 65",
+                  "reward": "Mana Leaf"
+                },
+                {
+                  "range": "66 - 69",
+                  "reward": "Pure Leaf"
+                },
+                {
+                  "range": "70",
+                  "reward": "Seal of Life"
+                },
+                {
+                  "range": "71 - 73",
+                  "reward": "Thera Leaf"
+                },
+                {
+                  "range": "74 - 76",
+                  "reward": "Mana Leaf"
+                },
+                {
+                  "range": "77",
+                  "reward": "Seventh Key"
+                },
+                {
+                  "range": "78 - 79",
+                  "reward": "Pure Leaf"
+                },
+                {
+                  "range": "80 - 83",
+                  "reward": "Thera Leaf"
+                },
+                {
+                  "range": "84",
+                  "reward": "Seal of Aura"
+                },
+                {
+                  "range": "85 - 87",
+                  "reward": "Mana Leaf"
+                },
+                {
+                  "range": "88 - 90",
+                  "reward": "Pure Leaf"
+                },
+                {
+                  "range": "91",
+                  "reward": "Monkey Paw"
+                },
+                {
+                  "range": "92 - 93",
+                  "reward": "Thera Leaf"
+                },
+                {
+                  "range": "94 - 97",
+                  "reward": "Mana Leaf"
+                },
+                {
+                  "range": "98",
+                  "reward": "Seal of Luck"
+                },
+                {
+                  "range": "99",
+                  "reward": "Dice of Caesar"
+                },
+                {
+                  "range": "100",
+                  "reward": "N/A"
+                }
+              ]
+            }
+          },
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- Again, the prize you win depends on the level of Malice you have accumulated, with 100 being the max value.\n- Sadly you can't use this knowledge to get the special prizes again and again, as they are replaced with a Thera Leaf the second time you clear the Malice at the same value."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. After they're done blabbering, leave the Graveyard to be back in the Inn.\n2. Leave the room you're in and go to the next one to the left to find **Alice** has left.\n3. Return to your room and **Keith** will step forward, allowing you to check the dresser behind him for a **Tea of the Holy One**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Tea of the Holy One",
+            "category": "items",
+            "matched_overview_item": "Tea of the Holy One"
+          }
+        ],
+        "notes": []
+      },
+      {
+        "id": 3,
+        "description": "1. Make your way downstairs and talk to the Silent Peddler to find out that he has a shop!\n2. Feel free to upgrade your party's weapons and equipment, then leave the Inn and head north into the alley to find her.\n3. Watch the scene here, then you'll have to battle a set of Bifronzes.\n4. After taking them out, you'll see another set of scenes, and you'll regain control inside of the Inn, having to choose a party.",
+        "type": "shop",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "**Margarete** comes re-equipped with a **Zeruel** and a **Jasper Cape** by default."
+          },
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "If for some reason you don't have them, make sure to buy three of either the Shell Bracelets or Cosmic Bracelets to defend against Poison for the next boss battle."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": "1. For a party, I recommend (now, and most of every other time) **Yuri**, **Alice**, and **Margarete**, as **Margarete** gives a decent balance between physical fighting and special skills, whereas **Alice** will almost always be a designated healer.\n2. If you change your mind after choosing your party, talk to Meiyuan on the first floor and he can change it up.\n3. When you're ready, head outside.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- You can now encounter random battles in the streets with the Bifronzes, as well as some new enemies, the Camazotz, for a limited time.\n- I strongly recommend taking the time to level up your Dark and Wind classes to level 2, if you haven't reached them already.\n- It won't take very long."
+          },
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- If you didn't get your level 2 Light Fusion earlier, or if you still just don't have it, then I **strongly** recommend going back to the Blue Castle and fighting the Hollows until you do.\n- It will be **extremely** useful in this next boss battle, which is pretty difficult."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "1. Make your way back to the northern alley.\n2. As you enter, check the ground by the barrels for a **Huge Jug**, then keep going to the next area.\n3. Here, check the two barrels in the upper-right corner to find another **Lottery Ticket**.\n4. Examine the back door here, which is stuck.\n5. To gain entrance, you must complete a Spin Ring 3, meaning you have to hit **nine** areas before you can gain entrance.\n6. Luckily, the areas are pretty wide, so you should have no problem.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Huge Jug",
+            "category": "equipment",
+            "matched_overview_item": "Huge Jug"
+          },
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "Once you're inside, make your way to the front of the church. Watch the series of events unfold in here, then you'll have to take on Olga yet again.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Olga",
+          "enemies": [
+            {
+              "name": "Olga",
+              "hp": 3300,
+              "class": "Dark",
+              "drop": "Small Jug"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 27,
+              "equipment": [
+                "Brass Knuckles",
+                "Red Leather Jacket",
+                "Mind's Eye",
+                "Loin Guard",
+                "Shell Bracelet"
+              ],
+              "fusions": [
+                "Baldo",
+                "Charon",
+                "Inferno"
+              ]
+            },
+            {
+              "name": "Margarete",
+              "level": 26,
+              "equipment": [
+                "Zeruel",
+                "Jasper Cape",
+                "Charming Pareo",
+                "Weird Bottle",
+                "Shell Bracelet"
+              ]
+            },
+            {
+              "name": "Alice",
+              "level": 26,
+              "equipment": [
+                "Ever-Bible",
+                "Jasper Cape",
+                "Anne's Cross",
+                "Brsrkr Earrings",
+                "Shell Bracelet"
+              ]
+            }
+          ],
+          "exp": 16000,
+          "cash": 14500,
+          "strategy": "- Olga's Black Fog attack will do **major** damage to your party, as well as Poison each one of them, so it's a good idea to come in with Shell or Cosmic Bracelets equipped.\n- Her Nova attack will do decent damage to a single ally, her Icy Breath attack will hit your whole party for decent damage, and her physical attack just does pathetic damage to a single ally.\n- Watch out if she uses Mind Assault to steal your MP, as you'll want to recover it immediately if she takes too much.\n- **Yuri** and **Alice** are obvious choices for this battle, and you could pretty much pick whomever your favorite is, as they'll all do roughly the same amount of damage.\n- I recommend **Margarete** just because I had her at a higher level than **Keith** and **Zhuzhen**, therefore having more STR and HP.\n- That, and I find **Margarete**'s Ring easier to hit than **Keith**'s.\n- **Zhuzhen** just sucks up a lot of MP and takes extra turns to replenish it.\n- Okay, okay, I really like her too, if that matters any.\n- Fuse **Yuri** into Baldo (if you didn't get his level 2 Light Fusion, then fuse into the Heaven's Fiend, as you'll need the healing) and start physically attacking; with the Mind's Eye equipped, he'll be doing major damage.\n- If you didn't put the Mind's Eye on him, then go with the Nova spell instead.\n- Have **Alice** cast Holy Edge on **Yuri** her first round so he can keep piling the damage up, then have her cast it on **Margarete** her second turn so she can start adding in to the damage.\n- **Margarete** should also be attacking normally.\n- If for some reason **Alice** doesn't need to heal, have her cast Blessed Light on Olga.\n- If a single ally just needs healed, have **Alice** do it.\n- If two people need it, have **Alice** and **Margarete** do it.\n- If all three need it, then have **Yuri** do it, as Olga doesn't mess around, and can easily kill your entire party in three turns.\n- I hate taking turns away from **Yuri** because he just does so much damage, but when everyone needs healed, he's the only one that can do anything about it efficiently."
+        },
+        "encounter": {
+          "enemies": [
+            "Olga"
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "description": "1. After the battle, you'll learn that your next destination is London, and you'll regain control outside.\n2. Head back into the church and check the altar for a **Seal of the Soul**, then go through the door on the right.\n3. Enter the first door here to be in a confession booth, where you'll find a chest containing a **Jasper Cape**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Seal of the Soul",
+            "category": "items",
+            "matched_overview_item": "Seal of the Soul"
+          },
+          {
+            "name": "Jasper Cape",
+            "category": "equipment",
+            "matched_overview_item": "Jasper Cape"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "description": "1. Head back outside, then **save** at the Inn.\n2. Go back out and re-enter the alleyway, where you'll find Hooked-nose Robin, or as we come to find out, Lottery Member No. 06!\n3. Nothing strange about the ring here.\n4. Make sure to win the Accelerator here before continuing on; it doubles your Pedometer steps with each step you take!\n5. Just remember, that the person wearing the Pedometer must be wearing the Accelerator at the same time, it won't work if they're on separate party members.\n6. If you don't win it, reload your last save and try again.\n7. Remember, you need to win something from each member at least once!",
+        "type": "navigation",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Lottery Member No. 06 Prizes",
+            "text": "Prize listing for Lottery Member No. 06, by color.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Accelerator"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "Seal of Aura"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "Alchemist'sWater"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Pure Root"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "description": "1. That's it for Rouen, so make your way back out to the World Map.\n2. Our next stop is London, specifically, Old Castle Street.\n3. Make sure to **save** before entering!",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "Inn"
+    ]
+  }
+}
