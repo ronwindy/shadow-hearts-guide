@@ -24,6 +24,7 @@ interface StepNote {
   type?: string;
   title?: string;
   text: string;
+  preformatted?: string;
 }
 
 interface Step {
@@ -213,6 +214,11 @@ function getStepTypeMeta(type: string = 'exploration') {
                       <div class="space-y-2 leading-relaxed opacity-95">
                         <Fragment set:html={renderBlockMarkup(n.text)} />
                       </div>
+                    )}
+
+                    <!-- Verbatim source art (maps, layouts) -->
+                    {n.preformatted && (
+                      <pre class="p-3 sm:p-4 rounded-md border border-slate-800 bg-slate-950/70 text-slate-200 font-mono text-[10px] sm:text-xs leading-tight overflow-x-auto whitespace-pre">{n.preformatted}</pre>
                     )}
 
                     <!-- Color Range Badges -->

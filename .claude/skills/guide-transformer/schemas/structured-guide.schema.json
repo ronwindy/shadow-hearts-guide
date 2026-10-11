@@ -631,6 +631,9 @@
                     "text": {
                       "type": "string"
                     },
+                    "preformatted": {
+                      "type": "string"
+                    },
                     "table": {
                       "type": "object",
                       "required": [

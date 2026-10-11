@@ -174,6 +174,7 @@ export interface StepNote {
   type?: string;
   title?: string;
   text: string;
+  preformatted?: string;
   badges?: StepNoteBadge[];
   table?: StepNoteTable;
 }

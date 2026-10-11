@@ -147,6 +147,8 @@ distinction is still kept in data.
 
 `type`, `title`, `text` are required. `table` and `badges` are optional.
 
+**`preformatted`** (string, optional) - verbatim source art that carries meaning a list cannot (e.g. a room map). Rendered monospace in the note. Copy it byte-for-byte from the canonical (only a common left indent may be removed) and keep a normal `text` caption. This is the one exception to "no ASCII-art borders"; use it only when the layout itself is information, never for decorative borders.
+
 **Allowed note `type` values** (same enum for step notes and `callouts[]`):
 `tutorial`, `warning`, `tip`, `missable`, `lore`, `strategy`, `discrepancy`.
 
