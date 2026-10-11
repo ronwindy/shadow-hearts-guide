@@ -48,6 +48,57 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(212,175,55,0.06),transparent),radial-gradient(ellipse_60%_40%_at_90%_80%,rgba(190,18,60,0.05),transparent)]"></div>
     </div>
 
+    <!-- Shared gold-metal text filters (see .gold-metal-text / .gold-metal-lite in global.css).
+         Must not be display:none or the filters break in some browsers. -->
+    <svg aria-hidden="true" width="0" height="0" style="position:absolute" focusable="false">
+      <defs>
+        <filter id="gold-metal" x="-5%" y="-25%" width="110%" height="150%" color-interpolation-filters="sRGB">
+          <!-- hairline dark-gold edge for definition -->
+          <feMorphology in="SourceAlpha" operator="dilate" radius="0.7" result="grow-in" />
+          <feFlood flood-color="#4a2f06" />
+          <feComposite in2="grow-in" operator="in" result="rim-in" />
+
+          <!-- cloudy, smoky mottling over the face -->
+          <feTurbulence type="fractalNoise" baseFrequency="0.03 0.08" numOctaves="3" seed="11" result="noise" />
+          <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.27  0 0 0 0 0.04  0 0 0 1.7 -0.62" result="mottle" />
+          <feComposite in="mottle" in2="SourceAlpha" operator="in" result="mottle-in" />
+
+          <!-- raised bevel: highlights and shade from a blurred height map -->
+          <feGaussianBlur in="SourceAlpha" stdDeviation="1.1" result="height" />
+          <feSpecularLighting in="height" surfaceScale="3.5" specularConstant="1.2" specularExponent="22" lighting-color="#fff7d2" result="spec">
+            <feDistantLight azimuth="235" elevation="46" />
+          </feSpecularLighting>
+          <feComposite in="spec" in2="SourceAlpha" operator="in" result="spec-in" />
+
+          <feMerge>
+            <feMergeNode in="rim-in" />
+            <feMergeNode in="SourceGraphic" />
+            <feMergeNode in="mottle-in" />
+            <feMergeNode in="spec-in" />
+          </feMerge>
+        </filter>
+
+        <!-- lighter variant for h2 headings: hairline edge and a soft bevel, no turbulence -->
+        <filter id="gold-metal-lite" x="-5%" y="-30%" width="110%" height="160%" color-interpolation-filters="sRGB">
+          <feMorphology in="SourceAlpha" operator="dilate" radius="0.5" result="grow-in" />
+          <feFlood flood-color="#4a2f06" />
+          <feComposite in2="grow-in" operator="in" result="rim-in" />
+
+          <feGaussianBlur in="SourceAlpha" stdDeviation="0.8" result="height" />
+          <feSpecularLighting in="height" surfaceScale="2" specularConstant="0.9" specularExponent="20" lighting-color="#fff7d2" result="spec">
+            <feDistantLight azimuth="235" elevation="50" />
+          </feSpecularLighting>
+          <feComposite in="spec" in2="SourceAlpha" operator="in" result="spec-in" />
+
+          <feMerge>
+            <feMergeNode in="rim-in" />
+            <feMergeNode in="SourceGraphic" />
+            <feMergeNode in="spec-in" />
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>
+
     <Navigation />
     <MobileNavDrawer currentId={currentId} pageSections={pageSections} />
 
