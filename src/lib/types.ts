@@ -245,6 +245,7 @@ export interface ManualOverviewData {
   directions?: {
     compass_note?: string;
     mappings?: DirectionMapping[];
+    compass_art?: string;
   };
   story_prologue?: {
     setting_1?: string;
