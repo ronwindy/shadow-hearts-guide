@@ -474,6 +474,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
                 </h4>
                 <p class="text-sm text-slate-400">{group.cast.intro}</p>
               </div>
+              <div class="overflow-x-auto">
               <table class="w-full text-sm sm:text-base text-left">
                 <thead>
                   <tr class="border-y border-slate-800 text-slate-400 font-mono bg-slate-900/60">
@@ -496,6 +497,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           ))
         }
