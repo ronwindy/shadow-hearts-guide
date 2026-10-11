@@ -1,9 +1,9 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-11 14:52:42`
+> Last synced: `2026-10-11 15:14:51`
 
 ```text
-=== PROJECT STATUS (2026-10-11 14:52:42) ===
+=== PROJECT STATUS (2026-10-11 15:14:51) ===
 Canonical 67/67 | Structured 21/67 | QA pass 21/67 (fail 0) | Web built 21/67
 Next:
   1. Structure w-2-04 (Bistritz (2)) - next chronological

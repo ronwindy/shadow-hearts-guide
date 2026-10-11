@@ -1,42 +1,26 @@
 {
   "section_id": "w-s-03",
-  "verdict": "PASS_WITH_NOTES",
-  "structured_sha256": "f003e5a806518b584164de543081100866e33aec564e0ed004c215824937dd9e",
+  "verdict": "PASS",
+  "structured_sha256": "69af089879f7323d3268a2a3a2e3e53eaa0669ec11ab58d20b73817c5896a982",
   "spot_checked": [
-    "enemies[] (13 rows: numbers, HP, class, notes all match canonical)",
-    "Enemy Formations EXP/Cash values (step 1) vs canonical formation table",
-    "300 Cash fee, 10 consecutive battles, no healing, 12 sets / 10 fought (step 2)",
-    "Four tough enemies named and per-enemy advice (steps 3-7)",
-    "Prototype/Custom Wind Shear: Flaming Arm of Death, Silence, Thera Seeds every other round, Man Dragon/Flash Flood, Inferno/Fireball, Pocket Watch, Mind's Eye",
-    "Recommended setup diagram (step 8)",
-    "Rewards: 5000 Cash and Anne's Cross for Yuri (step 9)",
-    "Monster Library note, Third Key note, Brigand Earrings x6 / Pirate Earrings x5 note, save warning (step 10)",
-    "navigation prev w-s-02 / next w-1-11"
+    "Step 8 preformatted equipment art vs canonical text (15 lines, common 7-space indent removed): programmatic string comparison, exact match including the ¯¯\\ and __/ bracket and the 'RosewoodBracelet' spelling",
+    "Step 8 list vs diagram: Hand Needle, Studded Harness, bracelet rows, Pocket Watch, fusions Man Dragon/Inferno/Tornado, Yuri [19]; removed bracketing prose is covered by the art note",
+    "Enemy table: 13 rows, numbers, HP, class, notes (incl. Prototype Wind Shear 'Ring anomalies & Silence') match canonical",
+    "Enemy Formations: all 12 formations with EXP and 0 Cash preserved in step 1",
+    "Costs/numbers: 300 Cash, 10 consecutive battles, no chance to heal, 12 sets / 10 fought, 5000 Cash, Brigand Earrings x6, Pirate Earrings x5",
+    "Four trouble enemies (Yamaraja: Wind, Li Li, Prototype Wind Shear, Custom Wind Shear) and their per-boss advice incl. Silence/Fusion, Thera Seeds every other round, Flash Flood / Fireball, Mind's Eye, Pocket Watch",
+    "Reward step: 5000 Cash and Anne's Cross; both rewards present and matched",
+    "Closing: save before entering Kuihai Tower, Third Key note, missable earrings note (Asia-only), navigation prev w-s-02 / next w-1-11",
+    "Ordering of steps follows source order (formations table first as reference)"
   ],
   "findings": [
     {
       "severity": "low",
-      "category": "altered",
-      "location": "steps[7] (id 8) description, equipment list",
-      "canonical": "RosewoodBracelet  OR  Zodiac Bracelet ¯¯\\  OR  Mind's Eye / Bell Bracelet  OR  Cosmic Bracelet __/ (Zodiac and Cosmic bracketed together with Mind's Eye)",
-      "structured": "- Rosewood Bracelet or Zodiac Bracelet or Mind's Eye\n- Bell Bracelet or Cosmic Bracelet\n(plus a sentence noting the Zodiac/Cosmic bracket)",
-      "issue": "The 2D diagram was flattened to two lines; as a list it reads as if Mind's Eye is only an alternative for the first bracelet slot, and the Rosewood/Bell vs Zodiac/Cosmic pairing is lost. The added disclaimer sentence discloses the bracket grouping, so meaning is preserved, but the wording is an editorial addition and the layout is slightly ambiguous."
-    },
-    {
-      "severity": "low",
       "category": "other",
-      "location": "steps[0] (id 1) type/description",
-      "canonical": "Enemy Formations table (EXP / Cash / Possible Item Drops) preceding the prose",
-      "structured": "type \"battle\" with all 13 enemy names in encounter.enemies; description is the formation list",
-      "issue": "The formations reference table is modeled as a single battle step that lists all enemies as one encounter, though in-game they are 12 random formations of which 10 are fought. The data is correct; only the step typing and the missing 'Possible Item Drops' column header (empty in source) differ. Presentation concern only."
-    },
-    {
-      "severity": "low",
-      "category": "other",
-      "location": "steps[7] (id 8) description, 'Fusions:' label",
-      "canonical": "Man Dragon / Inferno / Tornado listed unlabeled at the bottom of the setup diagram",
-      "structured": "- Fusions: Man Dragon, Inferno, Tornado",
-      "issue": "A 'Fusions:' label was added to the three unlabeled diagram entries. It is supported by surrounding text (Man Dragon Fusion, Inferno Fusion, Tornado Fusion), so it is a reasonable presentation inference, noted only for completeness."
+      "location": "steps[8] notes[0] 'Setup layout' text",
+      "canonical": "(no corresponding prose; diagram only)",
+      "structured": "The source's equipment diagram for Yuri [19], including its bracket linking the bracelet rows.",
+      "issue": "Editorial caption added to introduce the preformatted art. It states no game fact and accurately describes the diagram, so this is presentation-only; noted for awareness."
     }
   ]
 }

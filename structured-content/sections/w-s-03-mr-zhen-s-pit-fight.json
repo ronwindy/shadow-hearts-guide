@@ -239,9 +239,15 @@
       },
       {
         "id": 8,
-        "description": "Taking into consideration all that the plethora of enemies here can do to you (Paralysis, Ring anomalies, and Silence), I recommend having the following setup for **Yuri** [19]:\n\n- Hand Needle\n- Studded Harness\n- Rosewood Bracelet **or** Zodiac Bracelet **or** Mind's Eye\n- Bell Bracelet **or** Cosmic Bracelet\n- Pocket Watch\n- Fusions: Man Dragon, Inferno, Tornado\n\nIn the source diagram, the Zodiac Bracelet and Cosmic Bracelet are bracketed together with Mind's Eye.",
+        "description": "Taking into consideration all that the plethora of enemies here can do to you (Paralysis, Ring anomalies, and Silence), I recommend having the following setup for **Yuri** [19]:\n\n- Hand Needle\n- Studded Harness\n- Rosewood Bracelet **or** Zodiac Bracelet **or** Mind's Eye\n- Bell Bracelet **or** Cosmic Bracelet\n- Pocket Watch\n- Fusions: Man Dragon, Inferno, Tornado",
         "type": "exploration",
         "notes": [
+          {
+            "type": "tip",
+            "title": "Setup layout",
+            "text": "The source's equipment diagram for Yuri [19], including its bracket linking the bracelet rows.",
+            "preformatted": ".———————————————————————————————————————————————————————————————.\n|                           Yuri [19]                           |\n|                                                               |\n|===============================================================|\n|                          Hand Needle                          |\n|                        Studded Harness                        |\n|                                                               |\n|   RosewoodBracelet  OR  Zodiac Bracelet ¯¯\\  OR  Mind's Eye   |\n|      Bell Bracelet  OR  Cosmic Bracelet __/¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯   |\n|                         Pocket Watch                          |\n|                                                               |\n|                          Man Dragon                           |\n|                            Inferno                            |\n|                            Tornado                            |\n'———————————————————————————————————————————————————————————————'"
+          },
           {
             "type": "tip",
             "title": "Setup",
