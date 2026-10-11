@@ -88,18 +88,26 @@
         ],
         "items": [
           {
+            "tone": "crimson",
+            "icon": "Sword",
             "lead": "Physical Attack Rings",
             "rest": "possess three **Hit Areas** coupled with **Strike Areas**. By hitting all of the hit areas, the character will perform three attacks. If any of the hit areas are missed, the character’s turn will be skipped or their amount of attacks will be reduced depending on which hit area is missed. If the first hit area is missed the turn is automatically skipped. If the player hits the first hit area but misses the subsequent hit areas, the amount of attacks will be reduced."
           },
           {
+            "tone": "violet",
+            "icon": "Sparkles",
             "lead": "Magic Attack/Special Ability Rings",
             "rest": "differ from Physical Attacks Rings. These rings possess **Step Areas** and a **Modulation Area** with a **Strike Area**. All the step areas must be hit or else the special attack will fail. The modulation area operates like the hit areas of a physical attack."
           },
           {
+            "tone": "emerald",
+            "icon": "Package",
             "lead": "Item Rings",
             "rest": "only possess one **Hit Area** by itself or coupled with a **Strike Area**. This depends on the item being used and its effect. Items that cure HP, MP, or SP for a specific amount can be enhanced by strike areas whereas items that cure fully or alleviate status effects don’t require a strike area to enhance the effect."
           },
           {
+            "tone": "sky",
+            "icon": "Gamepad2",
             "lead": "Minigame Rings",
             "rest": "only possess **Hit Areas** which must all be hit in order to win the minigame (with the exception of the **Lottery**). The **Push Ring** is a timed game, which has only one hit area, where the player must make the needle move towards the hit area and keep it there until the time runs out. The **Normal Ring** has three hit areas and the player must hit all three of them and for as many rotations the game states. Lastly, there is the **Lottery**. The **Lottery** has many different colored hit areas each corresponding to a different prize. The player only needs to hit one of the hit areas to be successful."
           }

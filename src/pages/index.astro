@@ -29,6 +29,9 @@ import {
   Heart,
   Brain,
   TrendingUp,
+  Sword,
+  Package,
+  Gamepad2,
 } from "@lucide/astro";
 
 const wiki = getGameWikiData();
@@ -62,6 +65,10 @@ const groupIcons: Record<string, typeof Disc> = {
   Heart,
   Brain,
   TrendingUp,
+  Sword,
+  Sparkles,
+  Package,
+  Gamepad2,
 };
 
 // On-page navigation anchors for the sidebar table of contents
@@ -279,16 +286,39 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
                 )}
                 {section.items && (
                   <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-3 border-t border-slate-800">
-                    {section.items.map((item) => (
-                      <li class="p-4 rounded-lg bg-slate-900/50 border border-slate-800/80 space-y-2">
+                    {section.items.map((item) => {
+                      const ItemIcon = item.icon ? groupIcons[item.icon] : undefined;
+                      return (
+                      <li
+                        class:list={[
+                          "p-4 rounded-lg space-y-2",
+                          item.tone
+                            ? "topic-card"
+                            : "bg-slate-900/50 border border-slate-800/80",
+                        ]}
+                        data-tone={item.tone}
+                      >
                         {item.lead && (
-                          <p class="text-base font-serif font-semibold text-gold-300">
+                          <p
+                            class:list={[
+                              "text-base font-serif font-semibold",
+                              item.tone ? "topic-title" : "text-gold-300",
+                              { "flex items-center gap-2": ItemIcon },
+                            ]}
+                          >
+                            {ItemIcon && (
+                              <ItemIcon
+                                class="w-4 h-4 shrink-0"
+                                aria-hidden="true"
+                              />
+                            )}
                             {item.lead}
                           </p>
                         )}
                         <SentenceList texts={[item.rest]} />
                       </li>
-                    ))}
+                      );
+                    })}
                   </ul>
                 )}
               </article>
