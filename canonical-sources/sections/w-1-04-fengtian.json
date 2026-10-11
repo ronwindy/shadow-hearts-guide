@@ -321,76 +321,76 @@
           "price": 1200
         },
         {
-          "name": "Thera Leaf",
-          "price": 50
-        },
-        {
           "name": "ShootingStarTome",
           "price": 1420
-        },
-        {
-          "name": "Mana Leaf",
-          "price": 100
         },
         {
           "name": "Leather Vest",
           "price": 1000
         },
         {
-          "name": "Pure Leaf",
-          "price": 230
-        },
-        {
           "name": "Leather Skirt",
           "price": 1200
-        },
-        {
-          "name": "TalismanOfLuck",
-          "price": 480
         },
         {
           "name": "Bandanna",
           "price": 320
         },
         {
-          "name": "Mermaid's Tear",
-          "price": 70
-        },
-        {
           "name": "Leather Belt",
           "price": 320
-        },
-        {
-          "name": "Holy Mother Bust",
-          "price": 75
         },
         {
           "name": "Shell Bracelet",
           "price": 2770
         },
         {
-          "name": "Angel's Feather",
-          "price": 80
-        },
-        {
           "name": "Bone Bracelet",
           "price": 2960
-        },
-        {
-          "name": "Phoenix Tail",
-          "price": 90
         },
         {
           "name": "RosewoodBracelet",
           "price": 3000
         },
         {
-          "name": "Bronze Dagger",
-          "price": 200
-        },
-        {
           "name": "Spikes",
           "price": 2810
+        },
+        {
+          "name": "Thera Leaf",
+          "price": 50
+        },
+        {
+          "name": "Mana Leaf",
+          "price": 100
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "Mermaid's Tear",
+          "price": 70
+        },
+        {
+          "name": "Holy Mother Bust",
+          "price": 75
+        },
+        {
+          "name": "Angel's Feather",
+          "price": 80
+        },
+        {
+          "name": "Phoenix Tail",
+          "price": 90
+        },
+        {
+          "name": "Bronze Dagger",
+          "price": 200
         },
         {
           "name": "Gold Hourglass",

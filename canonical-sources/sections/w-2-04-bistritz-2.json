@@ -127,12 +127,12 @@
           "price": 6020
         },
         {
-          "name": "Chainmail Vest",
-          "price": 5500
-        },
-        {
           "name": "Royal Estoc",
           "price": 6230
+        },
+        {
+          "name": "Chainmail Vest",
+          "price": 5500
         },
         {
           "name": "Silk Bolero",
@@ -148,100 +148,100 @@
           "price": 1700
         },
         {
-          "name": "Thera Seed",
-          "price": 120
-        },
-        {
           "name": "Western Belt",
           "price": 1700
-        },
-        {
-          "name": "Thera Root",
-          "price": 300
         },
         {
           "name": "Metal Belt",
           "price": 3000
         },
         {
-          "name": "Mana Seed",
-          "price": 300
-        },
-        {
           "name": "Shell Bracelet",
           "price": 2770
-        },
-        {
-          "name": "Mana Root",
-          "price": 500
         },
         {
           "name": "Bone Bracelet",
           "price": 2960
         },
         {
-          "name": "Pure Leaf",
-          "price": 230
-        },
-        {
           "name": "Rosewood Bracelet",
           "price": 3000
-        },
-        {
-          "name": "Pure Seed",
-          "price": 510
         },
         {
           "name": "Bell Bracelet",
           "price": 3120
         },
         {
-          "name": "TalismanOfLuck",
-          "price": 480
-        },
-        {
           "name": "Mirror Bracelet",
           "price": 3240
-        },
-        {
-          "name": "TalismanOfMercy",
-          "price": 820
         },
         {
           "name": "Spikes",
           "price": 2810
         },
         {
-          "name": "Soul Benediction",
-          "price": 500
-        },
-        {
           "name": "Pocket Watch",
           "price": 5200
-        },
-        {
-          "name": "Bronze Arrowhead",
-          "price": 100
         },
         {
           "name": "Leonardo's Bear",
           "price": 3330
         },
         {
-          "name": "Bronze Dagger",
-          "price": 200
-        },
-        {
           "name": "Voodoo Doll",
           "price": 5200
         },
         {
-          "name": "Silver Hourglass",
+          "name": "Coral Lariat",
+          "price": 5050
+        },
+        {
+          "name": "Thera Seed",
+          "price": 120
+        },
+        {
+          "name": "Thera Root",
+          "price": 300
+        },
+        {
+          "name": "Mana Seed",
+          "price": 300
+        },
+        {
+          "name": "Mana Root",
+          "price": 500
+        },
+        {
+          "name": "Pure Leaf",
+          "price": 230
+        },
+        {
+          "name": "Pure Seed",
+          "price": 510
+        },
+        {
+          "name": "TalismanOfLuck",
+          "price": 480
+        },
+        {
+          "name": "TalismanOfMercy",
+          "price": 820
+        },
+        {
+          "name": "Soul Benediction",
+          "price": 500
+        },
+        {
+          "name": "Bronze Arrowhead",
           "price": 100
         },
         {
-          "name": "Coral Lariat",
-          "price": 5050
+          "name": "Bronze Dagger",
+          "price": 200
+        },
+        {
+          "name": "Silver Hourglass",
+          "price": 100
         },
         {
           "name": "Gold Hourglass",

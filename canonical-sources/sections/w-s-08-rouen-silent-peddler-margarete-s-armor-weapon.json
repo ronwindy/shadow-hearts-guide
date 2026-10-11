@@ -56,36 +56,36 @@
           "price": 100
         },
         {
-          "name": "Moon Swallow",
-          "price": 3500
-        },
-        {
           "name": "Voodoo Doll",
           "price": 300
-        },
-        {
-          "name": "Star Swallow",
-          "price": 5000
         },
         {
           "name": "Weird Bottle",
           "price": 800
         },
         {
-          "name": "Monkey Paw",
-          "price": 6500
-        },
-        {
           "name": "Iron Clogs",
           "price": 1500
         },
         {
-          "name": "Silver Hand",
-          "price": 7000
-        },
-        {
           "name": "Flash Badge",
           "price": 2500
+        },
+        {
+          "name": "Moon Swallow",
+          "price": 3500
+        },
+        {
+          "name": "Star Swallow",
+          "price": 5000
+        },
+        {
+          "name": "Monkey Paw",
+          "price": 6500
+        },
+        {
+          "name": "Silver Hand",
+          "price": 7000
         },
         {
           "name": "Belt of Power",

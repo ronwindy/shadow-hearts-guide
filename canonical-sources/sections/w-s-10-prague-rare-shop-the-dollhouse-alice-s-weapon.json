@@ -214,20 +214,20 @@
           "price": 18000
         },
         {
-          "name": "Pure Extract",
-          "price": 20000
-        },
-        {
           "name": "Thera Extract",
           "price": 5000
         },
         {
-          "name": "Third Key",
-          "price": 30000
-        },
-        {
           "name": "Mana Extract",
           "price": 10000
+        },
+        {
+          "name": "Pure Extract",
+          "price": 20000
+        },
+        {
+          "name": "Third Key",
+          "price": 30000
         }
       ]
     }

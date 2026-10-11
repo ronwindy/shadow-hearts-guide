@@ -788,7 +788,8 @@ def _sentence_with(description: str, name: str) -> str:
         return ""
     for sent in re.split(r'(?<=[.!?])\s+', " ".join(description.split())):
         if needle in sent.lower():
-            return re.sub(r'^\d+\.\s*', '', sent.strip()).replace("**", "")
+            sent = re.sub(r'^(?:\d+\.|[-*])\s*', '', sent.strip()).replace("**", "")
+            return re.sub(r'(?<![A-Za-z0-9])_([^_\n]+)_(?![A-Za-z0-9])', r'\1', sent)
     return ""
 
 

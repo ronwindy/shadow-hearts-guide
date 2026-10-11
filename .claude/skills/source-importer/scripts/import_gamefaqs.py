@@ -327,19 +327,21 @@ def parse_shops(text: str) -> List[Dict[str, Any]]:
     for m in pattern.finditer(text):
         shop_name = m.group(1).strip()
         body = m.group(2)
-        items = []
+        # Side-by-side shop boxes: read each column top to bottom (left column, then right column),
+        # matching the source reading order instead of interleaving the two columns row by row.
+        columns: Dict[int, List[Dict[str, Any]]] = {}
         for line in body.splitlines():
             line_str = line.strip()
             if not line_str or line_str.startswith(('|====', '====', '.—', "'—")):
                 continue
-            cols = [c.strip() for c in line.split('|') if c.strip()]
-            for col in cols:
-                item_match = re.match(r'^(.*?)\s*-\s*(\d+)$', col)
+            for idx, col in enumerate(line_str.strip('|').split('|')):
+                item_match = re.match(r'^(.*?)\s*-\s*(\d+)$', col.strip())
                 if item_match:
-                    items.append({
+                    columns.setdefault(idx, []).append({
                         "name": item_match.group(1).strip(),
                         "price": int(item_match.group(2))
                     })
+        items = [it for idx in sorted(columns) for it in columns[idx]]
         if items:
             shops.append({
                 "name": shop_name,
