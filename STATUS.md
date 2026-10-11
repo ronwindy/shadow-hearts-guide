@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-11 11:51:40`
+> Last synced: `2026-10-11 14:26:06`
 
 ```text
-=== PROJECT STATUS (2026-10-11 11:51:40) ===
-Canonical 68/68 | Structured 18/68 | QA pass 18/68 (fail 0) | Web built 18/68
+=== PROJECT STATUS (2026-10-11 14:26:06) ===
+Canonical 67/67 | Structured 19/67 | QA pass 19/67 (fail 0) | Web built 19/67
 Next:
-  1. Structure w-2-00 (Walkthrough - Europe) - next chronological
+  1. Structure w-2-02 (Bistritz (1)) - next chronological
 ```
 
 ## Section Matrix
@@ -30,8 +30,7 @@ Next:
 | `[W-S-02]` | `w-s-02` | Kowloon Fortress | Walkthrough - Asia | WEB_BUILT |
 | `[W-S-03]` | `w-s-03` | Mr. Zhen's Pit Fight | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-11]` | `w-1-11` | Shanghai, Kuihai Tower | Walkthrough - Asia | WEB_BUILT |
-| `[W-2-00]` | `w-2-00` | Walkthrough - Europe | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-2-01]` | `w-2-01` | Prague (1) | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-2-01]` | `w-2-01` | Prague (1) | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-02]` | `w-2-02` | Bistritz (1) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-03]` | `w-2-03` | Blue Castle (1) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-04]` | `w-2-04` | Bistritz (2) | Walkthrough - Europe | NOT_STRUCTURED |

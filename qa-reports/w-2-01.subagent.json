@@ -1,0 +1,19 @@
+{
+  "section_id": "w-2-01",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Step 1 matches the single sentence of canonical w-2-00 (Alice and Zhuzhen only, World Map of Europe, only destination Prague)",
+    "Steps 2-5 cover all four canonical prose blocks in the original order; no sentence omitted or invented",
+    "Zodiac Bracelet ('?' icon, hug right side, before Alice reappears) in step 2; save point and sleeping Lottery Member in step 2",
+    "Lottery ring warnings preserved: ring extremely slow, win Brsrkr Earrings, +20% max HP, reload last save if not won, win something from each member at least once",
+    "Lottery Member No. 08 prize table: Red Brsrkr Earrings, Yellow Seal of Luck, Turquoise TalismanOfPurity, Green Thera Root, White Tissues",
+    "Kirin Scale (raised platform, south end) and Lottery Ticket (chest behind tree, left) in step 3; NOTE about saving shopping for the next town preserved verbatim in meaning",
+    "Priest's Wine, Peddler Rosa, Zhuzhen, castle walls, post-battle bar, Meiyuan Acupuncture, Silent Peddler, Bistritz in steps 4-5",
+    "Save point 'Center of town near the bar' present",
+    "Enemy #051 Birdman HP 54 Fire 'Inflicts Silence' matches; no bosses in source or guide",
+    "Shop 'Time is Money': all 33 items and prices match canonical (TalismanOfLuck/TalismanOfMercy re-spaced only)",
+    "items_summary entries and (step N) cites are correct given the +1 offset; navigation prev w-1-11 / next w-2-02 as intended"
+  ],
+  "findings": [],
+  "structured_sha256": "ac83f2fcd2e93dfe9aa8e4a7282a31b2342367e3cafa4f94804c8eecfaf56a05"
+}

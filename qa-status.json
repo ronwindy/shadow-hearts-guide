@@ -22,8 +22,8 @@
     }
   },
   "i-1-00": {
-    "checked_at": "2026-10-10T15:16:30",
-    "content_hash": "c98d518728820a51",
+    "checked_at": "2026-10-11T14:27:48",
+    "content_hash": "d7be368516309810",
     "status": "PASS",
     "summary": {
       "critical": 0,
@@ -159,13 +159,29 @@
     }
   },
   "w-1-11": {
-    "checked_at": "2026-10-10T23:08:35",
-    "content_hash": "9544b7e13f30bc50",
+    "checked_at": "2026-10-11T14:25:48",
+    "content_hash": "6eea6558ade01912",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
       "low": 2,
+      "medium": 0
+    }
+  },
+  "w-2-00": {
+    "merged_into": "w-2-01",
+    "note": "Single transition sentence moved to Prague (1) as step 1; overview page removed",
+    "status": "MERGED"
+  },
+  "w-2-01": {
+    "checked_at": "2026-10-11T14:25:57",
+    "content_hash": "ac83f2fcd2e93dfe",
+    "status": "PASS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 0,
       "medium": 0
     }
   },

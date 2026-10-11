@@ -1,0 +1,311 @@
+{
+  "guide": {
+    "id": "w-2-01",
+    "code": "[W-2-01]",
+    "title": "Prague (1)",
+    "type": "walkthrough",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-1-11",
+        "code": "[W-1-11]",
+        "title": "Shanghai, Kuihai Tower",
+        "file": "sections/w-1-11-shanghai-kuihai-tower.json"
+      },
+      "next": {
+        "id": "w-2-02",
+        "code": "[W-2-02]",
+        "title": "Bistritz (1)",
+        "file": "sections/w-2-02-bistritz-1.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Kirin Scale",
+          "category": "items",
+          "location": "Search the south end of the platform to find a Kirin Scale, then go north to the next area. (step 3)"
+        },
+        {
+          "name": "Priest's Wine",
+          "category": "items",
+          "location": "Examine the table above the woman on your left (Peddler Rosa) to find a Priest's Wine, then talk to Peddler Rosa to have Zhuzhen come back out. (step 4)"
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Check behind the tree to your left, and you should find a chest containing a Lottery Ticket. (step 3)"
+        },
+        {
+          "name": "Zodiac Bracelet",
+          "category": "equipment",
+          "location": "Before Alice reappears, you should see a '?' icon; examine here to find a Zodiac Bracelet. (step 2)"
+        },
+        {
+          "name": "Lottery Member No. 08 (Guard Homas)",
+          "category": "lottery",
+          "location": "Go north to the next area and use the Save Point you see here. Once you've saved, talk to the sleeping guy here, and you'll find out that he's a Lottery Member!"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#051",
+        "name": "Birdman",
+        "hp": 54,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Silence"
+      }
+    ],
+    "bosses": [],
+    "shops": [
+      {
+        "name": "Time is Money",
+        "inventory": [
+          {
+            "name": "Chainmail Vest",
+            "price": 5500
+          },
+          {
+            "name": "Mana Seed",
+            "price": 300
+          },
+          {
+            "name": "Silk Bolero",
+            "price": 5940
+          },
+          {
+            "name": "Mana Root",
+            "price": 500
+          },
+          {
+            "name": "Studded Cap",
+            "price": 1700
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Face Guard",
+            "price": 3000
+          },
+          {
+            "name": "Pure Seed",
+            "price": 510
+          },
+          {
+            "name": "Western Belt",
+            "price": 1700
+          },
+          {
+            "name": "Talisman of Luck",
+            "price": 480
+          },
+          {
+            "name": "Shell Bracelet",
+            "price": 2770
+          },
+          {
+            "name": "Talisman of Mercy",
+            "price": 820
+          },
+          {
+            "name": "Bone Bracelet",
+            "price": 2960
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Rosewood Bracelet",
+            "price": 3000
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Bell Bracelet",
+            "price": 3120
+          },
+          {
+            "name": "Angel's Feather",
+            "price": 80
+          },
+          {
+            "name": "Mirror Bracelet",
+            "price": 3240
+          },
+          {
+            "name": "Faerie's Sigh",
+            "price": 85
+          },
+          {
+            "name": "Spikes",
+            "price": 2810
+          },
+          {
+            "name": "Imp's Fang",
+            "price": 95
+          },
+          {
+            "name": "Leonardo's Bear",
+            "price": 3330
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "Voodoo Doll",
+            "price": 5200
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Jade Lariat",
+            "price": 5050
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Thera Seed",
+            "price": 120
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Thera Root",
+            "price": 300
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "You'll regain control on the World Map of Europe with just **Alice** and **Zhuzhen** in your party, with only one available destination: Prague.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "1. You'll gain control of **Alice** in Prague.\n2. Start heading north, but hug the right side of the area.\n3. Before **Alice** reappears, you should see a '?' icon; examine here to find a **Zodiac Bracelet**.\n4. Go north to the next area and use the Save Point you see here.\n5. Once you've saved, talk to the sleeping guy here, and you'll find out that he's a Lottery Member!\n6. The ring here **extremely slow**, so it should be **very** easy to get whatever you want!\n7. Make sure to win the Brsrkr Earrings before continuing on; it increases your max HP 20%!\n8. If you don't win it, reload your last save and try again.\n9. Remember, you need to win something from each member at least once!",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Zodiac Bracelet",
+            "category": "equipment",
+            "matched_overview_item": "Zodiac Bracelet"
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Lottery Member No. 08 Prizes",
+            "text": "Prize listing for Lottery Member No. 08, by color.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Brsrkr Earrings"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "Seal of Luck"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "TalismanOfPurity"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Thera Root"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "1. Keep following along the path past the bar, but before going to the next area, step off to the right onto the raised platform near the building at the top of the screen.\n2. Search the south end of the platform to find a **Kirin Scale**, then go north to the next area.\n3. Check behind the tree to your left, and you should find a chest containing a **Lottery Ticket**.\n4. Once you have it, go back to the last area and enter the bar.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Save your shopping until the next town, since we'll get a better Guild Card there. Unless, of course, you absolutely need healing items and such."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Kirin Scale",
+            "category": "items",
+            "matched_overview_item": "Kirin Scale"
+          },
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "1. Examine the table above the woman on your left (Peddler Rosa) to find a **Priest's Wine**, then talk to Peddler Rosa to have **Zhuzhen** come back out.\n2. Talk to him to progress the story, and when you regain control, head north to the castle walls, where you'll encounter a new foe and have to face some of her monsters.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Priest's Wine",
+            "category": "items",
+            "matched_overview_item": "Priest's Wine"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "1. After you defeat them, you'll be back in the bar.\n2. Grab anything you absolutely need from the peddler here, then leave the bar.\n3. If for some reason you want to talk to Meiyuan for some Acupuncture or want something from the Silent Peddler, both are now at the north end of town.\n4. When you're finished, leave Prague.\n5. Head to our next destination: Bistritz.",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "Center of town near the bar"
+    ]
+  }
+}

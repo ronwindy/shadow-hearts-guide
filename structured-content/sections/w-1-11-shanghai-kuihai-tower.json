@@ -20,10 +20,10 @@
         "file": "sections/w-s-03-mr-zhen-s-pit-fight.json"
       },
       "next": {
-        "id": "w-2-00",
-        "code": "[W-2-00]",
-        "title": "Walkthrough - Europe",
-        "file": "sections/w-2-00-walkthrough-europe.json"
+        "id": "w-2-01",
+        "code": "[W-2-01]",
+        "title": "Prague (1)",
+        "file": "sections/w-2-01-prague-1.json"
       }
     },
     "route": [],

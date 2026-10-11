@@ -57,7 +57,6 @@
         {
           "category": "Walkthrough (Europe)",
           "entries": [
-            { "code": "[W-2-00]", "title": "Walkthrough Overview (Europe)", "is_sidequest": false },
             { "code": "[W-2-01]", "title": "Prague (1)", "is_sidequest": false },
             { "code": "[W-2-02]", "title": "Bistritz (1)", "is_sidequest": false },
             { "code": "[W-2-03]", "title": "Blue Castle (1)", "is_sidequest": false },
