@@ -68,6 +68,15 @@ interface Props {
 
 const { guideId, steps = [], bosses = [] } = Astro.props;
 
+// Lottery prize tiles: tint each tile with the color named in its row.
+const LOTTERY_TINTS: Record<string, { box: string; label: string }> = {
+  red: { box: 'border-red-800/60 bg-red-950/40 text-red-100', label: 'text-red-300' },
+  yellow: { box: 'border-yellow-700/60 bg-yellow-950/40 text-yellow-100', label: 'text-yellow-300' },
+  turquoise: { box: 'border-cyan-700/60 bg-cyan-950/40 text-cyan-100', label: 'text-cyan-300' },
+  green: { box: 'border-emerald-700/60 bg-emerald-950/40 text-emerald-100', label: 'text-emerald-300' },
+  white: { box: 'border-slate-300/50 bg-slate-100/10 text-slate-50', label: 'text-slate-100' },
+};
+
 function getStepTypeMeta(type: string = 'exploration') {
   switch (type.toLowerCase()) {
     case 'battle':
@@ -249,15 +258,19 @@ function getStepTypeMeta(type: string = 'exploration') {
                     {n.table && n.table.rows && (
                       <div class="pt-2">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1.5">
-                          {n.table.rows.map((row: any) => (
+                          {n.table.rows.map((row: any) => {
+                            const tint = LOTTERY_TINTS[String(row.range ?? '').trim().toLowerCase()];
+                            return (
                             <div
                               class={`flex items-center justify-between px-2.5 py-1.5 rounded border text-xs transition-all ${
                                 row.is_unique
                                   ? 'border-gold-500/60 bg-gold-950/30 text-gold-200 shadow-sm'
-                                  : 'border-slate-800/80 bg-slate-900/40 text-slate-300'
+                                  : tint
+                                    ? tint.box
+                                    : 'border-slate-800/80 bg-slate-900/40 text-slate-300'
                               }`}
                             >
-                              <span class="font-mono font-semibold tracking-wider text-slate-400 text-[11px]">
+                              <span class={`font-mono font-semibold tracking-wider text-[11px] ${tint && !row.is_unique ? tint.label : 'text-slate-400'}`}>
                                 {row.range}
                               </span>
                               <div class="flex items-center gap-1.5 ml-2 text-right">
@@ -271,7 +284,8 @@ function getStepTypeMeta(type: string = 'exploration') {
                                 )}
                               </div>
                             </div>
-                          ))}
+                            );
+                          })}
                         </div>
                       </div>
                     )}
