@@ -1,0 +1,18 @@
+{
+  "section_id": "w-2-06",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Save point: Center of town near the bar (present in save_points)",
+    "Lottery: Lottery Member No. 08 (Guard Homas) preserved in items_summary",
+    "Item: Lottery Ticket location (men's bathroom, top of room, on the floor) matches step 3 and reward",
+    "Enemy table: Olga HP 680, class Dark, sub-boss",
+    "Sub-boss card (step 2 boss): Olga 680 HP, Dark, drop Monk Earrings, 15000 EXP, 13000 Cash",
+    "Olga strategy: all attacks listed (Blaze, Rock Storm, Nova, Icy Breath, Lightning, Mind Assault), 50-60 HP damage, Blessed Light/Cure rotation, recover SP, only Alice; wording unchanged, only split into bullets",
+    "Shop Time is Money: all 32 items and prices match (TalismanOfLuck/TalismanOfMercy re-spaced only)",
+    "Step order: save/tent and bar owner, Alice restroom x3 triggers Olga, Yuri men's bathroom ticket, head to World Map toward Rouen",
+    "Navigation prev w-2-05 / next w-2-07 matches canonical",
+    "Boss appears inside chronological step (not hoisted into overview); bosses[] empty but step.boss present"
+  ],
+  "findings": [],
+  "structured_sha256": "bed0ef438df920e75e4774bdd19f8630fdb4c1810770c5d1162e69ed0dcdceb5"
+}
