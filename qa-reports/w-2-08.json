@@ -1,0 +1,14 @@
+{
+  "qa": {
+    "status": "PASS",
+    "section_id": "w-2-08",
+    "section_title": "London, Old Castle Street",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "findings": []
+  }
+}

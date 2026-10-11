@@ -1,0 +1,26 @@
+{
+  "section_id": "w-2-08",
+  "verdict": "PASS",
+  "structured_sha256": "9ac7df51cba5c2b62175f3d82f618405bafcd6b2aa5fd036f166484aedc03db6",
+  "spot_checked": [
+    "shop: all 37 Tight-lipped Merchant items and prices match (left column 19, then right column 18)",
+    "step 1: Sun Card 7,000 CASH condition, choices 1/2, Lottery Ticket, Drunken Orro / Lottery Member No. 05, Pocket Watch, Priest Earrings 20% MP, reload advice",
+    "step 1 lottery prize table: Red Priest Earrings, Yellow Seal of Speed, Turquoise Thera Extract, Green Thera Root, White Tissues",
+    "items: 3 Lottery Tickets (steps 1, 5, 7), Mana Extract, Thera Extract, Soul Benediction, Talisman of Purity, Seal of Force, Kirin Scale",
+    "equipment: Demon Earrings, Crucifix, Warning Device, Oak Slingshot, Halley default Slingshot and Red Leather Jacket",
+    "save points: Inn, London Rats' hideout; Save Point mention in step 5",
+    "ordering of steps 1-11 follows the source; Orphanage and return-to-Old-Castle-Street flow preserved",
+    "notes: Koudelka easter egg, Halley equipment note, Meiyuan party-swap note",
+    "bosses/enemies: none in source or structured"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "omitted",
+      "location": "steps 8-10",
+      "canonical": "Sub-headings 'Orphanage' and 'Old Castle Street' precede the post-hideout passages",
+      "structured": "Sub-headings not carried; steps 8-9 and 10 follow without location headings",
+      "issue": "Presentational sub-headings were dropped. Location context remains clear from step text (Orphanage named in steps 8-9, Inn on Old Castle Street at end of step 9), so no knowledge is lost."
+    }
+  ]
+}
