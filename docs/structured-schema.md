@@ -236,9 +236,10 @@ the step where the fight happens; do not hoist boss tactics into overviews.
 - `reward` (optional string): when the source says that option gives an item.
 - `prompt` (optional integer, 1-based): which prompt of a multi-prompt dialogue the option belongs to. Set it on every option when a step has 2+ prompts.
 - `required` (optional boolean): `true` when the source marks the option as the required answer (e.g. an `>` arrow). The scaffold also adds an "Answer the first prompt with [1] ..." item to the description.
+- `after_item` (optional integer, 1-based): the line of the `description` (list item or paragraph, counted over non-blank lines) the prompt's options render right under. Use the line that introduces the prompt, in source order (e.g. the "...ask if you're her dad" line, not the later "Choose 2 ..." line). Give every option of a prompt the same value. Omit it to show the box at the end of the step. The scaffold sets it automatically; re-check it after you re-order or re-number description lines.
 - Put the step `type` as `dialogue` when the choice is the point of the step.
 - **Rendering:** the step shows `choices` grouped per `prompt`, with `required` options
-  highlighted. The `description` should still say what the choice is (the source prose usually does).
+  highlighted, under the `after_item` line (or at the end of the step). The `description` should still say what the choice is (the source prose usually does).
 
 ## 8. Minimal step recipes
 

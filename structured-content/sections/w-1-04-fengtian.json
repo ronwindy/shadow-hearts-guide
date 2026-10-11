@@ -399,11 +399,13 @@
         "choices": [
           {
             "option": "1. Just a bit more.",
-            "outcome": "Keep shopping."
+            "outcome": "Keep shopping.",
+            "after_item": 1
           },
           {
             "option": "2. I'm ready.",
-            "outcome": "Watch a series of events; you'll regain control outside in the alley."
+            "outcome": "Watch a series of events; you'll regain control outside in the alley.",
+            "after_item": 1
           }
         ],
         "rewards": []
@@ -551,10 +553,12 @@
         "type": "preparation",
         "choices": [
           {
-            "option": "1. Wait a moment."
+            "option": "1. Wait a moment.",
+            "after_item": 1
           },
           {
-            "option": "2. Okay, it's set."
+            "option": "2. Okay, it's set.",
+            "after_item": 1
           }
         ],
         "rewards": []
@@ -606,10 +610,12 @@
         "type": "preparation",
         "choices": [
           {
-            "option": "1. Keep searching."
+            "option": "1. Keep searching.",
+            "after_item": 2
           },
           {
-            "option": "2. Go above ground."
+            "option": "2. Go above ground.",
+            "after_item": 2
           }
         ],
         "rewards": []

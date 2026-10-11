@@ -286,10 +286,12 @@
         "type": "dialogue",
         "choices": [
           {
-            "option": "1. It'll sink, so forget it."
+            "option": "1. It'll sink, so forget it.",
+            "after_item": 3
           },
           {
-            "option": "2. Let's sail the open seas!"
+            "option": "2. Let's sail the open seas!",
+            "after_item": 3
           }
         ],
         "rewards": []
@@ -427,10 +429,12 @@
         "type": "dialogue",
         "choices": [
           {
-            "option": "1. Nah, too strange-looking."
+            "option": "1. Nah, too strange-looking.",
+            "after_item": 2
           },
           {
-            "option": "2. Yeah, let's check it out!"
+            "option": "2. Yeah, let's check it out!",
+            "after_item": 2
           }
         ],
         "rewards": [],

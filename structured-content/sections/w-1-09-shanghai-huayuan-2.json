@@ -139,41 +139,50 @@
           {
             "option": "1. Quit it, you dirty old man!",
             "prompt": 1,
-            "required": true
+            "required": true,
+            "after_item": 3
           },
           {
             "option": "2. This strange machine is so sexy!",
-            "prompt": 1
+            "prompt": 1,
+            "after_item": 3
           },
           {
             "option": "3. Please don't hurt me...",
-            "prompt": 1
+            "prompt": 1,
+            "after_item": 3
           },
           {
             "option": "1. Just get away from me!",
             "prompt": 2,
-            "required": true
+            "required": true,
+            "after_item": 4
           },
           {
             "option": "2. This scary tower is sexy, too!",
-            "prompt": 2
+            "prompt": 2,
+            "after_item": 4
           },
           {
             "option": "3. Please, stop...",
-            "prompt": 2
+            "prompt": 2,
+            "after_item": 4
           },
           {
             "option": "1. Ignore him.",
             "prompt": 3,
-            "required": true
+            "required": true,
+            "after_item": 5
           },
           {
             "option": "2. But YOU'RE the sexiest!",
-            "prompt": 3
+            "prompt": 3,
+            "after_item": 5
           },
           {
             "option": "3. Forgive me...",
-            "prompt": 3
+            "prompt": 3,
+            "after_item": 5
           }
         ],
         "rewards": []

@@ -1,25 +1,19 @@
 {
   "section_id": "w-s-02",
-  "verdict": "PASS_WITH_NOTES",
+  "verdict": "PASS",
   "spot_checked": [
-    "all 29 shop items and prices (Tight-lipped Merchant)",
-    "Lottery Member No. 10 prize table (5 colors/prizes)",
-    "boss card: party levels, equipment (Yuri/Margarete/Zhuzhen), Yuri fusions, 2000 EXP, 6000 Cash, Seal of Wisdom drop, 1080 HP Dark",
-    "boss strategy: all 10 sentences present and in source order; Yamaraja/Nightmare/Game of Death/Leonardo's Bears details intact",
-    "both dialogue choice prompts (launch ship, enter Wugui's room) and the 'Choose 2' instruction",
-    "NOTE about equipping Leonardo's Bears before Wugui's room",
-    "save points, overview items/equipment/valuables, enemy table (7 enemies, HP/class/notes)",
-    "step ordering 1-10 vs canonical prose order; item locations and step cross-references"
+    "step 2 choices after_item=3: anchor follows 'Board it; you'll be asked if you want to launch the ship.' (source item 3), box precedes 'Choose 2...' as in source; both options verbatim",
+    "step 9 choices after_item=2: anchor follows 'Enter?' (source item 2) and precedes 'Wugui's room for a scene and a boss battle.' as in source; both options verbatim",
+    "step 2 'Choose 2' outcome kept in text; no outcome invented for the step 9 choices",
+    "save point 'Outside of Wugui's room' and 'save your game here' in step 8",
+    "overview items/equipment/valuables/lottery all present in items_summary and awarded in steps 3, 5, 6, 7, 8 with exact names",
+    "Lottery Member No. 10 prize table: 5 colors/prizes match source order",
+    "enemies #036-#042: HP, class, notes, boss flag all match canonical",
+    "Cursed Puppet boss: HP 1080, Dark, drop Seal of Wisdom, party levels/equipment/fusions, exp 2000, cash 6000, strategy text fully preserved incl. source 'Yamaraja' wording",
+    "Tight-lipped Merchant shop: all 29 items and prices match (camel-case names only re-spaced)",
+    "NOTE about Leonardo's Bears preserved in step 8, ahead of the Wugui's room step",
+    "step ordering and list-splitting preserve names, numbers and conditions; no extra facts added"
   ],
-  "findings": [
-    {
-      "severity": "low",
-      "category": "altered",
-      "location": "shops[0].inventory (Talisman of Luck / Mercy / Wisdom)",
-      "canonical": "TalismanOfLuck, TalismanOfMercy, TalismanOfWisdom",
-      "structured": "Talisman of Luck, Talisman of Mercy, Talisman of Wisdom",
-      "issue": "Shop item names were respaced from the source's CamelCase spelling, while the Lottery Member No. 10 prize table in step 3 keeps 'TalismanOfWisdom'. The same item is therefore spelled two ways on one page. Presentation-only and the meaning is intact, but the spelling is inconsistent; pick one convention (source spelling preferred)."
-    }
-  ],
-  "structured_sha256": "537465076305c23100684204ad6ec3b73541c49bbee5fb0988643373cf83e4d4"
+  "findings": [],
+  "structured_sha256": "ce6118a0bf4bb403cb3eaedbe995c53412d42fbd8198e841946c0ed7963dd5a5"
 }

@@ -534,11 +534,13 @@
         "choices": [
           {
             "option": "[1] No, I don't...",
-            "outcome": "Do not enter battle yet."
+            "outcome": "Do not enter battle yet.",
+            "after_item": 1
           },
           {
             "option": "[2] Yes, I do!",
-            "outcome": "Initiates the boss battle against Yamaraja: Earth."
+            "outcome": "Initiates the boss battle against Yamaraja: Earth.",
+            "after_item": 1
           }
         ],
         "rewards": []

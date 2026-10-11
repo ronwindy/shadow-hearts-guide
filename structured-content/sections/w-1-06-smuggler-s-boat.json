@@ -328,11 +328,13 @@
         "choices": [
           {
             "option": "1. Yes, of course.",
-            "outcome": "Allows you to see what items he has for sale."
+            "outcome": "Allows you to see what items he has for sale.",
+            "after_item": 2
           },
           {
             "option": "2. What are you saying?!",
-            "outcome": "Allows you to discover that he's actually a **Lottery Member**."
+            "outcome": "Allows you to discover that he's actually a **Lottery Member**.",
+            "after_item": 2
           }
         ],
         "rewards": [
@@ -424,11 +426,13 @@
         "type": "exploration",
         "choices": [
           {
-            "option": "1. Not yet."
+            "option": "1. Not yet.",
+            "after_item": 1
           },
           {
             "option": "2. Any time!!",
-            "outcome": "After an event, you'll be thrown into a battle."
+            "outcome": "After an event, you'll be thrown into a battle.",
+            "after_item": 1
           }
         ],
         "rewards": []

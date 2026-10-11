@@ -1,6 +1,7 @@
 ---
 import BossCard from './BossCard.astro';
 import { renderInlineMarkup, renderBlockMarkup, spaceCamelCase } from '../lib/markup';
+import { layoutChoices } from '../lib/choices';
 import {
   Swords,
   Gem,
@@ -47,18 +48,9 @@ interface StepChoice {
   reward?: string;
   prompt?: number;
   required?: boolean;
+  after_item?: number;
 }
 
-// Groups a step's choices per prompt (single-prompt dialogues are one group).
-function groupChoices(choices: StepChoice[] = []): StepChoice[][] {
-  const groups = new Map<number, StepChoice[]>();
-  for (const c of choices) {
-    const key = c.prompt ?? 1;
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key)!.push(c);
-  }
-  return [...groups.values()];
-}
 
 interface Props {
   guideId: string;
@@ -106,6 +98,8 @@ function getStepTypeMeta(type: string = 'exploration') {
     const meta = getStepTypeMeta(st.type);
     const StepIcon = meta.icon;
     const stepStorageKey = `sh-step-${guideId}-${stepNum}`;
+
+    const { inlineBoxes, tailBoxes } = layoutChoices(st.choices);
 
     // Resolve inline boss card if defined on step or matched from guide bosses
     const stepBoss = st.boss || (bosses && bosses.find((b: any) => 
@@ -158,27 +152,14 @@ function getStepTypeMeta(type: string = 'exploration') {
 
             <!-- Instruction Text -->
             <div class="step-content text-base text-slate-200 leading-relaxed space-y-2">
-              <Fragment set:html={renderBlockMarkup(text)} />
+              <Fragment set:html={renderBlockMarkup(text, inlineBoxes)} />
             </div>
 
-            <!-- Dialogue choices, grouped per prompt; the source-marked answer is highlighted -->
-            {st.choices && st.choices.length > 0 && (
+            <!-- Unanchored dialogue choices, grouped per prompt; the source-marked answer is highlighted -->
+            {tailBoxes.length > 0 && (
               <div class="pt-1 space-y-2">
-                {groupChoices(st.choices).map((group, gi, all) => (
-                  <div class="rounded-lg border border-slate-800 bg-slate-900/50 p-3">
-                    {all.length > 1 && (
-                      <p class="text-xs font-mono font-semibold text-slate-400 mb-1.5">Prompt {gi + 1}</p>
-                    )}
-                    <ul class="space-y-1 text-sm">
-                      {group.map((c) => (
-                        <li class={c.required ? 'text-gold-300 font-semibold' : 'text-slate-300'}>
-                          <span>{c.option}</span>
-                          {c.required && <span class="ml-2 text-[10px] font-mono uppercase tracking-wider text-gold-400">Required</span>}
-                          {c.outcome && <span class="block text-xs text-slate-400">{c.outcome}</span>}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                {tailBoxes.map((html) => (
+                  <Fragment set:html={html} />
                 ))}
               </div>
             )}

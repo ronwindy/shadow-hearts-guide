@@ -366,10 +366,12 @@
         "type": "exploration",
         "choices": [
           {
-            "option": "1. That's too bad."
+            "option": "1. That's too bad.",
+            "after_item": 1
           },
           {
-            "option": "2. I'll help if we trade something."
+            "option": "2. I'll help if we trade something.",
+            "after_item": 1
           }
         ],
         "rewards": []
@@ -747,10 +749,12 @@
         "type": "navigation",
         "choices": [
           {
-            "option": "1. No, not yet."
+            "option": "1. No, not yet.",
+            "after_item": 2
           },
           {
-            "option": "2. Yes, let's push off."
+            "option": "2. Yes, let's push off.",
+            "after_item": 2
           }
         ],
         "rewards": []

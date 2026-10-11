@@ -728,10 +728,12 @@
         "type": "dialogue",
         "choices": [
           {
-            "option": "1. I'm not ready yet."
+            "option": "1. I'm not ready yet.",
+            "after_item": 3
           },
           {
-            "option": "2. Go for it!"
+            "option": "2. Go for it!",
+            "after_item": 3
           }
         ],
         "rewards": []
@@ -876,10 +878,12 @@
         "type": "dialogue",
         "choices": [
           {
-            "option": "1. Not yet."
+            "option": "1. Not yet.",
+            "after_item": 3
           },
           {
-            "option": "2. I'll do it anyway!"
+            "option": "2. I'll do it anyway!",
+            "after_item": 3
           }
         ],
         "rewards": []
@@ -1044,10 +1048,12 @@
         "type": "dialogue",
         "choices": [
           {
-            "option": "1. Sure."
+            "option": "1. Sure.",
+            "after_item": 3
           },
           {
-            "option": "2. Who cares?"
+            "option": "2. Who cares?",
+            "after_item": 3
           }
         ],
         "rewards": []
@@ -1058,10 +1064,12 @@
         "type": "dialogue",
         "choices": [
           {
-            "option": "1. No."
+            "option": "1. No.",
+            "after_item": 3
           },
           {
-            "option": "2. Yes."
+            "option": "2. Yes.",
+            "after_item": 3
           }
         ],
         "rewards": []

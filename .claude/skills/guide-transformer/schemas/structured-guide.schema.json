@@ -720,6 +720,11 @@
                     "required": {
                       "type": "boolean",
                       "description": "True when the source marks this option as the required answer (e.g. an `>` arrow)."
+                    },
+                    "after_item": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "description": "Render this prompt's options right under the 1-based line (list item) of the step description that introduces the prompt. Set the same value on every option of a prompt. Omit to show the options at the end of the step."
                     }
                   }
                 }

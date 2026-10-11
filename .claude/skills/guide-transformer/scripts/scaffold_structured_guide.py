@@ -979,30 +979,37 @@ def _teaser_description(lines: List[str], clean: Any) -> str:
 
 
 def build_description(p_text: str, cases: Dict[str, str], characters: List[str],
-                      answers: Optional[List[str]] = None, tail: str = "") -> str:
+                      answers: Optional[List[str]] = None, tail: str = "") -> Tuple[str, int]:
     """Step description: cleaned prose as a list (numbered if the source states a sequence, else bullets).
 
     `answers` (the required choice replies) and `tail` (text that continues after the choice
     block) are woven in after the paragraph, in source order.
+
+    Returns (description, anchor): `anchor` is the 1-based line of the description after which the
+    source places the dialogue choice box (the last line of the paragraph itself).
     """
     def clean(txt: str) -> str:
         return bold_names(" ".join(soften_caps(fix_tag_case(txt, cases, bold=True)).split()), characters)
 
     lines = p_text.splitlines()
     if _TEASER_HEADER.match(lines[0]):
-        return _teaser_description(lines, clean)
+        desc = _teaser_description(lines, clean)
+        return desc, len([ln for ln in desc.splitlines() if ln.strip()])
     prose_lines, bullets = _split_bullets(lines)
     prose = " ".join(prose_lines)
     if answers or tail:
-        items = split_sentences(clean(prose)) + (answers or []) + (split_sentences(clean(tail)) if tail else [])
+        before = split_sentences(clean(prose))
+        anchor = len(before)
+        items = before + (answers or []) + (split_sentences(clean(tail)) if tail else [])
         desc = "\n".join(f"{i}. {s}" for i, s in enumerate(items, start=1)) if len(items) > 1 else " ".join(items)
     else:
         # Numbered only when the source words a sequence; otherwise one fact per bullet.
         desc = listify(clean(prose), numbered=bool(_SEQ_CUE.search(prose))) if prose else ""
+        anchor = len([ln for ln in desc.splitlines() if ln.strip()])
     if bullets:
         lst = "\n".join(f"- {clean(b)}" for b in bullets)
         desc = f"{desc}\n{lst}" if desc else lst
-    return desc
+    return desc, anchor
 
 
 def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
@@ -1108,7 +1115,10 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
                                     has_encounter=bool(matched_enemies))
 
         # Strip [_TAG_] marks, cut long prose into a numbered list, keep source bullets one per line
-        clean_desc = build_description(p_text, cases, characters, answers, extra.get("tail", ""))
+        clean_desc, choice_anchor = build_description(p_text, cases, characters, answers, extra.get("tail", ""))
+        if choices and choice_anchor:
+            for c in choices:
+                c["after_item"] = choice_anchor
 
         step: Dict[str, Any] = {
             "id": step_id,

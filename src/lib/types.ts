@@ -200,6 +200,7 @@ export interface StepChoice {
   reward?: string;
   prompt?: number;
   required?: boolean;
+  after_item?: number;
 }
 
 export interface CharacterProfile {

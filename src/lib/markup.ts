@@ -197,13 +197,18 @@ export function renderHighlights(text: string | null | undefined): string {
 /**
  * Renders block markdown containing paragraphs, unordered lists, and ordered lists.
  */
-export function renderBlockMarkup(text: string | null | undefined): string {
+export function renderBlockMarkup(
+  text: string | null | undefined,
+  afterLine: Record<number, string> = {}
+): string {
   if (!text) return '';
 
   const lines = text.split('\n');
   const blocks: string[] = [];
   let currentListType: 'ul' | 'ol' | null = null;
   let listItems: string[] = [];
+  let lineNo = 0; // 1-based count of non-blank lines, the anchor for `afterLine`
+  const inserted = (html: string) => (afterLine[lineNo] ? html + afterLine[lineNo] : html);
 
   const flushList = () => {
     if (!currentListType || listItems.length === 0) return;
@@ -230,20 +235,22 @@ export function renderBlockMarkup(text: string | null | undefined): string {
       continue;
     }
 
+    lineNo++;
     const bulletMatch = trimmed.match(/^[-*•]\s+(.+)$/);
     const numberedMatch = trimmed.match(/^(\d+)[.)]\s+(.+)$/);
 
     if (bulletMatch) {
       if (currentListType === 'ol') flushList();
       currentListType = 'ul';
-      listItems.push(renderInlineMarkup(bulletMatch[1]));
+      listItems.push(inserted(renderInlineMarkup(bulletMatch[1])));
     } else if (numberedMatch) {
       if (currentListType === 'ul') flushList();
       currentListType = 'ol';
-      listItems.push(renderInlineMarkup(numberedMatch[2]));
+      listItems.push(inserted(renderInlineMarkup(numberedMatch[2])));
     } else {
       flushList();
-      blocks.push(`<p class="leading-relaxed">${renderInlineMarkup(trimmed)}</p>`);
+      const tag = afterLine[lineNo] ? 'div' : 'p'; // a box is not valid inside <p>
+      blocks.push(`<${tag} class="leading-relaxed">${inserted(renderInlineMarkup(trimmed))}</${tag}>`);
     }
   }
 
