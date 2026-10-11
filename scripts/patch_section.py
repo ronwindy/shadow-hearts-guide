@@ -25,9 +25,14 @@ optional). Only exact `name` / `matched_overview_item` / `drop` / `equipment[]` 
 
     {"$rename": {"TalismanOfLuck": "Talisman of Luck"}}
 
+After the merge, integer step ids with gaps (e.g. after removing a step with `null`) are
+renumbered 1..N in order, and `(step N)` cites in items_summary locations follow, unless the
+same patch sets items_summary itself.
+
 The file is written only if the result passes schema validation (override with --force).
 """
 
+import re
 import sys
 import json
 import argparse
@@ -100,6 +105,37 @@ def merge(target: Any, patch: Any) -> Any:
     return deepcopy(patch)
 
 
+def renumber_steps(guide: dict, remap_cites: bool) -> dict:
+    """Closes gaps in integer step ids (e.g. after a `null` removal) and returns {old: new}.
+
+    Only runs when the ids are strictly increasing in list order; anything else is left alone.
+    "(step N)" cites in items_summary locations follow the new ids when `remap_cites` is set.
+    """
+    steps = guide.get("steps")
+    if not _is_id_list(steps):
+        return {}
+    ids = [s["id"] for s in steps]
+    if not all(isinstance(i, int) and not isinstance(i, bool) for i in ids):
+        return {}
+    if ids == list(range(1, len(ids) + 1)) or any(a >= b for a, b in zip(ids, ids[1:])):
+        return {}
+    mapping = {old: new for new, old in enumerate(ids, start=1)}
+    for step in steps:
+        step["id"] = mapping[step["id"]]
+    if remap_cites:
+        def fix(match):
+            n = int(match.group(2))
+            return f"{match.group(1)}{mapping.get(n, n)}"
+        for group in (guide.get("items_summary") or {}).values():
+            if not isinstance(group, list):
+                continue
+            for item in group:
+                loc = item.get("location") if isinstance(item, dict) else None
+                if isinstance(loc, str):
+                    item["location"] = re.sub(r'(\bsteps?\s+)(\d+)', fix, loc, flags=re.I)
+    return mapping
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Merge a JSON patch into a structured section and re-validate.")
     parser.add_argument("section", help="Section id, code or file stem (e.g. w-1-06)")
@@ -135,6 +171,13 @@ def main() -> int:
         mapping[old] = new
     original = json.loads(structured_path.read_text(encoding="utf-8"))
     merged = merge(original, patch)
+    if isinstance(merged.get("guide"), dict):
+        cites_patched = "items_summary" in (patch.get("guide") or {})
+        moved = renumber_steps(merged["guide"], remap_cites=not cites_patched)
+        if moved:
+            changes = ", ".join(f"{o}->{n}" for o, n in moved.items() if o != n)
+            print(f"[INFO] Renumbered step ids to close gaps ({changes})"
+                  + ("; items_summary cites left as patched." if cites_patched else "; step cites updated."))
     if mapping:
         renamed = rename_names(merged, mapping)
         print(f"[INFO] Renamed {renamed} value(s) for {len(mapping)} name(s).")
