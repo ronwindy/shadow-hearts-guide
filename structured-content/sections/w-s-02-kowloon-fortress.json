@@ -159,95 +159,47 @@
             "price": 600
           },
           {
-            "name": "Talisman of Luck",
-            "price": 480
-          },
-          {
             "name": "Studded Cap",
             "price": 1700
-          },
-          {
-            "name": "Talisman of Mercy",
-            "price": 820
           },
           {
             "name": "Casual Belt",
             "price": 600
           },
           {
-            "name": "Talisman of Wisdom",
-            "price": 1280
-          },
-          {
             "name": "Western Belt",
             "price": 1700
-          },
-          {
-            "name": "Mermaid's Tear",
-            "price": 70
           },
           {
             "name": "Zodiac Bracelet",
             "price": 10300
           },
           {
-            "name": "Holy Mother Bust",
-            "price": 75
-          },
-          {
             "name": "Cosmic Bracelet",
             "price": 11500
-          },
-          {
-            "name": "Angel's Feather",
-            "price": 80
           },
           {
             "name": "Spikes",
             "price": 2810
           },
           {
-            "name": "Faerie's Sigh",
-            "price": 85
-          },
-          {
             "name": "Leonardo's Bear",
             "price": 3330
-          },
-          {
-            "name": "Imp's Fang",
-            "price": 95
           },
           {
             "name": "Voodoo Doll",
             "price": 5200
           },
           {
-            "name": "Phoenix Tail",
-            "price": 90
-          },
-          {
             "name": "Thera Leaf",
             "price": 50
-          },
-          {
-            "name": "Bronze Arrowhead",
-            "price": 100
           },
           {
             "name": "Thera Seed",
             "price": 120
           },
           {
-            "name": "Bronze Dagger",
-            "price": 200
-          },
-          {
             "name": "Mana Leaf",
-            "price": 100
-          },
-          {
-            "name": "Silver Hourglass",
             "price": 100
           },
           {
@@ -255,20 +207,68 @@
             "price": 300
           },
           {
-            "name": "Gold Hourglass",
-            "price": 200
-          },
-          {
             "name": "Pure Leaf",
             "price": 230
           },
           {
-            "name": "Tent",
+            "name": "Pure Seed",
+            "price": 510
+          },
+          {
+            "name": "Talisman of Luck",
             "price": 480
           },
           {
-            "name": "Pure Seed",
-            "price": 510
+            "name": "Talisman of Mercy",
+            "price": 820
+          },
+          {
+            "name": "Talisman of Wisdom",
+            "price": 1280
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Angel's Feather",
+            "price": 80
+          },
+          {
+            "name": "Faerie's Sigh",
+            "price": 85
+          },
+          {
+            "name": "Imp's Fang",
+            "price": 95
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Tent",
+            "price": 480
           }
         ]
       }

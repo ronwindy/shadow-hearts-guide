@@ -255,132 +255,132 @@
             "price": 2800
           },
           {
-            "name": "Thera Leaf",
-            "price": 50
-          },
-          {
             "name": "Tome of the Moon",
             "price": 3000
-          },
-          {
-            "name": "Thera Seed",
-            "price": 120
           },
           {
             "name": "Pilgrim's Staff",
             "price": 2700
           },
           {
-            "name": "Mana Leaf",
-            "price": 100
-          },
-          {
             "name": "Nanbu Pistol",
             "price": 2900
-          },
-          {
-            "name": "Mana Seed",
-            "price": 300
           },
           {
             "name": "Studded Harness",
             "price": 2500
           },
           {
-            "name": "Pure Leaf",
-            "price": 230
-          },
-          {
             "name": "Studded Bustier",
             "price": 2700
-          },
-          {
-            "name": "Pure Seed",
-            "price": 510
           },
           {
             "name": "Leather Cap",
             "price": 600
           },
           {
-            "name": "Talisman of Luck",
-            "price": 480
-          },
-          {
             "name": "Studded Cap",
             "price": 1700
-          },
-          {
-            "name": "Talisman of Mercy",
-            "price": 820
           },
           {
             "name": "Casual Belt",
             "price": 600
           },
           {
-            "name": "Mermaid's Tear",
-            "price": 70
-          },
-          {
             "name": "Western Belt",
             "price": 1700
-          },
-          {
-            "name": "Holy Mother Bust",
-            "price": 75
           },
           {
             "name": "Bone Bracelet",
             "price": 2960
           },
           {
-            "name": "Angel's Feather",
-            "price": 80
-          },
-          {
             "name": "Rosewood Bracelet",
             "price": 3000
-          },
-          {
-            "name": "Faerie's Sigh",
-            "price": 85
           },
           {
             "name": "Bell Bracelet",
             "price": 3120
           },
           {
-            "name": "Imp's Fang",
-            "price": 95
-          },
-          {
             "name": "Mirror Bracelet",
             "price": 3240
-          },
-          {
-            "name": "Phoenix Tail",
-            "price": 90
           },
           {
             "name": "Spikes",
             "price": 2810
           },
           {
-            "name": "Bronze Arrowhead",
-            "price": 100
-          },
-          {
             "name": "Leonardo's Bear",
             "price": 3330
           },
           {
-            "name": "Bronze Dagger",
-            "price": 200
-          },
-          {
             "name": "Voodoo Doll",
             "price": 5200
+          },
+          {
+            "name": "Thera Leaf",
+            "price": 50
+          },
+          {
+            "name": "Thera Seed",
+            "price": 120
+          },
+          {
+            "name": "Mana Leaf",
+            "price": 100
+          },
+          {
+            "name": "Mana Seed",
+            "price": 300
+          },
+          {
+            "name": "Pure Leaf",
+            "price": 230
+          },
+          {
+            "name": "Pure Seed",
+            "price": 510
+          },
+          {
+            "name": "Talisman of Luck",
+            "price": 480
+          },
+          {
+            "name": "Talisman of Mercy",
+            "price": 820
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Angel's Feather",
+            "price": 80
+          },
+          {
+            "name": "Faerie's Sigh",
+            "price": 85
+          },
+          {
+            "name": "Imp's Fang",
+            "price": 95
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
           },
           {
             "name": "Silver Hourglass",

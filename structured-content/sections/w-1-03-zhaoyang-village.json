@@ -286,52 +286,52 @@
             "price": 320
           },
           {
-            "name": "Talisman of Luck",
-            "price": 480
-          },
-          {
             "name": "Leather Belt",
             "price": 320
-          },
-          {
-            "name": "Mermaid's Tear",
-            "price": 70
           },
           {
             "name": "Shell Bracelet",
             "price": 2770
           },
           {
-            "name": "Holy Mother Bust",
-            "price": 75
-          },
-          {
             "name": "Bone Bracelet",
             "price": 2960
-          },
-          {
-            "name": "Phoenix Tail",
-            "price": 90
           },
           {
             "name": "Thera Leaf",
             "price": 50
           },
           {
-            "name": "Bronze Arrowhead",
-            "price": 100
-          },
-          {
             "name": "Mana Leaf",
-            "price": 100
-          },
-          {
-            "name": "Silver Hourglass",
             "price": 100
           },
           {
             "name": "Pure Leaf",
             "price": 230
+          },
+          {
+            "name": "Talisman of Luck",
+            "price": 480
+          },
+          {
+            "name": "Mermaid's Tear",
+            "price": 70
+          },
+          {
+            "name": "Holy Mother Bust",
+            "price": 75
+          },
+          {
+            "name": "Phoenix Tail",
+            "price": 90
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
           },
           {
             "name": "Tent",
