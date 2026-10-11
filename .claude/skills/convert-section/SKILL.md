@@ -10,7 +10,7 @@ Thin runbook for the parts that need judgement. Commands, schema and role bounda
 
 ## 1. Pick the path
 - `a-*` / reference tables, items, shops, bestiary, bosses: deterministic scaffold, no prose editing, then `--verify`. Stop after step 4.
-- `w-*` (including hubs `w-s-*`, `w-2-00`, `w-2-11`, `w-2-13`, `w-2-15`): the full path below.
+- `w-*` (including hubs `w-s-*`, `w-2-11`, `w-2-13`, `w-2-15`): the full path below.
 - No id given: use `status.py --summary` (first 45 lines of `STATUS.md`); next = sequence gaps, then QA `[FAIL]`s, then pending QA, then next chronological.
 
 ## 2. Scaffold, then judge it
