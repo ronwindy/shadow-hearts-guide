@@ -29,48 +29,7 @@
     "overview": {
       "directions": {
         "compass_note": "There is no true \"compass\" to the game; instead, you travel on pre-rendered backgrounds with areas for walking. Sometimes, I will substitute west for left, right for east, etc.",
-        "mappings": [
-          {
-            "screen": "Up",
-            "cardinal": "North",
-            "abbr": "U / N"
-          },
-          {
-            "screen": "Down",
-            "cardinal": "South",
-            "abbr": "D / S"
-          },
-          {
-            "screen": "Left",
-            "cardinal": "West",
-            "abbr": "L / W"
-          },
-          {
-            "screen": "Right",
-            "cardinal": "East",
-            "abbr": "R / E"
-          },
-          {
-            "screen": "Upper-Left",
-            "cardinal": "Northwest",
-            "abbr": "UL / NW"
-          },
-          {
-            "screen": "Upper-Right",
-            "cardinal": "Northeast",
-            "abbr": "UR / NE"
-          },
-          {
-            "screen": "Lower-Left",
-            "cardinal": "Southwest",
-            "abbr": "LL / SW"
-          },
-          {
-            "screen": "Lower-Right",
-            "cardinal": "Southeast",
-            "abbr": "LR / SE"
-          }
-        ]
+        "compass_art": "    N                          Up = North                           U\n NW | NE                                                         UL | UR\n   \\|/                             /\\                              \\|/\nW ——x—— E     =     Left = West   <()>   Right = East     =     L ——x—— R\n   /|\\                             \\/                              /|\\\n SW | SE                                                         LL | LR\n    S                         Down = South                          D"
       },
       "intro": "This section contains all of the instructions listed in the game's manual.",
       "controls": {
