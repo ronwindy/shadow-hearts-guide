@@ -1,0 +1,18 @@
+{
+  "section_id": "w-2-09",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Enemy table: #061-#064 numbers, names, HP, classes, notes match; Jack has no number; sub-boss/boss flags correct",
+    "Three boss cards (Night Stalker, Jack, Mammon): HP, class, drops, EXP, cash, party levels, equipment, fusions match; strategies preserved including source typos",
+    "RedLeatherJacket re-spaced to Red Leather Jacket (allowed normalization)",
+    "All 9 overview items/equipment/valuables present in items_summary and awarded in steps 2, 3, 4, 9 with exact names",
+    "Save points: Main entryway; save instructions in steps 1, 4 and 8 preserved",
+    "Passwords 5375 and 3754 and their dates (5 March 75, 3 July 54) preserved in correct order",
+    "Paralysis/Petrification Zodiac Bracelet or Crucifix note preserved",
+    "Choice [1]/[2] with MAKE SURE TO CHOOSE 1 warning and Halley weapon consequence preserved",
+    "Level 2 Fire/Water Fusion note, Pocket Watches, Alice/Dark class and Meiyuan party-change note preserved",
+    "Step order matches source; bosses appear chronologically within steps"
+  ],
+  "findings": [],
+  "structured_sha256": "43fa97a2ca6cb8419f5073f9c648ed6430604d83cf762a51774da99fd48d4e3f"
+}

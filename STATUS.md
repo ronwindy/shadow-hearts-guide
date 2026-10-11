@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-11 16:15:39`
+> Last synced: `2026-10-11 16:24:26`
 
 ```text
-=== PROJECT STATUS (2026-10-11 16:15:39) ===
-Canonical 67/67 | Structured 26/67 | QA pass 26/67 (fail 0) | Web built 26/67
+=== PROJECT STATUS (2026-10-11 16:24:26) ===
+Canonical 67/67 | Structured 27/67 | QA pass 27/67 (fail 0) | Web built 27/67
 Next:
-  1. Structure w-2-09 (London, Orphanage) - next chronological
+  1. Structure w-2-10 (Calios Mental Hospital (1)) - next chronological
 ```
 
 ## Section Matrix
@@ -38,7 +38,7 @@ Next:
 | `[W-2-06]` | `w-2-06` | Prague (2) | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-07]` | `w-2-07` | Rouen | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-08]` | `w-2-08` | London, Old Castle Street | Walkthrough - Europe | WEB_BUILT |
-| `[W-2-09]` | `w-2-09` | London, Orphanage | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-2-09]` | `w-2-09` | London, Orphanage | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-10]` | `w-2-10` | Calios Mental Hospital (1) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-11]` | `w-2-11` | Europe Side Quests, Part 1 | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-S-04]` | `w-s-04` | Calios Mental Hospital (2) | Walkthrough - Europe | NOT_STRUCTURED |
