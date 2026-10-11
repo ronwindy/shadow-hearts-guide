@@ -254,6 +254,7 @@ export interface ManualOverviewData {
   controls?: {
     controller_layout?: ControllerInput[];
     menu_navigation?: string;
+    controller_art?: string;
   };
   playing_the_game?: Record<string, string>;
   player_attributes?: Record<string, string>;

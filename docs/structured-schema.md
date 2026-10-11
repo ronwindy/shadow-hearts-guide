@@ -57,6 +57,7 @@ A single object with one key, `guide`. Unknown keys anywhere under `guide` are r
 | `steps` | no | The walkthrough checklist (section 2). |
 | `callouts` | no | Section-level notes `{type, title, text}` (same `type` enum as step notes). |
 | `initial_setup`, `overview` | no | Intro/manual sections only (character profiles, glossary, controls). |
+| `overview.controls.controller_art` | no | Verbatim source drawing of the controller (monospace, byte-for-byte, common left indent removed); the button legend stays in `controller_layout`. |
 | `reference_blocks` | no | Appendix sections: `[{title?, format:"preformatted", text}]`. Produced by the scaffold, never hand-edited; QA requires byte-identical text. |
 
 `type` of a section by canonical id: `w-*` -> `walkthrough` (`sidequest` when canonical

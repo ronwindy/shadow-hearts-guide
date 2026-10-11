@@ -346,6 +346,10 @@
                 },
                 "menu_navigation": {
                   "type": "string"
+                },
+                "controller_art": {
+                  "type": "string",
+                  "description": "Verbatim source drawing of the controller (monospace); the legend stays in controller_layout"
                 }
               }
             }

@@ -80,6 +80,11 @@ const { directions, controls, battle_mechanics: battle } = overview;
 
   {controls && (
     <CollapsibleSection id="controls" title="Controls & Controller Layout" icon={Gamepad2}>
+      {controls.controller_art && (
+        <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-950/70 mb-3">
+          <pre class="p-3 sm:p-4 text-slate-200 font-source-art text-[10px] sm:text-xs">{controls.controller_art}</pre>
+        </div>
+      )}
       {controls.controller_layout && (
         <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-850/90">
           <table class="w-full text-sm sm:text-base text-left">
