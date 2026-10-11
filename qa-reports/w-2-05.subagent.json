@@ -1,0 +1,16 @@
+{
+  "section_id": "w-2-05",
+  "verdict": "PASS",
+  "spot_checked": [
+    "overview save points (First room inside, Top of the tower) vs save_points and step 4 'Use the Save Point here'",
+    "items/equipment/valuables (Seal of Speed, Tent, Pure Root, Seal of Force, Lottery Ticket, Headgear, Dark Gravestone) vs items_summary and step rewards, including left/right cell placement",
+    "enemy table: numbers #055-#058, HP, class, notes, boss/sub-boss flags for all six rows",
+    "Yuri boss box: HP 1400, Dark, party levels 23/23/24 and all 15 equipment entries",
+    "Yuri strategy: first sentence 'Yikes! His normal three-hit combo ... heal the survivor immediately' restored from canonical text; ~400 HP threshold, Dark Messenger, Leonardo's Bear, Holy Edge/Blessed Light/Corpse Arm all preserved",
+    "Fox Face: 555 HP, Dark, Brass Knuckles, 13000 EXP, 12500 Cash, !!! attack, Thera Seed, Raging Tiger/Inferno (Fighting Spirit) preserved",
+    "NOTE about Instant Death/Leonardo's Bears attached before boss step; two end NOTEs (Soul Energy / level 2 Earth or Light Fusions) preserved in step 9",
+    "step ordering 1-9 matches canonical prose order; navigation prev w-2-04 / next w-2-06"
+  ],
+  "findings": [],
+  "structured_sha256": "198d85f5abf35bc62bd81457cb4e78f7f93b32d2bc6dfb9cd141918dd4a58a66"
+}

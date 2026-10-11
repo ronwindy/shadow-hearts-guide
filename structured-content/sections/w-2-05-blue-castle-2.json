@@ -1,0 +1,327 @@
+{
+  "guide": {
+    "id": "w-2-05",
+    "code": "[W-2-05]",
+    "title": "Blue Castle (2)",
+    "type": "walkthrough",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-2-04",
+        "code": "[W-2-04]",
+        "title": "Bistritz (2)",
+        "file": "sections/w-2-04-bistritz-2.json"
+      },
+      "next": {
+        "id": "w-2-06",
+        "code": "[W-2-06]",
+        "title": "Prague (2)",
+        "file": "sections/w-2-06-prague-2.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat Yuri",
+      "Defeat Fox Face"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Seal of Speed",
+          "category": "items",
+          "location": "As soon as you enter the stairwell, open a hidden chest to your left for a Seal of Speed, then start climbing the stairs. (step 1)"
+        },
+        {
+          "name": "Tent",
+          "category": "items",
+          "location": "Check on the floor in the cell on the left for a Tent, and check on the floor in the cell on the right for a Seal of Force. (step 4)"
+        },
+        {
+          "name": "Pure Root",
+          "category": "items",
+          "location": "In this room, open the chest in the cell on the left for a Pure Root, then go back out and continue climbing the stairs. (step 2)"
+        },
+        {
+          "name": "Seal of Force",
+          "category": "items",
+          "location": "Check on the floor in the cell on the left for a Tent, and check on the floor in the cell on the right for a Seal of Force. (step 4)"
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Check on the floor in the cell on the left for a Lottery Ticket, and open the chest in the cell on the right for some Headgear. (step 3)"
+        },
+        {
+          "name": "Headgear",
+          "category": "equipment",
+          "location": "Check on the floor in the cell on the left for a Lottery Ticket, and open the chest in the cell on the right for some Headgear. (step 3)"
+        },
+        {
+          "name": "Dark Gravestone",
+          "category": "valuables",
+          "location": "Examine the floor on the left side of the room to find the Dark Gravestone, which will allow you to fight and fuse into Yuri's level 3 Dark Fusion when you have enough Soul Energy! (step 8)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#055",
+        "name": "Garm",
+        "hp": 165,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#056",
+        "name": "Gremlin",
+        "hp": 62,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#057",
+        "name": "Hollow",
+        "hp": 103,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#058",
+        "name": "Dead Knight",
+        "hp": 200,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Poison"
+      },
+      {
+        "number": null,
+        "name": "Yuri",
+        "hp": 1400,
+        "class": "Dark",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Inflicts Instant Death"
+      },
+      {
+        "number": null,
+        "name": "Fox Face",
+        "hp": 555,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Uses SP Lowering"
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Make your way inside the castle like you did before.\n2. When you reach the fork with the Save Point, head west, then approach the door to the west that was previously locked.\n3. **Keith** will unlock it for you, and you'll be able to continue on.\n4. As soon as you enter the stairwell, open a hidden chest to your left for a **Seal of Speed**, then start climbing the stairs.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Seal of Speed",
+            "category": "items",
+            "matched_overview_item": "Seal of Speed"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. Go up the first set here to the next area, then up another to the next, where you can go inside a room to your left.\n2. In this room, open the chest in the cell on the left for a **Pure Root**, then go back out and continue climbing the stairs.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Pure Root",
+            "category": "items",
+            "matched_overview_item": "Pure Root"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "- Head up five (or six, depending on where you started counting) more screens to find another room.\n- Check on the floor in the cell on the left for a **Lottery Ticket**, and open the chest in the cell on the right for some **Headgear**.\n- Make your way back out.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          },
+          {
+            "name": "Headgear",
+            "category": "equipment",
+            "matched_overview_item": "Headgear"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "1. Go up another five or six screens to another room.\n2. Check on the floor in the cell on the left for a **Tent**, and check on the floor in the cell on the right for a **Seal of Force**.\n3. Make your way back out, then continue climbing the stairs.\n4. Keep on going, and you'll eventually reach the top of the tower.\n5. Use the Save Point here.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "The next boss can use Instant Death, so make sure to equip Leonardo's Bears to everyone."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Tent",
+            "category": "items",
+            "matched_overview_item": "Tent"
+          },
+          {
+            "name": "Seal of Force",
+            "category": "items",
+            "matched_overview_item": "Seal of Force"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "When you're ready, enter the door for a scene. As much as you don't want to, you have to fight our long-lost friend.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "BOSS",
+          "name": "Yuri",
+          "enemies": [
+            {
+              "name": "Yuri",
+              "hp": 1400,
+              "class": "Dark",
+              "drop": null
+            }
+          ],
+          "party": [
+            {
+              "name": "Keith",
+              "level": 23,
+              "equipment": [
+                "Royal Estoc",
+                "Chainmail Vest",
+                "Mind's Eye",
+                "Metal Belt",
+                "Leonardo's Bear"
+              ]
+            },
+            {
+              "name": "Alice",
+              "level": 23,
+              "equipment": [
+                "Tome of the Sun",
+                "Silk Bolero",
+                "Anne's Cross",
+                "Face Guard",
+                "Leonardo's Bear"
+              ]
+            },
+            {
+              "name": "Zhuzhen",
+              "level": 24,
+              "equipment": [
+                "Hermit's Staff",
+                "Chainmail Vest",
+                "Face Guard",
+                "Warlock Earrings",
+                "Leonardo's Bear"
+              ]
+            }
+          ],
+          "exp": null,
+          "cash": null,
+          "strategy": "- Yikes!\n- His normal three-hit combo will do MAJOR damage to anyone it hits, so heal the survivor immediately.\n- **Yuri** has quite a bit of HP, and hits harder than anyone else thus far, so healing will be your immediate priority.\n- After just about 400 HP worth of damage, **Yuri** will fuse into the Death Emperor, starting to use Dark Messenger.\n- As long as you have Leonardo's Bears equipped, you won't die instantly, but you'll still be hit pretty hard.\n- Again, to reiterate: healing will be your immediate priority.\n- Have two people healing, if needed.\n- For the first round, have **Alice** cast Holy Edge on **Keith** to add a Light class to his attack, then devote **Alice** to healing.\n- There most likely won't be a round where she can attack, but if you can, then use Blessed Light.\n- **Zhuzhen** should be using Corpse Arm every round, and **Keith** should be attacking normally every round, with his weapon laced with Holy Edge.\n- Whoever is doing the least amount of damage needs to be helping **Alice** heal if it's needed.\n- Like the last few battles, it'll probably take long enough that you'll need to replenish your MP and SP as well.\n- Again, have whoever is doing the least amount of damage take care of this."
+        },
+        "encounter": {
+          "enemies": [
+            "Yuri"
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "description": "1. After the battle, you'll have control of **Alice** in the Graveyard.\n2. Just head left to talk to the Masks.\n3. Once they're done, go through the gate to the north and watch the events unfold there.\n4. You'll then have to face Fox Face one last time, as **Yuri**.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Fox Face",
+          "enemies": [
+            {
+              "name": "Fox Face",
+              "hp": 555,
+              "class": "Dark",
+              "drop": "Brass Knuckles"
+            }
+          ],
+          "party": [],
+          "exp": 13000,
+          "cash": 12500,
+          "strategy": "- He won't fuse into the Death Emperor this time, but he'll still use his !!! attack.\n- When he does, IMMEDIATELY use a Thera Seed, and DON'T even try to hit the 'Perfect!!' mark; just get **Yuri** away from 1 HP, and you'll be fine.\n- Fuse into either the Raging Tiger or Inferno (with Fighting Spirit) and just start wailing away on him with physical attacks.\n- Just keep trading blows, using Thera Seeds to heal whenever your HP starts to get low, and ESPECIALLY after the !!! attack."
+        },
+        "encounter": {
+          "enemies": [
+            "Fox Face"
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "description": "- After the battle, watch the very long sequence of events.\n- Eventually, you'll be able to choose your party.\n- I'll go with **Yuri**, **Alice**, and **Keith** for the time being.\n- Before you know it, you'll be back in the forest at the entrance to the Blue Castle.",
+        "type": "story",
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "- **However**... if you paid attention, you saw something glowing behind **Yuri** as they left the tower, so let's go get it.\n- Make your way back into the Castle, through the western door, and to the very tip top of the tower into the room where you fought **Yuri**.\n- Examine the floor on the left side of the room to find the **Dark Gravestone**, which will allow you to fight and fuse into **Yuri**'s level 3 Dark Fusion when you have enough Soul Energy!\n- Score!",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Dark Gravestone",
+            "category": "valuables",
+            "matched_overview_item": "Dark Gravestone"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "description": "After you have that, make your way back to the exit and to the World Map. Your next stop will be Prague.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Even though you didn't see it, you accumulated Soul Energy while **Yuri** was out of your party, so there's a chance that he has one or more new level 2 Fusions that you'll be able to fight and try out."
+          },
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "If you don't have your level 2 Earth or Light Fusions yet, then I recommend heading back inside and fighting until you get them."
+          }
+        ],
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "First room inside",
+      "Top of the tower"
+    ]
+  }
+}

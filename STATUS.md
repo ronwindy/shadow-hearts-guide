@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-11 15:23:47`
+> Last synced: `2026-10-11 15:30:35`
 
 ```text
-=== PROJECT STATUS (2026-10-11 15:23:47) ===
-Canonical 67/67 | Structured 22/67 | QA pass 22/67 (fail 0) | Web built 22/67
+=== PROJECT STATUS (2026-10-11 15:30:35) ===
+Canonical 67/67 | Structured 23/67 | QA pass 23/67 (fail 0) | Web built 23/67
 Next:
-  1. Structure w-2-05 (Blue Castle (2)) - next chronological
+  1. Structure w-2-06 (Prague (2)) - next chronological
 ```
 
 ## Section Matrix
@@ -34,7 +34,7 @@ Next:
 | `[W-2-02]` | `w-2-02` | Bistritz (1) | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-03]` | `w-2-03` | Blue Castle (1) | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-04]` | `w-2-04` | Bistritz (2) | Walkthrough - Europe | WEB_BUILT |
-| `[W-2-05]` | `w-2-05` | Blue Castle (2) | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-2-05]` | `w-2-05` | Blue Castle (2) | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-06]` | `w-2-06` | Prague (2) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-07]` | `w-2-07` | Rouen | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-08]` | `w-2-08` | London, Old Castle Street | Walkthrough - Europe | NOT_STRUCTURED |
