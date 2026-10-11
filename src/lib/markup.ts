@@ -181,6 +181,20 @@ export function renderInlineMarkup(text: string | null | undefined): string {
 }
 
 /**
+ * Highlight-only markup for wiki prose: escapes HTML, then turns **term** into
+ * <strong class="highlight-term">. Unlike renderInlineMarkup it leaves everything else
+ * (controller words, _italics_, CamelCase) untouched so verbatim wiki text is not altered.
+ */
+export function renderHighlights(text: string | null | undefined): string {
+  if (!text) return '';
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong class="highlight-term">$1</strong>');
+}
+
+/**
  * Renders block markdown containing paragraphs, unordered lists, and ordered lists.
  */
 export function renderBlockMarkup(text: string | null | undefined): string {

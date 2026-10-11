@@ -1,5 +1,6 @@
 ---
 import { toSentences } from '../lib/sentences';
+import { renderHighlights } from '../lib/markup';
 
 interface Props {
   /** Verbatim paragraph(s); each is split into one sentence per bullet. */
@@ -12,7 +13,7 @@ const sentences = texts.flatMap(toSentences);
 ---
 
 <ul class:list={['sentence-list text-base text-slate-300 leading-relaxed', className]}>
-  {sentences.map((s) => <li>{s}</li>)}
+  {sentences.map((s) => <li set:html={renderHighlights(s)} />)}
 </ul>
 
 <style>

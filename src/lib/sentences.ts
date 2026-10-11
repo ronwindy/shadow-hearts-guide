@@ -4,9 +4,10 @@
  */
 export const toSentences = (text: string): string[] =>
   text
-    .split(/(?<=[.!?])\s+(?=[A-Z"'])/)
+    // `\**` lets a sentence start or end inside a **highlight** marker and still split
+    .split(/(?<=[.!?]\**)\s+(?=\**[A-Z"'])/)
     .reduce<string[]>((acc, part) => {
-      if (acc.length && /\b[A-Z]\.$/.test(acc[acc.length - 1])) acc[acc.length - 1] += ' ' + part;
+      if (acc.length && /\b[A-Z]\.\**$/.test(acc[acc.length - 1])) acc[acc.length - 1] += ' ' + part;
       else acc.push(part);
       return acc;
     }, []);
