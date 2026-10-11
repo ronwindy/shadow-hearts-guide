@@ -4,12 +4,24 @@ import { Menu, Flame, House, BookOpen, ExternalLink } from '@lucide/astro';
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
-<header class="lg:hidden sticky top-0 z-40 bg-obsidian/95 backdrop-blur-md border-b border-slate-800 shadow-sm">
-  <div class="px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
+<header class="mobile-header lg:hidden sticky top-0 z-40 backdrop-blur-md">
+  <!-- Stained-glass tracery overlay (decorative) -->
+  <svg class="mobile-header__lattice" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="mh-lattice" width="48" height="56" patternUnits="userSpaceOnUse">
+        <!-- pointed gothic arch + diamond mullions -->
+        <path d="M0 56 V28 Q0 4 24 0 Q48 4 48 28 V56" fill="none" stroke="currentColor" stroke-width="1" />
+        <path d="M24 0 V56 M0 28 L24 56 L48 28 L24 0 Z" fill="none" stroke="currentColor" stroke-width="0.6" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#mh-lattice)" />
+  </svg>
+
+  <div class="relative px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
     <!-- Left: Hamburger Drawer Trigger -->
     <button
       id="open-mobile-drawer"
-      class="p-2 -ml-2 rounded-lg text-slate-300 hover:text-gold-400 hover:bg-slate-800/80 transition-colors focus:outline-none focus:ring-1 focus:ring-gold-500"
+      class="mobile-header__menu p-2 -ml-2 rounded-lg text-slate-200 hover:text-gold-400 transition-colors focus:outline-none focus:ring-1 focus:ring-gold-500"
       aria-label="Open chapters and navigation menu"
     >
       <Menu class="w-6 h-6" />
@@ -20,8 +32,63 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
       <img
         src={`${baseUrl}/logo.png`}
         alt="Shadow Hearts Strategy Guide"
-        class="h-10 sm:h-11 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+        class="mobile-header__logo h-10 sm:h-11 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
       />
     </a>
   </div>
+
+  <!-- Gold divider with centre ornament -->
+  <div class="mobile-header__divider" aria-hidden="true"><span></span></div>
 </header>
+
+<style>
+  .mobile-header {
+    position: sticky;
+    overflow: hidden;
+    background:
+      radial-gradient(120% 140% at 100% 50%, rgba(45, 212, 191, 0.08) 0%, rgba(45, 212, 191, 0) 50%),
+      radial-gradient(90% 160% at 0% 0%, rgba(139, 92, 246, 0.35) 0%, rgba(139, 92, 246, 0) 60%),
+      linear-gradient(180deg, #1b1038 0%, #120a2a 55%, #0b0618 100%);
+    box-shadow: 0 6px 18px -8px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+
+  .mobile-header__lattice {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(167, 139, 250, 0.16);
+    pointer-events: none;
+    /* fade the tracery toward the logo so it never competes with it */
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 35%, transparent 85%);
+            mask-image: linear-gradient(90deg, #000 0%, #000 35%, transparent 85%);
+  }
+
+  .mobile-header__logo {
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
+  }
+
+  .mobile-header__menu {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+  }
+  .mobile-header__menu:hover {
+    background: rgba(212, 175, 55, 0.1);
+  }
+
+  .mobile-header__divider {
+    position: relative;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #b8892b 20%, #f2d27a 50%, #b8892b 80%, transparent 100%);
+  }
+  .mobile-header__divider span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #f2d27a;
+    box-shadow: 0 0 6px rgba(242, 210, 122, 0.8);
+  }
+</style>
