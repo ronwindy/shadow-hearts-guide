@@ -1,0 +1,17 @@
+{
+  "section_id": "w-2-03",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Step 5 note 'Coffin layout' preformatted field: programmatically compared against the canonical text coffin ASCII map (20 lines, common left indent of 15 spaces removed); byte-for-byte equal at codepoint level (only non-ASCII chars are U+2014 and U+00B4, no trailing whitespace)",
+    "Coffin order table (Abel=1, Edgar=2, Frank=3, Helen=4, Leon=5, Maria=6, Robin=7, Steven=8) matches the map legend exactly, and the source's statement that the order is alphabetical",
+    "Skeleton quote preserved verbatim across 4 bullets, including '8 flames remain unlit'",
+    "Items: Cosmic Bracelet, Thera Seed, Star Swallow, Tent, Pocket Watch, Lottery Ticket all present with source-stated locations and in source order",
+    "Equipment: Keith's default Antique Rapier, Chainmail Vest, Pocket Watch preserved in step 6 note and items_summary",
+    "Save point 'First room inside' present in guide.save_points; source's mid-section Save Point mentions (fork, return to fork) and World Map save preserved in steps 2, 6, 7",
+    "Enemies #055 Garm 165 Dark, #056 Gremlin 62 Wind, #057 Hollow 103 Light with notes match canonical; no bosses in source or guide",
+    "Step order 1-7 follows the source narrative; conditions (east path locked until puzzle solved, gate opens when heading back south, eight coffins plus one open) intact",
+    "Navigation prev w-2-02 / next w-2-04 matches canonical"
+  ],
+  "findings": [],
+  "structured_sha256": "6dec4b7c055f0c03e0ee9e77ab8ec07ebc247b232bc0ba0747f8dfc4eab88d88"
+}

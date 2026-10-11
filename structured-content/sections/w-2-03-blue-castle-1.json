@@ -1,0 +1,257 @@
+{
+  "guide": {
+    "id": "w-2-03",
+    "code": "[W-2-03]",
+    "title": "Blue Castle (1)",
+    "type": "walkthrough",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-2-02",
+        "code": "[W-2-02]",
+        "title": "Bistritz (1)",
+        "file": "sections/w-2-02-bistritz-1.json"
+      },
+      "next": {
+        "id": "w-2-04",
+        "code": "[W-2-04]",
+        "title": "Bistritz (2)",
+        "file": "sections/w-2-04-bistritz-2.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Thera Seed",
+          "category": "items",
+          "location": "Hug the right wall as you go north to be in a small area with Meiyuan and a chest containing a Thera Seed. (step 1)"
+        },
+        {
+          "name": "Tent",
+          "category": "items",
+          "location": "The path to the east is locked, so use the Save Point if you want, then go down the western stairs, moving south and opening the chest to your west for a Tent. (step 2)"
+        },
+        {
+          "name": "Star Swallow",
+          "category": "items",
+          "location": "Check just to the west of the other chest to find another chest, this one with a Star Swallow. (step 1)"
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Go up and past the statue here, scaling the wall as you go northeast, to a small area; search here for a chest containing a Lottery Ticket. (step 4)"
+        },
+        {
+          "name": "Cosmic Bracelet",
+          "category": "equipment",
+          "location": "Go into the dark area in the set of trees to your left and look around; you should find a Cosmic Bracelet behind a tree there. (step 1)"
+        },
+        {
+          "name": "Chainmail Vest",
+          "category": "equipment",
+          "location": "Keith comes equipped with the Antique Rapier, a Chainmail Vest, and a Pocket Watch equipped by default. (step 6)"
+        },
+        {
+          "name": "Pocket Watch",
+          "category": "equipment",
+          "location": "Check below the stairs to your bottom-left for a Pocket Watch. (step 3)"
+        },
+        {
+          "name": "Pocket Watch",
+          "category": "equipment",
+          "location": "Keith comes equipped with the Antique Rapier, a Chainmail Vest, and a Pocket Watch equipped by default. (step 6)"
+        },
+        {
+          "name": "Antique Rapier",
+          "category": "equipment",
+          "location": "Keith comes equipped with the Antique Rapier, a Chainmail Vest, and a Pocket Watch equipped by default. (step 6)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#055",
+        "name": "Garm",
+        "hp": 165,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#056",
+        "name": "Gremlin",
+        "hp": 62,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#057",
+        "name": "Hollow",
+        "hp": 103,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Go into the dark area in the set of trees to your left and look around; you should find a **Cosmic Bracelet** behind a tree there.\n2. Once you have it, head all the way north to the next area.\n3. Hug the right wall as you go north to be in a small area with Meiyuan and a chest containing a **Thera Seed**.\n4. Check just to the west of the other chest to find another chest, this one with a **Star Swallow**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Cosmic Bracelet",
+            "category": "equipment",
+            "matched_overview_item": "Cosmic Bracelet"
+          },
+          {
+            "name": "Thera Seed",
+            "category": "items",
+            "matched_overview_item": "Thera Seed"
+          },
+          {
+            "name": "Star Swallow",
+            "category": "items",
+            "matched_overview_item": "Star Swallow"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. Go back to the main path and examine the gate to the north.\n2. It won't open, so start heading back south, and it'll magically open for you, allowing you entrance.\n3. Start to go up the stairs for a quick scene, then continue north to a fork.\n4. The path to the east is locked, so use the Save Point if you want, then go down the western stairs, moving south and opening the chest to your west for a **Tent**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Tent",
+            "category": "items",
+            "matched_overview_item": "Tent"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "1. Ignore the door to the west, as we can't go through it yet, and continue south and east for another quick scene.\n2. Continue east and down the stairs here to be back on the ground floor.\n3. Before descending the stairs to the next area, check below the stairs to your bottom-left for a **Pocket Watch**.\n4. Once you have it, go down the stairs.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Pocket Watch",
+            "category": "equipment",
+            "matched_overview_item": "Pocket Watch"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "1. Here in the basement, you'll see a skeleton that you can examine, as well as eight coffins, plus one to the southwest that is already open.\n2. Examine the open one for a scene.\n3. Before going back down, go up and past the statue here, scaling the wall as you go northeast, to a small area.\n4. Search here for a chest containing a **Lottery Ticket**, then go back to the eight coffins.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "1. If you examine the skeleton, he'll tell you the words in the note below.\n2. The skeleton really doesn't spell it out for you, but you must pray at each of the coffins in a certain order (which happens to be in alphabetical order) to unlock the next door.\n3. Refer to the order below to open them.",
+        "type": "puzzle",
+        "notes": [
+          {
+            "type": "lore",
+            "title": "The skeleton's words",
+            "text": "- \"Raise your voice in prayer!\n- Pray for new writing to be turned into old!\n- So long as the 8 flames remain unlit, the door to the throne will not open!\n- Offer up thy prayers!\""
+          },
+          {
+            "type": "tip",
+            "title": "Coffin layout",
+            "text": "The source's map of the coffins; the numbers give the prayer order.",
+            "preformatted": ".——————————————————————————————————————————————.\n|               .——.         .´        .´      |\n|               \\ 6 \\      .´        .´        |\n|           .——. \\   \\   .´        .´ .——.     |\n|           \\ 3 \\ `——´ .´        .´   \\ 5 \\    |\n|       .——. \\   \\   .´        .´ .——. \\   \\   |\n|       \\ 8 \\ `——´ .´        .´   \\ 2 \\ `——´   |\n|   .——. \\   \\   .´        .´ .——. \\   \\       |\n|   \\ 1 \\ `——´ .´        .´   \\ 7 \\ `——´       |\n|    \\   \\   .´        .´ .——. \\   \\           |\n|     `——´ .´        .´   \\ 4 \\ `——´           |\n|        .´        .´      \\   \\               |\n|      .´        .´         `——´               |\n|    .´        .´                              |\n|——————————————————————.———————————————————————|\n|           Abel = 1   |   5 = Leon            |\n|          Edgar = 2   |   6 = Maria           |\n|          Frank = 3   |   7 = Robin           |\n|          Helen = 4   |   8 = Steven          |\n'——————————————————————'———————————————————————'"
+          },
+          {
+            "type": "tip",
+            "title": "Coffin order",
+            "text": "Pray at the coffins in this order (alphabetical by name).",
+            "table": {
+              "headers": [
+                "Order",
+                "Coffin"
+              ],
+              "rows": [
+                {
+                  "range": "1",
+                  "reward": "Abel"
+                },
+                {
+                  "range": "2",
+                  "reward": "Edgar"
+                },
+                {
+                  "range": "3",
+                  "reward": "Frank"
+                },
+                {
+                  "range": "4",
+                  "reward": "Helen"
+                },
+                {
+                  "range": "5",
+                  "reward": "Leon"
+                },
+                {
+                  "range": "6",
+                  "reward": "Maria"
+                },
+                {
+                  "range": "7",
+                  "reward": "Robin"
+                },
+                {
+                  "range": "8",
+                  "reward": "Steven"
+                }
+              ]
+            }
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": "1. After successfully solving the puzzle, you'll hear the sound of a door being unlocked.\n2. Make your way back upstairs and to the Save Point.\n3. At the fork here, take the eastern path (now that the door here is unlocked) and enter.\n4. Watch a short bit of dialogue, then try to leave.\n5. Watch the events unfold here, and once they're finished, **Keith** Valentine will join your party!",
+        "type": "story",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "**Keith** comes equipped with the **Antique Rapier**, a **Chainmail Vest**, and a **Pocket Watch** equipped by default."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "1. Unless you'd like to fight some more and get used to **Keith**'s Ring, leave the Blue Castle.\n2. Save on the World Map, then enter Bistritz once again.",
+        "type": "navigation",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "First room inside"
+    ]
+  }
+}

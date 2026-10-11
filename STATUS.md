@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-11 14:38:05`
+> Last synced: `2026-10-11 14:52:42`
 
 ```text
-=== PROJECT STATUS (2026-10-11 14:38:05) ===
-Canonical 67/67 | Structured 20/67 | QA pass 20/67 (fail 0) | Web built 20/67
+=== PROJECT STATUS (2026-10-11 14:52:42) ===
+Canonical 67/67 | Structured 21/67 | QA pass 21/67 (fail 0) | Web built 21/67
 Next:
-  1. Structure w-2-03 (Blue Castle (1)) - next chronological
+  1. Structure w-2-04 (Bistritz (2)) - next chronological
 ```
 
 ## Section Matrix
@@ -32,7 +32,7 @@ Next:
 | `[W-1-11]` | `w-1-11` | Shanghai, Kuihai Tower | Walkthrough - Asia | WEB_BUILT |
 | `[W-2-01]` | `w-2-01` | Prague (1) | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-02]` | `w-2-02` | Bistritz (1) | Walkthrough - Europe | WEB_BUILT |
-| `[W-2-03]` | `w-2-03` | Blue Castle (1) | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-2-03]` | `w-2-03` | Blue Castle (1) | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-04]` | `w-2-04` | Bistritz (2) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-05]` | `w-2-05` | Blue Castle (2) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-06]` | `w-2-06` | Prague (2) | Walkthrough - Europe | NOT_STRUCTURED |
