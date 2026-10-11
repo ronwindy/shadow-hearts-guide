@@ -322,6 +322,17 @@ export interface WikiTextSection {
   paragraphs: string[];
   /** Bullet items; `lead` is the opening words of `text` rendered in bold, `rest` is the remainder. */
   items?: Array<{ lead: string; rest: string }>;
+  /**
+   * Optional presentation grouping: the section's sentences regrouped, in source order and
+   * verbatim, under short topic cards. When present, `paragraphs` is not rendered.
+   */
+  groups?: Array<{
+    title: string;
+    icon: string;
+    /** Card accent colour: gold (default), sky, emerald, crimson, violet. */
+    tone?: 'gold' | 'sky' | 'emerald' | 'crimson' | 'violet';
+    paragraphs: string[];
+  }>;
 }
 
 /**

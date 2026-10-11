@@ -36,6 +36,48 @@
         "title": "Battle",
         "paragraphs": [
           "**Shadow Hearts** uses a turn-based battle system where the player chooses actions from a menu. The list of actions include many basic commands such as Attack, Items, and Escape. Enemies are encountered randomly and are not visible in the submap. Battle commences in a 3D environment modeled after a section of the current location. The characters and enemies stay in their respective positions and only move from their position when executing an attack. The characters are controlled by the player and the enemies are controlled by the CPU. The party is made up of three characters and can be changed, with the exception of **Yuri**, by speaking with the NPC **Meiyuan**. Characters can be positioned either in the back row or front row. The back row is suited for characters with lower physical defense and attack while the front row is suited for characters with higher physical defense and attack. Another aspect of the battle is the character's base statistics. There are the traditional **Hit Points** (HP) and **Magic Points** (MP) plus the new **Sanity Points** (SP). Like many other RPGs, the character's HP will decrease every time they receive damage and their MP decreases when a skill is used. SP decreases every turn and dictate how long a character can last in a battle before they become 'mentally unstable'. When SP decreases to zero, the character automatically goes into a state of berserk and the player will lose control of that character. At the end of every battle all the character’s SP is replenished. Each character gains HP, MP, and SP every time they gain a level and there are many items which help restore lost HP, MP, and SP. There are also items which alleviate status ailments as well as revival items."
+        ],
+        "groups": [
+          {
+            "title": "How battles work",
+            "icon": "Swords",
+            "tone": "gold",
+            "paragraphs": [
+              "**Shadow Hearts** uses a turn-based battle system where the player chooses actions from a menu. The list of actions include many basic commands such as Attack, Items, and Escape. Enemies are encountered randomly and are not visible in the submap. Battle commences in a 3D environment modeled after a section of the current location. The characters and enemies stay in their respective positions and only move from their position when executing an attack. The characters are controlled by the player and the enemies are controlled by the CPU."
+            ]
+          },
+          {
+            "title": "Your party",
+            "icon": "Users",
+            "tone": "sky",
+            "paragraphs": [
+              "The party is made up of three characters and can be changed, with the exception of **Yuri**, by speaking with the NPC **Meiyuan**. Characters can be positioned either in the back row or front row. The back row is suited for characters with lower physical defense and attack while the front row is suited for characters with higher physical defense and attack."
+            ]
+          },
+          {
+            "title": "HP, MP & stats",
+            "icon": "Heart",
+            "tone": "emerald",
+            "paragraphs": [
+              "Another aspect of the battle is the character's base statistics. There are the traditional **Hit Points** (HP) and **Magic Points** (MP) plus the new **Sanity Points** (SP). Like many other RPGs, the character's HP will decrease every time they receive damage and their MP decreases when a skill is used."
+            ]
+          },
+          {
+            "title": "Sanity Points",
+            "icon": "Brain",
+            "tone": "crimson",
+            "paragraphs": [
+              "SP decreases every turn and dictate how long a character can last in a battle before they become 'mentally unstable'. When SP decreases to zero, the character automatically goes into a state of berserk and the player will lose control of that character. At the end of every battle all the character’s SP is replenished."
+            ]
+          },
+          {
+            "title": "Growth & recovery",
+            "icon": "TrendingUp",
+            "tone": "violet",
+            "paragraphs": [
+              "Each character gains HP, MP, and SP every time they gain a level and there are many items which help restore lost HP, MP, and SP. There are also items which alleviate status ailments as well as revival items."
+            ]
+          }
         ]
       },
       {
