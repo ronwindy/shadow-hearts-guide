@@ -64,21 +64,10 @@
 .highlight-term {
   color: #fef08a;
   font-weight: 600;
-  border-bottom: 1.5px solid rgba(212, 175, 55, 0.6);
-  padding-bottom: 1px;
-  text-shadow: 0 0 6px rgba(212, 175, 55, 0.2);
-  transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out, text-shadow 0.15s ease-in-out;
-}
-
-.highlight-term:hover {
-  color: #ffffff;
-  border-bottom-color: rgba(250, 204, 21, 0.95);
-  text-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
 }
 
 .step-content.line-through .highlight-term,
 .step-item:has(.step-checkbox:checked) .highlight-term {
-  border-bottom-color: transparent;
   color: inherit;
   text-decoration: line-through;
 }
