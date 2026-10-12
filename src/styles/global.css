@@ -157,6 +157,49 @@
   }
 }
 
+/* Frosted-glass chapter navigation surface (desktop sidebar + mobile drawer).
+   Layers, top to bottom: film grain (SVG feTurbulence), gold top glow, dark tint.
+   The page background image shows through the blur beneath. */
+@layer components {
+  .glass-sidebar {
+    background-color: rgba(7, 9, 14, 0.7);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E"),
+      radial-gradient(ellipse 120% 38% at 50% 0%, rgba(212, 175, 55, 0.14), transparent 70%),
+      linear-gradient(180deg, rgba(212, 175, 55, 0.05), transparent 40%, rgba(0, 0, 0, 0.25));
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    backdrop-filter: blur(18px) saturate(140%);
+    border-right-color: rgba(255, 255, 255, 0.08);
+    box-shadow:
+      inset -1px 0 0 rgba(212, 175, 55, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      8px 0 24px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Gothic-arch tracery (same tile as the mobile header lattice), gold, fading out
+     down the panel. z-index:-1 paints it above the glass but below the nav content
+     (backdrop-filter makes .glass-sidebar its own stacking context). */
+  .glass-sidebar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='56'%3E%3Cg fill='none' stroke='%23d4af37' stroke-opacity='0.22'%3E%3Cpath d='M0 56V28Q0 4 24 0Q48 4 48 28V56' stroke-width='1'/%3E%3Cpath d='M24 0V56M0 28L24 56L48 28L24 0Z' stroke-width='0.6'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 48px 56px;
+    /* two masks intersected: vertical fade-out, and a heavily feathered dim spot behind the logo */
+    -webkit-mask-image:
+      linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.75) 25%, transparent 70%),
+      radial-gradient(ellipse 100% 92px at 50% 46px, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 22%, rgba(0, 0, 0, 0.35) 48%, rgba(0, 0, 0, 0.7) 74%, #000 100%);
+    -webkit-mask-composite: source-in;
+            mask-image:
+      linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.75) 25%, transparent 70%),
+      radial-gradient(ellipse 100% 92px at 50% 46px, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 22%, rgba(0, 0, 0, 0.35) 48%, rgba(0, 0, 0, 0.7) 74%, #000 100%);
+            mask-composite: intersect;
+  }
+
+}
+
 /* Ornamental heading underline: gold line fading right */
 .heading-flourish {
   position: relative;

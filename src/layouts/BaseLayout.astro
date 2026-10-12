@@ -160,7 +160,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
     <div class="flex-grow flex min-h-screen w-full relative">
       {showSidebar && (
         <div class="sidebar-shell hidden lg:block flex-shrink-0 sticky top-0 h-screen z-30">
-          <aside id="desktop-sidebar" class="sidebar-aside h-full lg:w-72 xl:w-80 border-r border-slate-800/80 bg-[#07090e]/95 backdrop-blur overflow-hidden">
+          <aside id="desktop-sidebar" class="sidebar-aside h-full lg:w-72 xl:w-80 glass-sidebar relative border-r border-slate-800/80 overflow-hidden">
             <div class="flex flex-col h-full w-72 xl:w-80">
               <SidebarNav currentId={currentId} />
             </div>

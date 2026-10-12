@@ -109,7 +109,7 @@ function getCategoryFullTitle(name: string): string {
 <div class={`flex flex-col h-full w-full min-h-0 ${isMobileDrawer ? '' : 'select-none'}`}>
   <!-- Desktop Top Logo Header -->
   {!isMobileDrawer && (
-    <div class="sidebar-brand relative px-4 pt-5 pb-6 bg-[#07090e] flex-shrink-0 flex items-center justify-center">
+    <div class="sidebar-brand relative px-4 pt-5 pb-6 flex-shrink-0 flex items-center justify-center">
       <a href={`${baseUrl}/`} class="sidebar-brand-link block group w-full" aria-label="Shadow Hearts Guide Home">
         <img
           src={`${baseUrl}/logo.png`}
@@ -242,11 +242,10 @@ function getCategoryFullTitle(name: string): string {
 </script>
 
 <style>
-  /* Soft teal halo behind the logo, echoing the orb in the artwork. */
+  /* Soft teal halo behind the logo, echoing the orb in the artwork.
+     No solid fill: the glass surface of the sidebar shows through. */
   .sidebar-brand {
-    background:
-      radial-gradient(ellipse 55% 50% at 50% 45%, rgba(94, 234, 212, 0.07), transparent 75%),
-      #07090e;
+    background: radial-gradient(ellipse 55% 50% at 50% 45%, rgba(94, 234, 212, 0.07), transparent 75%);
   }
 
   /* Dark edge keeps the lettering crisp; the teal bloom stays faint and wide. */
