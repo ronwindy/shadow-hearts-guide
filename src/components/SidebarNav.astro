@@ -242,10 +242,13 @@ function getCategoryFullTitle(name: string): string {
 </script>
 
 <style>
-  /* Soft teal halo behind the logo, echoing the orb in the artwork.
-     No solid fill: the glass surface of the sidebar shows through. */
+  /* Dark scrim, darkest at the top and easing toward the divider, painted over the
+     sidebar lattice so the logo reads cleanly. A faint teal halo (the artwork's orb)
+     sits on top of the scrim. */
   .sidebar-brand {
-    background: radial-gradient(ellipse 55% 50% at 50% 45%, rgba(94, 234, 212, 0.07), transparent 75%);
+    background:
+      radial-gradient(ellipse 55% 50% at 50% 45%, rgba(94, 234, 212, 0.08), transparent 75%),
+      linear-gradient(180deg, rgba(4, 6, 10, 0.92) 0%, rgba(4, 6, 10, 0.78) 55%, rgba(4, 6, 10, 0.4) 100%);
   }
 
   /* Dark edge keeps the lettering crisp; the teal bloom stays faint and wide. */

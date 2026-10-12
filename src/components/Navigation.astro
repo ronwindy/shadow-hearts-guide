@@ -45,7 +45,10 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
   .mobile-header {
     position: sticky;
     overflow: hidden;
+    /* dark scrim on top (darkest at the top, easing toward the divider) so the logo
+       reads cleanly; the violet wash and teal halo stay faintly visible beneath it */
     background:
+      linear-gradient(180deg, rgba(4, 6, 10, 0.92) 0%, rgba(4, 6, 10, 0.78) 55%, rgba(4, 6, 10, 0.4) 100%),
       radial-gradient(120% 140% at 100% 50%, rgba(45, 212, 191, 0.08) 0%, rgba(45, 212, 191, 0) 50%),
       radial-gradient(90% 160% at 0% 0%, rgba(139, 92, 246, 0.35) 0%, rgba(139, 92, 246, 0) 60%),
       linear-gradient(180deg, #1b1038 0%, #120a2a 55%, #0b0618 100%);
