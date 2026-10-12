@@ -1,6 +1,6 @@
 ---
 import BossCard from './BossCard.astro';
-import { renderInlineMarkup, renderBlockMarkup, spaceCamelCase } from '../lib/markup';
+import { renderInlineMarkup, renderBlockMarkup, richToPlainText, spaceCamelCase, type RichText } from '../lib/markup';
 import { layoutChoices } from '../lib/choices';
 import {
   Swords,
@@ -23,7 +23,7 @@ interface RewardItem {
 interface StepNote {
   type?: string;
   title?: string;
-  text: string;
+  text: RichText;
   preformatted?: string;
 }
 
@@ -31,7 +31,7 @@ interface Step {
   id: number | string;
   step_number?: number | string;
   title?: string;
-  description?: string;
+  description?: RichText;
   instruction?: string;
   type?: string;
   boss?: any;
@@ -105,7 +105,7 @@ function getStepTypeMeta(type: string = 'exploration') {
     // Resolve inline boss card if defined on step or matched from guide bosses
     const stepBoss = st.boss || (bosses && bosses.find((b: any) => 
       st.encounter?.enemies?.some((en: string) => en.toLowerCase() === b.name?.toLowerCase()) ||
-      (b.name && text?.toLowerCase().includes(b.name.toLowerCase()))
+      (b.name && richToPlainText(text).toLowerCase().includes(b.name.toLowerCase()))
     ));
 
     // Suppress redundant strategy notes if BossCard displays the tactical strategy

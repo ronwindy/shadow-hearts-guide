@@ -19,6 +19,9 @@ import argparse
 from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from richtext import blocks_from_markdown  # noqa: E402
+
 
 def clean_overview_item(raw_name: str) -> Tuple[str, bool]:
     """Cleans an overview item name and checks if it was marked as initial (*)."""
@@ -990,21 +993,28 @@ def _split_bullets(lines: List[str]) -> Tuple[List[str], List[str]]:
     non-bullet line is prose.
     """
     prose: List[str] = []
-    bullets: List[str] = []
+    bullets: List[str] = []  # nested bullets carry 2 leading spaces per level (max 3 levels)
     marker_indent = -1
+    open_indents: List[int] = []  # marker indents of the open bullet levels
     for ln in lines:
         if not ln.strip():
             continue
         indent = len(ln) - len(ln.lstrip())
         m = _BULLET_LINE.match(ln)
         if m:
-            bullets.append(m.group(1).strip())
+            while open_indents and open_indents[-1] > indent:
+                open_indents.pop()
+            if not open_indents or open_indents[-1] < indent:
+                open_indents.append(indent)
+            level = min(len(open_indents) - 1, 2)
+            bullets.append("  " * level + m.group(1).strip())
             marker_indent = indent
         elif bullets and indent > marker_indent >= 0:
             bullets[-1] += " " + ln.strip()
         else:
             prose.append(ln.strip())
             marker_indent = -1
+            open_indents = []
     return prose, bullets
 
 
@@ -1263,6 +1273,9 @@ def scaffold_guide(canonical_path: str) -> Dict[str, Any]:
         guide_dict["guide"].pop("boss", None)
 
     normalize_item_names(guide_dict["guide"])
+    for st in guide_dict["guide"].get("steps", []):
+        # nested source lists become structured blocks (flat text stays a string)
+        st["description"] = blocks_from_markdown(st.get("description", ""))
     return guide_dict
 
 

@@ -194,14 +194,78 @@ export function renderHighlights(text: string | null | undefined): string {
     .replace(/\*\*([^*]+)\*\*/g, '<strong class="highlight-term">$1</strong>');
 }
 
+/** A list nested inside a list item (max 3 levels in total, enforced by the schema). */
+export interface RichList {
+  list: 'bullet' | 'numbered';
+  items: RichListItem[];
+}
+export interface RichListItem {
+  text: string;
+  children?: RichList[];
+}
+export type RichBlock = { text: string } | RichList;
+/** Markdown-lite string, or structured blocks with nested lists. */
+export type RichText = string | RichBlock[];
+
+const isList = (b: RichBlock): b is RichList => 'list' in b;
+
+/** Plain text of a RichText, one line per paragraph / list item (for matching and search). */
+export function richToPlainText(text: RichText | null | undefined): string {
+  if (!text) return '';
+  if (typeof text === 'string') return text;
+  const out: string[] = [];
+  const walkList = (l: RichList) =>
+    l.items.forEach((it) => {
+      out.push(it.text);
+      it.children?.forEach(walkList);
+    });
+  text.forEach((b) => (isList(b) ? walkList(b) : out.push(b.text)));
+  return out.join('\n');
+}
+
+const UL_MARKERS = ['disc', 'circle', 'square'];
+const OL_MARKERS = ['decimal', 'lower-alpha', 'lower-roman'];
+
+function listOpenTag(kind: 'ul' | 'ol', level: number): string {
+  const base = kind === 'ul'
+    ? 'pl-5 space-y-1.5 marker:text-gold-400 text-slate-200'
+    : 'pl-5 space-y-1.5 marker:text-gold-400 marker:font-mono marker:font-semibold text-slate-200';
+  const margin = level === 0 ? 'my-2' : 'mt-1.5';
+  const marker = (kind === 'ul' ? UL_MARKERS : OL_MARKERS)[Math.min(level, 2)];
+  return `<${kind} class="${base} ${margin}" style="list-style-type:${marker}">`;
+}
+
+/** Renders structured blocks; `afterLine` anchors depth-first over every paragraph and list item. */
+function renderBlocks(blocks: RichBlock[], afterLine: Record<number, string>): string {
+  let lineNo = 0;
+  const renderList = (l: RichList, level: number): string => {
+    const kind = l.list === 'numbered' ? 'ol' : 'ul';
+    const lis = l.items.map((it) => {
+      const n = ++lineNo;
+      const children = (it.children ?? []).map((c) => renderList(c, level + 1)).join('');
+      return `  <li class="leading-relaxed">${renderInlineMarkup(it.text)}${children}${afterLine[n] ?? ''}</li>`;
+    });
+    return `${listOpenTag(kind, level)}\n${lis.join('\n')}\n</${kind}>`;
+  };
+  return blocks
+    .map((b) => {
+      if (isList(b)) return renderList(b, 0);
+      const n = ++lineNo;
+      const tag = afterLine[n] ? 'div' : 'p';
+      return `<${tag} class="leading-relaxed">${renderInlineMarkup(b.text)}${afterLine[n] ?? ''}</${tag}>`;
+    })
+    .join('\n');
+}
+
 /**
  * Renders block markdown containing paragraphs, unordered lists, and ordered lists.
  */
 export function renderBlockMarkup(
-  text: string | null | undefined,
+  text: RichText | null | undefined,
   afterLine: Record<number, string> = {}
 ): string {
   if (!text) return '';
+  if (typeof text !== 'string') return renderBlocks(text, afterLine);
 
   const lines = text.split('\n');
   const blocks: string[] = [];

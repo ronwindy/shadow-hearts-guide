@@ -72,7 +72,7 @@ A single object with one key, `guide`. Unknown keys anywhere under `guide` are r
 | Field | Req. | Type | Notes |
 | :-- | :-: | :-- | :-- |
 | `id` | yes | integer | 1, 2, 3... unique, sequential. Referenced from `items_summary.location` ("step N"). |
-| `description` | yes | string | What to do. Markdown-lite (see section 6). |
+| `description` | yes | string \| blocks | What to do. Markdown-lite string, or blocks with nested lists (see section 6). |
 | `type` | yes | enum | See below. |
 | `rewards` | no | array | Items obtained in this step (section 4). Emit `[]` when none. |
 | `notes` | no | array | Callouts attached to the step (section 3.2). |
@@ -219,6 +219,26 @@ the step where the fight happens; do not hoist boss tactics into overviews.
 
 - `description`, `notes[].text`, boss `strategy`: **3+ sentences or ~40+ words => list.**
   `1. ` numbered only when order matters, `- ` bullets otherwise, one fact/action per item.
+- **Nested lists** (rich text): `description`, `notes[].text`, `callouts[].text` and boss `strategy`
+  accept either the string above or an array of blocks. Use blocks only when the source really
+  nests a list under an item (a sub-list belongs to its parent line); flat text stays a string.
+
+  ```json
+  "description": [
+    { "text": "Prepare before the fight." },
+    { "list": "numbered", "items": [
+      { "text": "Equip the **Pocket Watch**.", "children": [
+        { "list": "bullet", "items": [ { "text": "Only on **Yuri**." }, { "text": "Skip if already equipped." } ] }
+      ] },
+      { "text": "Talk to the guard." }
+    ] }
+  ]
+  ```
+
+  - Block = `{text}` (paragraph) or `{list: "bullet" | "numbered", items: [{text, children?: [list, ...]}]}`.
+  - A child list picks its own kind (bullets under a numbered step is fine).
+  - Max 3 levels (list > children > children); the schema rejects deeper nesting.
+  - Item/paragraph `text` takes the same inline markup (`**bold**`, `` `CROSS` ``).
 - Emphasise entities with `**bold**` (items, places, enemies, mechanics) and `` `CROSS` `` for buttons.
 - No `[_TAG_]` marks, no ASCII-art borders.
 - Do not rename, re-number or "correct" anything (`Margaret` vs `Margarete`, `Causal Belt` stay).
@@ -240,7 +260,7 @@ the step where the fight happens; do not hoist boss tactics into overviews.
 - `reward` (optional string): when the source says that option gives an item.
 - `prompt` (optional integer, 1-based): which prompt of a multi-prompt dialogue the option belongs to. Set it on every option when a step has 2+ prompts.
 - `required` (optional boolean): `true` when the source marks the option as the required answer (e.g. an `>` arrow). The scaffold also adds an "Answer the first prompt with [1] ..." item to the description.
-- `after_item` (optional integer, 1-based): the line of the `description` (list item or paragraph, counted over non-blank lines) the prompt's options render right under. Use the line that introduces the prompt, in source order (e.g. the "...ask if you're her dad" line, not the later "Choose 2 ..." line). Give every option of a prompt the same value. Omit it to show the box at the end of the step. The scaffold sets it automatically; re-check it after you re-order or re-number description lines.
+- `after_item` (optional integer, 1-based): the line of the `description` (list item or paragraph, counted over non-blank lines; for block descriptions every paragraph and list item counts, depth-first in reading order, parents before children, and the box renders after the item's children) the prompt's options render right under. Use the line that introduces the prompt, in source order (e.g. the "...ask if you're her dad" line, not the later "Choose 2 ..." line). Give every option of a prompt the same value. Omit it to show the box at the end of the step. The scaffold sets it automatically; re-check it after you re-order or re-number description lines.
 - Put the step `type` as `dialogue` when the choice is the point of the step.
 - **Rendering:** the step shows `choices` grouped per `prompt`, with `required` options
   highlighted, under the `after_item` line (or at the end of the step). The `description` should still say what the choice is (the source prose usually does).

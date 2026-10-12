@@ -139,6 +139,7 @@ Before completing transformation of any section:
 - [ ] **Chronological Boss Battles:** Boss encounters appear inside their matching step, not isolated at the top.
 - [ ] **No Spoilers in Overviews:** Tactical spoilers are not hoisted into initial overviews.
 - [ ] **Lists Over Walls of Text:** No prose block with 3+ sentences or ~40+ words remains a paragraph; use numbered lists only for ordered steps.
+- [ ] **Nested Lists:** When the source nests a list under an item, use the block form (`docs/structured-schema.md` section 6), max 3 levels; never flatten a sub-list into siblings or invent nesting.
 - [ ] **Entity Highlighting:** Key items, places, enemies, and mechanics are highlighted.
 - [ ] **Schema Compliance:** Passes `python scripts/pipeline.py <id> --validate`.
 - [ ] **QA Verification:** Passes `python scripts/pipeline.py <id> --qa` with 0 critical/high findings.

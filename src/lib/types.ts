@@ -1,5 +1,7 @@
 // Centralized type definitions for Shadow Hearts Guide
 
+import type { RichText } from './markup';
+
 export interface GuideMetadata {
   game?: string;
   author?: string;
@@ -16,7 +18,7 @@ export interface GuideMetadata {
 export interface SectionCallout {
   type: 'tip' | 'warning' | 'info' | string;
   title?: string;
-  text: string;
+  text: RichText;
 }
 
 export interface TocEntry {
@@ -133,7 +135,7 @@ export interface BossData {
   cash?: number | string;
   enemies?: BossEnemy[];
   party?: BossPartyMember[];
-  strategy?: string;
+  strategy?: RichText;
 }
 
 export interface ShopInventoryItem {
@@ -173,7 +175,7 @@ export interface StepNoteTable {
 export interface StepNote {
   type?: string;
   title?: string;
-  text: string;
+  text: RichText;
   preformatted?: string;
   badges?: StepNoteBadge[];
   table?: StepNoteTable;
@@ -183,7 +185,7 @@ export interface StepChecklistItem {
   id: number | string;
   step_number?: number | string;
   title?: string;
-  description?: string;
+  description?: RichText;
   instruction?: string;
   type?: string;
   boss?: BossData;

@@ -21,6 +21,9 @@ import argparse
 from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "guide-transformer" / "scripts"))
+from richtext import flatten_guide  # noqa: E402
+
 
 def normalize_name(name: Any) -> str:
     """Normalizes item/entity names for comparison (strips punctuation and whitespace)."""
@@ -32,7 +35,7 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
     Verifies that a structured guide accurately and faithfully preserves canonical source knowledge.
     Checks navigation, obtainable/initial items, enemies, bosses, shops, and gameplay notes.
     """
-    guide = structured.get("guide", {})
+    guide = flatten_guide(structured.get("guide", {}))  # block-array rich text -> markdown-lite
     findings: List[Dict[str, Any]] = []
     finding_id = 1
 

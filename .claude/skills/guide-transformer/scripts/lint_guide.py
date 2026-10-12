@@ -17,7 +17,12 @@ Each finding is {"id", "check", "severity", "location", "text"}; severity is "wa
 """
 
 import re
+import sys
+from pathlib import Path
 from typing import Any, Dict, Iterable, List, Tuple
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from richtext import flatten_guide  # noqa: E402
 
 MAX_SENTENCES = 2   # 3+ sentences -> list
 MAX_WORDS = 39      # ~40+ words  -> list
@@ -92,6 +97,7 @@ def _location_hint(guide: Dict[str, Any], name: str) -> str:
 
 
 def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
+    guide = flatten_guide(guide)  # block-array rich text -> markdown-lite lines
     findings: List[Dict[str, str]] = []
 
     def add(check: str, severity: str, loc: str, text: str) -> None:
@@ -125,17 +131,20 @@ def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
             if len(sentences) > MAX_SENTENCES or (words > MAX_WORDS and len(sentences) > 1):
                 add("prose", "warn", loc, f"{len(sentences)} sentences / {words} words: {text}")
         if loc.count(" ") == 1:  # step description only (not notes / boss strategy)
-            seen_bullet = False
+            bullet_at: Dict[int, bool] = {}  # indent -> a bullet was seen at that nesting level
             for line in raw.splitlines():
                 if not line.strip():
                     continue
+                indent = len(line) - len(line.lstrip())
+                for k in [k for k in bullet_at if k > indent]:
+                    del bullet_at[k]  # leaving a nested list: its siblings start fresh
                 body = _plain(_LIST_MARK.sub("", line)).lstrip(" \"'([")
                 if body[:1].islower():
                     add("fragment", "warn", loc, line.strip())
-                if re.match(r'^\s*\d+\.\s', line) and seen_bullet:
+                if re.match(r'^\s*\d+\.\s', line) and bullet_at.get(indent):
                     add("mixed-list", "warn", loc, line.strip())
                 if re.match(r'^\s*[-*]\s', line):
-                    seen_bullet = True
+                    bullet_at[indent] = True
         plain = _plain(raw)
         for m in _UPPER_RUN.finditer(plain):
             run = m.group(0)
