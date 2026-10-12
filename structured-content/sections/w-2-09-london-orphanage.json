@@ -252,7 +252,51 @@
           "party": [],
           "exp": 17000,
           "cash": 15000,
-          "strategy": "- Jack will mainly just use his Paralysis attack against you, though you should be guarded by a Zodiac Bracelet or a Crucifix.\n- He will also use pretty strong physical attacks, and his Slash attack, which will do MAJOR damage to one party member, so make sure to stay healed.\n- He will use Thera Seeds when his HP starts to drop.\n- When fighting, keep in mind that you have a harder boss battle right after this, with no chance to heal.\n- Have **Yuri** fuse into Ifrit and use his Ignition to boost his attack, then have him attack as normal.\n- Have **Halley** cast Strong Earth continuously (not Aqua Blade, since Jack is water based) for the whole battle, unless he's learned Air Shot by now, then by all means, use that.\n- **Alice** should be healing as needed, using Blessed Light when no healing is needed.\n- If you're comfortable at the end, take a turn or two to make sure everyone is healed to the max and ready for the next battle."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "Jack will mainly just use his Paralysis attack against you, though you should be guarded by a Zodiac Bracelet or a Crucifix.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "He will also use pretty strong physical attacks, and his Slash attack, which will do MAJOR damage to one party member, so make sure to stay healed."
+                        },
+                        {
+                          "text": "He will use Thera Seeds when his HP starts to drop."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "When fighting, keep in mind that you have a harder boss battle right after this, with no chance to heal."
+                },
+                {
+                  "text": "Have **Yuri** fuse into Ifrit and use his Ignition to boost his attack, then have him attack as normal.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Halley** cast Strong Earth continuously (not Aqua Blade, since Jack is water based) for the whole battle, unless he's learned Air Shot by now, then by all means, use that."
+                        },
+                        {
+                          "text": "**Alice** should be healing as needed, using Blessed Light when no healing is needed."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "If you're comfortable at the end, take a turn or two to make sure everyone is healed to the max and ready for the next battle."
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -318,7 +362,45 @@
           ],
           "exp": 20000,
           "cash": 16000,
-          "strategy": "- Mammon's normal attacks will hit for pretty decent damage, but its biggest threat is its Petrification attack, which hopefully you've prevented with either a Zodiac Bracelet or a Crucifix, though it'll still do a decent amount of damage, even if you did.\n- It will also use a Shockwave spell, doing quite a bit a damage to your entire party, as well as Needlerain, a strong attack to just one party member.\n- Its Howling skill will replenish its HP by 500+ once it's near dying, but lucky for you, **Yuri**'s a powerhouse and will take that away and then some in one round.\n- As usual, have **Yuri** fuse into Ifrit and use his Ignition to boost his attack, then have him attack as normal.\n- Have **Halley** use his Air Edge on **Yuri** to increase **Yuri**'s damage output, then have him cast Aqua Blade for the remainder of the battle, unless he's learned Air Shot by now, then by all means, use that.\n- **Alice** should be healing as needed, using Blessed Light when no healing is needed."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "Mammon's normal attacks will hit for pretty decent damage, but its biggest threat is its Petrification attack, which hopefully you've prevented with either a Zodiac Bracelet or a Crucifix, though it'll still do a decent amount of damage, even if you did.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "It will also use a Shockwave spell, doing quite a bit a damage to your entire party, as well as Needlerain, a strong attack to just one party member."
+                        },
+                        {
+                          "text": "Its Howling skill will replenish its HP by 500+ once it's near dying, but lucky for you, **Yuri**'s a powerhouse and will take that away and then some in one round."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "As usual, have **Yuri** fuse into Ifrit and use his Ignition to boost his attack, then have him attack as normal.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Halley** use his Air Edge on **Yuri** to increase **Yuri**'s damage output, then have him cast Aqua Blade for the remainder of the battle, unless he's learned Air Shot by now, then by all means, use that."
+                        },
+                        {
+                          "text": "**Alice** should be healing as needed, using Blessed Light when no healing is needed."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

@@ -247,7 +247,87 @@
           ],
           "exp": null,
           "cash": null,
-          "strategy": "- Yikes!\n- His normal three-hit combo will do MAJOR damage to anyone it hits, so heal the survivor immediately.\n- **Yuri** has quite a bit of HP, and hits harder than anyone else thus far, so healing will be your immediate priority.\n- After just about 400 HP worth of damage, **Yuri** will fuse into the Death Emperor, starting to use Dark Messenger.\n- As long as you have Leonardo's Bears equipped, you won't die instantly, but you'll still be hit pretty hard.\n- Again, to reiterate: healing will be your immediate priority.\n- Have two people healing, if needed.\n- For the first round, have **Alice** cast Holy Edge on **Keith** to add a Light class to his attack, then devote **Alice** to healing.\n- There most likely won't be a round where she can attack, but if you can, then use Blessed Light.\n- **Zhuzhen** should be using Corpse Arm every round, and **Keith** should be attacking normally every round, with his weapon laced with Holy Edge.\n- Whoever is doing the least amount of damage needs to be helping **Alice** heal if it's needed.\n- Like the last few battles, it'll probably take long enough that you'll need to replenish your MP and SP as well.\n- Again, have whoever is doing the least amount of damage take care of this."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "Yikes!",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "His normal three-hit combo will do MAJOR damage to anyone it hits, so heal the survivor immediately."
+                        },
+                        {
+                          "text": "**Yuri** has quite a bit of HP, and hits harder than anyone else thus far, so healing will be your immediate priority."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "After just about 400 HP worth of damage, **Yuri** will fuse into the Death Emperor, starting to use Dark Messenger.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "As long as you have Leonardo's Bears equipped, you won't die instantly, but you'll still be hit pretty hard."
+                        },
+                        {
+                          "text": "Again, to reiterate: healing will be your immediate priority."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Have two people healing, if needed."
+                },
+                {
+                  "text": "For the first round, have **Alice** cast Holy Edge on **Keith** to add a Light class to his attack, then devote **Alice** to healing.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "There most likely won't be a round where she can attack, but if you can, then use Blessed Light."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Zhuzhen** should be using Corpse Arm every round, and **Keith** should be attacking normally every round, with his weapon laced with Holy Edge.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Whoever is doing the least amount of damage needs to be helping **Alice** heal if it's needed."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Like the last few battles, it'll probably take long enough that you'll need to replenish your MP and SP as well.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Again, have whoever is doing the least amount of damage take care of this."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

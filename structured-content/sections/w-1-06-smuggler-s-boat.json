@@ -162,7 +162,70 @@
         ],
         "exp": 1000,
         "cash": 3950,
-        "strategy": "- At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**).\n- Watch out for **Hate Storm**, as it'll do decent damage to your whole party.\n- Start off by healing, if needed.\n- As with the last battle, if you have **Heaven's Fiend**, have Yuri use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.\n- Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**.\n- Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low.\n- If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party, especially after **Hate Storm**.\n- If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.\n- If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her.\n- Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY.\n- Margaret will be the primary healer once again, as Yuri and Alice should be shelling out some pretty wicked damage to Li Li.\n- Use **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low, and you should be fine."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**).",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Watch out for **Hate Storm**, as it'll do decent damage to your whole party."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "Start off by healing, if needed."
+              },
+              {
+                "text": "As with the last battle, if you have **Heaven's Fiend**, have Yuri use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**."
+                      },
+                      {
+                        "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
+                      },
+                      {
+                        "text": "If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party, especially after **Hate Storm**."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
+                      },
+                      {
+                        "text": "Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY."
+                      },
+                      {
+                        "text": "Margaret will be the primary healer once again, as Yuri and Alice should be shelling out some pretty wicked damage to Li Li."
+                      },
+                      {
+                        "text": "Use **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low, and you should be fine."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "shops": [
@@ -466,7 +529,70 @@
           ],
           "exp": 800,
           "cash": 3800,
-          "strategy": "- This is just a warm-up, so try to avoid using **TOO** much MP if possible for the next boss battle.\n- She can and will use **Dark Messenger**, which not only deals major damage, but can instantly kill a party member, so be careful.\n- Her other attacks are **Paralysis** (which does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**) and a normal attack, which you shouldn't need to worry about.\n- If you have it, have Yuri use **Heaven's Fiend** and use the **Exorcist Arrow** attack; it should do MAJOR damage.\n- Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**.\n- Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low.\n- If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party.\n- If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.\n- If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her.\n- Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light**.\n- Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low.\n- Not much to worry about (other than **Dark Messenger**) here."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "This is just a warm-up, so try to avoid using **TOO** much MP if possible for the next boss battle."
+                },
+                {
+                  "text": "She can and will use **Dark Messenger**, which not only deals major damage, but can instantly kill a party member, so be careful.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Her other attacks are **Paralysis** (which does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**) and a normal attack, which you shouldn't need to worry about."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "If you have it, have Yuri use **Heaven's Fiend** and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**."
+                        },
+                        {
+                          "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
+                        },
+                        {
+                          "text": "If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
+                        },
+                        {
+                          "text": "Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light**."
+                        },
+                        {
+                          "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Not much to worry about (other than **Dark Messenger**) here."
+                }
+              ]
+            }
+          ]
         },
         "rewards": []
       },
@@ -532,7 +658,70 @@
           ],
           "exp": 1000,
           "cash": 3950,
-          "strategy": "- At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**).\n- Watch out for **Hate Storm**, as it'll do decent damage to your whole party.\n- Start off by healing, if needed.\n- As with the last battle, if you have **Heaven's Fiend**, have Yuri use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.\n- Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**.\n- Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low.\n- If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party, especially after **Hate Storm**.\n- If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.\n- If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her.\n- Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY.\n- Margaret will be the primary healer once again, as Yuri and Alice should be shelling out some pretty wicked damage to Li Li.\n- Use **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low, and you should be fine."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**).",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Watch out for **Hate Storm**, as it'll do decent damage to your whole party."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Start off by healing, if needed."
+                },
+                {
+                  "text": "As with the last battle, if you have **Heaven's Fiend**, have Yuri use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**."
+                        },
+                        {
+                          "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
+                        },
+                        {
+                          "text": "If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party, especially after **Hate Storm**."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
+                        },
+                        {
+                          "text": "Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY."
+                        },
+                        {
+                          "text": "Margaret will be the primary healer once again, as Yuri and Alice should be shelling out some pretty wicked damage to Li Li."
+                        },
+                        {
+                          "text": "Use **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low, and you should be fine."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "rewards": []
       },

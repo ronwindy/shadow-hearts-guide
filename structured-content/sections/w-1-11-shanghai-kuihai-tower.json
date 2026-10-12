@@ -203,7 +203,48 @@
         ],
         "exp": 2600,
         "cash": 6000,
-        "strategy": "- Note that Yamaraja: Stone is actually a **fire** class, so Man Dragon will be your go-to Fusion if you're taking the magic route.\n- Other than the fact that he uses defensive spells (that don't seem to help him at all), all he'll use are physical attacks.\n- They're not TOO strong, but if he focuses on just one person on two different attacks, he'll whittle their HP down quicker than you realize, so stay healed.\n- Have Yuri either fuse into the Man Dragon and blast him continuously with Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting Spirit) and hammer away at him with physical attacks.\n- Zhuzhen should be continually casting Life Sucker, and Margarete should use Aqua Edge on Yuri first (if he's attacking), then have her use Snipe continuously.\n- Zhuzhen will probably be doing the least amount of damage, so have him on healing duty when HP starts to drop.\n- This Yamaraja is fairly easy compared to the last two bosses.",
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "Note that Yamaraja: Stone is actually a **fire** class, so Man Dragon will be your go-to Fusion if you're taking the magic route."
+              },
+              {
+                "text": "Other than the fact that he uses defensive spells (that don't seem to help him at all), all he'll use are physical attacks.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "They're not TOO strong, but if he focuses on just one person on two different attacks, he'll whittle their HP down quicker than you realize, so stay healed."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "Have Yuri either fuse into the Man Dragon and blast him continuously with Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting Spirit) and hammer away at him with physical attacks.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Zhuzhen should be continually casting Life Sucker, and Margarete should use Aqua Edge on Yuri first (if he's attacking), then have her use Snipe continuously."
+                      },
+                      {
+                        "text": "Zhuzhen will probably be doing the least amount of damage, so have him on healing duty when HP starts to drop."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "This Yamaraja is fairly easy compared to the last two bosses."
+              }
+            ]
+          }
+        ],
         "party": [
           {
             "name": "Yuri",
@@ -516,7 +557,67 @@
           ],
           "exp": 1000,
           "cash": 600,
-          "strategy": "- The Badger Devil uses a Fire Ball attack that doesn't hit for much damage at all, and a physical attack that hits for a slightly decent amount.\n- Either way, it's not much to worry about.\n- The Badger Devil is susceptible to Instant Death, so do one of the following two things:\n- 1) Fuse Yuri into the Death Emperor and cast Dark Messenger. Make sure to hit the small red \"Perfect!!\" area, and voilà! Dead-dead-deadski.\n- 2) Have Margarete use her Snipe ability. Make sure to hit the small red \"Perfect!!\" area, and BAM!!! History.\n- If you're lucky, one of the first two steps will kill it.\n- Sadly, it doesn't **always** work.\n- If you don't have luck with either of those, no worries; he's still easy.\n- Have Yuri fuse into the Raging Tiger or Inferno (with Fighting Spirit) and hammer away at him with physical attacks.\n- Zhuzhen should be continually casting Life Sucker, and Margarete should use Aqua Edge on Yuri first, then have her use Snipe continuously.\n- He'll fall quickly."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "The Badger Devil uses a Fire Ball attack that doesn't hit for much damage at all, and a physical attack that hits for a slightly decent amount.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Either way, it's not much to worry about."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "The Badger Devil is susceptible to Instant Death, so do one of the following two things:",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "1) Fuse Yuri into the Death Emperor and cast Dark Messenger. Make sure to hit the small red \"Perfect!!\" area, and voilà! Dead-dead-deadski."
+                        },
+                        {
+                          "text": "2) Have Margarete use her Snipe ability. Make sure to hit the small red \"Perfect!!\" area, and BAM!!! History."
+                        },
+                        {
+                          "text": "If you're lucky, one of the first two steps will kill it."
+                        },
+                        {
+                          "text": "Sadly, it doesn't **always** work."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "If you don't have luck with either of those, no worries; he's still easy.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have Yuri fuse into the Raging Tiger or Inferno (with Fighting Spirit) and hammer away at him with physical attacks."
+                        },
+                        {
+                          "text": "Zhuzhen should be continually casting Life Sucker, and Margarete should use Aqua Edge on Yuri first, then have her use Snipe continuously."
+                        },
+                        {
+                          "text": "He'll fall quickly."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -606,7 +707,64 @@
           ],
           "exp": 3500,
           "cash": 7000,
-          "strategy": "- Another Fire-based boss?\n- Don't mind if I do!\n- Makes **Margarete** that much more useful!\n- Dehuai's fire attacks, Magnard and Blaze, will hit your whole party for decent damage, and he also has a rather quick (and interestingly bizarre) physical attack that also does decent to major damage.\n- He also has a Fast Ring attack that hits for decent damage, and it can possibly make your Judgment Ring spin faster.\n- Make sure to keep healed and try to keep that Ring status off!\n- Have **Yuri** either fuse into the Man Dragon and blast him continuously with Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting Spirit) and hammer away at him with physical attacks.\n- **Zhuzhen** should be continually casting Life Sucker, and **Margarete** should use Aqua Edge on **Yuri** first (if he's attacking), then have her use Snipe continuously.\n- **Zhuzhen** will probably be doing the least amount of damage, so have him on healing duty when HP starts to drop.\n- He's pretty easy as well, but the challenge is upcoming."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "Another Fire-based boss?",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Don't mind if I do!"
+                        },
+                        {
+                          "text": "Makes **Margarete** that much more useful!"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Dehuai's fire attacks, Magnard and Blaze, will hit your whole party for decent damage, and he also has a rather quick (and interestingly bizarre) physical attack that also does decent to major damage.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "He also has a Fast Ring attack that hits for decent damage, and it can possibly make your Judgment Ring spin faster."
+                        },
+                        {
+                          "text": "Make sure to keep healed and try to keep that Ring status off!"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Have **Yuri** either fuse into the Man Dragon and blast him continuously with Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting Spirit) and hammer away at him with physical attacks.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Zhuzhen** should be continually casting Life Sucker, and **Margarete** should use Aqua Edge on **Yuri** first (if he's attacking), then have her use Snipe continuously."
+                        },
+                        {
+                          "text": "**Zhuzhen** will probably be doing the least amount of damage, so have him on healing duty when HP starts to drop."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "He's pretty easy as well, but the challenge is upcoming."
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -732,7 +890,71 @@
           ],
           "exp": 6000,
           "cash": 11000,
-          "strategy": "- Yamaraja will most likely start off with the Crimson Flame spell, dealing MAJOR fire damage to your party and possibly Silencing them as well.\n- His Petrification attack should only do medium damage to your party IF you're protected against it; otherwise, you'll turn to stone, and three Petrified party members equals a game over.\n- He'll also use a Shockwave attack, but it only does a small amount of damage to your whole party.\n- His physical attacks are nothing to sneeze at either; a series of three attacks will do MAJOR damage to a party member.\n- As much as I hate to say this, **Yuri** will need to be the primary healer of this battle, as he's the only one that has a heal-all spell, and without it, it will be hard to keep up with the healing with just two party members.\n- Fuse him into the Heaven's Fiend, then cast Sacred Remedy if your party needs healing, and if they don't, then use Exorcist Arrow.\n- **Zhuzhen** should be constantly casting Life Sucker, and **Margarete** should be using Snipe.\n- When the party's MP starts getting low, have **Margarete** use Mana Seeds to boost them back up.\n- Due to the sheer amount of HP Yamaraja has, and the fact that your main damage dealer is on healing duty, prepare for a very long battle.\n- You'll most likely need to use at least two Pure Seeds to keep **Zhuzhen**'s and **Margarete**'s SP up."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "Yamaraja will most likely start off with the Crimson Flame spell, dealing MAJOR fire damage to your party and possibly Silencing them as well.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "His Petrification attack should only do medium damage to your party IF you're protected against it; otherwise, you'll turn to stone, and three Petrified party members equals a game over."
+                        },
+                        {
+                          "text": "He'll also use a Shockwave attack, but it only does a small amount of damage to your whole party."
+                        },
+                        {
+                          "text": "His physical attacks are nothing to sneeze at either; a series of three attacks will do MAJOR damage to a party member."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "As much as I hate to say this, **Yuri** will need to be the primary healer of this battle, as he's the only one that has a heal-all spell, and without it, it will be hard to keep up with the healing with just two party members.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Fuse him into the Heaven's Fiend, then cast Sacred Remedy if your party needs healing, and if they don't, then use Exorcist Arrow."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Zhuzhen** should be constantly casting Life Sucker, and **Margarete** should be using Snipe.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "When the party's MP starts getting low, have **Margarete** use Mana Seeds to boost them back up."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Due to the sheer amount of HP Yamaraja has, and the fact that your main damage dealer is on healing duty, prepare for a very long battle.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "You'll most likely need to use at least two Pure Seeds to keep **Zhuzhen**'s and **Margarete**'s SP up."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

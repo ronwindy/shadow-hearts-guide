@@ -327,7 +327,61 @@
         ],
         "exp": 2000,
         "cash": 5400,
-        "strategy": "- As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer.\n- He also uses the **Game of Death**, just like Wugui; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you.\n- His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward.\n- The only other thing he does is a hellacious physical attack that'll hit for major damage.\n- Once he starts using Nightmare repeatedly, you could be in a bit of trouble.\n- Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.\n- **Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed.\n- **Zhuzhen** should focus completely on recovery.\n- If you're having trouble staying healed, have Yuri fuse into **Heaven's Fiend** so you have the whole party healing spell."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "He also uses the **Game of Death**, just like Wugui; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "The only other thing he does is a hellacious physical attack that'll hit for major damage."
+                      },
+                      {
+                        "text": "Once he starts using Nightmare repeatedly, you could be in a bit of trouble."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "**Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed."
+                      },
+                      {
+                        "text": "**Zhuzhen** should focus completely on recovery."
+                      },
+                      {
+                        "text": "If you're having trouble staying healed, have Yuri fuse into **Heaven's Fiend** so you have the whole party healing spell."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "shops": [
@@ -755,7 +809,55 @@
           ],
           "exp": 1600,
           "cash": 4200,
-          "strategy": "- His Flaming Arm of Death spell will hit your party for a decent amount of damage, but also can Silence your party, so having Bell Bracelets equipped definitely helps a ton.\n- You don't want to be stuck with NO healing abilities at all!\n- I strongly recommend fusing Yuri in the Man Dragon Fusion if you have it, as not only is the enemy fire-based, but you'll be able to heal yourself in a pinch, if need be.\n- Have Yuri use the Flash Flood skill repeatedly, and it should do massive damage each round.\n- If you don't have Man Dragon, then fuse into Raging Tiger and cast Flying Stones to do some decent damage.\n- Zhuzhen should be healing pretty much the entire time.\n- If he does have a free round, have him use Ogre Flamedance, since it'll still do some okay damage, even though the boss is fire-based."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "His Flaming Arm of Death spell will hit your party for a decent amount of damage, but also can Silence your party, so having Bell Bracelets equipped definitely helps a ton.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "You don't want to be stuck with NO healing abilities at all!"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "I strongly recommend fusing Yuri in the Man Dragon Fusion if you have it, as not only is the enemy fire-based, but you'll be able to heal yourself in a pinch, if need be.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have Yuri use the Flash Flood skill repeatedly, and it should do massive damage each round."
+                        },
+                        {
+                          "text": "If you don't have Man Dragon, then fuse into Raging Tiger and cast Flying Stones to do some decent damage."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Zhuzhen should be healing pretty much the entire time.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If he does have a free round, have him use Ogre Flamedance, since it'll still do some okay damage, even though the boss is fire-based."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -1176,7 +1278,61 @@
           ],
           "exp": 2000,
           "cash": 5400,
-          "strategy": "- As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer.\n- He also uses the **Game of Death**, just like Wugui; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you.\n- His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward.\n- The only other thing he does is a hellacious physical attack that'll hit for major damage.\n- Once he starts using Nightmare repeatedly, you could be in a bit of trouble.\n- Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.\n- **Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed.\n- **Zhuzhen** should focus completely on recovery.\n- If you're having trouble staying healed, have Yuri fuse into **Heaven's Fiend** so you have the whole party healing spell."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "He also uses the **Game of Death**, just like Wugui; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "The only other thing he does is a hellacious physical attack that'll hit for major damage."
+                        },
+                        {
+                          "text": "Once he starts using Nightmare repeatedly, you could be in a bit of trouble."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed."
+                        },
+                        {
+                          "text": "**Zhuzhen** should focus completely on recovery."
+                        },
+                        {
+                          "text": "If you're having trouble staying healed, have Yuri fuse into **Heaven's Fiend** so you have the whole party healing spell."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

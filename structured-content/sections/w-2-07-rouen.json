@@ -635,7 +635,99 @@
           ],
           "exp": 16000,
           "cash": 14500,
-          "strategy": "- Olga's Black Fog attack will do **major** damage to your party, as well as Poison each one of them, so it's a good idea to come in with Shell or Cosmic Bracelets equipped.\n- Her Nova attack will do decent damage to a single ally, her Icy Breath attack will hit your whole party for decent damage, and her physical attack just does pathetic damage to a single ally.\n- Watch out if she uses Mind Assault to steal your MP, as you'll want to recover it immediately if she takes too much.\n- **Yuri** and **Alice** are obvious choices for this battle, and you could pretty much pick whomever your favorite is, as they'll all do roughly the same amount of damage.\n- I recommend **Margarete** just because I had her at a higher level than **Keith** and **Zhuzhen**, therefore having more STR and HP.\n- That, and I find **Margarete**'s Ring easier to hit than **Keith**'s.\n- **Zhuzhen** just sucks up a lot of MP and takes extra turns to replenish it.\n- Okay, okay, I really like her too, if that matters any.\n- Fuse **Yuri** into Baldo (if you didn't get his level 2 Light Fusion, then fuse into the Heaven's Fiend, as you'll need the healing) and start physically attacking; with the Mind's Eye equipped, he'll be doing major damage.\n- If you didn't put the Mind's Eye on him, then go with the Nova spell instead.\n- Have **Alice** cast Holy Edge on **Yuri** her first round so he can keep piling the damage up, then have her cast it on **Margarete** her second turn so she can start adding in to the damage.\n- **Margarete** should also be attacking normally.\n- If for some reason **Alice** doesn't need to heal, have her cast Blessed Light on Olga.\n- If a single ally just needs healed, have **Alice** do it.\n- If two people need it, have **Alice** and **Margarete** do it.\n- If all three need it, then have **Yuri** do it, as Olga doesn't mess around, and can easily kill your entire party in three turns.\n- I hate taking turns away from **Yuri** because he just does so much damage, but when everyone needs healed, he's the only one that can do anything about it efficiently."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "Olga's Black Fog attack will do **major** damage to your party, as well as Poison each one of them, so it's a good idea to come in with Shell or Cosmic Bracelets equipped.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Her Nova attack will do decent damage to a single ally, her Icy Breath attack will hit your whole party for decent damage, and her physical attack just does pathetic damage to a single ally."
+                        },
+                        {
+                          "text": "Watch out if she uses Mind Assault to steal your MP, as you'll want to recover it immediately if she takes too much."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Yuri** and **Alice** are obvious choices for this battle, and you could pretty much pick whomever your favorite is, as they'll all do roughly the same amount of damage.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "I recommend **Margarete** just because I had her at a higher level than **Keith** and **Zhuzhen**, therefore having more STR and HP."
+                        },
+                        {
+                          "text": "That, and I find **Margarete**'s Ring easier to hit than **Keith**'s."
+                        },
+                        {
+                          "text": "**Zhuzhen** just sucks up a lot of MP and takes extra turns to replenish it."
+                        },
+                        {
+                          "text": "Okay, okay, I really like her too, if that matters any."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Fuse **Yuri** into Baldo (if you didn't get his level 2 Light Fusion, then fuse into the Heaven's Fiend, as you'll need the healing) and start physically attacking; with the Mind's Eye equipped, he'll be doing major damage.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If you didn't put the Mind's Eye on him, then go with the Nova spell instead."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Have **Alice** cast Holy Edge on **Yuri** her first round so he can keep piling the damage up, then have her cast it on **Margarete** her second turn so she can start adding in to the damage.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Margarete** should also be attacking normally."
+                        },
+                        {
+                          "text": "If for some reason **Alice** doesn't need to heal, have her cast Blessed Light on Olga."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "If a single ally just needs healed, have **Alice** do it.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If two people need it, have **Alice** and **Margarete** do it."
+                        },
+                        {
+                          "text": "If all three need it, then have **Yuri** do it, as Olga doesn't mess around, and can easily kill your entire party in three turns."
+                        },
+                        {
+                          "text": "I hate taking turns away from **Yuri** because he just does so much damage, but when everyone needs healed, he's the only one that can do anything about it efficiently."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

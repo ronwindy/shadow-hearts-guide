@@ -204,7 +204,58 @@
         ],
         "exp": 720,
         "cash": 3600,
-        "strategy": "- Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the Raging Tiger.\n- Its Shockwave attack will do decent damage to each character, while its Flying Stones attack will do major damage, but to only one character.\n- However, its PHYSICAL attacks are the ones you have to worry about; it can do a three hit attack that will easily kill a party member, even if they're in the back row, so be sure to stay healed.\n- If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have him fuse into the Death Emperor.\n- Use his Wind Shear/Dark Messenger Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage.\n- Have Margarete on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on Yuri and Zhuzhen to keep their MP up.\n- Have Zhuzhen use his Ogre Flamedance continuously, stopping to heal if someone needs it.\n- Yuri should be doing the most damage if he has the Tornado Fusion, so keep his MP up while keeping everyone else healed."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the Raging Tiger."
+              },
+              {
+                "text": "Its Shockwave attack will do decent damage to each character, while its Flying Stones attack will do major damage, but to only one character.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "However, its PHYSICAL attacks are the ones you have to worry about; it can do a three hit attack that will easily kill a party member, even if they're in the back row, so be sure to stay healed."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have him fuse into the Death Emperor.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Use his Wind Shear/Dark Messenger Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "Have Margarete on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on Yuri and Zhuzhen to keep their MP up.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Have Zhuzhen use his Ogre Flamedance continuously, stopping to heal if someone needs it."
+                      },
+                      {
+                        "text": "Yuri should be doing the most damage if he has the Tornado Fusion, so keep his MP up while keeping everyone else healed."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "shops": [
@@ -569,7 +620,58 @@
           ],
           "exp": 720,
           "cash": 3600,
-          "strategy": "- Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the Raging Tiger.\n- Its Shockwave attack will do decent damage to each character, while its Flying Stones attack will do major damage, but to only one character.\n- However, its PHYSICAL attacks are the ones you have to worry about; it can do a three hit attack that will easily kill a party member, even if they're in the back row, so be sure to stay healed.\n- If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have him fuse into the Death Emperor.\n- Use his Wind Shear/Dark Messenger Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage.\n- Have Margarete on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on Yuri and Zhuzhen to keep their MP up.\n- Have Zhuzhen use his Ogre Flamedance continuously, stopping to heal if someone needs it.\n- Yuri should be doing the most damage if he has the Tornado Fusion, so keep his MP up while keeping everyone else healed."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the Raging Tiger."
+                },
+                {
+                  "text": "Its Shockwave attack will do decent damage to each character, while its Flying Stones attack will do major damage, but to only one character.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "However, its PHYSICAL attacks are the ones you have to worry about; it can do a three hit attack that will easily kill a party member, even if they're in the back row, so be sure to stay healed."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have him fuse into the Death Emperor.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Use his Wind Shear/Dark Messenger Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Have Margarete on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on Yuri and Zhuzhen to keep their MP up.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have Zhuzhen use his Ogre Flamedance continuously, stopping to heal if someone needs it."
+                        },
+                        {
+                          "text": "Yuri should be doing the most damage if he has the Tornado Fusion, so keep his MP up while keeping everyone else healed."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "notes": [
           {

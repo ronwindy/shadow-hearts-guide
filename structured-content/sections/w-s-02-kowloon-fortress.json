@@ -491,7 +491,71 @@
           ],
           "exp": 2000,
           "cash": 6000,
-          "strategy": "- This is basically the same battle as with Yamaraja: War, only easier.\n- As with Yamaraja: War, the Cursed Puppet will absorb all magic, making **Zhuzhen** useful only as a healer.\n- He also uses the Game of Death, just as usual; if you don't have those Leonardo's Bears equipped to everyone, they'll have a chance to instantly kill you.\n- His Nightmare attack will hit the entire party for a lot of damage, so make sure heal afterward.\n- The only other thing he does is a hellacious physical attack that'll hit for major damage.\n- Once he starts using Nightmare repeatedly, you could be in a bit of trouble.\n- Have **Yuri** fuse into Inferno and cast Fighting Spirit on himself, followed by physically attacking Yamaraja every turn.\n- If he has the Mind's Eye equipped, it won't take very long.\n- **Margarete** should be attacking normally, but having her jump in to use Thera Seeds if needed, and **Zhuzhen** should focus completely on recovery.\n- If you're having trouble staying healed, have **Yuri** fuse into Heaven's Fiend so you have the whole party healing spell."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "This is basically the same battle as with Yamaraja: War, only easier.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "As with Yamaraja: War, the Cursed Puppet will absorb all magic, making **Zhuzhen** useful only as a healer."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "He also uses the Game of Death, just as usual; if you don't have those Leonardo's Bears equipped to everyone, they'll have a chance to instantly kill you.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "His Nightmare attack will hit the entire party for a lot of damage, so make sure heal afterward."
+                        },
+                        {
+                          "text": "The only other thing he does is a hellacious physical attack that'll hit for major damage."
+                        },
+                        {
+                          "text": "Once he starts using Nightmare repeatedly, you could be in a bit of trouble."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "Have **Yuri** fuse into Inferno and cast Fighting Spirit on himself, followed by physically attacking Yamaraja every turn.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If he has the Mind's Eye equipped, it won't take very long."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Margarete** should be attacking normally, but having her jump in to use Thera Seeds if needed, and **Zhuzhen** should focus completely on recovery.",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If you're having trouble staying healed, have **Yuri** fuse into Heaven's Fiend so you have the whole party healing spell."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       },
       {
