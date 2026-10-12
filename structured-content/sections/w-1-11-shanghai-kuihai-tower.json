@@ -208,7 +208,7 @@
             "list": "bullet",
             "items": [
               {
-                "text": "Note that Yamaraja: Stone is actually a **fire** class, so Man Dragon will be your go-to Fusion if you're taking the magic route."
+                "text": "Note that Yamaraja: Stone is actually a **fire** class, so **Man Dragon** will be your go-to Fusion if you're taking the magic route."
               },
               {
                 "text": "Other than the fact that he uses defensive spells (that don't seem to help him at all), all he'll use are physical attacks.",
@@ -224,13 +224,13 @@
                 ]
               },
               {
-                "text": "Have Yuri either fuse into the Man Dragon and blast him continuously with Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting Spirit) and hammer away at him with physical attacks.",
+                "text": "Have **Yuri** either fuse into the **Man Dragon** and blast him continuously with **Flash Flood**, or just fuse into the **Raging Tiger** or **Inferno** (with **Fighting Spirit**) and hammer away at him with physical attacks.",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
-                        "text": "Zhuzhen should be continually casting Life Sucker, and Margarete should use Aqua Edge on Yuri first (if he's attacking), then have her use Snipe continuously."
+                        "text": "Zhuzhen should be continually casting **Life Sucker**, and **Margarete** should use **Aqua Edge** on **Yuri** first (if he's attacking), then have her use **Snipe** continuously."
                       },
                       {
                         "text": "Zhuzhen will probably be doing the least amount of damage, so have him on healing duty when HP starts to drop."
@@ -465,13 +465,13 @@
       },
       {
         "id": 3,
-        "description": "1. After the battle, you'll receive the **B. Tortoise VP**, and you'll automatically enter the Tower.\n2. On the center platform is a Save Point, so be sure to use it.\n3. You should see a chest directly beside the Save Point, but on the other side, so run clockwise until you reach the chest containing a **Lottery Ticket**.\n4. From the remaining two staircases here, go up the eastern one, following the path to the next area.\n5. Up on the next floor, examine the area just to the upper-left of the stairs, where you'll find a place to insert the B. Tortoise VP.\n6. Choose to put it in, then choose \"the Black Tortoise\" to place the picture in its place.\n7. After doing that, check the far left side of the room to find a **Pure Extract**, then enter the newly unlocked door on the right side of the room.\n8. Out here, follow the path to the next area, then at the end of the path, open the chest for a **B. Dragon VP**.\n9. Once you have it, head back down to the first area with the Save Point.",
+        "description": "1. After the battle, you'll receive the **B. Tortoise VP**, and you'll automatically enter the Tower.\n2. On the center platform is a Save Point, so be sure to use it.\n3. You should see a chest directly beside the Save Point, but on the other side, so run clockwise until you reach the chest containing a **Lottery Ticket**.\n4. From the remaining two staircases here, go up the eastern one, following the path to the next area.\n5. Up on the next floor, examine the area just to the upper-left of the stairs, where you'll find a place to insert the **B. Tortoise VP**.\n6. Choose to put it in, then choose \"the Black Tortoise\" to place the picture in its place.\n7. After doing that, check the far left side of the room to find a **Pure Extract**, then enter the newly unlocked door on the right side of the room.\n8. Out here, follow the path to the next area, then at the end of the path, open the chest for a **B. Dragon VP**.\n9. Once you have it, head back down to the first area with the Save Point.",
         "type": "loot",
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "If you're still in need of Cash at this point, the Pure Extract sells for 10,000 Cash. Just sayin'."
+            "text": "If you're still in need of Cash at this point, the **Pure Extract** sells for 10,000 Cash. Just sayin'."
           }
         ],
         "rewards": [
@@ -499,7 +499,7 @@
       },
       {
         "id": 4,
-        "description": "1. From the Save Point, stay on the platform you're currently on and take the northwestern path to the next area.\n2. Go to the left side of the room and look on the ground beneath the artwork to find an.... **Erotic Book**.\n3. Oh LàLà...? OH LÀLÀ?!?! ( For all of you Back to the Future nuts like me. ;D ) It's a copy of \"Shanghai Angels\"...\n4. Make sure to grab this, as it'll come in very handy much later in the game.\n5. If you don't grab it, you'll definitely regret it.",
+        "description": "1. From the Save Point, stay on the platform you're currently on and take the northwestern path to the next area.\n2. Go to the left side of the room and look on the ground beneath the artwork to find an.... **Erotic Book**.\n3. Oh LàLà...? OH LÀLÀ?!?! ( For all of you Back to the Future nuts like me. ;D ) It's a copy of \"**Shanghai** Angels\"...\n4. Make sure to grab this, as it'll come in very handy much later in the game.\n5. If you don't grab it, you'll definitely regret it.",
         "type": "loot",
         "rewards": [
           {
@@ -535,7 +535,7 @@
       },
       {
         "id": 7,
-        "description": "1. Take the path northwest of the Save Point once again to the room where we found the Erotic Book.\n2. Choose to take out the B. Dragon VP and replace it with \"the White Tiger\" to have the correct one in its place.\n3. Make your way back to the Save Point for the last time.\n4. Examine the altar here in the center of the room and choose to insert \"the Blue Dragon\" to solve the puzzle here.",
+        "description": "1. Take the path northwest of the Save Point once again to the room where we found the **Erotic Book**.\n2. Choose to take out the **B. Dragon VP** and replace it with \"the White Tiger\" to have the correct one in its place.\n3. Make your way back to the Save Point for the last time.\n4. Examine the altar here in the center of the room and choose to insert \"the Blue Dragon\" to solve the puzzle here.",
         "type": "puzzle",
         "rewards": []
       },
@@ -562,7 +562,7 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "The Badger Devil uses a Fire Ball attack that doesn't hit for much damage at all, and a physical attack that hits for a slightly decent amount.",
+                  "text": "The **Badger Devil** uses a **Fire Ball** attack that doesn't hit for much damage at all, and a physical attack that hits for a slightly decent amount.",
                   "children": [
                     {
                       "list": "bullet",
@@ -575,16 +575,16 @@
                   ]
                 },
                 {
-                  "text": "The Badger Devil is susceptible to Instant Death, so do one of the following two things:",
+                  "text": "The **Badger Devil** is susceptible to **Instant Death**, so do one of the following two things:",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "1) Fuse Yuri into the Death Emperor and cast Dark Messenger. Make sure to hit the small red \"Perfect!!\" area, and voilà! Dead-dead-deadski."
+                          "text": "1) Fuse **Yuri** into the **Death Emperor** and cast **Dark Messenger**. Make sure to hit the small red \"Perfect!!\" area, and voilà! Dead-dead-deadski."
                         },
                         {
-                          "text": "2) Have Margarete use her Snipe ability. Make sure to hit the small red \"Perfect!!\" area, and BAM!!! History."
+                          "text": "2) Have **Margarete** use her **Snipe** ability. Make sure to hit the small red \"Perfect!!\" area, and BAM!!! History."
                         },
                         {
                           "text": "If you're lucky, one of the first two steps will kill it."
@@ -603,10 +603,10 @@
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Have Yuri fuse into the Raging Tiger or Inferno (with Fighting Spirit) and hammer away at him with physical attacks."
+                          "text": "Have **Yuri** fuse into the **Raging Tiger** or **Inferno** (with **Fighting Spirit**) and hammer away at him with physical attacks."
                         },
                         {
-                          "text": "Zhuzhen should be continually casting Life Sucker, and Margarete should use Aqua Edge on Yuri first, then have her use Snipe continuously."
+                          "text": "Zhuzhen should be continually casting **Life Sucker**, and **Margarete** should use **Aqua Edge** on **Yuri** first, then have her use **Snipe** continuously."
                         },
                         {
                           "text": "He'll fall quickly."
@@ -651,7 +651,7 @@
       },
       {
         "id": 10,
-        "description": "When you're absolutely ready, go back to where you fought the Badger Devil and climb the steps to the west. Watch the events unfold, then take on Dehuai himself.",
+        "description": "When you're absolutely ready, go back to where you fought the **Badger Devil** and climb the steps to the west. Watch the events unfold, then take on **Dehuai** himself.",
         "type": "boss",
         "rewards": [],
         "boss": {
@@ -728,13 +728,13 @@
                   ]
                 },
                 {
-                  "text": "Dehuai's fire attacks, Magnard and Blaze, will hit your whole party for decent damage, and he also has a rather quick (and interestingly bizarre) physical attack that also does decent to major damage.",
+                  "text": "**Dehuai**'s fire attacks, Magnard and **Blaze**, will hit your whole party for decent damage, and he also has a rather quick (and interestingly bizarre) physical attack that also does decent to major damage.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "He also has a Fast Ring attack that hits for decent damage, and it can possibly make your Judgment Ring spin faster."
+                          "text": "He also has a Fast Ring attack that hits for decent damage, and it can possibly make your **Judgment Ring** spin faster."
                         },
                         {
                           "text": "Make sure to keep healed and try to keep that Ring status off!"
@@ -744,13 +744,13 @@
                   ]
                 },
                 {
-                  "text": "Have **Yuri** either fuse into the Man Dragon and blast him continuously with Flash Flood, or just fuse into the Raging Tiger or Inferno (with Fighting Spirit) and hammer away at him with physical attacks.",
+                  "text": "Have **Yuri** either fuse into the **Man Dragon** and blast him continuously with **Flash Flood**, or just fuse into the **Raging Tiger** or **Inferno** (with **Fighting Spirit**) and hammer away at him with physical attacks.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "**Zhuzhen** should be continually casting Life Sucker, and **Margarete** should use Aqua Edge on **Yuri** first (if he's attacking), then have her use Snipe continuously."
+                          "text": "**Zhuzhen** should be continually casting **Life Sucker**, and **Margarete** should use **Aqua Edge** on **Yuri** first (if he's attacking), then have her use **Snipe** continuously."
                         },
                         {
                           "text": "**Zhuzhen** will probably be doing the least amount of damage, so have him on healing duty when HP starts to drop."
@@ -774,13 +774,13 @@
       },
       {
         "id": 11,
-        "description": "1. After the battle and series of events, you'll regain control, and you'll get to choose your party.\n2. I recommend keeping your current party of **Yuri**, **Zhuzhen**, and **Margarete**, as **Alice** won't be of much help in the next boss battle.\n3. Make sure to equip the Hermit's Staff on **Zhuzhen** that you won in the last battle.\n4. When you regain control, head back down to the previous floor and **save your game**.",
+        "description": "1. After the battle and series of events, you'll regain control, and you'll get to choose your party.\n2. I recommend keeping your current party of **Yuri**, **Zhuzhen**, and **Margarete**, as **Alice** won't be of much help in the next boss battle.\n3. Make sure to equip the **Hermit's Staff** on **Zhuzhen** that you won in the last battle.\n4. When you regain control, head back down to the previous floor and **save your game**.",
         "type": "story",
         "rewards": []
       },
       {
         "id": 12,
-        "description": "1. Once you've saved, go back to the upper floor and talk to the Japanese soldier on the left.\n2. He will offer to change your party, in case you've changed your mind, but if you choose to not change it, then you'll also find out that he's a Lottery Member!\n3. The ring here moves fast, so remember, equipping the Pocket Watch will make it easier to hit the areas!\n4. Make sure to win the Warlock Earrings before continuing on; it increases your S-Atk up 20%, but will also increase the damage received from S-Atks by 20%!\n5. If you don't win it, reload your last save and try again.\n6. Remember, you need to win something from each member at least once!",
+        "description": "1. Once you've saved, go back to the upper floor and talk to the Japanese soldier on the left.\n2. He will offer to change your party, in case you've changed your mind, but if you choose to not change it, then you'll also find out that he's a Lottery Member!\n3. The ring here moves fast, so remember, equipping the **Pocket Watch** will make it easier to hit the areas!\n4. Make sure to win the **Warlock Earrings** before continuing on; it increases your S-Atk up 20%, but will also increase the damage received from S-Atks by 20%!\n5. If you don't win it, reload your last save and try again.\n6. Remember, you need to win something from each member at least once!",
         "type": "story",
         "rewards": [],
         "notes": [
@@ -821,7 +821,7 @@
       },
       {
         "id": 13,
-        "description": "1. The Japanese Soldier to the right has items for sale.\n2. The next boss uses both Petrification and Silence, so either equip Zodiac and Cosmic Bracelets on everyone, or buy three each of the Bell Bracelets and Mirror Bracelets that this guy has for sale, as well as any healing items you may need.",
+        "description": "1. The Japanese Soldier to the right has items for sale.\n2. The next boss uses both **Petrification** and **Silence**, so either equip Zodiac and **Cosmic Bracelets** on everyone, or buy three each of the **Bell Bracelets** and **Mirror Bracelets** that this guy has for sale, as well as any healing items you may need.",
         "type": "shop",
         "notes": [
           {
@@ -834,7 +834,7 @@
       },
       {
         "id": 14,
-        "description": "Once you're ready, climb to the top of the tower. **Save your game** here, then keep going to meet up with Dehuai for the last time.",
+        "description": "Once you're ready, climb to the top of the tower. **Save your game** here, then keep going to meet up with **Dehuai** for the last time.",
         "type": "boss",
         "rewards": [],
         "boss": {
@@ -901,10 +901,10 @@
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "His Petrification attack should only do medium damage to your party IF you're protected against it; otherwise, you'll turn to stone, and three Petrified party members equals a game over."
+                          "text": "His **Petrification** attack should only do medium damage to your party IF you're protected against it; otherwise, you'll turn to stone, and three Petrified party members equals a game over."
                         },
                         {
-                          "text": "He'll also use a Shockwave attack, but it only does a small amount of damage to your whole party."
+                          "text": "He'll also use a **Shockwave** attack, but it only does a small amount of damage to your whole party."
                         },
                         {
                           "text": "His physical attacks are nothing to sneeze at either; a series of three attacks will do MAJOR damage to a party member."
@@ -920,20 +920,20 @@
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Fuse him into the Heaven's Fiend, then cast Sacred Remedy if your party needs healing, and if they don't, then use Exorcist Arrow."
+                          "text": "Fuse him into the **Heaven's Fiend**, then cast **Sacred Remedy** if your party needs healing, and if they don't, then use **Exorcist Arrow**."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "**Zhuzhen** should be constantly casting Life Sucker, and **Margarete** should be using Snipe.",
+                  "text": "**Zhuzhen** should be constantly casting **Life Sucker**, and **Margarete** should be using **Snipe**.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "When the party's MP starts getting low, have **Margarete** use Mana Seeds to boost them back up."
+                          "text": "When the party's MP starts getting low, have **Margarete** use **Mana Seeds** to boost them back up."
                         }
                       ]
                     }
@@ -946,7 +946,7 @@
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "You'll most likely need to use at least two Pure Seeds to keep **Zhuzhen**'s and **Margarete**'s SP up."
+                          "text": "You'll most likely need to use at least two **Pure Seeds** to keep **Zhuzhen**'s and **Margarete**'s SP up."
                         }
                       ]
                     }

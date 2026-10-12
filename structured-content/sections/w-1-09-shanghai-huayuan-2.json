@@ -189,7 +189,7 @@
       },
       {
         "id": 6,
-        "description": "1. You'll regain control at the entrance to **Kuihai Tower**.\n2. **Leave now**, as there is more to do.\n3. Head back to **Huayuan** in Shanghai.",
+        "description": "1. You'll regain control at the entrance to **Kuihai Tower**.\n2. **Leave now**, as there is more to do.\n3. Head back to **Huayuan** in **Shanghai**.",
         "type": "navigation",
         "rewards": []
       },
@@ -207,7 +207,7 @@
       },
       {
         "id": 8,
-        "description": "1. Make your way to the dock now where you'll find several dogs, along with the **Man with Dog**.\n2. Talk to him to play a game: Shanghai's famous dog-picking contest!\n3. Pay him 300 Cash, and you'll be able to play.\n4. Pick a dog, then it'll move around, and you'll have to pick him again when you're done.\n5. It's basically a glorified cup game.\n\nPrizes for winning:\n- First win (three dogs) - A **Lottery Ticket**\n- Second win (four dogs) - A **Leonardo's Bear**\n- Third win (four dogs) - A **Monkey Paw**",
+        "description": "1. Make your way to the dock now where you'll find several dogs, along with the **Man with Dog**.\n2. Talk to him to play a game: **Shanghai**'s famous dog-picking contest!\n3. Pay him 300 Cash, and you'll be able to play.\n4. Pick a dog, then it'll move around, and you'll have to pick him again when you're done.\n5. It's basically a glorified cup game.\n\nPrizes for winning:\n- First win (three dogs) - A **Lottery Ticket**\n- Second win (four dogs) - A **Leonardo's Bear**\n- Third win (four dogs) - A **Monkey Paw**",
         "type": "loot",
         "rewards": [
           {
@@ -229,7 +229,7 @@
       },
       {
         "id": 9,
-        "description": "1. That's it for treasure in Shanghai.\n2. Now, you can either continue with Kuihai Tower, or you can take on a couple of side quests!\n3. If you don't care about the side quests, then continue on to W-1-11 - Kuihai Tower.\n4. Otherwise, read below!",
+        "description": "1. That's it for treasure in **Shanghai**.\n2. Now, you can either continue with **Kuihai Tower**, or you can take on a couple of side quests!\n3. If you don't care about the side quests, then continue on to W-1-11 - **Kuihai Tower**.\n4. Otherwise, read below!",
         "type": "navigation",
         "rewards": []
       }

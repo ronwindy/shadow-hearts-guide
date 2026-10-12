@@ -303,18 +303,18 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. Watch the events in London as you enter Rouen, then you'll regain control.\n2. Examine the ground just above the box to your left to find a **Lottery Ticket**.\n3. Once you have it, enter the Inn at the top of the screen.\n4. Watch another scene in here, then you'll regain control in the Graveyard.\n5. Head to the left and talk to the Masks.",
+        "description": "1. Watch the events in **London** as you enter **Rouen**, then you'll regain control.\n2. Examine the ground just above the box to your left to find a **Lottery Ticket**.\n3. Once you have it, enter the Inn at the top of the screen.\n4. Watch another scene in here, then you'll regain control in the Graveyard.\n5. Head to the left and talk to the Masks.",
         "type": "loot",
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "- To sum up everything that the Masks have said this time: the Talisman **Yuri** holds will show the level of Malice that has accumulated in **Alice**'s soul, meaning that every time **she** participates in a battle, the Malice Meter will increase.\n- To get rid of the Malice, **Yuri** must return to the Graveyard and fight an incarnate of the Malice (Gusts, this time around) to keep from having to face one of the Four Masks.\n- Each enemy you defeat with **Alice** in the party will increase the Malice Meter, so make sure that your Malice level does **not** reach the red.\n- If it does, **immediately** go to the Graveyard and fight your Malice so that you don't fight any of the Masks.\n- Right now, you **will** die if you try to fight them, so if you run into them, press the R1 button and choose to Run Away."
+            "text": "- To sum up everything that the Masks have said this time: the Talisman **Yuri** holds will show the level of Malice that has accumulated in **Alice**'s soul, meaning that every time **she** participates in a battle, the **Malice Meter** will increase.\n- To get rid of the Malice, **Yuri** must return to the Graveyard and fight an incarnate of the Malice (Gusts, this time around) to keep from having to face one of the Four Masks.\n- Each enemy you defeat with **Alice** in the party will increase the **Malice Meter**, so make sure that your Malice level does **not** reach the red.\n- If it does, **immediately** go to the Graveyard and fight your Malice so that you don't fight any of the Masks.\n- Right now, you **will** die if you try to fight them, so if you run into them, press the R1 button and choose to Run Away."
           },
           {
             "type": "tip",
             "title": "Note",
-            "text": "You can fight Gust Ein, Gust Zwei, Gust Drei, and Gust Vier by returning to the Graveyard and fighting them when your Malice level is at a certain color:\n- Gust Ein: Between Blue and Turquoise.\n- Gust Zwei: Between Turquoise and Green.\n- Gust Drei: Between Green and Yellow.\n- Gust Vier: Between Yellow and Red.\n- After each battle, you'll receive an item based on your Malice!"
+            "text": "You can fight **Gust Ein**, **Gust Zwei**, **Gust Drei**, and **Gust Vier** by returning to the Graveyard and fighting them when your Malice level is at a certain color:\n- **Gust Ein**: Between Blue and Turquoise.\n- **Gust Zwei**: Between Turquoise and Green.\n- **Gust Drei**: Between Green and Yellow.\n- **Gust Vier**: Between Yellow and Red.\n- After each battle, you'll receive an item based on your Malice!"
           },
           {
             "type": "tip",
@@ -500,7 +500,7 @@
           {
             "type": "tip",
             "title": "Note",
-            "text": "- Again, the prize you win depends on the level of Malice you have accumulated, with 100 being the max value.\n- Sadly you can't use this knowledge to get the special prizes again and again, as they are replaced with a Thera Leaf the second time you clear the Malice at the same value."
+            "text": "- Again, the prize you win depends on the level of Malice you have accumulated, with 100 being the max value.\n- Sadly you can't use this knowledge to get the special prizes again and again, as they are replaced with a **Thera Leaf** the second time you clear the Malice at the same value."
           }
         ],
         "rewards": [
@@ -526,7 +526,7 @@
       },
       {
         "id": 3,
-        "description": "1. Make your way downstairs and talk to the Silent Peddler to find out that he has a shop!\n2. Feel free to upgrade your party's weapons and equipment, then leave the Inn and head north into the alley to find her.\n3. Watch the scene here, then you'll have to battle a set of Bifronzes.\n4. After taking them out, you'll see another set of scenes, and you'll regain control inside of the Inn, having to choose a party.",
+        "description": "1. Make your way downstairs and talk to the Silent Peddler to find out that he has a shop!\n2. Feel free to upgrade your party's weapons and equipment, then leave the Inn and head north into the alley to find her.\n3. Watch the scene here, then you'll have to battle a set of **Bifronzes**.\n4. After taking them out, you'll see another set of scenes, and you'll regain control inside of the Inn, having to choose a party.",
         "type": "shop",
         "notes": [
           {
@@ -537,25 +537,25 @@
           {
             "type": "tip",
             "title": "Note",
-            "text": "If for some reason you don't have them, make sure to buy three of either the Shell Bracelets or Cosmic Bracelets to defend against Poison for the next boss battle."
+            "text": "If for some reason you don't have them, make sure to buy three of either the **Shell Bracelets** or **Cosmic Bracelets** to defend against **Poison** for the next boss battle."
           }
         ],
         "rewards": []
       },
       {
         "id": 4,
-        "description": "1. For a party, I recommend (now, and most of every other time) **Yuri**, **Alice**, and **Margarete**, as **Margarete** gives a decent balance between physical fighting and special skills, whereas **Alice** will almost always be a designated healer.\n2. If you change your mind after choosing your party, talk to Meiyuan on the first floor and he can change it up.\n3. When you're ready, head outside.",
+        "description": "1. For a party, I recommend (now, and most of every other time) **Yuri**, **Alice**, and **Margarete**, as **Margarete** gives a decent balance between physical fighting and special skills, whereas **Alice** will almost always be a designated healer.\n2. If you change your mind after choosing your party, talk to **Meiyuan** on the first floor and he can change it up.\n3. When you're ready, head outside.",
         "type": "exploration",
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "- You can now encounter random battles in the streets with the Bifronzes, as well as some new enemies, the Camazotz, for a limited time.\n- I strongly recommend taking the time to level up your Dark and Wind classes to level 2, if you haven't reached them already.\n- It won't take very long."
+            "text": "- You can now encounter random battles in the streets with the **Bifronzes**, as well as some new enemies, the **Camazotz**, for a limited time.\n- I strongly recommend taking the time to level up your Dark and Wind classes to level 2, if you haven't reached them already.\n- It won't take very long."
           },
           {
             "type": "tip",
             "title": "Note",
-            "text": "- If you didn't get your level 2 Light Fusion earlier, or if you still just don't have it, then I **strongly** recommend going back to the Blue Castle and fighting the Hollows until you do.\n- It will be **extremely** useful in this next boss battle, which is pretty difficult."
+            "text": "- If you didn't get your level 2 Light Fusion earlier, or if you still just don't have it, then I **strongly** recommend going back to the **Blue Castle** and fighting the Hollows until you do.\n- It will be **extremely** useful in this next boss battle, which is pretty difficult."
           }
         ],
         "rewards": []
@@ -579,7 +579,7 @@
       },
       {
         "id": 6,
-        "description": "Once you're inside, make your way to the front of the church. Watch the series of events unfold in here, then you'll have to take on Olga yet again.",
+        "description": "Once you're inside, make your way to the front of the church. Watch the series of events unfold in here, then you'll have to take on **Olga** yet again.",
         "type": "boss",
         "rewards": [],
         "boss": {
@@ -640,16 +640,16 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "Olga's Black Fog attack will do **major** damage to your party, as well as Poison each one of them, so it's a good idea to come in with Shell or Cosmic Bracelets equipped.",
+                  "text": "**Olga**'s Black Fog attack will do **major** damage to your party, as well as **Poison** each one of them, so it's a good idea to come in with Shell or **Cosmic Bracelets** equipped.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Her Nova attack will do decent damage to a single ally, her Icy Breath attack will hit your whole party for decent damage, and her physical attack just does pathetic damage to a single ally."
+                          "text": "Her **Nova** attack will do decent damage to a single ally, her **Icy Breath** attack will hit your whole party for decent damage, and her physical attack just does pathetic damage to a single ally."
                         },
                         {
-                          "text": "Watch out if she uses Mind Assault to steal your MP, as you'll want to recover it immediately if she takes too much."
+                          "text": "Watch out if she uses **Mind Assault** to steal your MP, as you'll want to recover it immediately if she takes too much."
                         }
                       ]
                     }
@@ -678,20 +678,20 @@
                   ]
                 },
                 {
-                  "text": "Fuse **Yuri** into Baldo (if you didn't get his level 2 Light Fusion, then fuse into the Heaven's Fiend, as you'll need the healing) and start physically attacking; with the Mind's Eye equipped, he'll be doing major damage.",
+                  "text": "Fuse **Yuri** into **Baldo** (if you didn't get his level 2 Light Fusion, then fuse into the **Heaven's Fiend**, as you'll need the healing) and start physically attacking; with the **Mind's Eye** equipped, he'll be doing major damage.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "If you didn't put the Mind's Eye on him, then go with the Nova spell instead."
+                          "text": "If you didn't put the **Mind's Eye** on him, then go with the **Nova** spell instead."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "Have **Alice** cast Holy Edge on **Yuri** her first round so he can keep piling the damage up, then have her cast it on **Margarete** her second turn so she can start adding in to the damage.",
+                  "text": "Have **Alice** cast **Holy Edge** on **Yuri** her first round so he can keep piling the damage up, then have her cast it on **Margarete** her second turn so she can start adding in to the damage.",
                   "children": [
                     {
                       "list": "bullet",
@@ -700,7 +700,7 @@
                           "text": "**Margarete** should also be attacking normally."
                         },
                         {
-                          "text": "If for some reason **Alice** doesn't need to heal, have her cast Blessed Light on Olga."
+                          "text": "If for some reason **Alice** doesn't need to heal, have her cast **Blessed Light** on **Olga**."
                         }
                       ]
                     }
@@ -716,7 +716,7 @@
                           "text": "If two people need it, have **Alice** and **Margarete** do it."
                         },
                         {
-                          "text": "If all three need it, then have **Yuri** do it, as Olga doesn't mess around, and can easily kill your entire party in three turns."
+                          "text": "If all three need it, then have **Yuri** do it, as **Olga** doesn't mess around, and can easily kill your entire party in three turns."
                         },
                         {
                           "text": "I hate taking turns away from **Yuri** because he just does so much damage, but when everyone needs healed, he's the only one that can do anything about it efficiently."
@@ -737,7 +737,7 @@
       },
       {
         "id": 7,
-        "description": "1. After the battle, you'll learn that your next destination is London, and you'll regain control outside.\n2. Head back into the church and check the altar for a **Seal of the Soul**, then go through the door on the right.\n3. Enter the first door here to be in a confession booth, where you'll find a chest containing a **Jasper Cape**.",
+        "description": "1. After the battle, you'll learn that your next destination is **London**, and you'll regain control outside.\n2. Head back into the church and check the altar for a **Seal of the Soul**, then go through the door on the right.\n3. Enter the first door here to be in a confession booth, where you'll find a chest containing a **Jasper Cape**.",
         "type": "loot",
         "rewards": [
           {
@@ -754,7 +754,7 @@
       },
       {
         "id": 8,
-        "description": "1. Head back outside, then **save** at the Inn.\n2. Go back out and re-enter the alleyway, where you'll find Hooked-nose Robin, or as we come to find out, Lottery Member No. 06!\n3. Nothing strange about the ring here.\n4. Make sure to win the Accelerator here before continuing on; it doubles your Pedometer steps with each step you take!\n5. Just remember, that the person wearing the Pedometer must be wearing the Accelerator at the same time, it won't work if they're on separate party members.\n6. If you don't win it, reload your last save and try again.\n7. Remember, you need to win something from each member at least once!",
+        "description": "1. Head back outside, then **save** at the Inn.\n2. Go back out and re-enter the alleyway, where you'll find Hooked-nose Robin, or as we come to find out, Lottery Member No. 06!\n3. Nothing strange about the ring here.\n4. Make sure to win the **Accelerator** here before continuing on; it doubles your **Pedometer** steps with each step you take!\n5. Just remember, that the person wearing the **Pedometer** must be wearing the **Accelerator** at the same time, it won't work if they're on separate party members.\n6. If you don't win it, reload your last save and try again.\n7. Remember, you need to win something from each member at least once!",
         "type": "navigation",
         "rewards": [],
         "notes": [
@@ -795,7 +795,7 @@
       },
       {
         "id": 9,
-        "description": "1. That's it for Rouen, so make your way back out to the World Map.\n2. Our next stop is London, specifically, Old Castle Street.\n3. Make sure to **save** before entering!",
+        "description": "1. That's it for **Rouen**, so make your way back out to the World Map.\n2. Our next stop is **London**, specifically, **Old Castle Street**.\n3. Make sure to **save** before entering!",
         "type": "exploration",
         "rewards": []
       }

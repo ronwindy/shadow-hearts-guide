@@ -178,7 +178,7 @@
           {
             "type": "tip",
             "title": "Note",
-            "text": "The next boss can use Instant Death, so make sure to equip Leonardo's Bears to everyone."
+            "text": "The next boss can use **Instant Death**, so make sure to equip **Leonardo's Bears** to everyone."
           }
         ],
         "rewards": [
@@ -268,13 +268,13 @@
                   ]
                 },
                 {
-                  "text": "After just about 400 HP worth of damage, **Yuri** will fuse into the Death Emperor, starting to use Dark Messenger.",
+                  "text": "After just about 400 HP worth of damage, **Yuri** will fuse into the **Death Emperor**, starting to use **Dark Messenger**.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "As long as you have Leonardo's Bears equipped, you won't die instantly, but you'll still be hit pretty hard."
+                          "text": "As long as you have **Leonardo's Bears** equipped, you won't die instantly, but you'll still be hit pretty hard."
                         },
                         {
                           "text": "Again, to reiterate: healing will be your immediate priority."
@@ -287,20 +287,20 @@
                   "text": "Have two people healing, if needed."
                 },
                 {
-                  "text": "For the first round, have **Alice** cast Holy Edge on **Keith** to add a Light class to his attack, then devote **Alice** to healing.",
+                  "text": "For the first round, have **Alice** cast **Holy Edge** on **Keith** to add a Light class to his attack, then devote **Alice** to healing.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "There most likely won't be a round where she can attack, but if you can, then use Blessed Light."
+                          "text": "There most likely won't be a round where she can attack, but if you can, then use **Blessed Light**."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "**Zhuzhen** should be using Corpse Arm every round, and **Keith** should be attacking normally every round, with his weapon laced with Holy Edge.",
+                  "text": "**Zhuzhen** should be using **Corpse Arm** every round, and **Keith** should be attacking normally every round, with his weapon laced with **Holy Edge**.",
                   "children": [
                     {
                       "list": "bullet",
@@ -337,7 +337,7 @@
       },
       {
         "id": 6,
-        "description": "1. After the battle, you'll have control of **Alice** in the Graveyard.\n2. Just head left to talk to the Masks.\n3. Once they're done, go through the gate to the north and watch the events unfold there.\n4. You'll then have to face Fox Face one last time, as **Yuri**.",
+        "description": "1. After the battle, you'll have control of **Alice** in the Graveyard.\n2. Just head left to talk to the Masks.\n3. Once they're done, go through the gate to the north and watch the events unfold there.\n4. You'll then have to face **Fox Face** one last time, as **Yuri**.",
         "type": "boss",
         "rewards": [],
         "boss": {
@@ -354,7 +354,7 @@
           "party": [],
           "exp": 13000,
           "cash": 12500,
-          "strategy": "- He won't fuse into the Death Emperor this time, but he'll still use his !!! attack.\n- When he does, IMMEDIATELY use a Thera Seed, and DON'T even try to hit the 'Perfect!!' mark; just get **Yuri** away from 1 HP, and you'll be fine.\n- Fuse into either the Raging Tiger or Inferno (with Fighting Spirit) and just start wailing away on him with physical attacks.\n- Just keep trading blows, using Thera Seeds to heal whenever your HP starts to get low, and ESPECIALLY after the !!! attack."
+          "strategy": "- He won't fuse into the **Death Emperor** this time, but he'll still use his !!! attack.\n- When he does, IMMEDIATELY use a **Thera Seed**, and DON'T even try to hit the 'Perfect!!' mark; just get **Yuri** away from 1 HP, and you'll be fine.\n- Fuse into either the **Raging Tiger** or **Inferno** (with **Fighting Spirit**) and just start wailing away on him with physical attacks.\n- Just keep trading blows, using **Thera Seeds** to heal whenever your HP starts to get low, and ESPECIALLY after the !!! attack."
         },
         "encounter": {
           "enemies": [
@@ -364,7 +364,7 @@
       },
       {
         "id": 7,
-        "description": "- After the battle, watch the very long sequence of events.\n- Eventually, you'll be able to choose your party.\n- I'll go with **Yuri**, **Alice**, and **Keith** for the time being.\n- Before you know it, you'll be back in the forest at the entrance to the Blue Castle.",
+        "description": "- After the battle, watch the very long sequence of events.\n- Eventually, you'll be able to choose your party.\n- I'll go with **Yuri**, **Alice**, and **Keith** for the time being.\n- Before you know it, you'll be back in the forest at the entrance to the **Blue Castle**.",
         "type": "story",
         "rewards": []
       },
@@ -382,7 +382,7 @@
       },
       {
         "id": 9,
-        "description": "After you have that, make your way back to the exit and to the World Map. Your next stop will be Prague.",
+        "description": "After you have that, make your way back to the exit and to the World Map. Your next stop will be **Prague**.",
         "type": "exploration",
         "notes": [
           {

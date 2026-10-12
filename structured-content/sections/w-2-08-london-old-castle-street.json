@@ -276,7 +276,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. When you gain control, talk to the one of the first guys you see, Penniless Mike, the one in the purple suit.\n2. He'll ask you if you want a rare card.\n3. If you have **7,000 CASH** on you (yeah, it's pricey), then choose 1 to obtain the **Sun Card**.\n4. Just to the right of Penniless Mike is a **Lottery Ticket** on the ground, so be sure to pick it up.\n5. Next, talk to the bum at the top of the screen, **Drunken Orro**.\n6. He's your next Lottery Member (**Lottery Member No. 05**)!\n7. While the speed of the indicator isn't anything unusual, all of the areas are **tiny**!\n8. Equip the Pocket Watch before playing, and they'll be easier to hit.\n9. Make sure to win the **Priest Earrings** here before continuing on; they decrease MP consumption by 20%!\n10. If you don't win them, reload your last save and try again.\n11. Remember, you need to win something from each member at least once!",
+        "description": "1. When you gain control, talk to the one of the first guys you see, Penniless Mike, the one in the purple suit.\n2. He'll ask you if you want a rare card.\n3. If you have **7,000 CASH** on you (yeah, it's pricey), then choose 1 to obtain the **Sun Card**.\n4. Just to the right of Penniless Mike is a **Lottery Ticket** on the ground, so be sure to pick it up.\n5. Next, talk to the bum at the top of the screen, **Drunken Orro**.\n6. He's your next Lottery Member (**Lottery Member No. 05**)!\n7. While the speed of the indicator isn't anything unusual, all of the areas are **tiny**!\n8. Equip the **Pocket Watch** before playing, and they'll be easier to hit.\n9. Make sure to win the **Priest Earrings** here before continuing on; they decrease MP consumption by 20%!\n10. If you don't win them, reload your last save and try again.\n11. Remember, you need to win something from each member at least once!",
         "type": "dialogue",
         "choices": [
           {
@@ -338,7 +338,7 @@
       },
       {
         "id": 2,
-        "description": "1. Head north to the next area for a scene.\n2. Afterward, you'll realize that all your money is gone, so now you've gotta get it back.\n3. First, go to your upper left to be beside a house; now that you're past the gate, go up alongside the house, behind the wall here.\n4. Look around on the ground, and you should find an **Oak Slingshot**.\n5. Go into the bar on the lower-left of the screen, where you'll learn more about the London Rats, as well as get to name your final party member, **Halley**.",
+        "description": "1. Head north to the next area for a scene.\n2. Afterward, you'll realize that all your money is gone, so now you've gotta get it back.\n3. First, go to your upper left to be beside a house; now that you're past the gate, go up alongside the house, behind the wall here.\n4. Look around on the ground, and you should find an **Oak Slingshot**.\n5. Go into the bar on the lower-left of the screen, where you'll learn more about the **London Rats**, as well as get to name your final party member, **Halley**.",
         "type": "loot",
         "notes": [
           {
@@ -356,7 +356,7 @@
       },
       {
         "id": 3,
-        "description": "1. When you regain control, talk to the Silent Peddler on the left if you wish, then make your way behind the counter of the bar, as there is a **Mana Extract** on the floor.\n2. Once you have it, leave the bar, then go back to the first area of Old Castle Street.\n3. Go into the Inn at the bottom of the screen for some events.",
+        "description": "1. When you regain control, talk to the Silent Peddler on the left if you wish, then make your way behind the counter of the bar, as there is a **Mana Extract** on the floor.\n2. Once you have it, leave the bar, then go back to the first area of **Old Castle Street**.\n3. Go into the Inn at the bottom of the screen for some events.",
         "type": "loot",
         "rewards": [
           {
@@ -368,7 +368,7 @@
       },
       {
         "id": 4,
-        "description": "1. Leave the Inn and head north back to the next area.\n2. Make your way to the right side of the area, then head north when you see an abandoned house.\n3. In this small area, follow along the very edge of the street as you go left, and you should find a **Thera Extract** near the broken wall.\n4. Afterward, go to the upper-left and examine the door on the ground; you'll have to do a Push Ring to lift it up and descend the ladder into the London Rats' hideout.",
+        "description": "1. Leave the Inn and head north back to the next area.\n2. Make your way to the right side of the area, then head north when you see an abandoned house.\n3. In this small area, follow along the very edge of the street as you go left, and you should find a **Thera Extract** near the broken wall.\n4. Afterward, go to the upper-left and examine the door on the ground; you'll have to do a Push Ring to lift it up and descend the ladder into the **London Rats**' hideout.",
         "type": "loot",
         "rewards": [
           {
@@ -446,38 +446,38 @@
       },
       {
         "id": 8,
-        "description": "That's it for Old Castle Street for just a moment. Head out to the World Map, then go to the Orphanage that appears.",
+        "description": "That's it for **Old Castle Street** for just a moment. Head out to the World Map, then go to the **Orphanage** that appears.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 9,
-        "description": "- After the quick scene, enter the mansion to meet a man named Jack.\n- After another short discussion, you'll be escorted out.\n- Leave the Orphanage, and after another quick scene, you'll be back at the Inn on Old Castle Street.",
+        "description": "- After the quick scene, enter the mansion to meet a man named **Jack**.\n- After another short discussion, you'll be escorted out.\n- Leave the **Orphanage**, and after another quick scene, you'll be back at the Inn on **Old Castle Street**.",
         "type": "story",
         "rewards": []
       },
       {
         "id": 10,
-        "description": "1. Watch the events here, then go back out to the streets.\n2. Make your way back to the London Rats' hideout, where you'll need to pick out a new party that includes both **Yuri** and **Halley**, who has now officially joined your party.\n3. I recommend **Alice** as a dedicated healer.",
+        "description": "1. Watch the events here, then go back out to the streets.\n2. Make your way back to the **London Rats**' hideout, where you'll need to pick out a new party that includes both **Yuri** and **Halley**, who has now officially joined your party.\n3. I recommend **Alice** as a dedicated healer.",
         "type": "story",
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "**Halley** comes equipped with a **Slingshot** and a **Red Leather Jacket** by default. Make sure to equip him with the Oak Slingshot you found earlier."
+            "text": "**Halley** comes equipped with a **Slingshot** and a **Red Leather Jacket** by default. Make sure to equip him with the **Oak Slingshot** you found earlier."
           }
         ],
         "rewards": []
       },
       {
         "id": 11,
-        "description": "If you need to upgrade your equipment, stop in at the bar and talk to the Silent Peddler to do so. When you're ready, leave Old Castle Street and make your way to the Orphanage once again.",
+        "description": "If you need to upgrade your equipment, stop in at the bar and talk to the Silent Peddler to do so. When you're ready, leave **Old Castle Street** and make your way to the **Orphanage** once again.",
         "type": "exploration",
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "If for some reason you really want one of the other three in your party in place of **Alice**, you can go back to the Inn and talk to Meiyuan to do so."
+            "text": "If for some reason you really want one of the other three in your party in place of **Alice**, you can go back to the Inn and talk to **Meiyuan** to do so."
           }
         ],
         "rewards": []

@@ -262,7 +262,7 @@
       {
         "id": 1,
         "type": "battle",
-        "description": "Watch a flashback from fifteen years ago first. After Yuri's father, Colonel Ben Hyuga, is introduced, you fight a battle as him.\n\n- Fuse into the **Czernobog**.\n- Use the **Seventh Key** item on one of the **Kappas**.\n- Hit as many of the spots on the **Judgment Ring** as you can.\n- Both **Kappas** and **Wugui** are then obliterated in a single round.",
+        "description": "Watch a flashback from fifteen years ago first. After **Yuri**'s father, **Colonel Ben Hyuga**, is introduced, you fight a battle as him.\n\n- Fuse into the **Czernobog**.\n- Use the **Seventh Key** item on one of the **Kappas**.\n- Hit as many of the spots on the **Judgment Ring** as you can.\n- Both **Kappas** and **Wugui** are then obliterated in a single round.",
         "encounter": {
           "enemies": [
             "Kappa",
@@ -274,7 +274,7 @@
       {
         "id": 2,
         "type": "exploration",
-        "description": "Afterward, you regain control as **Zhuzhen** in the **Cypress Hotel** in Shanghai.\n\n- The **Silent Peddler** is here beside your room; the source recommends saving your points until you are able to get the best prize first.\n- Use the **Save Point** on the ground floor.\n- Talk to **Margarete** if you like.\n- Head out into the city.",
+        "description": "Afterward, you regain control as **Zhuzhen** in the **Cypress Hotel** in **Shanghai**.\n\n- The **Silent Peddler** is here beside your room; the source recommends saving your points until you are able to get the best prize first.\n- Use the **Save Point** on the ground floor.\n- Talk to **Margarete** if you like.\n- Head out into the city.",
         "rewards": []
       },
       {
@@ -362,7 +362,7 @@
           {
             "type": "discrepancy",
             "title": "Tea of the Holy One vs Tea of the Sage",
-            "text": "The Prize Listing in game lists this prize as Tea of the Holy One, and even says that you receive it after winning it. However, if you check your inventory, you will receive a Tea of the Sage instead."
+            "text": "The Prize Listing in game lists this prize as **Tea of the Holy One**, and even says that you receive it after winning it. However, if you check your inventory, you will receive a **Tea of the Sage** instead."
           }
         ],
         "rewards": [
@@ -415,7 +415,7 @@
       {
         "id": 9,
         "type": "story",
-        "description": "Watch the long series of events afterward.\n\n- You regain control in the hotel room.\n- Before moving on, there are a couple more things to do in Shanghai.\n- Save first.",
+        "description": "Watch the long series of events afterward.\n\n- You regain control in the hotel room.\n- Before moving on, there are a couple more things to do in **Shanghai**.\n- Save first.",
         "rewards": []
       },
       {
@@ -432,7 +432,7 @@
           {
             "type": "tip",
             "title": "Note",
-            "text": "Not only can you talk to Meiyuan in Zhen's Bar to have him do Acupuncture, but he can also change out your party for you! Take advantage of that to equip your party as you like."
+            "text": "Not only can you talk to **Meiyuan** in Zhen's Bar to have him do Acupuncture, but he can also change out your party for you! Take advantage of that to equip your party as you like."
           }
         ],
         "rewards": []

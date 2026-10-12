@@ -251,7 +251,7 @@
       },
       {
         "id": 2,
-        "description": "1. Once you have those items, check the door to the house to the southeast, where a little girl will ask if you're her dad.\n2. Choose 2 to be let inside, where you'll have some dialogue with Terry's family.\n3. Afterward, you'll regain control outside, and will have to do battle with monsters randomly, as the fog is red.\n4. Head west back to the first area.",
+        "description": "1. Once you have those items, check the door to the house to the southeast, where a little girl will ask if you're her dad.\n2. Choose 2 to be let inside, where you'll have some dialogue with **Terry**'s family.\n3. Afterward, you'll regain control outside, and will have to do battle with monsters randomly, as the fog is red.\n4. Head west back to the first area.",
         "type": "dialogue",
         "choices": [
           {
@@ -286,7 +286,7 @@
       },
       {
         "id": 4,
-        "description": "1. Before leaving, check the floor at the bottom-right of the screen near the barrels and boxes for a **Moon Swallow**, then open a somewhat hidden chest on the right side of the room for the **Moon Card**.\n2. If you like, shop with Nina for some items, and make sure to stop by the weapons shop to upgrade **Alice**'s and **Zhuzhen**'s equipment.\n3. When you're ready, go to the eastern side of the village and examine the eastern gate.\n4. Unlock it?\n5. Choose 2 to unlock the gate and proceed.\n6. Out here on the World Map, enter the Blue Castle.",
+        "description": "1. Before leaving, check the floor at the bottom-right of the screen near the barrels and boxes for a **Moon Swallow**, then open a somewhat hidden chest on the right side of the room for the **Moon Card**.\n2. If you like, shop with **Nina** for some items, and make sure to stop by the weapons shop to upgrade **Alice**'s and **Zhuzhen**'s equipment.\n3. When you're ready, go to the eastern side of the village and examine the eastern gate.\n4. Unlock it?\n5. Choose 2 to unlock the gate and proceed.\n6. Out here on the World Map, enter the **Blue Castle**.",
         "type": "dialogue",
         "choices": [
           {

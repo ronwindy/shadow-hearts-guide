@@ -210,13 +210,13 @@
     "steps": [
       {
         "id": 1,
-        "description": "You'll regain control on the World Map of Europe with just **Alice** and **Zhuzhen** in your party, with only one available destination: Prague.",
+        "description": "You'll regain control on the World Map of Europe with just **Alice** and **Zhuzhen** in your party, with only one available destination: **Prague**.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 2,
-        "description": "1. You'll gain control of **Alice** in Prague.\n2. Start heading north, but hug the right side of the area.\n3. Before **Alice** reappears, you should see a '?' icon; examine here to find a **Zodiac Bracelet**.\n4. Go north to the next area and use the Save Point you see here.\n5. Once you've saved, talk to the sleeping guy here, and you'll find out that he's a Lottery Member!\n6. The ring here **extremely slow**, so it should be **very** easy to get whatever you want!\n7. Make sure to win the Brsrkr Earrings before continuing on; it increases your max HP 20%!\n8. If you don't win it, reload your last save and try again.\n9. Remember, you need to win something from each member at least once!",
+        "description": "1. You'll gain control of **Alice** in **Prague**.\n2. Start heading north, but hug the right side of the area.\n3. Before **Alice** reappears, you should see a '?' icon; examine here to find a **Zodiac Bracelet**.\n4. Go north to the next area and use the Save Point you see here.\n5. Once you've saved, talk to the sleeping guy here, and you'll find out that he's a Lottery Member!\n6. The ring here **extremely slow**, so it should be **very** easy to get whatever you want!\n7. Make sure to win the **Brsrkr Earrings** before continuing on; it increases your max HP 20%!\n8. If you don't win it, reload your last save and try again.\n9. Remember, you need to win something from each member at least once!",
         "type": "loot",
         "rewards": [
           {
@@ -299,7 +299,7 @@
       },
       {
         "id": 5,
-        "description": "1. After you defeat them, you'll be back in the bar.\n2. Grab anything you absolutely need from the peddler here, then leave the bar.\n3. If for some reason you want to talk to Meiyuan for some Acupuncture or want something from the Silent Peddler, both are now at the north end of town.\n4. When you're finished, leave Prague.\n5. Head to our next destination: Bistritz.",
+        "description": "1. After you defeat them, you'll be back in the bar.\n2. Grab anything you absolutely need from the peddler here, then leave the bar.\n3. If for some reason you want to talk to **Meiyuan** for some Acupuncture or want something from the Silent Peddler, both are now at the north end of town.\n4. When you're finished, leave **Prague**.\n5. Head to our next destination: **Bistritz**.",
         "type": "exploration",
         "rewards": []
       }

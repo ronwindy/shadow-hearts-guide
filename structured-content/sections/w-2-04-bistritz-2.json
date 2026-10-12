@@ -227,7 +227,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. Make your way to Nina and Michelle's house in the southeastern corner.\n2. After Nina tells you the whole story and you regain control, leave the house and head west back to the first area.\n3. If you have the extra money, upgrade **Keith**'s weapon to the Royal Estoc and make sure he's properly equipped, then **save** at the Save Point.\n4. When you're ready, examine the lower-right door to the Mayor's house in the upper corner.\n5. Break in?\n6. Choose 2 when you're ready, and you'll eventually have to take on a sub-boss.",
+        "description": "1. Make your way to **Nina** and **Michelle**'s house in the southeastern corner.\n2. After **Nina** tells you the whole story and you regain control, leave the house and head west back to the first area.\n3. If you have the extra money, upgrade **Keith**'s weapon to the **Royal Estoc** and make sure he's properly equipped, then **save** at the Save Point.\n4. When you're ready, examine the lower-right door to the Mayor's house in the upper corner.\n5. Break in?\n6. Choose 2 when you're ready, and you'll eventually have to take on a sub-boss.",
         "type": "dialogue",
         "choices": [
           {
@@ -244,7 +244,7 @@
           {
             "type": "tip",
             "title": "Note",
-            "text": "It's strongly recommended that your entire party is at least level 23 before taking on the next sub-boss. The Garms outside of the Blue Castle are your best source of **EXP and Cash** right now."
+            "text": "It's strongly recommended that your entire party is at least level 23 before taking on the next sub-boss. The **Garms** outside of the **Blue Castle** are your best source of **EXP and Cash** right now."
           }
         ],
         "boss": {
@@ -282,29 +282,29 @@
                   ]
                 },
                 {
-                  "text": "Have **Alice** be the primary healer, using Cure every round.",
+                  "text": "Have **Alice** be the primary healer, using **Cure** every round.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "If it's not needed, have her use Blessed Light instead."
+                          "text": "If it's not needed, have her use **Blessed Light** instead."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "**Zhuzhen** should be using Life Sucker every round (or if you were able to level him up to 23, use Corpse Arm instead), stopping only to help **Alice** heal when needed."
+                  "text": "**Zhuzhen** should be using **Life Sucker** every round (or if you were able to level him up to 23, use **Corpse Arm** instead), stopping only to help **Alice** heal when needed."
                 },
                 {
-                  "text": "**Keith** should be using Drain Touch if he needs HP, or Bat Dance if he doesn't.",
+                  "text": "**Keith** should be using **Drain Touch** if he needs HP, or **Bat Dance** if he doesn't.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "If you were able to get used to **Keith**'s Ring enough to where you're comfortable with him having the Mind's Eye equipped, I recommend that over his Rituals, but still have him use Drain Touch when he needs healed."
+                          "text": "If you were able to get used to **Keith**'s Ring enough to where you're comfortable with him having the **Mind's Eye** equipped, I recommend that over his Rituals, but still have him use **Drain Touch** when he needs healed."
                         }
                       ]
                     }
@@ -320,7 +320,7 @@
       },
       {
         "id": 2,
-        "description": "1. After the battle, watch the scenes with Nina and Michelle, then you'll regain control outside of their house.\n2. **Save your game**, then examine the door on the house above you (the one on the right) to find another Lottery Member!\n3. Nothing strange about the ring here.\n4. Make sure to win the Oracle Earrings before continuing on; it increases your max MP 20%!\n5. If you don't win it, reload your last save and try again.\n6. Remember, you need to win something from each member at least once!",
+        "description": "1. After the battle, watch the scenes with **Nina** and **Michelle**, then you'll regain control outside of their house.\n2. **Save your game**, then examine the door on the house above you (the one on the right) to find another Lottery Member!\n3. Nothing strange about the ring here.\n4. Make sure to win the **Oracle Earrings** before continuing on; it increases your max MP 20%!\n5. If you don't win it, reload your last save and try again.\n6. Remember, you need to win something from each member at least once!",
         "type": "story",
         "rewards": [],
         "notes": [
@@ -361,7 +361,7 @@
       },
       {
         "id": 3,
-        "description": "1. Head over to the place where you fought Kevin for a scene.\n2. Once it's over, check the chest to your left for a **Flash Badge**, then examine the upper right corner of the room to find a **Seal of Strength** on the floor above a cart.\n3. Once you're done there, do any shopping and preparation that you want, then leave Bistritz and head to the Blue Castle once again.",
+        "description": "1. Head over to the place where you fought **Kevin** for a scene.\n2. Once it's over, check the chest to your left for a **Flash Badge**, then examine the upper right corner of the room to find a **Seal of Strength** on the floor above a cart.\n3. Once you're done there, do any shopping and preparation that you want, then leave **Bistritz** and head to the **Blue Castle** once again.",
         "type": "loot",
         "rewards": [
           {

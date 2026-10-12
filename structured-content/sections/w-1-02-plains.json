@@ -237,7 +237,7 @@
         "party": [],
         "exp": null,
         "cash": null,
-        "strategy": "Hey, we can win this one!\n\n- Go ahead and use Yuri's Fusion skill to become the **Death Emperor**, then use normal attacks to wipe out the **Raging Tiger**.\n- He's not tough at all, and should take just a couple turns to take out."
+        "strategy": "Hey, we can win this one!\n\n- Go ahead and use **Yuri**'s Fusion skill to become the **Death Emperor**, then use normal attacks to wipe out the **Raging Tiger**.\n- He's not tough at all, and should take just a couple turns to take out."
       }
     ],
     "boss": {
@@ -299,13 +299,13 @@
       },
       {
         "id": 3,
-        "description": "1. Head back and follow the main path west until you find the girl.\n2. Engage in dialogue to name your characters (default names: **Yuri** for the Rude Hero and **Alice** for the Girl In Danger).\n3. Alice joins the party.",
+        "description": "1. Head back and follow the main path west until you find the girl.\n2. Engage in dialogue to name your characters (default names: **Yuri** for the Rude Hero and **Alice** for the Girl In Danger).\n3. **Alice** joins the party.",
         "type": "story",
         "notes": [
           {
             "type": "tutorial",
             "title": "Alice's Starting Equipment",
-            "text": "Alice comes equipped with a **Small Bible**, a **Cotton Blouse**, and a **Bandanna** by default, and also carries the **Pendant** valuable."
+            "text": "**Alice** comes equipped with a **Small Bible**, a **Cotton Blouse**, and a **Bandanna** by default, and also carries the **Pendant** valuable."
           }
         ],
         "rewards": []
@@ -324,7 +324,7 @@
       },
       {
         "id": 5,
-        "description": "Cross southeast to the next area. Alice observes the water level and notes that something must be done with the sluice gate to proceed across.",
+        "description": "Cross southeast to the next area. **Alice** observes the water level and notes that something must be done with the sluice gate to proceed across.",
         "type": "exploration",
         "rewards": []
       },
@@ -343,7 +343,7 @@
       },
       {
         "id": 7,
-        "description": "Retrieve the **Sluice Gate Handle** from one of the two sparkling handle mechanisms. Choose your preferred method:\n1. Southern handle ('Push Ring' — rapid CROSS button taps) awards a **Leather Belt** (1st try), **Thera Seed** (2nd try), or **Thera Leaf** (3rd+ try)\n2. Northern handle ('Normal Ring' — 3 timed ring hits) awards a **Bandanna** (1st try), **Mana Seed** (2nd try), or **Mana Leaf** / **Thera Leaf** (3rd+ try)",
+        "description": "Retrieve the **Sluice Gate Handle** from one of the two sparkling handle mechanisms. Choose your preferred method:\n1. Southern handle ('Push Ring' — rapid CROSS button taps) awards a **Leather Belt** (1st try), **Thera Seed** (2nd try), or **Thera Leaf** (3rd+ try)\n2. Northern handle ('**Normal Ring**' — 3 timed ring hits) awards a **Bandanna** (1st try), **Mana Seed** (2nd try), or **Mana Leaf** / **Thera Leaf** (3rd+ try)",
         "type": "puzzle",
         "notes": [
           {
@@ -368,7 +368,7 @@
       },
       {
         "id": 9,
-        "description": "1. Start backtracking to the previous area.\n2. The party decides to make camp and rest.\n3. Shortly after Alice falls asleep, the mysterious **Fox Face** appears and ambushes Yuri.",
+        "description": "1. Start backtracking to the previous area.\n2. The party decides to make camp and rest.\n3. Shortly after **Alice** falls asleep, the mysterious **Fox Face** appears and ambushes **Yuri**.",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -379,14 +379,14 @@
           {
             "type": "warning",
             "title": "Unwinnable Confrontation",
-            "text": "It is impossible to win this battle against Fox Face. Attack him freely until he unleashes his '!!!' attack, dropping Yuri's HP to 1 and knocking him out."
+            "text": "It is impossible to win this battle against **Fox Face**. Attack him freely until he unleashes his '!!!' attack, dropping **Yuri**'s HP to 1 and knocking him out."
           }
         ],
         "rewards": []
       },
       {
         "id": 10,
-        "description": "1. Yuri awakens in the Graveyard of his soul.\n2. Head north and examine the glowing green tombstone to engage sub-boss **Raging Tiger** (75 HP, Earth).\n3. Defeat him to acquire Yuri's Earth Fusion soul: **Raging Tiger** (Tigerion!).\n4. Open the menu and equip the soul.",
+        "description": "1. **Yuri** awakens in the Graveyard of his soul.\n2. Head north and examine the glowing green tombstone to engage sub-boss **Raging Tiger** (75 HP, Earth).\n3. Defeat him to acquire **Yuri**'s Earth Fusion soul: **Raging Tiger** (Tigerion!).\n4. Open the menu and equip the soul.",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -403,7 +403,7 @@
       },
       {
         "id": 11,
-        "description": "1. Head west and speak with the Masks.\n2. They explain the rules of Malice and force Yuri to defeat his accumulated Malice in a battle against **Evil 4**.\n3. Fuse into **Raging Tiger** and strike with heavy hits to defeat Evil 4 in 1–2 turns, clearing your Malice.",
+        "description": "1. Head west and speak with the Masks.\n2. They explain the rules of Malice and force **Yuri** to defeat his accumulated Malice in a battle against **Evil 4**.\n3. Fuse into **Raging Tiger** and strike with heavy hits to defeat Evil 4 in 1–2 turns, clearing your Malice.",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -414,7 +414,7 @@
           {
             "type": "tutorial",
             "title": "Malice Colors & Graveyard Re-fights",
-            "text": "You can re-challenge Malice incarnations in the Graveyard whenever your Malice meter is within specific color ranges.\n\n- Each victory purges Malice and rewards an item corresponding to your exact Malice value (1–100).\n- Special items are awarded once per threshold; repeat clears at the same value yield a Thera Leaf instead.\n\n*Note:*\n- The game tracks Malice values internally from 1 to 100 without displaying a numerical counter.\n- Thresholds advance at 25, 50, 75, and 100.\n- Early monsters contribute ~1 point each, while stronger enemies give more.",
+            "text": "You can re-challenge Malice incarnations in the Graveyard whenever your Malice meter is within specific color ranges.\n\n- Each victory purges Malice and rewards an item corresponding to your exact Malice value (1–100).\n- Special items are awarded once per threshold; repeat clears at the same value yield a **Thera Leaf** instead.\n\n*Note:*\n- The game tracks Malice values internally from 1 to 100 without displaying a numerical counter.\n- Thresholds advance at 25, 50, 75, and 100.\n- Early monsters contribute ~1 point each, while stronger enemies give more.",
             "badges": [
               {
                 "label": "Evil 1",
@@ -661,7 +661,7 @@
       },
       {
         "id": 12,
-        "description": "1. Head east to exit the Graveyard and reunite with Alice.\n2. From the Save Point, return to the screen with the bridge and river.\n3. Drop into the drained riverbed below the bridge to claim the reward chest corresponding to your handle performance (**Leather Belt**, **Thera Seed**, **Thera Leaf**, **Bandanna**, or **Mana Seed**).",
+        "description": "1. Head east to exit the Graveyard and reunite with **Alice**.\n2. From the Save Point, return to the screen with the bridge and river.\n3. Drop into the drained riverbed below the bridge to claim the reward chest corresponding to your handle performance (**Leather Belt**, **Thera Seed**, **Thera Leaf**, **Bandanna**, or **Mana Seed**).",
         "type": "loot",
         "rewards": [
           {

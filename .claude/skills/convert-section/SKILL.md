@@ -42,6 +42,7 @@ Patch file format: write it with the Write tool, wrapped as `{"guide": {...}}`. 
 - Note boxes: check that every table/box in the canonical text reached the draft (prize tables, side-by-side two-column tables, grids). The scaffold detects side-by-side tables (`| A | B |xx| A | B |`; emitted as one table, left half then right half) but QA does not notice a missing one. Check long bulleted notes and `ALICE's`-style possessives (they can come out as `alice'`) too.
 
 ## 3. Conventions (what the scripts will not do for you)
+- Highlight game terms: after patching, run `scripts/bold_terms.py <id>` (dry run) then `--write`. It bolds every occurrence of characters, bosses/enemies, items/equipment, skills/fusions, statuses, locations and mechanics in prose (step text, notes, boss strategy), using names mined from the appendices plus `scripts/term_extras.json`. Add missed names to `term_extras.json` (`characters`, `skills`, `mechanics`, `groups`...), never to the script. Run it before the QA subagent: it edits the structured file and changes the hash.
 - Source shouting becomes **bold normal case** (`**last opportunity**`), never UPPERCASE; lint's `upper-item` is not to be silenced.
 - A `missable` / `warning` note only when the source states the warning; the inline bold sentence alone is also valid.
 - Choice `outcome` only when the source states it; otherwise omit.

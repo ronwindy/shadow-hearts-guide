@@ -204,7 +204,7 @@
       },
       {
         "id": 2,
-        "description": "As **Alice**, enter the women's restroom, then check both stalls and the mirror. Repeat this again, and then a third time to trigger a battle with Olga.",
+        "description": "As **Alice**, enter the women's restroom, then check both stalls and the mirror. Repeat this again, and then a third time to trigger a battle with **Olga**.",
         "type": "boss",
         "rewards": [],
         "boss": {
@@ -221,7 +221,7 @@
           "party": [],
           "exp": 15000,
           "cash": 13000,
-          "strategy": "- Olga will use normal attacks, Blaze, Rock Storm, Nova, Icy Breath, and Lightning to do decent damage each round, maybe 50-60 HP of damage every round.\n- Watch out if she uses Mind Assault to steal your MP, as you'll want to recover it immediately if she takes too much.\n- Cast Blessed Light rounds one and two, then Cure the next if needed.\n- Blessed Light two rounds, Cure the third.\n- Lather, rinse, repeat.\n- Oh, and don't forget to recover your SP if needed.\n- Not much else you can do since it's just **Alice**."
+          "strategy": "- **Olga** will use normal attacks, **Blaze**, **Rock Storm**, **Nova**, **Icy Breath**, and **Lightning** to do decent damage each round, maybe 50-60 HP of damage every round.\n- Watch out if she uses **Mind Assault** to steal your MP, as you'll want to recover it immediately if she takes too much.\n- Cast **Blessed Light** rounds one and two, then **Cure** the next if needed.\n- **Blessed Light** two rounds, **Cure** the third.\n- Lather, rinse, repeat.\n- Oh, and don't forget to recover your SP if needed.\n- Not much else you can do since it's just **Alice**."
         },
         "encounter": {
           "enemies": [
@@ -243,7 +243,7 @@
       },
       {
         "id": 4,
-        "description": "That's it for Prague, so head on out to the World Map. We're heading to **[W-2-07] Rouen** next.",
+        "description": "That's it for **Prague**, so head on out to the World Map. We're heading to **[W-2-07] Rouen** next.",
         "type": "exploration",
         "rewards": []
       }

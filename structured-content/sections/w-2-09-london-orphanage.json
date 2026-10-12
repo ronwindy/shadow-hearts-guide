@@ -28,9 +28,9 @@
     },
     "route": [],
     "objectives": [
-      "Defeat Night Stalker",
-      "Defeat Jack",
-      "Defeat Mammon"
+      "Defeat **Night Stalker**",
+      "Defeat **Jack**",
+      "Defeat **Mammon**"
     ],
     "items_summary": {
       "obtainable": [
@@ -133,14 +133,14 @@
     "steps": [
       {
         "id": 1,
-        "description": "Enter the Orphanage, then **save** your game on the right. When you're ready, try to go through the western door to trigger a scene and a sub-boss battle.",
+        "description": "Enter the **Orphanage**, then **save** your game on the right. When you're ready, try to go through the western door to trigger a scene and a sub-boss battle.",
         "type": "boss",
         "rewards": [],
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "- If **Yuri** doesn't have his level 2 Fire and Water Fusions yet, I recommend taking the time fighting the Banshees and Larmgelgs here to get them.\n- Having the Fire Fusion will help immensely in the upcoming boss battles.\n- You may want to equip Pocket Watches while fighting the Larmgelgs."
+            "text": "- If **Yuri** doesn't have his level 2 **Fire** and **Water** Fusions yet, I recommend taking the time fighting the **Banshees** and **Larmgelgs** here to get them.\n- Having the **Fire Fusion** will help immensely in the upcoming boss battles.\n- You may want to equip **Pocket Watches** while fighting the **Larmgelgs**."
           }
         ],
         "boss": {
@@ -157,7 +157,7 @@
           "party": [],
           "exp": 4000,
           "cash": 3600,
-          "strategy": "- There's not much to worry about with this guy; other than boosting himself up, his physical attacks do a decent amount of damage, but that's it.\n- Have **Alice** whoever is attacked.\n- Have **Yuri** fuse into Ifrit, using Ignition to boost his attack power, then start wailing on the Night Stalker with physical attacks.\n- Have **Halley** constantly use his Strong Earth attack, which should do pretty decent damage to the wind-based enemy.\n- Have **Alice** keep everyone healed, using Blessed Light when she's not healing."
+          "strategy": "- There's not much to worry about with this guy; other than boosting himself up, his physical attacks do a decent amount of damage, but that's it.\n- Have **Alice** whoever is attacked.\n- Have **Yuri** fuse into **Ifrit**, using **Ignition** to boost his attack power, then start wailing on the **Night Stalker** with physical attacks.\n- Have **Halley** constantly use his **Strong Earth** attack, which should do pretty decent damage to the wind-based enemy.\n- Have **Alice** keep everyone healed, using **Blessed Light** when she's not healing."
         },
         "encounter": {
           "enemies": [
@@ -194,7 +194,7 @@
       },
       {
         "id": 3,
-        "description": "1. Head up the stairs, then go right and down to find an **Eye of Ouroboros**.\n2. Now make your way to the left side of the room, then down to find a **Zodiac Bracelet**.\n3. Next, head into the room against the upper wall, on the left side.\n4. Examine the books on the table in here to do a Normal Ring that spins **really** fast, which will allow you to see the following date: 5, March, 75, so remember \"5375\" for later.\n5. Check the floor in front of the fireplace for a **Lottery Ticket**, then feel free to read the diary on the desk at the bottom of the screen if you like.\n6. Leave the room.",
+        "description": "1. Head up the stairs, then go right and down to find an **Eye of Ouroboros**.\n2. Now make your way to the left side of the room, then down to find a **Zodiac Bracelet**.\n3. Next, head into the room against the upper wall, on the left side.\n4. Examine the books on the table in here to do a **Normal Ring** that spins **really** fast, which will allow you to see the following date: 5, March, 75, so remember \"5375\" for later.\n5. Check the floor in front of the fireplace for a **Lottery Ticket**, then feel free to read the diary on the desk at the bottom of the screen if you like.\n6. Leave the room.",
         "type": "loot",
         "rewards": [
           {
@@ -216,13 +216,13 @@
       },
       {
         "id": 4,
-        "description": "1. Go over to the door on the right upstairs, and it'll ask for a password, so enter \"5375\" from the picture's date to unlock the door.\n2. Check in front of the fireplace in this room to find some **Monk Earrings**, then check the desk above the fireplace for another Normal Ring.\n3. After completing it, read the master's diary to find out what's really been going on around here, then examine the painting to the right of the desk, showing it was done on the following date: 3 July, 54, so remember \"3754\" for the next password.\n4. Leave this room, then **save your game**.",
+        "description": "1. Go over to the door on the right upstairs, and it'll ask for a password, so enter \"5375\" from the picture's date to unlock the door.\n2. Check in front of the fireplace in this room to find some **Monk Earrings**, then check the desk above the fireplace for another **Normal Ring**.\n3. After completing it, read the master's diary to find out what's really been going on around here, then examine the painting to the right of the desk, showing it was done on the following date: 3 July, 54, so remember \"3754\" for the next password.\n4. Leave this room, then **save your game**.",
         "type": "loot",
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "The next boss uses Paralysis, and the one after that uses Petrification, so make sure each party member is wearing either a Zodiac Bracelet or a Crucifix to prevent both."
+            "text": "The next boss uses **Paralysis**, and the one after that uses **Petrification**, so make sure each party member is wearing either a **Zodiac Bracelet** or a **Crucifix** to prevent both."
           }
         ],
         "rewards": [
@@ -235,7 +235,7 @@
       },
       {
         "id": 5,
-        "description": "When you're ready, examine the northern door in the center and input \"3754\", then go inside. Watch the events unfold, and you'll have to take on Jack himself.",
+        "description": "When you're ready, examine the northern door in the center and input \"3754\", then go inside. Watch the events unfold, and you'll have to take on **Jack** himself.",
         "type": "boss",
         "rewards": [],
         "boss": {
@@ -257,16 +257,16 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "Jack will mainly just use his Paralysis attack against you, though you should be guarded by a Zodiac Bracelet or a Crucifix.",
+                  "text": "**Jack** will mainly just use his **Paralysis** attack against you, though you should be guarded by a **Zodiac Bracelet** or a **Crucifix**.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "He will also use pretty strong physical attacks, and his Slash attack, which will do MAJOR damage to one party member, so make sure to stay healed."
+                          "text": "He will also use pretty strong physical attacks, and his **Slash** attack, which will do MAJOR damage to one party member, so make sure to stay healed."
                         },
                         {
-                          "text": "He will use Thera Seeds when his HP starts to drop."
+                          "text": "He will use **Thera Seeds** when his HP starts to drop."
                         }
                       ]
                     }
@@ -276,16 +276,16 @@
                   "text": "When fighting, keep in mind that you have a harder boss battle right after this, with no chance to heal."
                 },
                 {
-                  "text": "Have **Yuri** fuse into Ifrit and use his Ignition to boost his attack, then have him attack as normal.",
+                  "text": "Have **Yuri** fuse into **Ifrit** and use his **Ignition** to boost his attack, then have him attack as normal.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Have **Halley** cast Strong Earth continuously (not Aqua Blade, since Jack is water based) for the whole battle, unless he's learned Air Shot by now, then by all means, use that."
+                          "text": "Have **Halley** cast **Strong Earth** continuously (not **Aqua Blade**, since **Jack** is water based) for the whole battle, unless he's learned **Air Shot** by now, then by all means, use that."
                         },
                         {
-                          "text": "**Alice** should be healing as needed, using Blessed Light when no healing is needed."
+                          "text": "**Alice** should be healing as needed, using **Blessed Light** when no healing is needed."
                         }
                       ]
                     }
@@ -367,32 +367,32 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "Mammon's normal attacks will hit for pretty decent damage, but its biggest threat is its Petrification attack, which hopefully you've prevented with either a Zodiac Bracelet or a Crucifix, though it'll still do a decent amount of damage, even if you did.",
+                  "text": "**Mammon**'s normal attacks will hit for pretty decent damage, but its biggest threat is its **Petrification** attack, which hopefully you've prevented with either a **Zodiac Bracelet** or a **Crucifix**, though it'll still do a decent amount of damage, even if you did.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "It will also use a Shockwave spell, doing quite a bit a damage to your entire party, as well as Needlerain, a strong attack to just one party member."
+                          "text": "It will also use a **Shockwave** spell, doing quite a bit a damage to your entire party, as well as **Needlerain**, a strong attack to just one party member."
                         },
                         {
-                          "text": "Its Howling skill will replenish its HP by 500+ once it's near dying, but lucky for you, **Yuri**'s a powerhouse and will take that away and then some in one round."
+                          "text": "Its **Howling** skill will replenish its HP by 500+ once it's near dying, but lucky for you, **Yuri**'s a powerhouse and will take that away and then some in one round."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "As usual, have **Yuri** fuse into Ifrit and use his Ignition to boost his attack, then have him attack as normal.",
+                  "text": "As usual, have **Yuri** fuse into **Ifrit** and use his **Ignition** to boost his attack, then have him attack as normal.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Have **Halley** use his Air Edge on **Yuri** to increase **Yuri**'s damage output, then have him cast Aqua Blade for the remainder of the battle, unless he's learned Air Shot by now, then by all means, use that."
+                          "text": "Have **Halley** use his **Air Edge** on **Yuri** to increase **Yuri**'s damage output, then have him cast **Aqua Blade** for the remainder of the battle, unless he's learned **Air Shot** by now, then by all means, use that."
                         },
                         {
-                          "text": "**Alice** should be healing as needed, using Blessed Light when no healing is needed."
+                          "text": "**Alice** should be healing as needed, using **Blessed Light** when no healing is needed."
                         }
                       ]
                     }
@@ -410,13 +410,13 @@
       },
       {
         "id": 7,
-        "description": "After the battle, you'll watch a quick scene, then you'll be back at the London Rats' hideout. After a few more events, you'll regain control.",
+        "description": "After the battle, you'll watch a quick scene, then you'll be back at the **London Rats**' hideout. After a few more events, you'll regain control.",
         "type": "story",
         "rewards": []
       },
       {
         "id": 8,
-        "description": "1. Make your way all the way downstairs, saving if you wish.\n2. Talk to little Joshua down here, who will ask **Halley** if he can have his slingshot.\n3. Answer with [1] Sure. don't need it.",
+        "description": "1. Make your way all the way downstairs, saving if you wish.\n2. Talk to little **Joshua** down here, who will ask **Halley** if he can have his slingshot.\n3. Answer with [1] Sure. don't need it.",
         "type": "dialogue",
         "choices": [
           {
@@ -440,7 +440,7 @@
       },
       {
         "id": 9,
-        "description": "- There's one more item to be had at the Orphanage, so leave Old Castle Street and go back to the Orphanage one last time.\n- Go into the center room where you fought Jack and check behind the wire grating on the right; you'll find the **Draze**, a better gun for **Margarete**.",
+        "description": "- There's one more item to be had at the **Orphanage**, so leave **Old Castle Street** and go back to the **Orphanage** one last time.\n- Go into the center room where you fought **Jack** and check behind the wire grating on the right; you'll find the **Draze**, a better gun for **Margarete**.",
         "type": "loot",
         "rewards": [
           {
@@ -452,13 +452,13 @@
       },
       {
         "id": 10,
-        "description": "That's it for events within the London city limits for now, so head back out to the Britain section of the World Map, then make your way to the Calios Mental Hospital.",
+        "description": "That's it for events within the **London** city limits for now, so head back out to the Britain section of the World Map, then make your way to the **Calios Mental Hospital**.",
         "type": "exploration",
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "As before, I recommend bringing **Alice** with you, mainly because the main boss the next boss is a Dark class. You can change your party with Meiyuan on Old Castle Street to whomever you want, if you wish."
+            "text": "As before, I recommend bringing **Alice** with you, mainly because the main boss the next boss is a Dark class. You can change your party with **Meiyuan** on **Old Castle Street** to whomever you want, if you wish."
           }
         ],
         "rewards": []

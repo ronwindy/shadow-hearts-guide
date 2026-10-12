@@ -157,7 +157,7 @@
       },
       {
         "id": 2,
-        "description": "Even though the Temple Ruins \"collapsed\", for some reason you can still go back and go through all three of the mazes. As I mentioned before, the three areas of the Temple Ruins hold an enemy of each class.",
+        "description": "Even though the **Temple Ruins** \"collapsed\", for some reason you can still go back and go through all three of the mazes. As I mentioned before, the three areas of the **Temple Ruins** hold an enemy of each class.",
         "type": "exploration",
         "rewards": []
       },
@@ -181,7 +181,7 @@
       },
       {
         "id": 6,
-        "description": "- If you're wanting to grind for levels while doing this and want a challenge, then you may want to go to the Kowloon Fortress. It also has an enemy of each class, but they don't come in groups like they do at the Temple Ruins. They are also harder, so it's up to you.",
+        "description": "- If you're wanting to grind for levels while doing this and want a challenge, then you may want to go to the Kowloon Fortress. It also has an enemy of each class, but they don't come in groups like they do at the **Temple Ruins**. They are also harder, so it's up to you.",
         "type": "exploration",
         "rewards": []
       },
@@ -222,7 +222,7 @@
           "party": [],
           "exp": null,
           "cash": null,
-          "strategy": "- Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy.\n- Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa.\n- If you have the Fusion with the class opposite of one already, fuse into that monster and use its highest powered magic spell against them for major damage.\n- If you don't, then just fuse into the Raging Tiger and wail on them with normal attacks for a few rounds.\n- Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
+          "strategy": "- Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy.\n- Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa.\n- If you have the Fusion with the class opposite of one already, fuse into that monster and use its highest powered magic spell against them for major damage.\n- If you don't, then just fuse into the **Raging Tiger** and wail on them with normal attacks for a few rounds.\n- Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
         },
         "encounter": {
           "enemies": [

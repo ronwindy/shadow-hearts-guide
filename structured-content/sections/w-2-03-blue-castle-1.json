@@ -110,7 +110,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. Go into the dark area in the set of trees to your left and look around; you should find a **Cosmic Bracelet** behind a tree there.\n2. Once you have it, head all the way north to the next area.\n3. Hug the right wall as you go north to be in a small area with Meiyuan and a chest containing a **Thera Seed**.\n4. Check just to the west of the other chest to find another chest, this one with a **Star Swallow**.",
+        "description": "1. Go into the dark area in the set of trees to your left and look around; you should find a **Cosmic Bracelet** behind a tree there.\n2. Once you have it, head all the way north to the next area.\n3. Hug the right wall as you go north to be in a small area with **Meiyuan** and a chest containing a **Thera Seed**.\n4. Check just to the west of the other chest to find another chest, this one with a **Star Swallow**.",
         "type": "loot",
         "rewards": [
           {
@@ -245,7 +245,7 @@
       },
       {
         "id": 7,
-        "description": "1. Unless you'd like to fight some more and get used to **Keith**'s Ring, leave the Blue Castle.\n2. Save on the World Map, then enter Bistritz once again.",
+        "description": "1. Unless you'd like to fight some more and get used to **Keith**'s Ring, leave the **Blue Castle**.\n2. Save on the World Map, then enter **Bistritz** once again.",
         "type": "navigation",
         "rewards": []
       }

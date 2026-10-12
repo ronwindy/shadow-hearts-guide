@@ -209,10 +209,10 @@
             "list": "bullet",
             "items": [
               {
-                "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the Raging Tiger."
+                "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
               },
               {
-                "text": "Its Shockwave attack will do decent damage to each character, while its Flying Stones attack will do major damage, but to only one character.",
+                "text": "Its **Shockwave** attack will do decent damage to each character, while its **Flying Stones** attack will do major damage, but to only one character.",
                 "children": [
                   {
                     "list": "bullet",
@@ -225,29 +225,29 @@
                 ]
               },
               {
-                "text": "If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have him fuse into the Death Emperor.",
+                "text": "If you have the **Tornado** Fusion, have **Yuri** fuse into that; otherwise, have him fuse into the **Death Emperor**.",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
-                        "text": "Use his Wind Shear/Dark Messenger Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage."
+                        "text": "Use his **Wind Shear**/**Dark Messenger** Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage."
                       }
                     ]
                   }
                 ]
               },
               {
-                "text": "Have Margarete on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on Yuri and Zhuzhen to keep their MP up.",
+                "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and Zhuzhen to keep their MP up.",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
-                        "text": "Have Zhuzhen use his Ogre Flamedance continuously, stopping to heal if someone needs it."
+                        "text": "Have Zhuzhen use his **Ogre Flamedance** continuously, stopping to heal if someone needs it."
                       },
                       {
-                        "text": "Yuri should be doing the most damage if he has the Tornado Fusion, so keep his MP up while keeping everyone else healed."
+                        "text": "**Yuri** should be doing the most damage if he has the **Tornado** Fusion, so keep his MP up while keeping everyone else healed."
                       }
                     ]
                   }
@@ -395,7 +395,7 @@
           {
             "type": "warning",
             "title": "Remove Alice's equipment",
-            "text": "Make sure to remove any useful equipment from Alice, as she'll be temporarily leaving your party. Especially the Pedometer, if she has it."
+            "text": "Make sure to remove any useful equipment from **Alice**, as she'll be temporarily leaving your party. Especially the **Pedometer**, if she has it."
           }
         ],
         "rewards": [
@@ -435,7 +435,7 @@
           {
             "type": "tip",
             "title": "Turtle search prizes",
-            "text": "If you're not successful at getting a Lottery Ticket, just reload and try again. He also says that if you come here again tomorrow, something good will happen, so don't forget!",
+            "text": "If you're not successful at getting a **Lottery Ticket**, just reload and try again. He also says that if you come here again tomorrow, something good will happen, so don't forget!",
             "table": {
               "headers": [
                 "Attempts",
@@ -493,7 +493,7 @@
           {
             "type": "tip",
             "title": "Pirate and Brigand Earrings",
-            "text": "- The shop here sells both the Pirate and Brigand Earrings.\n- The Pirate Earrings increase your chances of getting an item after a battle, while the Brigand Earrings increase the amount of money you receive after the battle.\n- You may want to buy some Brigand Earrings and equip them now, they'll pay for themselves in no time!\n- Make a note that the effect does stack for each party member that also is wearing them, so make sure to have the whole party wear some when you need to grind for some cash!\n- These can only be bought in Asia, so make sure to get some when you have the extra cash."
+            "text": "- The shop here sells both the Pirate and **Brigand Earrings**.\n- The **Pirate Earrings** increase your chances of getting an item after a battle, while the **Brigand Earrings** increase the amount of money you receive after the battle.\n- You may want to buy some **Brigand Earrings** and equip them now, they'll pay for themselves in no time!\n- Make a note that the effect does stack for each party member that also is wearing them, so make sure to have the whole party wear some when you need to grind for some cash!\n- These can only be bought in Asia, so make sure to get some when you have the extra cash."
           }
         ],
         "rewards": [
@@ -548,12 +548,12 @@
           {
             "type": "warning",
             "title": "Prepare for the next boss",
-            "text": "- The next boss not only is very difficult, but he is also an Earth class.\n- By now, you should be very close to obtaining Yuri's level 1 Wind Fusion, Tornado. The Water Creepers in Dalian are a Wind class, so fight enough battles with them until you are able to go to the Graveyard to challenge Tornado.\n- Also, make sure that you are at least level 10 before challenging the next boss, or you'll have a pretty rough time against him."
+            "text": "- The next boss not only is very difficult, but he is also an Earth class.\n- By now, you should be very close to obtaining **Yuri**'s level 1 Wind Fusion, **Tornado**. The **Water Creepers** in **Dalian** are a Wind class, so fight enough battles with them until you are able to go to the Graveyard to challenge **Tornado**.\n- Also, make sure that you are at least level 10 before challenging the next boss, or you'll have a pretty rough time against him."
           },
           {
             "type": "tip",
             "title": "Frog Gods and the Light Fusion",
-            "text": "- You may also want to take the time to fight more of the Frog Gods to build up your points for your Light Fusion.\n- They come in groups of three, so it wouldn't take very long, and I recommend doing it.\n- Just be careful not to get paralyzed."
+            "text": "- You may also want to take the time to fight more of the **Frog Gods** to build up your points for your Light Fusion.\n- They come in groups of three, so it wouldn't take very long, and I recommend doing it.\n- Just be careful not to get paralyzed."
           }
         ],
         "rewards": []
@@ -625,10 +625,10 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the Raging Tiger."
+                  "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
                 },
                 {
-                  "text": "Its Shockwave attack will do decent damage to each character, while its Flying Stones attack will do major damage, but to only one character.",
+                  "text": "Its **Shockwave** attack will do decent damage to each character, while its **Flying Stones** attack will do major damage, but to only one character.",
                   "children": [
                     {
                       "list": "bullet",
@@ -641,29 +641,29 @@
                   ]
                 },
                 {
-                  "text": "If you have the Tornado Fusion, have Yuri fuse into that; otherwise, have him fuse into the Death Emperor.",
+                  "text": "If you have the **Tornado** Fusion, have **Yuri** fuse into that; otherwise, have him fuse into the **Death Emperor**.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Use his Wind Shear/Dark Messenger Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage."
+                          "text": "Use his **Wind Shear**/**Dark Messenger** Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "Have Margarete on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on Yuri and Zhuzhen to keep their MP up.",
+                  "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and Zhuzhen to keep their MP up.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Have Zhuzhen use his Ogre Flamedance continuously, stopping to heal if someone needs it."
+                          "text": "Have Zhuzhen use his **Ogre Flamedance** continuously, stopping to heal if someone needs it."
                         },
                         {
-                          "text": "Yuri should be doing the most damage if he has the Tornado Fusion, so keep his MP up while keeping everyone else healed."
+                          "text": "**Yuri** should be doing the most damage if he has the **Tornado** Fusion, so keep his MP up while keeping everyone else healed."
                         }
                       ]
                     }
@@ -677,7 +677,7 @@
           {
             "type": "warning",
             "title": "After the battle",
-            "text": "Remove all equipment from both Margarete and Zhuzhen after the battle, as they will both be temporarily unavailable for battle in the next few events."
+            "text": "Remove all equipment from both **Margarete** and Zhuzhen after the battle, as they will both be temporarily unavailable for battle in the next few events."
           }
         ],
         "rewards": [
@@ -809,14 +809,14 @@
           {
             "type": "missable",
             "title": "Win the Pocket Watch",
-            "text": "- Make sure to win the Pocket Watch before continuing on; it gives the wearer resistance to Judgment Ring anomalies in battle.\n- If you don't win it, reload your last save and try again.\n- Remember, you need to win something from each member at least once!"
+            "text": "- Make sure to win the **Pocket Watch** before continuing on; it gives the wearer resistance to **Judgment Ring** anomalies in battle.\n- If you don't win it, reload your last save and try again.\n- Remember, you need to win something from each member at least once!"
           }
         ],
         "rewards": []
       },
       {
         "id": 13,
-        "description": "1. **Save** your game once again, then head over to the area with the dock and pen once again.\n2. If you talk to the **Man with Turtle** once again, he'll offer to let you play in his leaf field for 300 cash.\n3. You just have to take his hoe and dig up three spots in the field, and anything you find becomes yours. With each dig though, you'll have to complete a Normal Ring.\n4. Just like searching for the turtle before, you can win prizes! They're not set like the previous game; prizes include a **Thera Leaf**, a **Mana Leaf**, a **Pure Leaf**, or a **Third Key**!",
+        "description": "1. **Save** your game once again, then head over to the area with the dock and pen once again.\n2. If you talk to the **Man with Turtle** once again, he'll offer to let you play in his leaf field for 300 cash.\n3. You just have to take his hoe and dig up three spots in the field, and anything you find becomes yours. With each dig though, you'll have to complete a **Normal Ring**.\n4. Just like searching for the turtle before, you can win prizes! They're not set like the previous game; prizes include a **Thera Leaf**, a **Mana Leaf**, a **Pure Leaf**, or a **Third Key**!",
         "type": "loot",
         "rewards": [
           {

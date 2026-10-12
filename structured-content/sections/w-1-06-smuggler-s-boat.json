@@ -167,7 +167,7 @@
             "list": "bullet",
             "items": [
               {
-                "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**).",
+                "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual **Paralysis** effect with your **Rosewood Bracelets**).",
                 "children": [
                   {
                     "list": "bullet",
@@ -183,13 +183,13 @@
                 "text": "Start off by healing, if needed."
               },
               {
-                "text": "As with the last battle, if you have **Heaven's Fiend**, have Yuri use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
+                "text": "As with the last battle, if you have **Heaven's Fiend**, have **Yuri** use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
-                        "text": "Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**."
+                        "text": "**Alice** should cast **Holy Edge** on **Margarete** first, so she has Light-based attacks, then she should cast **Blessed Light**."
                       },
                       {
                         "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
@@ -202,7 +202,7 @@
                 ]
               },
               {
-                "text": "If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
+                "text": "If you don't have **Heaven's Fiend**, have **Yuri** fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
                 "children": [
                   {
                     "list": "bullet",
@@ -211,10 +211,10 @@
                         "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
                       },
                       {
-                        "text": "Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY."
+                        "text": "**Alice** should cast **Holy Edge** on **Yuri** first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY."
                       },
                       {
-                        "text": "Margaret will be the primary healer once again, as Yuri and Alice should be shelling out some pretty wicked damage to Li Li."
+                        "text": "Margaret will be the primary healer once again, as **Yuri** and **Alice** should be shelling out some pretty wicked damage to **Li Li**."
                       },
                       {
                         "text": "Use **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low, and you should be fine."
@@ -350,7 +350,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. When you gain control of a very queasy Yuri, open the chest on the left side of the room for a **Rosewood Bracelet**.\n2. Go up the stairs to the right for some dialogue with Margarete, then go down and left, examining the door to the wheelhouse for a scene.\n3. Afterward, head left a bit more, then check the top barrel to the upper-right for a **Witch's Broth**.\n4. Move left and talk to Zhuzhen, then make your way back below deck to talk with Alice for a long scene.",
+        "description": "1. When you gain control of a very queasy **Yuri**, open the chest on the left side of the room for a **Rosewood Bracelet**.\n2. Go up the stairs to the right for some dialogue with **Margarete**, then go down and left, examining the door to the wheelhouse for a scene.\n3. Afterward, head left a bit more, then check the top barrel to the upper-right for a **Witch's Broth**.\n4. Move left and talk to Zhuzhen, then make your way back below deck to talk with **Alice** for a long scene.",
         "type": "loot",
         "rewards": [
           {
@@ -367,13 +367,13 @@
       },
       {
         "id": 2,
-        "description": "1. You'll regain control under the deck as just Yuri. Save your game, then go back out on deck.\n2. Head inside the wheelhouse and take out the group of monsters here.\n3. Before leaving, check the floor near the wheel and the blanket hanging for a **Lottery Ticket**.\n4. Go back outside and downstairs to take out a second group of enemies.\n5. Once they're finished, go back out on the deck and talk to Zhuzhen to fight one last group.",
+        "description": "1. You'll regain control under the deck as just **Yuri**. Save your game, then go back out on deck.\n2. Head inside the wheelhouse and take out the group of monsters here.\n3. Before leaving, check the floor near the wheel and the blanket hanging for a **Lottery Ticket**.\n4. Go back outside and downstairs to take out a second group of enemies.\n5. Once they're finished, go back out on the deck and talk to Zhuzhen to fight one last group.",
         "type": "exploration",
         "notes": [
           {
             "type": "tip",
             "title": "Level up for the fusions",
-            "text": "It should be fairly easy to obtain both your level 1 Fire and Water Fusions here, since the enemies come in groups of 3 and 4. I strongly recommend doing so, as it won't take long at all. Also, make sure Alice is at least level 11 so that she learns the Blessed Light spell."
+            "text": "It should be fairly easy to obtain both your level 1 Fire and Water Fusions here, since the enemies come in groups of 3 and 4. I strongly recommend doing so, as it won't take long at all. Also, make sure **Alice** is at least level 11 so that she learns the **Blessed Light** spell."
           }
         ],
         "rewards": [
@@ -445,7 +445,7 @@
           {
             "type": "missable",
             "title": "Win the Iron Clogs",
-            "text": "The Iron Clogs slow down the indicator speed on your Judgment Ring, but they also lower your Agl by 15 points. Make sure to win them before continuing on."
+            "text": "The **Iron Clogs** slow down the indicator speed on your **Judgment Ring**, but they also lower your Agl by 15 points. Make sure to win them before continuing on."
           },
           {
             "type": "tip",
@@ -543,20 +543,20 @@
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Her other attacks are **Paralysis** (which does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**) and a normal attack, which you shouldn't need to worry about."
+                          "text": "Her other attacks are **Paralysis** (which does decent damage, but you should be guarded against the actual **Paralysis** effect with your **Rosewood Bracelets**) and a normal attack, which you shouldn't need to worry about."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "If you have it, have Yuri use **Heaven's Fiend** and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
+                  "text": "If you have it, have **Yuri** use **Heaven's Fiend** and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**."
+                          "text": "**Alice** should cast **Holy Edge** on **Margarete** first, so she has Light-based attacks, then she should cast **Blessed Light**."
                         },
                         {
                           "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
@@ -569,7 +569,7 @@
                   ]
                 },
                 {
-                  "text": "If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
+                  "text": "If you don't have **Heaven's Fiend**, have **Yuri** fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
                   "children": [
                     {
                       "list": "bullet",
@@ -578,7 +578,7 @@
                           "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
                         },
                         {
-                          "text": "Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light**."
+                          "text": "**Alice** should cast **Holy Edge** on **Yuri** first, so he has Light-based attacks, then she should cast **Blessed Light**."
                         },
                         {
                           "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
@@ -663,7 +663,7 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual Paralysis effect with your **Rosewood Bracelets**).",
+                  "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual **Paralysis** effect with your **Rosewood Bracelets**).",
                   "children": [
                     {
                       "list": "bullet",
@@ -679,13 +679,13 @@
                   "text": "Start off by healing, if needed."
                 },
                 {
-                  "text": "As with the last battle, if you have **Heaven's Fiend**, have Yuri use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
+                  "text": "As with the last battle, if you have **Heaven's Fiend**, have **Yuri** use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Alice should cast **Holy Edge** on Margarete first, so she has Light-based attacks, then she should cast **Blessed Light**."
+                          "text": "**Alice** should cast **Holy Edge** on **Margarete** first, so she has Light-based attacks, then she should cast **Blessed Light**."
                         },
                         {
                           "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
@@ -698,7 +698,7 @@
                   ]
                 },
                 {
-                  "text": "If you don't have **Heaven's Fiend**, have Yuri fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
+                  "text": "If you don't have **Heaven's Fiend**, have **Yuri** fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
                   "children": [
                     {
                       "list": "bullet",
@@ -707,10 +707,10 @@
                           "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
                         },
                         {
-                          "text": "Alice should cast **Holy Edge** on Yuri first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY."
+                          "text": "**Alice** should cast **Holy Edge** on **Yuri** first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY."
                         },
                         {
-                          "text": "Margaret will be the primary healer once again, as Yuri and Alice should be shelling out some pretty wicked damage to Li Li."
+                          "text": "Margaret will be the primary healer once again, as **Yuri** and **Alice** should be shelling out some pretty wicked damage to **Li Li**."
                         },
                         {
                           "text": "Use **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low, and you should be fine."

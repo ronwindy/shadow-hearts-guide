@@ -418,7 +418,7 @@
           {
             "type": "tutorial",
             "title": "Lottery Member No. 15",
-            "text": "- There are a very limited amount of Lottery Tickets in the game (30 to be exact), so (FOR NOW) I only recommend playing each person's lottery ONCE, and that is to get the item in RED.\n- You MUST win a prize from each member's game once if you want to be able to participate in EVERY member's lottery, including the chairman's, so try not to miss any!",
+            "text": "- There are a very limited amount of **Lottery Tickets** in the game (30 to be exact), so (FOR NOW) I only recommend playing each person's lottery ONCE, and that is to get the item in RED.\n- You MUST win a prize from each member's game once if you want to be able to participate in EVERY member's lottery, including the chairman's, so try not to miss any!",
             "table": {
               "headers": [
                 "Color",
@@ -465,7 +465,7 @@
           {
             "type": "missable",
             "title": "Win the Jade Lariat",
-            "text": "Make sure to win the Jade Lariat before continuing on; it widens your Hit Area on your Ring, it's well worth it! If you don't win it, reload your last save and try again."
+            "text": "Make sure to win the **Jade Lariat** before continuing on; it widens your Hit Area on your Ring, it's well worth it! If you don't win it, reload your last save and try again."
           }
         ],
         "rewards": []
