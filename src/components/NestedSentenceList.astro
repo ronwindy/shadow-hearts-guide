@@ -1,0 +1,41 @@
+---
+import { renderHighlights } from '../lib/markup';
+import type { RichList } from '../lib/markup';
+
+interface Props {
+  /** Verbatim sentences regrouped into nested bullets (max 3 levels). */
+  list: RichList;
+  class?: string;
+  /** Nesting depth (0 = top level); picks the bullet glyph. */
+  level?: number;
+}
+
+const { list, class: className = '', level = 0 } = Astro.props;
+---
+
+<ul class:list={[`sentence-list gothic-bullets gothic-l${Math.min(level, 2)} text-base text-slate-300 leading-relaxed`, className]}>
+  {list.items.map((item) => (
+    <li>
+      <span set:html={renderHighlights(item.text)} />
+      {item.children?.map((child) => (
+        <Astro.self list={child} level={level + 1} />
+      ))}
+    </li>
+  ))}
+</ul>
+
+<style>
+  .sentence-list > li {
+    margin-top: 0.4rem;
+  }
+  .sentence-list > li:first-child {
+    margin-top: 0;
+  }
+  /* Nested levels: a faint gold guide line so the hierarchy reads at a glance. */
+  .sentence-list .sentence-list {
+    margin-top: 0.4rem;
+    margin-left: 0.3rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid rgba(212, 175, 55, 0.25);
+  }
+</style>

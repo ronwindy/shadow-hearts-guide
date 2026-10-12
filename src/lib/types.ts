@@ -1,6 +1,6 @@
 // Centralized type definitions for Shadow Hearts Guide
 
-import type { RichText } from './markup';
+import type { RichList, RichText } from './markup';
 
 export interface GuideMetadata {
   game?: string;
@@ -326,6 +326,11 @@ export interface WikiTextSection {
   notes?: string[];
   image?: WikiImage;
   paragraphs: string[];
+  /**
+   * Optional presentation outline: the section's sentences (verbatim, source order) regrouped
+   * into a nested bullet list, max 3 levels. When present, `paragraphs` is not rendered.
+   */
+  outline?: RichList;
   /** Bullet items; `lead` is the opening words of `text` rendered in bold, `rest` is the remainder. */
   items?: Array<{
     lead: string;
@@ -354,6 +359,8 @@ export interface WikiTextSection {
 export interface WikiCharacter {
   name: string;
   text: string;
+  /** Optional nested-bullet regrouping of `text` (verbatim, source order); when present, `text` is not rendered. */
+  outline?: RichList;
   portrait?: WikiImage;
 }
 

@@ -125,14 +125,160 @@
         "title": "Malice",
         "paragraphs": [
           "**Malice** in **Shadow Hearts** is the vengeance of the enemies that the party has killed. **Malice** accumulates every time the player finishes a battle. Most enemies give one point of malice while bosses give higher amounts. **Yuri** possesses an accessory called a **Talisman** that can display how much malice has accumulated. It changes color from Dark Blue (lowest) to Red (maximum). Once it has reached the maximum, the door to the dark side opens and the **Grim Reaper** is summoned to the real world. The **Grim Reaper** manifests itself as the one **Yuri** fears the most. Once this occurs, the party will randomly encounter the **Grim Reaper** forcing **Yuri** to fight him alone. To clear the malice the player must go into the **Graveyard** in **Yuri**’s mental realm. Once inside, there are four masks (Sword, Grail, Staff, and Gold) that will allow the player to fight a monster to clear the malice. This monster is a manifestation of the accumulated malice. Depending on the amount of malice, the monster will be different."
-        ]
+        ],
+        "outline": {
+          "list": "bullet",
+          "items": [
+            {
+              "text": "**Malice** in **Shadow Hearts** is the vengeance of the enemies that the party has killed.",
+              "children": [
+                {
+                  "list": "bullet",
+                  "items": [
+                    {
+                      "text": "**Malice** accumulates every time the player finishes a battle.",
+                      "children": [
+                        {
+                          "list": "bullet",
+                          "items": [
+                            {
+                              "text": "Most enemies give one point of malice while bosses give higher amounts."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "text": "**Yuri** possesses an accessory called a **Talisman** that can display how much malice has accumulated.",
+                      "children": [
+                        {
+                          "list": "bullet",
+                          "items": [
+                            {
+                              "text": "It changes color from Dark Blue (lowest) to Red (maximum)."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "Once it has reached the maximum, the door to the dark side opens and the **Grim Reaper** is summoned to the real world.",
+              "children": [
+                {
+                  "list": "bullet",
+                  "items": [
+                    {
+                      "text": "The **Grim Reaper** manifests itself as the one **Yuri** fears the most.",
+                      "children": [
+                        {
+                          "list": "bullet",
+                          "items": [
+                            {
+                              "text": "Once this occurs, the party will randomly encounter the **Grim Reaper** forcing **Yuri** to fight him alone."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "To clear the malice the player must go into the **Graveyard** in **Yuri**’s mental realm.",
+              "children": [
+                {
+                  "list": "bullet",
+                  "items": [
+                    {
+                      "text": "Once inside, there are four masks (Sword, Grail, Staff, and Gold) that will allow the player to fight a monster to clear the malice.",
+                      "children": [
+                        {
+                          "list": "bullet",
+                          "items": [
+                            {
+                              "text": "This monster is a manifestation of the accumulated malice."
+                            },
+                            {
+                              "text": "Depending on the amount of malice, the monster will be different."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "shopping",
         "title": "Shopping",
         "paragraphs": [
           "Shopping in **Shadow Hearts** is similar to most RPGs. The player can buy items or equipment using the in-game currency, **Cash**. The element that sets shopping in **Shadow Hearts** apart from other games is the use of the **Judgment Ring**. Throughout the course of the game, the player can collect certain **Guild Cards** to attain different ranks. Once the player has a card, they are automatically given an option to get a discount when buying or a price rise when selling. By collecting different guild cards, the player can receive different privileges. Once the player chooses to receive a discount a ring with three **Hit Areas** is presented. To be successful, all three hit areas must be hit. Depending on the item being bought or sold, the size of the hit areas and the speed of the needle changes. When the player aims for higher discount or price raise rates, they must complete individual rings for each level."
-        ]
+        ],
+        "outline": {
+          "list": "bullet",
+          "items": [
+            {
+              "text": "Shopping in **Shadow Hearts** is similar to most RPGs.",
+              "children": [
+                {
+                  "list": "bullet",
+                  "items": [
+                    {
+                      "text": "The player can buy items or equipment using the in-game currency, **Cash**."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "The element that sets shopping in **Shadow Hearts** apart from other games is the use of the **Judgment Ring**."
+            },
+            {
+              "text": "Throughout the course of the game, the player can collect certain **Guild Cards** to attain different ranks.",
+              "children": [
+                {
+                  "list": "bullet",
+                  "items": [
+                    {
+                      "text": "Once the player has a card, they are automatically given an option to get a discount when buying or a price rise when selling."
+                    },
+                    {
+                      "text": "By collecting different guild cards, the player can receive different privileges."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "Once the player chooses to receive a discount a ring with three **Hit Areas** is presented.",
+              "children": [
+                {
+                  "list": "bullet",
+                  "items": [
+                    {
+                      "text": "To be successful, all three hit areas must be hit."
+                    },
+                    {
+                      "text": "Depending on the item being bought or sold, the size of the hit areas and the speed of the needle changes."
+                    },
+                    {
+                      "text": "When the player aims for higher discount or price raise rates, they must complete individual rings for each level."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   },
@@ -145,6 +291,89 @@
           "file": "characters/Yuri.webp",
           "alt": "Yuri Volte Hyuga",
           "caption": "Yuri Volte Hyuga"
+        },
+        "outline": {
+          "list": "bullet",
+          "items": [
+            {
+              "text": "**Yuri Volte Hyuga** (Urmnaf \"Uru\" Bort Hyuga, ウルムナフ・ボルテ・ヒューガ, Urumunafu Borute Hyūga in the Japanese version) is the main protagonist of the game and was born in **Katsuragi** in 1889 to a Japanese father, **Ben Hyuga**, and a Russian mother, **Anne Hyuga**.",
+              "children": [
+                {
+                  "list": "bullet",
+                  "items": [
+                    {
+                      "text": "An anti-hero, **Yuri** speaks his mind, is often impolite, and is reluctant to accept his special abilities.",
+                      "children": [
+                        {
+                          "list": "bullet",
+                          "items": [
+                            {
+                              "text": "Indeed, he is called \"Rude Hero\" before his name is revealed to the player."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "text": "At the beginning of the game it is clear that his actions are influenced by a mysterious voice.",
+                      "children": [
+                        {
+                          "list": "bullet",
+                          "items": [
+                            {
+                              "text": "Although he would rather ignore the voice, he obeys its commands mainly for the thrill of fighting monsters."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "Once he meets **Alice Elliot** his attitude begins to change, although he remains troubled about his fusion powers.",
+              "children": [
+                {
+                  "list": "bullet",
+                  "items": [
+                    {
+                      "text": "His desire to change is fueled further when he discovers **Alice** had sacrificed her soul to save him."
+                    },
+                    {
+                      "text": "He is additionally motivated by the memory of his father, who fought hard and died protecting the world."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "text": "A **Harmonixer**, he possesses the powers of **Fusion**, which he inherited from his father.",
+              "children": [
+                {
+                  "list": "bullet",
+                  "items": [
+                    {
+                      "text": "These powers were awakened in his childhood when zombies attacked his home, and **Yuri**'s mother died trying to protect him."
+                    },
+                    {
+                      "text": "By fusing into elemental and non-elemental demons, **Yuri** gains new abilities in battles.",
+                      "children": [
+                        {
+                          "list": "bullet",
+                          "items": [
+                            {
+                              "text": "When he is not using his fusions, he fights with knuckle-mounted blades."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       },
       {

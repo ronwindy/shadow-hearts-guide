@@ -126,14 +126,14 @@ for (const enemy of boss.enemies ?? []) {
           <div class="space-y-1.5">
             <h4 class="font-serif font-semibold text-slate-200">{p.name}{p.level ? ` [Lv ${p.level}]` : ''}</h4>
             {p.equipment && p.equipment.length > 0 && (
-              <ul class="list-disc list-inside text-slate-300 text-xs space-y-0.5">
+              <ul class="gothic-bullets text-slate-300 text-xs space-y-0.5">
                 {p.equipment.map((e) => <li>{e}</li>)}
               </ul>
             )}
             {p.fusions && p.fusions.length > 0 && (
               <div class="text-xs">
                 <span class="font-mono text-slate-400">Fusions:</span>
-                <ul class="list-disc list-inside text-slate-300 space-y-0.5">
+                <ul class="gothic-bullets text-slate-300 space-y-0.5">
                   {p.fusions.map((f) => <li>{f}</li>)}
                 </ul>
               </div>

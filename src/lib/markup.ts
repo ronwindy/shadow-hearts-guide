@@ -223,16 +223,16 @@ export function richToPlainText(text: RichText | null | undefined): string {
   return out.join('\n');
 }
 
-const UL_MARKERS = ['disc', 'circle', 'square'];
 const OL_MARKERS = ['decimal', 'lower-alpha', 'lower-roman'];
 
 function listOpenTag(kind: 'ul' | 'ol', level: number): string {
-  const base = kind === 'ul'
-    ? 'pl-5 space-y-1.5 marker:text-gold-400 text-slate-200'
-    : 'pl-5 space-y-1.5 marker:text-gold-400 marker:font-mono marker:font-semibold text-slate-200';
   const margin = level === 0 ? 'my-2' : 'mt-1.5';
-  const marker = (kind === 'ul' ? UL_MARKERS : OL_MARKERS)[Math.min(level, 2)];
-  return `<${kind} class="${base} ${margin}" style="list-style-type:${marker}">`;
+  if (kind === 'ul') {
+    return `<ul class="gothic-bullets gothic-l${Math.min(level, 2)} space-y-1.5 ${margin} text-slate-200">`;
+  }
+  const marker = OL_MARKERS[Math.min(level, 2)];
+  const base = 'pl-5 space-y-1.5 marker:text-gold-400 marker:font-mono marker:font-semibold text-slate-200';
+  return `<ol class="${base} ${margin}" style="list-style-type:${marker}">`;
 }
 
 /** Renders structured blocks; `afterLine` anchors depth-first over every paragraph and list item. */
@@ -278,7 +278,7 @@ export function renderBlockMarkup(
     if (!currentListType || listItems.length === 0) return;
     const tag = currentListType;
     const listClass = tag === 'ul'
-      ? 'list-disc pl-5 space-y-1.5 my-2 marker:text-gold-400 text-slate-200'
+      ? 'gothic-bullets gothic-l0 space-y-1.5 my-2 text-slate-200'
       : 'list-decimal pl-5 space-y-1.5 my-2 marker:text-gold-400 marker:font-mono marker:font-semibold text-slate-200';
 
     blocks.push(

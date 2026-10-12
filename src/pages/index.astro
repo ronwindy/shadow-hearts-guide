@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CollapsibleSection from "../components/CollapsibleSection.astro";
 import SentenceList from "../components/SentenceList.astro";
+import NestedSentenceList from "../components/NestedSentenceList.astro";
 import { getGameWikiData } from "../lib/guideData";
 import type { WikiImage, WikiVoiceCast } from "../lib/guideData";
 import { toSentences } from "../lib/sentences";
@@ -281,6 +282,8 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
                       );
                     })}
                   </div>
+                ) : section.outline ? (
+                  <NestedSentenceList list={section.outline} />
                 ) : (
                   <SentenceList texts={section.paragraphs} />
                 )}
@@ -358,7 +361,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
                 </h3>
               </div>
               <div class="pt-4">
-                <SentenceList texts={[char.text]} />
+                {char.outline ? (<NestedSentenceList list={char.outline} />) : (<SentenceList texts={[char.text]} />)}
               </div>
             </article>
           ))
@@ -584,7 +587,7 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
             <summary class="cursor-pointer text-slate-300">
               Notes on the source text ({flags.length})
             </summary>
-            <ul class="mt-2 space-y-1 list-disc pl-5">
+            <ul class="gothic-bullets mt-2 space-y-1">
               {flags.map((f) => (
                 <li>{f.note}</li>
               ))}
