@@ -324,7 +324,7 @@
       {
         "id": 6,
         "type": "loot",
-        "description": "1. Descend the stairs here, then examine the barrel next to the green archway for a **Seal of Life**.\n2. Make your way south and down into the area below deck on the boat.\n3. Talk to the boy here; he is a Lottery Member (**Lottery Member No. 12**).\n4. The ring here moves REALLY fast; equipping the **Pocket Watch** makes it easier to hit the areas.",
+        "description": "1. Descend the stairs here, then examine the barrel next to the green archway for a **Seal of Life**.\n2. Make your way south and down into the area below deck on the boat.\n3. Talk to the boy here; he is a **Lottery Member** (**Lottery Member No. 12**).\n4. The ring here moves REALLY fast; equipping the **Pocket Watch** makes it easier to hit the areas.",
         "notes": [
           {
             "type": "missable",

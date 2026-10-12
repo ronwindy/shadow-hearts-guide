@@ -276,13 +276,13 @@
     "steps": [
       {
         "id": 1,
-        "description": "As long as you answered the prompts correctly as **Alice** in **Kuihai Tower**, you can go to Kowloon Fortress to find out what happened to **Wugui**. If you answered differently... then tough luck; you can't do this side quest.",
+        "description": "As long as you answered the prompts correctly as **Alice** in **Kuihai Tower**, you can go to **Kowloon Fortress** to find out what happened to **Wugui**. If you answered differently... then tough luck; you can't do this side quest.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 2,
-        "description": "1. To get to Kowloon Fortress, make your way to the docks in **Huayuan** in **Shanghai**.\n2. Talk to Junk-dealer Taka, the old man beside the ship, and he'll tell you that he fixed your boat.\n3. Board it; you'll be asked if you want to launch the ship.\n4. Choose 2, and a new destination will open on the World Map, and it's only accessible from this point: Kowloon Fortress.\n5. **Save** on the World Map before entering.",
+        "description": "1. To get to **Kowloon Fortress**, make your way to the docks in **Huayuan** in **Shanghai**.\n2. Talk to Junk-dealer Taka, the old man beside the ship, and he'll tell you that he fixed your boat.\n3. Board it; you'll be asked if you want to launch the ship.\n4. Choose 2, and a new destination will open on the **World Map**, and it's only accessible from this point: **Kowloon Fortress**.\n5. **Save** on the **World Map** before entering.",
         "type": "dialogue",
         "choices": [
           {
@@ -298,14 +298,14 @@
       },
       {
         "id": 3,
-        "description": "1. Talk to the very first person you come to, Invincible Nee.\n2. As it turns out, he's a Lottery Member!\n3. The ring here moves **really** fast.\n4. Normally, equipping the **Pocket Watch** would make it run normally, but it has no effect this time, so it'll probably take you **quite** a few tries to get this.\n5. Make sure to win the **Mind's Eye** before continuing on; it's arguably the best accessory in the game.\n6. It will make the areas on your **Judgment Ring** invisible, but it'll **double** (yes, **double**) your physical attack!\n7. Paired with a **Jade Lariat** and weapons that have the Hit Area widened on them, (or if you're just that good at **Yuri**'s ring) **Yuri** becomes ridiculously overpowered.\n8. If you don't win it, reload your last save and try again.\n9. Remember, you need to win something from each member at least once!",
+        "description": "1. Talk to the very first person you come to, Invincible Nee.\n2. As it turns out, he's a **Lottery Member**!\n3. The ring here moves **really** fast.\n4. Normally, equipping the **Pocket Watch** would make it run normally, but it has no effect this time, so it'll probably take you **quite** a few tries to get this.\n5. Make sure to win the **Mind's Eye** before continuing on; it's arguably the best accessory in the game.\n6. It will make the areas on your **Judgment Ring** invisible, but it'll **double** (yes, **double**) your physical attack!\n7. Paired with a **Jade Lariat** and weapons that have the **Hit Area** widened on them, (or if you're just that good at **Yuri**'s ring) **Yuri** becomes ridiculously overpowered.\n8. If you don't win it, reload your last save and try again.\n9. Remember, you need to win something from each member at least once!",
         "type": "story",
         "rewards": [],
         "notes": [
           {
             "type": "tip",
             "title": "Lottery Member No. 10 Prizes",
-            "text": "Prize listing for Lottery Member No. 10, by color.",
+            "text": "Prize listing for **Lottery Member No. 10**, by color.",
             "table": {
               "headers": [
                 "Color",
@@ -339,7 +339,7 @@
       },
       {
         "id": 4,
-        "description": "- If you talk to the Silent Peddler here, you'll find out that he also is a Tight-lipped Merchant with goods for sale!\n- Most notably, he has the Zodiac and **Cosmic Bracelets**; the **Zodiac Bracelet** renders **Paralysis** and **Petrification** ineffectual, and the **Cosmic Bracelets** renders **Poison**, **Silence**, and **Confusion** ineffectual.\n- These are two very useful accessories that you may want to buy if you have the spare cash!",
+        "description": "- If you talk to the **Silent Peddler** here, you'll find out that he also is a Tight-lipped Merchant with goods for sale!\n- Most notably, he has the Zodiac and **Cosmic Bracelets**; the **Zodiac Bracelet** renders **Paralysis** and **Petrification** ineffectual, and the **Cosmic Bracelets** renders **Poison**, **Silence**, and **Confusion** ineffectual.\n- These are two very useful accessories that you may want to buy if you have the spare cash!",
         "type": "shop",
         "rewards": []
       },
@@ -496,20 +496,20 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "This is basically the same battle as with Yamaraja: War, only easier.",
+                  "text": "This is basically the same battle as with **Yamaraja**: War, only easier.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "As with Yamaraja: War, the **Cursed Puppet** will absorb all magic, making **Zhuzhen** useful only as a healer."
+                          "text": "As with **Yamaraja**: War, the **Cursed Puppet** will absorb all magic, making **Zhuzhen** useful only as a healer."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "He also uses the Game of Death, just as usual; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you.",
+                  "text": "He also uses the **Game of Death**, just as usual; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you.",
                   "children": [
                     {
                       "list": "bullet",
@@ -528,7 +528,7 @@
                   ]
                 },
                 {
-                  "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.",
+                  "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn.",
                   "children": [
                     {
                       "list": "bullet",

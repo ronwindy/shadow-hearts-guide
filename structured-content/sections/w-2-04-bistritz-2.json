@@ -227,7 +227,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. Make your way to **Nina** and **Michelle**'s house in the southeastern corner.\n2. After **Nina** tells you the whole story and you regain control, leave the house and head west back to the first area.\n3. If you have the extra money, upgrade **Keith**'s weapon to the **Royal Estoc** and make sure he's properly equipped, then **save** at the Save Point.\n4. When you're ready, examine the lower-right door to the Mayor's house in the upper corner.\n5. Break in?\n6. Choose 2 when you're ready, and you'll eventually have to take on a sub-boss.",
+        "description": "1. Make your way to **Nina** and **Michelle**'s house in the southeastern corner.\n2. After **Nina** tells you the whole story and you regain control, leave the house and head west back to the first area.\n3. If you have the extra money, upgrade **Keith**'s weapon to the **Royal Estoc** and make sure he's properly equipped, then **save** at the **Save Point**.\n4. When you're ready, examine the lower-right door to the Mayor's house in the upper corner.\n5. Break in?\n6. Choose 2 when you're ready, and you'll eventually have to take on a sub-boss.",
         "type": "dialogue",
         "choices": [
           {
@@ -320,14 +320,14 @@
       },
       {
         "id": 2,
-        "description": "1. After the battle, watch the scenes with **Nina** and **Michelle**, then you'll regain control outside of their house.\n2. **Save your game**, then examine the door on the house above you (the one on the right) to find another Lottery Member!\n3. Nothing strange about the ring here.\n4. Make sure to win the **Oracle Earrings** before continuing on; it increases your max MP 20%!\n5. If you don't win it, reload your last save and try again.\n6. Remember, you need to win something from each member at least once!",
+        "description": "1. After the battle, watch the scenes with **Nina** and **Michelle**, then you'll regain control outside of their house.\n2. **Save your game**, then examine the door on the house above you (the one on the right) to find another **Lottery Member**!\n3. Nothing strange about the ring here.\n4. Make sure to win the **Oracle Earrings** before continuing on; it increases your max MP 20%!\n5. If you don't win it, reload your last save and try again.\n6. Remember, you need to win something from each member at least once!",
         "type": "story",
         "rewards": [],
         "notes": [
           {
             "type": "tip",
             "title": "Lottery Member No. 07 Prizes",
-            "text": "Prize listing for Lottery Member No. 07, by color.",
+            "text": "Prize listing for **Lottery Member No. 07**, by color.",
             "table": {
               "headers": [
                 "Color",

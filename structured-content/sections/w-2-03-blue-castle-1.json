@@ -132,7 +132,7 @@
       },
       {
         "id": 2,
-        "description": "1. Go back to the main path and examine the gate to the north.\n2. It won't open, so start heading back south, and it'll magically open for you, allowing you entrance.\n3. Start to go up the stairs for a quick scene, then continue north to a fork.\n4. The path to the east is locked, so use the Save Point if you want, then go down the western stairs, moving south and opening the chest to your west for a **Tent**.",
+        "description": "1. Go back to the main path and examine the gate to the north.\n2. It won't open, so start heading back south, and it'll magically open for you, allowing you entrance.\n3. Start to go up the stairs for a quick scene, then continue north to a fork.\n4. The path to the east is locked, so use the **Save Point** if you want, then go down the western stairs, moving south and opening the chest to your west for a **Tent**.",
         "type": "loot",
         "rewards": [
           {
@@ -232,7 +232,7 @@
       },
       {
         "id": 6,
-        "description": "1. After successfully solving the puzzle, you'll hear the sound of a door being unlocked.\n2. Make your way back upstairs and to the Save Point.\n3. At the fork here, take the eastern path (now that the door here is unlocked) and enter.\n4. Watch a short bit of dialogue, then try to leave.\n5. Watch the events unfold here, and once they're finished, **Keith** Valentine will join your party!",
+        "description": "1. After successfully solving the puzzle, you'll hear the sound of a door being unlocked.\n2. Make your way back upstairs and to the **Save Point**.\n3. At the fork here, take the eastern path (now that the door here is unlocked) and enter.\n4. Watch a short bit of dialogue, then try to leave.\n5. Watch the events unfold here, and once they're finished, **Keith** Valentine will join your party!",
         "type": "story",
         "notes": [
           {
@@ -245,7 +245,7 @@
       },
       {
         "id": 7,
-        "description": "1. Unless you'd like to fight some more and get used to **Keith**'s Ring, leave the **Blue Castle**.\n2. Save on the World Map, then enter **Bistritz** once again.",
+        "description": "1. Unless you'd like to fight some more and get used to **Keith**'s Ring, leave the **Blue Castle**.\n2. Save on the **World Map**, then enter **Bistritz** once again.",
         "type": "navigation",
         "rewards": []
       }

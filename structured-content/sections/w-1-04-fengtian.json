@@ -465,7 +465,7 @@
           {
             "type": "missable",
             "title": "Win the Jade Lariat",
-            "text": "Make sure to win the **Jade Lariat** before continuing on; it widens your Hit Area on your Ring, it's well worth it! If you don't win it, reload your last save and try again."
+            "text": "Make sure to win the **Jade Lariat** before continuing on; it widens your **Hit Area** on your Ring, it's well worth it! If you don't win it, reload your last save and try again."
           }
         ],
         "rewards": []
@@ -478,7 +478,7 @@
           {
             "type": "tip",
             "title": "Return to the Item Shop",
-            "text": "At any point in the Sewers, if needed, you can return to the Item Shop to save and/or shop."
+            "text": "At any point in the **Sewers**, if needed, you can return to the **Item Shop** to save and/or shop."
           }
         ],
         "rewards": []
@@ -532,7 +532,7 @@
       },
       {
         "id": 12,
-        "description": "1. Since you saw the event at the ladder, there's now one more item we need to get. Make your way back to the first ladder you came down, then head all the way north.\n2. The blast created some debris here, so cross it and examine the glowing blue sphere in the wall to obtain the **Jewel**, which is the Sealing Stone for the manhole cover.\n3. Once you have it, search just to the right of it to find a **Rosewood Bracelet**.",
+        "description": "1. Since you saw the event at the ladder, there's now one more item we need to get. Make your way back to the first ladder you came down, then head all the way north.\n2. The blast created some debris here, so cross it and examine the glowing blue sphere in the wall to obtain the **Jewel**, which is the **Sealing Stone** for the manhole cover.\n3. Once you have it, search just to the right of it to find a **Rosewood Bracelet**.",
         "type": "loot",
         "rewards": [
           {
@@ -549,7 +549,7 @@
       },
       {
         "id": 13,
-        "description": "Make your way back to the **Save Point** and save your game, then attempt to climb the ladder; you'll be asked if you want to set the Sealing Stone.",
+        "description": "Make your way back to the **Save Point** and save your game, then attempt to climb the ladder; you'll be asked if you want to set the **Sealing Stone**.",
         "type": "preparation",
         "choices": [
           {

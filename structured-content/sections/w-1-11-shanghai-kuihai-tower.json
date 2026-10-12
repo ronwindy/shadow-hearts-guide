@@ -208,7 +208,7 @@
             "list": "bullet",
             "items": [
               {
-                "text": "Note that Yamaraja: Stone is actually a **fire** class, so **Man Dragon** will be your go-to Fusion if you're taking the magic route."
+                "text": "Note that **Yamaraja**: Stone is actually a **fire** class, so **Man Dragon** will be your go-to Fusion if you're taking the magic route."
               },
               {
                 "text": "Other than the fact that he uses defensive spells (that don't seem to help him at all), all he'll use are physical attacks.",
@@ -230,17 +230,17 @@
                     "list": "bullet",
                     "items": [
                       {
-                        "text": "Zhuzhen should be continually casting **Life Sucker**, and **Margarete** should use **Aqua Edge** on **Yuri** first (if he's attacking), then have her use **Snipe** continuously."
+                        "text": "**Zhuzhen** should be continually casting **Life Sucker**, and **Margarete** should use **Aqua Edge** on **Yuri** first (if he's attacking), then have her use **Snipe** continuously."
                       },
                       {
-                        "text": "Zhuzhen will probably be doing the least amount of damage, so have him on healing duty when HP starts to drop."
+                        "text": "**Zhuzhen** will probably be doing the least amount of damage, so have him on healing duty when HP starts to drop."
                       }
                     ]
                   }
                 ]
               },
               {
-                "text": "This Yamaraja is fairly easy compared to the last two bosses."
+                "text": "This **Yamaraja** is fairly easy compared to the last two bosses."
               }
             ]
           }
@@ -454,7 +454,7 @@
       },
       {
         "id": 2,
-        "description": "Once you have both of those, start climbing the central staircase and attempt to enter the Yawang Gate, where you'll have to take on another Yamaraja!",
+        "description": "Once you have both of those, start climbing the central staircase and attempt to enter the Yawang Gate, where you'll have to take on another **Yamaraja**!",
         "type": "boss",
         "rewards": [],
         "encounter": {
@@ -465,7 +465,7 @@
       },
       {
         "id": 3,
-        "description": "1. After the battle, you'll receive the **B. Tortoise VP**, and you'll automatically enter the Tower.\n2. On the center platform is a Save Point, so be sure to use it.\n3. You should see a chest directly beside the Save Point, but on the other side, so run clockwise until you reach the chest containing a **Lottery Ticket**.\n4. From the remaining two staircases here, go up the eastern one, following the path to the next area.\n5. Up on the next floor, examine the area just to the upper-left of the stairs, where you'll find a place to insert the **B. Tortoise VP**.\n6. Choose to put it in, then choose \"the Black Tortoise\" to place the picture in its place.\n7. After doing that, check the far left side of the room to find a **Pure Extract**, then enter the newly unlocked door on the right side of the room.\n8. Out here, follow the path to the next area, then at the end of the path, open the chest for a **B. Dragon VP**.\n9. Once you have it, head back down to the first area with the Save Point.",
+        "description": "1. After the battle, you'll receive the **B. Tortoise VP**, and you'll automatically enter the Tower.\n2. On the center platform is a **Save Point**, so be sure to use it.\n3. You should see a chest directly beside the **Save Point**, but on the other side, so run clockwise until you reach the chest containing a **Lottery Ticket**.\n4. From the remaining two staircases here, go up the eastern one, following the path to the next area.\n5. Up on the next floor, examine the area just to the upper-left of the stairs, where you'll find a place to insert the **B. Tortoise VP**.\n6. Choose to put it in, then choose \"the Black Tortoise\" to place the picture in its place.\n7. After doing that, check the far left side of the room to find a **Pure Extract**, then enter the newly unlocked door on the right side of the room.\n8. Out here, follow the path to the next area, then at the end of the path, open the chest for a **B. Dragon VP**.\n9. Once you have it, head back down to the first area with the **Save Point**.",
         "type": "loot",
         "notes": [
           {
@@ -499,7 +499,7 @@
       },
       {
         "id": 4,
-        "description": "1. From the Save Point, stay on the platform you're currently on and take the northwestern path to the next area.\n2. Go to the left side of the room and look on the ground beneath the artwork to find an.... **Erotic Book**.\n3. Oh LàLà...? OH LÀLÀ?!?! ( For all of you Back to the Future nuts like me. ;D ) It's a copy of \"**Shanghai** Angels\"...\n4. Make sure to grab this, as it'll come in very handy much later in the game.\n5. If you don't grab it, you'll definitely regret it.",
+        "description": "1. From the **Save Point**, stay on the platform you're currently on and take the northwestern path to the next area.\n2. Go to the left side of the room and look on the ground beneath the artwork to find an.... **Erotic Book**.\n3. Oh LàLà...? OH LÀLÀ?!?! ( For all of you Back to the Future nuts like me. ;D ) It's a copy of \"**Shanghai** Angels\"...\n4. Make sure to grab this, as it'll come in very handy much later in the game.\n5. If you don't grab it, you'll definitely regret it.",
         "type": "loot",
         "rewards": [
           {
@@ -511,7 +511,7 @@
       },
       {
         "id": 5,
-        "description": "1. In any case, while you're here, make sure examine the altar in the right-center of the room to find a votive picture.\n2. Choose to take it, and you'll receive the **R. Phoenix VP**.\n3. Re-examine the altar here and choose to insert \"the Blue Dragon\" into its place.\n4. Make your way back to the Save Point.",
+        "description": "1. In any case, while you're here, make sure examine the altar in the right-center of the room to find a votive picture.\n2. Choose to take it, and you'll receive the **R. Phoenix VP**.\n3. Re-examine the altar here and choose to insert \"the Blue Dragon\" into its place.\n4. Make your way back to the **Save Point**.",
         "type": "loot",
         "rewards": [
           {
@@ -523,7 +523,7 @@
       },
       {
         "id": 6,
-        "description": "1. Take the last path that we haven't taken yet: the western staircase.\n2. Once you're on the next floor up, examine the altar above you and choose to insert \"the Red Phoenix\" into the hole there.\n3. Ignore the locked gate to your east for now, and enter the newly unlocked door to the next area.\n4. Open the chest here for the **W. Tiger VP**, and since we're now at a dead-end, make your way back to the Save Point.",
+        "description": "1. Take the last path that we haven't taken yet: the western staircase.\n2. Once you're on the next floor up, examine the altar above you and choose to insert \"the Red Phoenix\" into the hole there.\n3. Ignore the locked gate to your east for now, and enter the newly unlocked door to the next area.\n4. Open the chest here for the **W. Tiger VP**, and since we're now at a dead-end, make your way back to the **Save Point**.",
         "type": "loot",
         "rewards": [
           {
@@ -535,13 +535,13 @@
       },
       {
         "id": 7,
-        "description": "1. Take the path northwest of the Save Point once again to the room where we found the **Erotic Book**.\n2. Choose to take out the **B. Dragon VP** and replace it with \"the White Tiger\" to have the correct one in its place.\n3. Make your way back to the Save Point for the last time.\n4. Examine the altar here in the center of the room and choose to insert \"the Blue Dragon\" to solve the puzzle here.",
+        "description": "1. Take the path northwest of the **Save Point** once again to the room where we found the **Erotic Book**.\n2. Choose to take out the **B. Dragon VP** and replace it with \"the White Tiger\" to have the correct one in its place.\n3. Make your way back to the **Save Point** for the last time.\n4. Examine the altar here in the center of the room and choose to insert \"the Blue Dragon\" to solve the puzzle here.",
         "type": "puzzle",
         "rewards": []
       },
       {
         "id": 8,
-        "description": "1. Make your way back up the western stairs, and go through the door you unlocked.\n2. There is now a Save Point here; prepare for a battle, and Save.\n3. When you're ready, go up the stairs on the right to the next area for a scene.\n4. Just a bit after, you'll have a sub-boss battle.",
+        "description": "1. Make your way back up the western stairs, and go through the door you unlocked.\n2. There is now a **Save Point** here; prepare for a battle, and Save.\n3. When you're ready, go up the stairs on the right to the next area for a scene.\n4. Just a bit after, you'll have a sub-boss battle.",
         "type": "boss",
         "rewards": [],
         "boss": {
@@ -606,7 +606,7 @@
                           "text": "Have **Yuri** fuse into the **Raging Tiger** or **Inferno** (with **Fighting Spirit**) and hammer away at him with physical attacks."
                         },
                         {
-                          "text": "Zhuzhen should be continually casting **Life Sucker**, and **Margarete** should use **Aqua Edge** on **Yuri** first, then have her use **Snipe** continuously."
+                          "text": "**Zhuzhen** should be continually casting **Life Sucker**, and **Margarete** should use **Aqua Edge** on **Yuri** first, then have her use **Snipe** continuously."
                         },
                         {
                           "text": "He'll fall quickly."
@@ -627,13 +627,13 @@
       },
       {
         "id": 9,
-        "description": "1. After the battle, check just to your right near the glowing light for a **Lottery Ticket**.\n2. Continue southeast to open the door here, which is the locked door near the eastern stairs from earlier.\n3. Also, descend the stairs just below where you entered, and you'll find the chest behind the gate that we ignored earlier.\n4. Open it for a **Talisman of Wisdom**.\n5. Once you have that, make your way back to the last Save Point and **save your game**.",
+        "description": "1. After the battle, check just to your right near the glowing light for a **Lottery Ticket**.\n2. Continue southeast to open the door here, which is the locked door near the eastern stairs from earlier.\n3. Also, descend the stairs just below where you entered, and you'll find the chest behind the gate that we ignored earlier.\n4. Open it for a **Talisman of Wisdom**.\n5. Once you have that, make your way back to the last **Save Point** and **save your game**.",
         "type": "loot",
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "- This is your point of no return.\n- If there's **anything** else you wish to do in Asia, now's the time.\n- Once you proceed with the next battle, you won't be able to go back.\n- Also, make sure that you have fought all four Evil enemies in the Graveyard for your Monster Library."
+            "text": "- This is your point of no return.\n- If there's **anything** else you wish to do in Asia, now's the time.\n- Once you proceed with the next battle, you won't be able to go back.\n- Also, make sure that you have fought all four Evil enemies in the **Graveyard** for your **Monster Library**."
           }
         ],
         "rewards": [
@@ -780,14 +780,14 @@
       },
       {
         "id": 12,
-        "description": "1. Once you've saved, go back to the upper floor and talk to the Japanese soldier on the left.\n2. He will offer to change your party, in case you've changed your mind, but if you choose to not change it, then you'll also find out that he's a Lottery Member!\n3. The ring here moves fast, so remember, equipping the **Pocket Watch** will make it easier to hit the areas!\n4. Make sure to win the **Warlock Earrings** before continuing on; it increases your S-Atk up 20%, but will also increase the damage received from S-Atks by 20%!\n5. If you don't win it, reload your last save and try again.\n6. Remember, you need to win something from each member at least once!",
+        "description": "1. Once you've saved, go back to the upper floor and talk to the Japanese soldier on the left.\n2. He will offer to change your party, in case you've changed your mind, but if you choose to not change it, then you'll also find out that he's a **Lottery Member**!\n3. The ring here moves fast, so remember, equipping the **Pocket Watch** will make it easier to hit the areas!\n4. Make sure to win the **Warlock Earrings** before continuing on; it increases your S-Atk up 20%, but will also increase the damage received from S-Atks by 20%!\n5. If you don't win it, reload your last save and try again.\n6. Remember, you need to win something from each member at least once!",
         "type": "story",
         "rewards": [],
         "notes": [
           {
             "type": "tip",
             "title": "Lottery Member No. 09 Prizes",
-            "text": "Prize listing for Lottery Member No. 09, by color.",
+            "text": "Prize listing for **Lottery Member No. 09**, by color.",
             "table": {
               "headers": [
                 "Color",
@@ -895,7 +895,7 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "Yamaraja will most likely start off with the Crimson Flame spell, dealing MAJOR fire damage to your party and possibly Silencing them as well.",
+                  "text": "**Yamaraja** will most likely start off with the Crimson Flame spell, dealing MAJOR fire damage to your party and possibly Silencing them as well.",
                   "children": [
                     {
                       "list": "bullet",
@@ -940,7 +940,7 @@
                   ]
                 },
                 {
-                  "text": "Due to the sheer amount of HP Yamaraja has, and the fact that your main damage dealer is on healing duty, prepare for a very long battle.",
+                  "text": "Due to the sheer amount of HP **Yamaraja** has, and the fact that your main damage dealer is on healing duty, prepare for a very long battle.",
                   "children": [
                     {
                       "list": "bullet",

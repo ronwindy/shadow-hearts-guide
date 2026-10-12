@@ -209,7 +209,7 @@
             "list": "bullet",
             "items": [
               {
-                "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
+                "text": "Note that **Yamaraja**: Wind is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
               },
               {
                 "text": "Its **Shockwave** attack will do decent damage to each character, while its **Flying Stones** attack will do major damage, but to only one character.",
@@ -238,13 +238,13 @@
                 ]
               },
               {
-                "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and Zhuzhen to keep their MP up.",
+                "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and **Zhuzhen** to keep their MP up.",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
-                        "text": "Have Zhuzhen use his **Ogre Flamedance** continuously, stopping to heal if someone needs it."
+                        "text": "Have **Zhuzhen** use his **Ogre Flamedance** continuously, stopping to heal if someone needs it."
                       },
                       {
                         "text": "**Yuri** should be doing the most damage if he has the **Tornado** Fusion, so keep his MP up while keeping everyone else healed."
@@ -548,12 +548,12 @@
           {
             "type": "warning",
             "title": "Prepare for the next boss",
-            "text": "- The next boss not only is very difficult, but he is also an Earth class.\n- By now, you should be very close to obtaining **Yuri**'s level 1 Wind Fusion, **Tornado**. The **Water Creepers** in **Dalian** are a Wind class, so fight enough battles with them until you are able to go to the Graveyard to challenge **Tornado**.\n- Also, make sure that you are at least level 10 before challenging the next boss, or you'll have a pretty rough time against him."
+            "text": "- The next boss not only is very difficult, but he is also an Earth class.\n- By now, you should be very close to obtaining **Yuri**'s level 1 Wind Fusion, **Tornado**. The **Water Creepers** in **Dalian** are a Wind class, so fight enough battles with them until you are able to go to the **Graveyard** to challenge **Tornado**.\n- Also, make sure that you are at least level 10 before challenging the next boss, or you'll have a pretty rough time against him."
           },
           {
             "type": "tip",
             "title": "Frog Gods and the Light Fusion",
-            "text": "- You may also want to take the time to fight more of the **Frog Gods** to build up your points for your Light Fusion.\n- They come in groups of three, so it wouldn't take very long, and I recommend doing it.\n- Just be careful not to get paralyzed."
+            "text": "- You may also want to take the time to fight more of the **Frog Gods** to build up your points for your **Light Fusion**.\n- They come in groups of three, so it wouldn't take very long, and I recommend doing it.\n- Just be careful not to get paralyzed."
           }
         ],
         "rewards": []
@@ -625,7 +625,7 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "Note that Yamaraja: Wind is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
+                  "text": "Note that **Yamaraja**: Wind is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
                 },
                 {
                   "text": "Its **Shockwave** attack will do decent damage to each character, while its **Flying Stones** attack will do major damage, but to only one character.",
@@ -654,13 +654,13 @@
                   ]
                 },
                 {
-                  "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and Zhuzhen to keep their MP up.",
+                  "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and **Zhuzhen** to keep their MP up.",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Have Zhuzhen use his **Ogre Flamedance** continuously, stopping to heal if someone needs it."
+                          "text": "Have **Zhuzhen** use his **Ogre Flamedance** continuously, stopping to heal if someone needs it."
                         },
                         {
                           "text": "**Yuri** should be doing the most damage if he has the **Tornado** Fusion, so keep his MP up while keeping everyone else healed."
@@ -677,7 +677,7 @@
           {
             "type": "warning",
             "title": "After the battle",
-            "text": "Remove all equipment from both **Margarete** and Zhuzhen after the battle, as they will both be temporarily unavailable for battle in the next few events."
+            "text": "Remove all equipment from both **Margarete** and **Zhuzhen** after the battle, as they will both be temporarily unavailable for battle in the next few events."
           }
         ],
         "rewards": [

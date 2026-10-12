@@ -169,25 +169,25 @@
       },
       {
         "id": 4,
-        "description": "- If you're needing the Light Fusion or want some more Dark Soul Energy, then go through the eastern door in the first room of the maze and fight in that area.",
+        "description": "- If you're needing the **Light Fusion** or want some more Dark **Soul Energy**, then go through the eastern door in the first room of the maze and fight in that area.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 5,
-        "description": "- If you're needing the Water Fusion or want some more Earth Soul Energy, then you'll need to proceed all the way through the first western maze until you reach the second one. You can fight the enemies in here for those classes.",
+        "description": "- If you're needing the Water Fusion or want some more Earth **Soul Energy**, then you'll need to proceed all the way through the first western maze until you reach the second one. You can fight the enemies in here for those classes.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 6,
-        "description": "- If you're wanting to grind for levels while doing this and want a challenge, then you may want to go to the Kowloon Fortress. It also has an enemy of each class, but they don't come in groups like they do at the **Temple Ruins**. They are also harder, so it's up to you.",
+        "description": "- If you're wanting to grind for levels while doing this and want a challenge, then you may want to go to the **Kowloon Fortress**. It also has an enemy of each class, but they don't come in groups like they do at the **Temple Ruins**. They are also harder, so it's up to you.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 7,
-        "description": "Once you have enough Soul Energy to unlock the Fusions, visit the Graveyard and take each one on, one at a time.",
+        "description": "Once you have enough **Soul Energy** to unlock the Fusions, visit the **Graveyard** and take each one on, one at a time.",
         "type": "boss",
         "rewards": [],
         "boss": {

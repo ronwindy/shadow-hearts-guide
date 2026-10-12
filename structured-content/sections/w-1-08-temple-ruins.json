@@ -361,7 +361,7 @@
                 ]
               },
               {
-                "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.",
+                "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn.",
                 "children": [
                   {
                     "list": "bullet",
@@ -661,7 +661,7 @@
           {
             "type": "tip",
             "title": "Enemies of every class",
-            "text": "- The **Temple Ruins** have an enemy of every class.\n- If you don't have all of the level 1 Fusions the source recommended earlier, use this place to get enough Soul Energy to get the Fusions."
+            "text": "- The **Temple Ruins** have an enemy of every class.\n- If you don't have all of the level 1 Fusions the source recommended earlier, use this place to get enough **Soul Energy** to get the Fusions."
           },
           {
             "type": "warning",
@@ -843,7 +843,7 @@
                   ]
                 },
                 {
-                  "text": "Zhuzhen should be healing pretty much the entire time.",
+                  "text": "**Zhuzhen** should be healing pretty much the entire time.",
                   "children": [
                     {
                       "list": "bullet",
@@ -886,7 +886,7 @@
           {
             "type": "tip",
             "title": "Soul Energy and Malice",
-            "text": "- Monsters defeated while **Yuri** isn't in the party DO count toward his Soul Energy.\n- If you want the Light Fusion, you can fight plenty of **Raging Spirits** here to get it.\n- The Malice meter will not build when **Yuri** isn't in the party."
+            "text": "- Monsters defeated while **Yuri** isn't in the party DO count toward his **Soul Energy**.\n- If you want the **Light Fusion**, you can fight plenty of **Raging Spirits** here to get it.\n- The Malice meter will not build when **Yuri** isn't in the party."
           }
         ]
       },
@@ -1063,7 +1063,7 @@
       },
       {
         "id": 23,
-        "description": "1. **Xiaofang** will be here once again if you need to shop.\n2. Go west to a fork; ignore the path to the south and head west to a four-way fork.\n3. Make your way north first, as it leads to a dead-end with a **Seal of Wisdom** at the end.\n4. Ignore the southern path and take the western path, which leads to another four-way fork with an empty chest near the bottom of the screen.\n5. Take the southern path now, ignoring the eastern path at the next fork (since it leads back to the other four-way fork), and keep going south.\n6. Keep following it to a dead-end with **Xiaofang**. Instead of a shop, this time Xiaofang is a Lottery Member (**Lottery Member No. 11**).",
+        "description": "1. **Xiaofang** will be here once again if you need to shop.\n2. Go west to a fork; ignore the path to the south and head west to a four-way fork.\n3. Make your way north first, as it leads to a dead-end with a **Seal of Wisdom** at the end.\n4. Ignore the southern path and take the western path, which leads to another four-way fork with an empty chest near the bottom of the screen.\n5. Take the southern path now, ignoring the eastern path at the next fork (since it leads back to the other four-way fork), and keep going south.\n6. Keep following it to a dead-end with **Xiaofang**. Instead of a shop, this time **Xiaofang** is a **Lottery Member** (**Lottery Member No. 11**).",
         "type": "loot",
         "rewards": [
           {
@@ -1312,7 +1312,7 @@
                   ]
                 },
                 {
-                  "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking Yamaraja every turn.",
+                  "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn.",
                   "children": [
                     {
                       "list": "bullet",

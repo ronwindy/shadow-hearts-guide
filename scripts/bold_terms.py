@@ -81,7 +81,7 @@ def build_dictionary() -> list[str]:
     for names in cats.values():
         terms |= names
     for key, names in extras.items():
-        if key not in ("deny", "_doc"):
+        if key not in ("deny", "_doc", "numbered"):
             terms |= set(names)
     terms -= set(extras.get("deny", []))
     return sorted(terms, key=lambda s: (-len(s), s))
@@ -103,7 +103,10 @@ def _at_sentence_start(before: str) -> bool:
 
 
 def _compile(terms: list[str]) -> re.Pattern:
-    alts = "|".join(re.escape(t) for t in terms)
+    numbered = set(load_extras().get("numbered", []))
+    alts = "|".join(
+        re.escape(t) + (r"(?: No\. \d+)?" if t in numbered else "") for t in terms
+    )
     # case-sensitive; optional plural; not inside a word
     return re.compile(rf"(?<![\w*])({alts})(es|s)?(?![\w*])")
 

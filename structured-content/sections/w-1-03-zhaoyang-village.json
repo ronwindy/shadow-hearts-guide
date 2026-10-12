@@ -259,7 +259,7 @@
                         "text": "Have **Alice** stay on healing duty the entire time, and have **Zhuzhen** cast **Ogre Flamedance** continuously."
                       },
                       {
-                        "text": "If needed, have **Yuri** supplement healing since Zhuzhen's fire magic probably hits for more than **Yuri** does, and make sure to keep **Alice** from becoming **Berserk**."
+                        "text": "If needed, have **Yuri** supplement healing since **Zhuzhen**'s fire magic probably hits for more than **Yuri** does, and make sure to keep **Alice** from becoming **Berserk**."
                       }
                     ]
                   }
@@ -527,7 +527,7 @@
       },
       {
         "id": 11,
-        "description": "With both required items collected, make your way back to the center of town and use the **Save Point**. When ready, enter the Cat Lady's house and examine the pit in the center to trigger the battle with **Felinus**.",
+        "description": "With both required items collected, make your way back to the center of town and use the **Save Point**. When ready, enter the **Cat Lady**'s house and examine the pit in the center to trigger the battle with **Felinus**.",
         "type": "exploration",
         "rewards": []
       },
@@ -591,7 +591,7 @@
       },
       {
         "id": 15,
-        "description": "Choose option [2] to fight the boss: **Yamaraja: Earth** (#010 Yamaraja: Earth, HP: 300, Class: Water).",
+        "description": "Choose option [2] to fight the boss: **Yamaraja: Earth** (#010 **Yamaraja**: Earth, HP: 300, Class: Water).",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -683,7 +683,7 @@
                           "text": "Have **Alice** stay on healing duty the entire time, and have **Zhuzhen** cast **Ogre Flamedance** continuously."
                         },
                         {
-                          "text": "If needed, have **Yuri** supplement healing since Zhuzhen's fire magic probably hits for more than **Yuri** does, and make sure to keep **Alice** from becoming **Berserk**."
+                          "text": "If needed, have **Yuri** supplement healing since **Zhuzhen**'s fire magic probably hits for more than **Yuri** does, and make sure to keep **Alice** from becoming **Berserk**."
                         }
                       ]
                     }

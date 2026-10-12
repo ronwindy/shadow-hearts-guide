@@ -1,15 +1,37 @@
 {
-  "_doc": "Manual additions for scripts/bold_terms.py. 'characters'/'locations' extend the mined appendix dictionary; 'deny' removes names that are table headers or too generic; 'ambiguous' names are English words and are skipped at sentence start (where a capital letter proves nothing).",
+  "_doc": "Manual additions for scripts/bold_terms.py. 'characters'/'locations' extend the mined appendix dictionary; 'deny' removes names that are table headers or too generic; 'ambiguous' names are English words and are skipped at sentence start (where a capital letter proves nothing). 'numbered' names also match an optional ' No. <digits>' suffix (\"Lottery Member No. 15\").",
   "characters": [
     "Yuri",
     "Alice",
     "Halley",
     "Margarete",
     "Meiyuan",
-    "Joshua"
+    "Joshua",
+    "Peddler Rosa",
+    "Silent Peddler",
+    "Zhuzhen",
+    "Li Zhuzhen",
+    "Keith",
+    "Xiaofang",
+    "Kato",
+    "Mr. Zhen",
+    "Mika",
+    "Yamaraja",
+    "Rude Hero",
+    "Penniless Mike"
   ],
   "locations": [
-    "Calios Mental Hospital"
+    "Calios Mental Hospital",
+    "World Map of Europe",
+    "Sea Turtle Restaurant",
+    "Pachimon General Store",
+    "Cypress Hotel",
+    "Mika's House",
+    "Graveyard",
+    "Sewers",
+    "Kowloon Fortress",
+    "Inn",
+    "Item Shop"
   ],
   "deny": [
     "Item",
@@ -86,7 +108,12 @@
     "Garm",
     "Larva",
     "Fire Ball",
-    "Slash"
+    "Slash",
+    "Inn",
+    "Graveyard",
+    "Sewers",
+    "Berserk",
+    "Item Shop"
   ],
   "skills": [
     "Shockwave",
@@ -94,12 +121,43 @@
     "Slash"
   ],
   "groups": [
-    "London Rats"
+    "London Rats",
+    "Lottery Member"
+  ],
+  "numbered": [
+    "Lottery Member"
   ],
   "mechanics": [
     "Normal Ring",
     "Judgment Ring",
     "Malice Meter",
-    "SP Lowering"
+    "SP Lowering",
+    "Save Point",
+    "Guild Card",
+    "World Map",
+    "Warp Point",
+    "Hit Area",
+    "Soul Energy",
+    "Light Fusion",
+    "Monster Library",
+    "Sealing Stone",
+    "Berserk",
+    "Hate Storm",
+    "Game of Death"
+  ],
+  "wanderers": [
+    "Lost Peddler",
+    "Wandering Merchant",
+    "Courier Subordinate",
+    "Hasty Kawa",
+    "Lamenting Clerk Kuro",
+    "Drunken Orro",
+    "Filthy Samo",
+    "Alluring Spy",
+    "Man with Turtle",
+    "Man with Dog",
+    "Building-Loving Man",
+    "Cat Lady",
+    "Smuggler Boss"
   ]
 }

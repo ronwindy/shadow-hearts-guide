@@ -160,7 +160,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "- **Wind Shear** x2: 4 EXP, 0 Cash\n- **Hellcat** x2: 40 EXP, 0 Cash\n- Yamaraja: Earth: 180 EXP, 0 Cash\n- **Frog God** x3: 135 EXP, 0 Cash\n- **Kappa** x2, **Water Tiger**: 400 EXP, 0 Cash\n- **Beast Dog**: 540 EXP, 0 Cash\n- Yamaraja: Wind: 720 EXP, 0 Cash\n- **White Wolfling** x3: 234 EXP, 0 Cash\n- **Ogre Flame** x4: 260 EXP, 0 Cash\n- **Li Li**: 1000 EXP, 0 Cash\n- **Prototype Wind Shear**: 1500 EXP, 0 Cash\n- **Custom Wind Shear**: 1500 EXP, 0 Cash",
+        "description": "- **Wind Shear** x2: 4 EXP, 0 Cash\n- **Hellcat** x2: 40 EXP, 0 Cash\n- **Yamaraja**: Earth: 180 EXP, 0 Cash\n- **Frog God** x3: 135 EXP, 0 Cash\n- **Kappa** x2, **Water Tiger**: 400 EXP, 0 Cash\n- **Beast Dog**: 540 EXP, 0 Cash\n- **Yamaraja**: Wind: 720 EXP, 0 Cash\n- **White Wolfling** x3: 234 EXP, 0 Cash\n- **Ogre Flame** x4: 260 EXP, 0 Cash\n- **Li Li**: 1000 EXP, 0 Cash\n- **Prototype Wind Shear**: 1500 EXP, 0 Cash\n- **Custom Wind Shear**: 1500 EXP, 0 Cash",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -183,7 +183,7 @@
       },
       {
         "id": 2,
-        "description": "- As I mentioned before, Mr. Zhen is now hosting pit fights!\n- Just visit the bar and go behind on the curtain at the top of the screen and talk to him.\n- It costs **300 Cash** to fight, and you'll have to fight **10 consecutive battles**, with **no chance to heal between battles**.\n- There are 12 sets of enemies; the order is random, and you'll only have to fight 10 of the 12 sets of enemies listed in the Enemy Formations section above.",
+        "description": "- As I mentioned before, **Mr. Zhen** is now hosting pit fights!\n- Just visit the bar and go behind on the curtain at the top of the screen and talk to him.\n- It costs **300 Cash** to fight, and you'll have to fight **10 consecutive battles**, with **no chance to heal between battles**.\n- There are 12 sets of enemies; the order is random, and you'll only have to fight 10 of the 12 sets of enemies listed in the Enemy Formations section above.",
         "type": "quest",
         "rewards": []
       },
@@ -264,7 +264,7 @@
           {
             "type": "tip",
             "title": "Note",
-            "text": "If you're aiming to get a full Monster Library, then make sure that you find both the Prototype and **Custom Wind Shears** before moving on."
+            "text": "If you're aiming to get a full **Monster Library**, then make sure that you find both the Prototype and **Custom Wind Shears** before moving on."
           }
         ],
         "rewards": [

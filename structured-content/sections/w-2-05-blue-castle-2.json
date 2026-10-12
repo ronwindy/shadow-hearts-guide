@@ -131,7 +131,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. Make your way inside the castle like you did before.\n2. When you reach the fork with the Save Point, head west, then approach the door to the west that was previously locked.\n3. **Keith** will unlock it for you, and you'll be able to continue on.\n4. As soon as you enter the stairwell, open a hidden chest to your left for a **Seal of Speed**, then start climbing the stairs.",
+        "description": "1. Make your way inside the castle like you did before.\n2. When you reach the fork with the **Save Point**, head west, then approach the door to the west that was previously locked.\n3. **Keith** will unlock it for you, and you'll be able to continue on.\n4. As soon as you enter the stairwell, open a hidden chest to your left for a **Seal of Speed**, then start climbing the stairs.",
         "type": "loot",
         "rewards": [
           {
@@ -172,7 +172,7 @@
       },
       {
         "id": 4,
-        "description": "1. Go up another five or six screens to another room.\n2. Check on the floor in the cell on the left for a **Tent**, and check on the floor in the cell on the right for a **Seal of Force**.\n3. Make your way back out, then continue climbing the stairs.\n4. Keep on going, and you'll eventually reach the top of the tower.\n5. Use the Save Point here.",
+        "description": "1. Go up another five or six screens to another room.\n2. Check on the floor in the cell on the left for a **Tent**, and check on the floor in the cell on the right for a **Seal of Force**.\n3. Make your way back out, then continue climbing the stairs.\n4. Keep on going, and you'll eventually reach the top of the tower.\n5. Use the **Save Point** here.",
         "type": "loot",
         "notes": [
           {
@@ -337,7 +337,7 @@
       },
       {
         "id": 6,
-        "description": "1. After the battle, you'll have control of **Alice** in the Graveyard.\n2. Just head left to talk to the Masks.\n3. Once they're done, go through the gate to the north and watch the events unfold there.\n4. You'll then have to face **Fox Face** one last time, as **Yuri**.",
+        "description": "1. After the battle, you'll have control of **Alice** in the **Graveyard**.\n2. Just head left to talk to the Masks.\n3. Once they're done, go through the gate to the north and watch the events unfold there.\n4. You'll then have to face **Fox Face** one last time, as **Yuri**.",
         "type": "boss",
         "rewards": [],
         "boss": {
@@ -370,7 +370,7 @@
       },
       {
         "id": 8,
-        "description": "- **However**... if you paid attention, you saw something glowing behind **Yuri** as they left the tower, so let's go get it.\n- Make your way back into the Castle, through the western door, and to the very tip top of the tower into the room where you fought **Yuri**.\n- Examine the floor on the left side of the room to find the **Dark Gravestone**, which will allow you to fight and fuse into **Yuri**'s level 3 Dark Fusion when you have enough Soul Energy!\n- Score!",
+        "description": "- **However**... if you paid attention, you saw something glowing behind **Yuri** as they left the tower, so let's go get it.\n- Make your way back into the Castle, through the western door, and to the very tip top of the tower into the room where you fought **Yuri**.\n- Examine the floor on the left side of the room to find the **Dark Gravestone**, which will allow you to fight and fuse into **Yuri**'s level 3 Dark Fusion when you have enough **Soul Energy**!\n- Score!",
         "type": "loot",
         "rewards": [
           {
@@ -382,18 +382,18 @@
       },
       {
         "id": 9,
-        "description": "After you have that, make your way back to the exit and to the World Map. Your next stop will be **Prague**.",
+        "description": "After you have that, make your way back to the exit and to the **World Map**. Your next stop will be **Prague**.",
         "type": "exploration",
         "notes": [
           {
             "type": "tip",
             "title": "Note",
-            "text": "Even though you didn't see it, you accumulated Soul Energy while **Yuri** was out of your party, so there's a chance that he has one or more new level 2 Fusions that you'll be able to fight and try out."
+            "text": "Even though you didn't see it, you accumulated **Soul Energy** while **Yuri** was out of your party, so there's a chance that he has one or more new level 2 Fusions that you'll be able to fight and try out."
           },
           {
             "type": "tip",
             "title": "Note",
-            "text": "If you don't have your level 2 Earth or Light Fusions yet, then I recommend heading back inside and fighting until you get them."
+            "text": "If you don't have your level 2 Earth or **Light Fusions** yet, then I recommend heading back inside and fighting until you get them."
           }
         ],
         "rewards": []

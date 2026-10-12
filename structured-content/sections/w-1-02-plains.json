@@ -275,7 +275,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "After opening dialogue, regain control of the Rude Hero. Take a few steps to the upper-left to find a **Pure Leaf** on the ground, then head down to the next area.",
+        "description": "After opening dialogue, regain control of the **Rude Hero**. Take a few steps to the upper-left to find a **Pure Leaf** on the ground, then head down to the next area.",
         "type": "loot",
         "rewards": [
           {
@@ -287,7 +287,7 @@
       },
       {
         "id": 2,
-        "description": "Instead of following the beaten path, turn right into the grass and proceed to the next area to find a chest containing a **Leather Belt**. Equip this to the Rude Hero immediately to raise his Attack.",
+        "description": "Instead of following the beaten path, turn right into the grass and proceed to the next area to find a chest containing a **Leather Belt**. Equip this to the **Rude Hero** immediately to raise his Attack.",
         "type": "loot",
         "rewards": [
           {
@@ -299,7 +299,7 @@
       },
       {
         "id": 3,
-        "description": "1. Head back and follow the main path west until you find the girl.\n2. Engage in dialogue to name your characters (default names: **Yuri** for the Rude Hero and **Alice** for the Girl In Danger).\n3. **Alice** joins the party.",
+        "description": "1. Head back and follow the main path west until you find the girl.\n2. Engage in dialogue to name your characters (default names: **Yuri** for the **Rude Hero** and **Alice** for the Girl In Danger).\n3. **Alice** joins the party.",
         "type": "story",
         "notes": [
           {
@@ -336,7 +336,7 @@
           {
             "type": "tip",
             "title": "Save Before the Handle Task",
-            "text": "Save your game at the sluice gate Save Point now! If you miss the timing or fail your desired attempt for the best prize, you can reload and retry."
+            "text": "Save your game at the sluice gate **Save Point** now! If you miss the timing or fail your desired attempt for the best prize, you can reload and retry."
           }
         ],
         "rewards": []
@@ -386,7 +386,7 @@
       },
       {
         "id": 10,
-        "description": "1. **Yuri** awakens in the Graveyard of his soul.\n2. Head north and examine the glowing green tombstone to engage sub-boss **Raging Tiger** (75 HP, Earth).\n3. Defeat him to acquire **Yuri**'s Earth Fusion soul: **Raging Tiger** (Tigerion!).\n4. Open the menu and equip the soul.",
+        "description": "1. **Yuri** awakens in the **Graveyard** of his soul.\n2. Head north and examine the glowing green tombstone to engage sub-boss **Raging Tiger** (75 HP, Earth).\n3. Defeat him to acquire **Yuri**'s Earth Fusion soul: **Raging Tiger** (Tigerion!).\n4. Open the menu and equip the soul.",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -414,7 +414,7 @@
           {
             "type": "tutorial",
             "title": "Malice Colors & Graveyard Re-fights",
-            "text": "You can re-challenge Malice incarnations in the Graveyard whenever your Malice meter is within specific color ranges.\n\n- Each victory purges Malice and rewards an item corresponding to your exact Malice value (1–100).\n- Special items are awarded once per threshold; repeat clears at the same value yield a **Thera Leaf** instead.\n\n*Note:*\n- The game tracks Malice values internally from 1 to 100 without displaying a numerical counter.\n- Thresholds advance at 25, 50, 75, and 100.\n- Early monsters contribute ~1 point each, while stronger enemies give more.",
+            "text": "You can re-challenge Malice incarnations in the **Graveyard** whenever your Malice meter is within specific color ranges.\n\n- Each victory purges Malice and rewards an item corresponding to your exact Malice value (1–100).\n- Special items are awarded once per threshold; repeat clears at the same value yield a **Thera Leaf** instead.\n\n*Note:*\n- The game tracks Malice values internally from 1 to 100 without displaying a numerical counter.\n- Thresholds advance at 25, 50, 75, and 100.\n- Early monsters contribute ~1 point each, while stronger enemies give more.",
             "badges": [
               {
                 "label": "Evil 1",
@@ -661,7 +661,7 @@
       },
       {
         "id": 12,
-        "description": "1. Head east to exit the Graveyard and reunite with **Alice**.\n2. From the Save Point, return to the screen with the bridge and river.\n3. Drop into the drained riverbed below the bridge to claim the reward chest corresponding to your handle performance (**Leather Belt**, **Thera Seed**, **Thera Leaf**, **Bandanna**, or **Mana Seed**).",
+        "description": "1. Head east to exit the **Graveyard** and reunite with **Alice**.\n2. From the **Save Point**, return to the screen with the bridge and river.\n3. Drop into the drained riverbed below the bridge to claim the reward chest corresponding to your handle performance (**Leather Belt**, **Thera Seed**, **Thera Leaf**, **Bandanna**, or **Mana Seed**).",
         "type": "loot",
         "rewards": [
           {

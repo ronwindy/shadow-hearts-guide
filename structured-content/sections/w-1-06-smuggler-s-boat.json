@@ -350,7 +350,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. When you gain control of a very queasy **Yuri**, open the chest on the left side of the room for a **Rosewood Bracelet**.\n2. Go up the stairs to the right for some dialogue with **Margarete**, then go down and left, examining the door to the wheelhouse for a scene.\n3. Afterward, head left a bit more, then check the top barrel to the upper-right for a **Witch's Broth**.\n4. Move left and talk to Zhuzhen, then make your way back below deck to talk with **Alice** for a long scene.",
+        "description": "1. When you gain control of a very queasy **Yuri**, open the chest on the left side of the room for a **Rosewood Bracelet**.\n2. Go up the stairs to the right for some dialogue with **Margarete**, then go down and left, examining the door to the wheelhouse for a scene.\n3. Afterward, head left a bit more, then check the top barrel to the upper-right for a **Witch's Broth**.\n4. Move left and talk to **Zhuzhen**, then make your way back below deck to talk with **Alice** for a long scene.",
         "type": "loot",
         "rewards": [
           {
@@ -367,7 +367,7 @@
       },
       {
         "id": 2,
-        "description": "1. You'll regain control under the deck as just **Yuri**. Save your game, then go back out on deck.\n2. Head inside the wheelhouse and take out the group of monsters here.\n3. Before leaving, check the floor near the wheel and the blanket hanging for a **Lottery Ticket**.\n4. Go back outside and downstairs to take out a second group of enemies.\n5. Once they're finished, go back out on the deck and talk to Zhuzhen to fight one last group.",
+        "description": "1. You'll regain control under the deck as just **Yuri**. Save your game, then go back out on deck.\n2. Head inside the wheelhouse and take out the group of monsters here.\n3. Before leaving, check the floor near the wheel and the blanket hanging for a **Lottery Ticket**.\n4. Go back outside and downstairs to take out a second group of enemies.\n5. Once they're finished, go back out on the deck and talk to **Zhuzhen** to fight one last group.",
         "type": "exploration",
         "notes": [
           {
@@ -386,7 +386,7 @@
       },
       {
         "id": 3,
-        "description": "1. Once they're done, and Zhuzhen is finished with the preparations, make your way back down to below the deck and save your game.\n2. Before continuing, stop in the wheelhouse once more and talk to the **Courier Subordinate**, who's asking if you need anything in a strange way.",
+        "description": "1. Once they're done, and **Zhuzhen** is finished with the preparations, make your way back down to below the deck and save your game.\n2. Before continuing, stop in the wheelhouse once more and talk to the **Courier Subordinate**, who's asking if you need anything in a strange way.",
         "type": "exploration",
         "choices": [
           {
@@ -426,7 +426,7 @@
           {
             "type": "warning",
             "title": "Shop source is unclear",
-            "text": "The source lists this inventory under **Pachimon General Store**, but does not say which vendor sells these items. The Courier Subordinate is the only seller mentioned in this section."
+            "text": "The source lists this inventory under **Pachimon General Store**, but does not say which vendor sells these items. The **Courier Subordinate** is the only seller mentioned in this section."
           }
         ],
         "rewards": []
@@ -450,7 +450,7 @@
           {
             "type": "tip",
             "title": "Lottery prizes by color",
-            "text": "Each color is a prize from this Lottery Member.",
+            "text": "Each color is a prize from this **Lottery Member**.",
             "table": {
               "headers": [
                 "Color",
@@ -485,7 +485,7 @@
       },
       {
         "id": 7,
-        "description": "When you're prepared for the next boss, go back and talk to Zhuzhen. He'll ask if you're ready.",
+        "description": "When you're prepared for the next boss, go back and talk to **Zhuzhen**. He'll ask if you're ready.",
         "type": "exploration",
         "choices": [
           {
@@ -727,13 +727,13 @@
       },
       {
         "id": 10,
-        "description": "Watch the sad series of events, then you'll regain control on the World Map. Next stop: **Shanghai!**",
+        "description": "Watch the sad series of events, then you'll regain control on the **World Map**. Next stop: **Shanghai!**",
         "type": "navigation",
         "notes": [
           {
             "type": "warning",
             "title": "Remove accessories before Shanghai",
-            "text": "Make sure to remove your accessories from your party before entering, as you'll be controlling Zhuzhen for a short time."
+            "text": "Make sure to remove your accessories from your party before entering, as you'll be controlling **Zhuzhen** for a short time."
           }
         ],
         "rewards": []
