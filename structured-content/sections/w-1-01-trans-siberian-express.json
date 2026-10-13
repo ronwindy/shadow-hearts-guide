@@ -137,7 +137,7 @@
       },
       {
         "id": 4,
-        "description": "Examine the body in the aisle after taking out the **Wind Shears** to obtain a **Thera Leaf**.",
+        "description": "Once you take out the **Wind Shears**, examine the body in the aisle for a **Thera Leaf**.",
         "type": "loot",
         "rewards": [
           {
@@ -149,7 +149,7 @@
       },
       {
         "id": 5,
-        "description": "Examine the body lying in the booth to obtain a **Mana Leaf**.",
+        "description": "Then examine the body lying in the booth for a **Mana Leaf**.",
         "type": "loot",
         "rewards": [
           {
@@ -185,13 +185,13 @@
       },
       {
         "id": 8,
-        "description": "Watch events following the battle to transition to the **World Map**.",
+        "description": "Watch some more events after the battle, then you'll be on the **World Map**.",
         "type": "story",
         "rewards": []
       },
       {
         "id": 9,
-        "description": "On the **World Map**, you may save your game (you can always save on the World Map), then proceed to the only available destination: **Plains**.",
+        "description": "In any case, there's only one place to go: the **Plains**.",
         "type": "navigation",
         "notes": [
           {

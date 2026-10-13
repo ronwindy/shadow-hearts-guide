@@ -35,27 +35,27 @@
         {
           "name": "Tea of the Healer",
           "category": "items",
-          "location": "There's nothing too terribly important here, but if you check the cabinet at the top of the screen that a bird cage is sitting on, you can get a Tea of the Healer. (step 10)"
+          "location": "Cabinet at the top of the screen with a bird cage on it, in the previously locked building (step 7)"
         },
         {
           "name": "Monkey Paw",
           "category": "items",
-          "location": "- Third win (four dogs) - A Monkey Paw! (step 12)"
+          "location": "Third win (four dogs) of the dog-picking contest (step 8)"
         },
         {
           "name": "Lottery Ticket",
           "category": "items",
-          "location": "- First win (three dogs) - A Lottery Ticket! (step 12)"
+          "location": "First win (three dogs) of the dog-picking contest (step 8)"
         },
         {
           "name": "Leonardo's Bear",
           "category": "equipment",
-          "location": "- Second win (four dogs) - A Leonardo's Bear! (step 12)"
+          "location": "Second win (four dogs) of the dog-picking contest (step 8)"
         },
         {
           "name": "Yawang Gate Key",
           "category": "valuables",
-          "location": "Open the fish well on the left side of the ship, and you'll find the Yawang Gate Key wrapped in cloth. (step 2)"
+          "location": "Fish well on the left side of the ship, wrapped in cloth (step 2)"
         }
       ]
     },
@@ -126,7 +126,7 @@
       },
       {
         "id": 5,
-        "description": "1. You see **Alice** trapped.\n2. Watch the dialogue, and pay attention, or you will miss out on a side quest.\n3. Answer the first prompt with [1] Quit it, you dirty old man!\n4. Answer the second prompt with [1] Just get away from me!\n5. Answer the third prompt with [1] Ignore him.\n6. Watch the rest of the events, and you'll eventually regain control.",
+        "description": "1. You see **Alice** trapped.\n2. Watch the dialogue, and pay attention, or you will miss out on a side quest.\n3. Answer with the following replies:\n4. [1] Quit it, you dirty old man!\n5. [1] Just get away from me!\n6. [1] Ignore him.\n7. Watch the rest of the events, and you'll eventually regain control.",
         "type": "dialogue",
         "notes": [
           {
@@ -140,49 +140,49 @@
             "option": "1. Quit it, you dirty old man!",
             "prompt": 1,
             "required": true,
-            "after_item": 3
+            "after_item": 4
           },
           {
             "option": "2. This strange machine is so sexy!",
             "prompt": 1,
-            "after_item": 3
+            "after_item": 4
           },
           {
             "option": "3. Please don't hurt me...",
             "prompt": 1,
-            "after_item": 3
+            "after_item": 4
           },
           {
             "option": "1. Just get away from me!",
             "prompt": 2,
             "required": true,
-            "after_item": 4
+            "after_item": 5
           },
           {
             "option": "2. This scary tower is sexy, too!",
             "prompt": 2,
-            "after_item": 4
+            "after_item": 5
           },
           {
             "option": "3. Please, stop...",
             "prompt": 2,
-            "after_item": 4
+            "after_item": 5
           },
           {
             "option": "1. Ignore him.",
             "prompt": 3,
             "required": true,
-            "after_item": 5
+            "after_item": 6
           },
           {
             "option": "2. But YOU'RE the sexiest!",
             "prompt": 3,
-            "after_item": 5
+            "after_item": 6
           },
           {
             "option": "3. Forgive me...",
             "prompt": 3,
-            "after_item": 5
+            "after_item": 6
           }
         ],
         "rewards": []

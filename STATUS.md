@@ -1,9 +1,9 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-13 22:07:25`
+> Last synced: `2026-10-13 23:06:43`
 
 ```text
-=== PROJECT STATUS (2026-10-13 22:07:25) ===
+=== PROJECT STATUS (2026-10-13 23:06:43) ===
 Canonical 67/67 | Structured 27/67 | QA pass 27/67 (fail 0) | Web built 27/67
 Next:
   1. Structure w-2-10 (Calios Mental Hospital (1)) - next chronological
