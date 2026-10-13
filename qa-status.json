@@ -71,14 +71,14 @@
     }
   },
   "w-1-03": {
-    "checked_at": "2026-10-13T21:48:22",
-    "content_hash": "7880979ea2c66fcb",
+    "checked_at": "2026-10-13T23:28:45",
+    "content_hash": "38d42eb3bbf1ead3",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
       "low": 2,
-      "medium": 18
+      "medium": 0
     }
   },
   "w-1-04": {

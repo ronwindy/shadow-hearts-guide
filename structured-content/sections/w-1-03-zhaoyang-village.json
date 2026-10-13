@@ -387,7 +387,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "1. When you regain control, head back south to the **first area of town** to find an **Angel's Feather** roughly around the center of the area, just to the lower-right of a pile of sticks.\n2. Go back up to the previous screen (**second area**), then follow along the right side until you see the '?' icon near another pile of sticks to find a **Bronze Arrowhead**.\n3. Continue north to the next area.",
+        "description": "1. When you regain control, head back south to the **first area** of town, where you'll find an **Angel's Feather**, roughly around the center of the area, just to the lower-right of a pile of sticks.\n2. Go back up to the previous screen, then follow along the right side until you see the '?' icon near another pile of sticks.\n3. There is a **Bronze Arrowhead** to be found here.\n4. Continue north to the next area.",
         "type": "exploration",
         "rewards": [
           {
@@ -404,7 +404,7 @@
       },
       {
         "id": 2,
-        "description": "1. Use the **Save Point** in the center of town near the well to save your game and clear **Malice** in the **Graveyard** if needed.\n2. Check around the right side of the well by a board on the ground to find a **Tent**.\n3. Go all the way to the right, then all the way up to the corner by the **Lost Peddler / Wandering Merchant** to find a **Talisman of Luck** lying on the ground.",
+        "description": "1. Use the **Save Point** here to save and clear **Malice** in the **Graveyard** if needed, then check around the right side of the well here by a board on the ground to find a **Tent**.\n2. Go all the way to the right, then all the way up; the corner up here by the **Lost Peddler**/**Wandering Merchant** has a **Talisman of Luck** lying on the ground.",
         "type": "exploration",
         "rewards": [
           {
@@ -421,13 +421,13 @@
       },
       {
         "id": 3,
-        "description": "Shop with the **Wandering Merchant** if desired.\n\n- Prioritize healing supplies such as **Thera**, **Mana**, and **Pure Leaves**.\n- **Pure Leaves** are especially helpful because **Alice** has low SP and can easily become **Berserk**.\n- If you have extra funds, purchase **Leather Belts** and **Bandannas** (up to 3 each for the active party) and equip both on **Yuri** and **Alice** before proceeding.",
+        "description": "1. Feel free to shop with the **Wandering Merchant**; I using your money for just healing items for now, such as some **Thera**, **Mana**, and **Pure Leaves**, if you have the extra money.\n2. **Pure Leaves** will really come in handy in the first part of the game, where characters like **Alice** have hardly any SP and can't last in a long battle without going **Berserk**.\n3. We'll be visiting another town soon, so we'll be able to go shopping there with some more money.\n4. If you have some extra now, or if the money's just burning a hole in your pocket, then buy some **Leather Belts** and **Bandannas** so you have 3 each for your active party, and if you do, make sure to equip both **Yuri** and **Alice** with both of them before continuing on.",
         "type": "shop",
         "rewards": []
       },
       {
         "id": 4,
-        "description": "1. Head all the way north to the next area to reach the **shrine**.\n2. Watch the events here, then enter the house the children invite you to and watch the scene.\n3. After some rest, take on two **Hellcats** in combat.",
+        "description": "1. When you're ready, head all the way north to the next area.\n2. Watch the events here, then enter the house the children invite you to and continue watching the events unfold.\n3. After some rest, you'll have to take on two **Hellcats**.",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -460,7 +460,7 @@
       },
       {
         "id": 5,
-        "description": "After defeating the **Hellcats**, head back into the house and examine the dresser at the very top of the screen to find a **Phoenix Tail**.",
+        "description": "After the battle, head back into the house and examine the dresser at the very top of the screen to find a **Phoenix Tail**.",
         "type": "loot",
         "rewards": [
           {
@@ -472,13 +472,13 @@
       },
       {
         "id": 6,
-        "description": "1. Go back outside and make your way north back to the **shrine**.\n2. After a scene with the **Cat Lady**, head back to the previous area and go to the left side of the well to encounter her again.\n3. Head south to the **second area** to run into her yet again, then continue south back to the **first area**.",
+        "description": "1. Go back outside, then make your way north back to the **shrine**.\n2. After a scene with the **Cat Lady**, head back to the previous area and make your way to the left side of the well, where you'll encounter her again.\n3. Head south to the **second area**, where you'll run into her yet again.\n4. Continue south back to the **first area**.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 7,
-        "description": "In the **first area**, run into the Quack Oracle, who introduces himself as Master **Li Zhuzhen**, and meet Wanderer **Meiyuan** the acupuncturist. **Zhuzhen** temporarily joins your party.",
+        "description": "1. Here, you'll run into the **Quack Oracle**, who will introduce himself as the true ruler of the nine heaves, the absolute sage Master **Li Zhuzhen**, referred to as **Zhuzhen** from here on out.\n2. You'll also meet Wanderer **Meiyuan** the acupuncturist, who's got a thing for **Yuri**, and would love to just stick his needles in him...\n3. **Zhuzhen** will decide to help you out and will temporarily join your party!",
         "type": "story",
         "notes": [
           {
@@ -491,7 +491,7 @@
       },
       {
         "id": 8,
-        "description": "1. Continue north to encounter the **Cat Lady** once more, then return to the center of town to see her again, and finally re-enter the house you were originally lured into.\n2. After the scene, learn that you need to find a **Metal Vessel** and a **Torch** to combine with the **Anti-Cat Powder** received from **Zhuzhen**.",
+        "description": "1. Once you regain control, continue north to run into the **Cat Lady** once again.\n2. Afterward, head back to the center of town to run into her again, then go back into the house you were lured into in the first place.\n3. After a scene here, you'll learn that you need to find a **Metal Vessel** and a **Torch** to use with the **Anti-Cat Powder** you receive from **Zhuzhen** to continue.",
         "type": "quest",
         "rewards": [
           {
@@ -503,7 +503,7 @@
       },
       {
         "id": 9,
-        "description": "Head back outside and make your way south to the **second area**. Follow along the western side until the '?' icon pops up, then complete a **Normal Ring** execution to pick up the **Metal Bowl**.",
+        "description": "1. Head back outside, then make your way south to the **second area**.\n2. Here, follow along the western side of the area until the '?' icon pops up, allowing you to attempt a **Normal Ring**, just like in battle, to pick up the **Metal Bowl** we were looking for.",
         "type": "loot",
         "rewards": [
           {
@@ -515,7 +515,7 @@
       },
       {
         "id": 10,
-        "description": "Continue south to the entrance and examine the building just to the right of **Meiyuan** to find the **Torch** among a pile of sticks.",
+        "description": "1. Continue south to the entrance, then examine the building just to the right of **Meiyuan** to find the **Torch** among a pile of sticks.\n2. Now that we have both items that we needed, make your way back to the center of town and use the **Save Point**.",
         "type": "loot",
         "rewards": [
           {
@@ -527,7 +527,7 @@
       },
       {
         "id": 11,
-        "description": "With both required items collected, make your way back to the center of town and use the **Save Point**. When ready, enter the **Cat Lady**'s house and examine the pit in the center to trigger the battle with **Felinus**.",
+        "description": "1. When you're ready, enter the **Cat Lady**'s house again and examine the pit in the center.\n2. After an event, you'll have to fight her.",
         "type": "exploration",
         "rewards": []
       },
@@ -560,7 +560,7 @@
       },
       {
         "id": 13,
-        "description": "Head back to the **Save Point** and use a **Tent** to recover party HP and MP before attempting the boss.",
+        "description": "Once she's done, head back to the **Save Point** and use a **Tent** to recover your HP and MP.",
         "type": "preparation",
         "notes": [
           {
@@ -573,7 +573,7 @@
       },
       {
         "id": 14,
-        "description": "Head back north to the **shrine** and examine it. You are prompted: *'Do you dare violate the shrine?'*",
+        "description": "When you're ready, head back north to the **shrine** and examine it. Do you dare violate the shrine?",
         "type": "dialogue",
         "choices": [
           {
@@ -591,7 +591,7 @@
       },
       {
         "id": 15,
-        "description": "Choose option [2] to fight the boss: **Yamaraja: Earth** (#010 **Yamaraja**: Earth, HP: 300, Class: Water).",
+        "description": "Of course we do! Choose 2, and you'll have to take on **Yamaraja**.",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -698,18 +698,13 @@
       },
       {
         "id": 16,
-        "description": "After the battle and scene conclude, examine the shrine once again to find a **Shell Bracelet**. Then head south through town and speak with the **Lost Peddler** on the second screen to obtain the **Snake Card**.",
+        "description": "1. After both the battle and following scene are over, examine the **shrine** once again to find a **Shell Bracelet**.\n2. Head back south through town, talking to the **Lost Peddler** on the second screen for a **Snake Card**, which is a **Guild Card** that can be used for a discount in Shops.",
         "type": "loot",
         "notes": [
           {
             "type": "warning",
             "title": "Remove Zhuzhen's Equipment",
             "text": "After the battle, remove everything you can from **Zhuzhen**."
-          },
-          {
-            "type": "tip",
-            "title": "Snake Card Guild Discount",
-            "text": "The **Snake Card** is a **Guild Card** that can be used for a discount in Shops."
           }
         ],
         "rewards": [
@@ -727,7 +722,7 @@
       },
       {
         "id": 17,
-        "description": "Make your way to the town gate, where **Zhuzhen** departs from your party. Exit to the **World Map** and proceed to your next destination: **Fengtian**.",
+        "description": "1. That's it for **Zhaoyang Village**, so go ahead and make your way to the gate, where **Zhuzhen** will leave your party.\n2. Afterward, head out to the **World Map**.\n3. Our next destination is **Fengtian**!",
         "type": "navigation",
         "rewards": []
       }
