@@ -69,6 +69,8 @@ def resolve_section(identifier: str) -> Optional[Dict[str, Any]]:
     clean_id = identifier.strip().lower()
     clean_id_no_code = clean_id.strip("[]")
 
+    exact: List[Dict[str, Any]] = []
+    partial: List[Dict[str, Any]] = []
     for sec in sections:
         sec_id = sec.get("id", "").lower()
         sec_code = sec.get("code", "").lower().strip("[]")
@@ -76,13 +78,19 @@ def resolve_section(identifier: str) -> Optional[Dict[str, Any]]:
         file_name = Path(rel_file).name.lower()
         file_stem = Path(rel_file).stem.lower()
 
-        if (clean_id == sec_id or
-            clean_id_no_code == sec_code or
-            clean_id == file_stem or
-            clean_id == file_name or
-            clean_id in file_stem):
-            return sec
+        if clean_id in (sec_id, file_stem, file_name) or clean_id_no_code == sec_code:
+            exact.append(sec)
+        elif clean_id in file_stem:
+            partial.append(sec)
 
+    # An exact match always wins; a partial match is only accepted when it is unique.
+    matches = exact or partial
+    if len(matches) == 1:
+        return matches[0]
+    if len(matches) > 1:
+        names = ", ".join(m.get("id", "?") for m in matches[:6])
+        more = f" (+{len(matches) - 6} more)" if len(matches) > 6 else ""
+        print(f"[ERROR] '{identifier}' is ambiguous: matches {names}{more}")
     return None
 
 
@@ -486,13 +494,16 @@ def run_bold(sec: Dict[str, Any]) -> None:
 def run_check(sec: Dict[str, Any], build: bool = True) -> bool:
     """Single per-section gate: bold -> validate -> lint -> QA -> build -> status."""
     run_bold(sec)
-    v_ok = run_validate(sec)
-    l_ok = run_lint(sec)
-    q_ok = run_qa(sec)
-    b_ok = run_build() if build else True
-    ok = v_ok and l_ok and q_ok and b_ok
+    if not run_validate(sec):
+        # QA would record a result against an invalid file, and the build is wasted.
+        print("[SKIP] lint, QA and build skipped: fix schema validation first.")
+        ok = False
+    else:
+        ok = run_lint(sec) and run_qa(sec)
+        if ok and build:
+            ok = run_build()
+    update_project_status()  # always: STATUS.md must reflect a failing QA too
     if ok:
-        update_project_status()
         remind_independent_qa(sec)
     return ok
 
@@ -528,8 +539,6 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace, buil
 
     if args.check or args.verify or args.full:
         success = run_check(sec, build=build) and success
-        if args.full:
-            success = run_frontend_audit() and success
 
     return success
 
@@ -588,7 +597,10 @@ def main():
     build = not (args.no_build or batch)
     ok = all([_execute_section_actions(sec, args, build=build) for sec in secs])
     if batch and not args.no_build and (args.check or args.verify or args.full):
-        ok = run_build() and ok
+        ok = ok and run_build()  # a build on top of failed sections is wasted
+    if args.full and ok:
+        # The audit reads the built HTML, so it runs once, after the final build.
+        ok = run_frontend_audit()
     if not ok:
         sys.exit(1)
 
