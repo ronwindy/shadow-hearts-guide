@@ -41,7 +41,7 @@ Automated QA verification is integrated into the project pipeline:
 python scripts/pipeline.py <section_id> --qa
 
 # Run full verification (Schema Validation + QA Verification + Status Sync):
-python scripts/pipeline.py <section_id> --verify
+python scripts/pipeline.py <section_id> --check
 
 # Audit all converted sections missing QA reports:
 python scripts/pipeline.py --backlog
@@ -93,15 +93,15 @@ A guide section is QA-approved when:
 - [ ] Schema validation passes with 0 errors.
 - [ ] Source fidelity audit reports **0 Critical** and **0 High** findings.
 - [ ] QA result in `qa-status.json` is `PASS` (re-run after any edit to the structured file).
-- [ ] Root `STATUS.md` is synchronized via `python scripts/pipeline.py <section_id> --verify`.
+- [ ] Root `STATUS.md` is synchronized via `python scripts/pipeline.py <section_id> --check`.
 
 ---
 
 ## 7. Independent QA Subagent (walkthrough sections)
 
-The transformer must not grade its own work. After `--verify` passes, launch a fresh-context, **read-only** subagent (Agent tool, `general-purpose`; do not pass your refine reasoning) with this brief:
+The transformer must not grade its own work. After `--check` passes, launch a fresh-context, **read-only** subagent (Agent tool, `general-purpose`; do not pass your refine reasoning) with this brief:
 
 > You are an independent QA reviewer for a game-guide conversion. Read only these two files: the canonical source `canonical-sources/sections/<file>.json` (`text` field is authoritative) and the structured guide `structured-content/sections/<file>.json`. Do NOT edit any file. Report findings only, as ONE JSON object and nothing else, matching `.claude/skills/qa/schemas/qa-verdict.schema.json`: `{"section_id", "verdict": "PASS"|"PASS_WITH_NOTES"|"FAIL", "spot_checked": [..], "findings": [{"severity", "category": invented|altered|omitted|order|contradiction|other, "location", "canonical", "structured", "issue"}]}`. Check for: (1) any fact, number, name, item, location or condition in the structured guide that is NOT in the canonical text (invented); (2) any name or number that differs from canonical (altered); (3) canonical steps, warnings, missables, choices or rewards missing from the structured guide (omitted); (4) step order that differs where order matters; (5) source contradictions that were silently resolved. Severity: critical/high/medium/low per the QA skill. If nothing is wrong, return `"verdict": "PASS"`, `"findings": []` and list what you spot-checked. Use `FAIL` if any finding is critical/high, `PASS_WITH_NOTES` for medium/low only.
 
-Handling results: the Guide Transformer fixes critical/high findings and re-runs `--verify`; ambiguous source text is preserved and flagged, never "fixed". Save the JSON to a file and run `pipeline.py <id> --verdict <file.json>`: it validates the schema, stores it as `qa-reports/<id>.subagent.json` and fails on `FAIL`.
+Handling results: the Guide Transformer fixes critical/high findings and re-runs `--check`; ambiguous source text is preserved and flagged, never "fixed". Save the JSON to a file and run `pipeline.py <id> --verdict <file.json>`: it validates the schema, stores it as `qa-reports/<id>.subagent.json` and fails on `FAIL`.
 Skip this step for `reference` sections (the deterministic byte-for-byte check is sufficient).

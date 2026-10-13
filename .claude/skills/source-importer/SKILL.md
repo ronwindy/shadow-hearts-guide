@@ -34,4 +34,3 @@ Outputs: `canonical-sources/shadow-hearts-guide.canonical.json` (lightweight ind
 ## Done when
 Every section's `text` is verbatim, section order matches source, counts in the index match the section files.
 
-Full original specification (detailed rules, examples, handoff contract): [references/full-spec.md](references/full-spec.md). Read only the section you need.

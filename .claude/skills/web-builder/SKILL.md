@@ -26,4 +26,3 @@ cmd /c npm test
 ## Done when
 Build passes, frontend audit has no high findings, rendered page matches structured JSON.
 
-Full original specification (30 sections: visual hierarchy, persistence, SEO, handoff contract...): [references/full-spec.md](references/full-spec.md). Read only the section you need.
