@@ -9,6 +9,7 @@ Verifies fidelity between Canonical Source JSON and Structured Guide JSON:
 - Shop inventory items and prices
 - Canonical notes and warnings
 - Navigation links consistency
+- Step prose against canonical prose (ordered word diff, text_fidelity.py)
 
 Produces a structured QA Report conforming to qa/SKILL.md Section 23.
 """
@@ -23,6 +24,7 @@ from typing import Dict, List, Any, Optional, Tuple
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "guide-transformer" / "scripts"))
 from richtext import flatten_guide  # noqa: E402
+from text_fidelity import check_text_fidelity  # noqa: E402
 
 
 def normalize_name(name: Any) -> str:
@@ -340,6 +342,23 @@ def verify_guide(canonical: Dict[str, Any], structured: Dict[str, Any]) -> Dict[
                 if isinstance(name, str) and normalize_name(name) not in tokens:
                     add_finding("low", "fidelity", f"steps[{s.get('id')}].rewards", name, "No matching source token",
                                 f"Reward '{name}' does not match any item tag or overview item of the source (spelling?)")
+
+    # 11. Step prose follows the canonical prose (ordered word diff; field checks above miss text)
+    # Sections merged into this one (e.g. a hub's transition sentence moved to step 1) count as source.
+    root = Path(__file__).resolve().parents[4]
+    merged_texts = []
+    try:
+        qa_all = json.load(open(root / "qa-status.json", encoding="utf-8"))
+    except Exception:
+        qa_all = {}
+    for mid, entry in qa_all.items():
+        if isinstance(entry, dict) and entry.get("status") == "MERGED" and entry.get("merged_into") == sec_id:
+            for path in sorted((root / "canonical-sources" / "sections").glob(f"{mid}-*.json")):
+                merged_texts.append(json.load(open(path, encoding="utf-8")).get("text", ""))
+    severity = {"altered-high": "high"}
+    for f in check_text_fidelity(canonical, guide, merged_texts):
+        add_finding(severity.get(f["kind"], "medium"), f"text fidelity ({f['kind'].replace('-high', '')})",
+                    f["location"], f["source"], f["generated"], f["description"])
 
     # Calculate status and summary
     summary_counts = {
