@@ -115,14 +115,14 @@
     }
   },
   "w-1-07": {
-    "checked_at": "2026-10-13T22:07:24",
-    "content_hash": "d46a8342aa215526",
+    "checked_at": "2026-10-13T23:14:12",
+    "content_hash": "cb0d6756d524fa88",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
       "low": 1,
-      "medium": 8
+      "medium": 0
     }
   },
   "w-1-08": {

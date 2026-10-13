@@ -274,7 +274,7 @@
       {
         "id": 2,
         "type": "exploration",
-        "description": "Afterward, you regain control as **Zhuzhen** in the **Cypress Hotel** in **Shanghai**.\n\n- The **Silent Peddler** is here beside your room; the source recommends saving your points until you are able to get the best prize first.\n- Use the **Save Point** on the ground floor.\n- Talk to **Margarete** if you like.\n- Head out into the city.",
+        "description": "Afterward, you regain control as **Zhuzhen** in the **Cypress Hotel** in **Shanghai**.\n\n- The **Silent Peddler** is here beside your room, but again, I recommend saving your points until you are able to get the best prize first.\n- Use the **Save Point** on the ground floor.\n- Talk to **Margarete** if you like.\n- Head out into the city.",
         "rewards": []
       },
       {
@@ -308,7 +308,7 @@
       {
         "id": 5,
         "type": "loot",
-        "description": "1. Go right, then follow the wall as you go south until you run across a '?' icon at the yellow banner; check here for a **Talisman of Mercy**.\n2. Keep following along the eastern wall until you come across another '?' icon near a long red banner; check here for a **B.Dragon Horn**.\n3. To your left from here is a blue door; this is a shop (**Mika's House**). The source says to save shopping here for a little later, when you have another discount card.\n4. Continue southwest to the next area.",
+        "description": "1. Go right, then follow the wall as you go south until you run across a '?' icon at the yellow banner; check here for a **Talisman of Mercy**.\n2. Keep following along the eastern wall until you come across another '?' icon near a long red banner; check here for a **B.Dragon Horn**.\n3. To your left from here is a blue door; this is actually a shop (**Mika's House**), but save shopping here for just a little later when we have another discount card.\n4. Continue southwest to the next area.",
         "rewards": [
           {
             "name": "Talisman of Mercy",
@@ -324,12 +324,17 @@
       {
         "id": 6,
         "type": "loot",
-        "description": "1. Descend the stairs here, then examine the barrel next to the green archway for a **Seal of Life**.\n2. Make your way south and down into the area below deck on the boat.\n3. Talk to the boy here; he is a **Lottery Member** (**Lottery Member No. 12**).\n4. The ring here moves REALLY fast; equipping the **Pocket Watch** makes it easier to hit the areas.",
+        "description": "1. Descend the stairs here, then examine the barrel next to the green archway for a **Seal of Life**.\n2. Make your way south and down into the area below deck on the boat.\n3. Talk to the boy here, and you'll find out that he's a **Lottery Member**!\n4. The ring here moves REALLY fast, so remember, equipping the **Pocket Watch** will make it easier to hit the areas!",
         "notes": [
           {
             "type": "missable",
             "title": "Win the Star Card",
-            "text": "Make sure to win the **Star Card** before continuing on.\n\n- It allows you to get up to 20% off on your purchases, and 10% more on your sales.\n- If you don't win it, reload your last save and try again.\n- You need to win something from each member at least once.",
+            "text": "- Make sure to win the **Star Card** before continuing on; it allows you to get up to 20% off on your purchases, and 10% more on your sales!\n- If you don't win it, reload your last save and try again.\n- Remember, you need to win something from each member at least once!"
+          },
+          {
+            "type": "tutorial",
+            "title": "Prizes",
+            "text": "**Lottery Member No. 12** (Sharp Van)",
             "table": {
               "headers": [
                 "Color",
@@ -388,7 +393,7 @@
       {
         "id": 8,
         "type": "boss",
-        "description": "Talk to the man at the bar to start a series of events.\n\n1. You will eventually have two different battles against a **Kappa** each time. Just cast **Ogre Flamedance** and heal, if necessary.\n2. You then take on **Wugui**, but you cannot win. Just defend and let him take you out with his **Game of Death**.\n3. Once that battle is over, **Yuri** steps in and you take on **Wugui** once again.",
+        "description": "Talk to the man at the bar to start a series of events.\n\n1. You'll eventually have two different battles against a **Kappa** each time.\n2. Just cast **Ogre Flamedance** and heal, if necessary.\n3. After those two are finished, you'll take on **Wugui**, but to no avail.\n4. You cannot win, so just defend and let him take you out with his **Game of Death**.\n5. Once that battle is over, **Yuri** will step in and you'll have to take him on once again.",
         "encounter": {
           "enemies": [
             "Kappa",
@@ -427,7 +432,7 @@
       {
         "id": 11,
         "type": "preparation",
-        "description": "The source recommends the following purchases:\n\n- A decent amount of the new 2nd level recovery items (**Thera**/**Mana**/**Pure Seed** and **Talisman of Mercy**).\n- Upgrading everyone's weapons and armor.\n- Four (this time) each of the **Studded Cap** and **Western Belt**, as all four party members will be participating in the next dungeon.",
+        "description": "For shopping recommendations, I recommend buying:\n\n- A decent amount of the new 2nd level recovery items (**Thera**/**Mana**/**Pure Seed** and **Talisman of Mercy**).\n- Upgrading everyone's weapons and armor.\n- Four (this time) each of the **Studded Caps** and **Western Belts**, as all four party members will be participating in the next dungeon.",
         "notes": [
           {
             "type": "tip",
@@ -440,7 +445,7 @@
       {
         "id": 12,
         "type": "exploration",
-        "description": "Once you're done shopping, make your way back to the bar, and examine the curtain on the top part of the room.\n\n- **Mr. Zhen** is now hosting pit fights.\n- Right now, you won't make it very far before you're killed, but you're welcome to try.\n- The source says you will come back to this after a while, when you are a lot stronger and are able to finish it.",
+        "description": "Once you're done shopping, make your way back to the bar, and examine the curtain on the top part of the room.\n\n- **Mr. Zhen** is now hosting pit fights!\n- Right now, you won't make it very far before you're killed, but you're welcome to try!\n- We'll come back to this after a while, when we're a lot stronger and are able to finish it, but just know that it's here.",
         "rewards": []
       },
       {

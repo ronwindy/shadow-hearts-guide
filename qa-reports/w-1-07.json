@@ -6,7 +6,7 @@
     "summary": {
       "critical": 0,
       "high": 0,
-      "medium": 8,
+      "medium": 0,
       "low": 1
     },
     "findings": [
@@ -22,118 +22,6 @@
           "text": "As with the battle as his father, have Yuri fuse into your physically strongest "
         },
         "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-002",
-        "severity": "medium",
-        "category": "text fidelity (altered)",
-        "location": "steps[8].description line 5",
-        "source": {
-          "text": "to take him on once again sub"
-        },
-        "generated": {
-          "text": "and you take on wugui once again"
-        },
-        "description": "Changed/added words vs. canonical: ['wugui']",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-003",
-        "severity": "medium",
-        "category": "text fidelity (unsupported)",
-        "location": "steps[11].description line 1",
-        "source": {
-          "text": "(no matching source prose)"
-        },
-        "generated": {
-          "text": "The source recommends the following purchases:"
-        },
-        "description": "Line has no matching canonical prose (invented or heavily reworded?)",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-004",
-        "severity": "medium",
-        "category": "text fidelity (altered)",
-        "location": "steps[11].description line 5",
-        "source": {
-          "text": "each of the studded caps and western belts as"
-        },
-        "generated": {
-          "text": "each of the studded cap and western belt as"
-        },
-        "description": "Changed/added words vs. canonical: ['cap']",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-005",
-        "severity": "medium",
-        "category": "text fidelity (altered)",
-        "location": "steps[11].description line 5",
-        "source": {
-          "text": "studded caps and western belts as all four party"
-        },
-        "generated": {
-          "text": "studded cap and western belt as all four party"
-        },
-        "description": "Changed/added words vs. canonical: ['belt']",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-006",
-        "severity": "medium",
-        "category": "text fidelity (omitted)",
-        "location": "steps",
-        "source": {
-          "text": "make sure to win the star card before continuing on it allows you to get up to 20 off on your purchases and 10 more on your sales"
-        },
-        "generated": {
-          "text": "(not found in step text or notes)"
-        },
-        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-007",
-        "severity": "medium",
-        "category": "text fidelity (omitted)",
-        "location": "steps",
-        "source": {
-          "text": "if you don't win it reload your last save and try again"
-        },
-        "generated": {
-          "text": "(not found in step text or notes)"
-        },
-        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-008",
-        "severity": "medium",
-        "category": "text fidelity (omitted)",
-        "location": "steps",
-        "source": {
-          "text": "remember you need to win something from each member at least once"
-        },
-        "generated": {
-          "text": "(not found in step text or notes)"
-        },
-        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-009",
-        "severity": "medium",
-        "category": "text fidelity (omitted)",
-        "location": "steps",
-        "source": {
-          "text": "after those two are finished you'll take on wugui but to no avail"
-        },
-        "generated": {
-          "text": "(not found in step text or notes)"
-        },
-        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
         "recommended_owner": "Guide Transformer"
       }
     ]
