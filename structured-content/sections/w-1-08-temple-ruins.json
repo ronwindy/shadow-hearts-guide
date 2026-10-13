@@ -661,7 +661,7 @@
           {
             "type": "tip",
             "title": "Enemies of every class",
-            "text": "- The **Temple Ruins** have an enemy of every class.\n- If you don't have all of the level 1 Fusions the source recommended earlier, use this place to get enough **Soul Energy** to get the Fusions."
+            "text": "- The **Temple Ruins** actually have an enemy of every class here.\n- If for some reason you don't have all of the level 1 Fusions like I recommended earlier, make sure to use this place to get enough **Soul Energy** to get the Fusions."
           },
           {
             "type": "warning",
@@ -690,7 +690,7 @@
           {
             "type": "tip",
             "title": "Xiaofang's shop",
-            "text": "**Xiaofang** has a shop as well. As mentioned before, make sure to buy an additional **Leonardo's Bear** if you haven't already."
+            "text": "**Xiaofang** has a shop as well. As I mentioned before, make sure to buy an additional **Leonardo's Bear** if you haven't already."
           },
           {
             "type": "warning",
@@ -741,7 +741,7 @@
       },
       {
         "id": 5,
-        "description": "1. Make your way south to the next area, opening an empty chest in this area.\n2. Continue west to the next area, to another fork.\n3. Head south first, opening the chest here for nothing at all, then head south to the next screen for a **Talisman of Mercy**.\n4. Ignore the path to the west and head back to the last fork.\n5. Take the north path to the next screen.",
+        "description": "1. Make your way south to the next area, opening an empty chest in this area.\n2. Continue west to the next area, to another fork.\n3. Head south first, opening the chest here for a whole lot of **NOTHING**, then head south to the next screen for a **Talisman of Mercy**.\n4. Ignore the path to the west and head back to the last fork.\n5. Take the north path to the next screen.",
         "type": "loot",
         "rewards": [
           {
@@ -753,7 +753,7 @@
       },
       {
         "id": 6,
-        "description": "1. Open the chest here for a **Mana Seed**.\n2. Take the western path from this room to find a **Bell Bracelet**, which you should immediately equip to **Zhuzhen**.\n3. Go back to the fork one last time and head north to the next screen.\n4. If you like, head one screen east and open the empty chest here; otherwise, ignore that entire direction, as it leads to the last area the source had you ignore.\n5. Head west to the next area, then north at the fork here (since south is a dead-end).\n6. Step on the red **Warp Point** to go to the next section of the maze.",
+        "description": "1. Open the chest here for a **Mana Seed**.\n2. Take the western path from this room to find a **Bell Bracelet**, which you should immediately equip to **Zhuzhen**.\n3. Go back to the fork one last time and head north to the next screen.\n4. If you like, head one screen east and open the empty chest here, otherwise, ignore that entire direction, as it leads to the last area I had you ignore.\n5. Head west to the next area, then north at the fork here (since south is a dead-end).\n6. Step on the red **Warp Point** to go to the next section of the maze.",
         "type": "loot",
         "notes": [
           {
@@ -867,7 +867,7 @@
       },
       {
         "id": 9,
-        "description": "- After the battle, control will switch over to **Alice** and **Margarete**.\n- This time, your Special Skills will be sealed, so no magic.",
+        "description": "- After the battle, control will switch over to **Alice** and **Margarete**.\n- This time, your Special Skills will be sealed, so no magic. Damn cat......",
         "type": "battle",
         "rewards": []
       },
@@ -886,7 +886,7 @@
           {
             "type": "tip",
             "title": "Soul Energy and Malice",
-            "text": "- Monsters defeated while **Yuri** isn't in the party DO count toward his **Soul Energy**.\n- If you want the **Light Fusion**, you can fight plenty of **Raging Spirits** here to get it.\n- The Malice meter will not build when **Yuri** isn't in the party."
+            "text": "- Monsters defeated while **Yuri** isn't in the party DOES count toward his **Soul Energy**.\n- If you want the **Light Fusion**, you can fight plenty of **Raging Spirits** here to get it.\n- The Malice meter will not build when **Yuri**'s not in the party."
           }
         ]
       },
@@ -1017,7 +1017,7 @@
       },
       {
         "id": 19,
-        "description": "- After the battle, control will switch back over to **Yuri** and **Zhuzhen**.\n- This time, BOTH your Items and Special Skills will be sealed, so nothing but attacks.",
+        "description": "- After the battle, control will switch back over to **Yuri** and **Zhuzhen**.\n- This time, BOTH your Items and Special Skills will be sealed, so NOTHING but attacks... Damn cat......",
         "type": "battle",
         "rewards": []
       },
@@ -1076,7 +1076,12 @@
           {
             "type": "missable",
             "title": "Win the Flash Badge",
-            "text": "- The ring here moves fast; equipping the **Pocket Watch** will make it easier to hit the areas.\n- Make sure to win the **Flash Badge** before continuing on.\n- It increases your agility by 25 points, but it makes the indicator on your **Judgment Ring** spin twice as fast.\n- If you don't win it, reload your last save and try again.\n- You need to win something from each member at least once.",
+            "text": "- The ring here moves fast, so remember, equipping the **Pocket Watch** will make it easier to hit the areas!\n- Make sure to win the **Flash Badge** before continuing on; it increases your agility by 25 points, but it makes your indicator on your **Judgment Ring** spin twice as fast!\n- If you don't win it, reload your last save and try again.\n- Remember, you need to win something from each member at least once!"
+          },
+          {
+            "type": "tutorial",
+            "title": "Prizes",
+            "text": "**Lottery Member No. 11**",
             "table": {
               "headers": [
                 "Color",
@@ -1132,7 +1137,7 @@
       },
       {
         "id": 25,
-        "description": "- Talk to **Xiaofang** here, and you'll find out that you need the **Wood Token** to continue.\n- You already have it.",
+        "description": "- Talk to **Xiaofang** here, and you'll find out that you need the **Wood Token** to continue.\n- Luckily we already have it!",
         "type": "exploration",
         "notes": [
           {
