@@ -33,6 +33,7 @@ _LIST_MARK = re.compile(r'^\s*(?:[-*]|\d+\.)\s+')
 _RAW_TAG = re.compile(r'\[_[^\]]*_\]')
 _ASCII = re.compile(r'(_{5,}|¯{3,}|—{5,}|-{5,}|={5,}|\$\$\$\$|\.—|—\.|\\\s*\$|^\s*\|.*\|\s*$)', re.M)
 _UPPER_RUN = re.compile(r"\b[A-Z][A-Z.'’]*(?:[ ][A-Z][A-Z.'’]*)*\b")
+_EMPHASIS_WORDS = {"THE", "YOUR", "YOU", "TO", "IN", "AND", "IS", "ARE", "NOT", "BEFORE", "AFTER", "MAKE", "SURE"}
 _ACRONYMS = {"EXP", "HP", "MP", "SP", "NOTE", "BOSS", "SUB-BOSS", "ATK", "DEF", "OK", "TV", "NPC", "VS"}
 
 
@@ -152,7 +153,8 @@ def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
             if len(letters) < 5 or run in _ACRONYMS or run.startswith(("I ", "A ")):
                 continue                                      # "I STRONGLY recommend" is emphasis, not a tag
             # a known item name, or a dotted/multi-word run, is an item tag left in caps
-            if _norm(run) in known or '.' in run.strip('.') or (' ' in run and len(letters) >= 8):
+            emphasis = bool(_EMPHASIS_WORDS.intersection(run.split()))   # "SAVE YOUR GAME" is a shout, not a tag
+            if _norm(run) in known or '.' in run.strip('.') or (' ' in run and len(letters) >= 8 and not emphasis):
                 add("upper-item", "warn", loc, run)
 
     # items tagged in the text but missing from the overview-derived items_summary

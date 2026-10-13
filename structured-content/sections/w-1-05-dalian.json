@@ -435,31 +435,7 @@
           {
             "type": "tip",
             "title": "Turtle search prizes",
-            "text": "If you're not successful at getting a **Lottery Ticket**, just reload and try again. He also says that if you come here again tomorrow, something good will happen, so don't forget!",
-            "table": {
-              "headers": [
-                "Attempts",
-                "Prize"
-              ],
-              "rows": [
-                {
-                  "range": "1-2",
-                  "reward": "Lottery Ticket"
-                },
-                {
-                  "range": "3-4",
-                  "reward": "Talisman of Luck"
-                },
-                {
-                  "range": "5-6",
-                  "reward": "Tent"
-                },
-                {
-                  "range": "7-8",
-                  "reward": "Thera Leaf"
-                }
-              ]
-            }
+            "text": "- 1-2 Attempts yield a **Lottery Ticket**.\n- 3-4 Attempts yield a **Talisman of Luck**.\n- 5-6 Attempts yield a **Tent**.\n- 7-8 Attempts yield a **Thera Leaf**.\n- If you're not successful at getting a **Lottery Ticket**, just reload and try again.\n- He also says that if you come here again tomorrow, something good will happen, so don't forget!"
           }
         ],
         "rewards": [
@@ -708,27 +684,7 @@
           {
             "type": "tip",
             "title": "Stash money by Ring hits",
-            "text": "- Hitting one area will net you 500 Cash.\n- Hitting two areas will net you 1000 Cash.\n- Hitting all three areas will net you 2000 Cash.",
-            "table": {
-              "headers": [
-                "Ring areas hit",
-                "Cash"
-              ],
-              "rows": [
-                {
-                  "range": "One",
-                  "reward": "500 Cash"
-                },
-                {
-                  "range": "Two",
-                  "reward": "1000 Cash"
-                },
-                {
-                  "range": "All three",
-                  "reward": "2000 Cash"
-                }
-              ]
-            }
+            "text": "- Hitting one area will net you **500 Cash**.\n- Hitting two areas will net you **1000 Cash**.\n- Hitting all three areas will net you **2000 Cash**."
           }
         ],
         "rewards": [
@@ -756,13 +712,13 @@
       },
       {
         "id": 11,
-        "description": "1. Once you're done here, go back into the **Sea Turtle Restaurant** and talk to the man in green, **Filthy Samo**.\n2. He'll reveal himself as **Lottery Member No. 14**!",
+        "description": "1. Once you're done here, go back into the restaurant and talk to the man in green, **Filthy Samo**.\n2. He'll reveal himself as **Lottery Member No. 14**!",
         "type": "loot",
         "notes": [
           {
             "type": "tutorial",
-            "title": "Lottery Member No. 14",
-            "text": "Prizes by color.",
+            "title": "Prizes",
+            "text": "**Lottery Member No. 14**",
             "table": {
               "headers": [
                 "Color",
