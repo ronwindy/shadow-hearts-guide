@@ -6,7 +6,7 @@
     "summary": {
       "critical": 0,
       "high": 0,
-      "medium": 3,
+      "medium": 0,
       "low": 1
     },
     "findings": [
@@ -22,48 +22,6 @@
           "text": "Be wary of its Breath of Fire attack; it'll hit the whole party for pretty good "
         },
         "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-002",
-        "severity": "medium",
-        "category": "text fidelity (altered)",
-        "location": "steps[16].description line 3",
-        "source": {
-          "text": "03000 cash watch the events after the"
-        },
-        "generated": {
-          "text": "a beastly demon the beast dog"
-        },
-        "description": "Changed/added words vs. canonical: ['beast', 'dog']",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-003",
-        "severity": "medium",
-        "category": "text fidelity (omitted)",
-        "location": "steps",
-        "source": {
-          "text": "there are a very limited amount of lottery tickets in the game 30 to be exact so for now i only recommend playing each person lottery once and that is to get th"
-        },
-        "generated": {
-          "text": "(not found in step text or notes)"
-        },
-        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-004",
-        "severity": "medium",
-        "category": "text fidelity (omitted)",
-        "location": "steps",
-        "source": {
-          "text": "you must win a prize from each member game once if you want to be able to participate in every member lottery including the chairman so try not to miss any"
-        },
-        "generated": {
-          "text": "(not found in step text or notes)"
-        },
-        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
         "recommended_owner": "Guide Transformer"
       }
     ]

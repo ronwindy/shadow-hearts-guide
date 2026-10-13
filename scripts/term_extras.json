@@ -18,7 +18,8 @@
     "Mika",
     "Yamaraja",
     "Rude Hero",
-    "Penniless Mike"
+    "Penniless Mike",
+    "Rude Hero"
   ],
   "locations": [
     "Calios Mental Hospital",
@@ -115,18 +116,9 @@
     "Berserk",
     "Item Shop"
   ],
-  "skills": [
-    "Shockwave",
-    "Needlerain",
-    "Slash"
-  ],
-  "groups": [
-    "London Rats",
-    "Lottery Member"
-  ],
-  "numbered": [
-    "Lottery Member"
-  ],
+  "skills": ["Shockwave", "Needlerain", "Slash"],
+  "groups": ["London Rats", "Lottery Member"],
+  "numbered": ["Lottery Member"],
   "mechanics": [
     "Normal Ring",
     "Judgment Ring",

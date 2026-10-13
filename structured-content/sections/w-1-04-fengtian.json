@@ -417,8 +417,12 @@
         "notes": [
           {
             "type": "tutorial",
-            "title": "Lottery Member No. 15",
-            "text": "- There are a very limited amount of **Lottery Tickets** in the game (30 to be exact), so (FOR NOW) I only recommend playing each person's lottery ONCE, and that is to get the item in RED.\n- You MUST win a prize from each member's game once if you want to be able to participate in EVERY member's lottery, including the chairman's, so try not to miss any!",
+            "title": "Lottery Tickets are limited",
+            "text": "- There are a very limited amount of **Lottery Tickets** in the game (30 to be exact), so (FOR NOW) I only recommend playing each person's lottery ONCE, and that is to get the item in RED.\n- You MUST win a prize from each member's game once if you want to be able to participate in EVERY member's lottery, including the chairman's, so try not to miss any!"
+          },
+          {
+            "type": "tutorial",
+            "title": "Prizes",
             "table": {
               "headers": [
                 "Color",
@@ -446,7 +450,8 @@
                   "reward": "Tissues"
                 }
               ]
-            }
+            },
+            "text": "**Lottery Member No. 15**"
           }
         ],
         "rewards": [
@@ -622,7 +627,7 @@
       },
       {
         "id": 16,
-        "description": "1. Nothing left to do but go on ahead, so choose 2 to climb the ladder and watch the events.\n2. You'll have to take on two groups of **Elite Guards**, which are pretty simple.\n3. After that though, you'll have to take on a beastly demon: the **Beast Dog**.",
+        "description": "1. Nothing left to do but go on ahead, so choose 2 to climb the ladder and watch the events.\n2. You'll have to take on two groups of **Elite Guards**, which are pretty simple.\n3. After that though, you'll have to take on a beastly demon.",
         "type": "boss",
         "encounter": {
           "enemies": [

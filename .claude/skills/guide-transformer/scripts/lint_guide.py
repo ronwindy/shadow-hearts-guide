@@ -149,8 +149,8 @@ def lint_guide(guide: Dict[str, Any]) -> List[Dict[str, str]]:
         for m in _UPPER_RUN.finditer(plain):
             run = m.group(0)
             letters = re.sub(r'[^A-Za-z]', '', run)
-            if len(letters) < 5 or run in _ACRONYMS:
-                continue
+            if len(letters) < 5 or run in _ACRONYMS or run.startswith(("I ", "A ")):
+                continue                                      # "I STRONGLY recommend" is emphasis, not a tag
             # a known item name, or a dotted/multi-word run, is an item tag left in caps
             if _norm(run) in known or '.' in run.strip('.') or (' ' in run and len(letters) >= 8):
                 add("upper-item", "warn", loc, run)
