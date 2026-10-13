@@ -367,13 +367,13 @@
       },
       {
         "id": 2,
-        "description": "1. You'll regain control under the deck as just **Yuri**. Save your game, then go back out on deck.\n2. Head inside the wheelhouse and take out the group of monsters here.\n3. Before leaving, check the floor near the wheel and the blanket hanging for a **Lottery Ticket**.\n4. Go back outside and downstairs to take out a second group of enemies.\n5. Once they're finished, go back out on the deck and talk to **Zhuzhen** to fight one last group.",
+        "description": "1. You'll regain control under the deck as just **Yuri**. Save your game, then go back out on deck.\n2. Head inside the wheelhouse and take out the group of monsters here.\n3. Afterward, before leaving, check the floor near the wheel and the blanket hanging for a **Lottery Ticket**.\n4. Go back outside and downstairs to take out a second group of enemies, and after they're finished, go back out on the deck and talk to **Zhuzhen** to fight one last group.",
         "type": "exploration",
         "notes": [
           {
             "type": "tip",
             "title": "Level up for the fusions",
-            "text": "It should be fairly easy to obtain both your level 1 Fire and Water Fusions here, since the enemies come in groups of 3 and 4. I strongly recommend doing so, as it won't take long at all. Also, make sure **Alice** is at least level 11 so that she learns the **Blessed Light** spell."
+            "text": "- It should be fairly easy to obtain both your level 1 Fire and Water Fusions here, since the enemies come in groups of 3 and 4.\n- I strongly recommend doing so, as it won't take long at all.\n- Also, make sure **Alice** is at least level 11 so that she learns the **Blessed Light** spell."
           }
         ],
         "rewards": [
@@ -415,42 +415,37 @@
       },
       {
         "id": 4,
-        "description": "Choosing option 1 lets you see the items he has for sale (see the shop table below).",
+        "description": "Choosing option 1 will allow you to see what items he has for sale.",
         "type": "shop",
         "notes": [
           {
             "type": "warning",
             "title": "Bring three Rosewood Bracelets",
             "text": "Make sure that you have **THREE Rosewood Bracelets** to put on your active party, as the next boss can paralyze you. Also make sure to have enough healing items."
-          },
-          {
-            "type": "warning",
-            "title": "Shop source is unclear",
-            "text": "The source lists this inventory under **Pachimon General Store**, but does not say which vendor sells these items. The **Courier Subordinate** is the only seller mentioned in this section."
           }
         ],
         "rewards": []
       },
       {
         "id": 5,
-        "description": "Choosing option 2 reveals that he's actually a **Lottery Member**!",
+        "description": "Choosing option 2 will allow you to discover that he's actually a **Lottery Member**!",
         "type": "story",
         "rewards": []
       },
       {
         "id": 6,
-        "description": "1. Equipping the **Pocket Watch** makes it easier to hit the areas, since the ring here moves fast.\n2. Win the **Iron Clogs** before continuing on.\n3. If you don't win it, reload your last save and try again.\n4. Remember, you need to win something from each member at least once.",
+        "description": "1. The ring here moves fast, so remember, equipping the **Pocket Watch** will make it easier to hit the areas!\n2. Make sure to win the **Iron Clogs** before continuing on; it slows down the indicator speed on your **Judgment Ring**, but it also lowers your Agl 15 points.\n3. If you don't win it, reload your last save and try again.\n4. Remember, you need to win something from each member at least once!",
         "type": "loot",
         "notes": [
           {
             "type": "missable",
             "title": "Win the Iron Clogs",
-            "text": "The **Iron Clogs** slow down the indicator speed on your **Judgment Ring**, but they also lower your Agl by 15 points. Make sure to win them before continuing on."
+            "text": "Make sure to win the **Iron Clogs** before continuing on."
           },
           {
             "type": "tip",
-            "title": "Lottery prizes by color",
-            "text": "Each color is a prize from this **Lottery Member**.",
+            "title": "Prizes",
+            "text": "**Lottery Member No. 13**",
             "table": {
               "headers": [
                 "Color",
@@ -502,20 +497,14 @@
       },
       {
         "id": 8,
-        "description": "Fight the **Li Li** sub-boss, a warm-up battle. Try to avoid using TOO much MP for the next boss battle.",
+        "description": "Choose option 2, and after an event, you'll be thrown into a battle.",
         "type": "boss",
         "encounter": {
           "enemies": [
             "Li Li"
           ]
         },
-        "notes": [
-          {
-            "type": "warning",
-            "title": "Dark Messenger can instantly kill",
-            "text": "She can and will use **Dark Messenger**, which can instantly kill a party member."
-          }
-        ],
+        "notes": [],
         "boss": {
           "type": "SUB-BOSS",
           "name": "Li Li",
@@ -598,7 +587,7 @@
       },
       {
         "id": 9,
-        "description": "Watch a bit of dialogue, then you'll take on a powered-up form of **Li Li** (720 HP).",
+        "description": "Watch a bit of dialogue, then you'll take on a powered-up form of **Li Li**.",
         "type": "boss",
         "encounter": {
           "enemies": [

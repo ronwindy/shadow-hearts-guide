@@ -6,7 +6,7 @@
     "summary": {
       "critical": 0,
       "high": 0,
-      "medium": 9,
+      "medium": 0,
       "low": 1
     },
     "findings": [
@@ -22,132 +22,6 @@
           "text": "At least this time she won't use Dark Messenger, but she still uses Paralysis (w"
         },
         "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-002",
-        "severity": "medium",
-        "category": "text fidelity (altered)",
-        "location": "steps[2].description line 5",
-        "source": {
-          "text": "and after they're finished go back"
-        },
-        "generated": {
-          "text": "once they're finished go back"
-        },
-        "description": "Changed/added words vs. canonical: ['once']",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-003",
-        "severity": "medium",
-        "category": "text fidelity (altered)",
-        "location": "steps[4].description line 1",
-        "source": {
-          "text": "he has for sale make sure that you have three rosewood bracelets to put on your active party as the next boss can"
-        },
-        "generated": {
-          "text": "he has for sale see the shop table below"
-        },
-        "description": "Changed/added words vs. canonical: ['three']",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-004",
-        "severity": "medium",
-        "category": "text fidelity (unsupported)",
-        "location": "steps[4].notes[1] line 1",
-        "source": {
-          "text": "the preparations make your way back down to below the deck and save your game before continuing stop in the wheelhouse once more and talk to the courier subordinate who"
-        },
-        "generated": {
-          "text": "The source lists this inventory under **Pachimon General Store**, but does not say which vendor sells these items. The **Courier Subordinate** is the only selle"
-        },
-        "description": "Only 5/29 words match the closest canonical prose",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-005",
-        "severity": "medium",
-        "category": "text fidelity (altered)",
-        "location": "steps[6].notes[0] line 1",
-        "source": {
-          "text": "ring but it also lowers your agl 15 points"
-        },
-        "generated": {
-          "text": "ring but they also lower your agl by 15"
-        },
-        "description": "Changed/added words vs. canonical: ['lower']",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-006",
-        "severity": "medium",
-        "category": "text fidelity (altered)",
-        "location": "steps[6].notes[0] line 1",
-        "source": {
-          "text": "your agl 15 points if you don't win it reload your last save and try again remember you need to win something from"
-        },
-        "generated": {
-          "text": "agl by 15 points make sure to win them before"
-        },
-        "description": "Changed/added words vs. canonical: [\"don't\"]",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-007",
-        "severity": "medium",
-        "category": "text fidelity (unsupported)",
-        "location": "steps[8].description line 1",
-        "source": {
-          "text": "don't win it reload your last save and try again remember you need to win something from each member at least once when you're prepared for the next boss go"
-        },
-        "generated": {
-          "text": "Fight the **Li Li** sub-boss, a warm-up battle. Try to avoid using TOO much MP for the next boss battle."
-        },
-        "description": "Only 7/22 words match the closest canonical prose",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-008",
-        "severity": "medium",
-        "category": "text fidelity (unsupported)",
-        "location": "steps[8].notes[0] line 1",
-        "source": {
-          "text": "(no matching source prose)"
-        },
-        "generated": {
-          "text": "She can and will use **Dark Messenger**, which can instantly kill a party member."
-        },
-        "description": "Line has no matching canonical prose (invented or heavily reworded?)",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-009",
-        "severity": "medium",
-        "category": "text fidelity (altered)",
-        "location": "steps[9].description line 1",
-        "source": {
-          "text": "form of li li boss 01000 exp"
-        },
-        "generated": {
-          "text": "form of li li 720 hp"
-        },
-        "description": "Changed/added words vs. canonical: ['720']",
-        "recommended_owner": "Guide Transformer"
-      },
-      {
-        "id": "QA-010",
-        "severity": "medium",
-        "category": "text fidelity (omitted)",
-        "location": "steps",
-        "source": {
-          "text": "choose option 2 and after an event you'll be thrown into a battle"
-        },
-        "generated": {
-          "text": "(not found in step text or notes)"
-        },
-        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
         "recommended_owner": "Guide Transformer"
       }
     ]
