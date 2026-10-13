@@ -6,7 +6,7 @@
     "summary": {
       "critical": 0,
       "high": 0,
-      "medium": 0,
+      "medium": 6,
       "low": 1
     },
     "findings": [
@@ -22,6 +22,90 @@
           "text": "As with Wugui, Yamaraja: War will absorb all magic, making Zhuzhen useful only a"
         },
         "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[5].description line 3",
+        "source": {
+          "text": "whole lot of nothing then head south to"
+        },
+        "generated": {
+          "text": "chest here for nothing at all then head south to"
+        },
+        "description": "Changed/added words vs. canonical: ['all']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-003",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[10].notes[0] line 3",
+        "source": {
+          "text": "not build when yuri not in the party use"
+        },
+        "generated": {
+          "text": "not build when yuri isn't in the party"
+        },
+        "description": "Changed/added words vs. canonical: [\"isn't\"]",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-004",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "11 the ring here moves fast so remember equipping the pocket watch will make it easier to hit the areas"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-005",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "make sure to win the flash badge before continuing on it increases your agility by 25 points but it makes your indicator on your judgment ring spin twice as fas"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-006",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "if you don't win it reload your last save and try again"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-007",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "remember you need to win something from each member at least once"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
         "recommended_owner": "Guide Transformer"
       }
     ]

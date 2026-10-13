@@ -1,14 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-13 21:48:54`
+> Last synced: `2026-10-13 22:07:25`
 
 ```text
-=== PROJECT STATUS (2026-10-13 21:48:54) ===
-Canonical 67/67 | Structured 27/67 | QA pass 9/67 (fail 0) | Web built 27/67
+=== PROJECT STATUS (2026-10-13 22:07:25) ===
+Canonical 67/67 | Structured 27/67 | QA pass 27/67 (fail 0) | Web built 27/67
 Next:
-  1. Run QA on w-1-02 (Plains)
-  2. Structure w-2-10 (Calios Mental Hospital (1)) - next chronological
-Pending QA:    w-1-02, w-1-04, w-1-05, w-1-06, w-1-07, w-1-08, w-s-01, w-s-02, w-s-03, w-1-11, w-2-02, w-2-03, w-2-04, w-2-05, w-2-06, w-2-07, w-2-08, w-2-09
+  1. Structure w-2-10 (Calios Mental Hospital (1)) - next chronological
 ```
 
 ## Section Matrix
@@ -19,28 +17,28 @@ Pending QA:    w-1-02, w-1-04, w-1-05, w-1-06, w-1-07, w-1-08, w-s-01, w-s-02, w
 | `[I-1-00]` | `i-1-00` | Table of Contents | Introduction | WEB_BUILT |
 | `[I-1-01]` | `i-1-01` | Game Manual / Instructions | Introduction | WEB_BUILT |
 | `[W-1-01]` | `w-1-01` | Trans-Siberian Express | Walkthrough - Asia | WEB_BUILT |
-| `[W-1-02]` | `w-1-02` | Plains | Walkthrough - Asia | STRUCTURED_PENDING_QA |
+| `[W-1-02]` | `w-1-02` | Plains | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-03]` | `w-1-03` | Zhaoyang Village | Walkthrough - Asia | WEB_BUILT |
-| `[W-1-04]` | `w-1-04` | Fengtian | Walkthrough - Asia | STRUCTURED_PENDING_QA |
-| `[W-1-05]` | `w-1-05` | Dalian | Walkthrough - Asia | STRUCTURED_PENDING_QA |
-| `[W-1-06]` | `w-1-06` | Smuggler's Boat | Walkthrough - Asia | STRUCTURED_PENDING_QA |
-| `[W-1-07]` | `w-1-07` | Shanghai, Huayuan (1) | Walkthrough - Asia | STRUCTURED_PENDING_QA |
-| `[W-1-08]` | `w-1-08` | Temple Ruins | Walkthrough - Asia | STRUCTURED_PENDING_QA |
+| `[W-1-04]` | `w-1-04` | Fengtian | Walkthrough - Asia | WEB_BUILT |
+| `[W-1-05]` | `w-1-05` | Dalian | Walkthrough - Asia | WEB_BUILT |
+| `[W-1-06]` | `w-1-06` | Smuggler's Boat | Walkthrough - Asia | WEB_BUILT |
+| `[W-1-07]` | `w-1-07` | Shanghai, Huayuan (1) | Walkthrough - Asia | WEB_BUILT |
+| `[W-1-08]` | `w-1-08` | Temple Ruins | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-09]` | `w-1-09` | Shanghai, Huayuan (2) | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-10]` | `w-1-10` | Asia Side Quests | Walkthrough - Asia | WEB_BUILT |
-| `[W-S-01]` | `w-s-01` | Yuri's Level 1 Fusions | Walkthrough - Asia | STRUCTURED_PENDING_QA |
-| `[W-S-02]` | `w-s-02` | Kowloon Fortress | Walkthrough - Asia | STRUCTURED_PENDING_QA |
-| `[W-S-03]` | `w-s-03` | Mr. Zhen's Pit Fight | Walkthrough - Asia | STRUCTURED_PENDING_QA |
-| `[W-1-11]` | `w-1-11` | Shanghai, Kuihai Tower | Walkthrough - Asia | STRUCTURED_PENDING_QA |
+| `[W-S-01]` | `w-s-01` | Yuri's Level 1 Fusions | Walkthrough - Asia | WEB_BUILT |
+| `[W-S-02]` | `w-s-02` | Kowloon Fortress | Walkthrough - Asia | WEB_BUILT |
+| `[W-S-03]` | `w-s-03` | Mr. Zhen's Pit Fight | Walkthrough - Asia | WEB_BUILT |
+| `[W-1-11]` | `w-1-11` | Shanghai, Kuihai Tower | Walkthrough - Asia | WEB_BUILT |
 | `[W-2-01]` | `w-2-01` | Prague (1) | Walkthrough - Europe | WEB_BUILT |
-| `[W-2-02]` | `w-2-02` | Bistritz (1) | Walkthrough - Europe | STRUCTURED_PENDING_QA |
-| `[W-2-03]` | `w-2-03` | Blue Castle (1) | Walkthrough - Europe | STRUCTURED_PENDING_QA |
-| `[W-2-04]` | `w-2-04` | Bistritz (2) | Walkthrough - Europe | STRUCTURED_PENDING_QA |
-| `[W-2-05]` | `w-2-05` | Blue Castle (2) | Walkthrough - Europe | STRUCTURED_PENDING_QA |
-| `[W-2-06]` | `w-2-06` | Prague (2) | Walkthrough - Europe | STRUCTURED_PENDING_QA |
-| `[W-2-07]` | `w-2-07` | Rouen | Walkthrough - Europe | STRUCTURED_PENDING_QA |
-| `[W-2-08]` | `w-2-08` | London, Old Castle Street | Walkthrough - Europe | STRUCTURED_PENDING_QA |
-| `[W-2-09]` | `w-2-09` | London, Orphanage | Walkthrough - Europe | STRUCTURED_PENDING_QA |
+| `[W-2-02]` | `w-2-02` | Bistritz (1) | Walkthrough - Europe | WEB_BUILT |
+| `[W-2-03]` | `w-2-03` | Blue Castle (1) | Walkthrough - Europe | WEB_BUILT |
+| `[W-2-04]` | `w-2-04` | Bistritz (2) | Walkthrough - Europe | WEB_BUILT |
+| `[W-2-05]` | `w-2-05` | Blue Castle (2) | Walkthrough - Europe | WEB_BUILT |
+| `[W-2-06]` | `w-2-06` | Prague (2) | Walkthrough - Europe | WEB_BUILT |
+| `[W-2-07]` | `w-2-07` | Rouen | Walkthrough - Europe | WEB_BUILT |
+| `[W-2-08]` | `w-2-08` | London, Old Castle Street | Walkthrough - Europe | WEB_BUILT |
+| `[W-2-09]` | `w-2-09` | London, Orphanage | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-10]` | `w-2-10` | Calios Mental Hospital (1) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-11]` | `w-2-11` | Europe Side Quests, Part 1 | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-S-04]` | `w-s-04` | Calios Mental Hospital (2) | Walkthrough - Europe | NOT_STRUCTURED |

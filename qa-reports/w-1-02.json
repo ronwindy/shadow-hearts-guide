@@ -6,7 +6,7 @@
     "summary": {
       "critical": 0,
       "high": 0,
-      "medium": 0,
+      "medium": 67,
       "low": 2
     },
     "findings": [
@@ -36,6 +36,944 @@
           "text": "words not in source: ['entrance', 'zhaoyang']"
         },
         "description": "Objective wording is not traceable to the source text; omit it unless the source states a goal",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-003",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[1].description line 1",
+        "source": {
+          "text": "(no matching source prose)"
+        },
+        "generated": {
+          "text": "After opening dialogue, regain control of the **Rude Hero**. Take a few steps to the upper-left to find a **Pure Leaf** on the ground, then head down to the nex"
+        },
+        "description": "Line has no matching canonical prose (invented or heavily reworded?)",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-004",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[2].description line 1",
+        "source": {
+          "text": "to the rude hero head back and follow the path west until you find the girl this will allow you to continue the dialogue"
+        },
+        "generated": {
+          "text": "to the rude hero immediately to raise his attack"
+        },
+        "description": "Changed/added words vs. canonical: ['until', 'west']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-005",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[4].description line 1",
+        "source": {
+          "text": "a few steps southeast before stepping on the bridge look just below where you're standing to find a mermaid tear continue"
+        },
+        "generated": {
+          "text": "Start heading southeast toward the river. Before stepping onto the wooden bridge, inspect just below your feet to pick up a **Mermaid's Tear**."
+        },
+        "description": "Only 11/23 words match the closest canonical prose",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-006",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[5].description line 1",
+        "source": {
+          "text": "need to do something with the sluice gate"
+        },
+        "generated": {
+          "text": "and notes that something must be done with the sluice gate"
+        },
+        "description": "Changed/added words vs. canonical: ['must']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-007",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[6].description line 2",
+        "source": {
+          "text": "(no matching source prose)"
+        },
+        "generated": {
+          "text": "2. Inspect it to learn a handle is missing."
+        },
+        "description": "Line has no matching canonical prose (invented or heavily reworded?)",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-008",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[6].notes[0] line 1",
+        "source": {
+          "text": "it now go back to the last fork and use the save point to the southeast to save that way if you accidentally mess up the next task you can"
+        },
+        "generated": {
+          "text": "Save your game at the sluice gate **Save Point** now! If you miss the timing or fail your desired attempt for the best prize, you can reload and retry."
+        },
+        "description": "Only 11/29 words match the closest canonical prose",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-009",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[7].description line 1",
+        "source": {
+          "text": "down below the bridge open it to receive one of the following a leather belt if you got the southern gate handle the first try a thera seed"
+        },
+        "generated": {
+          "text": "Retrieve the **Sluice Gate Handle** from one of the two sparkling handle mechanisms. Choose your preferred method:"
+        },
+        "description": "Only 5/15 words match the closest canonical prose",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-010",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[7].description line 2",
+        "source": {
+          "text": "you the handle but also a leather belt raises attack here after a sequence of events if you fail the first time but succeed the second you'll receive a thera"
+        },
+        "generated": {
+          "text": "1. Southern handle ('Push Ring' — rapid CROSS button taps) awards a **Leather Belt** (1st try), **Thera Seed** (2nd try), or **Thera Leaf** (3rd+ try)"
+        },
+        "description": "Only 9/23 words match the closest canonical prose",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-011",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[7].description line 3",
+        "source": {
+          "text": "(no matching source prose)"
+        },
+        "generated": {
+          "text": "2. Northern handle ('**Normal Ring**' — 3 timed ring hits) awards a **Bandanna** (1st try), **Mana Seed** (2nd try), or **Mana Leaf** / **Thera Leaf** (3rd+ try"
+        },
+        "description": "Line has no matching canonical prose (invented or heavily reworded?)",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-012",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[7].notes[0] line 1",
+        "source": {
+          "text": "in order to get the indicator within the allowed range then press it intermittently to keep it in that area until the time expires doing this successfully the first time"
+        },
+        "generated": {
+          "text": "- **Option 1 (Bottom/Southern handle — Push Ring)**: Tap the CROSS button rapidly to drive the indicator into the allowed zone, then tap intermittently to hold "
+        },
+        "description": "Only 16/36 words match the closest canonical prose",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-013",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[9].description line 2",
+        "source": {
+          "text": "(no matching source prose)"
+        },
+        "generated": {
+          "text": "2. The party decides to make camp and rest."
+        },
+        "description": "Line has no matching canonical prose (invented or heavily reworded?)",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-014",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[9].description line 3",
+        "source": {
+          "text": "face will appear and you'll have to"
+        },
+        "generated": {
+          "text": "fox face appears and ambushes yuri"
+        },
+        "description": "Changed/added words vs. canonical: ['yuri']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-015",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[9].notes[0] line 1",
+        "source": {
+          "text": "to win this battle so feel free to just wail away at him until he uses"
+        },
+        "generated": {
+          "text": "to win this battle against fox face attack him freely until he"
+        },
+        "description": "Changed/added words vs. canonical: ['face', 'fox']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-016",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[10].description line 1",
+        "source": {
+          "text": "battle you'll be in the graveyard the one in yuri"
+        },
+        "generated": {
+          "text": "1. **Yuri** awakens in the **Graveyard** of his soul."
+        },
+        "description": "Only 3/8 words match the closest canonical prose",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-017",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[10].description line 2",
+        "source": {
+          "text": "soul of raging tiger tigerion be sure to"
+        },
+        "generated": {
+          "text": "sub boss raging tiger 75 hp earth"
+        },
+        "description": "Changed/added words vs. canonical: ['75']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-018",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[10].description line 4",
+        "source": {
+          "text": "in battle yuri can now equip the soul of"
+        },
+        "generated": {
+          "text": "4. Open the menu and equip the soul."
+        },
+        "description": "Only 3/7 words match the closest canonical prose",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-019",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[12].description line 1",
+        "source": {
+          "text": "his soul to rid himself of the malice he must return to the graveyard and fight an incarnate of"
+        },
+        "generated": {
+          "text": "1. Head east to exit the **Graveyard** and reunite with **Alice**."
+        },
+        "description": "Only 4/10 words match the closest canonical prose",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-020",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[12].description line 3",
+        "source": {
+          "text": "with the bridge and the river there will be a chest here down below the bridge open it to receive one of the following a leather belt if you got"
+        },
+        "generated": {
+          "text": "3. Drop into the drained riverbed below the bridge to claim the reward chest corresponding to your handle performance (**Leather Belt**, **Thera Seed**, **Thera"
+        },
+        "description": "Only 13/28 words match the closest canonical prose",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-021",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[13].description line 2",
+        "source": {
+          "text": "steps to the left for an event then open the chest"
+        },
+        "generated": {
+          "text": "watch the scene then open the chest"
+        },
+        "description": "Changed/added words vs. canonical: ['left']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-022",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[13].description line 3",
+        "source": {
+          "text": "(no matching source prose)"
+        },
+        "generated": {
+          "text": "3. Continue forward to the gates of **Zhaoyang Village** to conclude this section."
+        },
+        "description": "Line has no matching canonical prose (invented or heavily reworded?)",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-023",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "alice will join your party and you'll regain control"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-024",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "start to head southeast and examine the body of water to your south"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-025",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "you can't cross it yet so take a few steps southeast"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-026",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "before stepping on the bridge look just below where you're standing to find a mermaid tear"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-027",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "examine it to find out that you need a handle to use it"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-028",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "now go back to the last fork and use the save point to the southeast to save that way if you accidentally mess up the next task you can reload and retry it"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-029",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "in any case there are two ways to handle this next task read them both before deciding which one to try 1 examine the sparkling sluice gate handle at the bottom"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-030",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "you'll have to do a push ring to be able to get the handle meaning that you have to push the cross button several times in order to get the indicator within the"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-031",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "doing this successfully the first time will not only net you the handle but also a leather belt raises attack here after a sequence of events"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-032",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "if you fail the first time but succeed the second you'll receive a thera seed and if you succeed the third or any time after you'll receive a thera leaf"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-033",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "2 examine the sparkling sluice gate handle at the top part of the screen"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-034",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "you'll have to do a normal ring to be able to get the handle meaning that you have to push the cross button three times when the indicator is within the allowed"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-035",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "doing this successfully the first time will not only net you the handle but also a bandanna raises defense here after a sequence of events"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-036",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "if you fail the first time but succeed the second you'll receive a mana seed and if you succeed the third or any time after you'll receive a mana leaf"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-037",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "regardless of how you decided to get it you'll receive the sluicegatehandle"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-038",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "start to make your way back to the previous area and they'll decide to take a rest for a while"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-039",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "attack to reduce your hp to 1 followed by being knocked out once again"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-040",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "after the battle you'll be in the graveyard the one in yuri dreams"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-041",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "be sure to equip it in the menu"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-042",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "next head west and talk to the masks here who'll tell you that you need to defeat the accumulation of malice within you to be able to leave the graveyard"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-043",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "you'll then enter a battle with evil 4"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-044",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "he pretty easy just fuse into the raging tiger and dish out some strong hits to take him out in a turn or two"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-045",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "to sum up everything that the masks have said the talisman yuri holds will show the level of malice that has accumulated in his soul"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-046",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "to rid himself of the malice he must return to the graveyard and fight an incarnate of his malice to keep from having to face fox face in battle"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-047",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "each enemy you defeat will increase the malice meter so make sure that your malice level found in the menu does not reach the red"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-048",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "if it does immediately go to the graveyard and fight your malice so that you don't fight fox face"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-049",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "right now you will die if you try to fight him so if you run into him press the r1 button and choose to run away"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-050",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "you also will now see the soul energy screen after battle"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-051",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "it shows you how many points away you are from leveling up a class"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-052",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "once a class is leveled you can visit the graveyard and obtain a new fusion by examining the glowing gravestones but only up to level 1 fusions for now level 2 "
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-053",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "once you're done with the masks head east and back out into the real world where alice will rejoin and you'll regain control"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-054",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "you can fight evil 1 evil 2 evil 3 and even evil 4 again by returning to the graveyard and fighting them when your malice level is at a certain color evil 1 bet"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-055",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "evil 2 between turquoise and green"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-056",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "evil 3 between green and yellow"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-057",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "evil 4 between yellow and red"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-058",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "after each battle you'll receive an item based on your malice"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-059",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "the prize you win depends on the level of malice you have accumulated with 100 being the max value"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-060",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "sadly you can't use this knowledge to get the special prizes again and again as they are replaced with a thera leaf the second time you clear the malice at the "
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-061",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "the only issue with this is that it a number the system tracks that you cannot see"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-062",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "the levels change at 25 50 75 100 and the early monsters seem to contribute 1 point each toward the total and it seems that as you go through the game the stron"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-063",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "it something you kind of have to guess point values as you go it more of a guideline than anything since it just shows what possible to get by doing so"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-064",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "there will be a chest here down below the bridge open it to receive one of the following a leather belt if you got the southern gate handle the first try"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-065",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "a thera seed if you got the southern gate handle the second try"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-066",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "a thera leaf if you got the southern gate handle the third or more tries"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-067",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "a bandanna if you got the northern gate handle the first try"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-068",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "a mana seed if you got the northern gate handle the second try"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-069",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "a thera leaf if you got the northern gate handle the third or more tries"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
         "recommended_owner": "Guide Transformer"
       }
     ]

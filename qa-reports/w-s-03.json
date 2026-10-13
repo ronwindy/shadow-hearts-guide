@@ -1,14 +1,57 @@
 {
   "qa": {
-    "status": "PASS",
+    "status": "PASS WITH WARNINGS",
     "section_id": "w-s-03",
     "section_title": "Mr. Zhen's Pit Fight",
     "summary": {
       "critical": 0,
       "high": 0,
-      "medium": 0,
+      "medium": 3,
       "low": 0
     },
-    "findings": []
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[3].description line 2",
+        "source": {
+          "text": "out quickly li li she a pain just like before make"
+        },
+        "generated": {
+          "text": "yamaraja wind li li prototype wind shear custom wind shear"
+        },
+        "description": "Changed/added words vs. canonical: ['custom', 'prototype']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[8].description line 1",
+        "source": {
+          "text": "having the following setup if you're comfortable with"
+        },
+        "generated": {
+          "text": "having the following setup for yuri 19"
+        },
+        "description": "Changed/added words vs. canonical: ['19', 'yuri']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-003",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[8].description line 5",
+        "source": {
+          "text": "(no matching source prose)"
+        },
+        "generated": {
+          "text": "- **Rosewood Bracelet** **or** **Zodiac Bracelet** **or** **Mind's Eye**"
+        },
+        "description": "Line has no matching canonical prose (invented or heavily reworded?)",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
   }
 }

@@ -1,14 +1,29 @@
 {
   "qa": {
-    "status": "PASS",
+    "status": "PASS WITH WARNINGS",
     "section_id": "w-2-02",
     "section_title": "Bistritz (1)",
     "summary": {
       "critical": 0,
       "high": 0,
-      "medium": 0,
+      "medium": 1,
       "low": 0
     },
-    "findings": []
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[1].description line 4",
+        "source": {
+          "text": "the right there a talismanofwisom in the northeast corner"
+        },
+        "generated": {
+          "text": "the right there a talisman of wisdom in the northeast corner"
+        },
+        "description": "Changed/added words vs. canonical: ['of', 'talisman', 'wisdom']",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
   }
 }
