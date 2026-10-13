@@ -1,0 +1,51 @@
+{
+  "section_id": "w-1-03",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Save point (center of town, near the well)",
+    "All 12 overview items/equipment/valuables present with rewards in steps",
+    "Enemy table #005-#010: numbers, HP, class, notes",
+    "Shop inventory: all 14 names and prices (Wandering Merchant)",
+    "Boss cards: Hellcat x2 (45 HP, Light, 40 EXP, 300 cash), Felinus (250 HP, Wind, 120/600, Lottery Ticket), Yamaraja: Earth (300 HP, Water, 180/1800, Star Brooch)",
+    "Yamaraja party levels (7/6/6) and equipment/fusions",
+    "Step order 1-17 vs canonical chronology",
+    "Warnings: level 6 recommendation, remove everything from Zhuzhen, Alice Berserk",
+    "Meiyuan acupuncture NOTE and A-1-08 cross-reference",
+    "Shrine choice [1]/[2] wording"
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "category": "invented",
+      "location": "steps[14].choices[0].outcome (step id 14, option '[1] No, I don't...')",
+      "canonical": "[1] No, I don't... / [2] Yes, I do! ... Of course we do! Choose 2, and you'll have to take on Yamaraja.",
+      "structured": "outcome: \"Do not enter battle yet.\"",
+      "issue": "The source states an outcome only for option 2. The outcome for option 1 is inferred, which the project rules forbid (set outcome only when the source states it). Omit the outcome for option 1."
+    },
+    {
+      "severity": "low",
+      "category": "invented",
+      "location": "items_summary.obtainable[Bronze Arrowhead].location",
+      "canonical": "Go back up to the previous screen, then follow along the right side until you see the '?' icon near another pile of sticks.",
+      "structured": "Second screen, right side '?' icon near another pile of sticks",
+      "issue": "The source never calls this the 'second screen'; it says only 'the previous screen' (up from the first area). The label is an unsupported gloss."
+    },
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "guide.boss.strategy (singular legacy boss field, Yamaraja: Earth)",
+      "canonical": "possibly halving your Hit Area on your Ring",
+      "structured": "possibly halving your **Hit Area** on your **Judgment Ring**",
+      "issue": "Source text says 'Ring'. The legacy singular boss field changed it to 'Judgment Ring'. bosses[0] and step 15 keep 'Ring'. Make them consistent with the source."
+    },
+    {
+      "severity": "low",
+      "category": "contradiction",
+      "location": "steps[8] description vs steps[9]",
+      "canonical": "you need to find a Metal Vessel and a Torch ... to pick up the [_METAL BOWL_] we were looking for.",
+      "structured": "Metal Vessel (step 8) / Metal Bowl (step 9) kept verbatim",
+      "issue": "The source uses two names for the same item. Both are preserved, which is correct, but the discrepancy is not flagged anywhere for the reader. Informational only."
+    }
+  ],
+  "structured_sha256": "38d42eb3bbf1ead38c6d5f0335120cb88b08bb7427ed6bb6ce82afff06017ac0"
+}

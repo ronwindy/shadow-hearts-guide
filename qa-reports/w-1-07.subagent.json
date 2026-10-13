@@ -1,0 +1,20 @@
+{
+  "section_id": "w-1-07",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Step order 1-13 matches canonical prose order (flashback battle, hotel, chest/ticket/Mana Seed, east area items, boat/lottery, bar ticket, Wugui fights, post-event save, Kuro stand, shopping advice + Meiyuan note, pit fights, exit to World Map)",
+    "Save point: Hotel ground floor (overview and step 2)",
+    "All overview items present with matching rewards: Lottery Ticket x2, Seal of Life, Mana Seed, Talisman of Mercy (spacing of TalismanOfMercy only), Pilgrim's Staff; B.Dragon Horn retained in step 5",
+    "Lottery Member No. 12 (Sharp Van) and prize table (Red Star Card, Yellow R.Phoenix Talon, Turquoise *Tea of the Sage, Green Pure Seed, White Tissues) plus Tea of the Holy One / Sage discrepancy footnote",
+    "Star Card missable warning: up to 20% off purchases, 10% more on sales, reload last save, win something from each member at least once; Pocket Watch tip",
+    "Enemies table: Kappa #015 HP 100 Water; Wugui Dark Cannot be defeated; Wugui HP 330 S-Atk Resistant sub-boss",
+    "Boss card: Wugui SUB-BOSS 330 HP Dark, Weird Bottle, 1500 EXP, 4500 Cash, strategy (Raging Tiger, physical attacks, heal) all preserved",
+    "Shop inventories and prices: Mika's House (30 items) and Shanghai Weapon Studio (6 items) match exactly",
+    "Shopping advice quantities (four each Studded Caps and Western Belts), Meiyuan Acupuncture/party change note, Mr. Zhen pit fights text",
+    "Battle 1 tactics: Czernobog, Seventh Key on a Kappa, Judgment Ring, both Kappas and Wugui obliterated in a single round",
+    "Battle 2: two Kappa battles each time, Ogre Flamedance, unwinnable Wugui fight, Game of Death, Yuri steps in",
+    "No invented facts, numbers or locations found; navigation prev w-1-06 / next w-1-08 correct"
+  ],
+  "findings": [],
+  "structured_sha256": "cb0d6756d524fa881a49c54c3895ff0d47aeddf8de365697028dbfd10e88ee18"
+}

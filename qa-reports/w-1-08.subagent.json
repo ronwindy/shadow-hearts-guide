@@ -2,49 +2,27 @@
   "section_id": "w-1-08",
   "verdict": "PASS_WITH_NOTES",
   "spot_checked": [
-    "Overview checklist items, equipment, valuables and lottery entry match items_summary with correct step references",
-    "Enemy table: all 10 rows match",
-    "Shops: both inventories match names, prices and order",
-    "Choices at steps 7, 17, 26, 27 match",
-    "Sub-bosses Xieshi, Baigu, Qinggu stats, drops, EXP/cash match",
-    "Boss Yamaraja: War stats, party levels, strategy preserved and attached to step 30",
-    "Lottery table and Flash Badge missable text match",
-    "All source notes present in source order",
-    "Route directions in steps 3-6, 10-15, 20-24 unchanged",
-    "No facts invented"
+    "save_points (5 entries, '|' artifact dropped)",
+    "overview items (21), equipment (5), valuables (1), lottery member No. 11 vs items_summary",
+    "enemy table #024-#033: HP, class, notes, sub-boss/boss flags",
+    "Kato Pachimon General Store (28 items) and Master Shoho's Allowance Job (34 items) names and prices",
+    "sub-boss cards Xieshi/Baigu/Qinggu: HP, class, drops, EXP, cash, strategy text",
+    "Yamaraja: War card: level, party equipment per member, fusions, EXP 2000, cash 5400, strategy",
+    "all 9 NOTE callouts (Soul Energy, Leonardo's Bear x3, Malice, Zhuzhen level 12/NourishingPotion, Rosewood Bracelets, Alice unavailable, Pocket Watch, last shop)",
+    "all 4 dialogue choice sets and the Choose 2 / Choose 1 instructions",
+    "lottery prize table for Member No. 11 and Flash Badge missable text",
+    "step ordering across Yuri/Zhuzhen and Alice/Margarete segments, warp point colours, item locations",
+    "Fruit of Yggdrasil and Alice leaving party; Wood Token requirement"
   ],
   "findings": [
     {
-      "severity": "medium",
-      "category": "omitted",
-      "location": "steps[30].boss (and guide.boss / bosses[0])",
-      "canonical": "Boss card party grid with recommended equipment and fusions per character",
-      "structured": "party[] keeps only name and level",
-      "issue": "Recommended equipment and fusion loadout for Yamaraja: War not carried over; schema party[] supports only name and level."
-    },
-    {
       "severity": "low",
       "category": "other",
-      "location": "guide.objectives[1]",
-      "canonical": "no explicit objective",
-      "structured": "Proceed to Shanghai, Huayuan (2)",
-      "issue": "Derived from navigation metadata, not verbatim source text."
-    },
-    {
-      "severity": "low",
-      "category": "omitted",
-      "location": "steps[9], steps[19]",
-      "canonical": "'Damn cat......' author aside; 'NOTHING' emphasis",
-      "structured": "dropped / lowercased",
-      "issue": "Author flavour comment removed; no gameplay meaning lost."
-    },
-    {
-      "severity": "low",
-      "category": "other",
-      "location": "steps[30].boss vs guide.boss / bosses[0]",
-      "canonical": "single boss card",
-      "structured": "strategy text appears three times",
-      "issue": "Duplicate strategy text; confirm template renders only one."
+      "location": "items_summary.obtainable[Western Belt / Voodoo Doll].location",
+      "canonical": "which is a dead-\nend containing a [_VOODOO DOLL_]",
+      "structured": "which is a dead- end containing a Voodoo Doll",
+      "issue": "Source hyphen line-wrap artifact ('dead- end') carried into the summary location text; cosmetic only (step 12 description has it correctly as 'dead-end')."
     }
-  ]
+  ],
+  "structured_sha256": "d0065a7301028d70ad49fe6724461be511b47474f40eef3bf833ea68889154c0"
 }

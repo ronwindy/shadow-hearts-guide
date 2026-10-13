@@ -578,7 +578,6 @@
         "choices": [
           {
             "option": "[1] No, I don't...",
-            "outcome": "Do not enter battle yet.",
             "after_item": 1
           },
           {

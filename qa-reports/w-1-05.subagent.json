@@ -1,0 +1,43 @@
+{
+  "section_id": "w-1-05",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "All 16 steps compared against canonical prose in order (names, numbers, conditions, locations)",
+    "Choices: turtle dialogue options 1/2 and departure options 1/2",
+    "Turtle prize table (1-2/3-4/5-6/7-8 attempts) and stash cash tiers (500/1000/2000)",
+    "Lottery Member No. 14 prize table (Red/Yellow/Turquoise/Green/White)",
+    "Third Key text (nine hits, 15,000 / 15,750 cash, only one) and Pocket Watch missable",
+    "Boss Yamaraja: Wind stats, party equipment, fusions, EXP 720, Cash 3600, drop Seal of Life",
+    "Enemy table (#014, #019, #020) HP/class/notes",
+    "Both shop inventories and prices",
+    "Save point (Center of town), overview items/equipment/valuables/lottery vs items_summary",
+    "Warnings: Alice equipment/Pedometer, Margarete+Zhuzhen equipment removal, back row, Earth class/level 10, Frog God paralysis"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[7].boss.strategy (and bosses[0].strategy), nested bullets",
+      "canonical": "Have Margarete on healing duty... Have Zhuzhen use his Ogre Flamedance continuously... Yuri should be doing the most damage if he has the Tornado Fusion...",
+      "structured": "Zhuzhen Ogre Flamedance and Yuri most-damage bullets are children of the Margarete healing bullet",
+      "issue": "Nesting implies Zhuzhen's and Yuri's instructions are sub-points of Margarete's healing duty; they are separate source paragraphs/sentences. Meaning intact, hierarchy slightly misleading."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[7].boss.strategy[0].items[0]",
+      "canonical": "Note that Yamaraja: Wind is actually an EARTH class",
+      "structured": "Note that **Yamaraja**: Wind is actually an EARTH class",
+      "issue": "Bold markup covers only 'Yamaraja' and not the full name 'Yamaraja: Wind' (cosmetic)."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "objectives[5]",
+      "canonical": "The Third Key is worth getting... If its battle effect has no interest to you, feel free to sell it",
+      "structured": "Get the **Third Key** from the leaf field (optional)",
+      "issue": "'(optional)' is a mild paraphrase; the source recommends getting it (worth getting, or sell it) and does not use the word optional."
+    }
+  ],
+  "structured_sha256": "9c332e4aa6095c423e3a134061b20a31d3cbfb6260a4fa5c475e154c47649f34"
+}

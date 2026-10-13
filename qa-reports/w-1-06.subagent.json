@@ -1,0 +1,43 @@
+{
+  "section_id": "w-1-06",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "enemy table: #021 White Wolfling 45 Water, #022 Ogre Flame 40 Fire, Li Li 580 Dark sub-boss, #023 Li Li 720 Dark, notes",
+    "save points (below deck x2 in steps 2 and 3)",
+    "items/rewards: Rosewood Bracelet, Witch's Broth, Lottery Ticket, Lottery Member No. 13",
+    "Pachimon General Store: all 28 items and prices",
+    "Lottery Member No. 13 prize table (Red Iron Clogs, Yellow B.Dragon Horn, Turquoise Witch's Broth, Green Pure Leaf, White Tissues); Iron Clogs Agl -15 and reload warning",
+    "Courier Subordinate choices [1]/[2] and Zhuzhen choices [1]/[2] with outcomes",
+    "sub-boss Li Li: 580 HP, W.Tiger Hair, 800 EXP, 3800 Cash, full strategy incl. Dark Messenger instant kill",
+    "boss Li Li: 720 HP, B.Tortoise Fang, 1000 EXP, 3950 Cash, party levels 14/14/13 and equipment, fusions, Hate Storm",
+    "three Rosewood Bracelets warning, Alice level 11 for Blessed Light note, remove accessories before Shanghai",
+    "step ordering and navigation prev/next"
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "category": "invented",
+      "location": "objectives[0]; items_summary.obtainable[Witch's Broth]",
+      "canonical": "Afterward, head left a bit more, then check the top barrel to the upper-right for a [_WITCH'S BROTH_]. ... then make your way back below deck to talk with Alice",
+      "structured": "Collect the Rosewood Bracelet and Witch's Broth below deck; Top barrel to the upper-right, after the scene with Margarete (step 1)",
+      "issue": "The source places the Witch's Broth barrel after the wheelhouse-door scene, not below deck (the source says to go back below deck afterwards), so 'below deck' is not source-supported for the Broth. The location also says 'after the scene with Margarete', whereas the source puts it after the wheelhouse door scene. Rosewood Bracelet 'below deck' is likewise inferred rather than stated."
+    },
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "guide.boss.strategy (top-level singular boss, string form)",
+      "canonical": "Alice should cast Holy Edge on Margarete first, so she has Light-based attacks, then she should cast Blessed Light.",
+      "structured": "Alice casts Holy Edge on Margaret, then Blessed Light.",
+      "issue": "Condensed paraphrase changes 'Margarete' to 'Margaret' in the Holy Edge target and rewrites source wording ('At least this time she won't use Dark Messenger' became 'Dark Messenger is not used this time'). The step-level strategies, which are the rendered content, keep the source prose and are correct."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[4] (id 4) note 'Bring three Rosewood Bracelets'",
+      "canonical": "Choosing option 1 will allow you to see what items he has for sale. Make sure that you have THREE Rosewood Bracelets to put on your active party, as the next boss can paralyze you.",
+      "structured": "Step 4 (option 1 only) carries the warning about three Rosewood Bracelets and healing items.",
+      "issue": "The warning is general preparation advice for the next boss, but it is attached to the option 1 shop step only, which may read as conditional on picking option 1. Content is intact; placement is slightly misleading."
+    }
+  ],
+  "structured_sha256": "16d7de402c1515485bf9c221f869e0a7925691a00fdb3c6e04c7bc086d36810a"
+}

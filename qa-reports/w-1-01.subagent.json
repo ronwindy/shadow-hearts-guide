@@ -1,0 +1,49 @@
+{
+  "section_id": "w-1-01",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "initial equipment note: Leather Gloves, Cotton Shirt, Death Emperor soul, Talisman valuable",
+    "enemy table: #001 Wind Shear HP 10 Wind; Roger Bacon Dark, Cannot be defeated",
+    "Thera Leaf (aisle) and Mana Leaf (booth) locations and order",
+    "Judgment Ring note: CROSS button, highlighted areas, smaller red area, miss = miss completely",
+    "Roger Bacon unwinnable note: Revelation ends the battle",
+    "World Map save note and only destination Plains",
+    "step order 1-9 matches source order",
+    "no bosses in source; bosses list empty, Roger Bacon not flagged as boss (matches table)"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "omitted",
+      "location": "steps[0] (id 1)",
+      "canonical": "After watching the greatest intro of video game history, head down to the next train car.",
+      "structured": "Watch the opening intro sequence.",
+      "issue": "The author's opinion 'greatest intro of video game history' is dropped; no game fact is lost."
+    },
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "steps[2].notes[0] (Judgment Ring Mechanics)",
+      "canonical": "Once you get used to the system more, feel free to try to time your attacks just right to succeed in more critical attacks in the smaller red area.",
+      "structured": "Once you get used to the system, try timing your attacks just right in the smaller red area for more critical attacks.",
+      "issue": "Light tightening ('more', 'feel free to' dropped); meaning preserved."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[5] (id 6)",
+      "canonical": "which will lead to more events and a battle with Roger Bacon.",
+      "structured": "to trigger story events and enter battle with Roger Bacon.",
+      "issue": "'story' qualifier added to events; harmless wording drift."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "navigation.prev",
+      "canonical": "prev: w-1-00 Walkthrough - Asia",
+      "structured": "prev: i-1-01 Game Manual / Instructions",
+      "issue": "Prev link differs from canonical; w-1-00 has no structured section, so this is presumably an intentional remap to an existing page. Confirm intended."
+    }
+  ],
+  "structured_sha256": "a870c564b08d2c674bbe3d5423a5b0cbecc59ec623b913b77aa748f7d884050d"
+}

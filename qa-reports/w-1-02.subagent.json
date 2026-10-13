@@ -1,0 +1,82 @@
+{
+  "section_id": "w-1-02",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Enemy table (#002-#004, Fox Face, Raging Tiger 75 HP Earth, Evil 1-4 #105-#108) matches canonical",
+    "Raging Tiger sub-boss card: 75 HP, Earth, strategy text preserved",
+    "Malice prize table: all 42 rows (01-03 through 100 N/A) compared against canonical, names and ranges identical",
+    "Evil 1-4 Malice colour ranges (Blue/Turquoise/Green/Yellow/Red)",
+    "Chest-below-bridge reward list (6 outcomes, southern/northern gate, 1st/2nd/3rd+ try)",
+    "Push Ring / Normal Ring descriptions and Leather Belt / Thera Seed / Thera Leaf / Bandanna / Mana Seed / Mana Leaf outcomes",
+    "Fox Face unwinnable warning and R1 Run Away warning",
+    "Alice default equipment note, Pendant valuable",
+    "Save point by the sluice gate, step order 1-14 chronology, navigation prev/next"
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "category": "contradiction",
+      "location": "steps[7] option 2 (Normal Ring) vs steps[13] chest list",
+      "canonical": "Normal Ring: 'if you succeed the third or any time after, you'll receive a Mana Leaf.' Chest list: 'A [_THERA LEAF_] if you got the northern gate's handle the third or more tries.'",
+      "structured": "Step 7: 'you'll receive a **Mana Leaf**'; step 13: 'A **Thera Leaf** if you got the northern gate's handle the third or more tries.'; items_summary lists Thera Leaf for Northern 3rd+ and has no Mana Leaf entry",
+      "issue": "The source gives Mana Leaf in one place and Thera Leaf in the other for the northern gate on the third or later try. Both are preserved verbatim but the discrepancy is not flagged, and Mana Leaf is absent from items_summary and rewards. The source ambiguity should be preserved and flagged."
+    },
+    {
+      "severity": "medium",
+      "category": "altered",
+      "location": "guide.objectives[2] and route[4]",
+      "canonical": "'go back to the last fork and use the Save Point to the southeast to save' (after examining the sluice gate)",
+      "structured": "'Examine the locked sluice gate, then head northeast and save at the Save Point'; route: 'Northeast Sluice Gate & Save Point'",
+      "issue": "The objective says to head northeast and save; the source says the Save Point is southeast of the last fork. The northeast direction belongs to the sluice gate in step 8. This could misdirect the player."
+    },
+    {
+      "severity": "medium",
+      "category": "invented",
+      "location": "callouts[0] 'Malice and The Graveyard System'",
+      "canonical": "'make sure that your Malice level ... does NOT reach the red. If it does, IMMEDIATELY go to the Graveyard and fight your Malice so that you don't fight Fox Face.'",
+      "structured": "'If it reaches red, Fox Face will invade regular battles.' and 'purge it safely'",
+      "issue": "The claim that Fox Face invades regular battles is not stated in the source (the source only says to avoid fighting Fox Face and to Run Away if you run into him). This callout also duplicates the step 11 note."
+    },
+    {
+      "severity": "low",
+      "category": "invented",
+      "location": "guide.route[2], route[5], route[7]; objectives[4]",
+      "canonical": "'a chest here down below the bridge'; 'they'll decide to take a rest for a while'; 'lower the water running through the plain'",
+      "structured": "'Drained Riverbed (Reward Chest)', 'Campsite (Fox Face Event)', 'drain the river, rest at camp'",
+      "issue": "Route labels and objective wording add details not in the source: drained riverbed, campsite, and drain the river. The source says only that the water is lowered, the party takes a rest, and the chest is below the bridge. Presentation labels, but they add location claims."
+    },
+    {
+      "severity": "low",
+      "category": "invented",
+      "location": "callouts[1] 'Soul Energy & Fusions'; objectives[5]",
+      "canonical": "'how many points away you are from leveling up a class'; 'Yuri can now equip the soul of [_RAGING TIGER_], Tigerion!'",
+      "structured": "'points required to level up each fusion element class'; 'Yuri's Earth Fusion (Tigerion)'",
+      "issue": "'fusion element class' and 'Earth Fusion' are small embellishments not stated in the prose; Earth only appears as the enemy class in the table."
+    },
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "guide.steps[12].notes[1].table.rows[].is_unique; guide.objectives[3], items_summary locations",
+      "canonical": "Prize table has no unique/special marker; note says 'special prizes'. Handle option 1 is at the 'bottom part', option 2 at the 'top part' of the screen",
+      "structured": "is_unique true on single-value rows; 'Southern (Push Ring)' / 'Northern (Normal Ring)' mapping",
+      "issue": "The unique flags and the southern/northern to bottom/top mapping are inferred, not directly stated, although both are plausible from the chest list. Worth noting, not blocking."
+    },
+    {
+      "severity": "low",
+      "category": "omitted",
+      "location": "overview checklist legend",
+      "canonical": "'! = Can only have one' markers on Thera Leaf, Mana Seed, Thera Seed, second Leather Belt and second Bandanna",
+      "structured": "Not present in items_summary",
+      "issue": "The 'can only have one' flags from the source checklist are not carried over. The canonical overview lists also dropped them, so the information is lost in the structured guide."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "callouts[2] vs steps[12].notes[3]",
+      "canonical": "Single NOTE 'The only issue with this is that it's a number the system tracks that you cannot see...'",
+      "structured": "Same text appears both as a top-level callout and as a step 12 note",
+      "issue": "Duplicate text between the overview callout and the step note, and the callout is orphaned from its referent (the Malice prize table)."
+    }
+  ],
+  "structured_sha256": "1f5119fec6aa51532880a9f6ffa7a86e92ed556feced81792559a6f5eb69c79f"
+}

@@ -399,7 +399,6 @@
         "choices": [
           {
             "option": "1. Just a bit more.",
-            "outcome": "Keep shopping.",
             "after_item": 1
           },
           {

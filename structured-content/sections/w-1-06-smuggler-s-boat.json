@@ -35,7 +35,7 @@
       "Below deck"
     ],
     "objectives": [
-      "Collect the **Rosewood Bracelet** and **Witch's Broth** below deck",
+      "Collect the **Rosewood Bracelet** and **Witch's Broth**",
       "Win something from each Lottery Member, including the **Iron Clogs**",
       "Defeat the sub-boss **Li Li**",
       "Defeat the boss **Li Li**",
@@ -46,12 +46,12 @@
         {
           "name": "Rosewood Bracelet",
           "category": "equipment",
-          "location": "Chest on the left side of the room, below deck (step 1)"
+          "location": "Chest on the left side of the room (step 1)"
         },
         {
           "name": "Witch's Broth",
           "category": "items",
-          "location": "Top barrel to the upper-right, after the scene with Margarete (step 1)"
+          "location": "Top barrel to the upper-right, after examining the wheelhouse door and heading left a bit more (step 1)"
         },
         {
           "name": "Lottery Ticket",

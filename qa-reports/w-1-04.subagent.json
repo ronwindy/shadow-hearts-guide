@@ -1,0 +1,43 @@
+{
+  "section_id": "w-1-04",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "All 8 enemy rows (#011-#018): numbers, names, HP, class, notes, boss/sub-boss flags",
+    "Fengtian Item Shop: all 21 item names and prices",
+    "Overview save points (Item Shop, Near the Sewers' exit) and all 12 overview items/equipment/valuables plus lottery entry",
+    "Sub-boss card: Water Tiger/Kappa/Kappa HP, class, drops (Spikes, Tent, Tent), 400 EXP, 2500 cash, strategy",
+    "Boss card: Beast Dog HP, class, drop Voodoo Doll, 540 EXP, 3000 cash, party levels and equipment per character, fusions, strategy",
+    "Lottery Member No. 15 prize table (Red Jade Lariat, Yellow B.Tortoise Fang, Turquoise TalismanOfMercy, Green Pure Seed, White Tissues)",
+    "Both NOTE blocks (save before shopping, limited lottery tickets) and the Jade Lariat warning",
+    "Choice prompts: Just a bit more / I'm ready, Wait a moment / Okay it's set, Keep searching / Go above ground",
+    "Step order 1-17 against canonical walkthrough order (Fengtian, alley, Sewers, ladder event, Jewel, sub-boss, Elite Guards, Beast Dog, World Map)",
+    "Margarete default equipment note; Type 94 Pistol P-Atk/S-ATK remark; Guild Card 10% discount / 5% rise"
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "category": "invented",
+      "location": "steps[5].choices[0].outcome (id 5, option '1. Just a bit more.')",
+      "canonical": "[1] Just a bit more.  (no outcome stated in the source)",
+      "structured": "outcome: \"Keep shopping.\"",
+      "issue": "The source states no outcome for option 1; 'Keep shopping.' is inferred. Project rule: set outcome only when the source states it. (Option 2's outcome is supported by the later 'Choose 2 to watch a series of events' sentence.)"
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[7] (id 7) description and notes[0]",
+      "canonical": "Make sure to win the Jade Lariat before continuing on; it widens your Hit Area on your Ring, it's well worth it! If you don't win it, reload your last save and try again.",
+      "structured": "Identical text appears in both the step description and a 'missable' note",
+      "issue": "Text duplicated between description and callout; no meaning change, cosmetic redundancy only."
+    },
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "bosses[0] / boss strategy (Beast Dog)",
+      "canonical": "it'll hit the whole part for pretty good damage",
+      "structured": "it'll hit the whole party for pretty good damage",
+      "issue": "Source typo 'part' silently corrected to 'party'. Meaning clearly intended; noted for transparency only."
+    }
+  ],
+  "structured_sha256": "40f4f635859bc50158f7f9c603824e09c857cf552e2720574352fc187db9c395"
+}
