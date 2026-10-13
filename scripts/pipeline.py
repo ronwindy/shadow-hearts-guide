@@ -37,7 +37,6 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 # Add skill script directories to sys.path for direct imports
 sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "guide-transformer" / "scripts"))
 sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "qa" / "scripts"))
-sys.path.insert(0, str(ROOT_DIR / ".claude" / "skills" / "frontend-expert" / "scripts"))
 sys.path.insert(0, str(ROOT_DIR / "scripts"))
 
 try:

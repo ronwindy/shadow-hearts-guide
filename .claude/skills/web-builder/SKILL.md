@@ -14,7 +14,7 @@ Renders `structured-content/sections/*.json` into the Astro static site (`src/`)
 - Walkthroughs: objective, route, checklist steps, callouts for warnings/tips. Reference/appendix pages: scannable tables wrapped in `overflow-x-auto`.
 - Responsive and accessible (mobile first, semantic HTML, contrast, keyboard nav). No internal pipeline IDs in user-facing text.
 - GitHub Pages compatible: static output, respect `base` in `astro.config.mjs`.
-- Don't over-engineer; style/layout questions go to the `frontend-expert` skill; design tokens are in `DESIGN.md`.
+- Don't over-engineer; design tokens are in `DESIGN.md`. Run `scripts/audit_frontend.py` (or `pipeline.py <id> --frontend`) to check responsive/UX issues.
 
 ## Commands
 ```powershell

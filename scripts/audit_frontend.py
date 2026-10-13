@@ -15,7 +15,7 @@ import re
 from pathlib import Path
 from typing import List, Tuple, Set
 
-ROOT_DIR = Path(__file__).resolve().parents[4]
+ROOT_DIR = Path(__file__).resolve().parents[1]
 SRC_DIR = ROOT_DIR / "src"
 DIST_DIR = ROOT_DIR / "dist"
 
