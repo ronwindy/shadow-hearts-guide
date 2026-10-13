@@ -204,15 +204,22 @@ def main(argv: list[str]) -> int:
         next(STRUCT.glob(f"{args[0]}-*.json"))
     ]
     for path in files:
-        data = json.loads(path.read_text(encoding="utf8"))
-        new_guide = bold_section(data["guide"], pat)
-        found: list[str] = []
-        _diff_terms(data["guide"], new_guide, found)
+        found = bold_file(path, pat, write)
         print(f"{path.name}: +{len(found)} bolded -> {sorted(set(found))}")
-        if write and found:
-            data["guide"] = new_guide
-            path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf8")
     return 0
+
+
+def bold_file(path: Path, pat: re.Pattern | None = None, write: bool = True) -> list[str]:
+    """Bold terms in one structured file; returns the newly bolded terms (writes only when found)."""
+    pat = pat or _compile(build_dictionary())
+    data = json.loads(path.read_text(encoding="utf8"))
+    new_guide = bold_section(data["guide"], pat)
+    found: list[str] = []
+    _diff_terms(data["guide"], new_guide, found)
+    if write and found:
+        data["guide"] = new_guide
+        path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf8")
+    return found
 
 
 if __name__ == "__main__":

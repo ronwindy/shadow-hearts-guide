@@ -9,13 +9,14 @@ Usage:
     python scripts/pipeline.py <section_id> --scaffold   # Generate structured draft from canonical
     python scripts/pipeline.py <section_id> --validate   # Validate structured JSON against schema
     python scripts/pipeline.py <section_id> --qa         # Run QA verification and record result in qa-status.json
-    python scripts/pipeline.py <section_id> --verify     # Validate + QA + Build + Update status
+    python scripts/pipeline.py <section_id> --verify     # Alias of --check
     python scripts/pipeline.py <section_id> --frontend   # Run frontend/UX audit
     python scripts/pipeline.py [<section_id>] --lint     # Presentation lint (prose blocks, UPPERCASE item tags, [_TAG_], ASCII borders)
     python scripts/pipeline.py <section_id> --verdict F  # Validate + store the independent QA subagent's JSON verdict (F = "-" reads stdin); records the structured file hash so --check/--finalize warn on a stale verdict
     python scripts/pipeline.py <section_id> --qa-subagent-prompt  # Print the independent QA subagent prompt + verdict path
     python scripts/pipeline.py <section_id> --finalize   # Stage exactly this section's files (no commit); prints the commit message
-    python scripts/pipeline.py <section_id> --check      # Lean per-section check: validate + QA + build + status
+    python scripts/pipeline.py <section_id> --check      # Per-section gate: bold terms -> validate -> lint -> QA -> build -> status
+    python scripts/pipeline.py <id> <id> ... --check     # Batch: sections checked in turn, one build at the end (--no-build skips it)
     python scripts/pipeline.py <section_id> --full       # Full check: --check + frontend audit (run every ~5 sections or after UI/code changes)
     python scripts/pipeline.py <section_id>              # Display section status
     python scripts/pipeline.py --backlog                 # Run QA on all structured guides lacking a current result
@@ -45,6 +46,7 @@ try:
     from verify_guide import verify_guide, format_markdown_report
     from audit_frontend import audit_astro_sources, audit_built_html
     from lint_guide import lint_guide
+    from bold_terms import bold_file
     import status as status_module
     from jsonschema import Draft202012Validator
 except ImportError as err:
@@ -471,7 +473,31 @@ def resolve_backlog() -> int:
     return verified_count
 
 
-def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> bool:
+def run_bold(sec: Dict[str, Any]) -> None:
+    """Applies bold_terms to the section's prose so QA always sees the final file."""
+    _, structured_path = get_section_paths(sec)
+    if not structured_path.exists() or not sec["id"].startswith("w-"):
+        return
+    found = bold_file(structured_path, write=True)
+    if found:
+        print(f"[bold] {sec['id']}: bolded {len(set(found))} term(s): {sorted(set(found))}")
+
+
+def run_check(sec: Dict[str, Any], build: bool = True) -> bool:
+    """Single per-section gate: bold -> validate -> lint -> QA -> build -> status."""
+    run_bold(sec)
+    v_ok = run_validate(sec)
+    l_ok = run_lint(sec)
+    q_ok = run_qa(sec)
+    b_ok = run_build() if build else True
+    ok = v_ok and l_ok and q_ok and b_ok
+    if ok:
+        update_project_status()
+        remind_independent_qa(sec)
+    return ok
+
+
+def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace, build: bool = True) -> bool:
     """Executes requested operations against a specific section."""
     success = True
 
@@ -483,15 +509,6 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
 
     if args.qa:
         success = run_qa(sec) and success
-
-    if args.verify:
-        v_ok = run_validate(sec)
-        q_ok = run_qa(sec)
-        b_ok = run_build()
-        success = v_ok and q_ok and b_ok
-        if success:
-            update_project_status()
-            remind_independent_qa(sec)
 
     if args.lint:
         success = run_lint(sec) and success
@@ -509,17 +526,10 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
     if args.finalize:
         success = run_finalize(sec) and success
 
-    if args.check or args.full:
-        v_ok = run_validate(sec)
-        q_ok = run_qa(sec)
-        b_ok = run_build()
-        success = v_ok and q_ok and b_ok
-        if success:
-            update_project_status()
-            remind_independent_qa(sec)
+    if args.check or args.verify or args.full:
+        success = run_check(sec, build=build) and success
         if args.full:
-            f_ok = run_frontend_audit()
-            success = success and f_ok
+            success = run_frontend_audit() and success
 
     return success
 
@@ -527,19 +537,20 @@ def _execute_section_actions(sec: Dict[str, Any], args: argparse.Namespace) -> b
 def main():
     """CLI orchestrator handling pipeline operations."""
     parser = argparse.ArgumentParser(description="Unified Guide Conversion Pipeline CLI")
-    parser.add_argument("section", nargs="?", default=None, help="Section ID or file stem (e.g., w-1-04, w-1-04-fengtian)")
+    parser.add_argument("section", nargs="*", help="Section ID(s) or file stem (e.g., w-1-04, w-1-04-fengtian); several ids with --check build once at the end")
     parser.add_argument("--scaffold", action="store_true", help="Scaffold structured guide JSON from canonical")
     parser.add_argument("--validate", action="store_true", help="Validate structured guide against schema")
     parser.add_argument("--qa", action="store_true", help="Run QA verification and record result in qa-status.json")
-    parser.add_argument("--verify", action="store_true", help="Validate + QA + Build + Update status")
+    parser.add_argument("--verify", action="store_true", help="Alias of --check")
     parser.add_argument("--frontend", action="store_true", help="Run frontend audit")
-    parser.add_argument("--check", action="store_true", help="Lean per-section check: Validate + QA + Build + Update status")
+    parser.add_argument("--check", action="store_true", help="Per-section gate: bold terms -> validate -> lint -> QA -> build -> status")
     parser.add_argument("--full", action="store_true", help="--check plus Frontend audit")
     parser.add_argument("--lint", action="store_true", help="Presentation lint (all structured guides when no section is given)")
     parser.add_argument("--verdict", metavar="FILE", help="Validate and store the independent QA subagent's JSON verdict ('-' reads stdin)")
     parser.add_argument("--qa-subagent-prompt", action="store_true", help="Print the prompt for the independent QA subagent and its verdict path")
     parser.add_argument("--finalize", action="store_true", help="Stage exactly this section's files (section JSON, QA reports, status files); does not commit")
     parser.add_argument("--backlog", action="store_true", help="Run QA on all structured files lacking a current QA result")
+    parser.add_argument("--no-build", action="store_true", help="Skip npm build in --check (build yourself once per batch)")
     parser.add_argument("--force", "-f", action="store_true", help="Force overwrite when scaffolding")
 
     args = parser.parse_args()
@@ -559,17 +570,26 @@ def main():
         parser.print_help()
         sys.exit(1)
 
-    sec = resolve_section(args.section)
-    if not sec:
-        print(f"[ERROR] Could not resolve section for identifier: '{args.section}'")
-        sys.exit(1)
+    secs = []
+    for ident in args.section:
+        sec = resolve_section(ident)
+        if not sec:
+            print(f"[ERROR] Could not resolve section for identifier: '{ident}'")
+            sys.exit(1)
+        secs.append(sec)
 
     if not any([args.scaffold, args.validate, args.qa, args.verify, args.frontend, args.check, args.full,
                 args.lint, args.verdict, args.qa_subagent_prompt, args.finalize]):
-        print_section_status(sec)
+        for sec in secs:
+            print_section_status(sec)
         return
 
-    if not _execute_section_actions(sec, args):
+    batch = len(secs) > 1
+    build = not (args.no_build or batch)
+    ok = all([_execute_section_actions(sec, args, build=build) for sec in secs])
+    if batch and not args.no_build and (args.check or args.verify or args.full):
+        ok = run_build() and ok
+    if not ok:
         sys.exit(1)
 
 
