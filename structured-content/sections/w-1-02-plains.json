@@ -60,8 +60,8 @@
       "Lower the sluice gate to drain the river, rest at camp, and endure the battle against **Fox Face**",
       "In the Graveyard, defeat sub-boss **Raging Tiger** to obtain Yuri's Earth Fusion (**Tigerion**)",
       "Converse with the **Masks** and defeat **Evil 4** to purge Yuri's accumulated Malice",
-      "Retrieve the performance-tiered reward chest from the drained riverbed and collect the **Holy Mother Bust**",
-      "Proceed to the entrance of **Zhaoyang Village**"
+      "Open the chest below the bridge and collect the **Holy Mother Bust**",
+      "Continue to the village gates"
     ],
     "items_summary": {
       "obtainable": [
@@ -275,7 +275,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "After opening dialogue, regain control of the **Rude Hero**. Take a few steps to the upper-left to find a **Pure Leaf** on the ground, then head down to the next area.",
+        "description": "1. After some dialogue, you'll regain control.\n2. Take a few steps to the upper-left to find a **Pure Leaf** on the ground, then head down to the next area.",
         "type": "loot",
         "rewards": [
           {
@@ -287,7 +287,7 @@
       },
       {
         "id": 2,
-        "description": "Instead of following the beaten path, turn right into the grass and proceed to the next area to find a chest containing a **Leather Belt**. Equip this to the **Rude Hero** immediately to raise his Attack.",
+        "description": "1. Instead of following the path, go right into the grass and to the next area, where you'll find a chest containing a **Leather Belt**.\n2. Go ahead and equip this to the **Rude Hero**.",
         "type": "loot",
         "rewards": [
           {
@@ -299,20 +299,20 @@
       },
       {
         "id": 3,
-        "description": "1. Head back and follow the main path west until you find the girl.\n2. Engage in dialogue to name your characters (default names: **Yuri** for the **Rude Hero** and **Alice** for the Girl In Danger).\n3. **Alice** joins the party.",
+        "description": "1. Head back and follow the path west until you find the girl.\n2. This will allow you to continue the dialogue, where you'll be able to name your characters.\n3. The default names are **Yuri** for the **Rude Hero** and **Alice** for the **Girl In Danger**, and I will be referring to them by their default names throughout the guide.\n4. **Alice** will join your party, and you'll regain control.",
         "type": "story",
         "notes": [
           {
             "type": "tutorial",
             "title": "Alice's Starting Equipment",
-            "text": "**Alice** comes equipped with a **Small Bible**, a **Cotton Blouse**, and a **Bandanna** by default, and also carries the **Pendant** valuable."
+            "text": "**Alice** comes equipped with a **Small Bible**, a **Cotton Blouse**, and a **Bandanna** by default, and also comes with the **Pendant** valuable."
           }
         ],
         "rewards": []
       },
       {
         "id": 4,
-        "description": "Start heading southeast toward the river. Before stepping onto the wooden bridge, inspect just below your feet to pick up a **Mermaid's Tear**.",
+        "description": "1. Start to head southeast and examine the body of water to your south.\n2. You can't cross it yet, so take a few steps southeast.\n3. Before stepping on the bridge, look just below where you're standing to find a **Mermaid's Tear**.",
         "type": "loot",
         "rewards": [
           {
@@ -324,34 +324,75 @@
       },
       {
         "id": 5,
-        "description": "Cross southeast to the next area. **Alice** observes the water level and notes that something must be done with the sluice gate to proceed across.",
+        "description": "Continue southeast to the next area, where **Alice** notes that we need to do something with the **sluice gate** to keep going, so that's our next task.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 6,
-        "description": "1. Head north to the fork, then east past the fork, following the path as it turns north and west to another sluice gate.\n2. Inspect it to learn a handle is missing.\n3. Return to the previous fork and use the **Save Point** to the southeast before attempting the handle retrieval task.",
+        "description": "1. Before doing that, head north to the fork, then go east and past the fork here, following the path as it turns north and west to another **sluice gate**.\n2. Examine it to find out that you need a handle to use it.\n3. Now go back to the last fork and use the **Save Point** to the southeast to save, that way if you accidentally mess up the next task, you can reload and retry it.",
         "type": "navigation",
-        "notes": [
-          {
-            "type": "tip",
-            "title": "Save Before the Handle Task",
-            "text": "Save your game at the sluice gate **Save Point** now! If you miss the timing or fail your desired attempt for the best prize, you can reload and retry."
-          }
-        ],
+        "notes": [],
         "rewards": []
       },
       {
         "id": 7,
-        "description": "Retrieve the **Sluice Gate Handle** from one of the two sparkling handle mechanisms. Choose your preferred method:\n1. Southern handle ('Push Ring' — rapid CROSS button taps) awards a **Leather Belt** (1st try), **Thera Seed** (2nd try), or **Thera Leaf** (3rd+ try)\n2. Northern handle ('**Normal Ring**' — 3 timed ring hits) awards a **Bandanna** (1st try), **Mana Seed** (2nd try), or **Mana Leaf** / **Thera Leaf** (3rd+ try)",
-        "type": "puzzle",
-        "notes": [
+        "description": [
           {
-            "type": "tip",
-            "title": "Mini-Game Ring Mechanics",
-            "text": "- **Option 1 (Bottom/Southern handle — Push Ring)**: Tap the CROSS button rapidly to drive the indicator into the allowed zone, then tap intermittently to hold it there until time expires. Best prize: **Leather Belt** (raises Attack).\n- **Option 2 (Top/Northern handle — Normal Ring)**: Hit the CROSS button 3 times in the highlighted success areas like a battle ring. Best prize: **Bandanna** (raises Defense)."
+            "text": "In any case, there are two ways to handle this next task; read them both before deciding which one to try:"
+          },
+          {
+            "list": "numbered",
+            "items": [
+              {
+                "text": "Examine the sparkling **Sluice Gate** handle at the bottom part of the screen.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "You'll have to do a \"Push Ring\" to be able to get the handle, meaning that you have to push the `CROSS` button several times in order to get the indicator within the allowed range, then press it intermittently to keep it in that area until the time expires."
+                      },
+                      {
+                        "text": "Doing this successfully the first time will not only net you the handle, but also a **Leather Belt** (raises Attack) here after a sequence of events."
+                      },
+                      {
+                        "text": "If you fail the first time, but succeed the second, you'll receive a **Thera Seed**."
+                      },
+                      {
+                        "text": "If you succeed the third or any time after, you'll receive a **Thera Leaf**."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "Examine the sparkling **Sluice Gate** handle at the top part of the screen.",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "You'll have to do a \"Normal Ring\" to be able to get the handle, meaning that you have to push the `CROSS` button three times when the indicator is within the allowed ranges, just like in battle."
+                      },
+                      {
+                        "text": "Doing this successfully the first time will not only net you the handle, but also a **Bandanna** (raises Defense) here after a sequence of events."
+                      },
+                      {
+                        "text": "If you fail the first time, but succeed the second, you'll receive a **Mana Seed**."
+                      },
+                      {
+                        "text": "If you succeed the third or any time after, you'll receive a **Mana Leaf**."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
+        "type": "puzzle",
+        "notes": [],
         "rewards": [
           {
             "name": "Sluice Gate Handle",
@@ -362,13 +403,13 @@
       },
       {
         "id": 8,
-        "description": "Head back to the northeastern sluice gate and insert the **Sluice Gate Handle** to lower the gate and drain the water flowing through the plain.",
+        "description": "1. Regardless of how you decided to get it, you'll receive the **Sluice Gate Handle**.\n2. Head back to the northeastern side of this area and use the **Sluice Gate Handle** on the **Sluice Gate** to lower the water running through the plain.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 9,
-        "description": "1. Start backtracking to the previous area.\n2. The party decides to make camp and rest.\n3. Shortly after **Alice** falls asleep, the mysterious **Fox Face** appears and ambushes **Yuri**.",
+        "description": "1. Start to make your way back to the previous area, and they'll decide to take a rest for a while.\n2. Shortly after **Alice** falls asleep, a mysterious figure known as **Fox Face** will appear, and you'll have to fight him in battle.",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -379,14 +420,14 @@
           {
             "type": "warning",
             "title": "Unwinnable Confrontation",
-            "text": "It is impossible to win this battle against **Fox Face**. Attack him freely until he unleashes his '!!!' attack, dropping **Yuri**'s HP to 1 and knocking him out."
+            "text": "Once again, it's impossible to win this battle, so feel free to just wail away at him until he uses the !!! attack to reduce your HP to 1, followed by being knocked out once again."
           }
         ],
         "rewards": []
       },
       {
         "id": 10,
-        "description": "1. **Yuri** awakens in the **Graveyard** of his soul.\n2. Head north and examine the glowing green tombstone to engage sub-boss **Raging Tiger** (75 HP, Earth).\n3. Defeat him to acquire **Yuri**'s Earth Fusion soul: **Raging Tiger** (Tigerion!).\n4. Open the menu and equip the soul.",
+        "description": "1. After the battle, you'll be in the **Graveyard**, the one in **Yuri**'s dreams.\n2. When you gain control, head north and examine the glowing green tombstone to be thrown into a battle, this time with the **Raging Tiger**.\n3. By defeating him in battle, **Yuri** can now equip the soul of **Raging Tiger**, Tigerion!\n4. Be sure to equip it in the menu.",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -403,7 +444,7 @@
       },
       {
         "id": 11,
-        "description": "1. Head west and speak with the Masks.\n2. They explain the rules of Malice and force **Yuri** to defeat his accumulated Malice in a battle against **Evil 4**.\n3. Fuse into **Raging Tiger** and strike with heavy hits to defeat Evil 4 in 1–2 turns, clearing your Malice.",
+        "description": "1. Next, head west and talk to the **Masks** here, who'll tell you that you need to defeat the accumulation of **Malice** within you to be able to leave the **Graveyard**.\n2. You'll then enter a battle with **Evil 4**.\n3. He's pretty easy; just fuse into the **Raging Tiger** and dish out some strong hits to take him out in a turn or two.",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -413,8 +454,27 @@
         "notes": [
           {
             "type": "tutorial",
-            "title": "Malice Colors & Graveyard Re-fights",
-            "text": "You can re-challenge Malice incarnations in the **Graveyard** whenever your Malice meter is within specific color ranges.\n\n- Each victory purges Malice and rewards an item corresponding to your exact Malice value (1–100).\n- Special items are awarded once per threshold; repeat clears at the same value yield a **Thera Leaf** instead.\n\n*Note:*\n- The game tracks Malice values internally from 1 to 100 without displaying a numerical counter.\n- Thresholds advance at 25, 50, 75, and 100.\n- Early monsters contribute ~1 point each, while stronger enemies give more.",
+            "title": "What the Masks said",
+            "text": "To sum up everything that the Masks have said:\n\n- The **Talisman** **Yuri** holds will show the level of **Malice** that has accumulated in his soul.\n- To rid himself of the **Malice**, he must return to the **Graveyard** and fight an incarnate of his **Malice** to keep from having to face **Fox Face** in battle.\n- Each enemy you defeat will increase the **Malice Meter**, so make sure that your **Malice** level (found in the menu) does NOT reach the red.\n- If it does, IMMEDIATELY go to the **Graveyard** and fight your **Malice** so that you don't fight **Fox Face**.\n- Right now, you WILL die if you try to fight him, so if you run into him, press the `R1` button and choose to Run Away."
+          },
+          {
+            "type": "tutorial",
+            "title": "Soul Energy",
+            "text": "- You also will now see the **Soul Energy** screen after battle.\n- It shows you how many points away you are from leveling up a class.\n- Once a class is leveled, you can visit the **Graveyard** and obtain a new Fusion by examining the glowing gravestones (but only up to level 1 Fusions for now; level 2 will be available later in the game.)\n- If you're confused about how **Malice** and the **Graveyard** work, check out the Help section in the menu for a full explanation."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 12,
+        "description": "Once you're done with the Masks, head east and back out into the real world, where **Alice** will rejoin and you'll regain control.",
+        "type": "exploration",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Graveyard re-fights",
+            "text": "You can fight **Evil 1**, **Evil 2**, **Evil 3**, and even **Evil 4** again by returning to the **Graveyard** and fighting them when your **Malice** level is at a certain color:\n\n- **Evil 1**: Between Blue and Turquoise.\n- **Evil 2**: Between Turquoise and Green.\n- **Evil 3**: Between Green and Yellow.\n- **Evil 4**: Between Yellow and Red.\n- After each battle, you'll receive an item based on your **Malice**!",
             "badges": [
               {
                 "label": "Evil 1",
@@ -436,7 +496,12 @@
                 "range": "Yellow → Red",
                 "color": "rose"
               }
-            ],
+            ]
+          },
+          {
+            "type": "tip",
+            "title": "Malice prizes",
+            "text": "Malice Prize",
             "table": {
               "headers": [
                 "Malice Value",
@@ -655,13 +720,49 @@
                 }
               ]
             }
+          },
+          {
+            "type": "tip",
+            "title": "Malice prize rules",
+            "text": "- The prize you win depends on the level of **Malice** you have accumulated, with 100 being the max value.\n- Sadly you can't use this knowledge to get the special prizes again and again, as they are replaced with a **Thera Leaf** the second time you clear the **Malice** at the same value."
+          },
+          {
+            "type": "tip",
+            "title": "Malice value is hidden",
+            "text": "- The only issue with this is that it's a number the system tracks that you cannot see.\n- The levels change at 25/50/75/100, and the early monsters seem to contribute 1 point each toward the total, and it seems that as you go through the game, the stronger monsters give more points.\n- It's something you kind of have to guess point values as you go; it's more of a guideline than anything, since it just shows what's possible to get by doing so."
           }
-        ],
-        "rewards": []
+        ]
       },
       {
-        "id": 12,
-        "description": "1. Head east to exit the **Graveyard** and reunite with **Alice**.\n2. From the **Save Point**, return to the screen with the bridge and river.\n3. Drop into the drained riverbed below the bridge to claim the reward chest corresponding to your handle performance (**Leather Belt**, **Thera Seed**, **Thera Leaf**, **Bandanna**, or **Mana Seed**).",
+        "id": 13,
+        "description": [
+          {
+            "text": "From the **Save Point**, make your way back to the screen with the bridge and the river. There will be a chest here down below the bridge; open it to receive one of the following:"
+          },
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "A **Leather Belt** if you got the southern gate's handle the first try."
+              },
+              {
+                "text": "A **Thera Seed** if you got the southern gate's handle the second try."
+              },
+              {
+                "text": "A **Thera Leaf** if you got the southern gate's handle the third or more tries."
+              },
+              {
+                "text": "A **Bandanna** if you got the northern gate's handle the first try."
+              },
+              {
+                "text": "A **Mana Seed** if you got the northern gate's handle the second try."
+              },
+              {
+                "text": "A **Thera Leaf** if you got the northern gate's handle the third or more tries."
+              }
+            ]
+          }
+        ],
         "type": "loot",
         "rewards": [
           {
@@ -689,11 +790,11 @@
             "category": "items",
             "matched_overview_item": "Mana Seed"
           }
-        ]
+        ],
+        "notes": []
       },
       {
-        "id": 13,
-        "description": "1. Head back across the bridge, cross the riverbed to the southwest, and follow the path to the next area.\n2. Watch the scene, then open the chest to the northwest for a **Holy Mother Bust**.\n3. Continue forward to the gates of **Zhaoyang Village** to conclude this section.",
+        "id": 14,
         "type": "navigation",
         "rewards": [
           {
@@ -701,7 +802,9 @@
             "category": "items",
             "matched_overview_item": "Holy Mother Bust"
           }
-        ]
+        ],
+        "notes": [],
+        "description": "1. Once you have your treasure, head back across the bridge, then cross the river bank to the southwest and follow the path to the next area.\n2. Take a few steps to the left for an event, then open the chest to your northwest when you regain control for a **Holy Mother Bust**.\n3. Continue to the village gates, where you'll be able to enter after some short discussion."
       }
     ]
   }
