@@ -6,7 +6,7 @@
     "summary": {
       "critical": 0,
       "high": 0,
-      "medium": 0,
+      "medium": 18,
       "low": 2
     },
     "findings": [
@@ -36,6 +36,258 @@
           "text": "Note that Yamaraja: Earth is actually a WATER class. As I mentioned above, he's "
         },
         "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-003",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[1].description line 2",
+        "source": {
+          "text": "to the previous screen then follow along the"
+        },
+        "generated": {
+          "text": "to the previous screen second area then follow along the"
+        },
+        "description": "Changed/added words vs. canonical: ['area', 'second']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-004",
+        "severity": "medium",
+        "category": "text fidelity (unsupported)",
+        "location": "steps[3].description line 4",
+        "source": {
+          "text": "(no matching source prose)"
+        },
+        "generated": {
+          "text": "- **Pure Leaves** are especially helpful because **Alice** has low SP and can easily become **Berserk**."
+        },
+        "description": "Line has no matching canonical prose (invented or heavily reworded?)",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-005",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[3].description line 5",
+        "source": {
+          "text": "leather belts and bandannas so you have 3 each for your"
+        },
+        "generated": {
+          "text": "leather belts and bandannas up to 3 each for the"
+        },
+        "description": "Changed/added words vs. canonical: ['up']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-006",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[4].description line 1",
+        "source": {
+          "text": "and continue watching the events unfold"
+        },
+        "generated": {
+          "text": "area to reach the shrine"
+        },
+        "description": "Changed/added words vs. canonical: ['shrine']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-007",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[5].description line 1",
+        "source": {
+          "text": "cash after the battle head back into the"
+        },
+        "generated": {
+          "text": "after defeating the hellcats head back into the"
+        },
+        "description": "Changed/added words vs. canonical: ['hellcats']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-008",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[7].description line 1",
+        "source": {
+          "text": "sage master li zhuzhen referred to as zhuzhen from here on out you'll also meet wanderer meiyuan the"
+        },
+        "generated": {
+          "text": "as master li zhuzhen and meet wanderer meiyuan the"
+        },
+        "description": "Changed/added words vs. canonical: ['also']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-009",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[11].description line 1",
+        "source": {
+          "text": "event you'll have to fight her sub boss 00120 exp 00600 cash once she done head back to the save point and"
+        },
+        "generated": {
+          "text": "in the center to trigger the battle with felinus"
+        },
+        "description": "Changed/added words vs. canonical: ['00120', '00600', 'once']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-010",
+        "severity": "medium",
+        "category": "text fidelity (altered)",
+        "location": "steps[11].description line 1",
+        "source": {
+          "text": "head back to the save point and use"
+        },
+        "generated": {
+          "text": "center to trigger the battle with felinus"
+        },
+        "description": "Changed/added words vs. canonical: ['felinus']",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-011",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "there is a bronze arrowhead to be found here"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-012",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "pure leaves will really come in handy in the first part of the game where characters like alice have hardly any sp and can't last in a long battle without going"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-013",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "we'll be visiting another town soon so we'll be able to go shopping there with some more money"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-014",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "if you have some extra now or if the money just burning a hole in your pocket then buy some leather belts and bandannas so you have 3 each for your active party"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-015",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "here you'll run into the quack oracle who will introduce himself as the true ruler of the nine heaves the absolute sage master li zhuzhen referred to as zhuzhen"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-016",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "you'll also meet wanderer meiyuan the acupuncturist who got a thing for yuri and would love to just stick his needles in him"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-017",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "zhuzhen will decide to help you out and will temporarily join your party"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-018",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "after an event you'll have to fight her"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-019",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "of course we do"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-020",
+        "severity": "medium",
+        "category": "text fidelity (omitted)",
+        "location": "steps",
+        "source": {
+          "text": "choose 2 and you'll have to take on yamaraja"
+        },
+        "generated": {
+          "text": "(not found in step text or notes)"
+        },
+        "description": "Canonical prose sentence inside the walkthrough is not covered by any step line",
         "recommended_owner": "Guide Transformer"
       }
     ]

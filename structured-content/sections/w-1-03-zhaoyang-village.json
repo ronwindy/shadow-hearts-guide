@@ -704,7 +704,7 @@
           {
             "type": "warning",
             "title": "Remove Zhuzhen's Equipment",
-            "text": "After the battle, remove everything you can from **Zhuzhen** before leaving town."
+            "text": "After the battle, remove everything you can from **Zhuzhen**."
           },
           {
             "type": "tip",

@@ -71,14 +71,14 @@
     }
   },
   "w-1-03": {
-    "checked_at": "2026-10-12T22:39:58",
-    "content_hash": "d8e63478ec8d3142",
+    "checked_at": "2026-10-13T21:48:22",
+    "content_hash": "7880979ea2c66fcb",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
       "low": 2,
-      "medium": 0
+      "medium": 18
     }
   },
   "w-1-04": {
@@ -175,8 +175,8 @@
     "status": "MERGED"
   },
   "w-2-01": {
-    "checked_at": "2026-10-12T22:41:20",
-    "content_hash": "d76da871e224c264",
+    "checked_at": "2026-10-13T21:48:46",
+    "content_hash": "a36cf18503da9806",
     "status": "PASS",
     "summary": {
       "critical": 0,
