@@ -1,5 +1,5 @@
 {
-  "_doc": "Manual additions for scripts/bold_terms.py. 'characters'/'locations' extend the mined appendix dictionary; 'deny' removes names that are table headers or too generic; 'ambiguous' names are English words and are skipped at sentence start (where a capital letter proves nothing). 'numbered' names also match an optional ' No. <digits>' suffix (\"Lottery Member No. 15\").",
+  "_doc": "Manual additions for scripts/bold_terms.mjs. 'characters'/'locations' extend the mined appendix dictionary; 'deny' removes names that are table headers or too generic; 'ambiguous' names are English words and are skipped at sentence start (where a capital letter proves nothing). 'numbered' names also match an optional ' No. <digits>' suffix (\"Lottery Member No. 15\").",
   "characters": [
     "Yuri",
     "Alice",

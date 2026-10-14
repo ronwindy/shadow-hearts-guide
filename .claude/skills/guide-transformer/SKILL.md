@@ -15,6 +15,6 @@ Owns `structured-content/sections/*.json`. The working procedure and conventions
 - **Choices:** `choices[].option` verbatim; set `outcome` only when the source states it.
 - **Source shouting** becomes bold normal case, never UPPERCASE.
 - Step `type` is one of: `story`, `exploration`, `battle`, `boss`, `loot`, `puzzle`, `shop`, `dialogue`, `navigation`, `quest`, `preparation`, `misc`.
-- Reference/appendix sections (`a-*`): scaffold in reference mode, no refinement; run `--check` and stop.
+- Reference/appendix sections (`a-*`): scaffold in reference mode, no refinement; run `node scripts/guide.mjs check <id>` and stop.
 
 Schema: `docs/structured-schema.md`. Format example: [example-walkthrough.json](references/example-walkthrough.json).

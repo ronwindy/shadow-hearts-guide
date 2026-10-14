@@ -2,7 +2,7 @@
 
 How to write `structured-content/sections/<file>.json` by hand (or refine a scaffold).
 Authoritative definition: `.claude/skills/guide-transformer/schemas/structured-guide.schema.json`
-(enforced by `scripts/pipeline.py <id> --validate`). Worked examples:
+(enforced by `node scripts/guide.mjs validate <id>`). Worked examples:
 `structured-content/sections/w-1-05-dalian.json`, `w-1-06-smuggler-s-boat.json`.
 
 > **Rule zero:** presentation changes, game facts do not. Every name, number and
@@ -131,7 +131,7 @@ distinction is still kept in data.
   plus `(step N)`; shorten by hand only by cutting words, never by adding facts. Leave `""`
   when the text does not say.
 - Set `missable: true` only when the source says it can be missed.
-- Items tagged in the narrative but absent from the canonical overview (e.g. `B.Dragon Horn` in w-1-07) are **not** added to `obtainable`: the overview is the authority for this list. They stay as step `rewards`; `--lint` reports them as `narrative-item` (info).
+- Items tagged in the narrative but absent from the canonical overview (e.g. `B.Dragon Horn` in w-1-07) are **not** added to `obtainable`: the overview is the authority for this list. They stay as step `rewards`; `lint` reports them as `narrative-item` (info).
 
 ### 3.2 Step `notes`
 
@@ -294,13 +294,13 @@ Boss step:
 
 ## 9. Workflow commands
 
-```powershell
-.\scripts\run-py.cmd scripts/pipeline.py <id> --scaffold          # draft from canonical (refuses to overwrite; --force to replace)
-.\scripts\run-py.cmd scripts/patch_section.py <id> <patch.json>   # merge a JSON patch, re-validate, write only if valid
-.\scripts\run-py.cmd scripts/pipeline.py <id> --validate          # schema only
-.\scripts\run-py.cmd scripts/pipeline.py <id> --qa                # QA; findings printed, report in qa-reports/<id>.md
-.\scripts\run-py.cmd scripts/pipeline.py <id> --check             # validate + QA + build + status
+```bash
+node scripts/guide.mjs scaffold <id>             # draft from canonical (refuses to overwrite; --force to replace)
+node scripts/guide.mjs patch <id> <patch.json>   # merge a JSON patch, re-validate, write only if valid
+node scripts/guide.mjs validate <id>             # schema only
+node scripts/guide.mjs qa <id>                   # QA; findings printed, report in qa-reports/<id>.md
+node scripts/guide.mjs check <id>                # bold + validate + lint + QA + build + status
 ```
 
-Patch files: see `scripts/patch_section.py` (objects merge, `null` deletes, an object keyed
+Patch files: see `scripts/patch_section.mjs` (objects merge, `null` deletes, an object keyed
 by step id edits `steps` in place). Write the patch with the file Write tool, not a shell heredoc.

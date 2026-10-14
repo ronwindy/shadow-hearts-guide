@@ -16,12 +16,12 @@ List rule: prose with 3+ sentences or ~40+ words becomes a bullet list (numbered
 Forbidden: inventing or guessing facts, adding outside/model knowledge, renaming items/characters/locations/enemies, changing numbers or requirements, silently resolving contradictions. If the source is ambiguous or contradictory, **preserve and flag it**. Extra research only if explicitly requested, and kept visibly separate.
 
 ## 2. Orientation & Status (do this first)
-- Read the first 45 lines of [`STATUS.md`](STATUS.md) (or run `status.py --summary`) before starting. Never scan directories to orient yourself.
-- `pipeline.py <id> --check` already updates `STATUS.md`; run `.\scripts\run-py.cmd scripts/status.py --update` only after work that did not go through `--check`.
+- Read the first 45 lines of [`STATUS.md`](STATUS.md) (or run `node scripts/guide.mjs status`) before starting. Never scan directories to orient yourself.
+- `node scripts/guide.mjs check <id>` already updates `STATUS.md`; run `node scripts/guide.mjs status --update` only after work that did not go through `check`.
 - Next-section priority: fix sequence gaps → fix QA `[FAIL]`s → run pending QA → next chronological section.
 
 ## 3. Windows Runtime
-- Python: always `.\scripts\run-py.cmd scripts/<script>.py ...` (resolves the interpreter across machines). **Run it from PowerShell**, not the Bash tool (the `.\` pattern hangs or fails there). For ad-hoc Python with quotes, write a temp script file instead of a heredoc.
+- Pipeline: `node scripts/guide.mjs <command>` (Node only, no Python). Ad-hoc JavaScript: write a temp `.mjs` file rather than a long inline `node -e`.
 - npm: `cmd /c npm run build`, `cmd /c npm test` (avoids PowerShell ExecutionPolicy errors).
 
 ## 4. Roles (logical agents = skills in `.claude/skills/`)
@@ -37,16 +37,16 @@ Make the smallest change that fulfils your role; hand other problems to the owni
 ## 5. Per-Section Workflow
 Section types decide the path:
 - **Walkthrough** (`w-*`): scaffold → LLM refine → validate → QA → independent QA subagent → status.
-  The independent QA subagent is a **manual step** (a script cannot spawn one): after `--check` passes, run `pipeline.py <id> --qa-subagent-prompt` (prints the exact prompt and verdict path), launch a subagent with it, and act on its verdict. The subagent returns a JSON verdict (`.claude/skills/qa/schemas/qa-verdict.schema.json`); record it with `pipeline.py <id> --verdict <file.json>`. `--check` runs `bold_terms`, validate, lint, QA and build in that order (no ordering rules to remember; several ids build once, `--no-build` skips it; `--verify` is an alias). Standalone `pipeline.py [<id>] --lint` (no id = all sections) catches leftover prose blocks, UPPERCASE item tags, `[_TAG_]`, ASCII borders, and fragments (a step line starting lowercase = a wrapped source line split off). `--scaffold` prints fragment / low-confidence step-type warnings: a flagged scaffold is a draft, compare it with the canonical and patch it before QA (QA does not catch garbled steps). The subagent writes `qa-reports/<id>.subagent-draft.json` and must not run `--verdict`; `--verdict` removes the draft. `pipeline.py <id> --finalize` stages exactly the section's files (no commit). `--check` prints a reminder for `w-*` sections until `qa-reports/<id>.subagent.json` exists.
+  The independent QA subagent is a **manual step** (a script cannot spawn one): after `check` passes, run `node scripts/guide.mjs qa-prompt <id>` (prints the exact prompt and verdict path), launch a subagent with it, and act on its verdict. The subagent returns a JSON verdict (`.claude/skills/qa/schemas/qa-verdict.schema.json`); record it with `node scripts/guide.mjs verdict <id> <file.json>`. `check` runs bold terms, validate, lint, QA and build in that order (no ordering rules to remember; several ids build once, `--no-build` skips it). Standalone `node scripts/guide.mjs lint [<id>]` (no id = all sections) catches leftover prose blocks, UPPERCASE item tags, `[_TAG_]`, ASCII borders, and fragments (a step line starting lowercase = a wrapped source line split off). `scaffold` prints fragment / low-confidence step-type warnings: a flagged scaffold is a draft, compare it with the canonical and patch it before QA (QA does not catch garbled steps). The subagent writes `qa-reports/<id>.subagent-draft.json` and must not run `verdict`; `verdict` removes the draft. `node scripts/guide.mjs finalize <id>` stages exactly the section's files (no commit). `check` prints a reminder for `w-*` sections until `qa-reports/<id>.subagent.json` exists.
 - **Reference/table appendices** (`a-*`, items, shops, bestiary, bosses): deterministic scaffold only, no LLM prose; validate → QA → status.
 
-```powershell
-.\scripts\run-py.cmd scripts/pipeline.py <id> --scaffold
-.\scripts\run-py.cmd scripts/pipeline.py <id> --check      # bold + validate + lint + QA + build + status
+```bash
+node scripts/guide.mjs scaffold <id>
+node scripts/guide.mjs check <id>      # bold + validate + lint + QA + build + status
 ```
-Use `--check` per section; `--full` (adds frontend audit) only after UI/code changes or about every 5 sections.
+Use `check` per section; `check <id> --full` (adds frontend audit) only after UI/code changes or about every 5 sections.
 
-Schema reference: [`docs/structured-schema.md`](docs/structured-schema.md). Edit structured files with `scripts/patch_section.py <id> <patch.json>` (merge patch; re-validates; writes only if valid; write the patch with the Write tool, not a shell heredoc). Rename an item everywhere with `--rename OLD=NEW` (or `"$rename"` in the patch). `pipeline.py <id> --verdict -` reads the verdict JSON from stdin. `--qa`/`--check` print every finding and save the full report to `qa-reports/<id>.md`.
+Schema reference: [`docs/structured-schema.md`](docs/structured-schema.md). Edit structured files with `node scripts/guide.mjs patch <id> <patch.json>` (merge patch; re-validates; writes only if valid; write the patch with the Write tool, not a shell heredoc). Rename an item everywhere with `--rename OLD=NEW` (or `"$rename"` in the patch). `node scripts/guide.mjs verdict <id> -` reads the verdict JSON from stdin. `qa`/`check` print every finding and save the full report to `qa-reports/<id>.md`.
 
 Choice outcomes: set `outcome` only when the source states it; otherwise omit (never infer). Boss data: all canonical bosses must be present in `bosses[]` or as `step.boss`; compare canonical boss count/names before editing.
 

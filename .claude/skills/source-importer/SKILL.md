@@ -25,10 +25,11 @@ Manual saving (SingleFile/Save As) is no longer part of the flow. Existing snaps
 - Never resolve ambiguity, add outside knowledge, or paraphrase. Flag problems instead.
 - Record source identity (URL, title, fetch date, fetch method).
 
-## Run
-```powershell
-.\scripts\run-py.cmd .claude/skills/source-importer/scripts/import_gamefaqs.py [html_path] [--output-dir canonical-sources] [--no-split] [--no-subblocks] [--no-markdown]
-```
+## Run (manual)
+There is no importer script in the repo. The Python importer (`import_gamefaqs.py`) was removed in the Node port and is kept in git history: check out the commit before the port (`git show <commit>:.claude/skills/source-importer/scripts/import_gamefaqs.py`) if you need its logic. A script is written only when a new source needs one.
+
+For a new source, build the canonical files by hand from the saved snapshot, following the existing files as examples and the rules above.
+
 Outputs: `canonical-sources/shadow-hearts-guide.canonical.json` (lightweight index), `canonical-sources/sections/<id>-<slug>.json` (per-section: nav, overview, items, enemies, bosses, shops, markers, verbatim `text`), and a canonical `.md`.
 
 ## Done when
