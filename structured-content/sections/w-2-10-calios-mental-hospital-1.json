@@ -1,0 +1,479 @@
+{
+  "guide": {
+    "id": "w-2-10",
+    "code": "[W-2-10]",
+    "title": "Calios Mental Hospital (1)",
+    "type": "walkthrough",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-2-09",
+        "code": "[W-2-09]",
+        "title": "London, Orphanage",
+        "file": "sections/w-2-09-london-orphanage.json"
+      },
+      "next": {
+        "id": "w-2-11",
+        "code": "[W-2-11]",
+        "title": "Europe Side Quests, Part 1",
+        "file": "sections/w-2-11-europe-side-quests-part-1.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat Rausan",
+      "Defeat Olga"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Keep going right, opening the chest at the right side of the room for a Lottery Ticket. (step 2)"
+        },
+        {
+          "name": "Fruit of Yggdrasil",
+          "category": "items",
+          "location": "Leave this room and head into the next room, opening the chest in here for a rare and welcome Fruit of Yggdrasil. (step 4)"
+        },
+        {
+          "name": "Key to Success",
+          "category": "items",
+          "location": "The room in the bottom-right corner of the area will now open with the Heart Key, so head inside and open the two chests, a Key to Success, and a Club Key. (step 4)"
+        },
+        {
+          "name": "Laurel Slingshot",
+          "category": "equipment",
+          "location": "Watch the following scenes, then check the small shack where the guards were to find a chest containing a Laurel Slingshot for Halley. (step 1)"
+        },
+        {
+          "name": "Demon Ward Ncklace",
+          "category": "equipment",
+          "location": "Go just to the right of that area behind the pillar on the right to find another chest, this one containing a Demon Ward Ncklace. (step 1)"
+        },
+        {
+          "name": "Bronze Coin",
+          "category": "valuables",
+          "location": "After they're finished, go to the top of the screen and examine the sparkling object in the northwest corner to find a Bronze Coin. (step 2)"
+        },
+        {
+          "name": "Gold Coin",
+          "category": "valuables",
+          "location": "Check the sparkling object on the ground near the bench on the upper wall for the Gold Coin, then exit and enter the last room on the right, where you'll find another sparkling object in roughly the same area as the last, the Platinum Coin. (step 5)"
+        },
+        {
+          "name": "Heart Key",
+          "category": "valuables",
+          "location": "Move to the head of the body and examine it for the Heart Key, then examine the sparkling object above the body, beside the table for the Silver Coin. (step 3)"
+        },
+        {
+          "name": "Platinum Coin",
+          "category": "valuables",
+          "location": "Check the sparkling object on the ground near the bench on the upper wall for the Gold Coin, then exit and enter the last room on the right, where you'll find another sparkling object in roughly the same area as the last, the Platinum Coin. (step 5)"
+        },
+        {
+          "name": "Silver Coin",
+          "category": "valuables",
+          "location": "Move to the head of the body and examine it for the Heart Key, then examine the sparkling object above the body, beside the table for the Silver Coin. (step 3)"
+        },
+        {
+          "name": "Dungeon Key",
+          "category": "valuables",
+          "location": "You can now finally enter the second door from the left, so go inside, then examine the chest for the Dungeon Key. (step 8)"
+        },
+        {
+          "name": "Club Key",
+          "category": "valuables",
+          "location": "The room in the bottom-right corner of the area will now open with the Heart Key, so head inside and open the two chests, a Key to Success, and a Club Key. (step 4)"
+        },
+        {
+          "name": "Fire Gravestone",
+          "category": "valuables",
+          "location": "Watch a short scene with Halley, then when you regain control, check the chest once again for the Fire Gravestone. (step 8)"
+        },
+        {
+          "name": "Diamond Key",
+          "category": "valuables",
+          "location": "Enter the first door on the top-left, getting the Diamond Key out of the chest, then head east two doors to the next room. (step 5)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#065",
+        "name": "Specter",
+        "hp": 450,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Confusion"
+      },
+      {
+        "number": "#066",
+        "name": "Meat Eater",
+        "hp": 245,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#067",
+        "name": "Doom",
+        "hp": 225,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#068",
+        "name": "Buggs",
+        "hp": 155,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Poison, Confusion & Silence"
+      },
+      {
+        "number": "#069",
+        "name": "Rausan",
+        "hp": 3500,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Inflicts Silence"
+      },
+      {
+        "number": "#070",
+        "name": "Olga",
+        "hp": 4000,
+        "class": "Dark",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Inflicts Poison"
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Take a few steps forward, and you'll be told that you're not allowed here.\n2. Choose 2 to have to take on a set of **Specters**.\n3. Watch the following scenes, then check the small shack where the guards were to find a chest containing a **Laurel Slingshot** for **Halley**.\n4. Go just to the right of that area behind the pillar on the right to find another chest, this one containing a **Demon Ward Ncklace**.\n5. Make your way inside, and take out another set of **Specters** that come at you.",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. Okay, we'll leave.",
+            "after_item": 1
+          },
+          {
+            "option": "2. Get out of our way!",
+            "after_item": 1
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Laurel Slingshot",
+            "category": "equipment",
+            "matched_overview_item": "Laurel Slingshot"
+          },
+          {
+            "name": "Demon Ward Ncklace",
+            "category": "equipment",
+            "matched_overview_item": "Demon Ward Ncklace"
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- I recommend taking the time to get your level 2 Earth, Wind, and Dark Fusions for **Yuri**, if you haven't already.\n- For me, all I needed was just the Earth Fusion.\n- With sets of 5 **Buggs** in this area, if you like, you could try fighting them enough to get your level 3 Dark Fusion, **Czernobog**, since you should already have the **Dark Gravestone**."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. After they're finished, go to the top of the screen and examine the sparkling object in the northwest corner to find a **Bronze Coin**.\n2. Go east to the next area, taking on another set of **Specters**.\n3. Keep going right, opening the chest at the right side of the room for a **Lottery Ticket**.\n4. Go down into the next room, note the torture chair, and continue south to what appears to be the last room.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Bronze Coin",
+            "category": "valuables",
+            "matched_overview_item": "Bronze Coin"
+          },
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "1. Move west to take on another set of two **Specters**, taking them out as well.\n2. Move to the head of the body and examine it for the **Heart Key**, then examine the sparkling object above the body, beside the table for the **Silver Coin**.\n3. There's nowhere else to go right now, so let's go back to the first area inside the hospital to unlock some doors.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Heart Key",
+            "category": "valuables",
+            "matched_overview_item": "Heart Key"
+          },
+          {
+            "name": "Silver Coin",
+            "category": "valuables",
+            "matched_overview_item": "Silver Coin"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "1. The room in the bottom-right corner of the area will now open with the **Heart Key**, so head inside and open the two chests, a **Key to Success**, and a **Club Key**.\n2. Leave this room and head into the next room, opening the chest in here for a rare and welcome **Fruit of Yggdrasil**.\n3. Leave this room and go north into the next hallway.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Key to Success",
+            "category": "items",
+            "matched_overview_item": "Key to Success"
+          },
+          {
+            "name": "Club Key",
+            "category": "valuables",
+            "matched_overview_item": "Club Key"
+          },
+          {
+            "name": "Fruit of Yggdrasil",
+            "category": "items",
+            "matched_overview_item": "Fruit of Yggdrasil"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "1. Enter the first door on the top-left, getting the **Diamond Key** out of the chest, then head east two doors to the next room.\n2. Check the sparkling object on the ground near the bench on the upper wall for the **Gold Coin**, then exit and enter the last room on the right, where you'll find another sparkling object in roughly the same area as the last, the **Platinum Coin**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Diamond Key",
+            "category": "valuables",
+            "matched_overview_item": "Diamond Key"
+          },
+          {
+            "name": "Gold Coin",
+            "category": "valuables",
+            "matched_overview_item": "Gold Coin"
+          },
+          {
+            "name": "Platinum Coin",
+            "category": "valuables",
+            "matched_overview_item": "Platinum Coin"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "- Make your way back to the innermost room that you've reached so far, the one with the **Save Point**.\n- Drop the **Bronze Coin** in the upper-right vase, the **Platinum Coin** in the lower-right vase, the **Gold Coin** in the lower-left, and the **Silver Coin** in the upper-left, allowing a new passage to open.\n- **Save your game**.",
+        "type": "navigation",
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Note",
+            "text": "The next boss uses **Silence**, and the one after that uses **Poison**, so make sure to equip **Cosmic Bracelets** and/or your **Crucifix**."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "When you're ready, go down the staircase to the next area and examine the huge door for a scene and a sub-boss battle.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Rausan",
+          "enemies": [
+            {
+              "name": "Rausan",
+              "hp": 3500,
+              "class": "Fire",
+              "drop": "Spade Key"
+            }
+          ],
+          "party": [],
+          "exp": 120,
+          "cash": 600,
+          "strategy": "- **Rausan** will usually start out the battle with **Elder Sign**, causing your special attacks to be weakened quite a bit.\n- This should only really affect **Halley**, but not enough to keep him from using his skills.\n- He'll attempt to **Silence** you as well, but as long as you have **Cosmic Bracelets**, it'll just inflict a lot of damage.\n- He'll also use **Blaze**, which will do a decent amount of damage to your whole party.\n- As usual, have **Yuri** fuse into **Ifrit** and use his **Ignition** to boost his attack, then have him attack as normal.\n- Have **Halley** use **Aqua Blade** every round (since **Rausan** is Fire-based), stopping only to help **Alice** heal.\n- **Alice** should be healing as needed, using **Blessed Light** when no healing is needed."
+        },
+        "encounter": {
+          "enemies": [
+            "Rausan"
+          ]
+        }
+      },
+      {
+        "id": 8,
+        "description": "1. After the battle, **Halley** will temporarily leave your party.\n2. Make your way back upstairs, then head to the hallway just past the torture chair.\n3. You can now finally enter the second door from the left, so go inside, then examine the chest for the **Dungeon Key**.\n4. Watch a short scene with **Halley**, then when you regain control, check the chest once again for the **Fire Gravestone**.\n5. Feel free to use the bed in here as an **Inn** to recover your HP and MP.",
+        "type": "story",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "If you're close to level 35 for **Alice**, then I strongly recommend fighting a bit more to reach 35 so she can learn the **Arc** spell. It'll greatly help out in the next boss battle."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Dungeon Key",
+            "category": "valuables",
+            "matched_overview_item": "Dungeon Key"
+          },
+          {
+            "name": "Fire Gravestone",
+            "category": "valuables",
+            "matched_overview_item": "Fire Gravestone"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "description": "When you're ready, head back to the room with the **Save Point** and **save**, then go back downstairs, unlock the door, and take on **Olga** for the last time!",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "BOSS",
+          "name": "Olga",
+          "enemies": [
+            {
+              "name": "Olga",
+              "hp": 4000,
+              "class": "Dark",
+              "drop": "Warlock Earrings"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 34,
+              "equipment": [
+                "Brass Knuckles",
+                "Red Leather Jacket",
+                "Mind's Eye",
+                "Demon Earrings",
+                "Cosmic Bracelet"
+              ],
+              "fusions": [
+                "Baldo",
+                "Mad Bull",
+                "Ifrit"
+              ]
+            },
+            {
+              "name": "Halley",
+              "level": 33,
+              "equipment": [
+                "Laurel Slingshot",
+                "Red Leather Jacket",
+                "Priest Earrings",
+                "Warlock Earrings",
+                "Cosmic Bracelet"
+              ]
+            },
+            {
+              "name": "Alice",
+              "level": 34,
+              "equipment": [
+                "Ever-Bible",
+                "Jasper Cape",
+                "Anne's Cross",
+                "Brsrkr Earrings",
+                "Crucifix"
+              ]
+            }
+          ],
+          "exp": 22000,
+          "cash": 17000,
+          "strategy": "- As before, **Olga**'s Black Fog attack will do MAJOR damage to your party, as well as **Poison** each one of them, so it's a good idea to come in with **Cosmic Bracelets** equipped.\n- Her normal attacks don't do too much damage, but her **Icy Breath**, **Rock Storm** and **Lightning** attacks will also both do quite a bit of damage to your entire party, so be careful.\n- Watch out if she uses **Mind Assault** to steal your MP, as you'll want to recover it immediately if she takes too much.\n- Have **Yuri** fuse into **Ifrit** and use his **Ignition** to boost his attack, then have him attack as normal.\n- With his attacked laced with **Alice**'s **Holy Edge**, he'll be doing MAJOR damage.\n- Of course, have **Alice** use **Holy Edge** to start with on **Yuri**, then have her on healing duty.\n- Have **Halley** use **Air Shot** every round, helping **Alice** heal as needed.\n- If you have it, have **Alice** take advantage of her **Arc** spell and just heal every round, it makes this battle MUCH easier.\n- If you're unable to keep up with healing while trying to dish out the damage, AND if **Alice** doesn't have **Arc**, then have **Yuri** fuse into **Baldo** instead of **Ifrit**, using his healing spell to take care of the party while **Alice** and **Halley** use **Blessed Light** and **Air Shot** to make up the difference."
+        },
+        "encounter": {
+          "enemies": [
+            "Olga"
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "description": "After the battle, you'll automatically be back in the **London Rats**' hideout.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 11,
+        "description": "- In **London**, **Old Castle Street**, here in the **London Rats**' hideout, make your way downstairs and use the **Save Point**.\n- Make note of a new path to your left; it leads to a Pit Fight hosted by **Sharon**!\n- If you talk to her at all, you'll have to battle a random set of enemies alone with **Yuri**.\n- Her power isn't very stable yet, so you won't be able to engage in the actual Pit Fight like you did with **Mr. Zhen**, but you will in time.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 12,
+        "description": "1. Go back into the previous room and talk to **Joshua** to receive the **Oath Grail**.\n2. Leave the hideout, then make your way toward the entrance of the city for an event with **Halley**, which will eventually lead to you controlling **Alice**.\n3. Choose to enter **Rouen**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Oath Grail",
+            "category": "valuables"
+          }
+        ],
+        "notes": [
+          {
+            "type": "missable",
+            "title": "Oath Grail",
+            "text": "If you're going for the good ending, then it's critical that you get this item."
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "description": "1. As **Alice**, go down the alley and examine the back door to the church.\n2. Do a quick Push Ring to open the door, then go to the altar room for a quick scene.\n3. Next, go to the confessionals on the right side.\n4. Go into the back confessional here and examine the wall, where you'll have to complete a Spin Ring 3.\n5. Once it's done, you'll finally know the story between **Roger Bacon** and **Albert Simon**, and you'll see a picture of Father Hans Doyle and Cardinal **Albert Simon**...\n6. Leave the confessional for another event, then you'll regain control in **London**.",
+        "type": "story",
+        "rewards": []
+      },
+      {
+        "id": 14,
+        "description": "1. In **London**, **Old Castle Street**, after the quick scene, choose your party.\n2. Put **Halley** in it to start with so we can obtain a better weapon for him.\n3. Make your way downstairs and talk to **Joshua**, where you'll receive the **Improved Slingshot**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Improved Slingshot",
+            "category": "equipment"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "description": "- Now you can make your way to the **Inn** and talk to **Meiyuan** to choose the party you want for the upcoming events.\n- I'll be taking **Yuri**, **Alice**, and **Margarete**.\n- Once you're ready, head outside.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 16,
+        "description": "Out on the **World Map**, go out to the Britain Map to see a new destination open up: the Nemeton Monastery.",
+        "type": "navigation",
+        "rewards": []
+      },
+      {
+        "id": 17,
+        "description": "1. Now... There are a few quick things to do before we go to the next dungeon.\n2. If you wish to just continue the story, go to **[W-2-12] Nemeton Monastery (1)**.\n3. Otherwise, continue reading.",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "Water vase room (before the bosses)"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "section_id": "w-2-10",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "overview save_points, items, equipment, valuables vs items_summary and guide.save_points",
+    "enemy table #065-#070 names, HP, class, notes",
+    "steps 1-17 descriptions and order vs canonical text",
+    "step 1 choices [1] Okay, we'll leave. / [2] Get out of our way!",
+    "step 1 NOTE (Yuri fusions, Czernobog, Dark Gravestone)",
+    "step 6 NOTE (Silence/Poison, Cosmic Bracelets/Crucifix) and save/vase instructions",
+    "step 7 Rausan boss card: 3500 HP, Fire, Spade Key, 120 EXP, 600 cash, strategy bullets",
+    "step 8 NOTE (level 35 Alice, Arc spell)",
+    "step 9 Olga boss card: 4000 HP, Dark, Warlock Earrings, 22000 EXP, 17000 cash, party levels and equipment, fusions, all strategy bullets",
+    "step 12 Oath Grail reward and missable note",
+    "step 14 Improved Slingshot reward",
+    "step 17 W-2-12 link and Otherwise continue reading",
+    "metadata title, source url, prev/next navigation",
+    "name normalization: Red Leather Jacket, Demon Ward Ncklace (spacing only, typo preserved)"
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "category": "omitted",
+      "location": "items_summary.obtainable",
+      "canonical": "Valuables | [_] Oath Grail (London, Old Castle Street box); Equipment | [_] Improved Slingshot (London, Old Castle Street box)",
+      "structured": "Oath Grail and Improved Slingshot are absent from items_summary.obtainable; they appear only as step 12 and step 14 rewards",
+      "issue": "The canonical section's inline item boxes list Oath Grail and Improved Slingshot, but the structured items checklist omits both. The guide's item checklist is therefore incomplete relative to the source. The step rewards themselves are correct, so this is a checklist gap rather than a loss of gameplay information."
+    }
+  ],
+  "structured_sha256": "fef737e744f021442883201abb9c047e6db177ccf82df478c1def2b5798c575d"
+}
