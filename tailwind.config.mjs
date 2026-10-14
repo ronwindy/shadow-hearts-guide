@@ -36,7 +36,7 @@ export default {
       fontFamily: {
         serif: ['Cinzel', 'Trajan Pro', 'Georgia', 'serif'],
         sans: ['Jost', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['Jost', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['"Courier Prime"', '"Courier New"', 'monospace'],
       },
       fontSize: {
         '2xs': ['0.75rem', { lineHeight: '1.1rem' }],

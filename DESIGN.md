@@ -52,8 +52,10 @@ The palette balances dark gothic aesthetics with strict WCAG AA contrast standar
 
 - **Headings Font**: `'Cinzel', 'Trajan Pro', 'Georgia', serif` at semibold (600)
   - Evokes classical occult manuscripts and gothic architecture. Tailwind `serif`.
-- **Body / UI / Numbers Font**: `'Jost', 'Inter', system-ui, -apple-system, sans-serif`
-  - Body text, stats, numbers, badges, and controls. Tailwind `sans` and `mono`.
+- **Body / UI Font**: `'Jost', 'Inter', system-ui, -apple-system, sans-serif`
+  - Body text and controls. Tailwind `sans`.
+- **Monospace Font**: `'Courier Prime', 'Courier New', monospace`
+  - Numbers, stats, badges, table headers, key labels, and verbatim source art (maps, grids). Tailwind `mono`.
 
 ### Scale
 - **H1 (Page Title)**: `2.25rem` (36px) — Bold / Semibold, tracking-tight, gold accent

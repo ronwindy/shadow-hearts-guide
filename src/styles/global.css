@@ -33,10 +33,10 @@
   }
 }
 
-/* True monospace for verbatim source art (maps, grids). The Tailwind
-   `font-mono` token is Jost-based, so columns would misalign. */
+/* Verbatim source art (maps, grids). Uses the same monospace token as font-mono
+   (Courier Prime) so columns line up. */
 .font-source-art {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+  font-family: theme('fontFamily.mono');
   white-space: pre;
   letter-spacing: 0;
   line-height: 1.35;
