@@ -18,7 +18,9 @@
     "Mika",
     "Yamaraja",
     "Rude Hero",
-    "Penniless Mike"
+    "Penniless Mike",
+    "Father Hans Doyle",
+    "Cardinal Albert Simon"
   ],
   "locations": [
     "Calios Mental Hospital",
@@ -31,7 +33,9 @@
     "Sewers",
     "Kowloon Fortress",
     "Inn",
-    "Item Shop"
+    "Item Shop",
+    "Britain Map",
+    "Nemeton Monastery"
   ],
   "deny": [
     "Item",
@@ -115,9 +119,18 @@
     "Berserk",
     "Item Shop"
   ],
-  "skills": ["Shockwave", "Needlerain", "Slash"],
-  "groups": ["London Rats", "Lottery Member"],
-  "numbered": ["Lottery Member"],
+  "skills": [
+    "Shockwave",
+    "Needlerain",
+    "Slash"
+  ],
+  "groups": [
+    "London Rats",
+    "Lottery Member"
+  ],
+  "numbered": [
+    "Lottery Member"
+  ],
   "mechanics": [
     "Normal Ring",
     "Judgment Ring",
@@ -134,7 +147,11 @@
     "Sealing Stone",
     "Berserk",
     "Hate Storm",
-    "Game of Death"
+    "Game of Death",
+    "Pit Fight",
+    "Push Ring",
+    "Spin Ring",
+    "Spin Ring 3"
   ],
   "wanderers": [
     "Lost Peddler",
@@ -150,5 +167,13 @@
     "Building-Loving Man",
     "Cat Lady",
     "Smuggler Boss"
+  ],
+  "elements": [
+    "Earth",
+    "Wind",
+    "Fire",
+    "Water",
+    "Dark",
+    "Light"
   ]
 }

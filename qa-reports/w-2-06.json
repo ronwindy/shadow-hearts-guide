@@ -1,14 +1,29 @@
 {
   "qa": {
-    "status": "PASS",
+    "status": "PASS WITH WARNINGS",
     "section_id": "w-2-06",
     "section_title": "Prague (2)",
     "summary": {
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 0
+      "low": 1
     },
-    "findings": []
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Olga].strategy",
+        "source": {
+          "text": "Olga will use normal attacks, Blaze, Rock Storm, Nova, Icy Breath, and Lightning"
+        },
+        "generated": {
+          "text": "Threats Olga will use normal attacks, Blaze, Rock Storm, Nova, Icy Breath, and L"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
   }
 }

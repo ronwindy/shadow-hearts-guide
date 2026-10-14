@@ -28,7 +28,7 @@
     },
     "route": [],
     "objectives": [
-      "Defeat Olga"
+      "Defeat **Olga**"
     ],
     "items_summary": {
       "obtainable": [
@@ -221,7 +221,64 @@
           "party": [],
           "exp": 15000,
           "cash": 13000,
-          "strategy": "- **Olga** will use normal attacks, **Blaze**, **Rock Storm**, **Nova**, **Icy Breath**, and **Lightning** to do decent damage each round, maybe 50-60 HP of damage every round.\n- Watch out if she uses **Mind Assault** to steal your MP, as you'll want to recover it immediately if she takes too much.\n- Cast **Blessed Light** rounds one and two, then **Cure** the next if needed.\n- **Blessed Light** two rounds, **Cure** the third.\n- Lather, rinse, repeat.\n- Oh, and don't forget to recover your SP if needed.\n- Not much else you can do since it's just **Alice**."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Olga** will use normal attacks, **Blaze**, **Rock Storm**, **Nova**, **Icy Breath**, and **Lightning** to do decent damage each round, maybe 50-60 HP of damage every round."
+                        },
+                        {
+                          "text": "Watch out if she uses **Mind Assault** to steal your MP, as you'll want to recover it immediately if she takes too much."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Cast **Blessed Light** rounds one and two, then **Cure** the next if needed."
+                        },
+                        {
+                          "text": "**Blessed Light** two rounds, **Cure** the third."
+                        },
+                        {
+                          "text": "Lather, rinse, repeat."
+                        },
+                        {
+                          "text": "Not much else you can do since it's just **Alice**."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Resources**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Oh, and don't forget to recover your SP if needed."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

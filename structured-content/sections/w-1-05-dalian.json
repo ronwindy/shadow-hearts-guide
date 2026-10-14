@@ -206,17 +206,20 @@
         "cash": 3600,
         "strategy": [
           {
+            "text": "Note that **Yamaraja**: **Wind** is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
+          },
+          {
             "list": "bullet",
             "items": [
               {
-                "text": "Note that **Yamaraja**: Wind is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
-              },
-              {
-                "text": "Its **Shockwave** attack will do decent damage to each character, while its **Flying Stones** attack will do major damage, but to only one character.",
+                "text": "**Threats**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
+                      {
+                        "text": "Its **Shockwave** attack will do decent damage to each character, while its **Flying Stones** attack will do major damage, but to only one character."
+                      },
                       {
                         "text": "However, its PHYSICAL attacks are the ones you have to worry about; it can do a three hit attack that will easily kill a party member, even if they're in the back row, so be sure to stay healed."
                       }
@@ -225,29 +228,45 @@
                 ]
               },
               {
-                "text": "If you have the **Tornado** Fusion, have **Yuri** fuse into that; otherwise, have him fuse into the **Death Emperor**.",
+                "text": "**Yuri**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
+                        "text": "If you have the **Tornado** Fusion, have **Yuri** fuse into that; otherwise, have him fuse into the **Death Emperor**."
+                      },
+                      {
                         "text": "Use his **Wind Shear**/**Dark Messenger** Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage."
+                      },
+                      {
+                        "text": "**Yuri** should be doing the most damage if he has the **Tornado** Fusion, so keep his MP up while keeping everyone else healed."
                       }
                     ]
                   }
                 ]
               },
               {
-                "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and **Zhuzhen** to keep their MP up.",
+                "text": "**Margarete**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and **Zhuzhen** to keep their MP up."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Zhuzhen**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
                         "text": "Have **Zhuzhen** use his **Ogre Flamedance** continuously, stopping to heal if someone needs it."
-                      },
-                      {
-                        "text": "**Yuri** should be doing the most damage if he has the **Tornado** Fusion, so keep his MP up while keeping everyone else healed."
                       }
                     ]
                   }
@@ -524,7 +543,7 @@
           {
             "type": "warning",
             "title": "Prepare for the next boss",
-            "text": "- The next boss not only is very difficult, but he is also an Earth class.\n- By now, you should be very close to obtaining **Yuri**'s level 1 Wind Fusion, **Tornado**. The **Water Creepers** in **Dalian** are a Wind class, so fight enough battles with them until you are able to go to the **Graveyard** to challenge **Tornado**.\n- Also, make sure that you are at least level 10 before challenging the next boss, or you'll have a pretty rough time against him."
+            "text": "- The next boss not only is very difficult, but he is also an **Earth** class.\n- By now, you should be very close to obtaining **Yuri**'s level 1 **Wind** Fusion, **Tornado**. The **Water Creepers** in **Dalian** are a **Wind** class, so fight enough battles with them until you are able to go to the **Graveyard** to challenge **Tornado**.\n- Also, make sure that you are at least level 10 before challenging the next boss, or you'll have a pretty rough time against him."
           },
           {
             "type": "tip",
@@ -598,17 +617,20 @@
           "cash": 3600,
           "strategy": [
             {
+              "text": "Note that **Yamaraja**: **Wind** is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
+            },
+            {
               "list": "bullet",
               "items": [
                 {
-                  "text": "Note that **Yamaraja**: Wind is actually an EARTH class, so make sure not to fuse into the **Raging Tiger**."
-                },
-                {
-                  "text": "Its **Shockwave** attack will do decent damage to each character, while its **Flying Stones** attack will do major damage, but to only one character.",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "Its **Shockwave** attack will do decent damage to each character, while its **Flying Stones** attack will do major damage, but to only one character."
+                        },
                         {
                           "text": "However, its PHYSICAL attacks are the ones you have to worry about; it can do a three hit attack that will easily kill a party member, even if they're in the back row, so be sure to stay healed."
                         }
@@ -617,29 +639,45 @@
                   ]
                 },
                 {
-                  "text": "If you have the **Tornado** Fusion, have **Yuri** fuse into that; otherwise, have him fuse into the **Death Emperor**.",
+                  "text": "**Yuri**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
+                          "text": "If you have the **Tornado** Fusion, have **Yuri** fuse into that; otherwise, have him fuse into the **Death Emperor**."
+                        },
+                        {
                           "text": "Use his **Wind Shear**/**Dark Messenger** Spells continuously; if he runs out of MP, have either him or someone else replenish it so he can keep dishing out the damage."
+                        },
+                        {
+                          "text": "**Yuri** should be doing the most damage if he has the **Tornado** Fusion, so keep his MP up while keeping everyone else healed."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and **Zhuzhen** to keep their MP up.",
+                  "text": "**Margarete**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Margarete** on healing duty, using Thera Leaves on whoever needs them, as well as using Mana Leaves on **Yuri** and **Zhuzhen** to keep their MP up."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Zhuzhen**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
                           "text": "Have **Zhuzhen** use his **Ogre Flamedance** continuously, stopping to heal if someone needs it."
-                        },
-                        {
-                          "text": "**Yuri** should be doing the most damage if he has the **Tornado** Fusion, so keep his MP up while keeping everyone else healed."
                         }
                       ]
                     }

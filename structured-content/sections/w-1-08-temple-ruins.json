@@ -35,7 +35,7 @@
       "Nu Wan Palace (End of Trial 3)"
     ],
     "objectives": [
-      "Defeat Yamaraja: War"
+      "Defeat **Yamaraja**: War"
     ],
     "items_summary": {
       "obtainable": [
@@ -332,24 +332,20 @@
             "list": "bullet",
             "items": [
               {
-                "text": "As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer.",
+                "text": "**Threats**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
+                        "text": "As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer."
+                      },
+                      {
                         "text": "He also uses the **Game of Death**, just like **Wugui**; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you."
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "text": "His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward.",
-                "children": [
-                  {
-                    "list": "bullet",
-                    "items": [
+                      },
+                      {
+                        "text": "His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward."
+                      },
                       {
                         "text": "The only other thing he does is a hellacious physical attack that'll hit for major damage."
                       },
@@ -361,19 +357,42 @@
                 ]
               },
               {
-                "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn.",
+                "text": "**Yuri**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn."
+                      },
+                      {
+                        "text": "If you're having trouble staying healed, have **Yuri** fuse into **Heaven's Fiend** so you have the whole party healing spell."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Margarete**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
                         "text": "**Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed."
-                      },
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Zhuzhen**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
                       {
                         "text": "**Zhuzhen** should focus completely on recovery."
-                      },
-                      {
-                        "text": "If you're having trouble staying healed, have **Yuri** fuse into **Heaven's Fiend** so you have the whole party healing spell."
                       }
                     ]
                   }
@@ -814,11 +833,14 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "His Flaming Arm of Death spell will hit your party for a decent amount of damage, but also can **Silence** your party, so having **Bell Bracelets** equipped definitely helps a ton.",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "His Flaming Arm of Death spell will hit your party for a decent amount of damage, but also can **Silence** your party, so having **Bell Bracelets** equipped definitely helps a ton."
+                        },
                         {
                           "text": "You don't want to be stuck with NO healing abilities at all!"
                         }
@@ -827,11 +849,14 @@
                   ]
                 },
                 {
-                  "text": "I strongly recommend fusing **Yuri** in the **Man Dragon** Fusion if you have it, as not only is the enemy fire-based, but you'll be able to heal yourself in a pinch, if need be.",
+                  "text": "**Yuri**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "I strongly recommend fusing **Yuri** in the **Man Dragon** Fusion if you have it, as not only is the enemy fire-based, but you'll be able to heal yourself in a pinch, if need be."
+                        },
                         {
                           "text": "Have **Yuri** use the **Flash Flood** skill repeatedly, and it should do massive damage each round."
                         },
@@ -843,11 +868,14 @@
                   ]
                 },
                 {
-                  "text": "**Zhuzhen** should be healing pretty much the entire time.",
+                  "text": "**Zhuzhen**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "**Zhuzhen** should be healing pretty much the entire time."
+                        },
                         {
                           "text": "If he does have a free round, have him use **Ogre Flamedance**, since it'll still do some okay damage, even though the boss is fire-based."
                         }
@@ -1007,7 +1035,58 @@
           ],
           "exp": 1600,
           "cash": 4200,
-          "strategy": "- His Shining Arm of Death spell will hit your party for a decent amount of damage, but also can Paralyze your party, so having **Rosewood Bracelets** equipped definitely helps a ton.\n- You don't want to be stuck with NO healing abilities at all!\n- Not much of a strategy here, since there's only one thing you can do: Attack.\n- Have **Alice** be the preferred healer, using **Thera Seeds** and such, since her attack is the weakest.\n- Keep hammering away, and as long as you stay healed, **Baigu** will eventually fall."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "His Shining Arm of Death spell will hit your party for a decent amount of damage, but also can Paralyze your party, so having **Rosewood Bracelets** equipped definitely helps a ton."
+                        },
+                        {
+                          "text": "You don't want to be stuck with NO healing abilities at all!"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Alice** be the preferred healer, using **Thera Seeds** and such, since her attack is the weakest."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Attacks**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Not much of a strategy here, since there's only one thing you can do: Attack."
+                        },
+                        {
+                          "text": "Keep hammering away, and as long as you stay healed, **Baigu** will eventually fall."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -1198,7 +1277,48 @@
           ],
           "exp": 1800,
           "cash": 4200,
-          "strategy": "- Hopefully you equipped the **Pocket Watch** on **Yuri** so that his **Judgment Ring** is unaffected.\n- No strategy at all here, since all you can do is Attack and Defend.\n- Just battle back and forth until you eventually win.\n- If you've become proficient with your **Judgment Ring**, try equipping the **Flash Badge** on **Yuri** so he'll get a few more turns in.\n- If you still can't win, then you'll have to level up some more and try again."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Hopefully you equipped the **Pocket Watch** on **Yuri** so that his **Judgment Ring** is unaffected."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Strategy**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "No strategy at all here, since all you can do is Attack and Defend."
+                        },
+                        {
+                          "text": "Just battle back and forth until you eventually win."
+                        },
+                        {
+                          "text": "If you've become proficient with your **Judgment Ring**, try equipping the **Flash Badge** on **Yuri** so he'll get a few more turns in."
+                        },
+                        {
+                          "text": "If you still can't win, then you'll have to level up some more and try again."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -1288,24 +1408,20 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer.",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
+                          "text": "As with **Wugui**, **Yamaraja: War** will absorb all magic, making **Zhuzhen** useful only as a healer."
+                        },
+                        {
                           "text": "He also uses the **Game of Death**, just like **Wugui**; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you."
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "text": "His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward.",
-                  "children": [
-                    {
-                      "list": "bullet",
-                      "items": [
+                        },
+                        {
+                          "text": "His **Nightmare** attack will hit the entire party for a lot of damage, so make sure to heal afterward."
+                        },
                         {
                           "text": "The only other thing he does is a hellacious physical attack that'll hit for major damage."
                         },
@@ -1317,19 +1433,42 @@
                   ]
                 },
                 {
-                  "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn.",
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn."
+                        },
+                        {
+                          "text": "If you're having trouble staying healed, have **Yuri** fuse into **Heaven's Fiend** so you have the whole party healing spell."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Margarete**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
                           "text": "**Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed."
-                        },
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Zhuzhen**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
                         {
                           "text": "**Zhuzhen** should focus completely on recovery."
-                        },
-                        {
-                          "text": "If you're having trouble staying healed, have **Yuri** fuse into **Heaven's Fiend** so you have the whole party healing spell."
                         }
                       ]
                     }

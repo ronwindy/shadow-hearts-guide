@@ -225,20 +225,23 @@
         "cash": 1800,
         "strategy": [
           {
+            "text": "Note that **Yamaraja: Earth** is actually a **WATER class**."
+          },
+          {
+            "text": "As I mentioned above, he's pretty dangerous! If you can't beat him, level up in town for a while before trying again. I recommend at least **Level 6** for everyone."
+          },
+          {
             "list": "bullet",
             "items": [
               {
-                "text": "Note that **Yamaraja: Earth** is actually a **WATER class**."
-              },
-              {
-                "text": "As I mentioned above, he's pretty dangerous! If you can't beat him, level up in town for a while before trying again. I recommend at least **Level 6** for everyone."
-              },
-              {
-                "text": "His **Flash Flood** will hit an ally for pretty good damage, while his **Large Whirlpool** will hit your entire party for major damage, as well as possibly halving your **Hit Area** on your **Ring**, so be sure to heal after it hits.",
+                "text": "**Threats**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
+                      {
+                        "text": "His **Flash Flood** will hit an ally for pretty good damage, while his **Large Whirlpool** will hit your entire party for major damage, as well as possibly halving your **Hit Area** on your **Ring**, so be sure to heal after it hits."
+                      },
                       {
                         "text": "His physical attacks are also nothing to sneeze at, as they can take away large chunks of HP at a time."
                       }
@@ -247,19 +250,42 @@
                 ]
               },
               {
-                "text": "Make sure that **Alice** and **Zhuzhen** are in the back row, and when in doubt, just heal."
+                "text": "**Positioning**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Make sure that **Alice** and **Zhuzhen** are in the back row, and when in doubt, just heal."
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "text": "Have **Yuri** fuse into the **Raging Tiger** and use his **Flying Stones** attack, followed by normal attacks.",
+                "text": "**Yuri**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Have **Yuri** fuse into the **Raging Tiger** and use his **Flying Stones** attack, followed by normal attacks."
+                      },
+                      {
+                        "text": "If needed, have **Yuri** supplement healing since **Zhuzhen**'s fire magic probably hits for more than **Yuri** does, and make sure to keep **Alice** from becoming **Berserk**."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Alice**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
                         "text": "Have **Alice** stay on healing duty the entire time, and have **Zhuzhen** cast **Ogre Flamedance** continuously."
-                      },
-                      {
-                        "text": "If needed, have **Yuri** supplement healing since **Zhuzhen**'s fire magic probably hits for more than **Yuri** does, and make sure to keep **Alice** from becoming **Berserk**."
                       }
                     ]
                   }
@@ -533,7 +559,7 @@
       },
       {
         "id": 12,
-        "description": "Battle **Felinus** (#009 **Felinus**, HP: 250, Class: Wind).",
+        "description": "Battle **Felinus** (#009 **Felinus**, HP: 250, Class: **Wind**).",
         "type": "boss",
         "encounter": {
           "enemies": [
@@ -553,7 +579,58 @@
           ],
           "exp": 120,
           "cash": 600,
-          "strategy": "- This lady isn't to be taken lightly. She can use the **Wind Fang** ability to hit everyone for Wind damage, and after a couple of turns, your whole party will be in need of healing, so beware.\n- Since she's a **Wind class**, have **Yuri** fuse into the **Raging Tiger** and use the **Flying Stones** skill to do some decent damage to her, followed by regular attacks.\n- **Alice** should be keeping everyone healed, as should **Zhuzhen**.\n- If no one needs healing then, have **Zhuzhen** use his **Ogre Flamedance** spell, and **Alice** should attack normally.\n- As long as you stay healed and don't let **Alice** go **Berserk**, you should be fine."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "This lady isn't to be taken lightly. She can use the **Wind Fang** ability to hit everyone for **Wind** damage, and after a couple of turns, your whole party will be in need of healing, so beware."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Since she's a **Wind class**, have **Yuri** fuse into the **Raging Tiger** and use the **Flying Stones** skill to do some decent damage to her, followed by regular attacks."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Healing**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Alice** should be keeping everyone healed, as should **Zhuzhen**."
+                        },
+                        {
+                          "text": "If no one needs healing then, have **Zhuzhen** use his **Ogre Flamedance** spell, and **Alice** should attack normally."
+                        },
+                        {
+                          "text": "As long as you stay healed and don't let **Alice** go **Berserk**, you should be fine."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "notes": [],
         "rewards": []
@@ -648,20 +725,23 @@
           "cash": 1800,
           "strategy": [
             {
+              "text": "Note that **Yamaraja: Earth** is actually a **WATER class**."
+            },
+            {
+              "text": "As I mentioned above, he's pretty dangerous! If you can't beat him, level up in town for a while before trying again. I recommend at least **Level 6** for everyone."
+            },
+            {
               "list": "bullet",
               "items": [
                 {
-                  "text": "Note that **Yamaraja: Earth** is actually a **WATER class**."
-                },
-                {
-                  "text": "As I mentioned above, he's pretty dangerous! If you can't beat him, level up in town for a while before trying again. I recommend at least **Level 6** for everyone."
-                },
-                {
-                  "text": "His **Flash Flood** will hit an ally for pretty good damage, while his **Large Whirlpool** will hit your entire party for major damage, as well as possibly halving your **Hit Area** on your **Ring**, so be sure to heal after it hits.",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "His **Flash Flood** will hit an ally for pretty good damage, while his **Large Whirlpool** will hit your entire party for major damage, as well as possibly halving your **Hit Area** on your **Ring**, so be sure to heal after it hits."
+                        },
                         {
                           "text": "His physical attacks are also nothing to sneeze at, as they can take away large chunks of HP at a time."
                         }
@@ -670,19 +750,42 @@
                   ]
                 },
                 {
-                  "text": "Make sure that **Alice** and **Zhuzhen** are in the back row, and when in doubt, just heal."
+                  "text": "**Positioning**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Make sure that **Alice** and **Zhuzhen** are in the back row, and when in doubt, just heal."
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "text": "Have **Yuri** fuse into the **Raging Tiger** and use his **Flying Stones** attack, followed by normal attacks.",
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Yuri** fuse into the **Raging Tiger** and use his **Flying Stones** attack, followed by normal attacks."
+                        },
+                        {
+                          "text": "If needed, have **Yuri** supplement healing since **Zhuzhen**'s fire magic probably hits for more than **Yuri** does, and make sure to keep **Alice** from becoming **Berserk**."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
                           "text": "Have **Alice** stay on healing duty the entire time, and have **Zhuzhen** cast **Ogre Flamedance** continuously."
-                        },
-                        {
-                          "text": "If needed, have **Yuri** supplement healing since **Zhuzhen**'s fire magic probably hits for more than **Yuri** does, and make sure to keep **Alice** from becoming **Berserk**."
                         }
                       ]
                     }

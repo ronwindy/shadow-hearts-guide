@@ -1,14 +1,43 @@
 {
   "qa": {
-    "status": "PASS",
+    "status": "PASS WITH WARNINGS",
     "section_id": "w-2-10",
     "section_title": "Calios Mental Hospital (1)",
     "summary": {
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 0
+      "low": 2
     },
-    "findings": []
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Rausan].strategy",
+        "source": {
+          "text": "Rausan will usually start out the battle with Elder Sign, causing your special a"
+        },
+        "generated": {
+          "text": "Threats Rausan will usually start out the battle with Elder Sign, causing your s"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Olga].strategy",
+        "source": {
+          "text": "As before, Olga's Black Fog attack will do MAJOR damage to your party, as well a"
+        },
+        "generated": {
+          "text": "Threats As before, Olga's Black Fog attack will do MAJOR damage to your party, a"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
   }
 }

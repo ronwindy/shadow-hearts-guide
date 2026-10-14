@@ -144,6 +144,35 @@ export function spaceCamelCase(text: string | null | undefined): string {
 }
 
 /**
+ * Lucide glyphs (ISC licence, lucide.dev) for the five elements plus Light.
+ * Inline SVG so prose can carry the icon without a component.
+ */
+const ELEMENT_ICONS: Record<string, { label: string; paths: string }> = {
+  Earth: { label: 'Earth', paths: '<path d="m8 3 4 8 5-5 5 15H2L8 3z"/>' },
+  Wind: {
+    label: 'Wind',
+    paths: '<path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/>',
+  },
+  Fire: { label: 'Fire', paths: '<path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/>' },
+  Water: {
+    label: 'Water',
+    paths: '<path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/>',
+  },
+  Dark: { label: 'Dark', paths: '<path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>' },
+  Light: {
+    label: 'Light',
+    paths: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>',
+  },
+};
+
+/** Icon markup for a bolded element name, or '' for any other term. */
+function elementIcon(term: string): string {
+  const el = ELEMENT_ICONS[term.trim()];
+  if (!el) return '';
+  return `<svg class="element-icon inline-block w-[1em] h-[1em] mr-1 align-[-0.125em] text-gold-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="${el.label} element" role="img">${el.paths}</svg>`;
+}
+
+/**
  * Converts standard Markdown emphasis and controller badges for inline text.
  * Escapes raw HTML, tokenizes controller prompts, and applies styled formatting.
  */
@@ -165,10 +194,15 @@ export function renderInlineMarkup(text: string | null | undefined): string {
     '<kbd class="font-mono text-xs px-1.5 py-0.5 rounded bg-slate-900 text-gold-300 border border-slate-700/80 shadow-inner tracking-wide">$1</kbd>'
   );
 
-  // 4. Bold / Strong: **text** or __text__ -> <strong class="highlight-term">
+  // 4. Bold / Strong: **text** or __text__ -> <strong class="highlight-term">.
+  // A bolded element name (**Earth**) gets its element icon in front of it.
   html = html.replace(
     /(?:\*\*([^*]+)\*\*|__([^_]+)__)/g,
-    (_, bold1, bold2) => `<strong class="highlight-term font-semibold text-slate-100">${bold1 || bold2}</strong>`
+    (_, bold1, bold2) => {
+      const term = bold1 || bold2;
+      const icon = elementIcon(term);
+      return `<strong class="highlight-term font-semibold text-slate-100">${icon}${term}</strong>`;
+    }
   );
 
   // 5. Italic: *text* or _text_ -> <em>

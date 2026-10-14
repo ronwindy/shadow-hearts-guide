@@ -43,7 +43,7 @@
       "Collect the hidden items in **Fengtian** and the **Sewers**",
       "Win the **Jade Lariat** from **Lottery Member No. 15**",
       "Recruit **Margarete** in the **Sewers**",
-      "Set the **Jewel** (Sealing Stone) on the manhole cover",
+      "Set the **Jewel** (**Sealing Stone**) on the manhole cover",
       "Defeat the **Water Tiger** sub-boss and the **Beast Dog** boss",
       "Proceed to **Dalian**"
     ],
@@ -248,7 +248,68 @@
         ],
         "exp": 540,
         "cash": 3000,
-        "strategy": "- Be wary of its **Breath of Fire** attack; it'll hit the whole party for pretty good damage. Have each person heal themselves after the hit to be safe.\n- Its physical attacks are bad enough, but it will increase its own strength, making them that much worse, so keep an eye on your HP.\n- To start, have **Margarete** cast the **Aqua Edge** on **Yuri**, followed by using her **Grenade** skill repeatedly.\n- With a water-based attack, have **Yuri** fuse into the **Raging Tiger** and start attacking normally, doing some major damage.\n- Have **Alice** keep everyone's HP up during the battle, having **Margarete** help out when needed. As usual, make sure **Alice**'s SP doesn't drop to 0."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Threats**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Be wary of its **Breath of Fire** attack; it'll hit the whole party for pretty good damage. Have each person heal themselves after the hit to be safe."
+                      },
+                      {
+                        "text": "Its physical attacks are bad enough, but it will increase its own strength, making them that much worse, so keep an eye on your HP."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Margarete**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "To start, have **Margarete** cast the **Aqua Edge** on **Yuri**, followed by using her **Grenade** skill repeatedly."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Yuri**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "With a water-based attack, have **Yuri** fuse into the **Raging Tiger** and start attacking normally, doing some major damage."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Alice**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Have **Alice** keep everyone's HP up during the battle, having **Margarete** help out when needed. As usual, make sure **Alice**'s SP doesn't drop to 0."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "shops": [
@@ -603,7 +664,65 @@
           ],
           "exp": 400,
           "cash": 2500,
-          "strategy": "- Have **Yuri** fuse into the **Death Emperor** or **Raging Tiger** and wail away on the **Kappas** first, since they have the ability to heal.\n- Have **Margarete** use her **Grenade** skill until she's out of MP, then have her attack normally.\n- Have **Alice** attack normally, unless she's needed for healing.\n- If you want to do some extra damage to the **Water Tiger** once the **Kappas** are gone, have **Margarete** use her **Aqua Edge** on **Yuri** and have him attack the Fire-based **Water Tiger**."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Yuri** fuse into the **Death Emperor** or **Raging Tiger** and wail away on the **Kappas** first, since they have the ability to heal."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Margarete**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Margarete** use her **Grenade** skill until she's out of MP, then have her attack normally."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Alice** attack normally, unless she's needed for healing."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Water Tiger**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If you want to do some extra damage to the **Water Tiger** once the **Kappas** are gone, have **Margarete** use her **Aqua Edge** on **Yuri** and have him attack the **Fire**-based **Water Tiger**."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "notes": [],
         "rewards": []

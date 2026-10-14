@@ -1,14 +1,29 @@
 {
   "qa": {
-    "status": "PASS",
+    "status": "PASS WITH WARNINGS",
     "section_id": "w-s-01",
     "section_title": "Yuri's Level 1 Fusions",
     "summary": {
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 0
+      "low": 1
     },
-    "findings": []
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Man Dragon, Inferno, Tornado, Heaven's Fiend].strategy",
+        "source": {
+          "text": "Rather than list each sub-boss separately, I'm covering them all in this one sec"
+        },
+        "generated": {
+          "text": "Rather than list each sub-boss separately, I'm covering them all in this one sec"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
   }
 }

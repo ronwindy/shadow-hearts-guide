@@ -368,7 +368,7 @@
       },
       {
         "id": 4,
-        "description": "1. Leave the **Inn** and head north back to the next area.\n2. Make your way to the right side of the area, then head north when you see an abandoned house.\n3. In this small area, follow along the very edge of the street as you go left, and you should find a **Thera Extract** near the broken wall.\n4. Afterward, go to the upper-left and examine the door on the ground; you'll have to do a Push Ring to lift it up and descend the ladder into the **London Rats**' hideout.",
+        "description": "1. Leave the **Inn** and head north back to the next area.\n2. Make your way to the right side of the area, then head north when you see an abandoned house.\n3. In this small area, follow along the very edge of the street as you go left, and you should find a **Thera Extract** near the broken wall.\n4. Afterward, go to the upper-left and examine the door on the ground; you'll have to do a **Push Ring** to lift it up and descend the ladder into the **London Rats**' hideout.",
         "type": "loot",
         "rewards": [
           {

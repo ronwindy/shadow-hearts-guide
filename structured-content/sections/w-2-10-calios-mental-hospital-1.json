@@ -28,8 +28,8 @@
     },
     "route": [],
     "objectives": [
-      "Defeat Rausan",
-      "Defeat Olga"
+      "Defeat **Rausan**",
+      "Defeat **Olga**"
     ],
     "items_summary": {
       "obtainable": [
@@ -194,7 +194,7 @@
           {
             "type": "tip",
             "title": "Note",
-            "text": "- I recommend taking the time to get your level 2 Earth, Wind, and Dark Fusions for **Yuri**, if you haven't already.\n- For me, all I needed was just the Earth Fusion.\n- With sets of 5 **Buggs** in this area, if you like, you could try fighting them enough to get your level 3 Dark Fusion, **Czernobog**, since you should already have the **Dark Gravestone**."
+            "text": "- I recommend taking the time to get your level 2 **Earth**, **Wind**, and **Dark** Fusions for **Yuri**, if you haven't already.\n- For me, all I needed was just the **Earth** Fusion.\n- With sets of 5 **Buggs** in this area, if you like, you could try fighting them enough to get your level 3 **Dark** Fusion, **Czernobog**, since you should already have the **Dark Gravestone**."
           }
         ]
       },
@@ -308,7 +308,74 @@
           "party": [],
           "exp": 120,
           "cash": 600,
-          "strategy": "- **Rausan** will usually start out the battle with **Elder Sign**, causing your special attacks to be weakened quite a bit.\n- This should only really affect **Halley**, but not enough to keep him from using his skills.\n- He'll attempt to **Silence** you as well, but as long as you have **Cosmic Bracelets**, it'll just inflict a lot of damage.\n- He'll also use **Blaze**, which will do a decent amount of damage to your whole party.\n- As usual, have **Yuri** fuse into **Ifrit** and use his **Ignition** to boost his attack, then have him attack as normal.\n- Have **Halley** use **Aqua Blade** every round (since **Rausan** is Fire-based), stopping only to help **Alice** heal.\n- **Alice** should be healing as needed, using **Blessed Light** when no healing is needed."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Rausan** will usually start out the battle with **Elder Sign**, causing your special attacks to be weakened quite a bit."
+                        },
+                        {
+                          "text": "This should only really affect **Halley**, but not enough to keep him from using his skills."
+                        },
+                        {
+                          "text": "He'll attempt to **Silence** you as well, but as long as you have **Cosmic Bracelets**, it'll just inflict a lot of damage."
+                        },
+                        {
+                          "text": "He'll also use **Blaze**, which will do a decent amount of damage to your whole party."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "As usual, have **Yuri** fuse into **Ifrit** and use his **Ignition** to boost his attack, then have him attack as normal."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Halley**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Halley** use **Aqua Blade** every round (since **Rausan** is **Fire**-based), stopping only to help **Alice** heal."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Alice** should be healing as needed, using **Blessed Light** when no healing is needed."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -398,7 +465,80 @@
           ],
           "exp": 22000,
           "cash": 17000,
-          "strategy": "- As before, **Olga**'s Black Fog attack will do MAJOR damage to your party, as well as **Poison** each one of them, so it's a good idea to come in with **Cosmic Bracelets** equipped.\n- Her normal attacks don't do too much damage, but her **Icy Breath**, **Rock Storm** and **Lightning** attacks will also both do quite a bit of damage to your entire party, so be careful.\n- Watch out if she uses **Mind Assault** to steal your MP, as you'll want to recover it immediately if she takes too much.\n- Have **Yuri** fuse into **Ifrit** and use his **Ignition** to boost his attack, then have him attack as normal.\n- With his attacked laced with **Alice**'s **Holy Edge**, he'll be doing MAJOR damage.\n- Of course, have **Alice** use **Holy Edge** to start with on **Yuri**, then have her on healing duty.\n- Have **Halley** use **Air Shot** every round, helping **Alice** heal as needed.\n- If you have it, have **Alice** take advantage of her **Arc** spell and just heal every round, it makes this battle MUCH easier.\n- If you're unable to keep up with healing while trying to dish out the damage, AND if **Alice** doesn't have **Arc**, then have **Yuri** fuse into **Baldo** instead of **Ifrit**, using his healing spell to take care of the party while **Alice** and **Halley** use **Blessed Light** and **Air Shot** to make up the difference."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "As before, **Olga**'s Black Fog attack will do MAJOR damage to your party, as well as **Poison** each one of them, so it's a good idea to come in with **Cosmic Bracelets** equipped."
+                        },
+                        {
+                          "text": "Her normal attacks don't do too much damage, but her **Icy Breath**, **Rock Storm** and **Lightning** attacks will also both do quite a bit of damage to your entire party, so be careful."
+                        },
+                        {
+                          "text": "Watch out if she uses **Mind Assault** to steal your MP, as you'll want to recover it immediately if she takes too much."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Yuri** fuse into **Ifrit** and use his **Ignition** to boost his attack, then have him attack as normal."
+                        },
+                        {
+                          "text": "With his attacked laced with **Alice**'s **Holy Edge**, he'll be doing MAJOR damage."
+                        },
+                        {
+                          "text": "If you're unable to keep up with healing while trying to dish out the damage, AND if **Alice** doesn't have **Arc**, then have **Yuri** fuse into **Baldo** instead of **Ifrit**, using his healing spell to take care of the party while **Alice** and **Halley** use **Blessed Light** and **Air Shot** to make up the difference."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Of course, have **Alice** use **Holy Edge** to start with on **Yuri**, then have her on healing duty."
+                        },
+                        {
+                          "text": "If you have it, have **Alice** take advantage of her **Arc** spell and just heal every round, it makes this battle MUCH easier."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Halley**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Halley** use **Air Shot** every round, helping **Alice** heal as needed."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -414,7 +554,7 @@
       },
       {
         "id": 11,
-        "description": "- In **London**, **Old Castle Street**, here in the **London Rats**' hideout, make your way downstairs and use the **Save Point**.\n- Make note of a new path to your left; it leads to a Pit Fight hosted by **Sharon**!\n- If you talk to her at all, you'll have to battle a random set of enemies alone with **Yuri**.\n- Her power isn't very stable yet, so you won't be able to engage in the actual Pit Fight like you did with **Mr. Zhen**, but you will in time.",
+        "description": "- In **London**, **Old Castle Street**, here in the **London Rats**' hideout, make your way downstairs and use the **Save Point**.\n- Make note of a new path to your left; it leads to a **Pit Fight** hosted by **Sharon**!\n- If you talk to her at all, you'll have to battle a random set of enemies alone with **Yuri**.\n- Her power isn't very stable yet, so you won't be able to engage in the actual **Pit Fight** like you did with **Mr. Zhen**, but you will in time.",
         "type": "exploration",
         "rewards": []
       },
@@ -438,7 +578,7 @@
       },
       {
         "id": 13,
-        "description": "1. As **Alice**, go down the alley and examine the back door to the church.\n2. Do a quick Push Ring to open the door, then go to the altar room for a quick scene.\n3. Next, go to the confessionals on the right side.\n4. Go into the back confessional here and examine the wall, where you'll have to complete a Spin Ring 3.\n5. Once it's done, you'll finally know the story between **Roger Bacon** and **Albert Simon**, and you'll see a picture of Father Hans Doyle and Cardinal **Albert Simon**...\n6. Leave the confessional for another event, then you'll regain control in **London**.",
+        "description": "1. As **Alice**, go down the alley and examine the back door to the church.\n2. Do a quick **Push Ring** to open the door, then go to the altar room for a quick scene.\n3. Next, go to the confessionals on the right side.\n4. Go into the back confessional here and examine the wall, where you'll have to complete a **Spin Ring 3**.\n5. Once it's done, you'll finally know the story between **Roger Bacon** and **Albert Simon**, and you'll see a picture of **Father Hans Doyle** and Cardinal **Albert Simon**...\n6. Leave the confessional for another event, then you'll regain control in **London**.",
         "type": "story",
         "rewards": []
       },
@@ -461,7 +601,7 @@
       },
       {
         "id": 16,
-        "description": "Out on the **World Map**, go out to the Britain Map to see a new destination open up: the Nemeton Monastery.",
+        "description": "Out on the **World Map**, go out to the **Britain Map** to see a new destination open up: the **Nemeton Monastery**.",
         "type": "navigation",
         "rewards": []
       },

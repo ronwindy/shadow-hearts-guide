@@ -28,8 +28,8 @@
     },
     "route": [],
     "objectives": [
-      "Defeat Yuri",
-      "Defeat Fox Face"
+      "Defeat **Yuri**",
+      "Defeat **Fox Face**"
     ],
     "items_summary": {
       "obtainable": [
@@ -249,10 +249,13 @@
           "cash": null,
           "strategy": [
             {
+              "text": "Yikes!"
+            },
+            {
               "list": "bullet",
               "items": [
                 {
-                  "text": "Yikes!",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
@@ -262,36 +265,48 @@
                         },
                         {
                           "text": "**Yuri** has quite a bit of HP, and hits harder than anyone else thus far, so healing will be your immediate priority."
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "text": "After just about 400 HP worth of damage, **Yuri** will fuse into the **Death Emperor**, starting to use **Dark Messenger**.",
-                  "children": [
-                    {
-                      "list": "bullet",
-                      "items": [
-                        {
-                          "text": "As long as you have **Leonardo's Bears** equipped, you won't die instantly, but you'll still be hit pretty hard."
                         },
                         {
-                          "text": "Again, to reiterate: healing will be your immediate priority."
+                          "text": "After just about 400 HP worth of damage, **Yuri** will fuse into the **Death Emperor**, starting to use **Dark Messenger**."
+                        },
+                        {
+                          "text": "As long as you have **Leonardo's Bears** equipped, you won't die instantly, but you'll still be hit pretty hard."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "Have two people healing, if needed."
-                },
-                {
-                  "text": "For the first round, have **Alice** cast **Holy Edge** on **Keith** to add a Light class to his attack, then devote **Alice** to healing.",
+                  "text": "**Healing**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "Again, to reiterate: healing will be your immediate priority."
+                        },
+                        {
+                          "text": "Have two people healing, if needed."
+                        },
+                        {
+                          "text": "Whoever is doing the least amount of damage needs to be helping **Alice** heal if it's needed."
+                        },
+                        {
+                          "text": "Again, have whoever is doing the least amount of damage take care of this."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "For the first round, have **Alice** cast **Holy Edge** on **Keith** to add a **Light** class to his attack, then devote **Alice** to healing."
+                        },
                         {
                           "text": "There most likely won't be a round where she can attack, but if you can, then use **Blessed Light**."
                         }
@@ -300,26 +315,26 @@
                   ]
                 },
                 {
-                  "text": "**Zhuzhen** should be using **Corpse Arm** every round, and **Keith** should be attacking normally every round, with his weapon laced with **Holy Edge**.",
+                  "text": "**Zhuzhen and Keith**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Whoever is doing the least amount of damage needs to be helping **Alice** heal if it's needed."
+                          "text": "**Zhuzhen** should be using **Corpse Arm** every round, and **Keith** should be attacking normally every round, with his weapon laced with **Holy Edge**."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "Like the last few battles, it'll probably take long enough that you'll need to replenish your MP and SP as well.",
+                  "text": "**Resources**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "Again, have whoever is doing the least amount of damage take care of this."
+                          "text": "Like the last few battles, it'll probably take long enough that you'll need to replenish your MP and SP as well."
                         }
                       ]
                     }
@@ -354,7 +369,55 @@
           "party": [],
           "exp": 13000,
           "cash": 12500,
-          "strategy": "- He won't fuse into the **Death Emperor** this time, but he'll still use his !!! attack.\n- When he does, IMMEDIATELY use a **Thera Seed**, and DON'T even try to hit the 'Perfect!!' mark; just get **Yuri** away from 1 HP, and you'll be fine.\n- Fuse into either the **Raging Tiger** or **Inferno** (with **Fighting Spirit**) and just start wailing away on him with physical attacks.\n- Just keep trading blows, using **Thera Seeds** to heal whenever your HP starts to get low, and ESPECIALLY after the !!! attack."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "He won't fuse into the **Death Emperor** this time, but he'll still use his !!! attack."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Healing**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "When he does, IMMEDIATELY use a **Thera Seed**, and DON'T even try to hit the 'Perfect!!' mark; just get **Yuri** away from 1 HP, and you'll be fine."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Attacks**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Fuse into either the **Raging Tiger** or **Inferno** (with **Fighting Spirit**) and just start wailing away on him with physical attacks."
+                        },
+                        {
+                          "text": "Just keep trading blows, using **Thera Seeds** to heal whenever your HP starts to get low, and ESPECIALLY after the !!! attack."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -370,7 +433,7 @@
       },
       {
         "id": 8,
-        "description": "- **However**... if you paid attention, you saw something glowing behind **Yuri** as they left the tower, so let's go get it.\n- Make your way back into the Castle, through the western door, and to the very tip top of the tower into the room where you fought **Yuri**.\n- Examine the floor on the left side of the room to find the **Dark Gravestone**, which will allow you to fight and fuse into **Yuri**'s level 3 Dark Fusion when you have enough **Soul Energy**!\n- Score!",
+        "description": "- **However**... if you paid attention, you saw something glowing behind **Yuri** as they left the tower, so let's go get it.\n- Make your way back into the Castle, through the western door, and to the very tip top of the tower into the room where you fought **Yuri**.\n- Examine the floor on the left side of the room to find the **Dark Gravestone**, which will allow you to fight and fuse into **Yuri**'s level 3 **Dark** Fusion when you have enough **Soul Energy**!\n- Score!",
         "type": "loot",
         "rewards": [
           {
@@ -393,7 +456,7 @@
           {
             "type": "tip",
             "title": "Note",
-            "text": "If you don't have your level 2 Earth or **Light Fusions** yet, then I recommend heading back inside and fighting until you get them."
+            "text": "If you don't have your level 2 **Earth** or **Light Fusions** yet, then I recommend heading back inside and fighting until you get them."
           }
         ],
         "rewards": []

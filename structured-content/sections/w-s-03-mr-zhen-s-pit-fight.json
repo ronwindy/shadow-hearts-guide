@@ -160,7 +160,7 @@
     "steps": [
       {
         "id": 1,
-        "description": "- **Wind Shear** x2: 4 EXP, 0 Cash\n- **Hellcat** x2: 40 EXP, 0 Cash\n- **Yamaraja**: Earth: 180 EXP, 0 Cash\n- **Frog God** x3: 135 EXP, 0 Cash\n- **Kappa** x2, **Water Tiger**: 400 EXP, 0 Cash\n- **Beast Dog**: 540 EXP, 0 Cash\n- **Yamaraja**: Wind: 720 EXP, 0 Cash\n- **White Wolfling** x3: 234 EXP, 0 Cash\n- **Ogre Flame** x4: 260 EXP, 0 Cash\n- **Li Li**: 1000 EXP, 0 Cash\n- **Prototype Wind Shear**: 1500 EXP, 0 Cash\n- **Custom Wind Shear**: 1500 EXP, 0 Cash",
+        "description": "- **Wind Shear** x2: 4 EXP, 0 Cash\n- **Hellcat** x2: 40 EXP, 0 Cash\n- **Yamaraja**: **Earth**: 180 EXP, 0 Cash\n- **Frog God** x3: 135 EXP, 0 Cash\n- **Kappa** x2, **Water Tiger**: 400 EXP, 0 Cash\n- **Beast Dog**: 540 EXP, 0 Cash\n- **Yamaraja**: **Wind**: 720 EXP, 0 Cash\n- **White Wolfling** x3: 234 EXP, 0 Cash\n- **Ogre Flame** x4: 260 EXP, 0 Cash\n- **Li Li**: 1000 EXP, 0 Cash\n- **Prototype Wind Shear**: 1500 EXP, 0 Cash\n- **Custom Wind Shear**: 1500 EXP, 0 Cash",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -300,9 +300,9 @@
       }
     ],
     "objectives": [
-      "Fight 10 consecutive battles with Yuri in Mr. Zhen's Pit Fight",
-      "Receive 5000 Cash and Anne's Cross",
-      "Proceed to Shanghai, Kuihai Tower"
+      "Fight 10 consecutive battles with **Yuri** in **Mr. Zhen**'s **Pit Fight**",
+      "Receive 5000 Cash and **Anne's Cross**",
+      "Proceed to **Shanghai**, **Kuihai Tower**"
     ]
   }
 }

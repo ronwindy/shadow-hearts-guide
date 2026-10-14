@@ -1,14 +1,29 @@
 {
   "qa": {
-    "status": "PASS",
+    "status": "PASS WITH WARNINGS",
     "section_id": "w-2-04",
     "section_title": "Bistritz (2)",
     "summary": {
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 0
+      "low": 1
     },
-    "findings": []
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Tindalos].strategy",
+        "source": {
+          "text": "Watch out for his Deathtouch attack; it takes away 75% of your HP, which most of"
+        },
+        "generated": {
+          "text": "Threats Watch out for his Deathtouch attack; it takes away 75% of your HP, which"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
   }
 }

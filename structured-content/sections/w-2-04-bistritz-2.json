@@ -28,7 +28,7 @@
     },
     "route": [],
     "objectives": [
-      "Defeat Tindalos"
+      "Defeat **Tindalos**"
     ],
     "items_summary": {
       "obtainable": [
@@ -266,13 +266,16 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "Watch out for his Deathtouch attack; it takes away 75% of your HP, which most of the time is a MAJOR inconvenience.",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "He can also use Fire breath, which will hit for a decent amount of damage."
+                          "text": "Watch out for his Deathtouch attack; it takes away 75% of your HP, which most of the time is a MAJOR inconvenience."
+                        },
+                        {
+                          "text": "He can also use **Fire** breath, which will hit for a decent amount of damage."
                         },
                         {
                           "text": "Make sure to keep an eye on his physical attacks as well, as they'll quickly whittle down your HP, hitting for over 100 to a 150 HP per string of attacks."
@@ -282,11 +285,14 @@
                   ]
                 },
                 {
-                  "text": "Have **Alice** be the primary healer, using **Cure** every round.",
+                  "text": "**Alice**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "Have **Alice** be the primary healer, using **Cure** every round."
+                        },
                         {
                           "text": "If it's not needed, have her use **Blessed Light** instead."
                         }
@@ -295,14 +301,27 @@
                   ]
                 },
                 {
-                  "text": "**Zhuzhen** should be using **Life Sucker** every round (or if you were able to level him up to 23, use **Corpse Arm** instead), stopping only to help **Alice** heal when needed."
-                },
-                {
-                  "text": "**Keith** should be using **Drain Touch** if he needs HP, or **Bat Dance** if he doesn't.",
+                  "text": "**Zhuzhen**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "**Zhuzhen** should be using **Life Sucker** every round (or if you were able to level him up to 23, use **Corpse Arm** instead), stopping only to help **Alice** heal when needed."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Keith**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Keith** should be using **Drain Touch** if he needs HP, or **Bat Dance** if he doesn't."
+                        },
                         {
                           "text": "If you were able to get used to **Keith**'s Ring enough to where you're comfortable with him having the **Mind's Eye** equipped, I recommend that over his Rituals, but still have him use **Drain Touch** when he needs healed."
                         }
@@ -311,7 +330,17 @@
                   ]
                 },
                 {
-                  "text": "You'll most likely need to replenish MP and SP throughout the battle, as it will take a while, but be patient and stay healed."
+                  "text": "**Resources**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "You'll most likely need to replenish MP and SP throughout the battle, as it will take a while, but be patient and stay healed."
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }

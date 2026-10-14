@@ -171,6 +171,7 @@ function walkRich(node, pat) {
 
 function boldSection(guide, pat) {
   const g = structuredClone(guide);
+  if (Array.isArray(g.objectives)) g.objectives = g.objectives.map((o) => boldText(o, pat));
   for (const step of g.steps ?? []) {
     if (typeof step.description === "string") step.description = boldText(step.description, pat);
     for (const note of step.notes ?? []) note.text = walkRich(note.text, pat);

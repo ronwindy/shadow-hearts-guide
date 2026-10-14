@@ -36,7 +36,7 @@
     ],
     "objectives": [
       "Collect the **Rosewood Bracelet** and **Witch's Broth**",
-      "Win something from each Lottery Member, including the **Iron Clogs**",
+      "Win something from each **Lottery Member**, including the **Iron Clogs**",
       "Defeat the sub-boss **Li Li**",
       "Defeat the boss **Li Li**",
       "Proceed to **Shanghai, Huayuan (1)**"
@@ -167,11 +167,14 @@
             "list": "bullet",
             "items": [
               {
-                "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual **Paralysis** effect with your **Rosewood Bracelets**).",
+                "text": "**Threats**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
+                      {
+                        "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual **Paralysis** effect with your **Rosewood Bracelets**)."
+                      },
                       {
                         "text": "Watch out for **Hate Storm**, as it'll do decent damage to your whole party."
                       }
@@ -180,38 +183,64 @@
                 ]
               },
               {
-                "text": "Start off by healing, if needed."
-              },
-              {
-                "text": "As with the last battle, if you have **Heaven's Fiend**, have **Yuri** use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
+                "text": "**Opening**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
-                        "text": "**Alice** should cast **Holy Edge** on **Margarete** first, so she has Light-based attacks, then she should cast **Blessed Light**."
-                      },
-                      {
-                        "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
-                      },
-                      {
-                        "text": "If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party, especially after **Hate Storm**."
+                        "text": "Start off by healing, if needed."
                       }
                     ]
                   }
                 ]
               },
               {
-                "text": "If you don't have **Heaven's Fiend**, have **Yuri** fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
+                "text": "**Yuri**",
                 "children": [
                   {
                     "list": "bullet",
                     "items": [
                       {
-                        "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
+                        "text": "As with the last battle, if you have **Heaven's Fiend**, have **Yuri** use it and use the **Exorcist Arrow** attack; it should do MAJOR damage."
                       },
                       {
-                        "text": "**Alice** should cast **Holy Edge** on **Yuri** first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY."
+                        "text": "If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party, especially after **Hate Storm**."
+                      },
+                      {
+                        "text": "If you don't have **Heaven's Fiend**, have **Yuri** fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her."
+                      },
+                      {
+                        "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Alice**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "**Alice** should cast **Holy Edge** on **Margarete** first, so she has **Light**-based attacks, then she should cast **Blessed Light**."
+                      },
+                      {
+                        "text": "**Alice** should cast **Holy Edge** on **Yuri** first, so he has **Light**-based attacks, then she should cast **Blessed Light** REPEATEDLY."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Margarete**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
                       },
                       {
                         "text": "Margaret will be the primary healer once again, as **Yuri** and **Alice** should be shelling out some pretty wicked damage to **Li Li**."
@@ -373,7 +402,7 @@
           {
             "type": "tip",
             "title": "Level up for the fusions",
-            "text": "- It should be fairly easy to obtain both your level 1 Fire and Water Fusions here, since the enemies come in groups of 3 and 4.\n- I strongly recommend doing so, as it won't take long at all.\n- Also, make sure **Alice** is at least level 11 so that she learns the **Blessed Light** spell."
+            "text": "- It should be fairly easy to obtain both your level 1 **Fire** and **Water** Fusions here, since the enemies come in groups of 3 and 4.\n- I strongly recommend doing so, as it won't take long at all.\n- Also, make sure **Alice** is at least level 11 so that she learns the **Blessed Light** spell."
           }
         ],
         "rewards": [
@@ -520,54 +549,76 @@
           "cash": 3800,
           "strategy": [
             {
+              "text": "This is just a warm-up, so try to avoid using **TOO** much MP if possible for the next boss battle."
+            },
+            {
               "list": "bullet",
               "items": [
                 {
-                  "text": "This is just a warm-up, so try to avoid using **TOO** much MP if possible for the next boss battle."
-                },
-                {
-                  "text": "She can and will use **Dark Messenger**, which not only deals major damage, but can instantly kill a party member, so be careful.",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
+                          "text": "She can and will use **Dark Messenger**, which not only deals major damage, but can instantly kill a party member, so be careful."
+                        },
+                        {
                           "text": "Her other attacks are **Paralysis** (which does decent damage, but you should be guarded against the actual **Paralysis** effect with your **Rosewood Bracelets**) and a normal attack, which you shouldn't need to worry about."
+                        },
+                        {
+                          "text": "Not much to worry about (other than **Dark Messenger**) here."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "If you have it, have **Yuri** use **Heaven's Fiend** and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
+                  "text": "**Yuri**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "**Alice** should cast **Holy Edge** on **Margarete** first, so she has Light-based attacks, then she should cast **Blessed Light**."
-                        },
-                        {
-                          "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
+                          "text": "If you have it, have **Yuri** use **Heaven's Fiend** and use the **Exorcist Arrow** attack; it should do MAJOR damage."
                         },
                         {
                           "text": "If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party."
+                        },
+                        {
+                          "text": "If you don't have **Heaven's Fiend**, have **Yuri** fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her."
+                        },
+                        {
+                          "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "If you don't have **Heaven's Fiend**, have **Yuri** fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
+                  "text": "**Alice**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
+                          "text": "**Alice** should cast **Holy Edge** on **Margarete** first, so she has **Light**-based attacks, then she should cast **Blessed Light**."
                         },
                         {
-                          "text": "**Alice** should cast **Holy Edge** on **Yuri** first, so he has Light-based attacks, then she should cast **Blessed Light**."
+                          "text": "**Alice** should cast **Holy Edge** on **Yuri** first, so he has **Light**-based attacks, then she should cast **Blessed Light**."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Margarete**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
                         },
                         {
                           "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
@@ -575,9 +626,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "text": "Not much to worry about (other than **Dark Messenger**) here."
                 }
               ]
             }
@@ -652,11 +700,14 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual **Paralysis** effect with your **Rosewood Bracelets**).",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "At least this time she won't use **Dark Messenger**, but she still uses **Paralysis** (which, again, does decent damage, but you should be guarded against the actual **Paralysis** effect with your **Rosewood Bracelets**)."
+                        },
                         {
                           "text": "Watch out for **Hate Storm**, as it'll do decent damage to your whole party."
                         }
@@ -665,38 +716,64 @@
                   ]
                 },
                 {
-                  "text": "Start off by healing, if needed."
-                },
-                {
-                  "text": "As with the last battle, if you have **Heaven's Fiend**, have **Yuri** use it and use the **Exorcist Arrow** attack; it should do MAJOR damage.",
+                  "text": "**Opening**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "**Alice** should cast **Holy Edge** on **Margarete** first, so she has Light-based attacks, then she should cast **Blessed Light**."
-                        },
-                        {
-                          "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
-                        },
-                        {
-                          "text": "If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party, especially after **Hate Storm**."
+                          "text": "Start off by healing, if needed."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "If you don't have **Heaven's Fiend**, have **Yuri** fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her.",
+                  "text": "**Yuri**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
+                          "text": "As with the last battle, if you have **Heaven's Fiend**, have **Yuri** use it and use the **Exorcist Arrow** attack; it should do MAJOR damage."
                         },
                         {
-                          "text": "**Alice** should cast **Holy Edge** on **Yuri** first, so he has Light-based attacks, then she should cast **Blessed Light** REPEATEDLY."
+                          "text": "If you really need a second healer, **Heaven's Fiend** is perfect for the role, as its **Sacred Remedy** will heal EVERYONE in the party, especially after **Hate Storm**."
+                        },
+                        {
+                          "text": "If you don't have **Heaven's Fiend**, have **Yuri** fuse into either **Inferno** or **Raging Tiger** (they are your two physically strongest Fusions at this point) and use normal attacks on her."
+                        },
+                        {
+                          "text": "If he has **Inferno**, use the **Fighting Spirit** skill first to increase his attack, then start wailing away on her."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Alice** should cast **Holy Edge** on **Margarete** first, so she has **Light**-based attacks, then she should cast **Blessed Light**."
+                        },
+                        {
+                          "text": "**Alice** should cast **Holy Edge** on **Yuri** first, so he has **Light**-based attacks, then she should cast **Blessed Light** REPEATEDLY."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Margarete**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Margaret should just be attacking normally, using **Thera** and **Mana Leaves** whenever the party's HP/MP are getting low."
                         },
                         {
                           "text": "Margaret will be the primary healer once again, as **Yuri** and **Alice** should be shelling out some pretty wicked damage to **Li Li**."

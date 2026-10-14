@@ -1,14 +1,43 @@
 {
   "qa": {
-    "status": "PASS",
+    "status": "PASS WITH WARNINGS",
     "section_id": "w-2-05",
     "section_title": "Blue Castle (2)",
     "summary": {
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 0
+      "low": 2
     },
-    "findings": []
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Yuri].strategy",
+        "source": {
+          "text": "Yikes! His normal three-hit combo will do MAJOR damage to anyone it hits, so hea"
+        },
+        "generated": {
+          "text": "Yikes! Threats His normal three-hit combo will do MAJOR damage to anyone it hits"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Fox Face].strategy",
+        "source": {
+          "text": "He won't fuse into the Death Emperor this time, but he'll still use his !!! atta"
+        },
+        "generated": {
+          "text": "Threats He won't fuse into the Death Emperor this time, but he'll still use his "
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
   }
 }

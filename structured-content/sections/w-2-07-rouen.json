@@ -28,7 +28,7 @@
     },
     "route": [],
     "objectives": [
-      "Defeat Olga"
+      "Defeat **Olga**"
     ],
     "items_summary": {
       "obtainable": [
@@ -550,7 +550,7 @@
           {
             "type": "tip",
             "title": "Note",
-            "text": "- You can now encounter random battles in the streets with the **Bifronzes**, as well as some new enemies, the **Camazotz**, for a limited time.\n- I strongly recommend taking the time to level up your Dark and Wind classes to level 2, if you haven't reached them already.\n- It won't take very long."
+            "text": "- You can now encounter random battles in the streets with the **Bifronzes**, as well as some new enemies, the **Camazotz**, for a limited time.\n- I strongly recommend taking the time to level up your **Dark** and **Wind** classes to level 2, if you haven't reached them already.\n- It won't take very long."
           },
           {
             "type": "tip",
@@ -562,7 +562,7 @@
       },
       {
         "id": 5,
-        "description": "1. Make your way back to the northern alley.\n2. As you enter, check the ground by the barrels for a **Huge Jug**, then keep going to the next area.\n3. Here, check the two barrels in the upper-right corner to find another **Lottery Ticket**.\n4. Examine the back door here, which is stuck.\n5. To gain entrance, you must complete a Spin Ring 3, meaning you have to hit **nine** areas before you can gain entrance.\n6. Luckily, the areas are pretty wide, so you should have no problem.",
+        "description": "1. Make your way back to the northern alley.\n2. As you enter, check the ground by the barrels for a **Huge Jug**, then keep going to the next area.\n3. Here, check the two barrels in the upper-right corner to find another **Lottery Ticket**.\n4. Examine the back door here, which is stuck.\n5. To gain entrance, you must complete a **Spin Ring 3**, meaning you have to hit **nine** areas before you can gain entrance.\n6. Luckily, the areas are pretty wide, so you should have no problem.",
         "type": "loot",
         "rewards": [
           {
@@ -640,11 +640,14 @@
               "list": "bullet",
               "items": [
                 {
-                  "text": "**Olga**'s Black Fog attack will do **major** damage to your party, as well as **Poison** each one of them, so it's a good idea to come in with Shell or **Cosmic Bracelets** equipped.",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "**Olga**'s Black Fog attack will do **major** damage to your party, as well as **Poison** each one of them, so it's a good idea to come in with Shell or **Cosmic Bracelets** equipped."
+                        },
                         {
                           "text": "Her **Nova** attack will do decent damage to a single ally, her **Icy Breath** attack will hit your whole party for decent damage, and her physical attack just does pathetic damage to a single ally."
                         },
@@ -656,11 +659,14 @@
                   ]
                 },
                 {
-                  "text": "**Yuri** and **Alice** are obvious choices for this battle, and you could pretty much pick whomever your favorite is, as they'll all do roughly the same amount of damage.",
+                  "text": "**Party choice**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
+                        {
+                          "text": "**Yuri** and **Alice** are obvious choices for this battle, and you could pretty much pick whomever your favorite is, as they'll all do roughly the same amount of damage."
+                        },
                         {
                           "text": "I recommend **Margarete** just because I had her at a higher level than **Keith** and **Zhuzhen**, therefore having more STR and HP."
                         },
@@ -678,36 +684,58 @@
                   ]
                 },
                 {
-                  "text": "Fuse **Yuri** into **Baldo** (if you didn't get his level 2 **Light Fusion**, then fuse into the **Heaven's Fiend**, as you'll need the healing) and start physically attacking; with the **Mind's Eye** equipped, he'll be doing major damage.",
+                  "text": "**Yuri**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
+                          "text": "Fuse **Yuri** into **Baldo** (if you didn't get his level 2 **Light Fusion**, then fuse into the **Heaven's Fiend**, as you'll need the healing) and start physically attacking; with the **Mind's Eye** equipped, he'll be doing major damage."
+                        },
+                        {
                           "text": "If you didn't put the **Mind's Eye** on him, then go with the **Nova** spell instead."
+                        },
+                        {
+                          "text": "I hate taking turns away from **Yuri** because he just does so much damage, but when everyone needs healed, he's the only one that can do anything about it efficiently."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "Have **Alice** cast **Holy Edge** on **Yuri** her first round so he can keep piling the damage up, then have her cast it on **Margarete** her second turn so she can start adding in to the damage.",
+                  "text": "**Alice**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Alice** cast **Holy Edge** on **Yuri** her first round so he can keep piling the damage up, then have her cast it on **Margarete** her second turn so she can start adding in to the damage."
+                        },
+                        {
+                          "text": "If for some reason **Alice** doesn't need to heal, have her cast **Blessed Light** on **Olga**."
+                        },
+                        {
+                          "text": "If a single ally just needs healed, have **Alice** do it."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Margarete**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
                           "text": "**Margarete** should also be attacking normally."
-                        },
-                        {
-                          "text": "If for some reason **Alice** doesn't need to heal, have her cast **Blessed Light** on **Olga**."
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "text": "If a single ally just needs healed, have **Alice** do it.",
+                  "text": "**Healing assignments**",
                   "children": [
                     {
                       "list": "bullet",
@@ -717,9 +745,6 @@
                         },
                         {
                           "text": "If all three need it, then have **Yuri** do it, as **Olga** doesn't mess around, and can easily kill your entire party in three turns."
-                        },
-                        {
-                          "text": "I hate taking turns away from **Yuri** because he just does so much damage, but when everyone needs healed, he's the only one that can do anything about it efficiently."
                         }
                       ]
                     }

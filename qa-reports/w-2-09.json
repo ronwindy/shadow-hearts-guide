@@ -1,14 +1,57 @@
 {
   "qa": {
-    "status": "PASS",
+    "status": "PASS WITH WARNINGS",
     "section_id": "w-2-09",
     "section_title": "London, Orphanage",
     "summary": {
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 0
+      "low": 3
     },
-    "findings": []
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Night Stalker].strategy",
+        "source": {
+          "text": "There's not much to worry about with this guy; other than boosting himself up, h"
+        },
+        "generated": {
+          "text": "Threats There's not much to worry about with this guy; other than boosting himse"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Jack].strategy",
+        "source": {
+          "text": "Jack will mainly just use his Paralysis attack against you, though you should be"
+        },
+        "generated": {
+          "text": "Threats Jack will mainly just use his Paralysis attack against you, though you s"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-003",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Mammon].strategy",
+        "source": {
+          "text": "Mammon's normal attacks will hit for pretty decent damage, but its biggest threa"
+        },
+        "generated": {
+          "text": "Threats Mammon's normal attacks will hit for pretty decent damage, but its bigge"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
   }
 }

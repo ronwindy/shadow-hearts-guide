@@ -28,7 +28,7 @@
     },
     "route": [],
     "objectives": [
-      "Defeat Cursed Puppet"
+      "Defeat **Cursed Puppet**"
     ],
     "items_summary": {
       "obtainable": [
@@ -493,27 +493,23 @@
           "cash": 6000,
           "strategy": [
             {
+              "text": "This is basically the same battle as with **Yamaraja**: War, only easier."
+            },
+            {
               "list": "bullet",
               "items": [
                 {
-                  "text": "This is basically the same battle as with **Yamaraja**: War, only easier.",
+                  "text": "**Threats**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
                           "text": "As with **Yamaraja**: War, the **Cursed Puppet** will absorb all magic, making **Zhuzhen** useful only as a healer."
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "text": "He also uses the **Game of Death**, just as usual; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you.",
-                  "children": [
-                    {
-                      "list": "bullet",
-                      "items": [
+                        },
+                        {
+                          "text": "He also uses the **Game of Death**, just as usual; if you don't have those **Leonardo's Bears** equipped to everyone, they'll have a chance to instantly kill you."
+                        },
                         {
                           "text": "His **Nightmare** attack will hit the entire party for a lot of damage, so make sure heal afterward."
                         },
@@ -528,7 +524,23 @@
                   ]
                 },
                 {
-                  "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn.",
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn."
+                        },
+                        {
+                          "text": "If you're having trouble staying healed, have **Yuri** fuse into **Heaven's Fiend** so you have the whole party healing spell."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Shortcut**",
                   "children": [
                     {
                       "list": "bullet",
@@ -541,13 +553,13 @@
                   ]
                 },
                 {
-                  "text": "**Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed, and **Zhuzhen** should focus completely on recovery.",
+                  "text": "**Margarete**",
                   "children": [
                     {
                       "list": "bullet",
                       "items": [
                         {
-                          "text": "If you're having trouble staying healed, have **Yuri** fuse into **Heaven's Fiend** so you have the whole party healing spell."
+                          "text": "**Margarete** should be attacking normally, but having her jump in to use **Thera Seeds** if needed, and **Zhuzhen** should focus completely on recovery."
                         }
                       ]
                     }

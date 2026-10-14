@@ -119,7 +119,7 @@
       },
       {
         "id": 3,
-        "description": "Defeat the couple of **Wind Shears** (#001 **Wind Shear**, HP: 10, Class: Wind).",
+        "description": "Defeat the couple of **Wind Shears** (#001 **Wind Shear**, HP: 10, Class: **Wind**).",
         "type": "battle",
         "encounter": {
           "enemies": [
@@ -167,7 +167,7 @@
       },
       {
         "id": 7,
-        "description": "Battle **Roger Bacon** (Class: Dark).",
+        "description": "Battle **Roger Bacon** (Class: **Dark**).",
         "type": "battle",
         "encounter": {
           "enemies": [

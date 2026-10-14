@@ -31,7 +31,7 @@
       "Hotel ground floor"
     ],
     "objectives": [
-      "Proceed to Temple Ruins"
+      "Proceed to **Temple Ruins**"
     ],
     "items_summary": {
       "obtainable": [
@@ -413,7 +413,65 @@
           ],
           "exp": 1500,
           "cash": 4500,
-          "strategy": "- As with the battle as his father, have **Yuri** fuse into your physically strongest Soul, **Raging Tiger**.\n- Rip into **Wugui** with physical attacks.\n- He doesn't pose much of a threat.\n- If you let the battle go on too long, make sure to heal."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "As with the battle as his father, have **Yuri** fuse into your physically strongest Soul, **Raging Tiger**."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Attacks**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Rip into **Wugui** with physical attacks."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "He doesn't pose much of a threat."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Healing**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If you let the battle go on too long, make sure to heal."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "rewards": []
       },

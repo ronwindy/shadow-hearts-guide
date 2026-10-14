@@ -28,7 +28,7 @@
     },
     "route": [],
     "objectives": [
-      "Defeat Man Dragon, Inferno, Tornado, Heaven's Fiend"
+      "Defeat **Man Dragon**, **Inferno**, **Tornado**, **Heaven's Fiend**"
     ],
     "items_summary": {
       "obtainable": [
@@ -163,19 +163,19 @@
       },
       {
         "id": 3,
-        "description": "- If you're needing the Fire or Wind Fusions, then go through the western door in the first room of the maze and fight in that area.",
+        "description": "- If you're needing the **Fire** or **Wind** Fusions, then go through the western door in the first room of the maze and fight in that area.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 4,
-        "description": "- If you're needing the **Light Fusion** or want some more Dark **Soul Energy**, then go through the eastern door in the first room of the maze and fight in that area.",
+        "description": "- If you're needing the **Light Fusion** or want some more **Dark** **Soul Energy**, then go through the eastern door in the first room of the maze and fight in that area.",
         "type": "exploration",
         "rewards": []
       },
       {
         "id": 5,
-        "description": "- If you're needing the Water Fusion or want some more Earth **Soul Energy**, then you'll need to proceed all the way through the first western maze until you reach the second one. You can fight the enemies in here for those classes.",
+        "description": "- If you're needing the **Water** Fusion or want some more **Earth** **Soul Energy**, then you'll need to proceed all the way through the first western maze until you reach the second one. You can fight the enemies in here for those classes.",
         "type": "exploration",
         "rewards": []
       },
@@ -222,7 +222,58 @@
           "party": [],
           "exp": null,
           "cash": null,
-          "strategy": "- Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy.\n- Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa.\n- If you have the Fusion with the class opposite of one already, fuse into that monster and use its highest powered magic spell against them for major damage.\n- If you don't, then just fuse into the **Raging Tiger** and wail on them with normal attacks for a few rounds.\n- Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
+          "strategy": [
+            {
+              "text": "Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy."
+            },
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Plan**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If you have the Fusion with the class opposite of one already, fuse into that monster and use its highest powered magic spell against them for major damage."
+                        },
+                        {
+                          "text": "If you don't, then just fuse into the **Raging Tiger** and wail on them with normal attacks for a few rounds."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Healing**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
