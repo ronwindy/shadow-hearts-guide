@@ -89,8 +89,9 @@ const pageSections = [
 // stay in the hero; the release/reception sentences from "Released in North America..." on
 // are shown, verbatim, at the top of the Reception section.
 const introSentences = intro.paragraphs.flatMap(toSentences);
+// Sentences keep their **bold** markers, so match on the plain text
 const historyStart = introSentences.findIndex((x) =>
-  x.startsWith("Released in North America"),
+  x.replace(/\*\*/g, "").startsWith("Released in North America"),
 );
 const heroSentences =
   historyStart === -1 ? introSentences : introSentences.slice(0, historyStart);
@@ -193,6 +194,8 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
             )
           }
         </div>
+
+        <div class="hero-line" aria-hidden="true"></div>
 
         <div class="flex flex-wrap items-center justify-center gap-4">
           <a
@@ -628,6 +631,20 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
     background: #f0d27a;
     transform: translate(-50%, -50%) rotate(45deg);
     box-shadow: 0 0 8px rgba(240, 210, 122, 0.6);
+  }
+
+  /* Plain gold hairline separating the fact boxes from the buttons */
+  .hero-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(212, 175, 55, 0.5) 25%,
+      rgba(240, 210, 122, 0.7) 50%,
+      rgba(212, 175, 55, 0.5) 75%,
+      transparent
+    );
   }
 
   /* Clear glass: very low tint, light blur, a diagonal reflection and bevelled edges */
