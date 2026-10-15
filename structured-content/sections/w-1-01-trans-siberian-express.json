@@ -28,7 +28,7 @@
     },
     "initial_setup": {
       "character": "The Rude Hero",
-      "note": "The Rude Hero comes equipped with **Leather Gloves**, a **Cotton Shirt**, and the **Death Emperor** soul by default, as well as the **Talisman** valuable.",
+      "note": "The **Rude Hero** comes equipped with **Leather Gloves**, a **Cotton Shirt**, and the **Death Emperor** soul by default, as well as the **Talisman** valuable.",
       "equipment": [
         "Leather Gloves",
         "Cotton Shirt"
