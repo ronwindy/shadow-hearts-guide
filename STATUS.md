@@ -1,14 +1,14 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-15 23:33:54`
+> Last synced: `2026-10-15 23:38:46`
 
 ```text
-=== PROJECT STATUS (2026-10-15 23:33:54) ===
-Canonical 67/67 | Structured 29/67 | QA pass 25/67 (fail 0) | Web built 29/67
+=== PROJECT STATUS (2026-10-15 23:38:46) ===
+Canonical 67/67 | Structured 29/67 | QA pass 26/67 (fail 0) | Web built 29/67
 Next:
-  1. Run QA on w-1-02 (Plains)
+  1. Run QA on w-s-02 (Kowloon Fortress)
   2. Structure w-s-04 (Calios Mental Hospital (2)) - next chronological
-Pending QA:    w-1-02, w-s-02, w-1-11, w-2-07
+Pending QA:    w-s-02, w-1-11, w-2-07
 ```
 
 ## Section Matrix
@@ -19,7 +19,7 @@ Pending QA:    w-1-02, w-s-02, w-1-11, w-2-07
 | `[I-1-00]` | `i-1-00` | Table of Contents | Introduction | WEB_BUILT |
 | `[I-1-01]` | `i-1-01` | Game Manual / Instructions | Introduction | WEB_BUILT |
 | `[W-1-01]` | `w-1-01` | Trans-Siberian Express | Walkthrough - Asia | WEB_BUILT |
-| `[W-1-02]` | `w-1-02` | Plains | Walkthrough - Asia | STRUCTURED_PENDING_QA |
+| `[W-1-02]` | `w-1-02` | Plains | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-03]` | `w-1-03` | Zhaoyang Village | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-04]` | `w-1-04` | Fengtian | Walkthrough - Asia | WEB_BUILT |
 | `[W-1-05]` | `w-1-05` | Dalian | Walkthrough - Asia | WEB_BUILT |

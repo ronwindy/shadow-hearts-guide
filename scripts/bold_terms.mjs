@@ -182,6 +182,9 @@ function boldSection(guide, pat) {
   for (const boss of g.bosses ?? []) {
     if (boss.strategy) boss.strategy = walkRich(boss.strategy, pat);
   }
+  for (const callout of g.callouts ?? []) {
+    if (typeof callout.text === "string") callout.text = boldText(callout.text, pat);
+  }
   return g;
 }
 
