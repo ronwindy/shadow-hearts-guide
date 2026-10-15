@@ -46,19 +46,19 @@
       "Sluice Gate & Save Point",
       "Rest & Fox Face Event",
       "The Graveyard (Raging Tiger & Masks)",
-      "Chest below the bridge (Reward Chest)",
+      "Chest below the bridge",
       "Village Approach & Gates"
     ],
     "save_points": [
       "By the sluice gate"
     ],
     "objectives": [
-      "Collect the **Pure Leaf** and **Leather Belt** before reuniting with **Alice**",
+      "Collect the **Pure Leaf** and **Leather Belt**",
       "Meet the girl, confirm default character names (**Yuri** & **Alice**), and have **Alice** join the party",
       "Examine the locked sluice gate, then go back to the last fork and use the **Save Point** to the southeast",
       "Retrieve the **Sluice Gate Handle** via either the Southern ('**Push Ring**') or Northern ('**Normal Ring**') mini-game",
       "Lower the water with the sluice gate, rest, and endure the battle against **Fox Face**",
-      "In the **Graveyard**, defeat sub-boss **Raging Tiger** to obtain **Yuri**'s **Earth** Fusion (**Tigerion**)",
+      "In the **Graveyard**, defeat sub-boss **Raging Tiger** to obtain the soul of **Raging Tiger**, **Tigerion**",
       "Converse with the **Masks** and defeat **Evil 4** to purge **Yuri**'s accumulated Malice",
       "Open the chest below the bridge and collect the **Holy Mother Bust**",
       "Continue to the village gates"
@@ -259,12 +259,12 @@
       {
         "type": "tutorial",
         "title": "Malice and The Graveyard System",
-        "text": "The Talisman Yuri holds shows the level of Malice accumulated in his soul.\n\n- Each enemy defeated increases the Malice Meter.\n- Make sure Yuri's Malice level (found in the menu) does NOT reach the red.\n- If it does, IMMEDIATELY go to the Graveyard and fight your Malice so that you don't fight Fox Face.\n- Right now, you WILL die if you try to fight Fox Face, so if you run into him, press the R1 button and choose to Run Away.\n- Return to the Graveyard whenever Malice builds up to fight Malice incarnates (Evil 1 through Evil 4) and purge it safely."
+        "text": "The Talisman **Yuri** holds shows the level of Malice accumulated in his soul.\n\n- Each enemy defeated increases the **Malice Meter**.\n- Make sure **Yuri**'s Malice level (found in the menu) does NOT reach the red.\n- If it does, IMMEDIATELY go to the **Graveyard** and fight your Malice so that you don't fight **Fox Face**.\n- Right now, you WILL die if you try to fight **Fox Face**, so if you run into him, press the R1 button and choose to Run Away."
       },
       {
         "type": "tip",
         "title": "Soul Energy & Fusions",
-        "text": "- The Soul Energy results screen appears after battles, displaying points required to level up each fusion element class.\n- Once an element class levels up, visit the Graveyard and examine glowing gravestones to obtain new Level 1 Fusions (Level 2 Fusions unlock later in the story)."
+        "text": "- The **Soul Energy** results screen appears after battles, displaying points required to level up each fusion element class.\n- Once an element class levels up, visit the **Graveyard** and examine glowing gravestones to obtain new Level 1 Fusions (**Level 2 Fusions** unlock later in the story)."
       },
       {
         "type": "tip",
@@ -507,7 +507,7 @@
           {
             "type": "tip",
             "title": "Malice prizes",
-            "text": "Malice Prize",
+            "text": "",
             "table": {
               "headers": [
                 "Malice Value",
