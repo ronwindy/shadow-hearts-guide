@@ -1,0 +1,19 @@
+{
+  "section_id": "w-2-11",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Header and section code [W-2-11] and title 'Europe Side Quests, Part 1'",
+    "Navigation prev w-2-10 'Calios Mental Hospital (1)' and next w-s-04 'Calios Mental Hospital (2)'",
+    "Step 1 [W-S-04] entry: item left to grab, Lottery Member to play (matches canonical wording)",
+    "Step 2 [W-S-05] heading 'Yuri's Level 2 & 3 Fusions' and its name spelling",
+    "Step 2 Gravestone requirement for Level 3 Fusions",
+    "Step 2 Soul Energy requirement for Level 2 and 3 Fusions ('Also, we'll need enough Soul Energy needs to be acquired...')",
+    "Step 2 'two dungeons we can revisit' statement",
+    "Step 2 closing question 'How do we get those level 3 ??? spells, anyway?' and 'Let's find out!' preserved verbatim",
+    "Step order: W-S-04 before W-S-05, matching canonical",
+    "Dense canonical paragraph split into bullets without changing names, numbers or conditions",
+    "Canonical has no overview items, shops, enemies, bosses or save points; structured has empty arrays for these, consistent with source"
+  ],
+  "findings": [],
+  "structured_sha256": "d2014fcc4344e7918b571bf39a47772feb243dddcd1f1d1d5a0c49891d4b696e"
+}

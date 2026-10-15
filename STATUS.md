@@ -1,13 +1,13 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-14 22:59:56`
+> Last synced: `2026-10-15 22:56:25`
 
 ```text
-=== PROJECT STATUS (2026-10-14 22:59:56) ===
-Canonical 67/67 | Structured 28/67 | QA pass 25/67 (fail 0) | Web built 28/67
+=== PROJECT STATUS (2026-10-15 22:56:25) ===
+Canonical 67/67 | Structured 29/67 | QA pass 26/67 (fail 0) | Web built 29/67
 Next:
   1. Run QA on w-s-02 (Kowloon Fortress)
-  2. Structure w-2-11 (Europe Side Quests, Part 1) - next chronological
+  2. Structure w-s-04 (Calios Mental Hospital (2)) - next chronological
 Pending QA:    w-s-02, w-1-11, w-2-07
 ```
 
@@ -42,7 +42,7 @@ Pending QA:    w-s-02, w-1-11, w-2-07
 | `[W-2-08]` | `w-2-08` | London, Old Castle Street | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-09]` | `w-2-09` | London, Orphanage | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-10]` | `w-2-10` | Calios Mental Hospital (1) | Walkthrough - Europe | WEB_BUILT |
-| `[W-2-11]` | `w-2-11` | Europe Side Quests, Part 1 | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-2-11]` | `w-2-11` | Europe Side Quests, Part 1 | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-04]` | `w-s-04` | Calios Mental Hospital (2) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-S-05]` | `w-s-05` | Yuri's Gravestones | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-12]` | `w-2-12` | Nemeton Monastery (1) | Walkthrough - Europe | NOT_STRUCTURED |
