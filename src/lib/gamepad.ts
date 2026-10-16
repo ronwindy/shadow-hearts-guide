@@ -5,7 +5,9 @@
 //   A           tick / untick the focused step; expand / collapse a focused section
 //               header; with the sidebar focused, open it
 //   B           leave the sidebar (or close the menu); otherwise go back
-//   X           open page contents (drawer, "This Page" tab)
+//   X           open page contents: desktop focuses "On This Page" (else the chapter
+//               sidebar); narrow screens open the drawer on its "This Page" tab.
+//               X again leaves the desktop sidebar or On This Page
 //   Y           focus the next unticked step
 //   LB / RB     previous / next chapter page
 //   LT / RT     previous / next section on this page
@@ -152,9 +154,26 @@ function closeDrawer(): void {
   document.getElementById('close-mobile-drawer')?.click();
 }
 
+// Desktop: X focuses On This Page, else the chapter sidebar (shown if hidden).
+// Narrow screens: X opens the drawer on its This Page tab.
 function openContents(): void {
   if (drawerOpen()) {
     closeDrawer();
+    return;
+  }
+  if (inSidebar) {
+    exitSidebar();
+    return;
+  }
+  if (desktopLayout() || pageTocShown()) {
+    if (pageTocShown()) {
+      enterSidebar(pageToc());
+    } else if (desktopSidebarShown()) {
+      enterSidebar();
+    } else {
+      document.getElementById('sidebar-toggle')?.click();
+      pendingSidebarEnter = true;
+    }
     return;
   }
   document.getElementById('open-mobile-drawer')?.click();
@@ -236,6 +255,16 @@ function desktopSidebarShown(): boolean {
   return !!aside && aside.offsetParent !== null && !aside.hasAttribute('inert');
 }
 
+// "On This Page" aside: shown at xl and up, outside #desktop-sidebar
+function pageToc(): HTMLElement | null {
+  return document.getElementById('page-toc');
+}
+
+function pageTocShown(): boolean {
+  const toc = pageToc();
+  return !!toc && toc.getClientRects().length > 0;
+}
+
 // The list the controller navigates right now, or null when no sidebar is open.
 function currentSidebarList(): HTMLElement | null {
   if (drawerOpen()) {
@@ -243,6 +272,9 @@ function currentSidebarList(): HTMLElement | null {
     if (sections && !sections.classList.contains('hidden')) return sections;
     return document.getElementById('tab-content-chapters');
   }
+  // Keep On This Page while it is the list being navigated, even with the chapter sidebar open
+  const toc = pageToc();
+  if (toc && sidebarList === toc && pageTocShown()) return toc;
   if (desktopSidebarShown()) return document.getElementById('sidebar-list');
   return null;
 }
@@ -290,8 +322,7 @@ function moveSidebar(delta: number): void {
   setSidebarFocus(from + delta);
 }
 
-function enterSidebar(): void {
-  const list = currentSidebarList();
+function enterSidebar(list: HTMLElement | null = currentSidebarList()): void {
   if (!list) return;
   inSidebar = true;
   sidebarList = list;
