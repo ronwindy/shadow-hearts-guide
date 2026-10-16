@@ -2,13 +2,14 @@
 // No dependencies. Inert until a controller is pressed or connected.
 //
 // Default mapping:
-//   A           tick / untick the focused step; with the sidebar focused, open it
+//   A           tick / untick the focused step; expand / collapse a focused section
+//               header; with the sidebar focused, open it
 //   B           leave the sidebar (or close the menu); otherwise go back
 //   X           open page contents (drawer, "This Page" tab)
 //   Y           focus the next unticked step
 //   LB / RB     previous / next chapter page
 //   LT / RT     previous / next section on this page
-//   D-pad       move focus between steps (hold to repeat)
+//   D-pad       move focus through section headers, steps and entry cards (hold to repeat)
 //   Left stick  scroll slowly
 //   Right stick scroll fast
 //   Start       hide/show the desktop sidebar; open/close the menu on narrow screens
@@ -77,8 +78,18 @@ function isPressed(pad: Gamepad, index: number): boolean {
   return !!button && (button.pressed || button.value > TRIGGER_THRESHOLD);
 }
 
+// D-pad sequence on the page: section headers, walkthrough steps, manual entry
+// cards and table-of-contents rows, in page order. Entries inside a collapsed
+// section are skipped.
 function stepItems(): HTMLElement[] {
-  return Array.from(document.querySelectorAll<HTMLElement>('.step-item'));
+  const selector = '.section-toggle, .category-toggle, .step-item, .gp-entry, .toc-item';
+  return Array.from(document.querySelectorAll<HTMLElement>(selector)).filter(
+    (el) => el.getClientRects().length > 0 && !insideCollapsed(el),
+  );
+}
+
+function isStep(item: HTMLElement): boolean {
+  return item.classList.contains('step-item');
 }
 
 function isChecked(item: HTMLElement): boolean {
@@ -101,15 +112,24 @@ function moveFocus(delta: number): void {
   setFocus(from + delta);
 }
 
-function toggleFocusedStep(): void {
+// A on a step ticks it; A on a section header toggles it; A on an available
+// table-of-contents row opens its guide; A on other entry cards does nothing
+function activateFocused(): void {
   const items = stepItems();
   if (focusIndex < 0 || !items[focusIndex]) {
     moveFocus(1);
     return;
   }
-  // Native click fires the change event that StepChecklist already listens to,
-  // so localStorage and visual state stay in sync with mouse and keyboard.
-  items[focusIndex].querySelector<HTMLInputElement>('.step-checkbox')?.click();
+  const item = items[focusIndex];
+  if (isStep(item)) {
+    // Native click fires the change event that StepChecklist already listens to,
+    // so localStorage and visual state stay in sync with mouse and keyboard.
+    item.querySelector<HTMLInputElement>('.step-checkbox')?.click();
+  } else if (item.classList.contains('section-toggle') || item.classList.contains('category-toggle')) {
+    item.click();
+  } else if (item.classList.contains('toc-item')) {
+    item.querySelector<HTMLAnchorElement>('a[href]')?.click();
+  }
 }
 
 function focusNextUnticked(): void {
@@ -117,7 +137,7 @@ function focusNextUnticked(): void {
   if (items.length === 0) return;
   for (let n = 1; n <= items.length; n++) {
     const index = (focusIndex + n) % items.length;
-    if (!isChecked(items[index])) {
+    if (isStep(items[index]) && !isChecked(items[index])) {
       setFocus(index);
       return;
     }
@@ -348,7 +368,7 @@ function handleButtons(pad: Gamepad): void {
       exitSidebar();
     }
   } else {
-    if (pressed(BUTTON.A)) toggleFocusedStep();
+    if (pressed(BUTTON.A)) activateFocused();
     if (pressed(BUTTON.B)) goBack();
   }
 
