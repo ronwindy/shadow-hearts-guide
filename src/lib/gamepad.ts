@@ -371,7 +371,9 @@ function scrollFromSticks(pad: Gamepad): void {
   const delta =
     (Math.abs(left) > STICK_DEAD_ZONE ? left * LEFT_STICK_SPEED : 0) +
     (Math.abs(right) > STICK_DEAD_ZONE ? right * RIGHT_STICK_SPEED : 0);
-  if (delta !== 0) window.scrollBy(0, delta);
+  // Per-frame nudges must not be animated: html has scroll-behavior: smooth, and
+  // restarting a smooth scroll every frame flattens the stick speed.
+  if (delta !== 0) window.scrollBy({ top: delta, behavior: 'instant' });
 }
 
 function showHints(): void {
