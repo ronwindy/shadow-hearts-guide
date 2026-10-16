@@ -70,6 +70,27 @@
   opacity: 0.6;
 }
 
+/* Controller focus on a walkthrough step (set by src/lib/gamepad.ts) */
+.step-item.gp-focus {
+  outline: 2px solid #fbbf24;
+  outline-offset: 4px;
+  border-radius: 0.5rem;
+}
+
+/* Button chips in the controller hint bar */
+.gp-key {
+  display: inline-block;
+  padding: 0 0.35rem;
+  margin-right: 0.15rem;
+  border-radius: 0.25rem;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #fde68a;
+  font-family: ui-monospace, monospace;
+  font-size: 0.7rem;
+  line-height: 1.25rem;
+}
+
 /* Highlighted key terms (items, places, concepts, mechanics) */
 .highlight-term {
   color: #fef08a;

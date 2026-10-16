@@ -208,6 +208,28 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         sync();
       })();
     </script>
+
+    <!-- Controller hints: shown only once a gamepad is detected (see src/lib/gamepad.ts) -->
+    <div id="gamepad-hints" class="hidden fixed bottom-3 left-1/2 -translate-x-1/2 z-40 max-w-[94vw]" role="status" aria-live="polite">
+      <div class="flex items-center gap-x-3 gap-y-1.5 flex-wrap rounded-lg border border-gold-500/40 bg-obsidian/95 backdrop-blur px-4 py-2 text-xs sm:text-sm text-slate-300 shadow-lg">
+        <span><kbd class="gp-key">A</kbd> Tick</span>
+        <span><kbd class="gp-key">B</kbd> Back</span>
+        <span><kbd class="gp-key">X</kbd> Contents</span>
+        <span><kbd class="gp-key">Y</kbd> Next unticked</span>
+        <span><kbd class="gp-key">LB</kbd><kbd class="gp-key">RB</kbd> Prev / next page</span>
+        <span><kbd class="gp-key">LT</kbd><kbd class="gp-key">RT</kbd> Prev / next section</span>
+        <span><kbd class="gp-key">D-pad</kbd> Move</span>
+        <span><kbd class="gp-key">L-stick</kbd> Scroll · <kbd class="gp-key">R-stick</kbd> Fast</span>
+        <span><kbd class="gp-key">Start</kbd> Menu</span>
+        <span><kbd class="gp-key">View</kbd> Top</span>
+        <span><kbd class="gp-key">R3</kbd> Fullscreen</span>
+        <button id="gamepad-hints-dismiss" type="button" class="ml-1 px-2 py-0.5 rounded border border-slate-700 text-slate-400 hover:text-gold-300 hover:border-gold-500/60" aria-label="Hide controller hints">Hide</button>
+      </div>
+    </div>
+
+    <script>
+      import '../lib/gamepad';
+    </script>
   </body>
 </html>
 
