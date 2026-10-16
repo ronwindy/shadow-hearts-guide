@@ -9,7 +9,7 @@
 //               sidebar); narrow screens open the drawer on its "This Page" tab.
 //               X again leaves the desktop sidebar or On This Page
 //   Y           focus the next unticked step
-//   LB / RB     previous / next chapter page
+//   LB / RB     browser back / forward
 //   LT / RT     previous / next section on this page
 //   D-pad       move focus through section headers, steps and entry cards (hold to repeat)
 //   Left stick  scroll slowly
@@ -196,11 +196,6 @@ function goBack(): void {
   } else if (history.length > 1) {
     history.back();
   }
-}
-
-function followLink(selector: string): void {
-  const link = document.querySelector<HTMLAnchorElement>(selector);
-  if (link) window.location.href = link.href;
 }
 
 // Top-level page sections only (nested CollapsibleSection blocks are skipped)
@@ -405,8 +400,8 @@ function handleButtons(pad: Gamepad): void {
 
   if (pressed(BUTTON.X)) openContents();
   if (pressed(BUTTON.Y)) focusNextUnticked();
-  if (pressed(BUTTON.LB)) followLink('a[aria-label^="Previous chapter"]');
-  if (pressed(BUTTON.RB)) followLink('a[aria-label^="Next chapter"]');
+  if (pressed(BUTTON.LB) && history.length > 1) history.back();
+  if (pressed(BUTTON.RB)) history.forward();
   if (pressed(BUTTON.LT)) jumpSection(-1);
   if (pressed(BUTTON.RT)) jumpSection(1);
   if (pressed(BUTTON.VIEW)) window.scrollTo({ top: 0, behavior: scrollBehavior() });
