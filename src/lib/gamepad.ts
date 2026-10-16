@@ -2,8 +2,8 @@
 // No dependencies. Inert until a controller is pressed or connected.
 //
 // Default mapping:
-//   A           tick / untick the focused step
-//   B           close menu, else go back
+//   A           tick / untick the focused step; with the sidebar focused, open it
+//   B           leave the sidebar (or close the menu); otherwise go back
 //   X           open page contents (drawer, "This Page" tab)
 //   Y           focus the next unticked step
 //   LB / RB     previous / next chapter page
@@ -11,9 +11,13 @@
 //   D-pad       move focus between steps (hold to repeat)
 //   Left stick  scroll slowly
 //   Right stick scroll fast
-//   Start       open / close menu
+//   Start       hide/show the desktop sidebar; open/close the menu on narrow screens
 //   View        jump to top
 //   R3          toggle fullscreen (may be refused by the browser; no fallback)
+//
+// Sidebar focus: when the sidebar or menu is open, focus moves into it. D-pad
+// moves through its chapters and categories, and A opens them. Step controls
+// (D-pad step focus, A tick) pause until focus returns to the page.
 
 // Standard mapping button indexes (Chrome / Edge / Firefox with an Xbox controller)
 const BUTTON = {
@@ -43,6 +47,7 @@ const DPAD_REPEAT_DELAY_MS = 400;
 const DPAD_REPEAT_INTERVAL_MS = 120;
 const SECTION_EDGE_PX = 16; // viewport line where a section counts as "current"
 const FOCUS_CLASS = 'gp-focus';
+const SIDEBAR_FOCUS_CLASS = 'gp-sidebar-focus';
 const HINT_DISMISS_KEY = 'gamepad-hints-dismissed';
 
 const prevPressed: boolean[] = [];
@@ -50,6 +55,11 @@ let focusIndex = -1;
 let heldDir = 0;
 let heldSince = 0;
 let lastRepeat = 0;
+
+let inSidebar = false;
+let sidebarIndex = -1;
+let sidebarList: HTMLElement | null = null;
+let pendingSidebarEnter = false;
 
 function scrollBehavior(): ScrollBehavior {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
@@ -118,13 +128,13 @@ function drawerOpen(): boolean {
   return document.getElementById('mobile-drawer-panel')?.classList.contains('translate-x-0') ?? false;
 }
 
-function toggleDrawer(): void {
-  document.getElementById(drawerOpen() ? 'close-mobile-drawer' : 'open-mobile-drawer')?.click();
+function closeDrawer(): void {
+  document.getElementById('close-mobile-drawer')?.click();
 }
 
 function openContents(): void {
   if (drawerOpen()) {
-    document.getElementById('close-mobile-drawer')?.click();
+    closeDrawer();
     return;
   }
   document.getElementById('open-mobile-drawer')?.click();
@@ -143,7 +153,7 @@ function toggleFullscreen(): void {
 
 function goBack(): void {
   if (drawerOpen()) {
-    document.getElementById('close-mobile-drawer')?.click();
+    closeDrawer();
   } else if (history.length > 1) {
     history.back();
   }
@@ -190,14 +200,122 @@ function jumpSection(dir: 1 | -1): void {
   window.scrollTo({ top, behavior: scrollBehavior() });
 }
 
-function scrollFromSticks(pad: Gamepad): void {
-  const left = pad.axes[AXIS.LEFT_Y] ?? 0;
-  const right = pad.axes[AXIS.RIGHT_Y] ?? 0;
-  const delta =
-    (Math.abs(left) > STICK_DEAD_ZONE ? left * LEFT_STICK_SPEED : 0) +
-    (Math.abs(right) > STICK_DEAD_ZONE ? right * RIGHT_STICK_SPEED : 0);
-  if (delta !== 0) window.scrollBy(0, delta);
+// ---- Sidebar (desktop aside, or mobile drawer chapters / "This Page" tab) ----
+
+function desktopSidebar(): HTMLElement | null {
+  return document.getElementById('desktop-sidebar');
 }
+
+// Desktop layout is shown at >= lg; the shell is display:none below that
+function desktopLayout(): boolean {
+  return desktopSidebar()?.offsetParent != null;
+}
+
+function desktopSidebarShown(): boolean {
+  const aside = desktopSidebar();
+  return !!aside && aside.offsetParent !== null && !aside.hasAttribute('inert');
+}
+
+// The list the controller navigates right now, or null when no sidebar is open.
+function currentSidebarList(): HTMLElement | null {
+  if (drawerOpen()) {
+    const sections = document.getElementById('tab-content-sections');
+    if (sections && !sections.classList.contains('hidden')) return sections;
+    return document.getElementById('tab-content-chapters');
+  }
+  if (desktopSidebarShown()) return document.getElementById('sidebar-list');
+  return null;
+}
+
+// True when el sits inside a collapsed <details>. Newer Chrome keeps the closed
+// content laid out (content-visibility), so getClientRects() alone is not enough.
+// A category's own <summary> is never hidden by its own collapsed state.
+function insideCollapsed(el: HTMLElement): boolean {
+  let details = el.closest('details');
+  if (details && details.firstElementChild === el) {
+    details = details.parentElement?.closest('details') ?? null;
+  }
+  while (details) {
+    if (!details.open) return true;
+    details = details.parentElement?.closest('details') ?? null;
+  }
+  return false;
+}
+
+// Category summaries and chapter links that are actually shown (skips collapsed categories)
+function sidebarItems(list: HTMLElement | null): HTMLElement[] {
+  if (!list) return [];
+  return Array.from(list.querySelectorAll<HTMLElement>('summary, a[href]')).filter(
+    (el) => el.getClientRects().length > 0 && !insideCollapsed(el),
+  );
+}
+
+function clearSidebarFocus(): void {
+  document.querySelectorAll(`.${SIDEBAR_FOCUS_CLASS}`).forEach((el) => el.classList.remove(SIDEBAR_FOCUS_CLASS));
+}
+
+function setSidebarFocus(index: number): void {
+  const items = sidebarItems(sidebarList);
+  if (items.length === 0) return;
+  sidebarIndex = Math.max(0, Math.min(items.length - 1, index));
+  clearSidebarFocus();
+  items[sidebarIndex].classList.add(SIDEBAR_FOCUS_CLASS);
+  items[sidebarIndex].scrollIntoView({ block: 'nearest', behavior: scrollBehavior() });
+}
+
+function moveSidebar(delta: number): void {
+  const items = sidebarItems(sidebarList);
+  if (items.length === 0) return;
+  const from = sidebarIndex < 0 ? (delta > 0 ? -1 : items.length) : sidebarIndex;
+  setSidebarFocus(from + delta);
+}
+
+function enterSidebar(): void {
+  const list = currentSidebarList();
+  if (!list) return;
+  inSidebar = true;
+  sidebarList = list;
+  // Start on the current chapter so the user sees where they are
+  const items = sidebarItems(list);
+  const active = items.findIndex(
+    (el) => el.tagName === 'A' && el.closest('li')?.getAttribute('data-active') === 'true',
+  );
+  setSidebarFocus(active >= 0 ? active : 0);
+}
+
+function exitSidebar(): void {
+  inSidebar = false;
+  sidebarIndex = -1;
+  sidebarList = null;
+  clearSidebarFocus();
+}
+
+// A opens a chapter link or expands a category (native click does both)
+function activateSidebarItem(): void {
+  sidebarItems(sidebarList)[sidebarIndex]?.click();
+}
+
+// Start: hide the desktop sidebar, show it (focused) when hidden, or open the menu on narrow screens
+function handleStart(): void {
+  if (drawerOpen()) {
+    closeDrawer();
+    exitSidebar();
+    return;
+  }
+  if (desktopSidebarShown()) {
+    document.getElementById('sidebar-toggle')?.click();
+    exitSidebar();
+    return;
+  }
+  if (desktopLayout()) {
+    document.getElementById('sidebar-toggle')?.click();
+  } else {
+    document.getElementById('open-mobile-drawer')?.click();
+  }
+  pendingSidebarEnter = true;
+}
+
+// ---- Input handling ----
 
 function handleDpad(pad: Gamepad): void {
   const dir = isPressed(pad, BUTTON.DPAD_UP) ? -1 : isPressed(pad, BUTTON.DPAD_DOWN) ? 1 : 0;
@@ -206,40 +324,54 @@ function handleDpad(pad: Gamepad): void {
     return;
   }
   const now = performance.now();
+  const step = (d: number) => (inSidebar ? moveSidebar(d) : moveFocus(d));
   if (dir !== heldDir) {
     heldDir = dir;
     heldSince = now;
     lastRepeat = now;
-    moveFocus(dir);
+    step(dir);
   } else if (now - heldSince > DPAD_REPEAT_DELAY_MS && now - lastRepeat > DPAD_REPEAT_INTERVAL_MS) {
     lastRepeat = now;
-    moveFocus(dir);
+    step(dir);
   }
 }
 
 function handleButtons(pad: Gamepad): void {
   const pressed = (index: number) => isPressed(pad, index) && !prevPressed[index];
 
-  if (drawerOpen()) {
-    // While the menu is open, only B and Start act; the page behind it stays still
-    if (pressed(BUTTON.B) || pressed(BUTTON.START)) toggleDrawer();
-    return;
+  if (pressed(BUTTON.START)) handleStart();
+
+  if (inSidebar) {
+    if (pressed(BUTTON.A)) activateSidebarItem();
+    if (pressed(BUTTON.B)) {
+      if (drawerOpen()) closeDrawer();
+      exitSidebar();
+    }
+  } else {
+    if (pressed(BUTTON.A)) toggleFocusedStep();
+    if (pressed(BUTTON.B)) goBack();
   }
 
-  if (pressed(BUTTON.A)) toggleFocusedStep();
-  if (pressed(BUTTON.B)) goBack();
   if (pressed(BUTTON.X)) openContents();
   if (pressed(BUTTON.Y)) focusNextUnticked();
   if (pressed(BUTTON.LB)) followLink('a[aria-label^="Previous chapter"]');
   if (pressed(BUTTON.RB)) followLink('a[aria-label^="Next chapter"]');
   if (pressed(BUTTON.LT)) jumpSection(-1);
   if (pressed(BUTTON.RT)) jumpSection(1);
-  if (pressed(BUTTON.START)) toggleDrawer();
   if (pressed(BUTTON.VIEW)) window.scrollTo({ top: 0, behavior: scrollBehavior() });
   if (pressed(BUTTON.R3)) toggleFullscreen();
 
   handleDpad(pad);
-  scrollFromSticks(pad);
+  if (!drawerOpen()) scrollFromSticks(pad);
+}
+
+function scrollFromSticks(pad: Gamepad): void {
+  const left = pad.axes[AXIS.LEFT_Y] ?? 0;
+  const right = pad.axes[AXIS.RIGHT_Y] ?? 0;
+  const delta =
+    (Math.abs(left) > STICK_DEAD_ZONE ? left * LEFT_STICK_SPEED : 0) +
+    (Math.abs(right) > STICK_DEAD_ZONE ? right * RIGHT_STICK_SPEED : 0);
+  if (delta !== 0) window.scrollBy(0, delta);
 }
 
 function showHints(): void {
@@ -268,6 +400,17 @@ function tick(): void {
   const pad = activePad();
   if (pad) {
     showHints();
+
+    // Opening the sidebar or menu moves focus into it (drawer animates in a frame later)
+    if (pendingSidebarEnter && (drawerOpen() || desktopSidebarShown())) {
+      pendingSidebarEnter = false;
+      enterSidebar();
+    }
+    // Any open menu takes focus, including one opened by X
+    if (!inSidebar && drawerOpen()) enterSidebar();
+    // Leave the sidebar if it closed or switched to another list
+    if (inSidebar && currentSidebarList() !== sidebarList) exitSidebar();
+
     handleButtons(pad);
     for (let i = 0; i < pad.buttons.length; i++) prevPressed[i] = isPressed(pad, i);
   } else {

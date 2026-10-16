@@ -77,6 +77,14 @@
   border-radius: 0.5rem;
 }
 
+/* Controller focus on a sidebar or menu row (set by src/lib/gamepad.ts) */
+.gp-sidebar-focus {
+  outline: 2px solid #fbbf24;
+  outline-offset: -2px;
+  border-radius: 0.25rem;
+  background-color: rgba(251, 191, 36, 0.08);
+}
+
 /* Button chips in the controller hint bar */
 .gp-key {
   display: inline-block;
