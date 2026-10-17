@@ -16,6 +16,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { flattenGuide } from "../../guide-transformer/scripts/richtext.mjs";
 import { checkTextFidelity } from "./text_fidelity.mjs";
+import { loadMerges, expectedNavId } from "./merges.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 export const ROOT_DIR = resolve(here, "..", "..", "..", "..");
@@ -37,14 +38,6 @@ const isDict = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
 /** Ordered list of values as a comparable key (Python tuples compared by value). */
 const rowKey = (rows) => JSON.stringify(rows);
 
-function readQaStatus(root) {
-  try {
-    return JSON.parse(readFileSync(join(root, "qa-status.json"), "utf8"));
-  } catch {
-    return {};
-  }
-}
-
 /** Verifies that a structured guide accurately and faithfully preserves canonical source knowledge. */
 export function verifyGuide(canonical, structured, root = ROOT_DIR) {
   const guide = flattenGuide(structured.guide ?? {}); // block-array rich text -> markdown-lite
@@ -63,9 +56,9 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
     });
   };
 
-  // 1. Navigation Check (links to sections merged elsewhere are expected to differ)
-  const isMerged = (secId) => readQaStatus(root)[secId]?.status === "MERGED";
-
+  // 1. Navigation Check. A canonical link to a merged-away section must resolve to its merge target.
+  const secId = String(canonical.id ?? guide.id ?? "");
+  const merges = loadMerges(root);
   const cNav = canonical.navigation ?? {};
   const gNav = guide.navigation ?? {};
   for (const direction of ["prev", "next"]) {
@@ -74,9 +67,11 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
     if (truthy(cLink) && !truthy(gLink)) {
       addFinding("high", "navigation", `navigation.${direction}`, cLink, null, `Missing ${direction} navigation link`);
     } else if (truthy(cLink) && truthy(gLink)) {
-      if (cLink.id !== gLink.id && !isMerged(cLink.id)) {
-        addFinding("medium", "navigation", `navigation.${direction}.id`, cLink.id, gLink.id,
-          `Navigation ${direction} ID mismatch`);
+      const expected = expectedNavId(root, merges, secId, cLink, direction);
+      if (gLink.id !== expected) {
+        const why = cLink.id === expected ? "" : ` (canonical ${cLink.id} is merged; see structured-content/merges.json)`;
+        addFinding("medium", "navigation", `navigation.${direction}.id`, expected, gLink.id,
+          `Navigation ${direction} ID mismatch${why}`);
       }
     }
   }
@@ -84,7 +79,6 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
   // 1b. Reference sections carry canonical text verbatim; any drift is a fidelity defect.
   // Applies to scaffolded appendices (a-1-*, except the a-1-00 index) and to any file that
   // carries reference_blocks; hand-structured intro pages (header, TOC) are exempt.
-  const secId = String(canonical.id ?? guide.id ?? "");
   const isVerbatimReference = (secId.startsWith("a-1-") && secId !== "a-1-00") || truthy(guide.reference_blocks);
   if (guide.type === "reference" && isVerbatimReference) {
     const refText = (guide.reference_blocks ?? []).map((b) => b.text ?? "").join("");
@@ -375,10 +369,9 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
 
   // 11. Step prose follows the canonical prose (ordered word diff; field checks above miss text).
   // Sections merged into this one (e.g. a hub's transition sentence moved to step 1) count as source.
-  const qaAll = readQaStatus(root);
   const mergedTexts = [];
-  for (const [mid, entry] of Object.entries(qaAll)) {
-    if (isDict(entry) && entry.status === "MERGED" && entry.merged_into === secId) {
+  for (const [mid, entry] of Object.entries(merges)) {
+    if (entry.into === secId) {
       const dir = join(root, "canonical-sources", "sections");
       const files = existsSync(dir)
         ? readdirSync(dir).filter((f) => f.startsWith(`${mid}-`) && f.endsWith(".json")).sort()

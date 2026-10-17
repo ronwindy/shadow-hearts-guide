@@ -7,7 +7,7 @@
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 2
+      "low": 4
     },
     "findings": [
       {
@@ -33,7 +33,35 @@
           "text": "The Badger Devil uses a Fire Ball attack that doesn't hit for much damage at all"
         },
         "generated": {
-          "text": "The Badger Devil uses a Fire Ball attack that doesn't hit for much damage at all"
+          "text": "Threats The Badger Devil uses a Fire Ball attack that doesn't hit for much damag"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-003",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Dehuai].strategy",
+        "source": {
+          "text": "Another Fire-based boss? Don't mind if I do! Makes Margarete that much more usef"
+        },
+        "generated": {
+          "text": "Another Fire-based boss? Don't mind if I do! Threats Dehuai's fire attacks, Magn"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-004",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Yamaraja: Calamity].strategy",
+        "source": {
+          "text": "Yamaraja will most likely start off with the Crimson Flame spell, dealing MAJOR "
+        },
+        "generated": {
+          "text": "Threats Yamaraja will most likely start off with the Crimson Flame spell, dealin"
         },
         "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
         "recommended_owner": "Guide Transformer"

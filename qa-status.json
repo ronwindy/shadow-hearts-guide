@@ -43,14 +43,9 @@
       "medium": 0
     }
   },
-  "w-1-00": {
-    "merged_into": "i-1-01",
-    "note": "Compass & Orientation moved to Game Manual; overview page removed",
-    "status": "MERGED"
-  },
   "w-1-01": {
-    "checked_at": "2026-10-15T23:33:45",
-    "content_hash": "a536cbdacddfcfb0",
+    "checked_at": "2026-10-18T00:18:53",
+    "content_hash": "20aabac70990b6a7",
     "status": "PASS",
     "summary": {
       "critical": 0,
@@ -60,8 +55,8 @@
     }
   },
   "w-1-02": {
-    "checked_at": "2026-10-15T23:43:50",
-    "content_hash": "c8298ec841a1d2a4",
+    "checked_at": "2026-10-18T00:18:53",
+    "content_hash": "94bc49d4bdcf6839",
     "status": "PASS",
     "summary": {
       "critical": 0,
@@ -159,23 +154,18 @@
     }
   },
   "w-1-11": {
-    "checked_at": "2026-10-13T22:07:25",
-    "content_hash": "d48e40bd98a5113c",
+    "checked_at": "2026-10-18T00:18:54",
+    "content_hash": "ce0aa99547021d34",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
-      "low": 2,
+      "low": 4,
       "medium": 0
     }
   },
-  "w-2-00": {
-    "merged_into": "w-2-01",
-    "note": "Single transition sentence moved to Prague (1) as step 1; overview page removed",
-    "status": "MERGED"
-  },
   "w-2-01": {
-    "checked_at": "2026-10-13T21:48:46",
+    "checked_at": "2026-10-18T00:32:52",
     "content_hash": "a36cf18503da9806",
     "status": "PASS",
     "summary": {
@@ -241,8 +231,8 @@
     }
   },
   "w-2-07": {
-    "checked_at": "2026-10-13T22:07:25",
-    "content_hash": "d2c44fe2a7e839df",
+    "checked_at": "2026-10-18T00:18:54",
+    "content_hash": "5533d489788bbdeb",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
@@ -307,13 +297,13 @@
     }
   },
   "w-s-02": {
-    "checked_at": "2026-10-13T22:07:25",
-    "content_hash": "4049bb36eb3290fa",
-    "status": "PASS",
+    "checked_at": "2026-10-18T00:18:54",
+    "content_hash": "2bdbc20d9ca78571",
+    "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
-      "low": 0,
+      "low": 1,
       "medium": 0
     }
   },

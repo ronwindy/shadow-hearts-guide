@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadMerges } from "../.claude/skills/qa/scripts/merges.mjs";
 
 export const ROOT_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 export const QA_STATUS_FILE = "qa-status.json";
@@ -118,9 +119,8 @@ export function auditSection(root, sec, qaData = {}) {
 export function computeProjectStatus(root = ROOT_DIR) {
   const { sections: sectionsIndex } = loadCanonicalIndex(root);
   const qaData = loadQaStatus(root);
-  // Sections whose content was merged into another page are marked
-  // {"status": "MERGED", "merged_into": "<id>"} in qa-status.json and excluded here.
-  const merged = new Set(Object.keys(qaData).filter((k) => qaData[k]?.status === "MERGED"));
+  // Sections whose content was merged into another page are listed in structured-content/merges.json.
+  const merged = new Set(Object.keys(loadMerges(root)));
   const sections = sectionsIndex.filter((s) => !merged.has(s.id)).map((s) => auditSection(root, s, qaData));
   const total = sections.length;
   const count = (pred) => sections.filter(pred).length;

@@ -1,49 +1,50 @@
 {
   "section_id": "w-1-01",
   "verdict": "PASS_WITH_NOTES",
+  "structured_sha256": "20aabac70990b6a7f0b232ca4166f9784f0cf1c1a2f45b5e171ea84f5aee049c",
   "spot_checked": [
-    "initial equipment note: Leather Gloves, Cotton Shirt, Death Emperor soul, Talisman valuable",
-    "enemy table: #001 Wind Shear HP 10 Wind; Roger Bacon Dark, Cannot be defeated",
-    "Thera Leaf (aisle) and Mana Leaf (booth) locations and order",
-    "Judgment Ring note: CROSS button, highlighted areas, smaller red area, miss = miss completely",
-    "Roger Bacon unwinnable note: Revelation ends the battle",
-    "World Map save note and only destination Plains",
-    "step order 1-9 matches source order",
-    "no bosses in source; bosses list empty, Roger Bacon not flagged as boss (matches table)"
+    "Overview items/equipment/valuables/souls vs initial_setup and items_summary",
+    "Initial setup note (Rude Hero, Leather Gloves, Cotton Shirt, Death Emperor, Talisman)",
+    "Enemy table: #001 Wind Shear HP 10 Wind; Roger Bacon Dark, Cannot be defeated",
+    "Step order: intro, Wind Shear battle, Thera Leaf (aisle), Mana Leaf (booth), Roger Bacon battle, World Map, Plains",
+    "Judgment Ring NOTE wording and critical-attack red area",
+    "Thera Leaf / Mana Leaf locations",
+    "Roger Bacon unwinnable warning and Revelation ending",
+    "World Map save tip and single exit to the Plains",
+    "Navigation prev/next vs canonical navigation block"
   ],
   "findings": [
     {
+      "severity": "medium",
+      "category": "altered",
+      "location": "guide.navigation.prev",
+      "canonical": "navigation.prev = w-1-00 \"Walkthrough - Asia\" (sections/w-1-00-walkthrough-asia.json)",
+      "structured": "navigation.prev = i-1-01 \"Game Manual / Instructions\" (sections/i-1-01-game-manual-instructions.json)",
+      "issue": "The previous-page link differs from the canonical navigation block. This is page metadata, not a game fact, but it is an unexplained change to the stated relationship. Confirm whether it is intentional; if not, restore w-1-00."
+    },
+    {
       "severity": "low",
-      "category": "omitted",
-      "location": "steps[0] (id 1)",
-      "canonical": "After watching the greatest intro of video game history, head down to the next train car.",
-      "structured": "Watch the opening intro sequence.",
-      "issue": "The author's opinion 'greatest intro of video game history' is dropped; no game fact is lost."
+      "category": "invented",
+      "location": "guide.route[0..2]",
+      "canonical": "Source only says \"the next train car\" and \"the front\"; no car names are given.",
+      "structured": "\"Initial Train Car\", \"Next Train Car\", \"Front Train Car\"",
+      "issue": "Route labels are presentation names not present in the source. They do not change any fact, but they are not stated by the source."
     },
     {
       "severity": "low",
       "category": "altered",
-      "location": "steps[2].notes[0] (Judgment Ring Mechanics)",
-      "canonical": "Once you get used to the system more, feel free to try to time your attacks just right to succeed in more critical attacks in the smaller red area.",
-      "structured": "Once you get used to the system, try timing your attacks just right in the smaller red area for more critical attacks.",
-      "issue": "Light tightening ('more', 'feel free to' dropped); meaning preserved."
+      "location": "guide.steps[2].notes[0].text",
+      "canonical": "\"Once you get used to the system more, feel free to try to time your attacks just right to succeed in more critical attacks in the smaller red area.\"",
+      "structured": "\"Once you get used to the system, try timing your attacks just right in the smaller **red area** for more critical attacks.\"",
+      "issue": "Dropped \"more\" and softened \"feel free to try\" to \"try\". The meaning (optional timing for critical hits in the small red area) is intact."
     },
     {
       "severity": "low",
       "category": "other",
-      "location": "steps[5] (id 6)",
-      "canonical": "which will lead to more events and a battle with Roger Bacon.",
-      "structured": "to trigger story events and enter battle with Roger Bacon.",
-      "issue": "'story' qualifier added to events; harmless wording drift."
-    },
-    {
-      "severity": "low",
-      "category": "other",
-      "location": "navigation.prev",
-      "canonical": "prev: w-1-00 Walkthrough - Asia",
-      "structured": "prev: i-1-01 Game Manual / Instructions",
-      "issue": "Prev link differs from canonical; w-1-00 has no structured section, so this is presumably an intentional remap to an existing page. Confirm intended."
+      "location": "guide.objectives[2]",
+      "canonical": "Roger Bacon battle: \"It's impossible to win this battle ... until he uses Revelation to end the battle.\"",
+      "structured": "\"Survive the confrontation with **Roger Bacon**\"",
+      "issue": "\"Survive\" is a reasonable summary of an unwinnable battle that ends on Revelation, but it is a paraphrase the source does not use. Consider wording closer to the source."
     }
-  ],
-  "structured_sha256": "a870c564b08d2c674bbe3d5423a5b0cbecc59ec623b913b77aa748f7d884050d"
+  ]
 }

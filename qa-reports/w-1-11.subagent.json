@@ -1,36 +1,38 @@
 {
   "section_id": "w-1-11",
   "verdict": "PASS_WITH_NOTES",
+  "structured_sha256": "ce0aa99547021d34db267a953a98b75a48977aa7a1337de42ac7b04ee53f7ef0",
   "spot_checked": [
-    "overview save_points (3 entries) vs guide.save_points",
-    "all 10 enemy rows: numbers, names, HP, class, notes",
-    "shop: all 35 items and prices (TalismanOfLuck/Mercy and RosewoodBracelet only re-spaced)",
-    "all 11 overview items/valuables present as step rewards and in items_summary, with matching step locations",
-    "Lottery Member No. 09 prize table (Red/Yellow/Turquoise/Green/White) and Pocket Watch / Warlock Earrings +20% / -20% caveat",
-    "boss stats: Yamaraja: Stone 1800 HP Fire, 2600 EXP, 6000 Cash, party 20/19/18, drop B.Dragon Horn; Badger Devil 700 HP, 1000 EXP, 600 Cash, drop Seal of Luck; Dehuai 1700 HP, 3500 EXP, 7000 Cash, party 22/20/19, drop Hermit's Staff; Yamaraja: Calamity 3000 HP class None, 6000 EXP, 11000 Cash, party 22/21/20, drop Fifth Key",
-    "boss strategy text for all four fights, including Instant Death options for Badger Devil and the Petrification/Silence warning",
-    "3 NOTE callouts (Pure Extract 10,000 Cash; point of no return + four Evil enemies in the Graveyard; two party members leaving temporarily)",
-    "step order 1-15 against canonical walkthrough order, including the puzzle sequence (Black Tortoise, Blue Dragon, Red Phoenix, White Tiger)",
-    "save prompts: after Dehuai, before the Lottery Member, at top of tower, after Badger Devil",
-    "Yamaraja: Stone + Badger Devil merged bosses[] entry vs step 2 encounter and step 8 sub-boss card (known importer merge, not flagged)",
-    "LaLa mojibake rendered as LàLà and ÀLÀ in step 4 as the canonical shows"
+    "Overview save points (3), lottery member, items and valuables lists",
+    "Enemy table: all 10 rows (numbers, HP, class, notes incl. Ring anomalies and Petrification & Silence)",
+    "Shop inventory: all 35 items and prices, shop name",
+    "Step 1 loot order (Seal of Life, Third Key, 15,000+ cash note)",
+    "Step 3 full loot sequence (clockwise chest, eastern staircase, Black Tortoise, Pure Extract, B. Dragon VP, 10,000 cash note)",
+    "Steps 4-7 puzzle order (Erotic Book, R. Phoenix/Blue Dragon, W. Tiger/Red Phoenix, White Tiger swap, Blue Dragon altar)",
+    "Step 9 point-of-no-return note and Graveyard reminder",
+    "Step 11-12 party choice, Hermit's Staff, Lottery Member No. 09 prize table (5 colors)",
+    "Step 13 shop advice (Bell/Mirror Bracelets, Petrification and Silence)",
+    "Step 14 save instruction and temporary party-member note",
+    "Boss stats, EXP, cash, drops and party levels/equipment/fusions for Yamaraja: Stone, Badger Devil, Dehuai, Yamaraja: Calamity",
+    "Boss strategy text for all four bosses, including the Badger Devil Instant Death options and Yamaraja: Calamity healing/MP advice",
+    "Boss coverage: all four canonical bosses present as step.boss (steps 2, 8, 10, 14)"
   ],
   "findings": [
     {
       "severity": "low",
-      "category": "omitted",
-      "location": "bosses[] / steps 2, 10, 14 boss cards (party)",
-      "canonical": "Each boss card lists per-character equipment (e.g. Hand Needle, Studded Harness, Warlock Earrings, Bell Bracelet, Mirror Bracelet ...) and available fusions (Man Dragon, Raging Tiger, Inferno; Heaven's Fiend for Calamity).",
-      "structured": "party[] keeps only name and level; equipment and fusion lists are not present.",
-      "issue": "The source's recommended loadout per boss is dropped. The strategy text still names the fusions and step 13 names the bracelets, so no instruction is lost outright, but the Yamaraja: Calamity loadout (Bell/Mirror Bracelet on everyone, Warlock Earrings on Yuri, Hermit's Staff on Zhuzhen) is not shown as a table. Appears to be a schema-level limitation (party has only name/level); noting for the owner."
+      "category": "other",
+      "location": "navigation.next",
+      "canonical": "w-2-00 \"Walkthrough - Europe\" (sections/w-2-00-walkthrough-europe.json)",
+      "structured": "w-2-01 \"Prague (1)\" (sections/w-2-01-prague-1.json)",
+      "issue": "The structured next link skips the canonical next target w-2-00. No structured file exists for w-2-00 (its canonical source does), so the skip may be deliberate, but it diverges from the canonical navigation without a note. Navigation metadata only; no game content affected. Caller to confirm the intended target."
     },
     {
       "severity": "low",
       "category": "other",
-      "location": "guide.objectives[0]",
-      "canonical": "Yamaraja: Stone (BOSS) and Badger Devil (SUB-BOSS) are separate fights, in different places in the walkthrough.",
-      "structured": "Defeat Yamaraja: Stone, Badger Devil",
-      "issue": "The merged importer name is carried into the objective, so it reads as one fight and omits the fact that Badger Devil is a later sub-boss (step 8). Consider splitting the objective into two entries; no facts are wrong."
+      "location": "items_summary, items, shops[0].inventory, steps[*].rewards",
+      "canonical": "TalismanOfWisdom, TalismanOfLuck, TalismanOfMercy, RosewoodBracelet (raw all-caps/run-together tags)",
+      "structured": "Talisman of Wisdom, Talisman of Luck, Talisman of Mercy, Rosewood Bracelet",
+      "issue": "Item names were re-spaced to readable form. The same item in the same place, so no fact changed, but it is a name-spelling normalization rather than a verbatim copy. Acceptable as presentation; noted for awareness given the no-renaming rule."
     }
   ]
 }

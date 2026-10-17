@@ -1,0 +1,12 @@
+{
+  "merges": {
+    "w-1-00": {
+      "into": "i-1-01",
+      "reason": "Compass & Orientation moved to Game Manual; overview page removed"
+    },
+    "w-2-00": {
+      "into": "w-2-01",
+      "reason": "Single transition sentence moved to Prague (1) as step 1; overview page removed"
+    }
+  }
+}

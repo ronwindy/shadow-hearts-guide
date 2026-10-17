@@ -7,7 +7,8 @@ import { join, relative } from "node:path";
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { ROOT_DIR, loadQaStatus, recordQaResult, auditSection, computeProjectStatus,
-  renderCompactSummary, writeStatusMarkdown, pyJson } from "./status.mjs";
+  renderCompactSummary, writeStatusMarkdown, pyJson, loadCanonicalIndex } from "./status.mjs";
+import { loadMerges, navigationProblems } from "../.claude/skills/qa/scripts/merges.mjs";
 import { getSectionPaths, getCanonicalManifest } from "./sections.mjs";
 import { boldFile, buildDictionary, compilePattern } from "./bold_terms.mjs";
 import { scaffoldGuide } from "../.claude/skills/guide-transformer/scripts/scaffold_structured_guide.mjs";
@@ -109,7 +110,11 @@ export function runLint(sec) {
     return true;
   }
   const guide = JSON.parse(readFileSync(structuredPath, "utf8")).guide ?? {};
-  const findings = lintGuide(guide);
+  const merges = loadMerges(ROOT_DIR);
+  const knownIds = new Set(loadCanonicalIndex(ROOT_DIR).sections.map((s) => s.id));
+  const navFindings = navigationProblems(guide.navigation, knownIds, merges)
+    .map((text) => ({ check: "navigation", severity: "warn", location: "navigation", text }));
+  const findings = [...lintGuide(guide), ...navFindings];
   const warns = findings.filter((f) => f.severity === "warn");
   console.log(`\n--- Lint: ${sec.id} --- ${warns.length} warning(s), ${findings.length - warns.length} info`);
   for (const f of findings) {
@@ -242,6 +247,15 @@ function remindIndependentQa(sec) {
 }
 
 /** Prints the exact prompt for the independent QA subagent and the path it should write to. */
+/** Prompt lines describing merges that touch this section (empty when none). */
+function mergeNotes(sec) {
+  const notes = Object.entries(loadMerges(ROOT_DIR))
+    .filter(([from, m]) => from === sec.id || m.into === sec.id)
+    .map(([from, m]) => `\n  merge map: ${from} is folded into ${m.into} (${m.reason ?? "no reason recorded"}). ` +
+      `A navigation link to ${from} is correct when it points to ${m.into}; do not flag it.`);
+  return notes.join("");
+}
+
 export function printSubagentPrompt(sec) {
   const { canonicalPath, structuredPath } = getSectionPaths(sec);
   if (!existsSync(structuredPath)) {
@@ -255,7 +269,7 @@ export function printSubagentPrompt(sec) {
 Compare the canonical source with the structured guide and judge whether the presentation changed
 while the source meaning stayed intact (names, numbers, conditions, warnings, choices, bosses,
 items, save points, ordering). Do not edit any file except the verdict.
-Not a finding: a section's heading location that is absent from \`route\` (side quests).
+Not a finding: a section's heading location that is absent from \`route\` (side quests).${mergeNotes(sec)}
 
   canonical:  ${posix(canonicalPath)}
   structured: ${posix(structuredPath)}

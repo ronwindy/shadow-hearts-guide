@@ -2,37 +2,31 @@
   "section_id": "w-2-07",
   "verdict": "PASS_WITH_NOTES",
   "spot_checked": [
-    "Navigation prev w-2-06 / next w-2-08 and source metadata",
-    "Save point (Inn) present in guide.save_points and step 1/8 save mentions",
-    "All 8 overview items/equipment present in items_summary and awarded in steps 1, 2, 3, 5, 7",
-    "Lottery Member No. 06 (Hooked-nose Robin) in items_summary and step 8, prize table (Red/Yellow/Turquoise/Green/White) matches",
-    "Enemy table: #059 Bifronze 165 Dark, #060 Camazotz 158 Wind, Olga 3300 Dark Inflicts Poison, #109-#112 Gusts Varies",
-    "Olga boss card: HP 3300, class Dark, drop Small Jug, party levels 27/26/26, all equipment and fusions, 16000 EXP, 14500 Cash",
-    "Olga strategy: every sentence preserved in order, list split without altering names or numbers",
-    "Boss placed inside chronological step 6 (not hoisted)",
-    "Malice prize table: all 42 rows (21 left + 21 right) with identical ranges and prizes, left column then right column",
-    "Gust Ein/Zwei/Drei/Vier Malice colour conditions and Malice warnings (R1 Run Away, red level, will die)",
-    "Merchant shop: 37 items with identical prices; only re-spacing of run-together names",
-    "Step ordering 1-9 matches canonical prose order",
-    "Spin Ring 3 / NINE areas, Meiyuan, Silent Peddler, Hollows/Blue Castle recommendation, Accelerator/Pedometer notes"
+    "Opening step 1 narrative and Lottery Ticket location",
+    "Step 2 Tea of the Holy One dresser location",
+    "Step 3 shop access, Bifronz battle, Margarete re-equip note, Shell/Cosmic Bracelet poison note",
+    "Step 4 party recommendation, Meiyuan, Camazotz/Dark-Wind level note, Light Fusion/Blue Castle note",
+    "Step 5 Huge Jug, second Lottery Ticket, Spin Ring 3 with nine areas",
+    "Step 6 Olga sub-boss: HP 3300, Dark, Small Jug, 16000 EXP, 14500 Cash, three-member party and equipment/fusions",
+    "Olga strategy text, sentence by sentence (Black Fog, Nova, Icy Breath, Mind Assault, Yuri, Alice, Margarete, healing rules)",
+    "Step 7 Seal of the Soul and Jasper Cape confession booth chest",
+    "Step 8 save at Inn, Lottery Member No. 06, Accelerator/Pedometer note, Lottery prize colour table",
+    "Step 9 exit to World Map and London Old Castle Street save",
+    "Malice Meter opening note, Gust colour ranges, Malice prize table (all 50 rows, both columns, in order), Malice max-100 note",
+    "Overview save points, lottery, items, equipment lists against items_summary",
+    "Enemy table: #059, #060, Olga (boss, Inflicts Poison), #109-#112 values and notes",
+    "Tight-lipped Merchant inventory: all 40 names and prices in source order",
+    "Boss card stats and bosses/step.boss presence (boss present as step 6 boss)"
   ],
   "findings": [
     {
       "severity": "low",
-      "category": "other",
-      "location": "steps[4].description item 5",
-      "canonical": "you have to hit _NINE_ areas before you can gain entrance",
-      "structured": "you have to hit _NINE_ areas before you can gain entrance.",
-      "issue": "Source emphasis marker _NINE_ was left as literal underscores instead of being converted to bold like other emphasis; cosmetic only, meaning intact. Also the sentence repeats 'gain entrance' twice after being joined with the preceding clause, as in the source."
-    },
-    {
-      "severity": "low",
-      "category": "other",
-      "location": "shops[0].name vs steps[2].description",
-      "canonical": "Shop header 'Tight-lipped Merchant'; prose 'talk to the Silent Peddler to find out that he has a shop'",
-      "structured": "Tight-lipped Merchant / Silent Peddler",
-      "issue": "Source uses two different names for the shopkeeper; both preserved verbatim and not reconciled, which is correct. Noted only as a source inconsistency, no fix needed."
+      "category": "order",
+      "location": "steps[5] (step 6) boss.strategy, Yuri / Alice / Healing assignments bullets",
+      "canonical": "Final paragraph: \"If a single ally just needs healed, have Alice do it. If two people need it, have Alice and Margarete do it. If all three need it, then have Yuri do it ... I hate taking turns away from Yuri ... can do anything about it efficiently.\"",
+      "structured": "The \"I hate taking turns away from Yuri...\" sentence is under the Yuri group; \"If a single ally just needs healed\" is under the Alice group; \"If two people / If all three\" are under Healing assignments.",
+      "issue": "The sentences are all present and unchanged, but the boss strategy prose has been regrouped so the closing healing paragraph is split across three headed groups and one sentence moves earlier. The wording is faithful, so this is presentation only; noted for the transformer to confirm the regrouping is intended."
     }
   ],
-  "structured_sha256": "30b32494997fb32453732f6a2d52e0f9c6861558f05443288754c5607dde3120"
+  "structured_sha256": "5533d489788bbdeb3ff5c7f6560e93fab65eb527d05c51124700ff3b242a190f"
 }

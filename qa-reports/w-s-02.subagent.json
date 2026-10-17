@@ -1,19 +1,61 @@
 {
   "section_id": "w-s-02",
-  "verdict": "PASS",
+  "verdict": "PASS_WITH_NOTES",
+  "structured_sha256": "2bdbc20d9ca785717a4f96b7c16265ec55310527e58f1dea844419afdc6d8aa5",
   "spot_checked": [
-    "step 2 choices after_item=3: anchor follows 'Board it; you'll be asked if you want to launch the ship.' (source item 3), box precedes 'Choose 2...' as in source; both options verbatim",
-    "step 9 choices after_item=2: anchor follows 'Enter?' (source item 2) and precedes 'Wugui's room for a scene and a boss battle.' as in source; both options verbatim",
-    "step 2 'Choose 2' outcome kept in text; no outcome invented for the step 9 choices",
-    "save point 'Outside of Wugui's room' and 'save your game here' in step 8",
-    "overview items/equipment/valuables/lottery all present in items_summary and awarded in steps 3, 5, 6, 7, 8 with exact names",
-    "Lottery Member No. 10 prize table: 5 colors/prizes match source order",
-    "enemies #036-#042: HP, class, notes, boss flag all match canonical",
-    "Cursed Puppet boss: HP 1080, Dark, drop Seal of Wisdom, party levels/equipment/fusions, exp 2000, cash 6000, strategy text fully preserved incl. source 'Yamaraja' wording",
-    "Tight-lipped Merchant shop: all 29 items and prices match (camel-case names only re-spaced)",
-    "NOTE about Leonardo's Bears preserved in step 8, ahead of the Wugui's room step",
-    "step ordering and list-splitting preserve names, numbers and conditions; no extra facts added"
+    "Intro and ferry steps 1-2: Alice/Kuihai Tower condition, Junk-dealer Taka, both launch choices, Choose 2, SAVE on World Map",
+    "Overview items, equipment, valuables, lottery and save point vs canonical overview",
+    "Step 3 Lottery Member No. 10: Invincible Nee, ring, Pocket Watch, Mind's Eye, Jade Lariat, retry and 'each member' sentences; prize table Red/Yellow/Turquoise/Green/White",
+    "Step 4 Silent Peddler and Zodiac/Cosmic Bracelet effects",
+    "Steps 5-8 chest locations, item names, Hand Needle, Face Guard, Wugui Room Key, Seal of the Soul, Thera Root, Pure Root, Soul Benediction, Lottery Ticket, save instruction, Leonardo's Bear note",
+    "Step 9 Wugui door choices and wording; boss card Cursed Puppet 1080 HP, Dark, Seal of Wisdom drop, EXP 2000, Cash 6000",
+    "Boss party Yuri/Margarete/Zhuzhen levels, equipment and fusions against the canonical grid",
+    "Boss strategy text sentence by sentence (Yamaraja comparison, Game of Death, Nightmare, Inferno, Fighting Spirit, Thera Seeds, Heaven's Fiend)",
+    "Enemy table #036-#042: numbers, names, HP, class, notes, boss flag",
+    "Shop inventory: all 29 items and prices against canonical text (no price or name mismatch; TalismanOf* names re-spaced only)",
+    "Step order 1-10 against canonical chronology; step 10 ending text",
+    "Structured scan for invented facts: none found beyond the notes below"
   ],
-  "findings": [],
-  "structured_sha256": "ce6118a0bf4bb403cb3eaedbe995c53412d42fbd8198e841946c0ed7963dd5a5"
+  "findings": [
+    {
+      "severity": "low",
+      "category": "contradiction",
+      "location": "structured-content/sections/w-s-02-kowloon-fortress.json: steps[8].boss.strategy, Yuri bullet",
+      "canonical": "Have Yuri fuse into Inferno and cast Fighting Spirit on himself, followed by physically attacking Yamaraja every turn.",
+      "structured": "Have **Yuri** fuse into **Inferno** and cast **Fighting Spirit** on himself, followed by physically attacking **Yamaraja** every turn.",
+      "issue": "The source names Yamaraja in a Cursed Puppet battle, which looks like a copy-over from another guide. The structured guide keeps the name, which is correct, but does not flag it as a likely source inconsistency as CLAUDE.md requires for contradictory source text."
+    },
+    {
+      "severity": "low",
+      "category": "order",
+      "location": "structured-content/sections/w-s-02-kowloon-fortress.json: steps[8].boss.strategy, Yuri bullets",
+      "canonical": "Inferno/Fighting Spirit paragraph, then Mind's Eye sentence, then Margarete, then Zhuzhen, then the separate 'If you're having trouble staying healed, have Yuri fuse into Heaven's Fiend' paragraph.",
+      "structured": "Yuri group: Inferno bullet, then Heaven's Fiend bullet; then a separate Shortcut group (Mind's Eye), then Margarete.",
+      "issue": "The Heaven's Fiend tip is moved ahead of the Mind's Eye and Margarete guidance. Each sentence's content is preserved and the tip is a standalone fallback, so the meaning is intact. Noted only because the source order was changed in a strategy passage."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "structured-content/sections/w-s-02-kowloon-fortress.json: steps[8].boss.strategy, 'Shortcut' group",
+      "canonical": "If he has the Mind's Eye equipped, it won't take very long.",
+      "structured": "**Shortcut** heading added above the Mind's Eye bullet",
+      "issue": "The heading 'Shortcut' is a label the transformer added. The source sentence sits inside the Yuri/Inferno paragraph and does not describe a shortcut. The sentence itself is preserved accurately."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "structured-content/sections/w-s-02-kowloon-fortress.json: guide.objectives",
+      "canonical": "Once the battle is over, there'll just be a bit more dialogue, then you'll be finished",
+      "structured": "Defeat **Cursed Puppet**",
+      "issue": "The objective is inferred from the boss battle at the end of the walkthrough. The source never states it as an objective. It is a reasonable reading, but it is not verbatim source text."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "structured-content/sections/w-s-02-kowloon-fortress.json: steps[2].notes[0].table.rows[2] (Lottery prize, Turquoise)",
+      "canonical": "(Turquoise) | TalismanOfWisdom",
+      "structured": "TalismanOfWisdom (lottery table) vs 'Talisman of Wisdom' (shop inventory)",
+      "issue": "The same item is written two ways in one section. The shop uses the re-spaced name and the lottery table keeps the run-together source token. Both forms are presentation-level, so no fact changed, but the spelling is inconsistent."
+    }
+  ]
 }
