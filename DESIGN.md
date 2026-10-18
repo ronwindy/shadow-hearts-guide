@@ -74,7 +74,7 @@ The palette balances dark gothic aesthetics with strict WCAG AA contrast standar
 - **Brand / Title**: "Shadow Hearts" in antique gold serif with companion badge "Strategy Guide & Walkthrough".
 - **Navigation Links**:
   - `Home` (`/`)
-  - `Table of Contents` (`/toc`)
+  - `Table of Contents` (`/guide/i-1-00`)
   - `Walkthrough` (Quick dropdown or link)
   - `Appendices`
   - `Original Source` (External link to GameFAQs source)
