@@ -243,7 +243,64 @@
           "party": [],
           "exp": null,
           "cash": null,
-          "strategy": "- 1st Encounter = Stronger form, must be fought in order for easy battles.\n- 2nd Encounter = Weaker form, defeated once and have lost their powers.\n- 1) **Grail Mask** - He's a joke. Your hit area will be **doubled**, and he's easily damaged by physical attacks. He should only take two turns, max.\n- 2) **Gold Mask** - A little harder than the **Grail Mask**, but not by much. He can't be harmed by physical attacks, so you must take him out with nothing but special attacks. It'll take longer than the **Grail Mask**, but he's not a threat at all.\n- 3) **Staff Mask** - A little easier than the **Gold Mask**, but not by much. He's just the opposite of the **Gold Mask**; he can't be harmed by special attacks, so you must take him out with nothing but physical attacks, so it shouldn't be a problem. Again, not very much of a threat at this point.\n- 4) **Sword Mask** - The last of the Masks is actually almost as easy as the first! He doesn't have any strong points like the last two, nor do you have a wider hit area, but either way, it should only take two, possibly three rounds to take this one out.\n- 5) Round Two! - Once you have defeated all Four Masks, keep your Malice in the red and wait for them to come around to fight once more! This time around, they don't need to be fought in any order, and they only take one hit to die. Make sure to do this so you get all eight of their entries for the **Monster Library**."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Encounters**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "1st Encounter = Stronger form, must be fought in order for easy battles."
+                        },
+                        {
+                          "text": "2nd Encounter = Weaker form, defeated once and have lost their powers."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Order of battle**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "1) **Grail Mask** - He's a joke. Your hit area will be **doubled**, and he's easily damaged by physical attacks. He should only take two turns, max."
+                        },
+                        {
+                          "text": "2) **Gold Mask** - A little harder than the **Grail Mask**, but not by much. He can't be harmed by physical attacks, so you must take him out with nothing but special attacks. It'll take longer than the **Grail Mask**, but he's not a threat at all."
+                        },
+                        {
+                          "text": "3) **Staff Mask** - A little easier than the **Gold Mask**, but not by much. He's just the opposite of the **Gold Mask**; he can't be harmed by special attacks, so you must take him out with nothing but physical attacks, so it shouldn't be a problem. Again, not very much of a threat at this point."
+                        },
+                        {
+                          "text": "4) **Sword Mask** - The last of the Masks is actually almost as easy as the first! He doesn't have any strong points like the last two, nor do you have a wider hit area, but either way, it should only take two, possibly three rounds to take this one out."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Second round**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "5) Round Two! - Once you have defeated all Four Masks, keep your Malice in the red and wait for them to come around to fight once more! This time around, they don't need to be fought in any order, and they only take one hit to die. Make sure to do this so you get all eight of their entries for the **Monster Library**."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

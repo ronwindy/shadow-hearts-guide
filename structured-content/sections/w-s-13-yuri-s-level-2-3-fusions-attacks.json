@@ -285,7 +285,38 @@
         "party": [],
         "exp": null,
         "cash": null,
-        "strategy": "- Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy.\n- Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa.\n- If you want to use the **Mind's Eye**, just fuse into **Amon** and wail on them for a few rounds, making sure to heal if necessary.\n- If you don't want to use the **Mind's Eye**, fuse into the highest level monster that is the opposite class of the one you're fighting.\n- Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy."
+              },
+              {
+                "text": "Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa."
+              },
+              {
+                "text": "**Yuri**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "If you want to use the **Mind's Eye**, just fuse into **Amon** and wail on them for a few rounds, making sure to heal if necessary."
+                      },
+                      {
+                        "text": "If you don't want to use the **Mind's Eye**, fuse into the highest level monster that is the opposite class of the one you're fighting."
+                      },
+                      {
+                        "text": "Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "shops": [],
@@ -310,7 +341,7 @@
       },
       {
         "id": 2,
-        "description": "Where to earn **Soul Energy** (prior to Neameeto):\n- **Light** - **Blue Castle** (Hollow x2); **Cave Temple** (Penalty x3); **Nemeton Monastery**, **Underground Ruins** (Sin x2)\n- **Fire** - **Dollhouse** (**Ghouler** x2); **Ancient Ruins** (**Basilisk** x1)\n- **Earth** - **Calios Mental Hospital** (Doom x2); **Nemeton Monastery**, **Underground Ruins** (Inverse x2); **Ancient Ruins** (Sweeper x2)\n- **Dark** - **Calios Mental Hospital** (**Buggs** x5); **Nemeton Monastery**, **Underground Ruins** (**Guinea Pig** x3); **Blue Castle** (**Dead Knight** x2); **Cave Temple** (**Oingo** x2)\n- **Wind** - **Cave Temple** (**Buggy** x5); **Blue Castle** (**Gremlin** x3); **Calios Mental Hospital** (**Meat Eater** x2); **Dollhouse** (**Spanky** x2)\n- **Water** - **Dollhouse** (**Ghoul** x2); **Nemeton Monastery**, **Underground Ruins** (**Straithe** x2); **Ancient Ruins** (**Asp** x1)",
+        "description": "Where to earn **Soul Energy** (prior to **Neameeto**):\n- **Light** - **Blue Castle** (Hollow x2); **Cave Temple** (Penalty x3); **Nemeton Monastery**, **Underground Ruins** (Sin x2)\n- **Fire** - **Dollhouse** (**Ghouler** x2); **Ancient Ruins** (**Basilisk** x1)\n- **Earth** - **Calios Mental Hospital** (Doom x2); **Nemeton Monastery**, **Underground Ruins** (Inverse x2); **Ancient Ruins** (Sweeper x2)\n- **Dark** - **Calios Mental Hospital** (**Buggs** x5); **Nemeton Monastery**, **Underground Ruins** (**Guinea Pig** x3); **Blue Castle** (**Dead Knight** x2); **Cave Temple** (**Oingo** x2)\n- **Wind** - **Cave Temple** (**Buggy** x5); **Blue Castle** (**Gremlin** x3); **Calios Mental Hospital** (**Meat Eater** x2); **Dollhouse** (**Spanky** x2)\n- **Water** - **Dollhouse** (**Ghoul** x2); **Nemeton Monastery**, **Underground Ruins** (**Straithe** x2); **Ancient Ruins** (**Asp** x1)",
         "type": "exploration",
         "rewards": []
       },
@@ -399,7 +430,38 @@
           "party": [],
           "exp": null,
           "cash": null,
-          "strategy": "- Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy.\n- Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa.\n- If you want to use the **Mind's Eye**, just fuse into **Amon** and wail on them for a few rounds, making sure to heal if necessary.\n- If you don't want to use the **Mind's Eye**, fuse into the highest level monster that is the opposite class of the one you're fighting.\n- Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy."
+                },
+                {
+                  "text": "Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa."
+                },
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If you want to use the **Mind's Eye**, just fuse into **Amon** and wail on them for a few rounds, making sure to heal if necessary."
+                        },
+                        {
+                          "text": "If you don't want to use the **Mind's Eye**, fuse into the highest level monster that is the opposite class of the one you're fighting."
+                        },
+                        {
+                          "text": "Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

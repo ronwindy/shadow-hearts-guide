@@ -134,7 +134,61 @@
           "party": [],
           "exp": 40000,
           "cash": 15000,
-          "strategy": "- He says you have 5 turns to defeat him before he obliterates **Keith**, but you technically have 6.\n- It's not hard to succeed, but if you miss some hits, you could be in trouble.\n- **Keith** can only attack normally, so just keep doing that.\n- It should only take three turns max, unless you didn't equip the **Mind's Eye**, then it'll probably take all six.\n- If you're having a hard time with this battle, then level **Keith** up to where he can definitely deal 1500 damage within four or five turns, to be safe.\n- Note: even though you already have it equipped for this battle, the reward for winning is the **DemonSwd-Tyrving**......"
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Time limit**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "He says you have 5 turns to defeat him before he obliterates **Keith**, but you technically have 6."
+                        },
+                        {
+                          "text": "It's not hard to succeed, but if you miss some hits, you could be in trouble."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Keith**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Keith** can only attack normally, so just keep doing that."
+                        },
+                        {
+                          "text": "It should only take three turns max, unless you didn't equip the **Mind's Eye**, then it'll probably take all six."
+                        },
+                        {
+                          "text": "If you're having a hard time with this battle, then level **Keith** up to where he can definitely deal 1500 damage within four or five turns, to be safe."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Reward**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Note: even though you already have it equipped for this battle, the reward for winning is the **DemonSwd-Tyrving**......"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

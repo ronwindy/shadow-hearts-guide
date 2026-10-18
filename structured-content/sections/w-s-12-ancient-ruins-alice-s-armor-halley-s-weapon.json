@@ -202,7 +202,64 @@
           ],
           "exp": 60000,
           "cash": 38000,
-          "strategy": "- **Seraphim** hits pretty hard, enough to kill right off the bat, so once again, **Alice** will be doing nothing but **Arc** this battle.\n- Other than his normal attacks, he will use Divine Punishment, doing pretty good damage to your entire party, as well as causing various status effects, so make sure to heal them straight away.\n- Have **Yuri** fuse into **Amon** and keep at him with physical attacks, and have **Margarete** attack normally as well, taking breaks to help replenish MP and SP as needed.\n- Since **Seraphim** has lower HP than **Cherubim**, you probably won't have to replenish either MP nor SP.\n- Like **Cherubim**, **Seraphim** isn't really that complicated, so as long as you have **Crucifixes** equipped to everyone and have **Alice** use **Arc** every round, then it's just a matter of taking the time to whittle away his HP.\n- It actually won't take nearly as long, since **Seraphim** only has 40% the HP that **Cherubim** had.\n- Once the battle is over, you'll receive **Halley**'s best weapon, the **Volt Snipe**."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Seraphim** hits pretty hard, enough to kill right off the bat, so once again, **Alice** will be doing nothing but **Arc** this battle."
+                        },
+                        {
+                          "text": "Other than his normal attacks, he will use Divine Punishment, doing pretty good damage to your entire party, as well as causing various status effects, so make sure to heal them straight away."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Party**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Yuri** fuse into **Amon** and keep at him with physical attacks, and have **Margarete** attack normally as well, taking breaks to help replenish MP and SP as needed."
+                        },
+                        {
+                          "text": "Since **Seraphim** has lower HP than **Cherubim**, you probably won't have to replenish either MP nor SP."
+                        },
+                        {
+                          "text": "Like **Cherubim**, **Seraphim** isn't really that complicated, so as long as you have **Crucifixes** equipped to everyone and have **Alice** use **Arc** every round, then it's just a matter of taking the time to whittle away his HP."
+                        },
+                        {
+                          "text": "It actually won't take nearly as long, since **Seraphim** only has 40% the HP that **Cherubim** had."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Reward**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Once the battle is over, you'll receive **Halley**'s best weapon, the **Volt Snipe**."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

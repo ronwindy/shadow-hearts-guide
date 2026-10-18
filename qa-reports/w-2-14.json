@@ -1,14 +1,29 @@
 {
   "qa": {
-    "status": "PASS",
+    "status": "PASS WITH WARNINGS",
     "section_id": "w-2-14",
     "section_title": "Nemeton Monastery (2)",
     "summary": {
       "critical": 0,
       "high": 0,
       "medium": 0,
-      "low": 0
+      "low": 1
     },
-    "findings": []
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Atman].strategy",
+        "source": {
+          "text": "Atman can still kill Alice in two rounds, so make sure that she stays healed. As"
+        },
+        "generated": {
+          "text": "Threats Atman can still kill Alice in two rounds, so make sure that she stays he"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
   }
 }

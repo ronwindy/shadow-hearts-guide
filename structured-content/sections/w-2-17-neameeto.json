@@ -290,7 +290,100 @@
         ],
         "exp": 40000,
         "cash": 22500,
-        "strategy": "- Yes, I know, **Yuri**'s level is insanely high, but blame the game for not letting you be able to take him out of your party so you can level others up.\n- It shouldn't affect much, as he's just as much of a powerhouse ten levels earlier.\n- In any case, the **Soul Block** CANNOT be harmed physically, so it'll be up to your special attacks to take him out.\n- He has some really strong physical attacks, as well as the light spell, **Pulse**, and the **Shockwave** spell, neither of which are quite as strong, but hit everyone.\n- Fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually cast **For Tomorrow**.\n- (Just know that **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)\n- Have **Alice** use **Advent** and have **Margarete** use **Diving Bomber**; whoever is dealing the least amount of damage (likely **Alice**), have her replenish **Yuri**'s MP with **Mana Roots** every other round.\n- **Yuri**'s **For Tomorrow** SHOULD keep your party healed, but in case it falls behind, have **Alice** ready with an **Arc** to bring you back up to snuff.\n- If you're having trouble with the hit areas of the SeraphicRadiance, then you may want to start using **Bronze Daggers** (or Arrowheads for just **Yuri**) on your party to widen the hit areas.\n- If you're STILL having trouble, then you'll probably be better of using **Amon** and his **Demon Rays** spell."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Level note**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Yes, I know, **Yuri**'s level is insanely high, but blame the game for not letting you be able to take him out of your party so you can level others up."
+                      },
+                      {
+                        "text": "It shouldn't affect much, as he's just as much of a powerhouse ten levels earlier."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Threats**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "In any case, the **Soul Block** CANNOT be harmed physically, so it'll be up to your special attacks to take him out."
+                      },
+                      {
+                        "text": "He has some really strong physical attacks, as well as the light spell, **Pulse**, and the **Shockwave** spell, neither of which are quite as strong, but hit everyone."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Yuri**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually cast **For Tomorrow**.",
+                        "children": [
+                          {
+                            "list": "bullet",
+                            "items": [
+                              {
+                                "text": "(Just know that **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Alice and Margarete**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Have **Alice** use **Advent** and have **Margarete** use **Diving Bomber**; whoever is dealing the least amount of damage (likely **Alice**), have her replenish **Yuri**'s MP with **Mana Roots** every other round."
+                      },
+                      {
+                        "text": "**Yuri**'s **For Tomorrow** SHOULD keep your party healed, but in case it falls behind, have **Alice** ready with an **Arc** to bring you back up to snuff."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Hit area trouble**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "If you're having trouble with the hit areas of the SeraphicRadiance, then you may want to start using **Bronze Daggers** (or Arrowheads for just **Yuri**) on your party to widen the hit areas."
+                      },
+                      {
+                        "text": "If you're STILL having trouble, then you'll probably be better of using **Amon** and his **Demon Rays** spell."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "BOSS",
@@ -345,7 +438,81 @@
         ],
         "exp": 45000,
         "cash": 25000,
-        "strategy": "- Hate will use **Hate Storm** and Black Fog, but luckily we have **Crucifixes** now, so as long as they're equipped, we'll just receive minor to decent damage to the whole party instead of ring anomalies and poison.\n- It'll also attempt to paralyze you, but will do a decent amount of damage to a single ally instead.\n- Fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys** if you have spares, with **Alice**'s **Holy Edge** on him.\n- (Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)\n- Have **Alice** start off by casting **Holy Edge** on both **Yuri** and **Margarete**, then use **Advent** when healing isn't needed, and have her use **Arc** when it is.\n- **Margarete** should be attacking physically as well with **Third Keys**.\n- This boss is actually a lot easier than the last."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Threats**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Hate will use **Hate Storm** and Black Fog, but luckily we have **Crucifixes** now, so as long as they're equipped, we'll just receive minor to decent damage to the whole party instead of ring anomalies and poison."
+                      },
+                      {
+                        "text": "It'll also attempt to paralyze you, but will do a decent amount of damage to a single ally instead."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Yuri**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys** if you have spares, with **Alice**'s **Holy Edge** on him.",
+                        "children": [
+                          {
+                            "list": "bullet",
+                            "items": [
+                              {
+                                "text": "(Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Alice and Margarete**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Have **Alice** start off by casting **Holy Edge** on both **Yuri** and **Margarete**, then use **Advent** when healing isn't needed, and have her use **Arc** when it is."
+                      },
+                      {
+                        "text": "**Margarete** should be attacking physically as well with **Third Keys**."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Difficulty**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "This boss is actually a lot easier than the last."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "BOSS",
@@ -400,7 +567,81 @@
         ],
         "exp": 50000,
         "cash": 27500,
-        "strategy": "- The **Scapegoat** will use **Wind** Fang that will hit your whole party for a small amount of damage, and will also attack normally on a single ally for decent damage.\n- He can also use Deathtouch, which if you remember, instantly puts an ally into critical HP status, so make sure to heal straight away when he uses it.\n- As usual, fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys** if you have spares.\n- (Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)\n- Have **Alice** use **Advent** when healing isn't needed, and have her use **Arc** when it is.\n- **Margarete** should be attacking physically as well with **Third Keys**.\n- Just make sure to stay healed and you should be fine."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Threats**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "The **Scapegoat** will use **Wind** Fang that will hit your whole party for a small amount of damage, and will also attack normally on a single ally for decent damage."
+                      },
+                      {
+                        "text": "He can also use Deathtouch, which if you remember, instantly puts an ally into critical HP status, so make sure to heal straight away when he uses it."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Yuri**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "As usual, fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys** if you have spares.",
+                        "children": [
+                          {
+                            "list": "bullet",
+                            "items": [
+                              {
+                                "text": "(Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Alice and Margarete**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Have **Alice** use **Advent** when healing isn't needed, and have her use **Arc** when it is."
+                      },
+                      {
+                        "text": "**Margarete** should be attacking physically as well with **Third Keys**."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Tip**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Just make sure to stay healed and you should be fine."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "BOSS",
@@ -455,7 +696,73 @@
         ],
         "exp": 60000,
         "cash": 0,
-        "strategy": "- He will start the battle off with Holy Chest, which would normally dampen your SP, but with the **Will Powers** equipped, it'll only do a decent amount of damage.\n- He will also use the !!! attack, so make sure that you heal IMMEDIATELY after it hits so you don't lose your ally.\n- Other than that, he just uses Status Abnormality, which won't do hardly any damage, and as long as you have a **Crucifix** on, you don't need to worry about the anomalies.\n- He can also heal himself with **Grace**, and even though it only SAYS 999 HP is healed, trust me, a lot more than that is healed.\n- There is no cap on the damage or amount healed; just the numbers displayed.\n- As usual, fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys**.\n- There is one more battle after this, so save your Fifth and **Seventh Keys** for that.\n- (Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)\n- **Alice** will most likely be casting **Arc** every round, but whenever she happens to get a free turn, have her cast **Advent**.\n- **Margarete** should be attacking physically as well with **Third Keys**."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Threats**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "He will start the battle off with Holy Chest, which would normally dampen your SP, but with the **Will Powers** equipped, it'll only do a decent amount of damage."
+                      },
+                      {
+                        "text": "He will also use the !!! attack, so make sure that you heal IMMEDIATELY after it hits so you don't lose your ally."
+                      },
+                      {
+                        "text": "Other than that, he just uses Status Abnormality, which won't do hardly any damage, and as long as you have a **Crucifix** on, you don't need to worry about the anomalies."
+                      },
+                      {
+                        "text": "He can also heal himself with **Grace**, and even though it only SAYS 999 HP is healed, trust me, a lot more than that is healed."
+                      },
+                      {
+                        "text": "There is no cap on the damage or amount healed; just the numbers displayed."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Yuri**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "As usual, fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys**."
+                      },
+                      {
+                        "text": "There is one more battle after this, so save your Fifth and **Seventh Keys** for that."
+                      },
+                      {
+                        "text": "(Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Alice and Margarete**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "**Alice** will most likely be casting **Arc** every round, but whenever she happens to get a free turn, have her cast **Advent**."
+                      },
+                      {
+                        "text": "**Margarete** should be attacking physically as well with **Third Keys**."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "BOSS",
@@ -510,7 +817,123 @@
         ],
         "exp": null,
         "cash": null,
-        "strategy": "- This is easily the greatest battle music of all time: Imbroglio!!!\n- He'll start off with Time of Judgment, which will do major damage to your entire party, but will also take away some MP.\n- Each of his colored Abyss attacks will hit your party for pretty decent damage, but if you're not wearing a **Crucifix**, then it will also inflict you with a status abnormality, depending on the class.\n- He'll also use Nine Springs, which works like !!! in that it reduces your HP to 1, so be sure to heal after it hits.\n- Don't bother boosting your party with **For Tomorrow** or anything like that; he'll use **Light** of Deprivation to remove it all before you even get a chance to enjoy it.\n- Since this is the final battle, **Yuri** gets to have a ton of fun with the items we've been holding on to!\n- Start off by fusing him into the SeraphicRadiance, then have use the **Silver Hand** item on himself, giving him a 100% ring area.\n- On his second turn, have him use a **Monkey Paw** on himself, which will triple his attack!\n- Before his third turn, have someone in your party use a **Moon Swallow** (or just a **Star Swallow** on **Yuri**) to make all attacks critical attacks!\n- Finally, on his third, fourth, and fifth turns, have him use the two **Seventh Keys** and a **Fifth Key**.\n- Just press the CROSS button as fast as you can while you have the 100% ring area to land **every hit**!\n- This should DEFINITELY be enough to take out God.\n- If not, once the **Silver Hand** wears off, either attack normally for a few rounds, or try out the remaining **Fifth Keys** to keep wailing on him.\n- Remember, each attack that says 999 HP damages is more than likely doing more than 999.\n- The damage itself doesn't cap; just the displayed number.\n- In the meantime, **Alice** should be casting **Arc** every single round, and **Margarete** should be helping **Alice**.\n- If healing isn't needed, then use **Advent** with **Alice** and normal attacks with Third or **Fifth Keys** with **Margarete**.\n- If for some reason you don't have those items, than you can work on him like the last few bosses.\n- As usual, fuse **Yuri** into the SeraphicRadiance and start physically attacking, using any Keys you do have.\n- The girls should be doing the same thing as listed above; just stay healed and be patient."
+        "strategy": [
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "This is easily the greatest battle music of all time: Imbroglio!!!"
+              },
+              {
+                "text": "**Threats**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "He'll start off with Time of Judgment, which will do major damage to your entire party, but will also take away some MP."
+                      },
+                      {
+                        "text": "Each of his colored Abyss attacks will hit your party for pretty decent damage, but if you're not wearing a **Crucifix**, then it will also inflict you with a status abnormality, depending on the class."
+                      },
+                      {
+                        "text": "He'll also use Nine Springs, which works like !!! in that it reduces your HP to 1, so be sure to heal after it hits."
+                      },
+                      {
+                        "text": "Don't bother boosting your party with **For Tomorrow** or anything like that; he'll use **Light** of Deprivation to remove it all before you even get a chance to enjoy it."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Yuri**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Since this is the final battle, **Yuri** gets to have a ton of fun with the items we've been holding on to!"
+                      },
+                      {
+                        "text": "Start off by fusing him into the SeraphicRadiance, then have use the **Silver Hand** item on himself, giving him a 100% ring area."
+                      },
+                      {
+                        "text": "On his second turn, have him use a **Monkey Paw** on himself, which will triple his attack!"
+                      },
+                      {
+                        "text": "Before his third turn, have someone in your party use a **Moon Swallow** (or just a **Star Swallow** on **Yuri**) to make all attacks critical attacks!"
+                      },
+                      {
+                        "text": "Finally, on his third, fourth, and fifth turns, have him use the two **Seventh Keys** and a **Fifth Key**."
+                      },
+                      {
+                        "text": "Just press the CROSS button as fast as you can while you have the 100% ring area to land **every hit**!"
+                      },
+                      {
+                        "text": "This should DEFINITELY be enough to take out God."
+                      },
+                      {
+                        "text": "If not, once the **Silver Hand** wears off, either attack normally for a few rounds, or try out the remaining **Fifth Keys** to keep wailing on him."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Damage display**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "Remember, each attack that says 999 HP damages is more than likely doing more than 999."
+                      },
+                      {
+                        "text": "The damage itself doesn't cap; just the displayed number."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Alice and Margarete**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "In the meantime, **Alice** should be casting **Arc** every single round, and **Margarete** should be helping **Alice**."
+                      },
+                      {
+                        "text": "If healing isn't needed, then use **Advent** with **Alice** and normal attacks with Third or **Fifth Keys** with **Margarete**."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Fallback**",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "If for some reason you don't have those items, than you can work on him like the last few bosses."
+                      },
+                      {
+                        "text": "As usual, fuse **Yuri** into the SeraphicRadiance and start physically attacking, using any Keys you do have."
+                      },
+                      {
+                        "text": "The girls should be doing the same thing as listed above; just stay healed and be patient."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "shops": [],
@@ -611,7 +1034,100 @@
           ],
           "exp": 40000,
           "cash": 22500,
-          "strategy": "- Yes, I know, **Yuri**'s level is insanely high, but blame the game for not letting you be able to take him out of your party so you can level others up.\n- It shouldn't affect much, as he's just as much of a powerhouse ten levels earlier.\n- In any case, the **Soul Block** CANNOT be harmed physically, so it'll be up to your special attacks to take him out.\n- He has some really strong physical attacks, as well as the light spell, **Pulse**, and the **Shockwave** spell, neither of which are quite as strong, but hit everyone.\n- Fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually cast **For Tomorrow**.\n- (Just know that **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)\n- Have **Alice** use **Advent** and have **Margarete** use **Diving Bomber**; whoever is dealing the least amount of damage (likely **Alice**), have her replenish **Yuri**'s MP with **Mana Roots** every other round.\n- **Yuri**'s **For Tomorrow** SHOULD keep your party healed, but in case it falls behind, have **Alice** ready with an **Arc** to bring you back up to snuff.\n- If you're having trouble with the hit areas of the SeraphicRadiance, then you may want to start using **Bronze Daggers** (or Arrowheads for just **Yuri**) on your party to widen the hit areas.\n- If you're STILL having trouble, then you'll probably be better of using **Amon** and his **Demon Rays** spell."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Level note**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Yes, I know, **Yuri**'s level is insanely high, but blame the game for not letting you be able to take him out of your party so you can level others up."
+                        },
+                        {
+                          "text": "It shouldn't affect much, as he's just as much of a powerhouse ten levels earlier."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "In any case, the **Soul Block** CANNOT be harmed physically, so it'll be up to your special attacks to take him out."
+                        },
+                        {
+                          "text": "He has some really strong physical attacks, as well as the light spell, **Pulse**, and the **Shockwave** spell, neither of which are quite as strong, but hit everyone."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually cast **For Tomorrow**.",
+                          "children": [
+                            {
+                              "list": "bullet",
+                              "items": [
+                                {
+                                  "text": "(Just know that **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice and Margarete**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Alice** use **Advent** and have **Margarete** use **Diving Bomber**; whoever is dealing the least amount of damage (likely **Alice**), have her replenish **Yuri**'s MP with **Mana Roots** every other round."
+                        },
+                        {
+                          "text": "**Yuri**'s **For Tomorrow** SHOULD keep your party healed, but in case it falls behind, have **Alice** ready with an **Arc** to bring you back up to snuff."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Hit area trouble**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If you're having trouble with the hit areas of the SeraphicRadiance, then you may want to start using **Bronze Daggers** (or Arrowheads for just **Yuri**) on your party to widen the hit areas."
+                        },
+                        {
+                          "text": "If you're STILL having trouble, then you'll probably be better of using **Amon** and his **Demon Rays** spell."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -771,7 +1287,81 @@
           ],
           "exp": 45000,
           "cash": 25000,
-          "strategy": "- Hate will use **Hate Storm** and Black Fog, but luckily we have **Crucifixes** now, so as long as they're equipped, we'll just receive minor to decent damage to the whole party instead of ring anomalies and poison.\n- It'll also attempt to paralyze you, but will do a decent amount of damage to a single ally instead.\n- Fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys** if you have spares, with **Alice**'s **Holy Edge** on him.\n- (Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)\n- Have **Alice** start off by casting **Holy Edge** on both **Yuri** and **Margarete**, then use **Advent** when healing isn't needed, and have her use **Arc** when it is.\n- **Margarete** should be attacking physically as well with **Third Keys**.\n- This boss is actually a lot easier than the last."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Hate will use **Hate Storm** and Black Fog, but luckily we have **Crucifixes** now, so as long as they're equipped, we'll just receive minor to decent damage to the whole party instead of ring anomalies and poison."
+                        },
+                        {
+                          "text": "It'll also attempt to paralyze you, but will do a decent amount of damage to a single ally instead."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys** if you have spares, with **Alice**'s **Holy Edge** on him.",
+                          "children": [
+                            {
+                              "list": "bullet",
+                              "items": [
+                                {
+                                  "text": "(Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice and Margarete**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Alice** start off by casting **Holy Edge** on both **Yuri** and **Margarete**, then use **Advent** when healing isn't needed, and have her use **Arc** when it is."
+                        },
+                        {
+                          "text": "**Margarete** should be attacking physically as well with **Third Keys**."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Difficulty**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "This boss is actually a lot easier than the last."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -903,7 +1493,81 @@
           ],
           "exp": 50000,
           "cash": 27500,
-          "strategy": "- The **Scapegoat** will use **Wind** Fang that will hit your whole party for a small amount of damage, and will also attack normally on a single ally for decent damage.\n- He can also use Deathtouch, which if you remember, instantly puts an ally into critical HP status, so make sure to heal straight away when he uses it.\n- As usual, fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys** if you have spares.\n- (Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)\n- Have **Alice** use **Advent** when healing isn't needed, and have her use **Arc** when it is.\n- **Margarete** should be attacking physically as well with **Third Keys**.\n- Just make sure to stay healed and you should be fine."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "The **Scapegoat** will use **Wind** Fang that will hit your whole party for a small amount of damage, and will also attack normally on a single ally for decent damage."
+                        },
+                        {
+                          "text": "He can also use Deathtouch, which if you remember, instantly puts an ally into critical HP status, so make sure to heal straight away when he uses it."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "As usual, fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys** if you have spares.",
+                          "children": [
+                            {
+                              "list": "bullet",
+                              "items": [
+                                {
+                                  "text": "(Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice and Margarete**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Alice** use **Advent** when healing isn't needed, and have her use **Arc** when it is."
+                        },
+                        {
+                          "text": "**Margarete** should be attacking physically as well with **Third Keys**."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Tip**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Just make sure to stay healed and you should be fine."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -987,7 +1651,73 @@
           ],
           "exp": 60000,
           "cash": 0,
-          "strategy": "- He will start the battle off with Holy Chest, which would normally dampen your SP, but with the **Will Powers** equipped, it'll only do a decent amount of damage.\n- He will also use the !!! attack, so make sure that you heal IMMEDIATELY after it hits so you don't lose your ally.\n- Other than that, he just uses Status Abnormality, which won't do hardly any damage, and as long as you have a **Crucifix** on, you don't need to worry about the anomalies.\n- He can also heal himself with **Grace**, and even though it only SAYS 999 HP is healed, trust me, a lot more than that is healed.\n- There is no cap on the damage or amount healed; just the numbers displayed.\n- As usual, fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys**.\n- There is one more battle after this, so save your Fifth and **Seventh Keys** for that.\n- (Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)\n- **Alice** will most likely be casting **Arc** every round, but whenever she happens to get a free turn, have her cast **Advent**.\n- **Margarete** should be attacking physically as well with **Third Keys**."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "He will start the battle off with Holy Chest, which would normally dampen your SP, but with the **Will Powers** equipped, it'll only do a decent amount of damage."
+                        },
+                        {
+                          "text": "He will also use the !!! attack, so make sure that you heal IMMEDIATELY after it hits so you don't lose your ally."
+                        },
+                        {
+                          "text": "Other than that, he just uses Status Abnormality, which won't do hardly any damage, and as long as you have a **Crucifix** on, you don't need to worry about the anomalies."
+                        },
+                        {
+                          "text": "He can also heal himself with **Grace**, and even though it only SAYS 999 HP is healed, trust me, a lot more than that is healed."
+                        },
+                        {
+                          "text": "There is no cap on the damage or amount healed; just the numbers displayed."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "As usual, fuse **Yuri** into the SeraphicRadiance and start off by casting **For Everyone** to boost your party, then have him continually attack from there on, using **Third Keys**."
+                        },
+                        {
+                          "text": "There is one more battle after this, so save your Fifth and **Seventh Keys** for that."
+                        },
+                        {
+                          "text": "(Remember, **For Everyone** ALSO boosts your AGL, and that means a faster ring, so if you can't keep up with it, don't worry about casting it to begin with.)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice and Margarete**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Alice** will most likely be casting **Arc** every round, but whenever she happens to get a free turn, have her cast **Advent**."
+                        },
+                        {
+                          "text": "**Margarete** should be attacking physically as well with **Third Keys**."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
@@ -1051,7 +1781,123 @@
               ]
             }
           ],
-          "strategy": "- This is easily the greatest battle music of all time: Imbroglio!!!\n- He'll start off with Time of Judgment, which will do major damage to your entire party, but will also take away some MP.\n- Each of his colored Abyss attacks will hit your party for pretty decent damage, but if you're not wearing a **Crucifix**, then it will also inflict you with a status abnormality, depending on the class.\n- He'll also use Nine Springs, which works like !!! in that it reduces your HP to 1, so be sure to heal after it hits.\n- Don't bother boosting your party with **For Tomorrow** or anything like that; he'll use **Light** of Deprivation to remove it all before you even get a chance to enjoy it.\n- Since this is the final battle, **Yuri** gets to have a ton of fun with the items we've been holding on to!\n- Start off by fusing him into the SeraphicRadiance, then have use the **Silver Hand** item on himself, giving him a 100% ring area.\n- On his second turn, have him use a **Monkey Paw** on himself, which will triple his attack!\n- Before his third turn, have someone in your party use a **Moon Swallow** (or just a **Star Swallow** on **Yuri**) to make all attacks critical attacks!\n- Finally, on his third, fourth, and fifth turns, have him use the two **Seventh Keys** and a **Fifth Key**.\n- Just press the CROSS button as fast as you can while you have the 100% ring area to land **every hit**!\n- This should DEFINITELY be enough to take out God.\n- If not, once the **Silver Hand** wears off, either attack normally for a few rounds, or try out the remaining **Fifth Keys** to keep wailing on him.\n- Remember, each attack that says 999 HP damages is more than likely doing more than 999.\n- The damage itself doesn't cap; just the displayed number.\n- In the meantime, **Alice** should be casting **Arc** every single round, and **Margarete** should be helping **Alice**.\n- If healing isn't needed, then use **Advent** with **Alice** and normal attacks with Third or **Fifth Keys** with **Margarete**.\n- If for some reason you don't have those items, than you can work on him like the last few bosses.\n- As usual, fuse **Yuri** into the SeraphicRadiance and start physically attacking, using any Keys you do have.\n- The girls should be doing the same thing as listed above; just stay healed and be patient."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "This is easily the greatest battle music of all time: Imbroglio!!!"
+                },
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "He'll start off with Time of Judgment, which will do major damage to your entire party, but will also take away some MP."
+                        },
+                        {
+                          "text": "Each of his colored Abyss attacks will hit your party for pretty decent damage, but if you're not wearing a **Crucifix**, then it will also inflict you with a status abnormality, depending on the class."
+                        },
+                        {
+                          "text": "He'll also use Nine Springs, which works like !!! in that it reduces your HP to 1, so be sure to heal after it hits."
+                        },
+                        {
+                          "text": "Don't bother boosting your party with **For Tomorrow** or anything like that; he'll use **Light** of Deprivation to remove it all before you even get a chance to enjoy it."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Yuri**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Since this is the final battle, **Yuri** gets to have a ton of fun with the items we've been holding on to!"
+                        },
+                        {
+                          "text": "Start off by fusing him into the SeraphicRadiance, then have use the **Silver Hand** item on himself, giving him a 100% ring area."
+                        },
+                        {
+                          "text": "On his second turn, have him use a **Monkey Paw** on himself, which will triple his attack!"
+                        },
+                        {
+                          "text": "Before his third turn, have someone in your party use a **Moon Swallow** (or just a **Star Swallow** on **Yuri**) to make all attacks critical attacks!"
+                        },
+                        {
+                          "text": "Finally, on his third, fourth, and fifth turns, have him use the two **Seventh Keys** and a **Fifth Key**."
+                        },
+                        {
+                          "text": "Just press the CROSS button as fast as you can while you have the 100% ring area to land **every hit**!"
+                        },
+                        {
+                          "text": "This should DEFINITELY be enough to take out God."
+                        },
+                        {
+                          "text": "If not, once the **Silver Hand** wears off, either attack normally for a few rounds, or try out the remaining **Fifth Keys** to keep wailing on him."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Damage display**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Remember, each attack that says 999 HP damages is more than likely doing more than 999."
+                        },
+                        {
+                          "text": "The damage itself doesn't cap; just the displayed number."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Alice and Margarete**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "In the meantime, **Alice** should be casting **Arc** every single round, and **Margarete** should be helping **Alice**."
+                        },
+                        {
+                          "text": "If healing isn't needed, then use **Advent** with **Alice** and normal attacks with Third or **Fifth Keys** with **Margarete**."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Fallback**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "If for some reason you don't have those items, than you can work on him like the last few bosses."
+                        },
+                        {
+                          "text": "As usual, fuse **Yuri** into the SeraphicRadiance and start physically attacking, using any Keys you do have."
+                        },
+                        {
+                          "text": "The girls should be doing the same thing as listed above; just stay healed and be patient."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

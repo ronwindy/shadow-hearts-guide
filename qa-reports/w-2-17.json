@@ -7,11 +7,67 @@
       "critical": 0,
       "high": 0,
       "medium": 2,
-      "low": 1
+      "low": 5
     },
     "findings": [
       {
         "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Soul Block].strategy",
+        "source": {
+          "text": "Yes, I know, Yuri's level is insanely high, but blame the game for not letting y"
+        },
+        "generated": {
+          "text": "Level note Yes, I know, Yuri's level is insanely high, but blame the game for no"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Hate].strategy",
+        "source": {
+          "text": "Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes now, so a"
+        },
+        "generated": {
+          "text": "Threats Hate will use Hate Storm and Black Fog, but luckily we have Crucifixes n"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-003",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Scapegoat].strategy",
+        "source": {
+          "text": "The Scapegoat will use Wind Fang that will hit your whole party for a small amou"
+        },
+        "generated": {
+          "text": "Threats The Scapegoat will use Wind Fang that will hit your whole party for a sm"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-004",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Messiah].strategy",
+        "source": {
+          "text": "He will start the battle off with Holy Chest, which would normally dampen your S"
+        },
+        "generated": {
+          "text": "Threats He will start the battle off with Holy Chest, which would normally dampe"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-005",
         "severity": "low",
         "category": "text drift",
         "location": "bosses[Meta-God].strategy",
@@ -19,13 +75,13 @@
           "text": "This is easily the greatest battle music of all time: Imbroglio!!! He'll start o"
         },
         "generated": {
-          "text": "This is easily the greatest battle music of all time: Imbroglio!!! He'll start o"
+          "text": "This is easily the greatest battle music of all time: Imbroglio!!! Threats He'll"
         },
         "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
         "recommended_owner": "Guide Transformer"
       },
       {
-        "id": "QA-002",
+        "id": "QA-006",
         "severity": "medium",
         "category": "missing information",
         "location": "markers.notes[4]",
@@ -39,7 +95,7 @@
         "recommended_owner": "Guide Transformer"
       },
       {
-        "id": "QA-003",
+        "id": "QA-007",
         "severity": "medium",
         "category": "text fidelity (unsupported)",
         "location": "steps[20].notes[0] line 1",

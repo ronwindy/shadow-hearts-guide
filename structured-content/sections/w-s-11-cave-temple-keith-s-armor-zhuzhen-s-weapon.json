@@ -220,7 +220,67 @@
           ],
           "exp": 120,
           "cash": 600,
-          "strategy": "- Ah, Brain Hopper; I miss this music.\n- In any case, **Cherubim** will usually start the battle with the !!! attack, reducing a party member's HP to 1, or Divine Punishment, doing pretty good damage to your entire party, as well as causing various status effects, so make sure to heal them straight away.\n- He will continue using them throughout the battle, and his physical attacks will hit an ally for pretty decent damage as well.\n- Note that he won't take hardly any damage from your special attacks, so focus only on physical attacks.\n- Have **Yuri** fuse into **Amon** and attack normally while **Alice** casts **Arc** as needed, leaving **Margarete** to also attack normally, supporting **Alice** when needed to replenish **Yuri**'s SP, as well as **Alice**'s MP.\n- **Cherubim** isn't really that complicated, so as long as you have **Crucifixes** equipped to everyone and have **Alice** use **Arc** every round, then it's just a matter of taking the time to whittle away his HP.\n- Just make sure not to let anyone go **Berserk**.\n- Once the battle is over, you'll receive **Zhuzhen**'s best weapon, the **Holy Peak Staff**."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "Ah, Brain Hopper; I miss this music."
+                },
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "In any case, **Cherubim** will usually start the battle with the !!! attack, reducing a party member's HP to 1, or Divine Punishment, doing pretty good damage to your entire party, as well as causing various status effects, so make sure to heal them straight away."
+                        },
+                        {
+                          "text": "He will continue using them throughout the battle, and his physical attacks will hit an ally for pretty decent damage as well."
+                        },
+                        {
+                          "text": "Note that he won't take hardly any damage from your special attacks, so focus only on physical attacks."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Party**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Yuri** fuse into **Amon** and attack normally while **Alice** casts **Arc** as needed, leaving **Margarete** to also attack normally, supporting **Alice** when needed to replenish **Yuri**'s SP, as well as **Alice**'s MP."
+                        },
+                        {
+                          "text": "**Cherubim** isn't really that complicated, so as long as you have **Crucifixes** equipped to everyone and have **Alice** use **Arc** every round, then it's just a matter of taking the time to whittle away his HP."
+                        },
+                        {
+                          "text": "Just make sure not to let anyone go **Berserk**."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Reward**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Once the battle is over, you'll receive **Zhuzhen**'s best weapon, the **Holy Peak Staff**."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [

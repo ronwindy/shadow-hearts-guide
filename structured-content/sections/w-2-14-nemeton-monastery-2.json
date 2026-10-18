@@ -129,7 +129,48 @@
           ],
           "exp": 50000,
           "cash": 20000,
-          "strategy": "- **Atman** can still kill **Alice** in two rounds, so make sure that she stays healed.\n- As for attacks, this time around, **Atman** will still use Eradication, but it won't kill; instead, it'll just do a pretty good amount of damage, as well as reduce SP.\n- He can also attack normally, as well as use **Dragon Cry** and other strong class spells for decent damage.\n- Have **Yuri** fuse into **Amon** and rip into **Atman** with physical attacks, while **Alice** should be using **Arc** every round to keep their HP maxed.\n- If for some reason she gets a free turn, have her cast **Advent** to help **Yuri** deal some damage."
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Threats**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Atman** can still kill **Alice** in two rounds, so make sure that she stays healed."
+                        },
+                        {
+                          "text": "As for attacks, this time around, **Atman** will still use Eradication, but it won't kill; instead, it'll just do a pretty good amount of damage, as well as reduce SP."
+                        },
+                        {
+                          "text": "He can also attack normally, as well as use **Dragon Cry** and other strong class spells for decent damage."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Party**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Have **Yuri** fuse into **Amon** and rip into **Atman** with physical attacks, while **Alice** should be using **Arc** every round to keep their HP maxed."
+                        },
+                        {
+                          "text": "If for some reason she gets a free turn, have her cast **Advent** to help **Yuri** deal some damage."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "encounter": {
           "enemies": [
