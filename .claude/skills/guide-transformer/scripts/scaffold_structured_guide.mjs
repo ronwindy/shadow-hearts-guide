@@ -13,6 +13,7 @@ import { fileURLToPath } from "node:url";
 import { blocksFromMarkdown } from "./richtext.mjs";
 import { PROJECT } from "../../../../scripts/project_config.mjs";
 import { parseItemBoxes } from "../../../../scripts/reference_tables.mjs";
+import { parseSkillGroups } from "../../../../scripts/reference_skills.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(here, "..", "..", "..", "..");
@@ -779,7 +780,9 @@ function scaffoldReferenceGuide(canonical) {
     shops: canonical.shops ?? [],
   };
   const parsed = canonical.id === "a-1-05" ? parseItemBoxes(canonical.text) : null;
-  if (parsed) guide.reference_tables = [parsed];
+  const groups = canonical.id === "a-1-01" ? parseSkillGroups(canonical.text) : null;
+  if (groups) guide.reference_groups = groups;
+  else if (parsed) guide.reference_tables = [parsed];
   else guide.reference_blocks = [{ format: "preformatted", text: canonical.text ?? "" }];
   if (canonical.boss) guide.boss = canonical.boss;
   return { guide };

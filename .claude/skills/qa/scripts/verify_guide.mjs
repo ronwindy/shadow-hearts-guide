@@ -18,6 +18,7 @@ import { flattenGuide } from "../../guide-transformer/scripts/richtext.mjs";
 import { checkTextFidelity } from "./text_fidelity.mjs";
 import { loadMerges, expectedNavId } from "./merges.mjs";
 import { parseItemBoxes } from "../../../../scripts/reference_tables.mjs";
+import { parseSkillGroups } from "../../../../scripts/reference_skills.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 export const ROOT_DIR = resolve(here, "..", "..", "..", "..");
@@ -81,7 +82,41 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
   // Applies to scaffolded appendices (a-1-*, except the a-1-00 index) and to any file that
   // carries reference_blocks; hand-structured intro pages (header, TOC) are exempt.
   const isVerbatimReference = (secId.startsWith("a-1-") && secId !== "a-1-00") || truthy(guide.reference_blocks);
-  if (guide.type === "reference" && isVerbatimReference && truthy(guide.reference_tables)) {
+  if (guide.type === "reference" && isVerbatimReference && truthy(guide.reference_groups)) {
+    // Parsed skill groups: rebuild from the canonical text and compare every field.
+    let expected = null;
+    try { expected = parseSkillGroups(canonical.text ?? ""); } catch { /* reported below */ }
+    const got = guide.reference_groups;
+    const n = (v) => String(v ?? "").replace(/s+/g, " ").trim();
+    const cmp = (path, e, g) => {
+      if (JSON.stringify(e) !== JSON.stringify(g)) {
+        addFinding("critical", "factual discrepancy", path, JSON.stringify(e), JSON.stringify(g), "Skill group differs from canonical");
+      }
+    };
+    if (!expected) {
+      addFinding("critical", "factual discrepancy", "reference_groups", "parsable skill groups", "unparsable canonical",
+        "Canonical text could not be re-parsed into skill groups");
+    } else {
+      if (expected.length !== got.length) {
+        addFinding("critical", "factual discrepancy", "reference_groups", `${expected.length} groups`, `${got.length} groups`, "Group count differs from canonical");
+      }
+      expected.forEach((eg, i) => {
+        const gg = got[i];
+        if (!gg) return;
+        const where = `reference_groups[${i}] ${eg.title}`;
+        if (n(eg.title) !== n(gg.title) || n(eg.intro) !== n(gg.intro)) cmp(`${where}.header`, { t: eg.title, i: eg.intro ?? "" }, { t: gg.title, i: gg.intro ?? "" });
+        if (eg.columns) cmp(`${where}.columns`, eg.columns, gg.columns);
+        if (eg.rows) {
+          if (eg.rows.length !== (gg.rows ?? []).length) cmp(`${where}.rows`, eg.rows.length, (gg.rows ?? []).length);
+          eg.rows.forEach((r, j) => cmp(`${where}.rows[${j}]`, r.cells, gg.rows?.[j]?.cells));
+        }
+        if (eg.cards) {
+          if (eg.cards.length !== (gg.cards ?? []).length) cmp(`${where}.cards`, eg.cards.length, (gg.cards ?? []).length);
+          eg.cards.forEach((c, j) => cmp(`${where}.cards[${j}] ${c.title}`, c, gg.cards?.[j]));
+        }
+      });
+    }
+  } else if (guide.type === "reference" && isVerbatimReference && truthy(guide.reference_tables)) {
     // Parsed tables: rebuild from the canonical text and compare every cell.
     let expected = null;
     try { expected = parseItemBoxes(canonical.text ?? ""); } catch { /* reported below */ }

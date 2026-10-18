@@ -11,6 +11,7 @@ import EnemyTable from '../../components/EnemyTable.astro';
 import ShopTable from '../../components/ShopTable.astro';
 import ReferenceBlocks from '../../components/ReferenceBlocks.astro';
 import ReferenceTables from '../../components/ReferenceTables.astro';
+import ReferenceGroups from '../../components/ReferenceGroups.astro';
 import InfoBlocks from '../../components/InfoBlocks.astro';
 import Callouts from '../../components/Callouts.astro';
 import ObjectivesList from '../../components/ObjectivesList.astro';
@@ -156,6 +157,7 @@ const pageSections = headerGuide
         {/* Verbatim reference/appendix tables */}
         <ReferenceBlocks blocks={guide.reference_blocks || []} />
         <ReferenceTables tables={guide.reference_tables || []} />
+        <ReferenceGroups groups={guide.reference_groups || []} />
 
         <DocumentInfo metadata={overview.metadata} purpose={overview.purpose} guideScope={overview.guide_scope} />
       </div>

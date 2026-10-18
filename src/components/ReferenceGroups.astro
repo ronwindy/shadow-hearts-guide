@@ -1,0 +1,122 @@
+---
+import { Sparkles } from '@lucide/astro';
+
+interface Row { cells: string[] }
+interface Card {
+  title: string;
+  class?: string;
+  sp: string;
+  summary: string;
+  header_name?: string;
+  detail?: string;
+  columns: string[];
+  rows: Row[];
+}
+interface Group {
+  title: string;
+  intro?: string;
+  columns?: string[];
+  rows?: Row[];
+  cards?: Card[];
+}
+
+interface Props {
+  groups?: Group[];
+}
+
+const { groups = [] } = Astro.props;
+const slug = (s: string) => 'skills-' + s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+const count = groups.reduce((n, g) => n + (g.cards ? g.cards.length : (g.rows?.length ?? 0)), 0);
+---
+
+{groups.length > 0 && (
+  <section id="reference" class="space-y-6">
+    <div class="flex items-center justify-between heading-flourish">
+      <h2 class="text-xl sm:text-2xl font-serif font-semibold text-slate-100 flex items-center gap-2.5">
+        <Sparkles class="w-5 h-5 text-gold-400 flex-shrink-0" />
+        <span class="gold-metal-lite">Special Skills / Souls</span>
+      </h2>
+      <span class="text-sm font-mono text-slate-400">{count} entries</span>
+    </div>
+
+    <nav aria-label="Jump to character" class="flex flex-wrap gap-2">
+      {groups.map((g) => (
+        <a href={`#${slug(g.title)}`} class="px-3 py-1.5 rounded-lg border border-slate-800 bg-slate-850/90 text-sm text-slate-200 hover:text-gold-400 hover:border-gold-400/50 transition-colors">
+          {g.title}
+        </a>
+      ))}
+    </nav>
+
+    {groups.map((g) => (
+      <div id={slug(g.title)} class="space-y-3 scroll-mt-24">
+        <h3 class="text-lg font-serif font-semibold text-gold-400">{g.title}</h3>
+        {g.intro && <p class="text-slate-300 leading-relaxed">{g.intro}</p>}
+
+        {g.cards && (
+          <div class="space-y-4">
+            {g.cards.map((c) => (
+              <article class="rounded-xl border border-slate-800 bg-slate-850/90 shadow-sm overflow-hidden">
+                <header class="px-4 pt-3 pb-2 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <h4 class="font-semibold text-emerald-400 text-base sm:text-lg">
+                    {c.title}
+                    {c.class && <span class="ml-2 text-sm font-normal text-slate-400">({c.class})</span>}
+                  </h4>
+                  <span class="text-sm font-mono text-slate-300">SP Needed: {c.sp}</span>
+                </header>
+                <div class="px-4 pb-3 text-sm text-slate-400 leading-relaxed">
+                  <p class="text-slate-300">{c.summary}</p>
+                  {c.detail && <p class="mt-1">{c.detail}</p>}
+                </div>
+                <div class="border-t border-slate-800 sm:overflow-x-auto">
+                  <table class="w-full text-sm text-left max-sm:block">
+                    <thead class="max-sm:hidden">
+                      <tr class="border-b border-slate-800 text-slate-400 font-sans bg-slate-900/80">
+                        {c.columns.map((col) => <th class="py-2 px-4 font-semibold">{col}</th>)}
+                      </tr>
+                    </thead>
+                    {c.rows.map((r) => (
+                      <tbody class="border-b border-slate-800/60 last:border-b-0 text-slate-300 max-sm:block max-sm:px-3 max-sm:py-2">
+                        <tr class="max-sm:flex max-sm:flex-wrap max-sm:gap-x-3 max-sm:gap-y-1">
+                          {r.cells.map((cell, i) => (
+                            <td class={i === 1 ? 'py-2 px-4 font-semibold text-slate-100 max-sm:p-0' : 'py-2 px-4 text-slate-200 max-sm:p-0'}>
+                              {i !== 1 && <span class="sm:hidden text-xs uppercase tracking-wide text-slate-500 mr-1">{c.columns[i]}:</span>}
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      </tbody>
+                    ))}
+                  </table>
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
+
+        {g.columns && g.rows && (
+          <div class="rounded-xl border border-slate-800 bg-slate-850/90 shadow-sm sm:overflow-x-auto">
+            <table class="w-full text-sm sm:text-base text-left max-sm:block">
+              <thead class="max-sm:hidden">
+                <tr class="border-b border-slate-800 text-slate-400 font-sans bg-slate-900/80">
+                  {g.columns.map((col) => <th class="py-3 px-4 font-semibold">{col}</th>)}
+                </tr>
+              </thead>
+              {g.rows.map((r) => (
+                <tbody class="border-b border-slate-800/60 last:border-b-0 text-slate-300 hover:bg-slate-800/30 transition-colors max-sm:block max-sm:px-3 max-sm:py-3">
+                  <tr class="max-sm:flex max-sm:flex-wrap max-sm:gap-x-3 max-sm:gap-y-1">
+                    {r.cells.map((cell, i) => (
+                      <td class={i === 1 ? 'py-2.5 px-4 font-semibold text-emerald-400 max-sm:p-0' : 'py-2.5 px-4 text-slate-200 max-sm:p-0'}>
+                        {i !== 1 && <span class="sm:hidden text-xs uppercase tracking-wide text-slate-500 mr-1">{g.columns![i]}:</span>}
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                </tbody>
+              ))}
+            </table>
+          </div>
+        )}
+      </div>
+    ))}
+  </section>
+)}

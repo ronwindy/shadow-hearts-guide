@@ -947,6 +947,39 @@
             "additionalProperties": false
           }
         },
+        "reference_groups": {
+          "type": "array",
+          "description": "Parsed a-1-01 skill groups (deterministic scaffold): a group has either cards (Yuri's fusions) or a flat table (columns, rows).",
+          "items": {
+            "type": "object",
+            "required": ["title"],
+            "properties": {
+              "title": { "type": "string" },
+              "intro": { "type": "string" },
+              "columns": { "type": "array", "items": { "type": "string" } },
+              "rows": { "type": "array", "items": { "type": "object", "required": ["cells"], "properties": { "cells": { "type": "array", "items": { "type": "string" } } }, "additionalProperties": false } },
+              "cards": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["title", "sp", "summary", "columns", "rows"],
+                  "properties": {
+                    "title": { "type": "string" },
+                    "class": { "type": "string" },
+                    "sp": { "type": "string" },
+                    "summary": { "type": "string" },
+                    "header_name": { "type": "string" },
+                    "detail": { "type": "string" },
+                    "columns": { "type": "array", "items": { "type": "string" } },
+                    "rows": { "type": "array", "items": { "type": "object", "required": ["cells"], "properties": { "cells": { "type": "array", "items": { "type": "string" } } }, "additionalProperties": false } }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
         "reference_tables": {
           "type": "array",
           "description": "Parsed canonical tables for reference sections (deterministic scaffold). Each row has cells matching columns plus an optional description line shown beneath it.",
