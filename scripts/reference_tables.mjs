@@ -80,3 +80,71 @@ export function parseItemBoxes(text) {
     rows: out,
   };
 }
+
+// ---------------------------------------------------------------------------------------------
+// a-1-02 Weapons: one titled box per character, one weapon row per sub-box:
+//   |  Weapon name        |   11 /   9  |   13 /  10  | ... (4 stat cells, P-Atk/S-Atk per A-Lv.)
+//   |  Description (Menu): wrapped text                           |
+//   |  Description (Info): Display name                           |
+//   |                      wrapped text                           |
+// Cells keep the source's "P / S" notation (whitespace normalised).
+
+/** @returns {{title: string, intro?: string, columns: string[], rows: {cells: string[], detail_menu: string, detail_title?: string, detail: string}[]}[] | null} */
+export function parseWeaponTables(text) {
+  const lines = String(text ?? "").split(/\r?\n/);
+  const tables = [];
+  const intro = [];
+  let table = null;
+  let cur = null;
+  let field = null; // "menu" | "info"
+  const flush = () => {
+    if (!cur) return;
+    const info = cur.info.slice();
+    const title = info.shift() ?? "";
+    const row = { cells: cur.cells, detail_menu: cur.menu.join(" "), detail: info.join(" ") };
+    if (title && title !== cur.cells[0]) row.detail_title = title;
+    table.rows.push(row);
+    cur = null;
+    field = null;
+  };
+
+  for (const line of lines) {
+    const hdr = /^\|\s{2,}([A-Z][A-Za-z]+)\s+\|\s*$/.exec(line);
+    if (hdr) {
+      flush();
+      table = { title: ws(hdr[1]), columns: [], rows: [] };
+      tables.push(table);
+      continue;
+    }
+    if (!table) {
+      if (tables.length === 0 && line.trim() && !/[«»\\]|^\s*_+\s*$|^\s*¯+\s*$|^\s*\[A-/.test(line) && !isRule(line)) intro.push(ws(line));
+      continue;
+    }
+    const p = line.split("|");
+    if (p.length === 7 && p[0] === "" && p[6] === "") {
+      const c = p.slice(1, 6).map(ws);
+      if (/^A-Lv\./.test(c[1])) { table.columns = ["Weapon", ...c.slice(1).map((h) => h + " (P-Atk/S-Atk)")]; continue; }
+      if (c[1] === "P-Atk/S-Atk" || /^[=—¯]+$/.test(c[1])) continue;
+      if (c[0] && /^-?\d+ \/ -?\d+$/.test(c[1])) {
+        flush();
+        cur = { cells: c, menu: [], info: [] };
+        continue;
+      }
+      throw new Error(`unexpected stat line: ${line}`);
+    }
+    if (!cur || isRule(line)) continue;
+    const m = /^\|(.*)\|$/.exec(line);
+    if (!m) continue; // closing border
+    const t = ws(m[1]);
+    if (!t) continue;
+    if (/^Description \(Menu\):/.test(t)) { field = "menu"; cur.menu.push(t.replace(/^Description \(Menu\):\s*/, "")); }
+    else if (/^Description \(Info\):/.test(t)) { field = "info"; cur.info.push(t.replace(/^Description \(Info\):\s*/, "")); }
+    else if (field === "menu") cur.menu.push(t);
+    else if (field === "info") cur.info.push(t);
+    else throw new Error(`unexpected line in weapon box: ${line}`);
+  }
+  flush();
+  if (tables.length === 0 || tables.some((t) => t.rows.length === 0)) return null;
+  tables[0].intro = intro.join(" ");
+  return tables;
+}

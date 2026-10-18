@@ -1,10 +1,10 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 21:13:19`
+> Last synced: `2026-10-18 21:18:51`
 
 ```text
-=== PROJECT STATUS (2026-10-18 21:13:19) ===
-Canonical 66/66 | Structured 52/66 | QA pass 52/66 (fail 0) | Web built 52/66
+=== PROJECT STATUS (2026-10-18 21:18:51) ===
+Canonical 66/66 | Structured 53/66 | QA pass 53/66 (fail 0) | Web built 53/66
 Next:
   (nothing pending)
 ```
@@ -62,7 +62,7 @@ Next:
 | `[W-2-18]` | `w-2-18` | New Game+ | Walkthrough - Europe | WEB_BUILT |
 | `[A-1-00]` | `a-1-00` | Appendices | Appendices | NOT_STRUCTURED |
 | `[A-1-01]` | `a-1-01` | Special Skills / Souls | Appendices | WEB_BUILT |
-| `[A-1-02]` | `a-1-02` | Weapons | Appendices | NOT_STRUCTURED |
+| `[A-1-02]` | `a-1-02` | Weapons | Appendices | WEB_BUILT |
 | `[A-1-03]` | `a-1-03` | Armor | Appendices | NOT_STRUCTURED |
 | `[A-1-04]` | `a-1-04` | Accessories | Appendices | NOT_STRUCTURED |
 | `[A-1-05]` | `a-1-05` | Items | Appendices | WEB_BUILT |

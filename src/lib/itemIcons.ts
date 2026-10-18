@@ -4,7 +4,7 @@ import {
   Leaf, Sprout, Carrot, FlaskConical, Clover, Heart, Brain, Sparkles, Zap, Droplet, User, Feather,
   Wind, Bone, Flame, ScrollText, Coffee, Apple, Soup, Wine, GlassWater, Eye, Crosshair, Hourglass,
   Cat, Mountain, Shell, Bird, Star, Moon, Layers, Hand, KeyRound, Key, Dices, Ghost, Dumbbell,
-  HeartPulse, Gauge, Hammer, Ticket, Cloud, Tent,
+  HeartPulse, Gauge, Hammer, Ticket, Cloud, Tent, BookOpen, Wand, Sword, Target,
 } from '@lucide/astro';
 
 type IconComponent = typeof Leaf;
@@ -89,6 +89,20 @@ const MAP: Record<string, ItemIcon> = {
   'Tissues': { icon: Cloud, color: MISC },
   'Tent': { icon: Tent, color: MISC },
 };
+
+// Weapons (a-1-02) are grouped per character; every weapon of a character shares that character's weapon-type icon.
+const WEAPON_MAP: Record<string, ItemIcon> = {
+  Yuri: { icon: Hand, color: GEAR },
+  Alice: { icon: BookOpen, color: SEAL },
+  Zhuzhen: { icon: Wand, color: FOOD },
+  Margarete: { icon: Crosshair, color: SILVER },
+  Keith: { icon: Sword, color: REVIVE },
+  Halley: { icon: Target, color: CURE },
+};
+
+export function getWeaponIcon(character: string): ItemIcon | undefined {
+  return WEAPON_MAP[character];
+}
 
 export function getItemIcon(name: string): ItemIcon | undefined {
   return MAP[name];

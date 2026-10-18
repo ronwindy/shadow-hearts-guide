@@ -1,9 +1,10 @@
 ---
 import { Table2 } from '@lucide/astro';
-import { getItemIcon } from '../lib/itemIcons';
+import { getItemIcon, getWeaponIcon } from '../lib/itemIcons';
 
 interface TableRow {
   cells: string[];
+  detail_menu?: string;
   detail_title?: string;
   detail?: string;
 }
@@ -32,7 +33,12 @@ const { tables = [] } = Astro.props;
     </div>
     {tables.map((t) => (
       <div class="space-y-3">
-        {t.title && <h3 class="text-lg font-serif font-semibold text-gold-400">{t.title}</h3>}
+        {t.title && (
+          <h3 class="text-lg font-serif font-semibold text-gold-400 flex items-center gap-2">
+            {(() => { const ic = getWeaponIcon(t.title); return ic ? <ic.icon class={`w-5 h-5 flex-shrink-0 ${ic.color}`} aria-hidden="true" /> : null; })()}
+            {t.title}
+          </h3>
+        )}
         {t.intro && <p class="text-slate-300 leading-relaxed">{t.intro}</p>}
         <div class="rounded-xl border border-slate-800 bg-slate-850/90 shadow-sm sm:overflow-x-auto">
           <table class="w-full text-sm sm:text-base text-left max-sm:block">
@@ -52,17 +58,23 @@ const { tables = [] } = Astro.props;
                           : 'py-2.5 px-4 text-slate-200 max-sm:p-0'
                       }
                     >
-                      {i === 0 && (() => { const ic = getItemIcon(cell); return ic ? <ic.icon class={`inline-block w-4 h-4 mr-1.5 -mt-0.5 flex-shrink-0 ${ic.color}`} aria-hidden="true" /> : null; })()}
+                      {i === 0 && (() => { const ic = getItemIcon(cell) ?? (t.title ? getWeaponIcon(t.title) : undefined); return ic ? <ic.icon class={`inline-block w-4 h-4 mr-1.5 -mt-0.5 flex-shrink-0 ${ic.color}`} aria-hidden="true" /> : null; })()}
                       {i > 0 && <span class="sm:hidden text-xs uppercase tracking-wide text-slate-500 mr-1">{t.columns[i]}:</span>}
                       {cell}
                     </td>
                   ))}
                 </tr>
-                {(r.detail || r.detail_title) && (
+                {(r.detail || r.detail_title || r.detail_menu) && (
                   <tr class="max-sm:block">
                     <td colspan={t.columns.length} class="px-4 pb-3 pt-0 text-sm text-slate-400 leading-relaxed max-sm:block max-sm:p-0 max-sm:mt-1">
-                      {r.detail_title && <span class="font-semibold text-slate-300 mr-1.5">{r.detail_title}</span>}
-                      {r.detail}
+                      {r.detail_menu && <p><span class="text-xs uppercase tracking-wide text-slate-500 mr-1.5">Menu</span>{r.detail_menu}</p>}
+                      {(r.detail || r.detail_title) && (
+                        <p class={r.detail_menu ? 'mt-1' : ''}>
+                          {r.detail_menu && <span class="text-xs uppercase tracking-wide text-slate-500 mr-1.5">Info</span>}
+                          {r.detail_title && <span class="font-semibold text-slate-300 mr-1.5">{r.detail_title}</span>}
+                          {r.detail}
+                        </p>
+                      )}
                     </td>
                   </tr>
                 )}

@@ -997,6 +997,7 @@
                   "required": ["cells"],
                   "properties": {
                     "cells": { "type": "array", "items": { "type": "string" } },
+                    "detail_menu": { "type": "string" },
                     "detail_title": { "type": "string" },
                     "detail": { "type": "string" }
                   },

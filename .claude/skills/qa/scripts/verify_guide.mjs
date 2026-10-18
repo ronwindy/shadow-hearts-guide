@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 import { flattenGuide } from "../../guide-transformer/scripts/richtext.mjs";
 import { checkTextFidelity } from "./text_fidelity.mjs";
 import { loadMerges, expectedNavId } from "./merges.mjs";
-import { parseItemBoxes } from "../../../../scripts/reference_tables.mjs";
+import { parseItemBoxes, parseWeaponTables } from "../../../../scripts/reference_tables.mjs";
 import { parseSkillGroups } from "../../../../scripts/reference_skills.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -118,36 +118,48 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
     }
   } else if (guide.type === "reference" && isVerbatimReference && truthy(guide.reference_tables)) {
     // Parsed tables: rebuild from the canonical text and compare every cell.
-    let expected = null;
-    try { expected = parseItemBoxes(canonical.text ?? ""); } catch { /* reported below */ }
-    const got = guide.reference_tables[0] ?? {};
-    if (!expected) {
+    let expectedTables = null;
+    try {
+      expectedTables = canonical.id === "a-1-02" ? parseWeaponTables(canonical.text ?? "") : [parseItemBoxes(canonical.text ?? "")];
+    } catch { /* reported below */ }
+    if (!expectedTables || expectedTables.some((t) => !t)) {
       addFinding("critical", "factual discrepancy", "reference_tables", "parsable item boxes", "unparsable canonical",
         "Canonical text could not be re-parsed into a table");
     } else {
-      const n = (v) => String(v ?? "").replace(/\s+/g, " ").trim();
-      if (n(expected.intro) !== n(got.intro)) {
-        addFinding("critical", "factual discrepancy", "reference_tables.intro", expected.intro, got.intro ?? "",
-          "Table intro differs from canonical");
+      const n = (v) => String(v ?? "").replace(/s+/g, " ").trim();
+      if (expectedTables.length !== guide.reference_tables.length) {
+        addFinding("critical", "factual discrepancy", "reference_tables", `${expectedTables.length} tables`,
+          `${guide.reference_tables.length} tables`, "Table count differs from canonical");
       }
-      if (JSON.stringify(expected.columns) !== JSON.stringify(got.columns ?? [])) {
-        addFinding("critical", "factual discrepancy", "reference_tables.columns", expected.columns.join(" | "),
-          (got.columns ?? []).join(" | "), "Table columns differ from canonical");
-      }
-      const grows = got.rows ?? [];
-      if (expected.rows.length !== grows.length) {
-        addFinding("critical", "factual discrepancy", "reference_tables.rows", `${expected.rows.length} rows`,
-          `${grows.length} rows`, "Table row count differs from canonical");
-      }
-      expected.rows.forEach((er, i) => {
-        const gr = grows[i];
-        if (!gr) return;
-        const same = er.cells.length === (gr.cells ?? []).length && er.cells.every((c, j) => n(c) === n(gr.cells[j]))
-          && n(er.detail) === n(gr.detail) && n(er.detail_title) === n(gr.detail_title);
-        if (!same) {
-          addFinding("critical", "factual discrepancy", `reference_tables.rows[${i}]`, JSON.stringify(er),
-            JSON.stringify(gr), "Table row differs from canonical");
+      expectedTables.forEach((expected, ti) => {
+        const got = guide.reference_tables[ti] ?? {};
+        const at = `reference_tables[${ti}]${expected.title ? " " + expected.title : ""}`;
+        if (n(expected.title) !== n(got.title)) {
+          addFinding("critical", "factual discrepancy", `${at}.title`, expected.title ?? "", got.title ?? "", "Table title differs from canonical");
         }
+        if (n(expected.intro) !== n(got.intro)) {
+          addFinding("critical", "factual discrepancy", `${at}.intro`, expected.intro ?? "", got.intro ?? "",
+            "Table intro differs from canonical");
+        }
+        if (JSON.stringify(expected.columns) !== JSON.stringify(got.columns ?? [])) {
+          addFinding("critical", "factual discrepancy", `${at}.columns`, expected.columns.join(" | "),
+            (got.columns ?? []).join(" | "), "Table columns differ from canonical");
+        }
+        const grows = got.rows ?? [];
+        if (expected.rows.length !== grows.length) {
+          addFinding("critical", "factual discrepancy", `${at}.rows`, `${expected.rows.length} rows`,
+            `${grows.length} rows`, "Table row count differs from canonical");
+        }
+        expected.rows.forEach((er, i) => {
+          const gr = grows[i];
+          if (!gr) return;
+          const same = er.cells.length === (gr.cells ?? []).length && er.cells.every((c, j) => n(c) === n(gr.cells[j]))
+            && n(er.detail) === n(gr.detail) && n(er.detail_title) === n(gr.detail_title) && n(er.detail_menu) === n(gr.detail_menu);
+          if (!same) {
+            addFinding("critical", "factual discrepancy", `${at}.rows[${i}]`, JSON.stringify(er),
+              JSON.stringify(gr), "Table row differs from canonical");
+          }
+        });
       });
     }
   } else if (guide.type === "reference" && isVerbatimReference) {
