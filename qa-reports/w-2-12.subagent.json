@@ -1,0 +1,36 @@
+{
+  "section_id": "w-2-12",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "steps 1-21 vs canonical prose, in order",
+    "boss strategy (all four paragraphs, every fact, order preserved)",
+    "boss party levels/equipment/fusions, EXP 35000, Cash 18000, Angel Earrings drop on Amon",
+    "enemy table (6 rows, HP/class/notes)",
+    "shop inventory (39 items and prices)",
+    "upgrade chart (6 characters, weapon/armor Y/N)",
+    "choice dialogue 1/2 and the Ready? prompt",
+    "notes: Will Power/Leonardo's Bear, hit area, weapons shortcut, Amon soul/DestructionStone condition, Chris",
+    "items_summary rewards and step references",
+    "save points",
+    "warnings: DestructionStone MUST obtain, DO NOT TALK TO ROGER BACON"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "items_summary / rewards / boss.party / shops (item names)",
+      "canonical": "Mant.OfNobility, HolyBook-Martyrs, DestructionStone, ExecutionerSwd, HiAlloySlingshot, TalismanOfPower/Mercy/Wisdom/Purity",
+      "structured": "Mant.of Nobility, Holy Book-Martyrs, Destruction Stone, Executioner Swd, Hi Alloy Slingshot, Talisman of Power/Mercy/Wisdom/Purity",
+      "issue": "Item names are respaced or re-cased relative to the source's in-game spellings. Applied consistently and the prose uses the same normalized forms, so meaning is intact. Noted only because names must not be changed."
+    },
+    {
+      "severity": "low",
+      "category": "omitted",
+      "location": "step 18 (London, Old Castle Street heading)",
+      "canonical": "Sub-heading 'London, Old Castle Street' introduces the closing paragraphs",
+      "structured": "Step 18 says 'Head to Old Castle Street in London' and the heading itself is not kept",
+      "issue": "The location heading is dropped, but its content is preserved in steps 18-19 (London Rats' hideout, top floor), so no fact is lost."
+    }
+  ],
+  "structured_sha256": "1618002407bb0f15cbb5fb8f4942debfb198da3600e9d4bf1f57796c8776100c"
+}

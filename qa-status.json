@@ -285,6 +285,17 @@
       "medium": 0
     }
   },
+  "w-2-12": {
+    "checked_at": "2026-10-18T12:28:25",
+    "content_hash": "1618002407bb0f15",
+    "status": "PASS WITH WARNINGS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 1,
+      "medium": 0
+    }
+  },
   "w-s-01": {
     "checked_at": "2026-10-14T22:59:56",
     "content_hash": "d3f881225375a7e0",

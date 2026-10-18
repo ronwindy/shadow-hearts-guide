@@ -1,0 +1,808 @@
+{
+  "guide": {
+    "id": "w-2-12",
+    "code": "[W-2-12]",
+    "title": "Nemeton Monastery (1)",
+    "type": "walkthrough",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-05",
+        "code": "[W-S-05]",
+        "title": "Yuri's Gravestones",
+        "file": "sections/w-s-05-yuri-s-gravestones.json"
+      },
+      "next": {
+        "id": "w-2-13",
+        "code": "[W-2-13]",
+        "title": "Europe Side Quests, Part 2",
+        "file": "sections/w-2-13-europe-side-quests-part-2.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat **Albert**, **Amon**"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Talisman of Power",
+          "category": "items",
+          "location": "When you regain control, go east, following the path at the top of the screen as it goes east, then down to a dead-end where you'll find a Talisman of Power. (step 3)"
+        },
+        {
+          "name": "Seal of Vitality",
+          "category": "items",
+          "location": "It will now be unguarded, so open it for a Seal of Vitality. (step 14)"
+        },
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Take a few steps down, then search to the right to find a Lottery Ticket. (step 8)"
+        },
+        {
+          "name": "Seal of Strength",
+          "category": "items",
+          "location": "Use the Save Point, then open the chests to the left and right of the large door here for a Seal of Strength and a Punk Jacket for Halley. (step 16)"
+        },
+        {
+          "name": "Mant.of Nobility",
+          "category": "equipment",
+          "location": "Examine the tombstone to your northwest to find the grave of James O'Flaherty, then open the chest just to the right of it for a Mant.of Nobility for Keith. (step 2)"
+        },
+        {
+          "name": "Holy Book-Martyrs",
+          "category": "equipment",
+          "location": "Open it for a Holy Book-Martyrs for Alice, then take the southwestern path at the fork down the stairs to the next area. (step 11)"
+        },
+        {
+          "name": "Mauser Prototype",
+          "category": "equipment",
+          "location": "There's a slightly hidden chest directly to your west; open it for a Mauser Prototype for Margarete. (step 8)"
+        },
+        {
+          "name": "Coat of the Sage",
+          "category": "equipment",
+          "location": "Head all the way north to open the chest that was guarded before for a Coat of the Sage for Zhuzhen. (step 13)"
+        },
+        {
+          "name": "Silver Wolf Fang",
+          "category": "equipment",
+          "location": "Head back to the last screen, then head north, opening the semi-hidden chest to your west to find a Silver Wolf Fang for Yuri. (step 10)"
+        },
+        {
+          "name": "Punk Jacket",
+          "category": "equipment",
+          "location": "Use the Save Point, then open the chests to the left and right of the large door here for a Seal of Strength and a Punk Jacket for Halley. (step 16)"
+        },
+        {
+          "name": "Mind's Eye",
+          "category": "equipment",
+          "location": "Continue north to find a chest that's unguarded; it contains the Mind's Eye, which I recommend equipping on Margarete, but you can put it on whomever you like, if you're comfortable with their ring. (step 10)"
+        },
+        {
+          "name": "Light Gravestone",
+          "category": "valuables",
+          "location": "Make your way down the stairs, and just before reaching the center, take the stairs off to your left and past the vending machine here to the end, where you'll find the final gravestone, the Light Gravestone. (step 1)"
+        },
+        {
+          "name": "Destruction Stone",
+          "category": "valuables",
+          "location": "Go back two screens to the west to the glowing red pit, where the Destruction Stone will float down into your possession. (step 15)"
+        },
+        {
+          "name": "Amon",
+          "category": "souls",
+          "location": "At the end of the battle, you'll acquire the Amon Fusion Soul, but only if you got the DestructionStone in the ruins. (step 17)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#071",
+        "name": "Straithe",
+        "hp": 200,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#072",
+        "name": "Sin",
+        "hp": 240,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#073",
+        "name": "Guinea Pig",
+        "hp": 210,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Instant Death & uses SP Lowering"
+      },
+      {
+        "number": "#074",
+        "name": "Inverse",
+        "hp": 500,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": null,
+        "name": "Albert",
+        "hp": 2000,
+        "class": "Dark",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Inflicts Instant Death"
+      },
+      {
+        "number": "#075",
+        "name": "Amon",
+        "hp": 4000,
+        "class": "None",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Uses SP Lowering"
+      }
+    ],
+    "bosses": [],
+    "shops": [
+      {
+        "name": "Continental Zero",
+        "inventory": [
+          {
+            "name": "Silver Talon",
+            "price": 16000
+          },
+          {
+            "name": "Grand Bible",
+            "price": 17400
+          },
+          {
+            "name": "Four Gods' Staff",
+            "price": 15970
+          },
+          {
+            "name": "12 Gauge",
+            "price": 15800
+          },
+          {
+            "name": "Executioner Swd",
+            "price": 18030
+          },
+          {
+            "name": "Steel Slingshot",
+            "price": 14800
+          },
+          {
+            "name": "Hi Alloy Slingshot",
+            "price": 19200
+          },
+          {
+            "name": "Stygian Robe",
+            "price": 14800
+          },
+          {
+            "name": "Snow-White Robe",
+            "price": 15600
+          },
+          {
+            "name": "Headgear",
+            "price": 5400
+          },
+          {
+            "name": "Circlet",
+            "price": 5800
+          },
+          {
+            "name": "Charming Pareo",
+            "price": 5500
+          },
+          {
+            "name": "Loin Guard",
+            "price": 5200
+          },
+          {
+            "name": "Shell Bracelet",
+            "price": 2770
+          },
+          {
+            "name": "Bone Bracelet",
+            "price": 2960
+          },
+          {
+            "name": "Rosewood Bracelet",
+            "price": 3000
+          },
+          {
+            "name": "Bell Bracelet",
+            "price": 3120
+          },
+          {
+            "name": "Mirror Bracelet",
+            "price": 3240
+          },
+          {
+            "name": "Zodiac Bracelet",
+            "price": 10300
+          },
+          {
+            "name": "Cosmic Bracelet",
+            "price": 11500
+          },
+          {
+            "name": "Spikes",
+            "price": 2810
+          },
+          {
+            "name": "Pocket Watch",
+            "price": 5200
+          },
+          {
+            "name": "Will Power",
+            "price": 6000
+          },
+          {
+            "name": "Leonardo's Bear",
+            "price": 3330
+          },
+          {
+            "name": "Voodoo Doll",
+            "price": 5200
+          },
+          {
+            "name": "Jade Lariat",
+            "price": 5050
+          },
+          {
+            "name": "Coral Lariat",
+            "price": 5050
+          },
+          {
+            "name": "Thera Root",
+            "price": 300
+          },
+          {
+            "name": "Mana Root",
+            "price": 500
+          },
+          {
+            "name": "Pure Root",
+            "price": 1000
+          },
+          {
+            "name": "Talisman of Mercy",
+            "price": 820
+          },
+          {
+            "name": "Talisman of Wisdom",
+            "price": 1280
+          },
+          {
+            "name": "Talisman of Purity",
+            "price": 1760
+          },
+          {
+            "name": "Soul Benediction",
+            "price": 500
+          },
+          {
+            "name": "Bronze Arrowhead",
+            "price": 100
+          },
+          {
+            "name": "Bronze Dagger",
+            "price": 200
+          },
+          {
+            "name": "Silver Hourglass",
+            "price": 100
+          },
+          {
+            "name": "Gold Hourglass",
+            "price": 200
+          },
+          {
+            "name": "Tent",
+            "price": 480
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "- After the dialogue, enter the pretty slick-looking house on the left.\n- Make your way down the stairs, and just before reaching the center, take the stairs off to your left and past the vending machine here to the end, where you'll find the final gravestone, the **Light Gravestone**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Light Gravestone",
+            "category": "valuables",
+            "matched_overview_item": "Light Gravestone"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. There's nothing else to do in here, so leave the house, then make your way north up the hill.\n2. Examine the tombstone to your northwest to find the grave of **James O'Flaherty**, then open the chest just to the right of it for a **Mant.of Nobility** for **Keith**.\n3. Go through the doorway here to be within the walls of the **Monastery** for an event.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Mant.of Nobility",
+            "category": "equipment",
+            "matched_overview_item": "Mant.of Nobility"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "1. When you regain control, go east, following the path at the top of the screen as it goes east, then down to a dead-end where you'll find a **Talisman of Power**.\n2. Once you have it, head back to **Roger**'s house, where you'll have to watch an extremely long series of events.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Talisman of Power",
+            "category": "items",
+            "matched_overview_item": "Talisman of Power"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "1. When you regain control once again, examine the vending machine to the north that we passed earlier.\n2. Look at the chart below to see who to upgrade; there are quite a few nice items in the next dungeon that are better than what we can buy here:",
+        "type": "shop",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Upgrade chart",
+            "text": "Who to upgrade at the vending machine.",
+            "table": {
+              "headers": [
+                "Character Name",
+                "Upgrade Weapon? / Upgrade Armor?"
+              ],
+              "rows": [
+                {
+                  "range": "Yuri",
+                  "reward": "N / Y"
+                },
+                {
+                  "range": "Alice",
+                  "reward": "N / Y"
+                },
+                {
+                  "range": "Zhuzhen",
+                  "reward": "Y / N"
+                },
+                {
+                  "range": "Margarete",
+                  "reward": "N / Y"
+                },
+                {
+                  "range": "Keith",
+                  "reward": "Y / N"
+                },
+                {
+                  "range": "Halley",
+                  "reward": "Y / N"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "In other words, buy only Armor for **Yuri**, **Alice**, and **Margarete**, and buy only weapons for **Zhuzhen**, **Keith**, and **Halley**, if needed.",
+        "type": "shop",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Make sure to have 3 **Will Powers** and 3 **Leonardo's Bears** (optional) for the next boss battle, as he can use both **SP Lowering** and **Instant Death**."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": "Feel free to stock up on healing items. When you're ready, leave **Roger**'s house and return to the **Monastery Ruins** at the top of the hill to have **Roger** unlock the path to the underground ruins.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- With the newer weapons, the hit area is decreased once again.\n- We'll be finding another **Mind's Eye** inside (which I think works great with **Margarete**, since she has one of the easiest rings), so you may want to invest the Cash with **Meiyuan** to increase both **Yuri**'s and **Margarete**'s **Hit Areas** to help, **once** you find their new weapons in the next area.\n- Don't worry, they're not too far in."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "When you regain control, go underground and feel free to use the **Save Point**, then go west for a scene. Talk to **Roger** to have him recover your HP and MP, then head west into the ruins.",
+        "type": "story",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "If you want to just grab **Yuri**'s and **Margarete**'s weapons really quick to upgrade them, **Yuri**'s is one screen to the right and up (slightly hidden), and **Margarete**'s is two screens to the left (slightly hidden)."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "1. Take a few steps down, then search to the right to find a **Lottery Ticket**.\n2. Down the next set of steps is a fork; make your way west to the next area, then west once again to another.\n3. There's a slightly hidden chest directly to your west; open it for a **Mauser Prototype** for **Margarete**.\n4. At the fork here, take the southeastern path to the next area, following it to another area with a dead-end.\n5. Close the chest here to open a different one nearby, then make your way back to the entrance of the ruins.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          },
+          {
+            "name": "Mauser Prototype",
+            "category": "equipment",
+            "matched_overview_item": "Mauser Prototype"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "description": "1. Back at the entrance, take the eastern path to the next area, where you'll be at another fork.\n2. Continue east down the stairs to a dead-end with two chests.\n3. Open the northern one to drop the guard from the blue orb, then examine the orb to light up a pillar in another room.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 10,
+        "description": "1. Head back to the last screen, then head north, opening the semi-hidden chest to your west to find a **Silver Wolf Fang** for **Yuri**.\n2. Continue north to find a chest that's unguarded; it contains the **Mind's Eye**, which I recommend equipping on **Margarete**, but you can put it on whomever you like, if you're comfortable with their ring.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Silver Wolf Fang",
+            "category": "equipment",
+            "matched_overview_item": "Silver Wolf Fang"
+          },
+          {
+            "name": "Mind's Eye",
+            "category": "equipment",
+            "matched_overview_item": "Mind's Eye"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "description": "1. Make your way west back to the entrance, then go back west to the fork where you found the **Mauser Prototype**, taking the western path this time to the next area.\n2. At the fork here, examine the red orb to the north to change the color of the pillar in the other room, as well as remove the guard from the chest.\n3. Open it for a **Holy Book-Martyrs** for **Alice**, then take the southwestern path at the fork down the stairs to the next area.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Holy Book-Martyrs",
+            "category": "equipment",
+            "matched_overview_item": "Holy Book-Martyrs"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "description": "1. Ignore the path to the east that leads to the glowing red pit for now, and continue southeast to the next area.\n2. Continue along past the now-purple flame to the next area with a three-way fork near a yellow-guarded chest.\n3. Go northwest up the stairs first, following the path through this area to reach the green orb; examine it to change the pillar flame's color to white.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 13,
+        "description": "1. Make your way all the way back to the entrance of the ruins, then take the eastern path to be at the fork near where you found both the **Mind's Eye** and the **Silver Wolf Fang**.\n2. Head all the way north to open the chest that was guarded before for a **Coat of the Sage** for **Zhuzhen**.\n3. From here, go east to the area where we found the blue orb, and examine it once again for the light go from white to yellow.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Coat of the Sage",
+            "category": "equipment",
+            "matched_overview_item": "Coat of the Sage"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "description": "1. If you're hurting, stop by and have **Roger** heal you and Save if needed, then head back into the ruins and head west, returning to the fork with the yellow-guarded chest.\n2. It will now be unguarded, so open it for a **Seal of Vitality**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Seal of Vitality",
+            "category": "items",
+            "matched_overview_item": "Seal of Vitality"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "description": "1. Now that you've opened all of the chests related to the puzzle, there's a **very important** item that we must get.\n2. Go back two screens to the west to the glowing red pit, where the **Destruction Stone** will float down into your possession.\n3. You **must** obtain the **Destruction Stone** to obtain either of the last two Fusions for **Yuri**!\n4. If you don't, then you can't get them!!!",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Destruction Stone",
+            "category": "valuables",
+            "matched_overview_item": "Destruction Stone"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "description": "1. From the glowing red pit, make your way east two screens, then northeast and east at the fork there to come to the end of the path.\n2. Use the **Save Point**, then open the chests to the left and right of the large door here for a **Seal of Strength** and a **Punk Jacket** for **Halley**.\n3. Save again if you like, then examine the double doors.\n4. Ready?\n5. Choose 2 when you're completely prepared.\n6. Watch the events after you enter, then climb all the stairs to find **Albert**, where you'll have to face him.",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. I'm not ready yet.",
+            "after_item": 4
+          },
+          {
+            "option": "2. All right, let's go!!",
+            "after_item": 4
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Seal of Strength",
+            "category": "items",
+            "matched_overview_item": "Seal of Strength"
+          },
+          {
+            "name": "Punk Jacket",
+            "category": "equipment",
+            "matched_overview_item": "Punk Jacket"
+          }
+        ],
+        "boss": {
+          "type": "BOSS",
+          "name": "Albert, Amon",
+          "enemies": [
+            {
+              "name": "Albert",
+              "hp": 2000,
+              "class": "Dark",
+              "drop": null
+            },
+            {
+              "name": "Amon",
+              "hp": 4000,
+              "class": "None",
+              "drop": "Angel Earrings"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 37,
+              "equipment": [
+                "Silver Wolf Fang",
+                "Stygian Robe",
+                "Mind's Eye",
+                "Demon Earrings",
+                "Will Power"
+              ],
+              "fusions": [
+                "Baldo",
+                "Czernobog",
+                "Ifrit"
+              ]
+            },
+            {
+              "name": "Margarete",
+              "level": 30,
+              "equipment": [
+                "Mauser Prototype",
+                "Snow-White Robe",
+                "Mind's Eye",
+                "Demon Earrings",
+                "Will Power"
+              ]
+            },
+            {
+              "name": "Alice",
+              "level": 36,
+              "equipment": [
+                "Holy Book-Martyrs",
+                "Snow-White Robe",
+                "Oracle Earrings",
+                "Priest Earrings",
+                "Will Power"
+              ]
+            }
+          ],
+          "exp": 35000,
+          "cash": 18000,
+          "strategy": [
+            {
+              "list": "bullet",
+              "items": [
+                {
+                  "text": "**Albert**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Albert**'s **Holy Chest** attack will do some decent damage, but even worse, it'll reduce the amount of SP your entire party has by half.",
+                          "children": [
+                            {
+                              "list": "bullet",
+                              "items": [
+                                {
+                                  "text": "Making sure that you had those **Will Power** Accessories equipped will help **majorly** in keeping the SP damage from happening."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "text": "Other than that, he has a physical attack that will do a decent amount of damage."
+                        },
+                        {
+                          "text": "His **Revelation** attack will also do a decent amount of damage, but to your entire party with a chance of **Instant Death**.",
+                          "children": [
+                            {
+                              "list": "bullet",
+                              "items": [
+                                {
+                                  "text": "He rarely uses **Revelation**."
+                                },
+                                {
+                                  "text": "If you have problems with the **Instant Death** it causes, equip some **Leonardo's Bears** and try again."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Party strategy**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "**Yuri**",
+                          "children": [
+                            {
+                              "list": "bullet",
+                              "items": [
+                                {
+                                  "text": "Have **Yuri** fuse into **Ifrit** (or **Forron** if he has it) and cast **Ignition** (or **Battle Cry**) to boost his attack (as well as **Margarete**'s, if you're using **Ifrit** and have the time)."
+                                },
+                                {
+                                  "text": "Then have him attack normally every round."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "text": "**Alice**",
+                          "children": [
+                            {
+                              "list": "bullet",
+                              "items": [
+                                {
+                                  "text": "**Alice** should cast **Holy Edge** on both **Yuri** and **Margarete** to start with."
+                                },
+                                {
+                                  "text": "Then have her be devoted each round to casting **Arc** to keep everyone healed."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "text": "**Margarete**",
+                          "children": [
+                            {
+                              "list": "bullet",
+                              "items": [
+                                {
+                                  "text": "**Margarete** should have the **Mind's Eye** equipped and attacking normally while being laced with **Holy Edge**, just like **Yuri**."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "**Amon**",
+                  "children": [
+                    {
+                      "list": "bullet",
+                      "items": [
+                        {
+                          "text": "Any time after dealing over 2000 damage to **Albert**, he will fuse into **Amon**."
+                        },
+                        {
+                          "text": "Continue with the exact same strategy as above, minus the **Holy Edge** since **Amon** is non-class."
+                        },
+                        {
+                          "text": "**Amon**'s **Atomic Dust** spell will do pretty good damage to your entire party."
+                        },
+                        {
+                          "text": "He'll also hit with his physical attacks, which can cause major damage to a single ally."
+                        },
+                        {
+                          "text": "You need to watch out for **Demon Rays** though, as it'll either kill or nearly kill whomever it hits."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": 17,
+        "description": "1. Watch the long series of events, then you'll regain control in **Roger**'s house.\n2. Complete the **Spin Ring 3** to send **Roger** off, the watch another scene until you regain control.\n3. Leave **Roger**'s house and **Nemeton Monastery**.",
+        "type": "story",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Note",
+            "text": "At the end of the battle, you'll acquire the **Amon** Fusion Soul, but **only** if you got the **Destruction Stone** in the ruins."
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "description": "There's one last thing to do story-wise before taking on a plethora of side quests to get everything else in the game, as well as determine which ending we'll receive. Head to **Old Castle Street** in **London**.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 19,
+        "description": "- Make your way to the **London Rats**' hideout, and head to the top floor.\n- Watch the events up here with Koudelka and **Halley**, as well as with the rest of your party.\n- Watching this event will allow you to now complete the rest of what the game has to offer, so make sure to watch this before trying to continue on with the side quests!",
+        "type": "story",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Keep in mind that in addition to **Meiyuan**, **Chris** in the **London Rats**' hideout can now switch your party members for you."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 20,
+        "description": "1. Now, we're **supposed** to continue with the story, but there's an unholy amount to do, side-quest wise!\n2. If you don't care about side-quests or the good ending, then just go to **W-2-14 - Nemeton Monastery (2)**.\n3. Otherwise, let's get started below!",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 21,
+        "description": "At this point, **do not talk to Roger Bacon at Nemeton Monastery**! It's best to keep the story from progressing before we take care of the side quests.",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "Entrance to the underground ruins",
+      "Before the boss"
+    ]
+  }
+}

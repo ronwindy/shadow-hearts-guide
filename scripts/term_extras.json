@@ -27,7 +27,10 @@
     "Mary",
     "Indignant Mary",
     "Upset John",
-    "Wild John"
+    "Wild John",
+    "Roger Bacon",
+    "Roger",
+    "James O'Flaherty"
   ],
   "locations": [
     "Calios Mental Hospital",
@@ -43,7 +46,9 @@
     "Inn",
     "Item Shop",
     "Britain Map",
-    "Nemeton Monastery"
+    "Nemeton Monastery",
+    "Monastery Ruins",
+    "Monastery"
   ],
   "deny": [
     "Item",

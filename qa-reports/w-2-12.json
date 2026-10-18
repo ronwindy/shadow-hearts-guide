@@ -1,0 +1,29 @@
+{
+  "qa": {
+    "status": "PASS WITH WARNINGS",
+    "section_id": "w-2-12",
+    "section_title": "Nemeton Monastery (1)",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 1
+    },
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Albert, Amon].strategy",
+        "source": {
+          "text": "Albert's Holy Chest attack will do some decent damage, but even worse, it'll red"
+        },
+        "generated": {
+          "text": "Albert Albert's Holy Chest attack will do some decent damage, but even worse, it"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
+  }
+}
