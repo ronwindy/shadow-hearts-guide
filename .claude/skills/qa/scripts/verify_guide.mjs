@@ -64,10 +64,10 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
   for (const direction of ["prev", "next"]) {
     const cLink = cNav[direction];
     const gLink = gNav[direction];
+    const expected = truthy(cLink) ? expectedNavId(root, merges, secId, cLink, direction) : null;
     if (truthy(cLink) && !truthy(gLink)) {
-      addFinding("high", "navigation", `navigation.${direction}`, cLink, null, `Missing ${direction} navigation link`);
+      if (expected) addFinding("high", "navigation", `navigation.${direction}`, cLink, null, `Missing ${direction} navigation link`);
     } else if (truthy(cLink) && truthy(gLink)) {
-      const expected = expectedNavId(root, merges, secId, cLink, direction);
       if (gLink.id !== expected) {
         const why = cLink.id === expected ? "" : ` (canonical ${cLink.id} is merged; see structured-content/merges.json)`;
         addFinding("medium", "navigation", `navigation.${direction}.id`, expected, gLink.id,

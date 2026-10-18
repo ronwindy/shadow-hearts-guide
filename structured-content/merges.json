@@ -7,6 +7,10 @@
     "w-2-00": {
       "into": "w-2-01",
       "reason": "Single transition sentence moved to Prague (1) as step 1; overview page removed"
+    },
+    "header": {
+      "into": "i-1-01",
+      "reason": "Title, metadata, purpose and scope notes moved to Game Manual intro; header page removed"
     }
   }
 }

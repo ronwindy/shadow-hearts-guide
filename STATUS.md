@@ -1,10 +1,10 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 11:25:28`
+> Last synced: `2026-10-18 11:58:56`
 
 ```text
-=== PROJECT STATUS (2026-10-18 11:25:28) ===
-Canonical 67/67 | Structured 30/67 | QA pass 30/67 (fail 0) | Web built 30/67
+=== PROJECT STATUS (2026-10-18 11:58:56) ===
+Canonical 66/66 | Structured 29/66 | QA pass 29/66 (fail 0) | Web built 29/66
 Next:
   1. Structure w-s-05 (Yuri's Gravestones) - next chronological
 ```
@@ -13,7 +13,6 @@ Next:
 
 | Code | ID | Title | Category | State |
 | :-- | :-- | :-- | :-- | :-- |
-| `[HEADER]` | `header` | Title, Metadata & Intro Notes | Header | WEB_BUILT |
 | `[I-1-00]` | `i-1-00` | Table of Contents | Introduction | WEB_BUILT |
 | `[I-1-01]` | `i-1-01` | Game Manual / Instructions | Introduction | WEB_BUILT |
 | `[W-1-01]` | `w-1-01` | Trans-Siberian Express | Walkthrough - Asia | WEB_BUILT |

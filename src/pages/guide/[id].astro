@@ -18,13 +18,15 @@ import DocumentInfo from '../../components/DocumentInfo.astro';
 import SectionHeading from '../../components/SectionHeading.astro';
 import {
   getAllStructuredSections,
-  buildPageTocSections
+  buildPageTocSections,
+  getHeaderData
 } from '../../lib/guideData';
 import type { GuideContent } from '../../lib/types';
 import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight, ListChecks } from '@lucide/astro';
 
+// The header section has no page of its own; its content is merged into the ToC (i-1-00)
 export async function getStaticPaths() {
-  const sections = getAllStructuredSections();
+  const sections = getAllStructuredSections().filter((sec) => sec.id !== 'header');
   return sections.map((sec) => ({
     params: { id: sec.id },
     props: { section: sec.data },
@@ -38,6 +40,9 @@ const navigation = guide.navigation || {};
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 const guideHref = (id: string) => `${baseUrl}/guide/${id}`;
 
+// Header content (title metadata, purpose, scope, notes) is shown on the Game Manual page (Introduction)
+const headerGuide = guide.id === 'i-1-01' ? getHeaderData().guide : null;
+
 // Normalizations across walkthrough and reference schemas
 const objectives = guide.objectives || (overview.objective ? [overview.objective] : []);
 const route = guide.route || overview.route || [];
@@ -47,7 +52,11 @@ const bosses = guide.bosses || (guide.boss ? [guide.boss] : []);
 const shops = guide.shops || [];
 
 // Compute local on-page sections for Right TOC and Mobile Drawer
-const pageSections = buildPageTocSections(guide);
+// The ToC's Previous link would point at the removed header page, so drop it
+const prev = navigation.prev?.id === 'header' ? null : navigation.prev;
+const pageSections = headerGuide
+  ? [{ id: 'metadata', label: 'Document Information' }, ...buildPageTocSections(guide)]
+  : buildPageTocSections(guide);
 ---
 
 <BaseLayout
@@ -72,8 +81,8 @@ const pageSections = buildPageTocSections(guide);
         </nav>
 
         <nav aria-label="Previous and next chapter" class="flex items-center gap-3 flex-shrink-0 ml-2">
-          {navigation.prev && (
-            <a href={guideHref(navigation.prev.id)} aria-label={`Previous chapter: ${navigation.prev.title}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
+          {prev && (
+            <a href={guideHref(prev.id)} aria-label={`Previous chapter: ${prev.title}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
               <ChevronLeft class="w-3.5 h-3.5" aria-hidden="true" />
               <span class="hidden sm:inline">Prev</span>
             </a>
@@ -104,7 +113,18 @@ const pageSections = buildPageTocSections(guide);
           </section>
         )}
 
-        <ManualOverview overview={overview} />
+        <ManualOverview overview={overview}>
+          {headerGuide && (
+            <section id="title-metadata" class="space-y-8">
+              <Callouts callouts={headerGuide.callouts} />
+              <DocumentInfo
+                metadata={headerGuide.overview?.metadata}
+                purpose={headerGuide.overview?.purpose}
+                guideScope={headerGuide.overview?.guide_scope}
+              />
+            </section>
+          )}
+        </ManualOverview>
         <CharacterProfiles characters={overview.characters} glossary={overview.glossary} />
 
         <ObjectivesList objectives={objectives} />
@@ -135,16 +155,16 @@ const pageSections = buildPageTocSections(guide);
 
       <!-- Prev / Next Navigation Footer (Responsive Grid) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 border-t border-slate-800/80 pt-6 mt-12">
-        {navigation.prev ? (
+        {prev ? (
           <a
-            href={guideHref(navigation.prev.id)}
+            href={guideHref(prev.id)}
             class="card p-4 hover:border-gold-500/50 flex items-center gap-3 group transition-all"
           >
             <ArrowLeft class="w-5 h-5 text-gold-500 group-hover:-translate-x-1 motion-reduce:transform-none transition-transform flex-shrink-0" aria-hidden="true" />
             <div class="min-w-0 flex-1">
               <div class="text-xs font-sans text-slate-400 uppercase">Previous Chapter</div>
               <div class="text-sm sm:text-base font-medium text-slate-200 group-hover:text-gold-300 truncate">
-                {navigation.prev.title}
+                {prev.title}
               </div>
             </div>
           </a>

@@ -34,6 +34,8 @@ const { directions, controls, battle_mechanics: battle } = overview;
     </div>
   )}
 
+  <slot />
+
   {prologueEntries.length > 0 && (
     <CollapsibleSection id="prologue" title="Story Prologue" icon={ScrollText}>
       <div class="grid gap-3">

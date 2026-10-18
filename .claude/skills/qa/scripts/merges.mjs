@@ -30,13 +30,15 @@ function loadCanonicalNav(root, id) {
  * A link to a merged-away section lands on its target. If that target is this page, the merged hub
  * is skipped and its own neighbour in the same direction is used (e.g. Prague (1)'s prev is
  * Shanghai, Kuihai Tower, not the merged "Walkthrough - Europe" hub).
+ * A merged-away section with no neighbour in this direction (e.g. the header, which has no prev)
+ * resolves to no link, even when its content was merged into a page on the other side.
  */
 export function expectedNavId(root, merges, secId, link, direction) {
   let id = link.id;
   for (let hops = 0; merges[id] && hops < 10; hops++) {
-    if (merges[id].into !== secId) return merges[id].into;
     const next = loadCanonicalNav(root, id)[direction];
     if (!next?.id) return null;
+    if (merges[id].into !== secId) return merges[id].into;
     id = next.id;
   }
   return id;
