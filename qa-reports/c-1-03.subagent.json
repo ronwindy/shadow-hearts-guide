@@ -1,0 +1,12 @@
+{
+  "section_id": "c-1-03",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Paragraph 1: all four sentences present verbatim (personal/private use, no web site without written permission, other-site use prohibited, penalties and prosecution)",
+    "Paragraph 2: trademarks/copyrights ownership sentence verbatim",
+    "Copyright (c) 2000-2015 A Backdated Future. All Rights Reserved. and ~ fin ~ preserved",
+    "Metadata: id, code, title, author, version 1.05, source URL, prev c-1-02, next null match canonical"
+  ],
+  "findings": [],
+  "structured_sha256": "828c6ae54238b3b4d611631bc6c52c231794af639e2887b39690ebb42f778185"
+}

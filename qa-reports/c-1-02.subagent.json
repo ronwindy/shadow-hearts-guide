@@ -1,0 +1,14 @@
+{
+  "section_id": "c-1-02",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Intro line 'Big thanks go out to...'",
+    "Bullet 1: GameFAQs.com writers and game FAQ writers",
+    "Bullet 2: Lars N. (playing along, pointing out misses, boss strategies, 'so much better' sentence)",
+    "Bullet 3: mei_shu, Malice Reward List, Japanese Official Guide Book translation",
+    "Bullet 4: YOU, the reader",
+    "Metadata and navigation (prev c-1-01, next c-1-03)"
+  ],
+  "findings": [],
+  "structured_sha256": "41354e2b79ecee93d272173a8fd6823042eb7a43fe63bac5703877e0bc851435"
+}

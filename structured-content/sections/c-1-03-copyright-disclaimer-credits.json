@@ -1,0 +1,52 @@
+{
+  "guide": {
+    "id": "c-1-03",
+    "code": "[C-1-03]",
+    "title": "Copyright / Disclaimer / Credits",
+    "type": "walkthrough",
+    "category": "Conclusion",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "c-1-02",
+        "code": "[C-1-02]",
+        "title": "Thanks",
+        "file": "sections/c-1-02-thanks.json"
+      },
+      "next": null
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": []
+    },
+    "enemies": [],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "type": "exploration",
+        "rewards": [],
+        "description": "- This document may be not be reproduced under any circumstances except for personal, private use.\n- It may not be placed on any web site or otherwise distributed publicly without advance written permission from the author.\n- Use of this guide on any other web site or as a part of any public display is strictly prohibited, and a violation of copyright.\n- Unauthorized reproduction and distribution of this document, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law."
+      },
+      {
+        "id": 2,
+        "type": "exploration",
+        "rewards": [],
+        "description": "All trademarks and copyrights contained in this document are owned by their respective trademark and copyright holders, even those not explicitly stated herein."
+      },
+      {
+        "id": 3,
+        "type": "exploration",
+        "rewards": [],
+        "description": "Copyright © 2000-2015 A Backdated Future. All Rights Reserved.\n\n~ fin ~"
+      }
+    ]
+  }
+}

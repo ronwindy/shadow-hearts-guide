@@ -1,0 +1,16 @@
+{
+  "section_id": "c-1-01",
+  "verdict": "PASS",
+  "spot_checked": [
+    "All six version entries 1.00 to 1.05 present in order with identical version numbers and dates (01/17/2012, 01/19/2012, 01/20/2012, 01/23/2012, 01/30/2012, 02/15/2012)",
+    "1.01: all 8 'section was added' bullets present with exact names (Special Skills, Store/Shop List, Acupuncturist Costs, Lottery, Malice Rewards, Pedometer Rewards, NPC Library, Sub-bosses and Bosses)",
+    "1.02: Game Manual / Instructions and Codebreaker Codes added",
+    "1.03: 5 additions plus correction of Banshee and Larmgelg's Monster Library numbers",
+    "1.04: redesign, 6 additions/merge (Souls merged with Special Skills), 3 removals (Codebreaker, Gameshark, Action Replay Max) all preserved",
+    "1.05: Reformatted once again; Enemy Formations removed from walkthrough but still in bestiary (wrapped source line correctly joined)",
+    "Navigation prev a-1-15 and next c-1-02 and source metadata match canonical",
+    "No invented facts, no omitted bullets, no altered names or numbers"
+  ],
+  "findings": [],
+  "structured_sha256": "55b92169acc0e630daedea67b269f0b8094f7fd5830561b266fa47af929f8fa7"
+}
