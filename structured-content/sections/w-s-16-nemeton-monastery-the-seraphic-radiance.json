@@ -1,0 +1,481 @@
+{
+  "guide": {
+    "id": "w-s-16",
+    "code": "[W-S-16]",
+    "title": "Nemeton Monastery (The Seraphic Radiance /",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-2-15",
+        "code": "[W-2-15]",
+        "title": "Europe Side Quests, Part 3",
+        "file": "sections/w-2-15-europe-side-quests-part-3.json"
+      },
+      "next": {
+        "id": "w-2-16",
+        "code": "[W-2-16]",
+        "title": "Final Preparations",
+        "file": "sections/w-2-16-final-preparations.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat **Ben Hyuga**, SeraphicRadiance"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Nightbird Claw",
+          "category": "equipment",
+          "location": "By completing it, you'll receive Yuri's best weapon, the Nightbird Claw. (step 2)"
+        },
+        {
+          "name": "Father's Coat",
+          "category": "equipment",
+          "location": "Open a chest behind the tree, and you'll find Yuri's best armor, his Father's Coat. (step 13)"
+        },
+        {
+          "name": "Pulse Tract",
+          "category": "valuables",
+          "location": "After completing the Atman events, talk to Roger in the Nemeton Monastery; he'll notice the Erotic Book you have, and will give you the Pulse Tract in exchange for it! (step 1)"
+        },
+        {
+          "name": "Stone of Rebirth",
+          "category": "valuables",
+          "location": "Descend the stairs here and walk up to the altar; you'll find a chest containing the Stone of Rebirth. (step 10)"
+        },
+        {
+          "name": "Lottery Member No. 00 (Roger Bacon)",
+          "category": "lottery",
+          "location": "Choose 1, and as long as you have played the Lottery with ALL 15 of the previous members, you'll find out that Roger is Lottery Member No. 00, the Chairman!"
+        },
+        {
+          "name": "Seraphic Radiance",
+          "category": "souls",
+          "location": "Once he's defeated, you'll earn Yuri's final fusion, the Seraphic Radiance. (step 13)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": null,
+        "name": "Ben Hyuga",
+        "hp": 2000,
+        "class": "Dark",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#122",
+        "name": "SeraphicRadiance",
+        "hp": 5000,
+        "class": "None",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": ""
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "After completing the **Atman** events, talk to **Roger** in the **Nemeton Monastery**; he'll notice the **Erotic Book** you have, and will give you the **Pulse Tract** in exchange for it!",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Pulse Tract",
+            "category": "valuables",
+            "matched_overview_item": "Pulse Tract"
+          }
+        ],
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Note",
+            "text": [
+              {
+                "text": "You must have done the following to trigger this last series of events:"
+              },
+              {
+                "list": "bullet",
+                "items": [
+                  {
+                    "text": "Obtained the **Erotic Book** in **Shanghai**."
+                  },
+                  {
+                    "text": "Defeated the **Orb Chaos**/**Cherubim**/**Seraphim** in the bonus dungeons."
+                  },
+                  {
+                    "text": "Played the **Lottery** with **every** member up until now."
+                  },
+                  {
+                    "text": "Been sent to **Neameeto** at least once."
+                  },
+                  {
+                    "text": "Obtained **all 3** Fusions in each Fusion class, **and** **Amon** for **Yuri**."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. Talk to **Roger** again, and he'll want help for an experiment.\n2. The help? The dreaded **Spin Ring** 10! Yes, 30 hits on the **Judgment Ring**!\n3. Personally, I was able to get it in two tries (the first time I missed the very last one), but keep at it, and you'll eventually hit them all.\n4. Try your best not to break your TV, your controller, your PS2, **anything**.\n5. Stay calm and focused, and you should do it.\n6. By completing it, you'll receive **Yuri**'s best weapon, the **Nightbird Claw**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Nightbird Claw",
+            "category": "equipment",
+            "matched_overview_item": "Nightbird Claw"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "1. Next, **save your game**!\n2. Then talk to **Roger** again, and he'll ask if you wish to go to **Neameeto**.",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. Wait, I need to use the bathroom!",
+            "after_item": 2
+          },
+          {
+            "option": "2. Let's go!",
+            "after_item": 2
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": "- Choose 1, and as long as you have played the **Lottery** with **all 15** of the previous members, you'll find out that **Roger** is **Lottery Member** No. 00, the Chairman!\n- Nothing strange about the ring here, just really small hit areas!\n- **Make sure to win both the Cotton Underpants and Comet Mask before continuing on.**\n- The **Cotton Underpants** is an accessory for **Alice** that increases her physical defense AND cuts normal attack damage in half (and change the color of her panties from pink to white!).\n- The **Comet Mask** increases P-Def, S-Def, and P-Avd when equipped, and can't be obtained anywhere else.\n- If you don't win what you want, reload your last save and try again.",
+        "type": "quest",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Lottery Member No. 00 Prizes",
+            "text": "Prize listing for **Lottery Member No. 00**, by color.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Cotton Underpants"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "Comet Mask"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "Seal of the Soul"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Talisman of Power"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "- Now that we've met all the **Lottery Members**, feel free to waste your remaining tickets on whichever **Lottery Members** you like!\n- I recommend **Seals of the Soul** for your lower SP party members, mainly **Alice**.\n- As well as some of the other **Seals**, and some of the ultimate recovery items like the **Talisman of Power**, which revives an ally completely when used.",
+        "type": "shop",
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": [
+          {
+            "text": "If for some reason **Roger** doesn't show up as being the next **Lottery Member**, then you missed someone."
+          },
+          {
+            "text": "Here are the locations of all of the **Lottery Members** in the game; you can't do anything about the ones in China, but you can check with all of the ones here in Europe to make sure you didn't miss any:"
+          },
+          {
+            "text": "**Asia**"
+          },
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Lottery Member** No. #15: **Fengtian** (**Building-loving Man**)"
+              },
+              {
+                "text": "**Lottery Member** No. #14: **Dalian** (**Filthy Samo**)"
+              },
+              {
+                "text": "**Lottery Member** No. #13: **Smuggler's Boat** (**Courier Subordinate**)"
+              },
+              {
+                "text": "**Lottery Member** No. #12: **Shanghai, Huayuan** (**Sharp Van**)"
+              },
+              {
+                "text": "**Lottery Member** No. #11: **Temple Ruins** (**Master Xiaofang**)"
+              },
+              {
+                "text": "**Lottery Member** No. #10: **Kowloon Fortress** (**Invincible Nee**)"
+              },
+              {
+                "text": "**Lottery Member** No. #09: **Shanghai, Kuihai Tower** (**Private Matsuura**)"
+              }
+            ]
+          },
+          {
+            "text": "**Europe**"
+          },
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Lottery Member** No. #08: **Prague** (**Guard Homas**)"
+              },
+              {
+                "text": "**Lottery Member** No. #07: **Bistritz** (**Hunter Warda**)"
+              },
+              {
+                "text": "**Lottery Member** No. #06: **Rouen** (**Hooked-nose Robin**)"
+              },
+              {
+                "text": "**Lottery Member** No. #05: **London, Old Castle Street** (**Drunken Orro**)"
+              },
+              {
+                "text": "**Lottery Member** No. #04: **Calios Mental Hospital** (**Introverted Chopin**)"
+              },
+              {
+                "text": "**Lottery Member** No. #03: **London, Orphanage** (**Pot-lover Macken**)"
+              },
+              {
+                "text": "**Lottery Member** No. #02: **Rouen** (**Fake-nose Man**)",
+                "children": [
+                  {
+                    "list": "bullet",
+                    "items": [
+                      {
+                        "text": "If you already won his red prize, he will no longer appear."
+                      },
+                      {
+                        "text": "You also must have completed the **Water Gravestone** side quest and acted as a preacher to have No. 02 appear to begin with."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "**Lottery Member** No. #01: **Blue Castle** (**Keith-like invisible man**)"
+              },
+              {
+                "text": "**Lottery Member** No. #00: **Roger Bacon** (**Nemeton Monastery**)"
+              }
+            ]
+          }
+        ],
+        "type": "quest",
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "Now that we're finished with the **Lottery**, we need to move on to the very last side quest of them all: the **Seraphic Radiance**.",
+        "type": "quest",
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "Examine the **Pulse Tract** that you received from **Roger**; it depicts a new path through the **Ancient Ruins**, so that's where we're headed.",
+        "type": "navigation",
+        "rewards": []
+      },
+      {
+        "id": 9,
+        "description": [
+          {
+            "text": "**Ancient Ruins**: enter the maze, then take the following paths:"
+          },
+          {
+            "list": "numbered",
+            "items": [
+              {
+                "text": "**Yellow** (left room)"
+              },
+              {
+                "text": "**Red** (left room)"
+              },
+              {
+                "text": "**Green** (center room)"
+              },
+              {
+                "text": "**Violet** (right room)"
+              },
+              {
+                "text": "**Blue** (left room)"
+              },
+              {
+                "text": "**Red** (center room)"
+              },
+              {
+                "text": "**Turquoise** (right room)"
+              }
+            ]
+          }
+        ],
+        "type": "navigation",
+        "rewards": []
+      },
+      {
+        "id": 10,
+        "description": "- After you reach the very last area, be back at the beginning.\n- Descend the stairs here and walk up to the altar; you'll find a chest containing the **Stone of Rebirth**.\n- Make your way out of the **Ancient Ruins** and back onto the **World Map**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Stone of Rebirth",
+            "category": "valuables",
+            "matched_overview_item": "Stone of Rebirth"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "description": "**Save your game** and enter the **Graveyard** for the last time.",
+        "type": "navigation",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Note",
+            "text": [
+              {
+                "text": "The next battle is **extremely** difficult, as it will be with **Yuri** alone. I recommend doing the following things before attempting to fight:"
+              },
+              {
+                "list": "bullet",
+                "items": [
+                  {
+                    "text": "Put **Yuri** in the back row."
+                  },
+                  {
+                    "text": "Put both the **Brsrkr Earrings** and the **Seven-Eyed Mask** (or **Comet Mask**) on him to boost his HP and defense, respectively."
+                  },
+                  {
+                    "text": "Equip the **Mind's Eye** on him, unless you're still taking more damage in two rounds that you can't heal on.",
+                    "children": [
+                      {
+                        "list": "bullet",
+                        "items": [
+                          {
+                            "text": "If that's the case, equip a **Voodoo Doll**; it'll boost your S-Def a bit more AND revive **Yuri** once if he dies."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Stock up on **Thera Extracts** (**Silent Peddler**)."
+                  },
+                  {
+                    "text": "Buy some **Third Keys** to help speed the battle along. (optional)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "description": "1. Go through the northern gate, then go as far as you can north to examine the sunset.\n2. Attempt to leave, and you'll encounter **Ben Hyuga**.\n3. After some discussion about him and the **Seraphic Radiance**, you'll have to face him in an attempt to conquer and capture the god.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "BOSS",
+          "name": "Ben Hyuga, SeraphicRadiance",
+          "enemies": [
+            {
+              "name": "Ben Hyuga",
+              "hp": 2000,
+              "class": "Dark",
+              "drop": null
+            },
+            {
+              "name": "SeraphicRadiance",
+              "hp": 5000,
+              "class": "None",
+              "drop": "Diamond Ring"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 52,
+              "equipment": [
+                "Nightbird Claw",
+                "Stygian Robe",
+                "Mind's Eye",
+                "Brsrkr Earrings",
+                "Comet Mask"
+              ],
+              "fusions": [
+                "Amon",
+                "Lobo",
+                "Forron"
+              ]
+            }
+          ],
+          "exp": 60000,
+          "cash": 99999,
+          "strategy": "- First off is **Ben**; he'll use physical attacks, but once you do about 2000 HP worth of damage, he will then fuse into the **Seraphic Radiance**!\n- **Malcto** will hit **Yuri** for major damage while also healing itself!\n- That's its only special attack; the only other thing it does is its attack, and it hits **hard**!\n- If you're not in the back row, you better shift there immediately.\n- As long as you're in the back row, you should be able to attack two, possibly three times in a row before you will have to heal with a **Thera Root** or, preferably, a **Thera Extract**.\n- Fuse into **Amon**, or if you need some spare SP, then **Lobo** (since he has the 2nd highest P-Def at this point, as well as the same P-Atk as **Amon**).\n- All you'll be doing is physically attacking a round or two, then healing the next.\n- Yep, that's it... pretty boring actually, but any other route will likely get you killed.\n- Trust me, it's worth it.\n- If you find yourself in trouble, try using **Third Keys** to help dish out damage when you have an opportunity to.\n- If you're **still** having trouble with him, then you'll just have to level up and try again."
+        },
+        "encounter": {
+          "enemies": [
+            "Ben Hyuga",
+            "SeraphicRadiance"
+          ]
+        }
+      },
+      {
+        "id": 13,
+        "description": "- Once he's defeated, you'll earn **Yuri**'s final fusion, the **Seraphic Radiance**.\n- Watch the cut-scene here, and when you regain control, return to the tree where you fought **Ben**.\n- Open a chest behind the tree, and you'll find **Yuri**'s best armor, his **Father's Coat**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Seraphic Radiance",
+            "category": "souls",
+            "matched_overview_item": "Seraphic Radiance"
+          },
+          {
+            "name": "Father's Coat",
+            "category": "equipment",
+            "matched_overview_item": "Father's Coat"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "description": "That's it for all the side quests. Let's go to **[W-2-17] Neameeto** and end this.",
+        "type": "navigation",
+        "rewards": []
+      }
+    ]
+  }
+}

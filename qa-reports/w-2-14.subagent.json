@@ -1,0 +1,26 @@
+{
+  "section_id": "w-2-14",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Atman stats (HP 4000, class None, #121, notes list of anomalies)",
+    "Party levels 51, Yuri/Alice equipment lists, fusions Amon/Czernobog/Forron",
+    "EXP 50000 / Cash 20000 / drop Moonstone Ring",
+    "Boss strategy text (Eradication, Arc, Advent, Dragon Cry, two-round kill)",
+    "Both NOTE warnings (last chance for ending, Crucifixes)",
+    "Bad-ending vs good-ending branch (Alice alone vs Yuri joins)",
+    "Seven-Eyed Mask condition (only if Atman beaten with both) and tombstone text",
+    "Roger choices 1/2, Lottery Member No. 00, Spin Ring 5 / 15 targets",
+    "Neameeto side-quest skip to W-2-16, step ordering"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "steps[2].boss.party[Alice].equipment[1]",
+      "canonical": "GoldThreadCoat",
+      "structured": "Gold Thread Coat",
+      "issue": "Item name respaced; the source spells it GoldThreadCoat (one word). Item names must not be renamed; restore the source spelling or confirm it is a deliberate project-wide normalization."
+    }
+  ],
+  "structured_sha256": "f935b49fd3983e4a39be5a26be4f0e86e253b5972d2ef2112c8a20c42db2f096"
+}

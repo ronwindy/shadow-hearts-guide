@@ -307,6 +307,61 @@
       "medium": 1
     }
   },
+  "w-2-14": {
+    "checked_at": "2026-10-18T16:09:36",
+    "content_hash": "f935b49fd3983e4a",
+    "status": "PASS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 0,
+      "medium": 0
+    }
+  },
+  "w-2-15": {
+    "checked_at": "2026-10-18T16:08:57",
+    "content_hash": "0bc5edce7bd909bf",
+    "status": "PASS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 0,
+      "medium": 0
+    }
+  },
+  "w-2-16": {
+    "checked_at": "2026-10-18T16:09:19",
+    "content_hash": "522cd9766cb07aa2",
+    "status": "PASS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 0,
+      "medium": 0
+    }
+  },
+  "w-2-17": {
+    "checked_at": "2026-10-18T16:12:27",
+    "content_hash": "fc96b15be0047715",
+    "status": "PASS WITH WARNINGS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 1,
+      "medium": 2
+    }
+  },
+  "w-2-18": {
+    "checked_at": "2026-10-18T16:09:19",
+    "content_hash": "fcb553049062f79f",
+    "status": "PASS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 0,
+      "medium": 0
+    }
+  },
   "w-s-01": {
     "checked_at": "2026-10-14T22:59:56",
     "content_hash": "d3f881225375a7e0",
@@ -464,6 +519,17 @@
   "w-s-15": {
     "checked_at": "2026-10-18T16:05:03",
     "content_hash": "487794aad55709fc",
+    "status": "PASS WITH WARNINGS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 1,
+      "medium": 0
+    }
+  },
+  "w-s-16": {
+    "checked_at": "2026-10-18T16:10:34",
+    "content_hash": "4ac72a57d585e5df",
     "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,

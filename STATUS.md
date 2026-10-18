@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 16:05:50`
+> Last synced: `2026-10-18 16:12:18`
 
 ```text
-=== PROJECT STATUS (2026-10-18 16:05:50) ===
-Canonical 66/66 | Structured 42/66 | QA pass 42/66 (fail 0) | Web built 42/66
+=== PROJECT STATUS (2026-10-18 16:12:18) ===
+Canonical 66/66 | Structured 48/66 | QA pass 48/66 (fail 0) | Web built 42/66
 Next:
-  1. Structure w-2-14 (Nemeton Monastery (2)) - next chronological
+  (nothing pending)
 ```
 
 ## Section Matrix
@@ -54,12 +54,12 @@ Next:
 | `[W-S-13]` | `w-s-13` | Yuri's Level 2 & 3 Fusions, ???? Attacks | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-14]` | `w-s-14` | Sharon's Pit Fight (Halley's Armor / Other Items | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-15]` | `w-s-15` | The Good Ending (Defeating the Masks) | Walkthrough - Europe | WEB_BUILT |
-| `[W-2-14]` | `w-2-14` | Nemeton Monastery (2) | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-2-15]` | `w-2-15` | Europe Side Quests, Part 3 | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-S-16]` | `w-s-16` | Nemeton Monastery (The Seraphic Radiance / | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-2-16]` | `w-2-16` | Final Preparations | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-2-17]` | `w-2-17` | Neameeto | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-2-18]` | `w-2-18` | New Game+ | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-2-14]` | `w-2-14` | Nemeton Monastery (2) | Walkthrough - Europe | QA_PASSED |
+| `[W-2-15]` | `w-2-15` | Europe Side Quests, Part 3 | Walkthrough - Europe | QA_PASSED |
+| `[W-S-16]` | `w-s-16` | Nemeton Monastery (The Seraphic Radiance / | Walkthrough - Europe | QA_PASSED |
+| `[W-2-16]` | `w-2-16` | Final Preparations | Walkthrough - Europe | QA_PASSED |
+| `[W-2-17]` | `w-2-17` | Neameeto | Walkthrough - Europe | QA_PASSED |
+| `[W-2-18]` | `w-2-18` | New Game+ | Walkthrough - Europe | QA_PASSED |
 | `[A-1-00]` | `a-1-00` | Appendices | Appendices | NOT_STRUCTURED |
 | `[A-1-01]` | `a-1-01` | Special Skills / Souls | Appendices | NOT_STRUCTURED |
 | `[A-1-02]` | `a-1-02` | Weapons | Appendices | NOT_STRUCTURED |

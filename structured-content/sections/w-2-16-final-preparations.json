@@ -1,0 +1,214 @@
+{
+  "guide": {
+    "id": "w-2-16",
+    "code": "[W-2-16]",
+    "title": "Final Preparations",
+    "type": "walkthrough",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-16",
+        "code": "[W-S-16]",
+        "title": "Nemeton Monastery (The Seraphic Radiance /",
+        "file": "sections/w-s-16-nemeton-monastery-the-seraphic-radiance.json"
+      },
+      "next": {
+        "id": "w-2-17",
+        "code": "[W-2-17]",
+        "title": "Neameeto",
+        "file": "sections/w-2-17-neameeto.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": []
+    },
+    "enemies": [],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "Just want to run a few last suggestions by you before you go on to finish...",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": [
+          {
+            "text": "Cash in all of your steps with the **Silent Peddler**. I recommend stocking up on **Thera Extracts**."
+          },
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "If you're going to be grinding for levels, be sure to equip the **Pedometer** and **Accelerator** while you're doing it."
+              },
+              {
+                "text": "You can easily earn enough steps to buy whatever you like."
+              }
+            ]
+          }
+        ],
+        "type": "shop",
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "Spend the money using **Meiyuan**'s Acupuncture to increase the **Hit Area** and/or Attack Power of your ultimate weapons.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": [
+          {
+            "text": "Stock up on the following items, if you have the cash and/or steps."
+          },
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "If you had ground everyone to get their final special skills, you should have a ton of both."
+              },
+              {
+                "text": "The **Third Keys** make for **much** easier boss battles."
+              },
+              {
+                "text": "And yes, these quantities are probably a bit high. Better safe than sorry."
+              },
+              {
+                "text": "If you don't have the extra money for Extracts right now, the enemies in **[W-2-17] Neameeto** can drop them, so if you have those sets of **Pirate Earrings**, you can get them to drop 100% if you equip 5 of them, or 4 of them and the **Thief Earrings**."
+              }
+            ]
+          },
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Thera Extract** (50+ from the **Silent Peddler**)"
+              },
+              {
+                "text": "**Mana Root** (50+ from **Roger's Vending Machine**)"
+              },
+              {
+                "text": "**Mana Extract** (10-15 or so from the **Tight-lipped Merchant** in **Prague**)"
+              },
+              {
+                "text": "**Pure Root** (25 or so from the **Tight-lipped Merchant** in **Prague**)"
+              },
+              {
+                "text": "**Pure Extract** (5-10 or so from the **Tight-lipped Merchant** in **Prague**)"
+              },
+              {
+                "text": "**Third Keys** (5-10 or so from the **Tight-lipped Merchant** in **Prague**)"
+              }
+            ]
+          }
+        ],
+        "type": "shop",
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "Learn all of **Yuri**'s ???? Fusion skills by going **Berserk** in battle, fused as the monster you want to learn the ability with.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": [
+          {
+            "text": "If you want to, you can grind everyone to the following levels to have all of their special skills. Here in **[W-2-17] Neameeto** is the best place for EXP and Gold in the game."
+          },
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Alice** - 48"
+              },
+              {
+                "text": "**Zhuzhen** - 47"
+              },
+              {
+                "text": "**Margarete** - 46"
+              },
+              {
+                "text": "**Keith** - 49"
+              },
+              {
+                "text": "**Halley** - 47"
+              }
+            ]
+          },
+          {
+            "text": "Grinding Equipment Suggestions (to maximize Steps, Cash, and EXP):"
+          },
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "**Brigand Earrings** x6, 1 per party member (purchased in Asia)"
+              },
+              {
+                "text": "**Thief Earrings** x1, equip on ANY party member (won from Lottery)"
+              },
+              {
+                "text": "**Pedometer** x1, equip on an active party member (from **Silent Peddler**)"
+              },
+              {
+                "text": "**Accelerator** x1, equip with the **Pedometer** (won from Lottery)"
+              },
+              {
+                "text": "**Monk Earrings** x2, active party members to boost EXP (**Olga**/Orphanage)"
+              }
+            ]
+          },
+          {
+            "text": "This should give you +140% Cash, Double Pedometer steps, and +40% EXP for those two who have the **Monk Earrings** equipped."
+          }
+        ],
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": [
+          {
+            "text": "Make sure everyone (yes, all six members) has their best equipment AND a set of accessories equipped."
+          },
+          {
+            "list": "bullet",
+            "items": [
+              {
+                "text": "Also, make sure they're at **least** level 40 or higher before moving on."
+              },
+              {
+                "text": "There's a point in **[W-2-17] Neameeto** that your party is split in two, and your preferred party may not be the one doing the fighting."
+              },
+              {
+                "text": "I strongly recommend leveling until they have their final skills as mentioned above."
+              }
+            ]
+          }
+        ],
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "Once you feel you've done everything you want to do, head to **[W-2-17] Neameeto** to finish what we've started...",
+        "type": "exploration",
+        "rewards": []
+      }
+    ]
+  }
+}

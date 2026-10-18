@@ -1,0 +1,68 @@
+{
+  "guide": {
+    "id": "w-2-18",
+    "code": "[W-2-18]",
+    "title": "New Game+",
+    "type": "walkthrough",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-2-17",
+        "code": "[W-2-17]",
+        "title": "Neameeto",
+        "file": "sections/w-2-17-neameeto.json"
+      },
+      "next": {
+        "id": "a-1-00",
+        "code": "[A-1-00]",
+        "title": "Appendices",
+        "file": "sections/a-1-00-appendices.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": []
+    },
+    "enemies": [],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "By saving your clear data after beating the game and watching the credits, you can now use that clear data to play the game in **New Game+** mode. There are a few benefits to playing in **New Game+** mode:",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "1) You start the game with every Fusion that you earned the last game, including both **Amon** and the **Seraphic Radiance**.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "2) Your **Score** (in the Command Menu) carries over on the right side, and you can compare your **Score** for this game against the one you earned last game.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": "3) If you have all 124 **Monster Library** entries from your last game (or even a combination of your last and current games), you can talk to **Knowledgeable Carl** when **Sharon's Pit Fight** becomes available, and he will give you the **Black Silk Pants**.\n- It is an accessory for **Alice** that increases her special defense and cuts special attack damage in half (and changes the color of her panties from pink to black!)",
+        "type": "exploration",
+        "rewards": [
+          {
+            "name": "Black Silk Pants",
+            "category": "items"
+          }
+        ]
+      }
+    ]
+  }
+}

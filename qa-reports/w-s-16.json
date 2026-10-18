@@ -1,0 +1,29 @@
+{
+  "qa": {
+    "status": "PASS WITH WARNINGS",
+    "section_id": "w-s-16",
+    "section_title": "Nemeton Monastery (The Seraphic Radiance /",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 1
+    },
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Ben Hyuga, SeraphicRadiance].strategy",
+        "source": {
+          "text": "'———————————————————' preferably, a Thera Extract. Fuse into Amon, or if you nee"
+        },
+        "generated": {
+          "text": "First off is Ben; he'll use physical attacks, but once you do about 2000 HP wort"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
+  }
+}

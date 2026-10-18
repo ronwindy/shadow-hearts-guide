@@ -1,0 +1,15 @@
+{
+  "section_id": "w-2-18",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Intro: save clear data after beating the game and watching the credits, New Game+ mode",
+    "Benefit 1: every Fusion from last game incl. Amon and Seraphic Radiance (run-together token re-spaced only)",
+    "Benefit 2: Score in Command Menu carries over on the right side, compare with last game",
+    "Benefit 3: 124 Monster Library entries (last game or combined), Knowledgeable Carl, Sharon's Pit Fight, Black Silk Pants (BLACKSILKPANTS re-spaced only)",
+    "Black Silk Pants effect: Alice accessory, increases special defense, halves special attack damage, panty color pink to black",
+    "Reward Black Silk Pants listed; order of the three benefits preserved; no invented facts",
+    "Navigation prev w-2-17 / next a-1-00 matches canonical"
+  ],
+  "findings": [],
+  "structured_sha256": "fcb553049062f79fe0012196c85597364ce8312c20f6bf90f6e2dc2fb8953b48"
+}

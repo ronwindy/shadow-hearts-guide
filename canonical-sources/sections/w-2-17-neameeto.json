@@ -366,19 +366,13 @@
     },
     {
       "type": "BOSS",
-      "name": "Messiah, Meta-God",
+      "name": "Messiah",
       "enemies": [
         {
           "name": "Messiah",
           "hp": 6000,
           "class": "None",
           "drop": "Silver Hand"
-        },
-        {
-          "name": "Meta-God",
-          "hp": 12500,
-          "class": "None",
-          "drop": null
         }
       ],
       "party": [
@@ -424,6 +418,61 @@
       "exp": 60000,
       "cash": 0,
       "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\n\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\n\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\n\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
+    },
+    {
+      "type": "BOSS",
+      "name": "Meta-God",
+      "enemies": [
+        {
+          "name": "Meta-God",
+          "hp": 12500,
+          "class": "None",
+          "drop": null
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 65,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Mind's Eye",
+            "Will Power",
+            "Crucifix"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Sandalphon"
+          ]
+        },
+        {
+          "name": "Margarete",
+          "level": 55,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Will Power",
+            "Crucifix"
+          ]
+        },
+        {
+          "name": "Alice",
+          "level": 57,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Will Power",
+            "Crucifix"
+          ]
+        }
+      ],
+      "exp": null,
+      "cash": null,
+      "strategy": "This is easily the greatest battle music of all time: Imbroglio!!!\n\nHe'll start off with Time of Judgment, which will do major damage to your\nentire party, but will also take away some MP. Each of his colored Abyss\nattacks will hit your party for pretty decent damage, but if you're not\nwearing a Crucifix, then it will also inflict you with a status\nabnormality, depending on the class. He'll also use Nine Springs, which\nworks like !!! in that it reduces your HP to 1, so be sure to heal after\nit hits.\n\nDon't bother boosting your party with For Tomorrow or anything like that;\nhe'll use Light of Deprivation to remove it all before you even get a\nchance to enjoy it.\n\nSince this is the final battle, Yuri gets to have a ton of fun with the\nitems we've been holding on to! Start off by fusing him into the\nSeraphicRadiance, then have use the Silver Hand item on himself, giving\nhim a 100% ring area. On his second turn, have him use a Monkey Paw on\nhimself, which will triple his attack! Before his third turn, have\nsomeone in your party use a Moon Swallow (or just a Star Swallow on Yuri)\nto make all attacks critical attacks!\n\nFinally, on his third, fourth, and fifth turns, have him use the two\nSeventh Keys and a Fifth Key. Just press the CROSS button as fast as you\ncan while you have the 100% ring area to land EVERY HIT! This should\nDEFINITELY be enough to take out God. If not, once the Silver Hand wears\noff, either attack normally for a few rounds, or try out the remaining\nFifth Keys to keep wailing on him. Remember, each attack that says 999 HP\ndamages is more than likely doing more than 999. The damage itself\ndoesn't cap; just the displayed number.\n\nIn the meantime, Alice should be casting Arc every single round, and\nMargarete should be helping Alice. If healing isn't needed, then use\nAdvent with Alice and normal attacks with Third or Fifth Keys with\nMargarete.\n\nIf for some reason you don't have those items, than you can work on him\nlike the last few bosses. As usual, fuse Yuri into the SeraphicRadiance\nand start physically attacking, using any Keys you do have. The girls\nshould be doing the same thing as listed above; just stay healed and be\npatient."
     }
   ],
   "boss": [
@@ -594,19 +643,13 @@
     },
     {
       "type": "BOSS",
-      "name": "Messiah, Meta-God",
+      "name": "Messiah",
       "enemies": [
         {
           "name": "Messiah",
           "hp": 6000,
           "class": "None",
           "drop": "Silver Hand"
-        },
-        {
-          "name": "Meta-God",
-          "hp": 12500,
-          "class": "None",
-          "drop": null
         }
       ],
       "party": [
@@ -652,6 +695,61 @@
       "exp": 60000,
       "cash": 0,
       "strategy": "He will start the battle off with Holy Chest, which would normally dampen\nyour SP, but with the Will Powers equipped, it'll only do a decent amount\nof damage. He will also use the !!! attack, so make sure that you heal\nIMMEDIATELY after it hits so you don't lose your ally. Other than that,\nhe just uses Status Abnormality, which won't do hardly any damage, and as\nlong as you have a Crucifix on, you don't need to worry about the\nanomalies.\n\nHe can also heal himself with Grace, and even though it only SAYS 999 HP\nis healed, trust me, a lot more than that is healed. There is no cap on\nthe damage or amount healed; just the numbers displayed.\n\nAs usual, fuse Yuri into the SeraphicRadiance and start off by casting\nFor Everyone to boost your party, then have him continually attack from\nthere on, using Third Keys. There is one more battle after this, so save\nyour Fifth and Seventh Keys for that. (Remember, For Everyone ALSO boosts\nyour AGL, and that means a faster ring, so if you can't keep up with it,\ndon't worry about casting it to begin with.)\n\nAlice will most likely be casting Arc every round, but whenever she\nhappens to get a free turn, have her cast Advent. Margarete should be\nattacking physically as well with Third Keys."
+    },
+    {
+      "type": "BOSS",
+      "name": "Meta-God",
+      "enemies": [
+        {
+          "name": "Meta-God",
+          "hp": 12500,
+          "class": "None",
+          "drop": null
+        }
+      ],
+      "party": [
+        {
+          "name": "Yuri",
+          "level": 65,
+          "equipment": [
+            "Nightbird Claw",
+            "Father's Coat",
+            "Mind's Eye",
+            "Will Power",
+            "Crucifix"
+          ],
+          "fusions": [
+            "SeraphicRadiance",
+            "Amon",
+            "Sandalphon"
+          ]
+        },
+        {
+          "name": "Margarete",
+          "level": 55,
+          "equipment": [
+            "10 Gauge",
+            "Leather Suit",
+            "Mind's Eye",
+            "Will Power",
+            "Crucifix"
+          ]
+        },
+        {
+          "name": "Alice",
+          "level": 57,
+          "equipment": [
+            "Holy Book-Flesh",
+            "GoldThreadCoat",
+            "CottonUnderpants",
+            "Will Power",
+            "Crucifix"
+          ]
+        }
+      ],
+      "exp": null,
+      "cash": null,
+      "strategy": "This is easily the greatest battle music of all time: Imbroglio!!!\n\nHe'll start off with Time of Judgment, which will do major damage to your\nentire party, but will also take away some MP. Each of his colored Abyss\nattacks will hit your party for pretty decent damage, but if you're not\nwearing a Crucifix, then it will also inflict you with a status\nabnormality, depending on the class. He'll also use Nine Springs, which\nworks like !!! in that it reduces your HP to 1, so be sure to heal after\nit hits.\n\nDon't bother boosting your party with For Tomorrow or anything like that;\nhe'll use Light of Deprivation to remove it all before you even get a\nchance to enjoy it.\n\nSince this is the final battle, Yuri gets to have a ton of fun with the\nitems we've been holding on to! Start off by fusing him into the\nSeraphicRadiance, then have use the Silver Hand item on himself, giving\nhim a 100% ring area. On his second turn, have him use a Monkey Paw on\nhimself, which will triple his attack! Before his third turn, have\nsomeone in your party use a Moon Swallow (or just a Star Swallow on Yuri)\nto make all attacks critical attacks!\n\nFinally, on his third, fourth, and fifth turns, have him use the two\nSeventh Keys and a Fifth Key. Just press the CROSS button as fast as you\ncan while you have the 100% ring area to land EVERY HIT! This should\nDEFINITELY be enough to take out God. If not, once the Silver Hand wears\noff, either attack normally for a few rounds, or try out the remaining\nFifth Keys to keep wailing on him. Remember, each attack that says 999 HP\ndamages is more than likely doing more than 999. The damage itself\ndoesn't cap; just the displayed number.\n\nIn the meantime, Alice should be casting Arc every single round, and\nMargarete should be helping Alice. If healing isn't needed, then use\nAdvent with Alice and normal attacks with Third or Fifth Keys with\nMargarete.\n\nIf for some reason you don't have those items, than you can work on him\nlike the last few bosses. As usual, fuse Yuri into the SeraphicRadiance\nand start physically attacking, using any Keys you do have. The girls\nshould be doing the same thing as listed above; just stay healed and be\npatient."
     }
   ],
   "shops": [],
