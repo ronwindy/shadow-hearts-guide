@@ -1,10 +1,10 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 21:00:21`
+> Last synced: `2026-10-18 21:05:44`
 
 ```text
-=== PROJECT STATUS (2026-10-18 21:00:21) ===
-Canonical 66/66 | Structured 51/66 | QA pass 51/66 (fail 0) | Web built 52/66
+=== PROJECT STATUS (2026-10-18 21:05:44) ===
+Canonical 66/66 | Structured 51/66 | QA pass 51/66 (fail 0) | Web built 51/66
 Next:
   (nothing pending)
 ```

@@ -439,6 +439,7 @@ export interface GuideContent {
   bosses?: BossData[];
   shops?: ShopInfo[];
   reference_blocks?: any[];
+  reference_tables?: { title?: string; intro?: string; columns: string[]; rows: { cells: string[]; detail_title?: string; detail?: string }[] }[];
   blocks?: { title?: string; text: any; notes?: { type?: string; title?: string; text: any }[] }[];
   steps?: StepChecklistItem[];
 }

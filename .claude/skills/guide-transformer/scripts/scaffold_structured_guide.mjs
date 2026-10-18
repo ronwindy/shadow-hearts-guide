@@ -12,6 +12,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { blocksFromMarkdown } from "./richtext.mjs";
 import { PROJECT } from "../../../../scripts/project_config.mjs";
+import { parseItemBoxes } from "../../../../scripts/reference_tables.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(here, "..", "..", "..", "..");
@@ -776,8 +777,10 @@ function scaffoldReferenceGuide(canonical) {
     enemies: canonical.enemies ?? [],
     bosses: canonical.bosses ?? [],
     shops: canonical.shops ?? [],
-    reference_blocks: [{ format: "preformatted", text: canonical.text ?? "" }],
   };
+  const parsed = canonical.id === "a-1-05" ? parseItemBoxes(canonical.text) : null;
+  if (parsed) guide.reference_tables = [parsed];
+  else guide.reference_blocks = [{ format: "preformatted", text: canonical.text ?? "" }];
   if (canonical.boss) guide.boss = canonical.boss;
   return { guide };
 }

@@ -17,6 +17,7 @@ import { fileURLToPath } from "node:url";
 import { flattenGuide } from "../../guide-transformer/scripts/richtext.mjs";
 import { checkTextFidelity } from "./text_fidelity.mjs";
 import { loadMerges, expectedNavId } from "./merges.mjs";
+import { parseItemBoxes } from "../../../../scripts/reference_tables.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 export const ROOT_DIR = resolve(here, "..", "..", "..", "..");
@@ -80,7 +81,41 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
   // Applies to scaffolded appendices (a-1-*, except the a-1-00 index) and to any file that
   // carries reference_blocks; hand-structured intro pages (header, TOC) are exempt.
   const isVerbatimReference = (secId.startsWith("a-1-") && secId !== "a-1-00") || truthy(guide.reference_blocks);
-  if (guide.type === "reference" && isVerbatimReference) {
+  if (guide.type === "reference" && isVerbatimReference && truthy(guide.reference_tables)) {
+    // Parsed tables: rebuild from the canonical text and compare every cell.
+    let expected = null;
+    try { expected = parseItemBoxes(canonical.text ?? ""); } catch { /* reported below */ }
+    const got = guide.reference_tables[0] ?? {};
+    if (!expected) {
+      addFinding("critical", "factual discrepancy", "reference_tables", "parsable item boxes", "unparsable canonical",
+        "Canonical text could not be re-parsed into a table");
+    } else {
+      const n = (v) => String(v ?? "").replace(/\s+/g, " ").trim();
+      if (n(expected.intro) !== n(got.intro)) {
+        addFinding("critical", "factual discrepancy", "reference_tables.intro", expected.intro, got.intro ?? "",
+          "Table intro differs from canonical");
+      }
+      if (JSON.stringify(expected.columns) !== JSON.stringify(got.columns ?? [])) {
+        addFinding("critical", "factual discrepancy", "reference_tables.columns", expected.columns.join(" | "),
+          (got.columns ?? []).join(" | "), "Table columns differ from canonical");
+      }
+      const grows = got.rows ?? [];
+      if (expected.rows.length !== grows.length) {
+        addFinding("critical", "factual discrepancy", "reference_tables.rows", `${expected.rows.length} rows`,
+          `${grows.length} rows`, "Table row count differs from canonical");
+      }
+      expected.rows.forEach((er, i) => {
+        const gr = grows[i];
+        if (!gr) return;
+        const same = er.cells.length === (gr.cells ?? []).length && er.cells.every((c, j) => n(c) === n(gr.cells[j]))
+          && n(er.detail) === n(gr.detail) && n(er.detail_title) === n(gr.detail_title);
+        if (!same) {
+          addFinding("critical", "factual discrepancy", `reference_tables.rows[${i}]`, JSON.stringify(er),
+            JSON.stringify(gr), "Table row differs from canonical");
+        }
+      });
+    }
+  } else if (guide.type === "reference" && isVerbatimReference) {
     const refText = (guide.reference_blocks ?? []).map((b) => b.text ?? "").join("");
     if (refText !== (canonical.text ?? "")) {
       addFinding("critical", "factual discrepancy", "reference_blocks",

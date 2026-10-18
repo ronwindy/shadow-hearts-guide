@@ -1,0 +1,74 @@
+---
+import { Table2 } from '@lucide/astro';
+
+interface TableRow {
+  cells: string[];
+  detail_title?: string;
+  detail?: string;
+}
+interface RefTable {
+  title?: string;
+  intro?: string;
+  columns: string[];
+  rows: TableRow[];
+}
+
+interface Props {
+  tables?: RefTable[];
+}
+
+const { tables = [] } = Astro.props;
+---
+
+{tables.length > 0 && (
+  <section id="reference" class="space-y-4">
+    <div class="flex items-center justify-between heading-flourish">
+      <h2 class="text-xl sm:text-2xl font-serif font-semibold text-slate-100 flex items-center gap-2.5">
+        <Table2 class="w-5 h-5 text-gold-400 flex-shrink-0" />
+        <span class="gold-metal-lite">Reference Tables</span>
+      </h2>
+      <span class="text-sm font-mono text-slate-400">{tables.reduce((n, t) => n + t.rows.length, 0)} entries</span>
+    </div>
+    {tables.map((t) => (
+      <div class="space-y-3">
+        {t.title && <h3 class="text-lg font-serif font-semibold text-gold-400">{t.title}</h3>}
+        {t.intro && <p class="text-slate-300 leading-relaxed">{t.intro}</p>}
+        <div class="rounded-xl border border-slate-800 bg-slate-850/90 shadow-sm sm:overflow-x-auto">
+          <table class="w-full text-sm sm:text-base text-left max-sm:block">
+            <thead class="max-sm:hidden">
+              <tr class="border-b border-slate-800 text-slate-400 font-sans bg-slate-900/80">
+                {t.columns.map((c) => <th class="py-3 px-4 font-semibold">{c}</th>)}
+              </tr>
+            </thead>
+            {t.rows.map((r) => (
+              <tbody class="border-b border-slate-800/60 last:border-b-0 text-slate-300 hover:bg-slate-800/30 transition-colors max-sm:block max-sm:px-3 max-sm:py-3">
+                <tr class="max-sm:flex max-sm:flex-wrap max-sm:gap-x-3 max-sm:gap-y-1">
+                  {r.cells.map((cell, i) => (
+                    <td
+                      class={
+                        i === 0
+                          ? 'py-2.5 px-4 font-semibold text-emerald-400 sm:whitespace-nowrap max-sm:w-full max-sm:p-0'
+                          : 'py-2.5 px-4 text-slate-200 max-sm:p-0'
+                      }
+                    >
+                      {i > 0 && <span class="sm:hidden text-xs uppercase tracking-wide text-slate-500 mr-1">{t.columns[i]}:</span>}
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+                {(r.detail || r.detail_title) && (
+                  <tr class="max-sm:block">
+                    <td colspan={t.columns.length} class="px-4 pb-3 pt-0 text-sm text-slate-400 leading-relaxed max-sm:block max-sm:p-0 max-sm:mt-1">
+                      {r.detail_title && <span class="font-semibold text-slate-300 mr-1.5">{r.detail_title}</span>}
+                      {r.detail}
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            ))}
+          </table>
+        </div>
+      </div>
+    ))}
+  </section>
+)}

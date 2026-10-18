@@ -947,6 +947,33 @@
             "additionalProperties": false
           }
         },
+        "reference_tables": {
+          "type": "array",
+          "description": "Parsed canonical tables for reference sections (deterministic scaffold). Each row has cells matching columns plus an optional description line shown beneath it.",
+          "items": {
+            "type": "object",
+            "required": ["columns", "rows"],
+            "properties": {
+              "title": { "type": "string" },
+              "intro": { "type": "string" },
+              "columns": { "type": "array", "items": { "type": "string" } },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["cells"],
+                  "properties": {
+                    "cells": { "type": "array", "items": { "type": "string" } },
+                    "detail_title": { "type": "string" },
+                    "detail": { "type": "string" }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
         "reference_blocks": {
           "type": "array",
           "description": "Verbatim canonical text blocks for reference/appendix sections (deterministic scaffold, no LLM prose)",
