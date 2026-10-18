@@ -73,7 +73,7 @@ const { directions, controls, battle_mechanics: battle } = overview;
                 <tr class="hover:bg-slate-800/40">
                   <td class="py-2 px-3 font-medium">{m.screen}</td>
                   <td class="py-2 px-3 text-gold-400 font-semibold">{m.cardinal}</td>
-                  <td class="py-2 px-3 font-mono text-slate-400">{m.abbr}</td>
+                  <td class="py-2 px-3 font-sans text-slate-400">{m.abbr}</td>
                 </tr>
               ))}
             </tbody>
@@ -102,7 +102,7 @@ const { directions, controls, battle_mechanics: battle } = overview;
             <tbody class="divide-y divide-slate-800/60 text-slate-300">
               {controls.controller_layout.map((c) => (
                 <tr class="hover:bg-slate-800/40">
-                  <td class="py-2.5 px-3 font-mono text-gold-400 font-semibold whitespace-nowrap">
+                  <td class="py-2.5 px-3 font-sans text-gold-400 font-semibold whitespace-nowrap">
                     <Fragment set:html={renderInlineMarkup(c.button)} />
                   </td>
                   <td class="py-2.5 px-3">

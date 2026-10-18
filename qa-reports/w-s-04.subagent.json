@@ -1,0 +1,32 @@
+{
+  "section_id": "w-s-04",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Overview: Lottery Member No. 04 (Introverted Chopin) and Equipment Deathblade, Jiru vs items_summary and overview",
+    "Step 1 navigation text: torture chair, Introverted Chopin, Lottery Member, 'Nothing strange about the ring here', Eternity Card (best Guild Card, 50% discounts, 25% price rises), reload-on-loss instruction, win-each-member reminder",
+    "Lottery ring prize table: Red Eternity Card, Yellow Seal of Force, Turquoise Mana Extract, Green Mana Root, White Tissues vs canonical ring art",
+    "NOTE callout: purposely lose for Tissue, Air Gravestone, Lottery Ticket alternatives (Pit Fight with Margarete, Buggy enemies in Cave Temple)",
+    "Step 2 loot: Olga's innermost chamber, blanket/cloth on left side, Deathblade, Jiru for Keith",
+    "Step 3 closing line and step ordering",
+    "No invented facts, numbers or conditions found; route empty is expected for a side quest"
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "category": "other",
+      "location": "items_summary.obtainable (entry '(Introverted Chopin)')",
+      "canonical": "Overview lottery line: 'Lottery Member No. 04' with '(Introverted Chopin)' as a sub-line of the same entry; no item is named Introverted Chopin",
+      "structured": "items_summary.obtainable lists '(Introverted Chopin)' as an obtainable item with category 'lottery'",
+      "issue": "An NPC is presented as an obtainable checklist item, which can mislead the player into looking for a collectible. Name and facts are unchanged, so this is a classification/presentation error, not a fact change. Owner: Guide Transformer."
+    },
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "steps[0].notes[0].text ('PURPOSELY')",
+      "canonical": "'PURPOSELY lose on this ring' (uppercase emphasis)",
+      "structured": "'**purposely** lose on this ring' (bold emphasis)",
+      "issue": "Emphasis is kept as bold rather than uppercase. The meaning and emphasis are preserved; noted for transparency only."
+    }
+  ],
+  "structured_sha256": "a15bc1f55bf472bb52cee3a6fa231edda8c27250091fc22e2d240fc739377ddd"
+}

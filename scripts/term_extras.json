@@ -2,6 +2,7 @@
   "_doc": "Manual additions for scripts/bold_terms.mjs. 'characters'/'locations' extend the mined appendix dictionary; 'deny' removes names that are table headers or too generic; 'ambiguous' names are English words and are skipped at sentence start (where a capital letter proves nothing). 'numbered' names also match an optional ' No. <digits>' suffix (\"Lottery Member No. 15\").",
   "characters": [
     "Yuri",
+    "Introverted Chopin",
     "Alice",
     "Halley",
     "Margarete",
@@ -24,6 +25,7 @@
   ],
   "locations": [
     "Calios Mental Hospital",
+    "Cave Temple",
     "World Map of Europe",
     "Sea Turtle Restaurant",
     "Pachimon General Store",
@@ -47,7 +49,6 @@
     "Jewel",
     "Pendant",
     "Talisman",
-    "Tissues",
     "Tent",
     "Torch",
     "Puppy",

@@ -1,0 +1,119 @@
+{
+  "guide": {
+    "id": "w-s-04",
+    "code": "[W-S-04]",
+    "title": "Calios Mental Hospital (2)",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-2-11",
+        "code": "[W-2-11]",
+        "title": "Europe Side Quests, Part 1",
+        "file": "sections/w-2-11-europe-side-quests-part-1.json"
+      },
+      "next": {
+        "id": "w-s-05",
+        "code": "[W-S-05]",
+        "title": "Yuri's Gravestones",
+        "file": "sections/w-s-05-yuri-s-gravestones.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Deathblade, Jiru",
+          "category": "equipment",
+          "location": "Examine the blanket/cloth on the ground on the left side of the room to find a Deathblade, Jiru for Keith. (step 2)"
+        },
+        {
+          "name": "Lottery Member No. 04",
+          "category": "lottery",
+          "location": "Lottery ring with Introverted Chopin (step 1)"
+        },
+        {
+          "name": "(Introverted Chopin)",
+          "category": "lottery",
+          "location": "Talk to Introverted Chopin to find out that he is a Lottery Member! (step 1)"
+        }
+      ]
+    },
+    "enemies": [],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "- Make your way back through the **Calios Mental Hospital** until you reach the torture chair, where you'll find someone in it!\n- Talk to **Introverted Chopin** to find out that he is a **Lottery Member**!\n- Nothing strange about the ring here.\n- Make sure to win the **Eternity Card** here before continuing on; it's the best **Guild Card**, allowing you to get 50% discounts and 25% price rises!\n- If you don't win it, reload your last save and try again.\n- Remember, you need to win something from each member at least once!",
+        "type": "navigation",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- We'll be able to pick up an item (the **Air Gravestone**) soon by having **Tissues** on hand, so **purposely** lose on this ring so you can gain a Tissue.\n- If you don't want to waste a **Lottery Ticket** to get the **Tissues**, you can get some later on by winning the **Pit Fight** with **Margarete** (once it becomes available), or from the **Buggy** enemies in the **Cave Temple**, as they will drop them."
+          },
+          {
+            "type": "tip",
+            "title": "Lottery Member No. 04 Prizes",
+            "text": "Prize listing for **Lottery Member No. 04**, by color.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Eternity Card"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "Seal of Force"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "Mana Extract"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Mana Root"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "Make your way back to the innermost chamber where you fought **Olga**. Examine the blanket/cloth on the ground on the left side of the room to find a **Deathblade, Jiru** for **Keith**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Deathblade, Jiru",
+            "category": "equipment",
+            "matched_overview_item": "Deathblade, Jiru"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "That's it for **Calios Mental Hospital**, so off to the next task.",
+        "type": "navigation",
+        "rewards": []
+      }
+    ]
+  }
+}

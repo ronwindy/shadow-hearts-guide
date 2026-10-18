@@ -233,8 +233,8 @@ function getStepTypeMeta(type: string = 'exploration') {
                             'border-slate-800 bg-slate-900/60 text-slate-200';
                           return (
                             <div class={`flex items-center justify-between px-3 py-2 rounded-md border text-xs shadow-sm ${badgeClasses}`}>
-                              <span class="font-bold font-mono uppercase tracking-wider">{b.label}</span>
-                              <span class="font-mono text-[11px] opacity-90">{b.range}</span>
+                              <span class="font-bold font-sans uppercase tracking-wider">{b.label}</span>
+                              <span class="font-sans text-[11px] opacity-90">{b.range}</span>
                             </div>
                           );
                         })}
@@ -257,7 +257,7 @@ function getStepTypeMeta(type: string = 'exploration') {
                                     : 'border-slate-800/80 bg-slate-900/40 text-slate-300'
                               }`}
                             >
-                              <span class={`font-mono font-semibold tracking-wider text-[11px] ${tint && !row.is_unique ? tint.label : 'text-slate-400'}`}>
+                              <span class={`font-sans font-semibold tracking-wider text-[11px] ${tint && !row.is_unique ? tint.label : 'text-slate-400'}`}>
                                 {row.range}
                               </span>
                               <div class="flex items-center gap-1.5 ml-2 text-right">
@@ -265,7 +265,7 @@ function getStepTypeMeta(type: string = 'exploration') {
                                   {row.reward}
                                 </span>
                                 {row.is_unique && (
-                                  <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-gold-500/20 text-gold-400 border border-gold-500/40 uppercase tracking-tighter">
+                                  <span class="text-[9px] font-sans px-1 py-0.5 rounded bg-gold-500/20 text-gold-400 border border-gold-500/40 uppercase tracking-tighter">
                                     Unique
                                   </span>
                                 )}
