@@ -21,7 +21,13 @@
     "Rude Hero",
     "Penniless Mike",
     "Father Hans Doyle",
-    "Cardinal Albert Simon"
+    "Cardinal Albert Simon",
+    "Darcie",
+    "John",
+    "Mary",
+    "Indignant Mary",
+    "Upset John",
+    "Wild John"
   ],
   "locations": [
     "Calios Mental Hospital",
@@ -144,6 +150,9 @@
     "Hit Area",
     "Soul Energy",
     "Gravestone",
+    "Air Gravestone",
+    "Water Gravestone",
+    "Earth Gravestone",
     "Level 2 Fusions",
     "Level 3 Fusions",
     "Light Fusion",

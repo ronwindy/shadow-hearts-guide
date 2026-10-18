@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 11:58:56`
+> Last synced: `2026-10-18 12:04:30`
 
 ```text
-=== PROJECT STATUS (2026-10-18 11:58:56) ===
-Canonical 66/66 | Structured 29/66 | QA pass 29/66 (fail 0) | Web built 29/66
+=== PROJECT STATUS (2026-10-18 12:04:30) ===
+Canonical 66/66 | Structured 30/66 | QA pass 30/66 (fail 0) | Web built 30/66
 Next:
-  1. Structure w-s-05 (Yuri's Gravestones) - next chronological
+  1. Structure w-2-12 (Nemeton Monastery (1)) - next chronological
 ```
 
 ## Section Matrix
@@ -41,7 +41,7 @@ Next:
 | `[W-2-10]` | `w-2-10` | Calios Mental Hospital (1) | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-11]` | `w-2-11` | Europe Side Quests, Part 1 | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-04]` | `w-s-04` | Calios Mental Hospital (2) | Walkthrough - Europe | WEB_BUILT |
-| `[W-S-05]` | `w-s-05` | Yuri's Gravestones | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-S-05]` | `w-s-05` | Yuri's Gravestones | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-12]` | `w-2-12` | Nemeton Monastery (1) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-13]` | `w-2-13` | Europe Side Quests, Part 2 | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-S-06]` | `w-s-06` | Nemeton Monastery (Book of Rituals / Codex of Lurie) | Walkthrough - Europe | NOT_STRUCTURED |

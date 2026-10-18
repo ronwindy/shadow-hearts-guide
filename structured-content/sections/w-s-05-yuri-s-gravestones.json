@@ -1,0 +1,166 @@
+{
+  "guide": {
+    "id": "w-s-05",
+    "code": "[W-S-05]",
+    "title": "Yuri's Gravestones",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-04",
+        "code": "[W-S-04]",
+        "title": "Calios Mental Hospital (2)",
+        "file": "sections/w-s-04-calios-mental-hospital-2.json"
+      },
+      "next": {
+        "id": "w-2-12",
+        "code": "[W-2-12]",
+        "title": "Nemeton Monastery (1)",
+        "file": "sections/w-2-12-nemeton-monastery-1.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Air Gravestone",
+          "category": "valuables",
+          "location": "Attempt to leave the bar, and you'll receive the Air Gravestone as a thank you from him. (step 5)"
+        },
+        {
+          "name": "Water Gravestone",
+          "category": "valuables",
+          "location": "John will thank you for your words, and he'll give you the Water Gravestone as a thank you for saving his marriage. (step 7)"
+        },
+        {
+          "name": "Earth Gravestone",
+          "category": "valuables",
+          "location": "Once she is, talk to her to receive the Earth Gravestone. (step 6)"
+        }
+      ]
+    },
+    "enemies": [],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "At this point in the game, we can now obtain all but one **Gravestone**, which we will obtain just moments after beginning the next story section.\n\nHere's how to find the remaining **Gravestones**...",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "**Dark Gravestone** (**Blue Castle**)\n- You should've already picked this up.\n- It was at the top of the tower in the **Blue Castle** where you fought **Yuri**.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "**Fire Gravestone** (**Calios Mental Hospital**)\n- You should've already picked this up.\n- It was in the chest that you found the **Dungeon Key** in the **Calios Mental Hospital**.\n- You had to examine it a second time to pick it up.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": "**Light Gravestone** (**Nemeton Monastery**)\n- You will be able to pick this up in the first house you see to the left in the **Nemeton Monastery** once you start **W-2-12 - Nemeton Monastery (1)**. It'll be inside the house, past the vending machine.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "**Air Gravestone** (**Prague**)\n- Make your way to **Prague** and enter the bar.\n- Talk to the Owner and he'll say that **Darcie**'s been in the bathroom for a while, so go into the men's room and examine the second stall.\n- Watch the events here, and as long as you have some **Tissues** in your inventory, **Yuri** will give them to him to help him out.\n- Attempt to leave the bar, and you'll receive the **Air Gravestone** as a thank you from him.\n- Just make sure to wash it off, as well as your hands...",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "If you don't want to waste a **Lottery Ticket** to get the **Tissues**, you can get some later on by winning the **Pit Fight** with **Margarete** (once it becomes available), or you can win them from the **Buggy** enemies in the **Cave Temple**."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Air Gravestone",
+            "category": "valuables",
+            "matched_overview_item": "Air Gravestone"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "**Earth Gravestone** (**Bistritz**)\n1. Visit **Bistritz** and go to the right side of the village.\n2. Examine the sparkling sprout outside of the shop, then go inside and talk to **Nina** to learn more about it.\n3. Go back outside and examine it once again.\n4. Answer with [1] Quietly watch over it.\n- **Make sure to choose** 1!\n- Once you do, leave **Bistritz**, then come back.\n- Continue to choose 1 and leave the village, repeating the process until **Nina** is waiting for you beside the plant.\n- Once she is, talk to her to receive the **Earth Gravestone**.",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. Quietly watch over it.",
+            "required": true,
+            "after_item": 4
+          },
+          {
+            "option": "2. Step on it.",
+            "after_item": 4
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Earth Gravestone",
+            "category": "valuables",
+            "matched_overview_item": "Earth Gravestone"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "description": "**Water Gravestone** (**Rouen**)\n1. Take a trip to **Rouen** and go into the **Inn** and go up the stairs for a quick scene.\n2. Go through the door on the right and talk to both **Indignant Mary** and **Upset John**, then make your way to the church and enter the confessional in the back.\n3. **Upset John** will come in and ask you what you think he should do.\n4. Answer with [2] It's about love, not the ring.\n- Make sure to choose 2, otherwise you'll be forced to pay for the **Water Gravestone**, **3,000 Cash** if you choose 1, and **10,000 Cash** if you choose 3.\n- In any case, once you can leave the church, head back to the **Inn** and into the room, where you'll find **John** and **Mary**.\n- **John** will thank you for your words, and he'll give you the **Water Gravestone** as a thank you for saving his marriage.\n- (If you chose 1, you'll have to pay **3,000 Cash**.)",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. Get her a diamond, as promised.",
+            "after_item": 4
+          },
+          {
+            "option": "2. It's about love, not the ring.",
+            "required": true,
+            "after_item": 4
+          },
+          {
+            "option": "3. Maybe it'd be better to split up.",
+            "after_item": 4
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "**Wild John** will be on the bottom-right of the first area if you chose 3 instead, and you can buy the **Gravestone** there."
+          },
+          {
+            "type": "warning",
+            "title": "Missable event",
+            "text": "- If you don't do this event now, you may not be able to later depending on how far you progress in the story.\n- I strongly recommend doing it now, as you can miss out on a great accessory, as well as **Margarete**'s best weapon, if you don't."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Water Gravestone",
+            "category": "valuables",
+            "matched_overview_item": "Water Gravestone"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "description": "That's it for **Gravestones**, so make your way to the **Nemeton Monastery**!",
+        "type": "exploration",
+        "rewards": []
+      }
+    ]
+  }
+}

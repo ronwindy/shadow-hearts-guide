@@ -1,0 +1,34 @@
+{
+  "section_id": "w-s-05",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Overview items: Air, Water, Earth Gravestone vs items_summary and step rewards (steps 5, 6, 7)",
+    "Step order 1-8 vs canonical intro, Dark, Fire, Light, Air, Earth, Water, closing line",
+    "Step 1 intro and step 2-4 location text (Blue Castle top of tower, Calios chest with Dungeon Key, Nemeton house past vending machine)",
+    "Step 5 Prague bar: Darcie, men's room second stall, Tissues, Air Gravestone, wash-off line, Lottery Ticket/Pit Fight/Buggy/Cave Temple note",
+    "Step 6 Bistritz: sparkling sprout, Nina, choice [1] Quietly watch over it (required) and [2] Step on it, MAKE SURE TO CHOOSE 1 repetition, Earth Gravestone reward",
+    "Step 7 Rouen: Inn stairs, Indignant Mary, Upset John, confessional, choices [1]/[2] (required)/[3], 3,000 Cash and 10,000 Cash consequences, John and Mary reward, (If you chose 1 ...) line",
+    "Step 7 notes: Wild John bottom-right if choice 3, Missable NOTE text ('great accessory', 'Margarete's best weapon')",
+    "Closing line 'make your way to the Nemeton Monastery' and navigation prev/next",
+    "Numbers: 3,000 Cash, 10,000 Cash, choice numbering, step numbering; bold markup on names and cash amounts ignored as presentation only"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[6].notes[1] (step 7 missable callout)",
+      "canonical": "NOTE If you don't do this event now, you may not be able to later depending on how far you progress in the story. I strongly recommend doing it now...",
+      "structured": "{ \"type\": \"warning\", \"title\": \"Missable event\", ... }",
+      "issue": "The source labels this paragraph as a NOTE. The structured guide re-types it as a warning with the added title 'Missable event'. The meaning is preserved, and the source does describe a missable event, so this is a presentation label rather than a fact change. Noted for awareness only."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[5].description (step 6) and steps[6].description (step 7), sub-item 4",
+      "canonical": "MAKE SURE TO CHOOSE 1! ... / Make sure to choose 2, otherwise you'll be forced to pay ...",
+      "structured": "4. Answer with [1] Quietly watch over it. / 4. Answer with [2] It's about love, not the ring.",
+      "issue": "The 'Answer with [n]' line is a restatement of the choice block that the canonical shows as a separate prompt. It matches the choice text and the required flag, so no fact changed. Wording is a presentation addition only."
+    }
+  ],
+  "structured_sha256": "d8a065aa5247458429634cf9ee260eee5ceddee87fa98e44f7dba02a33750fa2"
+}
