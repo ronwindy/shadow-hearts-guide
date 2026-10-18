@@ -2,25 +2,30 @@
   "section_id": "w-2-14",
   "verdict": "PASS_WITH_NOTES",
   "spot_checked": [
-    "Atman stats (HP 4000, class None, #121, notes list of anomalies)",
-    "Party levels 51, Yuri/Alice equipment lists, fusions Amon/Czernobog/Forron",
-    "EXP 50000 / Cash 20000 / drop Moonstone Ring",
-    "Boss strategy text (Eradication, Arc, Advent, Dragon Cry, two-round kill)",
-    "Both NOTE warnings (last chance for ending, Crucifixes)",
-    "Bad-ending vs good-ending branch (Alice alone vs Yuri joins)",
-    "Seven-Eyed Mask condition (only if Atman beaten with both) and tombstone text",
-    "Roger choices 1/2, Lottery Member No. 00, Spin Ring 5 / 15 targets",
-    "Neameeto side-quest skip to W-2-16, step ordering"
+    "Atman HP 4000, class None, drop Moonstone Ring, 50000 EXP, 20000 Cash",
+    "Party levels (51), equipment lists and Yuri fusions (Amon, Czernobog, Forron)",
+    "Boss strategy sentences: all 5 source sentences present, wording unchanged, order preserved",
+    "Both NOTE warnings (ending decision, Crucifixes)",
+    "Two-outcome branch (bad ending solo Alice vs Yuri joins) and Seven-Eyed Mask conditions",
+    "Choices [1]/[2], Spin Ring 5 (15 targets), Neameeto, W-2-16 skip reference"
   ],
   "findings": [
     {
       "severity": "low",
       "category": "altered",
-      "location": "steps[2].boss.party[Alice].equipment[1]",
+      "location": "steps[3].boss.party[Alice].equipment",
       "canonical": "GoldThreadCoat",
       "structured": "Gold Thread Coat",
-      "issue": "Item name respaced; the source spells it GoldThreadCoat (one word). Item names must not be renamed; restore the source spelling or confirm it is a deliberate project-wide normalization."
+      "issue": "Item name spacing changed from the source spelling GoldThreadCoat; likely a deliberate normalisation but it is a rename of an item."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[3].boss.strategy",
+      "canonical": "Unlabelled two-paragraph prose",
+      "structured": "Nested bullets labelled 'Threats' and 'Party'",
+      "issue": "Labels are new presentation headings only. All source sentences are preserved verbatim and in original order, with no facts added or changed. The 'Party' group holds the Yuri/Amon/Alice Arc/Advent advice and the 'Threats' group holds the damage and Eradication description. Acceptable regrouping."
     }
   ],
-  "structured_sha256": "f935b49fd3983e4a39be5a26be4f0e86e253b5972d2ef2112c8a20c42db2f096"
+  "structured_sha256": "999fce710476c45fcde04a9925384a71960d37420a5cbeb571b02e1ef4c13532"
 }

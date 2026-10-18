@@ -1,26 +1,24 @@
 {
   "section_id": "w-s-11",
-  "verdict": "PASS_WITH_NOTES",
+  "verdict": "PASS",
   "spot_checked": [
-    "maze paths west (14 moves) and east (12 moves), order and directions",
-    "chest contents per path: Priest Earrings, Lottery Ticket, Mant.OfShivering, Fifth Key, Key to Success",
-    "save points (west and east maze)",
-    "both NOTE callouts",
-    "Cherubim stats, drop, EXP 120, Cash 600",
-    "party levels, equipment, fusions",
-    "strategy text incl. Crucifix / Arc / Berserk / special attack resistance",
-    "enemy table (#081-#084, HP, class, notes)",
-    "navigation prev/next"
+    "both maze direction lists (west and east), order and count of moves",
+    "chest rewards: Priest Earrings, Lottery Ticket, Mant.OfShivering, Fifth Key, Key to Success",
+    "save point locations (west and east)",
+    "Emigre Manuscript and Mind's Eye notes",
+    "Cherubim HP, class, party levels, equipment, fusions, exp 120, cash 600, drop Holy Peak Staff",
+    "boss strategy: all source sentences present, order preserved under new Threats/Party/Reward labels",
+    "enemy table (#081-#084) and notes"
   ],
   "findings": [
     {
       "severity": "low",
-      "category": "altered",
-      "location": "items_summary / steps[0].rewards: Mant.of Shivering",
-      "canonical": "Mant.OfShivering",
-      "structured": "Mant.of Shivering",
-      "issue": "Item name casing/spacing changed from the source spelling ('OfShivering' to 'of Shivering'). Likely a deliberate readability normalization used project-wide, but it is a rename of an item name; confirm it matches the convention used in other sections."
+      "category": "other",
+      "location": "steps[3].boss.strategy",
+      "canonical": "Strategy paragraphs without headings",
+      "structured": "Added labels Threats / Party / Reward",
+      "issue": "Labels are new presentation-only headings; the source sentences are unchanged and in original order. 'Note that he won't take hardly any damage...' is grouped under Threats and 'Cherubim isn't really that complicated...' under Party, which is a reasonable grouping with no change in meaning."
     }
   ],
-  "structured_sha256": "867e5411b35f8e1e66deeee1ec8ebad5a6e9249c829476206b53be1c4d302f4d"
+  "structured_sha256": "c0e008942ac671eceab166df81a42afb15ffb92b2f3c7367b385c1189eaedf78"
 }

@@ -2,33 +2,30 @@
   "section_id": "w-s-09",
   "verdict": "PASS_WITH_NOTES",
   "spot_checked": [
-    "Overview save points (3) match guide.save_points",
-    "Enemy table: #056 Gremlin 62 Wind, #057 Hollow 103 Light, #058 Dead Knight 200 Dark, #076 Golden Bat 1500 None (sub-boss), notes verbatim",
-    "Golden Bat sub-boss card: 1500 HP, Class None, drop, 40000 EXP, 15000 Cash, all strategy sentences (5 turns / technically 6, three turns max, Mind's Eye, six turns, 1500 damage in four or five turns, NOTE about reward)",
-    "Opening NOTE (Keith in party, Mind's Eye, fighting alone) preserved as step 1 note",
-    "Bistritz step (Nina's house, eastern side) and Blue Castle route order (Save Point, western path, basement, open casket) preserved",
-    "Switch Keith out warning (otherwise next Lottery Member will not appear) preserved",
-    "Lottery Member No. 01 prize table: Red Thief Earrings, Yellow Key to Success, Turquoise Seal of Vitality, Green Fruit of Yggdrasil, White Tissues",
-    "Thief Earrings text: 20% higher treasure chance, 20% more Cash, ring insanely fast, reload and retry, win something from each member at least once",
-    "Step order and numbers; no invented facts found"
+    "boss strategy sentences vs canonical (all present, wording unchanged, order preserved)",
+    "boss exp/cash/hp/class/drop",
+    "enemy table",
+    "save points",
+    "steps 1-7 order and conditions (Keith in party, 5/6 turns, Keith swapped out for lottery, 20% figures)",
+    "lottery prize table (Red/Yellow/Turquoise/Green/White)"
   ],
   "findings": [
     {
       "severity": "low",
       "category": "altered",
-      "location": "items_summary.obtainable[0], steps[2].rewards[0], steps[2].boss.enemies[0].drop, steps[2].description",
+      "location": "step 3 description/rewards/boss.drop, items_summary",
       "canonical": "DemonSwd-Tyrving",
-      "structured": "Demon Swd-Tyrving (but boss strategy NOTE still says DemonSwd-Tyrving)",
-      "issue": "Item name re-spaced to 'Demon Swd-Tyrving' in most places while the strategy text keeps the source spelling 'DemonSwd-Tyrving'; inconsistent within the file and not a pure camel-case run-together fix."
+      "structured": "Demon Swd-Tyrving",
+      "issue": "Item name gets a space inserted in most places, while the boss strategy note keeps DemonSwd-Tyrving. The name is inconsistent within the section and differs from the source spelling."
     },
     {
       "severity": "low",
       "category": "other",
       "location": "items_summary.obtainable[2]",
-      "canonical": "Lottery | [_] Lottery Member No. 01 / (Keith-like invisible man)",
-      "structured": "name: (Keith-like invisible man), category: lottery",
-      "issue": "The parenthetical description of the lottery member is listed as a separate obtainable item; it is not an item in the source."
+      "canonical": "Lottery: Lottery Member No. 01 (Keith-like invisible man)",
+      "structured": "'(Keith-like invisible man)' listed as a separate obtainable lottery item",
+      "issue": "The parenthetical describes Lottery Member No. 01 and is not a separate obtainable. It is split into its own entry with a location sentence built from step text."
     }
   ],
-  "structured_sha256": "35866d65e242a9b12111029048209c163e207a4ec8ec27b6051c8ec875c7816a"
+  "structured_sha256": "980141c4de0484ad8ca4170aa66be963ea092e83915b0e145a3ae773a81cacad"
 }

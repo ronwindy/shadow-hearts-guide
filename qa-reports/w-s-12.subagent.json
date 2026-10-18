@@ -1,26 +1,25 @@
 {
   "section_id": "w-s-12",
   "verdict": "PASS_WITH_NOTES",
+  "structured_sha256": "4d0ee3e4522430501bb124bdc70abe8c732c2f835ed391733c4acdb529502439",
   "spot_checked": [
-    "color sequence forward (Red center, Orange right, Yellow left, Green center; Turquoise left, Blue right, Violet right)",
-    "color sequence reverse (Violet right, Blue left, Turquoise right, Green center, Yellow right, Orange left, Red center)",
-    "Lottery Ticket chest (right, turquoise/orange/yellow area)",
-    "Angel Earrings and GoldThreadCoat chests",
-    "Book of Rituals NOTE and Volt Snipe NOTE",
-    "Seraphim 4000 HP, Class None, exp 60000, cash 38000, party levels 42/38/42 and equipment, Yuri fusions",
-    "strategy bullets (Arc, Divine Punishment, Amon, 40% of Cherubim HP, Crucifixes)",
-    "enemy table #085-#088 HP/class/notes",
-    "save point and navigation"
+    "overview save point, items, equipment vs items_summary and rewards",
+    "enemy table (#085-#088, HP, class, notes)",
+    "color route order forward and reverse, room positions (all 7 + 7 entries)",
+    "Lottery Ticket chest location and Angel Earrings / GoldThreadCoat",
+    "Book of Rituals note",
+    "boss Seraphim: HP 4000, party levels 42/38/42, equipment, fusions, exp 60000, cash 38000, drop Volt Snipe",
+    "all boss strategy sentences present, in source order, wording unchanged",
+    "navigation prev/next"
   ],
   "findings": [
     {
-      "severity": "medium",
-      "category": "altered",
-      "location": "steps[2].description, steps[2].rewards, steps[4].boss.party[Alice].equipment, items_summary.obtainable[2]",
-      "canonical": "GoldThreadCoat",
-      "structured": "Gold Thread Coat",
-      "issue": "The item name is renamed from the source spelling GoldThreadCoat (used in the overview, route text and the boss party box) to Gold Thread Coat. Project rules forbid renaming items. The step reward's matched_overview_item is also 'Gold Thread Coat', so it no longer matches the canonical overview entry. Restore GoldThreadCoat."
+      "severity": "low",
+      "category": "other",
+      "location": "steps[4].boss.strategy (labels Threats / Party / Reward)",
+      "canonical": "Three unlabelled paragraphs; paragraph 2 and 3 (MP/SP remark, Crucifix/Arc/whittle HP, 40% HP) are general battle advice",
+      "structured": "Labels 'Threats', 'Party', 'Reward' are new; the Crucifix/Alice Arc/40% HP/Cherubim sentences are grouped under 'Party'",
+      "issue": "Labels are added presentation, not source text. No sentence is changed, dropped or reordered, so no fact is altered; the 'Party' label is slightly loose for the general-advice sentences. Acceptable."
     }
-  ],
-  "structured_sha256": "c6b275066b3301c678569a36df5852692627b140f0d1521cbca5b69a3ee0a5dd"
+  ]
 }

@@ -1,48 +1,32 @@
 {
   "section_id": "w-2-17",
   "verdict": "PASS_WITH_NOTES",
-  "structured_sha256": "fc96b15be004771537afc9f8f705e05afe94ffceb804a25ecf06c7502e706f81",
   "spot_checked": [
-    "all 22 steps in order vs canonical walkthrough text",
-    "5 boss boxes: HP, class, drops, party levels, equipment, fusions, EXP/Cash (40000/22500, 45000/25000, 50000/27500, 60000/0, none for Meta-God)",
-    "Meta-God 12000 vs 12500 HP discrepancy note (step 20)",
-    "enemy table (14 rows) numbers, classes, notes",
-    "save points, items and equipment checklists (14 entries, 9 equipment + 5 items)",
-    "NOTE callouts (leave Neameeto, back row, Star Shape/Save Point, Crucifixes, Red Caps Talismans, point of no return, Crucifixes and Will Powers)",
-    "DO NOT GO UNDERNEATH THE STAIRS warning, Save your game prompts, Seal/Key/Hand item usage in Meta-God strategy"
+    "All 5 boss strategies (Soul Block, Hate, Scapegoat, Messiah, Meta-God): every source sentence present, same order, wording unchanged; only labels added",
+    "Boss party levels, equipment, fusions, exp/cash, drops (Monkey Paw, Seventh Key, Crucifix, Silver Hand, none) vs canonical boxes",
+    "Enemy table (#089-#124) HP/class/notes",
+    "Steps 1-22 text, order, notes (back row, Star Shape, Crucifixes, Talismans from Red Caps, point of no return, Crucifix + Will Power)",
+    "Loot rewards per step (Seal of Aura, Lottery Ticket, Brsrkr Earrings, Crank Slingshot, Seal of Vitality, Silver Thread Coat, Sage Staff, Rubber Suit, Monk Earrings, Heretic's Coat, Mind's Eye, Talisman of Power, V-blade-Blodauth, Fifth Key)",
+    "Meta-God 12000 vs 12500 HP discrepancy preserved and flagged",
+    "Save points list and navigation prev/next"
   ],
   "findings": [
     {
       "severity": "low",
       "category": "altered",
-      "location": "guide.bosses[Scapegoat].strategy / steps[17].boss.strategy, bullet 1",
-      "canonical": "The Scapegoat will use Wind Fang that will hit your whole party",
-      "structured": "The **Scapegoat** will use **Wind** Fang that will hit your whole party",
-      "issue": "Bold term markup splits the attack name Wind Fang (only Wind bolded). Text unchanged; cosmetic highlighting error."
-    },
-    {
-      "severity": "low",
-      "category": "altered",
-      "location": "guide.bosses[Meta-God].strategy / steps[20].boss.strategy",
-      "canonical": "he'll use Light of Deprivation to remove it all",
-      "structured": "he'll use **Light** of Deprivation to remove it all",
-      "issue": "Bold term markup splits the skill name Light of Deprivation (only Light bolded). Text unchanged; cosmetic highlighting error."
-    },
-    {
-      "severity": "low",
-      "category": "altered",
-      "location": "guide.bosses[].party[Alice].equipment, items_summary, step 9 and step 12 note",
-      "canonical": "GoldThreadCoat, CottonUnderpants, SilverThreadCoat, TalismanOfPower / TalismansOfPower",
-      "structured": "Gold Thread Coat, Cotton Underpants, Silver Thread Coat, Talisman of Power / Talismans of Power",
-      "issue": "Unspaced canonical item names were respaced in step-embedded boss boxes, items_summary and prose. Same items, only spacing/capitalisation normalised; top-level boss[] keeps canonical spelling, so the file mixes both forms."
+      "location": "bosses[*].party[*].equipment, items_summary",
+      "canonical": "GoldThreadCoat, CottonUnderpants, SilverThreadCoat, TalismanOfPower",
+      "structured": "Gold Thread Coat, Cotton Underpants, Silver Thread Coat, Talisman of Power",
+      "issue": "Item names are spaced out from the source's run-together spelling. Same items, readability only; the step 12 note also writes 'Talismans of Power' for 'TalismansOfPower'."
     },
     {
       "severity": "low",
       "category": "other",
-      "location": "guide.objectives[1]",
-      "canonical": "Hate (boss)",
-      "structured": "Defeat Hate",
-      "issue": "Hate is not bolded while the other four objectives bold the boss name. Inconsistent emphasis only."
+      "location": "Scapegoat and Meta-God strategy (bold markup)",
+      "canonical": "Wind Fang; Light of Deprivation",
+      "structured": "**Wind** Fang; **Light** of Deprivation",
+      "issue": "Bold covers only the first word of the attack names (the auto-bolder matched the element words). Text is unchanged, but the emphasis is misleading."
     }
-  ]
+  ],
+  "structured_sha256": "f4c4e4f1ac8f54972e6d825d3f25fff510e344dad24b00af7e3c4e95376db561"
 }

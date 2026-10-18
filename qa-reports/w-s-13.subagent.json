@@ -2,13 +2,21 @@
   "section_id": "w-s-13",
   "verdict": "PASS",
   "spot_checked": [
-    "all 12 sub-boss names, classes and Lv. 2/Lv. 3 groupings",
-    "Soul Energy locations and counts for all six elements, plus the 'prior to Neameeto' qualifier",
-    "boss strategy: HP varies with Yuri, Mind's Eye via Amon, opposite-class fusion, keep healed",
-    "both Gravestone notes (W-S-05, Old Carl's phone, 'Dad')",
-    "???? attacks: Berserk requirement, Small Jug 2 SP, Monk Earrings, Graveyard Malice, Defending",
-    "Seraphic Radiance note and the ordering of steps 1-6"
+    "boss strategy (bosses[0] and step 3 boss): all 5 source sentences present, wording unchanged, order kept",
+    "Mind's Eye / Amon condition and opposite-class rule intact",
+    "12 sub-boss names, classes and Lv. 2 / Lv. 3 groupings",
+    "Soul Energy locations: all 6 classes, every area and count (Hollow x2, Penalty x3, Sin x2, Ghouler x2, Basilisk x1, Doom x2, Inverse x2, Sweeper x2, Buggs x5, Guinea Pig x3, Dead Knight x2, Oingo x2, Buggy x5, Gremlin x3, Meat Eater x2, Spanky x2, Ghoul x2, Straithe x2, Asp x1)",
+    "both NOTE blocks (W-S-05 gravestones, Old Carl's phone) and the Seraphic Radiance note",
+    "???? unlock steps: Small Jug 2 SP, Monk Earrings, Graveyard Malice, keep Defending until Berserk",
+    "step order matches source"
   ],
-  "findings": [],
-  "structured_sha256": "ffdb4bd9dc758cb25b78aa69087b55959cec081911ac73496703b77910f216a2"
+  "findings": [
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "bosses[0].strategy / step 3 boss.strategy",
+      "issue": "The new label bullet 'Yuri' groups the Mind's Eye, non-Mind's Eye and healing sentences. It is a presentation label only and adds no facts, so it is acceptable. The 'Make sure to keep yourself healed' sentence applies to the non-Mind's Eye case in the source but is shown as a sibling bullet of both options. The source sentence is a general instruction, so meaning is preserved."
+    }
+  ],
+  "structured_sha256": "f14efa3056306779caa7ccb34f025c7d00a5e444f0ac81dc8fcc76339ccc2f71"
 }

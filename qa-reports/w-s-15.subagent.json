@@ -1,17 +1,32 @@
 {
   "section_id": "w-s-15",
-  "verdict": "PASS",
+  "verdict": "PASS_WITH_NOTES",
   "spot_checked": [
-    "enemy table #113-#120 (HP, class, notes)",
-    "boss drops (Amber/Carnelian/Lazurite/Obsidian Ring, Thera Leaf x4)",
-    "EXP/Cash values 45000/30000 and 10/10",
-    "Oath Grail / Joshua / London Rats' hideout / Alice in party note",
-    "mask order Grail, Gold, Staff, Sword",
-    "P-Atk vs S-Atk resistance strategy text",
-    "Graveyard tombstone step (Alice Elliot, Dark Gravestone, Yuri joining)",
-    "Bad Ending technicality note",
-    "step ordering (final critical step after the boss fight)"
+    "enemy table #113-#120 HP/class/notes",
+    "boss drops and HP",
+    "EXP/Cash table",
+    "all five strategy entries word-for-word",
+    "step 1-8 order and notes",
+    "Graveyard/Alice tombstone step",
+    "Oath Grail order"
   ],
-  "findings": [],
-  "structured_sha256": "487794aad55709fce8a0456ce997dbf503be125e38b67bae0352d4ca9e620130"
+  "findings": [
+    {
+      "severity": "low",
+      "category": "contradiction",
+      "location": "steps[0] vs boss.strategy 'Round Two'",
+      "canonical": "You'll also miss out on nine Monster Library entries / get all eight of their entries for the Monster Library",
+      "structured": "Both statements preserved unchanged (nine vs eight)",
+      "issue": "Source is internally inconsistent (nine vs eight entries); structured preserves both faithfully but does not flag it. Not a conversion error."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "boss.strategy labels",
+      "canonical": "no headings",
+      "structured": "'Encounters', 'Order of battle', 'Second round'",
+      "issue": "Labels are new presentation only; source sentences wrapped unchanged and ordering 1-5 preserved. Acceptable."
+    }
+  ],
+  "structured_sha256": "55e44ab2a9a67dc67c5cfa42bd57db43df10651a693f0a80e8810f80b111f3c9"
 }

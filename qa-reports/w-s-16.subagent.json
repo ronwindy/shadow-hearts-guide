@@ -1,27 +1,25 @@
 {
   "section_id": "w-s-16",
-  "verdict": "PASS_WITH_NOTES",
+  "verdict": "PASS",
+  "structured_sha256": "6dc0b150c68514c9ece67d8cb24d5aca8159e4af3b57f8390f8f2dbafe41170a",
   "spot_checked": [
-    "Overview items (Nightbird Claw, Father's Coat, Pulse Tract, Stone of Rebirth, Seraphic Radiance, Lottery Member No. 00) present in items_summary and awarded in steps 1, 2, 4, 10, 13",
-    "Prerequisite NOTE (5 conditions: Erotic Book, Orb Chaos/Cherubim/Seraphim, Lottery with every member, sent to Neameeto, all 3 Fusions + Amon) preserved on step 1",
-    "Judgment Ring Spin Ring 10 / 30 hits and Nightbird Claw reward in step 2",
-    "Save game warnings (before Neameeto prompt, before Graveyard) and the 2 dialogue choices in step 3",
-    "Lottery No. 00 prize table: Red Cotton Underpants, Yellow Comet Mask, Turquoise Seal of the Soul, Green Talisman of Power, White Tissues; must-win warning and reload advice",
-    "Lottery member list: all 7 Asia and 9 Europe entries with numbers, locations, nicknames, and the No. 02 conditions",
-    "Ancient Ruins 7-step colour/room path order (Yellow-left, Red-left, Green-center, Violet-right, Blue-left, Red-center, Turquoise-right)",
-    "Graveyard NOTE (back row, Brsrkr Earrings, Seven-Eyed/Comet Mask, Mind's Eye / Voodoo Doll, Thera Extracts, Third Keys optional)",
-    "Boss card: Ben Hyuga 2000 HP Dark, SeraphicRadiance 5000 HP None #122, Diamond Ring, Yuri Lv 52 equipment/fusions, 60000 EXP, 99999 Cash; strategy matches canonical text left column plus bottom paragraphs",
-    "Step order and boss placement inside chronological steps; Father's Coat chest behind the tree"
+    "boss strategy regroup (Ben / Malcto / Strategy / Trouble): all source sentences present, wording unchanged, order preserved",
+    "boss stats (2000/5000 HP, Dark/None, Diamond Ring drop, Yuri L52 gear and fusions, 60000 EXP, 99999 Cash)",
+    "prerequisite note (5 conditions) and pre-battle Graveyard note",
+    "Ancient Ruins 7-step colour/room order",
+    "Lottery Member No. 00 prize table and Europe/Asia member list incl. No. 02 conditions",
+    "rewards: Pulse Tract, Nightbird Claw, Stone of Rebirth, Seraphic Radiance, Father's Coat",
+    "save prompts (before Neameeto question, before Graveyard) and the 1/2 choice",
+    "closing cross-reference [W-2-17] Neameeto resolves to existing section w-2-17"
   ],
   "findings": [
     {
       "severity": "low",
       "category": "other",
-      "location": "steps[14].description",
-      "canonical": "That's it for all the side quests. Let's go to Neameeto and end this.",
-      "structured": "That's it for all the side quests. Let's go to **[W-2-17] Neameeto** and end this.",
-      "issue": "Added section-code cross-reference [W-2-17] not in the source text. Cross-references backed by project data are allowed; note that navigation.next points to w-2-16, so the target code is not from this section's own data."
+      "location": "steps[11].boss.strategy (labels 'Ben', 'Malcto', 'Strategy', 'Trouble')",
+      "canonical": "Unlabelled paragraphs inside the boss box",
+      "structured": "Bold group labels added; 'Malcto' label sits over the sentence naming Malcto",
+      "issue": "Labels are presentation-only and derived from source wording; no facts, numbers or order changed. The truncated source fragment ('---' marker line) is correctly dropped. Informational only."
     }
-  ],
-  "structured_sha256": "4ac72a57d585e5df83b07d77412619ba01cf5b99e2164468f538c749dd8c49fb"
+  ]
 }
