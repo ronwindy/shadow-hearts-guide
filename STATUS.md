@@ -1,10 +1,10 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 21:20:56`
+> Last synced: `2026-10-18 21:25:45`
 
 ```text
-=== PROJECT STATUS (2026-10-18 21:20:56) ===
-Canonical 66/66 | Structured 55/66 | QA pass 55/66 (fail 0) | Web built 53/66
+=== PROJECT STATUS (2026-10-18 21:25:45) ===
+Canonical 66/66 | Structured 60/66 | QA pass 60/66 (fail 0) | Web built 60/66
 Next:
   (nothing pending)
 ```
@@ -63,14 +63,14 @@ Next:
 | `[A-1-00]` | `a-1-00` | Appendices | Appendices | NOT_STRUCTURED |
 | `[A-1-01]` | `a-1-01` | Special Skills / Souls | Appendices | WEB_BUILT |
 | `[A-1-02]` | `a-1-02` | Weapons | Appendices | WEB_BUILT |
-| `[A-1-03]` | `a-1-03` | Armor | Appendices | QA_PASSED |
-| `[A-1-04]` | `a-1-04` | Accessories | Appendices | QA_PASSED |
+| `[A-1-03]` | `a-1-03` | Armor | Appendices | WEB_BUILT |
+| `[A-1-04]` | `a-1-04` | Accessories | Appendices | WEB_BUILT |
 | `[A-1-05]` | `a-1-05` | Items | Appendices | WEB_BUILT |
-| `[A-1-06]` | `a-1-06` | Valuables | Appendices | NOT_STRUCTURED |
-| `[A-1-07]` | `a-1-07` | Store/Shop List | Appendices | NOT_STRUCTURED |
-| `[A-1-08]` | `a-1-08` | Acupuncturist Costs | Appendices | NOT_STRUCTURED |
-| `[A-1-09]` | `a-1-09` | The Lottery | Appendices | NOT_STRUCTURED |
-| `[A-1-10]` | `a-1-10` | Malice Rewards | Appendices | NOT_STRUCTURED |
+| `[A-1-06]` | `a-1-06` | Valuables | Appendices | WEB_BUILT |
+| `[A-1-07]` | `a-1-07` | Store/Shop List | Appendices | WEB_BUILT |
+| `[A-1-08]` | `a-1-08` | Acupuncturist Costs | Appendices | WEB_BUILT |
+| `[A-1-09]` | `a-1-09` | The Lottery | Appendices | WEB_BUILT |
+| `[A-1-10]` | `a-1-10` | Malice Rewards | Appendices | WEB_BUILT |
 | `[A-1-11]` | `a-1-11` | Pedometer Rewards | Appendices | NOT_STRUCTURED |
 | `[A-1-12]` | `a-1-12` | NPC Library | Appendices | NOT_STRUCTURED |
 | `[A-1-13]` | `a-1-13` | Monster Library (Bestiary) | Appendices | NOT_STRUCTURED |
