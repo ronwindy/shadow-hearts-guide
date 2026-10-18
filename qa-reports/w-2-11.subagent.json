@@ -1,18 +1,13 @@
 {
   "section_id": "w-2-11",
   "verdict": "PASS",
+  "structured_sha256": "7aaf9fd32e297c366900364c95caa826e8494cefed5f5423e25ac78b7b80a11d",
   "spot_checked": [
-    "Heading and cross-reference codes: [W-S-04] Calios Mental Hospital (2) and [W-S-05] Yuri's Level 2 & 3 Fusions match canonical text and titles",
-    "Step 1 bullet: 'There's an item to grab that we didn't have a chance to get, as well as another Lottery Member we can play.' matches canonical verbatim (Lottery Member bolded, presentation only)",
-    "Step 2 bullet 1: Level 3 Fusions / Gravestone wording and the 'appropriate Gravestone' condition match canonical",
-    "Step 2 bullet 2: Soul Energy sentence, including the source's garbled wording 'Soul Energy needs to be acquired', preserved verbatim rather than silently corrected",
-    "Step 2 bullet 3: 'There are two dungeons we can revisit that has all we need.' matches canonical",
-    "Step 2 bullets 4-5: 'How do we get those level 3 ??? spells, anyway?' (??? preserved) and 'Let's find out!' match canonical",
-    "Sentence-to-bullet split: no sentence was dropped, merged, or reordered; order matches canonical",
-    "Bold markup on Level 3 Fusions, Gravestone, Soul Energy, Lottery Member: presentation only, no change of names or numbers",
-    "No invented facts, items, enemies, bosses, shops, or rewards: canonical has none and structured adds none; rewards arrays are empty as in source",
-    "Empty route for a side-quest section: not a finding per QA skill"
+    "[W-S-04] teaser: item to grab, another Lottery Member, wording intact",
+    "[W-S-05] teaser: Level 3 Fusions, Gravestone, Soul Energy, 'two dungeons we can revisit', 'level 3 ??? spells' all preserved",
+    "Source typo 'Soul Energy needs to be acquired' preserved verbatim",
+    "navigation prev w-2-10 / next w-s-04 matches canonical",
+    "No steps, bosses, items, warnings or choices in canonical; none invented"
   ],
-  "findings": [],
-  "structured_sha256": "2f95e769cfd64b9f663abb7636f5c7782bac0907aa132c5f0b2fca3e22f04e4b"
+  "findings": []
 }

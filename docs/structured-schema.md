@@ -59,12 +59,12 @@ A single object with one key, `guide`. Unknown keys anywhere under `guide` are r
 | `initial_setup`, `overview` | no | Intro/manual sections only (character profiles, glossary, controls). |
 | `overview.directions.compass_art` | no | Verbatim source compass diagram (monospace, byte-for-byte, common left indent removed). When present it replaces the `mappings` table, which the diagram already states. |
 | `overview.controls.controller_art` | no | Verbatim source drawing of the controller (monospace, byte-for-byte, common left indent removed); the button legend stays in `controller_layout`. |
-| `blocks` | no | `info` pages (`c-*`: version history, thanks, copyright): `[{title?, text}]`, `text` is rich text (bullets, max 3 levels). No steps, rewards or checklist. The scaffold starts a block at each `* title *` line and folds bullets into it; QA text-fidelity checks block text against the canonical like step text. |
+| `blocks` | no | `info` pages (`c-*`: version history, thanks, copyright; side-quest overview hubs `w-1-10`, `w-2-11`, `w-2-13`, `w-2-15`): `[{title?, text, notes?}]`, `text` is rich text (bullets, max 3 levels), `notes` are callouts shaped like step notes (`type`, `title`, `text`; e.g. `missable`). A title starting with `[CODE]` (e.g. `[W-S-01] Title`) is rendered as a link to that section and `lint` flags a code that is not a known section id. No steps, rewards or checklist. The scaffold starts a block at each `* title *` line and folds bullets into it; QA text-fidelity checks block text against the canonical like step text. |
 | `reference_blocks` | no | Appendix sections: `[{title?, format:"preformatted", text}]`. Produced by the scaffold, never hand-edited; QA requires byte-identical text. |
 
 `type` of a section by canonical id: `w-*` -> `walkthrough` (`sidequest` when canonical
 `is_sidequest`, `walkthrough_intro` when the overview has `directions`); `a-1-01..15` ->
-`reference`; `c-*` -> `info`.
+`reference`; `c-*` and side-quest overview hubs (a `w-*` made only of `[CODE]` teasers) -> `info`.
 
 ## 2. Steps
 

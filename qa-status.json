@@ -176,8 +176,8 @@
     }
   },
   "w-1-10": {
-    "checked_at": "2026-10-10T16:59:37",
-    "content_hash": "bf91f4cbd693dfe2",
+    "checked_at": "2026-10-18T20:48:27",
+    "content_hash": "bf73a154d43c4cf6",
     "status": "PASS",
     "summary": {
       "critical": 0,
@@ -308,8 +308,8 @@
     }
   },
   "w-2-11": {
-    "checked_at": "2026-10-15T23:12:05",
-    "content_hash": "2f95e769cfd64b9f",
+    "checked_at": "2026-10-18T20:48:27",
+    "content_hash": "7aaf9fd32e297c36",
     "status": "PASS",
     "summary": {
       "critical": 0,
@@ -330,14 +330,14 @@
     }
   },
   "w-2-13": {
-    "checked_at": "2026-10-18T12:33:09",
-    "content_hash": "d5bbf133177666b3",
-    "status": "PASS WITH WARNINGS",
+    "checked_at": "2026-10-18T20:48:27",
+    "content_hash": "b7842a7105e8c00f",
+    "status": "PASS",
     "summary": {
       "critical": 0,
       "high": 0,
       "low": 0,
-      "medium": 1
+      "medium": 0
     }
   },
   "w-2-14": {
@@ -352,8 +352,8 @@
     }
   },
   "w-2-15": {
-    "checked_at": "2026-10-18T16:08:57",
-    "content_hash": "0bc5edce7bd909bf",
+    "checked_at": "2026-10-18T20:48:28",
+    "content_hash": "68443aa07b496399",
     "status": "PASS",
     "summary": {
       "critical": 0,

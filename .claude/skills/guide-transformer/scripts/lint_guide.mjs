@@ -46,6 +46,10 @@ function* texts(guide) {
       yield [`step ${sid} boss ${boss.name ?? ""}`, boss.strategy ?? ""];
     }
   }
+  for (const [b, blk] of (guide.blocks ?? []).entries()) {
+    yield [`block ${b + 1}`, blk.text ?? ""];
+    for (const [i, note] of (blk.notes ?? []).entries()) yield [`block ${b + 1} note ${i + 1}`, note.text ?? ""];
+  }
   for (const b of guide.bosses ?? []) yield [`boss ${b.name ?? ""}`, b.strategy ?? ""];
   for (const [i, call] of (guide.callouts ?? []).entries()) yield [`callout ${i + 1}`, call.text ?? ""];
   for (const [i, item] of (guide.items_summary?.obtainable ?? []).entries()) {

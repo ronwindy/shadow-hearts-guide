@@ -3,7 +3,7 @@
     "id": "w-1-10",
     "code": "[W-1-10]",
     "title": "Asia Side Quests",
-    "type": "walkthrough",
+    "type": "info",
     "category": "Walkthrough - Asia",
     "source": {
       "game": "Shadow Hearts",
@@ -26,25 +26,14 @@
         "file": "sections/w-s-01-yuri-s-level-1-fusions.json"
       }
     },
-    "route": [],
-    "items_summary": {
-      "obtainable": []
-    },
-    "enemies": [],
-    "bosses": [],
-    "shops": [],
-    "steps": [
+    "blocks": [
       {
-        "id": 1,
-        "description": "**[W-S-01] Yuri's Level 1 Fusions**\n- Enough **Soul Energy** needs to be acquired to accumulate the rest of **Yuri**'s level 1 **Fusions**.\n- Luckily, we can revisit a dungeon that has all we need.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-01] Yuri's Level 1 Fusions",
+        "text": "- Enough **Soul Energy** needs to be acquired to accumulate the rest of **Yuri**'s level 1 **Fusions**.\n- Luckily, we can revisit a dungeon that has all we need."
       },
       {
-        "id": 2,
-        "description": "**[W-S-02] Kowloon Fortress**\n- What happened to **Wugui**?\n- As long as you answered the prompts correctly as **Alice** in **Kuihai Tower**, you can go to **Kowloon Fortress** to find out.",
-        "type": "quest",
-        "rewards": [],
+        "title": "[W-S-02] Kowloon Fortress",
+        "text": "- What happened to **Wugui**?\n- As long as you answered the prompts correctly as **Alice** in **Kuihai Tower**, you can go to **Kowloon Fortress** to find out.",
         "notes": [
           {
             "type": "missable",
@@ -54,10 +43,8 @@
         ]
       },
       {
-        "id": 3,
-        "description": "**[W-S-03] Mr. Zhen's Pit Fight**\n- **Mr. Zhen** has an array of monsters for **Yuri** to fight.\n- There is a very memorable prize for him when the **Pit Fight** is completed.\n- You'll definitely want it.",
-        "type": "quest",
-        "rewards": [],
+        "title": "[W-S-03] Mr. Zhen's Pit Fight",
+        "text": "- **Mr. Zhen** has an array of monsters for **Yuri** to fight.\n- There is a very memorable prize for him when the **Pit Fight** is completed.\n- You'll definitely want it.",
         "notes": [
           {
             "type": "missable",

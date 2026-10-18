@@ -3,7 +3,7 @@
     "id": "w-2-13",
     "code": "[W-2-13]",
     "title": "Europe Side Quests, Part 2",
-    "type": "walkthrough",
+    "type": "info",
     "category": "Walkthrough - Europe",
     "source": {
       "game": "Shadow Hearts",
@@ -26,73 +26,46 @@
         "file": "sections/w-s-06-nemeton-monastery-book-of-rituals-codex-of-lurie.json"
       }
     },
-    "route": [],
-    "items_summary": {
-      "obtainable": []
-    },
-    "enemies": [],
-    "bosses": [],
-    "shops": [],
-    "steps": [
+    "blocks": [
       {
-        "id": 1,
-        "description": "**[W-S-06] Nemeton Monastery (Book of Rituals / Codex of Lurie)**\n- We can obtain two Valuables that will allow us to be able to get the best Fusion for **Yuri**, as well as unlock the Ancient Ruins.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-06] Nemeton Monastery (Book of Rituals / Codex of Lurie)",
+        "text": "- We can obtain two Valuables that will allow us to be able to get the best Fusion for **Yuri**, as well as unlock the Ancient Ruins."
       },
       {
-        "id": 2,
-        "description": "**[W-S-07] The Orphanage (Emigre Manuscript / Lottery Member #3)**\n- We can get another Valuable, as well as meet with one of the final **Lottery Members**.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-07] The Orphanage (Emigre Manuscript / Lottery Member #3)",
+        "text": "- We can get another Valuable, as well as meet with one of the final **Lottery Members**."
       },
       {
-        "id": 3,
-        "description": "**[W-S-08] Rouen (Silent Peddler / Margarete's Armor, Weapon, & Confession / Zhuzhen's Armor / Lottery Member #2)**\n- We can see all that the **Silent Peddler** has to offer, including **Margarete**'s best armor.\n- We can also get hear best weapon, and dive into her thoughts as well.\n- Lastly, we can also get **Zhuzhen**'s best armor and meet with one of the final **Lottery Members**.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-08] Rouen (Silent Peddler / Margarete's Armor, Weapon, & Confession / Zhuzhen's Armor / Lottery Member #2)",
+        "text": "- We can see all that the **Silent Peddler** has to offer, including **Margarete**'s best armor.\n- We can also get hear best weapon, and dive into her thoughts as well.\n- Lastly, we can also get **Zhuzhen**'s best armor and meet with one of the final **Lottery Members**."
       },
       {
-        "id": 4,
-        "description": "**[W-S-09] Blue Castle (Keith's Weapon / Lottery Member #1)**\n- We can get **Keith**'s best weapon, as well as meet the second to last **Lottery Member**.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-09] Blue Castle (Keith's Weapon / Lottery Member #1)",
+        "text": "- We can get **Keith**'s best weapon, as well as meet the second to last **Lottery Member**."
       },
       {
-        "id": 5,
-        "description": "**[W-S-10] Prague (Rare Shop / The Dollhouse / Alice's Weapon)**\n- We can visit one more new shop which has some rare items, and we get to take on a bonus dungeon, as well as obtain **Alice**'s best weapon.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-10] Prague (Rare Shop / The Dollhouse / Alice's Weapon)",
+        "text": "- We can visit one more new shop which has some rare items, and we get to take on a bonus dungeon, as well as obtain **Alice**'s best weapon."
       },
       {
-        "id": 6,
-        "description": "**[W-S-11] Cave Temple (Keith's Armor / Zhuzhen's Weapon)**\n- We get to take on a bonus dungeon, as well as obtain **Keith**'s best armor and **Zhuzhen**'s best weapon.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-11] Cave Temple (Keith's Armor / Zhuzhen's Weapon)",
+        "text": "- We get to take on a bonus dungeon, as well as obtain **Keith**'s best armor and **Zhuzhen**'s best weapon."
       },
       {
-        "id": 7,
-        "description": "**[W-S-12] Ancient Ruins (Alice's Armor / Halley's Weapon)**\n- We get to take on a bonus dungeon, as well as obtain **Alice**'s best armor and **Halley**'s best weapon.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-12] Ancient Ruins (Alice's Armor / Halley's Weapon)",
+        "text": "- We get to take on a bonus dungeon, as well as obtain **Alice**'s best armor and **Halley**'s best weapon."
       },
       {
-        "id": 8,
-        "description": "**[W-S-13] Yuri's Level 2 & 3 Fusions, ???? Attacks**\n- We can make sure that **Yuri** has all of his Fusions, and if he doesn't, where to go to level up his **Soul Energy** to get them.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-13] Yuri's Level 2 & 3 Fusions, ???? Attacks",
+        "text": "- We can make sure that **Yuri** has all of his Fusions, and if he doesn't, where to go to level up his **Soul Energy** to get them."
       },
       {
-        "id": 9,
-        "description": "**[W-S-14] Sharon's Pit Fight (Halley's Armor / Other Items)**\n- We can fight plenty of summoned monsters, just like the **Pit Fight** before!\n- This time, everyone can get a reward, including **Halley** and his best armor!",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-14] Sharon's Pit Fight (Halley's Armor / Other Items)",
+        "text": "- We can fight plenty of summoned monsters, just like the **Pit Fight** before!\n- This time, everyone can get a reward, including **Halley** and his best armor!"
       },
       {
-        "id": 10,
-        "description": "**[W-S-15] The Good Ending (Defeating the Masks)**\n- We can take out those Masks that have been provoking us the whole game, as well as determine the ending.",
-        "type": "quest",
-        "rewards": []
+        "title": "[W-S-15] The Good Ending (Defeating the Masks)",
+        "text": "- We can take out those Masks that have been provoking us the whole game, as well as determine the ending."
       }
     ]
   }

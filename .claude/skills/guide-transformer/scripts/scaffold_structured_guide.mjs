@@ -699,6 +699,10 @@ function scaffoldInfoGuide(canonical) {
     else if (isBullet && blocks.length) blocks[blocks.length - 1].text = [blocks[blocks.length - 1].text, text].filter(Boolean).join("\n");
     else blocks.push({ text });
   }
+  return infoGuide(canonical, blocks);
+}
+
+function infoGuide(canonical, blocks) {
   const source = canonical.source ?? {};
   return { guide: {
     id: canonical.id, code: canonical.code, title: canonical.title, type: "info", category: canonical.category,
@@ -706,6 +710,50 @@ function scaffoldInfoGuide(canonical) {
       version: source.version ?? PROJECT.sourceDefaults.version, url: source.source_url ?? "", source_file: source.source_file ?? "" },
     navigation: canonical.navigation ?? {}, blocks,
   } };
+}
+
+const HUB_TEASER = /^\[[A-Z](?:-[0-9A-Z]+)+\]\s+\S/;
+
+/** Body paragraphs of a section (header art removed): arrays of trimmed lines. */
+function bodyParagraphs(canonical) {
+  const lines = splitLines(canonical.text ?? "");
+  let start = 0;
+  lines.slice(0, 14).forEach((ln, i) => { if (/^\s*¯{60,}\s*$/.test(ln)) start = i + 1; });
+  const paras = [];
+  let cur = [];
+  for (const ln of lines.slice(start)) {
+    if (/^\s*[¯_]+(?:\s+[¯_|]+)*\s*$/.test(ln) || !ln.trim()) { if (cur.length) paras.push(cur); cur = []; } else cur.push(ln.trim());
+  }
+  if (cur.length) paras.push(cur);
+  return paras;
+}
+
+/** Hub page: only a short lead-in and `[CODE] Title` + bullet teasers that point at other sections. */
+function isHubSection(canonical) {
+  if (!(canonical.id ?? "").startsWith("w-")) return false;
+  const paras = bodyParagraphs(canonical);
+  const first = paras.findIndex((p) => HUB_TEASER.test(p[0]));
+  if (first < 0) return false;
+  return paras.slice(0, first).every((p) => p.length <= 2) && paras.slice(first).every((p) => HUB_TEASER.test(p[0]));
+}
+
+/** Hub scaffold: one titled info block per teaser; a lead-in line is folded into the first block's text. */
+function scaffoldHubGuide(canonical) {
+  const paras = bodyParagraphs(canonical);
+  const first = paras.findIndex((p) => HUB_TEASER.test(p[0]));
+  const lead = paras.slice(0, first).map((p) => p.join(" "));
+  const blocks = paras.slice(first).map((p) => {
+    const at = p.findIndex((l) => /^-\s/.test(l));
+    const title = (at < 0 ? p : p.slice(0, at)).join(" ");
+    const body = [];
+    for (const l of at < 0 ? [] : p.slice(at)) {
+      if (/^-\s/.test(l) || !body.length) body.push(l); else body[body.length - 1] += " " + l;
+    }
+    const text = body.map((b) => { const l = listify(b.replace(/^-\s+/, ""), false); return /^-\s/.test(l) ? l : `- ${l}`; }).join("\n");
+    return { title, text };
+  });
+  if (lead.length) blocks[0].text = [...lead, blocks[0].text].filter(Boolean).join("\n");
+  return infoGuide(canonical, blocks);
 }
 
 /** Deterministic scaffold: canonical text is carried over byte-for-byte, no steps or prose. */
@@ -1085,6 +1133,7 @@ export function scaffoldGuide(canonicalPath) {
   const canonical = JSON.parse(readFileSync(canonicalPath, "utf8"));
   if (isReferenceSection(canonical)) return scaffoldReferenceGuide(canonical);
   if (isInfoSection(canonical)) return scaffoldInfoGuide(canonical);
+  if (isHubSection(canonical)) return scaffoldHubGuide(canonical);
 
   // Determine type
   let guideType = "walkthrough";

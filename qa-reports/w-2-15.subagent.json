@@ -2,12 +2,12 @@
   "section_id": "w-2-15",
   "verdict": "PASS",
   "spot_checked": [
-    "step 1: 'Only one side quest left!' matches canonical",
-    "step 2: hub teaser name '[W-S-16] Nemeton Monastery (The Seraphic Radiance / Yuri's Weapon & Armor / Lottery Member #0)' exact",
-    "step 2 bullets: best Fusion, best weapon and armor, meeting the Lottery Chairman; no added or dropped facts",
-    "navigation prev w-2-14 / next w-s-16 matches canonical",
-    "no bosses, items, shops, enemies in source; none in structured"
+    "lead-in 'Only one side quest left!' preserved in first block text",
+    "block title [W-S-16] Nemeton Monastery (The Seraphic Radiance / Yuri's Weapon & Armor / Lottery Member #0) matches canonical hub teaser",
+    "Yuri's best Fusion, best weapon and armor preserved",
+    "Lottery Chairman meeting preserved",
+    "navigation prev w-2-14 / next w-s-16 matches canonical"
   ],
   "findings": [],
-  "structured_sha256": "0bc5edce7bd909bfa16e54d906a15923baf675a4ad9fcda6ab5dd9c44052c47a"
+  "structured_sha256": "68443aa07b4963996265e63f19fe27524e0cd1515122133d1c003753b67fa253"
 }

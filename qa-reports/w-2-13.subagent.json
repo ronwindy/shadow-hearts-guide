@@ -2,14 +2,14 @@
   "section_id": "w-2-13",
   "verdict": "PASS",
   "spot_checked": [
-    "All 10 hub teasers W-S-06..W-S-15 present in source order, codes and titles verbatim",
-    "Step 3 Rouen title and source typo 'get hear best weapon' preserved verbatim, no silent fix",
-    "Lottery Member #3/#2/#1 labels and 'second to last' / 'one of the final' wording unchanged",
-    "Valuables, Fusions, Soul Energy, Pit Fight, Halley's armor/weapon, Keith/Alice/Zhuzhen/Margarete equipment attributions match",
-    "W-S-13 '???? Attacks' title preserved",
-    "Navigation prev w-2-12 / next w-s-06 matches canonical",
-    "No bosses, items, shops, enemies or save points in canonical; none invented"
+    "All 10 hub teasers W-S-06 through W-S-15 present, in canonical order, with exact codes and titles (including the wrapped W-S-08 title joined correctly and the 'Yuri's Level 2 & 3 Fusions, ???? Attacks' title)",
+    "Quantities and conditions: 'two Valuables', 'another Valuable', 'one of the final Lottery Members', 'second to last Lottery Member', 'one more new shop', 'bonus dungeon' (S-10, S-11, S-12)",
+    "Character/gear pairings: Margarete armor/weapon, Zhuzhen armor (S-08) and weapon (S-11), Keith weapon (S-09) and armor (S-11), Alice weapon (S-10) and armor (S-12), Halley weapon (S-12) and armor (S-14)",
+    "Lottery Member numbering in titles (#3, #2, #1) preserved",
+    "Source typo 'can also get hear best weapon' preserved verbatim (not silently fixed)",
+    "Multi-sentence teasers split into bullets (S-08, S-14) without changing wording; bold added only on names/terms",
+    "Metadata and navigation (prev w-2-12, next w-s-06) match canonical; no invented facts, no steps/bosses/items expected"
   ],
   "findings": [],
-  "structured_sha256": "d5bbf133177666b3915ac44aa350ff974714f6bf323e0bece9daf1a3891aa7f6"
+  "structured_sha256": "b7842a7105e8c00f042fccc242391a5d471a307874a8dd65e172a3924d5b295e"
 }

@@ -928,7 +928,21 @@
             "required": ["text"],
             "properties": {
               "title": { "type": "string" },
-              "text": { "$ref": "#/$defs/rich_text" }
+              "text": { "$ref": "#/$defs/rich_text" },
+              "notes": {
+                "type": "array",
+                "description": "Callouts attached to the block (same shape as step notes, e.g. missable)",
+                "items": {
+                  "type": "object",
+                  "required": ["type", "title", "text"],
+                  "properties": {
+                    "type": { "type": "string", "enum": ["tutorial", "warning", "tip", "missable", "lore", "strategy", "discrepancy"] },
+                    "title": { "type": "string" },
+                    "text": { "$ref": "#/$defs/rich_text" }
+                  },
+                  "additionalProperties": false
+                }
+              }
             },
             "additionalProperties": false
           }

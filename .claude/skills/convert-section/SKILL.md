@@ -11,7 +11,8 @@ Thin runbook for the parts that need judgement. Commands, schema and role bounda
 ## 1. Pick the path
 - `a-*` / reference tables, items, shops, bestiary, bosses: deterministic scaffold, no prose editing, then `check`. Stop after step 4.
 - `c-*` (version history, thanks, copyright): type `info`, no steps. Scaffold produces titled `blocks[]` (a `* title *` line starts a block, bullets fold in); compare with the canonical, patch `blocks` if needed (arrays replace), then `check` and the independent QA of section 5. Skip the walkthrough-only conventions in section 3.
-- `w-*` (including hubs `w-s-*`, `w-2-11`, `w-2-13`, `w-2-15`): the full path below.
+- Side-quest overview hubs (`w-1-10`, `w-2-11`, `w-2-13`, `w-2-15`: only `[W-S-xx] Title` teasers): type `info`, same path as `c-*`. The scaffold detects them (lead-in line folds into the first block, one titled block per teaser); the renderer links each block to its `[CODE]` page and lint flags unknown codes. A source sentence that is a missable warning ("ONLY time", "LAST OPPORTUNITY") goes into block `notes` (`type: "missable"`), not the bullets.
+- Other `w-*` (including `w-s-*`): the full path below.
 - No id given: use `node scripts/guide.mjs status` (first 45 lines of `STATUS.md`); next = sequence gaps, then QA `[FAIL]`s, then pending QA, then next chronological.
 
 ## 2. Scaffold, then judge it

@@ -1,9 +1,17 @@
 ---
+import { Zap } from '@lucide/astro';
 import { renderBlockMarkup, renderInlineMarkup, type RichText } from '../lib/markup';
+
+interface InfoNote {
+  type?: string;
+  title?: string;
+  text: RichText;
+}
 
 interface InfoBlock {
   title?: string;
   text: RichText;
+  notes?: InfoNote[];
 }
 
 interface Props {
@@ -11,19 +19,44 @@ interface Props {
 }
 
 const { blocks = [] } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// A block titled "[W-S-01] Title" links to the guide page with that id (hub pages).
+const linkTarget = (title?: string) => {
+  const m = /^\s*(?:\*\*)?\[([A-Z]-[A-Z0-9]+(?:-[0-9]+)*)\]/.exec(title ?? '');
+  return m ? `${baseUrl}/guide/${m[1].toLowerCase()}` : null;
+};
 ---
 
 {blocks.length > 0 && (
   <section id="info" class="space-y-4">
-    {blocks.map((b) => (
-      <div class="card p-4 sm:p-5 space-y-2">
-        {b.title && (
-          <h2 class="text-lg sm:text-xl font-serif font-semibold text-gold-400" set:html={renderInlineMarkup(b.title)} />
-        )}
-        <div class="text-base text-slate-200 leading-relaxed space-y-2">
-          <Fragment set:html={renderBlockMarkup(b.text)} />
+    {blocks.map((b) => {
+      const href = linkTarget(b.title);
+      return (
+        <div class="card p-4 sm:p-5 space-y-2">
+          {b.title && (
+            <h2 class="text-lg sm:text-xl font-serif font-semibold text-gold-400">
+              {href
+                ? <a href={href} class="hover:underline underline-offset-4" set:html={renderInlineMarkup(b.title)} />
+                : <Fragment set:html={renderInlineMarkup(b.title)} />}
+            </h2>
+          )}
+          <div class="text-base text-slate-200 leading-relaxed space-y-2">
+            <Fragment set:html={renderBlockMarkup(b.text)} />
+          </div>
+          {(b.notes ?? []).map((n) => (
+            <div class="p-4 rounded-lg bg-amber-950/20 border border-amber-800/40 text-sm sm:text-base text-amber-200/95 space-y-2">
+              <h4 class="flex items-center gap-1.5 font-semibold text-amber-300 tracking-wide font-sans text-xs sm:text-sm">
+                <Zap class="w-4 h-4 text-amber-400 flex-shrink-0" />
+                <span>{n.title || 'Note'}</span>
+              </h4>
+              <div class="space-y-2 leading-relaxed opacity-95">
+                <Fragment set:html={renderBlockMarkup(n.text)} />
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-    ))}
+      );
+    })}
   </section>
 )}

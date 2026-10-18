@@ -114,7 +114,14 @@ export function runLint(sec) {
   const knownIds = new Set(loadCanonicalIndex(ROOT_DIR).sections.map((s) => s.id));
   const navFindings = navigationProblems(guide.navigation, knownIds, merges)
     .map((text) => ({ check: "navigation", severity: "warn", location: "navigation", text }));
-  const findings = [...lintGuide(guide), ...navFindings];
+  const linkFindings = [];
+  for (const [i, blk] of (guide.blocks ?? []).entries()) {
+    const m = /^\s*\[([A-Z]-[A-Z0-9]+(?:-[0-9]+)*)\]/.exec(blk.title ?? "");
+    if (m && !knownIds.has(m[1].toLowerCase())) {
+      linkFindings.push({ check: "block-link", severity: "warn", location: `block ${i + 1}`, text: `[${m[1]}] does not match a known section id` });
+    }
+  }
+  const findings = [...lintGuide(guide), ...navFindings, ...linkFindings];
   const warns = findings.filter((f) => f.severity === "warn");
   console.log(`\n--- Lint: ${sec.id} --- ${warns.length} warning(s), ${findings.length - warns.length} info`);
   for (const f of findings) {

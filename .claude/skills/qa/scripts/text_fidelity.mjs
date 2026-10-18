@@ -171,6 +171,11 @@ function units(guide) {
     (blk.text || "").split(/\r?\n/).forEach((line, idx) => {
       if (line.trim()) out.push({ loc: `blocks[${b}].text line ${idx + 1}`, text: line, ordered: true });
     });
+    (blk.notes ?? []).forEach((note, n) => {
+      (note.text || "").split(/\r?\n/).forEach((line, idx) => {
+        if (line.trim()) out.push({ loc: `blocks[${b}].notes[${n}] line ${idx + 1}`, text: line, ordered: false });
+      });
+    });
   });
   for (const u of out) {
     u.text = u.text.replace(XREF, ""); // scaffold-added **[W-2-07] Title** cross-refs
