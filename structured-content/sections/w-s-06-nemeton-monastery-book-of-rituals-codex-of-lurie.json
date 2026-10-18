@@ -1,0 +1,135 @@
+{
+  "guide": {
+    "id": "w-s-06",
+    "code": "[W-S-06]",
+    "title": "Nemeton Monastery (Book of Rituals / Codex of Lurie)",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-2-13",
+        "code": "[W-2-13]",
+        "title": "Europe Side Quests, Part 2",
+        "file": "sections/w-2-13-europe-side-quests-part-2.json"
+      },
+      "next": {
+        "id": "w-s-07",
+        "code": "[W-S-07]",
+        "title": "The Orphanage (Emigre Manuscript / Lottery Member #3)",
+        "file": "sections/w-s-07-the-orphanage-emigre-manuscript-lottery-member-3.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Book of Rituals",
+          "category": "valuables",
+          "location": "As you approach it, you'll watch a long scene between Alice and Yuri as Zhuzhen checks out the grave, and eventually brings you the Book of Rituals. (step 1)"
+        },
+        {
+          "name": "Codex of Lurie",
+          "category": "valuables",
+          "location": "If you check the ground here in the center of the Judgment Ring near the altar, you will find the Codex of Lurie. (step 2)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#071",
+        "name": "Straithe",
+        "hp": 200,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#072",
+        "name": "Sin",
+        "hp": 240,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#073",
+        "name": "Guinea Pig",
+        "hp": 210,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Instant Death & uses SP Lowering"
+      },
+      {
+        "number": "#074",
+        "name": "Inverse",
+        "hp": 500,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Make your way to the **Nemeton Monastery** and head up the hill toward **James O'Flaherty**'s grave.\n2. As you approach it, you'll watch a long scene between **Alice** and **Yuri** as **Zhuzhen** checks out the grave, and eventually brings you the **Book of Rituals**.\n3. Examine the **Book of Rituals** in your **Valuables** menu, and it'll unlock the **Ancient Ruins** on your **World Map** the next time you're there.",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Both **Alice** and **Zhuzhen** must be in your active party."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Book of Rituals",
+            "category": "valuables",
+            "matched_overview_item": "Book of Rituals"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. Make your way back into the **Underground Ruins** of the **Nemeton Monastery**, and follow the path as it goes all the way west, then down when you can't go west anymore and head all the way east until you can follow the path back to the shrine where you fought **Amon**.\n2. If you check the ground here in the center of the **Judgment Ring** near the altar, you will find the **Codex of Lurie**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Codex of Lurie",
+            "category": "valuables",
+            "matched_overview_item": "Codex of Lurie"
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "You can put whomever you want back into your party now."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "That's it for here. On to the next quest!",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "Entrance to the underground ruins",
+      "Before the boss"
+    ]
+  }
+}

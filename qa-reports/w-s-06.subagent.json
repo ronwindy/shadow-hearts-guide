@@ -1,0 +1,27 @@
+{
+  "section_id": "w-s-06",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Save points: both entries present verbatim",
+    "Valuables: Book of Rituals and Codex of Lurie in items_summary and as step rewards (steps 1 and 2)",
+    "Enemies #071-#074: numbers, names, HP (200/240/210/500), classes, notes (Guinea Pig note joined from wrapped line; Inverse empty) match",
+    "NOTE 1 (Alice and Zhuzhen in active party) kept as note on step 1, before the grave scene",
+    "NOTE 2 (put whomever back in party) kept as note on step 2",
+    "Step 1 text: Nemeton Monastery, hill, grave, Alice/Yuri/Zhuzhen scene, Valuables menu, Ancient Ruins on World Map all preserved",
+    "Step 2 text: Underground Ruins, west, down, east, shrine where Amon was fought, Judgment Ring near altar all preserved in order",
+    "Closing line 'That's it for here. On to the next quest!' kept as step 3",
+    "Navigation prev w-2-13 / next w-s-07 and source metadata unchanged",
+    "No bosses/shops in canonical; none added; no invented facts"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[0].description item 1",
+      "canonical": "JamesO'Flaherty's grave",
+      "structured": "**James O'Flaherty**'s grave",
+      "issue": "Info only: known, intentional repair of source typo (missing space). No change of letters or meaning."
+    }
+  ],
+  "structured_sha256": "98f0743bc2e6c2111236f63f1398d5326e3882b89d26b90631a4941c47911793"
+}

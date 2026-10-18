@@ -1,0 +1,34 @@
+{
+  "section_id": "w-s-07",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Choice options [1] Alright, we'll play. / [2] I'm busy. present verbatim, no invented outcomes",
+    "Step 1: Orphanage/London, Jack and Mammon room, Insolent Jean, one minute, 5 rooms, 4 children, room list, random locations, two or three tries, return to Jean before timer",
+    "Step 2: Emigre Manuscript from Pot-lover Macken, Valuables menu, Cave Temple, World Map (Britain Map)",
+    "Step 3: save in hallway after receiving Manuscript, talk to Macken again, Lottery Member, invisible ring, Pocket Watch, Crucifix (already have one, cancels all status effects), reload last save if not won, win something from each member at least once",
+    "Prize table: Red Crucifix, Yellow Seal of Wisdom, Turquoise Pure Extract, Green Pure Root, White Tissues (colors/names/order match)",
+    "Closing line 'That's it for here. On to the next quest!' preserved",
+    "Overview items (Emigre Manuscript, Lottery Member No. 03 (Pot-lover Macken)) in items_summary and rewards",
+    "Navigation prev w-s-06 / next w-s-08 unchanged; no enemies/bosses/shops in canonical, none in structured",
+    "Step order matches canonical; no numbers or names altered"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "order",
+      "location": "steps[3] notes[0] (prize table)",
+      "canonical": "Prize table appears after the save/Lottery Member reveal and before 'The ring here is INVISIBLE...'",
+      "structured": "Table is attached as a note after all step-3 text items, i.e. after the 'ring/Pocket Watch/Crucifix' items",
+      "issue": "Table presented after the ring/Crucifix text rather than between the reveal and it. Harmless presentation reordering (the Crucifix advice refers to the table), no meaning lost."
+    },
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "steps[3] notes[0].text",
+      "canonical": "(none; table has only the [_LOTTERY MEMBER NO. 03_] heading)",
+      "structured": "Prize listing for Lottery Member No. 03, by color.",
+      "issue": "Introductory caption is added wording, not a game fact; 'by color' reflects the (Red)/(Yellow)... labels. Acceptable, noted only."
+    }
+  ],
+  "structured_sha256": "62cb7c93afc9878efd1f710771b015c0e80cacbb52ef505495f82c1e942a49c2"
+}

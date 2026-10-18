@@ -30,7 +30,8 @@
     "Wild John",
     "Roger Bacon",
     "Roger",
-    "James O'Flaherty"
+    "James O'Flaherty",
+    "Pot-lover Macken"
   ],
   "locations": [
     "Calios Mental Hospital",
@@ -48,7 +49,9 @@
     "Britain Map",
     "Nemeton Monastery",
     "Monastery Ruins",
-    "Monastery"
+    "Monastery",
+    "Ancient Ruins",
+    "Underground Ruins"
   ],
   "deny": [
     "Item",
@@ -169,7 +172,10 @@
     "Pit Fight",
     "Push Ring",
     "Spin Ring",
-    "Spin Ring 3"
+    "Spin Ring 3",
+    "Valuables",
+    "Books of Rituals",
+    "Manuscript"
   ],
   "wanderers": [
     "Lost Peddler",

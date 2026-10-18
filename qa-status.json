@@ -361,5 +361,27 @@
       "low": 0,
       "medium": 0
     }
+  },
+  "w-s-06": {
+    "checked_at": "2026-10-18T15:51:16",
+    "content_hash": "98f0743bc2e6c211",
+    "status": "PASS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 0,
+      "medium": 0
+    }
+  },
+  "w-s-07": {
+    "checked_at": "2026-10-18T15:51:16",
+    "content_hash": "62cb7c93afc9878e",
+    "status": "PASS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 0,
+      "medium": 0
+    }
   }
 }

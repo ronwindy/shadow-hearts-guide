@@ -1,0 +1,125 @@
+{
+  "guide": {
+    "id": "w-s-07",
+    "code": "[W-S-07]",
+    "title": "The Orphanage (Emigre Manuscript / Lottery Member #3)",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-06",
+        "code": "[W-S-06]",
+        "title": "Nemeton Monastery (Book of Rituals / Codex of Lurie)",
+        "file": "sections/w-s-06-nemeton-monastery-book-of-rituals-codex-of-lurie.json"
+      },
+      "next": {
+        "id": "w-s-08",
+        "code": "[W-S-08]",
+        "title": "Rouen (Silent Peddler / Margarete's Armor, Weapon, &",
+        "file": "sections/w-s-08-rouen-silent-peddler-margarete-s-armor-weapon.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Emigre Manuscript",
+          "category": "valuables",
+          "location": "Climb the stairs and examine the pot, and you'll receive the Emigre Manuscript from Pot-lover Macken. (step 2)"
+        },
+        {
+          "name": "Lottery Member No. 03 (Pot-lover Macken)",
+          "category": "lottery",
+          "location": "Talk to Pot-lover Macken once more after receiving the Manuscript."
+        }
+      ]
+    },
+    "enemies": [],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Make your way back to the **Orphanage** in **London**.\n2. Go into the room where you fought **Jack** and **Mammon**, and talk to the little boy, Insolent Jean.\n3. He wonders if you want to play with him and his friends.\n4. Choose 1 and you'll start playing.\n5. You have one minute to find all of his friends, so quickly each of the 5 rooms here to find 4 children: the room you're currently in with Insolent Jean, the large hallway, the top-right room, the top-left room, and the bottom-left room.\n6. There's only one kid in each room, and their locations will be random, so it may take two or three tries to find them all.\n7. You must also return to Insolent Jean and talk to him before the timer runs out to succeed.",
+        "type": "dialogue",
+        "choices": [
+          {
+            "option": "1. Alright, we'll play.",
+            "after_item": 3
+          },
+          {
+            "option": "2. I'm busy.",
+            "after_item": 3
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 2,
+        "description": "1. Once you've won, you'll be able to go past him.\n2. Climb the stairs and examine the pot, and you'll receive the **Emigre Manuscript** from **Pot-lover Macken**.\n3. As with the **Books of Rituals**, examine the **Emigre Manuscript** in your **Valuables** menu, and it'll unlock the **Cave Temple** on your **World Map** (the **Britain Map**, specifically) the next time you're out there.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Emigre Manuscript",
+            "category": "valuables",
+            "matched_overview_item": "Emigre Manuscript"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "1. After you receive the **Manuscript**, go out into the hallway and **save**.\n2. Then go back in and talk to **Pot-lover Macken** once more, and you'll find out that he's a **Lottery Member**!\n3. The ring here is **invisible**, so make sure to equip the **Pocket Watch** so you can see it, which then becomes the easiest Lottery of the game.\n4. Little brat....\n5. Anyway, make sure to win the **Crucifix** before continuing on; you already have one, but since it cancels out all status effects, you'll definitely want a second!\n6. If you don't win it, reload your last save and try again.\n7. Remember, you need to win something from each member at least once!",
+        "type": "story",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Lottery Member No. 03 Prizes",
+            "text": "Prize listing for **Lottery Member No. 03**, by color.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Crucifix"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "Seal of Wisdom"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "Pure Extract"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Pure Root"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "That's it for here. On to the next quest!",
+        "type": "exploration",
+        "rewards": []
+      }
+    ]
+  }
+}
