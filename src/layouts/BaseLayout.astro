@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation.astro';
 import MobileNavDrawer from '../components/MobileNavDrawer.astro';
 import SidebarNav from '../components/SidebarNav.astro';
 import '../styles/global.css';
+import project from '../../project.config.json';
 
 interface Props {
   title?: string;
@@ -14,8 +15,8 @@ interface Props {
 }
 
 const {
-  title = "Shadow Hearts — Complete Guide & Walkthrough",
-  description = "A polished, player-friendly static companion for the PlayStation 2 classic Shadow Hearts, preserving full canonical walkthrough and FAQ depth.",
+  title = project.defaultTitle,
+  description = project.defaultDescription,
   currentId = "",
   pageSections = [],
   isWide = true,

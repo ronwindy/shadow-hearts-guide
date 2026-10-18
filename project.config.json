@@ -1,0 +1,17 @@
+{
+  "game": "Shadow Hearts",
+  "slug": "shadow-hearts-guide",
+  "site": "https://ronwindy.github.io",
+  "base": "/shadow-hearts-guide",
+  "canonicalIndexFile": "shadow-hearts-guide.canonical.json",
+  "termExtrasFile": "scripts/term_extras.json",
+  "statusTitle": "Shadow Hearts Guide Converter - Project Status",
+  "pageTitleSuffix": "Shadow Hearts Strategy Guide",
+  "pageDescriptionPrefix": "Shadow Hearts Strategy Guide & Walkthrough",
+  "defaultTitle": "Shadow Hearts — Complete Guide & Walkthrough",
+  "defaultDescription": "A polished, player-friendly static companion for the PlayStation 2 classic Shadow Hearts, preserving full canonical walkthrough and FAQ depth.",
+  "sourceDefaults": {
+    "author": "A_Backdated_Future",
+    "version": "1.05"
+  }
+}

@@ -8,11 +8,12 @@ import { readFileSync, readdirSync, existsSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ROOT_DIR } from "./status.mjs";
+import { PROJECT } from "./project_config.mjs";
 import { pyJson } from "./status.mjs";
 
 const CANON = join(ROOT_DIR, "canonical-sources", "sections");
 const STRUCT = join(ROOT_DIR, "structured-content", "sections");
-const EXTRAS = join(dirname(fileURLToPath(import.meta.url)), "term_extras.json");
+const EXTRAS = join(ROOT_DIR, PROJECT.termExtrasFile);
 
 const NAME = "[A-Z][\\w'’ .&-]*?";
 

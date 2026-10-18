@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import project from "../../../project.config.json";
 import PageToc from '../../components/PageToc.astro';
 import StepChecklist from '../../components/StepChecklist.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
@@ -60,8 +61,8 @@ const pageSections = headerGuide
 ---
 
 <BaseLayout
-  title={`${guide.title || 'Guide Section'} — Shadow Hearts Strategy Guide`}
-  description={`Shadow Hearts Strategy Guide & Walkthrough — ${guide.title || 'Guide Section'}`}
+  title={`${guide.title || 'Guide Section'} — ${project.pageTitleSuffix}`}
+  description={`${project.pageDescriptionPrefix} — ${guide.title || 'Guide Section'}`}
   currentId={guide.id || ''}
   pageSections={pageSections}
   isWide={true}

@@ -11,6 +11,7 @@ import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { blocksFromMarkdown } from "./richtext.mjs";
+import { PROJECT } from "../../../../scripts/project_config.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(here, "..", "..", "..", "..");
@@ -678,9 +679,9 @@ function scaffoldReferenceGuide(canonical) {
     type: "reference",
     category: canonical.category,
     source: {
-      game: source.game ?? "Shadow Hearts",
-      author: source.author ?? "A_Backdated_Future",
-      version: source.version ?? "1.05",
+      game: source.game ?? PROJECT.game,
+      author: source.author ?? PROJECT.sourceDefaults.author,
+      version: source.version ?? PROJECT.sourceDefaults.version,
       url: source.source_url ?? "",
       source_file: source.source_file ?? "",
     },
@@ -1194,9 +1195,9 @@ export function scaffoldGuide(canonicalPath) {
       type: guideType,
       category: canonical.category,
       source: {
-        game: source.game ?? "Shadow Hearts",
-        author: source.author ?? "A_Backdated_Future",
-        version: source.version ?? "1.05",
+        game: source.game ?? PROJECT.game,
+        author: source.author ?? PROJECT.sourceDefaults.author,
+        version: source.version ?? PROJECT.sourceDefaults.version,
         url: source.source_url ?? "",
         source_file: source.source_file ?? "",
       },

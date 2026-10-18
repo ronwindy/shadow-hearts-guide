@@ -7,6 +7,7 @@ import { createHash } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadMerges } from "../.claude/skills/qa/scripts/merges.mjs";
+import { PROJECT } from "./project_config.mjs";
 
 export const ROOT_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 export const QA_STATUS_FILE = "qa-status.json";
@@ -34,7 +35,7 @@ export function fileHash(path) {
 }
 
 export function loadCanonicalIndex(root = ROOT_DIR) {
-  const path = join(root, "canonical-sources", "shadow-hearts-guide.canonical.json");
+  const path = join(root, "canonical-sources", PROJECT.canonicalIndexFile);
   if (!existsSync(path)) throw new Error(`Canonical manifest not found: ${path}`);
   const data = JSON.parse(readFileSync(path, "utf8"));
   return { source: data.source ?? {}, sections: data.sections_index ?? [] };
@@ -186,7 +187,7 @@ export function renderCompactSummary(data) {
 /** STATUS.md: summary block first (<45 lines), then the full section matrix. */
 export function generateStatusMarkdown(data) {
   const lines = [
-    "# Shadow Hearts Guide Converter - Project Status",
+    `# ${PROJECT.statusTitle}`,
     "",
     `> Last synced: \`${data.timestamp}\``,
     "",

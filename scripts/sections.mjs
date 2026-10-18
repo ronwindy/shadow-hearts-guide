@@ -3,13 +3,14 @@
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT_DIR } from "./status.mjs";
+import { PROJECT } from "./project_config.mjs";
 
 const base = (p) => p.split(/[\\/]/).pop();
 const stem = (p) => base(p).replace(/\.[^.]*$/, "");
 
 /** Returns { source, sections } from the canonical manifest. */
 export function getCanonicalManifest() {
-  const manifestPath = join(ROOT_DIR, "canonical-sources", "shadow-hearts-guide.canonical.json");
+  const manifestPath = join(ROOT_DIR, "canonical-sources", PROJECT.canonicalIndexFile);
   if (!existsSync(manifestPath)) throw new Error(`Canonical manifest not found: ${manifestPath}`);
   const data = JSON.parse(readFileSync(manifestPath, "utf8"));
   return { source: data.source ?? {}, sections: data.sections_index ?? [] };
