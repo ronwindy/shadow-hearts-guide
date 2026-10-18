@@ -1,0 +1,14 @@
+{
+  "section_id": "w-s-13",
+  "verdict": "PASS",
+  "spot_checked": [
+    "all 12 sub-boss names, classes and Lv. 2/Lv. 3 groupings",
+    "Soul Energy locations and counts for all six elements, plus the 'prior to Neameeto' qualifier",
+    "boss strategy: HP varies with Yuri, Mind's Eye via Amon, opposite-class fusion, keep healed",
+    "both Gravestone notes (W-S-05, Old Carl's phone, 'Dad')",
+    "???? attacks: Berserk requirement, Small Jug 2 SP, Monk Earrings, Graveyard Malice, Defending",
+    "Seraphic Radiance note and the ordering of steps 1-6"
+  ],
+  "findings": [],
+  "structured_sha256": "ffdb4bd9dc758cb25b78aa69087b55959cec081911ac73496703b77910f216a2"
+}

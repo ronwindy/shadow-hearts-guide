@@ -1,0 +1,243 @@
+{
+  "guide": {
+    "id": "w-s-11",
+    "code": "[W-S-11]",
+    "title": "Cave Temple (Keith's Armor / Zhuzhen's Weapon)",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-10",
+        "code": "[W-S-10]",
+        "title": "Prague (Rare Shop / The Dollhouse / Alice's Weapon)",
+        "file": "sections/w-s-10-prague-rare-shop-the-dollhouse-alice-s-weapon.json"
+      },
+      "next": {
+        "id": "w-s-12",
+        "code": "[W-S-12]",
+        "title": "Ancient Ruins (Alice's Armor / Halley's Weapon)",
+        "file": "sections/w-s-12-ancient-ruins-alice-s-armor-halley-s-weapon.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat **Cherubim**"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Western maze: chest at the north door of the room reached by the path in step 1"
+        },
+        {
+          "name": "Key to Success",
+          "category": "items",
+          "location": "Eastern maze: chest at the north door of the room reached by the path in step 3"
+        },
+        {
+          "name": "Fifth Key",
+          "category": "items",
+          "location": "Eastern maze: chest at the first room's north door (step 3)"
+        },
+        {
+          "name": "Priest Earrings",
+          "category": "equipment",
+          "location": "Western maze: chest at the first room's north door (step 1)"
+        },
+        {
+          "name": "Mant.OfShivering",
+          "category": "equipment",
+          "location": "Western maze: north of the Save Point room, Keith's best armor (step 1)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#081",
+        "name": "Buggy",
+        "hp": 330,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#082",
+        "name": "Penalty",
+        "hp": 420,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#083",
+        "name": "Oingo",
+        "hp": 750,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Instant Death"
+      },
+      {
+        "number": "#084",
+        "name": "Cherubim",
+        "hp": 10000,
+        "class": "None",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "S-Atk Resistant, and inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Start walking west and head through the arches to be inside the temple.\n2. Make your way northeast and through the door here, and you'll arrive inside the maze.\n3. It's very easy to get lost in here, so follow along carefully.\n4. Each room has three doors: north, west, and east, and they all look exactly alike.\n5. To get all of the treasures, and to get through the maze, take the following paths from the first room inside the maze:\n- **North**, opening the chest here for some **Priest Earrings**.\n- **South**, back to the first room.\n- **West**.\n- **North**.\n- **West**.\n- **South**.\n- **South**.\n- **West**.\n- **North**, opening the chest here for a **Lottery Ticket**.\n- **South**, back to the previous room.\n- **West**.\n- **North**.\n- **West**, to a **Save Point**.\n- **North**, where you'll find **Keith**'s best armor, the **Mant.OfShivering**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Priest Earrings",
+            "category": "equipment",
+            "matched_overview_item": "Priest Earrings"
+          },
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          },
+          {
+            "name": "Mant.OfShivering",
+            "category": "equipment",
+            "matched_overview_item": "Mant.OfShivering"
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "To have access to this area, you must have read the **Emigre Manuscript** in your **Valuables** menu to have it appear on the **Britain Map**."
+          },
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "The boss here absorbs special attacks, so make sure that you bring two fighters with **Mind's Eyes** equipped, and have **Alice** to heal. As always, I'm taking **Yuri**, **Alice**, and **Margarete**."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "- You'll be back at the entrance after opening the chest.\n- Examine the **Emigre Manuscript** once again, which has actually changed in both description and fragrance.\n- By re-examining it, it will change the maze inside.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "Re-enter the maze once again. The path is very similar to the previous path, but for all paths where you needed to go west, you now need to go east.\n- **North**, opening the chest here for a **Fifth Key**.\n- **South**, back to the first room.\n- **East**.\n- **North**.\n- **East**.\n- **South**.\n- **South**.\n- **East**.\n- **North**, opening the chest here for a **Key to Success**.\n- **South**, back to the previous room.\n- **East**.\n- **North**.\n- **East**, to a **Save Point**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Fifth Key",
+            "category": "items",
+            "matched_overview_item": "Fifth Key"
+          },
+          {
+            "name": "Key to Success",
+            "category": "items",
+            "matched_overview_item": "Key to Success"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "Use the **Save Point**. Make sure you have **Crucifixes** equipped, then when you're ready, head north to take on **Cherubim**.",
+        "type": "boss",
+        "rewards": [
+          {
+            "name": "Holy Peak Staff",
+            "category": "equipment"
+          }
+        ],
+        "boss": {
+          "type": "BOSS",
+          "name": "Cherubim",
+          "enemies": [
+            {
+              "name": "Cherubim",
+              "hp": 10000,
+              "class": "None",
+              "drop": "Holy Peak Staff"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 40,
+              "equipment": [
+                "Silver Wolf Fang",
+                "Stygian Robe",
+                "Mind's Eye",
+                "Demon Earrings",
+                "Crucifix"
+              ],
+              "fusions": [
+                "Amon",
+                "Czernobog",
+                "Ifrit"
+              ]
+            },
+            {
+              "name": "Margarete",
+              "level": 35,
+              "equipment": [
+                "10 Gauge",
+                "Leather Suit",
+                "Mind's Eye",
+                "Demon Earrings",
+                "Crucifix"
+              ]
+            },
+            {
+              "name": "Alice",
+              "level": 40,
+              "equipment": [
+                "Holy Book-Flesh",
+                "Snow-White Robe",
+                "Oracle Earrings",
+                "Priest Earrings",
+                "Crucifix"
+              ]
+            }
+          ],
+          "exp": 120,
+          "cash": 600,
+          "strategy": "- Ah, Brain Hopper; I miss this music.\n- In any case, **Cherubim** will usually start the battle with the !!! attack, reducing a party member's HP to 1, or Divine Punishment, doing pretty good damage to your entire party, as well as causing various status effects, so make sure to heal them straight away.\n- He will continue using them throughout the battle, and his physical attacks will hit an ally for pretty decent damage as well.\n- Note that he won't take hardly any damage from your special attacks, so focus only on physical attacks.\n- Have **Yuri** fuse into **Amon** and attack normally while **Alice** casts **Arc** as needed, leaving **Margarete** to also attack normally, supporting **Alice** when needed to replenish **Yuri**'s SP, as well as **Alice**'s MP.\n- **Cherubim** isn't really that complicated, so as long as you have **Crucifixes** equipped to everyone and have **Alice** use **Arc** every round, then it's just a matter of taking the time to whittle away his HP.\n- Just make sure not to let anyone go **Berserk**.\n- Once the battle is over, you'll receive **Zhuzhen**'s best weapon, the **Holy Peak Staff**."
+        },
+        "encounter": {
+          "enemies": [
+            "Cherubim"
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "description": "1. After the battle, you'll automatically be back at the start of the maze.\n2. Head outside and out to the **World Map**.\n3. Let's take on the next area.",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "Near the end of the western maze",
+      "Near the end of the eastern maze"
+    ]
+  }
+}

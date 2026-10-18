@@ -1,0 +1,277 @@
+{
+  "guide": {
+    "id": "w-s-15",
+    "code": "[W-S-15]",
+    "title": "The Good Ending (Defeating the Masks)",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-14",
+        "code": "[W-S-14]",
+        "title": "Sharon's Pit Fight (Halley's Armor / Other Items",
+        "file": "sections/w-s-14-sharon-s-pit-fight-halley-s-armor-other-items.json"
+      },
+      "next": {
+        "id": "w-2-14",
+        "code": "[W-2-14]",
+        "title": "Nemeton Monastery (2)",
+        "file": "sections/w-2-14-nemeton-monastery-2.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat **Grail Mask**, **Gold Mask**, **Staff Mask**, **Sword Mask**, **Grail Mask**, **Gold Mask**, **Staff Mask**, **Sword Mask**"
+    ],
+    "items_summary": {
+      "obtainable": []
+    },
+    "enemies": [
+      {
+        "number": "#113",
+        "name": "Sword Mask",
+        "hp": 1875,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Uses SP Lowering"
+      },
+      {
+        "number": "#114",
+        "name": "Grail Mask",
+        "hp": 2000,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Uses SP Lowering"
+      },
+      {
+        "number": "#115",
+        "name": "Staff Mask",
+        "hp": 2250,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "S-Atk Resistant, uses SP Lowering"
+      },
+      {
+        "number": "#116",
+        "name": "Gold Mask",
+        "hp": 2625,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "P-Atk Resistant, uses SP Lowering"
+      },
+      {
+        "number": "#117",
+        "name": "Sword Mask",
+        "hp": 1,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#118",
+        "name": "Grail Mask",
+        "hp": 1,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#119",
+        "name": "Staff Mask",
+        "hp": 1,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#120",
+        "name": "Gold Mask",
+        "hp": 1,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. It's time to decide which ending you want.\n2. If for some reason you want the bad ending, then just skip this section.\n3. You'll also miss out on nine **Monster Library** entries.\n4. If you want the good ending, then keep on reading.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "warning",
+            "title": "Note",
+            "text": "**Technically**, you can still get the **Bad Ending** even by defeating the **Four Masks**, but only if you forget to read the small tombstone in the **Graveyard** with **Alice**'s name on it."
+          },
+          {
+            "type": "warning",
+            "title": "Note",
+            "text": "- You really need to have gotten the **Oath Grail** from **Joshua** in the **London Rats**' hideout before trying this.\n- Otherwise, you're going to have a very tough time against the Masks.\n- Also, **Alice** must be in your party for any of this to happen."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "description": "Follow these four steps to a tee (don't forget that there's one more step after all the fighting), and you'll definitely get the good ending. Here we go:",
+        "type": "exploration",
+        "rewards": [],
+        "id": 2
+      },
+      {
+        "description": "**1)** Fight until your Malice meter is **completely** red, meaning the Masks **will** attack you in random battles.",
+        "type": "exploration",
+        "rewards": [],
+        "id": 3
+      },
+      {
+        "description": "**2)** Read the **Oath Grail** in your **Valuables** menu; it shows that we need to defeat the Masks in the following order: **Grail Mask**, **Gold Mask**, **Staff Mask**, **Sword Mask**.",
+        "type": "exploration",
+        "rewards": [],
+        "id": 4
+      },
+      {
+        "id": 5,
+        "description": "**3)** Encounter the Masks in this order.\n- If one comes in out of order, run away and try again until the correct one appears.\n- You'll know it's the correct one because it won't hit you with a ring anomaly that you cannot remedy.\n- It's possible to beat them without fighting them in this order, but because of their Fast / Tight / Popping Shock abilities, it'll be very difficult.",
+        "type": "boss",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "If you encounter one of the Masks you already defeated between fighting the full-strength ones in order, you can fight and defeat them without worry; the next full-strength Mask will still be weakened as if you fought them right after the previous Mask."
+          },
+          {
+            "type": "tip",
+            "title": "EXP and Cash",
+            "text": "Rewards for each Mask.",
+            "table": {
+              "headers": [
+                "Enemy",
+                "EXP (1) / Cash (1) / EXP (2) / Cash (2)"
+              ],
+              "rows": [
+                {
+                  "range": "Grail Mask",
+                  "reward": "1st encounter: 45000 EXP / 30000 Cash; 2nd encounter: 10 EXP / 10 Cash"
+                },
+                {
+                  "range": "Gold Mask",
+                  "reward": "1st encounter: 45000 EXP / 30000 Cash; 2nd encounter: 10 EXP / 10 Cash"
+                },
+                {
+                  "range": "Staff Mask",
+                  "reward": "1st encounter: 45000 EXP / 30000 Cash; 2nd encounter: 10 EXP / 10 Cash"
+                },
+                {
+                  "range": "Sword Mask",
+                  "reward": "1st encounter: 45000 EXP / 30000 Cash; 2nd encounter: 10 EXP / 10 Cash"
+                }
+              ]
+            }
+          }
+        ],
+        "rewards": [],
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Grail Mask, Gold Mask, Staff Mask, Sword Mask, Grail Mask, Gold Mask, Staff Mask, Sword Mask",
+          "enemies": [
+            {
+              "name": "Grail Mask",
+              "hp": 2000,
+              "class": "Water",
+              "drop": "Amber Ring"
+            },
+            {
+              "name": "Gold Mask",
+              "hp": 2625,
+              "class": "Earth",
+              "drop": "Carnelian Ring"
+            },
+            {
+              "name": "Staff Mask",
+              "hp": 2250,
+              "class": "Fire",
+              "drop": "Lazurite Ring"
+            },
+            {
+              "name": "Sword Mask",
+              "hp": 1875,
+              "class": "Wind",
+              "drop": "Obsidian Ring"
+            },
+            {
+              "name": "Grail Mask",
+              "hp": 1,
+              "class": "Water",
+              "drop": "Thera Leaf"
+            },
+            {
+              "name": "Gold Mask",
+              "hp": 1,
+              "class": "Earth",
+              "drop": "Thera Leaf"
+            },
+            {
+              "name": "Staff Mask",
+              "hp": 1,
+              "class": "Fire",
+              "drop": "Thera Leaf"
+            },
+            {
+              "name": "Sword Mask",
+              "hp": 1,
+              "class": "Wind",
+              "drop": "Thera Leaf"
+            }
+          ],
+          "party": [],
+          "exp": null,
+          "cash": null,
+          "strategy": "- 1st Encounter = Stronger form, must be fought in order for easy battles.\n- 2nd Encounter = Weaker form, defeated once and have lost their powers.\n- 1) **Grail Mask** - He's a joke. Your hit area will be **doubled**, and he's easily damaged by physical attacks. He should only take two turns, max.\n- 2) **Gold Mask** - A little harder than the **Grail Mask**, but not by much. He can't be harmed by physical attacks, so you must take him out with nothing but special attacks. It'll take longer than the **Grail Mask**, but he's not a threat at all.\n- 3) **Staff Mask** - A little easier than the **Gold Mask**, but not by much. He's just the opposite of the **Gold Mask**; he can't be harmed by special attacks, so you must take him out with nothing but physical attacks, so it shouldn't be a problem. Again, not very much of a threat at this point.\n- 4) **Sword Mask** - The last of the Masks is actually almost as easy as the first! He doesn't have any strong points like the last two, nor do you have a wider hit area, but either way, it should only take two, possibly three rounds to take this one out.\n- 5) Round Two! - Once you have defeated all Four Masks, keep your Malice in the red and wait for them to come around to fight once more! This time around, they don't need to be fought in any order, and they only take one hit to die. Make sure to do this so you get all eight of their entries for the **Monster Library**."
+        },
+        "encounter": {
+          "enemies": [
+            "Grail Mask",
+            "Gold Mask",
+            "Staff Mask",
+            "Sword Mask"
+          ]
+        }
+      },
+      {
+        "description": "There is one last step that is **critical**, and very easy to miss.",
+        "type": "exploration",
+        "rewards": [],
+        "id": 6
+      },
+      {
+        "description": "**4)** Go to the **Graveyard** and examine the tiny tombstone next to the **Dark Gravestone**; it should read \"Rest in peace, **Alice** Elliot...\".\n- If you do not read this, then **Yuri** won't know that anything is happening in the coming events and won't join in.\n- While you're there, feel free to clear the remainder of your Malice.",
+        "type": "exploration",
+        "rewards": [],
+        "id": 7
+      },
+      {
+        "id": 8,
+        "description": "- That's it for side quests for now.\n- We have one left, but we can't do it until we move the story along.\n- Now, let's move on with the story and see if we got the good ending or not!",
+        "type": "exploration",
+        "rewards": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "guide": {
+    "id": "w-s-12",
+    "code": "[W-S-12]",
+    "title": "Ancient Ruins (Alice's Armor / Halley's Weapon)",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-11",
+        "code": "[W-S-11]",
+        "title": "Cave Temple (Keith's Armor / Zhuzhen's Weapon)",
+        "file": "sections/w-s-11-cave-temple-keith-s-armor-zhuzhen-s-weapon.json"
+      },
+      "next": {
+        "id": "w-s-13",
+        "code": "[W-S-13]",
+        "title": "Yuri's Level 2 & 3 Fusions, ???? Attacks",
+        "file": "sections/w-s-13-yuri-s-level-2-3-fusions-attacks.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat **Seraphim**"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "In the next area where you can choose between turquoise, orange, and yellow, open the chest on the right for a Lottery Ticket, then... (step 2)"
+        },
+        {
+          "name": "Angel Earrings",
+          "category": "equipment",
+          "location": "Open the chest here for some Angel Earrings, then follow the paths in the following order, the color of the rainbow... (step 1)"
+        },
+        {
+          "name": "GoldThreadCoat",
+          "category": "equipment",
+          "location": "Descend the stairs and follow the path, opening the chest for the GoldThreadCoat, Alice's best armor. (step 3)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#085",
+        "name": "Asp",
+        "hp": 830,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Petrification"
+      },
+      {
+        "number": "#086",
+        "name": "Basilisk",
+        "hp": 800,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Petrification"
+      },
+      {
+        "number": "#087",
+        "name": "Sweeper",
+        "hp": 750,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#088",
+        "name": "Seraphim",
+        "hp": 4000,
+        "class": "None",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "1. Make your way into the Ruins and use the **Save Point** if you like.\n2. Go northeast from here to enter the maze.\n3. Open the chest here for some **Angel Earrings**, then follow the paths in the following order, the color of the rainbow... sort of.\n4. Each room will have a short path after it before you reach the next color choice:\n- **Red** (center room)\n- **Orange** (right room, and yes, it looks yellow, but it really is orange.)\n- **Yellow** (left room)\n- **Green** (center room)",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Angel Earrings",
+            "category": "equipment",
+            "matched_overview_item": "Angel Earrings"
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "To have access to this area, you must have read the **Book of Rituals** in your **Valuables** menu to have it appear on the **World Map**."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "- In the next area where you can choose between turquoise, orange, and yellow, open the chest on the right for a **Lottery Ticket**, then...\n- **Turquoise** (left room)\n- **Blue** (right room)\n- **Violet** (right room)",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "description": "You'll be back at the beginning, but the water will have drained and you can now go downstairs. Descend the stairs and follow the path, opening the chest for the **GoldThreadCoat**, **Alice**'s best armor.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "GoldThreadCoat",
+            "category": "equipment",
+            "matched_overview_item": "GoldThreadCoat"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "Make your way back upstairs, then examine the **Book of Rituals** in your **Valuables** menu once again, which has changed. It now tells you to go backwards, so we'll now follow the colors in reverse order:\n- **Violet** (right room)\n- **Blue** (left room)\n- **Turquoise** (right room)\n- **Green** (center room)\n- **Yellow** (right room)\n- **Orange** (left room)\n- **Red** (center room)",
+        "type": "navigation",
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "1. The water will drain once again, but to a different path this time.\n2. **Save your game**, make sure you have **Crucifixes** equipped, then when you're ready, descend the stairs.\n3. This time, you'll have to face the freaky-looking **Seraphim**.",
+        "type": "boss",
+        "rewards": [
+          {
+            "name": "Volt Snipe",
+            "category": "equipment"
+          }
+        ],
+        "boss": {
+          "type": "BOSS",
+          "name": "Seraphim",
+          "enemies": [
+            {
+              "name": "Seraphim",
+              "hp": 4000,
+              "class": "None",
+              "drop": "Volt Snipe"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 42,
+              "equipment": [
+                "Silver Wolf Fang",
+                "Stygian Robe",
+                "Mind's Eye",
+                "Demon Earrings",
+                "Crucifix"
+              ],
+              "fusions": [
+                "Amon",
+                "Czernobog",
+                "Ifrit"
+              ]
+            },
+            {
+              "name": "Margarete",
+              "level": 38,
+              "equipment": [
+                "10 Gauge",
+                "Leather Suit",
+                "Mind's Eye",
+                "Demon Earrings",
+                "Crucifix"
+              ]
+            },
+            {
+              "name": "Alice",
+              "level": 42,
+              "equipment": [
+                "Holy Book-Flesh",
+                "GoldThreadCoat",
+                "Oracle Earrings",
+                "Priest Earrings",
+                "Crucifix"
+              ]
+            }
+          ],
+          "exp": 60000,
+          "cash": 38000,
+          "strategy": "- **Seraphim** hits pretty hard, enough to kill right off the bat, so once again, **Alice** will be doing nothing but **Arc** this battle.\n- Other than his normal attacks, he will use Divine Punishment, doing pretty good damage to your entire party, as well as causing various status effects, so make sure to heal them straight away.\n- Have **Yuri** fuse into **Amon** and keep at him with physical attacks, and have **Margarete** attack normally as well, taking breaks to help replenish MP and SP as needed.\n- Since **Seraphim** has lower HP than **Cherubim**, you probably won't have to replenish either MP nor SP.\n- Like **Cherubim**, **Seraphim** isn't really that complicated, so as long as you have **Crucifixes** equipped to everyone and have **Alice** use **Arc** every round, then it's just a matter of taking the time to whittle away his HP.\n- It actually won't take nearly as long, since **Seraphim** only has 40% the HP that **Cherubim** had.\n- Once the battle is over, you'll receive **Halley**'s best weapon, the **Volt Snipe**."
+        },
+        "encounter": {
+          "enemies": [
+            "Seraphim"
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "description": "That's it for here, so go ahead and leave the **Ancient Ruins** and to the **World Map**. Next!",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "First room inside"
+    ]
+  }
+}

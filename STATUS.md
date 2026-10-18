@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 16:00:23`
+> Last synced: `2026-10-18 16:05:50`
 
 ```text
-=== PROJECT STATUS (2026-10-18 16:00:23) ===
-Canonical 66/66 | Structured 37/66 | QA pass 37/66 (fail 0) | Web built 37/66
+=== PROJECT STATUS (2026-10-18 16:05:50) ===
+Canonical 66/66 | Structured 42/66 | QA pass 42/66 (fail 0) | Web built 42/66
 Next:
-  1. Structure w-s-11 (Cave Temple (Keith's Armor / Zhuzhen's Weapon)) - next chronological
+  1. Structure w-2-14 (Nemeton Monastery (2)) - next chronological
 ```
 
 ## Section Matrix
@@ -49,11 +49,11 @@ Next:
 | `[W-S-08]` | `w-s-08` | Rouen (Silent Peddler / Margarete's Armor, Weapon, & | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-09]` | `w-s-09` | Blue Castle (Keith's Weapon / Lottery Member #1) | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-10]` | `w-s-10` | Prague (Rare Shop / The Dollhouse / Alice's Weapon) | Walkthrough - Europe | WEB_BUILT |
-| `[W-S-11]` | `w-s-11` | Cave Temple (Keith's Armor / Zhuzhen's Weapon) | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-S-12]` | `w-s-12` | Ancient Ruins (Alice's Armor / Halley's Weapon) | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-S-13]` | `w-s-13` | Yuri's Level 2 & 3 Fusions, ???? Attacks | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-S-14]` | `w-s-14` | Sharon's Pit Fight (Halley's Armor / Other Items | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-S-15]` | `w-s-15` | The Good Ending (Defeating the Masks) | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-S-11]` | `w-s-11` | Cave Temple (Keith's Armor / Zhuzhen's Weapon) | Walkthrough - Europe | WEB_BUILT |
+| `[W-S-12]` | `w-s-12` | Ancient Ruins (Alice's Armor / Halley's Weapon) | Walkthrough - Europe | WEB_BUILT |
+| `[W-S-13]` | `w-s-13` | Yuri's Level 2 & 3 Fusions, ???? Attacks | Walkthrough - Europe | WEB_BUILT |
+| `[W-S-14]` | `w-s-14` | Sharon's Pit Fight (Halley's Armor / Other Items | Walkthrough - Europe | WEB_BUILT |
+| `[W-S-15]` | `w-s-15` | The Good Ending (Defeating the Masks) | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-14]` | `w-2-14` | Nemeton Monastery (2) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-2-15]` | `w-2-15` | Europe Side Quests, Part 3 | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-S-16]` | `w-s-16` | Nemeton Monastery (The Seraphic Radiance / | Walkthrough - Europe | NOT_STRUCTURED |

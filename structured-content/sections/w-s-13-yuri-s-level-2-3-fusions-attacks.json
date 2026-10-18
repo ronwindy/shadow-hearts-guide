@@ -1,0 +1,448 @@
+{
+  "guide": {
+    "id": "w-s-13",
+    "code": "[W-S-13]",
+    "title": "Yuri's Level 2 & 3 Fusions, ???? Attacks",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-12",
+        "code": "[W-S-12]",
+        "title": "Ancient Ruins (Alice's Armor / Halley's Weapon)",
+        "file": "sections/w-s-12-ancient-ruins-alice-s-armor-halley-s-weapon.json"
+      },
+      "next": {
+        "id": "w-s-14",
+        "code": "[W-S-14]",
+        "title": "Sharon's Pit Fight (Halley's Armor / Other Items",
+        "file": "sections/w-s-14-sharon-s-pit-fight-halley-s-armor-other-items.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat **Mad Bull**, **Dragner**, **Ifrit**, **Icarus**, **Baldo**, **Charon**, **Lobo**, **Egil**, **Forron**, **Seravi**, **Sandalphon**, **Czernobog**"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Mad Bull",
+          "category": "souls",
+          "location": "Lv. 2 Fusion (Graveyard)"
+        },
+        {
+          "name": "Lobo",
+          "category": "souls",
+          "location": "Lv. 3 Fusion (Graveyard)"
+        },
+        {
+          "name": "Dragner",
+          "category": "souls",
+          "location": "Lv. 2 Fusion (Graveyard)"
+        },
+        {
+          "name": "Egil",
+          "category": "souls",
+          "location": "Lv. 3 Fusion (Graveyard)"
+        },
+        {
+          "name": "Ifrit",
+          "category": "souls",
+          "location": "Lv. 2 Fusion (Graveyard)"
+        },
+        {
+          "name": "Forron",
+          "category": "souls",
+          "location": "Lv. 3 Fusion (Graveyard)"
+        },
+        {
+          "name": "Icarus",
+          "category": "souls",
+          "location": "Lv. 2 Fusion (Graveyard)"
+        },
+        {
+          "name": "Seravi",
+          "category": "souls",
+          "location": "Lv. 3 Fusion (Graveyard)"
+        },
+        {
+          "name": "Baldo",
+          "category": "souls",
+          "location": "Lv. 2 Fusion (Graveyard)"
+        },
+        {
+          "name": "Sandalphon",
+          "category": "souls",
+          "location": "Lv. 3 Fusion (Graveyard)"
+        },
+        {
+          "name": "Charon",
+          "category": "souls",
+          "location": "Lv. 2 Fusion (Graveyard)"
+        },
+        {
+          "name": "Czernobog",
+          "category": "souls",
+          "location": "Lv. 3 Fusion (Graveyard)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": null,
+        "name": "Mad Bull",
+        "hp": "Varies",
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 2 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Dragner",
+        "hp": "Varies",
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 2 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Ifrit",
+        "hp": "Varies",
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 2 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Icarus",
+        "hp": "Varies",
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 2 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Baldo",
+        "hp": "Varies",
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 2 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Charon",
+        "hp": "Varies",
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 2 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Lobo",
+        "hp": "Varies",
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 3 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Egil",
+        "hp": "Varies",
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 3 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Forron",
+        "hp": "Varies",
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 3 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Seravi",
+        "hp": "Varies",
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 3 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Sandalphon",
+        "hp": "Varies",
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 3 Fusion (Graveyard)"
+      },
+      {
+        "number": null,
+        "name": "Czernobog",
+        "hp": "Varies",
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": "Lv. 3 Fusion (Graveyard)"
+      }
+    ],
+    "bosses": [
+      {
+        "type": "SUB-BOSS",
+        "name": "Mad Bull, Dragner, Ifrit, Icarus, Baldo, Charon, Lobo, Egil, Forron, Seravi, Sandalphon, Czernobog",
+        "enemies": [
+          {
+            "name": "Mad Bull",
+            "hp": null,
+            "class": "Earth",
+            "drop": null
+          },
+          {
+            "name": "Dragner",
+            "hp": null,
+            "class": "Water",
+            "drop": null
+          },
+          {
+            "name": "Ifrit",
+            "hp": null,
+            "class": "Fire",
+            "drop": null
+          },
+          {
+            "name": "Icarus",
+            "hp": null,
+            "class": "Wind",
+            "drop": null
+          },
+          {
+            "name": "Baldo",
+            "hp": null,
+            "class": "Light",
+            "drop": null
+          },
+          {
+            "name": "Charon",
+            "hp": null,
+            "class": "Dark",
+            "drop": null
+          },
+          {
+            "name": "Lobo",
+            "hp": null,
+            "class": "Earth",
+            "drop": null
+          },
+          {
+            "name": "Egil",
+            "hp": null,
+            "class": "Water",
+            "drop": null
+          },
+          {
+            "name": "Forron",
+            "hp": null,
+            "class": "Fire",
+            "drop": null
+          },
+          {
+            "name": "Seravi",
+            "hp": null,
+            "class": "Wind",
+            "drop": null
+          },
+          {
+            "name": "Sandalphon",
+            "hp": null,
+            "class": "Light",
+            "drop": null
+          },
+          {
+            "name": "Czernobog",
+            "hp": null,
+            "class": "Dark",
+            "drop": null
+          }
+        ],
+        "party": [],
+        "exp": null,
+        "cash": null,
+        "strategy": "- Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy.\n- Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa.\n- If you want to use the **Mind's Eye**, just fuse into **Amon** and wail on them for a few rounds, making sure to heal if necessary.\n- If you don't want to use the **Mind's Eye**, fuse into the highest level monster that is the opposite class of the one you're fighting.\n- Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
+      }
+    ],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "- You most likely have all of **Yuri**'s **Level 2 Fusions** already, but there's a chance you won't have all of the **Level 3 Fusions**.\n- To get the ultimate Fusion, the **Seraphic Radiance**, we need to have every other Fusion, including **Amon**.",
+        "type": "exploration",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "If for some reason you didn't acquire all of the **Gravestones** earlier as directed in the walkthrough, go to **[W-S-05] Yuri's Gravestones** so you can get them before continuing on."
+          },
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- Also, if you check the phone in Old Carl's house in **Old Castle Street**, it'll give you hints as to the locations of those **Gravestones**.\n- If you've already found them all, the \"Dad\" on the other line won't hint anything else to you, just saying that it looks like you found them already."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "Where to earn **Soul Energy** (prior to Neameeto):\n- **Light** - **Blue Castle** (Hollow x2); **Cave Temple** (Penalty x3); **Nemeton Monastery**, **Underground Ruins** (Sin x2)\n- **Fire** - **Dollhouse** (**Ghouler** x2); **Ancient Ruins** (**Basilisk** x1)\n- **Earth** - **Calios Mental Hospital** (Doom x2); **Nemeton Monastery**, **Underground Ruins** (Inverse x2); **Ancient Ruins** (Sweeper x2)\n- **Dark** - **Calios Mental Hospital** (**Buggs** x5); **Nemeton Monastery**, **Underground Ruins** (**Guinea Pig** x3); **Blue Castle** (**Dead Knight** x2); **Cave Temple** (**Oingo** x2)\n- **Wind** - **Cave Temple** (**Buggy** x5); **Blue Castle** (**Gremlin** x3); **Calios Mental Hospital** (**Meat Eater** x2); **Dollhouse** (**Spanky** x2)\n- **Water** - **Dollhouse** (**Ghoul** x2); **Nemeton Monastery**, **Underground Ruins** (**Straithe** x2); **Ancient Ruins** (**Asp** x1)",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "Once you have enough **Soul Energy** to unlock the Fusions, visit the **Graveyard** and take each one on, one at a time.",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Mad Bull, Dragner, Ifrit, Icarus, Baldo, Charon, Lobo, Egil, Forron, Seravi, Sandalphon, Czernobog",
+          "enemies": [
+            {
+              "name": "Mad Bull",
+              "hp": null,
+              "class": "Earth",
+              "drop": null
+            },
+            {
+              "name": "Dragner",
+              "hp": null,
+              "class": "Water",
+              "drop": null
+            },
+            {
+              "name": "Ifrit",
+              "hp": null,
+              "class": "Fire",
+              "drop": null
+            },
+            {
+              "name": "Icarus",
+              "hp": null,
+              "class": "Wind",
+              "drop": null
+            },
+            {
+              "name": "Baldo",
+              "hp": null,
+              "class": "Light",
+              "drop": null
+            },
+            {
+              "name": "Charon",
+              "hp": null,
+              "class": "Dark",
+              "drop": null
+            },
+            {
+              "name": "Lobo",
+              "hp": null,
+              "class": "Earth",
+              "drop": null
+            },
+            {
+              "name": "Egil",
+              "hp": null,
+              "class": "Water",
+              "drop": null
+            },
+            {
+              "name": "Forron",
+              "hp": null,
+              "class": "Fire",
+              "drop": null
+            },
+            {
+              "name": "Seravi",
+              "hp": null,
+              "class": "Wind",
+              "drop": null
+            },
+            {
+              "name": "Sandalphon",
+              "hp": null,
+              "class": "Light",
+              "drop": null
+            },
+            {
+              "name": "Czernobog",
+              "hp": null,
+              "class": "Dark",
+              "drop": null
+            }
+          ],
+          "party": [],
+          "exp": null,
+          "cash": null,
+          "strategy": "- Rather than list each sub-boss separately, I'm covering them all in this one section, since each one requires basically the same strategy.\n- Each of their HP varies depending on **Yuri**, so if he's weaker, they'll be weaker as well, and vice versa.\n- If you want to use the **Mind's Eye**, just fuse into **Amon** and wail on them for a few rounds, making sure to heal if necessary.\n- If you don't want to use the **Mind's Eye**, fuse into the highest level monster that is the opposite class of the one you're fighting.\n- Make sure to keep yourself healed if you fear that you'll be taken down fairly easily."
+        },
+        "encounter": {
+          "enemies": [
+            "Mad Bull",
+            "Dragner",
+            "Ifrit",
+            "Icarus",
+            "Baldo",
+            "Charon",
+            "Lobo",
+            "Egil",
+            "Forron",
+            "Seravi",
+            "Sandalphon",
+            "Czernobog"
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "description": "To unlock the higher level Fusion's ???? attacks, **Yuri** must be **Berserk** as that Fusion. Once he is, he'll cast it on the enemy, and will know it from then on.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "1. The best way to do this is to equip the **Small Jug** so 2 SP are taken per round, and the **Monk Earrings** so your SP is lower.\n2. Fight a battle, then go to the **Graveyard** and fight the **Malice**.\n3. Fuse **Yuri** into the Fusion you want, then keep Defending until **Yuri** goes **Berserk**, obliterating the Evil with your new spell.",
+        "type": "exploration",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "You do not need to know the ???? spells to obtain the **Seraphic Radiance**."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "Now, on to the next side quest.",
+        "type": "exploration",
+        "rewards": []
+      }
+    ]
+  }
+}

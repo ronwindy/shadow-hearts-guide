@@ -1,0 +1,22 @@
+{
+  "section_id": "w-s-14",
+  "verdict": "PASS",
+  "spot_checked": [
+    "Enemy table: all 14 entries (numbers, names, HP, classes, notes) match canonical verbatim",
+    "Enemy Formations table: all 12 rows EXP/Cash values match (step 1 note)",
+    "Pit fight rules: 10 consecutive battles, no healing, 12 sets, random order, free to enter (step 1)",
+    "Required items list incl. Thera Extract (Silent Peddler), Third Keys optional (step 2)",
+    "Crucifix must-have warning (step 3)",
+    "Accessory recommendations for fighters and mages, Priest Earrings 20% MP (steps 4-5)",
+    "Level recommendations 40/35, Alice 48 Advent, Zhuzhen 47 Flames of Fudo (step 6)",
+    "Fighter and mage strategies, back row, heal every 2nd/3rd round (steps 7-8)",
+    "Dark Judge/Tindalos Deathtouch; Tindalos/Night Stalker/Mammon/Rausan; Mammon Howling (steps 9-10)",
+    "Wind Shear strategy, Crucifix status immunity, heal every other round, Third Keys, Monster Library note (step 11)",
+    "All seven reward pairings (Yuri/Alice/Zhuzhen/Margarete/Keith/Halley/All six) with descriptions (step 12)",
+    "Knowledgeable Carl facts (step 13) and New Game+ BlackSilkPants note, incl. source typo 'If you're' (step 14)",
+    "Cross-reference [W-S-03] Mr. Zhen's Pit Fight is backed by an existing project section",
+    "Navigation prev/next w-s-13/w-s-15 match canonical"
+  ],
+  "findings": [],
+  "structured_sha256": "10aac2e54d616a977efd2ddd34539b950f6188f407cae97225c022c9df4d2f3a"
+}

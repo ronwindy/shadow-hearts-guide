@@ -1,0 +1,26 @@
+{
+  "section_id": "w-s-11",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "maze paths west (14 moves) and east (12 moves), order and directions",
+    "chest contents per path: Priest Earrings, Lottery Ticket, Mant.OfShivering, Fifth Key, Key to Success",
+    "save points (west and east maze)",
+    "both NOTE callouts",
+    "Cherubim stats, drop, EXP 120, Cash 600",
+    "party levels, equipment, fusions",
+    "strategy text incl. Crucifix / Arc / Berserk / special attack resistance",
+    "enemy table (#081-#084, HP, class, notes)",
+    "navigation prev/next"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "altered",
+      "location": "items_summary / steps[0].rewards: Mant.of Shivering",
+      "canonical": "Mant.OfShivering",
+      "structured": "Mant.of Shivering",
+      "issue": "Item name casing/spacing changed from the source spelling ('OfShivering' to 'of Shivering'). Likely a deliberate readability normalization used project-wide, but it is a rename of an item name; confirm it matches the convention used in other sections."
+    }
+  ],
+  "structured_sha256": "867e5411b35f8e1e66deeee1ec8ebad5a6e9249c829476206b53be1c4d302f4d"
+}

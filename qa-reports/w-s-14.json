@@ -1,0 +1,14 @@
+{
+  "qa": {
+    "status": "PASS",
+    "section_id": "w-s-14",
+    "section_title": "Sharon's Pit Fight (Halley's Armor / Other Items)",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "findings": []
+  }
+}

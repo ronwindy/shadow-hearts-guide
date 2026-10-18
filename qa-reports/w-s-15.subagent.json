@@ -1,0 +1,17 @@
+{
+  "section_id": "w-s-15",
+  "verdict": "PASS",
+  "spot_checked": [
+    "enemy table #113-#120 (HP, class, notes)",
+    "boss drops (Amber/Carnelian/Lazurite/Obsidian Ring, Thera Leaf x4)",
+    "EXP/Cash values 45000/30000 and 10/10",
+    "Oath Grail / Joshua / London Rats' hideout / Alice in party note",
+    "mask order Grail, Gold, Staff, Sword",
+    "P-Atk vs S-Atk resistance strategy text",
+    "Graveyard tombstone step (Alice Elliot, Dark Gravestone, Yuri joining)",
+    "Bad Ending technicality note",
+    "step ordering (final critical step after the boss fight)"
+  ],
+  "findings": [],
+  "structured_sha256": "487794aad55709fce8a0456ce997dbf503be125e38b67bae0352d4ca9e620130"
+}

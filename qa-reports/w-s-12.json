@@ -1,0 +1,43 @@
+{
+  "qa": {
+    "status": "PASS WITH WARNINGS",
+    "section_id": "w-s-12",
+    "section_title": "Ancient Ruins (Alice's Armor / Halley's Weapon)",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 2
+    },
+    "findings": [
+      {
+        "id": "QA-001",
+        "severity": "low",
+        "category": "text drift",
+        "location": "bosses[Seraphim].strategy",
+        "source": {
+          "text": "Seraphim hits pretty hard, enough to kill right off the bat, so once again, Alic"
+        },
+        "generated": {
+          "text": "Seraphim hits pretty hard, enough to kill right off the bat, so once again, Alic"
+        },
+        "description": "Boss strategy text differs from canonical (reworded or edited); review for meaning",
+        "recommended_owner": "Guide Transformer"
+      },
+      {
+        "id": "QA-002",
+        "severity": "low",
+        "category": "fidelity",
+        "location": "steps[5].rewards",
+        "source": {
+          "text": "Volt Snipe"
+        },
+        "generated": {
+          "text": "No matching source token"
+        },
+        "description": "Reward 'Volt Snipe' does not match any item tag or overview item of the source (spelling?)",
+        "recommended_owner": "Guide Transformer"
+      }
+    ]
+  }
+}

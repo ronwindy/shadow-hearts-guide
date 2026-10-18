@@ -416,5 +416,60 @@
       "low": 1,
       "medium": 0
     }
+  },
+  "w-s-11": {
+    "checked_at": "2026-10-18T16:05:50",
+    "content_hash": "867e5411b35f8e1e",
+    "status": "PASS WITH WARNINGS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 2,
+      "medium": 0
+    }
+  },
+  "w-s-12": {
+    "checked_at": "2026-10-18T16:05:50",
+    "content_hash": "c6b275066b3301c6",
+    "status": "PASS WITH WARNINGS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 2,
+      "medium": 0
+    }
+  },
+  "w-s-13": {
+    "checked_at": "2026-10-18T16:03:20",
+    "content_hash": "ffdb4bd9dc758cb2",
+    "status": "PASS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 0,
+      "medium": 0
+    }
+  },
+  "w-s-14": {
+    "checked_at": "2026-10-18T16:04:34",
+    "content_hash": "10aac2e54d616a97",
+    "status": "PASS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 0,
+      "medium": 0
+    }
+  },
+  "w-s-15": {
+    "checked_at": "2026-10-18T16:05:03",
+    "content_hash": "487794aad55709fc",
+    "status": "PASS WITH WARNINGS",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "low": 1,
+      "medium": 0
+    }
   }
 }

@@ -1,0 +1,403 @@
+{
+  "guide": {
+    "id": "w-s-14",
+    "code": "[W-S-14]",
+    "title": "Sharon's Pit Fight (Halley's Armor / Other Items)",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-13",
+        "code": "[W-S-13]",
+        "title": "Yuri's Level 2 & 3 Fusions, ???? Attacks",
+        "file": "sections/w-s-13-yuri-s-level-2-3-fusions-attacks.json"
+      },
+      "next": {
+        "id": "w-s-15",
+        "code": "[W-S-15]",
+        "title": "The Good Ending (Defeating the Masks)",
+        "file": "sections/w-s-15-the-good-ending-defeating-the-masks.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Seventh Key",
+          "category": "items",
+          "location": "Reward for winning Sharon's Pit Fight with Yuri (step 12)"
+        },
+        {
+          "name": "Tissues",
+          "category": "items",
+          "location": "Reward for winning Sharon's Pit Fight with Margarete (step 12)"
+        },
+        {
+          "name": "Silver Hand",
+          "category": "items",
+          "location": "Reward for winning Sharon's Pit Fight with Zhuzhen (step 12)"
+        },
+        {
+          "name": "Crucifix",
+          "category": "equipment",
+          "location": "Reward for winning Sharon's Pit Fight with Alice (step 12)"
+        },
+        {
+          "name": "Crystal Ring",
+          "category": "equipment",
+          "location": "Reward for winning Sharon's Pit Fight with all six characters (step 12)"
+        },
+        {
+          "name": "Belt of Thor",
+          "category": "equipment",
+          "location": "Reward for winning Sharon's Pit Fight with Keith (step 12)"
+        },
+        {
+          "name": "Metal Jacket",
+          "category": "equipment",
+          "location": "Reward for winning Sharon's Pit Fight with Halley (step 12)"
+        },
+        {
+          "name": "Black Silk Pants",
+          "category": "equipment",
+          "location": "New Game+ only: Monster Library 100% complete, including the final boss (step 14)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#037",
+        "name": "Speckled Creeper",
+        "hp": 250,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "P-Atk Resistant"
+      },
+      {
+        "number": "#038",
+        "name": "Happy Creeper",
+        "hp": 250,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Instant Death, S-Atk Resistant"
+      },
+      {
+        "number": "#041",
+        "name": "Dark Judge",
+        "hp": 500,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#054",
+        "name": "Tindalos",
+        "hp": 2000,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#055",
+        "name": "Garm",
+        "hp": 165,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      },
+      {
+        "number": "#060",
+        "name": "Camazotz",
+        "hp": 158,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#063",
+        "name": "Night Stalker",
+        "hp": 2500,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#064",
+        "name": "Mammon",
+        "hp": 3600,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Petrification"
+      },
+      {
+        "number": "#066",
+        "name": "Meat Eater",
+        "hp": 245,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#067",
+        "name": "Doom",
+        "hp": 225,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#068",
+        "name": "Buggs",
+        "hp": 155,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Poison, Confusion & Silence"
+      },
+      {
+        "number": "#069",
+        "name": "Rausan",
+        "hp": 3500,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Silence"
+      },
+      {
+        "number": "#103",
+        "name": "Full Armor Wind Shear",
+        "hp": 1100,
+        "class": "Earth",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#104",
+        "name": "Perfect Wind Shear",
+        "hp": 1100,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "- As I mentioned before, **Sharon** is now hosting pit fights!\n- Just visit the **London Rats**' hideout in **Old Castle Street** and take western red plank to find **Sharon** and **Knowledgeable Carl**.\n- It doesn't cost anything to fight this time around, and you'll have to fight 10 consecutive battles, with no chance to heal between battles.\n- There are 12 sets of enemies; the order is random, and you'll only have to fight 10 of the 12 sets of enemies listed in the Enemy Formations section above.",
+        "type": "exploration",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Enemy Formations",
+            "text": "EXP and Cash for each of the 12 sets of enemies.",
+            "table": {
+              "headers": [
+                "Enemy Formation",
+                "EXP / Cash"
+              ],
+              "rows": [
+                {
+                  "range": "Speckled Creeper, Happy Creeper",
+                  "reward": "900 EXP / 0 Cash"
+                },
+                {
+                  "range": "Dark Judge",
+                  "reward": "1000 EXP / 0 Cash"
+                },
+                {
+                  "range": "Tindalos",
+                  "reward": "8000 EXP / 0 Cash"
+                },
+                {
+                  "range": "Garm x2",
+                  "reward": "1300 EXP / 0 Cash"
+                },
+                {
+                  "range": "Camazotz x3",
+                  "reward": "1860 EXP / 0 Cash"
+                },
+                {
+                  "range": "Night Stalker",
+                  "reward": "4000 EXP / 0 Cash"
+                },
+                {
+                  "range": "Mammon",
+                  "reward": "20000 EXP / 0 Cash"
+                },
+                {
+                  "range": "Doom x2, Meat Eater",
+                  "reward": "3820 EXP / 0 Cash"
+                },
+                {
+                  "range": "Buggs x5",
+                  "reward": "4000 EXP / 0 Cash"
+                },
+                {
+                  "range": "Rausan",
+                  "reward": "15000 EXP / 0 Cash"
+                },
+                {
+                  "range": "Full Armor Wind Shear",
+                  "reward": "0 EXP / 0 Cash"
+                },
+                {
+                  "range": "Perfect Wind Shear",
+                  "reward": "0 EXP / 0 Cash"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "For items, make sure to have what you consider \"enough\" of the following:\n- **Thera Root**\n- **Thera Extract** (**Silent Peddler**) (for the **Wind Shears**)\n- **Mana Root**\n- **Pure Seed**\n- **Third Keys** (optional, for the **Wind Shears**)",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "- For equipment, make sure that everyone has their best weapon and armor available, obviously.\n- As for accessories, **Crucifixes** are a **must have**!\n- Don't even attempt this **Pit Fight** without one.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 4,
+        "description": "- For the other two accessory slots, for the fighters (**Yuri** / **Margarete** / **Keith** / **Halley**), I recommend a combo of the **Mind's Eye** and **Brsrkr Earrings** so they can do excellent physical damage and have extra HP.\n- They should only need to use their Special Attacks on a select few enemies.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "- For the mages (**Alice** / **Zhuzhen**), I recommend equipping the **Brsrkr Earrings** to increase their HP, and **Priest Earrings** to reduce their MP consumption by 20%.\n- There's only one enemy they'll **need** to physically attack (**Happy Creeper**), but the rest of them should be able to be defeated by magic.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": "- For the characters levels, the fighters should be able to do fine around 40 with little to no problems, or even 35 if you want a bit of a challenge.\n- The mages will most likely need to be around 48 for **Alice** (**Advent**) and 47 for **Zhuzhen** (**Flames of Fudo**) to be able to make it through without issues, mainly because that's when they learn their best spells.\n- It **can** be done at earlier levels, but it will be a bit harder.\n- If you like, you can come back after you've made some more progress in the story.\n- Just keep in mind there's not much story left!",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "**Yuri** / **Margarete** / **Keith** / **Halley** strategy:\n- With the **Mind's Eye**, **Brsrkr Earrings**, and **Crucifix** equipped, you should be attacking normally every round.\n- The only issues you should run into are the **Wind Shears**.\n- The former bosses may seem to pose a threat, but they really can't do much except for the fact that they'll take three to four times longer to defeat than a normal enemy.\n- Keep your HP and SP up.\n- For more detailed strategies on the harder enemies, see below.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "**Alice** / **Zhuzhen** strategy:\n1. Make sure they're in the **back row**, then with the **Brsrkr Earrings**, **Priest Earrings**, and **Crucifix** equipped, you should be casting **Advent** with **Alice** and **Flames of Fudo** with **Zhuzhen** every round.\n2. If you do not have these spells, then don't even try the **Pit Fight** yet; it's **much** more difficult.\n3. Make sure to stay healed every second or third round, because you'll most likely be taking more damage than the fighters were.\n4. Keep your HP and SP up.\n5. For more detailed strategies on the harder enemies, see below.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 9,
+        "description": "There are some special notes on certain enemies.\n\n**Dark Judge** / **Tindalos**:\n- These enemies use **Deathtouch**, which instantly puts your HP into the critical zone.\n- Make sure to heal immediately after they use it.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 10,
+        "description": "**Tindalos** / **Night Stalker** / **Mammon** / **Rausan**:\n- There's nothing **too** special about these guys, other than the fact that they were former bosses, meaning that they have more HP, so it'll take longer to defeat them.\n- **Mammon** will most likely take the longest; she'll use **Howling** over and over near the end, and if you're not strong enough to deal enough damage to make up the difference, then you'll need to either level up or hope for better luck.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 11,
+        "description": "**Full Armor Wind Shear** / **Perfect Wind Shear**:\n- Another set of new models of **Wind Shear**, like the ones in **[W-S-03] Mr. Zhen's Pit Fight**.\n- These guys are even worse, and are the reason you'll most likely need to be at high levels to make it through this pit fight.\n- They hit really hard, and will almost always kill you in two turns if you're not at a high enough level, making it almost impossible to kill them.\n- Luckily, as long as you have a **Crucifix**, you won't have to worry about status abnormalities.\n- Make sure to heal every other round, and if that isn't enough to keep up, shift to the back row so you can lessen the damage.\n- It'll take longer, but at least you can survive that way.\n- You **may** want to invest into some **Third Keys** to give yourself a chance for when you **can** attack.",
+        "type": "exploration",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "missable",
+            "title": "Note",
+            "text": "If you're aiming to get a full **Monster Library**, then make sure that you find both the Full Armor and **Perfect Wind Shears** before moving on."
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "description": "Once you are able to complete a set of ten fights, instead of being rewarded with cash, you'll be rewarded differently depending on whom you won the pit fight with:\n- **Yuri** - **Seventh Key**, something you should save for the very end.\n- **Alice** - **Crucifix**, great in case you don't have 3 of them yet.\n- **Zhuzhen** - **Silver Hand**, temporary 100% on the **Judgment Ring**. Goes great with that **Seventh Key**, or even the **Fifth Keys**.\n- **Margarete** - **Tissues**. Pointless, unless you needed it for the **Air Gravestone** instead of using a **Lottery Ticket**.\n- **Keith** - **Belt of Thor**, for a great ATK and P-ATK boost.\n- **Halley** - **Metal Jacket**, **Halley**'s best armor.\n- **All six** - **Crystal Ring** from **Sharon**, which reduces non-class damage by 50%.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Seventh Key",
+            "category": "items",
+            "matched_overview_item": "Seventh Key"
+          },
+          {
+            "name": "Crucifix",
+            "category": "equipment",
+            "matched_overview_item": "Crucifix"
+          },
+          {
+            "name": "Silver Hand",
+            "category": "items",
+            "matched_overview_item": "Silver Hand"
+          },
+          {
+            "name": "Tissues",
+            "category": "items",
+            "matched_overview_item": "Tissues"
+          },
+          {
+            "name": "Belt of Thor",
+            "category": "equipment",
+            "matched_overview_item": "Belt of Thor"
+          },
+          {
+            "name": "Metal Jacket",
+            "category": "equipment",
+            "matched_overview_item": "Metal Jacket"
+          },
+          {
+            "name": "Crystal Ring",
+            "category": "equipment",
+            "matched_overview_item": "Crystal Ring"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "description": "On a side note, you can also talk to **Knowledgeable Carl** to find out the following facts:\n- Pit-fight Ranking.\n- % of Defeated Monsters.\n- % of Treasure Accumulated.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 14,
+        "description": "**New Game+** note:\n- If you're **Monster Library** is 100% complete, including the final boss, you will receive the **Black Silk Pants** for **Alice**.\n- It is an accessory for **Alice** that increases her special defense and cuts special attack damage in half (and changes the color of her panties from pink to black!)",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Black Silk Pants",
+            "category": "equipment",
+            "matched_overview_item": "Black Silk Pants"
+          }
+        ]
+      }
+    ]
+  }
+}
