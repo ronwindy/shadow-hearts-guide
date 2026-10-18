@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 12:23:29`
+> Last synced: `2026-10-18 12:33:17`
 
 ```text
-=== PROJECT STATUS (2026-10-18 12:23:29) ===
-Canonical 66/66 | Structured 31/66 | QA pass 31/66 (fail 0) | Web built 31/66
+=== PROJECT STATUS (2026-10-18 12:33:17) ===
+Canonical 66/66 | Structured 32/66 | QA pass 32/66 (fail 0) | Web built 32/66
 Next:
-  1. Structure w-2-13 (Europe Side Quests, Part 2) - next chronological
+  1. Structure w-s-06 (Nemeton Monastery (Book of Rituals / Codex of Lurie)) - next chronological
 ```
 
 ## Section Matrix
@@ -43,7 +43,7 @@ Next:
 | `[W-S-04]` | `w-s-04` | Calios Mental Hospital (2) | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-05]` | `w-s-05` | Yuri's Gravestones | Walkthrough - Europe | WEB_BUILT |
 | `[W-2-12]` | `w-2-12` | Nemeton Monastery (1) | Walkthrough - Europe | WEB_BUILT |
-| `[W-2-13]` | `w-2-13` | Europe Side Quests, Part 2 | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-2-13]` | `w-2-13` | Europe Side Quests, Part 2 | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-06]` | `w-s-06` | Nemeton Monastery (Book of Rituals / Codex of Lurie) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-S-07]` | `w-s-07` | The Orphanage (Emigre Manuscript / Lottery Member #3) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-S-08]` | `w-s-08` | Rouen (Silent Peddler / Margarete's Armor, Weapon, & | Walkthrough - Europe | NOT_STRUCTURED |

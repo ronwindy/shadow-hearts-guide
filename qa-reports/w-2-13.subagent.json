@@ -1,0 +1,15 @@
+{
+  "section_id": "w-2-13",
+  "verdict": "PASS",
+  "spot_checked": [
+    "All 10 hub teasers W-S-06..W-S-15 present in source order, codes and titles verbatim",
+    "Step 3 Rouen title and source typo 'get hear best weapon' preserved verbatim, no silent fix",
+    "Lottery Member #3/#2/#1 labels and 'second to last' / 'one of the final' wording unchanged",
+    "Valuables, Fusions, Soul Energy, Pit Fight, Halley's armor/weapon, Keith/Alice/Zhuzhen/Margarete equipment attributions match",
+    "W-S-13 '???? Attacks' title preserved",
+    "Navigation prev w-2-12 / next w-s-06 matches canonical",
+    "No bosses, items, shops, enemies or save points in canonical; none invented"
+  ],
+  "findings": [],
+  "structured_sha256": "d5bbf133177666b3915ac44aa350ff974714f6bf323e0bece9daf1a3891aa7f6"
+}
