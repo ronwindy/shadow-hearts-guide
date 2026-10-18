@@ -10,6 +10,7 @@ import ItemTable from '../../components/ItemTable.astro';
 import EnemyTable from '../../components/EnemyTable.astro';
 import ShopTable from '../../components/ShopTable.astro';
 import ReferenceBlocks from '../../components/ReferenceBlocks.astro';
+import InfoBlocks from '../../components/InfoBlocks.astro';
 import Callouts from '../../components/Callouts.astro';
 import ObjectivesList from '../../components/ObjectivesList.astro';
 import RouteProgression from '../../components/RouteProgression.astro';
@@ -147,6 +148,9 @@ const pageSections = headerGuide
         <ItemTable items={guide.items_summary?.obtainable} />
         <EnemyTable enemies={enemies} />
         <ShopTable shops={shops} />
+
+        {/* Info pages (version history, thanks, copyright): plain titled blocks, no checklist */}
+        <InfoBlocks blocks={guide.blocks || []} />
 
         {/* Verbatim reference/appendix tables */}
         <ReferenceBlocks blocks={guide.reference_blocks || []} />

@@ -669,6 +669,45 @@ function isReferenceSection(canonical) {
   return id.startsWith("a-1-") && id !== "a-1-00";
 }
 
+function isInfoSection(canonical) {
+  return (canonical.id ?? "").startsWith("c-1-");
+}
+
+/** Info scaffold: titled blocks (`* title *` + underline starts one; bullets fold into the previous block). */
+function scaffoldInfoGuide(canonical) {
+  const lines = splitLines(canonical.text ?? "");
+  let start = 0;
+  lines.slice(0, 14).forEach((ln, i) => { if (/^\s*¯{60,}\s*$/.test(ln)) start = i + 1; });
+  const paras = [];
+  let cur = [];
+  for (const ln of lines.slice(start)) {
+    if (/^\s*¯+\s*$/.test(ln) || !ln.trim()) { if (cur.length) paras.push(cur); cur = []; } else cur.push(ln);
+  }
+  if (cur.length) paras.push(cur);
+  const blocks = [];
+  for (const p of paras) {
+    const first = p[0].trim();
+    const tm = /^\*\s*(.+?)\s*\*$/.exec(first);
+    const isBullet = /^[-*]\s/.test(first);
+    const body = [];
+    for (const ln of (tm ? p.slice(1) : p)) {
+      const t = ln.trim();
+      if (/^[-*]\s/.test(t) || !body.length) body.push(t); else body[body.length - 1] += " " + t;
+    }
+    const text = isBullet || (tm && body.length) ? body.join("\n") : listify(body.join(" "), false);
+    if (tm) blocks.push({ title: tm[1], text });
+    else if (isBullet && blocks.length) blocks[blocks.length - 1].text = [blocks[blocks.length - 1].text, text].filter(Boolean).join("\n");
+    else blocks.push({ text });
+  }
+  const source = canonical.source ?? {};
+  return { guide: {
+    id: canonical.id, code: canonical.code, title: canonical.title, type: "info", category: canonical.category,
+    source: { game: source.game ?? PROJECT.game, author: source.author ?? PROJECT.sourceDefaults.author,
+      version: source.version ?? PROJECT.sourceDefaults.version, url: source.source_url ?? "", source_file: source.source_file ?? "" },
+    navigation: canonical.navigation ?? {}, blocks,
+  } };
+}
+
 /** Deterministic scaffold: canonical text is carried over byte-for-byte, no steps or prose. */
 function scaffoldReferenceGuide(canonical) {
   const source = canonical.source ?? {};
@@ -1045,6 +1084,7 @@ export function buildDescription(pText, cases, characters, answers = [], tail = 
 export function scaffoldGuide(canonicalPath) {
   const canonical = JSON.parse(readFileSync(canonicalPath, "utf8"));
   if (isReferenceSection(canonical)) return scaffoldReferenceGuide(canonical);
+  if (isInfoSection(canonical)) return scaffoldInfoGuide(canonical);
 
   // Determine type
   let guideType = "walkthrough";

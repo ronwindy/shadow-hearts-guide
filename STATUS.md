@@ -1,13 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 16:26:24`
+> Last synced: `2026-10-18 16:31:55`
 
 ```text
-=== PROJECT STATUS (2026-10-18 16:26:24) ===
-Canonical 66/66 | Structured 51/66 | QA pass 50/66 (fail 0) | Web built 48/66
+=== PROJECT STATUS (2026-10-18 16:31:55) ===
+Canonical 66/66 | Structured 51/66 | QA pass 51/66 (fail 0) | Web built 51/66
 Next:
-  1. Run QA on c-1-02 (Thanks)
-Pending QA:    c-1-02
+  (nothing pending)
 ```
 
 ## Section Matrix
@@ -77,6 +76,6 @@ Pending QA:    c-1-02
 | `[A-1-13]` | `a-1-13` | Monster Library (Bestiary) | Appendices | NOT_STRUCTURED |
 | `[A-1-14]` | `a-1-14` | Sub-bosses and Bosses | Appendices | NOT_STRUCTURED |
 | `[A-1-15]` | `a-1-15` | Help (detailed, available in-game) | Appendices | NOT_STRUCTURED |
-| `[C-1-01]` | `c-1-01` | Version History | Conclusion | QA_PASSED |
-| `[C-1-02]` | `c-1-02` | Thanks | Conclusion | STRUCTURED_PENDING_QA |
-| `[C-1-03]` | `c-1-03` | Copyright / Disclaimer / Credits | Conclusion | QA_PASSED |
+| `[C-1-01]` | `c-1-01` | Version History | Conclusion | WEB_BUILT |
+| `[C-1-02]` | `c-1-02` | Thanks | Conclusion | WEB_BUILT |
+| `[C-1-03]` | `c-1-03` | Copyright / Disclaimer / Credits | Conclusion | WEB_BUILT |

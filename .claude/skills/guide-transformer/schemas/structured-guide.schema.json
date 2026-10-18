@@ -338,7 +338,8 @@
             "walkthrough_intro",
             "sidequest",
             "mechanics",
-            "reference"
+            "reference",
+            "info"
           ],
           "description": "Logical guide classification"
         },
@@ -917,6 +918,19 @@
                 "$ref": "#/$defs/rich_text"
               }
             }
+          }
+        },
+        "blocks": {
+          "type": "array",
+          "description": "Titled rich-text blocks for info pages (version history, thanks, copyright); no steps",
+          "items": {
+            "type": "object",
+            "required": ["text"],
+            "properties": {
+              "title": { "type": "string" },
+              "text": { "$ref": "#/$defs/rich_text" }
+            },
+            "additionalProperties": false
           }
         },
         "reference_blocks": {

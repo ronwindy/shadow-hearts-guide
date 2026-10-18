@@ -1,0 +1,29 @@
+---
+import { renderBlockMarkup, renderInlineMarkup, type RichText } from '../lib/markup';
+
+interface InfoBlock {
+  title?: string;
+  text: RichText;
+}
+
+interface Props {
+  blocks?: InfoBlock[];
+}
+
+const { blocks = [] } = Astro.props;
+---
+
+{blocks.length > 0 && (
+  <section id="info" class="space-y-4">
+    {blocks.map((b) => (
+      <div class="card p-4 sm:p-5 space-y-2">
+        {b.title && (
+          <h2 class="text-lg sm:text-xl font-serif font-semibold text-gold-400" set:html={renderInlineMarkup(b.title)} />
+        )}
+        <div class="text-base text-slate-200 leading-relaxed space-y-2">
+          <Fragment set:html={renderBlockMarkup(b.text)} />
+        </div>
+      </div>
+    ))}
+  </section>
+)}

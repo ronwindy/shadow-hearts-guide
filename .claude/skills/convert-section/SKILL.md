@@ -10,6 +10,7 @@ Thin runbook for the parts that need judgement. Commands, schema and role bounda
 
 ## 1. Pick the path
 - `a-*` / reference tables, items, shops, bestiary, bosses: deterministic scaffold, no prose editing, then `check`. Stop after step 4.
+- `c-*` (version history, thanks, copyright): type `info`, no steps. Scaffold produces titled `blocks[]` (a `* title *` line starts a block, bullets fold in); compare with the canonical, patch `blocks` if needed (arrays replace), then `check` and the independent QA of section 5. Skip the walkthrough-only conventions in section 3.
 - `w-*` (including hubs `w-s-*`, `w-2-11`, `w-2-13`, `w-2-15`): the full path below.
 - No id given: use `node scripts/guide.mjs status` (first 45 lines of `STATUS.md`); next = sequence gaps, then QA `[FAIL]`s, then pending QA, then next chronological.
 

@@ -166,6 +166,12 @@ function units(guide) {
       out.push({ loc: `steps[${sid}].choices[${n}]`, text: ch.option ?? "", ordered: false });
     });
   }
+  (guide.blocks ?? []).forEach((blk, b) => {
+    if (blk.title) out.push({ loc: `blocks[${b}].title`, text: blk.title, ordered: false });
+    (blk.text || "").split(/\r?\n/).forEach((line, idx) => {
+      if (line.trim()) out.push({ loc: `blocks[${b}].text line ${idx + 1}`, text: line, ordered: true });
+    });
+  });
   for (const u of out) {
     u.text = u.text.replace(XREF, ""); // scaffold-added **[W-2-07] Title** cross-refs
     u.words = tokens(stripListMarker(u.text));

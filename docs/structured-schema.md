@@ -42,7 +42,7 @@ A single object with one key, `guide`. Unknown keys anywhere under `guide` are r
 | `id` | yes | Lowercase slug, `^[a-z0-9-]+$` (e.g. `w-1-06`). Copy from canonical. |
 | `code` | yes | Bracketed code, e.g. `[W-1-06]`. Copy from canonical. |
 | `title` | yes | Copy from canonical. |
-| `type` | yes | `walkthrough`, `walkthrough_intro`, `sidequest`, `mechanics`, `reference`. |
+| `type` | yes | `walkthrough`, `walkthrough_intro`, `sidequest`, `mechanics`, `reference`, `info`. |
 | `category` | yes | Copy from canonical (e.g. `Walkthrough - Asia`). |
 | `source` | yes | `game`, `author`, `version` required; `url`, `source_url`, `source_file` optional; extra keys allowed. |
 | `navigation` | yes | `prev` / `next`: `null` or `{id, code, title, file}` (all four required). Copy from canonical. |
@@ -59,11 +59,12 @@ A single object with one key, `guide`. Unknown keys anywhere under `guide` are r
 | `initial_setup`, `overview` | no | Intro/manual sections only (character profiles, glossary, controls). |
 | `overview.directions.compass_art` | no | Verbatim source compass diagram (monospace, byte-for-byte, common left indent removed). When present it replaces the `mappings` table, which the diagram already states. |
 | `overview.controls.controller_art` | no | Verbatim source drawing of the controller (monospace, byte-for-byte, common left indent removed); the button legend stays in `controller_layout`. |
+| `blocks` | no | `info` pages (`c-*`: version history, thanks, copyright): `[{title?, text}]`, `text` is rich text (bullets, max 3 levels). No steps, rewards or checklist. The scaffold starts a block at each `* title *` line and folds bullets into it; QA text-fidelity checks block text against the canonical like step text. |
 | `reference_blocks` | no | Appendix sections: `[{title?, format:"preformatted", text}]`. Produced by the scaffold, never hand-edited; QA requires byte-identical text. |
 
 `type` of a section by canonical id: `w-*` -> `walkthrough` (`sidequest` when canonical
 `is_sidequest`, `walkthrough_intro` when the overview has `directions`); `a-1-01..15` ->
-`reference`.
+`reference`; `c-*` -> `info`.
 
 ## 2. Steps
 

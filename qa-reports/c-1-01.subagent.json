@@ -2,15 +2,13 @@
   "section_id": "c-1-01",
   "verdict": "PASS",
   "spot_checked": [
-    "All six version entries 1.00 to 1.05 present in order with identical version numbers and dates (01/17/2012, 01/19/2012, 01/20/2012, 01/23/2012, 01/30/2012, 02/15/2012)",
-    "1.01: all 8 'section was added' bullets present with exact names (Special Skills, Store/Shop List, Acupuncturist Costs, Lottery, Malice Rewards, Pedometer Rewards, NPC Library, Sub-bosses and Bosses)",
-    "1.02: Game Manual / Instructions and Codebreaker Codes added",
-    "1.03: 5 additions plus correction of Banshee and Larmgelg's Monster Library numbers",
-    "1.04: redesign, 6 additions/merge (Souls merged with Special Skills), 3 removals (Codebreaker, Gameshark, Action Replay Max) all preserved",
-    "1.05: Reformatted once again; Enemy Formations removed from walkthrough but still in bestiary (wrapped source line correctly joined)",
-    "Navigation prev a-1-15 and next c-1-02 and source metadata match canonical",
-    "No invented facts, no omitted bullets, no altered names or numbers"
+    "6 version blocks present in order 1.00..1.05 with identical dates (01/17, 01/19, 01/20, 01/23, 01/30, 02/15/2012)",
+    "1.00: 1 bullet; 1.01: 8 bullets; 1.02: 2 bullets; 1.03: 6 bullets; 1.04: 10 bullets; 1.05: 2 bullets, all verbatim",
+    "Odd source wording preserved verbatim ('Malice Rewards Section', 'Sub-bosses and Bosses', 'Banshee and Larmgelg's Monster Library numbers')",
+    "1.05 wrapped source line correctly rejoined: 'can still be found in the bestiary.'",
+    "Metadata: id, code, title, author, version 1.05, url, navigation prev a-1-15 / next c-1-02 match canonical",
+    "No invented content; no ASCII borders or asterisk decorations left over"
   ],
   "findings": [],
-  "structured_sha256": "55b92169acc0e630daedea67b269f0b8094f7fd5830561b266fa47af929f8fa7"
+  "structured_sha256": "b929e6434ca2e34875325291988727856904e1a1759cd67e8b75213e6931e56c"
 }

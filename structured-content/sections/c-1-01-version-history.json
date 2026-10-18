@@ -3,7 +3,7 @@
     "id": "c-1-01",
     "code": "[C-1-01]",
     "title": "Version History",
-    "type": "walkthrough",
+    "type": "info",
     "category": "Conclusion",
     "source": {
       "game": "Shadow Hearts",
@@ -26,49 +26,30 @@
         "file": "sections/c-1-02-thanks.json"
       }
     },
-    "route": [],
-    "items_summary": {
-      "obtainable": []
-    },
-    "enemies": [],
-    "bosses": [],
-    "shops": [],
-    "steps": [
+    "blocks": [
       {
-        "id": 1,
-        "type": "exploration",
-        "rewards": [],
-        "description": "**1.00 - 01/17/2012**\n- The guide was finished and uploaded for the first time."
+        "title": "1.00 - 01/17/2012",
+        "text": "- The guide was finished and uploaded for the first time."
       },
       {
-        "id": 2,
-        "type": "exploration",
-        "rewards": [],
-        "description": "**1.01 - 01/19/2012**\n- The Special Skills section was added.\n- The Store/Shop List section was added.\n- The Acupuncturist Costs section was added.\n- The Lottery section was added.\n- The Malice Rewards Section was added.\n- The Pedometer Rewards Section was added.\n- The NPC Library section was added.\n- The Sub-bosses and Bosses section was added."
+        "title": "1.01 - 01/19/2012",
+        "text": "- The Special Skills section was added.\n- The Store/Shop List section was added.\n- The Acupuncturist Costs section was added.\n- The Lottery section was added.\n- The Malice Rewards Section was added.\n- The Pedometer Rewards Section was added.\n- The NPC Library section was added.\n- The Sub-bosses and Bosses section was added."
       },
       {
-        "id": 3,
-        "type": "exploration",
-        "rewards": [],
-        "description": "**1.02 - 01/20/2012**\n- The Game Manual / Instructions section was added.\n- The Codebreaker Codes section was added."
+        "title": "1.02 - 01/20/2012",
+        "text": "- The Game Manual / Instructions section was added.\n- The Codebreaker Codes section was added."
       },
       {
-        "id": 4,
-        "type": "exploration",
-        "rewards": [],
-        "description": "**1.03 - 01/23/2012**\n- The Weapons section was added.\n- The Monster Library (Bestiary) section was added.\n- The Gameshark Codes section was added.\n- The Action Replay Max Codes section was added.\n- The Help (detailed, available in-game) section was added.\n- Corrected the Banshee and Larmgelg's Monster Library numbers."
+        "title": "1.03 - 01/23/2012",
+        "text": "- The Weapons section was added.\n- The Monster Library (Bestiary) section was added.\n- The Gameshark Codes section was added.\n- The Action Replay Max Codes section was added.\n- The Help (detailed, available in-game) section was added.\n- Corrected the Banshee and Larmgelg's Monster Library numbers."
       },
       {
-        "id": 5,
-        "type": "exploration",
-        "rewards": [],
-        "description": "**1.04 - 01/30/2012**\n- A complete redesign was done.\n- The Armor section was added.\n- The Accessories section was added.\n- The Souls section was added and merged with the Special Skills section.\n- The Items section was added.\n- The Valuables section was added.\n- The Plot Synopsis was added.\n- The Codebreaker Codes section was removed.\n- The Gameshark Codes section was removed.\n- The Action Replay Max Codes section was removed."
+        "title": "1.04 - 01/30/2012",
+        "text": "- A complete redesign was done.\n- The Armor section was added.\n- The Accessories section was added.\n- The Souls section was added and merged with the Special Skills section.\n- The Items section was added.\n- The Valuables section was added.\n- The Plot Synopsis was added.\n- The Codebreaker Codes section was removed.\n- The Gameshark Codes section was removed.\n- The Action Replay Max Codes section was removed."
       },
       {
-        "id": 6,
-        "type": "exploration",
-        "rewards": [],
-        "description": "**1.05 - 02/15/2012**\n- Reformatted once again.\n- Enemy Formations were removed from the walkthrough, but can still be found in the bestiary."
+        "title": "1.05 - 02/15/2012",
+        "text": "- Reformatted once again.\n- Enemy Formations were removed from the walkthrough, but can still be found in the bestiary."
       }
     ]
   }
