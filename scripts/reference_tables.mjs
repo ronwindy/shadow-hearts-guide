@@ -148,3 +148,59 @@ export function parseWeaponTables(text) {
   tables[0].intro = intro.join(" ");
   return tables;
 }
+
+// ---------------------------------------------------------------------------------------------
+// a-1-03 Armor / a-1-04 Accessories: one legend box (column titles), then one box per item:
+//   |  Name  |  stat cells ...  |  last column  |
+//   |  Description (Menu): text                 |
+//   |  Description (Info): Display name         |
+//   |                      wrapped text         |
+// A stray "||" inside a description line (source typo, line break lost) is treated as a line break.
+
+/** @returns {{intro: string, columns: string[], rows: {cells: string[], detail_menu: string, detail_title?: string, detail: string}[]} | null} */
+export function parseGearTable(text) {
+  const lines = String(text ?? "").split(/\r?\n/).flatMap((l) => (/^\|.*\S.*\|\|.*\S.*\|$/.test(l) ? l.replace(/\|\|/, "|\n|").split("\n") : [l]));
+  const intro = [];
+  let columns = null;
+  const rows = [];
+  let cur = null;
+  let field = null;
+  const flush = () => {
+    if (!cur) return;
+    const info = cur.info.slice();
+    const title = info.shift() ?? "";
+    const row = { cells: cur.cells, detail_menu: cur.menu.join(" "), detail: info.join(" ") };
+    if (title && title !== cur.cells[0]) row.detail_title = title;
+    rows.push(row);
+    cur = null;
+    field = null;
+  };
+  for (const line of lines) {
+    const p = line.split("|");
+    const isCellRow = p.length >= 5 && p[0] === "" && p[p.length - 1] === "" && ws(p[1]) && !/^[—¯_]+$/.test(ws(p[1]));
+    if (isCellRow && (!columns || p.length - 2 === columns.length) && !/^Description \(/.test(ws(p[1]))) {
+      const c = p.slice(1, -1).map(ws);
+      if (!columns) { columns = c; continue; }
+      flush();
+      cur = { cells: c, menu: [], info: [] };
+      continue;
+    }
+    if (!columns) {
+      if (line.trim() && !/[«»\\]|^\s*_+\s*$|^\s*¯+\s*$|^\s*\[A-/.test(line) && !isRule(line)) intro.push(ws(line));
+      continue;
+    }
+    if (!cur || isRule(line)) continue;
+    const m = /^\|(.*)\|$/.exec(line);
+    if (!m) continue;
+    const t = ws(m[1]);
+    if (!t) continue;
+    if (/^Description \(Menu\):/.test(t)) { field = "menu"; cur.menu.push(t.replace(/^Description \(Menu\):\s*/, "")); }
+    else if (/^Description \(Info\):/.test(t)) { field = "info"; cur.info.push(t.replace(/^Description \(Info\):\s*/, "")); }
+    else if (field === "menu") cur.menu.push(t);
+    else if (field === "info") cur.info.push(t);
+    else throw new Error(`unexpected line in gear box: ${line}`);
+  }
+  flush();
+  if (!columns || rows.length === 0) return null;
+  return { intro: intro.join(" "), columns, rows };
+}

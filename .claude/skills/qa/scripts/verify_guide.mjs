@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 import { flattenGuide } from "../../guide-transformer/scripts/richtext.mjs";
 import { checkTextFidelity } from "./text_fidelity.mjs";
 import { loadMerges, expectedNavId } from "./merges.mjs";
-import { parseItemBoxes, parseWeaponTables } from "../../../../scripts/reference_tables.mjs";
+import { parseItemBoxes, parseWeaponTables, parseGearTable } from "../../../../scripts/reference_tables.mjs";
 import { parseSkillGroups } from "../../../../scripts/reference_skills.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -120,7 +120,7 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
     // Parsed tables: rebuild from the canonical text and compare every cell.
     let expectedTables = null;
     try {
-      expectedTables = canonical.id === "a-1-02" ? parseWeaponTables(canonical.text ?? "") : [parseItemBoxes(canonical.text ?? "")];
+      expectedTables = canonical.id === "a-1-02" ? parseWeaponTables(canonical.text ?? "") : (canonical.id === "a-1-03" || canonical.id === "a-1-04") ? [parseGearTable(canonical.text ?? "")] : [parseItemBoxes(canonical.text ?? "")];
     } catch { /* reported below */ }
     if (!expectedTables || expectedTables.some((t) => !t)) {
       addFinding("critical", "factual discrepancy", "reference_tables", "parsable item boxes", "unparsable canonical",

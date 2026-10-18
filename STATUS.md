@@ -1,10 +1,10 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 21:18:51`
+> Last synced: `2026-10-18 21:20:56`
 
 ```text
-=== PROJECT STATUS (2026-10-18 21:18:51) ===
-Canonical 66/66 | Structured 53/66 | QA pass 53/66 (fail 0) | Web built 53/66
+=== PROJECT STATUS (2026-10-18 21:20:56) ===
+Canonical 66/66 | Structured 55/66 | QA pass 55/66 (fail 0) | Web built 53/66
 Next:
   (nothing pending)
 ```
@@ -63,8 +63,8 @@ Next:
 | `[A-1-00]` | `a-1-00` | Appendices | Appendices | NOT_STRUCTURED |
 | `[A-1-01]` | `a-1-01` | Special Skills / Souls | Appendices | WEB_BUILT |
 | `[A-1-02]` | `a-1-02` | Weapons | Appendices | WEB_BUILT |
-| `[A-1-03]` | `a-1-03` | Armor | Appendices | NOT_STRUCTURED |
-| `[A-1-04]` | `a-1-04` | Accessories | Appendices | NOT_STRUCTURED |
+| `[A-1-03]` | `a-1-03` | Armor | Appendices | QA_PASSED |
+| `[A-1-04]` | `a-1-04` | Accessories | Appendices | QA_PASSED |
 | `[A-1-05]` | `a-1-05` | Items | Appendices | WEB_BUILT |
 | `[A-1-06]` | `a-1-06` | Valuables | Appendices | NOT_STRUCTURED |
 | `[A-1-07]` | `a-1-07` | Store/Shop List | Appendices | NOT_STRUCTURED |

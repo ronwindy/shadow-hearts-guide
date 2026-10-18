@@ -1,0 +1,14 @@
+{
+  "qa": {
+    "status": "PASS",
+    "section_id": "a-1-04",
+    "section_title": "Accessories",
+    "summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "findings": []
+  }
+}
