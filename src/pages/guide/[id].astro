@@ -83,13 +83,13 @@ const pageSections = headerGuide
 
         <nav aria-label="Previous and next chapter" class="flex items-center gap-3 flex-shrink-0 ml-2">
           {prev && (
-            <a href={guideHref(prev.id)} aria-label={`Previous chapter: ${prev.title}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
+            <a href={guideHref(prev.id)} aria-label={`Previous chapter: ${prev.title}`} class="gp-nav hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
               <ChevronLeft class="w-3.5 h-3.5" aria-hidden="true" />
               <span class="hidden sm:inline">Prev</span>
             </a>
           )}
           {navigation.next && (
-            <a href={guideHref(navigation.next.id)} aria-label={`Next chapter: ${navigation.next.title}`} class="hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
+            <a href={guideHref(navigation.next.id)} aria-label={`Next chapter: ${navigation.next.title}`} class="gp-nav hover:text-gold-400 text-slate-300 transition-colors flex items-center gap-1">
               <span class="hidden sm:inline">Next</span>
               <ChevronRight class="w-3.5 h-3.5" aria-hidden="true" />
             </a>
@@ -159,7 +159,7 @@ const pageSections = headerGuide
         {prev ? (
           <a
             href={guideHref(prev.id)}
-            class="card p-4 hover:border-gold-500/50 flex items-center gap-3 group transition-all"
+            class="gp-nav card p-4 hover:border-gold-500/50 flex items-center gap-3 group transition-all"
           >
             <ArrowLeft class="w-5 h-5 text-gold-500 group-hover:-translate-x-1 motion-reduce:transform-none transition-transform flex-shrink-0" aria-hidden="true" />
             <div class="min-w-0 flex-1">
@@ -174,7 +174,7 @@ const pageSections = headerGuide
         {navigation.next && (
           <a
             href={guideHref(navigation.next.id)}
-            class="card p-4 hover:border-gold-500/50 flex items-center justify-between gap-3 text-right group transition-all sm:col-start-2"
+            class="gp-nav card p-4 hover:border-gold-500/50 flex items-center justify-between gap-3 text-right group transition-all sm:col-start-2"
           >
             <div class="min-w-0 flex-1">
               <div class="text-xs font-sans text-slate-400 uppercase">Next Chapter</div>

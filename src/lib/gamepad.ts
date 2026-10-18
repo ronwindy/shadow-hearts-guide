@@ -16,6 +16,7 @@
 //   Right stick scroll fast
 //   Start       hide/show the desktop sidebar; open/close the menu on narrow screens
 //   View        jump to top
+//   L3          show / hide this hints bar (remembered)
 //   R3          toggle fullscreen (may be refused by the browser; no fallback)
 //
 // Sidebar focus: when the sidebar or menu is open, focus moves into it. D-pad
@@ -34,6 +35,7 @@ const BUTTON = {
   RT: 7,
   VIEW: 8,
   START: 9,
+  L3: 10,
   R3: 11,
   DPAD_UP: 12,
   DPAD_DOWN: 13,
@@ -81,10 +83,10 @@ function isPressed(pad: Gamepad, index: number): boolean {
 }
 
 // D-pad sequence on the page: section headers, walkthrough steps, manual entry
-// cards and table-of-contents rows, in page order. Entries inside a collapsed
-// section are skipped.
+// cards, table-of-contents rows and Prev/Next chapter links, in page order. Entries
+// inside a collapsed section are skipped.
 function stepItems(): HTMLElement[] {
-  const selector = '.section-toggle, .category-toggle, .step-item, .gp-entry, .toc-item';
+  const selector = '.section-toggle, .category-toggle, .step-item, .gp-entry, .toc-item, .gp-nav';
   return Array.from(document.querySelectorAll<HTMLElement>(selector)).filter(
     (el) => el.getClientRects().length > 0 && !insideCollapsed(el),
   );
@@ -131,7 +133,7 @@ function activateFocused(): void {
     item.click();
   } else if (item.classList.contains('toc-item')) {
     item.querySelector<HTMLAnchorElement>('a[href]')?.click();
-  }
+  } else if (item.classList.contains('gp-nav')) item.click();
 }
 
 function focusNextUnticked(): void {
@@ -405,6 +407,7 @@ function handleButtons(pad: Gamepad): void {
   if (pressed(BUTTON.LT)) jumpSection(-1);
   if (pressed(BUTTON.RT)) jumpSection(1);
   if (pressed(BUTTON.VIEW)) window.scrollTo({ top: 0, behavior: scrollBehavior() });
+  if (pressed(BUTTON.L3)) toggleHints();
   if (pressed(BUTTON.R3)) toggleFullscreen();
 
   handleDpad(pad);
@@ -433,15 +436,26 @@ function showHints(): void {
   hints.classList.remove('hidden');
 }
 
+// Shared by the Hide button and L3, so either choice carries over to later visits
+function setHintsDismissed(dismissed: boolean): void {
+  const hints = document.getElementById('gamepad-hints');
+  if (!hints) return;
+  hints.classList.toggle('hidden', dismissed);
+  try {
+    if (dismissed) localStorage.setItem(HINT_DISMISS_KEY, 'true');
+    else localStorage.removeItem(HINT_DISMISS_KEY);
+  } catch {
+    // Ignore: the choice just isn't remembered next visit
+  }
+}
+
+function toggleHints(): void {
+  const hints = document.getElementById('gamepad-hints');
+  if (hints) setHintsDismissed(!hints.classList.contains('hidden'));
+}
+
 function wireHintDismiss(): void {
-  document.getElementById('gamepad-hints-dismiss')?.addEventListener('click', () => {
-    document.getElementById('gamepad-hints')?.classList.add('hidden');
-    try {
-      localStorage.setItem(HINT_DISMISS_KEY, 'true');
-    } catch {
-      // Ignore: hints just reappear next visit
-    }
-  });
+  document.getElementById('gamepad-hints-dismiss')?.addEventListener('click', () => setHintsDismissed(true));
 }
 
 function tick(): void {

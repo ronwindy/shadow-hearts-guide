@@ -75,7 +75,8 @@
 .gp-entry.gp-focus,
 .section-toggle.gp-focus,
 .category-toggle.gp-focus,
-.toc-item.gp-focus {
+.toc-item.gp-focus,
+.gp-nav.gp-focus {
   outline: 2px solid #fbbf24;
   outline-offset: 4px;
   border-radius: 0.5rem;
