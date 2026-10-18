@@ -23,7 +23,6 @@ export function getHumanReadableLabel(
   if (code === 'HEADER') return 'Guide Overview';
   if (code === 'I-1-00') return 'Directory';
   if (code === 'I-1-01') return 'Game Manual';
-  if (code === 'A-1-00') return 'Appendices Overview';
 
   // Walkthrough Side Quests: W-S-01 .. W-S-16
   const sideMatch = code.match(/^W-S-(\d+)$/);

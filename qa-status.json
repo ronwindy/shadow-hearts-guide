@@ -55,8 +55,8 @@
     }
   },
   "i-1-00": {
-    "checked_at": "2026-10-18T11:58:56",
-    "content_hash": "4fb7fa597174c6f5",
+    "checked_at": "2026-10-18T21:00:21",
+    "content_hash": "135a7aca3938a35b",
     "status": "PASS",
     "summary": {
       "critical": 0,
@@ -385,14 +385,14 @@
     }
   },
   "w-2-18": {
-    "checked_at": "2026-10-18T16:09:19",
-    "content_hash": "fcb553049062f79f",
-    "status": "PASS",
+    "checked_at": "2026-10-18T21:00:21",
+    "content_hash": "666b64b9f866c23c",
+    "status": "PASS WITH WARNINGS",
     "summary": {
       "critical": 0,
       "high": 0,
       "low": 0,
-      "medium": 0
+      "medium": 1
     }
   },
   "w-s-01": {

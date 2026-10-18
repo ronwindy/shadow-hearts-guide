@@ -276,11 +276,6 @@
           "category": "Appendices",
           "entries": [
             {
-              "code": "[A-1-00]",
-              "title": "Appendices",
-              "is_sidequest": false
-            },
-            {
               "code": "[A-1-01]",
               "title": "Special Skills / Souls",
               "is_sidequest": false
