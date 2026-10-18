@@ -1,0 +1,212 @@
+{
+  "guide": {
+    "id": "w-s-08",
+    "code": "[W-S-08]",
+    "title": "Rouen (Silent Peddler / Margarete's Armor, Weapon, &",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-07",
+        "code": "[W-S-07]",
+        "title": "The Orphanage (Emigre Manuscript / Lottery Member #3)",
+        "file": "sections/w-s-07-the-orphanage-emigre-manuscript-lottery-member-3.json"
+      },
+      "next": {
+        "id": "w-s-09",
+        "code": "[W-S-09]",
+        "title": "Blue Castle (Keith's Weapon / Lottery Member #1)",
+        "file": "sections/w-s-09-blue-castle-keith-s-weapon-lottery-member-1.json"
+      }
+    },
+    "route": [],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Leather Suit",
+          "category": "equipment",
+          "location": "If you have 10,000 Steps accumulated, then you will receive the Leather Suit, Margarete's best armor. (step 1)"
+        },
+        {
+          "name": "Pearl Ring",
+          "category": "equipment",
+          "location": "Watch the scene here, then you'll receive the Pearl Ring. (step 3)"
+        },
+        {
+          "name": "Coat of the Adept",
+          "category": "equipment",
+          "location": "He has a letter for all of you; you'll then see a long scene from Shanghai, then you'll receive the Coat of the Adept, Zhuzhen's best armor. (step 2)"
+        },
+        {
+          "name": "Lottery Member No. 06 (Hooked-nose Robin)",
+          "category": "lottery",
+          "location": "Go back out to the alley and talk to Hooked-nose Robin."
+        },
+        {
+          "name": "Lottery Member No. 02 (Fake-nose Man)",
+          "category": "lottery",
+          "location": "Since you took part in Margarete's Confession, he is now Lottery Member No. 2!"
+        }
+      ]
+    },
+    "enemies": [],
+    "bosses": [],
+    "shops": [
+      {
+        "name": "Pedometer Service",
+        "inventory": [
+          {
+            "name": "Thera Extract",
+            "price": 100
+          },
+          {
+            "name": "Voodoo Doll",
+            "price": 300
+          },
+          {
+            "name": "Weird Bottle",
+            "price": 800
+          },
+          {
+            "name": "Iron Clogs",
+            "price": 1500
+          },
+          {
+            "name": "Flash Badge",
+            "price": 2500
+          },
+          {
+            "name": "Moon Swallow",
+            "price": 3500
+          },
+          {
+            "name": "Star Swallow",
+            "price": 5000
+          },
+          {
+            "name": "Monkey Paw",
+            "price": 6500
+          },
+          {
+            "name": "Silver Hand",
+            "price": 7000
+          },
+          {
+            "name": "Belt of Power",
+            "price": 8000
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "type": "loot",
+        "description": "1. Head to the **Inn** and talk to the **Silent Peddler** here (or any **Silent Peddler**, for that matter).\n2. If you have **10,000 Steps** accumulated, then you will receive the **Leather Suit**, **Margarete**'s best armor.\n3. (**Margarete** does NOT have to be in your active party to receive the armor!)",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- Bring **Margarete** with you.\n- Since we're getting her best weapon, we'll cover her best armor as well!\n- Also, know that **Margarete** does NOT have to be in your active party to receive the armor, but she does for her weapon!\n- Finally, in regards to **Margarete's Confession**, you need to have obtained the **Water Gravestone** by giving advice to **Upset John** earlier."
+          },
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "- Now that you've received the item we've been collecting our steps the entire game for, feel free to use your remaining steps, as well as any future steps, on the items listed in the **Pedometer Service** shop.\n- Again, I recommend getting them from the most to least expensive, unless you want to play it safe with some extra **Thera Extracts**!"
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Leather Suit",
+            "category": "equipment",
+            "matched_overview_item": "Leather Suit"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "loot",
+        "description": "1. Next, go into the room on the left in the **Inn**, where **Meiyuan** is.\n2. He has a letter for all of you; you'll then see a long scene from **Shanghai**.\n3. Then you'll receive the **Coat of the Adept**, **Zhuzhen**'s best armor.",
+        "rewards": [
+          {
+            "name": "Coat of the Adept",
+            "category": "equipment",
+            "matched_overview_item": "Coat of the Adept"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "type": "loot",
+        "description": "1. Make your way back to the church to the altar, then enter the confessional when **Margarete** asks you to.\n2. Watch the scene here, then you'll receive the **Pearl Ring**.\n3. Now, go back to the **Inn** and **save your game**!",
+        "rewards": [
+          {
+            "name": "Pearl Ring",
+            "category": "equipment",
+            "matched_overview_item": "Pearl Ring"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "story",
+        "description": "1. Go back out to the alley and talk to **Hooked-nose Robin**... who is now the **Fake-nose Man**!\n2. Since you took part in **Margarete's Confession**, he is now **Lottery Member No. 2**!\n3. The ring here moves **really** fast, and the hit areas are pretty small.\n4. Normally, equipping the **Pocket Watch** would make it run normally, but it has no effect this time, so it'll probably take you **quite** a few tries to get this.\n5. This guy is special for one reason: once you win the **10 Gauge** for **Margarete**, he will revert back to **Lottery Member No. 06**.",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Lottery Member No. 02 Prizes",
+            "text": "Prize listing for **Lottery Member No. 02**, by color.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "10 Gauge"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "Dice of Caesar"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "Seal of Strength"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Eye of Ouroboros"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "type": "story",
+        "description": "- The **Eye of Ouroboros** fully Restores MP and SP when used. You may want to get a few of these, as they'll come in handy in the final battles.\n- The **Seal of Strength** increases your strength, obviously.\n- I don't think they ever really benefit your party members **that** much, so avoid getting them **unless** you've already bought all you like with your **Lottery Tickets** and have extra to spend.\n- The **Dice of Caesar** allow some of your allies to gain 3x strength in battle, but can miss some or all of your party sometimes.\n- I avoid these just because it's not a guaranteed boost in battle, but some others may find it useful.\n- The **10 Gauge** is **Margarete**'s best weapon; make sure to win it, but save it for last.\n- You may even want to wait on getting this until you visit the remaining **Lottery Members**, depending on how many of these middle three items you may want.",
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "type": "story",
+        "description": "1. If you don't win, reload your last save and try again.\n2. Remember, you need to win something from each member at least once!\n3. That's it for here. On to the next quest!",
+        "rewards": []
+      }
+    ]
+  }
+}

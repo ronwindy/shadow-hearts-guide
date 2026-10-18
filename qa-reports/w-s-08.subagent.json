@@ -1,0 +1,28 @@
+{
+  "section_id": "w-s-08",
+  "verdict": "PASS_WITH_NOTES",
+  "spot_checked": [
+    "Leather Suit condition (10,000 Steps, any Silent Peddler, Margarete need not be in party)",
+    "Opening note (Margarete best weapon needs active party; Water Gravestone from Upset John)",
+    "Pedometer Service shop: 10 items and prices 100-8000",
+    "Coat of the Adept (Meiyuan, letter, Shanghai scene, Zhuzhen's best armor)",
+    "Pearl Ring (confessional) and save-game instruction",
+    "Hooked-nose Robin / Fake-nose Man / Lottery Member No. 2 and revert to No. 06 after 10 Gauge",
+    "Lottery No. 02 prize table (5 colors and prizes)",
+    "Pocket Watch no effect, ring speed, small hit areas",
+    "Prize bullets: Eye of Ouroboros, Seal of Strength, Dice of Caesar (3x), 10 Gauge save-for-last",
+    "Closing: reload save, win something from each member at least once",
+    "Ordering of steps and notes"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "overview lottery items / step 4 rewards",
+      "canonical": "Lottery Member No. 06 (Hooked-nose Robin); Lottery Member No. 02 (Fake-nose Man)",
+      "structured": "Listed in items_summary only; step 4 rewards is empty",
+      "issue": "Lottery entries are not attached to any step reward. No fact is changed; purely a checklist-linking nuance."
+    }
+  ],
+  "structured_sha256": "3ecf2ef3f3796b859034f06a22105d076eb6c4ef9dec3ba58d3796ed63d7c79d"
+}

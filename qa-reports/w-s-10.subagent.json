@@ -1,0 +1,18 @@
+{
+  "section_id": "w-s-10",
+  "verdict": "PASS",
+  "structured_sha256": "c8e220fd9dfd4dd33454666e481713d6d0b89e1a3c07401446ae226da6ed2e20",
+  "spot_checked": [
+    "shop inventory and 5 prices",
+    "enemy table #077-#080 HP/class/notes",
+    "7 overview items and categories vs steps",
+    "1224 code and December 24",
+    "Orb Chaos boss: 7500 HP, Light, EXP 48000, Cash 27500, drop Holy Book-Flesh",
+    "party levels/equipment/fusions per column (Yuri 38, Alice 38, Margarete 33)",
+    "boss strategy numbers (25-30%) and Amon/Pure Seed/Root/Arc/Mind's Eye",
+    "all NOTE callouts (Alice in party, Crucifixes, Zodiac/Cosmic/Rosewood Bracelet)",
+    "step ordering and save point",
+    "boss placed in chronological step 11"
+  ],
+  "findings": []
+}

@@ -1,0 +1,356 @@
+{
+  "guide": {
+    "id": "w-s-10",
+    "code": "[W-S-10]",
+    "title": "Prague (Rare Shop / The Dollhouse / Alice's Weapon)",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-09",
+        "code": "[W-S-09]",
+        "title": "Blue Castle (Keith's Weapon / Lottery Member #1)",
+        "file": "sections/w-s-09-blue-castle-keith-s-weapon-lottery-member-1.json"
+      },
+      "next": {
+        "id": "w-s-11",
+        "code": "[W-S-11]",
+        "title": "Cave Temple (Keith's Armor / Zhuzhen's Weapon)",
+        "file": "sections/w-s-11-cave-temple-keith-s-armor-zhuzhen-s-weapon.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat **Orb Chaos**"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Lottery Ticket",
+          "category": "items",
+          "location": "Go into the room to the upper-right of the Save Point and examine the table just below you as you enter for a Lottery Ticket. (step 4)"
+        },
+        {
+          "name": "Silver Hand",
+          "category": "items",
+          "location": "To your upper-right, you should see some shovels and a bucket; examine the bucket to find a Silver Hand. (step 5)"
+        },
+        {
+          "name": "Oracle Earrings",
+          "category": "equipment",
+          "location": "Before entering the house, head over to the left and examine the ground below the barrels to find the Oracle Earrings. (step 3)"
+        },
+        {
+          "name": "Crucifix",
+          "category": "equipment",
+          "location": "In any case, before exploring too much, open the chest at the foot of the bed for a Crucifix. (step 10)"
+        },
+        {
+          "name": "Crank",
+          "category": "valuables",
+          "location": "Go inside the house and use the Save Point if you wish, then examine the grandfather clock to your left to find a Crank. (step 3)"
+        },
+        {
+          "name": "Slide",
+          "category": "valuables",
+          "location": "Climb down the ladder to your right, then check at the very bottom of the screen; where you see the two bottles and the glass, you'll find a Slide plate. (step 5)"
+        },
+        {
+          "name": "Storeroom Key",
+          "category": "valuables",
+          "location": "When you complete it successfully, you'll receive the Storeroom Key. (step 4)"
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#077",
+        "name": "Ghoul",
+        "hp": 200,
+        "class": "Water",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+      },
+      {
+        "number": "#078",
+        "name": "Ghouler",
+        "hp": 300,
+        "class": "Fire",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies"
+      },
+      {
+        "number": "#079",
+        "name": "Spanky",
+        "hp": 220,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#080",
+        "name": "Orb Chaos",
+        "hp": 7500,
+        "class": "Light",
+        "is_boss": true,
+        "is_subboss": false,
+        "notes": "Inflicts Paralysis"
+      }
+    ],
+    "bosses": [],
+    "shops": [
+      {
+        "name": "Tight-lipped Merchant",
+        "inventory": [
+          {
+            "name": "Weird Bottle",
+            "price": 18000
+          },
+          {
+            "name": "Thera Extract",
+            "price": 5000
+          },
+          {
+            "name": "Mana Extract",
+            "price": 10000
+          },
+          {
+            "name": "Pure Extract",
+            "price": 20000
+          },
+          {
+            "name": "Third Key",
+            "price": 30000
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "description": "- After entering **Prague**, make your way all the way to the north end of town and talk to the **Silent Peddler**.\n- He is now selling items, and man, are they **good**!\n- If you have some extra cash built up, you may want to stock up on each of the Mana and **Pure Extracts**, but not **Thera Extracts**; you can get those for 100 steps apiece with the **Pedometer** Service.\n- You may also want to take the opportunity to get some **Third Keys**; they can make some boss battles go by WAY quicker if a beefed-up **Yuri** hits all 9 areas. :-D",
+        "type": "exploration",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Make sure **Alice** is in your party, otherwise **Runaway Ewan** won't tell you about the **Dollhouse**."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "1. After shopping, make your way to the bar and talk to **Runaway Ewan**, who's just below the Owner and **Yuria**; he'll tell you about a possessed house, and asks that you exorcise it.\n2. By talking to him, we've now opened a new area of the **World Map**: the **Dollhouse**.\n3. Leave **Prague**, then head into the **Dollhouse**.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "You should probably equip the two **Crucifixes** you have as well, and probably a combination **Zodiac** and **Cosmic Bracelet** on the third person. Check out the status effects of the enemies below to see why."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "1. After the quick scene, you'll regain control as **Alice**.\n2. Before entering the house, head over to the left and examine the ground below the barrels to find the **Oracle Earrings**.\n3. Go inside the house and use the **Save Point** if you wish, then examine the grandfather clock to your left to find a **Crank**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Oracle Earrings",
+            "category": "equipment",
+            "matched_overview_item": "Oracle Earrings"
+          },
+          {
+            "name": "Crank",
+            "category": "valuables",
+            "matched_overview_item": "Crank"
+          }
+        ],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "**Alice** must be in your party to be able to do anything here."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "description": "- Go into the room to the upper-right of the **Save Point** and examine the table just below you as you enter for a **Lottery Ticket**.\n- Go up the stairs to your upper-left and through the doorway here to be at a fountain.\n- Go up to the left side of it and examine it to have to do a **Push Ring**.\n- When you complete it successfully, you'll receive the **Storeroom Key**.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Lottery Ticket",
+            "category": "items",
+            "matched_overview_item": "Lottery Ticket"
+          },
+          {
+            "name": "Storeroom Key",
+            "category": "valuables",
+            "matched_overview_item": "Storeroom Key"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "description": "1. Head back outside of the house and examine the western door near where you found the **Oracle Earrings**.\n2. With the key, you can now go through here, so do so, then examine the generator above you to use the **Crank** to start it.\n3. To your upper-right, you should see some shovels and a bucket; examine the bucket to find a **Silver Hand**.\n4. Climb down the ladder to your right, then check at the very bottom of the screen; where you see the two bottles and the glass, you'll find a **Slide** plate.",
+        "type": "loot",
+        "rewards": [
+          {
+            "name": "Silver Hand",
+            "category": "items",
+            "matched_overview_item": "Silver Hand"
+          },
+          {
+            "name": "Slide",
+            "category": "valuables",
+            "matched_overview_item": "Slide"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "description": "1. Make your way back into the other side of the house, then go up the stairs to the left of the **Save Point** and into the room here.\n2. Examine the projector on the table to the right to use the **Slide**, where you'll see that the picture projected was taken on **December 24**, or **1224**.",
+        "type": "navigation",
+        "rewards": []
+      },
+      {
+        "id": 7,
+        "description": "1. Go back downstairs and into the room to the right.\n2. Examine the dial beside the fireplace, and you'll be able to enter a code.\n3. Enter **1224**, then make your way back to the **Save Point**, making sure to both Save and recover, as we're taking on a boss next.",
+        "type": "navigation",
+        "rewards": []
+      },
+      {
+        "id": 8,
+        "description": "1. Go back outside, then through the storeroom, down the ladder, then down and right to the door here.\n2. Go through it, then down the stairs to a large door that you can now open since the water has been drained.",
+        "type": "navigation",
+        "rewards": []
+      },
+      {
+        "id": 9,
+        "description": "1. Okay, be honest...\n2. Did you jump when you first walked into the room to see the doll baby riding the rocking horse?\n3. I played Resident Evil: Nemesis when I was a bit too young, so certain things catch me off guard...",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 10,
+        "description": "In any case, before exploring too much, open the chest at the foot of the bed for a **Crucifix**. You should now have **three** of them!",
+        "type": "loot",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Take the time now to equip each party member with a **Crucifix**, or at least a **Zodiac** or **Rosewood Bracelet**."
+          }
+        ],
+        "rewards": [
+          {
+            "name": "Crucifix",
+            "category": "equipment",
+            "matched_overview_item": "Crucifix"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "description": "When you're ready, try to leave the room... *shudder*",
+        "type": "boss",
+        "rewards": [],
+        "boss": {
+          "type": "BOSS",
+          "name": "Orb Chaos",
+          "enemies": [
+            {
+              "name": "Orb Chaos",
+              "hp": 7500,
+              "class": "Light",
+              "drop": "Holy Book-Flesh"
+            }
+          ],
+          "party": [
+            {
+              "name": "Yuri",
+              "level": 38,
+              "equipment": [
+                "Silver Wolf Fang",
+                "Stygian Robe",
+                "Mind's Eye",
+                "Demon Earrings",
+                "Crucifix"
+              ],
+              "fusions": [
+                "Amon",
+                "Czernobog",
+                "Ifrit"
+              ]
+            },
+            {
+              "name": "Margarete",
+              "level": 33,
+              "equipment": [
+                "10 Gauge",
+                "Leather Suit",
+                "Mind's Eye",
+                "Demon Earrings",
+                "Crucifix"
+              ]
+            },
+            {
+              "name": "Alice",
+              "level": 38,
+              "equipment": [
+                "Holy Book-Martyrs",
+                "Snow-White Robe",
+                "Oracle Earrings",
+                "Priest Earrings",
+                "Crucifix"
+              ]
+            }
+          ],
+          "exp": 48000,
+          "cash": 27500,
+          "strategy": "- She has several different spells that will increase her stats by 25-30%, so once she's done doing that, be very careful, as they went from very strong to deadly.\n- She WILL almost kill **Yuri** in one set of attacks once her attack is boosted, she's THAT strong!\n- **Alice** won't have time to do anything except **Arc** once **Orb Chaos** starts attacking.\n- Other than the boosting spells, **Orb Chaos** attacks normally for major damage, and uses a spell called Expression that can not only do pretty good damage, but can also Paralyze your entire party!\n- If you don't have those **Crucifixes** equipped, good luck winning, especially when she starts using Expression each turn, one after another.\n- Even though he may barely have enough SP to do it, have **Yuri** fuse into **Amon**, then have one of the girls use a **Pure Seed**/Root on him to give him some breathing room, then have him attack normally.\n- **Alice** should be casting **Arc** every round, and **Margarete** should be attacking normally every round, since both she and **Yuri** should have **Mind's Eyes** equipped.\n- Note: once the battle is over, you'll receive **Alice**'s best weapon, the **Holy Book-Flesh**."
+        },
+        "encounter": {
+          "enemies": [
+            "Orb Chaos"
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "description": "After the battle, make sure to equip **Alice**'s best weapon. That's it for here, so head back out onto the **World Map**.",
+        "type": "exploration",
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "You can return here later if you like, but you have to make sure **Alice** is in your party."
+          }
+        ],
+        "rewards": []
+      },
+      {
+        "id": 13,
+        "description": "1. If you like, you can return to **Prague** and go to the bar.\n2. There's an interesting detail on the floor where **Ewan** was standing if you want to check that out.\n3. Otherwise, we're finished and ready for the next quest.",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "First room inside"
+    ]
+  }
+}

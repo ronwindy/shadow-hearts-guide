@@ -1,0 +1,211 @@
+{
+  "guide": {
+    "id": "w-s-09",
+    "code": "[W-S-09]",
+    "title": "Blue Castle (Keith's Weapon / Lottery Member #1)",
+    "type": "sidequest",
+    "category": "Walkthrough - Europe",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "w-s-08",
+        "code": "[W-S-08]",
+        "title": "Rouen (Silent Peddler / Margarete's Armor, Weapon, &",
+        "file": "sections/w-s-08-rouen-silent-peddler-margarete-s-armor-weapon.json"
+      },
+      "next": {
+        "id": "w-s-10",
+        "code": "[W-S-10]",
+        "title": "Prague (Rare Shop / The Dollhouse / Alice's Weapon)",
+        "file": "sections/w-s-10-prague-rare-shop-the-dollhouse-alice-s-weapon.json"
+      }
+    },
+    "route": [],
+    "objectives": [
+      "Defeat **Golden Bat**"
+    ],
+    "items_summary": {
+      "obtainable": [
+        {
+          "name": "Demon Swd-Tyrving",
+          "category": "equipment",
+          "location": "It's actually Keith's brother, and he'll give him the Demon Swd-Tyrving. (step 3)"
+        },
+        {
+          "name": "Lottery Member No. 01",
+          "category": "lottery",
+          "location": "Talk to the invisible man in the throne room; he'll become the Vice Chairman (Lottery Member No. 01)."
+        },
+        {
+          "name": "(Keith-like invisible man)",
+          "category": "lottery",
+          "location": "There will be an invisible man here, much like Keith; talk to him."
+        }
+      ]
+    },
+    "enemies": [
+      {
+        "number": "#056",
+        "name": "Gremlin",
+        "hp": 62,
+        "class": "Wind",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Ring anomalies"
+      },
+      {
+        "number": "#057",
+        "name": "Hollow",
+        "hp": 103,
+        "class": "Light",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": ""
+      },
+      {
+        "number": "#058",
+        "name": "Dead Knight",
+        "hp": 200,
+        "class": "Dark",
+        "is_boss": false,
+        "is_subboss": false,
+        "notes": "Inflicts Poison"
+      },
+      {
+        "number": "#076",
+        "name": "Golden Bat",
+        "hp": 1500,
+        "class": "None",
+        "is_boss": false,
+        "is_subboss": true,
+        "notes": ""
+      }
+    ],
+    "bosses": [],
+    "shops": [],
+    "steps": [
+      {
+        "id": 1,
+        "description": "Before going to the **Blue Castle**, we need to trigger the event in **Bistritz**.",
+        "type": "story",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Note",
+            "text": "Make sure that **Keith** is in your party. Equip the **Mind's Eye** and anything else you want to boost his attack / hit area, since he'll be fighting a battle alone."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "description": "- Head over to the eastern side of town and head into **Nina**'s house.\n- **Nina** will inform **Keith** of something she saw in the **Blue Castle**, which will now let you continue with the event there, so head over to the **Blue Castle**.",
+        "type": "story",
+        "rewards": []
+      },
+      {
+        "id": 3,
+        "description": "1. Head inside the castle, then go north up to the **Save Point**.\n2. Take the western path, follow it around and down to the basement with the caskets.\n3. Approach the open casket to find a **Golden Bat**!\n4. It's actually **Keith**'s brother, and he'll give him the **Demon Swd-Tyrving**.\n5. You'll then have to face him as **Keith** (alone) to earn it!",
+        "type": "boss",
+        "rewards": [
+          {
+            "name": "Demon Swd-Tyrving",
+            "category": "equipment",
+            "matched_overview_item": "Demon Swd-Tyrving"
+          }
+        ],
+        "boss": {
+          "type": "SUB-BOSS",
+          "name": "Golden Bat",
+          "enemies": [
+            {
+              "name": "Golden Bat",
+              "hp": 1500,
+              "class": "None",
+              "drop": "Demon Swd-Tyrving"
+            }
+          ],
+          "party": [],
+          "exp": 40000,
+          "cash": 15000,
+          "strategy": "- He says you have 5 turns to defeat him before he obliterates **Keith**, but you technically have 6.\n- It's not hard to succeed, but if you miss some hits, you could be in trouble.\n- **Keith** can only attack normally, so just keep doing that.\n- It should only take three turns max, unless you didn't equip the **Mind's Eye**, then it'll probably take all six.\n- If you're having a hard time with this battle, then level **Keith** up to where he can definitely deal 1500 damage within four or five turns, to be safe.\n- Note: even though you already have it equipped for this battle, the reward for winning is the **DemonSwd-Tyrving**......"
+        },
+        "encounter": {
+          "enemies": [
+            "Golden Bat"
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "description": "Another scene will follow afterward. When you regain control, head back upstairs and leave the **Blue Castle** entirely.",
+        "type": "story",
+        "rewards": []
+      },
+      {
+        "id": 5,
+        "description": "Switch **Keith** out of your party with someone else, then return to **Blue Castle**. If **Keith**'s in your party, then the next **Lottery Member** will not appear.",
+        "type": "exploration",
+        "rewards": []
+      },
+      {
+        "id": 6,
+        "description": "1. Make your way into the Castle and to the **Save Point**.\n2. **Save**, then head down the eastern stairs and make your way to the throne room where you first met **Keith**.\n3. There will be an invisible man here, much like **Keith**; talk to him, and he'll become the Vice Chairman (**Lottery Member No. 01**)!\n4. The ring here is **insanely fast**, and there's no way to slow it down, so good luck!\n5. Make sure to win the **Thief Earrings** before continuing on; it's like the Brigand and **Pirate Earrings** combined, with no downfall!\n6. They'll allow you to get a 20% higher chance at treasure after battle, as well as 20% more Cash!\n7. If you don't win it, reload your last save and try again.\n8. Remember, you need to win something from each member at least once!",
+        "type": "exploration",
+        "rewards": [],
+        "notes": [
+          {
+            "type": "tip",
+            "title": "Lottery Member No. 01 Prizes",
+            "text": "Prize listing for **Lottery Member No. 01**, by color.",
+            "table": {
+              "headers": [
+                "Color",
+                "Prize"
+              ],
+              "rows": [
+                {
+                  "range": "Red",
+                  "reward": "Thief Earrings"
+                },
+                {
+                  "range": "Yellow",
+                  "reward": "Key to Success"
+                },
+                {
+                  "range": "Turquoise",
+                  "reward": "Seal of Vitality"
+                },
+                {
+                  "range": "Green",
+                  "reward": "Fruit of Yggdrasil"
+                },
+                {
+                  "range": "White",
+                  "reward": "Tissues"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "description": "That's it for here. On to the next quest!",
+        "type": "exploration",
+        "rewards": []
+      }
+    ],
+    "save_points": [
+      "Near the entrance (Bistritz)",
+      "First room inside",
+      "Top of the tower"
+    ]
+  }
+}

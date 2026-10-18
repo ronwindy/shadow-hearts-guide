@@ -1,12 +1,12 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-18 15:51:16`
+> Last synced: `2026-10-18 16:00:23`
 
 ```text
-=== PROJECT STATUS (2026-10-18 15:51:16) ===
-Canonical 66/66 | Structured 34/66 | QA pass 34/66 (fail 0) | Web built 34/66
+=== PROJECT STATUS (2026-10-18 16:00:23) ===
+Canonical 66/66 | Structured 37/66 | QA pass 37/66 (fail 0) | Web built 37/66
 Next:
-  1. Structure w-s-08 (Rouen (Silent Peddler / Margarete's Armor, Weapon, &) - next chronological
+  1. Structure w-s-11 (Cave Temple (Keith's Armor / Zhuzhen's Weapon)) - next chronological
 ```
 
 ## Section Matrix
@@ -46,9 +46,9 @@ Next:
 | `[W-2-13]` | `w-2-13` | Europe Side Quests, Part 2 | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-06]` | `w-s-06` | Nemeton Monastery (Book of Rituals / Codex of Lurie) | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-07]` | `w-s-07` | The Orphanage (Emigre Manuscript / Lottery Member #3) | Walkthrough - Europe | WEB_BUILT |
-| `[W-S-08]` | `w-s-08` | Rouen (Silent Peddler / Margarete's Armor, Weapon, & | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-S-09]` | `w-s-09` | Blue Castle (Keith's Weapon / Lottery Member #1) | Walkthrough - Europe | NOT_STRUCTURED |
-| `[W-S-10]` | `w-s-10` | Prague (Rare Shop / The Dollhouse / Alice's Weapon) | Walkthrough - Europe | NOT_STRUCTURED |
+| `[W-S-08]` | `w-s-08` | Rouen (Silent Peddler / Margarete's Armor, Weapon, & | Walkthrough - Europe | WEB_BUILT |
+| `[W-S-09]` | `w-s-09` | Blue Castle (Keith's Weapon / Lottery Member #1) | Walkthrough - Europe | WEB_BUILT |
+| `[W-S-10]` | `w-s-10` | Prague (Rare Shop / The Dollhouse / Alice's Weapon) | Walkthrough - Europe | WEB_BUILT |
 | `[W-S-11]` | `w-s-11` | Cave Temple (Keith's Armor / Zhuzhen's Weapon) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-S-12]` | `w-s-12` | Ancient Ruins (Alice's Armor / Halley's Weapon) | Walkthrough - Europe | NOT_STRUCTURED |
 | `[W-S-13]` | `w-s-13` | Yuri's Level 2 & 3 Fusions, ???? Attacks | Walkthrough - Europe | NOT_STRUCTURED |

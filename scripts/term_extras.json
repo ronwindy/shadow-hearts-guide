@@ -31,7 +31,9 @@
     "Roger Bacon",
     "Roger",
     "James O'Flaherty",
-    "Pot-lover Macken"
+    "Pot-lover Macken",
+    "Runaway Ewan",
+    "Yuria"
   ],
   "locations": [
     "Calios Mental Hospital",
@@ -51,15 +53,14 @@
     "Monastery Ruins",
     "Monastery",
     "Ancient Ruins",
-    "Underground Ruins"
+    "Underground Ruins",
+    "Dollhouse"
   ],
   "deny": [
     "Item",
     "Valuable",
     "Headgear",
     "Spikes",
-    "Slide",
-    "Crank",
     "Jewel",
     "Pendant",
     "Talisman",
@@ -132,7 +133,9 @@
     "Graveyard",
     "Sewers",
     "Berserk",
-    "Item Shop"
+    "Item Shop",
+    "Slide",
+    "Crank"
   ],
   "skills": [
     "Shockwave",
@@ -175,7 +178,8 @@
     "Spin Ring 3",
     "Valuables",
     "Books of Rituals",
-    "Manuscript"
+    "Manuscript",
+    "Margarete's Confession"
   ],
   "wanderers": [
     "Lost Peddler",
