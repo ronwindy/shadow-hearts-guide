@@ -191,6 +191,32 @@
   }
 }
 
+/* Gold ornamental divider above the Previous/Next chapter footer:
+   a fading gold hairline with a small diamond at its centre. */
+.nav-ornament {
+  position: relative;
+}
+.nav-ornament::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.55) 20%, rgba(212, 175, 55, 0.55) 80%, transparent);
+}
+.nav-ornament::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  background: #d4af37;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
 /* Frosted-glass chapter navigation surface (desktop sidebar + mobile drawer).
    Layers, top to bottom: film grain (SVG feTurbulence), gold top glow, dark tint.
    The page background image shows through the blur beneath. */
