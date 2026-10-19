@@ -9,9 +9,9 @@ import CharacterProfiles from '../../components/CharacterProfiles.astro';
 import ItemTable from '../../components/ItemTable.astro';
 import EnemyTable from '../../components/EnemyTable.astro';
 import ShopTable from '../../components/ShopTable.astro';
-import ReferenceBlocks from '../../components/ReferenceBlocks.astro';
 import ReferenceTables from '../../components/ReferenceTables.astro';
 import ReferenceGroups from '../../components/ReferenceGroups.astro';
+import BossCard from '../../components/BossCard.astro';
 import InfoBlocks from '../../components/InfoBlocks.astro';
 import Callouts from '../../components/Callouts.astro';
 import ObjectivesList from '../../components/ObjectivesList.astro';
@@ -155,9 +155,20 @@ const pageSections = headerGuide
         <InfoBlocks blocks={guide.blocks || []} />
 
         {/* Verbatim reference/appendix tables */}
-        <ReferenceBlocks blocks={guide.reference_blocks || []} />
         <ReferenceTables tables={guide.reference_tables || []} iconSet={guide.id === 'a-1-06' ? 'valuables' : undefined} />
         <ReferenceGroups groups={guide.reference_groups || []} />
+
+        {guide.type === 'reference' && (guide.bosses || []).length > 0 && (
+          <section id="reference-bosses" class="space-y-4">
+            <div class="flex items-center justify-between heading-flourish">
+              <h2 class="text-xl sm:text-2xl font-serif font-semibold text-slate-100">
+                <span class="gold-metal-lite">Bosses</span>
+              </h2>
+              <span class="text-sm font-mono text-slate-400">{guide.bosses!.length} entries</span>
+            </div>
+            {guide.bosses!.map((b) => <BossCard boss={b} />)}
+          </section>
+        )}
 
         <DocumentInfo metadata={overview.metadata} purpose={overview.purpose} guideScope={overview.guide_scope} />
       </div>

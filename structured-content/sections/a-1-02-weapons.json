@@ -28,7 +28,6 @@
     },
     "enemies": [],
     "bosses": [],
-    "shops": [],
     "reference_tables": [
       {
         "title": "Yuri",
@@ -48,8 +47,10 @@
               "2 / 2",
               "3 / 3"
             ],
-            "detail_menu": "Cow-hide with steel-plated knuckles.",
-            "detail": "Leather gloves for punching. Damages enemy while providing protection. Ideal for fighters."
+            "description": {
+              "menu": "Cow-hide with steel-plated knuckles.",
+              "text": "Leather gloves for punching. Damages enemy while providing protection. Ideal for fighters."
+            }
           },
           {
             "cells": [
@@ -59,8 +60,10 @@
               "15 / 12",
               "17 / 14"
             ],
-            "detail_menu": "Made of a hard black steel and used for punching.",
-            "detail": "This handheld weapon has sharp blades affixed to it allowing for slashing as well. It is made of a powerful black steel and is easily carried."
+            "description": {
+              "menu": "Made of a hard black steel and used for punching.",
+              "text": "This handheld weapon has sharp blades affixed to it allowing for slashing as well. It is made of a powerful black steel and is easily carried."
+            }
           },
           {
             "cells": [
@@ -70,8 +73,10 @@
               "28 / 23",
               "31 / 26"
             ],
-            "detail_menu": "Lethal weapon designed to pierce armor.",
-            "detail": "A favored weapon among Eastern assassins. Its unusually long blade and frightening appearance make it a weapon to be feared."
+            "description": {
+              "menu": "Lethal weapon designed to pierce armor.",
+              "text": "A favored weapon among Eastern assassins. Its unusually long blade and frightening appearance make it a weapon to be feared."
+            }
           },
           {
             "cells": [
@@ -81,8 +86,10 @@
               "38 / 23",
               "42 / 26"
             ],
-            "detail_menu": "Ninja stabbing weapon with double sides.",
-            "detail": "An ancient weapon, the middle finger passes through a ring and it is clutched in the fist. When mastered, it can be used to block an enemy's sword."
+            "description": {
+              "menu": "Ninja stabbing weapon with double sides.",
+              "text": "An ancient weapon, the middle finger passes through a ring and it is clutched in the fist. When mastered, it can be used to block an enemy's sword."
+            }
           },
           {
             "cells": [
@@ -92,8 +99,10 @@
               "75 / 66",
               "82 / 73"
             ],
-            "detail_menu": "Well-crafted metal knuckles, useful for brawlers.",
-            "detail": "The dream of any rough-and-tumble brawler, they are made of hand-forged brass and can raise the user's punching power enormously."
+            "description": {
+              "menu": "Well-crafted metal knuckles, useful for brawlers.",
+              "text": "The dream of any rough-and-tumble brawler, they are made of hand-forged brass and can raise the user's punching power enormously."
+            }
           },
           {
             "cells": [
@@ -103,8 +112,10 @@
               "92 / 82",
               "100 / 90"
             ],
-            "detail_menu": "Holy silver claws that are easy to use.",
-            "detail": "Silver claws gripped between the fingers. Easy to use and accurate due to their light weight. An excellent weapon for the powerful fighter-type. Very valuable."
+            "description": {
+              "menu": "Holy silver claws that are easy to use.",
+              "text": "Silver claws gripped between the fingers. Easy to use and accurate due to their light weight. An excellent weapon for the powerful fighter-type. Very valuable."
+            }
           },
           {
             "cells": [
@@ -114,8 +125,10 @@
               "104 / 88",
               "113 / 96"
             ],
-            "detail_menu": "Made from the enchanted fang of a wolf king.",
-            "detail": "A weapon created from the fang of the wolf king, Vadelg. It is said to hold great power but no details are known because it has never been found."
+            "description": {
+              "menu": "Made from the enchanted fang of a wolf king.",
+              "text": "A weapon created from the fang of the wolf king, Vadelg. It is said to hold great power but no details are known because it has never been found."
+            }
           },
           {
             "cells": [
@@ -125,8 +138,10 @@
               "108 / 104",
               "118 / 113"
             ],
-            "detail_menu": "Used by an ancient war god in magic-sealing.",
-            "detail": "This weapon was said to have been used in ancient days by the god of war and that its wielder can summon the power of Ashura. Its true origin is a mystery."
+            "description": {
+              "menu": "Used by an ancient war god in magic-sealing.",
+              "text": "This weapon was said to have been used in ancient days by the god of war and that its wielder can summon the power of Ashura. Its true origin is a mystery."
+            }
           }
         ],
         "intro": "Listed here are all of the weapons in the game, in order of character recruited, followed by weakest to strongest."
@@ -149,8 +164,10 @@
               "2 / 2",
               "3 / 3"
             ],
-            "detail_menu": "Written on sheepskin, it holds great power.",
-            "detail": "Sheepskin engraved bible containing the written word of God. Its holy power may be discovered only by the true believer."
+            "description": {
+              "menu": "Written on sheepskin, it holds great power.",
+              "text": "Sheepskin engraved bible containing the written word of God. Its holy power may be discovered only by the true believer."
+            }
           },
           {
             "cells": [
@@ -160,9 +177,11 @@
               "11 / 17",
               "13 / 19"
             ],
-            "detail_menu": "Superb manuscript about a fabled continent.",
-            "detail": "Antique book about a fabled continent that sank into the sea beneath a falling star. Lovingly transcribed from the original and very valuable.",
-            "detail_title": "Tome of the Shooting Star"
+            "description": {
+              "menu": "Superb manuscript about a fabled continent.",
+              "title": "Tome of the Shooting Star",
+              "text": "Antique book about a fabled continent that sank into the sea beneath a falling star. Lovingly transcribed from the original and very valuable."
+            }
           },
           {
             "cells": [
@@ -172,8 +191,10 @@
               "22 / 29",
               "25 / 32"
             ],
-            "detail_menu": "Black velvet book with details about magic arts.",
-            "detail": "Ancient book of Magic encased in a black velvet cover. It is written with elegant calligraphy and embossed in gold leaf."
+            "description": {
+              "menu": "Black velvet book with details about magic arts.",
+              "text": "Ancient book of Magic encased in a black velvet cover. It is written with elegant calligraphy and embossed in gold leaf."
+            }
           },
           {
             "cells": [
@@ -183,8 +204,10 @@
               "38 / 48",
               "42 / 53"
             ],
-            "detail_menu": "Book of anti-magic to counter Tome of the Moon.",
-            "detail": "Ancient book of curse removal and magic-blocking. Extremely difficult to read, but legends say if done so with a pure heart, it can redeem an entire nation."
+            "description": {
+              "menu": "Book of anti-magic to counter Tome of the Moon.",
+              "text": "Ancient book of curse removal and magic-blocking. Extremely difficult to read, but legends say if done so with a pure heart, it can redeem an entire nation."
+            }
           },
           {
             "cells": [
@@ -194,8 +217,10 @@
               "65 / 78",
               "71 / 86"
             ],
-            "detail_menu": "Holy book embedded with shining blue crystals.",
-            "detail": "Ancient, holy book embedded with shining blue crystals. Necessary for performing an exorcism ritual on a possessed woman."
+            "description": {
+              "menu": "Holy book embedded with shining blue crystals.",
+              "text": "Ancient, holy book embedded with shining blue crystals. Necessary for performing an exorcism ritual on a possessed woman."
+            }
           },
           {
             "cells": [
@@ -205,8 +230,10 @@
               "80 / 94",
               "87 / 103"
             ],
-            "detail_menu": "Holy book of prophesy with great spiritual power.",
-            "detail": "Only the greatest of holy leaders my possess this book of prophesy. The book itself carries great mystical power."
+            "description": {
+              "menu": "Holy book of prophesy with great spiritual power.",
+              "text": "Only the greatest of holy leaders my possess this book of prophesy. The book itself carries great mystical power."
+            }
           },
           {
             "cells": [
@@ -216,9 +243,11 @@
               "88 / 102",
               "96 / 112"
             ],
-            "detail_menu": "Ancient book stained with the blood of martyrs.",
-            "detail": "Holy book stained with the blood of martyrs who labored for countless years in service against the forces of evil. Strong spiritual power.",
-            "detail_title": "Holy Book of the Martyrs"
+            "description": {
+              "menu": "Ancient book stained with the blood of martyrs.",
+              "title": "Holy Book of the Martyrs",
+              "text": "Holy book stained with the blood of martyrs who labored for countless years in service against the forces of evil. Strong spiritual power."
+            }
           },
           {
             "cells": [
@@ -228,9 +257,11 @@
               "104 / 108",
               "113 / 118"
             ],
-            "detail_menu": "Holy book made from the flesh of a saint.",
-            "detail": "After the death of Rafaelo, his flesh was used to make this book. To a good person it can bring blessings, but to others it may open the very doors of hell.",
-            "detail_title": "Holy Book of Flesh"
+            "description": {
+              "menu": "Holy book made from the flesh of a saint.",
+              "title": "Holy Book of Flesh",
+              "text": "After the death of Rafaelo, his flesh was used to make this book. To a good person it can bring blessings, but to others it may open the very doors of hell."
+            }
           }
         ]
       },
@@ -252,8 +283,10 @@
               "1 / 2",
               "2 / 3"
             ],
-            "detail_menu": "Made from ancient oak, it enhances magic powers.",
-            "detail": "Staff made from the limb of an ancient oak. It raises a magic wielder's abilities and is a necessary step on the way to becoming an Adept in the Taoist Arts."
+            "description": {
+              "menu": "Made from ancient oak, it enhances magic powers.",
+              "text": "Staff made from the limb of an ancient oak. It raises a magic wielder's abilities and is a necessary step on the way to becoming an Adept in the Taoist Arts."
+            }
           },
           {
             "cells": [
@@ -263,8 +296,10 @@
               "11 / 15",
               "13 / 17"
             ],
-            "detail_menu": "Heavy metal staff capable of great destruction.",
-            "detail": "Metal rod. Heavy and destructive, it is perfect for the adventuring clergyman. The accumulated experience of many a holy man lies within the staff itself."
+            "description": {
+              "menu": "Heavy metal staff capable of great destruction.",
+              "text": "Metal rod. Heavy and destructive, it is perfect for the adventuring clergyman. The accumulated experience of many a holy man lies within the staff itself."
+            }
           },
           {
             "cells": [
@@ -274,8 +309,10 @@
               "22 / 31",
               "24 / 34"
             ],
-            "detail_menu": "Carved from a sacred tree. Light and strong.",
-            "detail": "Staff carved from a sacred tree. Given its light weight and strength, it is an ideal weapon for older adventurers."
+            "description": {
+              "menu": "Carved from a sacred tree. Light and strong.",
+              "text": "Staff carved from a sacred tree. Given its light weight and strength, it is an ideal weapon for older adventurers."
+            }
           },
           {
             "cells": [
@@ -285,8 +322,10 @@
               "39 / 49",
               "43 / 54"
             ],
-            "detail_menu": "Staff for outdoor adventurers. A powerful weapon.",
-            "detail": "Staff of a hermit who explored the wild regions of the continent. Its scarlet color is said to be the hermit's own blood. A valuable and powerful weapon."
+            "description": {
+              "menu": "Staff for outdoor adventurers. A powerful weapon.",
+              "text": "Staff of a hermit who explored the wild regions of the continent. Its scarlet color is said to be the hermit's own blood. A valuable and powerful weapon."
+            }
           },
           {
             "cells": [
@@ -296,8 +335,10 @@
               "64 / 75",
               "70 / 82"
             ],
-            "detail_menu": "Staff of the Oracle with special attack powers.",
-            "detail": "This staff can only be held by the most dedicated of Oracles. It is said to bring calamity upon those unworthy to wield it. Tremendous attack power."
+            "description": {
+              "menu": "Staff of the Oracle with special attack powers.",
+              "text": "This staff can only be held by the most dedicated of Oracles. It is said to bring calamity upon those unworthy to wield it. Tremendous attack power."
+            }
           },
           {
             "cells": [
@@ -307,9 +348,11 @@
               "82 / 94",
               "89 / 103"
             ],
-            "detail_menu": "Holy Staff. Few can master its powers.",
-            "detail": "Staff blessed by the spirit of Mitama. In the hands of a master, the staff itself is said to become sentient. Very few can tap into its true power.",
-            "detail_title": "Four Gods' Staff"
+            "description": {
+              "menu": "Holy Staff. Few can master its powers.",
+              "title": "Four Gods' Staff",
+              "text": "Staff blessed by the spirit of Mitama. In the hands of a master, the staff itself is said to become sentient. Very few can tap into its true power."
+            }
           },
           {
             "cells": [
@@ -319,8 +362,10 @@
               "91 / 101",
               "100 / 111"
             ],
-            "detail_menu": "Contains the soul of an actual Taoist Adept.",
-            "detail": "Before his death, a powerful Taoist Adept transferred his soul into this staff. In the hands of a fellow Adept, it is a weapon of extreme power."
+            "description": {
+              "menu": "Contains the soul of an actual Taoist Adept.",
+              "text": "Before his death, a powerful Taoist Adept transferred his soul into this staff. In the hands of a fellow Adept, it is a weapon of extreme power."
+            }
           },
           {
             "cells": [
@@ -330,8 +375,10 @@
               "105 / 107",
               "114 / 117"
             ],
-            "detail_menu": "Holy staff. Grants wielder incalculable power.",
-            "detail": "Legendary holy staff. It is claimed that whoever wields it will have the power to control Heaven and Earth."
+            "description": {
+              "menu": "Holy staff. Grants wielder incalculable power.",
+              "text": "Legendary holy staff. It is claimed that whoever wields it will have the power to control Heaven and Earth."
+            }
           }
         ]
       },
@@ -353,8 +400,10 @@
               "4 / 4",
               "6 / 6"
             ],
-            "detail_menu": "Lightweight machine gun. Perfect for spies.",
-            "detail": "Easy to carry, semi-automatic pistol. Not very powerful or accurate but a good weapon in the right hands."
+            "description": {
+              "menu": "Lightweight machine gun. Perfect for spies.",
+              "text": "Easy to carry, semi-automatic pistol. Not very powerful or accurate but a good weapon in the right hands."
+            }
           },
           {
             "cells": [
@@ -364,8 +413,10 @@
               "6 / 1",
               "8 / 3"
             ],
-            "detail_menu": "8 mm automatic; Can cause Confusion",
-            "detail": "8 millimeter radius, 8-shot automatic. Extremely well balanced and easy to use, but must be used with caution due to its light trigger. Also causes Confusion."
+            "description": {
+              "menu": "8 mm automatic; Can cause Confusion",
+              "text": "8 millimeter radius, 8-shot automatic. Extremely well balanced and easy to use, but must be used with caution due to its light trigger. Also causes Confusion."
+            }
           },
           {
             "cells": [
@@ -375,8 +426,10 @@
               "17 / 13",
               "20 / 16"
             ],
-            "detail_menu": "Improved version of the Type 94. Very accurate.",
-            "detail": "Automatic handgun with a unique rounded trigger guard. Improved version of the Type 94 with small recoil and very high accuracy."
+            "description": {
+              "menu": "Improved version of the Type 94. Very accurate.",
+              "text": "Automatic handgun with a unique rounded trigger guard. Improved version of the Type 94 with small recoil and very high accuracy."
+            }
           },
           {
             "cells": [
@@ -386,8 +439,10 @@
               "61 / 60",
               "68 / 67"
             ],
-            "detail_menu": "Mid-sized machinegun with unmatched balance.",
-            "detail": "The most perfectly balanced of all 9 mm portable machineguns. Extremely reliable with a low malfunction rate."
+            "description": {
+              "menu": "Mid-sized machinegun with unmatched balance.",
+              "text": "The most perfectly balanced of all 9 mm portable machineguns. Extremely reliable with a low malfunction rate."
+            }
           },
           {
             "cells": [
@@ -397,8 +452,10 @@
               "70 / 60",
               "77 / 67"
             ],
-            "detail_menu": "New model of popular machinegun. High attack.",
-            "detail": "The machinegun, manufactured by a well-respected gunmaker, is unrivalled in terms of its lightweight design. Very expensive, but well worth the price."
+            "description": {
+              "menu": "New model of popular machinegun. High attack.",
+              "text": "The machinegun, manufactured by a well-respected gunmaker, is unrivalled in terms of its lightweight design. Very expensive, but well worth the price."
+            }
           },
           {
             "cells": [
@@ -408,8 +465,10 @@
               "76 / 76",
               "84 / 84"
             ],
-            "detail_menu": "Shotgun with massive stopping power.",
-            "detail": "Sawed-off, 12 gauge riot gun with unsurpassed stopping power. Its intimidating appearance and powerful report strike fear into enemies."
+            "description": {
+              "menu": "Shotgun with massive stopping power.",
+              "text": "Sawed-off, 12 gauge riot gun with unsurpassed stopping power. Its intimidating appearance and powerful report strike fear into enemies."
+            }
           },
           {
             "cells": [
@@ -419,8 +478,10 @@
               "88 / 88",
               "97 / 97"
             ],
-            "detail_menu": "Prototype with improved firing speed and power.",
-            "detail": "Rapid firing, machinegun prototype. Uses 9 mm Parabellum bullets. Its unique wooden stock can be fixed to the ground as a base. Heavy but incredibly powerful."
+            "description": {
+              "menu": "Prototype with improved firing speed and power.",
+              "text": "Rapid firing, machinegun prototype. Uses 9 mm Parabellum bullets. Its unique wooden stock can be fixed to the ground as a base. Heavy but incredibly powerful."
+            }
           },
           {
             "cells": [
@@ -430,8 +491,10 @@
               "98 / 94",
               "108 / 103"
             ],
-            "detail_menu": "Rifle well-known for its excellent performance.",
-            "detail": "Many brave warriors owe their survival to this weapon. It excels both in firepower and special attack. Its previous owner's names are inscribed on its stock."
+            "description": {
+              "menu": "Rifle well-known for its excellent performance.",
+              "text": "Many brave warriors owe their survival to this weapon. It excels both in firepower and special attack. Its previous owner's names are inscribed on its stock."
+            }
           }
         ]
       },
@@ -453,8 +516,10 @@
               "7 / 9",
               "10 / 13"
             ],
-            "detail_menu": "Well-preserved antique sword with engraved blade.",
-            "detail": "This sword has been stained with the blood of many swordsmen. Its blade is a unique combination of flexibility and durability. It can cause Instant Death."
+            "description": {
+              "menu": "Well-preserved antique sword with engraved blade.",
+              "text": "This sword has been stained with the blood of many swordsmen. Its blade is a unique combination of flexibility and durability. It can cause Instant Death."
+            }
           },
           {
             "cells": [
@@ -464,8 +529,10 @@
               "21 / 7",
               "26 / 12"
             ],
-            "detail_menu": "Thrusting sword favored by nobles for jousting.",
-            "detail": "A long sword favored by nobles for jousting. Its narrow tip was made for piercing armor. Somewhat heavy to be carried, it is a weapon to be feared in battle."
+            "description": {
+              "menu": "Thrusting sword favored by nobles for jousting.",
+              "text": "A long sword favored by nobles for jousting. Its narrow tip was made for piercing armor. Somewhat heavy to be carried, it is a weapon to be feared in battle."
+            }
           },
           {
             "cells": [
@@ -475,9 +542,11 @@
               "55 / 33",
               "62 / 39"
             ],
-            "detail_menu": "Holy silver sword with special attack power.",
-            "detail": "Crescent shaped blade forged from blessed silver. Shorter than other words, but its appearance has a tendency to make enemies falter.",
-            "detail_title": "Silver Crescent Sword"
+            "description": {
+              "menu": "Holy silver sword with special attack power.",
+              "title": "Silver Crescent Sword",
+              "text": "Crescent shaped blade forged from blessed silver. Shorter than other words, but its appearance has a tendency to make enemies falter."
+            }
           },
           {
             "cells": [
@@ -487,9 +556,11 @@
               "64 / 27",
               "72 / 33"
             ],
-            "detail_menu": "Enchanted sword. Turns wielder into a killer.",
-            "detail": "Sword formerly owned by the cursed knight, Brom. Causes wielder to transform into a butcher. Its blade is said to main and give off light in combat. NOTE As far as I know, you cannot obtain this sword anywhere in-game.",
-            "detail_title": "Sword of the Berserker"
+            "description": {
+              "menu": "Enchanted sword. Turns wielder into a killer.",
+              "title": "Sword of the Berserker",
+              "text": "Sword formerly owned by the cursed knight, Brom. Causes wielder to transform into a butcher. Its blade is said to main and give off light in combat. NOTE As far as I know, you cannot obtain this sword anywhere in-game."
+            }
           },
           {
             "cells": [
@@ -499,9 +570,11 @@
               "73 / 40",
               "82 / 47"
             ],
-            "detail_menu": "Enormous executioner's sword used for beheading.",
-            "detail": "Massive sword used for beheading. Its blade is so sharp that it could easily slice a horse in two. Enormous strength is needed to wield it in battle.",
-            "detail_title": "Executioner's Sword"
+            "description": {
+              "menu": "Enormous executioner's sword used for beheading.",
+              "title": "Executioner's Sword",
+              "text": "Massive sword used for beheading. Its blade is so sharp that it could easily slice a horse in two. Enormous strength is needed to wield it in battle."
+            }
           },
           {
             "cells": [
@@ -511,8 +584,10 @@
               "-11 / 51",
               "-9 / 59"
             ],
-            "detail_menu": "Razor-like blade gives off a ghostly essence.",
-            "detail": "Cursed after shedding the blood of countless witches, this razor-like blade gives off a ghostly essence and can cause Instant Death."
+            "description": {
+              "menu": "Razor-like blade gives off a ghostly essence.",
+              "text": "Cursed after shedding the blood of countless witches, this razor-like blade gives off a ghostly essence and can cause Instant Death."
+            }
           },
           {
             "cells": [
@@ -522,9 +597,11 @@
               "75 / 57",
               "84 / 65"
             ],
-            "detail_menu": "Spirit blade used by the Darkness Clan.",
-            "detail": "Passed down for hundreds of years among the Darkness Clan, it carries a power so great that no other can hold it. Its power is truly incredible.",
-            "detail_title": "Vampire-blade, Blodauth"
+            "description": {
+              "menu": "Spirit blade used by the Darkness Clan.",
+              "title": "Vampire-blade, Blodauth",
+              "text": "Passed down for hundreds of years among the Darkness Clan, it carries a power so great that no other can hold it. Its power is truly incredible."
+            }
           },
           {
             "cells": [
@@ -534,9 +611,11 @@
               "81 / 66",
               "91 / 75"
             ],
-            "detail_menu": "Demonic sword and family heirloom.",
-            "detail": "Legendary Demon Sword that can only be wielded by the highest ranking member of the Darkness Clan. It is rumored to have the power to even slay the Undead.",
-            "detail_title": "Demon Sword, Tyrving"
+            "description": {
+              "menu": "Demonic sword and family heirloom.",
+              "title": "Demon Sword, Tyrving",
+              "text": "Legendary Demon Sword that can only be wielded by the highest ranking member of the Darkness Clan. It is rumored to have the power to even slay the Undead."
+            }
           }
         ]
       },
@@ -558,8 +637,10 @@
               "12 / 14",
               "19 / 21"
             ],
-            "detail_menu": "Hurls steel ball bearings but with poor accuracy.",
-            "detail": "Powerful slingshot which hurls steel balls with great force. Somewhat inaccurate, it requires much training before it becomes truly effective."
+            "description": {
+              "menu": "Hurls steel ball bearings but with poor accuracy.",
+              "text": "Powerful slingshot which hurls steel balls with great force. Somewhat inaccurate, it requires much training before it becomes truly effective."
+            }
           },
           {
             "cells": [
@@ -569,8 +650,10 @@
               "17 / 14",
               "24 / 21"
             ],
-            "detail_menu": "Wooden slingshot. High attack power.",
-            "detail": "Make from oak wood, it hurls metal balls with incredible force. Also causes Poison."
+            "description": {
+              "menu": "Wooden slingshot. High attack power.",
+              "text": "Make from oak wood, it hurls metal balls with incredible force. Also causes Poison."
+            }
           },
           {
             "cells": [
@@ -580,8 +663,10 @@
               "17 / 23",
               "24 / 31"
             ],
-            "detail_menu": "Made from laurel wood and imbued with spirit power.",
-            "detail": "Made from the wood of an ancient, holy laurel tree, it has the power to cause Silence. It doesn't look like much, but is a very powerful weapon in battle."
+            "description": {
+              "menu": "Made from laurel wood and imbued with spirit power.",
+              "text": "Made from the wood of an ancient, holy laurel tree, it has the power to cause Silence. It doesn't look like much, but is a very powerful weapon in battle."
+            }
           },
           {
             "cells": [
@@ -591,8 +676,10 @@
               "22 / 32",
               "29 / 40"
             ],
-            "detail_menu": "Slingshot favored by hunters. High attack power.",
-            "detail": "Due to its powerful pull, it requires great hand strength and causes tremendous damage even against enemies with strong defense. May cause Paralysis."
+            "description": {
+              "menu": "Slingshot favored by hunters. High attack power.",
+              "text": "Due to its powerful pull, it requires great hand strength and causes tremendous damage even against enemies with strong defense. May cause Paralysis."
+            }
           },
           {
             "cells": [
@@ -602,9 +689,11 @@
               "32 / 32",
               "40 / 40"
             ],
-            "detail_menu": "Wickedly enchanted weapon. Possessed.",
-            "detail": "A slingshot was used to create this twisted weapon. It causes great damage and even Petrification. It contains the tortured soul of a small child.",
-            "detail_title": "Improved Slingshot"
+            "description": {
+              "menu": "Wickedly enchanted weapon. Possessed.",
+              "title": "Improved Slingshot",
+              "text": "A slingshot was used to create this twisted weapon. It causes great damage and even Petrification. It contains the tortured soul of a small child."
+            }
           },
           {
             "cells": [
@@ -614,9 +703,11 @@
               "30 / 32",
               "38 / 40"
             ],
-            "detail_menu": "Indestructible, high performance slingshot.",
-            "detail": "This super high alloy slingshot is as unique as it is powerful. Superbly engraved on it is the slogan \"Sic Semper Tyrannis\".",
-            "detail_title": "High Allow Slingshot"
+            "description": {
+              "menu": "Indestructible, high performance slingshot.",
+              "title": "High Allow Slingshot",
+              "text": "This super high alloy slingshot is as unique as it is powerful. Superbly engraved on it is the slogan \"Sic Semper Tyrannis\"."
+            }
           },
           {
             "cells": [
@@ -626,8 +717,10 @@
               "41 / 38",
               "50 / 47"
             ],
-            "detail_menu": "Invented by the greatest archer, William Tell.",
-            "detail": "Slingshot said to have been invented by the archer, William Tell, in his later years. One of only a few in the world, it is unsurpassed in accuracy and power."
+            "description": {
+              "menu": "Invented by the greatest archer, William Tell.",
+              "text": "Slingshot said to have been invented by the archer, William Tell, in his later years. One of only a few in the world, it is unsurpassed in accuracy and power."
+            }
           },
           {
             "cells": [
@@ -637,8 +730,10 @@
               "52 / 47",
               "62 / 57"
             ],
-            "detail_menu": "New weapon invented by a phony alchemist. Very high performance.",
-            "detail": "A weapon invented by an alchemist called Skin of Teeth. It's shape and power are very unique. It strikes fear into enemies."
+            "description": {
+              "menu": "New weapon invented by a phony alchemist. Very high performance.",
+              "text": "A weapon invented by an alchemist called Skin of Teeth. It's shape and power are very unique. It strikes fear into enemies."
+            }
           }
         ]
       }

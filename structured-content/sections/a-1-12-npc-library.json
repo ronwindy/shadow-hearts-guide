@@ -1,0 +1,384 @@
+{
+  "guide": {
+    "id": "a-1-12",
+    "code": "[A-1-12]",
+    "title": "NPC Library",
+    "type": "reference",
+    "category": "Appendices",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "a-1-11",
+        "code": "[A-1-11]",
+        "title": "Pedometer Rewards",
+        "file": "sections/a-1-11-pedometer-rewards.json"
+      },
+      "next": {
+        "id": "a-1-13",
+        "code": "[A-1-13]",
+        "title": "Monster Library (Bestiary)",
+        "file": "sections/a-1-13-monster-library-bestiary.json"
+      }
+    },
+    "enemies": [],
+    "bosses": [],
+    "reference_tables": [
+      {
+        "intro": "Listed here are all of the important NPC's in the game that show up in your library, in order of their entries. *** THIS SECTION CONTAINS SPOILERS. READ AT YOUR OWN RISK. ***",
+        "columns": [
+          "No.",
+          "Name",
+          "Class"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "01-A",
+              "Roger Bacon",
+              "Dark"
+            ],
+            "description": {
+              "text": "A British warlock who uses powerful magic. He is calm, collected, and calls himself Roger Bacon. If that is true, he is the legendary alchemist, but..."
+            }
+          },
+          {
+            "cells": [
+              "01-B",
+              "Albert Simon",
+              "Dark"
+            ],
+            "description": {
+              "text": "He calls himself by his master's name, the legendary alchemist Roger Bacon, and attempts to bring new order to this world. He has the knowledge to do so."
+            }
+          },
+          {
+            "cells": [
+              "02",
+              "Fox Face",
+              "Dark"
+            ],
+            "description": {
+              "text": "A mysterious man who steps out of the world of nightmare into the real world. He appears when the Malice Meter peaks. He wears the coat of the Japanese Army."
+            }
+          },
+          {
+            "cells": [
+              "03",
+              "Wanderer Meiyuan",
+              "Light"
+            ],
+            "description": {
+              "text": "An expert acupuncturist. He raises weapon proficiency. Strange, but he is the master of this field. He likes good-looking men."
+            }
+          },
+          {
+            "cells": [
+              "04",
+              "Lt. Col. Yoshiko Kawashima",
+              "Wind"
+            ],
+            "description": {
+              "text": "Called a star and the hero of the continent, She will do anything to achieve her goal. An expert marksman."
+            }
+          },
+          {
+            "cells": [
+              "05",
+              "Dehuai",
+              "Fire"
+            ],
+            "description": {
+              "text": "An Adept who lives in Kuihai Tower and protects Shanghai from external attacks. He plans on ruling and turning Shanghai into a city of demons."
+            }
+          },
+          {
+            "cells": [
+              "06",
+              "Puppy",
+              "Fire"
+            ],
+            "description": {
+              "text": "A stray dog in Fengtian. Friendly and looks very smart. A mixed breed. He follows the main characters around, which is cute but somehow peculiar."
+            }
+          },
+          {
+            "cells": [
+              "07",
+              "Anne",
+              "Light"
+            ],
+            "description": {
+              "text": "The main character's mother. A beautiful Russian woman. Many details of her life remain a mystery. Dehuai's demon took her life before her son's eyes."
+            }
+          },
+          {
+            "cells": [
+              "08",
+              "Young Yuri",
+              "Dark"
+            ],
+            "description": {
+              "text": "The main character as a young boy. He lived peacefully with his Russian mother and Japanese father, but one day, his body began to change in abnormal ways..."
+            }
+          },
+          {
+            "cells": [
+              "09",
+              "Colonel Ben Hyuga",
+              "Dark"
+            ],
+            "description": {
+              "text": "A Japanese colonel who disappeared during a secret mission on the continent in 1900. Rumored to have special powers."
+            }
+          },
+          {
+            "cells": [
+              "10",
+              "Sea Mother",
+              "Water"
+            ],
+            "description": {
+              "text": "She performs rites to ward off evil in a small fishing village in Dalian. She tries to protect the village people from a young girl's curse. She used to be a beautiful woman."
+            }
+          },
+          {
+            "cells": [
+              "11",
+              "Li Li",
+              "Dark"
+            ],
+            "description": {
+              "text": "A girl from Dalian who lost her father in a tragic accident and was forced to lead a cursed life. She took her own life out of scorn for the village and the ocean god."
+            }
+          },
+          {
+            "cells": [
+              "12",
+              "Sergeant Seiji Kato",
+              "Earth"
+            ],
+            "description": {
+              "text": "An unlucky geographer who joins Kawashima's secret mission. He takes great interest in the world of dark magic during the mission."
+            }
+          },
+          {
+            "cells": [
+              "13",
+              "Wugui of Kowloon",
+              "Dark"
+            ],
+            "description": {
+              "text": "Former employee of Zhen's bar. He gained demonic powers by joining forces with Dehuai. He now uses that power to his own end by committing crimes all over the continent."
+            }
+          },
+          {
+            "cells": [
+              "14",
+              "Zhongyun Zhen",
+              "Wind"
+            ],
+            "description": {
+              "text": "A hero who fought against Dehuai 15 years ago in Shanghai. He still remembers is old colleague, Colonel Hyuga. His health has declined since he gave up his bar."
+            }
+          },
+          {
+            "cells": [
+              "15",
+              "Lieutenant Ken Suketani",
+              "Light"
+            ],
+            "description": {
+              "text": "A young lieutenant who admires Kawashima. He doesn't look like a spy, but he is in charge of investigating Dehuai. A straight-arrow soldier."
+            }
+          },
+          {
+            "cells": [
+              "16",
+              "Qiuhua",
+              "Light"
+            ],
+            "description": {
+              "text": "Zhen's daughter and a master of the Chinese fiddle. Her father's past conflict with Dehuai haunts her to this day. She met Colonel Hyuga and the quack oracle when she was young."
+            }
+          },
+          {
+            "cells": [
+              "17",
+              "Master Xiaofang",
+              "Earth"
+            ],
+            "description": {
+              "text": "A cat transformed into human with Xifa's Taoist Magic. He is learning language and customs under Xifa. His street-wise personality hints at his stray-cat past."
+            }
+          },
+          {
+            "cells": [
+              "18",
+              "Master Xifa",
+              "Water"
+            ],
+            "description": {
+              "text": "The grand master of Taoist Arts said to travel on clouds and walk the depth of the ocean. He has gone into hiding in an underground temple, but the story has not been confirmed."
+            }
+          },
+          {
+            "cells": [
+              "19",
+              "Major Kaoru Kutsugi",
+              "Wind"
+            ],
+            "description": {
+              "text": "An elite soldier from the army's investigative division. He accuses Kawashima and Kato of revolting against the army and pursues them."
+            }
+          },
+          {
+            "cells": [
+              "20",
+              "Terry",
+              "Earth"
+            ],
+            "description": {
+              "text": "Item shop owner of Bistritz. He visits Prague to hire two renowned exorcists to run the demons out of his village. He is a loving husband and father."
+            }
+          },
+          {
+            "cells": [
+              "21",
+              "Michelle",
+              "Water"
+            ],
+            "description": {
+              "text": "Terry's beautiful and loving wife. She has spent her entire life in Bistritz, and never been outside."
+            }
+          },
+          {
+            "cells": [
+              "22",
+              "Nina",
+              "Wind"
+            ],
+            "description": {
+              "text": "Terry and Michelle's daughter. An honest young girl who tries to accept her father's death and protect her mother. She punches out men who attempt to date her mother."
+            }
+          },
+          {
+            "cells": [
+              "23",
+              "Kevin",
+              "Fire"
+            ],
+            "description": {
+              "text": "He became the mayor of Bistritz with money. He performs strange experiments, and stalks Terry's wife, Michelle."
+            }
+          },
+          {
+            "cells": [
+              "24",
+              "Arcane Olga",
+              "Dark"
+            ],
+            "description": {
+              "text": "An old woman with strong mystical strength. Her power impressed the quack oracle. Involved in many mysterious incidents all over Europe."
+            }
+          },
+          {
+            "cells": [
+              "25",
+              "Father Doyle",
+              "Wind"
+            ],
+            "description": {
+              "text": "A priest in Rouen who knows the truth behind Father Elliot's murder."
+            }
+          },
+          {
+            "cells": [
+              "26",
+              "Joshua",
+              "Water"
+            ],
+            "description": {
+              "text": "A member of the London Rats. An expert pickpocket and a fast runner. He looks up to his leader and hopes to grow up like him."
+            }
+          },
+          {
+            "cells": [
+              "27",
+              "Chris",
+              "Earth"
+            ],
+            "description": {
+              "text": "An orphan girl who lives on the streets of London. She refuses the help of adults and chooses to live with her pack. She has romantic feelings for the leader."
+            }
+          },
+          {
+            "cells": [
+              "28",
+              "Sharon",
+              "Light"
+            ],
+            "description": {
+              "text": "Joshua's \"girlfriend\". The youngest member of the London Rats. She remains optimistic even after her parents abandoned her. She wants Joshua to marry her."
+            }
+          },
+          {
+            "cells": [
+              "29",
+              "Jack",
+              "Water"
+            ],
+            "description": {
+              "text": "A young doctor with multiple personalities and an Oedipus complex. He has been experimenting on animals since his mother's death. He is also a suspect in recent murders."
+            }
+          },
+          {
+            "cells": [
+              "30",
+              "Viscount Rausan",
+              "Fire"
+            ],
+            "description": {
+              "text": "A Friar Knight inquisitor who belongs to the Order of the Temple Knights. He is called the Last Great General, and loves to torture people."
+            }
+          },
+          {
+            "cells": [
+              "31",
+              "Koudelka Iasant",
+              "Fire"
+            ],
+            "description": {
+              "text": "A mysterious woman who knows the truth behind the string of incidents. She disappeared after the Nemeton Monastery went up in flames. She has strong mystical strength."
+            }
+          },
+          {
+            "cells": [
+              "32",
+              "Father Elliot",
+              "Light"
+            ],
+            "description": {
+              "text": "A priest renowned for his exorcising skills. He died in an alley of Rouen. The heroine's father, and a man who could have shed some light on the string of incidents."
+            }
+          },
+          {
+            "cells": [
+              "33",
+              "Roger Bacon",
+              "Earth"
+            ],
+            "description": {
+              "text": "A legendary alchemist who became immortal. He leaves traces of himself wherever he goes, but he has not been seen. If he is indeed alive, then he is more than 400 years old."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

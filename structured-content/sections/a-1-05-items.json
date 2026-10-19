@@ -28,7 +28,6 @@
     },
     "enemies": [],
     "bosses": [],
-    "shops": [],
     "reference_tables": [
       {
         "intro": "Listed here are all of the Items in the game, in the order that the game lists them.",
@@ -44,7 +43,9 @@
               "Restores 75 HP",
               "Yes"
             ],
-            "detail": "Long used for its medicinal properties, this herb blooms only once each year. Those lucky enough to see the small blossom are said to enjoy good health for the year."
+            "description": {
+              "text": "Long used for its medicinal properties, this herb blooms only once each year. Those lucky enough to see the small blossom are said to enjoy good health for the year."
+            }
           },
           {
             "cells": [
@@ -52,7 +53,9 @@
               "Restores 150 HP",
               "Yes"
             ],
-            "detail": "The seeds of the medicinal herb Thera Leaf. Extremely nourishing, they greatly restore physical strength when ingested. No taste. Easily portable, they are valued highly by adventurers."
+            "description": {
+              "text": "The seeds of the medicinal herb Thera Leaf. Extremely nourishing, they greatly restore physical strength when ingested. No taste. Easily portable, they are valued highly by adventurers."
+            }
           },
           {
             "cells": [
@@ -60,7 +63,9 @@
               "Restores 300 HP",
               "Yes"
             ],
-            "detail": "Gathered from the Thera Leaf plant 5 years after the blossoms appear. Each plant has only one precious root. It dramatically restores physical strength."
+            "description": {
+              "text": "Gathered from the Thera Leaf plant 5 years after the blossoms appear. Each plant has only one precious root. It dramatically restores physical strength."
+            }
           },
           {
             "cells": [
@@ -68,7 +73,9 @@
               "Fully restores HP",
               "Yes"
             ],
-            "detail": "Extract of the Thera Root further refined and purified. It has excellent restorative properties for physical strength. Difficult to make and very scarce."
+            "description": {
+              "text": "Extract of the Thera Root further refined and purified. It has excellent restorative properties for physical strength. Difficult to make and very scarce."
+            }
           },
           {
             "cells": [
@@ -76,7 +83,9 @@
               "Restores 50 MP",
               "Yes"
             ],
-            "detail": "A mystical, scarlet herb that grows in secret places. When taken by those with psychic or magic abilities, consumed mystical strength is again restored."
+            "description": {
+              "text": "A mystical, scarlet herb that grows in secret places. When taken by those with psychic or magic abilities, consumed mystical strength is again restored."
+            }
           },
           {
             "cells": [
@@ -84,7 +93,9 @@
               "Restores 100 MP",
               "Yes"
             ],
-            "detail": "The seed of the mystical herb Mana Leaf, born only once every 2 years and having a hard shell. Dried under moonlight. Restores lost mystical strength."
+            "description": {
+              "text": "The seed of the mystical herb Mana Leaf, born only once every 2 years and having a hard shell. Dried under moonlight. Restores lost mystical strength."
+            }
           },
           {
             "cells": [
@@ -92,7 +103,9 @@
               "Restores 200 MP",
               "Yes"
             ],
-            "detail": "Main root of the mystical herb Mana Leaf. Taken from the mature plant and exposed to the light of 20 full-moon nights. Powerful restorer of mystical strength."
+            "description": {
+              "text": "Main root of the mystical herb Mana Leaf. Taken from the mature plant and exposed to the light of 20 full-moon nights. Powerful restorer of mystical strength."
+            }
           },
           {
             "cells": [
@@ -100,7 +113,9 @@
               "Fully restores MP",
               "Yes"
             ],
-            "detail": "A secret medicine made by putting the extract of Mana Roots under a magical process. Gives off a perfume and a blue glow. It fully restores mystical strength."
+            "description": {
+              "text": "A secret medicine made by putting the extract of Mana Roots under a magical process. Gives off a perfume and a blue glow. It fully restores mystical strength."
+            }
           },
           {
             "cells": [
@@ -108,7 +123,9 @@
               "Restores 3 SP",
               "—"
             ],
-            "detail": "A magical herb used by ancient magic users such as shamans when practicing their craft. It changes the secretions of the brain, influencing one's state of mind."
+            "description": {
+              "text": "A magical herb used by ancient magic users such as shamans when practicing their craft. It changes the secretions of the brain, influencing one's state of mind."
+            }
           },
           {
             "cells": [
@@ -116,7 +133,9 @@
               "Restores 6 SP",
               "—"
             ],
-            "detail": "The seeds of the magical Pure Leaf, soaked in a special medicinal liquid for 15 years. They have a powerful tranquilizing effect."
+            "description": {
+              "text": "The seeds of the magical Pure Leaf, soaked in a special medicinal liquid for 15 years. They have a powerful tranquilizing effect."
+            }
           },
           {
             "cells": [
@@ -124,7 +143,9 @@
               "Restores 10 SP",
               "—"
             ],
-            "detail": "The root of the magical Pure Leaf. Made from the most poisonous part, but made safe to ingest. Makes one fearless of death or the enemy in battle."
+            "description": {
+              "text": "The root of the magical Pure Leaf. Made from the most poisonous part, but made safe to ingest. Makes one fearless of death or the enemy in battle."
+            }
           },
           {
             "cells": [
@@ -132,7 +153,9 @@
               "Fully restores SP",
               "—"
             ],
-            "detail": "Concentrated, distilled liquid of Pure Root. It contains fragments of spirit stone. When ingested, one feels a great sense of exhilaration. Warriors have long used it before taking on mighty enemies."
+            "description": {
+              "text": "Concentrated, distilled liquid of Pure Root. It contains fragments of spirit stone. When ingested, one feels a great sense of exhilaration. Warriors have long used it before taking on mighty enemies."
+            }
           },
           {
             "cells": [
@@ -140,7 +163,9 @@
               "Restores Unconscious person's HP 30%",
               "—"
             ],
-            "detail": "A cloth talisman embroidered in silk with pictures describing the Laws of Space. It can return the bearer from Unconsciousness and restore a small amount of strength."
+            "description": {
+              "text": "A cloth talisman embroidered in silk with pictures describing the Laws of Space. It can return the bearer from Unconsciousness and restore a small amount of strength."
+            }
           },
           {
             "cells": [
@@ -148,8 +173,10 @@
               "Restores Unconscious person's HP 50%",
               "—"
             ],
-            "detail": "A papyrus talisman with a picture of the holy man Hylas on it. Infused with the fragrance of incense, it awakens the Unconscious traveler and restores his strength.",
-            "detail_title": "Talisman of Mercy"
+            "description": {
+              "title": "Talisman of Mercy",
+              "text": "A papyrus talisman with a picture of the holy man Hylas on it. Infused with the fragrance of incense, it awakens the Unconscious traveler and restores his strength."
+            }
           },
           {
             "cells": [
@@ -157,8 +184,10 @@
               "Restores Unconscious person's HP 30% and restores 50 MP.",
               "—"
             ],
-            "detail": "A talisman bearing a portrait of the theologian and philosopher Somel. Awakens one from Unconsciousness and restores physical and mystical strength.",
-            "detail_title": "Talisman of Wisdom"
+            "description": {
+              "title": "Talisman of Wisdom",
+              "text": "A talisman bearing a portrait of the theologian and philosopher Somel. Awakens one from Unconsciousness and restores physical and mystical strength."
+            }
           },
           {
             "cells": [
@@ -166,8 +195,10 @@
               "Restores Unconscious person's HP 30% and restores 3 SP.",
               "—"
             ],
-            "detail": "Goatskin talisman cured in holy water. Upon it, painted in mineral dyes, is a crudely beautiful painting of the sky through a window. Returns bearer from Unconsciousness and restores physical and mental strength.",
-            "detail_title": "Talisman of Purity"
+            "description": {
+              "title": "Talisman of Purity",
+              "text": "Goatskin talisman cured in holy water. Upon it, painted in mineral dyes, is a crudely beautiful painting of the sky through a window. Returns bearer from Unconsciousness and restores physical and mental strength."
+            }
           },
           {
             "cells": [
@@ -175,8 +206,10 @@
               "Fully restores Unconscious person's HP, MP, and SP",
               "—"
             ],
-            "detail": "A talisman bearing the buried shrine crest, made from some unknown material. Fully restores physical, mystical and mental strength and cures Unconsciousness.",
-            "detail_title": "Talisman of Power"
+            "description": {
+              "title": "Talisman of Power",
+              "text": "A talisman bearing the buried shrine crest, made from some unknown material. Fully restores physical, mystical and mental strength and cures Unconsciousness."
+            }
           },
           {
             "cells": [
@@ -184,7 +217,9 @@
               "Cures Poison",
               "—"
             ],
-            "detail": "The number of facets on this gem represent a holy number. This deep blue gem is cut from an ore excavated from undersea ruins. With its mysterious detoxifying properties, it is very useful to adventurers traveling unexplored regions."
+            "description": {
+              "text": "The number of facets on this gem represent a holy number. This deep blue gem is cut from an ore excavated from undersea ruins. With its mysterious detoxifying properties, it is very useful to adventurers traveling unexplored regions."
+            }
           },
           {
             "cells": [
@@ -192,7 +227,9 @@
               "Cures Confusion",
               "—"
             ],
-            "detail": "A small statue of the head of a woman, it cures Confusion. It is modeled after the figure of his mother a martyred sculptor carved into the stone of his prison."
+            "description": {
+              "text": "A small statue of the head of a woman, it cures Confusion. It is modeled after the figure of his mother a martyred sculptor carved into the stone of his prison."
+            }
           },
           {
             "cells": [
@@ -200,7 +237,9 @@
               "Cures Paralysis",
               "—"
             ],
-            "detail": "A Shinto artifact made from light blue metal that has undergone a mystical process, it cures Paralysis. Although it is metal, it is extremely flexible and light, hence the name \"Angel's Feather\"."
+            "description": {
+              "text": "A Shinto artifact made from light blue metal that has undergone a mystical process, it cures Paralysis. Although it is metal, it is extremely flexible and light, hence the name \"Angel's Feather\"."
+            }
           },
           {
             "cells": [
@@ -208,7 +247,9 @@
               "Cures Silence",
               "—"
             ],
-            "detail": "A small relief carving of a girl with wings, it cures Silence. In the Middle Ages, reproductions were all the rage among noblewomen."
+            "description": {
+              "text": "A small relief carving of a girl with wings, it cures Silence. In the Middle Ages, reproductions were all the rage among noblewomen."
+            }
           },
           {
             "cells": [
@@ -216,7 +257,9 @@
               "Cures Petrification",
               "—"
             ],
-            "detail": "Thought to be a fossil from some mysterious ancient creature. Effective in curing Petrification, some mountain tribes even now wear it as a charm from infancy."
+            "description": {
+              "text": "Thought to be a fossil from some mysterious ancient creature. Effective in curing Petrification, some mountain tribes even now wear it as a charm from infancy."
+            }
           },
           {
             "cells": [
@@ -224,7 +267,9 @@
               "Cancels out all Judgment Ring abnormalities",
               "—"
             ],
-            "detail": "A tail feather from the sacred phantom bird. When used, it emits a blue flame and cancels out all effects on the Judgment Ring."
+            "description": {
+              "text": "A tail feather from the sacred phantom bird. When used, it emits a blue flame and cancels out all effects on the Judgment Ring."
+            }
           },
           {
             "cells": [
@@ -232,7 +277,9 @@
               "Cures all Status abnormalities",
               "—"
             ],
-            "detail": "A rare woodblock engraved with an image of the mythic nymph Daphne. Cures all Status abnormalities--Poison, Paralysis, Petrification, Confusion and Silence."
+            "description": {
+              "text": "A rare woodblock engraved with an image of the mythic nymph Daphne. Cures all Status abnormalities--Poison, Paralysis, Petrification, Confusion and Silence."
+            }
           },
           {
             "cells": [
@@ -240,8 +287,10 @@
               "Restores 75 HP and 50 MP",
               "Yes"
             ],
-            "detail": "Tea prepared in the manner originated by the healer Shuju. Brewed from sacred leaves, it restores physical and mystical strength when imbibed with a pure heart.",
-            "detail_title": "Tea of the Healer"
+            "description": {
+              "title": "Tea of the Healer",
+              "text": "Tea prepared in the manner originated by the healer Shuju. Brewed from sacred leaves, it restores physical and mystical strength when imbibed with a pure heart."
+            }
           },
           {
             "cells": [
@@ -249,7 +298,9 @@
               "Restores 150 HP and 100 MP",
               "Yes"
             ],
-            "detail": "A secret medicine passed down through the generations of the conquering Sou family, it dramatically restores the physical and mystical strength of soldiers."
+            "description": {
+              "text": "A secret medicine passed down through the generations of the conquering Sou family, it dramatically restores the physical and mystical strength of soldiers."
+            }
           },
           {
             "cells": [
@@ -257,8 +308,10 @@
               "Restores 300 HP and 200 MP",
               "Yes"
             ],
-            "detail": "The secret medicine prepared by Saint Ignatius. Restores physical and mystical strength. It gives off a red glow under the light of the moon.",
-            "detail_title": "Tea of the Holy One"
+            "description": {
+              "title": "Tea of the Holy One",
+              "text": "The secret medicine prepared by Saint Ignatius. Restores physical and mystical strength. It gives off a red glow under the light of the moon."
+            }
           },
           {
             "cells": [
@@ -266,7 +319,9 @@
               "Fully restores HP and MP",
               "Yes"
             ],
-            "detail": "Musky fruit of the mystical tree whose top reaches up into the heaves and whose roots descend into Hell. It restores physical and mystical strength completely."
+            "description": {
+              "text": "Musky fruit of the mystical tree whose top reaches up into the heaves and whose roots descend into Hell. It restores physical and mystical strength completely."
+            }
           },
           {
             "cells": [
@@ -274,7 +329,9 @@
               "Restores 50 MP and 3 SP",
               "Yes"
             ],
-            "detail": "A brew of secret black magic ingredients. Every mouthful brings an ever- changing series of flavors. It restores mystical and mental strength."
+            "description": {
+              "text": "A brew of secret black magic ingredients. Every mouthful brings an ever- changing series of flavors. It restores mystical and mental strength."
+            }
           },
           {
             "cells": [
@@ -282,7 +339,9 @@
               "Restores 100 MP and 6 SP",
               "Yes"
             ],
-            "detail": "Wine made by the miracle-worker priest Rasfarus by adding his own and a few drops of a woman's blood to muddy water. Restores mystical and mental strength."
+            "description": {
+              "text": "Wine made by the miracle-worker priest Rasfarus by adding his own and a few drops of a woman's blood to muddy water. Restores mystical and mental strength."
+            }
           },
           {
             "cells": [
@@ -290,8 +349,10 @@
               "Restores 200 MP and 10 SP",
               "Yes"
             ],
-            "detail": "Distilled water the alchemist Gala, who lives to be 400 years old, accidentally discovered trying to produce platinum. Restores mystical and mental strength.",
-            "detail_title": "Alchemist's Water"
+            "description": {
+              "title": "Alchemist's Water",
+              "text": "Distilled water the alchemist Gala, who lives to be 400 years old, accidentally discovered trying to produce platinum. Restores mystical and mental strength."
+            }
           },
           {
             "cells": [
@@ -299,7 +360,9 @@
               "Fully restores MP and SP",
               "Yes"
             ],
-            "detail": "A religious artifact of elaborate workmanship, studded with gem beads. Many crude replicas exist, but the original fully restores mystical and mental strength."
+            "description": {
+              "text": "A religious artifact of elaborate workmanship, studded with gem beads. Many crude replicas exist, but the original fully restores mystical and mental strength."
+            }
           },
           {
             "cells": [
@@ -307,7 +370,9 @@
               "User's hit area doubles",
               "—"
             ],
-            "detail": "Long used for hunting by mountain tribes with mystic powers. It doubles the width of the Judgment Ring hit area, although only for the user."
+            "description": {
+              "text": "Long used for hunting by mountain tribes with mystic powers. It doubles the width of the Judgment Ring hit area, although only for the user."
+            }
           },
           {
             "cells": [
@@ -315,7 +380,9 @@
               "User's indicator sweeps half as fast",
               "—"
             ],
-            "detail": "An hourglass filled with granules of silver. Slows the speed of the indicator's sweep around the Judgment Ring by half, but only for the user."
+            "description": {
+              "text": "An hourglass filled with granules of silver. Slows the speed of the indicator's sweep around the Judgment Ring by half, but only for the user."
+            }
           },
           {
             "cells": [
@@ -323,7 +390,9 @@
               "All allies' indicators sweep half as fast",
               "—"
             ],
-            "detail": "An hourglass filled with granules of gold. Slows the speed of the indicator's sweep around the Judgment Ring by half for all allies."
+            "description": {
+              "text": "An hourglass filled with granules of gold. Slows the speed of the indicator's sweep around the Judgment Ring by half for all allies."
+            }
           },
           {
             "cells": [
@@ -331,8 +400,10 @@
               "User's hit area is cut in half, but Attack Power doubles.",
               "—"
             ],
-            "detail": "A spiritual artifact shaped like the beard of the White Tiger, a god of the four directions. User's Attack Power is doubled, but hit area is cut in half.",
-            "detail_title": "Hair of White Tiger"
+            "description": {
+              "title": "Hair of White Tiger",
+              "text": "A spiritual artifact shaped like the beard of the White Tiger, a god of the four directions. User's Attack Power is doubled, but hit area is cut in half."
+            }
           },
           {
             "cells": [
@@ -340,8 +411,10 @@
               "All allies' hit areas are cut in half, but Attack Powers double",
               "—"
             ],
-            "detail": "A spiritual artifact shaped like the horn of the Blue Dragon, a god of the four directions. Allies' Attack Powers are doubled, but hit areas are cut in half.",
-            "detail_title": "Horn of Blue Dragon"
+            "description": {
+              "title": "Horn of Blue Dragon",
+              "text": "A spiritual artifact shaped like the horn of the Blue Dragon, a god of the four directions. Allies' Attack Powers are doubled, but hit areas are cut in half."
+            }
           },
           {
             "cells": [
@@ -349,8 +422,10 @@
               "User's indicator sweeps twice as fast, but Attack Power doubles.",
               "—"
             ],
-            "detail": "A spiritual artifact shaped like the fang of the Black Tortoise, a God of the Four Directions. User's Attack Power is doubled, but Ring sweet speed is also doubled.",
-            "detail_title": "Fang of Black Tortoise"
+            "description": {
+              "title": "Fang of Black Tortoise",
+              "text": "A spiritual artifact shaped like the fang of the Black Tortoise, a God of the Four Directions. User's Attack Power is doubled, but Ring sweet speed is also doubled."
+            }
           },
           {
             "cells": [
@@ -358,8 +433,10 @@
               "All allies' indicators rotate twice as fast; Attack doubles",
               "—"
             ],
-            "detail": "A spiritual artifact shaped like the talon of the Red Phoenix, a god of the four directions. Allies' Attack Powers are doubled, but Ring sweep speeds are also doubled.",
-            "detail_title": "Talon of Red Phoenix"
+            "description": {
+              "title": "Talon of Red Phoenix",
+              "text": "A spiritual artifact shaped like the talon of the Red Phoenix, a god of the four directions. Allies' Attack Powers are doubled, but Ring sweep speeds are also doubled."
+            }
           },
           {
             "cells": [
@@ -367,7 +444,9 @@
               "Makes user's attacks all critical hits",
               "—"
             ],
-            "detail": "A sliver magic tool in the image of the star swallow, said to bring victory in battle. Has the power to make all of the user's attacks critical hits."
+            "description": {
+              "text": "A sliver magic tool in the image of the star swallow, said to bring victory in battle. Has the power to make all of the user's attacks critical hits."
+            }
           },
           {
             "cells": [
@@ -375,7 +454,9 @@
               "Makes all allies' attacks All critical hits",
               "—"
             ],
-            "detail": "A magic tool in the image of the mythical bird, the moon swallow. Has the power to make all of the attacks of all allies critical hits."
+            "description": {
+              "text": "A magic tool in the image of the mythical bird, the moon swallow. Has the power to make all of the attacks of all allies critical hits."
+            }
           },
           {
             "cells": [
@@ -383,7 +464,9 @@
               "User's Hit Area doubles; Indicator sweeps half-speed",
               "—"
             ],
-            "detail": "A scale from the body of the mythical creature, the kirin. It has an effect on the Judgment Ring, doubling the user's hit area and halving sweep speed."
+            "description": {
+              "text": "A scale from the body of the mythical creature, the kirin. It has an effect on the Judgment Ring, doubling the user's hit area and halving sweep speed."
+            }
           },
           {
             "cells": [
@@ -391,7 +474,9 @@
               "Indicator speed becomes irregular; Attack Power triples",
               "—"
             ],
-            "detail": "A paw of the white monkey that inhabits the deep forests of the sacred mountains. It triples the user's Attack Power, but speed of Ring sweep becomes irregular."
+            "description": {
+              "text": "A paw of the white monkey that inhabits the deep forests of the sacred mountains. It triples the user's Attack Power, but speed of Ring sweep becomes irregular."
+            }
           },
           {
             "cells": [
@@ -399,7 +484,9 @@
               "User's hit area increases to 100%",
               "—"
             ],
-            "detail": "This magic tool gives off a mysterious blue light under the new moon. It increases the chance of success to the maximum for all of the user's actions."
+            "description": {
+              "text": "This magic tool gives off a mysterious blue light under the new moon. It increases the chance of success to the maximum for all of the user's actions."
+            }
           },
           {
             "cells": [
@@ -407,7 +494,9 @@
               "Attack Power increases with continued successful actions",
               "—"
             ],
-            "detail": "A tool of the magic army that appears in the myth of the 20 Days War. Attack Power becomes gradually more effective with each continued successful action."
+            "description": {
+              "text": "A tool of the magic army that appears in the myth of the 20 Days War. Attack Power becomes gradually more effective with each continued successful action."
+            }
           },
           {
             "cells": [
@@ -415,7 +504,9 @@
               "1 to 3 allies gain triple strength, misses possible",
               "—"
             ],
-            "detail": "Dice said to be made from the bones of Caesar, it's unclear whether they're lucky or unlucky. A rare item popular with gamblers. Won't work with Key to Success."
+            "description": {
+              "text": "Dice said to be made from the bones of Caesar, it's unclear whether they're lucky or unlucky. A rare item popular with gamblers. Won't work with Key to Success."
+            }
           },
           {
             "cells": [
@@ -423,7 +514,9 @@
               "Max 3 sweeps of indicator with successful action",
               "—"
             ],
-            "detail": "A magical weapon Elroy gave a vassal during the 20 Days War of the Gods. If an action is successful, can get up to 3 sweeps of indicator on Judgment Ring."
+            "description": {
+              "text": "A magical weapon Elroy gave a vassal during the 20 Days War of the Gods. If an action is successful, can get up to 3 sweeps of indicator on Judgment Ring."
+            }
           },
           {
             "cells": [
@@ -431,7 +524,9 @@
               "Max 5 sweeps of indicator with successful action",
               "—"
             ],
-            "detail": "A magical weapon Elroy gave a vassal during the 20 Days War of the Gods. If an action is successful, can get up to 5 sweeps of indicator on Judgment Ring."
+            "description": {
+              "text": "A magical weapon Elroy gave a vassal during the 20 Days War of the Gods. If an action is successful, can get up to 5 sweeps of indicator on Judgment Ring."
+            }
           },
           {
             "cells": [
@@ -439,7 +534,9 @@
               "Max 7 sweeps of indicator with successful action",
               "—"
             ],
-            "detail": "A magical weapon said to be used by Elroy during the 20 Days War of the Gods. If an action is successful, can get up to 7 sweeps of indicator on Judgment Ring."
+            "description": {
+              "text": "A magical weapon said to be used by Elroy during the 20 Days War of the Gods. If an action is successful, can get up to 7 sweeps of indicator on Judgment Ring."
+            }
           },
           {
             "cells": [
@@ -447,7 +544,9 @@
               "Max HP increases 3 to 5 points",
               "Yes"
             ],
-            "detail": "A small object of art found in the tomb of the great adventurer Amlas after his death. It is said to increase the user's maximum physical strength."
+            "description": {
+              "text": "A small object of art found in the tomb of the great adventurer Amlas after his death. It is said to increase the user's maximum physical strength."
+            }
           },
           {
             "cells": [
@@ -455,7 +554,9 @@
               "Max MP increases 3 to 5 points",
               "Yes"
             ],
-            "detail": "A metal sculpture inlaid with a mysterious plant, excavated from the holy ground of the warlocks, the mountain peak Docia. It raises maximum mystical strength."
+            "description": {
+              "text": "A metal sculpture inlaid with a mysterious plant, excavated from the holy ground of the warlocks, the mountain peak Docia. It raises maximum mystical strength."
+            }
           },
           {
             "cells": [
@@ -463,7 +564,9 @@
               "Max SP increases 1 or 2 points",
               "Yes"
             ],
-            "detail": "A carving of a feather of the Red Phoenix, owned by the ancient Indian ruler Muta. It raises the user's maximum mental strength."
+            "description": {
+              "text": "A carving of a feather of the Red Phoenix, owned by the ancient Indian ruler Muta. It raises the user's maximum mental strength."
+            }
           },
           {
             "cells": [
@@ -471,7 +574,9 @@
               "Str increases 1 to 3 points",
               "Yes"
             ],
-            "detail": "A carving in the shape of a lion, made from the bones of the right arm of the legendary fighter Malbellus. Increases the user's strength."
+            "description": {
+              "text": "A carving in the shape of a lion, made from the bones of the right arm of the legendary fighter Malbellus. Increases the user's strength."
+            }
           },
           {
             "cells": [
@@ -479,7 +584,9 @@
               "Vit increases 1 to 3 points",
               "Yes"
             ],
-            "detail": "An object of art, a metal engraving of the mysterious rafflesia flower. When used, stamina and defense against Physical Attack is raised."
+            "description": {
+              "text": "An object of art, a metal engraving of the mysterious rafflesia flower. When used, stamina and defense against Physical Attack is raised."
+            }
           },
           {
             "cells": [
@@ -487,7 +594,9 @@
               "Ag increases 1 to 3 points",
               "Yes"
             ],
-            "detail": "A spiritual artifact depicting Lapros, a mythic bird that flies faster than lightning. Raises reaction speed, improving hit rates and avoidance of enemy attack."
+            "description": {
+              "text": "A spiritual artifact depicting Lapros, a mythic bird that flies faster than lightning. Raises reaction speed, improving hit rates and avoidance of enemy attack."
+            }
           },
           {
             "cells": [
@@ -495,7 +604,9 @@
               "Int increases 1 to 3 points",
               "Yes"
             ],
-            "detail": "A Shinto spiritual artifact depicting the left eye of Cluce, the god of wisdom and magic. It increases the effectiveness of magic and special items."
+            "description": {
+              "text": "A Shinto spiritual artifact depicting the left eye of Cluce, the god of wisdom and magic. It increases the effectiveness of magic and special items."
+            }
           },
           {
             "cells": [
@@ -503,7 +614,9 @@
               "Pow increases 1 to 3 points",
               "Yes"
             ],
-            "detail": "A portrait of the white witch Reska, inlaid with her own hair. It raises defense against magic attack."
+            "description": {
+              "text": "A portrait of the white witch Reska, inlaid with her own hair. It raises defense against magic attack."
+            }
           },
           {
             "cells": [
@@ -511,7 +624,9 @@
               "Luc increases 1 to 3 points",
               "Yes"
             ],
-            "detail": "A spiritual artifact instilled with the mystical strength of the guardian deity of gambling, Morgagius. Raises critical hit rates and avoidance of enemy attack."
+            "description": {
+              "text": "A spiritual artifact instilled with the mystical strength of the guardian deity of gambling, Morgagius. Raises critical hit rates and avoidance of enemy attack."
+            }
           },
           {
             "cells": [
@@ -519,7 +634,9 @@
               "Can draw in lottery",
               "—"
             ],
-            "detail": "Issued by the World Lottery Foundation. Secret members all over the world ask you to participate in lotteries. Get wonderful prizes through luck and skill!"
+            "description": {
+              "text": "Issued by the World Lottery Foundation. Secret members all over the world ask you to participate in lotteries. Get wonderful prizes through luck and skill!"
+            }
           },
           {
             "cells": [
@@ -527,7 +644,9 @@
               "For blowing noses and other wiping",
               "—"
             ],
-            "detail": "A lottery consolation prize. Used mainly for wiping noses. Handy to have in many situations. Contains 8 tissues."
+            "description": {
+              "text": "A lottery consolation prize. Used mainly for wiping noses. Handy to have in many situations. Contains 8 tissues."
+            }
           },
           {
             "cells": [
@@ -535,7 +654,9 @@
               "Restores all allies. Only useable at a Save Point",
               "—"
             ],
-            "detail": "A leather tent used by nomadic tribes. It can be used at a Save Point to fully restore the physical, mystical and mental strength of all allies."
+            "description": {
+              "text": "A leather tent used by nomadic tribes. It can be used at a Save Point to fully restore the physical, mystical and mental strength of all allies."
+            }
           }
         ]
       }

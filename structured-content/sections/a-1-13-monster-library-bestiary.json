@@ -1,0 +1,4221 @@
+{
+  "guide": {
+    "id": "a-1-13",
+    "code": "[A-1-13]",
+    "title": "Monster Library (Bestiary)",
+    "type": "reference",
+    "category": "Appendices",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "a-1-12",
+        "code": "[A-1-12]",
+        "title": "NPC Library",
+        "file": "sections/a-1-12-npc-library.json"
+      },
+      "next": {
+        "id": "a-1-14",
+        "code": "[A-1-14]",
+        "title": "Sub-bosses and Bosses",
+        "file": "sections/a-1-14-sub-bosses-and-bosses.json"
+      }
+    },
+    "enemies": [],
+    "bosses": [],
+    "reference_tables": [
+      {
+        "intro": "Listed below is the entire Monster Library found in-game. Integrated within it is also the complete Bestiary with all of the enemy data, locations, and formations.",
+        "columns": [
+          "No.",
+          "Name",
+          "HP",
+          "Class"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "001",
+              "Wind Shear",
+              "10 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Formed from the putrid vapors of a stagnant pond, its filthy sickle cleaves enemies with a frightening speed. They appear in groups, laughing wickedly. Locations: [1] Train [2] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Wind Shear x2 [1]",
+                      "4",
+                      "40",
+                      "Thera Leaf x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Wind Shear x2 [2]",
+                      "4",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "002",
+              "Vampire Bat",
+              "8 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Mutated flesh-eating bat that lives in the plains of the continent. A group of Vampire Bats can wipe out an entire village. It has crooked fangs and claws. Locations: [1] Plains"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Vampire Bat x2, Wolf",
+                      "19",
+                      "125",
+                      "Mana Leaf x2, Thera Leaf"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "003",
+              "Venomous Spider",
+              "10 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Without a sound, the giant spider, its entire body covered with long, soft hair, approaches its enemy on legs thicker than a person's body. It injects a powerful, corrosive poison into the anus of its prey, and devours the meat once it has softened. *Inflicts Poison Locations: [1] Plains"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Venomous Spider x2, Wolf",
+                      "19",
+                      "265",
+                      "Mermaid's Tear x2, Thera Leaf"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "004",
+              "Wolf",
+              "15 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "A medium-sized wolf that lives on the plains of the continent. It is a mutant subspecies that supposedly appears only in areas where battles have taken place. It is a ferocious beast, whose habit of feeding off the corpses of warriors slain in battle has given it a taste for putrid human flesh. Locations: [1] Plains"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Vampire Bat x2, Wolf",
+                      "19",
+                      "125",
+                      "Mana Leaf x2, Thera Leaf"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Venomous Spider x2, Wolf",
+                      "19",
+                      "265",
+                      "Mermaid's Tear x2, Thera Leaf"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Wolf x2",
+                      "18",
+                      "110",
+                      "Thera Leaf x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "005",
+              "Hellcat",
+              "45 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "Vengeance of kittens killed by humans. Its body is full of maggots. It fakes the cries of babies and devours the mothers that come to check on them. Locations: [1] Zhaoyang Village [2] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Hellcat x2 [1]",
+                      "40",
+                      "300",
+                      "TalismanOfLuck x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Hellcat x2 [2]",
+                      "40",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "006",
+              "Zombie",
+              "20 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Something formerly human. They are unburied bodies under a warlock's spell. They try to grab hold of you while wailing and emitting a horrible odor. *Inflicts Poison Locations: [1] Zhaoyang Village"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Zombie x2, Canus",
+                      "43",
+                      "285",
+                      "Mermaid's Tear x2, Bronze Dagger"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Green Flyer x2, Zombie x2",
+                      "52",
+                      "360",
+                      "Mermaid's Tear x2, Holy Mother Bust x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "007",
+              "Green Flyer",
+              "18 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Malicious ghost of a girl killed in a horrible manner. She looks sad, but don't sympathize if you want to stay alive. *Inflicts Confusion Locations: [1] Zhaoyang Village"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Green Flyer x2, Zombie x2",
+                      "52",
+                      "360",
+                      "Mermaid's Tear x2, Holy Mother Bust x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Green Flyer x2, Canus",
+                      "43",
+                      "285",
+                      "Holy Mother Bust x2, Bronze Dagger"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "008",
+              "Canus",
+              "26 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "This beast-ghost guards the graveyard of wolves. It brings trouble to humans that step into its tribe's hunting ground. Its attacks are fast and deadly. Locations: [1] Zhaoyang Village"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Zombie x2, Canus",
+                      "43",
+                      "285",
+                      "Mermaid's Tear x2, Bronze Dagger"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Green Flyer x2, Canus",
+                      "43",
+                      "285",
+                      "Holy Mother Bust x2, Bronze Dagger"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "009",
+              "Felinus",
+              "250 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "What became of an old female cat that drank human blood. Locations: [1] Zhaoyang Village"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Felinus",
+                      "120",
+                      "600",
+                      "Lottery Ticket"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "010",
+              "Yamaraja: Earth",
+              "300 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Ancient god of harvest. It protects the village when sacred, and brings bad luck when wicked. Its kicks are powerful. *Inflicts Ring anomalies Locations: [1] Zhaoyang Village [2] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Yamaraja: Earth [1]",
+                      "180",
+                      "1800",
+                      "Star Brooch"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Yamaraja: Earth [2]",
+                      "180",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "011",
+              "Fire Bat",
+              "38 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Monster created by burning a rat and mixing the remains with feathers and drugs. It attacks with a devouring flame. Used as a guard within a seal. Locations: [1] Fengtian"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Fire Bat x3, Shiki Bug x2",
+                      "136",
+                      "385",
+                      "Mermaid's Tear x2 Mana Leaf x3"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "012",
+              "Shiki Bug",
+              "26 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Large flesh-eating spider transformed with magic. It shoots out mountains of sticky web. Used for security within a seal. *Inflicts Poison Locations: [1] Fengtian"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Fire Bat x3, Shiki Bug x2",
+                      "136",
+                      "385",
+                      "Mermaid's Tear x2 Mana Leaf x3"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "013",
+              "Mutant Frog",
+              "34 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Graveyard frog that mutates by feeding on fresh rump meat of young women. It jumps out of the water to catch humans, and spits out its own gut when surprised. *Inflicts Ring anomalies Locations: [1] Fengtian"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Mutant Frog x3",
+                      "99",
+                      "420",
+                      "Phoenix Tail x3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Mutant Frog x2, Frog God",
+                      "111",
+                      "490",
+                      "Phoenix Tail x2, Angel's Feather"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "014",
+              "Frog God",
+              "40 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "Make 1000 Frog Mutants devour each other, and the last one remaining becomes a Frog God. Its skin is covered with poison. It eats anything that moves. *Inflicts Paralysis Locations: [1] Fengtian [2] Dalian [3] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Mutant Frog x2, Frog God [1]",
+                      "111",
+                      "490",
+                      "Phoenix Tail x2, Angel's Feather"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Frog God x3 [2]",
+                      "135",
+                      "630",
+                      "Angel's Feather x3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Frog God x3 [3]",
+                      "135",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "015",
+              "Kappa",
+              "100 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Monster that lives in the sewer. It swims around the sewer and crawls out to hunt for women. Its head makes a discordant noise when hit. Locations: [1] Fengtian [2] Shanghai, Huayuan [3] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Kappa x2, Water Tiger [1]",
+                      "400",
+                      "2500",
+                      "Tent x2, Spikes"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Kappa [2]",
+                      "100",
+                      "300",
+                      "TeaOfTheHealer"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Kappa x2, Water Tiger [3]",
+                      "400",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "016",
+              "Water Tiger",
+              "380 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Evolved kappa. It only eats the flesh of obese men. It sits at the bottom of the sewer until an appropriate prey presents itself. It smiles when hit on the head. Locations: [1] Fengtian [2] Mr. Zhen's Pit Fight [3] Shanghai, Kuihai Tower"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Kappa x2, Water Tiger [1]",
+                      "400",
+                      "2500",
+                      "Tent x2, Spikes"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Kappa x2, Water Tiger [2]",
+                      "400",
+                      "0",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Man Snake x2, Water Tiger [3]",
+                      "710",
+                      "970",
+                      "Gold Hourglass x2, Mana Seed"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Shadow x2, Water Tiger [3]",
+                      "720",
+                      "1050",
+                      "TalismanOfMercy x2, Mana Seed"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "017",
+              "Elite Guard",
+              "45 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Obedient soldiers. They are equipped with weapons and clothes provided for them. Locations: [1] Fengtian"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Elite Guard x2",
+                      "70",
+                      "420",
+                      "TalismanOfLuck x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "018",
+              "Beast Dog",
+              "480 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Fierce dog under the spell of a warlock. It only lives to rip apart and devour its prey. A beast with sharp fangs and strong attacks. Locations: [1] Fengtian [2] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Beast Dog [1]",
+                      "540",
+                      "3000",
+                      "Voodoo Doll"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Beast Dog [2]",
+                      "540",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "019",
+              "Water Creeper",
+              "55 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Monster that controls water. It can bring on a drought or storm. Watch out for their friendly attitude. *Inflicts Ring anomalies Locations: [1] Dalian"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Water Creeper x3",
+                      "150",
+                      "630",
+                      "Phoenix Tail x3"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "020",
+              "Yamaraja: Wind",
+              "900 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Ancient god of sea wind. It protects the sea when sacred, and brings bad luck when wicked. Travels through space at the speed of light. Locations: [1] Dalian [2] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Yamaraja: Wind [1]",
+                      "720",
+                      "3600",
+                      "Seal of Life"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Yamaraja: Wind [2]",
+                      "720",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "021",
+              "White Wolfling",
+              "45 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Spirit of an old sea snake. It strangles people and eats their flesh. It hides in the darkness of the sea and waits for prey, sometimes for years. *Inflicts Ring anomalies Locations: [1] Smuggler's Boat [2] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "White Wolfling x3 [1]",
+                      "234",
+                      "810",
+                      "Phoenix Tail x3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "White Wolfling x3 [2]",
+                      "234",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "022",
+              "Ogre Flame",
+              "40 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Jellyfish filled with the body fluid of drowning victims. Many of them gather around the harbor at dusk. Makes a screeching noise like nails scratching glass. Locations: [1] Smuggler's Boat [2] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Ogre Flame x4 [1]",
+                      "260",
+                      "900",
+                      "TalismanOfLuck x4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Ogre Flame x4 [2]",
+                      "260",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "023",
+              "Li Li",
+              "720 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Li Li's vengeance that grew stronger with Dehuai's power. She lashes out her anger on all living things using dark powers from the other side. *Inflicts Paralysis Locations: [1] Smuggler's Boat [2] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Li Li [1]",
+                      "1000",
+                      "3950",
+                      "B.Tortoise Fang"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Li Li [2]",
+                      "1000",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "024",
+              "Python",
+              "40 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "A snake that has grown to immense Proportions from eating buried bodies. It moves freely underground in search of dead bodies or people who are near death. It appears at the feet of its prey without a sound, and before you know it, it has eaten the body up to the knees. Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Python x3",
+                      "420",
+                      "1080",
+                      "Thera Leaf x3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Python x2, Sea Gremlin",
+                      "435",
+                      "1130",
+                      "Thera Leaf x2, Mana Seed"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "025",
+              "Sea Gremlin",
+              "70 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Malicious spirit of a man who drowned on land and transformed. It drips oil from its body and makes its prey slip. Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Python x2, Sea Gremlin",
+                      "435",
+                      "1130",
+                      "Thera Leaf x2, Mana Seed"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sea Gremlin",
+                      "155",
+                      "410",
+                      "Mana Seed"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "026",
+              "Xieshi",
+              "530 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "One of three insects that lives in the human body. It can tear the gut and twist bones when it goes wild. Master Xifa uses it to guard his temple. *Inflicts Silence Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Xieshi",
+                      "1600",
+                      "4200",
+                      "Jade Lariat"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "027",
+              "Raging Spirit",
+              "38 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "An evil spirit formed from the dust of graveyards. It speaks, cries and laughs with a dry, raspy voice and confuses and haunts those who visit shrines. Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Raging Spirit x2, Puppet Guard",
+                      "435",
+                      "1120",
+                      "Thera Seed x2, Witch's Broth"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Raging Spirit x3",
+                      "420",
+                      "1080",
+                      "Thera Seed x3"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "028",
+              "Puppet Guard",
+              "45 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "The spirit of soldiers who have been killed in unclean ways. Although they carry guns, their tortured souls no longer even recall how to use them. Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Raging Spirit x2, Puppet Guard",
+                      "435",
+                      "1120",
+                      "Thera Seed x2, Witch's Broth"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Puppet Guard",
+                      "155",
+                      "400",
+                      "Witch's Broth"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "029",
+              "Baigu",
+              "380 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "One of three insects that lives in the human body. Lives in the heart and causes depression and shortness of breath. One of Master Xifa's many guards. *Inflicts Paralysis Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Baigu",
+                      "1600",
+                      "4200",
+                      "Coral Lariat"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "030",
+              "Succubus Queen",
+              "60 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Monster born from muddy water. It hides at the bottom of old wells and sucks life energy from the victims. Be careful if you don't see your reflection in a puddle of water. *Inflicts Confusion Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Brain Sucker x2, Succubus Queen",
+                      "580",
+                      "1040",
+                      "Thera Seed x2, Phoenix Tail"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Succubus Queen x2",
+                      "420",
+                      "800",
+                      "Phoenix Tail x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "031",
+              "Brain Sucker",
+              "40 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Frog that turned evil. It attacks monks-in-training and sucks their brains with the tongue that resembles a human hand. The sweat that covers its body is venomous. Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Brain Sucker",
+                      "185",
+                      "320",
+                      "Thera Seed"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Brain Sucker x2, Succubus Queen",
+                      "580",
+                      "1040",
+                      "Thera Seed x2, Phoenix Tail"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "032",
+              "Qinggu",
+              "600 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "One of three insects that lives in the human body. It lives in the head, and causes anxiety, suspicion, and hallucinations. Guards Master Xifa's Ni Wan Palace. *Inflicts Ring anomalies Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Qinggu",
+                      "1800",
+                      "4200",
+                      "Leonardo's Bear"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "033",
+              "Yamaraja: War",
+              "840 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Wugui transformed with Dehuai's power. Ancient god of war. Dehuai revived the god for Wugui to control. Possesses dark power strong enough to kill with one shot. *Inflicts Instant Death, S-Atk Resistant Locations: [1] Temple Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Yamaraja: War",
+                      "2000",
+                      "5400",
+                      "R.Phoenix Talon"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "034",
+              "Corporal",
+              "70 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Soldier with specific duties. He must work harder to impress his troops. Very stressful. Carries the same equipment as the elite guards. Locations: [1] Shanghai, Huayuan (2)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Corporal x2",
+                      "300",
+                      "300",
+                      "Thera Leaf x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "035",
+              "Sergeant",
+              "160 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "Trains other soldiers. Middle management is a stressful job. Locations: [1] Shanghai, Huayuan (2)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Sergeant x2",
+                      "500",
+                      "710",
+                      "Thera Seed x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "036",
+              "Namida",
+              "200 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Ghost that roams the dark world of Kowloon. It cries, with endless tears, like wind howling through windows. *Inflicts Ring anomalies Locations: [1] Kowloon Fortress"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Namida",
+                      "450",
+                      "600",
+                      "Thera Root"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "037",
+              "Speckled Creeper",
+              "250 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "Unbalanced entity that lives in Kowloon. It may be a Kappa that changes to Light Class while swimming in the sewer from Fengtian. *P-Atk Resistant Locations: [1] Kowloon Fortress [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Speckled Creeper, Happy Creeper [1]",
+                      "900",
+                      "1200",
+                      "Mana Root, Pure Root"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Speckled Creeper, Happy Creeper [2]",
+                      "900",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "038",
+              "Happy Creeper",
+              "250 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Dark entity of Kowloon. Rumored to be Wugui's creation, based on the three demons of Kowloon. It wears bondage clothes. *Inflicts Instant Death, S-Atk Resistant Locations: [1] Kowloon Fortress [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Speckled Creeper, Happy Creeper [1]",
+                      "900",
+                      "1200",
+                      "Mana Root, Pure Root"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Speckled Creeper, Happy Creeper [2]",
+                      "900",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "039",
+              "Blue Ogre",
+              "400 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Water ogre used by warlocks. It's powerful and uses magic. Don't let its beautifully choreographed attacks distract you. *Inflicts Petrification Locations: [1] Kowloon Fortress"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Blue Ogre",
+                      "800",
+                      "1000",
+                      "TalismanOfPurity"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "040",
+              "Red Ogre",
+              "400 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Fire ogre used by warlocks. It attacks with a large, spiked metal rod. A sad creature that only lives to fight. Locations: [1] Kowloon Fortress"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Red Ogre",
+                      "800",
+                      "1000",
+                      "TalismanOfWisdom"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "041",
+              "Dark Judge",
+              "500 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Dark force born of Kowloon's warped space. It may also be city people's resentment collected into one form. Locations: [1] Kowloon Fortress [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Dark Judge [1]",
+                      "1000",
+                      "1000",
+                      "TalismanOfPower"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Dark Judge [2]",
+                      "1000",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "042",
+              "Cursed Puppet",
+              "1080 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Corpse under control of a warlock. Wugui's soul is gone, and only hate and vengeance remains. It knows no fear or pain. *Inflicts Instant Death, S-Atk Resistant Locations: [1] Kowloon Fortress"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Cursed Puppet",
+                      "2000",
+                      "6000",
+                      "Seal of Wisdom"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "043",
+              "Yamaraja: Stone",
+              "1800 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Ancient god of faith. It protects religion when sacred, and brings bad luck when wicked. Strikes with red-hot spirit. Locations: [1] Shanghai, Kuihai Tower"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Yamaraja: Stone",
+                      "2600",
+                      "6000",
+                      "B.Dragon Horn"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "044",
+              "Vengeance Demon",
+              "175 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Born from evil spirits of the city. It may also be the ghost of a poet who sold out his colleagues after repeated torture. Locations: [1] Shanghai, Kuihai Tower"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Vengeance Demon, Rage Demon",
+                      "660",
+                      "800",
+                      "TeaOfTheHealer Witch's Broth"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Mournful Demon, Vengeance Demon",
+                      "660",
+                      "800",
+                      "TalismanOfMercy, TeaOfTheHealer"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "045",
+              "Rage Demon",
+              "100 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Spawned from evil. Malicious ghost of an entrepreneur killed by his own family. The protrusion in the nether region commits hideous acts. Brother of Vengeance Demon. Locations: [1] Shanghai, Kuihai Tower"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Vengeance Demon, Rage Demon",
+                      "660",
+                      "800",
+                      "TeaOfTheHealer Witch's Broth"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Rage Demon, Mournful Demon",
+                      "660",
+                      "800",
+                      "Witch's Broth, TalismanOfMercy"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "046",
+              "Mournful Demon",
+              "325 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "Spawned from evil. Malicious ghost of a poisoned doctor. The protrusion in the nether region represents scorn. Brother of Vengeance and Rage Demons. Locations: [1] Shanghai, Kuihai Tower"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Rage Demon, Mournful Demon",
+                      "660",
+                      "800",
+                      "Witch's Broth, TalismanOfMercy"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Mournful Demon, Vengeance Demon",
+                      "660",
+                      "800",
+                      "TalismanOfMercy, TeaOfTheHealer"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "047",
+              "Man-Snake",
+              "83 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Snake that ate more than 1000 babies that died from disease. Its eyes stop people in their tracks. Brings storms with its pig-like cries. Locations: [1] Shanghai, Kuihai Tower"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Man Snake x2, Water Tiger",
+                      "710",
+                      "970",
+                      "Gold Hourglass x2, Mana Seed"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "048",
+              "Shadow",
+              "78 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Ghost of a lost monk. It spreads vicious odor and looks into your face from behind. Loves people's misfortunes and despises happiness. It roams the shadows of Kuihai Tower. *Inflicts Ring anomalies Locations: [1] Shanghai, Kuihai Tower"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Shadow x2, Water Tiger",
+                      "720",
+                      "1050",
+                      "TalismanOfMercy x2, Mana Seed"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "049",
+              "Badger Devil",
+              "700 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Old Bloodsucking Cat that gained mystical strength. It transforms and devours the victims it tricked. Possesses long, ugly nails. Locations: [1] Shanghai, Kuihai Tower"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Badger Devil",
+                      "1000",
+                      "600",
+                      "Seal of Luck"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "050",
+              "Yamaraja: Calamity",
+              "3000 HP",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Dehuai's ultimate skill. He transforms by feeding the darkness of his soul to a god of destruction in purgatory. *Inflicts Petrification & Silence Locations: [1] Shanghai, Kuihai Tower"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Yamaraja: Calamity",
+                      "6000",
+                      "11000",
+                      "Fifth Key"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "051",
+              "Birdman",
+              "54 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Ghost of a bell ringer who took his own life. His body was pierced by a pole when he jumped off a bell tower. The story goes that the birds ate his flesh. *Inflicts Silence Locations: [1] Prague [2] Bistritz"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Birdman x2 [1]",
+                      "840",
+                      "1080",
+                      "Holy Mother Bust x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Birdman x3 [2]",
+                      "1260",
+                      "1620",
+                      "Holy Mother Bust x3"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "052",
+              "Mailman",
+              "65 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Ghost of a mailman who ate all the dogs in town. He despises his own form. His kicks are powerful and unpredictable. *Inflicts Confusion Locations: [1] Bistritz"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Mailman x2, Police Dog",
+                      "1270",
+                      "1580",
+                      "Bronze Arrowhead x2, Bronze Dagger"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "053",
+              "Police Dog",
+              "115 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Evil ghost of a police dog that devoured its owner and the mother dog. He howls with regret for his crimes. The embodiment of hunger. Locations: [1] Bistritz"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Mailman x2, Police Dog",
+                      "1270",
+                      "1580",
+                      "Bronze Arrowhead x2, Bronze Dagger"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "054",
+              "Tindalos",
+              "2000 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Kevin's transformed shape. His flesh hangs down like a curtain and spreads a horrible stench. Locations: [1] Bistritz [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Tindalos [1]",
+                      "8000",
+                      "12000",
+                      "Iron Clogs"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Tindalos [2]",
+                      "8000",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "055",
+              "Garm",
+              "165 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Evil ghost of a hunting dog that searches for prey even after its own flesh rots away. It was left for dead on a mountain by its owner. *Inflicts Paralysis Locations: [1] Blue Castle [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Garm x2 [1]",
+                      "1300",
+                      "2400",
+                      "Angel's Feather x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Garm x2 [2]",
+                      "1300",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "056",
+              "Gremlin",
+              "62 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Bloodsucking bat that lives in an old castle. It searches for dead bodies like a vulture. It attacks strong enemies in a pack. *Inflicts Ring anomalies Locations: [1] Blue Castle"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Gremlin x3",
+                      "1110",
+                      "1365",
+                      "Phoenix Tail x3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gremlin x3, Hollow x2",
+                      "1990",
+                      "2565",
+                      "Phoenix Tail x3, TalismanOfMercy x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "057",
+              "Hollow",
+              "103 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "Evil ghosts of knights that died without enough kills. They cry and roam around battlegrounds and castle walls. They're visible to humans on nights with crescent moons. Locations: [1] Blue Castle"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Gremlin x3, Hollow x2",
+                      "1990",
+                      "2565",
+                      "Phoenix Tail x3, TalismanOfMercy x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Hollow x2",
+                      "880",
+                      "1200",
+                      "TalismanOfMercy x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Dead Knight, Hollow x2",
+                      "1560",
+                      "2040",
+                      "Pure Seed, TalismanOfMercy x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "058",
+              "Dead Knight",
+              "200 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Ghost of a knight who hasn't realized his own death. Another theory is that his body was sucked out by an evil master. He believes everyone around him is an enemy. *Inflicts Poison Locations: [1] Blue Castle"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Dead Knight x2",
+                      "1360",
+                      "1680",
+                      "Pure Seed x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Dead Knight, Hollow x2",
+                      "1560",
+                      "2040",
+                      "Pure Seed, TalismanOfMercy x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "059",
+              "Bifronze",
+              "165 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Small demon that swings a rusted sickle. It wants to destroy everything in sight. A variation of Wind Shear. Locations: [1] Rouen"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Bifronze x2",
+                      "1720",
+                      "1720",
+                      "Thera Root x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "060",
+              "Camazotz",
+              "158 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Seduced by the God of Death, this gambler shared the same bed with a bat and eagle. He walks the streets of Rouen seeking help. Locations: [1] Rouen [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Camazotz x3 [1]",
+                      "1860",
+                      "2160",
+                      "Mana Root x3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Camazotz x3 [2]",
+                      "1860",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "061",
+              "Larmgelg",
+              "164 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Ghost of a general who loved to torture people. He came back from hell to participate in the atrocities at the orphanage. He roams the orphanage in search of cries of pain. *Inflicts Ring anomalies Locations: [1] London, Orphanage"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Larmgelg x2, Banshee x2",
+                      "2870",
+                      "2180",
+                      "Pure Root x2, Phoenix Tail x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "062",
+              "Banshee",
+              "153 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Malicious ghost of a young woman who received horrible experiments on her body. Her skin has been ripped off, and she shivers constantly. *Uses SP Lowering Locations: [1] London, Orphanage"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Larmgelg x2, Banshee x2",
+                      "2870",
+                      "2180",
+                      "Pure Root x2, Phoenix Tail x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "063",
+              "Night Stalker",
+              "2500 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Servant of Jack, the mansion's master, he has the powers of a lower level spirit. If you hear footsteps from the ceiling or a cackling laugh, beware. Locations: [1] London, Orphanage [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Night Stalker [1]",
+                      "4000",
+                      "3600",
+                      "Kid's Room Key"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Night Stalker [2]",
+                      "4000",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "064",
+              "Mammon",
+              "3600 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Jack's beloved mother. She has been revived by her son's experiment, but she is a different being now. A victim of \"The Sickle of Life\". *Inflicts Petrification Locations: [1] London, Orphanage [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Mammon [1]",
+                      "20000",
+                      "16000",
+                      "Demon Earrings"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Mammon [2]",
+                      "20000",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "065",
+              "Specter",
+              "450 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "Changed form of the inquisitor who guards Calios Mental Hospital. Magic has turned him into something inhuman. *Inflicts Confusion Locations: [1] Calios Mental Hospital"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Specter x2",
+                      "3200",
+                      "1900",
+                      "B.Tortoise Fang x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "066",
+              "Meat Eater",
+              "245 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Calios Mental Hospital's guard dog. It was thrown into the world halfway through creation. Locations: [1] Calios Mental Hospital [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Meat Eater x2, Doom [1]",
+                      "3890",
+                      "2640",
+                      "Thera Root x2, Mana Root"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Doom x2, Meat Eater [1]",
+                      "3820",
+                      "2580",
+                      "Mana Root x2, Thera Root"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Doom x2, Meat Eater [2]",
+                      "3820",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "067",
+              "Doom",
+              "225 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Malicious ghost of Calios Mental Hospital. It chases after intruders with its upside-down body. Locations: [1] Calios Mental Hospital [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Meat Eater x2, Doom [1]",
+                      "3890",
+                      "2640",
+                      "Thera Root x2, Mana Root"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Doom x2, Meat Eater [1]",
+                      "3820",
+                      "2580",
+                      "Mana Root x2, Thera Root"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Doom x2, Meat Eater [2]",
+                      "3820",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "068",
+              "Buggs",
+              "155 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Gigantic bug that jumps at your face with slimy wings. Soaked in the hell's venom under Calios Mental Hospital, it attacks any intruders. *Inflicts Poison, Confusion & Silence Locations: [1] Calios Mental Hospital [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Buggs x5 [1]",
+                      "4000",
+                      "3000",
+                      "Soul Benediction x5"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Buggs x5 [2]",
+                      "4000",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "069",
+              "Rausan",
+              "3500 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Viscount Rausan's mind realized into form by magic. It's a pregnant woman filled with hate. Inside its belly is evil that reeks. *Inflicts Silence Locations: [1] Calios Mental Hospital [2] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Rausan [1]",
+                      "15000",
+                      "16000",
+                      "Spade Key"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Rausan [2]",
+                      "15000",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "070",
+              "Olga",
+              "4000 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Witch that embodies the evil roaming around the city. She steals people's souls with her beautiful voice. She is actually Olga's disguise. *Inflicts Poison Locations: [1] Calios Mental Hospital"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Olga",
+                      "22000",
+                      "17000",
+                      "Warlock Earrings"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "071",
+              "Straithe",
+              "200 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Strange entity born from the spirits within Nemeton Monastery. Considered by some as a fallen angel, it is a gruesome mixture of bird, human and plant. *Inflicts Ring anomalies Locations: [1] Nemeton Monastery"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Straithe x2, Sin",
+                      "5050",
+                      "3270",
+                      "Phoenix Tail x2, TalismanOfPurity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sin x2, Straithe",
+                      "5150",
+                      "3210",
+                      "TalismanOfPurity x2, Phoenix Tail"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "072",
+              "Sin",
+              "240 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "Female ghost that began to appear since the monastery burned down. She appears from the underground and disappears into the pond of the sanctuary. She speaks in strange language. *Inflicts Paralysis Locations: [1] Nemeton Monastery"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Straithe x2, Sin",
+                      "5050",
+                      "3270",
+                      "Phoenix Tail x2, TalismanOfPurity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sin x2, Straithe",
+                      "5150",
+                      "3210",
+                      "TalismanOfPurity x2, Phoenix Tail"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "073",
+              "Guinea Pig",
+              "210 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Unblessed life born of Nemeton Monastery's spirit. It has intelligence, but no human emotions. It acts on instinct. *Inflicts Instant Death & uses SP Lowering Locations: [1] Nemeton Monastery"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Guinea Pig x3",
+                      "5400",
+                      "3450",
+                      "Pure Root x3"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "074",
+              "Inverse",
+              "500 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Ghost that has resided in Nemeton Monastery for a long time. It roams among the ruins now. It is a soul that will never be saved. Locations: [1] Nemeton Monastery"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Inverse",
+                      "3000",
+                      "1450",
+                      "TeaOfTheHolyOne"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Inverse x2",
+                      "6000",
+                      "2900",
+                      "TeaOfTheHolyOne x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "075",
+              "Amon",
+              "4000 HP",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Demon that appears in King Solomon's book of magic, Lemegeton. A violent, evil, and cruel soul. Its appearance signifies the end of the world. *Uses SP Lowering Locations: [1] Nemeton Monastery"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Amon",
+                      "35000",
+                      "18000",
+                      "Angel Earrings"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "076",
+              "Golden Bat",
+              "1500 HP",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Golden bat rumored to be the oldest brother of the other bats. He holds important information about the Demon Sword. His low blood pressure makes for miserable mornings. Locations: [1] Blue Castle"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Golden Bat",
+                      "40000",
+                      "15000",
+                      "DemonSwd-Tyrving"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "077",
+              "Ghoul",
+              "200 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Ghost of a young man that roams the Dollhouse. His eyes are missing, and he has fallen out of the circle of life. *Inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies Locations: [1] Dollhouse"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Ghoul x2, Ghouler x2",
+                      "6000",
+                      "4200",
+                      "Soul Benediction x4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Spanky x2, Ghoul x2",
+                      "6000",
+                      "4260",
+                      "TalismanOfPower x2, Soul Benediction x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "078",
+              "Ghouler",
+              "300 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Ghost of a girl burned alive. Her skin has fallen off and facial muscles torn away. She cries and walks the shadows of the dollhouse. *Inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies Locations: [1] Dollhouse"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Ghoul x2, Ghouler x2",
+                      "6000",
+                      "4200",
+                      "Soul Benediction x4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Spanky x2, Ghouler x2",
+                      "6000",
+                      "4260",
+                      "TalismanOfPower x2, Soul Benediction x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "079",
+              "Spanky",
+              "220 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "A poltergeist-like spirit. It floats in space and attacks with a loud laugh. It loves to surprise people. Locations: [1] Dollhouse"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Spanky x2, Ghoul x2",
+                      "6000",
+                      "4260",
+                      "TalismanOfPower x2, Soul Benediction x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Spanky x2, Ghouler x2",
+                      "6000",
+                      "4260",
+                      "TalismanOfPower x2, Soul Benediction x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "080",
+              "Orb Chaos",
+              "7500 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "The root of all evil in the mansion with no order. It evokes old memories in people. *Inflicts Paralysis Locations: [1] Dollhouse"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Orb Chaos",
+                      "48000",
+                      "66000",
+                      "Holy Book-Flesh"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "081",
+              "Buggy",
+              "330 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Creature that loves human flesh. It likes hot, moist areas and waits patiently for a woman or a child to pass by. If you hear wings rustling in the dark, watch out. Locations: [1] Cave Temple"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Buggy x5",
+                      "6750",
+                      "4800",
+                      "Tissues x5"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "082",
+              "Penalty",
+              "420 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "The creation God's mistake. It resents god and destroys anything that resembles or represents God. *Inflicts Ring anomalies Locations: [1] Cave Temple"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Penalty x3",
+                      "6600",
+                      "3600",
+                      "Thera Extract x3"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "083",
+              "Oingo",
+              "750 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Fluid-like creature born from a dark, stagnant pond. With a voice like thunder, it attacks all who would invade its territory. *Inflicts Instant Death Locations: [1] Cave Temple"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Oingo",
+                      "3300",
+                      "1450",
+                      "Fruit of Yggdrasil"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Oingo x2",
+                      "6600",
+                      "2900",
+                      "Fruit of Yggdrasil x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "084",
+              "Cherubim",
+              "10000 HP",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Malicious ghost that bears the same name as the angel of knowledge. It takes over children's bodies and devours them slowly. Tiny bells ring when it walks. *S-Atk Resistant, and inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies Locations: [1] Cave Temple"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Cherubim",
+                      "60000",
+                      "30000",
+                      "Holy Peak Staff"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "085",
+              "Asp",
+              "830 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Malicious ghost of a vengeful snake. It has the ability to make people fall asleep. The victims are strung up in front of their houses with their heads turned inside out. *Inflicts Petrification Locations: [1] Ancient Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Asp",
+                      "3000",
+                      "1400",
+                      "Pure Extract"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Asp, Basilisk",
+                      "6000",
+                      "2800",
+                      "Pure Extract, Mana Extract"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "086",
+              "Basilisk",
+              "800 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Pet transformed by drinking Asp's saliva. It has lost its mind, but still recognizes its owner's voice. Its breath stinks. *Inflicts Petrification Locations: [1] Ancient Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Asp",
+                      "3000",
+                      "1400",
+                      "Pure Extract"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Asp, Basilisk",
+                      "6000",
+                      "2800",
+                      "Pure Extract, Mana Extract"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "087",
+              "Sweeper",
+              "750 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Realized form of various poisons in the ground. Its body is filled with harmful gas, and it also has eyes on its back. Locations: [1] Ancient Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Sweeper",
+                      "3300",
+                      "1450",
+                      "Eye of Ouroboros"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sweeper x2",
+                      "6600",
+                      "2900",
+                      "Eye of Ouroboros x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "088",
+              "Seraphim",
+              "4000 HP",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Incubus that calls itself by an angel's name and flies on the night of new moon with six beautiful wings. It eats the soul of girls while they're dreaming. *Inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies Locations: [1] Ancient Ruins"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Seraphim",
+                      "60000",
+                      "30000",
+                      "Volt Snipe"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "089",
+              "Enkidu",
+              "250 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Half-beast with multiple eyes. Each eye seeks out intruders from different directions. Its green body emits a horrible odor, and it screams as it swings the scythe. Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Enkidu x3",
+                      "6660",
+                      "3420",
+                      "Thera Extract x3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Emptiness x2, Enkidu x2",
+                      "8740",
+                      "4680",
+                      "TeaOfTheHolyOne x2, Thera Extract x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "090",
+              "Emptiness",
+              "315 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Monster that wears gold armor. Eliminates intruders mercilessly with his fire sword. He guards the Castle of Deranged Gods. Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Emptiness x2, Enkidu x2",
+                      "8740",
+                      "4680",
+                      "TeaOfTheHolyOne x2, Thera Extract x2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Emptiness x2, Hangman",
+                      "7800",
+                      "4070",
+                      "TeaOfTheHolyOne x2, Alchemist'sWater"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "091",
+              "Hangman",
+              "600 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Ghost of a peeping tom. It came in through the underground thruway of the monastery. He remains a peeping tom, even as a ghost. *Inflicts Confusion Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Emptiness x2, Hangman",
+                      "7800",
+                      "4070",
+                      "TeaOfTheHolyOne x2, Alchemist'sWater"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Hangman x2",
+                      "7000",
+                      "3340",
+                      "Alchemist'sWater x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "092",
+              "Soul Block",
+              "7200 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "Insane bird that flies through the wind of death. Its 5 claws sweep the prey off the ground at the speed of light. *P-Atk Resistant Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Soul Block",
+                      "40000",
+                      "22500",
+                      "Monkey Paw"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "093",
+              "Arcmine",
+              "310 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "The creation god's mistake. A beautiful woman with the lower half of a flesh-eating bug. A guard who loves the twisted light of the Castle of Deranged Gods. Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Arcmine x3",
+                      "7020",
+                      "3900",
+                      "Mana Extract x3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Arcmine x2, Enigma",
+                      "7570",
+                      "4150",
+                      "Mana Extract x2, Pure Extract"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "094",
+              "Enigma",
+              "430 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Original form of Arcmine. A strange bug that crawls the floors of the Castle of Deranged Gods. It has no soul, and look for rancid bodies while making noise. *Inflicts Silence Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Arcmine x2, Enigma",
+                      "7570",
+                      "4150",
+                      "Mana Extract x2, Pure Extract"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Enigma x2",
+                      "5780",
+                      "3100",
+                      "Pure Extract x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "095",
+              "Keeper",
+              "750 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Covered by a rock-solid shell. Makes accurate and deadly attacks with its sharp, long claws. The embodiment of destructive forces. Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Keeper x2",
+                      "6600",
+                      "2900",
+                      "Kirin Scale x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "096",
+              "Hate",
+              "7000 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Strange creature born of the castle's spirit. Its soul is dark and full of hate, and the body full of venomous liquid. *Inflicts Paralysis, Poison, and Ring anomalies Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Hate",
+                      "45000",
+                      "25000",
+                      "Seventh Key"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "097",
+              "Cockatrice",
+              "900 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "One of warlock's demons. It has the power to turn people into stone. This aggressive creature lives in a humid area and crawls around looking for prey. *P-Atk Resistant, Inflicts Paralysis Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Cockatrice x2",
+                      "12000",
+                      "5000",
+                      "Fruit of Yggdrasil x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "098",
+              "Black Widow",
+              "800 HP",
+              "Class: Dark"
+            ],
+            "description": {
+              "text": "Evolved Arcmine. It can reproduce. After mating, it lays millions of eggs into the prey's soft flesh. It likes twisted darkness. *S-Atk Resistant, Inflicts Paralysis, Uses SP Lowering Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Black Widow x2",
+                      "11000",
+                      "4600",
+                      "Eye of Ouroboros x2"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "099",
+              "Red Cap",
+              "2000 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Castle guard who carries a scythe dripping with blood. His small, evil eyes peer out from within his blood-stained hood, and strike fear into all intruders. Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Red Cap",
+                      "10000",
+                      "6000",
+                      "TalismanOfPower"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "100",
+              "Scapegoat",
+              "7700 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Concentration of evil from a castle with many secrets. It's covered with the scent of a fruit that only grows in purgatory. Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Scapegoat",
+                      "50000",
+                      "27500",
+                      "Crucifix"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "101",
+              "Prototype Wind Shear",
+              "500 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "One of Zhen's pit fight monsters. Usually harmless, but vicious and deadly when provoked by challengers. Approach with caution. *Inflicts Ring anomalies & Silence Locations: [1] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Prototype Wind Shear",
+                      "1500",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "102",
+              "Custom Wind Shear",
+              "500 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "One of Zhen's pit fight monsters. It has taken the lives of many greedy souls. Approach with caution. *Inflicts Ring anomalies Locations: [1] Mr. Zhen's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Custom Wind Shear",
+                      "1500",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "103",
+              "Full Armor Wind Shear",
+              "1100 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "One of the beholders Sharon can summon. It looks like a normal Wind Shear, but much stronger. Good for travelers testing their ground. *Inflicts Ring anomalies Locations: [1] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Full Armor Wind Shear",
+                      "0",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "104",
+              "Perfect Wind Shear",
+              "1100 HP",
+              "Class: Light"
+            ],
+            "description": {
+              "text": "One of the beholders Sharon can summon. She summons it to train her pack, but it gets out of control sometimes. *Inflicts Paralysis Locations: [1] Sharon's Pit Fight"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Perfect Wind Shear",
+                      "0",
+                      "0",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "105",
+              "Evil 1",
+              "HP Varies",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Evil soul that devours the Harmonixer's \"spirit graveyard\". It attempts to eat away the Harmonixer's soul on behalf of all the monsters he has killed. Locations: [1] Graveyard (Asia)"
+            }
+          },
+          {
+            "cells": [
+              "106",
+              "Evil 2",
+              "HP Varies",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Evil soul that lives in the graveyard. The vengeance of monsters killed by the Harmonixer. Locations: [1] Graveyard (Asia)"
+            }
+          },
+          {
+            "cells": [
+              "107",
+              "Evil 3",
+              "HP Varies",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Evil soul that lives in the graveyard. The vengeance of monsters that took the shape of a snake demon. Locations: [1] Graveyard (Asia)"
+            }
+          },
+          {
+            "cells": [
+              "108",
+              "Evil 4",
+              "HP Varies",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Evil soul that lives in the graveyard. The vengeance of monsters killed by the Harmonixer. It tries to take the Harmonixer's soul and turn him into a demon. Locations: [1] Graveyard (Asia)"
+            }
+          },
+          {
+            "cells": [
+              "109",
+              "Gust Ein",
+              "HP Varies",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Concentration of disease in the graveyard that took a shape. It acts as the key to open the dark world and release a god. Locations: [1] Graveyard (Europe)"
+            }
+          },
+          {
+            "cells": [
+              "110",
+              "Gust Zwei",
+              "HP Varies",
+              "Class: None"
+            ],
+            "description": {
+              "text": "A concentration of disease in the graveyard that took a shape. It acts as the key to open the dark world and release a god. Locations: [1] Graveyard (Europe)"
+            }
+          },
+          {
+            "cells": [
+              "111",
+              "Gust Drei",
+              "HP Varies",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Concentration of disease in the graveyard that took a shape. It acts as the key to open the dark world and release a god. Locations: [1] Graveyard (Europe)"
+            }
+          },
+          {
+            "cells": [
+              "112",
+              "Gust Vier",
+              "HP Varies",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Concentration of disease in the graveyard that took a shape. It acts as the key to open the dark world and release a god. Locations: [1] Graveyard (Europe)"
+            }
+          },
+          {
+            "cells": [
+              "113",
+              "Sword Mask",
+              "1875 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Dark soul waiting for the moment the dark world opens up to the world at large. It represents the Harmonixer's violent desires. *Uses SP Lowering Locations: [1] Red Malice Battles (Europe)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Sword Mask",
+                      "45000",
+                      "30000",
+                      "Obsidian Ring"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "114",
+              "Grail Mask",
+              "2000 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Dark soul waiting for the moment the dark world opens up to the world at large. It represents the Harmonixer's worldly desires. *Uses SP Lowering Locations: [1] Red Malice Battles (Europe)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Grail Mask",
+                      "45000",
+                      "30000",
+                      "Amber Ring"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "115",
+              "Staff Mask",
+              "2250 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Dark soul waiting for the moment the dark world opens up to the world at large. It represents the Harmonixer's desire to be lazy. *S-Atk Resistant, uses SP Lowering Locations: [1] Red Malice Battles (Europe)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Staff Mask",
+                      "45000",
+                      "30000",
+                      "Lazurite Ring"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "116",
+              "Gold Mask",
+              "2625 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Dark soul waiting for the moment the dark world opens up to the world at large. It represents the Harmonixer's greed. *P-Atk Resistant, uses SP Lowering Locations: [1] Red Malice Battles (Europe)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Gold Mask",
+                      "45000",
+                      "30000",
+                      "Carnelian Ring"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "117",
+              "Sword Mask",
+              "1 HP",
+              "Class: Wind"
+            ],
+            "description": {
+              "text": "Dark soul that represents the Harmonixer's violent desires. It lost against the Harmonixer's conscience, but defeat made it stronger. Locations: [1] Red Malice Battles, after initial defeat (Europe)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Sword Mask",
+                      "10",
+                      "10",
+                      "Thera Leaf"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "118",
+              "Grail Mask",
+              "1 HP",
+              "Class: Water"
+            ],
+            "description": {
+              "text": "Dark soul that represents the Harmonixer's worldly pleasures. It lost against the Harmonixer's conscience, but defeat made it stronger. Locations: [1] Red Malice Battles, after initial defeat (Europe)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Grail Mask",
+                      "10",
+                      "10",
+                      "Thera Leaf"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "119",
+              "Staff Mask",
+              "1 HP",
+              "Class: Fire"
+            ],
+            "description": {
+              "text": "Dark soul that represents the Harmonixer's laziness. It lost against the Harmonixer's conscience, but defeat made it stronger. Locations: [1] Red Malice Battles, after initial defeat (Europe)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Staff Mask",
+                      "10",
+                      "10",
+                      "Thera Leaf"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "120",
+              "Gold Mask",
+              "1 HP",
+              "Class: Earth"
+            ],
+            "description": {
+              "text": "Dark soul that represents the Harmonixer's greed. It lost against the Harmonixer's conscience, but defeat made it stronger. Locations: [1] Red Malice Battles, after initial defeat (Europe)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Gold Mask",
+                      "10",
+                      "10",
+                      "Thera Leaf"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "121",
+              "Atman",
+              "4000 HP",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Realized form of darkness that exists in every person's mind. It devours Harmonixers' souls and attempts to release darkness into the world. *Uses SP Lowering, and inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies Locations: [1] Nemeton Monastery (Good Ending)"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Atman",
+                      "50000",
+                      "20000",
+                      "Moonstone Ring"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "122",
+              "SeraphicRadiance",
+              "5000 HP",
+              "Class: None"
+            ],
+            "description": {
+              "text": "The most evil fusion monster. No Harmonixer has ever fused successfully with this monster. A successful fusion gives Harmonixers the power to perform deicide. Locations: [1] Graveyard"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "SeraphicRadiance",
+                      "60000",
+                      "99999",
+                      "Diamond Ring"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "123",
+              "Messiah",
+              "6000 HP",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Albert's final evolution, gained through the evil power from the Castle of the Deranged Gods. *Uses SP Lowering, and inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies Locations: [1] Neameeto"
+            },
+            "children": [
+              {
+                "columns": [
+                  "Enemy Formations",
+                  "EXP",
+                  "Cash",
+                  "Possible Item Drops"
+                ],
+                "rows": [
+                  {
+                    "cells": [
+                      "Messiah [1]",
+                      "60000",
+                      "0",
+                      "Silver Hand"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells": [
+              "124",
+              "Meta-God",
+              "12000 HP",
+              "Class: None"
+            ],
+            "description": {
+              "text": "Unknown life form referred to as \"God\" by many people through the ages. Appears in front of those who attempt to discover the true purpose of the \"Mad God's Castle\". *Uses SP Lowering, and inflicts Paralysis, Confusion, Silence, Poison, Petrify, and Ring anomalies Locations: [1] Neameeto (Final Boss)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

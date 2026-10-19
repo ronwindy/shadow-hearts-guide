@@ -76,6 +76,10 @@
         {
           "name": "Belt of Power",
           "price": 8000
+        },
+        {
+          "name": "Leather Suit",
+          "price": "10000 (automatic)"
         }
       ]
     }

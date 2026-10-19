@@ -1,0 +1,110 @@
+{
+  "guide": {
+    "id": "a-1-11",
+    "code": "[A-1-11]",
+    "title": "Pedometer Rewards",
+    "type": "reference",
+    "category": "Appendices",
+    "source": {
+      "game": "Shadow Hearts",
+      "author": "A_Backdated_Future",
+      "version": "1.05",
+      "url": "https://gamefaqs.gamespot.com/ps2/459510-shadow-hearts/faqs/80397",
+      "source_file": "raw-sources/Shadow Hearts - Guide and Walkthrough - PlayStation 2 - By A_Backdated_Future - GameFAQs.html"
+    },
+    "navigation": {
+      "prev": {
+        "id": "a-1-10",
+        "code": "[A-1-10]",
+        "title": "Malice Rewards",
+        "file": "sections/a-1-10-malice-rewards.json"
+      },
+      "next": {
+        "id": "a-1-12",
+        "code": "[A-1-12]",
+        "title": "NPC Library",
+        "file": "sections/a-1-12-npc-library.json"
+      }
+    },
+    "enemies": [],
+    "bosses": [],
+    "reference_tables": [
+      {
+        "title": "Pedometer Service",
+        "intro": "Listed here are the rewards you can earn by cashing in your Pedometer Steps. Pedometer steps are gained while equipping the Pedometer and walking through areas where you can run into enemies. These steps are doubled if you have an Accelerator equipped. If you talk to any Silent Peddler after you have 10,000 Steps accumulated, then you will receive the LEATHER SUIT, Margarete's best armor. (Margarete does NOT have to be in your active party to receive the armor!)",
+        "columns": [
+          "Item",
+          "Price"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Thera Extract",
+              "100"
+            ]
+          },
+          {
+            "cells": [
+              "Voodoo Doll",
+              "300"
+            ]
+          },
+          {
+            "cells": [
+              "Weird Bottle",
+              "800"
+            ]
+          },
+          {
+            "cells": [
+              "Iron Clogs",
+              "1500"
+            ]
+          },
+          {
+            "cells": [
+              "Flash Badge",
+              "2500"
+            ]
+          },
+          {
+            "cells": [
+              "Moon Swallow",
+              "3500"
+            ]
+          },
+          {
+            "cells": [
+              "Star Swallow",
+              "5000"
+            ]
+          },
+          {
+            "cells": [
+              "Monkey Paw",
+              "6500"
+            ]
+          },
+          {
+            "cells": [
+              "Silver Hand",
+              "7000"
+            ]
+          },
+          {
+            "cells": [
+              "Belt of Power",
+              "8000"
+            ]
+          },
+          {
+            "cells": [
+              "Leather Suit",
+              "10000 (automatic)"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

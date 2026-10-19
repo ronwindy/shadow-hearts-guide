@@ -28,7 +28,6 @@
     },
     "enemies": [],
     "bosses": [],
-    "shops": [],
     "reference_tables": [
       {
         "intro": "Listed here are all of the Valuables in the game, in the order that the game lists them.",
@@ -42,368 +41,470 @@
               "Talisman",
               "Engraved stone, it shows current Malice level"
             ],
-            "detail": "Glowing stone. A memento from father. When hero awakens as a Harmonixer, the light changes from blue to yellow to red and displays current Malice level."
+            "description": {
+              "text": "Glowing stone. A memento from father. When hero awakens as a Harmonixer, the light changes from blue to yellow to red and displays current Malice level."
+            }
           },
           {
             "cells": [
               "Pendant",
               "Cross-shaped pendant from Father Elliot"
             ],
-            "detail": "This pendant was given by Father Elliot. In the train, it emits a powerful mystical light that rescues our hero."
+            "description": {
+              "text": "This pendant was given by Father Elliot. In the train, it emits a powerful mystical light that rescues our hero."
+            }
           },
           {
             "cells": [
               "SluiceGateHandle",
               "Rust-covered gear. Used in a sluice gate"
             ],
-            "detail": "Once a part of a sluice gate, it is now completely rusted over. After the locals were killed in a war, the gate was left untended for ages.",
-            "detail_title": "Sluice Gate Handle"
+            "description": {
+              "title": "Sluice Gate Handle",
+              "text": "Once a part of a sluice gate, it is now completely rusted over. After the locals were killed in a war, the gate was left untended for ages."
+            }
           },
           {
             "cells": [
               "Anti-Cat Powder",
               "Smelly Chinese herb infused with catnip"
             ],
-            "detail": "This incredibly foul smelling medicine contains catnip. It smells foul but is a sure cure for cat troubles."
+            "description": {
+              "text": "This incredibly foul smelling medicine contains catnip. It smells foul but is a sure cure for cat troubles."
+            }
           },
           {
             "cells": [
               "Torch",
               "Bundle of dried twigs. Used as a light source"
             ],
-            "detail": "Dried twigs that have been bundled together for easy use. Useful as an outdoor light source."
+            "description": {
+              "text": "Dried twigs that have been bundled together for easy use. Useful as an outdoor light source."
+            }
           },
           {
             "cells": [
               "Metal Bowl",
               "Foul-smelling bowl once used by a pathologist."
             ],
-            "detail": "Measuring bowl used by a pathologist in Zhaoyang Village. Bits of putrid, rotten flesh cling to the bottom."
+            "description": {
+              "text": "Measuring bowl used by a pathologist in Zhaoyang Village. Bits of putrid, rotten flesh cling to the bottom."
+            }
           },
           {
             "cells": [
               "Jewel",
               "The \"Sealing Stone\". Creates mystic barriers."
             ],
-            "detail": "Called the \"Sealing Stone\", it is a glowing blue gem used as a tool in the art of dark geomancy to create and strengthen barriers."
+            "description": {
+              "text": "Called the \"Sealing Stone\", it is a glowing blue gem used as a tool in the art of dark geomancy to create and strengthen barriers."
+            }
           },
           {
             "cells": [
               "Salt-dried Fish",
               "Dried mackerel for the dedicated fish-lover."
             ],
-            "detail": "Salt-dried mackerel. Bred in deep ocean currents, its meat is firm yet tender. A quack oracle ate 5 of them at Sea Turtle Restaurant. Everyone was disgusted."
+            "description": {
+              "text": "Salt-dried mackerel. Bred in deep ocean currents, its meat is firm yet tender. A quack oracle ate 5 of them at Sea Turtle Restaurant. Everyone was disgusted."
+            }
           },
           {
             "cells": [
               "Wood Token",
               "Ancient token representing \"Wood\"."
             ],
-            "detail": "Ancient token displaying one of the 5 Yin and Yang elements, wood. Used in opening mystical seals or barriers."
+            "description": {
+              "text": "Ancient token displaying one of the 5 Yin and Yang elements, wood. Used in opening mystical seals or barriers."
+            }
           },
           {
             "cells": [
               "Yawang Gate Key",
               "Key to \"Yawang Gate\" leading to Kuihai Tower"
             ],
-            "detail": "Key to \"Yawang Gate\", the only entrance to Dehuai's fortress, Kuihai Tower. Obtained by Lieutenant Suketani at the cost of many of his followers' lives."
+            "description": {
+              "text": "Key to \"Yawang Gate\", the only entrance to Dehuai's fortress, Kuihai Tower. Obtained by Lieutenant Suketani at the cost of many of his followers' lives."
+            }
           },
           {
             "cells": [
               "Wugui Room Key",
               "Creepy key carved from some animal's bone"
             ],
-            "detail": "Key hand carved from the spine of some oddly shaped animal. What secret could this eerie key be hiding?"
+            "description": {
+              "text": "Key hand carved from the spine of some oddly shaped animal. What secret could this eerie key be hiding?"
+            }
           },
           {
             "cells": [
               "B. Dragon VP",
               "Painting containing the power of the Blue Dragon"
             ],
-            "detail": "Mystic tool with the power of the Blue Dragon, one of the 4 gods of directions. In the hands of a wicked person, it alone could lay waster to an entire nation.",
-            "detail_title": "Blue Dragon Votive Picture"
+            "description": {
+              "title": "Blue Dragon Votive Picture",
+              "text": "Mystic tool with the power of the Blue Dragon, one of the 4 gods of directions. In the hands of a wicked person, it alone could lay waster to an entire nation."
+            }
           },
           {
             "cells": [
               "W. Tiger VP",
               "Painting containing the power of the White Tiger"
             ],
-            "detail": "Mystic tool containing the power of the White Tiger. It has the power to lay waste to an entire nation. Taken from Kuihai Tower 15 years ago by Colonel Hyuga.",
-            "detail_title": "White Tiger Votive Picture"
+            "description": {
+              "title": "White Tiger Votive Picture",
+              "text": "Mystic tool containing the power of the White Tiger. It has the power to lay waste to an entire nation. Taken from Kuihai Tower 15 years ago by Colonel Hyuga."
+            }
           },
           {
             "cells": [
               "B. Tortoise VP",
               "Painting with the power of the Black Tortoise"
             ],
-            "detail": "Mystic tool with the power of the Black Tortoise, one of the gods of directions. In the hands of a wicked person, it alone could lay waste to an entire nation.",
-            "detail_title": "Black Tortoise Votive Picture"
+            "description": {
+              "title": "Black Tortoise Votive Picture",
+              "text": "Mystic tool with the power of the Black Tortoise, one of the gods of directions. In the hands of a wicked person, it alone could lay waste to an entire nation."
+            }
           },
           {
             "cells": [
               "R. Phoenix VP",
               "Painting containing the power of the Red Phoenix"
             ],
-            "detail": "Mystic tool with the power of the Red Phoenix, one of the 4 gods of directions. In the hands of a wicked person, it alone could lay waste to an entire nation.",
-            "detail_title": "Red Phoenix Votive Picture"
+            "description": {
+              "title": "Red Phoenix Votive Picture",
+              "text": "Mystic tool with the power of the Red Phoenix, one of the 4 gods of directions. In the hands of a wicked person, it alone could lay waste to an entire nation."
+            }
           },
           {
             "cells": [
               "East Gate Key",
               "Key to gate separating Bistritz and forest"
             ],
-            "detail": "Key to Bistritz town gate. If the gate is for protection from animals, why is there a carving of a sun on the gate and garlic on the key?"
+            "description": {
+              "text": "Key to Bistritz town gate. If the gate is for protection from animals, why is there a carving of a sun on the gate and garlic on the key?"
+            }
           },
           {
             "cells": [
               "Kid's Room Key",
               "Key for entering the orphans' room"
             ],
-            "detail": "Key found in a rather questionable orphanage. It opens the Orphans' Room (They called it the Key Room. Those jerks.)"
+            "description": {
+              "text": "Key found in a rather questionable orphanage. It opens the Orphans' Room (They called it the Key Room. Those jerks.)"
+            }
           },
           {
             "cells": [
               "Guestroom Key",
               "Key to the mansion's guestroom"
             ],
-            "detail": "Pure gold key from Joshua."
+            "description": {
+              "text": "Pure gold key from Joshua."
+            }
           },
           {
             "cells": [
               "Heart Key",
               "Bizarre key to mental hospital"
             ],
-            "detail": "Key to Calios Mental Hospital. More prison than hospital, there is a dark side to its grand history."
+            "description": {
+              "text": "Key to Calios Mental Hospital. More prison than hospital, there is a dark side to its grand history."
+            }
           },
           {
             "cells": [
               "Club Key",
               "Bizarre key to mental hospital"
             ],
-            "detail": "Key to prison-like mental hospital. It is worn from the hands of the many cruel torturers who held it."
+            "description": {
+              "text": "Key to prison-like mental hospital. It is worn from the hands of the many cruel torturers who held it."
+            }
           },
           {
             "cells": [
               "Diamond Key",
               "Bizarre key to mental hospital"
             ],
-            "detail": "This key is for the sole purpose of locking unwanted people away from the rest of society in a prison euphemistically called a hospital."
+            "description": {
+              "text": "This key is for the sole purpose of locking unwanted people away from the rest of society in a prison euphemistically called a hospital."
+            }
           },
           {
             "cells": [
               "Spade Key",
               "Hospital room key held by Viscount Rausan"
             ],
-            "detail": "Key jealously guarded by the hospital director, Viscount Rausan. It seems to have been polished obsessively and is without even a single scratch."
+            "description": {
+              "text": "Key jealously guarded by the hospital director, Viscount Rausan. It seems to have been polished obsessively and is without even a single scratch."
+            }
           },
           {
             "cells": [
               "Bronze Coin",
               "Bronze coin from hospital. Oddly scratched."
             ],
-            "detail": "Bronze coin with a crab spider symbol etched on it. Probably for some purpose other than money. Deeply scratched from use."
+            "description": {
+              "text": "Bronze coin with a crab spider symbol etched on it. Probably for some purpose other than money. Deeply scratched from use."
+            }
           },
           {
             "cells": [
               "Silver Coin",
               "Silver coin from hospital with bird symbol"
             ],
-            "detail": "Silver coin inscribed with symbol of the magical burn, Lopuros. Ancient and scarred from years of use."
+            "description": {
+              "text": "Silver coin inscribed with symbol of the magical burn, Lopuros. Ancient and scarred from years of use."
+            }
           },
           {
             "cells": [
               "Gold Coin",
               "Gold coin from hospital with demonic crest"
             ],
-            "detail": "Ancient gold coin inscribed with a demonic crest. Thick and heavy, it shines out even in a dark hospital room."
+            "description": {
+              "text": "Ancient gold coin inscribed with a demonic crest. Thick and heavy, it shines out even in a dark hospital room."
+            }
           },
           {
             "cells": [
               "Platinum Coin",
               "Platinum coin from hospital with dragon symbol"
             ],
-            "detail": "Platinum coin inscribed with the symbol of a dragon. It's impossible to tell whether it's new or old and it rings out with a lovely tone when plunked."
+            "description": {
+              "text": "Platinum coin inscribed with the symbol of a dragon. It's impossible to tell whether it's new or old and it rings out with a lovely tone when plunked."
+            }
           },
           {
             "cells": [
               "Dungeon Key",
               "Key carved from the bone of some animal."
             ],
-            "detail": "Apparently a key to some huge door, it is stamped with the image of some god-like entity. Whether good or evil, it is impossible to tell."
+            "description": {
+              "text": "Apparently a key to some huge door, it is stamped with the image of some god-like entity. Whether good or evil, it is impossible to tell."
+            }
           },
           {
             "cells": [
               "Doyle Letter",
               "Letter from Doyle found in Penitence Room"
             ],
-            "detail": "Letter from Father Doyle found in the Penitence Room. Detailed within is a list of various sins that became privy to him in the confessional. NOTE: While you do get to read this during the game, it never actually makes it into your inventory."
+            "description": {
+              "text": "Letter from Father Doyle found in the Penitence Room. Detailed within is a list of various sins that became privy to him in the confessional. NOTE: While you do get to read this during the game, it never actually makes it into your inventory."
+            }
           },
           {
             "cells": [
               "Oath Grail",
               "Grail from which Death drank souls"
             ],
-            "detail": "Death drunk on souls, told the Overlord how to beat the Four Masks. \"Grail weakens Gold; Gold, Staff; Staff, Sword; and Sword, Drink. My oath is to the Grail...\""
+            "description": {
+              "text": "Death drunk on souls, told the Overlord how to beat the Four Masks. \"Grail weakens Gold; Gold, Staff; Staff, Sword; and Sword, Drink. My oath is to the Grail...\""
+            }
           },
           {
             "cells": [
               "Storeroom Key",
               "Old key found near water-spitting lion"
             ],
-            "detail": "Extremely rusty key that doesn't look as if it has been well looked after."
+            "description": {
+              "text": "Extremely rusty key that doesn't look as if it has been well looked after."
+            }
           },
           {
             "cells": [
               "Slide",
               "Discovered at the doll museum. I see something..."
             ],
-            "detail": "Slide found in dollhouse. The upper half of a young girl can be seen faintly. If I only I had a Projector..."
+            "description": {
+              "text": "Slide found in dollhouse. The upper half of a young girl can be seen faintly. If I only I had a Projector..."
+            }
           },
           {
             "cells": [
               "Snake Card",
               "Card with a picture of a snake. Useful in shops."
             ],
-            "detail": "Card from the Wholesale Items Guild (WIG). Gives various benefits. But if you lose on discount 5 times in a row with insufficient funds, it becomes inactive."
+            "description": {
+              "text": "Card from the Wholesale Items Guild (WIG). Gives various benefits. But if you lose on discount 5 times in a row with insufficient funds, it becomes inactive."
+            }
           },
           {
             "cells": [
               "Star Card",
               "Guild card from Shanghai with picture of star."
             ],
-            "detail": "Card acquired from a fortune-telling boy in Shanghai. Very useful in shops. Don't leave home without it."
+            "description": {
+              "text": "Card acquired from a fortune-telling boy in Shanghai. Very useful in shops. Don't leave home without it."
+            }
           },
           {
             "cells": [
               "Moon Card",
               "Guild card with picture of moon. From Bistritz."
             ],
-            "detail": "Guild card found in Bistritz. This one has a moon picture on it. Those guild folks must be astrology fans."
+            "description": {
+              "text": "Guild card found in Bistritz. This one has a moon picture on it. Those guild folks must be astrology fans."
+            }
           },
           {
             "cells": [
               "Sun Card",
               "Guild card with Sun picture. Bought in London"
             ],
-            "detail": "Guild card with picture of the Sun on it. I wonder why that person had it? London is a strange city. All that fog and everything..."
+            "description": {
+              "text": "Guild card with picture of the Sun on it. I wonder why that person had it? London is a strange city. All that fog and everything..."
+            }
           },
           {
             "cells": [
               "Eternity Card",
               "Slightly thicker. \"Eternity\" is written on it"
             ],
-            "detail": "Guild card acquired from a suspicious man. Makes one realize that just about anyone can be a guild member."
+            "description": {
+              "text": "Guild card acquired from a suspicious man. Makes one realize that just about anyone can be a guild member."
+            }
           },
           {
             "cells": [
               "Earth Gravestone",
               "Stone with same wavelength as Earth Tombstone"
             ],
-            "detail": "Oddly glowing stone. It gives off exactly the same wavelength as the one in the graveyard."
+            "description": {
+              "text": "Oddly glowing stone. It gives off exactly the same wavelength as the one in the graveyard."
+            }
           },
           {
             "cells": [
               "Water Gravestone",
               "Stone with same cold feeling as Water Tombstone"
             ],
-            "detail": "Strangely glowing stone. It emits the same cold feeling that I get in the graveyard."
+            "description": {
+              "text": "Strangely glowing stone. It emits the same cold feeling that I get in the graveyard."
+            }
           },
           {
             "cells": [
               "Air Gravestone",
               "Stone with same qualities as the Air Tombstone"
             ],
-            "detail": "Strangely glowing stone. It gives off the same airy feeling that I get in the graveyard."
+            "description": {
+              "text": "Strangely glowing stone. It gives off the same airy feeling that I get in the graveyard."
+            }
           },
           {
             "cells": [
               "Fire Gravestone",
               "Stone with same hotness as the Fire Tombstone"
             ],
-            "detail": "Strangely glowing stone. It gives off the same hot feeling that I get in the graveyard."
+            "description": {
+              "text": "Strangely glowing stone. It gives off the same hot feeling that I get in the graveyard."
+            }
           },
           {
             "cells": [
               "Light Gravestone",
               "Stone with same spirit as the Light Tombstone"
             ],
-            "detail": "Strangely glowing stone. It seems to have the same mystic qualities as the one in the graveyard."
+            "description": {
+              "text": "Strangely glowing stone. It seems to have the same mystic qualities as the one in the graveyard."
+            }
           },
           {
             "cells": [
               "Dark Gravestone",
               "Stone with same evil spirit as Darkness Tombstone"
             ],
-            "detail": "Strangely glowing stone. It seems to have the same evil spirit as the one in the graveyard.",
-            "detail_title": "Darkness Gravestone"
+            "description": {
+              "title": "Darkness Gravestone",
+              "text": "Strangely glowing stone. It seems to have the same evil spirit as the one in the graveyard."
+            }
           },
           {
             "cells": [
               "DestructionStone",
               "Stone imbued with unmatched power"
             ],
-            "detail": "Oddly shaped stone. It emits a strange power the likes of which cannot be felt anywhere else on earth or above.",
-            "detail_title": "Stone of Destruction"
+            "description": {
+              "title": "Stone of Destruction",
+              "text": "Oddly shaped stone. It emits a strange power the likes of which cannot be felt anywhere else on earth or above."
+            }
           },
           {
             "cells": [
               "Stone of Rebirth",
               "Ultra-mysterious stone found among the ruins"
             ],
-            "detail": "Made of a substance which seems to be somewhere between stone and metal. Is it light, heavy, hard, soft? Even touching it, it is impossible to tell."
+            "description": {
+              "text": "Made of a substance which seems to be somewhere between stone and metal. Is it light, heavy, hard, soft? Even touching it, it is impossible to tell."
+            }
           },
           {
             "cells": [
               "Erotic Book",
               "Legendary magazine, \"Shanghai Angels\""
             ],
-            "detail": "Wh, what's this? The famous literary journal and pin-up magazine, \"Shanghai Angels\"! Why would that be such a valuable item? Maybe I'll find out in the future."
+            "description": {
+              "text": "Wh, what's this? The famous literary journal and pin-up magazine, \"Shanghai Angels\"! Why would that be such a valuable item? Maybe I'll find out in the future."
+            }
           },
           {
             "cells": [
               "Codex of Lurie",
               "Secret book of summoning the Other Gods."
             ],
-            "detail": "Greatly sought after, this ancient tome is rumored to be a secret guide to summoning the \"Other Gods\"."
+            "description": {
+              "text": "Greatly sought after, this ancient tome is rumored to be a secret guide to summoning the \"Other Gods\"."
+            }
           },
           {
             "cells": [
               "Book of Rituals",
               "Strange old book with small hidden clues."
             ],
-            "detail": "Old book engraved with an image from Mt. Olympus. It says \"The Memory Palace... Cross the rainbow, then follow the drops of blood to the royal garden\".",
-            "detail_title": "Book of Rituals (A)"
+            "description": {
+              "title": "Book of Rituals (A)",
+              "text": "Old book engraved with an image from Mt. Olympus. It says \"The Memory Palace... Cross the rainbow, then follow the drops of blood to the royal garden\"."
+            }
           },
           {
             "cells": [
               "Book of Rituals",
               "Whoah. You found it. Impressive."
             ],
-            "detail": "Old book engraved with an image from Mt. Olympus. It says \"Controller of the rainbow. Go backwards like a devil. Follow the royal garden to the drops of blood\".",
-            "detail_title": "Book of Rituals (B)"
+            "description": {
+              "title": "Book of Rituals (B)",
+              "text": "Old book engraved with an image from Mt. Olympus. It says \"Controller of the rainbow. Go backwards like a devil. Follow the royal garden to the drops of blood\"."
+            }
           },
           {
             "cells": [
               "EmigreManuscript",
               "Ancient book. A bookmark is inside."
             ],
-            "detail": "Legendary manuscript written on a skull. On it is scribbled: \"stone Temple.. Take the path of the left dragon...\". The bookmark smells of violets.",
-            "detail_title": "Emigre Manuscript (A)"
+            "description": {
+              "title": "Emigre Manuscript (A)",
+              "text": "Legendary manuscript written on a skull. On it is scribbled: \"stone Temple.. Take the path of the left dragon...\". The bookmark smells of violets."
+            }
           },
           {
             "cells": [
               "EmigreManuscript",
               "Legendary manuscript. Its fragrance has changed."
             ],
-            "detail": "Manuscript written on a skull. On it is scribbled: \"Stone Temple... Take the path of the right dragon\". The smell of violets has been replaced by tiger lilies.",
-            "detail_title": "Emigre Manuscript (B)"
+            "description": {
+              "title": "Emigre Manuscript (B)",
+              "text": "Manuscript written on a skull. On it is scribbled: \"Stone Temple... Take the path of the right dragon\". The smell of violets has been replaced by tiger lilies."
+            }
           },
           {
             "cells": [
               "Pulse Tract",
               "Bacon's treasured old manuscript."
             ],
-            "detail": "Bacon's manuscript: \"The rainbow's treasure is a golden moon, burning sun, old forest, royal garden, ocean's color, drops of blood and from the sky to rebirth\"."
+            "description": {
+              "text": "Bacon's manuscript: \"The rainbow's treasure is a golden moon, burning sun, old forest, royal garden, ocean's color, drops of blood and from the sky to rebirth\"."
+            }
           }
         ]
       }

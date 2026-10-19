@@ -17,8 +17,7 @@ import { fileURLToPath } from "node:url";
 import { flattenGuide } from "../../guide-transformer/scripts/richtext.mjs";
 import { checkTextFidelity } from "./text_fidelity.mjs";
 import { loadMerges, expectedNavId } from "./merges.mjs";
-import { parseItemBoxes, parseWeaponTables, parseGearTable } from "../../../../scripts/reference_tables.mjs";
-import { parseAppendixTables } from "../../../../scripts/reference_appendix.mjs";
+import { parseReferenceTables, referenceBosses, parseHelpBlocks } from "../../../../scripts/reference_appendix.mjs";
 import { parseSkillGroups } from "../../../../scripts/reference_skills.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -120,10 +119,8 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
   } else if (guide.type === "reference" && isVerbatimReference && truthy(guide.reference_tables)) {
     // Parsed tables: rebuild from the canonical text and compare every cell.
     let expectedTables = null;
-    try {
-      expectedTables = parseAppendixTables(canonical.id, canonical.text ?? "") ?? (canonical.id === "a-1-02" ? parseWeaponTables(canonical.text ?? "") : (canonical.id === "a-1-03" || canonical.id === "a-1-04") ? [parseGearTable(canonical.text ?? "")] : [parseItemBoxes(canonical.text ?? "")]);
-    } catch { /* reported below */ }
-    if (!expectedTables || expectedTables.some((t) => !t)) {
+    try { expectedTables = parseReferenceTables(canonical.id, canonical.text ?? ""); } catch { /* reported below */ }
+    if (!expectedTables) {
       addFinding("critical", "factual discrepancy", "reference_tables", "parsable item boxes", "unparsable canonical",
         "Canonical text could not be re-parsed into a table");
     } else {
@@ -155,7 +152,8 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
           const gr = grows[i];
           if (!gr) return;
           const same = er.cells.length === (gr.cells ?? []).length && er.cells.every((c, j) => n(c) === n(gr.cells[j]))
-            && n(er.detail) === n(gr.detail) && n(er.detail_title) === n(gr.detail_title) && n(er.detail_menu) === n(gr.detail_menu);
+            && ["menu", "title", "text"].every((k) => n(er.description?.[k]) === n(gr.description?.[k]))
+            && JSON.stringify(er.children ?? []) === JSON.stringify(gr.children ?? []);
           if (!same) {
             addFinding("critical", "factual discrepancy", `${at}.rows[${i}]`, JSON.stringify(er),
               JSON.stringify(gr), "Table row differs from canonical");
@@ -163,7 +161,7 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
         });
       });
     }
-  } else if (guide.type === "reference" && isVerbatimReference) {
+  } else if (guide.type === "reference" && isVerbatimReference && truthy(guide.reference_blocks)) {
     const refText = (guide.reference_blocks ?? []).map((b) => b.text ?? "").join("");
     if (refText !== (canonical.text ?? "")) {
       addFinding("critical", "factual discrepancy", "reference_blocks",
@@ -229,8 +227,10 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
   }
 
   // 4. Bosses Check (section-level bosses[] plus step-level boss objects)
-  const cBosses = canonical.bosses ?? [];
-  const gBosses = [...(guide.bosses ?? [])];
+  // Reference pages carry their boss records verbatim (checked by 4b), not mapped to steps.
+  const isReference = guide.type === "reference";
+  const cBosses = isReference ? [] : canonical.bosses ?? [];
+  const gBosses = isReference ? [] : [...(guide.bosses ?? [])];
   const stepBosses = (guide.steps ?? []).filter((s) => isDict(s.boss)).map((s) => s.boss);
   const gAllBosses = [...gBosses, ...stepBosses];
   const cNames = new Set(cBosses.map((b) => normalizeName(b.name)));
@@ -352,10 +352,32 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
     }
   }
 
+  // 4b. Reference boss records (a-1-14) are carried over from canonical `bosses` unchanged.
+  if (guide.type === "reference" && (canonical.bosses ?? []).length) {
+    if (JSON.stringify(referenceBosses(canonical.bosses)) !== JSON.stringify(guide.bosses ?? [])) {
+      addFinding("critical", "factual discrepancy", "bosses", `${canonical.bosses.length} boss records`,
+        `${(guide.bosses ?? []).length} boss records`, "Reference boss records differ from canonical");
+    }
+  }
+
+  // 4c. Help (a-1-15) is prose: rebuild the HELP blocks from the canonical text and compare.
+  if (secId === "a-1-15") {
+    const expectedBlocks = parseHelpBlocks(canonical.text ?? "");
+    if (JSON.stringify(expectedBlocks) !== JSON.stringify(guide.blocks ?? [])) {
+      addFinding("critical", "factual discrepancy", "blocks", `${expectedBlocks.length} HELP blocks`,
+        `${(guide.blocks ?? []).length} blocks`, "Help blocks differ from canonical text");
+    }
+  }
+
   // 5. Shops Check
   const cShops = canonical.shops ?? [];
-  const gShops = guide.shops ?? [];
-  if (cShops.length !== gShops.length) {
+  // Appendix pages render shops as reference_tables (one "Location: Shop" table each), not guide.shops.
+  const shopTables = guide.type === "reference" && cShops.length && truthy(guide.reference_tables) ? guide.reference_tables : null;
+  const gShops = shopTables ? shopTables.map((t) => ({ name: t.title, inventory: t.rows.map((r) => ({ name: r.cells[0], price: r.cells[1] })) })) : (guide.shops ?? []);
+  if (shopTables && cShops.length !== gShops.length) {
+    addFinding("high", "missing information", "reference_tables", `${cShops.length} shop tables in canonical`,
+      `${gShops.length} shop tables in structured`, "Shop table count mismatch");
+  } else if (!shopTables && cShops.length !== gShops.length) {
     addFinding("high", "missing information", "shops", `${cShops.length} shops in canonical`,
       `${gShops.length} shops in structured`, "Shop count mismatch");
   } else {
@@ -368,7 +390,7 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
         if (!gInvRaw.has(normalizeName(iname))) {
           addFinding("high", "missing information", `shops[${pyStr(cS.name)}].inventory`, iname, "Missing",
             `Shop item '${iname}' missing from structured inventory`);
-        } else if (gInvRaw.get(normalizeName(iname)) !== iprice) {
+        } else if (String(gInvRaw.get(normalizeName(iname))) !== String(iprice)) {
           addFinding("high", "numerical discrepancy", `shops[${pyStr(cS.name)}].inventory[${iname}].price`, iprice,
             gInvRaw.get(normalizeName(iname)), `Price mismatch for shop item '${iname}'`);
         }
@@ -425,8 +447,9 @@ export function verifyGuide(canonical, structured, root = ROOT_DIR) {
     }
   });
 
-  // 9. Every canonical dialogue option appears in choices[] (scaffold groups them per prompt)
-  const cOptionCount = [...(canonical.text ?? "").matchAll(/^\s*\S*?>?\s*\[(\d+)\]\s+(\S.*?)(?:\s+<\S*)?\s*$/gm)].length;
+  // 9. Every canonical dialogue option appears in choices[] (scaffold groups them per prompt).
+  // Reference pages have no dialogue; their "[1] Location" lines are not options.
+  const cOptionCount = guide.type === "reference" ? 0 : [...(canonical.text ?? "").matchAll(/^\s*\S*?>?\s*\[(\d+)\]\s+(\S.*?)(?:\s+<\S*)?\s*$/gm)].length;
   const gOptions = (guide.steps ?? []).flatMap((s) => s.choices ?? []);
   if (cOptionCount && gOptions.length < cOptionCount) {
     addFinding("medium", "missing information", "steps[].choices", `${cOptionCount} options in source`,

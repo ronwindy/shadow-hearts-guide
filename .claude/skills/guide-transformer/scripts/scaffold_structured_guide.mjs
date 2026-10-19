@@ -12,8 +12,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { blocksFromMarkdown } from "./richtext.mjs";
 import { PROJECT } from "../../../../scripts/project_config.mjs";
-import { parseItemBoxes, parseWeaponTables, parseGearTable } from "../../../../scripts/reference_tables.mjs";
-import { parseAppendixTables } from "../../../../scripts/reference_appendix.mjs";
+import { parseReferenceTables, parseIntroText, parseHelpBlocks, referenceBosses } from "../../../../scripts/reference_appendix.mjs";
 import { parseSkillGroups } from "../../../../scripts/reference_skills.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -778,18 +777,18 @@ function scaffoldReferenceGuide(canonical) {
     navigation: canonical.navigation ?? {},
     enemies: canonical.enemies ?? [],
     bosses: canonical.bosses ?? [],
-    shops: canonical.shops ?? [],
   };
-  const parsed = canonical.id === "a-1-05" ? parseItemBoxes(canonical.text) : null;
-  const weapons = canonical.id === "a-1-02" ? parseWeaponTables(canonical.text) : null;
-  const gear = canonical.id === "a-1-03" || canonical.id === "a-1-04" ? parseGearTable(canonical.text) : null;
-  const appendix = parseAppendixTables(canonical.id, canonical.text) ?? null;
+  const tables = parseReferenceTables(canonical.id, canonical.text);
   const groups = canonical.id === "a-1-01" ? parseSkillGroups(canonical.text) : null;
-  if (groups) guide.reference_groups = groups;
-  else if (parsed) guide.reference_tables = [parsed];
-  else if (weapons) guide.reference_tables = weapons;
-  else if (gear) guide.reference_tables = [gear];
-  else if (appendix) guide.reference_tables = appendix;
+  if (canonical.id === "a-1-14") {
+    // Boss records stay in canonical `bosses` (rendered as BossCards); only the intro prose is text.
+    guide.blocks = [{ text: parseIntroText(canonical.text) }];
+    guide.bosses = referenceBosses(canonical.bosses);
+  } else if (canonical.id === "a-1-15") {
+    // Help is prose: one block per HELP section, no table.
+    guide.blocks = parseHelpBlocks(canonical.text);
+  } else if (groups) guide.reference_groups = groups;
+  else if (tables) guide.reference_tables = tables;
   else guide.reference_blocks = [{ format: "preformatted", text: canonical.text ?? "" }];
   if (canonical.boss) guide.boss = canonical.boss;
   return { guide };

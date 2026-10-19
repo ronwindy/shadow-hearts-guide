@@ -28,7 +28,6 @@
     },
     "enemies": [],
     "bosses": [],
-    "shops": [],
     "reference_tables": [
       {
         "intro": "Listed here are the prizes you win after defeating your Malice in the Graveyard. The prize you win depends on the level of Malice you have accumulated, with 100 being the max value. Sadly you can't use this knowledge to get the special prizes again and again, as they are replaced with a Thera Leaf the second time you clear the Malice at the same value.",

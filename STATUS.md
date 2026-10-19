@@ -1,10 +1,10 @@
 # Shadow Hearts Guide Converter - Project Status
 
-> Last synced: `2026-10-19 21:28:04`
+> Last synced: `2026-10-19 22:45:30`
 
 ```text
-=== PROJECT STATUS (2026-10-19 21:28:04) ===
-Canonical 66/66 | Structured 60/66 | QA pass 60/66 (fail 0) | Web built 60/66
+=== PROJECT STATUS (2026-10-19 22:45:30) ===
+Canonical 66/66 | Structured 65/66 | QA pass 65/66 (fail 0) | Web built 65/66
 Next:
   (nothing pending)
 ```
@@ -71,11 +71,11 @@ Next:
 | `[A-1-08]` | `a-1-08` | Acupuncturist Costs | Appendices | WEB_BUILT |
 | `[A-1-09]` | `a-1-09` | The Lottery | Appendices | WEB_BUILT |
 | `[A-1-10]` | `a-1-10` | Malice Rewards | Appendices | WEB_BUILT |
-| `[A-1-11]` | `a-1-11` | Pedometer Rewards | Appendices | NOT_STRUCTURED |
-| `[A-1-12]` | `a-1-12` | NPC Library | Appendices | NOT_STRUCTURED |
-| `[A-1-13]` | `a-1-13` | Monster Library (Bestiary) | Appendices | NOT_STRUCTURED |
-| `[A-1-14]` | `a-1-14` | Sub-bosses and Bosses | Appendices | NOT_STRUCTURED |
-| `[A-1-15]` | `a-1-15` | Help (detailed, available in-game) | Appendices | NOT_STRUCTURED |
+| `[A-1-11]` | `a-1-11` | Pedometer Rewards | Appendices | WEB_BUILT |
+| `[A-1-12]` | `a-1-12` | NPC Library | Appendices | WEB_BUILT |
+| `[A-1-13]` | `a-1-13` | Monster Library (Bestiary) | Appendices | WEB_BUILT |
+| `[A-1-14]` | `a-1-14` | Sub-bosses and Bosses | Appendices | WEB_BUILT |
+| `[A-1-15]` | `a-1-15` | Help (detailed, available in-game) | Appendices | WEB_BUILT |
 | `[C-1-01]` | `c-1-01` | Version History | Conclusion | WEB_BUILT |
 | `[C-1-02]` | `c-1-02` | Thanks | Conclusion | WEB_BUILT |
 | `[C-1-03]` | `c-1-03` | Copyright / Disclaimer / Credits | Conclusion | WEB_BUILT |

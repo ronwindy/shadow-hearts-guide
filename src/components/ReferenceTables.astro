@@ -4,9 +4,8 @@ import { getItemIcon, getWeaponIcon, getValuableIcon } from '../lib/itemIcons';
 
 interface TableRow {
   cells: string[];
-  detail_menu?: string;
-  detail_title?: string;
-  detail?: string;
+  description?: { menu?: string; title?: string; text?: string };
+  children?: { columns: string[]; rows: TableRow[] }[];
 }
 interface RefTable {
   title?: string;
@@ -66,20 +65,42 @@ const { tables = [], iconSet } = Astro.props;
                     </td>
                   ))}
                 </tr>
-                {(r.detail || r.detail_title || r.detail_menu) && (
+                {r.description && (r.description.menu || r.description.title || r.description.text) && (
                   <tr class="max-sm:block">
                     <td colspan={t.columns.length} class="px-4 pb-3 pt-0 text-sm text-slate-400 leading-relaxed max-sm:block max-sm:p-0 max-sm:mt-1">
-                      {r.detail_menu && <p><span class="text-xs uppercase tracking-wide text-slate-500 mr-1.5">Menu</span>{r.detail_menu}</p>}
-                      {(r.detail || r.detail_title) && (
-                        <p class={r.detail_menu ? 'mt-1' : ''}>
-                          {r.detail_menu && <span class="text-xs uppercase tracking-wide text-slate-500 mr-1.5">Info</span>}
-                          {r.detail_title && <span class="font-semibold text-slate-300 mr-1.5">{r.detail_title}</span>}
-                          {r.detail}
+                      {r.description.menu && <p><span class="text-xs uppercase tracking-wide text-slate-500 mr-1.5">Menu</span>{r.description.menu}</p>}
+                      {(r.description.text || r.description.title) && (
+                        <p class={r.description.menu ? 'mt-1' : ''}>
+                          {r.description.menu && <span class="text-xs uppercase tracking-wide text-slate-500 mr-1.5">Info</span>}
+                          {r.description.title && <span class="font-semibold text-slate-300 mr-1.5">{r.description.title}</span>}
+                          {r.description.text}
                         </p>
                       )}
                     </td>
                   </tr>
                 )}
+                {(r.children ?? []).map((ch) => (
+                  <tr class="max-sm:block">
+                    <td colspan={t.columns.length} class="px-4 pb-3 pt-0 max-sm:block max-sm:p-0 max-sm:mt-1">
+                      <div class="rounded-lg border border-slate-800/80 bg-slate-900/50 overflow-x-auto">
+                        <table class="w-full text-sm text-left">
+                          <thead>
+                            <tr class="border-b border-slate-800 text-slate-400 font-sans bg-slate-900/80">
+                              {ch.columns.map((c) => <th class="py-2 px-3 font-semibold">{c}</th>)}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {ch.rows.map((cr) => (
+                              <tr class="border-b border-slate-800/60 last:border-b-0 text-slate-200">
+                                {cr.cells.map((cell) => <td class="py-2 px-3">{cell}</td>)}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             ))}
           </table>

@@ -28,7 +28,6 @@
     },
     "enemies": [],
     "bosses": [],
-    "shops": [],
     "reference_tables": [
       {
         "intro": "Listed below is all of the accessories in the game, listed in the same order the game has them listed. Everyone can equip these accessories unless otherwise noted, and each character can only equip one of the Headgear / Belt types at a time. They can also only equip one of each item at a time, so having three Mind's Eyes / Weird Bottles / etc. equipped isn't possible.",
@@ -48,8 +47,10 @@
               "- / -",
               "Headgear"
             ],
-            "detail_menu": "Raises Defense Power.",
-            "detail": "A bandanna made by the hands of 100 virgins, using mystical dye and silk thread. It raises Defense Power."
+            "description": {
+              "menu": "Raises Defense Power.",
+              "text": "A bandanna made by the hands of 100 virgins, using mystical dye and silk thread. It raises Defense Power."
+            }
           },
           {
             "cells": [
@@ -59,8 +60,10 @@
               "- / -",
               "Headgear"
             ],
-            "detail_menu": "Raises Defense Power.",
-            "detail": "A cap made from the hide of Kublai Khan's favorite horse, Shooting Star. The horse was said to have become a dragon after its death. Raises Defense Power."
+            "description": {
+              "menu": "Raises Defense Power.",
+              "text": "A cap made from the hide of Kublai Khan's favorite horse, Shooting Star. The horse was said to have become a dragon after its death. Raises Defense Power."
+            }
           },
           {
             "cells": [
@@ -70,8 +73,10 @@
               "- / -",
               "Headgear"
             ],
-            "detail_menu": "Raises Defense Power.",
-            "detail": "A cap made of thin metal studded with rivets. The rivets are placed in accordance with the principles of feng shui. Raises Defense Power."
+            "description": {
+              "menu": "Raises Defense Power.",
+              "text": "A cap made of thin metal studded with rivets. The rivets are placed in accordance with the principles of feng shui. Raises Defense Power."
+            }
           },
           {
             "cells": [
@@ -81,8 +86,10 @@
               "- / -",
               "Headgear"
             ],
-            "detail_menu": "Raises Defense Power.",
-            "detail": "A face guard made from human bones covered with lizard leather. You need courage to wear it, but it raises Defense Power. Extremely distracting to the enemy."
+            "description": {
+              "menu": "Raises Defense Power.",
+              "text": "A face guard made from human bones covered with lizard leather. You need courage to wear it, but it raises Defense Power. Extremely distracting to the enemy."
+            }
           },
           {
             "cells": [
@@ -92,8 +99,10 @@
               "- / -",
               "Headgear"
             ],
-            "detail_menu": "Raises Defense Power by making target fearless.",
-            "detail": "Protective headgear worn by the cavalry division out routing evil. Strong defense against blows and other physical attacks. Raises Defense Power."
+            "description": {
+              "menu": "Raises Defense Power by making target fearless.",
+              "text": "Protective headgear worn by the cavalry division out routing evil. Strong defense against blows and other physical attacks. Raises Defense Power."
+            }
           },
           {
             "cells": [
@@ -103,8 +112,10 @@
               "- / -",
               "Headgear"
             ],
-            "detail_menu": "Raises Defense Power with magical protection.",
-            "detail": "A circlet made from silver gotten from the eastern capital's mystical mines and put through a magical process. Extremely lightweight. It raises Defense Power."
+            "description": {
+              "menu": "Raises Defense Power with magical protection.",
+              "text": "A circlet made from silver gotten from the eastern capital's mystical mines and put through a magical process. Extremely lightweight. It raises Defense Power."
+            }
           },
           {
             "cells": [
@@ -114,8 +125,10 @@
               "5 / -",
               "Headgear"
             ],
-            "detail_menu": "Mysterious mask exhumed by a certain foundation.",
-            "detail": "A golden mask excavated from the Aztec temple of the sun, said to have been worn by priests during sun- worshipping ceremonies. It raises Defense Power."
+            "description": {
+              "menu": "Mysterious mask exhumed by a certain foundation.",
+              "text": "A golden mask excavated from the Aztec temple of the sun, said to have been worn by priests during sun- worshipping ceremonies. It raises Defense Power."
+            }
           },
           {
             "cells": [
@@ -125,8 +138,10 @@
               "5 / -",
               "Headgear"
             ],
-            "detail_menu": "A mystical mask of the Aztecs.",
-            "detail": "Just like the Comet Mask, a mask excavated in Aztecan lands. However, this one was sealed up deep in the basements of the temple. It raises Defense Power."
+            "description": {
+              "menu": "A mystical mask of the Aztecs.",
+              "text": "Just like the Comet Mask, a mask excavated in Aztecan lands. However, this one was sealed up deep in the basements of the temple. It raises Defense Power."
+            }
           },
           {
             "cells": [
@@ -136,8 +151,10 @@
               "- / -",
               "Belt"
             ],
-            "detail_menu": "Raises Attack Power.",
-            "detail": "A belt made from the hide of a young lion and tanned with the mystical Sensai stone. It raises Attack Power when worn."
+            "description": {
+              "menu": "Raises Attack Power.",
+              "text": "A belt made from the hide of a young lion and tanned with the mystical Sensai stone. It raises Attack Power when worn."
+            }
           },
           {
             "cells": [
@@ -147,9 +164,11 @@
               "- / -",
               "Belt"
             ],
-            "detail_menu": "Raises Attack Power.",
-            "detail": "A thin leather belt dyed in the secret potion of a holy man. It does raise the Attack Power of the wearer, but isn't very useful as a belt.",
-            "detail_title": "Casual Belt"
+            "description": {
+              "menu": "Raises Attack Power.",
+              "title": "Casual Belt",
+              "text": "A thin leather belt dyed in the secret potion of a holy man. It does raise the Attack Power of the wearer, but isn't very useful as a belt."
+            }
           },
           {
             "cells": [
@@ -159,8 +178,10 @@
               "- / -",
               "Belt"
             ],
-            "detail_menu": "Raises Attack Power.",
-            "detail": "The favorite belt of frontier hero Billy, it raises Attack Power. The red stones set into the buckle are said to have a strong mystical power."
+            "description": {
+              "menu": "Raises Attack Power.",
+              "text": "The favorite belt of frontier hero Billy, it raises Attack Power. The red stones set into the buckle are said to have a strong mystical power."
+            }
           },
           {
             "cells": [
@@ -170,8 +191,10 @@
               "- / -",
               "Belt"
             ],
-            "detail_menu": "Raises Attack Power.",
-            "detail": "A heavy metal belt. Raises Attack Power extensively, but you get a lot of odd looks when you wear it. Being a heavy metal fan helps."
+            "description": {
+              "menu": "Raises Attack Power.",
+              "text": "A heavy metal belt. Raises Attack Power extensively, but you get a lot of odd looks when you wear it. Being a heavy metal fan helps."
+            }
           },
           {
             "cells": [
@@ -181,8 +204,10 @@
               "- / -",
               "Belt"
             ],
-            "detail_menu": "Raises Attack Power by giving irresistible charm.",
-            "detail": "A pareo like the one in the picture of the Micronesian goddess Akurol. Raises Attack Power but makes the wearer so irresistible, it attracts a lot of attention. NOTE: Can only be worn by women."
+            "description": {
+              "menu": "Raises Attack Power by giving irresistible charm.",
+              "text": "A pareo like the one in the picture of the Micronesian goddess Akurol. Raises Attack Power but makes the wearer so irresistible, it attracts a lot of attention. NOTE: Can only be worn by women."
+            }
           },
           {
             "cells": [
@@ -192,8 +217,10 @@
               "- / -",
               "Belt"
             ],
-            "detail_menu": "Raises Attack by increasing masculine spirit.",
-            "detail": "The Loin Guard raises Attack Power by binding the wearer tightly. A symbol of the hot-blooded spirit of men throughout the ages. NOTE: Can only be worn by men."
+            "description": {
+              "menu": "Raises Attack by increasing masculine spirit.",
+              "text": "The Loin Guard raises Attack Power by binding the wearer tightly. A symbol of the hot-blooded spirit of men throughout the ages. NOTE: Can only be worn by men."
+            }
           },
           {
             "cells": [
@@ -203,8 +230,10 @@
               "- / -",
               "Belt"
             ],
-            "detail_menu": "A belt once worn by a great jujutsu artist.",
-            "detail": "Belt worn by jujutsu artist Koma, who died in a foreign land after many fierce contests. Soaked with the blood of many strong opponents, it raises Attack Power."
+            "description": {
+              "menu": "A belt once worn by a great jujutsu artist.",
+              "text": "Belt worn by jujutsu artist Koma, who died in a foreign land after many fierce contests. Soaked with the blood of many strong opponents, it raises Attack Power."
+            }
           },
           {
             "cells": [
@@ -214,8 +243,10 @@
               "- / -",
               "Belt"
             ],
-            "detail_menu": "The legendary belt once owned by the god Thor.",
-            "detail": "The belt said to have been worn by the god of thunder Thor. In contrast to its beautiful appearance, it makes the wearer combative and raises Attack Power."
+            "description": {
+              "menu": "The legendary belt once owned by the god Thor.",
+              "text": "The belt said to have been worn by the god of thunder Thor. In contrast to its beautiful appearance, it makes the wearer combative and raises Attack Power."
+            }
           },
           {
             "cells": [
@@ -225,8 +256,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Poison ineffectual.",
-            "detail": "A bracelet carved out of a large, red, pearl oyster shell that was used by a medicine man in the Dark Ages. Raises resistance to Poison when worn."
+            "description": {
+              "menu": "Renders Poison ineffectual.",
+              "text": "A bracelet carved out of a large, red, pearl oyster shell that was used by a medicine man in the Dark Ages. Raises resistance to Poison when worn."
+            }
           },
           {
             "cells": [
@@ -236,8 +269,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Confusion ineffectual.",
-            "detail": "A bracelet carved out of the backbone of a priest who attained Buddhahood. Each piece has the text of a sutra. It renders the effects of Confusion ineffectual."
+            "description": {
+              "menu": "Renders Confusion ineffectual.",
+              "text": "A bracelet carved out of the backbone of a priest who attained Buddhahood. Each piece has the text of a sutra. It renders the effects of Confusion ineffectual."
+            }
           },
           {
             "cells": [
@@ -247,9 +282,11 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Paralysis ineffectual.",
-            "detail": "A bracelet made from rosewood from the holy land of Behem. Prayed over by many monks, it renders Paralysis ineffectual. A mandala is drawn on the back.",
-            "detail_title": "Rosewood Bracelet"
+            "description": {
+              "menu": "Renders Paralysis ineffectual.",
+              "title": "Rosewood Bracelet",
+              "text": "A bracelet made from rosewood from the holy land of Behem. Prayed over by many monks, it renders Paralysis ineffectual. A mandala is drawn on the back."
+            }
           },
           {
             "cells": [
@@ -259,8 +296,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Silence ineffectual.",
-            "detail": "A strung bell, made by placing the ear bones of a baby that died from illness into a bronze ball. Sounds like a baby laughing. Renders Silence ineffectual."
+            "description": {
+              "menu": "Renders Silence ineffectual.",
+              "text": "A strung bell, made by placing the ear bones of a baby that died from illness into a bronze ball. Sounds like a baby laughing. Renders Silence ineffectual."
+            }
           },
           {
             "cells": [
@@ -270,8 +309,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Petrification ineffectual.",
-            "detail": "A bracelet with a magic mirror made from polished silver dust produced through alchemy. The mirror repels evil and renders Petrification ineffectual."
+            "description": {
+              "menu": "Renders Petrification ineffectual.",
+              "text": "A bracelet with a magic mirror made from polished silver dust produced through alchemy. The mirror repels evil and renders Petrification ineffectual."
+            }
           },
           {
             "cells": [
@@ -281,8 +322,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Paralysis and Petrification ineffectual.",
-            "detail": "A magic tool made by the Hungarian warlock Esca. It shows both the usual and the magic 12 signs of the zodiac. Renders Paralysis and Petrification ineffectual."
+            "description": {
+              "menu": "Renders Paralysis and Petrification ineffectual.",
+              "text": "A magic tool made by the Hungarian warlock Esca. It shows both the usual and the magic 12 signs of the zodiac. Renders Paralysis and Petrification ineffectual."
+            }
           },
           {
             "cells": [
@@ -292,8 +335,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Poison, Silence, Confusion ineffectual.",
-            "detail": "A bracelet representing the twelve animals of the Chinese zodiac, used in Yin and Yang fortune-telling. Renders Poison, Silence and Confusion ineffectual."
+            "description": {
+              "menu": "Renders Poison, Silence, Confusion ineffectual.",
+              "text": "A bracelet representing the twelve animals of the Chinese zodiac, used in Yin and Yang fortune-telling. Renders Poison, Silence and Confusion ineffectual."
+            }
           },
           {
             "cells": [
@@ -303,8 +348,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Knock Back ineffectual.",
-            "detail": "The spikes of the base-stealing king, Quick-shoe Joey. Made from water buffalo leathers and set with silver spikes, they render Knock Back ineffectual."
+            "description": {
+              "menu": "Renders Knock Back ineffectual.",
+              "text": "The spikes of the base-stealing king, Quick-shoe Joey. Made from water buffalo leathers and set with silver spikes, they render Knock Back ineffectual."
+            }
           },
           {
             "cells": [
@@ -314,8 +361,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Judgment Ring abnormalities ineffectual.",
-            "detail": "The favorite pocket watch of the British warlock McNabb, who performed many magic experiments concerning time. It cancels out all effects on the Judgment Ring. NOTE: This also remedies some Lottery Ring anomalies."
+            "description": {
+              "menu": "Renders Judgment Ring abnormalities ineffectual.",
+              "text": "The favorite pocket watch of the British warlock McNabb, who performed many magic experiments concerning time. It cancels out all effects on the Judgment Ring. NOTE: This also remedies some Lottery Ring anomalies."
+            }
           },
           {
             "cells": [
@@ -325,8 +374,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders SP Lowering ineffectual.",
-            "detail": "The pendant of Saint Eleph, it renders SP Lowering ineffectual. It has grown stronger as it has passed through the hands of many adventurers."
+            "description": {
+              "menu": "Renders SP Lowering ineffectual.",
+              "text": "The pendant of Saint Eleph, it renders SP Lowering ineffectual. It has grown stronger as it has passed through the hands of many adventurers."
+            }
           },
           {
             "cells": [
@@ -336,8 +387,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Instant Death ineffectual.",
-            "detail": "A small teddy bear left behind in a cabin of the ghost ship St. Mary. It renders Instant Death ineffectual. Makes a sad face if you squeeze it."
+            "description": {
+              "menu": "Renders Instant Death ineffectual.",
+              "text": "A small teddy bear left behind in a cabin of the ghost ship St. Mary. It renders Instant Death ineffectual. Makes a sad face if you squeeze it."
+            }
           },
           {
             "cells": [
@@ -347,8 +400,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Renders Status abnormalities ineffectual.",
-            "detail": "A replica of the crucifix on the chest of the giant god statue excavated from the ruins of Zafral. Renders all Status abnormalities ineffectual."
+            "description": {
+              "menu": "Renders Status abnormalities ineffectual.",
+              "text": "A replica of the crucifix on the chest of the giant god statue excavated from the ruins of Zafral. Renders all Status abnormalities ineffectual."
+            }
           },
           {
             "cells": [
@@ -358,8 +413,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Moonstone cuts Light damage in half.",
-            "detail": "A ring made by a shaman with a moonstone dug up in an unexplored desert area. Used as a protective charm for the tribe. Cuts damage from Light attacks in half."
+            "description": {
+              "menu": "Moonstone cuts Light damage in half.",
+              "text": "A ring made by a shaman with a moonstone dug up in an unexplored desert area. Used as a protective charm for the tribe. Cuts damage from Light attacks in half."
+            }
           },
           {
             "cells": [
@@ -369,8 +426,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Obsidian cuts Darkness damage in half.",
-            "detail": "The only accessory the tragic queen Escabete was wearing when she went to the guillotine. The obsidian is said to cry every night. Cuts Darkness damage in half."
+            "description": {
+              "menu": "Obsidian cuts Darkness damage in half.",
+              "text": "The only accessory the tragic queen Escabete was wearing when she went to the guillotine. The obsidian is said to cry every night. Cuts Darkness damage in half."
+            }
           },
           {
             "cells": [
@@ -380,8 +439,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Amber cuts Earth damage in half.",
-            "detail": "A ring entirely made of amber, carved from a large amber stone found in an ancient layer of the western canyon. Cuts damage from Earth attacks in half."
+            "description": {
+              "menu": "Amber cuts Earth damage in half.",
+              "text": "A ring entirely made of amber, carved from a large amber stone found in an ancient layer of the western canyon. Cuts damage from Earth attacks in half."
+            }
           },
           {
             "cells": [
@@ -391,8 +452,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Pearl cuts Water damage in half.",
-            "detail": "A ring with a fresh-water pearl on a base of blue coral, worn by the witch Esla. The rainbow-colored pearl is still growing larger. Cuts Water damage in half."
+            "description": {
+              "menu": "Pearl cuts Water damage in half.",
+              "text": "A ring with a fresh-water pearl on a base of blue coral, worn by the witch Esla. The rainbow-colored pearl is still growing larger. Cuts Water damage in half."
+            }
           },
           {
             "cells": [
@@ -402,8 +465,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Carnelian cuts Fire damage in half.",
-            "detail": "A ring with a carnelian unearthed from the crater of Mt. Jianhuo in China. When held up to the light, it seems to have a flame inside. Cuts Fire damage in half."
+            "description": {
+              "menu": "Carnelian cuts Fire damage in half.",
+              "text": "A ring with a carnelian unearthed from the crater of Mt. Jianhuo in China. When held up to the light, it seems to have a flame inside. Cuts Fire damage in half."
+            }
           },
           {
             "cells": [
@@ -413,8 +478,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Lazurite cuts Wind damage in half.",
-            "detail": "A ring set with a lazurite dug up in the Ibara Desert. The base is made from sliver dust. It cuts damage from Wind attacks in half."
+            "description": {
+              "menu": "Lazurite cuts Wind damage in half.",
+              "text": "A ring set with a lazurite dug up in the Ibara Desert. The base is made from sliver dust. It cuts damage from Wind attacks in half."
+            }
           },
           {
             "cells": [
@@ -424,8 +491,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Crystal cuts non-class damage in half.",
-            "detail": "A finely detailed ring with a crystal that hosts a powerful spirit. Cuts non-class damage in half. The base is in the shape of the goddess constellation Lief."
+            "description": {
+              "menu": "Crystal cuts non-class damage in half.",
+              "text": "A finely detailed ring with a crystal that hosts a powerful spirit. Cuts non-class damage in half. The base is in the shape of the goddess constellation Lief."
+            }
           },
           {
             "cells": [
@@ -435,8 +504,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Cuts all classes of damage (except non-class) in half.",
-            "detail": "A golden ring set with a diamond found deep within the volcano Salei. It cuts damage from all classes of attacks, except non-class attacks, in half."
+            "description": {
+              "menu": "Cuts all classes of damage (except non-class) in half.",
+              "text": "A golden ring set with a diamond found deep within the volcano Salei. It cuts damage from all classes of attacks, except non-class attacks, in half."
+            }
           },
           {
             "cells": [
@@ -446,8 +517,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Escape possible even with all Berserk allies.",
-            "detail": "A finely-crafted brooch set with the guardian stone of the god Achilles. When worn, can escape from the enemy even when all allies are Berserk."
+            "description": {
+              "menu": "Escape possible even with all Berserk allies.",
+              "text": "A finely-crafted brooch set with the guardian stone of the god Achilles. When worn, can escape from the enemy even when all allies are Berserk."
+            }
           },
           {
             "cells": [
@@ -457,8 +530,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Successful Ring restores wearers SP when Berserk.",
-            "detail": "The silver cross Main Character's mother Anne always used to wear, it's filled with love for her family. Restores the wearer from Berserk if successful on the Ring."
+            "description": {
+              "menu": "Successful Ring restores wearers SP when Berserk.",
+              "text": "The silver cross Main Character's mother Anne always used to wear, it's filled with love for her family. Restores the wearer from Berserk if successful on the Ring."
+            }
           },
           {
             "cells": [
@@ -468,8 +543,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Becomes Unconscious in the player's stead once.",
-            "detail": "Used in voodoo rites in Haiti during ceremonies to bring souls back from the dead. Smiles when you talk to it. Becomes Unconscious in the player's stead once."
+            "description": {
+              "menu": "Becomes Unconscious in the player's stead once.",
+              "text": "Used in voodoo rites in Haiti during ceremonies to bring souls back from the dead. Smiles when you talk to it. Becomes Unconscious in the player's stead once."
+            }
           },
           {
             "cells": [
@@ -479,8 +556,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "After Unconscious, 3-hit, 2X-strength attack.",
-            "detail": "A bottle of dangerous-looking, crystalline medicine. It allows the holder to make a 3-hit attack at double strength on the next turn after being Unconscious."
+            "description": {
+              "menu": "After Unconscious, 3-hit, 2X-strength attack.",
+              "text": "A bottle of dangerous-looking, crystalline medicine. It allows the holder to make a 3-hit attack at double strength on the next turn after being Unconscious."
+            }
           },
           {
             "cells": [
@@ -490,8 +569,10 @@
               "-5 / -",
               "Other"
             ],
-            "detail_menu": "Makes SP decrease only 1 point every 2 turns.",
-            "detail": "The beloved gourd wine bottle of Jackie, the great drunken master. Holds at least 50 liters. It reduces the consumption rate of SP. Must be carried on the back. NOTE: It's the only item that lowers P-Hit. (-5%)"
+            "description": {
+              "menu": "Makes SP decrease only 1 point every 2 turns.",
+              "text": "The beloved gourd wine bottle of Jackie, the great drunken master. Holds at least 50 liters. It reduces the consumption rate of SP. Must be carried on the back. NOTE: It's the only item that lowers P-Hit. (-5%)"
+            }
           },
           {
             "cells": [
@@ -501,8 +582,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Makes SP decrease 2 points every turn.",
-            "detail": "The chinaware wine bottle of Xiaosha, follower of the great drunken master, Jackie. SP decreases 2 points every turn, but something good could happen, too."
+            "description": {
+              "menu": "Makes SP decrease 2 points every turn.",
+              "text": "The chinaware wine bottle of Xiaosha, follower of the great drunken master, Jackie. SP decreases 2 points every turn, but something good could happen, too."
+            }
           },
           {
             "cells": [
@@ -512,8 +595,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "The width of the hit area increases 20%.",
-            "detail": "A lariat necklace set with jade and pearls. Favorite item of undefeated gambler Bronco Billy. Widens the \"success\" area of the Judgment Ring."
+            "description": {
+              "menu": "The width of the hit area increases 20%.",
+              "text": "A lariat necklace set with jade and pearls. Favorite item of undefeated gambler Bronco Billy. Widens the \"success\" area of the Judgment Ring."
+            }
           },
           {
             "cells": [
@@ -523,8 +608,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "The indicator sweeps 20% slower.",
-            "detail": "A lariat necklace made of coal beads strung on sea snake hide. A sacred object of the ocean tribes, it slows the sweep of the indicator on the Judgment Ring."
+            "description": {
+              "menu": "The indicator sweeps 20% slower.",
+              "text": "A lariat necklace made of coal beads strung on sea snake hide. A sacred object of the ocean tribes, it slows the sweep of the indicator on the Judgment Ring."
+            }
           },
           {
             "cells": [
@@ -534,8 +621,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Hit Area invisible, but Physical Attack doubles.",
-            "detail": "A blindfold made from the skin of a great swordsman, with the words \"Don't look. Feel!\" on it. The hit area disappears, but Physical Attack Power doubles."
+            "description": {
+              "menu": "Hit Area invisible, but Physical Attack doubles.",
+              "text": "A blindfold made from the skin of a great swordsman, with the words \"Don't look. Feel!\" on it. The hit area disappears, but Physical Attack Power doubles."
+            }
           },
           {
             "cells": [
@@ -545,8 +634,10 @@
               "25 / 25",
               "Other"
             ],
-            "detail_menu": "Agl up 25 points, but 2X indicator speed.",
-            "detail": "The badge of the lightning-fast Lalar. Extremely small, but improves Agility dramatically when worn. However, the sweep of the Ring indicator doubles in speed."
+            "description": {
+              "menu": "Agl up 25 points, but 2X indicator speed.",
+              "text": "The badge of the lightning-fast Lalar. Extremely small, but improves Agility dramatically when worn. However, the sweep of the Ring indicator doubles in speed."
+            }
           },
           {
             "cells": [
@@ -556,8 +647,10 @@
               "-15 / -15",
               "Other"
             ],
-            "detail_menu": "Agl down 15 points, but half indicator speed.",
-            "detail": "Black iron clogs worn by the hero of Herculean strength, Yuhuang Shan. They slow down your reaction time, but the Ring indicator sweeps half as fast, too."
+            "description": {
+              "menu": "Agl down 15 points, but half indicator speed.",
+              "text": "Black iron clogs worn by the hero of Herculean strength, Yuhuang Shan. They slow down your reaction time, but the Ring indicator sweeps half as fast, too."
+            }
           },
           {
             "cells": [
@@ -567,8 +660,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Trophy money up 20% but get item chance down 20%.",
-            "detail": "In the shape of the trademark of Greenhoe, the heroic, chivalrous bandit. Chances of getting trophy money are raised, but chances of getting items are lowered."
+            "description": {
+              "menu": "Trophy money up 20% but get item chance down 20%.",
+              "text": "In the shape of the trademark of Greenhoe, the heroic, chivalrous bandit. Chances of getting trophy money are raised, but chances of getting items are lowered."
+            }
           },
           {
             "cells": [
@@ -578,8 +673,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Trophy money down 20%, but item get chance up 20%.",
-            "detail": "The favorite earrings of Captain Mulligan, who terrorized the seven seas. Chances of getting items are raised, but chances of getting trophy money are lowered."
+            "description": {
+              "menu": "Trophy money down 20%, but item get chance up 20%.",
+              "text": "The favorite earrings of Captain Mulligan, who terrorized the seven seas. Chances of getting items are raised, but chances of getting trophy money are lowered."
+            }
           },
           {
             "cells": [
@@ -589,8 +686,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Trophy money and item get chance up 20%.",
-            "detail": "They imprison the soul of the robber king, Arl. They increase the chances of getting both trophy money and items, but you might start to look like a thief."
+            "description": {
+              "menu": "Trophy money and item get chance up 20%.",
+              "text": "They imprison the soul of the robber king, Arl. They increase the chances of getting both trophy money and items, but you might start to look like a thief."
+            }
           },
           {
             "cells": [
@@ -600,8 +699,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Physical damage, given and received, up 20%.",
-            "detail": "Earrings still filled with the rage of the demonically fierce warrior, Muzou. They raise the Physical Damage inflicted, but also raise Physical Damage received."
+            "description": {
+              "menu": "Physical damage, given and received, up 20%.",
+              "text": "Earrings still filled with the rage of the demonically fierce warrior, Muzou. They raise the Physical Damage inflicted, but also raise Physical Damage received."
+            }
           },
           {
             "cells": [
@@ -611,8 +712,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Special Atk Power up 20%, Special damage received up 20%.",
-            "detail": "Bamboo earrings, divination tools passed down through the Oh family, royal warlocks, They increase Special Attack Power but raise Special Damage received, too."
+            "description": {
+              "menu": "Special Atk Power up 20%, Special damage received up 20%.",
+              "text": "Bamboo earrings, divination tools passed down through the Oh family, royal warlocks, They increase Special Attack Power but raise Special Damage received, too."
+            }
           },
           {
             "cells": [
@@ -622,8 +725,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Exp Pt gain up 20%, but SP gain down 20%.",
-            "detail": "Earrings used by monks in their rigorous ascetic training. Made of gold-plated clay. The wearer can get 20% more Experience Points, but mental strength suffers."
+            "description": {
+              "menu": "Exp Pt gain up 20%, but SP gain down 20%.",
+              "text": "Earrings used by monks in their rigorous ascetic training. Made of gold-plated clay. The wearer can get 20% more Experience Points, but mental strength suffers."
+            }
           },
           {
             "cells": [
@@ -633,9 +738,11 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "HP increases 20%.",
-            "detail": "Replicas of earrings stolen (and never found again) from a demon statue at Shaolin Temple. When worn, they stir up the blood and increase physical strength.",
-            "detail_title": "Berserker Earrings"
+            "description": {
+              "menu": "HP increases 20%.",
+              "title": "Berserker Earrings",
+              "text": "Replicas of earrings stolen (and never found again) from a demon statue at Shaolin Temple. When worn, they stir up the blood and increase physical strength."
+            }
           },
           {
             "cells": [
@@ -645,8 +752,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "MP increases 20%.",
-            "detail": "Favored by Master Xifa, a master oracle of the Yin and Yang Arts, in his younger days. He says they attract women, but, actually, they raise mystical strength."
+            "description": {
+              "menu": "MP increases 20%.",
+              "text": "Favored by Master Xifa, a master oracle of the Yin and Yang Arts, in his younger days. He says they attract women, but, actually, they raise mystical strength."
+            }
           },
           {
             "cells": [
@@ -656,8 +765,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "SP increases 20%.",
-            "detail": "Earrings in the shape of Michael's wings. They are very old, but still brilliant. They have the mysterious power to raise the adventurer's mental strength."
+            "description": {
+              "menu": "SP increases 20%.",
+              "text": "Earrings in the shape of Michael's wings. They are very old, but still brilliant. They have the mysterious power to raise the adventurer's mental strength."
+            }
           },
           {
             "cells": [
@@ -667,8 +778,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "MP consumption decreases 20%.",
-            "detail": "Semi-precious stone earrings worn always by the Ganbriel brothers, known for their odd missionary work. They reduce the consumption rate of mystical strength."
+            "description": {
+              "menu": "MP consumption decreases 20%.",
+              "text": "Semi-precious stone earrings worn always by the Ganbriel brothers, known for their odd missionary work. They reduce the consumption rate of mystical strength."
+            }
           },
           {
             "cells": [
@@ -678,9 +791,11 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "SP consumed during fusion decreases 20%.",
-            "detail": "In resonance with harmonixers' waves, it releases a red light. Decreases the SP consumed during fusion. NOTE: Only Yuri can equip the Flare Brooch.",
-            "detail_title": "Engraved with the crest of the flame goddess Regina."
+            "description": {
+              "menu": "SP consumed during fusion decreases 20%.",
+              "title": "Engraved with the crest of the flame goddess Regina.",
+              "text": "In resonance with harmonixers' waves, it releases a red light. Decreases the SP consumed during fusion. NOTE: Only Yuri can equip the Flare Brooch."
+            }
           },
           {
             "cells": [
@@ -690,9 +805,11 @@
               "- / -",
               "Panties"
             ],
-            "detail_menu": "Pure and white, they cut Normal Attack by 50%.",
-            "detail": "most important thing is to change and wash them frequently. They cut damage from Normal Attacks in half. NOTE: Only Alice can wear panties.",
-            "detail_title": "White cotton underpants. What more can be said? The"
+            "description": {
+              "menu": "Pure and white, they cut Normal Attack by 50%.",
+              "title": "White cotton underpants. What more can be said? The",
+              "text": "most important thing is to change and wash them frequently. They cut damage from Normal Attacks in half. NOTE: Only Alice can wear panties."
+            }
           },
           {
             "cells": [
@@ -702,9 +819,11 @@
               "- / -",
               "Panties"
             ],
-            "detail_menu": "Battle underpants cut Magic Attack damage by 50%.",
-            "detail": "concealed many mysteries. Be sure to be wearing them just in case. They cut Magic Attack damage in half. NOTE: Only Alice can wear panties.",
-            "detail_title": "The sophisticated choice in undergarments, they have"
+            "description": {
+              "menu": "Battle underpants cut Magic Attack damage by 50%.",
+              "title": "The sophisticated choice in undergarments, they have",
+              "text": "concealed many mysteries. Be sure to be wearing them just in case. They cut Magic Attack damage in half. NOTE: Only Alice can wear panties."
+            }
           },
           {
             "cells": [
@@ -714,9 +833,11 @@
               "- / 22",
               "Other"
             ],
-            "detail_menu": "Cuts the chance of battle encounters in half.",
-            "detail": "A necklace worn by the queen of the graveyard Analamy. No matter how dangerous the location, it cuts the chance of encountering enemies in half.",
-            "detail_title": "Demon Ward Necklace"
+            "description": {
+              "menu": "Cuts the chance of battle encounters in half.",
+              "title": "Demon Ward Necklace",
+              "text": "A necklace worn by the queen of the graveyard Analamy. No matter how dangerous the location, it cuts the chance of encountering enemies in half."
+            }
           },
           {
             "cells": [
@@ -726,8 +847,10 @@
               "5 / -",
               "Other"
             ],
-            "detail_menu": "Helps the bearer avoid back and cross attacks.",
-            "detail": "Urgently invented by world's most cowardly alchemist, Minimi. It helps the bearer avoid surprise or trap attacks. Looks mechanical but made from soft materials."
+            "description": {
+              "menu": "Helps the bearer avoid back and cross attacks.",
+              "text": "Urgently invented by world's most cowardly alchemist, Minimi. It helps the bearer avoid surprise or trap attacks. Looks mechanical but made from soft materials."
+            }
           },
           {
             "cells": [
@@ -737,8 +860,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Counts number of steps in dangerous areas.",
-            "detail": "A device that counts steps. True adventurers are very serious and responsible about each step they take. Can't do without one."
+            "description": {
+              "menu": "Counts number of steps in dangerous areas.",
+              "text": "A device that counts steps. True adventurers are very serious and responsible about each step they take. Can't do without one."
+            }
           },
           {
             "cells": [
@@ -748,8 +873,10 @@
               "- / -",
               "Other"
             ],
-            "detail_menu": "Multiplies pedometer readings.",
-            "detail": "A device that doubles pedometer counts. Can't raise and electric rat, though. Good for gadget lovers."
+            "description": {
+              "menu": "Multiplies pedometer readings.",
+              "text": "A device that doubles pedometer counts. Can't raise and electric rat, though. Good for gadget lovers."
+            }
           }
         ]
       }

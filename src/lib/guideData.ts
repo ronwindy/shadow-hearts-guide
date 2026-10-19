@@ -157,8 +157,11 @@ export function buildPageTocSections(guide: any): PageTocItem[] {
   if (shops && shops.length > 0) {
     pageSections.push({ id: 'shops', label: 'Shops & Merchants', count: shops.length });
   }
-  if ((guide.reference_blocks && guide.reference_blocks.length > 0) || (guide.reference_tables && guide.reference_tables.length > 0) || (guide.reference_groups && guide.reference_groups.length > 0)) {
+  if ((guide.reference_tables && guide.reference_tables.length > 0) || (guide.reference_groups && guide.reference_groups.length > 0)) {
     pageSections.push({ id: 'reference', label: 'Reference Tables' });
+  }
+  if (guide.type === 'reference' && guide.bosses && guide.bosses.length > 0) {
+    pageSections.push({ id: 'reference-bosses', label: 'Bosses', count: guide.bosses.length });
   }
   if (overview.sections && overview.sections.length > 0) {
     pageSections.push({ id: 'toc-index', label: 'Guide Directory' });
