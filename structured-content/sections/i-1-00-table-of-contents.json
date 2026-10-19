@@ -332,8 +332,9 @@
             },
             {
               "code": "[A-1-12]",
-              "title": "NPC Library (* some spoilers *)",
-              "is_sidequest": false
+              "title": "NPC Library",
+              "is_sidequest": false,
+              "has_spoilers": true
             },
             {
               "code": "[A-1-13]",

@@ -25,6 +25,7 @@ export interface TocEntry {
   code: string;
   title: string;
   is_sidequest: boolean;
+  has_spoilers?: boolean;
   id?: string;
   has_structured?: boolean;
   label?: string;
@@ -440,7 +441,7 @@ export interface GuideContent {
   shops?: ShopInfo[];
   reference_blocks?: any[];
   reference_groups?: { title: string; intro?: string; columns?: string[]; rows?: { cells: string[] }[]; cards?: { title: string; class?: string; sp: string; summary: string; header_name?: string; detail?: string; columns: string[]; rows: { cells: string[] }[] }[] }[];
-  reference_tables?: { title?: string; intro?: string; columns: string[]; rows: { cells: string[]; detail_menu?: string; detail_title?: string; detail?: string }[] }[];
+  reference_tables?: { title?: string; intro?: string; columns: string[]; rows: { cells: string[]; description?: { menu?: string; title?: string; text?: string }; children?: { columns: string[]; rows: { cells: string[]; description?: { menu?: string; title?: string; text?: string } }[] }[] }[] }[];
   blocks?: { title?: string; text: any; notes?: { type?: string; title?: string; text: any }[] }[];
   steps?: StepChecklistItem[];
 }

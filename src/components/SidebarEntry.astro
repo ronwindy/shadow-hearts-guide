@@ -7,9 +7,10 @@ interface Props {
   isAvailable: boolean;
   isChild?: boolean;
   showBadge?: boolean;
+  hasSpoilers?: boolean;
 }
 
-const { href, title, icon: EntryIcon, isActive, isAvailable, isChild = false, showBadge = false } = Astro.props;
+const { href, title, icon: EntryIcon, isActive, isAvailable, isChild = false, showBadge = false, hasSpoilers = false } = Astro.props;
 
 const rowCls = isChild ? 'flex items-start gap-2 min-w-0' : 'flex items-center gap-2 min-w-0';
 // Nested children may wrap to 2 lines; top-level rows stay single-line.
@@ -36,6 +37,9 @@ const iconCls = isChild ? 'mt-0.5' : '';
       {showBadge && (
         <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border bg-purple-950/60 text-purple-300 border-purple-700/60">Side quest</span>
       )}
+      {hasSpoilers && (
+        <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border bg-rose-950/60 text-rose-300 border-rose-700/60">Spoiler</span>
+      )}
     </span>
   </a>
 ) : (
@@ -45,6 +49,9 @@ const iconCls = isChild ? 'mt-0.5' : '';
       <span class={labelCls} style={clampStyle}>{title}</span>
       {showBadge && (
         <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border border-slate-700">Side quest</span>
+      )}
+      {hasSpoilers && (
+        <span class="flex-shrink-0 text-[10px] leading-none uppercase tracking-wider px-1.5 py-0.5 rounded border bg-rose-950/60 text-rose-300 border-rose-700/60">Spoiler</span>
       )}
     </span>
   </div>

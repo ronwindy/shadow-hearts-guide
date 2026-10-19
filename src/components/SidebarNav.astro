@@ -167,6 +167,7 @@ function getCategoryFullTitle(name: string): string {
                     isActive={isActive}
                     isAvailable={!!entry.has_structured}
                     showBadge={entry.is_sidequest}
+                    hasSpoilers={entry.has_spoilers}
                   />
                   {group.children.length > 0 && (
                     <ul class="sidebar-children mt-0.5 mb-1 ml-4 pl-2 space-y-0.5 border-l border-slate-800/80">
