@@ -1144,6 +1144,10 @@ export function buildDescription(pText, cases, characters, answers = [], tail = 
 /** Generates a structured guide draft object from a canonical section JSON file. */
 export function scaffoldGuide(canonicalPath) {
   const canonical = JSON.parse(readFileSync(canonicalPath, "utf8"));
+  // Source glyph artefacts (e.g. U+0001 after "Valuables") are not text: strip control chars from titles.
+  const clean = (t) => (typeof t === "string" ? t.replace(/[\x00-\x1f\x7f]/g, "").trim() : t);
+  canonical.title = clean(canonical.title);
+  for (const k of ["prev", "next"]) if (canonical.navigation?.[k]) canonical.navigation[k].title = clean(canonical.navigation[k].title);
   if (isReferenceSection(canonical)) return scaffoldReferenceGuide(canonical);
   if (isInfoSection(canonical)) return scaffoldInfoGuide(canonical);
   if (isHubSection(canonical)) return scaffoldHubGuide(canonical);

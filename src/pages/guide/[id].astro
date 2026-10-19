@@ -26,7 +26,7 @@ import {
   getHeaderData
 } from '../../lib/guideData';
 import type { GuideContent } from '../../lib/types';
-import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight, ListChecks } from '@lucide/astro';
+import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight, ListChecks, Gem } from '@lucide/astro';
 
 // The header section has no page of its own; its content is merged into the ToC (i-1-00)
 export async function getStaticPaths() {
@@ -156,7 +156,7 @@ const pageSections = headerGuide
 
         {/* Verbatim reference/appendix tables */}
         <ReferenceBlocks blocks={guide.reference_blocks || []} />
-        <ReferenceTables tables={guide.reference_tables || []} />
+        <ReferenceTables tables={guide.reference_tables || []} fallbackIcon={guide.id === 'a-1-06' ? Gem : undefined} />
         <ReferenceGroups groups={guide.reference_groups || []} />
 
         <DocumentInfo metadata={overview.metadata} purpose={overview.purpose} guideScope={overview.guide_scope} />
