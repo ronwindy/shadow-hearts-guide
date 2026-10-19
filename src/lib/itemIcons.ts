@@ -1,10 +1,15 @@
 // Presentation only: maps an item name (as written in the source) to a Lucide icon and tint.
 // Used by ReferenceTables on a-1-05; unmapped names get no icon. Never affects game facts or QA.
 import {
-  Leaf, Sprout, Carrot, FlaskConical, Clover, Heart, Brain, Sparkles, Zap, Droplet, User, Feather,
-  Wind, Bone, Flame, ScrollText, Coffee, Apple, Soup, Wine, GlassWater, Eye, Crosshair, Hourglass,
-  Cat, Mountain, Shell, Bird, Star, Moon, Layers, Hand, KeyRound, Key, Dices, Ghost, Dumbbell,
-  HeartPulse, Gauge, Hammer, Ticket, Cloud, Tent, BookOpen, Wand, Sword, Target,
+  Leaf, Sprout, Carrot, FlaskConical, Clover, Heart, Brain, Sparkles, Zap, Droplet,
+  User, Feather, Wind, Bone, Flame, ScrollText, Coffee, Apple, Soup, Wine,
+  GlassWater, Eye, Crosshair, Hourglass, Cat, Mountain, Shell, Bird, Star, Moon,
+  Layers, Hand, KeyRound, Key, Dices, Ghost, Dumbbell, HeartPulse, Gauge, Hammer,
+  Ticket, Cloud, Tent, BookOpen, Wand, Sword, Target, Orbit, Cross, Cog,
+  Flashlight, Gem, Fish, TreePine, DoorOpen, Snowflake, PawPrint, Fence, Baby, BedDouble,
+  Club, Diamond, Spade, Circle, CircleDot, CircleDollarSign, Disc3, Lock, Mail, Trophy,
+  Warehouse, Projector, Worm, SunMedium, Infinity, Globe, Skull, Bomb, Egg, BookHeart,
+  Bookmark, FileText,
 } from '@lucide/astro';
 
 type IconComponent = typeof Leaf;
@@ -106,4 +111,61 @@ export function getWeaponIcon(character: string): ItemIcon | undefined {
 
 export function getItemIcon(name: string): ItemIcon | undefined {
   return MAP[name];
+}
+
+// Valuables (a-1-06): one distinct icon per valuable name (the two Book of Rituals / EmigreManuscript rows share theirs).
+const VALUABLE_MAP: Record<string, ItemIcon> = {
+  "Talisman": { icon: Orbit, color: 'text-gold-400' },
+  "Pendant": { icon: Cross, color: 'text-slate-300' },
+  "SluiceGateHandle": { icon: Cog, color: 'text-slate-400' },
+  "Anti-Cat Powder": { icon: Cat, color: 'text-teal-300' },
+  "Torch": { icon: Flashlight, color: 'text-amber-400' },
+  "Metal Bowl": { icon: Soup, color: 'text-slate-300' },
+  "Jewel": { icon: Gem, color: 'text-cyan-300' },
+  "Salt-dried Fish": { icon: Fish, color: 'text-sky-400' },
+  "Wood Token": { icon: TreePine, color: 'text-emerald-400' },
+  "Yawang Gate Key": { icon: DoorOpen, color: 'text-amber-300' },
+  "Wugui Room Key": { icon: Bone, color: 'text-amber-300' },
+  "B. Dragon VP": { icon: Snowflake, color: 'text-sky-400' },
+  "W. Tiger VP": { icon: PawPrint, color: 'text-slate-300' },
+  "B. Tortoise VP": { icon: Shell, color: 'text-slate-400' },
+  "R. Phoenix VP": { icon: Bird, color: 'text-rose-300' },
+  "East Gate Key": { icon: Fence, color: 'text-amber-300' },
+  "Kid's Room Key": { icon: Baby, color: 'text-amber-300' },
+  "Guestroom Key": { icon: BedDouble, color: 'text-amber-300' },
+  "Heart Key": { icon: Heart, color: 'text-rose-300' },
+  "Club Key": { icon: Club, color: 'text-amber-300' },
+  "Diamond Key": { icon: Diamond, color: 'text-amber-300' },
+  "Spade Key": { icon: Spade, color: 'text-amber-300' },
+  "Bronze Coin": { icon: Circle, color: 'text-amber-600' },
+  "Silver Coin": { icon: CircleDot, color: 'text-slate-300' },
+  "Gold Coin": { icon: CircleDollarSign, color: 'text-gold-400' },
+  "Platinum Coin": { icon: Disc3, color: 'text-cyan-300' },
+  "Dungeon Key": { icon: Lock, color: 'text-amber-300' },
+  "Doyle Letter": { icon: Mail, color: 'text-slate-300' },
+  "Oath Grail": { icon: Trophy, color: 'text-gold-400' },
+  "Storeroom Key": { icon: Warehouse, color: 'text-amber-300' },
+  "Slide": { icon: Projector, color: 'text-slate-400' },
+  "Snake Card": { icon: Worm, color: 'text-emerald-400' },
+  "Star Card": { icon: Star, color: 'text-gold-400' },
+  "Moon Card": { icon: Moon, color: 'text-slate-300' },
+  "Sun Card": { icon: SunMedium, color: 'text-amber-400' },
+  "Eternity Card": { icon: Infinity, color: 'text-cyan-300' },
+  "Earth Gravestone": { icon: Globe, color: 'text-amber-600' },
+  "Water Gravestone": { icon: Droplet, color: 'text-sky-400' },
+  "Air Gravestone": { icon: Wind, color: 'text-slate-300' },
+  "Fire Gravestone": { icon: Flame, color: 'text-orange-400' },
+  "Light Gravestone": { icon: Sparkles, color: 'text-yellow-200' },
+  "Dark Gravestone": { icon: Skull, color: 'text-violet-400' },
+  "DestructionStone": { icon: Bomb, color: 'text-rose-400' },
+  "Stone of Rebirth": { icon: Egg, color: 'text-sky-300' },
+  "Erotic Book": { icon: BookHeart, color: 'text-rose-300' },
+  "Codex of Lurie": { icon: ScrollText, color: 'text-violet-300' },
+  "Book of Rituals": { icon: BookOpen, color: 'text-violet-300' },
+  "EmigreManuscript": { icon: Bookmark, color: 'text-violet-300' },
+  "Pulse Tract": { icon: FileText, color: 'text-violet-300' },
+};
+
+export function getValuableIcon(name: string): ItemIcon | undefined {
+  return VALUABLE_MAP[name];
 }
