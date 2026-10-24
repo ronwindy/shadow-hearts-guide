@@ -1,0 +1,130 @@
+---
+import { Play, X, ArrowRight, CheckCircle2 } from "@lucide/astro";
+import { getResumeSteps } from "../lib/resume";
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+const MAX_TEXT = 160;
+const clip = (s: string) =>
+  s.length > MAX_TEXT ? `${s.slice(0, MAX_TEXT).trimEnd()}…` : s;
+
+// Compact manifest: [key, guideId, guideTitle, stepNum, text]
+const manifest = getResumeSteps().map((s) => [
+  s.key,
+  s.guideId,
+  s.guideTitle,
+  s.stepNum,
+  clip(s.text),
+]);
+---
+
+<div
+  id="resume-banner"
+  class="resume-banner hidden rounded-xl px-4 py-3 sm:px-5"
+  data-base={baseUrl}
+  role="region"
+  aria-label="Continue your walkthrough"
+>
+  <div id="resume-next" class="hidden items-center gap-3 sm:gap-4">
+    <span class="resume-icon" aria-hidden="true"><Play class="w-5 h-5" /></span>
+    <div class="min-w-0 flex-1">
+      <p class="text-xs font-serif uppercase tracking-widest text-gold-400">
+        Continue &middot; <span id="resume-title"></span> &middot; Step <span id="resume-num"></span>
+      </p>
+      <p id="resume-text" class="text-sm sm:text-base text-slate-200 leading-snug line-clamp-2"></p>
+    </div>
+    <a
+      id="resume-link"
+      href="#"
+      class="shrink-0 inline-flex items-center px-4 py-2 rounded-lg bg-gold-500 hover:bg-gold-400 text-slate-950 font-semibold text-sm transition-all active:scale-95"
+    >
+      Continue
+      <ArrowRight class="w-4 h-4 ml-2" aria-hidden="true" />
+    </a>
+    <button
+      id="resume-dismiss"
+      type="button"
+      class="shrink-0 p-2 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 transition-colors"
+      aria-label="Dismiss until I tick another step"
+    >
+      <X class="w-4 h-4" aria-hidden="true" />
+    </button>
+  </div>
+  <p id="resume-done" class="hidden items-center gap-2 text-sm text-gold-300">
+    <CheckCircle2 class="w-5 h-5 shrink-0" aria-hidden="true" />
+    Walkthrough complete
+  </p>
+</div>
+
+<script id="resume-manifest" type="application/json" set:html={JSON.stringify(manifest)} />
+
+<script>
+  const DISMISS_KEY = "sh-resume-dismissed";
+
+  function init() {
+    const banner = document.getElementById("resume-banner");
+    const raw = document.getElementById("resume-manifest")?.textContent;
+    if (!banner || !raw) return;
+    const steps: Array<[string, string, string, string | number, string]> = JSON.parse(raw);
+
+    const read = (k: string) => {
+      try { return localStorage.getItem(k); } catch { return null; }
+    };
+
+    let anyChecked = false;
+    let next: (typeof steps)[number] | undefined;
+    for (const s of steps) {
+      if (read(s[0]) === "true") anyChecked = true;
+      else if (!next) next = s;
+    }
+
+    // No progress yet: stay hidden (the hero already has a "Begin" button)
+    if (!anyChecked) return;
+
+    if (!next) {
+      banner.classList.remove("hidden");
+      document.getElementById("resume-done")?.classList.replace("hidden", "flex");
+      return;
+    }
+
+    // Dismissal only holds for this exact step; ticking another step brings the banner back
+    if (read(DISMISS_KEY) === next[0]) return;
+
+    const [key, guideId, title, num, text] = next;
+    document.getElementById("resume-title")!.textContent = title;
+    document.getElementById("resume-num")!.textContent = String(num);
+    document.getElementById("resume-text")!.textContent = text;
+    (document.getElementById("resume-link") as HTMLAnchorElement).href =
+      `${banner.dataset.base}/guide/${guideId}#step-${num}`;
+    document.getElementById("resume-next")?.classList.replace("hidden", "flex");
+    banner.classList.remove("hidden");
+
+    document.getElementById("resume-dismiss")?.addEventListener("click", () => {
+      try { localStorage.setItem(DISMISS_KEY, key); } catch {}
+      banner.classList.add("hidden");
+    });
+  }
+
+  init();
+</script>
+
+<style>
+  .resume-banner {
+    background:
+      linear-gradient(135deg, rgba(212, 175, 55, 0.14), rgba(212, 175, 55, 0.04)),
+      rgba(15, 18, 27, 0.75);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+  .resume-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.75rem;
+    color: #f0d27a;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+  }
+</style>

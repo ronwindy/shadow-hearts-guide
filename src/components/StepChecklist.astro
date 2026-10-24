@@ -115,7 +115,8 @@ function getStepTypeMeta(type: string = 'exploration') {
 
     return (
       <div
-        class="step-item p-4 sm:p-5 rounded-xl bg-slate-850/90 border border-slate-800 hover:border-slate-700 transition-all duration-150 shadow-sm"
+        id={`step-${stepNum}`}
+        class="step-item scroll-mt-24 p-4 sm:p-5 rounded-xl bg-slate-850/90 border border-slate-800 hover:border-slate-700 transition-all duration-150 shadow-sm"
         data-step-key={stepStorageKey}
       >
         <div class="flex items-start gap-3.5">
@@ -352,3 +353,11 @@ function getStepTypeMeta(type: string = 'exploration') {
 
   initCheckboxes();
 </script>
+
+<style>
+  /* Landing here from the home page "Continue" banner (#step-N) */
+  .step-item:target {
+    border-color: rgba(212, 175, 55, 0.8);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.35), 0 0 24px rgba(212, 175, 55, 0.25);
+  }
+</style>

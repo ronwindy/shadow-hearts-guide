@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CollapsibleSection from "../components/CollapsibleSection.astro";
+import ResumeBanner from "../components/ResumeBanner.astro";
 import SentenceList from "../components/SentenceList.astro";
 import NestedSentenceList from "../components/NestedSentenceList.astro";
 import { getGameWikiData } from "../lib/guideData";
@@ -123,6 +124,8 @@ const castGroups: Array<{ id: string; title: string; cast: WikiVoiceCast }> = [
   showSidebar={true}
 >
   <div class="space-y-12 py-2">
+    <ResumeBanner />
+
     <!-- Hero -->
     <section
       class="hero-glass relative rounded-2xl p-6 sm:p-10 lg:p-12 overflow-hidden"
